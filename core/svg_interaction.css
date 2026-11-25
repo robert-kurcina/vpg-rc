@@ -1,0 +1,21 @@
+/* Checkpoint 38: the art never owns selection or hit-testing. Explicit
+   physical counter bodies and hex terrain faces are the only SVG targets.
+   Source SVG geometry and layers are not changed. */
+#board, #board *, #engine-terrain svg, #engine-terrain svg *,
+#engine-labels svg, #engine-labels svg *,
+#engine-units svg, #engine-units svg *,
+.stack-example-art svg, .stack-example-art svg * {
+  -webkit-user-select:none;
+  user-select:none;
+  -webkit-touch-callout:none;
+}
+/* The generic game embeds imported terrain in #board; disable event capture
+   on text, water, rail, cities, grid, and all other decorative graphics. */
+#board * { pointer-events:none; }
+#board [data-interaction="hex-body"],
+#board [data-interaction="counter-body"] { pointer-events:all; }
+#board [data-interaction="counter-body"] { cursor:pointer; }
+/* The Oberlabs board is a canvas. Its separate SVG underlays stay passive;
+   the unchanged board canvas remains the only click receiver. */
+#engine-terrain, #engine-terrain *, #engine-labels, #engine-labels *,
+#engine-units, #engine-units * { pointer-events:none; }
