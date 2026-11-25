@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Build local HTML reading editions from supplied PDFs (PyMuPDF, development only)."""
 from pathlib import Path
-import fitz, html, re, hashlib, argparse
+import fitz, html, re, hashlib, argparse, json
 from collections import Counter
 parser=argparse.ArgumentParser(); parser.add_argument("--text-only",action="store_true",help="Retain existing facsimile assets unchanged")
 args=parser.parse_args()
@@ -89,4 +89,11 @@ for key,title in BOOKS.items():
  cases=f'<details class="case-index"><summary>Numbered cases ({len(case_index)})</summary><p>Repeated printed numbers are preserved as separate entries. Page images remain authoritative.</p><ul>{case_links}</ul></details>'
  extra='<p><a href="kiev-rules.html">Read base Kiev rules first</a>; expansion overrides apply.</p>' if key=='odessa' else ''
  out=f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{title} — printed rules</title><link rel="stylesheet" href="rulebook.css"></head><body><main id="top"><h1>{title}</h1><p>Source reading edition. Extracted text may contain reading-order or formatting errors; consult the original page for tables, diagrams and exact wording. Printed rules are not a statement of active engine adaptations. Use the in-game Terrain Effects and CRT references for active configuration.</p><p><a href="{source.name}">Original PDF</a></p>{extra}<nav aria-label="Printed pages">Pages: {nav}</nav>{index}{cases}{''.join(pages)}<footer>Source SHA-256: {hashlib.sha256(source.read_bytes()).hexdigest()}</footer></main></body></html>'''
+ # Reviewed corrections to the extracted Moscow reading edition. The exact
+ # source HTML fragments are guarded so source/extractor drift fails closed.
+ if key=='b4m':
+  corrections=json.loads((ROOT/'b4m-reading-corrections.json').read_text(encoding='utf8'))
+  for edit in corrections:
+   if out.count(edit['before'])!=1:raise ValueError('Moscow reading correction source changed')
+   out=out.replace(edit['before'],edit['after'],1)
  (ROOT/f'{key}-rules.html').write_text(out,encoding='utf8')

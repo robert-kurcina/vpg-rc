@@ -1,0 +1,122 @@
+[
+  {
+    "before": "<p class=\"rule-case\" id=\"case-3-1-1\">[3.1] The Game Map: The map portrays the area to the west and south of Moscow where the German army made their fateful dash to capture the Russian capital in late 1941. A hexagonal grid is superimposed on the terrain features on the map. These hexagonal spaces (we call them “hexes” for short) define units’ positions just like the squares of a chessboard. The map also shows important terrain such as forests, cities, fortifications, rivers, and railroads.</p>",
+    "after": ""
+  },
+  {
+    "before": "<p class=\"rule-case\" id=\"case-3-2-1\">[3.2] Game Charts &amp; Tables: Various game aids are provided for the players in order to simplify and illustrate certain game functions. These are the Combat Results Table (CRT), the Terrain Effects Chart (TEC), and the Turn Record Track. They are explained where presented in the appropriate rules section.</p>",
+    "after": ""
+  },
+  {
+    "before": "<p class=\"rule-case\" id=\"case-3-3-1\">[3.3] The Playing Pieces: The playing pieces represent actual military units that fought in this campaign. The numbers and symbols on the playing pieces represent the strength and type of unit simulated by the particular playing piece. The playing pieces shall henceforth be referred to as “units.”</p>",
+    "after": ""
+  },
+  {
+    "before": "<p>Explanations of the terrain features are found on the Terrain Effects Chart (TEC).</p>",
+    "after": ""
+  },
+  {
+    "before": "<p>The German Player controls the German</p>",
+    "after": ""
+  },
+  {
+    "before": "<p>(field gray / light gray) units. The Russian</p><p>Player controls the other (red / pink) units.</p>",
+    "after": ""
+  },
+  {
+    "before": "<p>Unit Type is either infantry (foot soldiers)</p><p>or armored (German “panzer” or Russian</p>",
+    "after": ""
+  },
+  {
+    "before": "<p>“tank”).</p>",
+    "after": ""
+  },
+  {
+    "before": "<p>Not included is one 6-sided die needed for resolving battles.</p>",
+    "after": "<p>Not included is one 6-sided die needed for resolving battles.</p><p class=\"rule-case\" id=\"case-3-1-1\">[3.1] The Game Map: The map portrays the area to the west and south of Moscow where the German army made their fateful dash to capture the Russian capital in late 1941. A hexagonal grid is superimposed on the terrain features on the map. These hexagonal spaces (we call them “hexes” for short) define units’ positions just like the squares of a chessboard. The map also shows important terrain such as forests, cities, fortifications, rivers, and railroads.</p><p>Explanations of the terrain features are found on the Terrain Effects Chart (TEC).</p><p class=\"rule-case\" id=\"case-3-2-1\">[3.2] Game Charts &amp; Tables: Various game aids are provided for the players in order to simplify and illustrate certain game functions. These are the Combat Results Table (CRT), the Terrain Effects Chart (TEC), and the Turn Record Track. They are explained where presented in the appropriate rules section.</p><p class=\"rule-case\" id=\"case-3-3-1\">[3.3] The Playing Pieces: The playing pieces represent actual military units that fought in this campaign. The numbers and symbols on the playing pieces represent the strength and type of unit simulated by the particular playing piece. The playing pieces shall henceforth be referred to as “units.”</p><p>The German Player controls the German (field gray / light gray) units. The Russian Player controls the other (red / pink) units.</p>"
+  },
+  {
+    "before": "<p>Corps Army XXX XXXX</p>",
+    "after": "<p>Corps Army XXX XXXX</p><p>Unit Type is either infantry (foot soldiers) or armored (German “panzer” or Russian “tank”).</p>"
+  },
+  {
+    "before": "<p>Text in shaded boxes, like this, provides</p><p>the voice of the game’s designer, who is</p><p>addressing you to explain an idea or</p><p>concept that is not, itself, a Rule or a</p><p>Case.</p>",
+    "after": "<p>Text in shaded boxes, like this, provides the voice of the game’s designer, who is addressing you to explain an idea or concept that is not, itself, a Rule or a Case.</p>"
+  },
+  {
+    "before": "<p>Operation Typhoon was the code name for</p><p>the German Army’s final lunge to capture</p><p>Moscow in late 1941 and is the subject of</p><p>Battle for Moscow. This offensive was</p><p>intended to break the Russian Army and end</p><p>its resistance to German conquest. If</p><p>Operation Typhoon succeeded, it would</p><p>mean the collapse of Russian morale (or so</p><p>the Germans believed). If it failed, it would</p><p>(and did) leave the exhausted Germans open</p><p>to a Russian counteroffensive that would</p><p>push them forever beyond reach of</p><p>Moscow.</p>",
+    "after": "<p>Operation Typhoon was the code name for the German Army’s final lunge to capture Moscow in late 1941 and is the subject of Battle for Moscow. This offensive was intended to break the Russian Army and end its resistance to German conquest. If Operation Typhoon succeeded, it would mean the collapse of Russian morale (or so the Germans believed). If it failed, it would (and did) leave the exhausted Germans open to a Russian counteroffensive that would push them forever beyond reach of Moscow.</p>"
+  },
+  {
+    "before": "<p>Battle for Moscow is played on a map of</p><p>the former Soviet Union where the battle</p><p>was fought. It uses playing pieces that</p><p>represent the actual military units that</p><p>participated in this campaign. Each player</p><p>represents a General commanding an Army</p><p>Group of troops (for the Germans) or a</p><p>Front of Russian Armies. The individual</p><p>German ground units represent corps (from</p><p>the Latin word “corpus,” meaning body) of</p><p>approximately 25,000 soldiers and what</p><p>was left of their equipment after the long</p><p>drive across western Russia in the summer</p><p>of 1941. The Russian ground units are</p><p>armies of approximately 40,000 men each.</p>",
+    "after": "<p>Battle for Moscow is played on a map of the former Soviet Union where the battle was fought. It uses playing pieces that represent the actual military units that participated in this campaign. Each player represents a General commanding an Army Group of troops (for the Germans) or a Front of Russian Armies. The individual German ground units represent corps (from the Latin word “corpus,” meaning body) of approximately 25,000 soldiers and what was left of their equipment after the long drive across western Russia in the summer of 1941. The Russian ground units are armies of approximately 40,000 men each.</p>"
+  },
+  {
+    "before": "<p>One player assumes the role of the Axis</p><p>(Germany) and the other player assumes the</p><p>role of Russia (the Soviet Union). Each</p><p>player moves his units and executes attacks</p><p>on enemy units in turn, attempting to fulfill</p><p>the game’s Victory Conditions.</p>",
+    "after": "<p>One player assumes the role of the Axis (Germany) and the other player assumes the role of Russia (the Soviet Union). Each player moves his units and executes attacks on enemy units in turn, attempting to fulfill the game’s Victory Conditions.</p>"
+  },
+  {
+    "before": "<p>To move from one space (called a “hex” for</p><p>its shape) to another, each unit expends a</p><p>portion of its Movement Allowance.</p>",
+    "after": "<p>To move from one space (called a “hex” for its shape) to another, each unit expends a portion of its Movement Allowance.</p>"
+  },
+  {
+    "before": "<p>Combat is resolved through Battles by</p><p>comparing the total Strength Points of</p><p>adjacent opposing units and expressing the</p><p>comparison as a simplified probability ratio</p><p>(“odds”). A die is rolled, and the outcome</p><p>indicated on the Combat Results Table</p><p>(CRT) is then applied to the units involved.</p>",
+    "after": "<p>Combat is resolved through Battles by comparing the total Strength Points of adjacent opposing units and expressing the comparison as a simplified probability ratio (“odds”). A die is rolled, and the outcome indicated on the Combat Results Table (CRT) is then applied to the units involved.</p>"
+  },
+  {
+    "before": "<p>&amp;</p><h3 id=\"rule-4-0\">",
+    "after": "<h3 id=\"rule-4-0\">"
+  },
+  {
+    "before": "<p>Game Length: There are seven Game</p><p>Turns in the Battle for Moscow.</p>",
+    "after": "<p>Game Length: There are seven Game Turns in the Battle for Moscow.</p>"
+  },
+  {
+    "before": "<p>Time Scale: Each Game Turn represents</p><p>approximately one-to-two weeks of real</p><p>time, depending on the weather. For</p><p>example, turns 3 and 4 each represent</p><p>approximately two weeks because the mud</p><p>slows down the battle.</p>",
+    "after": "<p>Time Scale: Each Game Turn represents approximately one-to-two weeks of real time, depending on the weather. For example, turns 3 and 4 each represent approximately two weeks because the mud slows down the battle.</p>"
+  },
+  {
+    "before": "<p>How the Turns Work: Each turn is divided</p><p>into nine parts or “Phases” that are</p><p>performed in the exact order listed below.</p>",
+    "after": "<p>How the Turns Work: Each turn is divided into nine parts or “Phases” that are performed in the exact order listed below.</p>"
+  },
+  {
+    "before": "<p>All actions in one phase must be finished</p><p>before the next phase can begin.</p>",
+    "after": "<p>All actions in one phase must be finished before the next phase can begin.</p>"
+  },
+  {
+    "before": "<p>The first four phases are the German</p><p>“Player Turn;” the next four are the</p><p>Russian Player Turn.</p>",
+    "after": "<p>The first four phases are the German “Player Turn;” the next four are the Russian Player Turn.</p>"
+  },
+  {
+    "before": "<p>German Player Turn</p><p>1. German Replacement Phase. The</p><p>Germans receive replacements.</p><p>2. German (Special) Panzer Movement</p><p>Phase. All German armor (i.e., panzer)</p><p>units may move.</p><p>3. German Combat Phase. All German</p><p>units may attack.</p><p>4. German Movement Phase. All German</p><p>units may move (including panzers that</p><p>moved in Phase 2).</p>",
+    "after": "<h4>German Player Turn</h4><ol start=\"1\"><li>German Replacement Phase. The Germans receive replacements.</li><li>German (Special) Panzer Movement Phase. All German armor (i.e., panzer) units may move.</li><li>German Combat Phase. All German units may attack.</li><li>German Movement Phase. All German units may move (including panzers that moved in Phase 2).</li></ol>"
+  },
+  {
+    "before": "<p>Russian Player Turn</p><p>5. Russian Replacement Phase. The</p><p>Russians receive replacements.</p><p>6. Russian (Special) Rail Movement</p><p>Phase. All Russian units that begin this</p><p>Phase on a rail line may move along it.</p><p>7. Russian Combat Phase. All Russian</p><p>units may attack.</p><p>8. Russian Movement Phase. All Russian</p><p>units may move (including those that</p><p>moved by rail in Phase 6).</p>",
+    "after": "<h4>Russian Player Turn</h4><ol start=\"5\"><li>Russian Replacement Phase. The Russians receive replacements.</li><li>Russian (Special) Rail Movement Phase. All Russian units that begin this Phase on a rail line may move along it.</li><li>Russian Combat Phase. All Russian units may attack.</li><li>Russian Movement Phase. All Russian units may move (including those that moved by rail in Phase 6).</li></ol>"
+  },
+  {
+    "before": "<p>Administrative</p><p>9. Housekeeping Phase. Advance the</p><p>Game Turn marker or, if the last turn was</p><p>played, stop and determine the winner.</p>",
+    "after": "<h4>Administrative</h4><ol start=\"9\"><li>Housekeeping Phase. Advance the Game Turn marker or, if the last turn was played, stop and determine the winner.</li></ol>"
+  },
+  {
+    "before": "<p>Procedure</p><h4>German Player Turn</h4>",
+    "after": "<h4>Procedure</h4><h4>German Player Turn</h4>"
+  },
+  {
+    "before": "<p>The Germans win if they</p><p>control Moscow at the end of</p><p>Game Turn 7. The Russians</p><p>win if they control Moscow</p><p>and any one other city. Any other result</p><p>(i.e., the Germans control every city but</p><p>Moscow) is a draw. “Control” of a hex</p><p>(e.g., Moscow) is defined in Rule 10.0.</p>",
+    "after": "<p>The Germans win if they control Moscow at the end of Game Turn 7. The Russians win if they control Moscow and any one other city. Any other result (i.e., the Germans control every city but Moscow) is a draw. “Control” of a hex (e.g., Moscow) is defined in Rule 10.0.</p>"
+  },
+  {
+    "before": "<p>1. Place the Game Turn marker</p><p>on the 1 box of the Game Turn</p><p>Track and the Russian 1st</p><p>Shock Army on the 4 box</p><p>(when it arrives as a</p><p>Reinforcement, see 11.0).</p>",
+    "after": "<p>1. Place the Game Turn marker on the 1 box of the Game Turn Track and the Russian 1st Shock Army on the 4 box (when it arrives as a Reinforcement, see 11.0).</p>"
+  },
+  {
+    "before": "<p>*Since all German units begin at full</p><p>strength and are physically placed in their</p><p>starting positions, the German Player</p><p>receives neither Replacements nor Special</p><p>Movement on Game Turn 1.</p>",
+    "after": "<p>*Since all German units begin at full strength and are physically placed in their starting positions, the German Player receives neither Replacements nor Special Movement on Game Turn 1.</p>"
+  },
+  {
+    "before": "<p>Procedure</p><p>1. Place the Game Turn marker on the 1 box of the Game Turn Track and the Russian 1st Shock Army on the 4 box (when it arrives as a Reinforcement, see 11.0).</p><p>2. Take the remaining sixteen Russian armies and flip them to their reduced- strength side. Place one of these reduced-strength Russian units on each hex marked with a red star (). Since all Russian units are the same strength, it doesn’t matter which unit goes where. There should be two Russian units left.</p><p>3. The German Player then sets up one full- strength German unit on each hex containing a black cross (!). The exact setup is very important as it determines what the Germans are capable of doing on Game Turn 1.</p><p>4. The German Player commences the first</p><p>Game Turn starting with his Combat</p><p>Phase*. The game then follows the Sequence of Play (as per Section 4.0) until the last Game Turn is completed.</p>",
+    "after": "<h4>Procedure</h4><ol><li>Place the Game Turn marker on the 1 box of the Game Turn Track and the Russian 1st Shock Army on the 4 box (when it arrives as a Reinforcement, see 11.0).</li><li>Take the remaining sixteen Russian armies and flip them to their reduced- strength side. Place one of these reduced-strength Russian units on each hex marked with a red star (). Since all Russian units are the same strength, it doesn’t matter which unit goes where. There should be two Russian units left.</li><li>The German Player then sets up one full- strength German unit on each hex containing a black cross (!). The exact setup is very important as it determines what the Germans are capable of doing on Game Turn 1.</li><li>The German Player commences the first Game Turn starting with his Combat Phase*. The game then follows the Sequence of Play (as per Section 4.0) until the last Game Turn is completed.</li></ol>"
+  }
+]
