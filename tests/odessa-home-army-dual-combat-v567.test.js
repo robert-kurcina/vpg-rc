@@ -1,0 +1,51 @@
+'use strict';
+/* Actual registered source faces and map. Synthetic battle positioning and
+ * a territory-neutral solver fixture isolate combat math from unverified borders. */
+const assert=require('node:assert/strict');
+const map=require('../maps/kiev-odessa-composite-experimental-v531.json');
+const profile=require('../maps/movement-configs/kiev-odessa-experimental-v531.json');
+const combatPolicy=require('../maps/combat-configs/kiev-odessa-experimental-v531.json');
+const counterConfig=require('../maps/counter-configs/kiev-odessa-experimental-v531.json');
+const opening=require('../games/kiev-odessa/experimental-preview/opening-v531.json').contextStart.state;
+const Geography=require('../core/historical_combat_geography');
+const Consequences=require('../core/historical_combat_consequences');
+const Face=require('../core/historical_counter_face_projection');
+const Retreat=require('../core/historical_forced_retreat');
+const geometry=Geography.create(map,profile,{cityMarkerMode:combatPolicy.cityMarkerMode});
+const evaluator=Consequences.create({map,profile,combatPolicy,counterConfig,geography:geometry});
+const home='kiev-odessa/romanian-home-army',enemy='kiev-front-r03c06',cavalry='kiev-odessa/soviet-cavalry-corps-a',resident='kiev-odessa/romanian-4th-army';
+let n=0;const eq=(a,b,m)=>{assert.deepEqual(a,b,m);n++};const ok=(a,m)=>{assert.ok(a,m);n++};const bad=(f,r)=>{assert.throws(f,r);n++};
+const state=structuredClone(opening);state.units[enemy].hex='0608';const initial=structuredClone(state);
+const defense={state,battle:{defenderHex:'0709',attackers:[enemy],defenders:[home]},actor:'soviet',cursor:{turn:2}};
+for(const [die,result] of [[1,'DR'],[2,'EX'],[3,'EX'],[4,'NE'],[5,'NE'],[6,'AL']])eq(evaluator.previewPostCasualty({...defense,die}).outcome,result,'8 vs 5 is 1:1');
+const noEffect=evaluator.resolve({...defense,die:4});eq(noEffect.event.odds,1);eq(noEffect.event.losses,[]);eq(noEffect.state.units[home],state.units[home]);
+const ex=evaluator.previewPostCasualty({...defense,die:2,choices:{attackerLossIds:[enemy]}});
+eq(ex.losses[0],{unitId:home,removed:false,attackPoints:2,defensePoints:2});
+eq(ex.state.units[home].printedCombatStrength,1);eq(ex.state.units[home].strengthStatus,'printed-reduced');eq(ex.state.units[home].activeFaceId,'odessa-back-r01c04');
+eq(Face.project(ex.state.units[home],counterConfig).printedValues,'1-3-3');
+eq(state,initial,'preview and committed NE do not mutate input');
+const reduced=structuredClone(state);reduced.units[home]=structuredClone(ex.state.units[home]);
+for(const [die,result] of [[1,'DR'],[2,'DR'],[3,'EX'],[4,'EX'],[5,'NE'],[6,'NE']])eq(evaluator.previewPostCasualty({...defense,state:reduced,die}).outcome,result,'8 vs 3 is 2:1');
+const second=evaluator.previewPostCasualty({...defense,state:reduced,die:3,choices:{attackerLossIds:[enemy]}});eq(second.losses[0],{unitId:home,removed:true,attackPoints:1,defensePoints:3});eq(second.state.units[home],undefined);
+const attacking=structuredClone(opening);attacking.units[cavalry].hex='0608';
+const attack={state:attacking,battle:{defenderHex:'0608',attackers:[home],defenders:[cavalry]},actor:'german',cursor:{turn:2}};
+eq(Face.project(attacking.units[home],counterConfig).printedValues,'3-5-3');
+eq(evaluator.previewPostCasualty({...attack,die:6}).outcome,'AL','3 vs 2 uses attack not defense');
+const al=evaluator.resolve({...attack,die:6,choices:{lossUnitId:home}});eq(al.event.losses,[{unitId:home,removed:false,attackPoints:2,defensePoints:2}]);eq(al.state.units[home].printedCombatStrength,1);
+const weak={...attack,state:al.state};eq(evaluator.previewPostCasualty({...weak,die:null}).outcome,'NE','1 vs 2 is automatic NE');bad(()=>evaluator.previewPostCasualty({...weak,die:6}),/No die is rolled/);
+// Use actual geometry, but deliberately omit country policy ONLY in this
+// isolated retreat fixture. No historical country labels or permissions change.
+const neutral=structuredClone(profile);delete neutral.territorialPolicy;
+const solver=Retreat.create({map,profile:neutral,combatPolicy,counterConfig});
+const units={[home]:structuredClone(opening.units[home]),[enemy]:{...opening.units[enemy],hex:'0608'},[resident]:{...opening.units[resident],hex:'0707'}};
+const retreatState={units}, before=structuredClone(retreatState);
+const report=solver.enumerate({state:retreatState,defenderHex:'0709',defenderIds:[home]});
+const route=['0708','0707'];const samePrefix=x=>x.route.slice(0,2).join()===route.join();
+const options=report.perDefender[home].options;
+ok(!options.some(x=>samePrefix(x)&&x.route.length===2),'surviving full Home Army cannot stop on occupied army endpoint');
+ok(options.some(x=>samePrefix(x)&&x.route.length>2),'full Home Army requires overstack extension');
+const damaged={units:{...units,[home]:structuredClone(reduced.units[home])}};
+const r=solver.enumerate({state:damaged,defenderHex:'0709',defenderIds:[home]});
+ok(r.perDefender[home].options.some(x=>samePrefix(x)&&x.route.length===2),'already reduced Home Army dies during EZOC retreat, so cannot overstack');
+eq(retreatState,before);eq(profile.territorialPolicy!==undefined,true,'production profile unchanged');
+console.log('PASS v567 Romanian Home Army dual combat and retreat:',n,'assertions');

@@ -1,0 +1,91 @@
+{
+  "checkpoint": 143,
+  "version": "v377",
+  "title": "Read-only source-aware Soviet reserve redeployment destination diagnostics",
+  "status": "bounded read-only audit completed; published coordinates and original executable eligibility unresolved",
+  "authoritativeRules": {
+    "source": "https://oberlabs.com/b4m/tournamentrules.html",
+    "section": "6.0",
+    "publishedReserveSlots": [
+      "0503",
+      "0608",
+      "0803"
+    ],
+    "registeredSourceBoardSlots": [
+      "0503",
+      "0609",
+      "0804"
+    ],
+    "coordinatesReconciled": false,
+    "sourceExecutableLegalDestinationsObserved": false
+  },
+  "implemented": {
+    "sharedKernel": "core/engine.js: openingRedeploymentAudit",
+    "singleLegalitySource": "core/engine.js: openingRedeploymentOptions",
+    "browser": "core/native_browser_view.js, games/battle-for-moscow/native-preview/index.html",
+    "readOnly": true,
+    "candidatePolicyUnchanged": true,
+    "newLegality": false,
+    "validation": "audit checks reported classifications against common legal action map, fails on disagreement"
+  },
+  "baselineCandidates": {
+    "totalMapCells": 147,
+    "frontlineUnitCount": 11,
+    "frontlineMaxColumn": 5,
+    "reserves": {
+      "s16": {
+        "candidateDestinations": 93,
+        "newEmptyEligible": 92,
+        "currentPosition": 1
+      },
+      "s30": {
+        "candidateDestinations": 93,
+        "newEmptyEligible": 92,
+        "currentPosition": 1
+      },
+      "s43": {
+        "candidateDestinations": 93,
+        "newEmptyEligible": 92,
+        "currentPosition": 1
+      }
+    }
+  },
+  "tests": {
+    "node": "tests/b4m-native-redeployment-audit-v377.test.js",
+    "nodeChecks": 557,
+    "fullMapClassifications": 441,
+    "completeGermanSetupTranspositions": 22,
+    "browser": "scripts/verify-native-redeployment-audit-v377.py",
+    "browserResults": "PASS: selected reserve UI, real map click, file save/restore, Undo, 40 original artwork image assets",
+    "regressions": [
+      "tests/b4m-native-tournament-reference-v375.test.js",
+      "tests/b4m-native-reserve-redeployment-v376.test.js",
+      "tests/b4m-native-interactive-setup-v363.test.js",
+      "tests/b4m-native-combat-v361.test.js",
+      "tests/b4m-native-ai-session-v368.test.js",
+      "tests/b4m-native-continuous-campaign-v364.test.js",
+      "tests/b4m-native-expanded-turn-v366.test.js",
+      "tests/forest-no-shadow-v373.test.js",
+      "tests/shared-render-profiles-v356.test.js",
+      "scripts/verify-campaign-maps.js",
+      "scripts/verify-native-browser-art-v373.py"
+    ]
+  },
+  "unchanged": {
+    "acceptedVisual": "v373 no-drop-shadow, all 5 map exports unchanged",
+    "productionEngine": "legacy-b4m-v1",
+    "tournamentPlayEnabled": false,
+    "tournamentScoring": "disabled, read-only",
+    "gameplaySemantics": "no action or legal move changes"
+  },
+  "openGates": [
+    "Obtain original Oberlabs runtime tournament destination highlights and compare per cell",
+    "Resolve printed-to-host coordinate registration for 0608/0609 and 0803/0804 without changing accepted source map by inference",
+    "Validate east-of-frontline polygon over all cells",
+    "Verify original tournament scoring behavior in the documented overlapping minor-victory branch",
+    "Hosted browser and complete human gameplay parity"
+  ],
+  "artifacts": [
+    "rules/audit/visual/b4m-opening-redeployment-audit-v377.png"
+  ]
+}

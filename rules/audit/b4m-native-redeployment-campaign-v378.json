@@ -1,0 +1,78 @@
+{
+  "status": "PASS",
+  "checkpoint": 144,
+  "version": "v378",
+  "description": "7-turn downstream rules parity from matched post-candidate-redeployment starts (NOT upstream deployment legality)",
+  "parityType": "Equivalent post-setup board injection into local legacy simulator; not independent Oberlabs tournament executable",
+  "certification": "candidate-unverified",
+  "publishedCoordinates": [
+    "0503",
+    "0608",
+    "0803"
+  ],
+  "registeredCoordinates": [
+    "0503",
+    "0609",
+    "0804"
+  ],
+  "gameMode": "standard-victory-only; tournament score read-only",
+  "counters": {
+    "runs": 4,
+    "committedReserveMoves": 5,
+    "sideTurns": 56,
+    "actions": 1052,
+    "declarations": 103,
+    "combat": 103,
+    "moves": 477,
+    "replacements": 145,
+    "reinforcements": 4,
+    "saveRestores": 33,
+    "undoReplays": 65,
+    "parityChecks": 1056,
+    "scoreReads": 56,
+    "scoreAmbiguities": 0,
+    "scoreNeverEnabled": 56
+  },
+  "campaigns": [
+    {
+      "name": "no-change",
+      "seed": 17,
+      "openingMoves": 0,
+      "sideTurns": 14,
+      "battles": 25,
+      "realMoves": 113,
+      "result": "soviet",
+      "stateHash": "3beeaee2338d2054bc64276f6c7c86f6c992dddb2e2062198fbb3bda1e4ed42a"
+    },
+    {
+      "name": "one-northern",
+      "seed": 1941,
+      "openingMoves": 1,
+      "sideTurns": 14,
+      "battles": 27,
+      "realMoves": 125,
+      "result": "soviet",
+      "stateHash": "c54255aa808a785db819883b9bca004d6f714b449911883a96da173c5148ff05"
+    },
+    {
+      "name": "one-southern",
+      "seed": 17,
+      "openingMoves": 1,
+      "sideTurns": 14,
+      "battles": 25,
+      "realMoves": 112,
+      "result": "soviet",
+      "stateHash": "5bd1593739b51b445928dbaefac302cac6b15aaaa236a8f856509733efe66f4d"
+    },
+    {
+      "name": "three-separated",
+      "seed": 1,
+      "openingMoves": 3,
+      "sideTurns": 14,
+      "battles": 26,
+      "realMoves": 127,
+      "result": "soviet",
+      "stateHash": "9ec63252d765afb7cc29aabe3e7a328254dfd542d84d3f9f26c6d447a66ec493"
+    }
+  ]
+}

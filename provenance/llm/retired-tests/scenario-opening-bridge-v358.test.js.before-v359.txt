@@ -1,0 +1,88 @@
+'use strict';
+const A=require('node:assert/strict');
+const fs=require('node:fs');
+const Bridge=require('../core/scenario_opening_bridge');
+const Combat=require('../core/historical_combat_phase');
+const Movement=require('../core/historical_movement_lifecycle');
+const I=require('../core/leningrad_starting_inventory');
+const M=require('../maps/leningrad.json');
+const K=require('../maps/counter-configs/leningrad.json');
+const spec=require('../maps/setup/leningrad.json');
+const profile=require('../maps/movement-configs/leningrad.json');
+const config=require('../maps/phase-configs/leningrad.json');
+const f=require('./fixtures/leningrad-source-setup-v357');
+const clone=v=>JSON.parse(JSON.stringify(v));
+let assertions=0;
+const ok=(x,msg)=>{A.ok(x,msg);assertions++};
+const eq=(a,b,msg)=>{A.deepEqual(a,b,msg);assertions++};
+const throws=(fn,regex)=>{A.throws(fn,regex);assertions++};
+const args={map:M,setupSpec:spec,counterConfig:K,inventory:I,allocation:f.selected,placements:f.placements,
+ phaseConfig:config,movementProfile:profile,phaseFactories:{combat:Combat.create,movement:Movement.create}};
+// The binder knows nothing about a particular scenario, faction, or turn index.
+const source=fs.readFileSync('core/scenario_opening_bridge.js','utf8');
+ok(!/\bleningrad\b|\bmoscow\b|\bgerman\b|\bsoviet\b/i.test(source));
+const bridge=Bridge.create(args);
+eq(bridge.status,'candidate-physical-setup-preview');
+eq(bridge.historicalSetupAuthorized,false);eq(bridge.productionGameActivated,false);
+const opening=bridge.snapshot();
+eq(opening.cursor,{scenarioId:'leningrad',turn:1,index:2,complete:false});
+eq(opening.actor,'german');eq(Object.keys(opening.state.units).length,19);
+eq(bridge.firstPhase().id,'german-combat');
+eq(bridge.setupAudit().printedAnchorDisagreements.map(x=>[x.rulebookPrintedHex,x.renderedNumber]),[['1305','1306'],['1701','1702']]);
+const at0310=Object.values(opening.state.units).find(u=>u.hex==='0310'&&u.owner==='german'&&u.printedCombatStrength===8);
+const defender=Object.values(opening.state.units).find(u=>u.hex==='0309'&&u.owner==='soviet'&&u.printedCombatStrength===3);
+ok(at0310&&defender,'source-backed printed strengths and physical positions are required');
+const original=bridge.controller();
+eq(original.snapshot().status,'awaiting-declarations');
+const battle=[{defenderHex:'0309',attackers:[at0310.id]}];
+const committed=original.commit(battle);
+battle[0].attackers[0]='tampered';
+eq(committed.snapshot().declaration.battles.length,1);
+eq(committed.snapshot().declaration.battles[0].attackers,[at0310.id]);
+eq(committed.snapshot().declaration.battles[0].defenders,[defender.id]);
+const selected=committed.select('0309');
+const evaluated=selected.evaluateSelectedFromMap({strengths:{
+ [at0310.id]:{kind:'infantry',value:at0310.printedCombatStrength},
+ [defender.id]:{kind:'infantry',value:defender.printedCombatStrength}
+}});
+eq(evaluated.attackStrength,8);eq(evaluated.defenseStrength,3);eq(evaluated.rawOdds,2);eq(evaluated.finalOdds,2);
+eq(evaluated.crtResult,null);eq(evaluated.status,'certified-geography-calculation-only');
+throws(()=>selected.recordResolution({die:3}),/not yet source-bound/);
+throws(()=>selected.finish(),/requires source-verified/);
+throws(()=>Movement.create({map:M,profile,config,...bridge.snapshot()}),/Only movement-phase pilot/);
+eq(bridge.snapshot(),opening,'combat activity cannot mutate setup or first cursor');
+eq(bridge.controller().snapshot().status,'awaiting-declarations','separate controllers are detached');
+const mutate=bridge.snapshot();mutate.state.units[at0310.id].hex='9999';mutate.cursor.index=1;
+eq(bridge.snapshot(),opening);
+const mutateAudit=bridge.setupAudit();mutateAudit.printedAnchorDisagreements.length=0;
+eq(bridge.setupAudit().printedAnchorDisagreements.length,2);
+const alteredConfig=clone(config),alteredMap=clone(M),alteredPlacement=clone(f.placements);
+const protectedBridge=Bridge.create({...args,map:alteredMap,phaseConfig:alteredConfig,placements:alteredPlacement});
+alteredConfig.firstTurnStart='german-movement';alteredMap.cells.length=0;alteredPlacement[at0310.id]='9999';
+eq(protectedBridge.firstPhase().id,'german-combat');
+eq(protectedBridge.snapshot().state.units[at0310.id].hex,'0310');
+eq(protectedBridge.controller().snapshot().status,'awaiting-declarations');
+throws(()=>Bridge.create({...args,setupSpec:{...spec,scenarioId:'kiev'}}),/configuration mismatch/);
+throws(()=>Bridge.create({...args,movementProfile:{...profile,id:'kiev'}}),/configuration mismatch/);
+throws(()=>Bridge.create({...args,phaseConfig:{...config,firstTurnStart:'invalid'}}),/first-turn start/);
+const invalidPlacement=clone(f.placements);invalidPlacement[at0310.id]='9999';
+throws(()=>Bridge.create({...args,placements:invalidPlacement}),/Opening setup is invalid/);
+throws(()=>Bridge.create({...args,phaseFactories:{combat:null}}),/Invalid opening phase factory/);
+const missing=Bridge.create({...args,phaseFactories:{movement:Movement.create}});
+throws(()=>missing.controller(),/No verified opening phase controller/);
+const intentionallyChanged=clone(config);intentionallyChanged.firstTurnStart='german-movement';
+const movementFirst=Bridge.create({...args,phaseConfig:intentionallyChanged});
+eq(movementFirst.firstPhase().kind,'movement');
+eq(movementFirst.snapshot().cursor.index,1);
+const movementController=movementFirst.controller();
+eq(movementController.snapshot().state.units[defender.id].hex,defender.hex);
+const moving=Object.values(movementFirst.snapshot().state.units).find(u=>u.owner==='german'&&u.hex==='0210');
+ok(moving);
+const legalMove=movementController.move({unitId:moving.id,path:['0210','0211']});
+ok(legalMove.ok,'the same 19-unit roster must be accepted by the common movement evaluator');
+eq(legalMove.session.snapshot().state.units[moving.id].hex,'0211');
+eq(legalMove.session.undo().session.snapshot().state.units[moving.id].hex,'0210');
+eq(movementFirst.snapshot().state.units[moving.id].hex,'0210');
+// Explicit negative control only: changing the phase config changes the opening
+// and must never be done implicitly for the actual Leningrad first turn.
+console.log(`PASS v358 generic opening bridge: ${assertions} assertions; 19 configured source faces -> actual German combat declaration and map-backed odds; no unauthorized combat resolution/phase advance`);

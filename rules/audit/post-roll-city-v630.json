@@ -1,0 +1,21 @@
+{
+  "checkpoint": 396,
+  "version": "v630",
+  "verified": {
+    "postRollCity": 57,
+    "pilot": 74,
+    "baselineController": 16,
+    "sharedCRT": 301,
+    "missionRng": 42,
+    "knownFallback": 49,
+    "multiAttacker": 33,
+    "browserBundleModules": 62
+  },
+  "scope": "controlled actual-map Kiev positions, both CRTs; validated first-page fixed-die choices",
+  "limitations": [
+    "No pre-roll advance valuation",
+    "No strategic non-city positional evaluation",
+    "No new browser or full campaign",
+    "Fleet commitment ranking unchanged"
+  ]
+}

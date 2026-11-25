@@ -1,0 +1,23 @@
+{
+  "checkpoint": 186,
+  "version": "v420",
+  "browser": "real Chromium with project JS and engine-rendered maps",
+  "games": {
+    "battle-for-moscow": {
+      "counter": 46,
+      "hexHeight": 101.9,
+      "ratio": 0.45142
+    },
+    "arduous": {
+      "counter": 22.65,
+      "hexHeight": 50.16,
+      "ratio": 0.45156
+    },
+    "leningrad": {
+      "counter": 29.95,
+      "hexHeight": 66.358,
+      "ratio": 0.45134
+    }
+  },
+  "pageErrors": []
+}

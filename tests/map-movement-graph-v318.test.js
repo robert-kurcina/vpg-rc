@@ -1,0 +1,24 @@
+'use strict';
+const assert=require('node:assert/strict');
+const G=require('../core/map_movement_graph.js');
+const M=require('../core/movement_rules.js');
+const T=require('../core/terrain_tiles.js');
+let count=0;const check=(v,msg)=>{assert.ok(v,msg);count++};
+const map=require('../maps/leningrad.json');const profile=M.validatedProfile(require('../maps/movement-configs/leningrad.json'));
+const g=G.build(map);check(g.metadata.landHexes>100,'source land hexes');check(g.metadata.railEdges===map.hexCenterRailConnections.length,'source railway count');check(g.edges.length>250,'adjacency');
+const sourceEdges=new Set(map.hexCenterRailConnections.map(x=>[x.from,x.to].sort().join(':')));
+for(const e of g.edges){check(e.verified&&e.source==='leningrad-user-svg-v301','only verified edges');check(!e.rail||sourceEdges.has([e.a,e.b].sort().join(':')),'no generated rails');}
+const validEdge=g.edges.find(e=>!e.impassable&&!e.rail&&g.cells[e.b].terrain==='open');check(!!validEdge,'find open nonrail edge');
+const units={g:{id:'g',owner:'german',nationality:'german',class:'infantry',size:'corps',hex:validEdge.a,mp:4}};
+let ctx={profile,board:g,phase:{owner:'german',kind:'movement'},units,turn:2};
+check(M.move(ctx,{unitId:'g',path:[validEdge.a,validEdge.b]}).ok,'real map movement');
+const illegal=g.edges.find(e=>e.impassable&&g.cells[e.a].verified);check(!!illegal,'source coast blocking exists');
+ctx.units.g.hex=illegal.a;const bad=M.move(ctx,{unitId:'g',path:[illegal.a,illegal.b]});check(!bad.ok,'cannot cross coastline');
+const rail=g.edges.find(e=>e.rail);check(!!rail,'authoritative rail exists');check(g.cells[rail.a].rail&&g.cells[rail.b].rail,'rail endpoint presence');
+check(G.build(require('../maps/arduous.json')).metadata.riverEdges===45,'Arduous confirmed river graph');
+assert.throws(()=>G.build(require('../maps/kiev.json')),/not-gameplay-certified/);
+assert.throws(()=>G.build(require('../maps/odessa-extension.json')),/invalid-map/);
+count+=3;
+const modified=structuredClone(map);modified.hexCenterRailConnections[0].status='source-visual-candidate';assert.throws(()=>G.build(modified),/unverified-rail-link/);count++;
+const changed=structuredClone(map);changed.cells[0].terrainStatus='provisional';assert.throws(()=>G.build(changed),/unverified-terrain/);count++;
+console.log('PASS movement graph',count,'assertions; hexes',Object.keys(g.cells).length,'edges',g.edges.length,'rails',g.metadata.railEdges);

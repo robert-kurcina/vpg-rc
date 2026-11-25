@@ -1,0 +1,338 @@
+{
+  "schemaVersion": 1,
+  "scope": "non-mutating parity and source-facing registry audit",
+  "source": "maps/leningrad.json",
+  "mapSHA256": "98c310f68da2b7d78a051999bb99ab7c5d75f34034db17075fa13f81de1bfa1a",
+  "geometry": {
+    "topology": "even-q-flat",
+    "columnParityDown": "odd",
+    "calibration": {
+      "originX": 57.71365,
+      "originY": 54.8483,
+      "pitchX": 56.331,
+      "pitchY": 66.358,
+      "staggerY": 33.179
+    },
+    "calibrationStatus": "source-authoritative-leningrad-main-svg-grid",
+    "hexNumbers": {
+      "format": "column-row-4",
+      "placement": "nw",
+      "fontSize": 8,
+      "strokeWidth": 2,
+      "printedColumnOffset": -1,
+      "printedRowOffsetsByColumn": {
+        "2": -1
+      }
+    }
+  },
+  "cellCount": 197,
+  "numberedCount": 186,
+  "invalidPrintedCoordinates": [
+    {
+      "internal": "0101",
+      "printed": "0001",
+      "reason": "zero-or-negative-coordinate"
+    },
+    {
+      "internal": "0102",
+      "printed": "0002",
+      "reason": "zero-or-negative-coordinate"
+    },
+    {
+      "internal": "0103",
+      "printed": "0003",
+      "reason": "zero-or-negative-coordinate"
+    },
+    {
+      "internal": "0104",
+      "printed": "0004",
+      "reason": "zero-or-negative-coordinate"
+    },
+    {
+      "internal": "0105",
+      "printed": "0005",
+      "reason": "zero-or-negative-coordinate"
+    },
+    {
+      "internal": "0106",
+      "printed": "0006",
+      "reason": "zero-or-negative-coordinate"
+    },
+    {
+      "internal": "0107",
+      "printed": "0007",
+      "reason": "zero-or-negative-coordinate"
+    },
+    {
+      "internal": "0108",
+      "printed": "0008",
+      "reason": "zero-or-negative-coordinate"
+    },
+    {
+      "internal": "0109",
+      "printed": "0009",
+      "reason": "zero-or-negative-coordinate"
+    },
+    {
+      "internal": "0110",
+      "printed": "0010",
+      "reason": "zero-or-negative-coordinate"
+    },
+    {
+      "internal": "0201",
+      "printed": "0100",
+      "reason": "zero-or-negative-coordinate"
+    }
+  ],
+  "duplicatePrintedCoordinates": [],
+  "zeroColumnInternalCells": [
+    "0101",
+    "0102",
+    "0103",
+    "0104",
+    "0105",
+    "0106",
+    "0107",
+    "0108",
+    "0109",
+    "0110"
+  ],
+  "parity": {
+    "physicalFirstRowSample": [
+      {
+        "internal": "0101",
+        "printed": "0001",
+        "centerY": 88.026,
+        "column": 1
+      },
+      {
+        "internal": "0201",
+        "printed": "0100",
+        "centerY": 54.848,
+        "column": 2
+      },
+      {
+        "internal": "0301",
+        "printed": "0201",
+        "centerY": 88.026,
+        "column": 3
+      },
+      {
+        "internal": "0401",
+        "printed": "0301",
+        "centerY": 54.848,
+        "column": 4
+      },
+      {
+        "internal": "0501",
+        "printed": "0401",
+        "centerY": 88.026,
+        "column": 5
+      },
+      {
+        "internal": "0601",
+        "printed": "0501",
+        "centerY": 54.848,
+        "column": 6
+      }
+    ],
+    "physicalEvenColumnsHigher": true,
+    "sourceFacingEvenColumnsHigher": false,
+    "geometryParitySetting": "odd"
+  },
+  "pairwiseFirstRowY": [
+    {
+      "internal": [
+        "0101",
+        "0201"
+      ],
+      "printed": [
+        "0001",
+        "0100"
+      ],
+      "differenceY": -33.178
+    },
+    {
+      "internal": [
+        "0201",
+        "0301"
+      ],
+      "printed": [
+        "0100",
+        "0201"
+      ],
+      "differenceY": 33.178
+    },
+    {
+      "internal": [
+        "0301",
+        "0401"
+      ],
+      "printed": [
+        "0201",
+        "0301"
+      ],
+      "differenceY": -33.178
+    },
+    {
+      "internal": [
+        "0401",
+        "0501"
+      ],
+      "printed": [
+        "0301",
+        "0401"
+      ],
+      "differenceY": 33.178
+    },
+    {
+      "internal": [
+        "0501",
+        "0601"
+      ],
+      "printed": [
+        "0401",
+        "0501"
+      ],
+      "differenceY": -33.178
+    },
+    {
+      "internal": [
+        "0601",
+        "0701"
+      ],
+      "printed": [
+        "0501",
+        "0601"
+      ],
+      "differenceY": 33.178
+    },
+    {
+      "internal": [
+        "0701",
+        "0801"
+      ],
+      "printed": [
+        "0601",
+        "0701"
+      ],
+      "differenceY": -33.178
+    },
+    {
+      "internal": [
+        "0801",
+        "0901"
+      ],
+      "printed": [
+        "0701",
+        "0801"
+      ],
+      "differenceY": 33.178
+    }
+  ],
+  "landmarks": {
+    "leningrad": {
+      "internal": "1701",
+      "expected": "1601",
+      "actual": "1601",
+      "matches": true
+    },
+    "liepaja": {
+      "internal": "0208",
+      "expected": "0107",
+      "actual": "0107",
+      "matches": true
+    },
+    "riga": {
+      "internal": "0707",
+      "expected": "0607",
+      "actual": "0607",
+      "matches": true
+    }
+  },
+  "currentDeployment": [
+    {
+      "kind": "star",
+      "faction": "soviet",
+      "internal": "0208",
+      "printed": "0107"
+    },
+    {
+      "kind": "cross",
+      "faction": "german",
+      "internal": "0209",
+      "printed": "0108"
+    },
+    {
+      "kind": "star",
+      "faction": "soviet",
+      "internal": "0309",
+      "printed": "0209"
+    },
+    {
+      "kind": "cross",
+      "faction": "german",
+      "internal": "0310",
+      "printed": "0210"
+    },
+    {
+      "kind": "cross",
+      "faction": "german",
+      "internal": "0311",
+      "printed": "0211"
+    },
+    {
+      "kind": "star",
+      "faction": "soviet",
+      "internal": "0409",
+      "printed": "0309"
+    },
+    {
+      "kind": "cross",
+      "faction": "german",
+      "internal": "0410",
+      "printed": "0310"
+    },
+    {
+      "kind": "star",
+      "faction": "soviet",
+      "internal": "0510",
+      "printed": "0410"
+    },
+    {
+      "kind": "cross",
+      "faction": "german",
+      "internal": "0511",
+      "printed": "0411"
+    },
+    {
+      "kind": "star",
+      "faction": "soviet",
+      "internal": "0610",
+      "printed": "0510"
+    }
+  ],
+  "alternatives": {
+    "current": {
+      "invalid": 11,
+      "duplicates": 0,
+      "complete": false,
+      "leningradLabel": "1601",
+      "southwestCellLabel": "0411"
+    },
+    "removePrintedOffsets": {
+      "invalid": 0,
+      "duplicates": 0,
+      "complete": true,
+      "leningradLabel": "1701",
+      "southwestCellLabel": "0511"
+    }
+  },
+  "readyForHistoricalRekey": false,
+  "blockers": [
+    "Source-facing printed coordinates are not a complete positive, unique bijection",
+    "Internal first column produces invalid source-facing 00xx printed coordinates",
+    "Source-facing numbered grid does not implement Even Column High"
+  ],
+  "limitation": "No source-backed global mapping from original printed hexes to the current 197 physical cells has been established; do not flip parity, renumber cells, alter geography, or use a marker shift as a substitute."
+}

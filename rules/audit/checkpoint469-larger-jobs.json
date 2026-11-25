@@ -1,0 +1,44 @@
+[
+  {
+    "id": "arduous-advanced-historical-79",
+    "scenario": "arduous",
+    "variant": "advanced",
+    "seed": 79,
+    "victoryMode": "historical"
+  },
+  {
+    "id": "arduous-advanced-graduated-79",
+    "scenario": "arduous",
+    "variant": "advanced",
+    "seed": 79,
+    "victoryMode": "graduated"
+  },
+  {
+    "id": "kiev-advanced-historical-79",
+    "scenario": "kiev",
+    "variant": "advanced",
+    "seed": 79,
+    "victoryMode": "historical"
+  },
+  {
+    "id": "kiev-advanced-graduated-79",
+    "scenario": "kiev",
+    "variant": "advanced",
+    "seed": 79,
+    "victoryMode": "graduated"
+  },
+  {
+    "id": "kiev-odessa-advanced-historical-79",
+    "scenario": "kiev-odessa",
+    "variant": "advanced",
+    "seed": 79,
+    "victoryMode": "historical"
+  },
+  {
+    "id": "kiev-odessa-advanced-graduated-79",
+    "scenario": "kiev-odessa",
+    "variant": "advanced",
+    "seed": 79,
+    "victoryMode": "graduated"
+  }
+]

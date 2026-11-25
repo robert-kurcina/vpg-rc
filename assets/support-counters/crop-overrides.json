@@ -1,0 +1,17 @@
+{
+  "description": "Fleet Support UI thumbnail-only crops from original Odessa front sheet, excluding printed left strip while including the complete red counter. Original gameplay face geometry is unchanged.",
+  "faces": {
+    "odessa-front-r01c01": [
+      20,
+      7,
+      71,
+      69
+    ],
+    "odessa-front-r02c01": [
+      20,
+      76,
+      71,
+      70
+    ]
+  }
+}

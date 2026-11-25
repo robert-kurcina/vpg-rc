@@ -1,0 +1,13 @@
+'use strict';
+const assert=require('node:assert/strict');
+const T=require('../core/terrain_tiles');
+const C=require('../maps/composer');
+const base=require('../maps/kiev.json'),ext=require('../maps/odessa-extension.json');
+const svg=T.svgMap(C.compose(base,ext),{id:'kiev-odessa'});
+const cross=svg.match(/<rect class="german-deployment-backplate"[^>]*>/);
+const star=svg.match(/<path class="deployment-halo"[^>]*>/);
+assert(cross&&star,'missing cross backing or Soviet star');
+assert.equal(Number(cross[0].match(/fill-opacity="([^"]+)"/)[1]),Number(star[0].match(/stroke-opacity="([^"]+)"/)[1]));
+assert.equal(Number(cross[0].match(/fill-opacity="([^"]+)"/)[1]),0.5);
+assert.equal((svg.match(/data-deployment-hex=/g)||[]).length,36);
+console.log('PASS v294: German white backing matches Soviet star white halo alpha (50%)');

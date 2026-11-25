@@ -1,0 +1,3786 @@
+{
+  "schemaVersion": 1,
+  "type": "rail-bisector-crossing-diagnostic",
+  "maps": {
+    "arduous": {
+      "sourceMapSha256": "0cf849eaf683cd86443d244f20e5d03f8dc18ba354f88861d039307da162742d",
+      "candidateCount": 85,
+      "bisectorCrossings": 85,
+      "finiteHexsideAssessmentCounts": {
+        "on-segment": 85,
+        "borderline": 0,
+        "outside-segment": 0,
+        "no-crossing": 0
+      },
+      "missingBisectorCrossings": [],
+      "crossingsOffsetGt10Px": [],
+      "links": [
+        {
+          "from": "0106",
+          "to": "0207",
+          "sourceSvgIds": [
+            "path373"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path373",
+            "intersection": [
+              159.362,
+              324.933
+            ],
+            "offsetPx": 0.015,
+            "absoluteOffsetPx": 0.015
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 14.231,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "0109",
+          "to": "0209",
+          "sourceSvgIds": [
+            "path372"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path372",
+            "intersection": [
+              159.593,
+              450.697
+            ],
+            "offsetPx": 0.438,
+            "absoluteOffsetPx": 0.438
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 14.231,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "0110",
+          "to": "0211",
+          "sourceSvgIds": [
+            "path370"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path370",
+            "intersection": [
+              157.925,
+              528.005
+            ],
+            "offsetPx": 2.84,
+            "absoluteOffsetPx": 2.84
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 14.231,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "0205",
+          "to": "0305",
+          "sourceSvgIds": [
+            "path374"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path374",
+            "intersection": [
+              204.061,
+              245.871
+            ],
+            "offsetPx": -4.424,
+            "absoluteOffsetPx": 4.424
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 14.231,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "0207",
+          "to": "0208",
+          "sourceSvgIds": [
+            "path373"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path373",
+            "intersection": [
+              182.728,
+              362.54
+            ],
+            "offsetPx": -2.138,
+            "absoluteOffsetPx": 2.138
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 14.48,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "0208",
+          "to": "0308",
+          "sourceSvgIds": [
+            "path373"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path373",
+            "intersection": [
+              204.608,
+              395.426
+            ],
+            "offsetPx": -5.499,
+            "absoluteOffsetPx": 5.499
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 14.231,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "0209",
+          "to": "0308",
+          "sourceSvgIds": [
+            "path372"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path372",
+            "intersection": [
+              200.123,
+              422.385
+            ],
+            "offsetPx": -3.316,
+            "absoluteOffsetPx": 3.316
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 14.231,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "0210",
+          "to": "0211",
+          "sourceSvgIds": [
+            "path369"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path369",
+            "intersection": [
+              184.113,
+              513.02
+            ],
+            "offsetPx": -3.523,
+            "absoluteOffsetPx": 3.523
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 14.48,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "0210",
+          "to": "0309",
+          "sourceSvgIds": [
+            "path369"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path369",
+            "intersection": [
+              202.966,
+              477.357
+            ],
+            "offsetPx": 2.273,
+            "absoluteOffsetPx": 2.273
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 14.231,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "0211",
+          "to": "0310",
+          "sourceSvgIds": [
+            "path377"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path377",
+            "intersection": [
+              199.68,
+              521.955
+            ],
+            "offsetPx": -4.187,
+            "absoluteOffsetPx": 4.187
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 14.231,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "0305",
+          "to": "0405",
+          "sourceSvgIds": [
+            "path374"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path374",
+            "intersection": [
+              243.066,
+              247.677
+            ],
+            "offsetPx": -2.327,
+            "absoluteOffsetPx": 2.327
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 14.231,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "0308",
+          "to": "0309",
+          "sourceSvgIds": [
+            "path369"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path369",
+            "intersection": [
+              220.813,
+              437.78
+            ],
+            "offsetPx": 2.217,
+            "absoluteOffsetPx": 2.217
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 14.48,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "0308",
+          "to": "0408",
+          "sourceSvgIds": [
+            "path367"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path367",
+            "intersection": [
+              243.743,
+              399.302
+            ],
+            "offsetPx": -0.997,
+            "absoluteOffsetPx": 0.997
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 14.231,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "0308",
+          "to": "0409",
+          "sourceSvgIds": [
+            "path368"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path368",
+            "intersection": [
+              244.837,
+              424.247
+            ],
+            "offsetPx": -1.153,
+            "absoluteOffsetPx": 1.153
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 14.231,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "0310",
+          "to": "0410",
+          "sourceSvgIds": [
+            "path377"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path377",
+            "intersection": [
+              242.274,
+              497.136
+            ],
+            "offsetPx": -3.884,
+            "absoluteOffsetPx": 3.884
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 14.231,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "0405",
+          "to": "0505",
+          "sourceSvgIds": [
+            "path375"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path375",
+            "intersection": [
+              287.501,
+              248.308
+            ],
+            "offsetPx": -1.593,
+            "absoluteOffsetPx": 1.593
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 14.231,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "0407",
+          "to": "0408",
+          "sourceSvgIds": [
+            "path367"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path367",
+            "intersection": [
+              268.853,
+              362.54
+            ],
+            "offsetPx": -3.383,
+            "absoluteOffsetPx": 3.383
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 14.48,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "0407",
+          "to": "0506",
+          "sourceSvgIds": [
+            "path367"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path367",
+            "intersection": [
+              283.632,
+              319.745
+            ],
+            "offsetPx": -6.012,
+            "absoluteOffsetPx": 6.012
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 14.231,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "0409",
+          "to": "0508",
+          "sourceSvgIds": [
+            "path368"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path368",
+            "intersection": [
+              286.426,
+              424.793
+            ],
+            "offsetPx": -0.519,
+            "absoluteOffsetPx": 0.519
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 14.231,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "0410",
+          "to": "0509",
+          "sourceSvgIds": [
+            "path377"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path377",
+            "intersection": [
+              285.416,
+              473.245
+            ],
+            "offsetPx": -2.503,
+            "absoluteOffsetPx": 2.503
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 14.231,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "0410",
+          "to": "0510",
+          "sourceSvgIds": [
+            "path378"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path378",
+            "intersection": [
+              283.727,
+              505.493
+            ],
+            "offsetPx": 5.823,
+            "absoluteOffsetPx": 5.823
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 14.231,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "0505",
+          "to": "0606",
+          "sourceSvgIds": [
+            "path375"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path375",
+            "intersection": [
+              329.034,
+              274.922
+            ],
+            "offsetPx": 0.188,
+            "absoluteOffsetPx": 0.188
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 14.231,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "0506",
+          "to": "0606",
+          "sourceSvgIds": [
+            "path367"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path367",
+            "intersection": [
+              327.562,
+              297.187
+            ],
+            "offsetPx": -3.082,
+            "absoluteOffsetPx": 3.082
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 14.231,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "0508",
+          "to": "0609",
+          "sourceSvgIds": [
+            "path368"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path368",
+            "intersection": [
+              327.244,
+              428.431
+            ],
+            "offsetPx": 3.707,
+            "absoluteOffsetPx": 3.707
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 14.231,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "0509",
+          "to": "0609",
+          "sourceSvgIds": [
+            "path377"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path377",
+            "intersection": [
+              329.392,
+              450.764
+            ],
+            "offsetPx": 0.516,
+            "absoluteOffsetPx": 0.516
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 14.231,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "0510",
+          "to": "0611",
+          "sourceSvgIds": [
+            "path378"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path378",
+            "intersection": [
+              329.213,
+              525.419
+            ],
+            "offsetPx": -0.164,
+            "absoluteOffsetPx": 0.164
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 14.231,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "0606",
+          "to": "0705",
+          "sourceSvgIds": [
+            "path376"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path376",
+            "intersection": [
+              370.238,
+              272.506
+            ],
+            "offsetPx": -2.618,
+            "absoluteOffsetPx": 2.618
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 14.231,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "0606",
+          "to": "0706",
+          "sourceSvgIds": [
+            "path364"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path364",
+            "intersection": [
+              372.052,
+              299.025
+            ],
+            "offsetPx": -0.947,
+            "absoluteOffsetPx": 0.947
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 14.231,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "0609",
+          "to": "0610",
+          "sourceSvgIds": [
+            "path366"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path366",
+            "intersection": [
+              347.198,
+              462.86
+            ],
+            "offsetPx": 3.152,
+            "absoluteOffsetPx": 3.152
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 14.48,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "0609",
+          "to": "0708",
+          "sourceSvgIds": [
+            "path365"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path365",
+            "intersection": [
+              374.573,
+              430.322
+            ],
+            "offsetPx": 5.903,
+            "absoluteOffsetPx": 5.903
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 14.231,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "0610",
+          "to": "0611",
+          "sourceSvgIds": [
+            "path366"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path366",
+            "intersection": [
+              350.051,
+              513.02
+            ],
+            "offsetPx": 0.299,
+            "absoluteOffsetPx": 0.299
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 14.48,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "0611",
+          "to": "0710",
+          "sourceSvgIds": [
+            "path379"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path379",
+            "intersection": [
+              369.842,
+              522.637
+            ],
+            "offsetPx": -3.396,
+            "absoluteOffsetPx": 3.396
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 14.231,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "0705",
+          "to": "0805",
+          "sourceSvgIds": [
+            "path376"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path376",
+            "intersection": [
+              411.325,
+              245.137
+            ],
+            "offsetPx": -5.277,
+            "absoluteOffsetPx": 5.277
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 14.231,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "0706",
+          "to": "0807",
+          "sourceSvgIds": [
+            "path364"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path364",
+            "intersection": [
+              411.475,
+              329.21
+            ],
+            "offsetPx": 4.983,
+            "absoluteOffsetPx": 4.983
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 14.231,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "0708",
+          "to": "0808",
+          "sourceSvgIds": [
+            "path365"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path365",
+            "intersection": [
+              413.205,
+              398.797
+            ],
+            "offsetPx": -1.583,
+            "absoluteOffsetPx": 1.583
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 14.231,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "0710",
+          "to": "0811",
+          "sourceSvgIds": [
+            "path379"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path379",
+            "intersection": [
+              413.673,
+              526.13
+            ],
+            "offsetPx": 0.662,
+            "absoluteOffsetPx": 0.662
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 14.231,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "0803",
+          "to": "0804",
+          "sourceSvgIds": [
+            "path376"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path376",
+            "intersection": [
+              433.864,
+              161.9
+            ],
+            "offsetPx": 1.366,
+            "absoluteOffsetPx": 1.366
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 14.48,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "0804",
+          "to": "0805",
+          "sourceSvgIds": [
+            "path376"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path376",
+            "intersection": [
+              430.808,
+              212.06
+            ],
+            "offsetPx": 4.422,
+            "absoluteOffsetPx": 4.422
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 14.48,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "0807",
+          "to": "0907",
+          "sourceSvgIds": [
+            "path364"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path364",
+            "intersection": [
+              455.247,
+              352.036
+            ],
+            "offsetPx": 2.365,
+            "absoluteOffsetPx": 2.365
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 14.231,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "0808",
+          "to": "0907",
+          "sourceSvgIds": [
+            "path365"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path365",
+            "intersection": [
+              456.612,
+              375.354
+            ],
+            "offsetPx": 0.318,
+            "absoluteOffsetPx": 0.318
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 14.231,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "0811",
+          "to": "0910",
+          "sourceSvgIds": [
+            "path379"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path379",
+            "intersection": [
+              456.4,
+              525.476
+            ],
+            "offsetPx": -0.098,
+            "absoluteOffsetPx": 0.098
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 14.231,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "0907",
+          "to": "1007",
+          "sourceSvgIds": [
+            "path352"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path352",
+            "intersection": [
+              499.873,
+              351.664
+            ],
+            "offsetPx": 1.933,
+            "absoluteOffsetPx": 1.933
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 14.231,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "0907",
+          "to": "1008",
+          "sourceSvgIds": [
+            "path363"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path363",
+            "intersection": [
+              501.283,
+              371.031
+            ],
+            "offsetPx": -4.703,
+            "absoluteOffsetPx": 4.703
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 14.231,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "0910",
+          "to": "1010",
+          "sourceSvgIds": [
+            "path379"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path379",
+            "intersection": [
+              502.72,
+              506.96
+            ],
+            "offsetPx": 7.527,
+            "absoluteOffsetPx": 7.527
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 14.231,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "1007",
+          "to": "1106",
+          "sourceSvgIds": [
+            "path352"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path352",
+            "intersection": [
+              539.514,
+              321.846
+            ],
+            "offsetPx": -3.57,
+            "absoluteOffsetPx": 3.57
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 14.231,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "1008",
+          "to": "1108",
+          "sourceSvgIds": [
+            "path363"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path363",
+            "intersection": [
+              544.576,
+              394.667
+            ],
+            "offsetPx": -6.38,
+            "absoluteOffsetPx": 6.38
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 14.231,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "1010",
+          "to": "1110",
+          "sourceSvgIds": [
+            "path379"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path379",
+            "intersection": [
+              538.859,
+              504.662
+            ],
+            "offsetPx": 4.857,
+            "absoluteOffsetPx": 4.857
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 14.231,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "1102",
+          "to": "1203",
+          "sourceSvgIds": [
+            "path346"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path346",
+            "intersection": [
+              581.144,
+              128.724
+            ],
+            "offsetPx": 5.162,
+            "absoluteOffsetPx": 5.162
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 14.231,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "1106",
+          "to": "1206",
+          "sourceSvgIds": [
+            "path352"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path352",
+            "intersection": [
+              583.436,
+              299.274
+            ],
+            "offsetPx": -0.657,
+            "absoluteOffsetPx": 0.657
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 14.231,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "1108",
+          "to": "1209",
+          "sourceSvgIds": [
+            "path363"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path363",
+            "intersection": [
+              585.04,
+              423.091
+            ],
+            "offsetPx": -2.496,
+            "absoluteOffsetPx": 2.496
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 14.231,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "1110",
+          "to": "1211",
+          "sourceSvgIds": [
+            "path379"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path379",
+            "intersection": [
+              586.493,
+              520.952
+            ],
+            "offsetPx": -5.352,
+            "absoluteOffsetPx": 5.352
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 14.231,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "1203",
+          "to": "1303",
+          "sourceSvgIds": [
+            "path347"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path347",
+            "intersection": [
+              626.789,
+              148.38
+            ],
+            "offsetPx": -1.139,
+            "absoluteOffsetPx": 1.139
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 14.231,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "1206",
+          "to": "1305",
+          "sourceSvgIds": [
+            "path352"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path352",
+            "intersection": [
+              625.285,
+              273.194
+            ],
+            "offsetPx": -1.819,
+            "absoluteOffsetPx": 1.819
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 14.231,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "1209",
+          "to": "1309",
+          "sourceSvgIds": [
+            "path363"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path363",
+            "intersection": [
+              622.714,
+              456.235
+            ],
+            "offsetPx": 6.871,
+            "absoluteOffsetPx": 6.871
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 14.231,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "1211",
+          "to": "1310",
+          "sourceSvgIds": [
+            "path379"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path379",
+            "intersection": [
+              622.883,
+              519.93
+            ],
+            "offsetPx": -6.54,
+            "absoluteOffsetPx": 6.54
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 14.231,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "1303",
+          "to": "1404",
+          "sourceSvgIds": [
+            "path347"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path347",
+            "intersection": [
+              664.777,
+              180.995
+            ],
+            "offsetPx": 7.614,
+            "absoluteOffsetPx": 7.614
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 14.231,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "1305",
+          "to": "1405",
+          "sourceSvgIds": [
+            "path352"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path352",
+            "intersection": [
+              667.89,
+              248.394
+            ],
+            "offsetPx": -1.494,
+            "absoluteOffsetPx": 1.494
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 14.231,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "1309",
+          "to": "1410",
+          "sourceSvgIds": [
+            "path363"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path363",
+            "intersection": [
+              665.375,
+              480.943
+            ],
+            "offsetPx": 6.438,
+            "absoluteOffsetPx": 6.438
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 14.231,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "1310",
+          "to": "1411",
+          "sourceSvgIds": [
+            "path379"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path379",
+            "intersection": [
+              668.421,
+              525.947
+            ],
+            "offsetPx": 0.449,
+            "absoluteOffsetPx": 0.449
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 14.231,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "1402",
+          "to": "1403",
+          "sourceSvgIds": [
+            "path349"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path349",
+            "intersection": [
+              687.358,
+              111.74
+            ],
+            "offsetPx": 2.512,
+            "absoluteOffsetPx": 2.512
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 14.48,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "1402",
+          "to": "1501",
+          "sourceSvgIds": [
+            "path355"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path355",
+            "intersection": [
+              712.206,
+              76.008
+            ],
+            "offsetPx": 2.193,
+            "absoluteOffsetPx": 2.193
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 14.231,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "1403",
+          "to": "1404",
+          "sourceSvgIds": [
+            "path349"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path349",
+            "intersection": [
+              690.957,
+              161.9
+            ],
+            "offsetPx": -1.087,
+            "absoluteOffsetPx": 1.087
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 14.48,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "1404",
+          "to": "1405",
+          "sourceSvgIds": [
+            "path350"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path350",
+            "intersection": [
+              689.929,
+              212.06
+            ],
+            "offsetPx": -0.059,
+            "absoluteOffsetPx": 0.059
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 14.48,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "1404",
+          "to": "1504",
+          "sourceSvgIds": [
+            "path354"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path354",
+            "intersection": [
+              711.026,
+              199.628
+            ],
+            "offsetPx": 0.126,
+            "absoluteOffsetPx": 0.126
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 14.231,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "1405",
+          "to": "1505",
+          "sourceSvgIds": [
+            "path351"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path351",
+            "intersection": [
+              707.556,
+              255.661
+            ],
+            "offsetPx": 6.947,
+            "absoluteOffsetPx": 6.947
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 14.231,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "1408",
+          "to": "1409",
+          "sourceSvgIds": [
+            "path360"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path360",
+            "intersection": [
+              690.235,
+              412.7
+            ],
+            "offsetPx": -0.365,
+            "absoluteOffsetPx": 0.365
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 14.48,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "1408",
+          "to": "1507",
+          "sourceSvgIds": [
+            "path360"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path360",
+            "intersection": [
+              710.569,
+              374.198
+            ],
+            "offsetPx": -1.024,
+            "absoluteOffsetPx": 1.024
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 14.231,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "1409",
+          "to": "1410",
+          "sourceSvgIds": [
+            "path360"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path360",
+            "intersection": [
+              689.73,
+              462.86
+            ],
+            "offsetPx": 0.14,
+            "absoluteOffsetPx": 0.14
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 14.48,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "1410",
+          "to": "1510",
+          "sourceSvgIds": [
+            "path361"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path361",
+            "intersection": [
+              711.465,
+              499.845
+            ],
+            "offsetPx": -0.737,
+            "absoluteOffsetPx": 0.737
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 14.231,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "1411",
+          "to": "1510",
+          "sourceSvgIds": [
+            "path379"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path379",
+            "intersection": [
+              709.97,
+              523.664
+            ],
+            "offsetPx": -2.202,
+            "absoluteOffsetPx": 2.202
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 14.231,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "1501",
+          "to": "1602",
+          "sourceSvgIds": [
+            "path355"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path355",
+            "intersection": [
+              751.944,
+              76.804
+            ],
+            "offsetPx": 3.117,
+            "absoluteOffsetPx": 3.117
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 14.231,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "1504",
+          "to": "1605",
+          "sourceSvgIds": [
+            "path354"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path354",
+            "intersection": [
+              752.397,
+              226.518
+            ],
+            "offsetPx": 2.228,
+            "absoluteOffsetPx": 2.228
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 14.231,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "1505",
+          "to": "1506",
+          "sourceSvgIds": [
+            "path359"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path359",
+            "intersection": [
+              732.607,
+              287.3
+            ],
+            "offsetPx": -0.297,
+            "absoluteOffsetPx": 0.297
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 14.48,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "1505",
+          "to": "1605",
+          "sourceSvgIds": [
+            "path353"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path353",
+            "intersection": [
+              754.539,
+              251.388
+            ],
+            "offsetPx": 1.983,
+            "absoluteOffsetPx": 1.983
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 14.231,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "1506",
+          "to": "1507",
+          "sourceSvgIds": [
+            "path359"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path359",
+            "intersection": [
+              731.578,
+              337.46
+            ],
+            "offsetPx": 0.732,
+            "absoluteOffsetPx": 0.732
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 14.48,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "1510",
+          "to": "1610",
+          "sourceSvgIds": [
+            "path362"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path362",
+            "intersection": [
+              754.608,
+              502.304
+            ],
+            "offsetPx": 2.119,
+            "absoluteOffsetPx": 2.119
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 14.231,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "1602",
+          "to": "1701",
+          "sourceSvgIds": [
+            "path355"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path355",
+            "intersection": [
+              796.309,
+              74.693
+            ],
+            "offsetPx": 0.666,
+            "absoluteOffsetPx": 0.666
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 14.231,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "1605",
+          "to": "1704",
+          "sourceSvgIds": [
+            "path353"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path353",
+            "intersection": [
+              793.587,
+              220.567
+            ],
+            "offsetPx": -4.684,
+            "absoluteOffsetPx": 4.684
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 14.231,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "1610",
+          "to": "1709",
+          "sourceSvgIds": [
+            "path362"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path362",
+            "intersection": [
+              792.993,
+              470.362
+            ],
+            "offsetPx": -5.852,
+            "absoluteOffsetPx": 5.852
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 14.231,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "1701",
+          "to": "1802",
+          "sourceSvgIds": [
+            "path355"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path355",
+            "intersection": [
+              836.882,
+              76.705
+            ],
+            "offsetPx": 3.003,
+            "absoluteOffsetPx": 3.003
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 14.231,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "1704",
+          "to": "1705",
+          "sourceSvgIds": [
+            "path357"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path357",
+            "intersection": [
+              815.905,
+              237.14
+            ],
+            "offsetPx": 1.285,
+            "absoluteOffsetPx": 1.285
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 14.48,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "1704",
+          "to": "1805",
+          "sourceSvgIds": [
+            "path356"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path356",
+            "intersection": [
+              838.689,
+              224.128
+            ],
+            "offsetPx": -0.548,
+            "absoluteOffsetPx": 0.548
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 14.231,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "1705",
+          "to": "1806",
+          "sourceSvgIds": [
+            "path357"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path357",
+            "intersection": [
+              837.243,
+              276.735
+            ],
+            "offsetPx": 2.294,
+            "absoluteOffsetPx": 2.294
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 14.231,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "1709",
+          "to": "1810",
+          "sourceSvgIds": [
+            "path362"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path362",
+            "intersection": [
+              837.983,
+              476.123
+            ],
+            "offsetPx": 0.84,
+            "absoluteOffsetPx": 0.84
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 14.231,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "1806",
+          "to": "1807",
+          "sourceSvgIds": [
+            "path357"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path357",
+            "intersection": [
+              856.583,
+              312.38
+            ],
+            "offsetPx": 3.047,
+            "absoluteOffsetPx": 3.047
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 14.48,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        }
+      ],
+      "limitations": [
+        "Finite shared hexside estimated from regular hex-center spacing: half-length = centerDistance / (2*sqrt(3)); this geometric approximation is not independent cartographic certification.",
+        "Polyline sampling can miss very short curves or tangencies.",
+        "Multiple crossings or nearby rail junctions require contextual interpretation.",
+        "No railway is promoted to executable movement by this diagnostic."
+      ]
+    },
+    "kiev": {
+      "sourceMapSha256": "6dc63129043e2c3f28b1223b30fe63db846703f4c07422eeb58790b708b6ec9d",
+      "candidateCount": 93,
+      "bisectorCrossings": 93,
+      "finiteHexsideAssessmentCounts": {
+        "on-segment": 93,
+        "borderline": 0,
+        "outside-segment": 0,
+        "no-crossing": 0
+      },
+      "missingBisectorCrossings": [],
+      "crossingsOffsetGt10Px": [],
+      "links": [
+        {
+          "from": "0102",
+          "to": "0103",
+          "sourceSvgIds": [
+            "path863"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path863",
+            "intersection": [
+              190.542,
+              142.695
+            ],
+            "offsetPx": -0.592,
+            "absoluteOffsetPx": 0.592
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 19.2,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "0102",
+          "to": "0201",
+          "sourceSvgIds": [
+            "path864"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path864",
+            "intersection": [
+              218.671,
+              93.788
+            ],
+            "offsetPx": 1.133,
+            "absoluteOffsetPx": 1.133
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 18.873,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "0103",
+          "to": "0104",
+          "sourceSvgIds": [
+            "path865"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path865",
+            "intersection": [
+              190.543,
+              209.205
+            ],
+            "offsetPx": -0.593,
+            "absoluteOffsetPx": 0.593
+          },
+          "crossingCount": 2,
+          "halfHexsidePx": 19.2,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "0104",
+          "to": "0204",
+          "sourceSvgIds": [
+            "path865"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path865",
+            "intersection": [
+              218.329,
+              258.692
+            ],
+            "offsetPx": -0.46,
+            "absoluteOffsetPx": 0.46
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 18.873,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "0201",
+          "to": "0302",
+          "sourceSvgIds": [
+            "path864"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path864",
+            "intersection": [
+              274.463,
+              92.68
+            ],
+            "offsetPx": -0.154,
+            "absoluteOffsetPx": 0.154
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 18.873,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "0204",
+          "to": "0305",
+          "sourceSvgIds": [
+            "path865"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path865",
+            "intersection": [
+              274.665,
+              291.868
+            ],
+            "offsetPx": -0.551,
+            "absoluteOffsetPx": 0.551
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 18.873,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "0302",
+          "to": "0401",
+          "sourceSvgIds": [
+            "path864"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path864",
+            "intersection": [
+              331.272,
+              93.824
+            ],
+            "offsetPx": 1.174,
+            "absoluteOffsetPx": 1.174
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 18.873,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "0305",
+          "to": "0404",
+          "sourceSvgIds": [
+            "path865"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path865",
+            "intersection": [
+              331.07,
+              293.011
+            ],
+            "offsetPx": 0.777,
+            "absoluteOffsetPx": 0.777
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 18.873,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "0401",
+          "to": "0502",
+          "sourceSvgIds": [
+            "path864"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path864",
+            "intersection": [
+              387.064,
+              92.644
+            ],
+            "offsetPx": -0.196,
+            "absoluteOffsetPx": 0.196
+          },
+          "crossingCount": 2,
+          "halfHexsidePx": 18.873,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "0404",
+          "to": "0405",
+          "sourceSvgIds": [
+            "path866"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path866",
+            "intersection": [
+              359.475,
+              308.97
+            ],
+            "offsetPx": -0.655,
+            "absoluteOffsetPx": 0.655
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 19.2,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "0404",
+          "to": "0505",
+          "sourceSvgIds": [
+            "path865"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path865",
+            "intersection": [
+              387.267,
+              291.832
+            ],
+            "offsetPx": -0.593,
+            "absoluteOffsetPx": 0.593
+          },
+          "crossingCount": 2,
+          "halfHexsidePx": 18.873,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "0405",
+          "to": "0406",
+          "sourceSvgIds": [
+            "path866"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path866",
+            "intersection": [
+              360.15,
+              375.48
+            ],
+            "offsetPx": -1.33,
+            "absoluteOffsetPx": 1.33
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 19.2,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "0405",
+          "to": "0506",
+          "sourceSvgIds": [
+            "path867"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path867",
+            "intersection": [
+              387.152,
+              358.536
+            ],
+            "offsetPx": -0.368,
+            "absoluteOffsetPx": 0.368
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 18.873,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "0501",
+          "to": "0502",
+          "sourceSvgIds": [
+            "path864"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path864",
+            "intersection": [
+              416.501,
+              76.185
+            ],
+            "offsetPx": -1.391,
+            "absoluteOffsetPx": 1.391
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 19.2,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "0502",
+          "to": "0602",
+          "sourceSvgIds": [
+            "path865"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path865",
+            "intersection": [
+              443.335,
+              125.933
+            ],
+            "offsetPx": -0.157,
+            "absoluteOffsetPx": 0.157
+          },
+          "crossingCount": 2,
+          "halfHexsidePx": 18.873,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "0505",
+          "to": "0604",
+          "sourceSvgIds": [
+            "path865"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path865",
+            "intersection": [
+              443.671,
+              293.047
+            ],
+            "offsetPx": 0.818,
+            "absoluteOffsetPx": 0.818
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 18.873,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "0505",
+          "to": "0605",
+          "sourceSvgIds": [
+            "path868"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path868",
+            "intersection": [
+              443.431,
+              325.3
+            ],
+            "offsetPx": -0.346,
+            "absoluteOffsetPx": 0.346
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 18.873,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "0506",
+          "to": "0507",
+          "sourceSvgIds": [
+            "path867"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path867",
+            "intersection": [
+              416.479,
+              408.735
+            ],
+            "offsetPx": -1.369,
+            "absoluteOffsetPx": 1.369
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 19.2,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "0507",
+          "to": "0508",
+          "sourceSvgIds": [
+            "path867"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path867",
+            "intersection": [
+              416.501,
+              475.245
+            ],
+            "offsetPx": -1.391,
+            "absoluteOffsetPx": 1.391
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 19.2,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "0507",
+          "to": "0607",
+          "sourceSvgIds": [
+            "path882"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path882",
+            "intersection": [
+              443.496,
+              458.21
+            ],
+            "offsetPx": -0.473,
+            "absoluteOffsetPx": 0.473
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 18.873,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "0602",
+          "to": "0703",
+          "sourceSvgIds": [
+            "path865"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path865",
+            "intersection": [
+              499.731,
+              159.008
+            ],
+            "offsetPx": -0.366,
+            "absoluteOffsetPx": 0.366
+          },
+          "crossingCount": 2,
+          "halfHexsidePx": 18.873,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "0604",
+          "to": "0704",
+          "sourceSvgIds": [
+            "path865"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path865",
+            "intersection": [
+              500.006,
+              259.867
+            ],
+            "offsetPx": 0.906,
+            "absoluteOffsetPx": 0.906
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 18.873,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "0605",
+          "to": "0706",
+          "sourceSvgIds": [
+            "path868"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path868",
+            "intersection": [
+              499.93,
+              358.201
+            ],
+            "offsetPx": -0.757,
+            "absoluteOffsetPx": 0.757
+          },
+          "crossingCount": 2,
+          "halfHexsidePx": 18.873,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "0607",
+          "to": "0708",
+          "sourceSvgIds": [
+            "path882"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path882",
+            "intersection": [
+              499.653,
+              491.689
+            ],
+            "offsetPx": -0.213,
+            "absoluteOffsetPx": 0.213
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 18.873,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "0703",
+          "to": "0803",
+          "sourceSvgIds": [
+            "path865"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path865",
+            "intersection": [
+              556.067,
+              192.184
+            ],
+            "offsetPx": -0.457,
+            "absoluteOffsetPx": 0.457
+          },
+          "crossingCount": 2,
+          "halfHexsidePx": 18.873,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "0704",
+          "to": "0803",
+          "sourceSvgIds": [
+            "path865"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path865",
+            "intersection": [
+              556.34,
+              226.687
+            ],
+            "offsetPx": 0.993,
+            "absoluteOffsetPx": 0.993
+          },
+          "crossingCount": 2,
+          "halfHexsidePx": 18.873,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "0706",
+          "to": "0806",
+          "sourceSvgIds": [
+            "path868"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path868",
+            "intersection": [
+              556.27,
+              391.372
+            ],
+            "offsetPx": -0.855,
+            "absoluteOffsetPx": 0.855
+          },
+          "crossingCount": 2,
+          "halfHexsidePx": 18.873,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "0708",
+          "to": "0709",
+          "sourceSvgIds": [
+            "path882"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path882",
+            "intersection": [
+              528.052,
+              541.755
+            ],
+            "offsetPx": -0.362,
+            "absoluteOffsetPx": 0.362
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 19.2,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "0709",
+          "to": "0809",
+          "sourceSvgIds": [
+            "path883"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path883",
+            "intersection": [
+              555.748,
+              591.784
+            ],
+            "offsetPx": 0.17,
+            "absoluteOffsetPx": 0.17
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 18.873,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "0801",
+          "to": "0902",
+          "sourceSvgIds": [
+            "path869"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path869",
+            "intersection": [
+              612.267,
+              92.572
+            ],
+            "offsetPx": -0.279,
+            "absoluteOffsetPx": 0.279
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 18.873,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "0802",
+          "to": "0803",
+          "sourceSvgIds": [
+            "path869"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path869",
+            "intersection": [
+              584.72,
+              175.95
+            ],
+            "offsetPx": -0.74,
+            "absoluteOffsetPx": 0.74
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 19.2,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "0802",
+          "to": "0902",
+          "sourceSvgIds": [
+            "path869"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path869",
+            "intersection": [
+              612.734,
+              127.098
+            ],
+            "offsetPx": 1.197,
+            "absoluteOffsetPx": 1.197
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 18.873,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "0803",
+          "to": "0804",
+          "sourceSvgIds": [
+            "path868"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path868",
+            "intersection": [
+              584.713,
+              242.46
+            ],
+            "offsetPx": -0.733,
+            "absoluteOffsetPx": 0.733
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 19.2,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "0804",
+          "to": "0905",
+          "sourceSvgIds": [
+            "path868"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path868",
+            "intersection": [
+              612.465,
+              291.767
+            ],
+            "offsetPx": -0.669,
+            "absoluteOffsetPx": 0.669
+          },
+          "crossingCount": 2,
+          "halfHexsidePx": 18.873,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "0806",
+          "to": "0907",
+          "sourceSvgIds": [
+            "path868"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path868",
+            "intersection": [
+              612.604,
+              424.552
+            ],
+            "offsetPx": -0.942,
+            "absoluteOffsetPx": 0.942
+          },
+          "crossingCount": 2,
+          "halfHexsidePx": 18.873,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "0809",
+          "to": "0810",
+          "sourceSvgIds": [
+            "path883"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path883",
+            "intersection": [
+              584.378,
+              641.52
+            ],
+            "offsetPx": -0.398,
+            "absoluteOffsetPx": 0.398
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 19.2,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "0810",
+          "to": "0911",
+          "sourceSvgIds": [
+            "path884"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path884",
+            "intersection": [
+              612.032,
+              691.561
+            ],
+            "offsetPx": 0.184,
+            "absoluteOffsetPx": 0.184
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 18.873,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "0902",
+          "to": "1002",
+          "sourceSvgIds": [
+            "path870"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path870",
+            "intersection": [
+              668.515,
+              125.899
+            ],
+            "offsetPx": -0.196,
+            "absoluteOffsetPx": 0.196
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 18.873,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "0905",
+          "to": "1005",
+          "sourceSvgIds": [
+            "path868"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path868",
+            "intersection": [
+              668.803,
+              324.94
+            ],
+            "offsetPx": -0.764,
+            "absoluteOffsetPx": 0.764
+          },
+          "crossingCount": 2,
+          "halfHexsidePx": 18.873,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "0907",
+          "to": "1007",
+          "sourceSvgIds": [
+            "path868"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path868",
+            "intersection": [
+              668.938,
+              457.732
+            ],
+            "offsetPx": -1.029,
+            "absoluteOffsetPx": 1.029
+          },
+          "crossingCount": 2,
+          "halfHexsidePx": 18.873,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "0911",
+          "to": "1010",
+          "sourceSvgIds": [
+            "path884"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path884",
+            "intersection": [
+              668.738,
+              691.949
+            ],
+            "offsetPx": 0.635,
+            "absoluteOffsetPx": 0.635
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 18.873,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "1002",
+          "to": "1103",
+          "sourceSvgIds": [
+            "path870"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path870",
+            "intersection": [
+              724.933,
+              158.937
+            ],
+            "offsetPx": -0.448,
+            "absoluteOffsetPx": 0.448
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 18.873,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "1005",
+          "to": "1106",
+          "sourceSvgIds": [
+            "path868"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path868",
+            "intersection": [
+              725.138,
+              358.12
+            ],
+            "offsetPx": -0.851,
+            "absoluteOffsetPx": 0.851
+          },
+          "crossingCount": 2,
+          "halfHexsidePx": 18.873,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "1007",
+          "to": "1107",
+          "sourceSvgIds": [
+            "path868"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path868",
+            "intersection": [
+              725.006,
+              459.127
+            ],
+            "offsetPx": 0.591,
+            "absoluteOffsetPx": 0.591
+          },
+          "crossingCount": 3,
+          "halfHexsidePx": 18.873,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "1010",
+          "to": "1111",
+          "sourceSvgIds": [
+            "path884"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path884",
+            "intersection": [
+              724.633,
+              691.525
+            ],
+            "offsetPx": 0.142,
+            "absoluteOffsetPx": 0.142
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 18.873,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "1103",
+          "to": "1104",
+          "sourceSvgIds": [
+            "path874"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path874",
+            "intersection": [
+              753.642,
+              209.205
+            ],
+            "offsetPx": -0.792,
+            "absoluteOffsetPx": 0.792
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 19.2,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "1103",
+          "to": "1202",
+          "sourceSvgIds": [
+            "path870"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path870",
+            "intersection": [
+              781.61,
+              160.363
+            ],
+            "offsetPx": 1.209,
+            "absoluteOffsetPx": 1.209
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 18.873,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "1103",
+          "to": "1203",
+          "sourceSvgIds": [
+            "path873"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path873",
+            "intersection": [
+              781.137,
+              192.338
+            ],
+            "offsetPx": -0.278,
+            "absoluteOffsetPx": 0.278
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 18.873,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "1104",
+          "to": "1105",
+          "sourceSvgIds": [
+            "path874"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path874",
+            "intersection": [
+              754.439,
+              275.715
+            ],
+            "offsetPx": -1.589,
+            "absoluteOffsetPx": 1.589
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 19.2,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "1105",
+          "to": "1106",
+          "sourceSvgIds": [
+            "path874"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path874",
+            "intersection": [
+              753.646,
+              342.225
+            ],
+            "offsetPx": -0.796,
+            "absoluteOffsetPx": 0.796
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 19.2,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "1105",
+          "to": "1204",
+          "sourceSvgIds": [
+            "path876"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path876",
+            "intersection": [
+              781.234,
+              292.747
+            ],
+            "offsetPx": 0.47,
+            "absoluteOffsetPx": 0.47
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 18.873,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "1106",
+          "to": "1206",
+          "sourceSvgIds": [
+            "path868"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path868",
+            "intersection": [
+              781.472,
+              391.3
+            ],
+            "offsetPx": -0.938,
+            "absoluteOffsetPx": 0.938
+          },
+          "crossingCount": 2,
+          "halfHexsidePx": 18.873,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "1107",
+          "to": "1108",
+          "sourceSvgIds": [
+            "path881"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path881",
+            "intersection": [
+              753.649,
+              475.245
+            ],
+            "offsetPx": -0.799,
+            "absoluteOffsetPx": 0.799
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 19.2,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "1107",
+          "to": "1206",
+          "sourceSvgIds": [
+            "path868"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path868",
+            "intersection": [
+              781.34,
+              425.947
+            ],
+            "offsetPx": 0.679,
+            "absoluteOffsetPx": 0.679
+          },
+          "crossingCount": 2,
+          "halfHexsidePx": 18.873,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "1108",
+          "to": "1208",
+          "sourceSvgIds": [
+            "path881"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path881",
+            "intersection": [
+              781.191,
+              524.795
+            ],
+            "offsetPx": -0.386,
+            "absoluteOffsetPx": 0.386
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 18.873,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "1201",
+          "to": "1202",
+          "sourceSvgIds": [
+            "path870"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path870",
+            "intersection": [
+              810.499,
+              109.44
+            ],
+            "offsetPx": -1.359,
+            "absoluteOffsetPx": 1.359
+          },
+          "crossingCount": 2,
+          "halfHexsidePx": 19.2,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "1203",
+          "to": "1304",
+          "sourceSvgIds": [
+            "path873"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path873",
+            "intersection": [
+              837.6,
+              225.299
+            ],
+            "offsetPx": -0.619,
+            "absoluteOffsetPx": 0.619
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 18.873,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "1204",
+          "to": "1305",
+          "sourceSvgIds": [
+            "path876"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path876",
+            "intersection": [
+              837.665,
+              291.699
+            ],
+            "offsetPx": -0.747,
+            "absoluteOffsetPx": 0.747
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 18.873,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "1205",
+          "to": "1206",
+          "sourceSvgIds": [
+            "path886"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path886",
+            "intersection": [
+              809.551,
+              375.48
+            ],
+            "offsetPx": -0.411,
+            "absoluteOffsetPx": 0.411
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 19.2,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "1205",
+          "to": "1305",
+          "sourceSvgIds": [
+            "path886"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path886",
+            "intersection": [
+              836.923,
+              324.985
+            ],
+            "offsetPx": -0.712,
+            "absoluteOffsetPx": 0.712
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 18.873,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "1208",
+          "to": "1309",
+          "sourceSvgIds": [
+            "path881"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path881",
+            "intersection": [
+              837.099,
+              558.697
+            ],
+            "offsetPx": 0.365,
+            "absoluteOffsetPx": 0.365
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 18.873,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "1304",
+          "to": "1404",
+          "sourceSvgIds": [
+            "path873"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path873",
+            "intersection": [
+              893.939,
+              258.472
+            ],
+            "offsetPx": -0.715,
+            "absoluteOffsetPx": 0.715
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 18.873,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "1305",
+          "to": "1404",
+          "sourceSvgIds": [
+            "path875"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path875",
+            "intersection": [
+              893.575,
+              292.342
+            ],
+            "offsetPx": 0.0,
+            "absoluteOffsetPx": 0.0
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 18.873,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "1305",
+          "to": "1405",
+          "sourceSvgIds": [
+            "path876"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path876",
+            "intersection": [
+              894.006,
+              324.868
+            ],
+            "offsetPx": -0.847,
+            "absoluteOffsetPx": 0.847
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 18.873,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "1309",
+          "to": "1310",
+          "sourceSvgIds": [
+            "path881"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path881",
+            "intersection": [
+              866.039,
+              608.265
+            ],
+            "offsetPx": -0.609,
+            "absoluteOffsetPx": 0.609
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 19.2,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "1310",
+          "to": "1410",
+          "sourceSvgIds": [
+            "path881"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path881",
+            "intersection": [
+              893.501,
+              658.273
+            ],
+            "offsetPx": 0.145,
+            "absoluteOffsetPx": 0.145
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 18.873,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "1404",
+          "to": "1504",
+          "sourceSvgIds": [
+            "path873"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path873",
+            "intersection": [
+              950.411,
+              260.011
+            ],
+            "offsetPx": 1.073,
+            "absoluteOffsetPx": 1.073
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 18.873,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "1405",
+          "to": "1506",
+          "sourceSvgIds": [
+            "path876"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path876",
+            "intersection": [
+              950.34,
+              358.048
+            ],
+            "offsetPx": -0.934,
+            "absoluteOffsetPx": 0.934
+          },
+          "crossingCount": 2,
+          "halfHexsidePx": 18.873,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "1504",
+          "to": "1603",
+          "sourceSvgIds": [
+            "path873"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path873",
+            "intersection": [
+              1006.735,
+              226.814
+            ],
+            "offsetPx": 1.139,
+            "absoluteOffsetPx": 1.139
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 18.873,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "1504",
+          "to": "1604",
+          "sourceSvgIds": [
+            "path876"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path876",
+            "intersection": [
+              1006.348,
+              258.76
+            ],
+            "offsetPx": -0.38,
+            "absoluteOffsetPx": 0.38
+          },
+          "crossingCount": 2,
+          "halfHexsidePx": 18.873,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "1506",
+          "to": "1606",
+          "sourceSvgIds": [
+            "path876"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path876",
+            "intersection": [
+              1006.675,
+              391.228
+            ],
+            "offsetPx": -1.022,
+            "absoluteOffsetPx": 1.022
+          },
+          "crossingCount": 2,
+          "halfHexsidePx": 18.873,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "1510",
+          "to": "1511",
+          "sourceSvgIds": [
+            "path880"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path880",
+            "intersection": [
+              978.701,
+              674.775
+            ],
+            "offsetPx": -0.691,
+            "absoluteOffsetPx": 0.691
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 19.2,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "1510",
+          "to": "1609",
+          "sourceSvgIds": [
+            "path880"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path880",
+            "intersection": [
+              1006.601,
+              625.648
+            ],
+            "offsetPx": 0.877,
+            "absoluteOffsetPx": 0.877
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 18.873,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "1601",
+          "to": "1702",
+          "sourceSvgIds": [
+            "path871"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path871",
+            "intersection": [
+              1062.672,
+              92.428
+            ],
+            "offsetPx": -0.446,
+            "absoluteOffsetPx": 0.446
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 18.873,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "1603",
+          "to": "1703",
+          "sourceSvgIds": [
+            "path873"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path873",
+            "intersection": [
+              1062.747,
+              193.089
+            ],
+            "offsetPx": 0.594,
+            "absoluteOffsetPx": 0.594
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 18.873,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "1604",
+          "to": "1705",
+          "sourceSvgIds": [
+            "path876"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path876",
+            "intersection": [
+              1062.868,
+              291.627
+            ],
+            "offsetPx": -0.831,
+            "absoluteOffsetPx": 0.831
+          },
+          "crossingCount": 2,
+          "halfHexsidePx": 18.873,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "1606",
+          "to": "1707",
+          "sourceSvgIds": [
+            "path876"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path876",
+            "intersection": [
+              1063.009,
+              424.408
+            ],
+            "offsetPx": -1.109,
+            "absoluteOffsetPx": 1.109
+          },
+          "crossingCount": 2,
+          "halfHexsidePx": 18.873,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "1607",
+          "to": "1608",
+          "sourceSvgIds": [
+            "path876"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path876",
+            "intersection": [
+              1035.592,
+              508.5
+            ],
+            "offsetPx": -1.292,
+            "absoluteOffsetPx": 1.292
+          },
+          "crossingCount": 2,
+          "halfHexsidePx": 19.2,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "1607",
+          "to": "1707",
+          "sourceSvgIds": [
+            "path876"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path876",
+            "intersection": [
+              1062.81,
+              459.235
+            ],
+            "offsetPx": 0.717,
+            "absoluteOffsetPx": 0.717
+          },
+          "crossingCount": 3,
+          "halfHexsidePx": 18.873,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "1608",
+          "to": "1609",
+          "sourceSvgIds": [
+            "path880"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path880",
+            "intersection": [
+              1034.652,
+              575.01
+            ],
+            "offsetPx": -0.352,
+            "absoluteOffsetPx": 0.352
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 19.2,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "1608",
+          "to": "1708",
+          "sourceSvgIds": [
+            "path876"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path876",
+            "intersection": [
+              1063.011,
+              526.085
+            ],
+            "offsetPx": 1.112,
+            "absoluteOffsetPx": 1.112
+          },
+          "crossingCount": 3,
+          "halfHexsidePx": 18.873,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "1702",
+          "to": "1802",
+          "sourceSvgIds": [
+            "path871"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path871",
+            "intersection": [
+              1119.006,
+              125.608
+            ],
+            "offsetPx": -0.533,
+            "absoluteOffsetPx": 0.533
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 18.873,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "1703",
+          "to": "1704",
+          "sourceSvgIds": [
+            "path872"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path872",
+            "intersection": [
+              1092.442,
+              209.205
+            ],
+            "offsetPx": -1.852,
+            "absoluteOffsetPx": 1.852
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 19.2,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "1703",
+          "to": "1802",
+          "sourceSvgIds": [
+            "path872"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path872",
+            "intersection": [
+              1119.059,
+              159.871
+            ],
+            "offsetPx": 0.637,
+            "absoluteOffsetPx": 0.637
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 18.873,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "1704",
+          "to": "1705",
+          "sourceSvgIds": [
+            "path872"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path872",
+            "intersection": [
+              1092.474,
+              275.715
+            ],
+            "offsetPx": -1.884,
+            "absoluteOffsetPx": 1.884
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 19.2,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "1705",
+          "to": "1706",
+          "sourceSvgIds": [
+            "path876"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path876",
+            "intersection": [
+              1092.474,
+              342.225
+            ],
+            "offsetPx": -1.884,
+            "absoluteOffsetPx": 1.884
+          },
+          "crossingCount": 2,
+          "halfHexsidePx": 19.2,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "1705",
+          "to": "1805",
+          "sourceSvgIds": [
+            "path872"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path872",
+            "intersection": [
+              1119.208,
+              324.796
+            ],
+            "offsetPx": -0.931,
+            "absoluteOffsetPx": 0.931
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 18.873,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "1706",
+          "to": "1707",
+          "sourceSvgIds": [
+            "path876"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path876",
+            "intersection": [
+              1092.474,
+              408.735
+            ],
+            "offsetPx": -1.884,
+            "absoluteOffsetPx": 1.884
+          },
+          "crossingCount": 2,
+          "halfHexsidePx": 19.2,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "1707",
+          "to": "1708",
+          "sourceSvgIds": [
+            "path876"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path876",
+            "intersection": [
+              1091.924,
+              475.245
+            ],
+            "offsetPx": -1.334,
+            "absoluteOffsetPx": 1.334
+          },
+          "crossingCount": 2,
+          "halfHexsidePx": 19.2,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "1707",
+          "to": "1807",
+          "sourceSvgIds": [
+            "path877"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path877",
+            "intersection": [
+              1119.034,
+              458.111
+            ],
+            "offsetPx": -0.589,
+            "absoluteOffsetPx": 0.589
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 18.873,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "1807",
+          "to": "1808",
+          "sourceSvgIds": [
+            "path879"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path879",
+            "intersection": [
+              1147.258,
+              508.5
+            ],
+            "offsetPx": -0.378,
+            "absoluteOffsetPx": 0.378
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 19.2,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "1808",
+          "to": "1809",
+          "sourceSvgIds": [
+            "path879"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path879",
+            "intersection": [
+              1147.67,
+              575.01
+            ],
+            "offsetPx": -0.79,
+            "absoluteOffsetPx": 0.79
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 19.2,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        },
+        {
+          "from": "1809",
+          "to": "1810",
+          "sourceSvgIds": [
+            "path879"
+          ],
+          "crossesInfiniteBisector": true,
+          "nearestCrossing": {
+            "svgId": "path879",
+            "intersection": [
+              1147.683,
+              641.52
+            ],
+            "offsetPx": -0.803,
+            "absoluteOffsetPx": 0.803
+          },
+          "crossingCount": 1,
+          "halfHexsidePx": 19.2,
+          "finiteHexsideAssessment": "on-segment",
+          "status": "geometry-only-not-gameplay-certified"
+        }
+      ],
+      "limitations": [
+        "Finite shared hexside estimated from regular hex-center spacing: half-length = centerDistance / (2*sqrt(3)); this geometric approximation is not independent cartographic certification.",
+        "Polyline sampling can miss very short curves or tangencies.",
+        "Multiple crossings or nearby rail junctions require contextual interpretation.",
+        "No railway is promoted to executable movement by this diagnostic."
+      ]
+    }
+  }
+}

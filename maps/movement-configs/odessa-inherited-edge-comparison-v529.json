@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "odessa-inherited-edge-comparison-v529",
+  "status": "source-disagreement-diagnostic-only",
+  "originalKievPolicy": "kiev-source-reviewed-candidate-v435",
+  "combinedRailSource": "odessa-source-route-rail-ledger-v496",
+  "originalKievHexes": 165,
+  "originalKievEdges": 442,
+  "combinedHexes": 261,
+  "combinedEdges": 714,
+  "inheritedEdges": 442,
+  "seamEdges": 24,
+  "extensionInternalEdges": 248,
+  "candidateTraversableEdges": 614,
+  "candidateImpassableEdges": 100,
+  "inheritedFeatureAgreements": 441,
+  "unresolvedSourceDisagreements": [
+    {
+      "edge": "1201:1202",
+      "attribute": "rail",
+      "originalKiev": true,
+      "compositeRouteLedger": false,
+      "interpretation": "Original Kiev source-reviewed hexside rail and the later combined source-route rail trace disagree. Do not restore or delete a rail without source adjudication."
+    }
+  ],
+  "authorization": {
+    "historicalMovement": false,
+    "reinforcementEntry": false,
+    "replacementCommunication": false,
+    "cityIsolation": false,
+    "fullCampaign": false
+  },
+  "sourceRevisionProvenance": {
+    "originalRailLedgerExtensionJsonSHA256": "553233dd695a73a5cf5bb592120ca72a3f09bf914edb6ee617c740667fbf0d58",
+    "currentExtensionJsonSHA256": "7fe21e442500256a18cffa575fb4b17fba24564543e57c7fca9826b6bd27e5e3",
+    "originalAndCurrentCompositeSvgSHA256": "2b15c3a92a282a7efc27d54bcd8994470f0fce8ee5417d5d734969fcd2c4ab7e",
+    "originalV496HashCurrent": false,
+    "railRoutesRecomputedAgainstCurrentSource": true,
+    "note": "The v496 sourceHash for the extension JSON predates subsequent source-compatible map metadata changes. Preserve the v496 ledger and regression as historical provenance; re-check source-traced routes independently on the active v529 source."
+  }
+}

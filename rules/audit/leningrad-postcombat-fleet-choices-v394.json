@@ -1,0 +1,30 @@
+{
+  "checkpoint": 160,
+  "version": "v394",
+  "assertions": 1264,
+  "source": "Leningrad §§13.1–13.2, certified map and photographed counter faces",
+  "destinations": 5,
+  "advanceChoices": 4,
+  "sourcePort": "Riga",
+  "testedFleetConditions": [
+    "undamaged",
+    "damaged"
+  ],
+  "testedDamageDice": [
+    1,
+    6
+  ],
+  "verified": [
+    "CRT outcome and advance before Fleet destination selection",
+    "Destination committed and journaled before Fleet d6",
+    "No provisional casualties leaked into active state",
+    "Undo and replay across both actions",
+    "automatic elimination without port or die",
+    "normal combat advance without Fleet"
+  ],
+  "limitations": [
+    "Legacy single-action combat resolver remains for backward-compatible test harnesses",
+    "Human/AI controller still supplies physical dice and choices",
+    "Historical unit identities and printed coordinate exceptions remain uncertified"
+  ]
+}

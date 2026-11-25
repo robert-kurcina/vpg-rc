@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 1,
+  "scenarioId": "leningrad",
+  "source": "references/rules/leningrad-rules.pdf §§7.2, 7.4, 8.1, 10.0–10.7, 13.1–13.3",
+  "crtId": "oberlabs-battle-for-moscow-crt-v1",
+  "printedAffiliationToOwner": {
+    "axis": "german",
+    "soviet": "soviet"
+  },
+  "counterKindToClass": {
+    "tank": "panzer",
+    "infantry": "infantry",
+    "mechanized": "mechanized"
+  },
+  "allowedOutcomes": [
+    "NE",
+    "DR",
+    "DRL",
+    "EX",
+    "AL",
+    "DE"
+  ],
+  "modifiers": {
+    "terrainColumnShifts": {
+      "forest": -1,
+      "swamp": -1,
+      "major-city": -1
+    },
+    "allAttackersAcrossRiverShift": -1,
+    "swampTankStrengthMultiplier": 0.5,
+    "swampAffectedClasses": [
+      "panzer",
+      "mechanized"
+    ],
+    "maximumOdds": 6
+  },
+  "retreatHexes": 2,
+  "armyStackingByOwner": {
+    "soviet": 1
+  },
+  "safeRetreatOnly": true,
+  "retreatMode": "source-forced-ezoc-v1",
+  "supportMode": "not-yet-integrated",
+  "advanceMaxUnits": 1,
+  "notes": [
+    "The shared CRT applies by project decision, rather than silently importing the alternate Leningrad CRT.",
+    "The source-backed Fleet starts at Leningrad through the optional opening bridge. Fleet special-phase relocation and departure-based damage rolls are opt-in; German-entry displacement is now supported by source-verified movement/combat transactions; air-sea attacks remain unsupported.",
+    "An injected die is required; no game RNG is consumed by this preview transaction API. Air-sea support is opt-in and the full human turn controller remains pending."
+  ],
+  "cityMarkerMode": "source-typed-v1",
+  "portSupport": {
+    "mode": "photographed-port-marker-v1",
+    "markerKey": "balticFleet",
+    "owner": "soviet",
+    "sourceFaceId": "leningrad-front-r04c08",
+    "reverseFaceId": "leningrad-back-r04c01",
+    "portNames": [
+      "Liepaja",
+      "Riga",
+      "Parnu",
+      "Tallinn",
+      "Narva",
+      "Leningrad"
+    ],
+    "undamagedDefenseShift": -1,
+    "undamagedAttackShift": 1,
+    "source": "references/rules/leningrad-rules.pdf §§6.0, 13.1–13.3",
+    "initialPortName": "Leningrad",
+    "damageOnDeparture": {
+      "Liepaja": 3,
+      "Riga": 3,
+      "Parnu": 3,
+      "Tallinn": 2,
+      "Narva": 2,
+      "Leningrad": 2
+    }
+  },
+  "airSupport": {
+    "mode": "photographed-shift-markers-v1",
+    "owner": "german",
+    "source": "references/rules/leningrad-rules.pdf §§6, 10.5, 11, 13.3",
+    "markers": [
+      {
+        "faceId": "leningrad-front-r04c05",
+        "shiftRating": 1,
+        "firstTurn": 1
+      },
+      {
+        "faceId": "leningrad-front-r04c04",
+        "shiftRating": 2,
+        "firstTurn": 6
+      }
+    ]
+  }
+}

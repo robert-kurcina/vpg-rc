@@ -1,0 +1,677 @@
+{
+  "schemaVersion": 1,
+  "scope": "B4M preliminary runtime-to-rule mapping; not a full clause inventory",
+  "denominator": 28,
+  "rules": [
+    {
+      "id": "b4m.4.turn-order",
+      "source": [
+        {
+          "document": "references/rules/b4m-rules.pdf",
+          "section": "4.0"
+        }
+      ],
+      "authority": "oberlabs-executable-with-pdf-reference",
+      "meaning": "Turn advancement and side alternation",
+      "trigger": "turn.phase",
+      "existingImplementation": [
+        "legacy/engine.js:endSide"
+      ],
+      "status": "implemented-unverified",
+      "aiAccessible": false,
+      "tests": [
+        "rules/tests/freeze-b4m.js"
+      ],
+      "evidence": [
+        "Frozen baseline exercises whole-game trace, not independent clause correctness."
+      ]
+    },
+    {
+      "id": "b4m.5.endgame",
+      "source": [
+        {
+          "document": "references/rules/b4m-rules.pdf",
+          "section": "5.0"
+        }
+      ],
+      "authority": "oberlabs-executable-with-pdf-reference",
+      "meaning": "Final control classification at end of turn seven",
+      "trigger": "victory",
+      "existingImplementation": [
+        "legacy/engine.js:gameResult"
+      ],
+      "status": "enforced-and-tested",
+      "aiAccessible": false,
+      "tests": [
+        "rules/tests/freeze-b4m.js",
+        "rules/tests/b4m-source-assertions.js"
+      ],
+      "evidence": [
+        "Direct assertions against printed B4M source clauses (limited boundary cases; independent Oberlabs comparison still pending)."
+      ]
+    },
+    {
+      "id": "b4m.6.manual-setup",
+      "source": [
+        {
+          "document": "references/rules/b4m-rules.pdf",
+          "section": "6.0"
+        }
+      ],
+      "authority": "oberlabs-executable-with-pdf-reference",
+      "meaning": "German 22-hex manual deployment",
+      "trigger": "setup",
+      "existingImplementation": [
+        "legacy/engine.js:setupPlace",
+        "legacy/engine.js:finishSetup"
+      ],
+      "status": "enforced-and-tested",
+      "aiAccessible": false,
+      "tests": [
+        "rules/tests/freeze-b4m.js",
+        "rules/tests/b4m-source-assertions.js"
+      ],
+      "evidence": [
+        "Direct assertions against printed B4M source clauses (limited boundary cases; independent Oberlabs comparison still pending)."
+      ]
+    },
+    {
+      "id": "b4m.6.auto-setup",
+      "source": [
+        {
+          "document": "references/rules/b4m-rules.pdf",
+          "section": "6.0"
+        }
+      ],
+      "authority": "oberlabs-executable-with-pdf-reference",
+      "meaning": "Automated setup policy; an engine extension, not a printed clause",
+      "trigger": "setup",
+      "existingImplementation": [
+        "legacy/engine.js:autoSetup"
+      ],
+      "status": "implemented-unverified",
+      "aiAccessible": false,
+      "tests": [
+        "rules/tests/freeze-b4m.js"
+      ],
+      "evidence": [
+        "Frozen baseline exercises whole-game trace, not independent clause correctness."
+      ]
+    },
+    {
+      "id": "b4m.7.1.zoc-stop",
+      "source": [
+        {
+          "document": "references/rules/b4m-rules.pdf",
+          "section": "7.1"
+        }
+      ],
+      "authority": "oberlabs-executable-with-pdf-reference",
+      "meaning": "Enemy ZOC terminates movement path",
+      "trigger": "movement.zoc",
+      "existingImplementation": [
+        "legacy/engine.js:legalMoves"
+      ],
+      "status": "implemented-unverified",
+      "aiAccessible": false,
+      "tests": [
+        "rules/tests/freeze-b4m.js"
+      ],
+      "evidence": [
+        "Frozen baseline exercises whole-game trace, not independent clause correctness."
+      ]
+    },
+    {
+      "id": "b4m.7.2.retreat-zoc",
+      "source": [
+        {
+          "document": "references/rules/b4m-rules.pdf",
+          "section": "7.2"
+        }
+      ],
+      "authority": "oberlabs-executable-with-pdf-reference",
+      "meaning": "Retreat cannot terminate in enemy ZOC",
+      "trigger": "combat.retreat",
+      "existingImplementation": [
+        "legacy/engine.js:retreatOptions"
+      ],
+      "status": "implemented-unverified",
+      "aiAccessible": false,
+      "tests": [
+        "rules/tests/freeze-b4m.js"
+      ],
+      "evidence": [
+        "Frozen baseline exercises whole-game trace, not independent clause correctness."
+      ]
+    },
+    {
+      "id": "b4m.7.3.communication-zoc",
+      "source": [
+        {
+          "document": "references/rules/b4m-rules.pdf",
+          "section": "7.3"
+        }
+      ],
+      "authority": "oberlabs-executable-with-pdf-reference",
+      "meaning": "Enemy ZOC impedes replacement communication",
+      "trigger": "logistics.communication",
+      "existingImplementation": [
+        "legacy/engine.js:communication"
+      ],
+      "status": "implemented-unverified",
+      "aiAccessible": false,
+      "tests": [
+        "rules/tests/freeze-b4m.js"
+      ],
+      "evidence": [
+        "Frozen baseline exercises whole-game trace, not independent clause correctness."
+      ]
+    },
+    {
+      "id": "b4m.8.1.soviet-rail",
+      "source": [
+        {
+          "document": "references/rules/b4m-rules.pdf",
+          "section": "8.1"
+        }
+      ],
+      "authority": "oberlabs-executable-with-pdf-reference",
+      "meaning": "Soviet-only rail mode",
+      "trigger": "movement.rail",
+      "existingImplementation": [
+        "legacy/engine.js:legalMoves"
+      ],
+      "status": "implemented-unverified",
+      "aiAccessible": false,
+      "tests": [
+        "rules/tests/freeze-b4m.js"
+      ],
+      "evidence": [
+        "Frozen baseline exercises whole-game trace, not independent clause correctness."
+      ]
+    },
+    {
+      "id": "b4m.8.2.1.enemy-occupation",
+      "source": [
+        {
+          "document": "references/rules/b4m-rules.pdf",
+          "section": "8.2.1"
+        }
+      ],
+      "authority": "oberlabs-executable-with-pdf-reference",
+      "meaning": "Cannot enter enemy-occupied hex",
+      "trigger": "movement.occupation",
+      "existingImplementation": [
+        "legacy/engine.js:legalMoves"
+      ],
+      "status": "implemented-unverified",
+      "aiAccessible": false,
+      "tests": [
+        "rules/tests/freeze-b4m.js"
+      ],
+      "evidence": [
+        "Frozen baseline exercises whole-game trace, not independent clause correctness."
+      ]
+    },
+    {
+      "id": "b4m.8.2.2.stacking",
+      "source": [
+        {
+          "document": "references/rules/b4m-rules.pdf",
+          "section": "8.2.2"
+        }
+      ],
+      "authority": "oberlabs-executable-with-pdf-reference",
+      "meaning": "At most one unit at phase end",
+      "trigger": "movement.stacking",
+      "existingImplementation": [
+        "legacy/engine.js:legalMoves",
+        "legacy/engine.js:validate"
+      ],
+      "status": "implemented-unverified",
+      "aiAccessible": false,
+      "tests": [
+        "rules/tests/freeze-b4m.js"
+      ],
+      "evidence": [
+        "Frozen baseline exercises whole-game trace, not independent clause correctness."
+      ]
+    },
+    {
+      "id": "b4m.8.3.ezoc-entry",
+      "source": [
+        {
+          "document": "references/rules/b4m-rules.pdf",
+          "section": "8.3"
+        }
+      ],
+      "authority": "oberlabs-executable-with-pdf-reference",
+      "meaning": "EZOC entry forces stop",
+      "trigger": "movement.zoc",
+      "existingImplementation": [
+        "legacy/engine.js:legalMoves"
+      ],
+      "status": "implemented-unverified",
+      "aiAccessible": false,
+      "tests": [
+        "rules/tests/freeze-b4m.js"
+      ],
+      "evidence": [
+        "Frozen baseline exercises whole-game trace, not independent clause correctness."
+      ]
+    },
+    {
+      "id": "b4m.9.1.odds",
+      "source": [
+        {
+          "document": "references/rules/b4m-rules.pdf",
+          "section": "9.1"
+        }
+      ],
+      "authority": "oberlabs-executable-with-pdf-reference",
+      "meaning": "Floor and cap combat odds",
+      "trigger": "combat.odds",
+      "existingImplementation": [
+        "legacy/engine.js:battleOdds"
+      ],
+      "status": "implemented-unverified",
+      "aiAccessible": false,
+      "tests": [
+        "rules/tests/freeze-b4m.js"
+      ],
+      "evidence": [
+        "Frozen baseline exercises whole-game trace, not independent clause correctness."
+      ]
+    },
+    {
+      "id": "b4m.9.2.forest",
+      "source": [
+        {
+          "document": "references/rules/b4m-rules.pdf",
+          "section": "9.2"
+        }
+      ],
+      "authority": "oberlabs-executable-with-pdf-reference",
+      "meaning": "Forest defensive shift",
+      "trigger": "combat.terrain",
+      "existingImplementation": [
+        "legacy/engine.js:battleOdds"
+      ],
+      "status": "implemented-unverified",
+      "aiAccessible": false,
+      "tests": [
+        "rules/tests/freeze-b4m.js"
+      ],
+      "evidence": [
+        "Frozen baseline exercises whole-game trace, not independent clause correctness."
+      ]
+    },
+    {
+      "id": "b4m.9.2.major-city",
+      "source": [
+        {
+          "document": "references/rules/b4m-rules.pdf",
+          "section": "9.2"
+        }
+      ],
+      "authority": "oberlabs-executable-with-pdf-reference",
+      "meaning": "Major city defensive shift",
+      "trigger": "combat.terrain",
+      "existingImplementation": [
+        "legacy/engine.js:battleOdds"
+      ],
+      "status": "implemented-unverified",
+      "aiAccessible": false,
+      "tests": [
+        "rules/tests/freeze-b4m.js"
+      ],
+      "evidence": [
+        "Frozen baseline exercises whole-game trace, not independent clause correctness."
+      ]
+    },
+    {
+      "id": "b4m.9.2.fortification",
+      "source": [
+        {
+          "document": "references/rules/b4m-rules.pdf",
+          "section": "9.2"
+        }
+      ],
+      "authority": "oberlabs-executable-with-pdf-reference",
+      "meaning": "Fortification defensive shift qualification",
+      "trigger": "combat.terrain",
+      "existingImplementation": [
+        "legacy/engine.js:battleOdds"
+      ],
+      "status": "implemented-unverified",
+      "aiAccessible": false,
+      "tests": [
+        "rules/tests/freeze-b4m.js"
+      ],
+      "evidence": [
+        "Frozen baseline exercises whole-game trace, not independent clause correctness."
+      ]
+    },
+    {
+      "id": "b4m.9.2.river",
+      "source": [
+        {
+          "document": "references/rules/b4m-rules.pdf",
+          "section": "9.2"
+        }
+      ],
+      "authority": "oberlabs-executable-with-pdf-reference",
+      "meaning": "River defensive shift if every attacker crosses",
+      "trigger": "combat.hexside",
+      "existingImplementation": [
+        "legacy/engine.js:battleOdds"
+      ],
+      "status": "implemented-unverified",
+      "aiAccessible": false,
+      "tests": [
+        "rules/tests/freeze-b4m.js"
+      ],
+      "evidence": [
+        "Frozen baseline exercises whole-game trace, not independent clause correctness."
+      ]
+    },
+    {
+      "id": "b4m.9.3.crt",
+      "source": [
+        {
+          "document": "references/rules/b4m-rules.pdf",
+          "section": "9.3"
+        }
+      ],
+      "authority": "oberlabs-executable-with-pdf-reference",
+      "meaning": "Shared six-column CRT lookup",
+      "trigger": "combat.crt",
+      "existingImplementation": [
+        "legacy/engine.js:resolveAttack",
+        "legacy/engine.js:battlePreview"
+      ],
+      "status": "enforced-and-tested",
+      "aiAccessible": false,
+      "tests": [
+        "rules/tests/freeze-b4m.js",
+        "rules/tests/b4m-combat-choice-matrix.js"
+      ],
+      "evidence": [
+        "Frozen baseline exercises whole-game trace, not independent clause correctness.",
+        "Printed \u00a79.3 source-derived direct assertions on resolver behavior, including full 36-result preview/resolution matrix or full-strength Moscow DR stand-fast; does not establish Oberlabs differential parity."
+      ]
+    },
+    {
+      "id": "b4m.9.3.retreat",
+      "source": [
+        {
+          "document": "references/rules/b4m-rules.pdf",
+          "section": "9.3"
+        }
+      ],
+      "authority": "oberlabs-executable-with-pdf-reference",
+      "meaning": "Two-hex retreat and loss handling",
+      "trigger": "combat.retreat",
+      "existingImplementation": [
+        "legacy/engine.js:retreatOptions",
+        "legacy/engine.js:resolveAttack"
+      ],
+      "status": "enforced-and-tested",
+      "aiAccessible": false,
+      "tests": [
+        "rules/tests/freeze-b4m.js",
+        "rules/tests/b4m-reinforcement-retreat.js"
+      ],
+      "evidence": [
+        "Frozen baseline exercises whole-game trace, not independent clause correctness.",
+        "Independent PDF-derived boundary assertions: \u00a711 turn-four availability, no occupation, red-border full-strength free reinforcement; \u00a79.3 retreat monotonicity, vacancy, two-hex minimum and limited ZOC transit. Does not establish full Oberlabs differential equivalence."
+      ]
+    },
+    {
+      "id": "b4m.9.3.stand-fast",
+      "source": [
+        {
+          "document": "references/rules/b4m-rules.pdf",
+          "section": "9.3"
+        }
+      ],
+      "authority": "oberlabs-executable-with-pdf-reference",
+      "meaning": "Full strength major city defender stand fast",
+      "trigger": "combat.defender-choice",
+      "existingImplementation": [
+        "legacy/engine.js:battlePreview",
+        "legacy/engine.js:resolveAttack"
+      ],
+      "status": "enforced-and-tested",
+      "aiAccessible": false,
+      "tests": [
+        "rules/tests/freeze-b4m.js",
+        "rules/tests/b4m-combat-choice-matrix.js"
+      ],
+      "evidence": [
+        "Frozen baseline exercises whole-game trace, not independent clause correctness.",
+        "Printed \u00a79.3 source-derived direct assertions on resolver behavior, including full 36-result preview/resolution matrix or full-strength Moscow DR stand-fast; does not establish Oberlabs differential parity."
+      ]
+    },
+    {
+      "id": "b4m.9.declaration",
+      "source": [
+        {
+          "document": "references/rules/b4m-rules.pdf",
+          "section": "9.0"
+        }
+      ],
+      "authority": "oberlabs-executable-with-pdf-reference",
+      "meaning": "Declare battles without reusing attackers or defenders",
+      "trigger": "combat.declaration",
+      "existingImplementation": [
+        "legacy/engine.js:announceBattles",
+        "legacy/engine.js:resolveDeclaredBattles"
+      ],
+      "status": "implemented-unverified",
+      "aiAccessible": false,
+      "tests": [
+        "rules/tests/freeze-b4m.js"
+      ],
+      "evidence": [
+        "Frozen baseline exercises whole-game trace, not independent clause correctness."
+      ]
+    },
+    {
+      "id": "b4m.10.replacement-budget",
+      "source": [
+        {
+          "document": "references/rules/b4m-rules.pdf",
+          "section": "10.0"
+        }
+      ],
+      "authority": "oberlabs-executable-with-pdf-reference",
+      "meaning": "Replacement allotment by side and mud turn",
+      "trigger": "logistics.replacement",
+      "existingImplementation": [
+        "legacy/engine.js:replacementBudget"
+      ],
+      "status": "enforced-and-tested",
+      "aiAccessible": false,
+      "tests": [
+        "rules/tests/freeze-b4m.js",
+        "rules/tests/b4m-source-assertions.js"
+      ],
+      "evidence": [
+        "Direct assertions against printed B4M source clauses (limited boundary cases; independent Oberlabs comparison still pending)."
+      ]
+    },
+    {
+      "id": "b4m.10.1.one-step",
+      "source": [
+        {
+          "document": "references/rules/b4m-rules.pdf",
+          "section": "10.1"
+        }
+      ],
+      "authority": "user-decision-2026-11-18-with-pdf-10.1",
+      "meaning": "Single step restore or entry",
+      "trigger": "logistics.replacement",
+      "existingImplementation": [
+        "legacy/engine.js:applyReplacement"
+      ],
+      "status": "enforced-and-tested",
+      "aiAccessible": false,
+      "tests": [
+        "rules/tests/freeze-b4m.js",
+        "rules/tests/b4m-known-replacement-gap.js"
+      ],
+      "evidence": [
+        "Historical v316 API permitted same-turn enter+restore; user explicitly prohibited it on 2026-11-18.",
+        "Current v317 engine blocks restore after same-turn entry; rules/tests/b4m-known-replacement-gap.js exercises 30 entry cases and eligible later-turn restores.",
+        "Upstream Oberlabs executable comparison remains outstanding; this entry reflects the explicit user ruling, not verified upstream parity."
+      ]
+    },
+    {
+      "id": "b4m.10.2.soviet-eligibility",
+      "source": [
+        {
+          "document": "references/rules/b4m-rules.pdf",
+          "section": "10.2"
+        }
+      ],
+      "authority": "oberlabs-executable-with-pdf-reference",
+      "meaning": "Soviet entry and restoration",
+      "trigger": "logistics.replacement",
+      "existingImplementation": [
+        "legacy/engine.js:replacementOptions",
+        "legacy/engine.js:communication"
+      ],
+      "status": "implemented-unverified",
+      "aiAccessible": false,
+      "tests": [
+        "rules/tests/freeze-b4m.js"
+      ],
+      "evidence": [
+        "Frozen baseline exercises whole-game trace, not independent clause correctness."
+      ]
+    },
+    {
+      "id": "b4m.10.3.german-eligibility",
+      "source": [
+        {
+          "document": "references/rules/b4m-rules.pdf",
+          "section": "10.3"
+        }
+      ],
+      "authority": "oberlabs-executable-with-pdf-reference",
+      "meaning": "German entry and restoration",
+      "trigger": "logistics.replacement",
+      "existingImplementation": [
+        "legacy/engine.js:replacementOptions",
+        "legacy/engine.js:communication"
+      ],
+      "status": "implemented-unverified",
+      "aiAccessible": false,
+      "tests": [
+        "rules/tests/freeze-b4m.js"
+      ],
+      "evidence": [
+        "Frozen baseline exercises whole-game trace, not independent clause correctness."
+      ]
+    },
+    {
+      "id": "b4m.10.4.unused",
+      "source": [
+        {
+          "document": "references/rules/b4m-rules.pdf",
+          "section": "10.4"
+        }
+      ],
+      "authority": "oberlabs-executable-with-pdf-reference",
+      "meaning": "Unused replacement budget expires",
+      "trigger": "logistics.replacement",
+      "existingImplementation": [
+        "legacy/engine.js:doReplacements"
+      ],
+      "status": "implemented-unverified",
+      "aiAccessible": false,
+      "tests": [
+        "rules/tests/freeze-b4m.js"
+      ],
+      "evidence": [
+        "Frozen baseline exercises whole-game trace, not independent clause correctness."
+      ]
+    },
+    {
+      "id": "b4m.11.shock",
+      "source": [
+        {
+          "document": "references/rules/b4m-rules.pdf",
+          "section": "11.0"
+        }
+      ],
+      "authority": "oberlabs-executable-with-pdf-reference",
+      "meaning": "Soviet 1st Shock turn-four arrival",
+      "trigger": "events.reinforcement",
+      "existingImplementation": [
+        "legacy/engine.js:shockReinforcementOptions",
+        "legacy/engine.js:performShockReinforcement"
+      ],
+      "status": "enforced-and-tested",
+      "aiAccessible": false,
+      "tests": [
+        "rules/tests/freeze-b4m.js",
+        "rules/tests/b4m-reinforcement-retreat.js"
+      ],
+      "evidence": [
+        "Frozen baseline exercises whole-game trace, not independent clause correctness.",
+        "Independent PDF-derived boundary assertions: \u00a711 turn-four availability, no occupation, red-border full-strength free reinforcement; \u00a79.3 retreat monotonicity, vacancy, two-hex minimum and limited ZOC transit. Does not establish full Oberlabs differential equivalence."
+      ]
+    },
+    {
+      "id": "b4m.12.1.mud-movement",
+      "source": [
+        {
+          "document": "references/rules/b4m-rules.pdf",
+          "section": "12.1"
+        }
+      ],
+      "authority": "oberlabs-executable-with-pdf-reference",
+      "meaning": "Mud normal movement one hex; rail exempt",
+      "trigger": "movement.weather",
+      "existingImplementation": [
+        "legacy/engine.js:legalMoves",
+        "legacy/engine.js:isMud"
+      ],
+      "status": "enforced-and-tested",
+      "aiAccessible": false,
+      "tests": [
+        "rules/tests/freeze-b4m.js",
+        "rules/tests/b4m-source-assertions.js"
+      ],
+      "evidence": [
+        "Direct assertions against printed B4M source clauses (limited boundary cases; independent Oberlabs comparison still pending)."
+      ]
+    },
+    {
+      "id": "b4m.12.2.mud-combat",
+      "source": [
+        {
+          "document": "references/rules/b4m-rules.pdf",
+          "section": "12.2"
+        }
+      ],
+      "authority": "oberlabs-executable-with-pdf-reference",
+      "meaning": "Attacking tank factors halved in mud",
+      "trigger": "combat.weather",
+      "existingImplementation": [
+        "legacy/engine.js:battleOdds",
+        "legacy/engine.js:isMud"
+      ],
+      "status": "implemented-unverified",
+      "aiAccessible": false,
+      "tests": [
+        "rules/tests/freeze-b4m.js"
+      ],
+      "evidence": [
+        "Frozen baseline exercises whole-game trace, not independent clause correctness."
+      ]
+    }
+  ]
+}

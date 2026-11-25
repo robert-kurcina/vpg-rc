@@ -1,0 +1,139 @@
+{
+  "checkpoint": 242,
+  "version": "v476",
+  "assertions": 69,
+  "classification": "ISOLATED-TEST-ONLY-NOT-HISTORICAL-KIEV-GAMEPLAY",
+  "provenance": {
+    "rulebook": "d55e8f0e567d1f8c7907c4fc8368954ec0e5fa8d6fe9e8e71c61acf9bb3c3756",
+    "map": "dcf72e17ed9f1ee22f65bcd11e41916d9c3bfc3feb25f2a39731f7025e067d3f",
+    "svg": "2b15c3a92a282a7efc27d54bcd8994470f0fce8ee5417d5d734969fcd2c4ab7e",
+    "movementAuthorization": "f63cc74fac795875fb89e38167a1f2fb70b78712480df7ce4fe20060c78f1c36",
+    "combatPolicy": "6a3093ea0412e39ca55cefdbd93f3b9c9aad980fc1d6ef72ebf8c7847a1c47a8",
+    "candidateLedger": "e8a1e30d69d56ffa17dc322c7e278b1701b4518919e48f35945cce18039513b9"
+  },
+  "scope": {
+    "sourceLegalButNotMandatoryHistoricalOpening": true,
+    "sourceKievHexes": 165,
+    "actualKievPhysicalEdges": 442,
+    "isolatedGraphAuthorization": true,
+    "testOnlyFirstTurnRomanianMaskBypass": true,
+    "romanianCountryMaskCertified": false,
+    "historicalKievGamePlayable": false,
+    "sourceMapUnchanged": true,
+    "gameRendererUnchanged": true
+  },
+  "result": {
+    "actionCount": 14,
+    "turnsCompleted": 1,
+    "city": "Kovel",
+    "hex": "0502",
+    "initialAxisCities": 2,
+    "afterGermanCombatAxisCities": 3,
+    "afterSovietCombatAxisCities": 2,
+    "germanOutcome": "EX",
+    "sovietOutcome": "DR",
+    "germanAttacker": "kiev-front-r02c03",
+    "germanDefender": "kiev-front-r05c02",
+    "sovietRecapturer": "kiev-front-r03c05",
+    "originalGermanRetreat": [
+      "0601",
+      "0701"
+    ],
+    "advanceOptional": true,
+    "forgedRetreatRejected": true,
+    "journalRestore": true,
+    "undo": true,
+    "actionLog": [
+      {
+        "turn": 1,
+        "phase": "german-combat",
+        "type": "combat",
+        "subaction": "commit-battles"
+      },
+      {
+        "turn": 1,
+        "phase": "german-combat",
+        "type": "combat",
+        "subaction": "select-battle"
+      },
+      {
+        "turn": 1,
+        "phase": "german-combat",
+        "type": "combat",
+        "subaction": "commit-ground-air"
+      },
+      {
+        "turn": 1,
+        "phase": "german-combat",
+        "type": "combat",
+        "subaction": "resolve-battle"
+      },
+      {
+        "turn": 1,
+        "phase": "german-combat",
+        "type": "combat",
+        "subaction": "finish-combat"
+      },
+      {
+        "turn": 1,
+        "phase": "german-special-movement",
+        "type": "finish-phase",
+        "subaction": null
+      },
+      {
+        "turn": 1,
+        "phase": "soviet-buildup",
+        "type": "finish-buildup",
+        "subaction": null
+      },
+      {
+        "turn": 1,
+        "phase": "soviet-special-movement",
+        "type": "finish-phase",
+        "subaction": null
+      },
+      {
+        "turn": 1,
+        "phase": "soviet-combat",
+        "type": "combat",
+        "subaction": "commit-battles"
+      },
+      {
+        "turn": 1,
+        "phase": "soviet-combat",
+        "type": "combat",
+        "subaction": "select-battle"
+      },
+      {
+        "turn": 1,
+        "phase": "soviet-combat",
+        "type": "combat",
+        "subaction": "resolve-battle"
+      },
+      {
+        "turn": 1,
+        "phase": "soviet-combat",
+        "type": "combat",
+        "subaction": "finish-combat"
+      },
+      {
+        "turn": 1,
+        "phase": "soviet-movement",
+        "type": "finish-phase",
+        "subaction": null
+      },
+      {
+        "turn": 1,
+        "phase": "housekeeping",
+        "type": "finish-housekeeping",
+        "subaction": null
+      }
+    ]
+  },
+  "limitations": [
+    "The source-reviewed Kiev movement graph remains provisional in production",
+    "Full Romanian territory cannot be reconstructed from four Romanian starting slots",
+    "Opening face allocation is a permitted test fixture, not certified historical placement",
+    "One-turn scripted city exchange cannot establish seven-turn playability or strategy"
+  ]
+}

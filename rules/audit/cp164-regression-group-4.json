@@ -1,0 +1,9 @@
+[
+  {
+    "index": 34,
+    "command": "node tests/historical-postcombat-fleet-choices-v394.test.js",
+    "passed": true,
+    "seconds": 16.12,
+    "outputTail": "PASS v394 1264 assertions; five port choices, two Fleet conditions, saved pre-roll commitments\n"
+  }
+]

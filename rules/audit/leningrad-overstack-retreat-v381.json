@@ -1,0 +1,42 @@
+{
+  "checkpoint": 147,
+  "version": "v381",
+  "scope": "bounded overstack-extension source retreat, no joint ordering or Fleet-port adjudication",
+  "assertions": 39,
+  "sourcePdf": "references/rules/leningrad-rules.pdf §10.6",
+  "sourcePdfSha256": "74d332e052e735e2378027a06f95e9715392773f249561bf1c00cae08a2bbfa7",
+  "threeHexes": {
+    "count": 10,
+    "selected": [
+      "0308",
+      "0307",
+      "0407"
+    ]
+  },
+  "fourHexes": {
+    "count": 21,
+    "selected": [
+      "0308",
+      "0307",
+      "0407",
+      "0406"
+    ]
+  },
+  "rules": [
+    "strict outward every step",
+    "extra steps only after a blocked two-hex stacking endpoint",
+    "safe extensions preferred over EZOC-exposed alternatives",
+    "first available legal stacking endpoint is mandatory"
+  ],
+  "regression": [
+    "DR and EX transactions",
+    "undo",
+    "failed-path atomicity",
+    "opt-in disabled legacy safe-only mode"
+  ],
+  "limitations": [
+    "Fleet port optional ignore-retreat not implemented",
+    "Order-dependent stacked defender extra-hex alternatives still fail closed",
+    "No independent executable-parity or eight-turn gameplay verification"
+  ]
+}

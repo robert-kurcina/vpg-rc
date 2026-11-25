@@ -1,0 +1,20 @@
+{
+  "checkpoint": 255,
+  "version": "v489",
+  "status": "PASS",
+  "meaning": "Source-constrained variable player deployment, NOT a uniquely prescribed historical initial allocation",
+  "source": "references/rules/kiev-rules.pdf printed p.2 §6.0, steps 2–9",
+  "sourceSha256": "d55e8f0e567d1f8c7907c4fc8368954ec0e5fa8d6fe9e8e71c61acf9bb3c3756",
+  "checks": 271,
+  "examples": {
+    "romanianPermutations": 24,
+    "polishTripleLocations": 35,
+    "sovietStarCombinations": 210,
+    "sovietLegal": 61,
+    "sovietRejected": 149
+  },
+  "unresolved": [
+    "Exact photographed counter-ID positions are not prescribed by §6; avoid inventing a canonical arrangement",
+    "Movement/source-coordinate disputes and broader combat/AI acceptance remain separate"
+  ]
+}

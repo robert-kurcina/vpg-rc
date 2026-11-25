@@ -1,0 +1,31 @@
+{
+  "checkpoint": 187,
+  "version": "v421",
+  "browser": "actual Chromium and exact project source/scripts/engine SVG exports",
+  "results": [
+    {
+      "game": "battle-for-moscow",
+      "defaultCounterSize": 46,
+      "largeCounterSize": 57.5,
+      "coastSupported": false,
+      "settingsTab": true,
+      "pageErrors": []
+    },
+    {
+      "game": "arduous",
+      "defaultCounterSize": 22.65,
+      "largeCounterSize": 28.313,
+      "coastSupported": false,
+      "settingsTab": true,
+      "pageErrors": []
+    },
+    {
+      "game": "leningrad",
+      "defaultCounterSize": 29.95,
+      "largeCounterSize": 37.438,
+      "coastSupported": true,
+      "settingsTab": true,
+      "pageErrors": []
+    }
+  ]
+}

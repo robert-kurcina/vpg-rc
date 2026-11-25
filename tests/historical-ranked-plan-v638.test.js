@@ -1,0 +1,12 @@
+'use strict';
+const A=require('node:assert/strict'),{selectRankedPlan}=require('../core/historical_campaign_autoplay');
+const a={defenderHex:'0101',attackers:['a']},b={defenderHex:'0102',attackers:['a']},c={defenderHex:'0101',attackers:['b']},d={defenderHex:'0103',attackers:['c']},e={defenderHex:'0104',attackers:['d']};
+const ranked=[a,b,c,d,e],before=JSON.stringify(ranked);let trials=[];
+const validate=p=>{trials.push(p);return !p.includes(d);};
+A.deepEqual(selectRankedPlan({ranked,limit:2,validate}),[a,e]);
+A.deepEqual(trials,[[a],[a,d],[a,e]]);
+A.equal(JSON.stringify(ranked),before);
+A.deepEqual(selectRankedPlan({ranked,limit:0,validate}),[]);
+A.deepEqual(selectRankedPlan({ranked,limit:1,validate}),[a]);
+A.deepEqual(selectRankedPlan({ranked,limit:5,validate:()=>false}),[]);
+console.log('PASS ranked plan 6 assertions');

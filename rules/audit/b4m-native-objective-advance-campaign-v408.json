@@ -1,0 +1,51 @@
+{
+  "status": "PASS",
+  "checkpoint": 174,
+  "description": "Opt-in objective-advance native AI selected actions replayed against legacy rules engine; legacy strategic decision parity NOT tested",
+  "policy": {
+    "schemaVersion": 1,
+    "mode": "objective-advance-v1",
+    "maxPhases": 12,
+    "maxActions": 180,
+    "maxMovesPerPhase": 8,
+    "maxBattlesPerPhase": 2,
+    "maxReplacementsPerPhase": 8,
+    "minAttackOdds": 1
+  },
+  "runs": 4,
+  "sideTurns": 56,
+  "actions": 1080,
+  "combatDeclarations": 107,
+  "resolvedBattles": 107,
+  "movements": 504,
+  "replacements": 138,
+  "shockPlacements": 4,
+  "savedSnapshots": 40,
+  "undoReplays": 56,
+  "fullStateMatches": 1080,
+  "matchedDice": 107,
+  "terminalMatches": 4,
+  "campaigns": [
+    {
+      "seed": 1,
+      "turns": 14,
+      "winner": "soviet",
+      "unitLocations": 37,
+      "stateHash": "e933a5f6688a75e33dc60d1194b55e022e2474a394aeae825f6faa70ef2f8983"
+    },
+    {
+      "seed": 17,
+      "turns": 14,
+      "winner": "soviet",
+      "unitLocations": 34,
+      "stateHash": "230f3bdf61241e0de59d85cf66ed40c0a0b8156df20da62ef70ec8d309461ef0"
+    },
+    {
+      "seed": 1941,
+      "turns": 14,
+      "winner": "soviet",
+      "unitLocations": 38,
+      "stateHash": "4c520de37e43a802bce2d917caf1f8cb7447a45af7b63781a91b09adbc8839d5"
+    }
+  ]
+}

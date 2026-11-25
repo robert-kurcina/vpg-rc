@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "status": "source-gated-not-playable",
+  "reference": "references/rules/leningrad-rules.pdf §6.0; §10.0–10.2",
+  "mapSha256": "1add33f505e1637c2fcf11f5017cad1d0fd2467780b763d6b25e89a4e725ddb8",
+  "counterConfigSha256": "8d8325a221e79f9e56fbbc91d829427717f56f2d9f51df47b09c7601949eec21",
+  "ready": false,
+  "sourceRegister": "authoredSvgImportAudit.details.deployment",
+  "expected": {
+    "sovietFrontlineStars": 5,
+    "germanBlackCrosses": 5,
+    "sovietFixed": 5,
+    "germanStartingGroundUnits": 9,
+    "sovietFrontlineGroundUnits": 5
+  },
+  "registered": {
+    "stars": [
+      {
+        "hex": "0108",
+        "svgId": "use1-4"
+      },
+      {
+        "hex": "0209",
+        "svgId": "use225"
+      },
+      {
+        "hex": "0309",
+        "svgId": "use226"
+      },
+      {
+        "hex": "0410",
+        "svgId": "use227"
+      },
+      {
+        "hex": "0510",
+        "svgId": "use228"
+      }
+    ],
+    "crosses": [
+      {
+        "hex": "0109",
+        "svgId": "use1-09"
+      },
+      {
+        "hex": "0210",
+        "svgId": "use230"
+      },
+      {
+        "hex": "0310",
+        "svgId": "use231"
+      },
+      {
+        "hex": "0411",
+        "svgId": "use232"
+      }
+    ]
+  },
+  "gaps": [
+    "Full historical unit placement and strengths not yet source-bound",
+    "German cross source-mark count 4 != 5",
+    "Printed historical counter identities not fully verified"
+  ]
+}

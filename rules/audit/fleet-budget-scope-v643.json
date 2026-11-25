@@ -1,0 +1,22 @@
+{
+  "checkpoint": 409,
+  "version": "v643",
+  "scope": "opt-in controller Fleet declaration budget across housekeeping turn boundaries",
+  "default": "campaign",
+  "optional": "turn",
+  "assertions": 15,
+  "browserBundleModules": 62,
+  "odessaOpening": {
+    "actions": 30,
+    "variant": "standard",
+    "seed": 7,
+    "exactRestore": true,
+    "status": "bounded controller budget reached"
+  },
+  "limitations": [
+    "No full Odessa campaign completed",
+    "No current Chromium session",
+    "Inherited broad test execution timed out",
+    "Historical Fleet legality remains authoritative, policy is an AI allowance only"
+  ]
+}

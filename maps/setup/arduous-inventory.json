@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "scenarioId": "arduous",
+  "source": "references/rules/arduous-rules.pdf §6.0 and §11.0, printed pages 2 and 6; assets/official-counters/source-sheets/counters-arduous-front.jpg",
+  "pools": {
+    "germanPanzer": {"count": 5,"affiliation":"axis","kind":"tank","printedValuesPattern":"^(12|10)-6$","reverseKind":"tank","reverseAffiliation":"axis"},
+    "germanInfantry": {"count": 11,"affiliation":"axis","kind":"infantry","printedValuesPattern":"^(8|7|6|5)-4$","reverseKind":"infantry","reverseAffiliation":"axis"},
+    "sovietArmies": {"count": 10,"affiliation":"soviet","kind":"infantry","printedValuesPattern":"^8-4$","reverseKind":"infantry","reverseAffiliation":"soviet"},
+    "sovietMechanized": {"count": 10,"affiliation":"soviet","kind":"mechanized","printedValuesPattern":"^\\?-6$","reverseKind":"mechanized","reverseAffiliation":"soviet"},
+    "airSupport": {"count": 2,"affiliation":"axis","kind":"air-support","printedValuesPattern":"^2 / arrow$|^1 / arrow$","reverseKind":"air-support","reverseAffiliation":"axis"},
+    "gameTurn": {"count": 1,"affiliation":"neutral","kind":"game-turn","printedValuesPattern":"^$","reverseKind":"game-turn","reverseAffiliation":"neutral"},
+    "brestLocation": {"count": 1,"affiliation":"neutral","kind":"location-marker","printedValuesPattern":"^$","reverseKind":"garrison","reverseAffiliation":"axis"}
+  },
+  "groundPools": ["germanPanzer","germanInfantry","sovietArmies","sovietMechanized"],
+  "groups": {
+    "germanInitialPanzer":{"pool":"germanPanzer","count":5},
+    "germanInitialInfantry":{"pool":"germanInfantry","count":11},
+    "sovietFrontArmies":{"pool":"sovietArmies","count":3},
+    "sovietFrontMechanized":{"pool":"sovietMechanized","count":4},
+    "sovietFixedArmies":{"pool":"sovietArmies","count":3},
+    "sovietFixedMechanized":{"pool":"sovietMechanized","count":3},
+    "sovietReinforcementArmies":{"pool":"sovietArmies","count":4},
+    "sovietReinforcementMechanized":{"pool":"sovietMechanized","count":3}
+  },
+  "reinforcementSchedule": [
+    {"turn":1,"sovietReinforcementArmies":2,"sovietReinforcementMechanized":2},
+    {"turn":2,"sovietReinforcementArmies":1,"sovietReinforcementMechanized":1},
+    {"turn":3,"sovietReinforcementArmies":1,"sovietReinforcementMechanized":0}
+  ],
+  "notes": ["The 3-4 Soviet Brest Garrison uses the reverse-only fixed piece policy, outside the ordinary ground-front inventory.","Every German ground front is used at setup; no German ground reinforcements."]
+}

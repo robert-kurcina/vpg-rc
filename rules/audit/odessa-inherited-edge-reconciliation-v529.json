@@ -1,0 +1,61 @@
+{
+  "checkpoint": 295,
+  "version": "v529",
+  "status": "source-comparison-diagnostic-only",
+  "assertions": 48,
+  "sourceLedgers": {
+    "base": "kiev-source-reviewed-candidate-v435",
+    "combined": "odessa-source-route-rail-ledger-v496"
+  },
+  "certifiedForMovement": false,
+  "certifiedForReinforcements": false,
+  "certifiedForReplacements": false,
+  "certifiedForVictory": false,
+  "originalKiev": {
+    "hexes": 165,
+    "edges": 442,
+    "rails": 93,
+    "rivers": 72,
+    "majorRivers": 10
+  },
+  "composite": {
+    "hexes": 261,
+    "edges": 714,
+    "traversableCandidates": 614,
+    "impassableCandidates": 100,
+    "rails": 117
+  },
+  "comparison": {
+    "inheritedEdges": 442,
+    "featureAgreements": 441,
+    "unresolvedDisagreements": [
+      {
+        "edge": "1201:1202",
+        "attribute": "rail",
+        "originalKiev": true,
+        "compositeRouteLedger": false
+      }
+    ],
+    "inheritedRiverSides": 72,
+    "inheritedMajorRiverSides": 10,
+    "inheritedRailSides": 92,
+    "seamEdges": 24,
+    "extensionInternalEdges": 248,
+    "traversableSeamEdges": 24,
+    "traversableExtensionEdges": 148
+  },
+  "sourceRevision": {
+    "v496ExtensionDigestStale": true,
+    "activeExtensionDigestPinned": true,
+    "activeSourceSvgDigestPinned": true,
+    "activeRouteLinkListRecomputed": true
+  },
+  "authorization": {
+    "historicalMovement": false,
+    "reinforcementEntry": false,
+    "replacementCommunication": false,
+    "cityIsolation": false,
+    "fullCampaign": false
+  },
+  "ruleStatus": "Odessa map and original Kiev SVG are separately source-pinned; difference is NOT adjudicated"
+}

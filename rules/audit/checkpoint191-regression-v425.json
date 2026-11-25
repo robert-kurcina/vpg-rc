@@ -1,0 +1,111 @@
+{
+  "checkpoint": 191,
+  "version": "v425",
+  "nodeSuites": [
+    {
+      "test": "legal-pathfinding-v318.test.js",
+      "status": "PASS",
+      "durationSeconds": 0.07,
+      "detail": "PASS rule-aware legal-pathfinding 69 assertions"
+    },
+    {
+      "test": "legal-pathfinding-dominance-v425.test.js",
+      "status": "PASS",
+      "durationSeconds": 0.1,
+      "detail": "PASS dominance-pruned shared movement search 80 oracle scenarios, 466 legal paths"
+    },
+    {
+      "test": "pathfinding-v318.test.js",
+      "status": "PASS",
+      "durationSeconds": 0.07,
+      "detail": "PASS shared pathfinding 25 assertions"
+    },
+    {
+      "test": "human-lazy-combat-plans-v425.test.js",
+      "status": "PASS",
+      "durationSeconds": 2.12,
+      "detail": "PASS human catalog lazy combined-plans: all proposals and actual three-battle commitment preserved"
+    },
+    {
+      "test": "historical-three-battle-plans-v396.test.js",
+      "status": "PASS",
+      "durationSeconds": 4.25,
+      "detail": "PASS v396 803 assertions; 128 three-battle plans; three B4M combat results; full Undo/save"
+    },
+    {
+      "test": "historical-human-decision-gateway-v401.test.js",
+      "status": "PASS",
+      "durationSeconds": 4.6,
+      "detail": "PASS human campaign choice/roll/restore/Undo 37 assertions"
+    },
+    {
+      "test": "arduous-executable-graph-v419.test.js",
+      "status": "PASS",
+      "durationSeconds": 0.13,
+      "detail": "PASS Arduous executable graph 21 checks (155 hexes, 85 rails, 45 river sides)"
+    },
+    {
+      "test": "arduous-combat-river-fortification-v419.test.js",
+      "status": "PASS",
+      "durationSeconds": 0.07,
+      "detail": "PASS Arduous shared CRT, fortification and approved river combat 17 checks"
+    },
+    {
+      "test": "arduous-full-source-opening-v413.test.js",
+      "status": "PASS",
+      "durationSeconds": 0.06,
+      "detail": "dMechanized\":[{\"hex\":\"0907\",\"sourceSvgId\":\"use334\",\"kind\":\"fixedMechanized\",\"terrain\":\"open\",\"anchorSource\":\"rule-and-authored-city\",\"ruleSource\":\"arduous-rules.pdf \u00a76.0 #2\"},{\"hex\":\"0609\",\"sourceSvgId\":\"use336\",\"kind\":\"fixedMechanized\",\"terrain\":\"open\",\"anchorSource\":\"rule-and-authored-city\",\"ruleSource\":\"arduous-rules.pdf \u00a76.0 #2\"},{\"hex\":\"1510\",\"sourceSvgId\":\"use338\",\"kind\":\"fixedMechanized\",\"terrain\":\"open\",\"anchorSource\":\"rule-and-authored-city\",\"ruleSource\":\"arduous-rules.pdf \u00a76.0 #2\"}]}}"
+    },
+    {
+      "test": "arduous-roster-and-victory-v410.test.js",
+      "status": "PASS",
+      "durationSeconds": 0.08,
+      "detail": "PASS v410 Arduous photographed counters + \u00a75 victory: 237 assertions"
+    },
+    {
+      "test": "arduous-topology-probe-v418.test.js",
+      "status": "PASS",
+      "durationSeconds": 0.07,
+      "detail": "PASS Arduous source topology probe 33 checks; movement probe was TEST-ONLY"
+    },
+    {
+      "test": "arduous-river-candidates-v418.test.js",
+      "status": "PASS",
+      "durationSeconds": 0.06,
+      "detail": "PASS Arduous source graph: 45 river candidates, zero incident-contact entries; 12 checks"
+    },
+    {
+      "test": "arduous-seven-turn-smoke-v419.test.js",
+      "status": "PASS",
+      "durationSeconds": 2.42,
+      "detail": "802\"},{\"slot\":\"t1-sovietreinforcementmechanized-1\",\"hex\":\"1801\"},{\"slot\":\"t1-sovietreinforcementmechanized-2\",\"hex\":\"1802\"},{\"slot\":\"t2-sovietreinforcementarmies-1\",\"hex\":\"1803\"},{\"slot\":\"t2-sovietreinforcementmechanized-1\",\"hex\":\"1803\"},{\"slot\":\"t3-sovietreinforcementarmies-1\",\"hex\":\"1804\"}],\"terminal\":\"soviet-victory\",\"limitations\":[\"No optional attacks or movement exercised\",\"This is not a full human-play or AI-play acceptance\",\"The source opening uses a deterministic candidate assignment\"]}"
+    },
+    {
+      "test": "shared-historical-crt-v316.test.js",
+      "status": "PASS",
+      "durationSeconds": 0.03,
+      "detail": "PASS v316 shared Oberlabs CRT: 36 cells x 5 historical mappings"
+    },
+    {
+      "test": "b4m-native-objective-advance-v408.test.js",
+      "status": "PASS",
+      "durationSeconds": 0.11,
+      "detail": ",\"checkpoint\":174,\"version\":\"v408\",\"scope\":\"synthetic source-rules differential at Moscow; not historical setup certification\",\"checks\":42,\"sourceCRT\":\"unchanged\",\"engine\":\"unchanged\",\"productionSelector\":\"legacy-b4m-v1\",\"advancedDE\":true,\"legacyActionParity\":true,\"dieCommitIsolation\":true,\"moscowDRHold\":true,\"defaultPoliciesPreserved\":true,\"undoAndSave\":true,\"limitations\":[\"Synthetic Moscow tactical board positions\",\"No new legacy strategic AI parity claim\",\"No active B4M production cutover\"]}"
+    },
+    {
+      "test": "leningrad-combat-commitment-v318.test.js",
+      "status": "PASS",
+      "durationSeconds": 0.13,
+      "detail": "PASS Leningrad immutable combat commitment 21 assertions"
+    }
+  ],
+  "summary": {
+    "PASS": 16,
+    "FAIL": 0,
+    "TIMEOUT": 0
+  },
+  "notes": [
+    "This is a selected targeted batch; the longer 184-action v422 campaign regression was not rerun to completion in this checkpoint",
+    "101-decision seven-turn Chromium human-control replay was independently completed after rebuilding the browser bundle"
+  ]
+}

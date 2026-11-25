@@ -1,0 +1,606 @@
+{
+  "checkpoint": 316,
+  "version": "v550",
+  "scope": "source-based one-step counter projection and gallery; not a gameplay rule change",
+  "protectedSourceFilesUnchanged": 146,
+  "rendererNotes": [
+    "Three source-backed Odessa reverse-only cavalry counters show printed faces without damaged strip",
+    "Ten Soviet Mechanized Corps remain untried/revealed one-step, not damaged",
+    "All ordinary reduced counters retain original red/white bar logic",
+    "Full Kiev\u2013Odessa initial 36, six scheduled arrivals, one replacement-only reserve and four Support entries displayed"
+  ],
+  "newNodeAssertions": 127,
+  "newGalleryChromiumAssertions": 30,
+  "liveRomanianCavalryChromiumAssertions": 24,
+  "oldPaletteNodeAssertions": 48,
+  "twoStepContrastNodeAssertions": 204,
+  "mixedSourceSevenTurnNodeAssertions": 98,
+  "selectedFaceSevenTurnNodeAssertions": 166,
+  "legacyRedCounterBrowserTest": "exceeded test window; not certified in v550",
+  "protectedRecords": [
+    {
+      "path": "maps/index.html",
+      "sha256": "3aada82028cf8d26c8214d4fd21f334e0e5208304eab2fba95f1e6a378773922"
+    },
+    {
+      "path": "maps/odessa-extension.json",
+      "sha256": "7fe21e442500256a18cffa575fb4b17fba24564543e57c7fca9826b6bd27e5e3"
+    },
+    {
+      "path": "maps/arduous.json",
+      "sha256": "0cf849eaf683cd86443d244f20e5d03f8dc18ba354f88861d039307da162742d"
+    },
+    {
+      "path": "maps/kiev-odessa-composite-experimental-v531.json",
+      "sha256": "97bab5bed6f17f3f47f014eb8ea8e115621ce6ad0379206ff70d5a4edc4d1e63"
+    },
+    {
+      "path": "maps/battle-for-moscow.json",
+      "sha256": "0cbbee55d2079c931b54d6692599e53a2edb28d43390636f0b2cb47e7aa40005"
+    },
+    {
+      "path": "maps/composer.js",
+      "sha256": "e67d5c9ec843395af4fbc1da536708bc8bf088640285b3763faf895f57c78b29"
+    },
+    {
+      "path": "maps/kiev.json",
+      "sha256": "6004d776cc3aec63ffd5f2863810e6bea04eee5c78fafa2967e115cdc6c17a36"
+    },
+    {
+      "path": "maps/registry.json",
+      "sha256": "b1bdfab88b59ea7e951c7b0a4737293248bb495c1377af7872d96dc58719a836"
+    },
+    {
+      "path": "maps/leningrad.json",
+      "sha256": "3ec95353555af6703d2fd006b11b55e2b98685e296f36e528da85547d6933b17"
+    },
+    {
+      "path": "maps/housekeeping-configs/kiev-odessa-candidate-v521.json",
+      "sha256": "ed22deafe9e340ced235647334b8ec06bd3186f81844eb9394d41ed5cee54714"
+    },
+    {
+      "path": "maps/housekeeping-configs/arduous.json",
+      "sha256": "24653d58f98c2aa13411d248759023750d604445dacb02792aa6e6332f379f52"
+    },
+    {
+      "path": "maps/housekeeping-configs/kiev.json",
+      "sha256": "789fc8d648fc0674be76142b2c3f77f75157b6a0a8863a8f17961edaf03917c2"
+    },
+    {
+      "path": "maps/housekeeping-configs/leningrad.json",
+      "sha256": "eb5df04507efd81a87a375bbbf37c485cf0fb99e77f4071e9d86e0afbd0c92e4"
+    },
+    {
+      "path": "maps/setup/kiev-inventory.json",
+      "sha256": "d85490e13c3e400d8276f2d3bbaf0c19bafd5cadb6bb89823be02e1f8150892c"
+    },
+    {
+      "path": "maps/setup/arduous-inventory.json",
+      "sha256": "09024dcddcec1bc189ab0053f7aadb5bdf56765dcec4165b409ecaadb3146289"
+    },
+    {
+      "path": "maps/setup/arduous.json",
+      "sha256": "d4029dae6a5376e50a1e0308f4edaaa443332d3e00c7ac3d2f4f6c2088e29879"
+    },
+    {
+      "path": "maps/setup/arduous-fixed-pieces.json",
+      "sha256": "2180c1400b65dfcf57de7635d19d36ee2887c271eeda7edeb76a91e24841e3a9"
+    },
+    {
+      "path": "maps/setup/kiev.json",
+      "sha256": "7faab02e743a703b9c428a61e7001cc122f3b36393da81a5559622fa4d10602d"
+    },
+    {
+      "path": "maps/setup/leningrad.json",
+      "sha256": "3ed0e7a28e4aa84efb3cb9e3851fa55f3be6d7fc26250bc2f9550f2a1ef46d19"
+    },
+    {
+      "path": "maps/scenarios/README.md",
+      "sha256": "59dcb812ce0ebc79ac70f03db47d87710ede4afa09e5b98fdc4f449478cc6fe4"
+    },
+    {
+      "path": "maps/scenarios/registry.json",
+      "sha256": "7db4535ed3f7996517c864c1109cc7e5eff935141a0b7ba4a5127ca4baf64330"
+    },
+    {
+      "path": "maps/combat-configs/kiev-major-river-effects-v430.json",
+      "sha256": "eb73a54475557c5c8c8a1156984aebcaa73ad54daadb9d052d53964097cee1c2"
+    },
+    {
+      "path": "maps/combat-configs/kiev-turn-rules-v443.json",
+      "sha256": "66c9289f0184359e230d03566c373928d636f7648c5bdbda7691568bf6fce8e4"
+    },
+    {
+      "path": "maps/combat-configs/kiev-odessa-black-sea-fleet-candidate-v517.json",
+      "sha256": "0c05a68af96e71e96aa9b527b27486fab9a786846b13bcb7baf4322946903494"
+    },
+    {
+      "path": "maps/combat-configs/kiev-turn-rules-v442.json",
+      "sha256": "8dc422e51167808811c9f70cac846e1916b95e275ac5637f677e208926e3fcaf"
+    },
+    {
+      "path": "maps/combat-configs/kiev-odessa-romanian-air-candidate-v510.json",
+      "sha256": "e4afbe8a6b61c079f7d37726cb7fe2914d05c74fa193f6890a1d2f53a7703ee3"
+    },
+    {
+      "path": "maps/combat-configs/arduous.json",
+      "sha256": "97a4ef2e1e3a826eb2ddf0bde800360a055feab061249acb63a75bd3e7131796"
+    },
+    {
+      "path": "maps/combat-configs/kiev-odessa-air-sea-candidate-v518.json",
+      "sha256": "5346abe68e4fe44ee7e335f4b71838010e30e397287b9dc35a580d97a78b22d8"
+    },
+    {
+      "path": "maps/combat-configs/kiev.json",
+      "sha256": "62769163272302c17a85aadd9916de6bd76ff9b6bc85ec03a23c37e1c51150f3"
+    },
+    {
+      "path": "maps/combat-configs/kiev-odessa-experimental-v531.json",
+      "sha256": "8dcdeb392ebc9785efec4c7961ff14de7009cad3d03e6ee0f69445702d33626c"
+    },
+    {
+      "path": "maps/combat-configs/leningrad.json",
+      "sha256": "b7ba4d0b6eaed8ab4bc0e33a171cfc717fa53ca76238a8c1baeef1c194131848"
+    },
+    {
+      "path": "maps/counter-configs/odessa-extension.json",
+      "sha256": "6d8a60c80ece290f9fc52192be1bbf5b792b3b9662099519e88f13c5118e4581"
+    },
+    {
+      "path": "maps/counter-configs/arduous.json",
+      "sha256": "de3c08a7aad765978462d05189a61da1e1b29a150ec08de7f00c45c832c0f238"
+    },
+    {
+      "path": "maps/counter-configs/battle-for-moscow.json",
+      "sha256": "ad36be532d3f7ebfcfe920d35ae4ca07373ec4ed0ea70bd031657d41be91f80c"
+    },
+    {
+      "path": "maps/counter-configs/kiev.json",
+      "sha256": "903d29cc785d4bfcc63ae2290ec5738877e151e74a6ed46d633bb301942e2892"
+    },
+    {
+      "path": "maps/counter-configs/kiev-odessa-experimental-v531.json",
+      "sha256": "8e0c46ce1279103d5b85b72fe4100ac75c2f2fa90287a43606c8f54fddb4bcb8"
+    },
+    {
+      "path": "maps/counter-configs/leningrad.json",
+      "sha256": "87430995da23f065b9076ad6989f9b1db45cdcfb7da07a6d71c1fc71b3b38dfe"
+    },
+    {
+      "path": "maps/movement-configs/odessa-inherited-edge-comparison-v529.json",
+      "sha256": "a12ca81424e5d4513f4782f7fbe7d3012bdf7d676bfd8bb94c453d8b553d157f"
+    },
+    {
+      "path": "maps/movement-configs/kiev-odessa-cavalry-candidate-v498.json",
+      "sha256": "b58a4033beb0f98bf1625af9ad5d8f06b266ab27cddbdcb1c9a7721e82ec86c7"
+    },
+    {
+      "path": "maps/movement-configs/README.md",
+      "sha256": "bc750d04a4e20aaced42f3ae4c3e250ff50f51f6f6b6f64dec282113e8d5ff58"
+    },
+    {
+      "path": "maps/movement-configs/odessa-entry-border-geometry-v527.json",
+      "sha256": "b8df8babbe50ea1a02214d6cacd395ec57aaa6915c1c62ab6d87aa43a9fc8f5f"
+    },
+    {
+      "path": "maps/movement-configs/arduous.json",
+      "sha256": "409dc828b69e4b7b1d61f85788cd0b4674576fa40c42099fd9e58394ba995307"
+    },
+    {
+      "path": "maps/movement-configs/kiev-source-reviewed-candidate-v435.json",
+      "sha256": "0e4431b094720e82b1a8b4078cff87fd8ff18e1907952f99bb87df0c320299dc"
+    },
+    {
+      "path": "maps/movement-configs/kiev.json",
+      "sha256": "81be9bdcaa71188eba1eb892ad2ce61a95d04b5d2b614a46929d5cb31b5dbac0"
+    },
+    {
+      "path": "maps/movement-configs/kiev-odessa-territory-candidate-v499.json",
+      "sha256": "4656d1ed4a0033a0e37d09d38f27625096d3ab1e6c45d981b57bef510d9dbff5"
+    },
+    {
+      "path": "maps/movement-configs/registry.json",
+      "sha256": "5c0232f51ed8b6c618ba08b99aed8bc9ea6103ba06fffb3d337f91c15f00608f"
+    },
+    {
+      "path": "maps/movement-configs/experimental-source-graph-ledgers.json",
+      "sha256": "8cd7127449ac3bb5981e5b61947d47be43f0f86af8094e233d08b24cb899c3f0"
+    },
+    {
+      "path": "maps/movement-configs/kiev-odessa-experimental-v531.json",
+      "sha256": "0913c7849cf9045db7b07642823df6512f626cc880367966aac9072793a03563"
+    },
+    {
+      "path": "maps/movement-configs/kiev-source-reviewed-candidate-v433.json",
+      "sha256": "665c6ff94018c5a32bba8b54a1b7f1e3163419b8083b6159ab3962a4ec72d06d"
+    },
+    {
+      "path": "maps/movement-configs/odessa-source-route-rail-ledger-v496.json",
+      "sha256": "23cdfc14b93b1791db0e3d03f5bb033196675fd7b34b5e2d5d9b81c0786dea23"
+    },
+    {
+      "path": "maps/movement-configs/leningrad.json",
+      "sha256": "2e6fc15fd1cee048120b1ba151c1f8b01c19c9cf9b1e9ba313b99be168ca8bed"
+    },
+    {
+      "path": "maps/movement-configs/kiev-odessa-territory-candidate-v504.json",
+      "sha256": "b746a5c9e75ceb179a87f5f7c53f40dbfaba42745ffaa2b807f55c283fc82cfd"
+    },
+    {
+      "path": "maps/movement-configs/graph-sources.json",
+      "sha256": "f30a53c58236ac80abdaab51f61f674d5016835af8d6c09a27eea156115182ae"
+    },
+    {
+      "path": "maps/movement-configs/source-reviewed-edge-ledgers.json",
+      "sha256": "7c672a04484864c7ee3c96e44fc56a8eaf6eb32da4271cacddb256d04a4dc47b"
+    },
+    {
+      "path": "maps/source/leningrad-map-scan-current.jpg",
+      "sha256": "e2d718355490cbcdbecad4699aa4da2aebd477de736ee9aa26536e62347da17c"
+    },
+    {
+      "path": "maps/source/leningrad-map-scan(2).jpg",
+      "sha256": "e2d718355490cbcdbecad4699aa4da2aebd477de736ee9aa26536e62347da17c"
+    },
+    {
+      "path": "maps/source/kiev-map-scan.jpg",
+      "sha256": "c08af048799b8d0fd35ed9d1f128e94e03a404f5ddc497efd792fccbbdeb8df2"
+    },
+    {
+      "path": "maps/source/odessa-entry-edges-baseline-v259.json",
+      "sha256": "fad43ccaed4b2ddd77c8c3c6f854b4464e70216b415e8c7ce732b0314bcab2e7"
+    },
+    {
+      "path": "maps/source/leningrad-map-scan.jpg",
+      "sha256": "e2d718355490cbcdbecad4699aa4da2aebd477de736ee9aa26536e62347da17c"
+    },
+    {
+      "path": "maps/source/odessa-map-scan.webp",
+      "sha256": "21e497a932131d839cbb6e54bed27be4ac422641ca4b07b1a0f604909d5482a8"
+    },
+    {
+      "path": "maps/source/arduous-map-scan.webp",
+      "sha256": "9e41cf83ff001a616c5b6651784b8ac8206fc2eb04048dc41b1a3a0b3c3fa8f4"
+    },
+    {
+      "path": "maps/source/kiev-odessa-map-scan.jpg",
+      "sha256": "cb7f3dad98fc2a68055e2899fc7d85b14c356176fcb6fc99be79079199e5d6be"
+    },
+    {
+      "path": "maps/roster-overlays/kiev-odessa.json",
+      "sha256": "5a5d75b862d1ceccee44eef54150aa09446e3e8c09eed7b06b6eb2a036288fd1"
+    },
+    {
+      "path": "maps/rosters/loader.js",
+      "sha256": "16bc18f53f7ceeec1dee0909a895037b74f022d9588e80311831d3a2cbc97ccd"
+    },
+    {
+      "path": "maps/rosters/README.md",
+      "sha256": "654090bfe358927815a4b607a329d2309602cc6a040efe1ead660ce916e87392"
+    },
+    {
+      "path": "maps/rosters/registry.json",
+      "sha256": "3cf11f5797ffaae8f53e0fc9056f0711a2ddbed9306c8095be0b91c5e47bcc7e"
+    },
+    {
+      "path": "maps/rosters/browser-data.js",
+      "sha256": "9649aa5d32155dca5234ea498fac9e012361210e956950e23cc8996d025b747e"
+    },
+    {
+      "path": "maps/victory-configs/odessa-source-city-ledger-v497.json",
+      "sha256": "b2dc03578572266e752046e1b3c3f5cb1c206355dad69f3d39331e5c1f63a118"
+    },
+    {
+      "path": "maps/presentation/kiev-terrain-effects.json",
+      "sha256": "9d746f7bb25247015c05368d8a36554806f829c12318ba3da54d754214f43475"
+    },
+    {
+      "path": "maps/presentation/registry.json",
+      "sha256": "3d52d496439de533b24c4ba3b75b6f2f46a6eafd45998319a9c274ec664e61a7"
+    },
+    {
+      "path": "maps/phase-configs/kiev-odessa.json",
+      "sha256": "8f04713924ee4016fce01c0db7d6cb2635f39459d4e5cbac4b875d22f74e8015"
+    },
+    {
+      "path": "maps/phase-configs/arduous.json",
+      "sha256": "a244172d34664ee9a64dbc39a48e5e1071b83f0ccd50e57d505f69f8dc773d28"
+    },
+    {
+      "path": "maps/phase-configs/kiev.json",
+      "sha256": "71c4570de4481e39c663f07a58ea83e94b77db794d4737c4b56c08e114ce1d66"
+    },
+    {
+      "path": "maps/phase-configs/leningrad.json",
+      "sha256": "d4f8bf2f461e47789a5b0d4cb270459ac929df5118419a511582050f7185c063"
+    },
+    {
+      "path": "maps/setup-configs/kiev-odessa-source-setup-v522.json",
+      "sha256": "db07082b1f016155946d720c1beed494a87f38b1b032fcd27826cddb4a7574b1"
+    },
+    {
+      "path": "maps/setup-configs/kiev-odessa-source-face-bindings-v523.json",
+      "sha256": "c270af522376c7b8cd500d4aefd3f7c7e3dfdb0565b73c66157398d93889e802"
+    },
+    {
+      "path": "maps/canonical/README.md",
+      "sha256": "23e2b8a0d5869c4c56c8a459d9301d5ce21530a74845de2bad2bc4fcaa333567"
+    },
+    {
+      "path": "maps/canonical/leningrad-preview-v347.json",
+      "sha256": "eacda71a0ef1695f5b3ba0cf274870c6fe2ee3ca8068f5df3d0531ec890926c6"
+    },
+    {
+      "path": "maps/buildup-configs/kiev-odessa-turn-one-zero-v532.json",
+      "sha256": "911164c1ce252e5ace0eb32132d2430ddb565b3ce0dce253afcba88055a5224c"
+    },
+    {
+      "path": "maps/buildup-configs/kiev-odessa-experimental-v533.json",
+      "sha256": "c1aa82d0bed7086122161bd13192a2334b97ea46552a8f3a5ccb61acffdd1791"
+    },
+    {
+      "path": "maps/buildup-configs/arduous.json",
+      "sha256": "56289ec0b27eec42c6cdb9941f647bd189354237c2ee9fe142215fdb3c48953a"
+    },
+    {
+      "path": "maps/buildup-configs/kiev.json",
+      "sha256": "edd6fdcb643fbba112c83f9c67a52f2b1dd035b9f3980643a956ed7ab01dacac"
+    },
+    {
+      "path": "maps/buildup-configs/kiev-odessa-naval-logistics-candidate-v519.json",
+      "sha256": "7b37de5bc17e12ad3fa8495a403ef92cc1a88940c7f7eaaae45bca5f663f33dd"
+    },
+    {
+      "path": "maps/buildup-configs/leningrad.json",
+      "sha256": "f9eae9cb874d5fd1c2df3547d7f1e088f63c8058baf02e2d7174c1f0624064b6"
+    },
+    {
+      "path": "maps/source/user-svg/arduous-map-temp(1).svg",
+      "sha256": "423af8983fd90a5be17041922a612efba42bbff306683ead9fd6910413402ede"
+    },
+    {
+      "path": "maps/source/user-svg/leningrad-map-temp(3).svg",
+      "sha256": "1d1fa6dc41c4133cae661d5aa129ab08389f935084cabd604d530b4bf5b57ec0"
+    },
+    {
+      "path": "maps/source/user-svg/arduous-svg-extract.json",
+      "sha256": "4ce7140215a3ea6a0c520e22c526e6d9e5847433b89f1549eb9d9221627aa92a"
+    },
+    {
+      "path": "maps/source/user-svg/leningrad-main.svg",
+      "sha256": "ea1c83d00eea0212c530b98fd794125959175ad9d1cfa067aef78d6d73502447"
+    },
+    {
+      "path": "maps/source/user-svg/kiev-odessa-main.svg",
+      "sha256": "2b15c3a92a282a7efc27d54bcd8994470f0fce8ee5417d5d734969fcd2c4ab7e"
+    },
+    {
+      "path": "maps/source/user-svg/odessa-map-temp(4).svg",
+      "sha256": "93476e9f577b19d24b41133bad8340a87bdfef2c47ce2530cba7db708b038265"
+    },
+    {
+      "path": "maps/source/user-svg/leningrad-map-temp(1).svg",
+      "sha256": "1d1fa6dc41c4133cae661d5aa129ab08389f935084cabd604d530b4bf5b57ec0"
+    },
+    {
+      "path": "maps/source/user-svg/kiev-svg-extract.json",
+      "sha256": "be94d16380dc1dfb9f86b6727fdebf6bde126c3f64097c0b9cb3c234a783ed52"
+    },
+    {
+      "path": "maps/source/user-svg/odessa-map-temp(1).svg",
+      "sha256": "93476e9f577b19d24b41133bad8340a87bdfef2c47ce2530cba7db708b038265"
+    },
+    {
+      "path": "maps/source/user-svg/kiev-map-temp(3).svg",
+      "sha256": "5aee54442a5688dabc3ec0b37c711b5e98709c72d99cc68d1a5f9f08e6bc0142"
+    },
+    {
+      "path": "maps/source/user-svg/odessa-extension-svg-extract.json",
+      "sha256": "d60624333a6cd0f20e612ba03792ae1320d485b053166426453bbb6e86d9ab85"
+    },
+    {
+      "path": "maps/source/user-svg/arduous-map-temp(3).svg",
+      "sha256": "423af8983fd90a5be17041922a612efba42bbff306683ead9fd6910413402ede"
+    },
+    {
+      "path": "maps/source/user-svg/kiev-map-temp(5).svg",
+      "sha256": "5aee54442a5688dabc3ec0b37c711b5e98709c72d99cc68d1a5f9f08e6bc0142"
+    },
+    {
+      "path": "maps/source/user-svg/leningrad-svg-extract.json",
+      "sha256": "b7fbf1cb5ea272ab5866b291130c950871c10d9265a7bf833fe6d9efabb01c79"
+    },
+    {
+      "path": "maps/source/user-svg/leningrad-main(1).svg",
+      "sha256": "ea1c83d00eea0212c530b98fd794125959175ad9d1cfa067aef78d6d73502447"
+    },
+    {
+      "path": "maps/source/user-svg/leningrad-main(2).svg",
+      "sha256": "ea1c83d00eea0212c530b98fd794125959175ad9d1cfa067aef78d6d73502447"
+    },
+    {
+      "path": "assets/official-counters/source-counters.svg",
+      "sha256": "a45fd59ebc50fac41686289e41d387d83474f81b0b7da25fe37107ce132ad51b"
+    },
+    {
+      "path": "assets/official-counters/typography-profile.json",
+      "sha256": "a6f93400ba41aeab831c00edd6f39a7d9b91c62f2e04db9301966991a7e6e05b"
+    },
+    {
+      "path": "assets/official-counters/source-manifest.json",
+      "sha256": "7ee9288195b7e6f3460cd1829d15aae047d5d0e0966beb50b9970a7766b545b7"
+    },
+    {
+      "path": "assets/official-counters/B4M_PALETTE_NOTE.md",
+      "sha256": "e796fe16bd052d60334cb684018b89c888a2c2b2a403f812e0baf4bb0b9afde2"
+    },
+    {
+      "path": "assets/official-counters/preview.html",
+      "sha256": "80d13a76bb6870e93a7df2c4249c904e44c5248c7f2c13f558839706e9de3c0b"
+    },
+    {
+      "path": "assets/official-counters/source-sheets/counters-odessa-front.jpg",
+      "sha256": "297e28ceefadb982bc7050b1e9a5039956997d34ce3368cda219b1da85badd25"
+    },
+    {
+      "path": "assets/official-counters/source-sheets/counters-kiev-front.jpg",
+      "sha256": "9db4bc6382f174017cb23f9c907369a25e173143a29e292b656b8f48ddfc4724"
+    },
+    {
+      "path": "assets/official-counters/source-sheets/counters-odessa-back.jpg",
+      "sha256": "74de9f736f15abd39be33c351df09a977c9cca697ceac281230a7207f78de969"
+    },
+    {
+      "path": "assets/official-counters/source-sheets/counters-leningrad-front.jpg",
+      "sha256": "9de02c03808c7e983b9402edafc116e05146b9b6fb07b793a2e3229cc695c603"
+    },
+    {
+      "path": "assets/official-counters/source-sheets/counters-arduous-front.jpg",
+      "sha256": "16a3048f279795d022b85f98c6a61d332a7c07c32ce568ad98821b6bc9358f73"
+    },
+    {
+      "path": "assets/official-counters/source-sheets/counters-kiev-back.jpg",
+      "sha256": "533165e074c4c6a2774811053347d19615eb85acce69987192301c403dcefeea"
+    },
+    {
+      "path": "assets/official-counters/source-sheets/counters-arduous-back.jpg",
+      "sha256": "c41b5eca04c9d0654149ad1252bcde347e53355721e641c54eda7338a76734f9"
+    },
+    {
+      "path": "assets/official-counters/source-sheets/counters-b4m-back.jpg",
+      "sha256": "c95e989b9e0dd4a0a6ffbef4168fa2d793ca9f39de19f31b22ad07904139602d"
+    },
+    {
+      "path": "assets/official-counters/source-sheets/counters-b4m-front.jpg",
+      "sha256": "3928e1422788271b0a190d633375b22424439faa41435c56c6050255be1653c6"
+    },
+    {
+      "path": "assets/official-counters/source-sheets/counters-leningrad-back.jpg",
+      "sha256": "f66739d885334f6bcedc307311b68a883175761a5929e990e264e0e3152e813e"
+    },
+    {
+      "path": "assets/official-counters/source-sheets/INDEX.json",
+      "sha256": "dc2cd8069acaf54e0adc7ca74a81fff9b8169948e820b2394f9845170115e2d5"
+    },
+    {
+      "path": "exports/arduous.png",
+      "sha256": "d4f2f1d3c699e52b8597c4a7a5c5158b5fec1e6928f40be2c3a02390c718dd6c"
+    },
+    {
+      "path": "exports/battle-for-moscow.svg",
+      "sha256": "b553c6a297c4cd06d56f9497f0e74566e5f0234043aa633da794f7506d36cf8d"
+    },
+    {
+      "path": "exports/manifest.json",
+      "sha256": "363711670e6f996b94899e19dd92329b3983ee3677b8e4c9e713c0f1dd0a4371"
+    },
+    {
+      "path": "exports/kiev.png",
+      "sha256": "9d558ad2c03cbc788ba471adf3e1964a7cedd04b422176cddac0011fb5fe6b8f"
+    },
+    {
+      "path": "exports/kiev-odessa.png",
+      "sha256": "d61b60d3de75e5fc50291d15cc2990da213c59f5041b91702dd0bf40bff62499"
+    },
+    {
+      "path": "exports/leningrad.png",
+      "sha256": "b48693371ce3102e8c912a40e70d5748395692aeab38529f9b36a7202e998af6"
+    },
+    {
+      "path": "exports/arduous.svg",
+      "sha256": "200f283f023d868c8b35707423107c4770e427c13617d5ecac5723d2810fa4f6"
+    },
+    {
+      "path": "exports/battle-for-moscow.png",
+      "sha256": "52d2e114e78fcd1eab77223c0b33cce96b6e99fa620008a0a85998a768b6f322"
+    },
+    {
+      "path": "exports/kiev.svg",
+      "sha256": "71243cbe6fcde936b31b76bdeaa201f7c5c2171489a96c36c7bef97960ef8b02"
+    },
+    {
+      "path": "exports/leningrad.svg",
+      "sha256": "0434bd31652abf004ea45a00a33a925d845dc98ed98712be88b33cc85cfbc639"
+    },
+    {
+      "path": "exports/gallery.html",
+      "sha256": "ce5c09d2392abd706b7312f2b72392a8fe54ba9d67f0f785a513e1dadc8856e6"
+    },
+    {
+      "path": "exports/kiev-odessa.svg",
+      "sha256": "a4db7676c320788dc3bbb1a20a98d2d6da5226b7f0d327f36a47862101292e90"
+    },
+    {
+      "path": "rules_profiles/shared-crt.json",
+      "sha256": "d84d66d7e45e45310eebf54d86b755ae6375a298d977b69c64a6c1f44812b1c9"
+    },
+    {
+      "path": "references/rules/kiev-player-aid.webp",
+      "sha256": "a7d239a80745463fdd3d5effc8faf6a028ab4f048713a506cb75823c448c9751"
+    },
+    {
+      "path": "references/rules/leningrad-rules.pdf",
+      "sha256": "74d332e052e735e2378027a06f95e9715392773f249561bf1c00cae08a2bbfa7"
+    },
+    {
+      "path": "references/rules/b4m-aid.webp",
+      "sha256": "b5e5130f5b5becc1fd70b52c7f94d14c8e1fcb7d9ba5985cb8010ae8cc873894"
+    },
+    {
+      "path": "references/rules/arduous-rules.pdf",
+      "sha256": "1ac46f3e958cf1d08768f6b56964100ab0951ece7e310ac3a30e8c479a8b986c"
+    },
+    {
+      "path": "references/rules/SOURCE_INDEX.json",
+      "sha256": "bdc95ce2c6ebdbe4d9c679d2063f5242836028afdfb0d471e9deebec624feecd"
+    },
+    {
+      "path": "references/rules/b4m-rules.pdf",
+      "sha256": "ee148b48a0af52457afd380053397f02283128d808ad8697e8dd7d1114c3fc65"
+    },
+    {
+      "path": "references/rules/odessa-rules.pdf",
+      "sha256": "c7def97fe2de9ae66dc89da5f7d3417e3283846485903b90b88f153ba9791bab"
+    },
+    {
+      "path": "references/rules/kiev-rules.pdf",
+      "sha256": "d55e8f0e567d1f8c7907c4fc8368954ec0e5fa8d6fe9e8e71c61acf9bb3c3756"
+    },
+    {
+      "path": "references/rules/crt-kiev.png",
+      "sha256": "753c8e422cdb808d6eab7c50f797bd5007dbb52c90712b4f2c477d40ba0b3399"
+    },
+    {
+      "path": "references/rules/crt-arduous.png",
+      "sha256": "2c8c041cf509ef208f233afc95ba8cb20f60db884175061f9bc537a71af42eab"
+    },
+    {
+      "path": "references/rules/arduous-aid.webp",
+      "sha256": "c88f512358b2333884789c248a983d7fb15f6569a0839afbbaa1ef9a518a2806"
+    },
+    {
+      "path": "references/rules/crt-leningrad.png",
+      "sha256": "25bda01998810dc9cb414dbf60f5d673f547cf068d9b24cd6c62a311651a76bf"
+    },
+    {
+      "path": "references/rules/leningrad-aid.webp",
+      "sha256": "241d97d9766eca4e712be4a01178165ceadfbfb435a4fe387d6f720ad08b7579"
+    },
+    {
+      "path": "core/official_counter_templates.js",
+      "sha256": "3ebfb80e08d56adc4502f22bf11fc086c1960bd917e04178dcd5819200b91ac6"
+    },
+    {
+      "path": "core/historical_combat_consequences.js",
+      "sha256": "6d0d4ecb577b2802fb9afad19cd99e1b1b6059b5a0d3f6cf457c31ddcb3719ee"
+    },
+    {
+      "path": "core/historical_engine_browser_bundle.js",
+      "sha256": "8145d559d2be5d2b14bc2b17590ee199a3d7028ccc89899d42266a7df79f950e"
+    },
+    {
+      "path": "core/terrain_tiles.js",
+      "sha256": "2992e3a904636e7af997423f082d1d2be75a36970ea919dce7d1d15dd11805ff"
+    }
+  ]
+}

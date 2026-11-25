@@ -1,0 +1,28 @@
+{
+  "checkpoint": 358,
+  "version": "v592",
+  "source": "references/rules/arduous-rules.pdf \u00a7\u00a75, 8.1\u20138.2, 9.2, 9.5",
+  "checks": 27,
+  "stackRoute": [
+    "1003",
+    "0903",
+    "0803"
+  ],
+  "city": "Brest-Litovsk",
+  "cityRoute": [
+    "0110",
+    "0211",
+    "0210"
+  ],
+  "surpriseRoute": [
+    "1003",
+    "1004",
+    "0904"
+  ],
+  "surpriseEnemy": "0903",
+  "limitations": [
+    "Synthetic counter positioning; no Chromium run",
+    "Overstacked destination rejection retained; owner-selected end-phase removal remains unimplemented",
+    "Existing Arduous campaign saves bound to previous profile"
+  ]
+}

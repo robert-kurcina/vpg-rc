@@ -1,0 +1,154 @@
+{
+  "checkpoint": 194,
+  "results": [
+    {
+      "command": "python tests/kiev-definitive-terrain-v428.test.py",
+      "outcome": "PASS",
+      "seconds": 1.46,
+      "detail": "....\n----------------------------------------------------------------------\nRan 4 tests in 0.568s\n\nOK"
+    },
+    {
+      "command": "python tests/kiev-definitive-rail-v427.test.py",
+      "outcome": "PASS",
+      "seconds": 5.99,
+      "detail": "...\n----------------------------------------------------------------------\nRan 3 tests in 5.302s\n\nOK"
+    },
+    {
+      "command": "node tests/kiev-definitive-terrain-v428.test.js",
+      "outcome": "PASS",
+      "seconds": 0.06,
+      "detail": "PASS Kiev source terrain: 149 explicit, 16 city-overlays open, 3 corrections; movement gate remains closed."
+    },
+    {
+      "command": "node tests/kiev-definitive-rail-v427.test.js",
+      "outcome": "PASS",
+      "seconds": 5.95,
+      "detail": "PASS v427: 93 definitive-source Kiev rails; 186 reciprocal sides; five retired links, one new; no gameplay authorization."
+    },
+    {
+      "command": "node tests/terrain-evidence-v318.test.js",
+      "outcome": "PASS",
+      "seconds": 0.07,
+      "detail": "arduous: 50 authored cells, 0 review cells, 85 rail candidates\nkiev: 149 authored cells, 16 review cells, 93 rail candidates\nterrain evidence audit PASS"
+    },
+    {
+      "command": "node tests/map-certification-readiness-v318.test.js",
+      "outcome": "PASS",
+      "seconds": 0.24,
+      "detail": "PASS map certification readiness 3229 assertions"
+    },
+    {
+      "command": "node tests/kiev-roster-and-victory-v410.test.js",
+      "outcome": "PASS",
+      "seconds": 0.05,
+      "detail": "PASS v410 Kiev photographed counters + \u00a75 victory: 192 assertions"
+    },
+    {
+      "command": "node tests/cross-game-movement-registry-v318.test.js",
+      "outcome": "PASS",
+      "seconds": 0.03,
+      "detail": "Movement registry: four historical configurations verified"
+    },
+    {
+      "command": "node tests/cross-game-movement-v318.test.js",
+      "outcome": "PASS",
+      "seconds": 0.03,
+      "detail": "Cross-game movement: 28 assertions passed"
+    },
+    {
+      "command": "node tests/cross-game-movement-profiles-v318.test.js",
+      "outcome": "PASS",
+      "seconds": 0.03,
+      "detail": "Cross-game movement profile tests: 29 passed"
+    },
+    {
+      "command": "node tests/arduous-executable-graph-v419.test.js",
+      "outcome": "PASS",
+      "seconds": 0.08,
+      "detail": "PASS Arduous executable graph 21 checks (155 hexes, 85 rails, 45 river sides)"
+    },
+    {
+      "command": "node tests/arduous-combat-river-fortification-v419.test.js",
+      "outcome": "PASS",
+      "seconds": 0.07,
+      "detail": "PASS Arduous shared CRT, fortification and approved river combat 17 checks"
+    },
+    {
+      "command": "node tests/arduous-full-source-opening-v413.test.js",
+      "outcome": "PASS",
+      "seconds": 0.07,
+      "detail": "PASS Arduous source-backed full opening 49 checks {\"sourceFaceStartingUnits\":29,\"fixedSourcePieces\":1,\"totalStartingGroundUnits\":30,\"german\":16,\"soviet\":14,\"unresolvedPrintedRearAnchors\":[],\"fixedSourceAudit\":[{\"id\":\"arduous:brest-garrison\",\"hex\":\"0211\",\"owner\":\"soviet\",\"sourceFaceId\":\"arduous-front-r04c03\",\"activeFaceId\":\"arduous-back-r04c06\",\"sourceMapMarkerSvgId\":\"use337\",\"printedValues\":\"3-4\",\"printedAffiliation\":\"axis\",\"ruleSource\":\"references/rules/arduous-rules.pdf \u00a76.0, printed page 2\"}],\"sourceNamedCityAnchors\":{\"fixedMechanized\":[{\"hex\":\"0907\",\"sourceSvgId\":\"use334\",\"kind\":\"fixedMechanized\",\"terrain\":\"open\",\"anchorSource\":\"rule-and-authored-city\",\"ruleSource\":\"arduous-rules.pdf \u00a76.0 #2\"},{\"hex\":\"0609\",\"sourceSvgId\":\"use336\",\"kind\":\"fixedMechanized\",\"terrain\":\"open\",\"anchorSource\":\"rule-and-authored-city\",\"ruleSource\":\"arduous-rules.pdf \u00a76.0 #2\"},{\"hex\":\"1510\",\"sourceSvgId\":\"use338\",\"kind\":\"fixedMechanized\",\"terrain\":\"open\",\"anchorSource\":\"rule-and-authored-city\",\"ruleSource\":\"arduous-rules.pdf \u00a76.0 #2\"}]}}"
+    },
+    {
+      "command": "node tests/arduous-brest-garrison-v411.test.js",
+      "outcome": "PASS",
+      "seconds": 0.04,
+      "detail": "PASS Arduous source-bound one-step Brest garrison: 30 assertions"
+    },
+    {
+      "command": "node tests/arduous-brest-combat-v411.test.js",
+      "outcome": "PASS",
+      "seconds": 0.11,
+      "detail": "PASS reverse-only one-step Brest combat pipeline: 11 assertions"
+    },
+    {
+      "command": "node tests/arduous-river-candidates-v418.test.js",
+      "outcome": "PASS",
+      "seconds": 0.06,
+      "detail": "PASS Arduous source graph: 45 river candidates, zero incident-contact entries; 12 checks"
+    },
+    {
+      "command": "node tests/arduous-roster-and-victory-v410.test.js",
+      "outcome": "PASS",
+      "seconds": 0.09,
+      "detail": "PASS v410 Arduous photographed counters + \u00a75 victory: 237 assertions"
+    },
+    {
+      "command": "node tests/leningrad-combat-geography-v318.test.js",
+      "outcome": "PASS",
+      "seconds": 0.1,
+      "detail": "PASS Leningrad certified combat geography and deployment reconciliation 22 assertions"
+    },
+    {
+      "command": "node tests/leningrad-combat-commitment-v318.test.js",
+      "outcome": "PASS",
+      "seconds": 0.13,
+      "detail": "PASS Leningrad immutable combat commitment 21 assertions"
+    },
+    {
+      "command": "node tests/historical-combat-consequences-v359.test.js",
+      "outcome": "PASS",
+      "seconds": 0.47,
+      "detail": "PASS v359 shared source-bound combat consequence transactions: 68 assertions"
+    },
+    {
+      "command": "node tests/b4m-native-objective-advance-v408.test.js",
+      "outcome": "PASS",
+      "seconds": 0.12,
+      "detail": "{\"status\":\"PASS\",\"checkpoint\":174,\"version\":\"v408\",\"scope\":\"synthetic source-rules differential at Moscow; not historical setup certification\",\"checks\":42,\"sourceCRT\":\"unchanged\",\"engine\":\"unchanged\",\"productionSelector\":\"legacy-b4m-v1\",\"advancedDE\":true,\"legacyActionParity\":true,\"dieCommitIsolation\":true,\"moscowDRHold\":true,\"defaultPoliciesPreserved\":true,\"undoAndSave\":true,\"limitations\":[\"Synthetic Moscow tactical board positions\",\"No new legacy strategic AI parity claim\",\"No active B4M production cutover\"]}"
+    },
+    {
+      "command": "node tests/human-lazy-combat-plans-v425.test.js",
+      "outcome": "PASS",
+      "seconds": 2.18,
+      "detail": "PASS human catalog lazy combined-plans: all proposals and actual three-battle commitment preserved"
+    },
+    {
+      "command": "node tests/hex-visual-features-v318.test.js",
+      "outcome": "PASS",
+      "seconds": 0.13,
+      "detail": "arduous hexes 155 rail 85 sides 517\nkiev hexes 165 rail 93 sides 548\nleningrad hexes 197 rail 80 sides 649\nodessa-extension hexes 261 rail 0 sides 852\nhex-visual-features: PASS"
+    },
+    {
+      "command": "node tests/kiev-odessa-composite-seam-v318.test.js",
+      "outcome": "PASS",
+      "seconds": 0.09,
+      "detail": "PASS Kiev\u2013Odessa composed geometry seam audit: {\"baseMapId\":\"kiev-native-draft-v231\",\"extensionMapId\":\"odessa-extension\",\"compositeMapId\":\"kiev-odessa-composite-v256\",\"baseHexes\":165,\"extensionHexes\":96,\"totalHexes\":261,\"seamPairs\":24,\"blockedByAuthoredShore\":0,\"authoredShoreEntries\":32,\"railCenterConnections\":0,\"gameplayCertified\":false,\"graphPurpose\":\"geometry-audit-only\"}"
+    }
+  ],
+  "summary": {
+    "PASS": 24,
+    "FAIL": 0,
+    "TIMEOUT": 0
+  }
+}

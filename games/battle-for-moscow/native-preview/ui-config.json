@@ -1,0 +1,6 @@
+{
+  "schemaVersion": 1,
+  "combatSelectionMode": "defender-first",
+  "showGuidedPhases": true,
+  "showRuleReferences": true
+}

@@ -1,0 +1,1829 @@
+{
+  "schemaVersion": 1,
+  "mapId": "battle-for-moscow",
+  "gameSet": "b4m",
+  "faceSource": {
+    "front": {
+      "file": "assets/official-counters/source-sheets/counters-b4m-front.jpg",
+      "sha256": "3928e1422788271b0a190d633375b22424439faa41435c56c6050255be1653c6",
+      "width": 746,
+      "height": 548
+    },
+    "back": {
+      "file": "assets/official-counters/source-sheets/counters-b4m-back.jpg",
+      "sha256": "c95e989b9e0dd4a0a6ffbef4168fa2d793ca9f39de19f31b22ad07904139602d",
+      "width": 745,
+      "height": 553
+    }
+  },
+  "faceOrder": "horizontal-mirror across sheet: front row r column c corresponds to back row r column 9-c",
+  "colorPolicy": "per-face sampled color stored as provenance; per-unit fields use source palette, not generic faction CSS",
+  "faces": {
+    "front": [
+      {
+        "faceId": "b4m-front-r01c01",
+        "source": "front",
+        "row": 1,
+        "column": 1,
+        "crop": [
+          5,
+          9,
+          92,
+          91
+        ],
+        "observedFieldColor": "#8ca095",
+        "unitId": "g24",
+        "identityStatus": "printed-id-verified",
+        "role": "unit",
+        "pairedFaceId": "b4m-back-r01c08"
+      },
+      {
+        "faceId": "b4m-front-r01c02",
+        "source": "front",
+        "row": 1,
+        "column": 2,
+        "crop": [
+          97,
+          9,
+          92,
+          91
+        ],
+        "observedFieldColor": "#708076",
+        "unitId": "g41",
+        "identityStatus": "printed-id-verified",
+        "role": "unit",
+        "pairedFaceId": "b4m-back-r01c07"
+      },
+      {
+        "faceId": "b4m-front-r01c03",
+        "source": "front",
+        "row": 1,
+        "column": 3,
+        "crop": [
+          189,
+          9,
+          92,
+          91
+        ],
+        "observedFieldColor": "#8fa096",
+        "unitId": "g57",
+        "identityStatus": "printed-id-verified",
+        "role": "unit",
+        "pairedFaceId": "b4m-back-r01c06"
+      },
+      {
+        "faceId": "b4m-front-r01c04",
+        "source": "front",
+        "row": 1,
+        "column": 4,
+        "crop": [
+          281,
+          9,
+          92,
+          91
+        ],
+        "observedFieldColor": "#8ca095",
+        "unitId": "g46",
+        "identityStatus": "printed-id-verified",
+        "role": "unit",
+        "pairedFaceId": "b4m-back-r01c05"
+      },
+      {
+        "faceId": "b4m-front-r01c05",
+        "source": "front",
+        "row": 1,
+        "column": 5,
+        "crop": [
+          373,
+          9,
+          92,
+          91
+        ],
+        "observedFieldColor": "#8ca095",
+        "unitId": "g47",
+        "identityStatus": "printed-id-verified",
+        "role": "unit",
+        "pairedFaceId": "b4m-back-r01c04"
+      },
+      {
+        "faceId": "b4m-front-r01c06",
+        "source": "front",
+        "row": 1,
+        "column": 6,
+        "crop": [
+          465,
+          9,
+          92,
+          91
+        ],
+        "observedFieldColor": "#8ba195",
+        "unitId": "g56",
+        "identityStatus": "printed-id-verified",
+        "role": "unit",
+        "pairedFaceId": "b4m-back-r01c03"
+      },
+      {
+        "faceId": "b4m-front-r01c07",
+        "source": "front",
+        "row": 1,
+        "column": 7,
+        "crop": [
+          557,
+          9,
+          92,
+          91
+        ],
+        "observedFieldColor": "#8ba195",
+        "unitId": "g40",
+        "identityStatus": "printed-id-verified",
+        "role": "unit",
+        "pairedFaceId": "b4m-back-r01c02"
+      },
+      {
+        "faceId": "b4m-front-r01c08",
+        "source": "front",
+        "row": 1,
+        "column": 8,
+        "crop": [
+          649,
+          9,
+          92,
+          91
+        ],
+        "observedFieldColor": "#8ba195",
+        "unitId": "g48",
+        "identityStatus": "printed-id-verified",
+        "role": "unit",
+        "pairedFaceId": "b4m-back-r01c01"
+      },
+      {
+        "faceId": "b4m-front-r02c01",
+        "source": "front",
+        "row": 2,
+        "column": 1,
+        "crop": [
+          5,
+          100,
+          92,
+          92
+        ],
+        "observedFieldColor": "#8ca095",
+        "unitId": "g23",
+        "identityStatus": "printed-id-verified",
+        "role": "unit",
+        "pairedFaceId": "b4m-back-r02c08"
+      },
+      {
+        "faceId": "b4m-front-r02c02",
+        "source": "front",
+        "row": 2,
+        "column": 2,
+        "crop": [
+          97,
+          100,
+          92,
+          92
+        ],
+        "observedFieldColor": "#6f8076",
+        "unitId": "g35",
+        "identityStatus": "printed-id-verified",
+        "role": "unit",
+        "pairedFaceId": "b4m-back-r02c07"
+      },
+      {
+        "faceId": "b4m-front-r02c03",
+        "source": "front",
+        "row": 2,
+        "column": 3,
+        "crop": [
+          189,
+          100,
+          92,
+          92
+        ],
+        "observedFieldColor": "#8da196",
+        "unitId": "g7",
+        "identityStatus": "printed-id-verified",
+        "role": "unit",
+        "pairedFaceId": "b4m-back-r02c06"
+      },
+      {
+        "faceId": "b4m-front-r02c04",
+        "source": "front",
+        "row": 2,
+        "column": 4,
+        "crop": [
+          281,
+          100,
+          92,
+          92
+        ],
+        "observedFieldColor": "#8ba195",
+        "unitId": "g8",
+        "identityStatus": "printed-id-verified",
+        "role": "unit",
+        "pairedFaceId": "b4m-back-r02c05"
+      },
+      {
+        "faceId": "b4m-front-r02c05",
+        "source": "front",
+        "row": 2,
+        "column": 5,
+        "crop": [
+          373,
+          100,
+          92,
+          92
+        ],
+        "observedFieldColor": "#8ba195",
+        "unitId": "g9",
+        "identityStatus": "printed-id-verified",
+        "role": "unit",
+        "pairedFaceId": "b4m-back-r02c04"
+      },
+      {
+        "faceId": "b4m-front-r02c06",
+        "source": "front",
+        "row": 2,
+        "column": 6,
+        "crop": [
+          465,
+          100,
+          92,
+          92
+        ],
+        "observedFieldColor": "#8aa295",
+        "unitId": "g5",
+        "identityStatus": "printed-id-verified",
+        "role": "unit",
+        "pairedFaceId": "b4m-back-r02c03"
+      },
+      {
+        "faceId": "b4m-front-r02c07",
+        "source": "front",
+        "row": 2,
+        "column": 7,
+        "crop": [
+          557,
+          100,
+          92,
+          92
+        ],
+        "observedFieldColor": "#8aa295",
+        "unitId": "g13",
+        "identityStatus": "printed-id-verified",
+        "role": "unit",
+        "pairedFaceId": "b4m-back-r02c02"
+      },
+      {
+        "faceId": "b4m-front-r02c08",
+        "source": "front",
+        "row": 2,
+        "column": 8,
+        "crop": [
+          649,
+          100,
+          92,
+          92
+        ],
+        "observedFieldColor": "#8aa295",
+        "unitId": "g20",
+        "identityStatus": "printed-id-verified",
+        "role": "unit",
+        "pairedFaceId": "b4m-back-r02c01"
+      },
+      {
+        "faceId": "b4m-front-r03c01",
+        "source": "front",
+        "row": 3,
+        "column": 1,
+        "crop": [
+          5,
+          214,
+          92,
+          98
+        ],
+        "observedFieldColor": "#8ca095",
+        "unitId": "g27",
+        "identityStatus": "printed-id-verified",
+        "role": "unit",
+        "pairedFaceId": "b4m-back-r03c08"
+      },
+      {
+        "faceId": "b4m-front-r03c02",
+        "source": "front",
+        "row": 3,
+        "column": 2,
+        "crop": [
+          97,
+          214,
+          92,
+          98
+        ],
+        "observedFieldColor": "#8a9e93",
+        "unitId": "g53",
+        "identityStatus": "printed-id-verified",
+        "role": "unit",
+        "pairedFaceId": "b4m-back-r03c07"
+      },
+      {
+        "faceId": "b4m-front-r03c03",
+        "source": "front",
+        "row": 3,
+        "column": 3,
+        "crop": [
+          189,
+          214,
+          92,
+          98
+        ],
+        "observedFieldColor": "#8a9b91",
+        "unitId": "g6",
+        "identityStatus": "printed-id-verified",
+        "role": "unit",
+        "pairedFaceId": "b4m-back-r03c06"
+      },
+      {
+        "faceId": "b4m-front-r03c04",
+        "source": "front",
+        "row": 3,
+        "column": 4,
+        "crop": [
+          281,
+          214,
+          92,
+          98
+        ],
+        "observedFieldColor": "#8ea297",
+        "unitId": "g12",
+        "identityStatus": "printed-id-verified",
+        "role": "unit",
+        "pairedFaceId": "b4m-back-r03c05"
+      },
+      {
+        "faceId": "b4m-front-r03c05",
+        "source": "front",
+        "row": 3,
+        "column": 5,
+        "crop": [
+          373,
+          214,
+          92,
+          98
+        ],
+        "observedFieldColor": "#8ea297",
+        "unitId": "g34",
+        "identityStatus": "printed-id-verified",
+        "role": "unit",
+        "pairedFaceId": "b4m-back-r03c04"
+      },
+      {
+        "faceId": "b4m-front-r03c06",
+        "source": "front",
+        "row": 3,
+        "column": 6,
+        "crop": [
+          465,
+          214,
+          92,
+          98
+        ],
+        "observedFieldColor": "#8ea297",
+        "unitId": "g42",
+        "identityStatus": "printed-id-verified",
+        "role": "unit",
+        "pairedFaceId": "b4m-back-r03c03"
+      },
+      {
+        "faceId": "b4m-front-r03c07",
+        "source": "front",
+        "row": 3,
+        "column": 7,
+        "crop": [
+          557,
+          214,
+          92,
+          98
+        ],
+        "observedFieldColor": "#8ea297",
+        "unitId": null,
+        "identityStatus": "non-unit-marker",
+        "role": "marker",
+        "pairedFaceId": "b4m-back-r03c02"
+      },
+      {
+        "faceId": "b4m-front-r03c08",
+        "source": "front",
+        "row": 3,
+        "column": 8,
+        "crop": [
+          649,
+          214,
+          92,
+          98
+        ],
+        "observedFieldColor": "#e74550",
+        "unitId": "s1sh",
+        "identityStatus": "printed-id-verified",
+        "role": "unit",
+        "pairedFaceId": "b4m-back-r03c01"
+      },
+      {
+        "faceId": "b4m-front-r04c01",
+        "source": "front",
+        "row": 4,
+        "column": 1,
+        "crop": [
+          5,
+          312,
+          92,
+          97
+        ],
+        "observedFieldColor": "#dc4a54",
+        "unitId": "s3",
+        "identityStatus": "printed-id-verified",
+        "role": "unit",
+        "pairedFaceId": "b4m-back-r04c08"
+      },
+      {
+        "faceId": "b4m-front-r04c02",
+        "source": "front",
+        "row": 4,
+        "column": 2,
+        "crop": [
+          97,
+          312,
+          92,
+          97
+        ],
+        "observedFieldColor": "#b95150",
+        "unitId": "s5",
+        "identityStatus": "printed-id-verified",
+        "role": "unit",
+        "pairedFaceId": "b4m-back-r04c07"
+      },
+      {
+        "faceId": "b4m-front-r04c03",
+        "source": "front",
+        "row": 4,
+        "column": 3,
+        "crop": [
+          189,
+          312,
+          92,
+          97
+        ],
+        "observedFieldColor": "#dc4c56",
+        "unitId": "s10",
+        "identityStatus": "printed-id-verified",
+        "role": "unit",
+        "pairedFaceId": "b4m-back-r04c06"
+      },
+      {
+        "faceId": "b4m-front-r04c04",
+        "source": "front",
+        "row": 4,
+        "column": 4,
+        "crop": [
+          281,
+          312,
+          92,
+          97
+        ],
+        "observedFieldColor": "#e94454",
+        "unitId": "s13",
+        "identityStatus": "printed-id-verified",
+        "role": "unit",
+        "pairedFaceId": "b4m-back-r04c05"
+      },
+      {
+        "faceId": "b4m-front-r04c05",
+        "source": "front",
+        "row": 4,
+        "column": 5,
+        "crop": [
+          373,
+          312,
+          92,
+          97
+        ],
+        "observedFieldColor": "#e24854",
+        "unitId": "s16",
+        "identityStatus": "printed-id-verified",
+        "role": "unit",
+        "pairedFaceId": "b4m-back-r04c04"
+      },
+      {
+        "faceId": "b4m-front-r04c06",
+        "source": "front",
+        "row": 4,
+        "column": 6,
+        "crop": [
+          465,
+          312,
+          92,
+          97
+        ],
+        "observedFieldColor": "#e24852",
+        "unitId": "s19",
+        "identityStatus": "printed-id-verified",
+        "role": "unit",
+        "pairedFaceId": "b4m-back-r04c03"
+      },
+      {
+        "faceId": "b4m-front-r04c07",
+        "source": "front",
+        "row": 4,
+        "column": 7,
+        "crop": [
+          557,
+          312,
+          92,
+          97
+        ],
+        "observedFieldColor": "#e74552",
+        "unitId": "s20",
+        "identityStatus": "printed-id-verified",
+        "role": "unit",
+        "pairedFaceId": "b4m-back-r04c02"
+      },
+      {
+        "faceId": "b4m-front-r04c08",
+        "source": "front",
+        "row": 4,
+        "column": 8,
+        "crop": [
+          649,
+          312,
+          92,
+          97
+        ],
+        "observedFieldColor": "#e94454",
+        "unitId": "s24",
+        "identityStatus": "printed-id-verified",
+        "role": "unit",
+        "pairedFaceId": "b4m-back-r04c01"
+      },
+      {
+        "faceId": "b4m-front-r05c01",
+        "source": "front",
+        "row": 5,
+        "column": 1,
+        "crop": [
+          5,
+          434,
+          92,
+          106
+        ],
+        "observedFieldColor": "#df4a4e",
+        "unitId": "s29",
+        "identityStatus": "printed-id-verified",
+        "role": "unit",
+        "pairedFaceId": "b4m-back-r05c08"
+      },
+      {
+        "faceId": "b4m-front-r05c02",
+        "source": "front",
+        "row": 5,
+        "column": 2,
+        "crop": [
+          97,
+          434,
+          92,
+          106
+        ],
+        "observedFieldColor": "#cd4750",
+        "unitId": "s30",
+        "identityStatus": "printed-id-verified",
+        "role": "unit",
+        "pairedFaceId": "b4m-back-r05c07"
+      },
+      {
+        "faceId": "b4m-front-r05c03",
+        "source": "front",
+        "row": 5,
+        "column": 3,
+        "crop": [
+          189,
+          434,
+          92,
+          106
+        ],
+        "observedFieldColor": "#e04e5b",
+        "unitId": "s32",
+        "identityStatus": "printed-id-verified",
+        "role": "unit",
+        "pairedFaceId": "b4m-back-r05c06"
+      },
+      {
+        "faceId": "b4m-front-r05c04",
+        "source": "front",
+        "row": 5,
+        "column": 4,
+        "crop": [
+          281,
+          434,
+          92,
+          106
+        ],
+        "observedFieldColor": "#e64652",
+        "unitId": "s33",
+        "identityStatus": "printed-id-verified",
+        "role": "unit",
+        "pairedFaceId": "b4m-back-r05c05"
+      },
+      {
+        "faceId": "b4m-front-r05c05",
+        "source": "front",
+        "row": 5,
+        "column": 5,
+        "crop": [
+          373,
+          434,
+          92,
+          106
+        ],
+        "observedFieldColor": "#e64555",
+        "unitId": "s40",
+        "identityStatus": "printed-id-verified",
+        "role": "unit",
+        "pairedFaceId": "b4m-back-r05c04"
+      },
+      {
+        "faceId": "b4m-front-r05c06",
+        "source": "front",
+        "row": 5,
+        "column": 6,
+        "crop": [
+          465,
+          434,
+          92,
+          106
+        ],
+        "observedFieldColor": "#e94452",
+        "unitId": "s43",
+        "identityStatus": "printed-id-verified",
+        "role": "unit",
+        "pairedFaceId": "b4m-back-r05c03"
+      },
+      {
+        "faceId": "b4m-front-r05c07",
+        "source": "front",
+        "row": 5,
+        "column": 7,
+        "crop": [
+          557,
+          434,
+          92,
+          106
+        ],
+        "observedFieldColor": "#e94550",
+        "unitId": "s49",
+        "identityStatus": "printed-id-verified",
+        "role": "unit",
+        "pairedFaceId": "b4m-back-r05c02"
+      },
+      {
+        "faceId": "b4m-front-r05c08",
+        "source": "front",
+        "row": 5,
+        "column": 8,
+        "crop": [
+          649,
+          434,
+          92,
+          106
+        ],
+        "observedFieldColor": "#ea4452",
+        "unitId": "s50",
+        "identityStatus": "printed-id-verified",
+        "role": "unit",
+        "pairedFaceId": "b4m-back-r05c01"
+      }
+    ],
+    "back": [
+      {
+        "faceId": "b4m-back-r01c01",
+        "source": "back",
+        "row": 1,
+        "column": 1,
+        "crop": [
+          5,
+          8,
+          92,
+          91
+        ],
+        "observedFieldColor": "#a9b6af",
+        "unitId": "g48",
+        "identityStatus": "printed-id-verified",
+        "role": "unit",
+        "pairedFaceId": "b4m-front-r01c08"
+      },
+      {
+        "faceId": "b4m-back-r01c02",
+        "source": "back",
+        "row": 1,
+        "column": 2,
+        "crop": [
+          97,
+          8,
+          92,
+          91
+        ],
+        "observedFieldColor": "#ccdcd2",
+        "unitId": "g40",
+        "identityStatus": "printed-id-verified",
+        "role": "unit",
+        "pairedFaceId": "b4m-front-r01c07"
+      },
+      {
+        "faceId": "b4m-back-r01c03",
+        "source": "back",
+        "row": 1,
+        "column": 3,
+        "crop": [
+          189,
+          8,
+          92,
+          91
+        ],
+        "observedFieldColor": "#cadad0",
+        "unitId": "g56",
+        "identityStatus": "printed-id-verified",
+        "role": "unit",
+        "pairedFaceId": "b4m-front-r01c06"
+      },
+      {
+        "faceId": "b4m-back-r01c04",
+        "source": "back",
+        "row": 1,
+        "column": 4,
+        "crop": [
+          281,
+          8,
+          91,
+          91
+        ],
+        "observedFieldColor": "#ccdcd2",
+        "unitId": "g47",
+        "identityStatus": "printed-id-verified",
+        "role": "unit",
+        "pairedFaceId": "b4m-front-r01c05"
+      },
+      {
+        "faceId": "b4m-back-r01c05",
+        "source": "back",
+        "row": 1,
+        "column": 5,
+        "crop": [
+          372,
+          8,
+          92,
+          91
+        ],
+        "observedFieldColor": "#ccdcd2",
+        "unitId": "g46",
+        "identityStatus": "printed-id-verified",
+        "role": "unit",
+        "pairedFaceId": "b4m-front-r01c04"
+      },
+      {
+        "faceId": "b4m-back-r01c06",
+        "source": "back",
+        "row": 1,
+        "column": 6,
+        "crop": [
+          464,
+          8,
+          92,
+          91
+        ],
+        "observedFieldColor": "#ccdcd2",
+        "unitId": "g57",
+        "identityStatus": "printed-id-verified",
+        "role": "unit",
+        "pairedFaceId": "b4m-front-r01c03"
+      },
+      {
+        "faceId": "b4m-back-r01c07",
+        "source": "back",
+        "row": 1,
+        "column": 7,
+        "crop": [
+          556,
+          8,
+          92,
+          91
+        ],
+        "observedFieldColor": "#ccdcd2",
+        "unitId": "g41",
+        "identityStatus": "printed-id-verified",
+        "role": "unit",
+        "pairedFaceId": "b4m-front-r01c02"
+      },
+      {
+        "faceId": "b4m-back-r01c08",
+        "source": "back",
+        "row": 1,
+        "column": 8,
+        "crop": [
+          648,
+          8,
+          92,
+          91
+        ],
+        "observedFieldColor": "#ccdcd2",
+        "unitId": "g24",
+        "identityStatus": "printed-id-verified",
+        "role": "unit",
+        "pairedFaceId": "b4m-front-r01c01"
+      },
+      {
+        "faceId": "b4m-back-r02c01",
+        "source": "back",
+        "row": 2,
+        "column": 1,
+        "crop": [
+          5,
+          99,
+          92,
+          91
+        ],
+        "observedFieldColor": "#a9b6af",
+        "unitId": "g20",
+        "identityStatus": "printed-id-verified",
+        "role": "unit",
+        "pairedFaceId": "b4m-front-r02c08"
+      },
+      {
+        "faceId": "b4m-back-r02c02",
+        "source": "back",
+        "row": 2,
+        "column": 2,
+        "crop": [
+          97,
+          99,
+          92,
+          91
+        ],
+        "observedFieldColor": "#ccdbd4",
+        "unitId": "g13",
+        "identityStatus": "printed-id-verified",
+        "role": "unit",
+        "pairedFaceId": "b4m-front-r02c07"
+      },
+      {
+        "faceId": "b4m-back-r02c03",
+        "source": "back",
+        "row": 2,
+        "column": 3,
+        "crop": [
+          189,
+          99,
+          92,
+          91
+        ],
+        "observedFieldColor": "#cad9d2",
+        "unitId": "g5",
+        "identityStatus": "printed-id-verified",
+        "role": "unit",
+        "pairedFaceId": "b4m-front-r02c06"
+      },
+      {
+        "faceId": "b4m-back-r02c04",
+        "source": "back",
+        "row": 2,
+        "column": 4,
+        "crop": [
+          281,
+          99,
+          91,
+          91
+        ],
+        "observedFieldColor": "#ccdcd2",
+        "unitId": "g9",
+        "identityStatus": "printed-id-verified",
+        "role": "unit",
+        "pairedFaceId": "b4m-front-r02c05"
+      },
+      {
+        "faceId": "b4m-back-r02c05",
+        "source": "back",
+        "row": 2,
+        "column": 5,
+        "crop": [
+          372,
+          99,
+          92,
+          91
+        ],
+        "observedFieldColor": "#ccdbd4",
+        "unitId": "g8",
+        "identityStatus": "printed-id-verified",
+        "role": "unit",
+        "pairedFaceId": "b4m-front-r02c04"
+      },
+      {
+        "faceId": "b4m-back-r02c06",
+        "source": "back",
+        "row": 2,
+        "column": 6,
+        "crop": [
+          464,
+          99,
+          92,
+          91
+        ],
+        "observedFieldColor": "#ccdcd2",
+        "unitId": "g7",
+        "identityStatus": "printed-id-verified",
+        "role": "unit",
+        "pairedFaceId": "b4m-front-r02c03"
+      },
+      {
+        "faceId": "b4m-back-r02c07",
+        "source": "back",
+        "row": 2,
+        "column": 7,
+        "crop": [
+          556,
+          99,
+          92,
+          91
+        ],
+        "observedFieldColor": "#ccdcd2",
+        "unitId": "g35",
+        "identityStatus": "printed-id-verified",
+        "role": "unit",
+        "pairedFaceId": "b4m-front-r02c02"
+      },
+      {
+        "faceId": "b4m-back-r02c08",
+        "source": "back",
+        "row": 2,
+        "column": 8,
+        "crop": [
+          648,
+          99,
+          92,
+          91
+        ],
+        "observedFieldColor": "#ccdbd4",
+        "unitId": "g23",
+        "identityStatus": "printed-id-verified",
+        "role": "unit",
+        "pairedFaceId": "b4m-front-r02c01"
+      },
+      {
+        "faceId": "b4m-back-r03c01",
+        "source": "back",
+        "row": 3,
+        "column": 1,
+        "crop": [
+          5,
+          215,
+          92,
+          101
+        ],
+        "observedFieldColor": "#c37c76",
+        "unitId": "s1sh",
+        "identityStatus": "printed-id-verified",
+        "role": "unit",
+        "pairedFaceId": "b4m-front-r03c08"
+      },
+      {
+        "faceId": "b4m-back-r03c02",
+        "source": "back",
+        "row": 3,
+        "column": 2,
+        "crop": [
+          97,
+          215,
+          92,
+          101
+        ],
+        "observedFieldColor": "#ca9188",
+        "unitId": null,
+        "identityStatus": "non-unit-marker",
+        "role": "marker",
+        "pairedFaceId": "b4m-front-r03c07"
+      },
+      {
+        "faceId": "b4m-back-r03c03",
+        "source": "back",
+        "row": 3,
+        "column": 3,
+        "crop": [
+          189,
+          215,
+          92,
+          101
+        ],
+        "observedFieldColor": "#a8b8ae",
+        "unitId": "g42",
+        "identityStatus": "printed-id-verified",
+        "role": "unit",
+        "pairedFaceId": "b4m-front-r03c06"
+      },
+      {
+        "faceId": "b4m-back-r03c04",
+        "source": "back",
+        "row": 3,
+        "column": 4,
+        "crop": [
+          281,
+          215,
+          91,
+          101
+        ],
+        "observedFieldColor": "#a9b9af",
+        "unitId": "g34",
+        "identityStatus": "printed-id-verified",
+        "role": "unit",
+        "pairedFaceId": "b4m-front-r03c05"
+      },
+      {
+        "faceId": "b4m-back-r03c05",
+        "source": "back",
+        "row": 3,
+        "column": 5,
+        "crop": [
+          372,
+          215,
+          92,
+          101
+        ],
+        "observedFieldColor": "#a9b8b1",
+        "unitId": "g12",
+        "identityStatus": "printed-id-verified",
+        "role": "unit",
+        "pairedFaceId": "b4m-front-r03c04"
+      },
+      {
+        "faceId": "b4m-back-r03c06",
+        "source": "back",
+        "row": 3,
+        "column": 6,
+        "crop": [
+          464,
+          215,
+          92,
+          101
+        ],
+        "observedFieldColor": "#a9b9af",
+        "unitId": "g6",
+        "identityStatus": "printed-id-verified",
+        "role": "unit",
+        "pairedFaceId": "b4m-front-r03c03"
+      },
+      {
+        "faceId": "b4m-back-r03c07",
+        "source": "back",
+        "row": 3,
+        "column": 7,
+        "crop": [
+          556,
+          215,
+          92,
+          101
+        ],
+        "observedFieldColor": "#a9b9af",
+        "unitId": "g53",
+        "identityStatus": "printed-id-verified",
+        "role": "unit",
+        "pairedFaceId": "b4m-front-r03c02"
+      },
+      {
+        "faceId": "b4m-back-r03c08",
+        "source": "back",
+        "row": 3,
+        "column": 8,
+        "crop": [
+          648,
+          215,
+          92,
+          101
+        ],
+        "observedFieldColor": "#a9b8b1",
+        "unitId": "g27",
+        "identityStatus": "printed-id-verified",
+        "role": "unit",
+        "pairedFaceId": "b4m-front-r03c01"
+      },
+      {
+        "faceId": "b4m-back-r04c01",
+        "source": "back",
+        "row": 4,
+        "column": 1,
+        "crop": [
+          5,
+          316,
+          92,
+          100
+        ],
+        "observedFieldColor": "#d08983",
+        "unitId": "s24",
+        "identityStatus": "printed-id-verified",
+        "role": "unit",
+        "pairedFaceId": "b4m-front-r04c08"
+      },
+      {
+        "faceId": "b4m-back-r04c02",
+        "source": "back",
+        "row": 4,
+        "column": 2,
+        "crop": [
+          97,
+          316,
+          92,
+          100
+        ],
+        "observedFieldColor": "#f1a49c",
+        "unitId": "s20",
+        "identityStatus": "printed-id-verified",
+        "role": "unit",
+        "pairedFaceId": "b4m-front-r04c07"
+      },
+      {
+        "faceId": "b4m-back-r04c03",
+        "source": "back",
+        "row": 4,
+        "column": 3,
+        "crop": [
+          189,
+          316,
+          92,
+          100
+        ],
+        "observedFieldColor": "#fba39f",
+        "unitId": "s19",
+        "identityStatus": "printed-id-verified",
+        "role": "unit",
+        "pairedFaceId": "b4m-front-r04c06"
+      },
+      {
+        "faceId": "b4m-back-r04c04",
+        "source": "back",
+        "row": 4,
+        "column": 4,
+        "crop": [
+          281,
+          316,
+          91,
+          100
+        ],
+        "observedFieldColor": "#f8a197",
+        "unitId": "s16",
+        "identityStatus": "printed-id-verified",
+        "role": "unit",
+        "pairedFaceId": "b4m-front-r04c05"
+      },
+      {
+        "faceId": "b4m-back-r04c05",
+        "source": "back",
+        "row": 4,
+        "column": 5,
+        "crop": [
+          372,
+          316,
+          92,
+          100
+        ],
+        "observedFieldColor": "#f2a498",
+        "unitId": "s13",
+        "identityStatus": "printed-id-verified",
+        "role": "unit",
+        "pairedFaceId": "b4m-front-r04c04"
+      },
+      {
+        "faceId": "b4m-back-r04c06",
+        "source": "back",
+        "row": 4,
+        "column": 6,
+        "crop": [
+          464,
+          316,
+          92,
+          100
+        ],
+        "observedFieldColor": "#f8a198",
+        "unitId": "s10",
+        "identityStatus": "printed-id-verified",
+        "role": "unit",
+        "pairedFaceId": "b4m-front-r04c03"
+      },
+      {
+        "faceId": "b4m-back-r04c07",
+        "source": "back",
+        "row": 4,
+        "column": 7,
+        "crop": [
+          556,
+          316,
+          92,
+          100
+        ],
+        "observedFieldColor": "#f8a198",
+        "unitId": "s5",
+        "identityStatus": "printed-id-verified",
+        "role": "unit",
+        "pairedFaceId": "b4m-front-r04c02"
+      },
+      {
+        "faceId": "b4m-back-r04c08",
+        "source": "back",
+        "row": 4,
+        "column": 8,
+        "crop": [
+          648,
+          316,
+          92,
+          100
+        ],
+        "observedFieldColor": "#faa098",
+        "unitId": "s3",
+        "identityStatus": "printed-id-verified",
+        "role": "unit",
+        "pairedFaceId": "b4m-front-r04c01"
+      },
+      {
+        "faceId": "b4m-back-r05c01",
+        "source": "back",
+        "row": 5,
+        "column": 1,
+        "crop": [
+          5,
+          434,
+          92,
+          109
+        ],
+        "observedFieldColor": "#d08781",
+        "unitId": "s50",
+        "identityStatus": "printed-id-verified",
+        "role": "unit",
+        "pairedFaceId": "b4m-front-r05c08"
+      },
+      {
+        "faceId": "b4m-back-r05c02",
+        "source": "back",
+        "row": 5,
+        "column": 2,
+        "crop": [
+          97,
+          434,
+          92,
+          109
+        ],
+        "observedFieldColor": "#f2a49a",
+        "unitId": "s49",
+        "identityStatus": "printed-id-verified",
+        "role": "unit",
+        "pairedFaceId": "b4m-front-r05c07"
+      },
+      {
+        "faceId": "b4m-back-r05c03",
+        "source": "back",
+        "row": 5,
+        "column": 3,
+        "crop": [
+          189,
+          434,
+          92,
+          109
+        ],
+        "observedFieldColor": "#fda29d",
+        "unitId": "s43",
+        "identityStatus": "printed-id-verified",
+        "role": "unit",
+        "pairedFaceId": "b4m-front-r05c06"
+      },
+      {
+        "faceId": "b4m-back-r05c04",
+        "source": "back",
+        "row": 5,
+        "column": 4,
+        "crop": [
+          281,
+          434,
+          91,
+          109
+        ],
+        "observedFieldColor": "#f8a19a",
+        "unitId": "s40",
+        "identityStatus": "printed-id-verified",
+        "role": "unit",
+        "pairedFaceId": "b4m-front-r05c05"
+      },
+      {
+        "faceId": "b4m-back-r05c05",
+        "source": "back",
+        "row": 5,
+        "column": 5,
+        "crop": [
+          372,
+          434,
+          92,
+          109
+        ],
+        "observedFieldColor": "#fa9f9a",
+        "unitId": "s33",
+        "identityStatus": "printed-id-verified",
+        "role": "unit",
+        "pairedFaceId": "b4m-front-r05c04"
+      },
+      {
+        "faceId": "b4m-back-r05c06",
+        "source": "back",
+        "row": 5,
+        "column": 6,
+        "crop": [
+          464,
+          434,
+          92,
+          109
+        ],
+        "observedFieldColor": "#f5a29a",
+        "unitId": "s32",
+        "identityStatus": "printed-id-verified",
+        "role": "unit",
+        "pairedFaceId": "b4m-front-r05c03"
+      },
+      {
+        "faceId": "b4m-back-r05c07",
+        "source": "back",
+        "row": 5,
+        "column": 7,
+        "crop": [
+          556,
+          434,
+          92,
+          109
+        ],
+        "observedFieldColor": "#f5a29a",
+        "unitId": "s30",
+        "identityStatus": "printed-id-verified",
+        "role": "unit",
+        "pairedFaceId": "b4m-front-r05c02"
+      },
+      {
+        "faceId": "b4m-back-r05c08",
+        "source": "back",
+        "row": 5,
+        "column": 8,
+        "crop": [
+          648,
+          434,
+          92,
+          109
+        ],
+        "observedFieldColor": "#faa095",
+        "unitId": "s29",
+        "identityStatus": "printed-id-verified",
+        "role": "unit",
+        "pairedFaceId": "b4m-front-r05c01"
+      }
+    ]
+  },
+  "positionPairs": [
+    {
+      "front": "b4m-front-r01c01",
+      "back": "b4m-back-r01c08",
+      "pairingBasis": "horizontal-sheet-mirror",
+      "unitId": "g24",
+      "identityStatus": "verified-by-printed-b4m-label"
+    },
+    {
+      "front": "b4m-front-r01c02",
+      "back": "b4m-back-r01c07",
+      "pairingBasis": "horizontal-sheet-mirror",
+      "unitId": "g41",
+      "identityStatus": "verified-by-printed-b4m-label"
+    },
+    {
+      "front": "b4m-front-r01c03",
+      "back": "b4m-back-r01c06",
+      "pairingBasis": "horizontal-sheet-mirror",
+      "unitId": "g57",
+      "identityStatus": "verified-by-printed-b4m-label"
+    },
+    {
+      "front": "b4m-front-r01c04",
+      "back": "b4m-back-r01c05",
+      "pairingBasis": "horizontal-sheet-mirror",
+      "unitId": "g46",
+      "identityStatus": "verified-by-printed-b4m-label"
+    },
+    {
+      "front": "b4m-front-r01c05",
+      "back": "b4m-back-r01c04",
+      "pairingBasis": "horizontal-sheet-mirror",
+      "unitId": "g47",
+      "identityStatus": "verified-by-printed-b4m-label"
+    },
+    {
+      "front": "b4m-front-r01c06",
+      "back": "b4m-back-r01c03",
+      "pairingBasis": "horizontal-sheet-mirror",
+      "unitId": "g56",
+      "identityStatus": "verified-by-printed-b4m-label"
+    },
+    {
+      "front": "b4m-front-r01c07",
+      "back": "b4m-back-r01c02",
+      "pairingBasis": "horizontal-sheet-mirror",
+      "unitId": "g40",
+      "identityStatus": "verified-by-printed-b4m-label"
+    },
+    {
+      "front": "b4m-front-r01c08",
+      "back": "b4m-back-r01c01",
+      "pairingBasis": "horizontal-sheet-mirror",
+      "unitId": "g48",
+      "identityStatus": "verified-by-printed-b4m-label"
+    },
+    {
+      "front": "b4m-front-r02c01",
+      "back": "b4m-back-r02c08",
+      "pairingBasis": "horizontal-sheet-mirror",
+      "unitId": "g23",
+      "identityStatus": "verified-by-printed-b4m-label"
+    },
+    {
+      "front": "b4m-front-r02c02",
+      "back": "b4m-back-r02c07",
+      "pairingBasis": "horizontal-sheet-mirror",
+      "unitId": "g35",
+      "identityStatus": "verified-by-printed-b4m-label"
+    },
+    {
+      "front": "b4m-front-r02c03",
+      "back": "b4m-back-r02c06",
+      "pairingBasis": "horizontal-sheet-mirror",
+      "unitId": "g7",
+      "identityStatus": "verified-by-printed-b4m-label"
+    },
+    {
+      "front": "b4m-front-r02c04",
+      "back": "b4m-back-r02c05",
+      "pairingBasis": "horizontal-sheet-mirror",
+      "unitId": "g8",
+      "identityStatus": "verified-by-printed-b4m-label"
+    },
+    {
+      "front": "b4m-front-r02c05",
+      "back": "b4m-back-r02c04",
+      "pairingBasis": "horizontal-sheet-mirror",
+      "unitId": "g9",
+      "identityStatus": "verified-by-printed-b4m-label"
+    },
+    {
+      "front": "b4m-front-r02c06",
+      "back": "b4m-back-r02c03",
+      "pairingBasis": "horizontal-sheet-mirror",
+      "unitId": "g5",
+      "identityStatus": "verified-by-printed-b4m-label"
+    },
+    {
+      "front": "b4m-front-r02c07",
+      "back": "b4m-back-r02c02",
+      "pairingBasis": "horizontal-sheet-mirror",
+      "unitId": "g13",
+      "identityStatus": "verified-by-printed-b4m-label"
+    },
+    {
+      "front": "b4m-front-r02c08",
+      "back": "b4m-back-r02c01",
+      "pairingBasis": "horizontal-sheet-mirror",
+      "unitId": "g20",
+      "identityStatus": "verified-by-printed-b4m-label"
+    },
+    {
+      "front": "b4m-front-r03c01",
+      "back": "b4m-back-r03c08",
+      "pairingBasis": "horizontal-sheet-mirror",
+      "unitId": "g27",
+      "identityStatus": "verified-by-printed-b4m-label"
+    },
+    {
+      "front": "b4m-front-r03c02",
+      "back": "b4m-back-r03c07",
+      "pairingBasis": "horizontal-sheet-mirror",
+      "unitId": "g53",
+      "identityStatus": "verified-by-printed-b4m-label"
+    },
+    {
+      "front": "b4m-front-r03c03",
+      "back": "b4m-back-r03c06",
+      "pairingBasis": "horizontal-sheet-mirror",
+      "unitId": "g6",
+      "identityStatus": "verified-by-printed-b4m-label"
+    },
+    {
+      "front": "b4m-front-r03c04",
+      "back": "b4m-back-r03c05",
+      "pairingBasis": "horizontal-sheet-mirror",
+      "unitId": "g12",
+      "identityStatus": "verified-by-printed-b4m-label"
+    },
+    {
+      "front": "b4m-front-r03c05",
+      "back": "b4m-back-r03c04",
+      "pairingBasis": "horizontal-sheet-mirror",
+      "unitId": "g34",
+      "identityStatus": "verified-by-printed-b4m-label"
+    },
+    {
+      "front": "b4m-front-r03c06",
+      "back": "b4m-back-r03c03",
+      "pairingBasis": "horizontal-sheet-mirror",
+      "unitId": "g42",
+      "identityStatus": "verified-by-printed-b4m-label"
+    },
+    {
+      "front": "b4m-front-r03c07",
+      "back": "b4m-back-r03c02",
+      "pairingBasis": "horizontal-sheet-mirror",
+      "unitId": null,
+      "identityStatus": "verified-by-printed-b4m-label"
+    },
+    {
+      "front": "b4m-front-r03c08",
+      "back": "b4m-back-r03c01",
+      "pairingBasis": "horizontal-sheet-mirror",
+      "unitId": "s1sh",
+      "identityStatus": "verified-by-printed-b4m-label"
+    },
+    {
+      "front": "b4m-front-r04c01",
+      "back": "b4m-back-r04c08",
+      "pairingBasis": "horizontal-sheet-mirror",
+      "unitId": "s3",
+      "identityStatus": "verified-by-printed-b4m-label"
+    },
+    {
+      "front": "b4m-front-r04c02",
+      "back": "b4m-back-r04c07",
+      "pairingBasis": "horizontal-sheet-mirror",
+      "unitId": "s5",
+      "identityStatus": "verified-by-printed-b4m-label"
+    },
+    {
+      "front": "b4m-front-r04c03",
+      "back": "b4m-back-r04c06",
+      "pairingBasis": "horizontal-sheet-mirror",
+      "unitId": "s10",
+      "identityStatus": "verified-by-printed-b4m-label"
+    },
+    {
+      "front": "b4m-front-r04c04",
+      "back": "b4m-back-r04c05",
+      "pairingBasis": "horizontal-sheet-mirror",
+      "unitId": "s13",
+      "identityStatus": "verified-by-printed-b4m-label"
+    },
+    {
+      "front": "b4m-front-r04c05",
+      "back": "b4m-back-r04c04",
+      "pairingBasis": "horizontal-sheet-mirror",
+      "unitId": "s16",
+      "identityStatus": "verified-by-printed-b4m-label"
+    },
+    {
+      "front": "b4m-front-r04c06",
+      "back": "b4m-back-r04c03",
+      "pairingBasis": "horizontal-sheet-mirror",
+      "unitId": "s19",
+      "identityStatus": "verified-by-printed-b4m-label"
+    },
+    {
+      "front": "b4m-front-r04c07",
+      "back": "b4m-back-r04c02",
+      "pairingBasis": "horizontal-sheet-mirror",
+      "unitId": "s20",
+      "identityStatus": "verified-by-printed-b4m-label"
+    },
+    {
+      "front": "b4m-front-r04c08",
+      "back": "b4m-back-r04c01",
+      "pairingBasis": "horizontal-sheet-mirror",
+      "unitId": "s24",
+      "identityStatus": "verified-by-printed-b4m-label"
+    },
+    {
+      "front": "b4m-front-r05c01",
+      "back": "b4m-back-r05c08",
+      "pairingBasis": "horizontal-sheet-mirror",
+      "unitId": "s29",
+      "identityStatus": "verified-by-printed-b4m-label"
+    },
+    {
+      "front": "b4m-front-r05c02",
+      "back": "b4m-back-r05c07",
+      "pairingBasis": "horizontal-sheet-mirror",
+      "unitId": "s30",
+      "identityStatus": "verified-by-printed-b4m-label"
+    },
+    {
+      "front": "b4m-front-r05c03",
+      "back": "b4m-back-r05c06",
+      "pairingBasis": "horizontal-sheet-mirror",
+      "unitId": "s32",
+      "identityStatus": "verified-by-printed-b4m-label"
+    },
+    {
+      "front": "b4m-front-r05c04",
+      "back": "b4m-back-r05c05",
+      "pairingBasis": "horizontal-sheet-mirror",
+      "unitId": "s33",
+      "identityStatus": "verified-by-printed-b4m-label"
+    },
+    {
+      "front": "b4m-front-r05c05",
+      "back": "b4m-back-r05c04",
+      "pairingBasis": "horizontal-sheet-mirror",
+      "unitId": "s40",
+      "identityStatus": "verified-by-printed-b4m-label"
+    },
+    {
+      "front": "b4m-front-r05c06",
+      "back": "b4m-back-r05c03",
+      "pairingBasis": "horizontal-sheet-mirror",
+      "unitId": "s43",
+      "identityStatus": "verified-by-printed-b4m-label"
+    },
+    {
+      "front": "b4m-front-r05c07",
+      "back": "b4m-back-r05c02",
+      "pairingBasis": "horizontal-sheet-mirror",
+      "unitId": "s49",
+      "identityStatus": "verified-by-printed-b4m-label"
+    },
+    {
+      "front": "b4m-front-r05c08",
+      "back": "b4m-back-r05c01",
+      "pairingBasis": "horizontal-sheet-mirror",
+      "unitId": "s50",
+      "identityStatus": "verified-by-printed-b4m-label"
+    }
+  ],
+  "positionPairingStatus": "B4M confirmed by printed labels; other sets provisional from mirrored artwork layout",
+  "unitFacePairs": {
+    "g24": {
+      "front": "b4m-front-r01c01",
+      "back": "b4m-back-r01c08"
+    },
+    "g41": {
+      "front": "b4m-front-r01c02",
+      "back": "b4m-back-r01c07"
+    },
+    "g57": {
+      "front": "b4m-front-r01c03",
+      "back": "b4m-back-r01c06"
+    },
+    "g46": {
+      "front": "b4m-front-r01c04",
+      "back": "b4m-back-r01c05"
+    },
+    "g47": {
+      "front": "b4m-front-r01c05",
+      "back": "b4m-back-r01c04"
+    },
+    "g56": {
+      "front": "b4m-front-r01c06",
+      "back": "b4m-back-r01c03"
+    },
+    "g40": {
+      "front": "b4m-front-r01c07",
+      "back": "b4m-back-r01c02"
+    },
+    "g48": {
+      "front": "b4m-front-r01c08",
+      "back": "b4m-back-r01c01"
+    },
+    "g23": {
+      "front": "b4m-front-r02c01",
+      "back": "b4m-back-r02c08"
+    },
+    "g35": {
+      "front": "b4m-front-r02c02",
+      "back": "b4m-back-r02c07"
+    },
+    "g7": {
+      "front": "b4m-front-r02c03",
+      "back": "b4m-back-r02c06"
+    },
+    "g8": {
+      "front": "b4m-front-r02c04",
+      "back": "b4m-back-r02c05"
+    },
+    "g9": {
+      "front": "b4m-front-r02c05",
+      "back": "b4m-back-r02c04"
+    },
+    "g5": {
+      "front": "b4m-front-r02c06",
+      "back": "b4m-back-r02c03"
+    },
+    "g13": {
+      "front": "b4m-front-r02c07",
+      "back": "b4m-back-r02c02"
+    },
+    "g20": {
+      "front": "b4m-front-r02c08",
+      "back": "b4m-back-r02c01"
+    },
+    "g27": {
+      "front": "b4m-front-r03c01",
+      "back": "b4m-back-r03c08"
+    },
+    "g53": {
+      "front": "b4m-front-r03c02",
+      "back": "b4m-back-r03c07"
+    },
+    "g6": {
+      "front": "b4m-front-r03c03",
+      "back": "b4m-back-r03c06"
+    },
+    "g12": {
+      "front": "b4m-front-r03c04",
+      "back": "b4m-back-r03c05"
+    },
+    "g34": {
+      "front": "b4m-front-r03c05",
+      "back": "b4m-back-r03c04"
+    },
+    "g42": {
+      "front": "b4m-front-r03c06",
+      "back": "b4m-back-r03c03"
+    },
+    "s1sh": {
+      "front": "b4m-front-r03c08",
+      "back": "b4m-back-r03c01"
+    },
+    "s3": {
+      "front": "b4m-front-r04c01",
+      "back": "b4m-back-r04c08"
+    },
+    "s5": {
+      "front": "b4m-front-r04c02",
+      "back": "b4m-back-r04c07"
+    },
+    "s10": {
+      "front": "b4m-front-r04c03",
+      "back": "b4m-back-r04c06"
+    },
+    "s13": {
+      "front": "b4m-front-r04c04",
+      "back": "b4m-back-r04c05"
+    },
+    "s16": {
+      "front": "b4m-front-r04c05",
+      "back": "b4m-back-r04c04"
+    },
+    "s19": {
+      "front": "b4m-front-r04c06",
+      "back": "b4m-back-r04c03"
+    },
+    "s20": {
+      "front": "b4m-front-r04c07",
+      "back": "b4m-back-r04c02"
+    },
+    "s24": {
+      "front": "b4m-front-r04c08",
+      "back": "b4m-back-r04c01"
+    },
+    "s29": {
+      "front": "b4m-front-r05c01",
+      "back": "b4m-back-r05c08"
+    },
+    "s30": {
+      "front": "b4m-front-r05c02",
+      "back": "b4m-back-r05c07"
+    },
+    "s32": {
+      "front": "b4m-front-r05c03",
+      "back": "b4m-back-r05c06"
+    },
+    "s33": {
+      "front": "b4m-front-r05c04",
+      "back": "b4m-back-r05c05"
+    },
+    "s40": {
+      "front": "b4m-front-r05c05",
+      "back": "b4m-back-r05c04"
+    },
+    "s43": {
+      "front": "b4m-front-r05c06",
+      "back": "b4m-back-r05c03"
+    },
+    "s49": {
+      "front": "b4m-front-r05c07",
+      "back": "b4m-back-r05c02"
+    },
+    "s50": {
+      "front": "b4m-front-r05c08",
+      "back": "b4m-back-r05c01"
+    }
+  },
+  "unitIdsVerified": 39
+}

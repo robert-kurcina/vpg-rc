@@ -1,0 +1,10 @@
+{
+  "checkpoint": 135,
+  "status": "BLOCKED_BY_ENVIRONMENT",
+  "test": "Chromium navigation to HTTP-served native preview",
+  "url": "http://127.0.0.1:8765/games/battle-for-moscow/native-preview/index.html",
+  "browser": "/usr/bin/chromium",
+  "result": "net::ERR_BLOCKED_BY_ADMINISTRATOR",
+  "verifiedInstead": "Chromium DOM tests with actual browser scripts and source scenario JSON, mocking only fetch; see b4m-native-objective-browser-v369.json",
+  "notVerified": ["hosted HTTP navigation", "browser asset loading", "legacy strategic AI policy parity", "production browser cutover"]
+}

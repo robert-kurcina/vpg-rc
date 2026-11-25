@@ -1,0 +1,60 @@
+{
+  "checkpoint": 233,
+  "version": "v467",
+  "source": "references/rules/arduous-rules.pdf",
+  "sourceSHA256": "1ac46f3e958cf1d08768f6b56964100ab0951ece7e310ac3a30e8c479a8b986c",
+  "clauses": [
+    "§8.1 two-unit defensive stacking",
+    "§10.2 one attacker per hexside",
+    "§10.6 exchange casualty payment and forced retreat"
+  ],
+  "scenario": "arduous",
+  "constructedPlacement": true,
+  "defenderHex": "0306",
+  "attackerHexes": [
+    "0206",
+    "0305",
+    "0406",
+    "0307"
+  ],
+  "attackerFaceIds": [
+    "arduous-front-r03c06",
+    "arduous-front-r04c02",
+    "arduous-front-r05c01",
+    "arduous-front-r05c02"
+  ],
+  "defenderFaceIds": [
+    "arduous-front-r02c07",
+    "arduous-front-r02c08"
+  ],
+  "die": 2,
+  "crtOutcome": "EX",
+  "independentLateChoice": {
+    "attackerLossIds": [
+      "arduous-front-r03c06",
+      "arduous-front-r04c02",
+      "arduous-front-r05c01",
+      "arduous-front-r05c02"
+    ],
+    "defenderLossId": "arduous-front-r02c08",
+    "retreatPaths": {
+      "arduous-front-r02c07": [
+        "0307",
+        "0208"
+      ],
+      "arduous-front-r02c08": [
+        "0307",
+        "0208"
+      ]
+    }
+  },
+  "lateChoiceFound": true,
+  "pageCount": 20,
+  "choiceCount": 2560,
+  "casualtyFamiliesSeen": 26,
+  "attempts": 4096,
+  "budgetReached": true,
+  "assertions": 2602,
+  "full": true,
+  "limitation": "Not an exhaustive legal-consequence oracle; 4096-trial budget unchanged"
+}

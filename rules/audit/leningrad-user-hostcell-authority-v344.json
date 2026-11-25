@@ -1,0 +1,88 @@
+{
+  "checkpoint": "v344 / 110",
+  "authority": "Explicit host-cell IDs supplied by user; active until revised by user",
+  "germanCrosses": [
+    "0109",
+    "0210",
+    "0310",
+    "0411",
+    "0211"
+  ],
+  "sovietStars": [
+    "0108",
+    "0209",
+    "0309",
+    "0410",
+    "0510"
+  ],
+  "verifiedActiveHosts": {
+    "cross": [
+      "0109",
+      "0210",
+      "0211",
+      "0310",
+      "0411"
+    ],
+    "star": [
+      "0108",
+      "0209",
+      "0309",
+      "0410",
+      "0510"
+    ]
+  },
+  "disagreementWithAuthoredSvg": {
+    "cross": {
+      "explicitOnly": [
+        "0109",
+        "0211"
+      ],
+      "svgOnly": [
+        "0311",
+        "0511"
+      ]
+    },
+    "star": {
+      "explicitOnly": [
+        "0108"
+      ],
+      "svgOnly": [
+        "0611"
+      ]
+    }
+  },
+  "authoredSvgAuditOnly": {
+    "cross": [
+      "0210",
+      "0310",
+      "0311",
+      "0411",
+      "0511"
+    ],
+    "star": [
+      "0209",
+      "0309",
+      "0410",
+      "0510",
+      "0611"
+    ]
+  },
+  "pixelCenterAndGeometryUnmodified": true,
+  "sharedRendererUnmodified": true,
+  "historicalSetupAuthorized": false,
+  "remainingCoordinateMismatch": {
+    "cells": [
+      {
+        "internal": "0108",
+        "terrain": "sea",
+        "printed": "0008"
+      },
+      {
+        "internal": "0109",
+        "terrain": "sea",
+        "printed": "0009"
+      }
+    ],
+    "note": "The existing printed-column offset -1 produces invalid printed labels in the two western sea cells. Host assignments match the explicit list but canonical map numbering remains unresolved."
+  }
+}

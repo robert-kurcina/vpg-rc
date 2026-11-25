@@ -1,0 +1,35 @@
+{
+  "checkpoint": 252,
+  "version": "v486",
+  "checks": 15,
+  "battle": {
+    "defenderHex": "0205",
+    "attackers": [
+      "kiev-front-r01c01",
+      "kiev-front-r01c03"
+    ]
+  },
+  "die": 3,
+  "crtOutcome": "EX",
+  "firstChoice": {
+    "type": "combat",
+    "action": {
+      "type": "resolve-battle",
+      "die": 3,
+      "choices": {
+        "attackerLossIds": [
+          "kiev-front-r01c01"
+        ],
+        "retreatPaths": {
+          "kiev-front-r03c04": [
+            "0306",
+            "0405"
+          ]
+        }
+      }
+    }
+  },
+  "actionCount": 4,
+  "phaseId": "german-combat",
+  "errors": []
+}

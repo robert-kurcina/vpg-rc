@@ -1,0 +1,11 @@
+{
+  "checkpoint": 51,
+  "source": "legacy/engine.js::announceBattles/selectCombatActions",
+  "implementation": "core/solo_ai.js::planLegacyCombatDeclarations/executeLegacyCombatDeclarations",
+  "fixture_combinations": 198,
+  "nonempty_fixtures": 120,
+  "assertions_passed": 1275,
+  "scope": "declarations, unit commitments, relative order, session undo, no precommit RNG consumption",
+  "out_of_scope": ["casualty decisions", "retreat options", "advance choices", "full AI half-turn parity", "independent live Oberlabs comparison"],
+  "default_engine_changed": false
+}

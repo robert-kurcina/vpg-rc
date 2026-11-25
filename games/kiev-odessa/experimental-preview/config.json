@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "scenarioId": "kiev-odessa",
+  "mode": "experimental-candidate-campaign",
+  "status": "contested-seven-turn-experimental-browser-path-tested-not-historically-certified",
+  "sourceGame": "Objective: Kiev + Odessa Expansion",
+  "map": "../../../maps/kiev-odessa-composite-experimental-v531.json",
+  "mapExport": "../../../exports/kiev-odessa.svg",
+  "mapViewBox": [
+    -35,
+    -35,
+    1360,
+    1350
+  ],
+  "profile": "../../../maps/movement-configs/kiev-odessa-experimental-v531.json",
+  "phaseConfig": "../../../maps/phase-configs/kiev-odessa.json",
+  "counterConfig": "../../../maps/counter-configs/kiev-odessa-experimental-v531.json",
+  "combatPolicy": "../../../maps/combat-configs/kiev-odessa-experimental-v531.json",
+  "opening": "opening-v531.json",
+  "rosterOverlay": "../../../maps/roster-overlays/kiev-odessa.json",
+  "buildupPolicy": "../../../maps/buildup-configs/kiev-odessa-experimental-v533.json",
+  "buildupAllocation": "allocation-v533.json",
+  "housekeepingPolicy": "../../../maps/housekeeping-configs/kiev-odessa-candidate-v521.json",
+  "setupPolicy": "setup-policy-v534.json"
+}

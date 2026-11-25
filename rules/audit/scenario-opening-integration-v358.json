@@ -1,0 +1,70 @@
+{
+  "checkpoint": 124,
+  "version": "v358",
+  "status": "preview-only-no-production-activation",
+  "source": "tests/fixtures/leningrad-source-setup-v357.js; maps/setup/leningrad.json; user-source SVG + source counter faces",
+  "fixtureStatus": "test-only selections of eligible starting counter identities and markers; not historical formation assignment",
+  "initial": {
+    "phase": "german-combat",
+    "actor": "german",
+    "turn": 1,
+    "unitCount": 19,
+    "german": 9,
+    "soviet": 10
+  },
+  "candidateFirstBattle": {
+    "attackerFace": "leningrad-front-r03c05",
+    "attackerHex": "0310",
+    "defenderFace": "leningrad-front-r01c04",
+    "defenderHex": "0309",
+    "attackStrength": 8,
+    "defenseStrength": 3,
+    "odds": 2,
+    "geography": {
+      "hex": "0309",
+      "terrainStatus": "authoritative-user-svg-v301",
+      "crossings": [
+        {
+          "unitId": "leningrad-front-r03c05",
+          "from": "0310",
+          "to": "0309",
+          "river": false,
+          "source": "leningrad-user-svg-v301"
+        }
+      ]
+    },
+    "crtResult": null,
+    "consequencesCommitted": false
+  },
+  "setup": {
+    "startingUnits": 19,
+    "printedAnchorAgreement": false,
+    "printedAnchorDisagreements": [
+      {
+        "rulebookPrintedHex": "1305",
+        "sourceSvgId": "use1-50",
+        "marker": "fixedMechanized",
+        "physicalCellId": "1406",
+        "renderedNumber": "1306",
+        "renderedNumberMatchesRulebook": false,
+        "numberRegistryCellId": "1405",
+        "numberRegistryMatchesSource": false
+      },
+      {
+        "rulebookPrintedHex": "1701",
+        "sourceSvgId": "use504",
+        "marker": "fixedMechanized",
+        "physicalCellId": "1802",
+        "renderedNumber": "1702",
+        "renderedNumberMatchesRulebook": false,
+        "numberRegistryCellId": null,
+        "numberRegistryMatchesSource": false
+      }
+    ],
+    "scope": "candidate-initial-placement-by-approved-runtime-hex-markers"
+  },
+  "historicalSetupAuthorized": false,
+  "productionGameActivated": false,
+  "combatFinishBlocked": true,
+  "approvedRenderModified": false
+}

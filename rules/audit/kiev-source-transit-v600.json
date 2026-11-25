@@ -1,0 +1,28 @@
+{
+  "checkpoint": 366,
+  "version": "v600",
+  "scope": "Kiev printed \u00a7\u00a75,6,8.1,9.2; controlled actual-map transit fixtures, existing setup and victory regressions; no new browser or full campaign",
+  "passed": {
+    "kiev-source-transit-v600": 16,
+    "kiev-rulebook-setup-qualification-v489": 271,
+    "kiev-roster-and-victory-v410": 192,
+    "kiev-experimental-graph-campaign-v485": 40,
+    "kiev-nationality-retreat-v471": 55,
+    "transit-stopping-v318": 94,
+    "advanced-crt-v557": 301,
+    "cross-game-movement-profiles-v318": 29,
+    "odessa-approved-territory-v575": 3657
+  },
+  "total": 4655,
+  "bundleModules": 59,
+  "productionChanges": [
+    "maps/movement-configs/kiev.json",
+    "maps/movement-configs/kiev-odessa-experimental-v531.json"
+  ],
+  "remaining": [
+    "Kiev first-turn combat and mandatory Soviet counterattack source qualification",
+    "Standalone reinforcement and replacement integration",
+    "Owner-selected end-phase overstack removal",
+    "Strategic AI and browser qualification"
+  ]
+}

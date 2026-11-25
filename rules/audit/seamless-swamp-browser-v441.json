@@ -1,0 +1,21 @@
+{
+  "version": "v441",
+  "method": "real Chromium executing project renderer in-memory",
+  "scene": "Objective Kiev real 165-hex board",
+  "result": {
+    "hexes": 165,
+    "swampPolygons": 10,
+    "patternExists": true,
+    "patternUnits": "userSpaceOnUse",
+    "patternImage": true,
+    "allSwampTextured": true,
+    "forest1111Opacity": "1.00",
+    "forest1110Opacity": "1.00"
+  },
+  "userBitmapDecoded": [
+    1254,
+    1254
+  ],
+  "pageErrors": [],
+  "gameplayHttpSmoke": "not run; independent in-memory rendering verified"
+}

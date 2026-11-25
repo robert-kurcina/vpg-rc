@@ -1,0 +1,41 @@
+'use strict';
+const assert=require('node:assert/strict');
+const fs=require('node:fs');
+const board=require('../maps/leningrad.json');
+const T=require('../core/terrain_tiles');
+const A=require('../core/hex_coordinate_migration_audit');
+const audit=require('../tools/audit-leningrad-rekey-v341.js').audit;
+const report=audit();
+const frozen=JSON.parse(fs.readFileSync('rules/audit/leningrad-rekey-feasibility-v341.json','utf8'));
+const {markerAssignments:historicalMarkers,...staticPrior}=frozen;
+const {markerAssignments:currentMarkers,...staticNow}=report;
+assert.deepEqual({...staticNow,unnumberedCells:staticNow.unnumberedCells.map(x=>({...x,hasDeployment:false}))},staticPrior,'physical grid rekey safety unchanged; deployment marker occupancy updated');
+assert.notDeepEqual(currentMarkers,historicalMarkers,'source geometry update must not be hidden in historical snapshot');
+assert.equal(report.physicalCells,197);
+assert.equal(report.numberedCandidateCells,186);
+assert.equal(report.unnumberedCells.length,11);
+assert(report.unnumberedCells.every(x=>x.terrain==='sea'),'invalid-coordinate cells are sea geometry');
+assert.deepEqual(report.unnumberedCells.filter(x=>x.hasDeployment).map(x=>x.from),[],'v345-approved marker registry has no deployment in these unnumbered sea cells');
+assert.equal(report.originalEdges,533);
+assert.equal(report.candidateEdges,530);
+assert.equal(report.missingEdges.length,21);
+assert.equal(report.addedEdges.length,18);
+assert.equal(report.readyForAuthoritativeRekey,false);
+assert.deepEqual(report.blockers,['unregistered-boundary-cells','adjacency-changes']);
+assert.equal(report.markerAssignments.filter(m=>m.kind==='cross').length,5);
+assert.equal(report.markerAssignments.filter(m=>m.kind==='star').length,5);
+// Wrong parity must be rejected as well; it loses far more connections.
+const wrong=A.analyze(board,c=>T.formatHexNumber(c,T.numberStyle(board,{})),{candidateParityDown:'odd'});
+assert(wrong.missingEdges.length>100);
+// A simple identity migration on a small rectangular grid has no blockers.
+const simple={id:'synthetic',geometry:{columnParityDown:'odd'},cells:[
+ {id:'0101',column:1,row:1,terrain:'open'},
+ {id:'0102',column:1,row:2,terrain:'open'},
+ {id:'0201',column:2,row:1,terrain:'open'},
+ {id:'0202',column:2,row:2,terrain:'open'}
+]};
+const identity=A.analyze(simple,c=>c.id,{candidateParityDown:'odd'});
+assert.equal(identity.readyForAuthoritativeRekey,true);
+assert.equal(identity.missingEdges.length,0);
+assert.equal(identity.addedEdges.length,0);
+console.log('PASS v341: safe rekey gate detects 11 unnumbered sea cells, 21 dropped edges, 18 fabricated edges');

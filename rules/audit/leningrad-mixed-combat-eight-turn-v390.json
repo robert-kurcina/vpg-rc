@@ -1,0 +1,53 @@
+{
+  "checkpoint": 156,
+  "version": "v390",
+  "assertions": 63,
+  "totalActions": 110,
+  "completedTurns": 8,
+  "battleResults": [
+    {
+      "defenderHex": "0611",
+      "outcome": "NE",
+      "losses": [],
+      "advance": null
+    },
+    {
+      "defenderHex": "0309",
+      "outcome": "EX",
+      "losses": [
+        {
+          "attackPoints": 3,
+          "defensePoints": 3,
+          "removed": true,
+          "unitId": "leningrad-front-r01c04"
+        },
+        {
+          "attackPoints": 4,
+          "defensePoints": 4,
+          "removed": false,
+          "unitId": "leningrad-front-r03c05"
+        }
+      ],
+      "advance": "leningrad-front-r03c05"
+    }
+  ],
+  "restoredReduced": true,
+  "failedRestoration": null,
+  "reinforcements": {
+    "militiaAdded": true,
+    "axisReinforced": true,
+    "sovietReinforced": true
+  },
+  "fleet": {
+    "moved": true,
+    "eliminated": true
+  },
+  "finalOutcome": "soviet-victory",
+  "scope": "candidate opening with real multi-battle losses, replacement attempt, Fleet damage, buildup, full eight-turn journal",
+  "excluded": [
+    "Independent historical unit allocation certification",
+    "General player/AI legal action selection",
+    "Production GUI",
+    "full historical strategic play"
+  ]
+}

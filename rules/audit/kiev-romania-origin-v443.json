@@ -1,0 +1,36 @@
+{
+  "checkpoint": 209,
+  "version": "v443",
+  "status": "origin-lineage + synthetic territory rule candidate; NO Kiev campaign activation",
+  "ruleSource": "references/rules/kiev-rules.pdf printed p5 \u00a710.8",
+  "sourceRuleSha256": "d55e8f0e567d1f8c7907c4fc8368954ec0e5fa8d6fe9e8e71c61acf9bb3c3756",
+  "regionClassification": "not-certified",
+  "sourceBackedAllowedOpeningHexes": [
+    "0708",
+    "0808",
+    "1110"
+  ],
+  "originalSetupHexEvidence": "source-validated 30-unit Kiev opening, each unit stores openingHex independent of mutable hex",
+  "syntheticCertifiedBoard": "Leningrad, with temporary complete one-hex territory mask; not a Leningrad or Kiev historical rule",
+  "newAssertions": 100,
+  "previousChecks": [
+    "Kiev v442 early combat 45",
+    "Kiev v437 opening 180",
+    "Kiev v436 preflight 289",
+    "Kiev v433 graph 2949",
+    "Leningrad shared phases and multi-turn combat"
+  ],
+  "protectedAssetFilesUnchangedFromV442": 136,
+  "protectedAssetMismatch": [],
+  "codeFilesChangedFromV442": [
+    "core/historical_combat_declarations.js",
+    "core/historical_engine_browser_bundle.js",
+    "core/scenario_starting_setup.js"
+  ],
+  "scopeNotes": [
+    "No historical Romania target region inferred from four initial Axis setup crosses.",
+    "firstTurnTerritorialRestriction is opt-in only; explicit complete territory evidence and nonempty targetHexes required.",
+    "Map movement and combat gating still active for standalone Kiev and Kiev\u2013Odessa.",
+    "All original map exports, source geometry, user-approved terrain bitmaps and B4M CRT preserved."
+  ]
+}

@@ -1,0 +1,2648 @@
+{
+  "schemaVersion": 1,
+  "mapId": "arduous",
+  "gameSet": "arduous",
+  "faceSource": {
+    "front": {
+      "file": "assets/official-counters/source-sheets/counters-arduous-front.jpg",
+      "sha256": "16a3048f279795d022b85f98c6a61d332a7c07c32ce568ad98821b6bc9358f73",
+      "width": 745,
+      "height": 547
+    },
+    "back": {
+      "file": "assets/official-counters/source-sheets/counters-arduous-back.jpg",
+      "sha256": "c41b5eca04c9d0654149ad1252bcde347e53355721e641c54eda7338a76734f9",
+      "width": 745,
+      "height": 544
+    }
+  },
+  "faceOrder": "horizontal-mirror across sheet: front row r column c corresponds to back row r column 9-c",
+  "colorPolicy": "per-face sampled color stored as provenance; per-unit fields use source palette, not generic faction CSS",
+  "faces": {
+    "front": [
+      {
+        "faceId": "arduous-front-r01c01",
+        "source": "front",
+        "row": 1,
+        "column": 1,
+        "crop": [
+          5,
+          0,
+          92,
+          96
+        ],
+        "observedFieldColor": "#798e85",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "unknown-until-transcribed",
+        "pairedFaceId": "arduous-back-r01c08",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "tank",
+          "printedIdentifier": "24",
+          "printedValues": "12-6",
+          "printedAffiliation": "axis",
+          "notes": "printed face only; unit identity requires validated roster mapping"
+        },
+        "printedPairValidation": "printed-pair-agrees",
+        "sourceIdentityKey": "arduous:axis:tank:24"
+      },
+      {
+        "faceId": "arduous-front-r01c02",
+        "source": "front",
+        "row": 1,
+        "column": 2,
+        "crop": [
+          97,
+          0,
+          92,
+          96
+        ],
+        "observedFieldColor": "#8ca095",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "unknown-until-transcribed",
+        "pairedFaceId": "arduous-back-r01c07",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "tank",
+          "printedIdentifier": "39",
+          "printedValues": "12-6",
+          "printedAffiliation": "axis",
+          "notes": "printed face only; unit identity requires validated roster mapping"
+        },
+        "printedPairValidation": "printed-pair-agrees",
+        "sourceIdentityKey": "arduous:axis:tank:39"
+      },
+      {
+        "faceId": "arduous-front-r01c03",
+        "source": "front",
+        "row": 1,
+        "column": 3,
+        "crop": [
+          189,
+          0,
+          92,
+          96
+        ],
+        "observedFieldColor": "#8da196",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "unknown-until-transcribed",
+        "pairedFaceId": "arduous-back-r01c06",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "tank",
+          "printedIdentifier": "47",
+          "printedValues": "12-6",
+          "printedAffiliation": "axis",
+          "notes": "printed face only; unit identity requires validated roster mapping"
+        },
+        "printedPairValidation": "printed-pair-agrees",
+        "sourceIdentityKey": "arduous:axis:tank:47"
+      },
+      {
+        "faceId": "arduous-front-r01c04",
+        "source": "front",
+        "row": 1,
+        "column": 4,
+        "crop": [
+          281,
+          0,
+          91,
+          96
+        ],
+        "observedFieldColor": "#8ca095",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "unknown-until-transcribed",
+        "pairedFaceId": "arduous-back-r01c05",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "tank",
+          "printedIdentifier": "46",
+          "printedValues": "10-6",
+          "printedAffiliation": "axis",
+          "notes": "printed face only; unit identity requires validated roster mapping"
+        },
+        "printedPairValidation": "printed-pair-agrees",
+        "sourceIdentityKey": "arduous:axis:tank:46"
+      },
+      {
+        "faceId": "arduous-front-r01c05",
+        "source": "front",
+        "row": 1,
+        "column": 5,
+        "crop": [
+          372,
+          0,
+          92,
+          96
+        ],
+        "observedFieldColor": "#8ca095",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "unknown-until-transcribed",
+        "pairedFaceId": "arduous-back-r01c04",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "tank",
+          "printedIdentifier": "57",
+          "printedValues": "10-6",
+          "printedAffiliation": "axis",
+          "notes": "printed face only; unit identity requires validated roster mapping"
+        },
+        "printedPairValidation": "printed-pair-agrees",
+        "sourceIdentityKey": "arduous:axis:tank:57"
+      },
+      {
+        "faceId": "arduous-front-r01c06",
+        "source": "front",
+        "row": 1,
+        "column": 6,
+        "crop": [
+          464,
+          0,
+          92,
+          96
+        ],
+        "observedFieldColor": "#8ca095",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "unknown-until-transcribed",
+        "pairedFaceId": "arduous-back-r01c03",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "infantry",
+          "printedIdentifier": "35",
+          "printedValues": "8-4",
+          "printedAffiliation": "axis",
+          "notes": "printed face only; unit identity requires validated roster mapping"
+        },
+        "printedPairValidation": "printed-pair-agrees",
+        "sourceIdentityKey": "arduous:axis:infantry:35"
+      },
+      {
+        "faceId": "arduous-front-r01c07",
+        "source": "front",
+        "row": 1,
+        "column": 7,
+        "crop": [
+          556,
+          0,
+          92,
+          96
+        ],
+        "observedFieldColor": "#8ca095",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "unknown-until-transcribed",
+        "pairedFaceId": "arduous-back-r01c02",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "infantry",
+          "printedIdentifier": "7",
+          "printedValues": "7-4",
+          "printedAffiliation": "axis",
+          "notes": "printed face only; unit identity requires validated roster mapping"
+        },
+        "printedPairValidation": "printed-pair-agrees",
+        "sourceIdentityKey": "arduous:axis:infantry:7"
+      },
+      {
+        "faceId": "arduous-front-r01c08",
+        "source": "front",
+        "row": 1,
+        "column": 8,
+        "crop": [
+          648,
+          0,
+          92,
+          96
+        ],
+        "observedFieldColor": "#8ca095",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "unknown-until-transcribed",
+        "pairedFaceId": "arduous-back-r01c01",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "infantry",
+          "printedIdentifier": "8",
+          "printedValues": "7-4",
+          "printedAffiliation": "axis",
+          "notes": "printed face only; unit identity requires validated roster mapping"
+        },
+        "printedPairValidation": "printed-pair-agrees",
+        "sourceIdentityKey": "arduous:axis:infantry:8"
+      },
+      {
+        "faceId": "arduous-front-r02c01",
+        "source": "front",
+        "row": 2,
+        "column": 1,
+        "crop": [
+          5,
+          96,
+          92,
+          97
+        ],
+        "observedFieldColor": "#81928a",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "unknown-until-transcribed",
+        "pairedFaceId": "arduous-back-r02c08",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "infantry",
+          "printedIdentifier": "9",
+          "printedValues": "7-4",
+          "printedAffiliation": "axis",
+          "notes": "printed face only; unit identity requires validated roster mapping"
+        },
+        "printedPairValidation": "printed-pair-agrees",
+        "sourceIdentityKey": "arduous:axis:infantry:9"
+      },
+      {
+        "faceId": "arduous-front-r02c02",
+        "source": "front",
+        "row": 2,
+        "column": 2,
+        "crop": [
+          97,
+          96,
+          92,
+          97
+        ],
+        "observedFieldColor": "#8ba195",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "unknown-until-transcribed",
+        "pairedFaceId": "arduous-back-r02c07",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "infantry",
+          "printedIdentifier": "5",
+          "printedValues": "6-4",
+          "printedAffiliation": "axis",
+          "notes": "printed face only; unit identity requires validated roster mapping"
+        },
+        "printedPairValidation": "printed-pair-agrees",
+        "sourceIdentityKey": "arduous:axis:infantry:5"
+      },
+      {
+        "faceId": "arduous-front-r02c03",
+        "source": "front",
+        "row": 2,
+        "column": 3,
+        "crop": [
+          189,
+          96,
+          92,
+          97
+        ],
+        "observedFieldColor": "#8ca296",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "unknown-until-transcribed",
+        "pairedFaceId": "arduous-back-r02c06",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "infantry",
+          "printedIdentifier": "13",
+          "printedValues": "6-4",
+          "printedAffiliation": "axis",
+          "notes": "printed face only; unit identity requires validated roster mapping"
+        },
+        "printedPairValidation": "printed-pair-agrees",
+        "sourceIdentityKey": "arduous:axis:infantry:13"
+      },
+      {
+        "faceId": "arduous-front-r02c04",
+        "source": "front",
+        "row": 2,
+        "column": 4,
+        "crop": [
+          281,
+          96,
+          91,
+          97
+        ],
+        "observedFieldColor": "#8ba195",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "unknown-until-transcribed",
+        "pairedFaceId": "arduous-back-r02c05",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "infantry",
+          "printedIdentifier": "20",
+          "printedValues": "6-4",
+          "printedAffiliation": "axis",
+          "notes": "printed face only; unit identity requires validated roster mapping"
+        },
+        "printedPairValidation": "printed-pair-agrees",
+        "sourceIdentityKey": "arduous:axis:infantry:20"
+      },
+      {
+        "faceId": "arduous-front-r02c05",
+        "source": "front",
+        "row": 2,
+        "column": 5,
+        "crop": [
+          372,
+          96,
+          92,
+          97
+        ],
+        "observedFieldColor": "#8aa295",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "unknown-until-transcribed",
+        "pairedFaceId": "arduous-back-r02c04",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "infantry",
+          "printedIdentifier": "43",
+          "printedValues": "6-4",
+          "printedAffiliation": "axis",
+          "notes": "printed face only; unit identity requires validated roster mapping"
+        },
+        "printedPairValidation": "printed-pair-agrees",
+        "sourceIdentityKey": "arduous:axis:infantry:43"
+      },
+      {
+        "faceId": "arduous-front-r02c06",
+        "source": "front",
+        "row": 2,
+        "column": 6,
+        "crop": [
+          464,
+          96,
+          92,
+          97
+        ],
+        "observedFieldColor": "#8ba195",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "unknown-until-transcribed",
+        "pairedFaceId": "arduous-back-r02c03",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "infantry",
+          "printedIdentifier": "53",
+          "printedValues": "6-4",
+          "printedAffiliation": "axis",
+          "notes": "printed face only; unit identity requires validated roster mapping"
+        },
+        "printedPairValidation": "printed-pair-agrees",
+        "sourceIdentityKey": "arduous:axis:infantry:53"
+      },
+      {
+        "faceId": "arduous-front-r02c07",
+        "source": "front",
+        "row": 2,
+        "column": 7,
+        "crop": [
+          556,
+          96,
+          92,
+          97
+        ],
+        "observedFieldColor": "#8ba195",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "unknown-until-transcribed",
+        "pairedFaceId": "arduous-back-r02c02",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "infantry",
+          "printedIdentifier": "6",
+          "printedValues": "5-4",
+          "printedAffiliation": "axis",
+          "notes": "printed face only; unit identity requires validated roster mapping"
+        },
+        "printedPairValidation": "printed-pair-agrees",
+        "sourceIdentityKey": "arduous:axis:infantry:6"
+      },
+      {
+        "faceId": "arduous-front-r02c08",
+        "source": "front",
+        "row": 2,
+        "column": 8,
+        "crop": [
+          648,
+          96,
+          92,
+          97
+        ],
+        "observedFieldColor": "#8aa295",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "unknown-until-transcribed",
+        "pairedFaceId": "arduous-back-r02c01",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "infantry",
+          "printedIdentifier": "12",
+          "printedValues": "5-4",
+          "printedAffiliation": "axis",
+          "notes": "printed face only; unit identity requires validated roster mapping"
+        },
+        "printedPairValidation": "printed-pair-agrees",
+        "sourceIdentityKey": "arduous:axis:infantry:12"
+      },
+      {
+        "faceId": "arduous-front-r03c01",
+        "source": "front",
+        "row": 3,
+        "column": 1,
+        "crop": [
+          5,
+          216,
+          92,
+          98
+        ],
+        "observedFieldColor": "#7c8d85",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "unknown-until-transcribed",
+        "pairedFaceId": "arduous-back-r03c08",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "air-support",
+          "printedIdentifier": "FK VIII",
+          "printedValues": "2 / arrow",
+          "printedAffiliation": "axis",
+          "notes": "special marker / not an ordinary maneuver unit"
+        },
+        "printedPairValidation": "special-pair-agrees"
+      },
+      {
+        "faceId": "arduous-front-r03c02",
+        "source": "front",
+        "row": 3,
+        "column": 2,
+        "crop": [
+          97,
+          216,
+          92,
+          98
+        ],
+        "observedFieldColor": "#8e9f95",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "unknown-until-transcribed",
+        "pairedFaceId": "arduous-back-r03c07",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "air-support",
+          "printedIdentifier": "FK II",
+          "printedValues": "1 / arrow",
+          "printedAffiliation": "axis",
+          "notes": "special marker / not an ordinary maneuver unit"
+        },
+        "printedPairValidation": "special-pair-agrees"
+      },
+      {
+        "faceId": "arduous-front-r03c03",
+        "source": "front",
+        "row": 3,
+        "column": 3,
+        "crop": [
+          189,
+          216,
+          92,
+          98
+        ],
+        "observedFieldColor": "#90a096",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "unknown-until-transcribed",
+        "pairedFaceId": "arduous-back-r03c06",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "game-turn",
+          "printedIdentifier": "GAME TURN",
+          "printedValues": null,
+          "printedAffiliation": "neutral",
+          "notes": "special marker / not an ordinary maneuver unit"
+        },
+        "printedPairValidation": "special-pair-agrees"
+      },
+      {
+        "faceId": "arduous-front-r03c04",
+        "source": "front",
+        "row": 3,
+        "column": 4,
+        "crop": [
+          281,
+          216,
+          91,
+          98
+        ],
+        "observedFieldColor": "#e94452",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "unknown-until-transcribed",
+        "pairedFaceId": "arduous-back-r03c05",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "infantry",
+          "printedIdentifier": "3",
+          "printedValues": "8-4",
+          "printedAffiliation": "soviet",
+          "notes": "printed face only; unit identity requires validated roster mapping"
+        },
+        "printedPairValidation": "printed-pair-agrees",
+        "sourceIdentityKey": "arduous:soviet:infantry:3"
+      },
+      {
+        "faceId": "arduous-front-r03c05",
+        "source": "front",
+        "row": 3,
+        "column": 5,
+        "crop": [
+          372,
+          216,
+          92,
+          98
+        ],
+        "observedFieldColor": "#ea4354",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "unknown-until-transcribed",
+        "pairedFaceId": "arduous-back-r03c04",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "infantry",
+          "printedIdentifier": "4",
+          "printedValues": "8-4",
+          "printedAffiliation": "soviet",
+          "notes": "printed face only; unit identity requires validated roster mapping"
+        },
+        "printedPairValidation": "printed-pair-agrees",
+        "sourceIdentityKey": "arduous:soviet:infantry:4"
+      },
+      {
+        "faceId": "arduous-front-r03c06",
+        "source": "front",
+        "row": 3,
+        "column": 6,
+        "crop": [
+          464,
+          216,
+          92,
+          98
+        ],
+        "observedFieldColor": "#f04054",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "unknown-until-transcribed",
+        "pairedFaceId": "arduous-back-r03c03",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "infantry",
+          "printedIdentifier": "10",
+          "printedValues": "8-4",
+          "printedAffiliation": "soviet",
+          "notes": "printed face only; unit identity requires validated roster mapping"
+        },
+        "printedPairValidation": "printed-pair-agrees",
+        "sourceIdentityKey": "arduous:soviet:infantry:10"
+      },
+      {
+        "faceId": "arduous-front-r03c07",
+        "source": "front",
+        "row": 3,
+        "column": 7,
+        "crop": [
+          556,
+          216,
+          92,
+          98
+        ],
+        "observedFieldColor": "#f04054",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "unknown-until-transcribed",
+        "pairedFaceId": "arduous-back-r03c02",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "infantry",
+          "printedIdentifier": "13",
+          "printedValues": "8-4",
+          "printedAffiliation": "soviet",
+          "notes": "printed face only; unit identity requires validated roster mapping"
+        },
+        "printedPairValidation": "printed-pair-agrees",
+        "sourceIdentityKey": "arduous:soviet:infantry:13"
+      },
+      {
+        "faceId": "arduous-front-r03c08",
+        "source": "front",
+        "row": 3,
+        "column": 8,
+        "crop": [
+          648,
+          216,
+          92,
+          98
+        ],
+        "observedFieldColor": "#ea4354",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "unknown-until-transcribed",
+        "pairedFaceId": "arduous-back-r03c01",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "infantry",
+          "printedIdentifier": "16",
+          "printedValues": "8-4",
+          "printedAffiliation": "soviet",
+          "notes": "printed face only; unit identity requires validated roster mapping"
+        },
+        "printedPairValidation": "printed-pair-agrees",
+        "sourceIdentityKey": "arduous:soviet:infantry:16"
+      },
+      {
+        "faceId": "arduous-front-r04c01",
+        "source": "front",
+        "row": 4,
+        "column": 1,
+        "crop": [
+          5,
+          314,
+          92,
+          98
+        ],
+        "observedFieldColor": "#b88e68",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "unknown-until-transcribed",
+        "pairedFaceId": "arduous-back-r04c08",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "mechanized",
+          "printedIdentifier": "*",
+          "printedValues": "?-6",
+          "printedAffiliation": "soviet",
+          "notes": "printed face only; unit identity requires validated roster mapping",
+          "classificationEvidence": "The Arduous Beginning Rules v1.0 §§3.3, 6.0(1–4), PDF pp.1–2; official source sheets show ten concealed Soviet Mechanized Corps with one-step revealed reverse faces"
+        },
+        "printedPairValidation": "unresolved"
+      },
+      {
+        "faceId": "arduous-front-r04c02",
+        "source": "front",
+        "row": 4,
+        "column": 2,
+        "crop": [
+          97,
+          314,
+          92,
+          98
+        ],
+        "observedFieldColor": "#d4a480",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "unknown-until-transcribed",
+        "pairedFaceId": "arduous-back-r04c07",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "mechanized",
+          "printedIdentifier": "*",
+          "printedValues": "?-6",
+          "printedAffiliation": "soviet",
+          "notes": "printed face only; unit identity requires validated roster mapping",
+          "classificationEvidence": "The Arduous Beginning Rules v1.0 §§3.3, 6.0(1–4), PDF pp.1–2; official source sheets show ten concealed Soviet Mechanized Corps with one-step revealed reverse faces"
+        },
+        "printedPairValidation": "unresolved"
+      },
+      {
+        "faceId": "arduous-front-r04c03",
+        "source": "front",
+        "row": 4,
+        "column": 3,
+        "crop": [
+          189,
+          314,
+          92,
+          98
+        ],
+        "observedFieldColor": "#89634e",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "unknown-until-transcribed",
+        "pairedFaceId": "arduous-back-r04c06",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "location-marker",
+          "printedIdentifier": "Brest-Litovsk Garrison",
+          "printedValues": null,
+          "printedAffiliation": "neutral",
+          "notes": "special marker / not an ordinary maneuver unit"
+        },
+        "printedPairValidation": "unresolved"
+      },
+      {
+        "faceId": "arduous-front-r04c04",
+        "source": "front",
+        "row": 4,
+        "column": 4,
+        "crop": [
+          281,
+          314,
+          91,
+          98
+        ],
+        "observedFieldColor": "#e64652",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "unknown-until-transcribed",
+        "pairedFaceId": "arduous-back-r04c05",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "infantry",
+          "printedIdentifier": "24",
+          "printedValues": "8-4",
+          "printedAffiliation": "soviet",
+          "notes": "printed face only; unit identity requires validated roster mapping"
+        },
+        "printedPairValidation": "printed-pair-agrees",
+        "sourceIdentityKey": "arduous:soviet:infantry:24"
+      },
+      {
+        "faceId": "arduous-front-r04c05",
+        "source": "front",
+        "row": 4,
+        "column": 5,
+        "crop": [
+          372,
+          314,
+          92,
+          98
+        ],
+        "observedFieldColor": "#e74552",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "unknown-until-transcribed",
+        "pairedFaceId": "arduous-back-r04c04",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "infantry",
+          "printedIdentifier": "22",
+          "printedValues": "8-4",
+          "printedAffiliation": "soviet",
+          "notes": "printed face only; unit identity requires validated roster mapping"
+        },
+        "printedPairValidation": "printed-pair-agrees",
+        "sourceIdentityKey": "arduous:soviet:infantry:22"
+      },
+      {
+        "faceId": "arduous-front-r04c06",
+        "source": "front",
+        "row": 4,
+        "column": 6,
+        "crop": [
+          464,
+          314,
+          92,
+          98
+        ],
+        "observedFieldColor": "#e74552",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "unknown-until-transcribed",
+        "pairedFaceId": "arduous-back-r04c03",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "infantry",
+          "printedIdentifier": "21",
+          "printedValues": "8-4",
+          "printedAffiliation": "soviet",
+          "notes": "printed face only; unit identity requires validated roster mapping"
+        },
+        "printedPairValidation": "printed-pair-agrees",
+        "sourceIdentityKey": "arduous:soviet:infantry:21"
+      },
+      {
+        "faceId": "arduous-front-r04c07",
+        "source": "front",
+        "row": 4,
+        "column": 7,
+        "crop": [
+          556,
+          314,
+          92,
+          98
+        ],
+        "observedFieldColor": "#e74552",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "unknown-until-transcribed",
+        "pairedFaceId": "arduous-back-r04c02",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "infantry",
+          "printedIdentifier": "20",
+          "printedValues": "8-4",
+          "printedAffiliation": "soviet",
+          "notes": "printed face only; unit identity requires validated roster mapping"
+        },
+        "printedPairValidation": "printed-pair-agrees",
+        "sourceIdentityKey": "arduous:soviet:infantry:20"
+      },
+      {
+        "faceId": "arduous-front-r04c08",
+        "source": "front",
+        "row": 4,
+        "column": 8,
+        "crop": [
+          648,
+          314,
+          92,
+          98
+        ],
+        "observedFieldColor": "#e74554",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "unknown-until-transcribed",
+        "pairedFaceId": "arduous-back-r04c01",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "infantry",
+          "printedIdentifier": "19",
+          "printedValues": "8-4",
+          "printedAffiliation": "soviet",
+          "notes": "printed face only; unit identity requires validated roster mapping"
+        },
+        "printedPairValidation": "printed-pair-agrees",
+        "sourceIdentityKey": "arduous:soviet:infantry:19"
+      },
+      {
+        "faceId": "arduous-front-r05c01",
+        "source": "front",
+        "row": 5,
+        "column": 1,
+        "crop": [
+          5,
+          435,
+          92,
+          101
+        ],
+        "observedFieldColor": "#b58f6a",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "unknown-until-transcribed",
+        "pairedFaceId": "arduous-back-r05c08",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "mechanized",
+          "printedIdentifier": "*",
+          "printedValues": "?-6",
+          "printedAffiliation": "soviet",
+          "notes": "printed face only; unit identity requires validated roster mapping",
+          "classificationEvidence": "The Arduous Beginning Rules v1.0 §§3.3, 6.0(1–4), PDF pp.1–2; official source sheets show ten concealed Soviet Mechanized Corps with one-step revealed reverse faces"
+        },
+        "printedPairValidation": "unresolved"
+      },
+      {
+        "faceId": "arduous-front-r05c02",
+        "source": "front",
+        "row": 5,
+        "column": 2,
+        "crop": [
+          97,
+          435,
+          92,
+          101
+        ],
+        "observedFieldColor": "#d1a684",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "unknown-until-transcribed",
+        "pairedFaceId": "arduous-back-r05c07",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "mechanized",
+          "printedIdentifier": "*",
+          "printedValues": "?-6",
+          "printedAffiliation": "soviet",
+          "notes": "printed face only; unit identity requires validated roster mapping",
+          "classificationEvidence": "The Arduous Beginning Rules v1.0 §§3.3, 6.0(1–4), PDF pp.1–2; official source sheets show ten concealed Soviet Mechanized Corps with one-step revealed reverse faces"
+        },
+        "printedPairValidation": "unresolved"
+      },
+      {
+        "faceId": "arduous-front-r05c03",
+        "source": "front",
+        "row": 5,
+        "column": 3,
+        "crop": [
+          189,
+          435,
+          92,
+          101
+        ],
+        "observedFieldColor": "#d3a87d",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "unknown-until-transcribed",
+        "pairedFaceId": "arduous-back-r05c06",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "mechanized",
+          "printedIdentifier": "*",
+          "printedValues": "?-6",
+          "printedAffiliation": "soviet",
+          "notes": "printed face only; unit identity requires validated roster mapping",
+          "classificationEvidence": "The Arduous Beginning Rules v1.0 §§3.3, 6.0(1–4), PDF pp.1–2; official source sheets show ten concealed Soviet Mechanized Corps with one-step revealed reverse faces"
+        },
+        "printedPairValidation": "unresolved"
+      },
+      {
+        "faceId": "arduous-front-r05c04",
+        "source": "front",
+        "row": 5,
+        "column": 4,
+        "crop": [
+          281,
+          435,
+          91,
+          101
+        ],
+        "observedFieldColor": "#d9a478",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "unknown-until-transcribed",
+        "pairedFaceId": "arduous-back-r05c05",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "mechanized",
+          "printedIdentifier": "*",
+          "printedValues": "?-6",
+          "printedAffiliation": "soviet",
+          "notes": "printed face only; unit identity requires validated roster mapping",
+          "classificationEvidence": "The Arduous Beginning Rules v1.0 §§3.3, 6.0(1–4), PDF pp.1–2; official source sheets show ten concealed Soviet Mechanized Corps with one-step revealed reverse faces"
+        },
+        "printedPairValidation": "unresolved"
+      },
+      {
+        "faceId": "arduous-front-r05c05",
+        "source": "front",
+        "row": 5,
+        "column": 5,
+        "crop": [
+          372,
+          435,
+          92,
+          101
+        ],
+        "observedFieldColor": "#daa476",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "unknown-until-transcribed",
+        "pairedFaceId": "arduous-back-r05c04",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "mechanized",
+          "printedIdentifier": "*",
+          "printedValues": "?-6",
+          "printedAffiliation": "soviet",
+          "notes": "printed face only; unit identity requires validated roster mapping",
+          "classificationEvidence": "The Arduous Beginning Rules v1.0 §§3.3, 6.0(1–4), PDF pp.1–2; official source sheets show ten concealed Soviet Mechanized Corps with one-step revealed reverse faces"
+        },
+        "printedPairValidation": "unresolved"
+      },
+      {
+        "faceId": "arduous-front-r05c06",
+        "source": "front",
+        "row": 5,
+        "column": 6,
+        "crop": [
+          464,
+          435,
+          92,
+          101
+        ],
+        "observedFieldColor": "#d8a578",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "unknown-until-transcribed",
+        "pairedFaceId": "arduous-back-r05c03",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "mechanized",
+          "printedIdentifier": "*",
+          "printedValues": "?-6",
+          "printedAffiliation": "soviet",
+          "notes": "printed face only; unit identity requires validated roster mapping",
+          "classificationEvidence": "The Arduous Beginning Rules v1.0 §§3.3, 6.0(1–4), PDF pp.1–2; official source sheets show ten concealed Soviet Mechanized Corps with one-step revealed reverse faces"
+        },
+        "printedPairValidation": "unresolved"
+      },
+      {
+        "faceId": "arduous-front-r05c07",
+        "source": "front",
+        "row": 5,
+        "column": 7,
+        "crop": [
+          556,
+          435,
+          92,
+          101
+        ],
+        "observedFieldColor": "#d8a578",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "unknown-until-transcribed",
+        "pairedFaceId": "arduous-back-r05c02",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "mechanized",
+          "printedIdentifier": "*",
+          "printedValues": "?-6",
+          "printedAffiliation": "soviet",
+          "notes": "printed face only; unit identity requires validated roster mapping",
+          "classificationEvidence": "The Arduous Beginning Rules v1.0 §§3.3, 6.0(1–4), PDF pp.1–2; official source sheets show ten concealed Soviet Mechanized Corps with one-step revealed reverse faces"
+        },
+        "printedPairValidation": "unresolved"
+      },
+      {
+        "faceId": "arduous-front-r05c08",
+        "source": "front",
+        "row": 5,
+        "column": 8,
+        "crop": [
+          648,
+          435,
+          92,
+          101
+        ],
+        "observedFieldColor": "#d6a57c",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "unknown-until-transcribed",
+        "pairedFaceId": "arduous-back-r05c01",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "mechanized",
+          "printedIdentifier": "*",
+          "printedValues": "?-6",
+          "printedAffiliation": "soviet",
+          "notes": "printed face only; unit identity requires validated roster mapping",
+          "classificationEvidence": "The Arduous Beginning Rules v1.0 §§3.3, 6.0(1–4), PDF pp.1–2; official source sheets show ten concealed Soviet Mechanized Corps with one-step revealed reverse faces"
+        },
+        "printedPairValidation": "unresolved"
+      }
+    ],
+    "back": [
+      {
+        "faceId": "arduous-back-r01c01",
+        "source": "back",
+        "row": 1,
+        "column": 1,
+        "crop": [
+          5,
+          8,
+          92,
+          92
+        ],
+        "observedFieldColor": "#a9b6af",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "unknown-until-transcribed",
+        "pairedFaceId": "arduous-front-r01c08",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "infantry",
+          "printedIdentifier": "8",
+          "printedValues": "3-4",
+          "printedAffiliation": "axis",
+          "notes": "printed face only; unit identity requires validated roster mapping"
+        },
+        "printedPairValidation": "printed-pair-agrees",
+        "sourceIdentityKey": "arduous:axis:infantry:8"
+      },
+      {
+        "faceId": "arduous-back-r01c02",
+        "source": "back",
+        "row": 1,
+        "column": 2,
+        "crop": [
+          97,
+          8,
+          92,
+          92
+        ],
+        "observedFieldColor": "#ccdcd2",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "unknown-until-transcribed",
+        "pairedFaceId": "arduous-front-r01c07",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "infantry",
+          "printedIdentifier": "7",
+          "printedValues": "3-4",
+          "printedAffiliation": "axis",
+          "notes": "printed face only; unit identity requires validated roster mapping"
+        },
+        "printedPairValidation": "printed-pair-agrees",
+        "sourceIdentityKey": "arduous:axis:infantry:7"
+      },
+      {
+        "faceId": "arduous-back-r01c03",
+        "source": "back",
+        "row": 1,
+        "column": 3,
+        "crop": [
+          189,
+          8,
+          92,
+          92
+        ],
+        "observedFieldColor": "#cadad0",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "unknown-until-transcribed",
+        "pairedFaceId": "arduous-front-r01c06",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "infantry",
+          "printedIdentifier": "35",
+          "printedValues": "4-4",
+          "printedAffiliation": "axis",
+          "notes": "printed face only; unit identity requires validated roster mapping"
+        },
+        "printedPairValidation": "printed-pair-agrees",
+        "sourceIdentityKey": "arduous:axis:infantry:35"
+      },
+      {
+        "faceId": "arduous-back-r01c04",
+        "source": "back",
+        "row": 1,
+        "column": 4,
+        "crop": [
+          281,
+          8,
+          91,
+          92
+        ],
+        "observedFieldColor": "#ccdcd2",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "unknown-until-transcribed",
+        "pairedFaceId": "arduous-front-r01c05",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "tank",
+          "printedIdentifier": "57",
+          "printedValues": "5-6",
+          "printedAffiliation": "axis",
+          "notes": "printed face only; unit identity requires validated roster mapping"
+        },
+        "printedPairValidation": "printed-pair-agrees",
+        "sourceIdentityKey": "arduous:axis:tank:57"
+      },
+      {
+        "faceId": "arduous-back-r01c05",
+        "source": "back",
+        "row": 1,
+        "column": 5,
+        "crop": [
+          372,
+          8,
+          92,
+          92
+        ],
+        "observedFieldColor": "#ccdcd2",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "unknown-until-transcribed",
+        "pairedFaceId": "arduous-front-r01c04",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "tank",
+          "printedIdentifier": "46",
+          "printedValues": "5-6",
+          "printedAffiliation": "axis",
+          "notes": "printed face only; unit identity requires validated roster mapping"
+        },
+        "printedPairValidation": "printed-pair-agrees",
+        "sourceIdentityKey": "arduous:axis:tank:46"
+      },
+      {
+        "faceId": "arduous-back-r01c06",
+        "source": "back",
+        "row": 1,
+        "column": 6,
+        "crop": [
+          464,
+          8,
+          92,
+          92
+        ],
+        "observedFieldColor": "#ccdcd2",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "unknown-until-transcribed",
+        "pairedFaceId": "arduous-front-r01c03",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "tank",
+          "printedIdentifier": "47",
+          "printedValues": "6-6",
+          "printedAffiliation": "axis",
+          "notes": "printed face only; unit identity requires validated roster mapping"
+        },
+        "printedPairValidation": "printed-pair-agrees",
+        "sourceIdentityKey": "arduous:axis:tank:47"
+      },
+      {
+        "faceId": "arduous-back-r01c07",
+        "source": "back",
+        "row": 1,
+        "column": 7,
+        "crop": [
+          556,
+          8,
+          92,
+          92
+        ],
+        "observedFieldColor": "#ccdcd2",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "unknown-until-transcribed",
+        "pairedFaceId": "arduous-front-r01c02",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "tank",
+          "printedIdentifier": "39",
+          "printedValues": "6-6",
+          "printedAffiliation": "axis",
+          "notes": "printed face only; unit identity requires validated roster mapping"
+        },
+        "printedPairValidation": "printed-pair-agrees",
+        "sourceIdentityKey": "arduous:axis:tank:39"
+      },
+      {
+        "faceId": "arduous-back-r01c08",
+        "source": "back",
+        "row": 1,
+        "column": 8,
+        "crop": [
+          648,
+          8,
+          92,
+          92
+        ],
+        "observedFieldColor": "#ccdcd2",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "unknown-until-transcribed",
+        "pairedFaceId": "arduous-front-r01c01",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "tank",
+          "printedIdentifier": "24",
+          "printedValues": "6-6",
+          "printedAffiliation": "axis",
+          "notes": "printed face only; unit identity requires validated roster mapping"
+        },
+        "printedPairValidation": "printed-pair-agrees",
+        "sourceIdentityKey": "arduous:axis:tank:24"
+      },
+      {
+        "faceId": "arduous-back-r02c01",
+        "source": "back",
+        "row": 2,
+        "column": 1,
+        "crop": [
+          5,
+          100,
+          92,
+          92
+        ],
+        "observedFieldColor": "#a9b6af",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "unknown-until-transcribed",
+        "pairedFaceId": "arduous-front-r02c08",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "infantry",
+          "printedIdentifier": "12",
+          "printedValues": "2-4",
+          "printedAffiliation": "axis",
+          "notes": "printed face only; unit identity requires validated roster mapping"
+        },
+        "printedPairValidation": "printed-pair-agrees",
+        "sourceIdentityKey": "arduous:axis:infantry:12"
+      },
+      {
+        "faceId": "arduous-back-r02c02",
+        "source": "back",
+        "row": 2,
+        "column": 2,
+        "crop": [
+          97,
+          100,
+          92,
+          92
+        ],
+        "observedFieldColor": "#ccdbd4",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "unknown-until-transcribed",
+        "pairedFaceId": "arduous-front-r02c07",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "infantry",
+          "printedIdentifier": "6",
+          "printedValues": "2-4",
+          "printedAffiliation": "axis",
+          "notes": "printed face only; unit identity requires validated roster mapping"
+        },
+        "printedPairValidation": "printed-pair-agrees",
+        "sourceIdentityKey": "arduous:axis:infantry:6"
+      },
+      {
+        "faceId": "arduous-back-r02c03",
+        "source": "back",
+        "row": 2,
+        "column": 3,
+        "crop": [
+          189,
+          100,
+          92,
+          92
+        ],
+        "observedFieldColor": "#cad9d2",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "unknown-until-transcribed",
+        "pairedFaceId": "arduous-front-r02c06",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "infantry",
+          "printedIdentifier": "53",
+          "printedValues": "3-4",
+          "printedAffiliation": "axis",
+          "notes": "printed face only; unit identity requires validated roster mapping"
+        },
+        "printedPairValidation": "printed-pair-agrees",
+        "sourceIdentityKey": "arduous:axis:infantry:53"
+      },
+      {
+        "faceId": "arduous-back-r02c04",
+        "source": "back",
+        "row": 2,
+        "column": 4,
+        "crop": [
+          281,
+          100,
+          91,
+          92
+        ],
+        "observedFieldColor": "#ccdcd2",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "unknown-until-transcribed",
+        "pairedFaceId": "arduous-front-r02c05",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "infantry",
+          "printedIdentifier": "43",
+          "printedValues": "3-4",
+          "printedAffiliation": "axis",
+          "notes": "printed face only; unit identity requires validated roster mapping"
+        },
+        "printedPairValidation": "printed-pair-agrees",
+        "sourceIdentityKey": "arduous:axis:infantry:43"
+      },
+      {
+        "faceId": "arduous-back-r02c05",
+        "source": "back",
+        "row": 2,
+        "column": 5,
+        "crop": [
+          372,
+          100,
+          92,
+          92
+        ],
+        "observedFieldColor": "#ccdbd4",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "unknown-until-transcribed",
+        "pairedFaceId": "arduous-front-r02c04",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "infantry",
+          "printedIdentifier": "20",
+          "printedValues": "3-4",
+          "printedAffiliation": "axis",
+          "notes": "printed face only; unit identity requires validated roster mapping"
+        },
+        "printedPairValidation": "printed-pair-agrees",
+        "sourceIdentityKey": "arduous:axis:infantry:20"
+      },
+      {
+        "faceId": "arduous-back-r02c06",
+        "source": "back",
+        "row": 2,
+        "column": 6,
+        "crop": [
+          464,
+          100,
+          92,
+          92
+        ],
+        "observedFieldColor": "#ccdcd2",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "unknown-until-transcribed",
+        "pairedFaceId": "arduous-front-r02c03",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "infantry",
+          "printedIdentifier": "13",
+          "printedValues": "3-4",
+          "printedAffiliation": "axis",
+          "notes": "printed face only; unit identity requires validated roster mapping"
+        },
+        "printedPairValidation": "printed-pair-agrees",
+        "sourceIdentityKey": "arduous:axis:infantry:13"
+      },
+      {
+        "faceId": "arduous-back-r02c07",
+        "source": "back",
+        "row": 2,
+        "column": 7,
+        "crop": [
+          556,
+          100,
+          92,
+          92
+        ],
+        "observedFieldColor": "#ccdcd2",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "unknown-until-transcribed",
+        "pairedFaceId": "arduous-front-r02c02",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "infantry",
+          "printedIdentifier": "5",
+          "printedValues": "3-4",
+          "printedAffiliation": "axis",
+          "notes": "printed face only; unit identity requires validated roster mapping"
+        },
+        "printedPairValidation": "printed-pair-agrees",
+        "sourceIdentityKey": "arduous:axis:infantry:5"
+      },
+      {
+        "faceId": "arduous-back-r02c08",
+        "source": "back",
+        "row": 2,
+        "column": 8,
+        "crop": [
+          648,
+          100,
+          92,
+          92
+        ],
+        "observedFieldColor": "#ccdbd4",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "unknown-until-transcribed",
+        "pairedFaceId": "arduous-front-r02c01",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "infantry",
+          "printedIdentifier": "9",
+          "printedValues": "3-4",
+          "printedAffiliation": "axis",
+          "notes": "printed face only; unit identity requires validated roster mapping"
+        },
+        "printedPairValidation": "printed-pair-agrees",
+        "sourceIdentityKey": "arduous:axis:infantry:9"
+      },
+      {
+        "faceId": "arduous-back-r03c01",
+        "source": "back",
+        "row": 3,
+        "column": 1,
+        "crop": [
+          5,
+          214,
+          92,
+          100
+        ],
+        "observedFieldColor": "#c47f78",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "unknown-until-transcribed",
+        "pairedFaceId": "arduous-front-r03c08",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "infantry",
+          "printedIdentifier": "16",
+          "printedValues": "4-4",
+          "printedAffiliation": "soviet",
+          "notes": "printed face only; unit identity requires validated roster mapping"
+        },
+        "printedPairValidation": "printed-pair-agrees",
+        "sourceIdentityKey": "arduous:soviet:infantry:16"
+      },
+      {
+        "faceId": "arduous-back-r03c02",
+        "source": "back",
+        "row": 3,
+        "column": 2,
+        "crop": [
+          97,
+          214,
+          92,
+          100
+        ],
+        "observedFieldColor": "#ce8f88",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "unknown-until-transcribed",
+        "pairedFaceId": "arduous-front-r03c07",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "infantry",
+          "printedIdentifier": "13",
+          "printedValues": "4-4",
+          "printedAffiliation": "soviet",
+          "notes": "printed face only; unit identity requires validated roster mapping"
+        },
+        "printedPairValidation": "printed-pair-agrees",
+        "sourceIdentityKey": "arduous:soviet:infantry:13"
+      },
+      {
+        "faceId": "arduous-back-r03c03",
+        "source": "back",
+        "row": 3,
+        "column": 3,
+        "crop": [
+          189,
+          214,
+          92,
+          100
+        ],
+        "observedFieldColor": "#d98e8b",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "unknown-until-transcribed",
+        "pairedFaceId": "arduous-front-r03c06",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "infantry",
+          "printedIdentifier": "10",
+          "printedValues": "4-4",
+          "printedAffiliation": "soviet",
+          "notes": "printed face only; unit identity requires validated roster mapping"
+        },
+        "printedPairValidation": "printed-pair-agrees",
+        "sourceIdentityKey": "arduous:soviet:infantry:10"
+      },
+      {
+        "faceId": "arduous-back-r03c04",
+        "source": "back",
+        "row": 3,
+        "column": 4,
+        "crop": [
+          281,
+          214,
+          91,
+          100
+        ],
+        "observedFieldColor": "#d68b85",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "unknown-until-transcribed",
+        "pairedFaceId": "arduous-front-r03c05",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "infantry",
+          "printedIdentifier": "4",
+          "printedValues": "4-4",
+          "printedAffiliation": "soviet",
+          "notes": "printed face only; unit identity requires validated roster mapping"
+        },
+        "printedPairValidation": "printed-pair-agrees",
+        "sourceIdentityKey": "arduous:soviet:infantry:4"
+      },
+      {
+        "faceId": "arduous-back-r03c05",
+        "source": "back",
+        "row": 3,
+        "column": 5,
+        "crop": [
+          372,
+          214,
+          92,
+          100
+        ],
+        "observedFieldColor": "#da8985",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "unknown-until-transcribed",
+        "pairedFaceId": "arduous-front-r03c04",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "infantry",
+          "printedIdentifier": "3",
+          "printedValues": "4-4",
+          "printedAffiliation": "soviet",
+          "notes": "printed face only; unit identity requires validated roster mapping"
+        },
+        "printedPairValidation": "printed-pair-agrees",
+        "sourceIdentityKey": "arduous:soviet:infantry:3"
+      },
+      {
+        "faceId": "arduous-back-r03c06",
+        "source": "back",
+        "row": 3,
+        "column": 6,
+        "crop": [
+          464,
+          214,
+          92,
+          100
+        ],
+        "observedFieldColor": "#b8916a",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "unknown-until-transcribed",
+        "pairedFaceId": "arduous-front-r03c03",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "game-turn",
+          "printedIdentifier": "GAME TURN",
+          "printedValues": null,
+          "printedAffiliation": "neutral",
+          "notes": "special marker / not an ordinary maneuver unit"
+        },
+        "printedPairValidation": "special-pair-agrees"
+      },
+      {
+        "faceId": "arduous-back-r03c07",
+        "source": "back",
+        "row": 3,
+        "column": 7,
+        "crop": [
+          556,
+          214,
+          92,
+          100
+        ],
+        "observedFieldColor": "#7e938a",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "unknown-until-transcribed",
+        "pairedFaceId": "arduous-front-r03c02",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "air-support",
+          "printedIdentifier": "FK II",
+          "printedValues": "1 / arrow",
+          "printedAffiliation": "axis",
+          "notes": "special marker / not an ordinary maneuver unit"
+        },
+        "printedPairValidation": "special-pair-agrees"
+      },
+      {
+        "faceId": "arduous-back-r03c08",
+        "source": "back",
+        "row": 3,
+        "column": 8,
+        "crop": [
+          648,
+          214,
+          92,
+          100
+        ],
+        "observedFieldColor": "#819288",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "unknown-until-transcribed",
+        "pairedFaceId": "arduous-front-r03c01",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "air-support",
+          "printedIdentifier": "FK VIII",
+          "printedValues": "2 / arrow",
+          "printedAffiliation": "axis",
+          "notes": "special marker / not an ordinary maneuver unit"
+        },
+        "printedPairValidation": "special-pair-agrees"
+      },
+      {
+        "faceId": "arduous-back-r04c01",
+        "source": "back",
+        "row": 4,
+        "column": 1,
+        "crop": [
+          5,
+          314,
+          92,
+          99
+        ],
+        "observedFieldColor": "#d08983",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "unknown-until-transcribed",
+        "pairedFaceId": "arduous-front-r04c08",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "infantry",
+          "printedIdentifier": "19",
+          "printedValues": "4-4",
+          "printedAffiliation": "soviet",
+          "notes": "printed face only; unit identity requires validated roster mapping"
+        },
+        "printedPairValidation": "printed-pair-agrees",
+        "sourceIdentityKey": "arduous:soviet:infantry:19"
+      },
+      {
+        "faceId": "arduous-back-r04c02",
+        "source": "back",
+        "row": 4,
+        "column": 2,
+        "crop": [
+          97,
+          314,
+          92,
+          99
+        ],
+        "observedFieldColor": "#f1a49c",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "unknown-until-transcribed",
+        "pairedFaceId": "arduous-front-r04c07",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "infantry",
+          "printedIdentifier": "20",
+          "printedValues": "4-4",
+          "printedAffiliation": "soviet",
+          "notes": "printed face only; unit identity requires validated roster mapping"
+        },
+        "printedPairValidation": "printed-pair-agrees",
+        "sourceIdentityKey": "arduous:soviet:infantry:20"
+      },
+      {
+        "faceId": "arduous-back-r04c03",
+        "source": "back",
+        "row": 4,
+        "column": 3,
+        "crop": [
+          189,
+          314,
+          92,
+          99
+        ],
+        "observedFieldColor": "#fba39f",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "unknown-until-transcribed",
+        "pairedFaceId": "arduous-front-r04c06",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "infantry",
+          "printedIdentifier": "21",
+          "printedValues": "4-4",
+          "printedAffiliation": "soviet",
+          "notes": "printed face only; unit identity requires validated roster mapping"
+        },
+        "printedPairValidation": "printed-pair-agrees",
+        "sourceIdentityKey": "arduous:soviet:infantry:21"
+      },
+      {
+        "faceId": "arduous-back-r04c04",
+        "source": "back",
+        "row": 4,
+        "column": 4,
+        "crop": [
+          281,
+          314,
+          91,
+          99
+        ],
+        "observedFieldColor": "#f8a197",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "unknown-until-transcribed",
+        "pairedFaceId": "arduous-front-r04c05",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "infantry",
+          "printedIdentifier": "22",
+          "printedValues": "4-4",
+          "printedAffiliation": "soviet",
+          "notes": "printed face only; unit identity requires validated roster mapping"
+        },
+        "printedPairValidation": "printed-pair-agrees",
+        "sourceIdentityKey": "arduous:soviet:infantry:22"
+      },
+      {
+        "faceId": "arduous-back-r04c05",
+        "source": "back",
+        "row": 4,
+        "column": 5,
+        "crop": [
+          372,
+          314,
+          92,
+          99
+        ],
+        "observedFieldColor": "#f2a498",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "unknown-until-transcribed",
+        "pairedFaceId": "arduous-front-r04c04",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "infantry",
+          "printedIdentifier": "24",
+          "printedValues": "4-4",
+          "printedAffiliation": "soviet",
+          "notes": "printed face only; unit identity requires validated roster mapping"
+        },
+        "printedPairValidation": "printed-pair-agrees",
+        "sourceIdentityKey": "arduous:soviet:infantry:24"
+      },
+      {
+        "faceId": "arduous-back-r04c06",
+        "source": "back",
+        "row": 4,
+        "column": 6,
+        "crop": [
+          464,
+          314,
+          92,
+          99
+        ],
+        "observedFieldColor": "#d7a477",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "unknown-until-transcribed",
+        "pairedFaceId": "arduous-front-r04c03",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "garrison",
+          "printedIdentifier": "Brest",
+          "printedValues": "3-4",
+          "printedAffiliation": "axis",
+          "notes": "printed face only; unit identity requires validated roster mapping"
+        },
+        "printedPairValidation": "unresolved"
+      },
+      {
+        "faceId": "arduous-back-r04c07",
+        "source": "back",
+        "row": 4,
+        "column": 7,
+        "crop": [
+          556,
+          314,
+          92,
+          99
+        ],
+        "observedFieldColor": "#d7a477",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "unknown-until-transcribed",
+        "pairedFaceId": "arduous-front-r04c02",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "mechanized",
+          "printedIdentifier": "4",
+          "printedValues": "2·1-6",
+          "printedAffiliation": "soviet",
+          "notes": "printed face only; unit identity requires validated roster mapping",
+          "classificationEvidence": "The Arduous Beginning Rules v1.0 §§3.3, 6.0(1–4), PDF pp.1–2; official source sheets show ten concealed Soviet Mechanized Corps with one-step revealed reverse faces"
+        },
+        "printedPairValidation": "unresolved"
+      },
+      {
+        "faceId": "arduous-back-r04c08",
+        "source": "back",
+        "row": 4,
+        "column": 8,
+        "crop": [
+          648,
+          314,
+          92,
+          99
+        ],
+        "observedFieldColor": "#d5a577",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "unknown-until-transcribed",
+        "pairedFaceId": "arduous-front-r04c01",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "mechanized",
+          "printedIdentifier": "6",
+          "printedValues": "8·4-6",
+          "printedAffiliation": "soviet",
+          "notes": "printed face only; unit identity requires validated roster mapping",
+          "classificationEvidence": "The Arduous Beginning Rules v1.0 §§3.3, 6.0(1–4), PDF pp.1–2; official source sheets show ten concealed Soviet Mechanized Corps with one-step revealed reverse faces"
+        },
+        "printedPairValidation": "unresolved"
+      },
+      {
+        "faceId": "arduous-back-r05c01",
+        "source": "back",
+        "row": 5,
+        "column": 1,
+        "crop": [
+          5,
+          434,
+          92,
+          106
+        ],
+        "observedFieldColor": "#bd9067",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "unknown-until-transcribed",
+        "pairedFaceId": "arduous-front-r05c08",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "mechanized",
+          "printedIdentifier": "1",
+          "printedValues": "4·2-6",
+          "printedAffiliation": "soviet",
+          "notes": "printed face only; unit identity requires validated roster mapping",
+          "classificationEvidence": "The Arduous Beginning Rules v1.0 §§3.3, 6.0(1–4), PDF pp.1–2; official source sheets show ten concealed Soviet Mechanized Corps with one-step revealed reverse faces"
+        },
+        "printedPairValidation": "unresolved"
+      },
+      {
+        "faceId": "arduous-back-r05c02",
+        "source": "back",
+        "row": 5,
+        "column": 2,
+        "crop": [
+          97,
+          434,
+          92,
+          106
+        ],
+        "observedFieldColor": "#d0a582",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "unknown-until-transcribed",
+        "pairedFaceId": "arduous-front-r05c07",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "mechanized",
+          "printedIdentifier": "15",
+          "printedValues": "2·1-6",
+          "printedAffiliation": "soviet",
+          "notes": "printed face only; unit identity requires validated roster mapping",
+          "classificationEvidence": "The Arduous Beginning Rules v1.0 §§3.3, 6.0(1–4), PDF pp.1–2; official source sheets show ten concealed Soviet Mechanized Corps with one-step revealed reverse faces"
+        },
+        "printedPairValidation": "unresolved"
+      },
+      {
+        "faceId": "arduous-back-r05c03",
+        "source": "back",
+        "row": 5,
+        "column": 3,
+        "crop": [
+          189,
+          434,
+          92,
+          106
+        ],
+        "observedFieldColor": "#d2a377",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "unknown-until-transcribed",
+        "pairedFaceId": "arduous-front-r05c06",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "mechanized",
+          "printedIdentifier": "17",
+          "printedValues": "0·1-6",
+          "printedAffiliation": "soviet",
+          "notes": "printed face only; unit identity requires validated roster mapping",
+          "classificationEvidence": "The Arduous Beginning Rules v1.0 §§3.3, 6.0(1–4), PDF pp.1–2; official source sheets show ten concealed Soviet Mechanized Corps with one-step revealed reverse faces"
+        },
+        "printedPairValidation": "unresolved"
+      },
+      {
+        "faceId": "arduous-back-r05c04",
+        "source": "back",
+        "row": 5,
+        "column": 4,
+        "crop": [
+          281,
+          434,
+          91,
+          106
+        ],
+        "observedFieldColor": "#d9a374",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "unknown-until-transcribed",
+        "pairedFaceId": "arduous-front-r05c05",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "mechanized",
+          "printedIdentifier": "20",
+          "printedValues": "0·1-6",
+          "printedAffiliation": "soviet",
+          "notes": "printed face only; unit identity requires validated roster mapping",
+          "classificationEvidence": "The Arduous Beginning Rules v1.0 §§3.3, 6.0(1–4), PDF pp.1–2; official source sheets show ten concealed Soviet Mechanized Corps with one-step revealed reverse faces"
+        },
+        "printedPairValidation": "unresolved"
+      },
+      {
+        "faceId": "arduous-back-r05c05",
+        "source": "back",
+        "row": 5,
+        "column": 5,
+        "crop": [
+          372,
+          434,
+          92,
+          106
+        ],
+        "observedFieldColor": "#d9a374",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "unknown-until-transcribed",
+        "pairedFaceId": "arduous-front-r05c04",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "mechanized",
+          "printedIdentifier": "23",
+          "printedValues": "4·2-6",
+          "printedAffiliation": "soviet",
+          "notes": "printed face only; unit identity requires validated roster mapping",
+          "classificationEvidence": "The Arduous Beginning Rules v1.0 §§3.3, 6.0(1–4), PDF pp.1–2; official source sheets show ten concealed Soviet Mechanized Corps with one-step revealed reverse faces"
+        },
+        "printedPairValidation": "unresolved"
+      },
+      {
+        "faceId": "arduous-back-r05c06",
+        "source": "back",
+        "row": 5,
+        "column": 6,
+        "crop": [
+          464,
+          434,
+          92,
+          106
+        ],
+        "observedFieldColor": "#d8a474",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "unknown-until-transcribed",
+        "pairedFaceId": "arduous-front-r05c03",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "mechanized",
+          "printedIdentifier": "5",
+          "printedValues": "4·2-6",
+          "printedAffiliation": "soviet",
+          "notes": "printed face only; unit identity requires validated roster mapping",
+          "classificationEvidence": "The Arduous Beginning Rules v1.0 §§3.3, 6.0(1–4), PDF pp.1–2; official source sheets show ten concealed Soviet Mechanized Corps with one-step revealed reverse faces"
+        },
+        "printedPairValidation": "unresolved"
+      },
+      {
+        "faceId": "arduous-back-r05c07",
+        "source": "back",
+        "row": 5,
+        "column": 7,
+        "crop": [
+          556,
+          434,
+          92,
+          106
+        ],
+        "observedFieldColor": "#d8a474",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "unknown-until-transcribed",
+        "pairedFaceId": "arduous-front-r05c02",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "mechanized",
+          "printedIdentifier": "7",
+          "printedValues": "6·3-6",
+          "printedAffiliation": "soviet",
+          "notes": "printed face only; unit identity requires validated roster mapping",
+          "classificationEvidence": "The Arduous Beginning Rules v1.0 §§3.3, 6.0(1–4), PDF pp.1–2; official source sheets show ten concealed Soviet Mechanized Corps with one-step revealed reverse faces"
+        },
+        "printedPairValidation": "unresolved"
+      },
+      {
+        "faceId": "arduous-back-r05c08",
+        "source": "back",
+        "row": 5,
+        "column": 8,
+        "crop": [
+          648,
+          434,
+          92,
+          106
+        ],
+        "observedFieldColor": "#d5a479",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "unknown-until-transcribed",
+        "pairedFaceId": "arduous-front-r05c01",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "mechanized",
+          "printedIdentifier": "26",
+          "printedValues": "2·1-6",
+          "printedAffiliation": "soviet",
+          "notes": "printed face only; unit identity requires validated roster mapping",
+          "classificationEvidence": "The Arduous Beginning Rules v1.0 §§3.3, 6.0(1–4), PDF pp.1–2; official source sheets show ten concealed Soviet Mechanized Corps with one-step revealed reverse faces"
+        },
+        "printedPairValidation": "unresolved"
+      }
+    ]
+  },
+  "positionPairs": [
+    {
+      "front": "arduous-front-r01c01",
+      "back": "arduous-back-r01c08",
+      "pairingBasis": "horizontal-sheet-mirror",
+      "unitId": null,
+      "identityStatus": "printed-id-unverified"
+    },
+    {
+      "front": "arduous-front-r01c02",
+      "back": "arduous-back-r01c07",
+      "pairingBasis": "horizontal-sheet-mirror",
+      "unitId": null,
+      "identityStatus": "printed-id-unverified"
+    },
+    {
+      "front": "arduous-front-r01c03",
+      "back": "arduous-back-r01c06",
+      "pairingBasis": "horizontal-sheet-mirror",
+      "unitId": null,
+      "identityStatus": "printed-id-unverified"
+    },
+    {
+      "front": "arduous-front-r01c04",
+      "back": "arduous-back-r01c05",
+      "pairingBasis": "horizontal-sheet-mirror",
+      "unitId": null,
+      "identityStatus": "printed-id-unverified"
+    },
+    {
+      "front": "arduous-front-r01c05",
+      "back": "arduous-back-r01c04",
+      "pairingBasis": "horizontal-sheet-mirror",
+      "unitId": null,
+      "identityStatus": "printed-id-unverified"
+    },
+    {
+      "front": "arduous-front-r01c06",
+      "back": "arduous-back-r01c03",
+      "pairingBasis": "horizontal-sheet-mirror",
+      "unitId": null,
+      "identityStatus": "printed-id-unverified"
+    },
+    {
+      "front": "arduous-front-r01c07",
+      "back": "arduous-back-r01c02",
+      "pairingBasis": "horizontal-sheet-mirror",
+      "unitId": null,
+      "identityStatus": "printed-id-unverified"
+    },
+    {
+      "front": "arduous-front-r01c08",
+      "back": "arduous-back-r01c01",
+      "pairingBasis": "horizontal-sheet-mirror",
+      "unitId": null,
+      "identityStatus": "printed-id-unverified"
+    },
+    {
+      "front": "arduous-front-r02c01",
+      "back": "arduous-back-r02c08",
+      "pairingBasis": "horizontal-sheet-mirror",
+      "unitId": null,
+      "identityStatus": "printed-id-unverified"
+    },
+    {
+      "front": "arduous-front-r02c02",
+      "back": "arduous-back-r02c07",
+      "pairingBasis": "horizontal-sheet-mirror",
+      "unitId": null,
+      "identityStatus": "printed-id-unverified"
+    },
+    {
+      "front": "arduous-front-r02c03",
+      "back": "arduous-back-r02c06",
+      "pairingBasis": "horizontal-sheet-mirror",
+      "unitId": null,
+      "identityStatus": "printed-id-unverified"
+    },
+    {
+      "front": "arduous-front-r02c04",
+      "back": "arduous-back-r02c05",
+      "pairingBasis": "horizontal-sheet-mirror",
+      "unitId": null,
+      "identityStatus": "printed-id-unverified"
+    },
+    {
+      "front": "arduous-front-r02c05",
+      "back": "arduous-back-r02c04",
+      "pairingBasis": "horizontal-sheet-mirror",
+      "unitId": null,
+      "identityStatus": "printed-id-unverified"
+    },
+    {
+      "front": "arduous-front-r02c06",
+      "back": "arduous-back-r02c03",
+      "pairingBasis": "horizontal-sheet-mirror",
+      "unitId": null,
+      "identityStatus": "printed-id-unverified"
+    },
+    {
+      "front": "arduous-front-r02c07",
+      "back": "arduous-back-r02c02",
+      "pairingBasis": "horizontal-sheet-mirror",
+      "unitId": null,
+      "identityStatus": "printed-id-unverified"
+    },
+    {
+      "front": "arduous-front-r02c08",
+      "back": "arduous-back-r02c01",
+      "pairingBasis": "horizontal-sheet-mirror",
+      "unitId": null,
+      "identityStatus": "printed-id-unverified"
+    },
+    {
+      "front": "arduous-front-r03c01",
+      "back": "arduous-back-r03c08",
+      "pairingBasis": "horizontal-sheet-mirror",
+      "unitId": null,
+      "identityStatus": "printed-id-unverified"
+    },
+    {
+      "front": "arduous-front-r03c02",
+      "back": "arduous-back-r03c07",
+      "pairingBasis": "horizontal-sheet-mirror",
+      "unitId": null,
+      "identityStatus": "printed-id-unverified"
+    },
+    {
+      "front": "arduous-front-r03c03",
+      "back": "arduous-back-r03c06",
+      "pairingBasis": "horizontal-sheet-mirror",
+      "unitId": null,
+      "identityStatus": "printed-id-unverified"
+    },
+    {
+      "front": "arduous-front-r03c04",
+      "back": "arduous-back-r03c05",
+      "pairingBasis": "horizontal-sheet-mirror",
+      "unitId": null,
+      "identityStatus": "printed-id-unverified"
+    },
+    {
+      "front": "arduous-front-r03c05",
+      "back": "arduous-back-r03c04",
+      "pairingBasis": "horizontal-sheet-mirror",
+      "unitId": null,
+      "identityStatus": "printed-id-unverified"
+    },
+    {
+      "front": "arduous-front-r03c06",
+      "back": "arduous-back-r03c03",
+      "pairingBasis": "horizontal-sheet-mirror",
+      "unitId": null,
+      "identityStatus": "printed-id-unverified"
+    },
+    {
+      "front": "arduous-front-r03c07",
+      "back": "arduous-back-r03c02",
+      "pairingBasis": "horizontal-sheet-mirror",
+      "unitId": null,
+      "identityStatus": "printed-id-unverified"
+    },
+    {
+      "front": "arduous-front-r03c08",
+      "back": "arduous-back-r03c01",
+      "pairingBasis": "horizontal-sheet-mirror",
+      "unitId": null,
+      "identityStatus": "printed-id-unverified"
+    },
+    {
+      "front": "arduous-front-r04c01",
+      "back": "arduous-back-r04c08",
+      "pairingBasis": "horizontal-sheet-mirror",
+      "unitId": null,
+      "identityStatus": "printed-id-unverified"
+    },
+    {
+      "front": "arduous-front-r04c02",
+      "back": "arduous-back-r04c07",
+      "pairingBasis": "horizontal-sheet-mirror",
+      "unitId": null,
+      "identityStatus": "printed-id-unverified"
+    },
+    {
+      "front": "arduous-front-r04c03",
+      "back": "arduous-back-r04c06",
+      "pairingBasis": "horizontal-sheet-mirror",
+      "unitId": null,
+      "identityStatus": "printed-id-unverified"
+    },
+    {
+      "front": "arduous-front-r04c04",
+      "back": "arduous-back-r04c05",
+      "pairingBasis": "horizontal-sheet-mirror",
+      "unitId": null,
+      "identityStatus": "printed-id-unverified"
+    },
+    {
+      "front": "arduous-front-r04c05",
+      "back": "arduous-back-r04c04",
+      "pairingBasis": "horizontal-sheet-mirror",
+      "unitId": null,
+      "identityStatus": "printed-id-unverified"
+    },
+    {
+      "front": "arduous-front-r04c06",
+      "back": "arduous-back-r04c03",
+      "pairingBasis": "horizontal-sheet-mirror",
+      "unitId": null,
+      "identityStatus": "printed-id-unverified"
+    },
+    {
+      "front": "arduous-front-r04c07",
+      "back": "arduous-back-r04c02",
+      "pairingBasis": "horizontal-sheet-mirror",
+      "unitId": null,
+      "identityStatus": "printed-id-unverified"
+    },
+    {
+      "front": "arduous-front-r04c08",
+      "back": "arduous-back-r04c01",
+      "pairingBasis": "horizontal-sheet-mirror",
+      "unitId": null,
+      "identityStatus": "printed-id-unverified"
+    },
+    {
+      "front": "arduous-front-r05c01",
+      "back": "arduous-back-r05c08",
+      "pairingBasis": "horizontal-sheet-mirror",
+      "unitId": null,
+      "identityStatus": "printed-id-unverified"
+    },
+    {
+      "front": "arduous-front-r05c02",
+      "back": "arduous-back-r05c07",
+      "pairingBasis": "horizontal-sheet-mirror",
+      "unitId": null,
+      "identityStatus": "printed-id-unverified"
+    },
+    {
+      "front": "arduous-front-r05c03",
+      "back": "arduous-back-r05c06",
+      "pairingBasis": "horizontal-sheet-mirror",
+      "unitId": null,
+      "identityStatus": "printed-id-unverified"
+    },
+    {
+      "front": "arduous-front-r05c04",
+      "back": "arduous-back-r05c05",
+      "pairingBasis": "horizontal-sheet-mirror",
+      "unitId": null,
+      "identityStatus": "printed-id-unverified"
+    },
+    {
+      "front": "arduous-front-r05c05",
+      "back": "arduous-back-r05c04",
+      "pairingBasis": "horizontal-sheet-mirror",
+      "unitId": null,
+      "identityStatus": "printed-id-unverified"
+    },
+    {
+      "front": "arduous-front-r05c06",
+      "back": "arduous-back-r05c03",
+      "pairingBasis": "horizontal-sheet-mirror",
+      "unitId": null,
+      "identityStatus": "printed-id-unverified"
+    },
+    {
+      "front": "arduous-front-r05c07",
+      "back": "arduous-back-r05c02",
+      "pairingBasis": "horizontal-sheet-mirror",
+      "unitId": null,
+      "identityStatus": "printed-id-unverified"
+    },
+    {
+      "front": "arduous-front-r05c08",
+      "back": "arduous-back-r05c01",
+      "pairingBasis": "horizontal-sheet-mirror",
+      "unitId": null,
+      "identityStatus": "printed-id-unverified"
+    }
+  ],
+  "positionPairingStatus": "B4M confirmed by printed labels; other sets provisional from mirrored artwork layout",
+  "unitFacePairs": {},
+  "unitIdsVerified": 0,
+  "unitIdWarning": "Unit IDs and front/reverse pairing require manual print-label verification. Slot keys are not unit identities.",
+  "faceTranscription": {
+    "status": "complete-face-level-manual-source-reading",
+    "frontFaceCount": 40,
+    "backFaceCount": 40,
+    "pairValidation": {
+      "printed-pair-agrees": 26,
+      "special-pair-agrees": 3,
+      "unresolved": 1,
+      "untried-mechanized-mirrored-source-pairs": 10
+    },
+    "gameplayIdentityStatus": "not-verified-against-scenario-rosters",
+    "remarks": "Thirty-six ground-unit face pairs now have source-consistent ownership/class; ten Soviet Mechanized Corps are untried front vs numerically identified reverse. One Brest location marker is not a normal counter. Printed matches do not imply independent historical deployment certification.",
+    "sourceIdentityKeys": 26,
+    "sourceIdentityNote": "Only front/reverse printed agreement, not an assignment into gameplay unit rosters"
+  },
+  "sourcePrintedUnitPairs": {
+    "arduous:axis:tank:24": {
+      "front": "arduous-front-r01c01",
+      "back": "arduous-back-r01c08"
+    },
+    "arduous:axis:tank:39": {
+      "front": "arduous-front-r01c02",
+      "back": "arduous-back-r01c07"
+    },
+    "arduous:axis:tank:47": {
+      "front": "arduous-front-r01c03",
+      "back": "arduous-back-r01c06"
+    },
+    "arduous:axis:tank:46": {
+      "front": "arduous-front-r01c04",
+      "back": "arduous-back-r01c05"
+    },
+    "arduous:axis:tank:57": {
+      "front": "arduous-front-r01c05",
+      "back": "arduous-back-r01c04"
+    },
+    "arduous:axis:infantry:35": {
+      "front": "arduous-front-r01c06",
+      "back": "arduous-back-r01c03"
+    },
+    "arduous:axis:infantry:7": {
+      "front": "arduous-front-r01c07",
+      "back": "arduous-back-r01c02"
+    },
+    "arduous:axis:infantry:8": {
+      "front": "arduous-front-r01c08",
+      "back": "arduous-back-r01c01"
+    },
+    "arduous:axis:infantry:9": {
+      "front": "arduous-front-r02c01",
+      "back": "arduous-back-r02c08"
+    },
+    "arduous:axis:infantry:5": {
+      "front": "arduous-front-r02c02",
+      "back": "arduous-back-r02c07"
+    },
+    "arduous:axis:infantry:13": {
+      "front": "arduous-front-r02c03",
+      "back": "arduous-back-r02c06"
+    },
+    "arduous:axis:infantry:20": {
+      "front": "arduous-front-r02c04",
+      "back": "arduous-back-r02c05"
+    },
+    "arduous:axis:infantry:43": {
+      "front": "arduous-front-r02c05",
+      "back": "arduous-back-r02c04"
+    },
+    "arduous:axis:infantry:53": {
+      "front": "arduous-front-r02c06",
+      "back": "arduous-back-r02c03"
+    },
+    "arduous:axis:infantry:6": {
+      "front": "arduous-front-r02c07",
+      "back": "arduous-back-r02c02"
+    },
+    "arduous:axis:infantry:12": {
+      "front": "arduous-front-r02c08",
+      "back": "arduous-back-r02c01"
+    },
+    "arduous:soviet:infantry:3": {
+      "front": "arduous-front-r03c04",
+      "back": "arduous-back-r03c05"
+    },
+    "arduous:soviet:infantry:4": {
+      "front": "arduous-front-r03c05",
+      "back": "arduous-back-r03c04"
+    },
+    "arduous:soviet:infantry:10": {
+      "front": "arduous-front-r03c06",
+      "back": "arduous-back-r03c03"
+    },
+    "arduous:soviet:infantry:13": {
+      "front": "arduous-front-r03c07",
+      "back": "arduous-back-r03c02"
+    },
+    "arduous:soviet:infantry:16": {
+      "front": "arduous-front-r03c08",
+      "back": "arduous-back-r03c01"
+    },
+    "arduous:soviet:infantry:24": {
+      "front": "arduous-front-r04c04",
+      "back": "arduous-back-r04c05"
+    },
+    "arduous:soviet:infantry:22": {
+      "front": "arduous-front-r04c05",
+      "back": "arduous-back-r04c04"
+    },
+    "arduous:soviet:infantry:21": {
+      "front": "arduous-front-r04c06",
+      "back": "arduous-back-r04c03"
+    },
+    "arduous:soviet:infantry:20": {
+      "front": "arduous-front-r04c07",
+      "back": "arduous-back-r04c02"
+    },
+    "arduous:soviet:infantry:19": {
+      "front": "arduous-front-r04c08",
+      "back": "arduous-back-r04c01"
+    }
+  },
+  "concealedMechanizedFacePairs": [
+    {
+      "front": "arduous-front-r04c01",
+      "reverse": "arduous-back-r04c08",
+      "reversePrintedIdentifier": "6",
+      "pairingBasis": "published horizontally-mirrored front/reverse sheets; front identity concealed"
+    },
+    {
+      "front": "arduous-front-r04c02",
+      "reverse": "arduous-back-r04c07",
+      "reversePrintedIdentifier": "4",
+      "pairingBasis": "published horizontally-mirrored front/reverse sheets; front identity concealed"
+    },
+    {
+      "front": "arduous-front-r05c01",
+      "reverse": "arduous-back-r05c08",
+      "reversePrintedIdentifier": "26",
+      "pairingBasis": "published horizontally-mirrored front/reverse sheets; front identity concealed"
+    },
+    {
+      "front": "arduous-front-r05c02",
+      "reverse": "arduous-back-r05c07",
+      "reversePrintedIdentifier": "7",
+      "pairingBasis": "published horizontally-mirrored front/reverse sheets; front identity concealed"
+    },
+    {
+      "front": "arduous-front-r05c03",
+      "reverse": "arduous-back-r05c06",
+      "reversePrintedIdentifier": "5",
+      "pairingBasis": "published horizontally-mirrored front/reverse sheets; front identity concealed"
+    },
+    {
+      "front": "arduous-front-r05c04",
+      "reverse": "arduous-back-r05c05",
+      "reversePrintedIdentifier": "23",
+      "pairingBasis": "published horizontally-mirrored front/reverse sheets; front identity concealed"
+    },
+    {
+      "front": "arduous-front-r05c05",
+      "reverse": "arduous-back-r05c04",
+      "reversePrintedIdentifier": "20",
+      "pairingBasis": "published horizontally-mirrored front/reverse sheets; front identity concealed"
+    },
+    {
+      "front": "arduous-front-r05c06",
+      "reverse": "arduous-back-r05c03",
+      "reversePrintedIdentifier": "17",
+      "pairingBasis": "published horizontally-mirrored front/reverse sheets; front identity concealed"
+    },
+    {
+      "front": "arduous-front-r05c07",
+      "reverse": "arduous-back-r05c02",
+      "reversePrintedIdentifier": "15",
+      "pairingBasis": "published horizontally-mirrored front/reverse sheets; front identity concealed"
+    },
+    {
+      "front": "arduous-front-r05c08",
+      "reverse": "arduous-back-r05c01",
+      "reversePrintedIdentifier": "1",
+      "pairingBasis": "published horizontally-mirrored front/reverse sheets; front identity concealed"
+    }
+  ]
+}

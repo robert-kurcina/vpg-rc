@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "id": "battle-for-moscow",
+  "title": "Battle for Moscow (Oberlabs)",
+  "engine": "generic-hex-v1",
+  "boardFile": "map.json",
+  "unitsFile": "units.json",
+  "deploymentsFile": "deployments.json",
+  "rulesFile": "rules.json",
+  "objectivesFile": "objectives.json",
+  "factions": [
+    {
+      "id": "german",
+      "name": "Germany"
+    },
+    {
+      "id": "soviet",
+      "name": "Soviet Union"
+    }
+  ],
+  "browserEntry": "index.html",
+  "nativeProfile": "native-preview/config.json"
+}

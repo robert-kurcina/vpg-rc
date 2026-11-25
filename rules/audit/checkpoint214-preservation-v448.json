@@ -1,0 +1,19 @@
+{
+  "checkpoint": 214,
+  "version": "v448",
+  "baseline": "hex_wargame_v447_CHECKPOINT_213_VISIBLE_CITY_DASHES.zip",
+  "protectedPrefixes": [
+    "core/",
+    "games/",
+    "maps/",
+    "exports/",
+    "assets/",
+    "supplied_assets/",
+    "references/",
+    "rules_profiles/",
+    "legacy/"
+  ],
+  "unchangedFiles": 321,
+  "changed": [],
+  "missing": []
+}

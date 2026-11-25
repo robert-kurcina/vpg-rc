@@ -1,0 +1,13 @@
+{
+  "status":"noncertified user-directed display overrides",
+  "requestedMoves":[
+    {"userSourceHex":"0109","actualCurrentStoredSourceHex":"0110","destinationHex":"0510"},
+    {"userSourceHex":"0210","actualCurrentStoredSourceHex":"0210","destinationHex":"0310"}
+  ],
+  "conflicts":[
+    {"hex":"0510","existing":"Soviet star","incoming":"German cross","resolution":"both retained, historical setup blocked"},
+    {"hex":"0310","existing":"German cross","incoming":"second German cross","resolution":"both retained, historical setup blocked"}
+  ],
+  "sourceIntegrity":"no authored source SVG or raster scan edited",
+  "pending":"Clarify final authorial disposition of the two collisions before certifying a unique five-cross deployment registry"
+}

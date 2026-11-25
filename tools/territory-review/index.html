@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Objective: Kiev — territorial source review (diagnostic only)</title>
+<style>
+:root{color-scheme:light;font-family:system-ui,-apple-system,"Segoe UI",sans-serif;background:#edf0f2;color:#17252e}
+*{box-sizing:border-box}body{margin:0}header{background:#1c3040;color:#fff;padding:12px 18px;display:flex;gap:12px;justify-content:space-between;align-items:center;flex-wrap:wrap}h1{font-size:1.18rem;margin:0 0 2px}header p{font-size:.79rem;margin:0;color:#d4dee6}header a{color:#e5f0fb;margin-left:14px}
+.warning{margin:0;background:#fff0cd;border-bottom:1px solid #ddcba1;padding:11px 18px;font-size:.9rem}
+main{display:grid;grid-template-columns:minmax(0,1fr) 330px;gap:12px;padding:12px;align-items:start}
+.map-panel,.controls{background:#fff;border:1px solid #d0d7dc;border-radius:7px;padding:12px;min-width:0}
+.map-scroll{max-width:100%;overflow:auto;-webkit-overflow-scrolling:touch}.map-stage{position:relative;width:100%;aspect-ratio:1269/841;overflow:hidden;background:#fafafa;touch-action:manipulation}
+.map-stage>img,.map-stage>svg{position:absolute;inset:0;width:100%;height:100%;display:block}
+#hex-layer{user-select:none}#hex-layer polygon{cursor:crosshair;stroke:#404b53;stroke-width:.7;fill:rgba(215,218,225,.07)}
+#hex-layer polygon[data-label="romanian"]{fill:rgba(250,141,59,.35);stroke:#ae601d;stroke-width:2}
+#hex-layer polygon[data-label="outside"]{fill:rgba(77,141,183,.2);stroke:#376b8f;stroke-width:1.25}
+#hex-layer polygon[data-evidence^="printed"]{stroke-width:3.2;stroke-dasharray:5 2}
+#hex-layer polygon:hover,#hex-layer polygon:focus-visible{stroke:#192b38;stroke-width:3.5;outline:none}
+#hex-layer polygon[data-selected="true"]{stroke:#e31727;stroke-width:3.3;stroke-dasharray:none}
+.map-caption,.small{color:#56646e;font-size:.8rem;line-height:1.45}
+.controls h2{font-size:1rem;margin:0 0 7px}.controls h3{font-size:.9rem;margin:17px 0 7px}p{line-height:1.45}
+fieldset{border:1px solid #ccd5dc;border-radius:5px;padding:7px 9px}legend{font-weight:600;font-size:.85rem}fieldset label{display:block;padding:7px 2px;cursor:pointer}
+button,.file-button{padding:9px 11px;background:#e8eef3;border:1px solid #9fabb3;border-radius:5px;color:#183041;cursor:pointer;font:inherit;font-size:.86rem}button:hover,.file-button:hover{background:#d9e5ee}
+button:focus-visible,.file-button:focus-visible{outline:3px solid #2c719a}
+.actions{display:flex;flex-wrap:wrap;gap:7px;margin:10px 0}.actions>button{flex:1 1 auto}
+button:disabled{opacity:.6;cursor:not-allowed}output,pre{font-variant-numeric:tabular-nums}
+#counts{font-size:.88rem;margin:9px 0}#selection{padding:10px;background:#f2f6f8;border-left:3px solid #597d97;min-height:46px}
+#message{min-height:20px;color:#854422;font-size:.87rem}#original-scan{width:100%;max-width:1199px;display:block;margin:auto}
+summary{cursor:pointer;font-weight:600}details{margin:13px 0}footer{padding:10px 18px;font-size:.8rem;color:#52616c}
+@media (max-width:950px){main{grid-template-columns:minmax(0,1fr)}.controls{grid-row:2}.map-scroll{max-height:70vh}.map-stage{width:1000px;min-width:1000px;max-height:none}header a{margin-left:0;margin-right:12px}}
+@media (max-width:520px){header,.warning{padding:10px 12px}main{padding:7px;gap:8px}.map-panel,.controls{padding:8px}button,.file-button{min-height:44px}}
+</style></head>
+<body>
+<header><div><h1>Objective: Kiev — Romanian Territory Review</h1><p>Source-anchored manual classification · no historical gameplay authorization</p></div><nav><a href="../../games/kiev/setup-preview/index.html">Kiev deployment</a><a href="../../index.html">Project home</a></nav></header>
+<p class="warning" role="note"><strong>Optional historical border research only.</strong> Kiev’s Turn 1 combat rule now treats exactly four printed Romanian setup hexes (<code>0709, 0809, 0910, 1010</code>) as the Romanian attack-target set by explicit game-rule interpretation. This separate workbench explores the wider historical Romanian boundary; its 154 unreviewed cells <strong>do not block</strong> the four-hex combat rule. Drafts cannot activate gameplay or certify geography. Kiev’s movement graph remains separately gated.</p>
+<main>
+<section class="map-panel" aria-label="Source-registered Kiev terrain map">
+<div class="map-scroll" id="map-scroll"><div class="map-stage" id="map-stage"><img src="../../exports/kiev.svg" alt="Unchanged shared-engine Kiev map export"><svg id="hex-layer" viewBox="-35 -35 1269 841" role="group" aria-label="Territory review hex polygons"></svg></div></div>
+<p class="map-caption">Underlying geography is the existing approved engine-rendered Kiev SVG, unmodified. Dashed outlines indicate exact printed setup-marker evidence; solid tinted hexes are manually proposed regions. Uncolored cells have not been reviewed. Select a hex to apply the selected draft label. On a phone or tablet, swipe the scrollable map to see the other hexes at a usable touch size.</p>
+<details><summary>Compare the original printed map scan</summary><img id="original-scan" src="../../maps/source/kiev-map-scan.jpg" alt="Original Kiev map source scan, including deployment markers"></details>
+</section>
+<aside class="controls" aria-label="Territory review controls">
+<h2>Review coverage</h2><div id="counts" role="status" aria-live="polite">Loading source-registered hexes…</div>
+<p id="selection" role="status" aria-live="polite">Select a hex on the map.</p>
+<div class="actions"><button id="next-unreviewed" type="button">Locate next unreviewed hex</button></div>
+<fieldset><legend>Assign to clicked unreviewed hex</legend>
+<label><input type="radio" name="label" value="romanian" checked> Romanian territory — proposed</label>
+<label><input type="radio" name="label" value="outside"> Outside Romania — proposed</label>
+<label><input type="radio" name="label" value="unreviewed"> Remove manual draft label</label>
+</fieldset>
+<h3>Evidence for selected hex</h3>
+<label for="source-citation" class="small">Exact source locator or review note (document, page, map feature). A citation records an assertion, not independent verification.</label>
+<textarea id="source-citation" maxlength="500" rows="3" style="display:block;width:100%;margin:6px 0;resize:vertical;font:inherit" placeholder="Source document / page / observed boundary"></textarea>
+<div class="actions"><button id="cite" type="button">Attach draft citation</button><button id="clear-citation" type="button">Clear citation</button></div>
+<p class="small">Changing a territory label clears its previous citation, preventing evidence for one classification from being reused for the opposite classification. Imported v1 drafts remain valid but have no citations until reviewed.</p>
+<p class="small">The 11 source-anchored Polish/Romanian setup markers are locked. Keyboard: focus a hex with Tab and use Enter or Space to assign the active label. Map selection is separate from gameplay deployment.</p>
+<h3>Draft evidence</h3>
+<div class="actions"><button id="save" type="button">Export review JSON</button><label class="file-button">Import review JSON<input id="load" type="file" accept="application/json" hidden></label></div>
+<div class="actions"><button id="reset" type="button">Reset manual labels</button></div>
+<p id="message" role="alert" aria-live="polite"></p>
+<details><summary>Why is this review not a gameplay requirement?</summary><p class="small">The historical country border is distinct from the agreed game-only Turn 1 four-setup-hex interpretation. The combat engine already enforces that rule on the four source-marked targets, using the three original Soviet opening positions. Other geography research is optional and does not supply movement-graph authorization. This review JSON stays <code>UNAPPROVED-CANDIDATE</code>; citations are not proof of national boundaries.</p></details>
+<details><summary>Source provenance</summary><pre id="provenance" class="small"></pre></details>
+</aside></main><footer>Independent Kiev territory diagnostic · same approved map export · no changes to shared combat rules, CRT, or playable scenarios.</footer>
+<script src="../../core/sync_sha256.js"></script><script src="../../core/historical_territory_review.js"></script><script src="app.js"></script>
+</body></html>

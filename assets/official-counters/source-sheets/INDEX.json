@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "sets": {
+    "b4m": {
+      "config": "maps/counter-configs/battle-for-moscow.json",
+      "countPerSide": 40,
+      "verifiedUnits": 39
+    },
+    "arduous": {
+      "config": "maps/counter-configs/arduous.json",
+      "countPerSide": 40,
+      "verifiedUnits": 0
+    },
+    "leningrad": {
+      "config": "maps/counter-configs/leningrad.json",
+      "countPerSide": 32,
+      "verifiedUnits": 0
+    },
+    "kiev": {
+      "config": "maps/counter-configs/kiev.json",
+      "countPerSide": 40,
+      "verifiedUnits": 0
+    },
+    "odessa": {
+      "config": "maps/counter-configs/odessa-extension.json",
+      "countPerSide": 16,
+      "verifiedUnits": 0
+    }
+  },
+  "source": "user-upload counters-source.zip; ten JPEGs unmodified"
+}

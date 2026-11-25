@@ -1,0 +1,272 @@
+{
+  "schemaVersion": 1,
+  "scope": "Source-index of printed B4M rule headings; not a complete individual-condition inventory. The two-sheet PDF uses imposed logical pages.",
+  "sourceSha256": "ee148b48a0af52457afd380053397f02283128d808ad8697e8dd7d1114c3fc65",
+  "indexedHeadings": 26,
+  "headings": [
+    {
+      "section": "4.0",
+      "source": "references/rules/b4m-rules.pdf",
+      "pdfSheet": 2,
+      "headingOpening": "SEQUENCE OF PLAY",
+      "legacyMappings": [
+        "b4m.4.turn-order"
+      ],
+      "auditStatus": "mapped-not-fully-audited"
+    },
+    {
+      "section": "5.0",
+      "source": "references/rules/b4m-rules.pdf",
+      "pdfSheet": 2,
+      "headingOpening": "HOW TO WIN",
+      "legacyMappings": [
+        "b4m.5.endgame"
+      ],
+      "auditStatus": "mapped-not-fully-audited"
+    },
+    {
+      "section": "6.0",
+      "source": "references/rules/b4m-rules.pdf",
+      "pdfSheet": 2,
+      "headingOpening": "SETTING UP THE GAME",
+      "legacyMappings": [
+        "b4m.6.manual-setup",
+        "b4m.6.auto-setup"
+      ],
+      "auditStatus": "mapped-not-fully-audited"
+    },
+    {
+      "section": "7.0",
+      "source": "references/rules/b4m-rules.pdf",
+      "pdfSheet": 2,
+      "headingOpening": "ZONES OF CONTROL",
+      "legacyMappings": [],
+      "auditStatus": "unmapped-needs-review"
+    },
+    {
+      "section": "7.1",
+      "source": "references/rules/b4m-rules.pdf",
+      "pdfSheet": 2,
+      "headingOpening": "Movement Effect: A unit entering an",
+      "legacyMappings": [
+        "b4m.7.1.zoc-stop"
+      ],
+      "auditStatus": "mapped-not-fully-audited"
+    },
+    {
+      "section": "7.2",
+      "source": "references/rules/b4m-rules.pdf",
+      "pdfSheet": 2,
+      "headingOpening": "Combat Effect: Units cannot end",
+      "legacyMappings": [
+        "b4m.7.2.retreat-zoc"
+      ],
+      "auditStatus": "mapped-not-fully-audited"
+    },
+    {
+      "section": "7.3",
+      "source": "references/rules/b4m-rules.pdf",
+      "pdfSheet": 2,
+      "headingOpening": "Effect on Replacements: Zones of",
+      "legacyMappings": [
+        "b4m.7.3.communication-zoc"
+      ],
+      "auditStatus": "mapped-not-fully-audited"
+    },
+    {
+      "section": "8.0",
+      "source": "references/rules/b4m-rules.pdf",
+      "pdfSheet": 2,
+      "headingOpening": "MOVEMENT",
+      "legacyMappings": [],
+      "auditStatus": "unmapped-needs-review"
+    },
+    {
+      "section": "8.1",
+      "source": "references/rules/b4m-rules.pdf",
+      "pdfSheet": 2,
+      "headingOpening": "Russian Rail Movement: In the Rail",
+      "legacyMappings": [
+        "b4m.8.1.soviet-rail"
+      ],
+      "auditStatus": "mapped-not-fully-audited"
+    },
+    {
+      "section": "8.2",
+      "source": "references/rules/b4m-rules.pdf",
+      "pdfSheet": 2,
+      "headingOpening": "Restrictions: The following",
+      "legacyMappings": [],
+      "auditStatus": "unmapped-needs-review"
+    },
+    {
+      "section": "8.2.1",
+      "source": "references/rules/b4m-rules.pdf",
+      "pdfSheet": 2,
+      "headingOpening": "Enemy Units: A unit can never",
+      "legacyMappings": [
+        "b4m.8.2.1.enemy-occupation"
+      ],
+      "auditStatus": "mapped-not-fully-audited"
+    },
+    {
+      "section": "8.2.2",
+      "source": "references/rules/b4m-rules.pdf",
+      "pdfSheet": 2,
+      "headingOpening": "Stacking: A unit can enter a hex",
+      "legacyMappings": [
+        "b4m.8.2.2.stacking"
+      ],
+      "auditStatus": "mapped-not-fully-audited"
+    },
+    {
+      "section": "8.3",
+      "source": "references/rules/b4m-rules.pdf",
+      "pdfSheet": 2,
+      "headingOpening": "Zone of Control: A unit entering an",
+      "legacyMappings": [
+        "b4m.8.3.ezoc-entry"
+      ],
+      "auditStatus": "mapped-not-fully-audited"
+    },
+    {
+      "section": "9.0",
+      "source": "references/rules/b4m-rules.pdf",
+      "pdfSheet": 2,
+      "headingOpening": "COMBAT",
+      "legacyMappings": [
+        "b4m.9.declaration"
+      ],
+      "auditStatus": "mapped-not-fully-audited"
+    },
+    {
+      "section": "9.1",
+      "source": "references/rules/b4m-rules.pdf",
+      "pdfSheet": 2,
+      "headingOpening": "Long Odds: After Step 2, abov",
+      "legacyMappings": [
+        "b4m.9.1.odds"
+      ],
+      "auditStatus": "mapped-not-fully-audited"
+    },
+    {
+      "section": "9.2",
+      "source": "references/rules/b4m-rules.pdf",
+      "pdfSheet": 2,
+      "headingOpening": "Terrain Effects on Combat: As",
+      "legacyMappings": [
+        "b4m.9.2.forest",
+        "b4m.9.2.major-city",
+        "b4m.9.2.fortification",
+        "b4m.9.2.river"
+      ],
+      "auditStatus": "mapped-not-fully-audited"
+    },
+    {
+      "section": "9.3",
+      "source": "references/rules/b4m-rules.pdf",
+      "pdfSheet": 2,
+      "headingOpening": "Combat Results Explanation: These",
+      "legacyMappings": [
+        "b4m.9.3.crt",
+        "b4m.9.3.retreat",
+        "b4m.9.3.stand-fast"
+      ],
+      "auditStatus": "mapped-not-fully-audited"
+    },
+    {
+      "section": "10.0",
+      "source": "references/rules/b4m-rules.pdf",
+      "pdfSheet": 1,
+      "headingOpening": "REPLACEMENTS",
+      "legacyMappings": [
+        "b4m.10.replacement-budget"
+      ],
+      "auditStatus": "mapped-not-fully-audited"
+    },
+    {
+      "section": "10.1",
+      "source": "references/rules/b4m-rules.pdf",
+      "pdfSheet": 1,
+      "headingOpening": "One Step at a Time: You can\u2019t use",
+      "legacyMappings": [
+        "b4m.10.1.one-step"
+      ],
+      "auditStatus": "mapped-not-fully-audited"
+    },
+    {
+      "section": "10.2",
+      "source": "references/rules/b4m-rules.pdf",
+      "pdfSheet": 1,
+      "headingOpening": "Where Russian Replacements",
+      "legacyMappings": [
+        "b4m.10.2.soviet-eligibility"
+      ],
+      "auditStatus": "mapped-not-fully-audited"
+    },
+    {
+      "section": "10.3",
+      "source": "references/rules/b4m-rules.pdf",
+      "pdfSheet": 1,
+      "headingOpening": "Where German Replacements",
+      "legacyMappings": [
+        "b4m.10.3.german-eligibility"
+      ],
+      "auditStatus": "mapped-not-fully-audited"
+    },
+    {
+      "section": "10.4",
+      "source": "references/rules/b4m-rules.pdf",
+      "pdfSheet": 1,
+      "headingOpening": "Use \u2018Em or Lose \u2018Em: If a",
+      "legacyMappings": [
+        "b4m.10.4.unused"
+      ],
+      "auditStatus": "mapped-not-fully-audited"
+    },
+    {
+      "section": "11.0",
+      "source": "references/rules/b4m-rules.pdf",
+      "pdfSheet": 1,
+      "headingOpening": "REINFORCEMENTS",
+      "legacyMappings": [
+        "b4m.11.shock"
+      ],
+      "auditStatus": "mapped-not-fully-audited"
+    },
+    {
+      "section": "12.0",
+      "source": "references/rules/b4m-rules.pdf",
+      "pdfSheet": 1,
+      "headingOpening": "MUD",
+      "legacyMappings": [],
+      "auditStatus": "unmapped-needs-review"
+    },
+    {
+      "section": "12.1",
+      "source": "references/rules/b4m-rules.pdf",
+      "pdfSheet": 1,
+      "headingOpening": "Mud Effect on Movement: All",
+      "legacyMappings": [
+        "b4m.12.1.mud-movement"
+      ],
+      "auditStatus": "mapped-not-fully-audited"
+    },
+    {
+      "section": "12.2",
+      "source": "references/rules/b4m-rules.pdf",
+      "pdfSheet": 1,
+      "headingOpening": "Mud Effect on Combat: The",
+      "legacyMappings": [
+        "b4m.12.2.mud-combat"
+      ],
+      "auditStatus": "mapped-not-fully-audited"
+    }
+  ],
+  "limitations": [
+    "PDF headings are not equivalent to atomic rules; each section may contain several independently testable conditions.",
+    "B4M Player Aid is an image and has not been independently transcribed in this register.",
+    "Existing runtime mappings cannot be counted as PDF compliance without source-derived assertions.",
+    "Source precedence remains Oberlabs executable for specified conflicts and UX; user-approved replacement restriction governs same-turn return."
+  ]
+}

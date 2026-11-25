@@ -1,0 +1,44 @@
+{
+  "checkpoint": 231,
+  "version": "v465",
+  "source": {
+    "path": "references/rules/leningrad-rules.pdf",
+    "printedPage": 6,
+    "section": "13.2",
+    "sha256": "74d332e052e735e2378027a06f95e9715392773f249561bf1c00cae08a2bbfa7"
+  },
+  "scope": "Source-valid Baltic Fleet DR/DRL/EX nonretreat choices in shared post-roll catalogue",
+  "implementation": [
+    "core/historical_campaign_action_catalog.js",
+    "core/historical_engine_browser_bundle.js"
+  ],
+  "testCase": {
+    "portCity": "Riga",
+    "hex": "0707",
+    "placements": "synthetic test-only; photographic counters and port geography certified"
+  },
+  "observations": {
+    "originalEXIgnoreRetreatChoices": 0,
+    "fixedEXIgnoreRetreatChoices": 2,
+    "stackedCorpsDRLDefenderLossChoices": 2,
+    "missingFleetForbidden": true,
+    "oneStepEliminatedDefenderForbidden": true
+  },
+  "passingChecks": {
+    "newFleetPostroll": 121,
+    "existingFleetRetreat": 54,
+    "cursor": 24,
+    "humanGateway": 37,
+    "postCasualtyRetreat": 155,
+    "kievEarlyCombat": 45,
+    "cityDots": 5376,
+    "arduousPagingChromium": 49,
+    "arduousCancellationChromium": 54
+  },
+  "limitations": [
+    "4,096-trial budget and consequence nonexhaustiveness remain",
+    "Leningrad synthetic battle, not historical initial placement",
+    "No fresh full Leningrad Chromium port battle acceptance",
+    "Two long-running suites timed out and are not claimed passing"
+  ]
+}

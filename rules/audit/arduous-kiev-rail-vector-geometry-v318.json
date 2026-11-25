@@ -1,0 +1,1486 @@
+{
+  "schemaVersion": 1,
+  "scope": "Railway SVG path-vector geometry and railway-layer integrity only; not gameplay certification",
+  "maps": {
+    "arduous": {
+      "sourceSvg": "maps/source/user-svg/arduous-map-temp(3).svg",
+      "sourceSvgSha256": "423af8983fd90a5be17041922a612efba42bbff306683ead9fd6910413402ede",
+      "candidatePairs": 85,
+      "uniqueReferencedPaths": 31,
+      "inspectedPaths": 31,
+      "issues": [],
+      "paths": [
+        {
+          "sourceSvgId": "path346",
+          "referenceCount": 1,
+          "candidatePairs": [
+            "1102:1203"
+          ],
+          "elementType": "path",
+          "railLayer": true,
+          "transforms": [
+            "translate(22.507218)"
+          ],
+          "localPathBounds": [
+            162.77,
+            38.106,
+            188.203,
+            53.856
+          ],
+          "approxLocalPathLength": 31.314,
+          "issues": [],
+          "status": "vector-geometry-inspected-not-hex-pair-certified"
+        },
+        {
+          "sourceSvgId": "path347",
+          "referenceCount": 2,
+          "candidatePairs": [
+            "1203:1303",
+            "1303:1404"
+          ],
+          "elementType": "path",
+          "railLayer": true,
+          "transforms": [
+            "translate(22.507218)"
+          ],
+          "localPathBounds": [
+            187.479,
+            54.025,
+            215.441,
+            71.715
+          ],
+          "approxLocalPathLength": 34.842,
+          "issues": [],
+          "status": "vector-geometry-inspected-not-hex-pair-certified"
+        },
+        {
+          "sourceSvgId": "path349",
+          "referenceCount": 2,
+          "candidatePairs": [
+            "1402:1403",
+            "1403:1404"
+          ],
+          "elementType": "path",
+          "railLayer": true,
+          "transforms": [
+            "translate(22.507218)"
+          ],
+          "localPathBounds": [
+            214.716,
+            38.952,
+            216.037,
+            72.824
+          ],
+          "approxLocalPathLength": 34.164,
+          "issues": [],
+          "status": "vector-geometry-inspected-not-hex-pair-certified"
+        },
+        {
+          "sourceSvgId": "path350",
+          "referenceCount": 1,
+          "candidatePairs": [
+            "1404:1405"
+          ],
+          "elementType": "path",
+          "railLayer": true,
+          "transforms": [
+            "translate(22.507218)"
+          ],
+          "localPathBounds": [
+            214.244,
+            73.398,
+            215.675,
+            89.082
+          ],
+          "approxLocalPathLength": 18.176,
+          "issues": [],
+          "status": "vector-geometry-inspected-not-hex-pair-certified"
+        },
+        {
+          "sourceSvgId": "path351",
+          "referenceCount": 1,
+          "candidatePairs": [
+            "1405:1505"
+          ],
+          "elementType": "path",
+          "railLayer": true,
+          "transforms": [
+            "translate(22.507218)"
+          ],
+          "localPathBounds": [
+            213.578,
+            88.236,
+            229.035,
+            96.703
+          ],
+          "approxLocalPathLength": 19.642,
+          "issues": [],
+          "status": "vector-geometry-inspected-not-hex-pair-certified"
+        },
+        {
+          "sourceSvgId": "path352",
+          "referenceCount": 5,
+          "candidatePairs": [
+            "0907:1007",
+            "1007:1106",
+            "1106:1206",
+            "1206:1305",
+            "1305:1405"
+          ],
+          "elementType": "path",
+          "railLayer": true,
+          "transforms": [
+            "translate(22.507218)"
+          ],
+          "localPathBounds": [
+            145.291,
+            88.837,
+            213.578,
+            128.135
+          ],
+          "approxLocalPathLength": 85.154,
+          "issues": [],
+          "status": "vector-geometry-inspected-not-hex-pair-certified"
+        },
+        {
+          "sourceSvgId": "path353",
+          "referenceCount": 2,
+          "candidatePairs": [
+            "1505:1605",
+            "1605:1704"
+          ],
+          "elementType": "path",
+          "railLayer": true,
+          "transforms": [
+            "translate(22.507218)"
+          ],
+          "localPathBounds": [
+            228.312,
+            79.045,
+            256.595,
+            97.212
+          ],
+          "approxLocalPathLength": 34.493,
+          "issues": [],
+          "status": "vector-geometry-inspected-not-hex-pair-certified"
+        },
+        {
+          "sourceSvgId": "path354",
+          "referenceCount": 2,
+          "candidatePairs": [
+            "1404:1504",
+            "1504:1605"
+          ],
+          "elementType": "path",
+          "railLayer": true,
+          "transforms": [
+            "translate(22.507218)"
+          ],
+          "localPathBounds": [
+            215.949,
+            71.294,
+            242.912,
+            86.483
+          ],
+          "approxLocalPathLength": 34.879,
+          "issues": [],
+          "status": "vector-geometry-inspected-not-hex-pair-certified"
+        },
+        {
+          "sourceSvgId": "path355",
+          "referenceCount": 4,
+          "candidatePairs": [
+            "1402:1501",
+            "1501:1602",
+            "1602:1701",
+            "1701:1802"
+          ],
+          "elementType": "path",
+          "railLayer": true,
+          "transforms": [
+            "translate(22.507218)"
+          ],
+          "localPathBounds": [
+            213.578,
+            27.097,
+            292.16,
+            37.61
+          ],
+          "approxLocalPathLength": 84.23,
+          "issues": [],
+          "status": "vector-geometry-inspected-not-hex-pair-certified"
+        },
+        {
+          "sourceSvgId": "path356",
+          "referenceCount": 1,
+          "candidatePairs": [
+            "1704:1805"
+          ],
+          "elementType": "path",
+          "railLayer": true,
+          "transforms": [
+            "translate(22.507218)"
+          ],
+          "localPathBounds": [
+            256.933,
+            67.404,
+            297.41,
+            84.423
+          ],
+          "approxLocalPathLength": 48.332,
+          "issues": [],
+          "status": "vector-geometry-inspected-not-hex-pair-certified"
+        },
+        {
+          "sourceSvgId": "path357",
+          "referenceCount": 3,
+          "candidatePairs": [
+            "1704:1705",
+            "1705:1806",
+            "1806:1807"
+          ],
+          "elementType": "path",
+          "railLayer": true,
+          "transforms": [
+            "translate(22.507218)"
+          ],
+          "localPathBounds": [
+            257.012,
+            80.953,
+            271.077,
+            119.736
+          ],
+          "approxLocalPathLength": 47.933,
+          "issues": [],
+          "status": "vector-geometry-inspected-not-hex-pair-certified"
+        },
+        {
+          "sourceSvgId": "path359",
+          "referenceCount": 2,
+          "candidatePairs": [
+            "1505:1506",
+            "1506:1507"
+          ],
+          "elementType": "path",
+          "railLayer": true,
+          "transforms": [
+            "translate(22.507218)"
+          ],
+          "localPathBounds": [
+            228.603,
+            94.297,
+            229.767,
+            129.22
+          ],
+          "approxLocalPathLength": 36.675,
+          "issues": [],
+          "status": "vector-geometry-inspected-not-hex-pair-certified"
+        },
+        {
+          "sourceSvgId": "path360",
+          "referenceCount": 3,
+          "candidatePairs": [
+            "1408:1409",
+            "1408:1507",
+            "1409:1410"
+          ],
+          "elementType": "path",
+          "railLayer": true,
+          "transforms": [
+            "translate(22.507218)"
+          ],
+          "localPathBounds": [
+            215.181,
+            127.776,
+            230.175,
+            169.358
+          ],
+          "approxLocalPathLength": 50.888,
+          "issues": [],
+          "status": "vector-geometry-inspected-not-hex-pair-certified"
+        },
+        {
+          "sourceSvgId": "path361",
+          "referenceCount": 1,
+          "candidatePairs": [
+            "1410:1510"
+          ],
+          "elementType": "path",
+          "railLayer": true,
+          "transforms": [
+            "translate(22.507218)"
+          ],
+          "localPathBounds": [
+            215.423,
+            168.85,
+            228.515,
+            176.977
+          ],
+          "approxLocalPathLength": 19.684,
+          "issues": [],
+          "status": "vector-geometry-inspected-not-hex-pair-certified"
+        },
+        {
+          "sourceSvgId": "path362",
+          "referenceCount": 3,
+          "candidatePairs": [
+            "1510:1610",
+            "1610:1709",
+            "1709:1810"
+          ],
+          "elementType": "path",
+          "railLayer": true,
+          "transforms": [
+            "translate(22.507218)"
+          ],
+          "localPathBounds": [
+            231.022,
+            162.858,
+            284.031,
+            178.334
+          ],
+          "approxLocalPathLength": 61.943,
+          "issues": [],
+          "status": "vector-geometry-inspected-not-hex-pair-certified"
+        },
+        {
+          "sourceSvgId": "path363",
+          "referenceCount": 5,
+          "candidatePairs": [
+            "0907:1008",
+            "1008:1108",
+            "1108:1209",
+            "1209:1309",
+            "1309:1410"
+          ],
+          "elementType": "path",
+          "railLayer": true,
+          "transforms": [
+            "translate(22.507218)"
+          ],
+          "localPathBounds": [
+            145.799,
+            129.12,
+            215.949,
+            169.604
+          ],
+          "approxLocalPathLength": 86.301,
+          "issues": [],
+          "status": "vector-geometry-inspected-not-hex-pair-certified"
+        },
+        {
+          "sourceSvgId": "path364",
+          "referenceCount": 3,
+          "candidatePairs": [
+            "0606:0706",
+            "0706:0807",
+            "0807:0907"
+          ],
+          "elementType": "path",
+          "railLayer": true,
+          "transforms": [
+            "translate(22.507218)"
+          ],
+          "localPathBounds": [
+            102.31,
+            102.292,
+            145.327,
+            128.881
+          ],
+          "approxLocalPathLength": 52.352,
+          "issues": [],
+          "status": "vector-geometry-inspected-not-hex-pair-certified"
+        },
+        {
+          "sourceSvgId": "path365",
+          "referenceCount": 3,
+          "candidatePairs": [
+            "0609:0708",
+            "0708:0808",
+            "0808:0907"
+          ],
+          "elementType": "path",
+          "railLayer": true,
+          "transforms": [
+            "translate(22.507218)"
+          ],
+          "localPathBounds": [
+            103.834,
+            129.051,
+            144.141,
+            154.0
+          ],
+          "approxLocalPathLength": 49.065,
+          "issues": [],
+          "status": "vector-geometry-inspected-not-hex-pair-certified"
+        },
+        {
+          "sourceSvgId": "path366",
+          "referenceCount": 2,
+          "candidatePairs": [
+            "0609:0610",
+            "0610:0611"
+          ],
+          "elementType": "path",
+          "railLayer": true,
+          "transforms": [
+            "translate(22.507218)"
+          ],
+          "localPathBounds": [
+            102.724,
+            154.116,
+            103.709,
+            180.536
+          ],
+          "approxLocalPathLength": 26.698,
+          "issues": [],
+          "status": "vector-geometry-inspected-not-hex-pair-certified"
+        },
+        {
+          "sourceSvgId": "path367",
+          "referenceCount": 4,
+          "candidatePairs": [
+            "0308:0408",
+            "0407:0408",
+            "0407:0506",
+            "0506:0606"
+          ],
+          "elementType": "path",
+          "railLayer": true,
+          "transforms": [
+            "translate(22.507218)"
+          ],
+          "localPathBounds": [
+            60.63,
+            103.107,
+            103.537,
+            146.559
+          ],
+          "approxLocalPathLength": 70.015,
+          "issues": [],
+          "status": "vector-geometry-inspected-not-hex-pair-certified"
+        },
+        {
+          "sourceSvgId": "path368",
+          "referenceCount": 3,
+          "candidatePairs": [
+            "0308:0409",
+            "0409:0508",
+            "0508:0609"
+          ],
+          "elementType": "path",
+          "railLayer": true,
+          "transforms": [
+            "translate(22.507218)"
+          ],
+          "localPathBounds": [
+            60.817,
+            145.648,
+            102.007,
+            151.506
+          ],
+          "approxLocalPathLength": 45.205,
+          "issues": [],
+          "status": "vector-geometry-inspected-not-hex-pair-certified"
+        },
+        {
+          "sourceSvgId": "path369",
+          "referenceCount": 3,
+          "candidatePairs": [
+            "0210:0211",
+            "0210:0309",
+            "0308:0309"
+          ],
+          "elementType": "path",
+          "railLayer": true,
+          "transforms": [
+            "translate(22.507218)"
+          ],
+          "localPathBounds": [
+            47.406,
+            145.951,
+            61.377,
+            186.463
+          ],
+          "approxLocalPathLength": 48.133,
+          "issues": [],
+          "status": "vector-geometry-inspected-not-hex-pair-certified"
+        },
+        {
+          "sourceSvgId": "path370",
+          "referenceCount": 1,
+          "candidatePairs": [
+            "0110:0211"
+          ],
+          "elementType": "path",
+          "railLayer": true,
+          "transforms": [
+            "translate(22.507218)"
+          ],
+          "localPathBounds": [
+            21.641,
+            178.924,
+            48.454,
+            187.987
+          ],
+          "approxLocalPathLength": 33.308,
+          "issues": [],
+          "status": "vector-geometry-inspected-not-hex-pair-certified"
+        },
+        {
+          "sourceSvgId": "path372",
+          "referenceCount": 2,
+          "candidatePairs": [
+            "0109:0209",
+            "0209:0308"
+          ],
+          "elementType": "path",
+          "railLayer": true,
+          "transforms": [
+            "translate(22.507218)"
+          ],
+          "localPathBounds": [
+            22.337,
+            145.309,
+            60.309,
+            158.939
+          ],
+          "approxLocalPathLength": 46.395,
+          "issues": [],
+          "status": "vector-geometry-inspected-not-hex-pair-certified"
+        },
+        {
+          "sourceSvgId": "path373",
+          "referenceCount": 3,
+          "candidatePairs": [
+            "0106:0207",
+            "0207:0208",
+            "0208:0308"
+          ],
+          "elementType": "path",
+          "railLayer": true,
+          "transforms": [
+            "translate(22.507218)"
+          ],
+          "localPathBounds": [
+            23.189,
+            104.441,
+            60.478,
+            144.632
+          ],
+          "approxLocalPathLength": 61.168,
+          "issues": [],
+          "status": "vector-geometry-inspected-not-hex-pair-certified"
+        },
+        {
+          "sourceSvgId": "path374",
+          "referenceCount": 2,
+          "candidatePairs": [
+            "0205:0305",
+            "0305:0405"
+          ],
+          "elementType": "path",
+          "railLayer": true,
+          "transforms": [
+            "translate(22.507218)"
+          ],
+          "localPathBounds": [
+            35.545,
+            71.808,
+            76.61,
+            93.049
+          ],
+          "approxLocalPathLength": 63.406,
+          "issues": [],
+          "status": "vector-geometry-inspected-not-hex-pair-certified"
+        },
+        {
+          "sourceSvgId": "path375",
+          "referenceCount": 2,
+          "candidatePairs": [
+            "0405:0505",
+            "0505:0606"
+          ],
+          "elementType": "path",
+          "railLayer": true,
+          "transforms": [
+            "translate(22.507218)"
+          ],
+          "localPathBounds": [
+            75.382,
+            84.848,
+            102.173,
+            102.383
+          ],
+          "approxLocalPathLength": 35.43,
+          "issues": [],
+          "status": "vector-geometry-inspected-not-hex-pair-certified"
+        },
+        {
+          "sourceSvgId": "path376",
+          "referenceCount": 4,
+          "candidatePairs": [
+            "0606:0705",
+            "0705:0805",
+            "0803:0804",
+            "0804:0805"
+          ],
+          "elementType": "path",
+          "railLayer": true,
+          "transforms": [
+            "translate(22.507218)"
+          ],
+          "localPathBounds": [
+            103.665,
+            42.34,
+            131.361,
+            104.173
+          ],
+          "approxLocalPathLength": 76.513,
+          "issues": [],
+          "status": "vector-geometry-inspected-not-hex-pair-certified"
+        },
+        {
+          "sourceSvgId": "path377",
+          "referenceCount": 4,
+          "candidatePairs": [
+            "0211:0310",
+            "0310:0410",
+            "0410:0509",
+            "0509:0609"
+          ],
+          "elementType": "path",
+          "railLayer": true,
+          "transforms": [
+            "translate(22.507218)"
+          ],
+          "localPathBounds": [
+            46.85,
+            153.777,
+            103.326,
+            187.499
+          ],
+          "approxLocalPathLength": 70.898,
+          "issues": [],
+          "status": "vector-geometry-inspected-not-hex-pair-certified"
+        },
+        {
+          "sourceSvgId": "path378",
+          "referenceCount": 2,
+          "candidatePairs": [
+            "0410:0510",
+            "0510:0611"
+          ],
+          "elementType": "path",
+          "railLayer": true,
+          "transforms": [
+            "translate(22.507218)"
+          ],
+          "localPathBounds": [
+            74.862,
+            169.287,
+            103.495,
+            181.97
+          ],
+          "approxLocalPathLength": 35.918,
+          "issues": [],
+          "status": "vector-geometry-inspected-not-hex-pair-certified"
+        },
+        {
+          "sourceSvgId": "path379",
+          "referenceCount": 9,
+          "candidatePairs": [
+            "0611:0710",
+            "0710:0811",
+            "0811:0910",
+            "0910:1010",
+            "1010:1110",
+            "1110:1211",
+            "1211:1310",
+            "1310:1411",
+            "1411:1510"
+          ],
+          "elementType": "path",
+          "railLayer": true,
+          "transforms": [
+            "translate(22.507218)"
+          ],
+          "localPathBounds": [
+            103.466,
+            174.873,
+            228.687,
+            183.847
+          ],
+          "approxLocalPathLength": 136.156,
+          "issues": [],
+          "status": "vector-geometry-inspected-not-hex-pair-certified"
+        }
+      ],
+      "limitations": [
+        "Local path length/bounds are before SVG group transforms; they cannot certify hex-center alignment.",
+        "No pixel-to-SVG registration or path-to-each-candidate-pair certification is asserted.",
+        "All movement-source candidates remain provisional."
+      ]
+    },
+    "kiev": {
+      "sourceSvg": "maps/source/user-svg/kiev-map-temp(5).svg",
+      "sourceSvgSha256": "5aee54442a5688dabc3ec0b37c711b5e98709c72d99cc68d1a5f9f08e6bc0142",
+      "candidatePairs": 97,
+      "uniqueReferencedPaths": 36,
+      "inspectedPaths": 36,
+      "issues": [],
+      "paths": [
+        {
+          "sourceSvgId": "path14",
+          "referenceCount": 3,
+          "candidatePairs": [
+            "0201:0302",
+            "0302:0401",
+            "0401:0502"
+          ],
+          "elementType": "path",
+          "railLayer": true,
+          "transforms": [],
+          "localPathBounds": [
+            43.188,
+            19.766,
+            88.738,
+            29.766
+          ],
+          "approxLocalPathLength": 53.739,
+          "issues": [],
+          "status": "vector-geometry-inspected-not-hex-pair-certified"
+        },
+        {
+          "sourceSvgId": "path15",
+          "referenceCount": 3,
+          "candidatePairs": [
+            "0502:0602",
+            "0602:0703",
+            "0703:0803"
+          ],
+          "elementType": "path",
+          "railLayer": true,
+          "transforms": [],
+          "localPathBounds": [
+            88.666,
+            29.497,
+            133.176,
+            55.491
+          ],
+          "approxLocalPathLength": 54.699,
+          "issues": [],
+          "status": "vector-geometry-inspected-not-hex-pair-certified"
+        },
+        {
+          "sourceSvgId": "path16",
+          "referenceCount": 2,
+          "candidatePairs": [
+            "0802:0803",
+            "0802:0902"
+          ],
+          "elementType": "path",
+          "railLayer": true,
+          "transforms": [],
+          "localPathBounds": [
+            135.582,
+            29.766,
+            149.437,
+            55.491
+          ],
+          "approxLocalPathLength": 35.476,
+          "issues": [],
+          "status": "vector-geometry-inspected-not-hex-pair-certified"
+        },
+        {
+          "sourceSvgId": "path17",
+          "referenceCount": 1,
+          "candidatePairs": [
+            "0801:0902"
+          ],
+          "elementType": "path",
+          "railLayer": true,
+          "transforms": [],
+          "localPathBounds": [
+            133.308,
+            7.772,
+            149.426,
+            30.026
+          ],
+          "approxLocalPathLength": 29.66,
+          "issues": [],
+          "status": "vector-geometry-inspected-not-hex-pair-certified"
+        },
+        {
+          "sourceSvgId": "path18",
+          "referenceCount": 3,
+          "candidatePairs": [
+            "0101:0102",
+            "0101:0201",
+            "0102:0201"
+          ],
+          "elementType": "path",
+          "railLayer": true,
+          "transforms": [],
+          "localPathBounds": [
+            20.777,
+            17.81,
+            45.188,
+            24.216
+          ],
+          "approxLocalPathLength": 29.226,
+          "issues": [],
+          "status": "vector-geometry-inspected-not-hex-pair-certified"
+        },
+        {
+          "sourceSvgId": "path19",
+          "referenceCount": 4,
+          "candidatePairs": [
+            "0103:0104",
+            "0104:0204",
+            "0204:0305",
+            "0305:0404"
+          ],
+          "elementType": "path",
+          "railLayer": true,
+          "transforms": [],
+          "localPathBounds": [
+            19.055,
+            38.529,
+            74.712,
+            76.041
+          ],
+          "approxLocalPathLength": 80.173,
+          "issues": [],
+          "status": "vector-geometry-inspected-not-hex-pair-certified"
+        },
+        {
+          "sourceSvgId": "path20",
+          "referenceCount": 1,
+          "candidatePairs": [
+            "0102:0103"
+          ],
+          "elementType": "path",
+          "railLayer": true,
+          "transforms": [],
+          "localPathBounds": [
+            25.611,
+            21.372,
+            30.827,
+            46.667
+          ],
+          "approxLocalPathLength": 27.619,
+          "issues": [],
+          "status": "vector-geometry-inspected-not-hex-pair-certified"
+        },
+        {
+          "sourceSvgId": "path21",
+          "referenceCount": 3,
+          "candidatePairs": [
+            "0404:0405",
+            "0405:0506",
+            "0506:0507"
+          ],
+          "elementType": "path",
+          "railLayer": true,
+          "transforms": [],
+          "localPathBounds": [
+            74.183,
+            72.417,
+            89.574,
+            116.937
+          ],
+          "approxLocalPathLength": 51.477,
+          "issues": [],
+          "status": "vector-geometry-inspected-not-hex-pair-certified"
+        },
+        {
+          "sourceSvgId": "path22",
+          "referenceCount": 2,
+          "candidatePairs": [
+            "0306:0406",
+            "0405:0406"
+          ],
+          "elementType": "path",
+          "railLayer": true,
+          "transforms": [],
+          "localPathBounds": [
+            59.7,
+            87.583,
+            78.248,
+            116.043
+          ],
+          "approxLocalPathLength": 39.988,
+          "issues": [],
+          "status": "vector-geometry-inspected-not-hex-pair-certified"
+        },
+        {
+          "sourceSvgId": "path23",
+          "referenceCount": 2,
+          "candidatePairs": [
+            "0803:0804",
+            "0804:0905"
+          ],
+          "elementType": "path",
+          "railLayer": true,
+          "transforms": [],
+          "localPathBounds": [
+            135.195,
+            54.401,
+            147.987,
+            82.131
+          ],
+          "approxLocalPathLength": 34.289,
+          "issues": [],
+          "status": "vector-geometry-inspected-not-hex-pair-certified"
+        },
+        {
+          "sourceSvgId": "path24",
+          "referenceCount": 4,
+          "candidatePairs": [
+            "0706:0806",
+            "0806:0907",
+            "0907:1007",
+            "1007:1107"
+          ],
+          "elementType": "path",
+          "railLayer": true,
+          "transforms": [],
+          "localPathBounds": [
+            118.869,
+            98.381,
+            177.733,
+            122.121
+          ],
+          "approxLocalPathLength": 70.756,
+          "issues": [],
+          "status": "vector-geometry-inspected-not-hex-pair-certified"
+        },
+        {
+          "sourceSvgId": "path25",
+          "referenceCount": 3,
+          "candidatePairs": [
+            "0404:0505",
+            "0505:0605",
+            "0605:0706"
+          ],
+          "elementType": "path",
+          "railLayer": true,
+          "transforms": [],
+          "localPathBounds": [
+            74.675,
+            73.549,
+            119.046,
+            98.911
+          ],
+          "approxLocalPathLength": 54.344,
+          "issues": [],
+          "status": "vector-geometry-inspected-not-hex-pair-certified"
+        },
+        {
+          "sourceSvgId": "path26",
+          "referenceCount": 3,
+          "candidatePairs": [
+            "0505:0604",
+            "0604:0704",
+            "0704:0803"
+          ],
+          "elementType": "path",
+          "railLayer": true,
+          "transforms": [],
+          "localPathBounds": [
+            86.692,
+            55.438,
+            134.766,
+            80.823
+          ],
+          "approxLocalPathLength": 58.151,
+          "issues": [],
+          "status": "vector-geometry-inspected-not-hex-pair-certified"
+        },
+        {
+          "sourceSvgId": "path27",
+          "referenceCount": 3,
+          "candidatePairs": [
+            "0905:1005",
+            "1005:1106",
+            "1106:1206"
+          ],
+          "elementType": "path",
+          "railLayer": true,
+          "transforms": [],
+          "localPathBounds": [
+            148.329,
+            81.497,
+            191.744,
+            106.049
+          ],
+          "approxLocalPathLength": 55.014,
+          "issues": [],
+          "status": "vector-geometry-inspected-not-hex-pair-certified"
+        },
+        {
+          "sourceSvgId": "path28",
+          "referenceCount": 4,
+          "candidatePairs": [
+            "1107:1206",
+            "1205:1206",
+            "1205:1305",
+            "1305:1404"
+          ],
+          "elementType": "path",
+          "railLayer": true,
+          "transforms": [],
+          "localPathBounds": [
+            177.821,
+            73.476,
+            222.902,
+            118.294
+          ],
+          "approxLocalPathLength": 71.808,
+          "issues": [],
+          "status": "vector-geometry-inspected-not-hex-pair-certified"
+        },
+        {
+          "sourceSvgId": "path29",
+          "referenceCount": 1,
+          "candidatePairs": [
+            "1105:1106"
+          ],
+          "elementType": "path",
+          "railLayer": true,
+          "transforms": [],
+          "localPathBounds": [
+            178.216,
+            81.378,
+            179.23,
+            96.085
+          ],
+          "approxLocalPathLength": 17.065,
+          "issues": [],
+          "status": "vector-geometry-inspected-not-hex-pair-certified"
+        },
+        {
+          "sourceSvgId": "path30",
+          "referenceCount": 2,
+          "candidatePairs": [
+            "1105:1204",
+            "1204:1305"
+          ],
+          "elementType": "path",
+          "railLayer": true,
+          "transforms": [],
+          "localPathBounds": [
+            181.395,
+            72.032,
+            210.185,
+            81.425
+          ],
+          "approxLocalPathLength": 38.672,
+          "issues": [],
+          "status": "vector-geometry-inspected-not-hex-pair-certified"
+        },
+        {
+          "sourceSvgId": "path31",
+          "referenceCount": 4,
+          "candidatePairs": [
+            "1103:1104",
+            "1103:1202",
+            "1104:1105",
+            "1201:1202"
+          ],
+          "elementType": "path",
+          "railLayer": true,
+          "transforms": [],
+          "localPathBounds": [
+            179.53,
+            7.948,
+            193.111,
+            80.895
+          ],
+          "approxLocalPathLength": 79.474,
+          "issues": [],
+          "status": "vector-geometry-inspected-not-hex-pair-certified"
+        },
+        {
+          "sourceSvgId": "path32",
+          "referenceCount": 5,
+          "candidatePairs": [
+            "0902:1002",
+            "1002:1103",
+            "1103:1203",
+            "1203:1304",
+            "1304:1404"
+          ],
+          "elementType": "path",
+          "railLayer": true,
+          "transforms": [],
+          "localPathBounds": [
+            150.813,
+            30.132,
+            223.079,
+            72.593
+          ],
+          "approxLocalPathLength": 91.194,
+          "issues": [],
+          "status": "vector-geometry-inspected-not-hex-pair-certified"
+        },
+        {
+          "sourceSvgId": "path33",
+          "referenceCount": 4,
+          "candidatePairs": [
+            "1404:1504",
+            "1504:1603",
+            "1603:1703",
+            "1703:1802"
+          ],
+          "elementType": "path",
+          "railLayer": true,
+          "transforms": [],
+          "localPathBounds": [
+            226.258,
+            34.619,
+            299.558,
+            71.18
+          ],
+          "approxLocalPathLength": 84.735,
+          "issues": [],
+          "status": "vector-geometry-inspected-not-hex-pair-certified"
+        },
+        {
+          "sourceSvgId": "path34",
+          "referenceCount": 3,
+          "candidatePairs": [
+            "1504:1604",
+            "1604:1705",
+            "1705:1805"
+          ],
+          "elementType": "path",
+          "railLayer": true,
+          "transforms": [],
+          "localPathBounds": [
+            235.796,
+            61.996,
+            302.031,
+            87.115
+          ],
+          "approxLocalPathLength": 75.483,
+          "issues": [],
+          "status": "vector-geometry-inspected-not-hex-pair-certified"
+        },
+        {
+          "sourceSvgId": "path35",
+          "referenceCount": 2,
+          "candidatePairs": [
+            "1703:1704",
+            "1704:1705"
+          ],
+          "elementType": "path",
+          "railLayer": true,
+          "transforms": [],
+          "localPathBounds": [
+            268.165,
+            42.39,
+            269.441,
+            81.425
+          ],
+          "approxLocalPathLength": 40.086,
+          "issues": [],
+          "status": "vector-geometry-inspected-not-hex-pair-certified"
+        },
+        {
+          "sourceSvgId": "path36",
+          "referenceCount": 3,
+          "candidatePairs": [
+            "1501:1601",
+            "1601:1702",
+            "1702:1802"
+          ],
+          "elementType": "path",
+          "railLayer": true,
+          "transforms": [],
+          "localPathBounds": [
+            251.058,
+            5.261,
+            281.189,
+            38.151
+          ],
+          "approxLocalPathLength": 51.226,
+          "issues": [],
+          "status": "vector-geometry-inspected-not-hex-pair-certified"
+        },
+        {
+          "sourceSvgId": "path37",
+          "referenceCount": 3,
+          "candidatePairs": [
+            "1807:1808",
+            "1808:1809",
+            "1809:1810"
+          ],
+          "elementType": "path",
+          "railLayer": true,
+          "transforms": [],
+          "localPathBounds": [
+            280.975,
+            125.228,
+            285.695,
+            193.936
+          ],
+          "approxLocalPathLength": 71.131,
+          "issues": [],
+          "status": "vector-geometry-inspected-not-hex-pair-certified"
+        },
+        {
+          "sourceSvgId": "path38",
+          "referenceCount": 4,
+          "candidatePairs": [
+            "1510:1511",
+            "1510:1609",
+            "1608:1609",
+            "1608:1708"
+          ],
+          "elementType": "path",
+          "railLayer": true,
+          "transforms": [],
+          "localPathBounds": [
+            236.402,
+            134.942,
+            268.295,
+            199.411
+          ],
+          "approxLocalPathLength": 83.201,
+          "issues": [],
+          "status": "vector-geometry-inspected-not-hex-pair-certified"
+        },
+        {
+          "sourceSvgId": "path39",
+          "referenceCount": 5,
+          "candidatePairs": [
+            "1305:1405",
+            "1405:1506",
+            "1506:1606",
+            "1606:1707",
+            "1707:1807"
+          ],
+          "elementType": "path",
+          "railLayer": true,
+          "transforms": [],
+          "localPathBounds": [
+            209.125,
+            80.358,
+            293.553,
+            130.627
+          ],
+          "approxLocalPathLength": 103.755,
+          "issues": [],
+          "status": "vector-geometry-inspected-not-hex-pair-certified"
+        },
+        {
+          "sourceSvgId": "path40",
+          "referenceCount": 1,
+          "candidatePairs": [
+            "1707:1708"
+          ],
+          "elementType": "path",
+          "railLayer": true,
+          "transforms": [],
+          "localPathBounds": [
+            268.285,
+            118.125,
+            269.008,
+            133.353
+          ],
+          "approxLocalPathLength": 17.204,
+          "issues": [],
+          "status": "vector-geometry-inspected-not-hex-pair-certified"
+        },
+        {
+          "sourceSvgId": "path41",
+          "referenceCount": 2,
+          "candidatePairs": [
+            "1607:1608",
+            "1607:1707"
+          ],
+          "elementType": "path",
+          "railLayer": true,
+          "transforms": [],
+          "localPathBounds": [
+            251.477,
+            114.067,
+            263.3,
+            146.246
+          ],
+          "approxLocalPathLength": 37.881,
+          "issues": [],
+          "status": "vector-geometry-inspected-not-hex-pair-certified"
+        },
+        {
+          "sourceSvgId": "path42",
+          "referenceCount": 2,
+          "candidatePairs": [
+            "1705:1706",
+            "1706:1707"
+          ],
+          "elementType": "path",
+          "railLayer": true,
+          "transforms": [],
+          "localPathBounds": [
+            263.807,
+            81.15,
+            270.471,
+            115.378
+          ],
+          "approxLocalPathLength": 38.573,
+          "issues": [],
+          "status": "vector-geometry-inspected-not-hex-pair-certified"
+        },
+        {
+          "sourceSvgId": "path43",
+          "referenceCount": 5,
+          "candidatePairs": [
+            "1107:1108",
+            "1108:1208",
+            "1208:1309",
+            "1309:1310",
+            "1310:1410"
+          ],
+          "elementType": "path",
+          "railLayer": true,
+          "transforms": [],
+          "localPathBounds": [
+            178.495,
+            118.163,
+            224.925,
+            191.816
+          ],
+          "approxLocalPathLength": 94.498,
+          "issues": [],
+          "status": "vector-geometry-inspected-not-hex-pair-certified"
+        },
+        {
+          "sourceSvgId": "path44",
+          "referenceCount": 2,
+          "candidatePairs": [
+            "0507:0607",
+            "0607:0708"
+          ],
+          "elementType": "path",
+          "railLayer": true,
+          "transforms": [],
+          "localPathBounds": [
+            90.059,
+            117.834,
+            119.223,
+            133.353
+          ],
+          "approxLocalPathLength": 36.337,
+          "issues": [],
+          "status": "vector-geometry-inspected-not-hex-pair-certified"
+        },
+        {
+          "sourceSvgId": "path45",
+          "referenceCount": 1,
+          "candidatePairs": [
+            "0708:0709"
+          ],
+          "elementType": "path",
+          "railLayer": true,
+          "transforms": [],
+          "localPathBounds": [
+            109.861,
+            133.129,
+            120.896,
+            159.14
+          ],
+          "approxLocalPathLength": 33.685,
+          "issues": [],
+          "status": "vector-geometry-inspected-not-hex-pair-certified"
+        },
+        {
+          "sourceSvgId": "path46",
+          "referenceCount": 3,
+          "candidatePairs": [
+            "0709:0809",
+            "0711:0810",
+            "0809:0810"
+          ],
+          "elementType": "path",
+          "railLayer": true,
+          "transforms": [],
+          "localPathBounds": [
+            118.516,
+            151.722,
+            133.798,
+            197.115
+          ],
+          "approxLocalPathLength": 55.62,
+          "issues": [],
+          "status": "vector-geometry-inspected-not-hex-pair-certified"
+        },
+        {
+          "sourceSvgId": "path47",
+          "referenceCount": 2,
+          "candidatePairs": [
+            "0810:0911",
+            "0911:1010"
+          ],
+          "elementType": "path",
+          "railLayer": true,
+          "transforms": [],
+          "localPathBounds": [
+            132.47,
+            179.851,
+            164.662,
+            183.959
+          ],
+          "approxLocalPathLength": 36.691,
+          "issues": [],
+          "status": "vector-geometry-inspected-not-hex-pair-certified"
+        },
+        {
+          "sourceSvgId": "path48",
+          "referenceCount": 1,
+          "candidatePairs": [
+            "1010:1111"
+          ],
+          "elementType": "path",
+          "railLayer": true,
+          "transforms": [],
+          "localPathBounds": [
+            163.732,
+            179.099,
+            190.226,
+            196.408
+          ],
+          "approxLocalPathLength": 32.303,
+          "issues": [],
+          "status": "vector-geometry-inspected-not-hex-pair-certified"
+        },
+        {
+          "sourceSvgId": "path49",
+          "referenceCount": 1,
+          "candidatePairs": [
+            "0507:0508"
+          ],
+          "elementType": "path",
+          "railLayer": true,
+          "transforms": [],
+          "localPathBounds": [
+            75.243,
+            116.359,
+            88.594,
+            147.66
+          ],
+          "approxLocalPathLength": 38.628,
+          "issues": [],
+          "status": "vector-geometry-inspected-not-hex-pair-certified"
+        }
+      ],
+      "limitations": [
+        "Local path length/bounds are before SVG group transforms; they cannot certify hex-center alignment.",
+        "No pixel-to-SVG registration or path-to-each-candidate-pair certification is asserted.",
+        "All movement-source candidates remain provisional."
+      ]
+    }
+  }
+}

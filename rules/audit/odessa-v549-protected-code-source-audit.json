@@ -1,0 +1,15 @@
+{
+  "baseline": "Checkpoint 314/v548",
+  "current": "Checkpoint 315/v549",
+  "protectedFilesCompared": 373,
+  "modifiedOrMissing": [],
+  "scope": [
+    "core",
+    "maps",
+    "exports",
+    "assets",
+    "games",
+    "references",
+    "rules/source"
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "scenario": "arduous",
+  "variant": "standard",
+  "seed": 61,
+  "policy": {
+    "seed": 61,
+    "missionSeed": "0000000000000000000000000000003d",
+    "selectionMode": "seeded",
+    "phaseScope": "operational",
+    "maxActions": 5000,
+    "maxFleetMoves": 2,
+    "maxFleetAttacks": 3,
+    "fleetBudgetScope": "campaign",
+    "objectivePolicy": "baseline",
+    "movementLookahead": false
+  },
+  "matchup": "same",
+  "factionPolicies": {
+    "german": {
+      "seed": 61,
+      "maxActions": 5000,
+      "maxCombatsPerPhase": 9007199254740991,
+      "maxCombatPhases": 9007199254740991,
+      "maxGroundMovesPerPhase": 9007199254740991,
+      "maxReinforcementsPerPhase": 9007199254740991,
+      "maxFleetMoves": 2,
+      "maxFleetAttacks": 3,
+      "fleetBudgetScope": "campaign",
+      "objectivePolicy": "baseline",
+      "movementLookahead": false,
+      "selectionMode": "seeded",
+      "attackSelection": "continuation-pilot",
+      "phaseScope": "operational",
+      "coordinatedAttacks": false,
+      "missionSeed": "0000000000000000000000000000003d",
+      "difficulty": 10
+    },
+    "soviet": {
+      "seed": 61,
+      "maxActions": 5000,
+      "maxCombatsPerPhase": 1,
+      "maxCombatPhases": 9007199254740991,
+      "maxGroundMovesPerPhase": 3,
+      "maxReinforcementsPerPhase": 9007199254740991,
+      "maxFleetMoves": 2,
+      "maxFleetAttacks": 3,
+      "fleetBudgetScope": "campaign",
+      "objectivePolicy": "baseline",
+      "movementLookahead": false,
+      "selectionMode": "seeded",
+      "attackSelection": "continuation-pilot",
+      "phaseScope": "operational",
+      "coordinatedAttacks": false,
+      "missionSeed": "0000000000000000000000000000003d",
+      "difficulty": 1
+    }
+  },
+  "elapsedMs": 21886,
+  "status": "blocked",
+  "reason": "no-authorized-post-roll-decision",
+  "detail": null,
+  "decision": {
+    "status": "blocked",
+    "reason": "no-authorized-post-roll-decision",
+    "die": 1,
+    "phase": "german-combat",
+    "outcome": "DRL"
+  },
+  "stats": {
+    "moves": 24,
+    "combats": 3,
+    "reinforcements": 4,
+    "navalRolls": 0,
+    "turns": 1
+  },
+  "actions": 74,
+  "fleetByTurn": {},
+  "odds": {
+    "3": 2,
+    "5": 1
+  },
+  "outcomes": {
+    "DRL": 2,
+    "EX": 1
+  },
+  "reasons": {
+    "continuation-pilot-positive-utility": 3,
+    "select-committed-battle": 4,
+    "precommit-air-support": 3,
+    "post-roll-material-city-utility": 3,
+    "finish-combat": 2,
+    "objective-directed-ground-movement": 24,
+    "finish-pending-movement": 24,
+    "finish-movement-phase": 4,
+    "source-legal-reinforcement": 4,
+    "finish-buildup": 2,
+    "finish-turn": 1
+  },
+  "cityControl": {
+    "Baranovichi": "soviet",
+    "Brest-Litovsk": "soviet",
+    "Gomel": "soviet",
+    "Minsk": "soviet",
+    "Mogilev": "soviet",
+    "Orsha": "soviet",
+    "Polotsk": "soviet",
+    "Roslavl": "soviet",
+    "Smolensk": "soviet",
+    "Velikie Luki": "soviet",
+    "Vilnius": "german",
+    "Vitebsk": "soviet"
+  },
+  "phase": "german-combat",
+  "exactRestore": true,
+  "communicationChecks": 137
+}

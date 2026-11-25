@@ -1,0 +1,336 @@
+{
+  "schemaVersion": 1,
+  "scenarioId": "kiev-odessa",
+  "sourceGame": "Objective: Kiev + Odessa Expansion",
+  "source": [
+    "references/rules/kiev-rules.pdf §§4, 6, 11–12 inherited reinforcement and replacement track",
+    "references/rules/odessa-rules.pdf §§0, 6, 11–12 supplemental Romanian air and Fleet-port replacement",
+    "maps/movement-configs/odessa-entry-border-geometry-v527.json externally reconciled source side geometry; explicitly provisional game-play",
+    "games/kiev-odessa/experimental-preview/opening-v531.json source-face starting state"
+  ],
+  "sourceIdentityStatus": "source-locked-experimental-not-historical-certification",
+  "sourceBoundaryStatus": "active-261-hex-exterior-candidate-explicit-experimental-play",
+  "printedAffiliationToOwner": {
+    "axis": "german",
+    "romanian": "german",
+    "hungarian": "german",
+    "slovak": "german",
+    "italian": "german",
+    "soviet": "soviet"
+  },
+  "replacementSteps": {
+    "german": [
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1
+    ],
+    "soviet": [
+      0,
+      2,
+      2,
+      3,
+      3,
+      4,
+      4
+    ]
+  },
+  "entryEdge": {
+    "german": [
+      "0101",
+      "0102",
+      "0103",
+      "0104",
+      "0105",
+      "0201",
+      "0205",
+      "0301",
+      "0306",
+      "0406",
+      "0407",
+      "0508",
+      "0608",
+      "0709",
+      "0710",
+      "0711",
+      "0712",
+      "0713",
+      "0714",
+      "0715",
+      "0716",
+      "0717",
+      "0718"
+    ],
+    "soviet": [
+      "1601",
+      "1701",
+      "1801",
+      "1802",
+      "1803",
+      "1804",
+      "1805",
+      "1806",
+      "1807",
+      "1808",
+      "1809",
+      "1810",
+      "1911",
+      "1912",
+      "1913",
+      "1914"
+    ]
+  },
+  "initialCityControl": {
+    "Lublin": "german",
+    "Lvov": "soviet",
+    "Kovel": "soviet",
+    "Stanislavov": "soviet",
+    "Tarnopol": "soviet",
+    "Chernovtsy": "soviet",
+    "Rovno": "soviet",
+    "Sarny": "soviet",
+    "Shepetovka": "soviet",
+    "Iasi": "german",
+    "Brăila": "german",
+    "Zhitomir": "soviet",
+    "Vinnitsa": "soviet",
+    "Chisinau": "soviet",
+    "Kiev": "soviet",
+    "Uman": "soviet",
+    "Odessa": "soviet",
+    "Chernigov": "soviet",
+    "Kirovograd": "soviet",
+    "Nikolaev": "soviet"
+  },
+  "initialGroups": {
+    "germanInitialPanzer": {
+      "class": "panzer",
+      "size": "corps"
+    },
+    "germanPolandInfantry": {
+      "class": "infantry",
+      "size": "corps"
+    },
+    "germanRomaniaInfantry": {
+      "class": "infantry",
+      "size": "corps"
+    },
+    "romanianInitialArmy": {
+      "class": "infantry",
+      "size": "army"
+    },
+    "sovietFrontArmies": {
+      "class": "infantry",
+      "size": "army"
+    },
+    "sovietFrontMechanized": {
+      "class": "mechanized",
+      "size": "corps"
+    },
+    "sovietFixedArmies": {
+      "class": "infantry",
+      "size": "army"
+    },
+    "sovietFixedMechanized": {
+      "class": "mechanized",
+      "size": "corps"
+    },
+    "odessaCoastalArmy": {
+      "class": "infantry",
+      "size": "army"
+    },
+    "odessaSovietCavalry": {
+      "class": "cavalry",
+      "size": "corps"
+    },
+    "odessaRomanianArmies": {
+      "class": "infantry",
+      "size": "army"
+    },
+    "odessaRomanianCavalry": {
+      "class": "cavalry",
+      "size": "corps"
+    }
+  },
+  "specialMilitiaGroup": null,
+  "reinforcements": [
+    {
+      "slotId": "t2-slovak",
+      "group": "slovakReinforcementInfantry",
+      "index": 0,
+      "turn": 2,
+      "owner": "german",
+      "kind": "ground",
+      "strength": "full",
+      "printedKind": "infantry",
+      "printedAffiliation": "slovak",
+      "printedValues": "3-4",
+      "placement": "edge",
+      "nationality": "slovak",
+      "class": "infantry",
+      "size": "corps"
+    },
+    {
+      "slotId": "t2-hungarian",
+      "group": "hungarianReinforcementInfantry",
+      "index": 0,
+      "turn": 2,
+      "owner": "german",
+      "kind": "ground",
+      "strength": "full",
+      "printedKind": "infantry",
+      "printedAffiliation": "hungarian",
+      "printedValues": "4-4",
+      "placement": "edge",
+      "nationality": "hungarian",
+      "class": "infantry",
+      "size": "corps"
+    },
+    {
+      "slotId": "t3-german-infantry",
+      "group": "germanReinforcementInfantry",
+      "index": 0,
+      "turn": 3,
+      "owner": "german",
+      "kind": "ground",
+      "strength": "full",
+      "printedAffiliation": "axis",
+      "placement": "edge",
+      "nationality": "german",
+      "class": "infantry",
+      "size": "corps",
+      "printedKinds": [
+        "infantry",
+        "mountain-infantry"
+      ],
+      "printedValues": "6-4"
+    },
+    {
+      "slotId": "t3-italian-motorized",
+      "group": "italianReinforcementMotorized",
+      "index": 0,
+      "turn": 3,
+      "owner": "german",
+      "kind": "ground",
+      "strength": "full",
+      "printedKind": "infantry",
+      "printedAffiliation": "italian",
+      "printedValues": "4-4",
+      "placement": "edge",
+      "nationality": "italian",
+      "class": "motorized",
+      "size": "corps"
+    },
+    {
+      "slotId": "t5-soviet-army",
+      "group": "sovietReinforcementArmies",
+      "index": 0,
+      "turn": 5,
+      "owner": "soviet",
+      "kind": "ground",
+      "strength": "full",
+      "printedKind": "infantry",
+      "printedAffiliation": "soviet",
+      "printedValues": "8-4",
+      "placement": "edge",
+      "nationality": "soviet",
+      "class": "infantry",
+      "size": "army"
+    },
+    {
+      "slotId": "t6-soviet-army",
+      "group": "sovietReinforcementArmies",
+      "index": 1,
+      "turn": 6,
+      "owner": "soviet",
+      "kind": "ground",
+      "strength": "full",
+      "printedKind": "infantry",
+      "printedAffiliation": "soviet",
+      "printedValues": "8-4",
+      "placement": "edge",
+      "nationality": "soviet",
+      "class": "infantry",
+      "size": "army"
+    }
+  ],
+  "supportArrivals": [
+    {
+      "slotId": "t2-romanian-air",
+      "turn": 2,
+      "owner": "german",
+      "faceId": "odessa-front-r01c07",
+      "printedIdentifier": "Rom I AK",
+      "shiftRating": 1,
+      "sourceNotationMode": "romanian-refit-v1"
+    }
+  ],
+  "replacementOnlyReserveGroup": "sovietReplacementOnlyArmy",
+  "knownEngineBlockers": [
+    "Experimental combined exterior entry edges not final historically certified",
+    "Unverified Romanian political territory remains fail-closed for ground movement",
+    "Fleet naval evacuation phase not authorized"
+  ],
+  "notes": [
+    "The six supplemented ground units use source-face IDs bound to namespaced runtime IDs; the independent Fleet is not a ground unit.",
+    "Turn 2 includes Slovak and Hungarian ground arrivals and Romanian Air Support availability; Soviet Turn 2 receives two replacement steps.",
+    "No scenarios besides this explicitly source-bound composite may use active composite exterior mode.",
+    "The 1201–1202 Kiev railway is not a gameplay blocker."
+  ],
+  "replacementOnlyEarliestTurn": 2,
+  "replacementReserveGroups": {
+    "sovietReplacementOnlyArmy": {
+      "class": "infantry",
+      "size": "army"
+    }
+  },
+  "replacementExcludedFaces": [
+    {
+      "faceId": "kiev-front-r04c02",
+      "kind": "mechanized",
+      "owner": "soviet",
+      "revealedIdentifier": "4",
+      "ruleSource": "references/rules/kiev-rules.pdf §12.0 (4th Soviet Mechanized Corps cannot be replaced once destroyed)"
+    }
+  ],
+  "entryBoundarySource": "active-composite-exterior-v533",
+  "entryBoundarySourceSvgSha256": "2b15c3a92a282a7efc27d54bcd8994470f0fce8ee5417d5d734969fcd2c4ab7e",
+  "acceptPreinitializedCityControl": true,
+  "startingUnitAliases": {
+    "kiev-odessa/soviet-cavalry-corps-a": "odessa-front-r01c03",
+    "kiev-odessa/soviet-cavalry-corps-b": "odessa-front-r01c04",
+    "kiev-odessa/soviet-coastal-army": "odessa-front-r01c02",
+    "kiev-odessa/romanian-home-army": "odessa-front-r01c05",
+    "kiev-odessa/romanian-4th-army": "odessa-front-r01c06",
+    "kiev-odessa/romanian-cavalry-corps": "odessa-front-r01c08"
+  },
+  "navalReplacementPolicy": {
+    "schemaVersion": 1,
+    "scenarioId": "kiev-odessa",
+    "mode": "source-fleet-port-logistics-v1",
+    "status": "live-user-approved-naval-phase-adaptation",
+    "source": [
+      "references/rules/odessa-rules.pdf §12.2 Fleet port replacements",
+      "references/rules/odessa-rules.pdf §15.3 Convoying Replacements and Evacuating Ports"
+    ],
+    "sourceRulebookSha256": "c7def97fe2de9ae66dc89da5f7d3417e3283846485903b90b88f153ba9791bab",
+    "owner": "soviet",
+    "markerKey": "blackSeaFleet",
+    "portHexes": {
+      "Odessa": "1513",
+      "Nikolaev": "1811"
+    },
+    "replacementException": true,
+    "damageDie": 1,
+    "evacuatedEarliestReturnTurnOffset": 1,
+    "turns": 7,
+    "limitations": [
+      "Section 15.3 does not specify a distinct phase; v564 user-approved timing uses Soviet Naval Operations.",
+      "Return of evacuated survivors must pass the ordinary source-authorized Soviet reinforcement placement rules, including enemy control, ZOC and stacking.",
+      "The combined territorial graph remains experimental; this policy is active in the experimental campaign."
+    ]
+  }
+}

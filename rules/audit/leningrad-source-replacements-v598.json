@@ -1,0 +1,8 @@
+{
+  "checkpoint": 364,
+  "version": "v598",
+  "source": "references/rules/leningrad-rules.pdf §§11–12.4",
+  "assertions": 1702,
+  "graphChecks": 1680,
+  "scope": "synthetic positions, original counter identities and current shipped graph; no browser or continuous contested campaign"
+}

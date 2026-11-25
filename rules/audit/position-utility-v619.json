@@ -1,0 +1,30 @@
+{
+  "checkpoint": 385,
+  "version": "v619",
+  "baseline": "hex_wargame_v618_CHECKPOINT_384_COMBINED_WITHDRAWAL.zip",
+  "description": "Bounded material and stationary positional utility",
+  "changedExistingFiles": [
+    "PLAN.md",
+    "README.md",
+    "UPDATE.md",
+    "PACKAGE_MANIFEST.json",
+    "core/historical_threat_assessment.js",
+    "core/historical_engine_browser_bundle.js"
+  ],
+  "addedFiles": [
+    "tests/kiev-position-utility-v619.test.js",
+    "rules/audit/position-utility-v619.json"
+  ],
+  "verified": {
+    "continuationIncludingPrior": 271,
+    "utilityArithmetic": 62,
+    "sharedCRT": 301,
+    "bundleModules": 61
+  },
+  "limitations": [
+    "Diagnostic only",
+    "No browser or full campaign run",
+    "No calibrated elimination probability",
+    "No enemy approach penalty or city utility"
+  ]
+}

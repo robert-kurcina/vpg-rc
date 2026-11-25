@@ -1,0 +1,211 @@
+{
+  "schemaVersion": 1,
+  "scenarioId": "kiev",
+  "status": "source-rulebook-section-6-variable-placement-qualified-v489-experimental-play",
+  "ruleSource": "references/rules/kiev-rules.pdf §6.0(3–9), printed page 2",
+  "mapSourceGame": "Objective: Kiev",
+  "markerSlots": {
+    "cross": {
+      "count": 11,
+      "occupancy": [
+        2,
+        2,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    "star": {
+      "count": 10,
+      "occupancy": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    "fixedInfantry": {
+      "count": 2,
+      "occupancy": [
+        1,
+        1
+      ]
+    },
+    "fixedMechanized": {
+      "count": 4,
+      "occupancy": [
+        1,
+        1,
+        1,
+        1
+      ]
+    }
+  },
+  "groups": {
+    "germanInitialPanzer": {
+      "marker": "cross",
+      "owner": "german",
+      "nationality": "german",
+      "class": "panzer",
+      "size": "corps",
+      "pool": "germanPanzer",
+      "count": 3,
+      "printedAffiliation": "axis",
+      "printedKind": "tank",
+      "allowedHexes": [
+        "0105",
+        "0203",
+        "0204",
+        "0301",
+        "0302",
+        "0303",
+        "0402"
+      ]
+    },
+    "germanPolandInfantry": {
+      "marker": "cross",
+      "owner": "german",
+      "nationality": "german",
+      "class": "infantry",
+      "size": "corps",
+      "pool": "germanInfantry",
+      "count": 7,
+      "printedAffiliation": "axis",
+      "printedKinds": [
+        "infantry",
+        "mountain-infantry"
+      ],
+      "allowedHexes": [
+        "0105",
+        "0203",
+        "0204",
+        "0301",
+        "0302",
+        "0303",
+        "0402"
+      ]
+    },
+    "germanRomaniaInfantry": {
+      "marker": "cross",
+      "owner": "german",
+      "nationality": "german",
+      "class": "infantry",
+      "size": "corps",
+      "pool": "germanInfantry",
+      "count": 3,
+      "printedAffiliation": "axis",
+      "printedKinds": [
+        "infantry",
+        "mountain-infantry"
+      ],
+      "allowedHexes": [
+        "0709",
+        "0809",
+        "0910",
+        "1010"
+      ]
+    },
+    "romanianInitialArmy": {
+      "marker": "cross",
+      "owner": "german",
+      "nationality": "romanian",
+      "class": "infantry",
+      "size": "army",
+      "pool": "romanianArmy",
+      "count": 1,
+      "printedAffiliation": "romanian",
+      "printedKind": "infantry",
+      "allowedHexes": [
+        "0709",
+        "0809",
+        "0910",
+        "1010"
+      ]
+    },
+    "sovietFrontArmies": {
+      "marker": "star",
+      "owner": "soviet",
+      "class": "infantry",
+      "size": "army",
+      "pool": "sovietArmies",
+      "count": 4,
+      "printedAffiliation": "soviet",
+      "printedKind": "infantry"
+    },
+    "sovietFrontMechanized": {
+      "marker": "star",
+      "owner": "soviet",
+      "class": "mechanized",
+      "size": "corps",
+      "pool": "sovietMechanized",
+      "count": 6,
+      "printedAffiliation": "soviet",
+      "printedKind": "mechanized"
+    },
+    "sovietFixedArmies": {
+      "marker": "fixedInfantry",
+      "owner": "soviet",
+      "class": "infantry",
+      "size": "army",
+      "pool": "sovietArmies",
+      "count": 2,
+      "printedAffiliation": "soviet",
+      "printedKind": "infantry",
+      "allowedHexes": [
+        "0406",
+        "1007"
+      ]
+    },
+    "sovietFixedMechanized": {
+      "marker": "fixedMechanized",
+      "owner": "soviet",
+      "class": "mechanized",
+      "size": "corps",
+      "pool": "sovietMechanized",
+      "count": 4,
+      "printedAffiliation": "soviet",
+      "printedKind": "mechanized",
+      "allowedHexes": [
+        "0705",
+        "0803",
+        "1106",
+        "1309"
+      ]
+    }
+  },
+  "expectedStartingUnits": 30,
+  "concealedSetup": {
+    "groups": [
+      "sovietFrontMechanized",
+      "sovietFixedMechanized"
+    ],
+    "count": 10,
+    "displayName": "Soviet Mechanized Corps",
+    "requireMixBeforeCampaign": true
+  },
+  "knownBlockingDisagreements": [
+    "Standalone Kiev has 10 Soviet front-line star markers as required by §6.0, following user-reviewed correction at 0708; the §6 deployment is intentionally player-selectable, not a single historical counter-ID placement.",
+    "1111 is a Soviet star only in the Kiev–Odessa composite; it is not a standalone Kiev deployment slot.",
+    "The generic historicalSetupAuthorized flag remains false because §6 gives no unique historically exact counter-ID-to-hex opening. This must not override separate source-constrained setup validity or the already enabled experimental campaign.",
+    "Independent map-coordinate/source-geometry reconciliation and broader gameplay/AI acceptance remain separate incomplete qualifications.",
+    "Romanian placement and nationality restrictions remain explicit; 11 German crosses comprise 7 Polish and 4 Romanian slots."
+  ],
+  "nonAdjacentGroupSets": [
+    [
+      "sovietFrontArmies",
+      "sovietFixedArmies"
+    ]
+  ]
+}

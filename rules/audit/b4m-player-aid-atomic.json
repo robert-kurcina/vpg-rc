@@ -1,0 +1,322 @@
+{
+  "schemaVersion": 1,
+  "title": "Battle for Moscow Player Aid \u2014 atomic source-field inventory",
+  "source": "references/rules/b4m-aid.webp",
+  "sourceSha256": "b5e5130f5b5becc1fd70b52c7f94d14c8e1fcb7d9ba5985cb8010ae8cc873894",
+  "companionPdf": "references/rules/b4m-rules.pdf",
+  "companionPdfSha256": "ee148b48a0af52457afd380053397f02283128d808ad8697e8dd7d1114c3fc65",
+  "scope": "27 TEC field records and 7 turn-track entries. This is a manual transcription of the bundled image, not a completeness claim for the full rules or proof of executable compliance.",
+  "entries": [
+    {
+      "id": "aid.tec.open.movement",
+      "region": "Terrain Effects Chart",
+      "sourceRow": "Open",
+      "field": "movement",
+      "sourceInterpretation": "none",
+      "auditStatus": "extracted-not-individually-verified",
+      "authority": "Player Aid; for mud combat read alongside PDF \u00a712.2"
+    },
+    {
+      "id": "aid.tec.open.combat",
+      "region": "Terrain Effects Chart",
+      "sourceRow": "Open",
+      "field": "combat",
+      "sourceInterpretation": "none",
+      "auditStatus": "extracted-not-individually-verified",
+      "authority": "Player Aid; for mud combat read alongside PDF \u00a712.2"
+    },
+    {
+      "id": "aid.tec.open.notes",
+      "region": "Terrain Effects Chart",
+      "sourceRow": "Open",
+      "field": "notes",
+      "sourceInterpretation": "None",
+      "auditStatus": "extracted-not-individually-verified",
+      "authority": "Player Aid; for mud combat read alongside PDF \u00a712.2"
+    },
+    {
+      "id": "aid.tec.forest.movement",
+      "region": "Terrain Effects Chart",
+      "sourceRow": "Forest",
+      "field": "movement",
+      "sourceInterpretation": "2 MP normal; 1 MP Soviet rail",
+      "auditStatus": "extracted-not-individually-verified",
+      "authority": "Player Aid; for mud combat read alongside PDF \u00a712.2"
+    },
+    {
+      "id": "aid.tec.forest.combat",
+      "region": "Terrain Effects Chart",
+      "sourceRow": "Forest",
+      "field": "combat",
+      "sourceInterpretation": "one odds-column left",
+      "auditStatus": "extracted-not-individually-verified",
+      "authority": "Player Aid; for mud combat read alongside PDF \u00a712.2"
+    },
+    {
+      "id": "aid.tec.forest.notes",
+      "region": "Terrain Effects Chart",
+      "sourceRow": "Forest",
+      "field": "notes",
+      "sourceInterpretation": "None",
+      "auditStatus": "extracted-not-individually-verified",
+      "authority": "Player Aid; for mud combat read alongside PDF \u00a712.2"
+    },
+    {
+      "id": "aid.tec.city.movement",
+      "region": "Terrain Effects Chart",
+      "sourceRow": "City",
+      "field": "movement",
+      "sourceInterpretation": "none",
+      "auditStatus": "extracted-not-individually-verified",
+      "authority": "Player Aid; for mud combat read alongside PDF \u00a712.2"
+    },
+    {
+      "id": "aid.tec.city.combat",
+      "region": "Terrain Effects Chart",
+      "sourceRow": "City",
+      "field": "combat",
+      "sourceInterpretation": "none",
+      "auditStatus": "extracted-not-individually-verified",
+      "authority": "Player Aid; for mud combat read alongside PDF \u00a712.2"
+    },
+    {
+      "id": "aid.tec.city.notes",
+      "region": "Terrain Effects Chart",
+      "sourceRow": "City",
+      "field": "notes",
+      "sourceInterpretation": "Replacement location",
+      "auditStatus": "extracted-not-individually-verified",
+      "authority": "Player Aid; for mud combat read alongside PDF \u00a712.2"
+    },
+    {
+      "id": "aid.tec.moscow.movement",
+      "region": "Terrain Effects Chart",
+      "sourceRow": "Moscow",
+      "field": "movement",
+      "sourceInterpretation": "none",
+      "auditStatus": "extracted-not-individually-verified",
+      "authority": "Player Aid; for mud combat read alongside PDF \u00a712.2"
+    },
+    {
+      "id": "aid.tec.moscow.combat",
+      "region": "Terrain Effects Chart",
+      "sourceRow": "Moscow",
+      "field": "combat",
+      "sourceInterpretation": "one odds-column left",
+      "auditStatus": "extracted-not-individually-verified",
+      "authority": "Player Aid; for mud combat read alongside PDF \u00a712.2"
+    },
+    {
+      "id": "aid.tec.moscow.notes",
+      "region": "Terrain Effects Chart",
+      "sourceRow": "Moscow",
+      "field": "notes",
+      "sourceInterpretation": "Replacement location; Soviet communication exception",
+      "auditStatus": "extracted-not-individually-verified",
+      "authority": "Player Aid; for mud combat read alongside PDF \u00a712.2"
+    },
+    {
+      "id": "aid.tec.fortification.movement",
+      "region": "Terrain Effects Chart",
+      "sourceRow": "Fortification",
+      "field": "movement",
+      "sourceInterpretation": "none",
+      "auditStatus": "extracted-not-individually-verified",
+      "authority": "Player Aid; for mud combat read alongside PDF \u00a712.2"
+    },
+    {
+      "id": "aid.tec.fortification.combat",
+      "region": "Terrain Effects Chart",
+      "sourceRow": "Fortification",
+      "field": "combat",
+      "sourceInterpretation": "one odds-column left for Russian defenders only",
+      "auditStatus": "extracted-not-individually-verified",
+      "authority": "Player Aid; for mud combat read alongside PDF \u00a712.2"
+    },
+    {
+      "id": "aid.tec.fortification.notes",
+      "region": "Terrain Effects Chart",
+      "sourceRow": "Fortification",
+      "field": "notes",
+      "sourceInterpretation": "None",
+      "auditStatus": "extracted-not-individually-verified",
+      "authority": "Player Aid; for mud combat read alongside PDF \u00a712.2"
+    },
+    {
+      "id": "aid.tec.river.movement",
+      "region": "Terrain Effects Chart",
+      "sourceRow": "River",
+      "field": "movement",
+      "sourceInterpretation": "none",
+      "auditStatus": "extracted-not-individually-verified",
+      "authority": "Player Aid; for mud combat read alongside PDF \u00a712.2"
+    },
+    {
+      "id": "aid.tec.river.combat",
+      "region": "Terrain Effects Chart",
+      "sourceRow": "River",
+      "field": "combat",
+      "sourceInterpretation": "one odds-column left if every attacker crosses a river hexside",
+      "auditStatus": "extracted-not-individually-verified",
+      "authority": "Player Aid; for mud combat read alongside PDF \u00a712.2"
+    },
+    {
+      "id": "aid.tec.river.notes",
+      "region": "Terrain Effects Chart",
+      "sourceRow": "River",
+      "field": "notes",
+      "sourceInterpretation": "None",
+      "auditStatus": "extracted-not-individually-verified",
+      "authority": "Player Aid; for mud combat read alongside PDF \u00a712.2"
+    },
+    {
+      "id": "aid.tec.railroad.movement",
+      "region": "Terrain Effects Chart",
+      "sourceRow": "Railroad",
+      "field": "movement",
+      "sourceInterpretation": "Soviet rail movement only",
+      "auditStatus": "extracted-not-individually-verified",
+      "authority": "Player Aid; for mud combat read alongside PDF \u00a712.2"
+    },
+    {
+      "id": "aid.tec.railroad.combat",
+      "region": "Terrain Effects Chart",
+      "sourceRow": "Railroad",
+      "field": "combat",
+      "sourceInterpretation": "none",
+      "auditStatus": "extracted-not-individually-verified",
+      "authority": "Player Aid; for mud combat read alongside PDF \u00a712.2"
+    },
+    {
+      "id": "aid.tec.railroad.notes",
+      "region": "Terrain Effects Chart",
+      "sourceRow": "Railroad",
+      "field": "notes",
+      "sourceInterpretation": "Usable only during Russian Rail Movement Phase",
+      "auditStatus": "extracted-not-individually-verified",
+      "authority": "Player Aid; for mud combat read alongside PDF \u00a712.2"
+    },
+    {
+      "id": "aid.tec.star-cross.movement",
+      "region": "Terrain Effects Chart",
+      "sourceRow": "Star or Cross",
+      "field": "movement",
+      "sourceInterpretation": "none",
+      "auditStatus": "extracted-not-individually-verified",
+      "authority": "Player Aid; for mud combat read alongside PDF \u00a712.2"
+    },
+    {
+      "id": "aid.tec.star-cross.combat",
+      "region": "Terrain Effects Chart",
+      "sourceRow": "Star or Cross",
+      "field": "combat",
+      "sourceInterpretation": "none",
+      "auditStatus": "extracted-not-individually-verified",
+      "authority": "Player Aid; for mud combat read alongside PDF \u00a712.2"
+    },
+    {
+      "id": "aid.tec.star-cross.notes",
+      "region": "Terrain Effects Chart",
+      "sourceRow": "Star or Cross",
+      "field": "notes",
+      "sourceInterpretation": "Setup markers: Soviet star; German cross",
+      "auditStatus": "extracted-not-individually-verified",
+      "authority": "Player Aid; for mud combat read alongside PDF \u00a712.2"
+    },
+    {
+      "id": "aid.tec.mud.movement",
+      "region": "Terrain Effects Chart",
+      "sourceRow": "Mud Turn",
+      "field": "movement",
+      "sourceInterpretation": "one hex maximum per non-rail movement phase",
+      "auditStatus": "extracted-not-individually-verified",
+      "authority": "Player Aid; for mud combat read alongside PDF \u00a712.2"
+    },
+    {
+      "id": "aid.tec.mud.combat",
+      "region": "Terrain Effects Chart",
+      "sourceRow": "Mud Turn",
+      "field": "combat",
+      "sourceInterpretation": "attacking armor strength halved; fractions retained",
+      "auditStatus": "extracted-not-individually-verified",
+      "authority": "Player Aid; for mud combat read alongside PDF \u00a712.2"
+    },
+    {
+      "id": "aid.tec.mud.notes",
+      "region": "Terrain Effects Chart",
+      "sourceRow": "Mud Turn",
+      "field": "notes",
+      "sourceInterpretation": "Turns 3 and 4; \u00a712.2 clarifies infantry unaffected",
+      "auditStatus": "extracted-not-individually-verified",
+      "authority": "Player Aid; for mud combat read alongside PDF \u00a712.2"
+    },
+    {
+      "id": "aid.track.turn-1",
+      "region": "Game Turn Record Track",
+      "turn": 1,
+      "germanReplacementSteps": 0,
+      "sovietReplacementSteps": 5,
+      "auditStatus": "extracted-not-individually-verified"
+    },
+    {
+      "id": "aid.track.turn-2",
+      "region": "Game Turn Record Track",
+      "turn": 2,
+      "germanReplacementSteps": 1,
+      "sovietReplacementSteps": 5,
+      "auditStatus": "extracted-not-individually-verified"
+    },
+    {
+      "id": "aid.track.turn-3",
+      "region": "Game Turn Record Track",
+      "turn": 3,
+      "germanReplacementSteps": 1,
+      "sovietReplacementSteps": 5,
+      "auditStatus": "extracted-not-individually-verified"
+    },
+    {
+      "id": "aid.track.turn-4",
+      "region": "Game Turn Record Track",
+      "turn": 4,
+      "germanReplacementSteps": 1,
+      "sovietReplacementSteps": 5,
+      "auditStatus": "extracted-not-individually-verified"
+    },
+    {
+      "id": "aid.track.turn-5",
+      "region": "Game Turn Record Track",
+      "turn": 5,
+      "germanReplacementSteps": 1,
+      "sovietReplacementSteps": 5,
+      "auditStatus": "extracted-not-individually-verified"
+    },
+    {
+      "id": "aid.track.turn-6",
+      "region": "Game Turn Record Track",
+      "turn": 6,
+      "germanReplacementSteps": 1,
+      "sovietReplacementSteps": 5,
+      "auditStatus": "extracted-not-individually-verified"
+    },
+    {
+      "id": "aid.track.turn-7",
+      "region": "Game Turn Record Track",
+      "turn": 7,
+      "germanReplacementSteps": 1,
+      "sovietReplacementSteps": 5,
+      "auditStatus": "extracted-not-individually-verified"
+    }
+  ],
+  "openQuestions": [
+    {
+      "id": "AID-TRACK-001",
+      "issue": "Player Aid displays Soviet replacement count 5 for mud turns 3 and 4, while the bundled oberlabs_2009_web rules profile uses 4. This is a genuine source/profile difference; preserve Oberlabs profile pending independent reference confirmation.",
+      "status": "unresolved-source-vs-profile"
+    },
+    {
+      "id": "AID-MUD-001",
+      "issue": "Aid says combat strength halved when attacking during mud; printed \u00a712.2 clarifies Panzer/Tank only, infantry unaffected; matches current profile.",
+      "status": "resolved-with-pdf"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "checkpoint": 234,
+  "version": "v468",
+  "assertions": 100,
+  "scope": "Kiev source-constrained pre-game placement choices",
+  "source": "kiev-rules.pdf §6.0 / source marker map and photographed counter sheets",
+  "groups": {
+    "germanInitialPanzer": 7,
+    "germanPolandInfantry": 7,
+    "germanRomaniaInfantry": 4,
+    "romanianInitialArmy": 4,
+    "sovietFrontArmies": 10,
+    "sovietFrontMechanized": 10,
+    "sovietFixedArmies": 2,
+    "sovietFixedMechanized": 4
+  },
+  "startingCounters": 30,
+  "concealedMechanized": 10,
+  "productionAuthorized": false,
+  "movementGraphCertified": false,
+  "status": "candidate setup validation passed; live Kiev campaign still gated"
+}

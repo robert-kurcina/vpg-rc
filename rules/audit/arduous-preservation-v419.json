@@ -1,0 +1,25 @@
+{
+  "checkpoint": 185,
+  "version": "v419",
+  "referenceArchive": "hex_wargame_v418_CHECKPOINT_184_RIVER_CANDIDATES_ONLY.zip",
+  "protectedHashesUnchanged": 17,
+  "files": {
+    "exports/arduous.svg": true,
+    "exports/arduous.png": true,
+    "exports/battle-for-moscow.svg": true,
+    "exports/battle-for-moscow.png": true,
+    "exports/leningrad.svg": true,
+    "exports/leningrad.png": true,
+    "exports/kiev.svg": true,
+    "exports/kiev.png": true,
+    "exports/kiev-odessa.svg": true,
+    "exports/kiev-odessa.png": true,
+    "maps/arduous.json": true,
+    "maps/leningrad.json": true,
+    "maps/kiev.json": true,
+    "maps/odessa-extension.json": true,
+    "core/historical_crt.js": true,
+    "core/terrain_tiles.js": true,
+    "core/terrain_adapter.js": true
+  }
+}

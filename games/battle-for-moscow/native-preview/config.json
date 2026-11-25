@@ -1,0 +1,287 @@
+{
+  "schemaVersion": 1,
+  "scenarioId": "battle-for-moscow",
+  "status": "shared-native",
+  "notes": "Shared-engine Battle for Moscow gameplay policy. Historical source data and shared CRT are preserved; setup-coordinate and full Oberlabs UX certification remain open.",
+  "overrides": {
+    "game": {
+      "engine": "generic-hex-v1"
+    },
+    "rules": {
+      "initialPhaseId": "combat",
+      "phasesBySide": {
+        "german": [
+          {
+            "id": "replacement",
+            "kind": "replacement"
+          },
+          {
+            "id": "panzer",
+            "kind": "move",
+            "movementMode": "panzer",
+            "allowedUnitTypes": [
+              "tank"
+            ]
+          },
+          {
+            "id": "combat",
+            "kind": "combat",
+            "declarationMode": "simultaneous"
+          },
+          {
+            "id": "movement",
+            "kind": "move",
+            "movementMode": "normal"
+          }
+        ],
+        "soviet": [
+          {
+            "id": "replacement",
+            "kind": "replacement"
+          },
+          {
+            "id": "rail",
+            "kind": "move",
+            "movementMode": "rail",
+            "allowedFactions": [
+              "soviet"
+            ],
+            "maxDistance": 4
+          },
+          {
+            "id": "combat",
+            "kind": "combat",
+            "declarationMode": "simultaneous"
+          },
+          {
+            "id": "movement",
+            "kind": "move",
+            "movementMode": "normal"
+          }
+        ]
+      },
+      "movement": {
+        "terrainCosts": {
+          "open": 1,
+          "forest": 2,
+          "fortification": 1
+        },
+        "friendlyTransit": true,
+        "zocStops": true,
+        "railAllowance": 4,
+        "railRequiresReciprocal": false
+      },
+      "weather": [
+        {
+          "turns": [
+            3,
+            4
+          ],
+          "name": "mud",
+          "normalMovementLimit": 1,
+          "combatMultipliers": {
+            "tank": 0.5,
+            "infantry": 1,
+            "shock": 1
+          },
+          "railUnaffected": true,
+          "mudIgnoresTerrainCosts": true
+        }
+      ],
+      "combat": {
+        "terrainDefenderFactions": {
+          "fortification": [
+            "soviet"
+          ]
+        },
+        "retreatModule": "retreat-radial-zoc-v1",
+        "exchangeMode": "match-defender-step-loss",
+        "defaultLossPriority": "weakest",
+        "defaultAdvancePriority": "weakest",
+        "retreatTieBreakByFaction": {
+          "soviet": "x-desc",
+          "german": "x-asc"
+        }
+      },
+      "replacements": {
+        "excludedTypesUntilTurn": {
+          "shock": 4
+        },
+        "entryStrength": "reduced",
+        "preventSameTurnEntryRestore": true
+      }
+    },
+    "deployments": {
+      "presets": [
+        {
+          "id": "auto-reference",
+          "label": "B4M source baseline automated placement",
+          "units": {
+            "g24": {
+              "x": 0,
+              "y": 3
+            },
+            "g41": {
+              "x": 1,
+              "y": 3
+            },
+            "g57": {
+              "x": 1,
+              "y": 4
+            },
+            "g46": {
+              "x": 2,
+              "y": 4
+            },
+            "g47": {
+              "x": 3,
+              "y": 4
+            },
+            "g56": {
+              "x": 0,
+              "y": 5
+            },
+            "g40": {
+              "x": 1,
+              "y": 5
+            },
+            "g48": {
+              "x": 2,
+              "y": 5
+            },
+            "g23": {
+              "x": 1,
+              "y": 6
+            },
+            "g35": {
+              "x": 2,
+              "y": 6
+            },
+            "g7": {
+              "x": 3,
+              "y": 6
+            },
+            "g8": {
+              "x": 3,
+              "y": 7
+            },
+            "g9": {
+              "x": 1,
+              "y": 1
+            },
+            "g5": {
+              "x": 0,
+              "y": 2
+            },
+            "g13": {
+              "x": 1,
+              "y": 2
+            },
+            "g20": {
+              "x": 2,
+              "y": 8
+            },
+            "g27": {
+              "x": 3,
+              "y": 8
+            },
+            "g53": {
+              "x": 1,
+              "y": 9
+            },
+            "g6": {
+              "x": 2,
+              "y": 9
+            },
+            "g12": {
+              "x": 3,
+              "y": 9
+            },
+            "g34": {
+              "x": 1,
+              "y": 10
+            },
+            "g42": {
+              "x": 3,
+              "y": 10
+            }
+          }
+        }
+      ],
+      "placementTags": {
+        "german": "germanStart"
+      },
+      "requiredCounts": {
+        "german": 22,
+        "soviet": 14
+      },
+      "manualSetup": {
+        "side": "german",
+        "phaseId": "setup",
+        "zoneTag": "germanStart",
+        "unitCount": 22
+      },
+      "interactiveReinforcements": [
+        {
+          "id": "turn4-shock",
+          "turn": 4,
+          "side": "soviet",
+          "phaseId": "reinforcement",
+          "beforePhase": "replacement",
+          "unitId": "s1sh",
+          "entryTag": "sovietReplacement",
+          "requiresEmpty": true,
+          "forbidEnemyZoc": true,
+          "strength": "full"
+        }
+      ],
+      "openingRedeployment": {
+        "id": "b4m-reserve-redeployment-candidate",
+        "phaseId": "opening-redeployment",
+        "side": "soviet",
+        "afterSetupSide": "german",
+        "unitIds": [
+          "s16",
+          "s30",
+          "s43"
+        ],
+        "initialPositions": {
+          "s16": [
+            4,
+            2
+          ],
+          "s30": [
+            5,
+            8
+          ],
+          "s43": [
+            7,
+            3
+          ]
+        },
+        "eastPolicy": "strictly-east-of-all-nonreserve-friendly-opening-hexes",
+        "requiresEmpty": true,
+        "forbidEnemyZoc": true,
+        "source": "https://oberlabs.com/b4m/tournamentrules.html",
+        "certification": "candidate-unverified",
+        "sourceHexes": [
+          "0503",
+          "0608",
+          "0803"
+        ],
+        "registeredHexes": [
+          "0503",
+          "0609",
+          "0804"
+        ],
+        "sourceDiscrepancy": "Tournament text locates 0608/0803 (Mozhaisk), but the baseline board gives 0609/0804 (Mozhaisk). IDs resolved from non-ZOC reserves; exact destination perimeter remains unverified."
+      }
+    }
+  },
+  "stackingVariant": {
+    "id": "double",
+    "maxCombatUnits": 2,
+    "cityHoldPolicy": "one-step-choice",
+    "strictMinimumOdds": true
+  }
+}

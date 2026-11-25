@@ -1,0 +1,697 @@
+{
+  "version": 2,
+  "ruleset": "oberlabs_2009_web",
+  "notes": "32 legal German counter placements (8 doctrine families x 4 variants), 8 Soviet fixed-start response schedules. Two independent seeds: deployment seed chooses bounded arrangement variants and combat seed controls original PRNG. All policies experimental, no Soviet initial redeployment.",
+  "german": [
+    {
+      "id": "G1",
+      "name": "Balanced Front",
+      "setup": "balanced",
+      "schedule": [
+        "balanced",
+        "balanced",
+        "aggressive",
+        "envelop",
+        "envelop",
+        "aggressive",
+        "aggressive"
+      ],
+      "focus": "Distributed infantry and armor; adaptable central assault",
+      "family": "F1",
+      "variant": 0,
+      "legacy": true
+    },
+    {
+      "id": "G2",
+      "name": "Southern Panzer Sweep",
+      "setup": "south-tanks",
+      "schedule": [
+        "sweep",
+        "sweep",
+        "sweep",
+        "sweep",
+        "adaptive",
+        "envelop",
+        "envelop"
+      ],
+      "focus": "Southern breakthrough, eastern replacement interdiction, infantry relief",
+      "family": "F2",
+      "variant": 0,
+      "legacy": true
+    },
+    {
+      "id": "G3",
+      "name": "Double Envelopment",
+      "setup": "split-tanks",
+      "schedule": [
+        "north-route",
+        "north-route",
+        "envelop",
+        "envelop",
+        "envelop",
+        "aggressive",
+        "aggressive"
+      ],
+      "focus": "Four panzer corps each in northern and southern approaches; converge at Moscow",
+      "family": "F3",
+      "variant": 0,
+      "legacy": true
+    },
+    {
+      "id": "G4",
+      "name": "Central Breakthrough",
+      "setup": "center-tanks",
+      "schedule": [
+        "aggressive",
+        "aggressive",
+        "aggressive",
+        "envelop",
+        "envelop",
+        "aggressive",
+        "aggressive"
+      ],
+      "focus": "Concentrate strongest combat formations along the middle of the front",
+      "family": "F4",
+      "variant": 0,
+      "legacy": true
+    },
+    {
+      "id": "G5",
+      "name": "Southern Breakthrough / Early Pivot",
+      "setup": "south-front",
+      "schedule": [
+        "sweep",
+        "sweep",
+        "envelop",
+        "envelop",
+        "envelop",
+        "aggressive",
+        "aggressive"
+      ],
+      "focus": "Exploit southern entry, pivot toward Moscow before a complete eastern blockade",
+      "family": "F5",
+      "variant": 0,
+      "legacy": true
+    },
+    {
+      "id": "G6",
+      "name": "Northern Concentration",
+      "setup": "north-front",
+      "schedule": [
+        "north-route",
+        "north-route",
+        "north-route",
+        "envelop",
+        "envelop",
+        "aggressive",
+        "aggressive"
+      ],
+      "focus": "Concentrate eight tanks along northern approaches",
+      "family": "F6",
+      "variant": 0,
+      "legacy": false
+    },
+    {
+      "id": "G7",
+      "name": "Infantry First Wave",
+      "setup": "infantry-wave",
+      "schedule": [
+        "aggressive",
+        "aggressive",
+        "aggressive",
+        "aggressive",
+        "envelop",
+        "envelop",
+        "aggressive"
+      ],
+      "focus": "Put stronger infantry forward and keep armor in second echelon",
+      "family": "F7",
+      "variant": 0,
+      "legacy": false
+    },
+    {
+      "id": "G8",
+      "name": "Armored Reserve",
+      "setup": "armored-reserve",
+      "schedule": [
+        "balanced",
+        "sweep",
+        "aggressive",
+        "envelop",
+        "envelop",
+        "envelop",
+        "aggressive"
+      ],
+      "focus": "Four lead tanks with four as central/southern operational reserve",
+      "family": "F8",
+      "variant": 0,
+      "legacy": false
+    },
+    {
+      "id": "G9",
+      "name": "Balanced Front / Variant 2",
+      "setup": "balanced",
+      "schedule": [
+        "balanced",
+        "balanced",
+        "aggressive",
+        "envelop",
+        "envelop",
+        "aggressive",
+        "aggressive"
+      ],
+      "focus": "Distributed infantry and armor; flexibility; alternative combat-strength assignment and forward/rear counter slots",
+      "family": "F1",
+      "variant": 1,
+      "legacy": false
+    },
+    {
+      "id": "G10",
+      "name": "Southern Panzer Sweep / Variant 2",
+      "setup": "south-tanks",
+      "schedule": [
+        "sweep",
+        "sweep",
+        "sweep",
+        "sweep",
+        "adaptive",
+        "envelop",
+        "envelop"
+      ],
+      "focus": "Forward armor to the southeastern entry routes; alternative combat-strength assignment and forward/rear counter slots",
+      "family": "F2",
+      "variant": 1,
+      "legacy": false
+    },
+    {
+      "id": "G11",
+      "name": "Double Envelopment / Variant 2",
+      "setup": "split-tanks",
+      "schedule": [
+        "north-route",
+        "north-route",
+        "envelop",
+        "envelop",
+        "envelop",
+        "aggressive",
+        "aggressive"
+      ],
+      "focus": "Split armor across north/south approaches; alternative combat-strength assignment and forward/rear counter slots",
+      "family": "F3",
+      "variant": 1,
+      "legacy": false
+    },
+    {
+      "id": "G12",
+      "name": "Central Breakthrough / Variant 2",
+      "setup": "center-tanks",
+      "schedule": [
+        "aggressive",
+        "aggressive",
+        "aggressive",
+        "envelop",
+        "envelop",
+        "aggressive",
+        "aggressive"
+      ],
+      "focus": "Concentrate central attack ratios; alternative combat-strength assignment and forward/rear counter slots",
+      "family": "F4",
+      "variant": 1,
+      "legacy": false
+    },
+    {
+      "id": "G13",
+      "name": "Southern Early Pivot / Variant 2",
+      "setup": "south-front",
+      "schedule": [
+        "sweep",
+        "sweep",
+        "envelop",
+        "envelop",
+        "envelop",
+        "aggressive",
+        "aggressive"
+      ],
+      "focus": "Southern opening followed by capital approach; alternative combat-strength assignment and forward/rear counter slots",
+      "family": "F5",
+      "variant": 1,
+      "legacy": false
+    },
+    {
+      "id": "G14",
+      "name": "Northern Concentration / Variant 2",
+      "setup": "north-front",
+      "schedule": [
+        "north-route",
+        "north-route",
+        "north-route",
+        "envelop",
+        "envelop",
+        "aggressive",
+        "aggressive"
+      ],
+      "focus": "Concentrate eight tanks along northern approaches; alternative combat-strength assignment and forward/rear counter slots",
+      "family": "F6",
+      "variant": 1,
+      "legacy": false
+    },
+    {
+      "id": "G15",
+      "name": "Infantry First Wave / Variant 2",
+      "setup": "infantry-wave",
+      "schedule": [
+        "aggressive",
+        "aggressive",
+        "aggressive",
+        "aggressive",
+        "envelop",
+        "envelop",
+        "aggressive"
+      ],
+      "focus": "Put stronger infantry forward and keep armor in second echelon; alternative combat-strength assignment and forward/rear counter slots",
+      "family": "F7",
+      "variant": 1,
+      "legacy": false
+    },
+    {
+      "id": "G16",
+      "name": "Armored Reserve / Variant 2",
+      "setup": "armored-reserve",
+      "schedule": [
+        "balanced",
+        "sweep",
+        "aggressive",
+        "envelop",
+        "envelop",
+        "envelop",
+        "aggressive"
+      ],
+      "focus": "Four lead tanks with four as central/southern operational reserve; alternative combat-strength assignment and forward/rear counter slots",
+      "family": "F8",
+      "variant": 1,
+      "legacy": false
+    },
+    {
+      "id": "G17",
+      "name": "Balanced Front / Variant 3",
+      "setup": "balanced",
+      "schedule": [
+        "balanced",
+        "balanced",
+        "aggressive",
+        "envelop",
+        "envelop",
+        "aggressive",
+        "aggressive"
+      ],
+      "focus": "Distributed infantry and armor; flexibility; alternative combat-strength assignment and forward/rear counter slots",
+      "family": "F1",
+      "variant": 2,
+      "legacy": false
+    },
+    {
+      "id": "G18",
+      "name": "Southern Panzer Sweep / Variant 3",
+      "setup": "south-tanks",
+      "schedule": [
+        "sweep",
+        "sweep",
+        "sweep",
+        "sweep",
+        "adaptive",
+        "envelop",
+        "envelop"
+      ],
+      "focus": "Forward armor to the southeastern entry routes; alternative combat-strength assignment and forward/rear counter slots",
+      "family": "F2",
+      "variant": 2,
+      "legacy": false
+    },
+    {
+      "id": "G19",
+      "name": "Double Envelopment / Variant 3",
+      "setup": "split-tanks",
+      "schedule": [
+        "north-route",
+        "north-route",
+        "envelop",
+        "envelop",
+        "envelop",
+        "aggressive",
+        "aggressive"
+      ],
+      "focus": "Split armor across north/south approaches; alternative combat-strength assignment and forward/rear counter slots",
+      "family": "F3",
+      "variant": 2,
+      "legacy": false
+    },
+    {
+      "id": "G20",
+      "name": "Central Breakthrough / Variant 3",
+      "setup": "center-tanks",
+      "schedule": [
+        "aggressive",
+        "aggressive",
+        "aggressive",
+        "envelop",
+        "envelop",
+        "aggressive",
+        "aggressive"
+      ],
+      "focus": "Concentrate central attack ratios; alternative combat-strength assignment and forward/rear counter slots",
+      "family": "F4",
+      "variant": 2,
+      "legacy": false
+    },
+    {
+      "id": "G21",
+      "name": "Southern Early Pivot / Variant 3",
+      "setup": "south-front",
+      "schedule": [
+        "sweep",
+        "sweep",
+        "envelop",
+        "envelop",
+        "envelop",
+        "aggressive",
+        "aggressive"
+      ],
+      "focus": "Southern opening followed by capital approach; alternative combat-strength assignment and forward/rear counter slots",
+      "family": "F5",
+      "variant": 2,
+      "legacy": false
+    },
+    {
+      "id": "G22",
+      "name": "Northern Concentration / Variant 3",
+      "setup": "north-front",
+      "schedule": [
+        "north-route",
+        "north-route",
+        "north-route",
+        "envelop",
+        "envelop",
+        "aggressive",
+        "aggressive"
+      ],
+      "focus": "Concentrate eight tanks along northern approaches; alternative combat-strength assignment and forward/rear counter slots",
+      "family": "F6",
+      "variant": 2,
+      "legacy": false
+    },
+    {
+      "id": "G23",
+      "name": "Infantry First Wave / Variant 3",
+      "setup": "infantry-wave",
+      "schedule": [
+        "aggressive",
+        "aggressive",
+        "aggressive",
+        "aggressive",
+        "envelop",
+        "envelop",
+        "aggressive"
+      ],
+      "focus": "Put stronger infantry forward and keep armor in second echelon; alternative combat-strength assignment and forward/rear counter slots",
+      "family": "F7",
+      "variant": 2,
+      "legacy": false
+    },
+    {
+      "id": "G24",
+      "name": "Armored Reserve / Variant 3",
+      "setup": "armored-reserve",
+      "schedule": [
+        "balanced",
+        "sweep",
+        "aggressive",
+        "envelop",
+        "envelop",
+        "envelop",
+        "aggressive"
+      ],
+      "focus": "Four lead tanks with four as central/southern operational reserve; alternative combat-strength assignment and forward/rear counter slots",
+      "family": "F8",
+      "variant": 2,
+      "legacy": false
+    },
+    {
+      "id": "G25",
+      "name": "Balanced Front / Variant 4",
+      "setup": "balanced",
+      "schedule": [
+        "balanced",
+        "balanced",
+        "aggressive",
+        "envelop",
+        "envelop",
+        "aggressive",
+        "aggressive"
+      ],
+      "focus": "Distributed infantry and armor; flexibility; alternative combat-strength assignment and forward/rear counter slots",
+      "family": "F1",
+      "variant": 3,
+      "legacy": false
+    },
+    {
+      "id": "G26",
+      "name": "Southern Panzer Sweep / Variant 4",
+      "setup": "south-tanks",
+      "schedule": [
+        "sweep",
+        "sweep",
+        "sweep",
+        "sweep",
+        "adaptive",
+        "envelop",
+        "envelop"
+      ],
+      "focus": "Forward armor to the southeastern entry routes; alternative combat-strength assignment and forward/rear counter slots",
+      "family": "F2",
+      "variant": 3,
+      "legacy": false
+    },
+    {
+      "id": "G27",
+      "name": "Double Envelopment / Variant 4",
+      "setup": "split-tanks",
+      "schedule": [
+        "north-route",
+        "north-route",
+        "envelop",
+        "envelop",
+        "envelop",
+        "aggressive",
+        "aggressive"
+      ],
+      "focus": "Split armor across north/south approaches; alternative combat-strength assignment and forward/rear counter slots",
+      "family": "F3",
+      "variant": 3,
+      "legacy": false
+    },
+    {
+      "id": "G28",
+      "name": "Central Breakthrough / Variant 4",
+      "setup": "center-tanks",
+      "schedule": [
+        "aggressive",
+        "aggressive",
+        "aggressive",
+        "envelop",
+        "envelop",
+        "aggressive",
+        "aggressive"
+      ],
+      "focus": "Concentrate central attack ratios; alternative combat-strength assignment and forward/rear counter slots",
+      "family": "F4",
+      "variant": 3,
+      "legacy": false
+    },
+    {
+      "id": "G29",
+      "name": "Southern Early Pivot / Variant 4",
+      "setup": "south-front",
+      "schedule": [
+        "sweep",
+        "sweep",
+        "envelop",
+        "envelop",
+        "envelop",
+        "aggressive",
+        "aggressive"
+      ],
+      "focus": "Southern opening followed by capital approach; alternative combat-strength assignment and forward/rear counter slots",
+      "family": "F5",
+      "variant": 3,
+      "legacy": false
+    },
+    {
+      "id": "G30",
+      "name": "Northern Concentration / Variant 4",
+      "setup": "north-front",
+      "schedule": [
+        "north-route",
+        "north-route",
+        "north-route",
+        "envelop",
+        "envelop",
+        "aggressive",
+        "aggressive"
+      ],
+      "focus": "Concentrate eight tanks along northern approaches; alternative combat-strength assignment and forward/rear counter slots",
+      "family": "F6",
+      "variant": 3,
+      "legacy": false
+    },
+    {
+      "id": "G31",
+      "name": "Infantry First Wave / Variant 4",
+      "setup": "infantry-wave",
+      "schedule": [
+        "aggressive",
+        "aggressive",
+        "aggressive",
+        "aggressive",
+        "envelop",
+        "envelop",
+        "aggressive"
+      ],
+      "focus": "Put stronger infantry forward and keep armor in second echelon; alternative combat-strength assignment and forward/rear counter slots",
+      "family": "F7",
+      "variant": 3,
+      "legacy": false
+    },
+    {
+      "id": "G32",
+      "name": "Armored Reserve / Variant 4",
+      "setup": "armored-reserve",
+      "schedule": [
+        "balanced",
+        "sweep",
+        "aggressive",
+        "envelop",
+        "envelop",
+        "envelop",
+        "aggressive"
+      ],
+      "focus": "Four lead tanks with four as central/southern operational reserve; alternative combat-strength assignment and forward/rear counter slots",
+      "family": "F8",
+      "variant": 3,
+      "legacy": false
+    }
+  ],
+  "soviet": [
+    {
+      "id": "S1",
+      "name": "Historical/Balanced",
+      "schedule": [
+        "balanced",
+        "balanced",
+        "balanced",
+        "balanced",
+        "balanced",
+        "balanced",
+        "balanced"
+      ],
+      "focus": "Fixed historical setup and broadly distributed replacements"
+    },
+    {
+      "id": "S2",
+      "name": "Moscow Fortress",
+      "schedule": [
+        "fortress",
+        "fortress",
+        "fortress",
+        "fortress",
+        "fortress",
+        "fortress",
+        "fortress"
+      ],
+      "focus": "Capital garrison and fortification restoration first"
+    },
+    {
+      "id": "S3",
+      "name": "Forward ZOC Screen",
+      "schedule": [
+        "screen",
+        "screen",
+        "screen",
+        "fortress",
+        "screen",
+        "fortress",
+        "fortress"
+      ],
+      "focus": "Sacrificial screening to slow armor and prevent encirclement"
+    },
+    {
+      "id": "S4",
+      "name": "Defense in Depth",
+      "schedule": [
+        "railguard",
+        "railguard",
+        "railguard",
+        "fortress",
+        "railguard",
+        "fortress",
+        "fortress"
+      ],
+      "focus": "Rail-supported redeployment, fallback, and layered defense"
+    },
+    {
+      "id": "S5",
+      "name": "Anti-Sweep Counterattack",
+      "schedule": [
+        "counter",
+        "counter",
+        "counter",
+        "fortress",
+        "counter",
+        "fortress",
+        "fortress"
+      ],
+      "focus": "Pressure German flank and eastern screening units"
+    },
+    {
+      "id": "S6",
+      "name": "Eastern Rail / Entry Protection",
+      "schedule": [
+        "railguard",
+        "counter",
+        "railguard",
+        "fortress",
+        "screen",
+        "fortress",
+        "fortress"
+      ],
+      "focus": "Mixed rail and counter policies intended to preserve eastern reinforcement access; no new special movement rule"
+    },
+    {
+      "id": "S7",
+      "name": "Central Strongpoint Defense",
+      "schedule": [
+        "fortress",
+        "railguard",
+        "fortress",
+        "fortress",
+        "fortress",
+        "counter",
+        "fortress"
+      ],
+      "focus": "Capital-first replacement and rail choices, holding fortifications where practical"
+    },
+    {
+      "id": "S8",
+      "name": "Mobile Reserve Response",
+      "schedule": [
+        "screen",
+        "counter",
+        "railguard",
+        "fortress",
+        "screen",
+        "railguard",
+        "fortress"
+      ],
+      "focus": "Screening followed by counterattacks and rail movement; not a learned policy"
+    }
+  ]
+}

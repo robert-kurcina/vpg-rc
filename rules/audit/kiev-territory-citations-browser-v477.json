@@ -1,0 +1,11 @@
+{
+  "checkpoint": 243,
+  "version": "v477",
+  "assertions": 48,
+  "status": "PASS",
+  "source": "approved original source SVG export; original Kiev geometry/setup JSON; explicit territory draft adapter",
+  "screenshot": "rules/audit/visual/kiev-territory-review-browser-v470.png",
+  "gameplayAuthorized": false,
+  "sourceTerritoryCertified": false,
+  "scope": "Actual interactive Chromium desktop and touch, UI clicks, source pins, v2 citation attribution, v1 migration, checksum, keyboard"
+}

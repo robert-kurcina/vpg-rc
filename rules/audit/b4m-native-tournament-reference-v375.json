@@ -1,0 +1,58 @@
+{
+  "checkpoint": 141,
+  "version": "v375",
+  "milestone": "Read-only published Oberlabs tournament scoring reference; tournament setup and play disabled",
+  "sourceEvidence": {
+    "officialTournamentRules": "https://oberlabs.com/b4m/tournamentrules.html",
+    "officialCommunicationRules": "https://oberlabs.com/b4m/rules.html",
+    "upstreamExecutableScoreFunctionVerified": false,
+    "rulesTextOverlap": "German minor and Soviet minor both qualify if the Soviets control isolated Moscow while Germans control Tula. Scorer refuses to assign a primary winner or total score."
+  },
+  "sourceRules": {
+    "primaryDescriptions": 6,
+    "bonuses": 2,
+    "panzerPreservationStepsAtLeast": 12,
+    "panzerAttritionStepsAtMost": 7,
+    "communicationOriginException": "disabled for tournament only; still active for normal replacement checks",
+    "tournamentFirstTurnRedeployment": "NOT IMPLEMENTED"
+  },
+  "testEvidence": {
+    "node": "tests/b4m-native-tournament-reference-v375.test.js",
+    "browser": "scripts/verify-native-tournament-v375.py",
+    "browserSourceAssetsDecoded": 40,
+    "initialCityStatuses": 11,
+    "bonusStepBoundaries": [
+      0,
+      7,
+      8,
+      11,
+      12,
+      16
+    ],
+    "specialScoringFixtures": [
+      "Moscow isolated",
+      "Tula isolated",
+      "both isolated",
+      "both minor outcomes overlap"
+    ],
+    "readOnlySaveHash": "unchanged",
+    "singleRenderer": "HexTerrainTiles.svgMap"
+  },
+  "previousCheckpointComparison": {
+    "input": "hex_wargame_v374_CHECKPOINT_140_NATIVE_CITY_CONTROL.zip",
+    "rendererAndExportFilesChecked": 28,
+    "allSameBytes": true,
+    "activeVisualBaseline": "v373 user accepted, no shadows"
+  },
+  "productionEngine": "legacy-b4m-v1",
+  "limitations": [
+    "No complete playable tournament redeployment mode",
+    "No independent original Oberlabs finalResults executable comparison",
+    "No hosted HTTP browser acceptance (administrator blocks local Chromium navigation)",
+    "Other four historical games not fully playable"
+  ],
+  "artifacts": [
+    "rules/audit/visual/b4m-tournament-reference-v375.png",
+    "rules/audit/visual/b4m-tournament-ambiguous-fixture-v375.png"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "loader": "core/roster.js",
+  "policy": "One roster API for every historical configuration. Identity does not establish playability; maps remain authoritative and gameplay is not activated by this registry.",
+  "entries": [
+    {"id":"battle-for-moscow","adapter":"canonical-engine-unit","units":"games/battle-for-moscow/units.json","counterConfig":"maps/counter-configs/battle-for-moscow.json","status":"executable-baseline"},
+    {"id":"arduous","adapter":"printed-pair","counterConfig":"maps/counter-configs/arduous.json","status":"roster-binding-pending"},
+    {"id":"leningrad","adapter":"printed-pair","counterConfig":"maps/counter-configs/leningrad.json","status":"roster-binding-pending"},
+    {"id":"kiev","adapter":"printed-pair","counterConfig":"maps/counter-configs/kiev.json","status":"roster-binding-pending"},
+    {"id":"kiev-odessa","base":"kiev","adapter":"composite-overlay","overlay":"maps/roster-overlays/kiev-odessa.json","counterConfig":"maps/counter-configs/odessa-extension.json","status":"roster-binding-pending"}
+  ]
+}

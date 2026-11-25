@@ -1,0 +1,14 @@
+{
+  "sourceImage": "/mnt/data/ghostwriter_images/context/0394694b-9a46-577a-bc8b-3d3fb0d64d6e.png",
+  "scope": "southwest Leningrad excerpt only",
+  "findings": {
+    "coastalGermanCrossHex": "0110",
+    "otherGermanCrossHexesVisible": ["0210", "0211", "0310", "0411"],
+    "sovietStarHexesVisible": ["0209", "0309", "0410", "0510", "0611"],
+    "note": "The excerpt is sufficient to correct the coastal cross placement, but not treated as authority for full-map renumbering beyond this local area."
+  },
+  "supersedesLocalClaim": {
+    "priorHex": "0109",
+    "correctedHex": "0110"
+  }
+}

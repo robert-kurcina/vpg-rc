@@ -1,0 +1,40 @@
+// Verify the source-supported base-plus-expansion composition; this is NOT a gameplay engine.
+const assert=require('node:assert/strict');
+const fs=require('node:fs');const path=require('node:path');
+const root=path.resolve(__dirname,'..');
+const read=(name)=>JSON.parse(fs.readFileSync(path.join(root,name),'utf8'));
+const roster=read('maps/roster-overlays/kiev-odessa.json');
+const kiev=read('maps/counter-configs/kiev.json');
+const odessa=read('maps/counter-configs/odessa-extension.json');
+const g=roster.setupConstraints.romanianGround;
+const base=g.baseGameContribution;
+assert.equal(g.count,4);
+assert.equal(base.count,1);
+assert.equal(g.expansionContribution.count,3);
+assert.equal(base.frontFaceId,'kiev-front-r02c08');
+const face=kiev.faces.front.find(f=>f.faceId===base.frontFaceId);
+assert.ok(face,'base Kiev Romanian face missing');
+assert.equal(face.visualTranscription.printedIdentifier,base.printedIdentifier);
+assert.equal(face.visualTranscription.printedAffiliation,base.side);
+assert.equal(face.visualTranscription.printedValues,base.printedValues);
+assert.equal(face.pairedFaceId,base.reverseFaceId);
+assert.ok(kiev.faces.back.some(f=>f.faceId===base.reverseFaceId));
+const names=g.expansionContribution.designKeys;
+assert.equal(new Set(names).size,3);
+assert.deepEqual([...names].sort(),[...g.units].sort());
+for(const key of names){
+ const u=roster.units.find(u=>u.designKey===key);
+ assert.ok(u,`missing expansion Romanian design ${key}`);
+ assert.equal(u.side,'romanian');
+ assert.equal(u.initial.kind,'region');
+ assert.equal(u.initial.region,'Romania');
+ assert.ok(odessa.playableDesignRegistry.some(d=>d.designKey===key));
+}
+assert.equal(g.count,base.count+names.length);
+const air=roster.units.find(u=>u.id===g.airSupportExclusion.unitId);
+assert.ok(air);assert.equal(air.initial.kind,'reinforcement-track');
+assert.equal(air.initial.turn,2);assert.ok(!names.includes(air.designKey));
+assert.equal(base.gameplayUnitId,null,'must not invent a historical gameplay unit ID');
+assert.equal(roster.units.length,8,'do not double-count source designs');
+assert.match(roster.readiness,/unbound/);
+console.log('PASS: Kiev Rom 3 face + 3 Odessa Romanian ground designs = 4 on-map; air marker turn 2');

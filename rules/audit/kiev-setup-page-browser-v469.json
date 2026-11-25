@@ -1,0 +1,11 @@
+{
+  "checkpoint": 235,
+  "version": "v469",
+  "assertions": 40,
+  "status": "PASS",
+  "scope": "packaged Kiev setup-only HTML in Chromium using in-memory original source JSON and identical shared map/counter vector assets; localhost unavailable",
+  "gameplayAuthorized": false,
+  "candidateLayoutCertifiedHistorical": false,
+  "screenshot": "rules/audit/visual/kiev-setup-browser-v469.png",
+  "mapSourceTested": "approved SVG engine export"
+}

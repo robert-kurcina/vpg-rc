@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "arduous",
+  "source": [
+    "references/rules/arduous-rules.pdf §§7.1, 8.1, 9.1–9.5",
+    "references/rules/arduous-aid.webp Terrain Effects Chart"
+  ],
+  "terrainCosts": {
+    "open": 1,
+    "city": 1,
+    "major-city": 1,
+    "fortification": 1,
+    "forest": 2,
+    "swamp": 2
+  },
+  "railCost": 1,
+  "maxStack": 2,
+  "allowFriendlyOverstackTransit": true,
+  "allowTemporaryMovementOverstack": true,
+  "sovietArmyMax": 1,
+  "mapBinding": "requires-verified-adjacency-and-rail-edges",
+  "executableStatus": "verified-test-fixtures-only",
+  "firstTurnSurpriseMovement": true,
+  "fullSpecialMovementClasses": {
+    "german": [
+      "panzer"
+    ],
+    "soviet": [
+      "mechanized"
+    ]
+  },
+  "nationalStackExclusions": [],
+  "majorRiverExtraCost": 0,
+  "riverCandidatePolicy": "side-follow-only; incidental SVG contacts are non-rivers; 45 source-reviewed internal candidates remain uncertified"
+}

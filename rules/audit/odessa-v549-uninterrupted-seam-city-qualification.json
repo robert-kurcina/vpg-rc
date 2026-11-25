@@ -1,0 +1,33 @@
+{
+  "checkpoint": 315,
+  "version": "v549",
+  "baseline": "v548/checkpoint 314",
+  "scope": "qualification tests and documentation; no gameplay rules or SVG changes",
+  "verified": {
+    "uninterruptedChromiumAssertions": 183,
+    "uninterruptedChromiumRuns": 2,
+    "archivedCampaignFailClosedChromiumAssertions": 15,
+    "originalSeamCityNodeAssertions": 54,
+    "selectedFaceSevenTurnNodeAssertions": 166,
+    "mixedSelectedReplayNodeAssertions": 98,
+    "readonlyProbeNodeAssertions": 154,
+    "approvedRetreatStyleNodeAssertions": 12,
+    "sourceAndCodeFilesByteIdentical": 373,
+    "seamRoute": [
+      "1010",
+      "1011",
+      "1112",
+      "1211"
+    ],
+    "cityControl": "Chisinau: soviet \u2192 german",
+    "terminalGroundCounters": 42,
+    "laterGroundReinforcements": 6
+  },
+  "explicitlyUnverified": [
+    "historical Romanian territorial mask",
+    "Odessa section 15.3 evacuation phase authority",
+    "rare and adversarial combat branch matrix",
+    "general nationwide movement/city-control certification"
+  ],
+  "legacySavePolicy": "v541 campaign saves rejected on changed source hash; existing deployment-editor save compatibility unaffected"
+}

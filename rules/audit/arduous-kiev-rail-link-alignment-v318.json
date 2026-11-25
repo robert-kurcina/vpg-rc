@@ -1,0 +1,3999 @@
+{
+  "schemaVersion": 1,
+  "type": "rail-svg-candidate-alignment-non-authorizing",
+  "maps": {
+    "arduous": {
+      "map": "arduous",
+      "sourceMapSha256": "0cf849eaf683cd86443d244f20e5d03f8dc18ba354f88861d039307da162742d",
+      "referenceSvgSha256": "423af8983fd90a5be17041922a612efba42bbff306683ead9fd6910413402ede",
+      "registration": {
+        "scaleX": 3.03609860959002,
+        "scaleY": 3.031995661473644,
+        "translateX": 35.31532034807905,
+        "translateY": -26.310315942197853,
+        "terrainCalibration": "robust 50-authored-hex center fit",
+        "calibrationResidualMeanPx": 1.538,
+        "calibrationResidualMaxPx": 3.974,
+        "sourceImage": "arduous-map-temp.png",
+        "sourceImageStatus": "external image referenced by uploaded SVG but not provided"
+      },
+      "totalCandidateLinks": 85,
+      "measuredLinks": 85,
+      "issues": [],
+      "diagnostics": {
+        "maximumEndpointDistancePx": 17.03,
+        "maximumMidpointDistancePx": 7.327,
+        "endpointMaxGreaterThan10Px": 19,
+        "endpointMaxGreaterThan20Px": 0,
+        "midpointGreaterThan10Px": 0,
+        "midpointGreaterThan20Px": 0
+      },
+      "candidates": [
+        {
+          "from": "0106",
+          "to": "0207",
+          "sourceSvgIds": [
+            "path373"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path373",
+            "fromDistancePx": 1.65,
+            "toDistancePx": 9.757,
+            "midpointDistancePx": 0.014
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path373",
+              "fromDistancePx": 1.65,
+              "toDistancePx": 9.757,
+              "midpointDistancePx": 0.014
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "0109",
+          "to": "0209",
+          "sourceSvgIds": [
+            "path372"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path372",
+            "fromDistancePx": 7.269,
+            "toDistancePx": 1.13,
+            "midpointDistancePx": 0.381
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path372",
+              "fromDistancePx": 7.269,
+              "toDistancePx": 1.13,
+              "midpointDistancePx": 0.381
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "0110",
+          "to": "0211",
+          "sourceSvgIds": [
+            "path370"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path370",
+            "fromDistancePx": 3.169,
+            "toDistancePx": 4.155,
+            "midpointDistancePx": 2.747
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path370",
+              "fromDistancePx": 3.169,
+              "toDistancePx": 4.155,
+              "midpointDistancePx": 2.747
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "0205",
+          "to": "0305",
+          "sourceSvgIds": [
+            "path374"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path374",
+            "fromDistancePx": 4.062,
+            "toDistancePx": 6.526,
+            "midpointDistancePx": 4.211
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path374",
+              "fromDistancePx": 4.062,
+              "toDistancePx": 6.526,
+              "midpointDistancePx": 4.211
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "0207",
+          "to": "0208",
+          "sourceSvgIds": [
+            "path373"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path373",
+            "fromDistancePx": 9.757,
+            "toDistancePx": 14.978,
+            "midpointDistancePx": 1.765
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path373",
+              "fromDistancePx": 9.757,
+              "toDistancePx": 14.978,
+              "midpointDistancePx": 1.765
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "0208",
+          "to": "0308",
+          "sourceSvgIds": [
+            "path373"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path373",
+            "fromDistancePx": 14.978,
+            "toDistancePx": 4.126,
+            "midpointDistancePx": 5.484
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path373",
+              "fromDistancePx": 14.978,
+              "toDistancePx": 4.126,
+              "midpointDistancePx": 5.484
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "0209",
+          "to": "0308",
+          "sourceSvgIds": [
+            "path372"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path372",
+            "fromDistancePx": 1.13,
+            "toDistancePx": 4.87,
+            "midpointDistancePx": 3.299
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path372",
+              "fromDistancePx": 1.13,
+              "toDistancePx": 4.87,
+              "midpointDistancePx": 3.299
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "0210",
+          "to": "0211",
+          "sourceSvgIds": [
+            "path369"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path369",
+            "fromDistancePx": 11.647,
+            "toDistancePx": 1.317,
+            "midpointDistancePx": 3.433
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path369",
+              "fromDistancePx": 11.647,
+              "toDistancePx": 1.317,
+              "midpointDistancePx": 3.433
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "0210",
+          "to": "0309",
+          "sourceSvgIds": [
+            "path369"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path369",
+            "fromDistancePx": 11.647,
+            "toDistancePx": 5.797,
+            "midpointDistancePx": 2.199
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path369",
+              "fromDistancePx": 11.647,
+              "toDistancePx": 5.797,
+              "midpointDistancePx": 2.199
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "0211",
+          "to": "0310",
+          "sourceSvgIds": [
+            "path377"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path377",
+            "fromDistancePx": 0.221,
+            "toDistancePx": 4.387,
+            "midpointDistancePx": 4.127
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path377",
+              "fromDistancePx": 0.221,
+              "toDistancePx": 4.387,
+              "midpointDistancePx": 4.127
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "0305",
+          "to": "0405",
+          "sourceSvgIds": [
+            "path374"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path374",
+            "fromDistancePx": 6.526,
+            "toDistancePx": 6.834,
+            "midpointDistancePx": 2.265
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path374",
+              "fromDistancePx": 6.526,
+              "toDistancePx": 6.834,
+              "midpointDistancePx": 2.265
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "0308",
+          "to": "0309",
+          "sourceSvgIds": [
+            "path369"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path369",
+            "fromDistancePx": 4.051,
+            "toDistancePx": 5.797,
+            "midpointDistancePx": 2.208
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path369",
+              "fromDistancePx": 4.051,
+              "toDistancePx": 5.797,
+              "midpointDistancePx": 2.208
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "0308",
+          "to": "0408",
+          "sourceSvgIds": [
+            "path367"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path367",
+            "fromDistancePx": 2.854,
+            "toDistancePx": 7.631,
+            "midpointDistancePx": 0.996
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path367",
+              "fromDistancePx": 2.854,
+              "toDistancePx": 7.631,
+              "midpointDistancePx": 0.996
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "0308",
+          "to": "0409",
+          "sourceSvgIds": [
+            "path368"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path368",
+            "fromDistancePx": 3.712,
+            "toDistancePx": 12.206,
+            "midpointDistancePx": 1.011
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path368",
+              "fromDistancePx": 3.712,
+              "toDistancePx": 12.206,
+              "midpointDistancePx": 1.011
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "0310",
+          "to": "0410",
+          "sourceSvgIds": [
+            "path377"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path377",
+            "fromDistancePx": 4.387,
+            "toDistancePx": 3.251,
+            "midpointDistancePx": 3.883
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path377",
+              "fromDistancePx": 4.387,
+              "toDistancePx": 3.251,
+              "midpointDistancePx": 3.883
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "0405",
+          "to": "0505",
+          "sourceSvgIds": [
+            "path375"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path375",
+            "fromDistancePx": 4.157,
+            "toDistancePx": 1.258,
+            "midpointDistancePx": 1.589
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path375",
+              "fromDistancePx": 4.157,
+              "toDistancePx": 1.258,
+              "midpointDistancePx": 1.589
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "0407",
+          "to": "0408",
+          "sourceSvgIds": [
+            "path367"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path367",
+            "fromDistancePx": 7.279,
+            "toDistancePx": 7.631,
+            "midpointDistancePx": 2.738
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path367",
+              "fromDistancePx": 7.279,
+              "toDistancePx": 7.631,
+              "midpointDistancePx": 2.738
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "0407",
+          "to": "0506",
+          "sourceSvgIds": [
+            "path367"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path367",
+            "fromDistancePx": 7.279,
+            "toDistancePx": 1.532,
+            "midpointDistancePx": 6.004
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path367",
+              "fromDistancePx": 7.279,
+              "toDistancePx": 1.532,
+              "midpointDistancePx": 6.004
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "0409",
+          "to": "0508",
+          "sourceSvgIds": [
+            "path368"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path368",
+            "fromDistancePx": 12.206,
+            "toDistancePx": 10.656,
+            "midpointDistancePx": 0.452
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path368",
+              "fromDistancePx": 12.206,
+              "toDistancePx": 10.656,
+              "midpointDistancePx": 0.452
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "0410",
+          "to": "0509",
+          "sourceSvgIds": [
+            "path377"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path377",
+            "fromDistancePx": 3.251,
+            "toDistancePx": 1.745,
+            "midpointDistancePx": 2.489
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path377",
+              "fromDistancePx": 3.251,
+              "toDistancePx": 1.745,
+              "midpointDistancePx": 2.489
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "0410",
+          "to": "0510",
+          "sourceSvgIds": [
+            "path378"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path378",
+            "fromDistancePx": 0.76,
+            "toDistancePx": 5.391,
+            "midpointDistancePx": 5.819
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path378",
+              "fromDistancePx": 0.76,
+              "toDistancePx": 5.391,
+              "midpointDistancePx": 5.819
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "0505",
+          "to": "0606",
+          "sourceSvgIds": [
+            "path375"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path375",
+            "fromDistancePx": 1.258,
+            "toDistancePx": 5.863,
+            "midpointDistancePx": 0.186
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path375",
+              "fromDistancePx": 1.258,
+              "toDistancePx": 5.863,
+              "midpointDistancePx": 0.186
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "0506",
+          "to": "0606",
+          "sourceSvgIds": [
+            "path367"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path367",
+            "fromDistancePx": 1.532,
+            "toDistancePx": 0.746,
+            "midpointDistancePx": 2.981
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path367",
+              "fromDistancePx": 1.532,
+              "toDistancePx": 0.746,
+              "midpointDistancePx": 2.981
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "0508",
+          "to": "0609",
+          "sourceSvgIds": [
+            "path368"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path368",
+            "fromDistancePx": 10.656,
+            "toDistancePx": 7.31,
+            "midpointDistancePx": 3.672
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path368",
+              "fromDistancePx": 10.656,
+              "toDistancePx": 7.31,
+              "midpointDistancePx": 3.672
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "0509",
+          "to": "0609",
+          "sourceSvgIds": [
+            "path377"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path377",
+            "fromDistancePx": 1.745,
+            "toDistancePx": 2.536,
+            "midpointDistancePx": 0.484
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path377",
+              "fromDistancePx": 1.745,
+              "toDistancePx": 2.536,
+              "midpointDistancePx": 0.484
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "0510",
+          "to": "0611",
+          "sourceSvgIds": [
+            "path378"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path378",
+            "fromDistancePx": 5.391,
+            "toDistancePx": 15.826,
+            "midpointDistancePx": 0.14
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path378",
+              "fromDistancePx": 5.391,
+              "toDistancePx": 15.826,
+              "midpointDistancePx": 0.14
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "0606",
+          "to": "0705",
+          "sourceSvgIds": [
+            "path376"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path376",
+            "fromDistancePx": 0.949,
+            "toDistancePx": 1.519,
+            "midpointDistancePx": 2.492
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path376",
+              "fromDistancePx": 0.949,
+              "toDistancePx": 1.519,
+              "midpointDistancePx": 2.492
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "0606",
+          "to": "0706",
+          "sourceSvgIds": [
+            "path364"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path364",
+            "fromDistancePx": 1.856,
+            "toDistancePx": 4.024,
+            "midpointDistancePx": 0.944
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path364",
+              "fromDistancePx": 1.856,
+              "toDistancePx": 4.024,
+              "midpointDistancePx": 0.944
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "0609",
+          "to": "0610",
+          "sourceSvgIds": [
+            "path366"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path366",
+            "fromDistancePx": 3.682,
+            "toDistancePx": 1.008,
+            "midpointDistancePx": 3.152
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path366",
+              "fromDistancePx": 3.682,
+              "toDistancePx": 1.008,
+              "midpointDistancePx": 3.152
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "0609",
+          "to": "0708",
+          "sourceSvgIds": [
+            "path365"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path365",
+            "fromDistancePx": 2.682,
+            "toDistancePx": 0.298,
+            "midpointDistancePx": 5.566
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path365",
+              "fromDistancePx": 2.682,
+              "toDistancePx": 0.298,
+              "midpointDistancePx": 5.566
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "0610",
+          "to": "0611",
+          "sourceSvgIds": [
+            "path366"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path366",
+            "fromDistancePx": 1.008,
+            "toDistancePx": 17.03,
+            "midpointDistancePx": 0.299
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path366",
+              "fromDistancePx": 1.008,
+              "toDistancePx": 17.03,
+              "midpointDistancePx": 0.299
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "0611",
+          "to": "0710",
+          "sourceSvgIds": [
+            "path379"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path379",
+            "fromDistancePx": 13.949,
+            "toDistancePx": 11.397,
+            "midpointDistancePx": 2.504
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path379",
+              "fromDistancePx": 13.949,
+              "toDistancePx": 11.397,
+              "midpointDistancePx": 2.504
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "0705",
+          "to": "0805",
+          "sourceSvgIds": [
+            "path376"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path376",
+            "fromDistancePx": 1.519,
+            "toDistancePx": 14.798,
+            "midpointDistancePx": 4.994
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path376",
+              "fromDistancePx": 1.519,
+              "toDistancePx": 14.798,
+              "midpointDistancePx": 4.994
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "0706",
+          "to": "0807",
+          "sourceSvgIds": [
+            "path364"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path364",
+            "fromDistancePx": 4.024,
+            "toDistancePx": 5.24,
+            "midpointDistancePx": 4.967
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path364",
+              "fromDistancePx": 4.024,
+              "toDistancePx": 5.24,
+              "midpointDistancePx": 4.967
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "0708",
+          "to": "0808",
+          "sourceSvgIds": [
+            "path365"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path365",
+            "fromDistancePx": 0.298,
+            "toDistancePx": 1.304,
+            "midpointDistancePx": 1.575
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path365",
+              "fromDistancePx": 0.298,
+              "toDistancePx": 1.304,
+              "midpointDistancePx": 1.575
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "0710",
+          "to": "0811",
+          "sourceSvgIds": [
+            "path379"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path379",
+            "fromDistancePx": 11.397,
+            "toDistancePx": 7.056,
+            "midpointDistancePx": 0.635
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path379",
+              "fromDistancePx": 11.397,
+              "toDistancePx": 7.056,
+              "midpointDistancePx": 0.635
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "0803",
+          "to": "0804",
+          "sourceSvgIds": [
+            "path376"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path376",
+            "fromDistancePx": 1.366,
+            "toDistancePx": 1.366,
+            "midpointDistancePx": 1.366
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path376",
+              "fromDistancePx": 1.366,
+              "toDistancePx": 1.366,
+              "midpointDistancePx": 1.366
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "0804",
+          "to": "0805",
+          "sourceSvgIds": [
+            "path376"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path376",
+            "fromDistancePx": 1.366,
+            "toDistancePx": 14.798,
+            "midpointDistancePx": 4.421
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path376",
+              "fromDistancePx": 1.366,
+              "toDistancePx": 14.798,
+              "midpointDistancePx": 4.421
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "0807",
+          "to": "0907",
+          "sourceSvgIds": [
+            "path364"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path364",
+            "fromDistancePx": 5.24,
+            "toDistancePx": 2.13,
+            "midpointDistancePx": 2.314
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path364",
+              "fromDistancePx": 5.24,
+              "toDistancePx": 2.13,
+              "midpointDistancePx": 2.314
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "0808",
+          "to": "0907",
+          "sourceSvgIds": [
+            "path365"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path365",
+            "fromDistancePx": 1.304,
+            "toDistancePx": 5.317,
+            "midpointDistancePx": 0.318
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path365",
+              "fromDistancePx": 1.304,
+              "toDistancePx": 5.317,
+              "midpointDistancePx": 0.318
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "0811",
+          "to": "0910",
+          "sourceSvgIds": [
+            "path379"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path379",
+            "fromDistancePx": 7.056,
+            "toDistancePx": 2.373,
+            "midpointDistancePx": 0.097
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path379",
+              "fromDistancePx": 7.056,
+              "toDistancePx": 2.373,
+              "midpointDistancePx": 0.097
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "0907",
+          "to": "1007",
+          "sourceSvgIds": [
+            "path352"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path352",
+            "fromDistancePx": 0.417,
+            "toDistancePx": 2.822,
+            "midpointDistancePx": 1.933
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path352",
+              "fromDistancePx": 0.417,
+              "toDistancePx": 2.822,
+              "midpointDistancePx": 1.933
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "0907",
+          "to": "1008",
+          "sourceSvgIds": [
+            "path363"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path363",
+            "fromDistancePx": 2.865,
+            "toDistancePx": 6.398,
+            "midpointDistancePx": 4.642
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path363",
+              "fromDistancePx": 2.865,
+              "toDistancePx": 6.398,
+              "midpointDistancePx": 4.642
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "0910",
+          "to": "1010",
+          "sourceSvgIds": [
+            "path379"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path379",
+            "fromDistancePx": 2.373,
+            "toDistancePx": 15.967,
+            "midpointDistancePx": 7.121
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path379",
+              "fromDistancePx": 2.373,
+              "toDistancePx": 15.967,
+              "midpointDistancePx": 7.121
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "1007",
+          "to": "1106",
+          "sourceSvgIds": [
+            "path352"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path352",
+            "fromDistancePx": 2.822,
+            "toDistancePx": 3.156,
+            "midpointDistancePx": 3.554
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path352",
+              "fromDistancePx": 2.822,
+              "toDistancePx": 3.156,
+              "midpointDistancePx": 3.554
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "1008",
+          "to": "1108",
+          "sourceSvgIds": [
+            "path363"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path363",
+            "fromDistancePx": 6.398,
+            "toDistancePx": 6.397,
+            "midpointDistancePx": 6.377
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path363",
+              "fromDistancePx": 6.398,
+              "toDistancePx": 6.397,
+              "midpointDistancePx": 6.377
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "1010",
+          "to": "1110",
+          "sourceSvgIds": [
+            "path379"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path379",
+            "fromDistancePx": 15.967,
+            "toDistancePx": 5.516,
+            "midpointDistancePx": 4.287
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path379",
+              "fromDistancePx": 15.967,
+              "toDistancePx": 5.516,
+              "midpointDistancePx": 4.287
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "1102",
+          "to": "1203",
+          "sourceSvgIds": [
+            "path346"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path346",
+            "fromDistancePx": 0.833,
+            "toDistancePx": 1.645,
+            "midpointDistancePx": 4.996
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path346",
+              "fromDistancePx": 0.833,
+              "toDistancePx": 1.645,
+              "midpointDistancePx": 4.996
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "1106",
+          "to": "1206",
+          "sourceSvgIds": [
+            "path352"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path352",
+            "fromDistancePx": 3.156,
+            "toDistancePx": 1.467,
+            "midpointDistancePx": 0.657
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path352",
+              "fromDistancePx": 3.156,
+              "toDistancePx": 1.467,
+              "midpointDistancePx": 0.657
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "1108",
+          "to": "1209",
+          "sourceSvgIds": [
+            "path363"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path363",
+            "fromDistancePx": 6.397,
+            "toDistancePx": 3.166,
+            "midpointDistancePx": 2.467
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path363",
+              "fromDistancePx": 6.397,
+              "toDistancePx": 3.166,
+              "midpointDistancePx": 2.467
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "1110",
+          "to": "1211",
+          "sourceSvgIds": [
+            "path379"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path379",
+            "fromDistancePx": 5.516,
+            "toDistancePx": 12.183,
+            "midpointDistancePx": 5.305
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path379",
+              "fromDistancePx": 5.516,
+              "toDistancePx": 12.183,
+              "midpointDistancePx": 5.305
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "1203",
+          "to": "1303",
+          "sourceSvgIds": [
+            "path347"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path347",
+            "fromDistancePx": 0.792,
+            "toDistancePx": 1.437,
+            "midpointDistancePx": 1.128
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path347",
+              "fromDistancePx": 0.792,
+              "toDistancePx": 1.437,
+              "midpointDistancePx": 1.128
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "1206",
+          "to": "1305",
+          "sourceSvgIds": [
+            "path352"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path352",
+            "fromDistancePx": 1.467,
+            "toDistancePx": 1.413,
+            "midpointDistancePx": 1.816
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path352",
+              "fromDistancePx": 1.467,
+              "toDistancePx": 1.413,
+              "midpointDistancePx": 1.816
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "1209",
+          "to": "1309",
+          "sourceSvgIds": [
+            "path363"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path363",
+            "fromDistancePx": 3.166,
+            "toDistancePx": 4.18,
+            "midpointDistancePx": 6.811
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path363",
+              "fromDistancePx": 3.166,
+              "toDistancePx": 4.18,
+              "midpointDistancePx": 6.811
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "1211",
+          "to": "1310",
+          "sourceSvgIds": [
+            "path379"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path379",
+            "fromDistancePx": 12.183,
+            "toDistancePx": 5.101,
+            "midpointDistancePx": 6.312
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path379",
+              "fromDistancePx": 12.183,
+              "toDistancePx": 5.101,
+              "midpointDistancePx": 6.312
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "1303",
+          "to": "1404",
+          "sourceSvgIds": [
+            "path347"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path347",
+            "fromDistancePx": 1.437,
+            "toDistancePx": 3.943,
+            "midpointDistancePx": 7.327
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path347",
+              "fromDistancePx": 1.437,
+              "toDistancePx": 3.943,
+              "midpointDistancePx": 7.327
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "1305",
+          "to": "1405",
+          "sourceSvgIds": [
+            "path352"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path352",
+            "fromDistancePx": 1.413,
+            "toDistancePx": 8.658,
+            "midpointDistancePx": 1.424
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path352",
+              "fromDistancePx": 1.413,
+              "toDistancePx": 8.658,
+              "midpointDistancePx": 1.424
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "1309",
+          "to": "1410",
+          "sourceSvgIds": [
+            "path363"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path363",
+            "fromDistancePx": 4.18,
+            "toDistancePx": 0.169,
+            "midpointDistancePx": 6.416
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path363",
+              "fromDistancePx": 4.18,
+              "toDistancePx": 0.169,
+              "midpointDistancePx": 6.416
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "1310",
+          "to": "1411",
+          "sourceSvgIds": [
+            "path379"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path379",
+            "fromDistancePx": 5.101,
+            "toDistancePx": 9.688,
+            "midpointDistancePx": 0.388
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path379",
+              "fromDistancePx": 5.101,
+              "toDistancePx": 9.688,
+              "midpointDistancePx": 0.388
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "1402",
+          "to": "1403",
+          "sourceSvgIds": [
+            "path349"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path349",
+            "fromDistancePx": 5.715,
+            "toDistancePx": 0.018,
+            "midpointDistancePx": 2.512
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path349",
+              "fromDistancePx": 5.715,
+              "toDistancePx": 0.018,
+              "midpointDistancePx": 2.512
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "1402",
+          "to": "1501",
+          "sourceSvgIds": [
+            "path355"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path355",
+            "fromDistancePx": 0.386,
+            "toDistancePx": 10.608,
+            "midpointDistancePx": 2.179
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path355",
+              "fromDistancePx": 0.386,
+              "toDistancePx": 10.608,
+              "midpointDistancePx": 2.179
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "1403",
+          "to": "1404",
+          "sourceSvgIds": [
+            "path349"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path349",
+            "fromDistancePx": 0.018,
+            "toDistancePx": 0.537,
+            "midpointDistancePx": 1.087
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path349",
+              "fromDistancePx": 0.018,
+              "toDistancePx": 0.537,
+              "midpointDistancePx": 1.087
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "1404",
+          "to": "1405",
+          "sourceSvgIds": [
+            "path350"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path350",
+            "fromDistancePx": 9.252,
+            "toDistancePx": 2.237,
+            "midpointDistancePx": 0.059
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path350",
+              "fromDistancePx": 9.252,
+              "toDistancePx": 2.237,
+              "midpointDistancePx": 0.059
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "1404",
+          "to": "1504",
+          "sourceSvgIds": [
+            "path354"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path354",
+            "fromDistancePx": 3.088,
+            "toDistancePx": 1.546,
+            "midpointDistancePx": 0.118
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path354",
+              "fromDistancePx": 3.088,
+              "toDistancePx": 1.546,
+              "midpointDistancePx": 0.118
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "1405",
+          "to": "1505",
+          "sourceSvgIds": [
+            "path351"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path351",
+            "fromDistancePx": 7.067,
+            "toDistancePx": 2.607,
+            "midpointDistancePx": 6.506
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path351",
+              "fromDistancePx": 7.067,
+              "toDistancePx": 2.607,
+              "midpointDistancePx": 6.506
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "1408",
+          "to": "1409",
+          "sourceSvgIds": [
+            "path360"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path360",
+            "fromDistancePx": 7.607,
+            "toDistancePx": 0.737,
+            "midpointDistancePx": 0.364
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path360",
+              "fromDistancePx": 7.607,
+              "toDistancePx": 0.737,
+              "midpointDistancePx": 0.364
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "1408",
+          "to": "1507",
+          "sourceSvgIds": [
+            "path360"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path360",
+            "fromDistancePx": 7.607,
+            "toDistancePx": 0.174,
+            "midpointDistancePx": 0.971
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path360",
+              "fromDistancePx": 7.607,
+              "toDistancePx": 0.174,
+              "midpointDistancePx": 0.971
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "1409",
+          "to": "1410",
+          "sourceSvgIds": [
+            "path360"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path360",
+            "fromDistancePx": 0.737,
+            "toDistancePx": 0.76,
+            "midpointDistancePx": 0.135
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path360",
+              "fromDistancePx": 0.737,
+              "toDistancePx": 0.76,
+              "midpointDistancePx": 0.135
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "1410",
+          "to": "1510",
+          "sourceSvgIds": [
+            "path361"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path361",
+            "fromDistancePx": 1.717,
+            "toDistancePx": 4.434,
+            "midpointDistancePx": 0.737
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path361",
+              "fromDistancePx": 1.717,
+              "toDistancePx": 4.434,
+              "midpointDistancePx": 0.737
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "1411",
+          "to": "1510",
+          "sourceSvgIds": [
+            "path379"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path379",
+            "fromDistancePx": 9.688,
+            "toDistancePx": 3.975,
+            "midpointDistancePx": 1.983
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path379",
+              "fromDistancePx": 9.688,
+              "toDistancePx": 3.975,
+              "midpointDistancePx": 1.983
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "1501",
+          "to": "1602",
+          "sourceSvgIds": [
+            "path355"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path355",
+            "fromDistancePx": 10.608,
+            "toDistancePx": 8.119,
+            "midpointDistancePx": 2.725
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path355",
+              "fromDistancePx": 10.608,
+              "toDistancePx": 8.119,
+              "midpointDistancePx": 2.725
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "1504",
+          "to": "1605",
+          "sourceSvgIds": [
+            "path354"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path354",
+            "fromDistancePx": 1.546,
+            "toDistancePx": 2.446,
+            "midpointDistancePx": 2.227
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path354",
+              "fromDistancePx": 1.546,
+              "toDistancePx": 2.446,
+              "midpointDistancePx": 2.227
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "1505",
+          "to": "1506",
+          "sourceSvgIds": [
+            "path359"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path359",
+            "fromDistancePx": 0.297,
+            "toDistancePx": 0.11,
+            "midpointDistancePx": 0.297
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path359",
+              "fromDistancePx": 0.297,
+              "toDistancePx": 0.11,
+              "midpointDistancePx": 0.297
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "1505",
+          "to": "1605",
+          "sourceSvgIds": [
+            "path353"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path353",
+            "fromDistancePx": 3.229,
+            "toDistancePx": 2.047,
+            "midpointDistancePx": 1.974
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path353",
+              "fromDistancePx": 3.229,
+              "toDistancePx": 2.047,
+              "midpointDistancePx": 1.974
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "1506",
+          "to": "1507",
+          "sourceSvgIds": [
+            "path359"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path359",
+            "fromDistancePx": 0.11,
+            "toDistancePx": 2.371,
+            "midpointDistancePx": 0.732
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path359",
+              "fromDistancePx": 0.11,
+              "toDistancePx": 2.371,
+              "midpointDistancePx": 0.732
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "1510",
+          "to": "1610",
+          "sourceSvgIds": [
+            "path362"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path362",
+            "fromDistancePx": 4.6,
+            "toDistancePx": 1.457,
+            "midpointDistancePx": 2.106
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path362",
+              "fromDistancePx": 4.6,
+              "toDistancePx": 1.457,
+              "midpointDistancePx": 2.106
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "1602",
+          "to": "1701",
+          "sourceSvgIds": [
+            "path355"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path355",
+            "fromDistancePx": 8.119,
+            "toDistancePx": 8.452,
+            "midpointDistancePx": 0.651
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path355",
+              "fromDistancePx": 8.119,
+              "toDistancePx": 8.452,
+              "midpointDistancePx": 0.651
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "1605",
+          "to": "1704",
+          "sourceSvgIds": [
+            "path353"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path353",
+            "fromDistancePx": 2.047,
+            "toDistancePx": 3.169,
+            "midpointDistancePx": 4.674
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path353",
+              "fromDistancePx": 2.047,
+              "toDistancePx": 3.169,
+              "midpointDistancePx": 4.674
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "1610",
+          "to": "1709",
+          "sourceSvgIds": [
+            "path362"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path362",
+            "fromDistancePx": 1.457,
+            "toDistancePx": 6.3,
+            "midpointDistancePx": 5.74
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path362",
+              "fromDistancePx": 1.457,
+              "toDistancePx": 6.3,
+              "midpointDistancePx": 5.74
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "1701",
+          "to": "1802",
+          "sourceSvgIds": [
+            "path355"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path355",
+            "fromDistancePx": 8.452,
+            "toDistancePx": 7.543,
+            "midpointDistancePx": 2.966
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path355",
+              "fromDistancePx": 8.452,
+              "toDistancePx": 7.543,
+              "midpointDistancePx": 2.966
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "1704",
+          "to": "1705",
+          "sourceSvgIds": [
+            "path357"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path357",
+            "fromDistancePx": 7.195,
+            "toDistancePx": 3.04,
+            "midpointDistancePx": 1.285
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path357",
+              "fromDistancePx": 7.195,
+              "toDistancePx": 3.04,
+              "midpointDistancePx": 1.285
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "1704",
+          "to": "1805",
+          "sourceSvgIds": [
+            "path356"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path356",
+            "fromDistancePx": 1.596,
+            "toDistancePx": 7.625,
+            "midpointDistancePx": 0.537
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path356",
+              "fromDistancePx": 1.596,
+              "toDistancePx": 7.625,
+              "midpointDistancePx": 0.537
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "1705",
+          "to": "1806",
+          "sourceSvgIds": [
+            "path357"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path357",
+            "fromDistancePx": 3.04,
+            "toDistancePx": 2.89,
+            "midpointDistancePx": 2.113
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path357",
+              "fromDistancePx": 3.04,
+              "toDistancePx": 2.89,
+              "midpointDistancePx": 2.113
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "1709",
+          "to": "1810",
+          "sourceSvgIds": [
+            "path362"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path362",
+            "fromDistancePx": 6.3,
+            "toDistancePx": 5.866,
+            "midpointDistancePx": 0.839
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path362",
+              "fromDistancePx": 6.3,
+              "toDistancePx": 5.866,
+              "midpointDistancePx": 0.839
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "1806",
+          "to": "1807",
+          "sourceSvgIds": [
+            "path357"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path357",
+            "fromDistancePx": 2.89,
+            "toDistancePx": 3.691,
+            "midpointDistancePx": 3.017
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path357",
+              "fromDistancePx": 2.89,
+              "toDistancePx": 3.691,
+              "midpointDistancePx": 3.017
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        }
+      ],
+      "limitations": [
+        "The affine registration was previously derived from authored SVG/board alignment; it is reused, not independently recertified.",
+        "Center proximity alone cannot prove uninterrupted rail traversal through the hexside or junction identity.",
+        "All candidate rail links remain unapproved for executable movement."
+      ]
+    },
+    "kiev": {
+      "map": "kiev",
+      "sourceMapSha256": "6dc63129043e2c3f28b1223b30fe63db846703f4c07422eeb58790b708b6ec9d",
+      "referenceSvgSha256": "2b15c3a92a282a7efc27d54bcd8994470f0fce8ee5417d5d734969fcd2c4ab7e",
+      "registration": {
+        "svgViewBox": [
+          0,
+          0,
+          297,
+          210
+        ],
+        "embeddedImage": {
+          "x": -20.235413,
+          "y": 0,
+          "width": 317.23541,
+          "height": 203.99374,
+          "pixelWidth": 1199,
+          "pixelHeight": 771
+        },
+        "scaleX": 3.779527638481467,
+        "scaleY": 3.7795277443317623,
+        "translateX": 76.48030270958718,
+        "translateY": 0
+      },
+      "totalCandidateLinks": 93,
+      "measuredLinks": 93,
+      "issues": [],
+      "diagnostics": {
+        "maximumEndpointDistancePx": 1.884,
+        "maximumMidpointDistancePx": 1.884,
+        "endpointMaxGreaterThan10Px": 0,
+        "endpointMaxGreaterThan20Px": 0,
+        "midpointGreaterThan10Px": 0,
+        "midpointGreaterThan20Px": 0
+      },
+      "candidates": [
+        {
+          "from": "0102",
+          "to": "0103",
+          "sourceSvgIds": [
+            "path863"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path863",
+            "fromDistancePx": 0.0,
+            "toDistancePx": 0.266,
+            "midpointDistancePx": 0.592
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path863",
+              "fromDistancePx": 0.0,
+              "toDistancePx": 0.266,
+              "midpointDistancePx": 0.592
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "0102",
+          "to": "0201",
+          "sourceSvgIds": [
+            "path864"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path864",
+            "fromDistancePx": 0.137,
+            "toDistancePx": 1.176,
+            "midpointDistancePx": 1.133
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path864",
+              "fromDistancePx": 0.137,
+              "toDistancePx": 1.176,
+              "midpointDistancePx": 1.133
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "0103",
+          "to": "0104",
+          "sourceSvgIds": [
+            "path865"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path865",
+            "fromDistancePx": 0.0,
+            "toDistancePx": 1.186,
+            "midpointDistancePx": 0.593
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path865",
+              "fromDistancePx": 0.0,
+              "toDistancePx": 1.186,
+              "midpointDistancePx": 0.593
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "0104",
+          "to": "0204",
+          "sourceSvgIds": [
+            "path865"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path865",
+            "fromDistancePx": 1.186,
+            "toDistancePx": 0.508,
+            "midpointDistancePx": 0.46
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path865",
+              "fromDistancePx": 1.186,
+              "toDistancePx": 0.508,
+              "midpointDistancePx": 0.46
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "0201",
+          "to": "0302",
+          "sourceSvgIds": [
+            "path864"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path864",
+            "fromDistancePx": 1.176,
+            "toDistancePx": 0.197,
+            "midpointDistancePx": 0.154
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path864",
+              "fromDistancePx": 1.176,
+              "toDistancePx": 0.197,
+              "midpointDistancePx": 0.154
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "0204",
+          "to": "0305",
+          "sourceSvgIds": [
+            "path865"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path865",
+            "fromDistancePx": 0.508,
+            "toDistancePx": 0.595,
+            "midpointDistancePx": 0.551
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path865",
+              "fromDistancePx": 0.508,
+              "toDistancePx": 0.595,
+              "midpointDistancePx": 0.551
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "0302",
+          "to": "0401",
+          "sourceSvgIds": [
+            "path864"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path864",
+            "fromDistancePx": 0.197,
+            "toDistancePx": 1.218,
+            "midpointDistancePx": 1.174
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path864",
+              "fromDistancePx": 0.197,
+              "toDistancePx": 1.218,
+              "midpointDistancePx": 1.174
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "0305",
+          "to": "0404",
+          "sourceSvgIds": [
+            "path865"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path865",
+            "fromDistancePx": 0.595,
+            "toDistancePx": 0.82,
+            "midpointDistancePx": 0.777
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path865",
+              "fromDistancePx": 0.595,
+              "toDistancePx": 0.82,
+              "midpointDistancePx": 0.777
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "0401",
+          "to": "0502",
+          "sourceSvgIds": [
+            "path864"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path864",
+            "fromDistancePx": 1.218,
+            "toDistancePx": 0.239,
+            "midpointDistancePx": 0.196
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path864",
+              "fromDistancePx": 1.218,
+              "toDistancePx": 0.239,
+              "midpointDistancePx": 0.196
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "0404",
+          "to": "0405",
+          "sourceSvgIds": [
+            "path866"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path866",
+            "fromDistancePx": 0.0,
+            "toDistancePx": 1.31,
+            "midpointDistancePx": 0.655
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path866",
+              "fromDistancePx": 0.0,
+              "toDistancePx": 1.31,
+              "midpointDistancePx": 0.655
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "0404",
+          "to": "0505",
+          "sourceSvgIds": [
+            "path865"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path865",
+            "fromDistancePx": 0.82,
+            "toDistancePx": 0.637,
+            "midpointDistancePx": 0.593
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path865",
+              "fromDistancePx": 0.82,
+              "toDistancePx": 0.637,
+              "midpointDistancePx": 0.593
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "0405",
+          "to": "0406",
+          "sourceSvgIds": [
+            "path866"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path866",
+            "fromDistancePx": 1.31,
+            "toDistancePx": 0.537,
+            "midpointDistancePx": 1.33
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path866",
+              "fromDistancePx": 1.31,
+              "toDistancePx": 0.537,
+              "midpointDistancePx": 1.33
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "0405",
+          "to": "0506",
+          "sourceSvgIds": [
+            "path867"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path867",
+            "fromDistancePx": 0.0,
+            "toDistancePx": 0.736,
+            "midpointDistancePx": 0.368
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path867",
+              "fromDistancePx": 0.0,
+              "toDistancePx": 0.736,
+              "midpointDistancePx": 0.368
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "0501",
+          "to": "0502",
+          "sourceSvgIds": [
+            "path864"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path864",
+            "fromDistancePx": 0.084,
+            "toDistancePx": 0.239,
+            "midpointDistancePx": 1.391
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path864",
+              "fromDistancePx": 0.084,
+              "toDistancePx": 0.239,
+              "midpointDistancePx": 1.391
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "0502",
+          "to": "0602",
+          "sourceSvgIds": [
+            "path865"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path865",
+            "fromDistancePx": 0.0,
+            "toDistancePx": 0.314,
+            "midpointDistancePx": 0.157
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path865",
+              "fromDistancePx": 0.0,
+              "toDistancePx": 0.314,
+              "midpointDistancePx": 0.157
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "0505",
+          "to": "0604",
+          "sourceSvgIds": [
+            "path865"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path865",
+            "fromDistancePx": 0.637,
+            "toDistancePx": 0.862,
+            "midpointDistancePx": 0.818
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path865",
+              "fromDistancePx": 0.637,
+              "toDistancePx": 0.862,
+              "midpointDistancePx": 0.818
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "0505",
+          "to": "0605",
+          "sourceSvgIds": [
+            "path868"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path868",
+            "fromDistancePx": 0.0,
+            "toDistancePx": 0.692,
+            "midpointDistancePx": 0.346
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path868",
+              "fromDistancePx": 0.0,
+              "toDistancePx": 0.692,
+              "midpointDistancePx": 0.346
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "0506",
+          "to": "0507",
+          "sourceSvgIds": [
+            "path867"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path867",
+            "fromDistancePx": 0.736,
+            "toDistancePx": 1.391,
+            "midpointDistancePx": 1.369
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path867",
+              "fromDistancePx": 0.736,
+              "toDistancePx": 1.391,
+              "midpointDistancePx": 1.369
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "0507",
+          "to": "0508",
+          "sourceSvgIds": [
+            "path867"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path867",
+            "fromDistancePx": 1.391,
+            "toDistancePx": 0.357,
+            "midpointDistancePx": 1.391
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path867",
+              "fromDistancePx": 1.391,
+              "toDistancePx": 0.357,
+              "midpointDistancePx": 1.391
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "0507",
+          "to": "0607",
+          "sourceSvgIds": [
+            "path882"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path882",
+            "fromDistancePx": 0.0,
+            "toDistancePx": 0.946,
+            "midpointDistancePx": 0.473
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path882",
+              "fromDistancePx": 0.0,
+              "toDistancePx": 0.946,
+              "midpointDistancePx": 0.473
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "0602",
+          "to": "0703",
+          "sourceSvgIds": [
+            "path865"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path865",
+            "fromDistancePx": 0.314,
+            "toDistancePx": 0.413,
+            "midpointDistancePx": 0.366
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path865",
+              "fromDistancePx": 0.314,
+              "toDistancePx": 0.413,
+              "midpointDistancePx": 0.366
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "0604",
+          "to": "0704",
+          "sourceSvgIds": [
+            "path865"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path865",
+            "fromDistancePx": 0.862,
+            "toDistancePx": 0.949,
+            "midpointDistancePx": 0.906
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path865",
+              "fromDistancePx": 0.862,
+              "toDistancePx": 0.949,
+              "midpointDistancePx": 0.906
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "0605",
+          "to": "0706",
+          "sourceSvgIds": [
+            "path868"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path868",
+            "fromDistancePx": 0.692,
+            "toDistancePx": 0.811,
+            "midpointDistancePx": 0.757
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path868",
+              "fromDistancePx": 0.692,
+              "toDistancePx": 0.811,
+              "midpointDistancePx": 0.757
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "0607",
+          "to": "0708",
+          "sourceSvgIds": [
+            "path882"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path882",
+            "fromDistancePx": 0.946,
+            "toDistancePx": 0.56,
+            "midpointDistancePx": 0.213
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path882",
+              "fromDistancePx": 0.946,
+              "toDistancePx": 0.56,
+              "midpointDistancePx": 0.213
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "0703",
+          "to": "0803",
+          "sourceSvgIds": [
+            "path865"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path865",
+            "fromDistancePx": 0.413,
+            "toDistancePx": 0.501,
+            "midpointDistancePx": 0.457
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path865",
+              "fromDistancePx": 0.413,
+              "toDistancePx": 0.501,
+              "midpointDistancePx": 0.457
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "0704",
+          "to": "0803",
+          "sourceSvgIds": [
+            "path865"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path865",
+            "fromDistancePx": 0.949,
+            "toDistancePx": 0.501,
+            "midpointDistancePx": 0.993
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path865",
+              "fromDistancePx": 0.949,
+              "toDistancePx": 0.501,
+              "midpointDistancePx": 0.993
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "0706",
+          "to": "0806",
+          "sourceSvgIds": [
+            "path868"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path868",
+            "fromDistancePx": 0.811,
+            "toDistancePx": 0.898,
+            "midpointDistancePx": 0.855
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path868",
+              "fromDistancePx": 0.811,
+              "toDistancePx": 0.898,
+              "midpointDistancePx": 0.855
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "0708",
+          "to": "0709",
+          "sourceSvgIds": [
+            "path882"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path882",
+            "fromDistancePx": 0.56,
+            "toDistancePx": 0.362,
+            "midpointDistancePx": 0.362
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path882",
+              "fromDistancePx": 0.56,
+              "toDistancePx": 0.362,
+              "midpointDistancePx": 0.362
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "0709",
+          "to": "0809",
+          "sourceSvgIds": [
+            "path883"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path883",
+            "fromDistancePx": 0.0,
+            "toDistancePx": 0.341,
+            "midpointDistancePx": 0.17
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path883",
+              "fromDistancePx": 0.0,
+              "toDistancePx": 0.341,
+              "midpointDistancePx": 0.17
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "0801",
+          "to": "0902",
+          "sourceSvgIds": [
+            "path869"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path869",
+            "fromDistancePx": 1.496,
+            "toDistancePx": 0.323,
+            "midpointDistancePx": 0.279
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path869",
+              "fromDistancePx": 1.496,
+              "toDistancePx": 0.323,
+              "midpointDistancePx": 0.279
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "0802",
+          "to": "0803",
+          "sourceSvgIds": [
+            "path869"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path869",
+            "fromDistancePx": 1.538,
+            "toDistancePx": 0.0,
+            "midpointDistancePx": 0.74
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path869",
+              "fromDistancePx": 1.538,
+              "toDistancePx": 0.0,
+              "midpointDistancePx": 0.74
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "0802",
+          "to": "0902",
+          "sourceSvgIds": [
+            "path869"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path869",
+            "fromDistancePx": 1.538,
+            "toDistancePx": 0.323,
+            "midpointDistancePx": 1.197
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path869",
+              "fromDistancePx": 1.538,
+              "toDistancePx": 0.323,
+              "midpointDistancePx": 1.197
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "0803",
+          "to": "0804",
+          "sourceSvgIds": [
+            "path868"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path868",
+            "fromDistancePx": 0.0,
+            "toDistancePx": 1.466,
+            "midpointDistancePx": 0.733
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path868",
+              "fromDistancePx": 0.0,
+              "toDistancePx": 1.466,
+              "midpointDistancePx": 0.733
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "0804",
+          "to": "0905",
+          "sourceSvgIds": [
+            "path868"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path868",
+            "fromDistancePx": 1.466,
+            "toDistancePx": 0.72,
+            "midpointDistancePx": 0.669
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path868",
+              "fromDistancePx": 1.466,
+              "toDistancePx": 0.72,
+              "midpointDistancePx": 0.669
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "0806",
+          "to": "0907",
+          "sourceSvgIds": [
+            "path868"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path868",
+            "fromDistancePx": 0.898,
+            "toDistancePx": 0.985,
+            "midpointDistancePx": 0.942
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path868",
+              "fromDistancePx": 0.898,
+              "toDistancePx": 0.985,
+              "midpointDistancePx": 0.942
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "0809",
+          "to": "0810",
+          "sourceSvgIds": [
+            "path883"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path883",
+            "fromDistancePx": 0.341,
+            "toDistancePx": 0.404,
+            "midpointDistancePx": 0.398
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path883",
+              "fromDistancePx": 0.341,
+              "toDistancePx": 0.404,
+              "midpointDistancePx": 0.398
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "0810",
+          "to": "0911",
+          "sourceSvgIds": [
+            "path884"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path884",
+            "fromDistancePx": 0.644,
+            "toDistancePx": 0.14,
+            "midpointDistancePx": 0.184
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path884",
+              "fromDistancePx": 0.644,
+              "toDistancePx": 0.14,
+              "midpointDistancePx": 0.184
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "0902",
+          "to": "1002",
+          "sourceSvgIds": [
+            "path870"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path870",
+            "fromDistancePx": 0.0,
+            "toDistancePx": 0.392,
+            "midpointDistancePx": 0.196
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path870",
+              "fromDistancePx": 0.0,
+              "toDistancePx": 0.392,
+              "midpointDistancePx": 0.196
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "0905",
+          "to": "1005",
+          "sourceSvgIds": [
+            "path868"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path868",
+            "fromDistancePx": 0.72,
+            "toDistancePx": 0.807,
+            "midpointDistancePx": 0.764
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path868",
+              "fromDistancePx": 0.72,
+              "toDistancePx": 0.807,
+              "midpointDistancePx": 0.764
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "0907",
+          "to": "1007",
+          "sourceSvgIds": [
+            "path868"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path868",
+            "fromDistancePx": 0.985,
+            "toDistancePx": 1.072,
+            "midpointDistancePx": 1.029
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path868",
+              "fromDistancePx": 0.985,
+              "toDistancePx": 1.072,
+              "midpointDistancePx": 1.029
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "0911",
+          "to": "1010",
+          "sourceSvgIds": [
+            "path884"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path884",
+            "fromDistancePx": 0.14,
+            "toDistancePx": 0.679,
+            "midpointDistancePx": 0.635
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path884",
+              "fromDistancePx": 0.14,
+              "toDistancePx": 0.679,
+              "midpointDistancePx": 0.635
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "1002",
+          "to": "1103",
+          "sourceSvgIds": [
+            "path870"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path870",
+            "fromDistancePx": 0.392,
+            "toDistancePx": 0.497,
+            "midpointDistancePx": 0.448
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path870",
+              "fromDistancePx": 0.392,
+              "toDistancePx": 0.497,
+              "midpointDistancePx": 0.448
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "1005",
+          "to": "1106",
+          "sourceSvgIds": [
+            "path868"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path868",
+            "fromDistancePx": 0.807,
+            "toDistancePx": 0.894,
+            "midpointDistancePx": 0.851
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path868",
+              "fromDistancePx": 0.807,
+              "toDistancePx": 0.894,
+              "midpointDistancePx": 0.851
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "1007",
+          "to": "1107",
+          "sourceSvgIds": [
+            "path868"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path868",
+            "fromDistancePx": 1.072,
+            "toDistancePx": 0.635,
+            "midpointDistancePx": 0.591
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path868",
+              "fromDistancePx": 1.072,
+              "toDistancePx": 0.635,
+              "midpointDistancePx": 0.591
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "1010",
+          "to": "1111",
+          "sourceSvgIds": [
+            "path884"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path884",
+            "fromDistancePx": 0.679,
+            "toDistancePx": 0.098,
+            "midpointDistancePx": 0.142
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path884",
+              "fromDistancePx": 0.679,
+              "toDistancePx": 0.098,
+              "midpointDistancePx": 0.142
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "1103",
+          "to": "1104",
+          "sourceSvgIds": [
+            "path874"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path874",
+            "fromDistancePx": 0.0,
+            "toDistancePx": 1.583,
+            "midpointDistancePx": 0.792
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path874",
+              "fromDistancePx": 0.0,
+              "toDistancePx": 1.583,
+              "midpointDistancePx": 0.792
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "1103",
+          "to": "1202",
+          "sourceSvgIds": [
+            "path870"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path870",
+            "fromDistancePx": 0.497,
+            "toDistancePx": 1.252,
+            "midpointDistancePx": 1.209
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path870",
+              "fromDistancePx": 0.497,
+              "toDistancePx": 1.252,
+              "midpointDistancePx": 1.209
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "1103",
+          "to": "1203",
+          "sourceSvgIds": [
+            "path873"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path873",
+            "fromDistancePx": 0.0,
+            "toDistancePx": 0.557,
+            "midpointDistancePx": 0.278
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path873",
+              "fromDistancePx": 0.0,
+              "toDistancePx": 0.557,
+              "midpointDistancePx": 0.278
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "1104",
+          "to": "1105",
+          "sourceSvgIds": [
+            "path874"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path874",
+            "fromDistancePx": 1.583,
+            "toDistancePx": 1.589,
+            "midpointDistancePx": 1.589
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path874",
+              "fromDistancePx": 1.583,
+              "toDistancePx": 1.589,
+              "midpointDistancePx": 1.589
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "1105",
+          "to": "1106",
+          "sourceSvgIds": [
+            "path874"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path874",
+            "fromDistancePx": 1.589,
+            "toDistancePx": 0.0,
+            "midpointDistancePx": 0.795
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path874",
+              "fromDistancePx": 1.589,
+              "toDistancePx": 0.0,
+              "midpointDistancePx": 0.795
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "1105",
+          "to": "1204",
+          "sourceSvgIds": [
+            "path876"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path876",
+            "fromDistancePx": 0.0,
+            "toDistancePx": 0.94,
+            "midpointDistancePx": 0.47
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path876",
+              "fromDistancePx": 0.0,
+              "toDistancePx": 0.94,
+              "midpointDistancePx": 0.47
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "1106",
+          "to": "1206",
+          "sourceSvgIds": [
+            "path868"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path868",
+            "fromDistancePx": 0.894,
+            "toDistancePx": 0.722,
+            "midpointDistancePx": 0.938
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path868",
+              "fromDistancePx": 0.894,
+              "toDistancePx": 0.722,
+              "midpointDistancePx": 0.938
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "1107",
+          "to": "1108",
+          "sourceSvgIds": [
+            "path881"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path881",
+            "fromDistancePx": 0.0,
+            "toDistancePx": 1.633,
+            "midpointDistancePx": 0.799
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path881",
+              "fromDistancePx": 0.0,
+              "toDistancePx": 1.633,
+              "midpointDistancePx": 0.799
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "1107",
+          "to": "1206",
+          "sourceSvgIds": [
+            "path868"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path868",
+            "fromDistancePx": 0.635,
+            "toDistancePx": 0.722,
+            "midpointDistancePx": 0.679
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path868",
+              "fromDistancePx": 0.635,
+              "toDistancePx": 0.722,
+              "midpointDistancePx": 0.679
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "1108",
+          "to": "1208",
+          "sourceSvgIds": [
+            "path881"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path881",
+            "fromDistancePx": 1.633,
+            "toDistancePx": 0.386,
+            "midpointDistancePx": 0.386
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path881",
+              "fromDistancePx": 1.633,
+              "toDistancePx": 0.386,
+              "midpointDistancePx": 0.386
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "1201",
+          "to": "1202",
+          "sourceSvgIds": [
+            "path870"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path870",
+            "fromDistancePx": 1.044,
+            "toDistancePx": 1.252,
+            "midpointDistancePx": 1.359
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path870",
+              "fromDistancePx": 1.044,
+              "toDistancePx": 1.252,
+              "midpointDistancePx": 1.359
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "1203",
+          "to": "1304",
+          "sourceSvgIds": [
+            "path873"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path873",
+            "fromDistancePx": 0.557,
+            "toDistancePx": 0.671,
+            "midpointDistancePx": 0.619
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path873",
+              "fromDistancePx": 0.557,
+              "toDistancePx": 0.671,
+              "midpointDistancePx": 0.619
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "1204",
+          "to": "1305",
+          "sourceSvgIds": [
+            "path876"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path876",
+            "fromDistancePx": 0.94,
+            "toDistancePx": 0.803,
+            "midpointDistancePx": 0.747
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path876",
+              "fromDistancePx": 0.94,
+              "toDistancePx": 0.803,
+              "midpointDistancePx": 0.747
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "1205",
+          "to": "1206",
+          "sourceSvgIds": [
+            "path886"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path886",
+            "fromDistancePx": 0.822,
+            "toDistancePx": 0.0,
+            "midpointDistancePx": 0.411
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path886",
+              "fromDistancePx": 0.822,
+              "toDistancePx": 0.0,
+              "midpointDistancePx": 0.411
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "1205",
+          "to": "1305",
+          "sourceSvgIds": [
+            "path886"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path886",
+            "fromDistancePx": 0.822,
+            "toDistancePx": 0.0,
+            "midpointDistancePx": 0.712
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path886",
+              "fromDistancePx": 0.822,
+              "toDistancePx": 0.0,
+              "midpointDistancePx": 0.712
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "1208",
+          "to": "1309",
+          "sourceSvgIds": [
+            "path881"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path881",
+            "fromDistancePx": 0.386,
+            "toDistancePx": 0.322,
+            "midpointDistancePx": 0.365
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path881",
+              "fromDistancePx": 0.386,
+              "toDistancePx": 0.322,
+              "midpointDistancePx": 0.365
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "1304",
+          "to": "1404",
+          "sourceSvgIds": [
+            "path873"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path873",
+            "fromDistancePx": 0.671,
+            "toDistancePx": 0.758,
+            "midpointDistancePx": 0.715
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path873",
+              "fromDistancePx": 0.671,
+              "toDistancePx": 0.758,
+              "midpointDistancePx": 0.715
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "1305",
+          "to": "1404",
+          "sourceSvgIds": [
+            "path875"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path875",
+            "fromDistancePx": 0.0,
+            "toDistancePx": 0.0,
+            "midpointDistancePx": 0.0
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path875",
+              "fromDistancePx": 0.0,
+              "toDistancePx": 0.0,
+              "midpointDistancePx": 0.0
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "1305",
+          "to": "1405",
+          "sourceSvgIds": [
+            "path876"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path876",
+            "fromDistancePx": 0.803,
+            "toDistancePx": 0.891,
+            "midpointDistancePx": 0.847
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path876",
+              "fromDistancePx": 0.803,
+              "toDistancePx": 0.891,
+              "midpointDistancePx": 0.847
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "1309",
+          "to": "1310",
+          "sourceSvgIds": [
+            "path881"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path881",
+            "fromDistancePx": 0.322,
+            "toDistancePx": 0.609,
+            "midpointDistancePx": 0.609
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path881",
+              "fromDistancePx": 0.322,
+              "toDistancePx": 0.609,
+              "midpointDistancePx": 0.609
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "1310",
+          "to": "1410",
+          "sourceSvgIds": [
+            "path881"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path881",
+            "fromDistancePx": 0.609,
+            "toDistancePx": 0.102,
+            "midpointDistancePx": 0.145
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path881",
+              "fromDistancePx": 0.609,
+              "toDistancePx": 0.102,
+              "midpointDistancePx": 0.145
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "1404",
+          "to": "1504",
+          "sourceSvgIds": [
+            "path873"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path873",
+            "fromDistancePx": 0.758,
+            "toDistancePx": 1.116,
+            "midpointDistancePx": 1.073
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path873",
+              "fromDistancePx": 0.758,
+              "toDistancePx": 1.116,
+              "midpointDistancePx": 1.073
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "1405",
+          "to": "1506",
+          "sourceSvgIds": [
+            "path876"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path876",
+            "fromDistancePx": 0.891,
+            "toDistancePx": 0.978,
+            "midpointDistancePx": 0.934
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path876",
+              "fromDistancePx": 0.891,
+              "toDistancePx": 0.978,
+              "midpointDistancePx": 0.934
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "1504",
+          "to": "1603",
+          "sourceSvgIds": [
+            "path873"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path873",
+            "fromDistancePx": 1.116,
+            "toDistancePx": 1.162,
+            "midpointDistancePx": 1.139
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path873",
+              "fromDistancePx": 1.116,
+              "toDistancePx": 1.162,
+              "midpointDistancePx": 1.139
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "1504",
+          "to": "1604",
+          "sourceSvgIds": [
+            "path876"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path876",
+            "fromDistancePx": 0.0,
+            "toDistancePx": 0.76,
+            "midpointDistancePx": 0.38
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path876",
+              "fromDistancePx": 0.0,
+              "toDistancePx": 0.76,
+              "midpointDistancePx": 0.38
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "1506",
+          "to": "1606",
+          "sourceSvgIds": [
+            "path876"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path876",
+            "fromDistancePx": 0.978,
+            "toDistancePx": 1.065,
+            "midpointDistancePx": 1.022
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path876",
+              "fromDistancePx": 0.978,
+              "toDistancePx": 1.065,
+              "midpointDistancePx": 1.022
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "1510",
+          "to": "1511",
+          "sourceSvgIds": [
+            "path880"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path880",
+            "fromDistancePx": 0.901,
+            "toDistancePx": 0.691,
+            "midpointDistancePx": 0.691
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path880",
+              "fromDistancePx": 0.901,
+              "toDistancePx": 0.691,
+              "midpointDistancePx": 0.691
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "1510",
+          "to": "1609",
+          "sourceSvgIds": [
+            "path880"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path880",
+            "fromDistancePx": 0.901,
+            "toDistancePx": 0.704,
+            "midpointDistancePx": 0.877
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path880",
+              "fromDistancePx": 0.901,
+              "toDistancePx": 0.704,
+              "midpointDistancePx": 0.877
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "1601",
+          "to": "1702",
+          "sourceSvgIds": [
+            "path871"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path871",
+            "fromDistancePx": 1.825,
+            "toDistancePx": 0.49,
+            "midpointDistancePx": 0.446
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path871",
+              "fromDistancePx": 1.825,
+              "toDistancePx": 0.49,
+              "midpointDistancePx": 0.446
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "1603",
+          "to": "1703",
+          "sourceSvgIds": [
+            "path873"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path873",
+            "fromDistancePx": 1.162,
+            "toDistancePx": 0.0,
+            "midpointDistancePx": 0.594
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path873",
+              "fromDistancePx": 1.162,
+              "toDistancePx": 0.0,
+              "midpointDistancePx": 0.594
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "1604",
+          "to": "1705",
+          "sourceSvgIds": [
+            "path876"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path876",
+            "fromDistancePx": 0.76,
+            "toDistancePx": 0.887,
+            "midpointDistancePx": 0.831
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path876",
+              "fromDistancePx": 0.76,
+              "toDistancePx": 0.887,
+              "midpointDistancePx": 0.831
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "1606",
+          "to": "1707",
+          "sourceSvgIds": [
+            "path876"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path876",
+            "fromDistancePx": 1.065,
+            "toDistancePx": 0.76,
+            "midpointDistancePx": 1.109
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path876",
+              "fromDistancePx": 1.065,
+              "toDistancePx": 0.76,
+              "midpointDistancePx": 1.109
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "1607",
+          "to": "1608",
+          "sourceSvgIds": [
+            "path876"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path876",
+            "fromDistancePx": 1.838,
+            "toDistancePx": 0.746,
+            "midpointDistancePx": 1.292
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path876",
+              "fromDistancePx": 1.838,
+              "toDistancePx": 0.746,
+              "midpointDistancePx": 1.292
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "1607",
+          "to": "1707",
+          "sourceSvgIds": [
+            "path876"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path876",
+            "fromDistancePx": 1.838,
+            "toDistancePx": 0.76,
+            "midpointDistancePx": 0.717
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path876",
+              "fromDistancePx": 1.838,
+              "toDistancePx": 0.76,
+              "midpointDistancePx": 0.717
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "1608",
+          "to": "1609",
+          "sourceSvgIds": [
+            "path880"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path880",
+            "fromDistancePx": 0.0,
+            "toDistancePx": 0.704,
+            "midpointDistancePx": 0.352
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path880",
+              "fromDistancePx": 0.0,
+              "toDistancePx": 0.704,
+              "midpointDistancePx": 0.352
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "1608",
+          "to": "1708",
+          "sourceSvgIds": [
+            "path876"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path876",
+            "fromDistancePx": 0.746,
+            "toDistancePx": 0.788,
+            "midpointDistancePx": 1.112
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path876",
+              "fromDistancePx": 0.746,
+              "toDistancePx": 0.788,
+              "midpointDistancePx": 1.112
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "1702",
+          "to": "1802",
+          "sourceSvgIds": [
+            "path871"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path871",
+            "fromDistancePx": 0.49,
+            "toDistancePx": 0.577,
+            "midpointDistancePx": 0.533
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path871",
+              "fromDistancePx": 0.49,
+              "toDistancePx": 0.577,
+              "midpointDistancePx": 0.533
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "1703",
+          "to": "1704",
+          "sourceSvgIds": [
+            "path872"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path872",
+            "fromDistancePx": 1.859,
+            "toDistancePx": 1.884,
+            "midpointDistancePx": 1.852
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path872",
+              "fromDistancePx": 1.859,
+              "toDistancePx": 1.884,
+              "midpointDistancePx": 1.852
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "1703",
+          "to": "1802",
+          "sourceSvgIds": [
+            "path872"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path872",
+            "fromDistancePx": 1.859,
+            "toDistancePx": 0.0,
+            "midpointDistancePx": 0.637
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path872",
+              "fromDistancePx": 1.859,
+              "toDistancePx": 0.0,
+              "midpointDistancePx": 0.637
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "1704",
+          "to": "1705",
+          "sourceSvgIds": [
+            "path872"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path872",
+            "fromDistancePx": 1.884,
+            "toDistancePx": 1.884,
+            "midpointDistancePx": 1.884
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path872",
+              "fromDistancePx": 1.884,
+              "toDistancePx": 1.884,
+              "midpointDistancePx": 1.884
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "1705",
+          "to": "1706",
+          "sourceSvgIds": [
+            "path876"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path876",
+            "fromDistancePx": 0.887,
+            "toDistancePx": 1.884,
+            "midpointDistancePx": 1.884
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path876",
+              "fromDistancePx": 0.887,
+              "toDistancePx": 1.884,
+              "midpointDistancePx": 1.884
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "1705",
+          "to": "1805",
+          "sourceSvgIds": [
+            "path872"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path872",
+            "fromDistancePx": 1.884,
+            "toDistancePx": 0.974,
+            "midpointDistancePx": 0.931
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path872",
+              "fromDistancePx": 1.884,
+              "toDistancePx": 0.974,
+              "midpointDistancePx": 0.931
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "1706",
+          "to": "1707",
+          "sourceSvgIds": [
+            "path876"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path876",
+            "fromDistancePx": 1.884,
+            "toDistancePx": 0.76,
+            "midpointDistancePx": 1.884
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path876",
+              "fromDistancePx": 1.884,
+              "toDistancePx": 0.76,
+              "midpointDistancePx": 1.884
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "1707",
+          "to": "1708",
+          "sourceSvgIds": [
+            "path876"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path876",
+            "fromDistancePx": 0.76,
+            "toDistancePx": 0.788,
+            "midpointDistancePx": 1.334
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path876",
+              "fromDistancePx": 0.76,
+              "toDistancePx": 0.788,
+              "midpointDistancePx": 1.334
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "1707",
+          "to": "1807",
+          "sourceSvgIds": [
+            "path877"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path877",
+            "fromDistancePx": 0.0,
+            "toDistancePx": 1.177,
+            "midpointDistancePx": 0.589
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path877",
+              "fromDistancePx": 0.0,
+              "toDistancePx": 1.177,
+              "midpointDistancePx": 0.589
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "1807",
+          "to": "1808",
+          "sourceSvgIds": [
+            "path879"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path879",
+            "fromDistancePx": 0.0,
+            "toDistancePx": 0.756,
+            "midpointDistancePx": 0.378
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path879",
+              "fromDistancePx": 0.0,
+              "toDistancePx": 0.756,
+              "midpointDistancePx": 0.378
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "1808",
+          "to": "1809",
+          "sourceSvgIds": [
+            "path879"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path879",
+            "fromDistancePx": 0.756,
+            "toDistancePx": 0.814,
+            "midpointDistancePx": 0.79
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path879",
+              "fromDistancePx": 0.756,
+              "toDistancePx": 0.814,
+              "midpointDistancePx": 0.79
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        },
+        {
+          "from": "1809",
+          "to": "1810",
+          "sourceSvgIds": [
+            "path879"
+          ],
+          "bestReferencedPath": {
+            "svgId": "path879",
+            "fromDistancePx": 0.814,
+            "toDistancePx": 0.791,
+            "midpointDistancePx": 0.803
+          },
+          "allPathMeasurements": [
+            {
+              "svgId": "path879",
+              "fromDistancePx": 0.814,
+              "toDistancePx": 0.791,
+              "midpointDistancePx": 0.803
+            }
+          ],
+          "status": "measured-candidate-not-gameplay-certified"
+        }
+      ],
+      "limitations": [
+        "The affine registration was previously derived from authored SVG/board alignment; it is reused, not independently recertified.",
+        "Center proximity alone cannot prove uninterrupted rail traversal through the hexside or junction identity.",
+        "All candidate rail links remain unapproved for executable movement."
+      ]
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "checkpoint": 386,
+  "tests": {
+    "continuationIncludingPrior": 292,
+    "utilityArithmetic": 62,
+    "sharedCRT": 301,
+    "bundleModules": 61
+  },
+  "limitations": [
+    "Diagnostic only",
+    "No browser or full campaign run",
+    "No calibrated elimination probability",
+    "No city or communication utility",
+    "Bounded single-phase approaches; independent per-position enemy responses"
+  ],
+  "decisionPolicyChanged": false
+}

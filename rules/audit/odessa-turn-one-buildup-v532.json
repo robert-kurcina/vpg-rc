@@ -1,0 +1,32 @@
+{
+  "checkpoint": 298,
+  "version": "v532",
+  "status": "PASS for bounded source-authorized Turn 1 Buildup only",
+  "nodeChecks": 36,
+  "chromiumChecks": 30,
+  "phaseBefore": "soviet-buildup",
+  "phaseAfter": "soviet-special-movement",
+  "sourceReplacementSteps": 0,
+  "scheduledGroundReinforcements": 0,
+  "allStartingGroundUnitsRetained": 36,
+  "sourceFleetAt": "1513",
+  "saveRestoreAndUndo": "passed",
+  "futureTurnPolicy": "fail-closed",
+  "historicallyCertified": false,
+  "fullCampaignPlayable": false,
+  "arbitrarySourceChanges": "not permitted",
+  "preservation": {
+    "baselineFiles": 1658,
+    "protectedFilesUnchanged": 92,
+    "baselineV531ScreenshotRestored": true
+  },
+  "screenshots": [
+    "rules/audit/visual/odessa-soviet-buildup-phase-browser-v532.png",
+    "rules/audit/visual/odessa-soviet-turn-one-buildup-browser-v532.png"
+  ],
+  "testCommands": [
+    "node tests/odessa-turn-one-soviet-buildup-v532.test.js",
+    "python tests/odessa-turn-one-buildup-browser-v532.py"
+  ],
+  "knownTimeout": "Arduous contested seven-turn stress suite exceeded tool timeout and has no PASS claim"
+}

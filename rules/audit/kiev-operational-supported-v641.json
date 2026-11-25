@@ -1,0 +1,275 @@
+{
+  "checkpoint": 407,
+  "version": "v641",
+  "assertions": {
+    "supported_planning": 61,
+    "journal": 14,
+    "operational_air": 25,
+    "controller": 16,
+    "continuation_pilot": 74,
+    "operational_advance": 129,
+    "operational_phase": 49,
+    "known_fallback": 49,
+    "crt": 301,
+    "ranked_plan": 6,
+    "readonly_probe": 156,
+    "operational_threat": 28,
+    "mission_rng": 42
+  },
+  "total": 950,
+  "bundleModules": 62,
+  "operationalCampaign": {
+    "elapsedMs": 147266,
+    "policy": {
+      "seed": 7,
+      "selectionMode": "seeded",
+      "attackSelection": "continuation-pilot",
+      "maxActions": 5000,
+      "maxFleetMoves": 2,
+      "maxFleetAttacks": 3,
+      "phaseScope": "operational",
+      "missionSeed": "00000000000000000000000000000007"
+    },
+    "cityControl": {
+      "Chernigov": "soviet",
+      "Chernovtsy": "soviet",
+      "Iasi": "german",
+      "Kiev": "german",
+      "Kirovograd": "soviet",
+      "Kovel": "soviet",
+      "Lublin": "german",
+      "Lvov": "soviet",
+      "Rovno": "soviet",
+      "Sarny": "soviet",
+      "Shepetovka": "soviet",
+      "Stanislavov": "german",
+      "Tarnopol": "german",
+      "Uman": "soviet",
+      "Vinnitsa": "soviet",
+      "Zhitomir": "soviet"
+    },
+    "counts": {
+      "below-minimum": 176,
+      "concealed-positive-proxy": 44,
+      "concealed-low-odds-risk": 53,
+      "supported-utility-unavailable": 9,
+      "low-odds-policy": 21,
+      "utility-unavailable": 10,
+      "supported-positive-utility": 9,
+      "candidate-budget": 20,
+      "positive-utility": 25,
+      "supported-candidate-budget": 4
+    },
+    "phases": [
+      {
+        "turn": 1,
+        "phase": "german-combat",
+        "counts": {
+          "below-minimum": 11,
+          "concealed-positive-proxy": 17,
+          "concealed-low-odds-risk": 7,
+          "supported-utility-unavailable": 4
+        }
+      },
+      {
+        "turn": 1,
+        "phase": "soviet-combat",
+        "counts": {
+          "below-minimum": 7,
+          "low-odds-policy": 2,
+          "concealed-low-odds-risk": 31,
+          "concealed-positive-proxy": 15
+        }
+      },
+      {
+        "turn": 2,
+        "phase": "german-combat",
+        "counts": {
+          "below-minimum": 14,
+          "concealed-low-odds-risk": 5,
+          "concealed-positive-proxy": 10,
+          "utility-unavailable": 1,
+          "supported-utility-unavailable": 1,
+          "supported-positive-utility": 2
+        }
+      },
+      {
+        "turn": 2,
+        "phase": "soviet-combat",
+        "counts": {
+          "below-minimum": 14,
+          "low-odds-policy": 6,
+          "concealed-low-odds-risk": 10,
+          "concealed-positive-proxy": 2,
+          "utility-unavailable": 1
+        }
+      },
+      {
+        "turn": 3,
+        "phase": "german-combat",
+        "counts": {
+          "below-minimum": 10,
+          "candidate-budget": 3,
+          "positive-utility": 8,
+          "supported-positive-utility": 1
+        }
+      },
+      {
+        "turn": 3,
+        "phase": "soviet-combat",
+        "counts": {
+          "below-minimum": 11,
+          "low-odds-policy": 4
+        }
+      },
+      {
+        "turn": 4,
+        "phase": "german-combat",
+        "counts": {
+          "below-minimum": 12,
+          "candidate-budget": 6,
+          "positive-utility": 5,
+          "utility-unavailable": 3,
+          "supported-candidate-budget": 3,
+          "supported-positive-utility": 4
+        }
+      },
+      {
+        "turn": 4,
+        "phase": "soviet-combat",
+        "counts": {
+          "below-minimum": 11,
+          "low-odds-policy": 2,
+          "positive-utility": 1
+        }
+      },
+      {
+        "turn": 5,
+        "phase": "german-combat",
+        "counts": {
+          "below-minimum": 11,
+          "candidate-budget": 11,
+          "positive-utility": 3,
+          "utility-unavailable": 5,
+          "supported-utility-unavailable": 1
+        }
+      },
+      {
+        "turn": 5,
+        "phase": "soviet-combat",
+        "counts": {
+          "below-minimum": 9,
+          "low-odds-policy": 1,
+          "positive-utility": 1
+        }
+      },
+      {
+        "turn": 6,
+        "phase": "german-combat",
+        "counts": {
+          "below-minimum": 15,
+          "positive-utility": 2,
+          "supported-positive-utility": 1
+        }
+      },
+      {
+        "turn": 6,
+        "phase": "soviet-combat",
+        "counts": {
+          "below-minimum": 9,
+          "low-odds-policy": 1,
+          "positive-utility": 1
+        }
+      },
+      {
+        "turn": 7,
+        "phase": "german-combat",
+        "counts": {
+          "below-minimum": 23,
+          "positive-utility": 3,
+          "supported-candidate-budget": 1,
+          "supported-positive-utility": 1,
+          "supported-utility-unavailable": 3
+        }
+      },
+      {
+        "turn": 7,
+        "phase": "soviet-combat",
+        "counts": {
+          "low-odds-policy": 5,
+          "below-minimum": 19,
+          "positive-utility": 1
+        }
+      }
+    ],
+    "seed": 7,
+    "variant": "standard",
+    "status": "complete",
+    "reason": null,
+    "detail": null,
+    "decision": {
+      "status": "complete",
+      "terminal": {
+        "axisControlledCount": 5,
+        "cityControl": {
+          "Chernigov": "soviet",
+          "Chernovtsy": "soviet",
+          "Iasi": "german",
+          "Kiev": "german",
+          "Kirovograd": "soviet",
+          "Kovel": "soviet",
+          "Lublin": "german",
+          "Lvov": "soviet",
+          "Rovno": "soviet",
+          "Sarny": "soviet",
+          "Shepetovka": "soviet",
+          "Stanislavov": "german",
+          "Tarnopol": "german",
+          "Uman": "soviet",
+          "Vinnitsa": "soviet",
+          "Zhitomir": "soviet"
+        },
+        "onlyRemainingCity": null,
+        "onlyRemainingCityIsolated": null,
+        "outcome": "soviet-victory",
+        "reason": "axis-controls-at-most-threshold",
+        "totalCities": 16
+      }
+    },
+    "stats": {
+      "moves": 131,
+      "combats": 23,
+      "reinforcements": 6,
+      "navalRolls": 0,
+      "turns": 7
+    },
+    "actions": 417,
+    "outcomes": {
+      "DE": 7,
+      "EX": 1,
+      "NE": 4,
+      "DR": 5,
+      "DRL": 6
+    },
+    "oddsDistribution": {
+      "2": 6,
+      "3": 2,
+      "4": 5,
+      "5": 1,
+      "6": 9
+    },
+    "attackSelection": "continuation-pilot",
+    "terminal": "soviet-victory",
+    "phase": null
+  },
+  "terminalRestoreExact": true,
+  "chromium": false,
+  "limitations": [
+    "Supported declaration planning is bounded to four candidates and one support-dependent battle per phase; it is resolved first using the strongest available marker. No general joint allocation over all proposed engagements, hidden-strength support planning, future REFIT value, or strategic naval allocation.",
+    "Unsupported Desperation and Preemptive Attack authorization remains unimplemented: conditional enemy attack outcomes are not calibrated next-phase loss probabilities.",
+    "Journal cap and policy cap aligned at 5000; 16 MiB save limit retained. Tested detached ledger, replay, and checksum-valid oversized journal rejection; no genuine campaign above 1024 actions yet.",
+    "One full operational Standard CRT Kiev campaign completed; Advanced CRT full campaign and all other operational scenarios unqualified. Existing diagnostic comparison used different RNG mode; do not infer causal improvement or competitive balance.",
+    "Campaign ran with the new journal and supported planning before an additional defensive catch/empty-marker preview guard was added to ground air selection; final guard separately passed supported and air-allocation tests. No new Chromium test."
+  ],
+  "benchmarkCommand": "node tests/kiev-integrated-benchmark-v638.test.js 7 standard continuation-pilot - - mission operational"
+}

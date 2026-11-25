@@ -1,0 +1,86 @@
+[
+  {
+    "id": "moscow-standard-historical-53",
+    "scenario": "battle-for-moscow",
+    "variant": "standard",
+    "seed": 53,
+    "victoryMode": "historical"
+  },
+  {
+    "id": "moscow-standard-graduated-53",
+    "scenario": "battle-for-moscow",
+    "variant": "standard",
+    "seed": 53,
+    "victoryMode": "graduated"
+  },
+  {
+    "id": "moscow-advanced-historical-53",
+    "scenario": "battle-for-moscow",
+    "variant": "advanced",
+    "seed": 53,
+    "victoryMode": "historical"
+  },
+  {
+    "id": "moscow-advanced-graduated-53",
+    "scenario": "battle-for-moscow",
+    "variant": "advanced",
+    "seed": 53,
+    "victoryMode": "graduated"
+  },
+  {
+    "id": "moscow-standard-historical-97",
+    "scenario": "battle-for-moscow",
+    "variant": "standard",
+    "seed": 97,
+    "victoryMode": "historical"
+  },
+  {
+    "id": "moscow-standard-graduated-97",
+    "scenario": "battle-for-moscow",
+    "variant": "standard",
+    "seed": 97,
+    "victoryMode": "graduated"
+  },
+  {
+    "id": "moscow-advanced-historical-97",
+    "scenario": "battle-for-moscow",
+    "variant": "advanced",
+    "seed": 97,
+    "victoryMode": "historical"
+  },
+  {
+    "id": "moscow-advanced-graduated-97",
+    "scenario": "battle-for-moscow",
+    "variant": "advanced",
+    "seed": 97,
+    "victoryMode": "graduated"
+  },
+  {
+    "id": "moscow-standard-historical-149",
+    "scenario": "battle-for-moscow",
+    "variant": "standard",
+    "seed": 149,
+    "victoryMode": "historical"
+  },
+  {
+    "id": "moscow-standard-graduated-149",
+    "scenario": "battle-for-moscow",
+    "variant": "standard",
+    "seed": 149,
+    "victoryMode": "graduated"
+  },
+  {
+    "id": "moscow-advanced-historical-149",
+    "scenario": "battle-for-moscow",
+    "variant": "advanced",
+    "seed": 149,
+    "victoryMode": "historical"
+  },
+  {
+    "id": "moscow-advanced-graduated-149",
+    "scenario": "battle-for-moscow",
+    "variant": "advanced",
+    "seed": 149,
+    "victoryMode": "graduated"
+  }
+]

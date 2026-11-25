@@ -1,0 +1,41 @@
+{
+  "checkpoint": 208,
+  "version": "v442",
+  "sourcePdfSha256": "d55e8f0e567d1f8c7907c4fc8368954ec0e5fa8d6fe9e8e71c61acf9bb3c3756",
+  "candidateRules": {
+    "axisTurn1RomanianSetupAttackProhibition": true,
+    "sovietTurn1MechanizedAttackMultiplier": 2,
+    "sovietTurn2MechanizedAttackMultiplier": 1.5,
+    "sovietRomanianTerritoryEligibility": "WIP \u2014 not inferred"
+  },
+  "scope": "configuration-driven shared rule functions; Kiev campaign remains gated",
+  "focusedAssertions": 45,
+  "kievSourceGraphAssertions": 2949,
+  "crossGameTestSuites": 12,
+  "preservation": {
+    "protectedCount": 97,
+    "modified": [],
+    "categories": [
+      "source PDFs",
+      "five map SVG/PNG exports",
+      "supplied terrain art",
+      "original counters",
+      "map-data source files"
+    ]
+  },
+  "rulesFilesChanged": [
+    "core/historical_combat_declarations.js",
+    "core/historical_combat_odds.js",
+    "core/historical_combat_phase.js",
+    "core/historical_combat_consequences.js",
+    "core/historical_engine_browser_bundle.js"
+  ],
+  "tests": [
+    "tests/kiev-first-turn-combat-v442.test.js"
+  ],
+  "limitations": [
+    "Kiev unverified live movement policy still blocks native combat",
+    "Full turn-one Soviet Romanian-border eligibility requires source-verified initial-position lineage and geographical territory mask",
+    "Synthetic Leningrad transaction is a generic-engine test, not a historical scenario rule"
+  ]
+}

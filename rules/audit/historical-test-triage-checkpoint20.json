@@ -1,0 +1,275 @@
+{
+  "schemaVersion": 1,
+  "scope": "Triage of Checkpoint 19 historical tests; not a map-fidelity verdict",
+  "counts": {
+    "missing-preconsolidation-export": 17,
+    "pass": 8,
+    "assertion-mismatch-needs-manual-review": 8
+  },
+  "tests": [
+    {
+      "test": "tests/leningrad-coast-wavelets-v311.test.js",
+      "checkpoint19Status": "FAIL",
+      "failureClass": "missing-preconsolidation-export",
+      "disposition": "WIP",
+      "nextAction": "migrate-to-current-export-or-archive-as-historical",
+      "originalFirstError": "Error: ENOENT: no such file or directory, open 'exports-v311/leningrad.svg'"
+    },
+    {
+      "test": "tests/deployment-white-alpha-v294.test.js",
+      "checkpoint19Status": "PASS",
+      "failureClass": "pass",
+      "disposition": "DONE",
+      "nextAction": "retain",
+      "originalFirstError": ""
+    },
+    {
+      "test": "tests/leningrad-svg-v301.test.js",
+      "checkpoint19Status": "FAIL",
+      "failureClass": "assertion-mismatch-needs-manual-review",
+      "disposition": "WIP",
+      "nextAction": "review-current-requirement-before-migrating-or-retiring",
+      "originalFirstError": "throw new AssertionError(obj);"
+    },
+    {
+      "test": "tests/leningrad-source-v302.test.js",
+      "checkpoint19Status": "FAIL",
+      "failureClass": "missing-preconsolidation-export",
+      "disposition": "WIP",
+      "nextAction": "migrate-to-current-export-or-archive-as-historical",
+      "originalFirstError": "Error: ENOENT: no such file or directory, open 'exports-v302/leningrad.svg'"
+    },
+    {
+      "test": "tests/definitive-kiev-odessa-v290.test.js",
+      "checkpoint19Status": "FAIL",
+      "failureClass": "assertion-mismatch-needs-manual-review",
+      "disposition": "WIP",
+      "nextAction": "review-current-requirement-before-migrating-or-retiring",
+      "originalFirstError": "throw new AssertionError(obj);"
+    },
+    {
+      "test": "tests/leningrad-shared-wavelet-v315.test.js",
+      "checkpoint19Status": "PASS",
+      "failureClass": "pass",
+      "disposition": "DONE",
+      "nextAction": "retain",
+      "originalFirstError": ""
+    },
+    {
+      "test": "tests/universal-style-b4m-v297.test.js",
+      "checkpoint19Status": "FAIL",
+      "failureClass": "missing-preconsolidation-export",
+      "disposition": "WIP",
+      "nextAction": "migrate-to-current-export-or-archive-as-historical",
+      "originalFirstError": "Error: ENOENT: no such file or directory, open 'exports-v298/battle-for-moscow.svg'"
+    },
+    {
+      "test": "tests/odessa-source-terrain.test.js",
+      "checkpoint19Status": "FAIL",
+      "failureClass": "assertion-mismatch-needs-manual-review",
+      "disposition": "WIP",
+      "nextAction": "review-current-requirement-before-migrating-or-retiring",
+      "originalFirstError": "throw new AssertionError(obj);"
+    },
+    {
+      "test": "tests/leningrad-river-source-v304.test.js",
+      "checkpoint19Status": "FAIL",
+      "failureClass": "missing-preconsolidation-export",
+      "disposition": "WIP",
+      "nextAction": "migrate-to-current-export-or-archive-as-historical",
+      "originalFirstError": "Error: ENOENT: no such file or directory, open 'exports-v304/leningrad.svg'"
+    },
+    {
+      "test": "tests/svg-rail-deployments-v291.test.js",
+      "checkpoint19Status": "PASS",
+      "failureClass": "pass",
+      "disposition": "DONE",
+      "nextAction": "retain",
+      "originalFirstError": ""
+    },
+    {
+      "test": "tests/water-topology-v288.test.js",
+      "checkpoint19Status": "FAIL",
+      "failureClass": "assertion-mismatch-needs-manual-review",
+      "disposition": "WIP",
+      "nextAction": "review-current-requirement-before-migrating-or-retiring",
+      "originalFirstError": "throw new AssertionError(obj);"
+    },
+    {
+      "test": "tests/leningrad-source-coast-wavelets-v312.test.js",
+      "checkpoint19Status": "FAIL",
+      "failureClass": "missing-preconsolidation-export",
+      "disposition": "WIP",
+      "nextAction": "migrate-to-current-export-or-archive-as-historical",
+      "originalFirstError": "Error: ENOENT: no such file or directory, open 'exports-v312/leningrad.svg'"
+    },
+    {
+      "test": "tests/historical-map-asset-provenance-v317.test.js",
+      "checkpoint19Status": "PASS",
+      "failureClass": "pass",
+      "disposition": "DONE",
+      "nextAction": "retain",
+      "originalFirstError": ""
+    },
+    {
+      "test": "tests/coast-reinforcement-style-v293.test.js",
+      "checkpoint19Status": "FAIL",
+      "failureClass": "missing-preconsolidation-export",
+      "disposition": "WIP",
+      "nextAction": "migrate-to-current-export-or-archive-as-historical",
+      "originalFirstError": "Error: ENOENT: no such file or directory, open 'exports-v298/kiev-odessa.svg'"
+    },
+    {
+      "test": "tests/leningrad-wavelets-v309.test.js",
+      "checkpoint19Status": "FAIL",
+      "failureClass": "missing-preconsolidation-export",
+      "disposition": "WIP",
+      "nextAction": "migrate-to-current-export-or-archive-as-historical",
+      "originalFirstError": "Error: ENOENT: no such file or directory, open 'exports-v309/leningrad.svg'"
+    },
+    {
+      "test": "tests/leningrad-exact-water-v305.test.js",
+      "checkpoint19Status": "FAIL",
+      "failureClass": "missing-preconsolidation-export",
+      "disposition": "WIP",
+      "nextAction": "migrate-to-current-export-or-archive-as-historical",
+      "originalFirstError": "Error: ENOENT: no such file or directory, open 'exports-v305/leningrad.svg'"
+    },
+    {
+      "test": "tests/leningrad-source-lakes-v306.test.js",
+      "checkpoint19Status": "FAIL",
+      "failureClass": "missing-preconsolidation-export",
+      "disposition": "WIP",
+      "nextAction": "migrate-to-current-export-or-archive-as-historical",
+      "originalFirstError": "Error: ENOENT: no such file or directory, open 'exports-v306/leningrad.svg'"
+    },
+    {
+      "test": "tests/leningrad-sole-coast-authority-v313.test.js",
+      "checkpoint19Status": "FAIL",
+      "failureClass": "missing-preconsolidation-export",
+      "disposition": "WIP",
+      "nextAction": "migrate-to-current-export-or-archive-as-historical",
+      "originalFirstError": "Error: ENOENT: no such file or directory, open 'exports-v313/leningrad.svg'"
+    },
+    {
+      "test": "tests/leningrad-liepaja-coast-v308.test.js",
+      "checkpoint19Status": "FAIL",
+      "failureClass": "missing-preconsolidation-export",
+      "disposition": "WIP",
+      "nextAction": "migrate-to-current-export-or-archive-as-historical",
+      "originalFirstError": "Error: ENOENT: no such file or directory, open 'exports-v308/leningrad.svg'"
+    },
+    {
+      "test": "tests/leningrad-coast-coordinates-v307.test.js",
+      "checkpoint19Status": "FAIL",
+      "failureClass": "missing-preconsolidation-export",
+      "disposition": "WIP",
+      "nextAction": "migrate-to-current-export-or-archive-as-historical",
+      "originalFirstError": "Error: ENOENT: no such file or directory, open 'exports-v307/leningrad.svg'"
+    },
+    {
+      "test": "tests/official-counters.test.js",
+      "checkpoint19Status": "PASS",
+      "failureClass": "pass",
+      "disposition": "DONE",
+      "nextAction": "retain",
+      "originalFirstError": ""
+    },
+    {
+      "test": "tests/shared-historical-crt-v316.test.js",
+      "checkpoint19Status": "PASS",
+      "failureClass": "pass",
+      "disposition": "DONE",
+      "nextAction": "retain",
+      "originalFirstError": ""
+    },
+    {
+      "test": "tests/authoritative-kiev-odessa-v289.test.js",
+      "checkpoint19Status": "FAIL",
+      "failureClass": "assertion-mismatch-needs-manual-review",
+      "disposition": "WIP",
+      "nextAction": "review-current-requirement-before-migrating-or-retiring",
+      "originalFirstError": "throw new AssertionError(obj);"
+    },
+    {
+      "test": "tests/forest-shadow-major-river-v296.test.js",
+      "checkpoint19Status": "FAIL",
+      "failureClass": "assertion-mismatch-needs-manual-review",
+      "disposition": "WIP",
+      "nextAction": "review-current-requirement-before-migrating-or-retiring",
+      "originalFirstError": "throw new AssertionError(obj);"
+    },
+    {
+      "test": "tests/city-forest-layer-v295.test.js",
+      "checkpoint19Status": "PASS",
+      "failureClass": "pass",
+      "disposition": "DONE",
+      "nextAction": "retain",
+      "originalFirstError": ""
+    },
+    {
+      "test": "tests/leningrad-visible-coast-v314.test.js",
+      "checkpoint19Status": "FAIL",
+      "failureClass": "missing-preconsolidation-export",
+      "disposition": "WIP",
+      "nextAction": "migrate-to-current-export-or-archive-as-historical",
+      "originalFirstError": "Error: ENOENT: no such file or directory, open 'exports-v314/leningrad.svg'"
+    },
+    {
+      "test": "tests/arduous-leningrad-user-corrections-v310.test.js",
+      "checkpoint19Status": "FAIL",
+      "failureClass": "assertion-mismatch-needs-manual-review",
+      "disposition": "WIP",
+      "nextAction": "review-current-requirement-before-migrating-or-retiring",
+      "originalFirstError": "throw new AssertionError(obj);"
+    },
+    {
+      "test": "tests/kiev-rail-parity-v300.test.js",
+      "checkpoint19Status": "FAIL",
+      "failureClass": "missing-preconsolidation-export",
+      "disposition": "WIP",
+      "nextAction": "migrate-to-current-export-or-archive-as-historical",
+      "originalFirstError": "Error: ENOENT: no such file or directory, open 'exports-v300/kiev.svg'"
+    },
+    {
+      "test": "tests/grid-rail-snap-v299.test.js",
+      "checkpoint19Status": "FAIL",
+      "failureClass": "missing-preconsolidation-export",
+      "disposition": "WIP",
+      "nextAction": "migrate-to-current-export-or-archive-as-historical",
+      "originalFirstError": "Error: ENOENT: no such file or directory, open 'exports-v299/arduous.svg'"
+    },
+    {
+      "test": "tests/water-restoration-v287.test.js",
+      "checkpoint19Status": "FAIL",
+      "failureClass": "assertion-mismatch-needs-manual-review",
+      "disposition": "WIP",
+      "nextAction": "review-current-requirement-before-migrating-or-retiring",
+      "originalFirstError": "throw new AssertionError(obj);"
+    },
+    {
+      "test": "tests/universal-rail-deployment-v298.test.js",
+      "checkpoint19Status": "FAIL",
+      "failureClass": "missing-preconsolidation-export",
+      "disposition": "WIP",
+      "nextAction": "migrate-to-current-export-or-archive-as-historical",
+      "originalFirstError": "Error: ENOENT: no such file or directory, open 'exports-v298/arduous.svg'"
+    },
+    {
+      "test": "tests/shoreline-layer-exclusion-v303.test.js",
+      "checkpoint19Status": "FAIL",
+      "failureClass": "missing-preconsolidation-export",
+      "disposition": "WIP",
+      "nextAction": "migrate-to-current-export-or-archive-as-historical",
+      "originalFirstError": "Error: ENOENT: no such file or directory, open 'exports-v304/battle-for-moscow.svg'"
+    },
+    {
+      "test": "tests/svg-sea-style-v292.test.js",
+      "checkpoint19Status": "PASS",
+      "failureClass": "pass",
+      "disposition": "DONE",
+      "nextAction": "retain",
+      "originalFirstError": ""
+    }
+  ]
+}

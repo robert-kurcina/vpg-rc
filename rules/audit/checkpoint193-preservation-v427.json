@@ -1,0 +1,64 @@
+{
+  "checkpoint": 193,
+  "version": "v427",
+  "sourceBaseline": "checkpoint192/v426",
+  "unchangedProtectedFiles": 176,
+  "protectedFilesChanged": [],
+  "approvedMapPngsUnchanged": true,
+  "otherApprovedMapSvgsUnchanged": true,
+  "kievSvgDifference": "data-rail-link-count only: 97 -> 93",
+  "gameplayGateUnchanged": true,
+  "changedFiles": [
+    "PLAN.md",
+    "README.md",
+    "UPDATE.md",
+    "docs/engine/ARDUOUS_SPECIAL_COMBAT_KIEV_PREFLIGHT_V426.md",
+    "docs/engine/SOURCE_EDGE_EVIDENCE.md",
+    "exports/kiev.svg",
+    "exports/manifest.json",
+    "maps/kiev.json",
+    "rules/audit/arduous-kiev-certification-readiness-v318.json",
+    "rules/audit/arduous-kiev-rail-hexside-crossings-v318.json",
+    "rules/audit/arduous-kiev-rail-link-alignment-v318.json",
+    "rules/audit/arduous-kiev-svg-first-rail-graph-v318.json",
+    "tests/kiev-rail-parity-v300.test.js",
+    "tests/map-certification-readiness-v318.test.js",
+    "tests/rail-hexside-crossing-v318.test.py",
+    "tests/rail-link-alignment-v318.test.py",
+    "tests/source-edge-trace-v318.test.js",
+    "tests/svg-first-rail-graph-v318.test.py",
+    "tools/audit-rail-hexside-crossing-v318.py",
+    "tools/audit-rail-link-alignment-v318.py",
+    "tools/audit-source-edges-v318.js",
+    "tools/derive-svg-rail-graph-v318.py"
+  ],
+  "newFiles": [
+    "docs/engine/KIEV_RAIL_RECONCILIATION_V427.md",
+    "rules/audit/arduous-kiev-svg-edge-trace-v427.json",
+    "rules/audit/checkpoint193-preservation-v427.json",
+    "rules/audit/checkpoint193-regressions-v427.json",
+    "rules/audit/kiev-rail-reconstruction-v427.json",
+    "rules/audit/visual/kiev-rail-source-reconciliation-v427.png",
+    "tests/kiev-definitive-rail-v427.test.js",
+    "tests/kiev-definitive-rail-v427.test.py",
+    "tools/rebuild-kiev-rails-v427.py",
+    "tools/render-kiev-rail-delta-v427.py"
+  ],
+  "removedFiles": [
+    "rules/audit/arduous-kiev-svg-edge-trace-v318.json",
+    "rules/audit/kiev-source-topology-preflight-v426.json",
+    "tests/kiev-source-topology-preflight-v426.test.js"
+  ],
+  "regressions": {
+    "nodePassed": 20,
+    "nodeFailed": 2,
+    "nodeFailedUnchangedInCheckpoint192": [
+      "definitive-kiev-odessa-v290.test.js",
+      "authoritative-kiev-odessa-v289.test.js"
+    ],
+    "reason": "Historical 230-hex assertions; current Kiev\u2013Odessa has 261 hexes"
+  },
+  "sourceRailLinks": 93,
+  "reciprocalRailSides": 186,
+  "exteriorRailStubs": "Prior 9 preserved as uncertified metadata, excluded from internal-crossing count"
+}

@@ -1,0 +1,15 @@
+{
+  "checkpoint": 170,
+  "version": "v404",
+  "status": "PASS",
+  "actions": 178,
+  "stats": {
+    "moves": 31,
+    "combats": 2,
+    "reinforcements": 8,
+    "navalRolls": 2,
+    "turns": 8
+  },
+  "setup": "user-changed German initial cross + randomly permuted in-browser-equivalent concealed identities",
+  "qualifier": "deterministic test permutation, not independently certified hidden information"
+}

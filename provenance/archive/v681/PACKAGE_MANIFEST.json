@@ -1,0 +1,27 @@
+{
+  "checkpoint": 459,
+  "version": "v681",
+  "baseline": "hex_wargame_v680_CHECKPOINT_458_MISSION_SELECTOR.zip",
+  "description": "Shared mission toolbar, navigation menu and exact session Redo",
+  "changedExistingFiles": [
+    "PACKAGE_MANIFEST.json",
+    "PLAN.md",
+    "README.md",
+    "UPDATE.md",
+    "core/game_reference_dialog.js",
+    "core/historical_browser_app.js",
+    "core/mission_storage.js",
+    "core/native_browser_view.js",
+    "core/responsive_game_shell.css",
+    "tests/historical-mobile-map-workflow-v679.py",
+    "tests/mission-controls-isolated-v680.py",
+    "tests/mission-native-isolated-v680.py"
+  ],
+  "addedFiles": [
+    "tests/kiev-redo-die-v681.py",
+    "tests/mission-controls-redo-v681.py",
+    "tests/mission-native-redo-v681.py",
+    "tests/mission-redo-v681.test.js"
+  ],
+  "limitations": "Isolated Chromium fixtures; hosted cross-page persistence and confirmed navigation not verified. Redo future branch is session-local, not persisted. Full HTML rulebooks remain outstanding. Historical rules and AI unchanged."
+}

@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "scenarioId": "kiev-odessa",
+  "mode": "source-fleet-port-logistics-v1",
+  "status": "diagnostic-only-no-live-evacuation-phase-or-return-placement",
+  "source": [
+    "references/rules/odessa-rules.pdf §12.2 Fleet port replacements",
+    "references/rules/odessa-rules.pdf §15.3 Convoying Replacements and Evacuating Ports"
+  ],
+  "sourceRulebookSha256": "c7def97fe2de9ae66dc89da5f7d3417e3283846485903b90b88f153ba9791bab",
+  "owner": "soviet",
+  "markerKey": "blackSeaFleet",
+  "portHexes": {
+    "Odessa": "1513",
+    "Nikolaev": "1811"
+  },
+  "replacementException": true,
+  "damageDie": 1,
+  "evacuatedEarliestReturnTurnOffset": 1,
+  "turns": 7,
+  "limitations": [
+    "Section 15.3 does not specify a distinct phase for evacuation. This module does not authorize a production evacuation action without explicit phase qualification.",
+    "Return of evacuated survivors must pass the ordinary source-authorized Soviet reinforcement placement rules, including enemy control, ZOC and stacking.",
+    "The Kiev–Odessa combined historical buildup roster and territorial graph remain unqualified; this is source-scoped diagnostic logic only."
+  ]
+}

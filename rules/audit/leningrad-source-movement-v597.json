@@ -1,0 +1,26 @@
+{
+  "checkpoint": 363,
+  "version": "v597",
+  "source": "references/rules/leningrad-rules.pdf \u00a7\u00a77.1, 8.1\u20138.3, 9.1\u20139.4, 10.0\u201310.5",
+  "passed": {
+    "leningrad-source-special-movement-v597": 23,
+    "leningrad-combat-odds-v318": 27,
+    "leningrad-combat-geography-v318": 22,
+    "leningrad-combat-commitment-v318": 21,
+    "cross-game-movement-profiles-v318": 29,
+    "advanced-crt-v557": 301,
+    "leningrad-source-arrivals-v595": 37,
+    "legal-pathfinding-v318": 69
+  },
+  "total": 529,
+  "bundleModules": 59,
+  "limitations": [
+    "End-phase owner-selected overstack removal remains unimplemented",
+    "Postcombat Fleet choices not rerun",
+    "No new Chromium session",
+    "Controlled movement positions and bounded combat tests, not full historical certification"
+  ],
+  "productionChanges": [
+    "Enable shared allowFriendlyOverstackTransit option for Leningrad"
+  ]
+}

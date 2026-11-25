@@ -1,0 +1,75 @@
+[
+  [
+    "universal-counter-geometry-v420.test.js",
+    "PASS",
+    "atio\":0.45142},\"leningrad\":{\"hexHeight\":66.36,\"counterSize\":29.956,\"ratio\":0.45142},\"kiev\":{\"hexHeight\":66.52,\"counterSize\":30.029,\"ratio\":0.45143},\"kiev-odessa\":{\"hexHeight\":66.52,\"counterSize\":30.029,\"ratio\":0.45143}}\n"
+  ],
+  [
+    "official-counters.test.js",
+    "PASS",
+    "Official counter source hash, 5 designs, 8 NATO glyphs, numeral faces, colors, damage visibility, stacking, one-hit removal and combat transitions passed.\n"
+  ],
+  [
+    "browser-native-session-v367.test.js",
+    "PASS",
+    "{\"status\":\"PASS\",\"checkpoint\":133,\"hashes\":6,\"saves\":5,\"productionEngine\":\"generic-hex-v1\",\"sharedActionApi\":true,\"sharedRendering\":true}\n"
+  ],
+  [
+    "arduous-executable-graph-v419.test.js",
+    "PASS",
+    "PASS Arduous executable graph 21 checks (155 hexes, 85 rails, 45 river sides)\n"
+  ],
+  [
+    "arduous-full-source-opening-v413.test.js",
+    "PASS",
+    "uthored-city\",\"ruleSource\":\"arduous-rules.pdf \u00a76.0 #2\"},{\"hex\":\"1510\",\"sourceSvgId\":\"use338\",\"kind\":\"fixedMechanized\",\"terrain\":\"open\",\"anchorSource\":\"rule-and-authored-city\",\"ruleSource\":\"arduous-rules.pdf \u00a76.0 #2\"}]}}\n"
+  ],
+  [
+    "arduous-combat-river-fortification-v419.test.js",
+    "PASS",
+    "PASS Arduous shared CRT, fortification and approved river combat 17 checks\n"
+  ],
+  [
+    "arduous-river-candidates-v418.test.js",
+    "PASS",
+    "PASS Arduous source graph: 45 river candidates, zero incident-contact entries; 12 checks\n"
+  ],
+  [
+    "arduous-topology-probe-v418.test.js",
+    "PASS",
+    "PASS Arduous source topology probe 33 checks; movement probe was TEST-ONLY\n"
+  ],
+  [
+    "leningrad-counter-face-parity-v403.test.js",
+    "PASS",
+    "Counter source-face projection v403: 552 assertions PASS; 28 ground front/back pairs checked; four concealed/revealed Corps; sheet SHA256 verified\n"
+  ],
+  [
+    "leningrad-starting-inventory-v400.test.js",
+    "SKIP missing"
+  ],
+  [
+    "b4m-native-preview-v360.test.js",
+    "PASS",
+    "PASS B4M native preview v360: exact multi-mode movement, initial state, replacement, odds, first phase; production remains legacy\n"
+  ],
+  [
+    "b4m-native-objective-advance-v408.test.js",
+    "PASS",
+    "tion\":true,\"moscowDRHold\":true,\"defaultPoliciesPreserved\":true,\"undoAndSave\":true,\"limitations\":[\"Synthetic Moscow tactical board positions\",\"No new legacy strategic AI parity claim\",\"No active B4M production cutover\"]}\n"
+  ],
+  [
+    "shared-crt-compatibility-v317.test.js",
+    "SKIP missing"
+  ],
+  [
+    "map-movement-graph-v318.test.js",
+    "PASS",
+    "PASS movement graph 1081 assertions; hexes 197 edges 533 rails 80\n"
+  ],
+  [
+    "universal-style-b4m-v297.test.js",
+    "FAIL",
+    "nt [as runMain] (node:internal/modules/run_main:171:5)\n    at node:internal/main/run_main_module:36:49 {\n  errno: -2,\n  code: 'ENOENT',\n  syscall: 'open',\n  path: 'exports-v298/battle-for-moscow.svg'\n}\n\nNode.js v22.16.0\n"
+  ]
+]

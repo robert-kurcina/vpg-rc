@@ -1,0 +1,538 @@
+{
+  "schemaVersion": 1,
+  "checkpoint": 177,
+  "sourceMapSha256": "0cf849eaf683cd86443d244f20e5d03f8dc18ba354f88861d039307da162742d",
+  "sourceSvgSha256": "423af8983fd90a5be17041922a612efba42bbff306683ead9fd6910413402ede",
+  "mapId": "arduous-native-draft-v231",
+  "semantics": "verified-source-registration-agreement-not-gameplay-authority",
+  "authorizedForMovement": false,
+  "counts": {
+    "registeredRailLinks": 85,
+    "measuredSvgCrossings": 88,
+    "explicitlyRemovedCrossings": 3,
+    "traceableRailLinks": 85
+  },
+  "excludedCrossings": [
+    "1801:1802",
+    "1804:1805",
+    "1807:1808"
+  ],
+  "railLinks": [
+    {
+      "key": "0106:0207",
+      "sourceSvgIds": [
+        "path373"
+      ]
+    },
+    {
+      "key": "0109:0209",
+      "sourceSvgIds": [
+        "path372"
+      ]
+    },
+    {
+      "key": "0110:0211",
+      "sourceSvgIds": [
+        "path370"
+      ]
+    },
+    {
+      "key": "0205:0305",
+      "sourceSvgIds": [
+        "path374"
+      ]
+    },
+    {
+      "key": "0207:0208",
+      "sourceSvgIds": [
+        "path373"
+      ]
+    },
+    {
+      "key": "0208:0308",
+      "sourceSvgIds": [
+        "path373"
+      ]
+    },
+    {
+      "key": "0209:0308",
+      "sourceSvgIds": [
+        "path372"
+      ]
+    },
+    {
+      "key": "0210:0211",
+      "sourceSvgIds": [
+        "path369"
+      ]
+    },
+    {
+      "key": "0210:0309",
+      "sourceSvgIds": [
+        "path369"
+      ]
+    },
+    {
+      "key": "0211:0310",
+      "sourceSvgIds": [
+        "path377"
+      ]
+    },
+    {
+      "key": "0305:0405",
+      "sourceSvgIds": [
+        "path374"
+      ]
+    },
+    {
+      "key": "0308:0309",
+      "sourceSvgIds": [
+        "path369"
+      ]
+    },
+    {
+      "key": "0308:0408",
+      "sourceSvgIds": [
+        "path367"
+      ]
+    },
+    {
+      "key": "0308:0409",
+      "sourceSvgIds": [
+        "path368"
+      ]
+    },
+    {
+      "key": "0310:0410",
+      "sourceSvgIds": [
+        "path377"
+      ]
+    },
+    {
+      "key": "0405:0505",
+      "sourceSvgIds": [
+        "path375"
+      ]
+    },
+    {
+      "key": "0407:0408",
+      "sourceSvgIds": [
+        "path367"
+      ]
+    },
+    {
+      "key": "0407:0506",
+      "sourceSvgIds": [
+        "path367"
+      ]
+    },
+    {
+      "key": "0409:0508",
+      "sourceSvgIds": [
+        "path368"
+      ]
+    },
+    {
+      "key": "0410:0509",
+      "sourceSvgIds": [
+        "path377"
+      ]
+    },
+    {
+      "key": "0410:0510",
+      "sourceSvgIds": [
+        "path378"
+      ]
+    },
+    {
+      "key": "0505:0606",
+      "sourceSvgIds": [
+        "path375"
+      ]
+    },
+    {
+      "key": "0506:0606",
+      "sourceSvgIds": [
+        "path367"
+      ]
+    },
+    {
+      "key": "0508:0609",
+      "sourceSvgIds": [
+        "path368"
+      ]
+    },
+    {
+      "key": "0509:0609",
+      "sourceSvgIds": [
+        "path377"
+      ]
+    },
+    {
+      "key": "0510:0611",
+      "sourceSvgIds": [
+        "path378"
+      ]
+    },
+    {
+      "key": "0606:0705",
+      "sourceSvgIds": [
+        "path376"
+      ]
+    },
+    {
+      "key": "0606:0706",
+      "sourceSvgIds": [
+        "path364"
+      ]
+    },
+    {
+      "key": "0609:0610",
+      "sourceSvgIds": [
+        "path366"
+      ]
+    },
+    {
+      "key": "0609:0708",
+      "sourceSvgIds": [
+        "path365"
+      ]
+    },
+    {
+      "key": "0610:0611",
+      "sourceSvgIds": [
+        "path366"
+      ]
+    },
+    {
+      "key": "0611:0710",
+      "sourceSvgIds": [
+        "path379"
+      ]
+    },
+    {
+      "key": "0705:0805",
+      "sourceSvgIds": [
+        "path376"
+      ]
+    },
+    {
+      "key": "0706:0807",
+      "sourceSvgIds": [
+        "path364"
+      ]
+    },
+    {
+      "key": "0708:0808",
+      "sourceSvgIds": [
+        "path365"
+      ]
+    },
+    {
+      "key": "0710:0811",
+      "sourceSvgIds": [
+        "path379"
+      ]
+    },
+    {
+      "key": "0803:0804",
+      "sourceSvgIds": [
+        "path376"
+      ]
+    },
+    {
+      "key": "0804:0805",
+      "sourceSvgIds": [
+        "path376"
+      ]
+    },
+    {
+      "key": "0807:0907",
+      "sourceSvgIds": [
+        "path364"
+      ]
+    },
+    {
+      "key": "0808:0907",
+      "sourceSvgIds": [
+        "path365"
+      ]
+    },
+    {
+      "key": "0811:0910",
+      "sourceSvgIds": [
+        "path379"
+      ]
+    },
+    {
+      "key": "0907:1007",
+      "sourceSvgIds": [
+        "path352"
+      ]
+    },
+    {
+      "key": "0907:1008",
+      "sourceSvgIds": [
+        "path363"
+      ]
+    },
+    {
+      "key": "0910:1010",
+      "sourceSvgIds": [
+        "path379"
+      ]
+    },
+    {
+      "key": "1007:1106",
+      "sourceSvgIds": [
+        "path352"
+      ]
+    },
+    {
+      "key": "1008:1108",
+      "sourceSvgIds": [
+        "path363"
+      ]
+    },
+    {
+      "key": "1010:1110",
+      "sourceSvgIds": [
+        "path379"
+      ]
+    },
+    {
+      "key": "1102:1203",
+      "sourceSvgIds": [
+        "path346"
+      ]
+    },
+    {
+      "key": "1106:1206",
+      "sourceSvgIds": [
+        "path352"
+      ]
+    },
+    {
+      "key": "1108:1209",
+      "sourceSvgIds": [
+        "path363"
+      ]
+    },
+    {
+      "key": "1110:1211",
+      "sourceSvgIds": [
+        "path379"
+      ]
+    },
+    {
+      "key": "1203:1303",
+      "sourceSvgIds": [
+        "path347"
+      ]
+    },
+    {
+      "key": "1206:1305",
+      "sourceSvgIds": [
+        "path352"
+      ]
+    },
+    {
+      "key": "1209:1309",
+      "sourceSvgIds": [
+        "path363"
+      ]
+    },
+    {
+      "key": "1211:1310",
+      "sourceSvgIds": [
+        "path379"
+      ]
+    },
+    {
+      "key": "1303:1404",
+      "sourceSvgIds": [
+        "path347"
+      ]
+    },
+    {
+      "key": "1305:1405",
+      "sourceSvgIds": [
+        "path352"
+      ]
+    },
+    {
+      "key": "1309:1410",
+      "sourceSvgIds": [
+        "path363"
+      ]
+    },
+    {
+      "key": "1310:1411",
+      "sourceSvgIds": [
+        "path379"
+      ]
+    },
+    {
+      "key": "1402:1403",
+      "sourceSvgIds": [
+        "path349"
+      ]
+    },
+    {
+      "key": "1402:1501",
+      "sourceSvgIds": [
+        "path355"
+      ]
+    },
+    {
+      "key": "1403:1404",
+      "sourceSvgIds": [
+        "path349"
+      ]
+    },
+    {
+      "key": "1404:1405",
+      "sourceSvgIds": [
+        "path350"
+      ]
+    },
+    {
+      "key": "1404:1504",
+      "sourceSvgIds": [
+        "path354"
+      ]
+    },
+    {
+      "key": "1405:1505",
+      "sourceSvgIds": [
+        "path351"
+      ]
+    },
+    {
+      "key": "1408:1409",
+      "sourceSvgIds": [
+        "path360"
+      ]
+    },
+    {
+      "key": "1408:1507",
+      "sourceSvgIds": [
+        "path360"
+      ]
+    },
+    {
+      "key": "1409:1410",
+      "sourceSvgIds": [
+        "path360"
+      ]
+    },
+    {
+      "key": "1410:1510",
+      "sourceSvgIds": [
+        "path361"
+      ]
+    },
+    {
+      "key": "1411:1510",
+      "sourceSvgIds": [
+        "path379"
+      ]
+    },
+    {
+      "key": "1501:1602",
+      "sourceSvgIds": [
+        "path355"
+      ]
+    },
+    {
+      "key": "1504:1605",
+      "sourceSvgIds": [
+        "path354"
+      ]
+    },
+    {
+      "key": "1505:1506",
+      "sourceSvgIds": [
+        "path359"
+      ]
+    },
+    {
+      "key": "1505:1605",
+      "sourceSvgIds": [
+        "path353"
+      ]
+    },
+    {
+      "key": "1506:1507",
+      "sourceSvgIds": [
+        "path359"
+      ]
+    },
+    {
+      "key": "1510:1610",
+      "sourceSvgIds": [
+        "path362"
+      ]
+    },
+    {
+      "key": "1602:1701",
+      "sourceSvgIds": [
+        "path355"
+      ]
+    },
+    {
+      "key": "1605:1704",
+      "sourceSvgIds": [
+        "path353"
+      ]
+    },
+    {
+      "key": "1610:1709",
+      "sourceSvgIds": [
+        "path362"
+      ]
+    },
+    {
+      "key": "1701:1802",
+      "sourceSvgIds": [
+        "path355"
+      ]
+    },
+    {
+      "key": "1704:1705",
+      "sourceSvgIds": [
+        "path357"
+      ]
+    },
+    {
+      "key": "1704:1805",
+      "sourceSvgIds": [
+        "path356"
+      ]
+    },
+    {
+      "key": "1705:1806",
+      "sourceSvgIds": [
+        "path357"
+      ]
+    },
+    {
+      "key": "1709:1810",
+      "sourceSvgIds": [
+        "path362"
+      ]
+    },
+    {
+      "key": "1806:1807",
+      "sourceSvgIds": [
+        "path357"
+      ]
+    }
+  ],
+  "sourceExclusions": "maps/arduous.json v310UserRailDeploymentAudit.removedRailLinks",
+  "remaining": [
+    "Terrain-base classification and 2 untranscribed source cells",
+    "River/shore and source-grid registration still require gameplay reconciliation",
+    "No source movement policy was promoted by this audit"
+  ]
+}

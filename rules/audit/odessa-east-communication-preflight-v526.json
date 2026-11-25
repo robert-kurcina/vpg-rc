@@ -1,0 +1,157 @@
+{
+  "checkpoint": 292,
+  "version": "v526",
+  "status": "PASS-diagnostic-only",
+  "checks": 265,
+  "sourceReference": "Kiev §12.2 communications and Odessa §5.0 isolation",
+  "sourceBorderAuthority": "SOURCE_GUIDED_VISUAL_GEOMETRY_NOT_RULE_CERTIFIED",
+  "metadata": {
+    "status": "candidate-only-not-gameplay-authorized",
+    "sourceTraceStatus": "SOURCE_GUIDED_VISUAL_GEOMETRY_NOT_RULE_CERTIFIED",
+    "sourceTraceSvgSha256": "69759a57e8e46a5075924a803a6ced6905a180f3570e41bab02bd7c697bbfc5a",
+    "markedSovietSides": 26,
+    "exteriorSideCount": 24,
+    "internalMarkCount": 2,
+    "exteriorCandidateHexes": [
+      "1601",
+      "1701",
+      "1801",
+      "1802",
+      "1803",
+      "1804",
+      "1805",
+      "1806",
+      "1807",
+      "1808",
+      "1809",
+      "1810"
+    ],
+    "internalMarkedSides": [
+      {
+        "hex": "1810",
+        "side": "SE",
+        "adjacentHex": "1911"
+      },
+      {
+        "hex": "1810",
+        "side": "S",
+        "adjacentHex": "1811"
+      }
+    ],
+    "certifiedForVictory": false,
+    "certifiedForReinforcements": false
+  },
+  "initialCities": {
+    "Lublin": {
+      "reachableCandidate": true,
+      "pathLength": 15,
+      "exitHex": "1601"
+    },
+    "Lvov": {
+      "reachableCandidate": true,
+      "pathLength": 13,
+      "exitHex": "1601"
+    },
+    "Kovel": {
+      "reachableCandidate": true,
+      "pathLength": 12,
+      "exitHex": "1601"
+    },
+    "Stanislavov": {
+      "reachableCandidate": true,
+      "pathLength": 12,
+      "exitHex": "1601"
+    },
+    "Tarnopol": {
+      "reachableCandidate": true,
+      "pathLength": 10,
+      "exitHex": "1601"
+    },
+    "Chernovtsy": {
+      "reachableCandidate": true,
+      "pathLength": 12,
+      "exitHex": "1601"
+    },
+    "Rovno": {
+      "reachableCandidate": true,
+      "pathLength": 9,
+      "exitHex": "1601"
+    },
+    "Sarny": {
+      "reachableCandidate": true,
+      "pathLength": 8,
+      "exitHex": "1601"
+    },
+    "Shepetovka": {
+      "reachableCandidate": true,
+      "pathLength": 8,
+      "exitHex": "1601"
+    },
+    "Iasi": {
+      "reachableCandidate": true,
+      "pathLength": 9,
+      "exitHex": "1806"
+    },
+    "Brăila": {
+      "reachableCandidate": true,
+      "pathLength": 11,
+      "exitHex": "1810"
+    },
+    "Zhitomir": {
+      "reachableCandidate": true,
+      "pathLength": 7,
+      "exitHex": "1601"
+    },
+    "Vinnitsa": {
+      "reachableCandidate": true,
+      "pathLength": 8,
+      "exitHex": "1803"
+    },
+    "Chisinau": {
+      "reachableCandidate": true,
+      "pathLength": 7,
+      "exitHex": "1808"
+    },
+    "Kiev": {
+      "reachableCandidate": true,
+      "pathLength": 5,
+      "exitHex": "1601"
+    },
+    "Uman": {
+      "reachableCandidate": true,
+      "pathLength": 5,
+      "exitHex": "1806"
+    },
+    "Odessa": {
+      "reachableCandidate": true,
+      "pathLength": 5,
+      "exitHex": "1810"
+    },
+    "Chernigov": {
+      "reachableCandidate": true,
+      "pathLength": 2,
+      "exitHex": "1601"
+    },
+    "Kirovograd": {
+      "reachableCandidate": true,
+      "pathLength": 2,
+      "exitHex": "1807"
+    },
+    "Nikolaev": {
+      "reachableCandidate": true,
+      "pathLength": 2,
+      "exitHex": "1810"
+    }
+  },
+  "blockedExitTest": {
+    "origin": "1404",
+    "reachable": false,
+    "blockedCandidateExitCount": 12
+  },
+  "unresolved": [
+    "Border is visual source trace, not source-certified placement ledger",
+    "full land/shoreline graph is still diagnostic",
+    "star/rear marker discrepancies",
+    "Romanian political movement mask"
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "schemaVersion": 1,
+  "status": "PREVIEW_ONLY",
+  "sourceMap": "maps/leningrad.json",
+  "sourceMapSHA256": "3ec95353555af6703d2fd006b11b55e2b98685e296f36e528da85547d6933b17",
+  "coordinateAuthority": "candidate from existing printed-coordinate translation, NOT independently source-certified",
+  "sourceSvg": "maps/source/user-svg/leningrad-main.svg",
+  "sourceSvgSHA256": "ea1c83d00eea0212c530b98fd794125959175ad9d1cfa067aef78d6d73502447",
+  "scenarioId": "leningrad",
+  "physicalCellCount": 197,
+  "canonicalCellCount": 186,
+  "visualOnlyCellCount": 11,
+  "physicalEdgesRetained": 502,
+  "syntheticTestUnits": 10,
+  "syntheticTestHistoryEntries": 1,
+  "deploymentTranslations": [
+    {
+      "sourcePhysicalId": "0209",
+      "candidateCanonicalId": "0108",
+      "kind": "star"
+    },
+    {
+      "sourcePhysicalId": "0210",
+      "candidateCanonicalId": "0109",
+      "kind": "cross"
+    },
+    {
+      "sourcePhysicalId": "0309",
+      "candidateCanonicalId": "0209",
+      "kind": "star"
+    },
+    {
+      "sourcePhysicalId": "0310",
+      "candidateCanonicalId": "0210",
+      "kind": "cross"
+    },
+    {
+      "sourcePhysicalId": "0311",
+      "candidateCanonicalId": "0211",
+      "kind": "cross"
+    },
+    {
+      "sourcePhysicalId": "0410",
+      "candidateCanonicalId": "0310",
+      "kind": "star"
+    },
+    {
+      "sourcePhysicalId": "0411",
+      "candidateCanonicalId": "0311",
+      "kind": "cross"
+    },
+    {
+      "sourcePhysicalId": "0510",
+      "candidateCanonicalId": "0410",
+      "kind": "star"
+    },
+    {
+      "sourcePhysicalId": "0511",
+      "candidateCanonicalId": "0411",
+      "kind": "cross"
+    },
+    {
+      "sourcePhysicalId": "0611",
+      "candidateCanonicalId": "0511",
+      "kind": "star"
+    }
+  ],
+  "stateRoundTripVerified": true,
+  "historyRoundTripVerified": true,
+  "failClosedCases": [
+    "unmapped physical sea hex",
+    "unknown position reference",
+    "nested unit fields",
+    "double conversion",
+    "invalid projection registry",
+    "unknown historic draft fields"
+  ],
+  "productionMapChanged": false,
+  "historicalSetupAuthorized": false,
+  "saveFormatActivated": false,
+  "remainingBlockers": [
+    "independent historical-coordinate certification",
+    "visual-only sea composition",
+    "source feature and scenario reference activation",
+    "runtime-save-format integration"
+  ]
+}

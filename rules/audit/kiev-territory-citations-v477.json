@@ -1,0 +1,29 @@
+{
+  "checkpoint": 243,
+  "version": "v477",
+  "assertions": 87,
+  "status": "PASS",
+  "formatVersion": 2,
+  "sourcePositive": [
+    "0709",
+    "0809",
+    "0910",
+    "1010"
+  ],
+  "sourceNegative": [
+    "0105",
+    "0203",
+    "0204",
+    "0301",
+    "0302",
+    "0303",
+    "0402"
+  ],
+  "untouchedUnreviewed": 154,
+  "sourceCitationRoundtrip": true,
+  "legacyV1Import": true,
+  "staleCitationDroppedOnOppositeLabel": true,
+  "manualFullCitedStillCertified": false,
+  "productionKievPlayable": false,
+  "scope": "Review-source traceability only; no national boundary inferred"
+}

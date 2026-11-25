@@ -1,0 +1,24 @@
+{
+  "completed": [
+    {
+      "id": "leningrad-standard",
+      "actions": 492,
+      "cities": 5,
+      "outcome": "soviet-victory",
+      "exactRestore": true,
+      "journalSha256": "5d1b6e7cca42dd43d757b8625b6a4e792e1f355a87d4830d1609e4e440a779df"
+    },
+    {
+      "id": "leningrad-advanced",
+      "actions": 570,
+      "cities": 9,
+      "outcome": "soviet-victory",
+      "exactRestore": true,
+      "journalSha256": "683bbac66f190c5d17cfcf127ca2cd42bd3fda85ab42b6a85f5c467b7a3d6e7d"
+    }
+  ],
+  "freshDefaultHistoricalCombinations": 6,
+  "requiredCombinations": 10,
+  "actualHostedAcceptance": false,
+  "notes": "Batch and separate Kiev Standard attempt timed out; no Kiev terminal report. CRT and browser bundle regressions passed."
+}

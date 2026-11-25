@@ -1,0 +1,30 @@
+{
+  "checkpoint": 138,
+  "status": "PASS",
+  "browser": "Isolated Chromium DOM supplied actual image bytes (hosted navigation blocked by system policy)",
+  "sharedRenderer": "HexTerrainTiles.svgMap",
+  "decodedSourceArtwork": {
+    "total": 40,
+    "terrain": 7,
+    "fortification": 22,
+    "city": 11,
+    "allEmbedded": true
+  },
+  "pixelParity": {
+    "match": true,
+    "export": "exports/battle-for-moscow.png",
+    "size": [
+      1690,
+      1229
+    ]
+  },
+  "failClosedMissingTexture": true,
+  "failClosedCorruptTexture": true,
+  "leningradVisualBaseline": "v350 preserved; v372 user-requested foreground-shadow candidate",
+  "productionRouting": "legacy-b4m-v1",
+  "artifacts": {
+    "interactiveBrowserScreenshot": "rules/audit/visual/b4m-native-browser-corrected-v372.png",
+    "browserMapSvg": "rules/audit/visual/b4m-native-browser-base-v372.svg",
+    "browserMapPng": "rules/audit/visual/b4m-native-browser-base-v372.png"
+  }
+}

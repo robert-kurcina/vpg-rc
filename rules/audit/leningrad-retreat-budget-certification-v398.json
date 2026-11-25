@@ -1,0 +1,27 @@
+{
+  "checkpoint": 164,
+  "version": "v398",
+  "assertions": 16,
+  "sourceFixture": "synthetic combinatorial graph; not historical map evidence",
+  "small": {
+    "status": "certified-forced-retreat-options",
+    "exhaustive": true
+  },
+  "large": {
+    "status": "joint-retreat-unresolved",
+    "exhaustive": false,
+    "orderSafetySearchLimited": true,
+    "candidateChoices": 300,
+    "optionsPerDefender": 20
+  },
+  "noIndependent": {
+    "status": "joint-retreat-unresolved",
+    "exhaustive": false,
+    "orderDiscoveryLimited": true
+  },
+  "safety": "Unverified survivor-preserving joint orders cannot authorize a known fatal retreat",
+  "constraints": [
+    "This test does not certify historical graph coordinates",
+    "Large joint-retreat search remains incomplete"
+  ]
+}

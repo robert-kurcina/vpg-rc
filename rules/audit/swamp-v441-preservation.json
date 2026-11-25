@@ -1,0 +1,48 @@
+{
+  "checkpoint": 207,
+  "version": "v441",
+  "comparisonBase": "hex_wargame_v440_CHECKPOINT_206_SWAMP_ADJUSTMENT.zip",
+  "identicalFileCount": 1111,
+  "changedFiles": [
+    "PLAN.md",
+    "README.md",
+    "UPDATE.md",
+    "core/historical_engine_browser_bundle.js",
+    "core/presentation.js",
+    "core/terrain_tiles.js",
+    "exports/arduous.png",
+    "exports/arduous.svg",
+    "exports/battle-for-moscow.svg",
+    "exports/kiev-odessa.png",
+    "exports/kiev-odessa.svg",
+    "exports/kiev.png",
+    "exports/kiev.svg",
+    "exports/leningrad.png",
+    "exports/leningrad.svg",
+    "exports/manifest.json",
+    "maps/kiev.json",
+    "maps/odessa-extension.json",
+    "tests/terrain-bitmap-palette-v439.test.js",
+    "tests/terrain-swamp-adjustment-v440.test.js"
+  ],
+  "newFiles": [
+    "docs/engine/SEAMLESS_SWAMP_USER_ART_V441.md",
+    "rules/audit/seamless-swamp-1111-v441.json",
+    "rules/audit/seamless-swamp-browser-v441.json",
+    "rules/audit/swamp-v441-preservation.json",
+    "rules/audit/visual/kiev-swamp-1111-v440-v441-comparison.png",
+    "supplied_assets/flat/terrain-swamp-user-v441.png",
+    "tests/seamless-swamp-1111-v441.test.js",
+    "tests/seamless-swamp-browser-v441.py"
+  ],
+  "deletedFiles": [
+    "tmp-v440a.png",
+    "tmp-v440b.png",
+    "tmp-v440c.png"
+  ],
+  "protectedSourceFilesCompared": 161,
+  "protectedSourcesByteIdentical": true,
+  "kievAndOdessaSemanticMapDataUnchangedExceptVisualOverrides": true,
+  "originalUserTerrainBitmapsPreserved": true,
+  "sharedCRTUnchanged": true
+}

@@ -1,0 +1,690 @@
+{
+  "version": "v625",
+  "checkpoint": 391,
+  "runs": [
+    {
+      "seed": 7,
+      "variant": "standard",
+      "phases": [
+        {
+          "turn": 1,
+          "phase": "german-combat",
+          "counts": {
+            "below-minimum": 7,
+            "multi-attacker-unsupported": 21,
+            "concealed-strength-unestimated": 11
+          }
+        },
+        {
+          "turn": 1,
+          "phase": "soviet-combat",
+          "counts": {
+            "below-minimum": 7,
+            "concealed-strength-unestimated": 10,
+            "multi-attacker-unsupported": 17
+          }
+        },
+        {
+          "turn": 2,
+          "phase": "german-combat",
+          "counts": {
+            "below-minimum": 8,
+            "multi-attacker-unsupported": 14,
+            "concealed-strength-unestimated": 10
+          }
+        },
+        {
+          "turn": 2,
+          "phase": "soviet-combat",
+          "counts": {
+            "below-minimum": 6,
+            "concealed-strength-unestimated": 6,
+            "low-odds-policy": 1,
+            "multi-attacker-unsupported": 8
+          }
+        },
+        {
+          "turn": 3,
+          "phase": "german-combat",
+          "counts": {
+            "below-minimum": 6,
+            "multi-attacker-unsupported": 9,
+            "concealed-strength-unestimated": 6
+          }
+        },
+        {
+          "turn": 3,
+          "phase": "soviet-combat",
+          "counts": {
+            "below-minimum": 5,
+            "concealed-strength-unestimated": 6,
+            "low-odds-policy": 1,
+            "multi-attacker-unsupported": 8
+          }
+        },
+        {
+          "turn": 4,
+          "phase": "german-combat",
+          "counts": {
+            "below-minimum": 7,
+            "multi-attacker-unsupported": 12,
+            "concealed-strength-unestimated": 6
+          }
+        },
+        {
+          "turn": 4,
+          "phase": "soviet-combat",
+          "counts": {
+            "below-minimum": 5,
+            "concealed-strength-unestimated": 6,
+            "low-odds-policy": 1,
+            "multi-attacker-unsupported": 8
+          }
+        },
+        {
+          "turn": 5,
+          "phase": "german-combat",
+          "counts": {
+            "below-minimum": 7,
+            "multi-attacker-unsupported": 8,
+            "concealed-strength-unestimated": 3
+          }
+        },
+        {
+          "turn": 5,
+          "phase": "soviet-combat",
+          "counts": {
+            "below-minimum": 6,
+            "low-odds-policy": 1,
+            "concealed-strength-unestimated": 3,
+            "multi-attacker-unsupported": 5
+          }
+        },
+        {
+          "turn": 6,
+          "phase": "german-combat",
+          "counts": {
+            "below-minimum": 9,
+            "multi-attacker-unsupported": 9,
+            "concealed-strength-unestimated": 3
+          }
+        },
+        {
+          "turn": 6,
+          "phase": "soviet-combat",
+          "counts": {
+            "below-minimum": 6,
+            "low-odds-policy": 2,
+            "concealed-strength-unestimated": 3,
+            "multi-attacker-unsupported": 5
+          }
+        },
+        {
+          "turn": 7,
+          "phase": "german-combat",
+          "counts": {
+            "below-minimum": 9,
+            "multi-attacker-unsupported": 9,
+            "concealed-strength-unestimated": 3
+          }
+        },
+        {
+          "turn": 7,
+          "phase": "soviet-combat",
+          "counts": {
+            "low-odds-policy": 2,
+            "concealed-strength-unestimated": 3,
+            "multi-attacker-unsupported": 5,
+            "below-minimum": 5
+          }
+        }
+      ],
+      "counts": {
+        "below-minimum": 93,
+        "multi-attacker-unsupported": 138,
+        "concealed-strength-unestimated": 79,
+        "low-odds-policy": 8
+      },
+      "terminalVerified": true,
+      "result": {
+        "counts": {
+          "below-minimum": 93,
+          "multi-attacker-unsupported": 138,
+          "concealed-strength-unestimated": 79,
+          "low-odds-policy": 8
+        },
+        "phases": [
+          {
+            "turn": 1,
+            "phase": "german-combat",
+            "counts": {
+              "below-minimum": 7,
+              "multi-attacker-unsupported": 21,
+              "concealed-strength-unestimated": 11
+            }
+          },
+          {
+            "turn": 1,
+            "phase": "soviet-combat",
+            "counts": {
+              "below-minimum": 7,
+              "concealed-strength-unestimated": 10,
+              "multi-attacker-unsupported": 17
+            }
+          },
+          {
+            "turn": 2,
+            "phase": "german-combat",
+            "counts": {
+              "below-minimum": 8,
+              "multi-attacker-unsupported": 14,
+              "concealed-strength-unestimated": 10
+            }
+          },
+          {
+            "turn": 2,
+            "phase": "soviet-combat",
+            "counts": {
+              "below-minimum": 6,
+              "concealed-strength-unestimated": 6,
+              "low-odds-policy": 1,
+              "multi-attacker-unsupported": 8
+            }
+          },
+          {
+            "turn": 3,
+            "phase": "german-combat",
+            "counts": {
+              "below-minimum": 6,
+              "multi-attacker-unsupported": 9,
+              "concealed-strength-unestimated": 6
+            }
+          },
+          {
+            "turn": 3,
+            "phase": "soviet-combat",
+            "counts": {
+              "below-minimum": 5,
+              "concealed-strength-unestimated": 6,
+              "low-odds-policy": 1,
+              "multi-attacker-unsupported": 8
+            }
+          },
+          {
+            "turn": 4,
+            "phase": "german-combat",
+            "counts": {
+              "below-minimum": 7,
+              "multi-attacker-unsupported": 12,
+              "concealed-strength-unestimated": 6
+            }
+          },
+          {
+            "turn": 4,
+            "phase": "soviet-combat",
+            "counts": {
+              "below-minimum": 5,
+              "concealed-strength-unestimated": 6,
+              "low-odds-policy": 1,
+              "multi-attacker-unsupported": 8
+            }
+          },
+          {
+            "turn": 5,
+            "phase": "german-combat",
+            "counts": {
+              "below-minimum": 7,
+              "multi-attacker-unsupported": 8,
+              "concealed-strength-unestimated": 3
+            }
+          },
+          {
+            "turn": 5,
+            "phase": "soviet-combat",
+            "counts": {
+              "below-minimum": 6,
+              "low-odds-policy": 1,
+              "concealed-strength-unestimated": 3,
+              "multi-attacker-unsupported": 5
+            }
+          },
+          {
+            "turn": 6,
+            "phase": "german-combat",
+            "counts": {
+              "below-minimum": 9,
+              "multi-attacker-unsupported": 9,
+              "concealed-strength-unestimated": 3
+            }
+          },
+          {
+            "turn": 6,
+            "phase": "soviet-combat",
+            "counts": {
+              "below-minimum": 6,
+              "low-odds-policy": 2,
+              "concealed-strength-unestimated": 3,
+              "multi-attacker-unsupported": 5
+            }
+          },
+          {
+            "turn": 7,
+            "phase": "german-combat",
+            "counts": {
+              "below-minimum": 9,
+              "multi-attacker-unsupported": 9,
+              "concealed-strength-unestimated": 3
+            }
+          },
+          {
+            "turn": 7,
+            "phase": "soviet-combat",
+            "counts": {
+              "low-odds-policy": 2,
+              "concealed-strength-unestimated": 3,
+              "multi-attacker-unsupported": 5,
+              "below-minimum": 5
+            }
+          }
+        ],
+        "seed": 7,
+        "variant": "standard",
+        "status": "complete",
+        "reason": null,
+        "detail": null,
+        "decision": {
+          "status": "complete",
+          "terminal": {
+            "axisControlledCount": 2,
+            "cityControl": {
+              "Chernigov": "soviet",
+              "Chernovtsy": "soviet",
+              "Iasi": "german",
+              "Kiev": "soviet",
+              "Kirovograd": "soviet",
+              "Kovel": "soviet",
+              "Lublin": "german",
+              "Lvov": "soviet",
+              "Rovno": "soviet",
+              "Sarny": "soviet",
+              "Shepetovka": "soviet",
+              "Stanislavov": "soviet",
+              "Tarnopol": "soviet",
+              "Uman": "soviet",
+              "Vinnitsa": "soviet",
+              "Zhitomir": "soviet"
+            },
+            "onlyRemainingCity": null,
+            "onlyRemainingCityIsolated": null,
+            "outcome": "soviet-victory",
+            "reason": "axis-controls-at-most-threshold",
+            "totalCities": 16
+          }
+        },
+        "stats": {
+          "moves": 27,
+          "combats": 0,
+          "reinforcements": 6,
+          "navalRolls": 0,
+          "turns": 7
+        },
+        "actions": 137,
+        "outcomes": {},
+        "oddsDistribution": {},
+        "attackSelection": "continuation-pilot",
+        "terminal": "soviet-victory",
+        "phase": null
+      }
+    },
+    {
+      "seed": 42,
+      "variant": "advanced",
+      "phases": [
+        {
+          "turn": 1,
+          "phase": "german-combat",
+          "counts": {
+            "low-odds-policy": 4,
+            "multi-attacker-unsupported": 21,
+            "concealed-strength-unestimated": 11,
+            "below-minimum": 3
+          }
+        },
+        {
+          "turn": 1,
+          "phase": "soviet-combat",
+          "counts": {
+            "below-minimum": 2,
+            "concealed-strength-unestimated": 10,
+            "low-odds-policy": 5,
+            "multi-attacker-unsupported": 17
+          }
+        },
+        {
+          "turn": 2,
+          "phase": "german-combat",
+          "counts": {
+            "low-odds-policy": 3,
+            "multi-attacker-unsupported": 12,
+            "concealed-strength-unestimated": 11,
+            "below-minimum": 3
+          }
+        },
+        {
+          "turn": 2,
+          "phase": "soviet-combat",
+          "counts": {
+            "below-minimum": 1,
+            "concealed-strength-unestimated": 10,
+            "low-odds-policy": 4,
+            "multi-attacker-unsupported": 16
+          }
+        },
+        {
+          "turn": 3,
+          "phase": "german-combat",
+          "counts": {
+            "low-odds-policy": 3,
+            "below-minimum": 4,
+            "multi-attacker-unsupported": 7,
+            "concealed-strength-unestimated": 8
+          }
+        },
+        {
+          "turn": 3,
+          "phase": "soviet-combat",
+          "counts": {
+            "below-minimum": 1,
+            "low-odds-policy": 4,
+            "concealed-strength-unestimated": 6,
+            "multi-attacker-unsupported": 5
+          }
+        },
+        {
+          "turn": 4,
+          "phase": "german-combat",
+          "counts": {
+            "low-odds-policy": 3,
+            "below-minimum": 4,
+            "multi-attacker-unsupported": 7,
+            "concealed-strength-unestimated": 7
+          }
+        },
+        {
+          "turn": 4,
+          "phase": "soviet-combat",
+          "counts": {
+            "below-minimum": 1,
+            "low-odds-policy": 4,
+            "concealed-strength-unestimated": 8,
+            "multi-attacker-unsupported": 5
+          }
+        },
+        {
+          "turn": 5,
+          "phase": "german-combat",
+          "counts": {
+            "low-odds-policy": 3,
+            "below-minimum": 4,
+            "multi-attacker-unsupported": 8,
+            "concealed-strength-unestimated": 9
+          }
+        },
+        {
+          "turn": 5,
+          "phase": "soviet-combat",
+          "counts": {
+            "below-minimum": 1,
+            "low-odds-policy": 4,
+            "concealed-strength-unestimated": 8,
+            "multi-attacker-unsupported": 6
+          }
+        },
+        {
+          "turn": 6,
+          "phase": "german-combat",
+          "counts": {
+            "low-odds-policy": 3,
+            "below-minimum": 4,
+            "multi-attacker-unsupported": 9,
+            "concealed-strength-unestimated": 9
+          }
+        },
+        {
+          "turn": 6,
+          "phase": "soviet-combat",
+          "counts": {
+            "low-odds-policy": 5,
+            "concealed-strength-unestimated": 8,
+            "multi-attacker-unsupported": 6,
+            "below-minimum": 1
+          }
+        },
+        {
+          "turn": 7,
+          "phase": "german-combat",
+          "counts": {
+            "low-odds-policy": 2,
+            "below-minimum": 4,
+            "concealed-strength-unestimated": 9,
+            "multi-attacker-unsupported": 7
+          }
+        },
+        {
+          "turn": 7,
+          "phase": "soviet-combat",
+          "counts": {
+            "low-odds-policy": 4,
+            "below-minimum": 1,
+            "concealed-strength-unestimated": 7,
+            "multi-attacker-unsupported": 5
+          }
+        }
+      ],
+      "counts": {
+        "low-odds-policy": 51,
+        "multi-attacker-unsupported": 131,
+        "concealed-strength-unestimated": 121,
+        "below-minimum": 34
+      },
+      "terminalVerified": true,
+      "result": {
+        "counts": {
+          "low-odds-policy": 51,
+          "multi-attacker-unsupported": 131,
+          "concealed-strength-unestimated": 121,
+          "below-minimum": 34
+        },
+        "phases": [
+          {
+            "turn": 1,
+            "phase": "german-combat",
+            "counts": {
+              "low-odds-policy": 4,
+              "multi-attacker-unsupported": 21,
+              "concealed-strength-unestimated": 11,
+              "below-minimum": 3
+            }
+          },
+          {
+            "turn": 1,
+            "phase": "soviet-combat",
+            "counts": {
+              "below-minimum": 2,
+              "concealed-strength-unestimated": 10,
+              "low-odds-policy": 5,
+              "multi-attacker-unsupported": 17
+            }
+          },
+          {
+            "turn": 2,
+            "phase": "german-combat",
+            "counts": {
+              "low-odds-policy": 3,
+              "multi-attacker-unsupported": 12,
+              "concealed-strength-unestimated": 11,
+              "below-minimum": 3
+            }
+          },
+          {
+            "turn": 2,
+            "phase": "soviet-combat",
+            "counts": {
+              "below-minimum": 1,
+              "concealed-strength-unestimated": 10,
+              "low-odds-policy": 4,
+              "multi-attacker-unsupported": 16
+            }
+          },
+          {
+            "turn": 3,
+            "phase": "german-combat",
+            "counts": {
+              "low-odds-policy": 3,
+              "below-minimum": 4,
+              "multi-attacker-unsupported": 7,
+              "concealed-strength-unestimated": 8
+            }
+          },
+          {
+            "turn": 3,
+            "phase": "soviet-combat",
+            "counts": {
+              "below-minimum": 1,
+              "low-odds-policy": 4,
+              "concealed-strength-unestimated": 6,
+              "multi-attacker-unsupported": 5
+            }
+          },
+          {
+            "turn": 4,
+            "phase": "german-combat",
+            "counts": {
+              "low-odds-policy": 3,
+              "below-minimum": 4,
+              "multi-attacker-unsupported": 7,
+              "concealed-strength-unestimated": 7
+            }
+          },
+          {
+            "turn": 4,
+            "phase": "soviet-combat",
+            "counts": {
+              "below-minimum": 1,
+              "low-odds-policy": 4,
+              "concealed-strength-unestimated": 8,
+              "multi-attacker-unsupported": 5
+            }
+          },
+          {
+            "turn": 5,
+            "phase": "german-combat",
+            "counts": {
+              "low-odds-policy": 3,
+              "below-minimum": 4,
+              "multi-attacker-unsupported": 8,
+              "concealed-strength-unestimated": 9
+            }
+          },
+          {
+            "turn": 5,
+            "phase": "soviet-combat",
+            "counts": {
+              "below-minimum": 1,
+              "low-odds-policy": 4,
+              "concealed-strength-unestimated": 8,
+              "multi-attacker-unsupported": 6
+            }
+          },
+          {
+            "turn": 6,
+            "phase": "german-combat",
+            "counts": {
+              "low-odds-policy": 3,
+              "below-minimum": 4,
+              "multi-attacker-unsupported": 9,
+              "concealed-strength-unestimated": 9
+            }
+          },
+          {
+            "turn": 6,
+            "phase": "soviet-combat",
+            "counts": {
+              "low-odds-policy": 5,
+              "concealed-strength-unestimated": 8,
+              "multi-attacker-unsupported": 6,
+              "below-minimum": 1
+            }
+          },
+          {
+            "turn": 7,
+            "phase": "german-combat",
+            "counts": {
+              "low-odds-policy": 2,
+              "below-minimum": 4,
+              "concealed-strength-unestimated": 9,
+              "multi-attacker-unsupported": 7
+            }
+          },
+          {
+            "turn": 7,
+            "phase": "soviet-combat",
+            "counts": {
+              "low-odds-policy": 4,
+              "below-minimum": 1,
+              "concealed-strength-unestimated": 7,
+              "multi-attacker-unsupported": 5
+            }
+          }
+        ],
+        "seed": 42,
+        "variant": "advanced",
+        "status": "complete",
+        "reason": null,
+        "detail": null,
+        "decision": {
+          "status": "complete",
+          "terminal": {
+            "axisControlledCount": 2,
+            "cityControl": {
+              "Chernigov": "soviet",
+              "Chernovtsy": "soviet",
+              "Iasi": "german",
+              "Kiev": "soviet",
+              "Kirovograd": "soviet",
+              "Kovel": "soviet",
+              "Lublin": "german",
+              "Lvov": "soviet",
+              "Rovno": "soviet",
+              "Sarny": "soviet",
+              "Shepetovka": "soviet",
+              "Stanislavov": "soviet",
+              "Tarnopol": "soviet",
+              "Uman": "soviet",
+              "Vinnitsa": "soviet",
+              "Zhitomir": "soviet"
+            },
+            "onlyRemainingCity": null,
+            "onlyRemainingCityIsolated": null,
+            "outcome": "soviet-victory",
+            "reason": "axis-controls-at-most-threshold",
+            "totalCities": 16
+          }
+        },
+        "stats": {
+          "moves": 27,
+          "combats": 0,
+          "reinforcements": 6,
+          "navalRolls": 0,
+          "turns": 7
+        },
+        "actions": 137,
+        "outcomes": {},
+        "oddsDistribution": {},
+        "attackSelection": "continuation-pilot",
+        "terminal": "soviet-victory",
+        "phase": null
+      }
+    }
+  ]
+}

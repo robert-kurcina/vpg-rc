@@ -1,0 +1,43 @@
+{
+  "checkpoint": 185,
+  "version": "v419",
+  "scope": "seven-turn no-optional-combat-or-movement source-transaction smoke",
+  "actions": 89,
+  "housekeeping": 7,
+  "reinforcements": [
+    {
+      "slot": "t1-sovietreinforcementarmies-1",
+      "hex": "1801"
+    },
+    {
+      "slot": "t1-sovietreinforcementarmies-2",
+      "hex": "1802"
+    },
+    {
+      "slot": "t1-sovietreinforcementmechanized-1",
+      "hex": "1801"
+    },
+    {
+      "slot": "t1-sovietreinforcementmechanized-2",
+      "hex": "1802"
+    },
+    {
+      "slot": "t2-sovietreinforcementarmies-1",
+      "hex": "1803"
+    },
+    {
+      "slot": "t2-sovietreinforcementmechanized-1",
+      "hex": "1803"
+    },
+    {
+      "slot": "t3-sovietreinforcementarmies-1",
+      "hex": "1804"
+    }
+  ],
+  "terminal": "soviet-victory",
+  "limitations": [
+    "No optional attacks or movement exercised",
+    "This is not a full human-play or AI-play acceptance",
+    "The source opening uses a deterministic candidate assignment"
+  ]
+}

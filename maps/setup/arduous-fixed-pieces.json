@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "scenarioId": "arduous",
+  "sourceGame": "The Arduous Beginning",
+  "source": "references/rules/arduous-rules.pdf §6.0, printed page 2",
+  "scope": "Brest-Litovsk source-backed fixed starting unit; not a full scenario deployment",
+  "pieces": [
+    {
+      "id": "arduous:brest-garrison",
+      "hex": "0211",
+      "owner": "soviet",
+      "nationality": "soviet",
+      "class": "infantry",
+      "size": "corps",
+      "markerKind": "city",
+      "markerSourceSvgId": "use337",
+      "sourceFaceId": "arduous-front-r04c03",
+      "reverseFaceId": "arduous-back-r04c06",
+      "activeSide": "back",
+      "strengthStatus": "printed-reduced",
+      "expectedFrontKind": "location-marker",
+      "expectedBackKind": "garrison",
+      "expectedBackPrintedValues": "3-4",
+      "expectedBackPrintedAffiliation": "axis",
+      "ruleSource": "references/rules/arduous-rules.pdf §6.0, printed page 2",
+      "note": "Rule §6 places this counter with the Soviet setup at Brest. Printed face palette is not authoritative for faction ownership. The only playable face is the reverse."
+    }
+  ]
+}

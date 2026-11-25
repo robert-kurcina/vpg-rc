@@ -1,0 +1,36 @@
+{
+  "from": "v452",
+  "to": "v453",
+  "unchangedProtected": 305,
+  "changedProtected": [],
+  "absentProtected": [],
+  "mapSvgOnlyCityStroke": {
+    "battle-for-moscow": true,
+    "arduous": true,
+    "leningrad": true,
+    "kiev": true,
+    "kiev-odessa": true
+  },
+  "mapSvgIdenticalCitiesAndGeometry": {
+    "battle-for-moscow": {
+      "oldCityCount": 11,
+      "newCityCount": 11
+    },
+    "arduous": {
+      "oldCityCount": 12,
+      "newCityCount": 12
+    },
+    "leningrad": {
+      "oldCityCount": 14,
+      "newCityCount": 14
+    },
+    "kiev": {
+      "oldCityCount": 16,
+      "newCityCount": 16
+    },
+    "kiev-odessa": {
+      "oldCityCount": 20,
+      "newCityCount": 20
+    }
+  }
+}

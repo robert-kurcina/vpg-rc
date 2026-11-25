@@ -1,0 +1,129 @@
+{
+  "checkpoint": 216,
+  "version": "v450",
+  "scenario": "arduous",
+  "ruleSource": "references/rules/arduous-rules.pdf \u00a7\u00a712.0\u201312.4",
+  "rulePdfSHA256": "1ac46f3e958cf1d08768f6b56964100ab0951ece7e310ac3a30e8c479a8b986c",
+  "sourceEligibleCounter": "arduous-front-r04c02",
+  "revealedFormation": "4",
+  "initialSetup": "Source-legal mixed concealed Corps and UI-selected placement at 0209; no artificial casualty",
+  "battle": {
+    "defenderHex": "0209",
+    "airSupport": "arduous-front-r03c01",
+    "die": 3,
+    "crt": "DE"
+  },
+  "rebuild": {
+    "turn": 3,
+    "side": "soviet",
+    "hex": "1801",
+    "action": {
+      "hex": "1801",
+      "kind": "replacement-rebuilt",
+      "stepsSpent": 1,
+      "unitId": "arduous-front-r04c02"
+    },
+    "unitFace": "arduous-back-r04c07",
+    "attack": 2,
+    "defense": 1,
+    "stepsSpent": 1,
+    "mechanizedRebuilds": 1
+  },
+  "turnTrace": [
+    [
+      1,
+      "german-combat"
+    ],
+    [
+      1,
+      "german-special-movement"
+    ],
+    [
+      1,
+      "soviet-buildup"
+    ],
+    [
+      1,
+      "soviet-special-movement"
+    ],
+    [
+      1,
+      "soviet-combat"
+    ],
+    [
+      1,
+      "soviet-movement"
+    ],
+    [
+      1,
+      "housekeeping"
+    ],
+    [
+      2,
+      "german-buildup"
+    ],
+    [
+      2,
+      "german-movement"
+    ],
+    [
+      2,
+      "german-combat"
+    ],
+    [
+      2,
+      "german-special-movement"
+    ],
+    [
+      2,
+      "soviet-buildup"
+    ],
+    [
+      2,
+      "soviet-special-movement"
+    ],
+    [
+      2,
+      "soviet-combat"
+    ],
+    [
+      2,
+      "soviet-movement"
+    ],
+    [
+      2,
+      "housekeeping"
+    ],
+    [
+      3,
+      "german-buildup"
+    ],
+    [
+      3,
+      "german-movement"
+    ],
+    [
+      3,
+      "german-combat"
+    ],
+    [
+      3,
+      "german-special-movement"
+    ],
+    [
+      3,
+      "soviet-buildup"
+    ]
+  ],
+  "checks": 149,
+  "pageErrors": [],
+  "saveRestore": "identical",
+  "undo": "identical",
+  "replay": "identical",
+  "visual": "rules/audit/visual/arduous-turn3-offmap-rebuild-v450.png",
+  "limitations": [
+    "One source-legal player-selected concealed setup and eliminated counter branch, not all off-map candidates.",
+    "Unique historical setup identities remain provisional; the player-facing choice is authorized by source setup rules.",
+    "Does not establish full seven-turn contested browser acceptance."
+  ]
+}

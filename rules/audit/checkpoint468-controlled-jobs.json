@@ -1,0 +1,142 @@
+[
+  {
+    "id": "battle-for-moscow-standard-historical-41",
+    "scenario": "battle-for-moscow",
+    "variant": "standard",
+    "seed": 41,
+    "victoryMode": "historical"
+  },
+  {
+    "id": "battle-for-moscow-standard-graduated-41",
+    "scenario": "battle-for-moscow",
+    "variant": "standard",
+    "seed": 41,
+    "victoryMode": "graduated"
+  },
+  {
+    "id": "battle-for-moscow-advanced-historical-79",
+    "scenario": "battle-for-moscow",
+    "variant": "advanced",
+    "seed": 79,
+    "victoryMode": "historical"
+  },
+  {
+    "id": "battle-for-moscow-advanced-graduated-79",
+    "scenario": "battle-for-moscow",
+    "variant": "advanced",
+    "seed": 79,
+    "victoryMode": "graduated"
+  },
+  {
+    "id": "arduous-standard-historical-41",
+    "scenario": "arduous",
+    "variant": "standard",
+    "seed": 41,
+    "victoryMode": "historical"
+  },
+  {
+    "id": "arduous-standard-graduated-41",
+    "scenario": "arduous",
+    "variant": "standard",
+    "seed": 41,
+    "victoryMode": "graduated"
+  },
+  {
+    "id": "arduous-advanced-historical-79",
+    "scenario": "arduous",
+    "variant": "advanced",
+    "seed": 79,
+    "victoryMode": "historical"
+  },
+  {
+    "id": "arduous-advanced-graduated-79",
+    "scenario": "arduous",
+    "variant": "advanced",
+    "seed": 79,
+    "victoryMode": "graduated"
+  },
+  {
+    "id": "leningrad-standard-historical-41",
+    "scenario": "leningrad",
+    "variant": "standard",
+    "seed": 41,
+    "victoryMode": "historical"
+  },
+  {
+    "id": "leningrad-standard-graduated-41",
+    "scenario": "leningrad",
+    "variant": "standard",
+    "seed": 41,
+    "victoryMode": "graduated"
+  },
+  {
+    "id": "leningrad-advanced-historical-79",
+    "scenario": "leningrad",
+    "variant": "advanced",
+    "seed": 79,
+    "victoryMode": "historical"
+  },
+  {
+    "id": "leningrad-advanced-graduated-79",
+    "scenario": "leningrad",
+    "variant": "advanced",
+    "seed": 79,
+    "victoryMode": "graduated"
+  },
+  {
+    "id": "kiev-standard-historical-41",
+    "scenario": "kiev",
+    "variant": "standard",
+    "seed": 41,
+    "victoryMode": "historical"
+  },
+  {
+    "id": "kiev-standard-graduated-41",
+    "scenario": "kiev",
+    "variant": "standard",
+    "seed": 41,
+    "victoryMode": "graduated"
+  },
+  {
+    "id": "kiev-advanced-historical-79",
+    "scenario": "kiev",
+    "variant": "advanced",
+    "seed": 79,
+    "victoryMode": "historical"
+  },
+  {
+    "id": "kiev-advanced-graduated-79",
+    "scenario": "kiev",
+    "variant": "advanced",
+    "seed": 79,
+    "victoryMode": "graduated"
+  },
+  {
+    "id": "kiev-odessa-standard-historical-41",
+    "scenario": "kiev-odessa",
+    "variant": "standard",
+    "seed": 41,
+    "victoryMode": "historical"
+  },
+  {
+    "id": "kiev-odessa-standard-graduated-41",
+    "scenario": "kiev-odessa",
+    "variant": "standard",
+    "seed": 41,
+    "victoryMode": "graduated"
+  },
+  {
+    "id": "kiev-odessa-advanced-historical-79",
+    "scenario": "kiev-odessa",
+    "variant": "advanced",
+    "seed": 79,
+    "victoryMode": "historical"
+  },
+  {
+    "id": "kiev-odessa-advanced-graduated-79",
+    "scenario": "kiev-odessa",
+    "variant": "advanced",
+    "seed": 79,
+    "victoryMode": "graduated"
+  }
+]

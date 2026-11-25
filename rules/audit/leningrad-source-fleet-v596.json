@@ -1,0 +1,19 @@
+{
+  "checkpoint": 362,
+  "version": "v596",
+  "source": "references/rules/leningrad-rules.pdf, printed \u00a7\u00a710.6, 13.1\u201313.3",
+  "passed": {
+    "historical-fleet-opening-movement-v383": 716,
+    "historical-fleet-forced-displacement-v384": 768,
+    "historical-port-fleet-retreat-v382": 54,
+    "historical-fleet-ignore-retreat-catalog-v465": 121,
+    "historical-air-sea-support-v385": 163
+  },
+  "total": 1822,
+  "bundleModules": 59,
+  "notVerified": [
+    "historical-postcombat-fleet-choices-v394: execution timeout",
+    "new Chromium campaign"
+  ],
+  "productionChanges": false
+}

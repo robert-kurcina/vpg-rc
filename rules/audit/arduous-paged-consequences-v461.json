@@ -1,0 +1,13 @@
+{
+  "checkpoint": 227,
+  "version": "v461",
+  "scenario": "arduous",
+  "choicePage": 2,
+  "pageTwoChoices": 128,
+  "pageThreeChoices": 128,
+  "uniqueChoicesViewed": 384,
+  "pageTwoLoadSeconds": 5.73,
+  "assertions": 49,
+  "pageErrors": [],
+  "scope": "Consecutive additional pages of source-validated EX consequences via actual browser controls; no claim of exhaustive source consequences."
+}

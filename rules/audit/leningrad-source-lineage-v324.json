@@ -1,0 +1,87 @@
+{
+  "schemaVersion": 1,
+  "scenario": "leningrad",
+  "families": [
+    {
+      "sha256": "1d1fa6dc41c4133cae661d5aa129ab08389f935084cabd604d530b4bf5b57ec0",
+      "files": [
+        "maps/source/user-svg/leningrad-map-temp(1).svg",
+        "maps/source/user-svg/leningrad-map-temp(3).svg"
+      ],
+      "crossCount": 4,
+      "crossInstances": [
+        {
+          "id": "use1-09",
+          "symbolId": "symbol122",
+          "transform": "translate(-69.206346,158.06236)"
+        },
+        {
+          "id": "use230",
+          "symbolId": "symbol122",
+          "transform": "translate(-54.802512,166.33919)"
+        },
+        {
+          "id": "use231",
+          "symbolId": "symbol122",
+          "transform": "translate(-38.893799,175.58344)"
+        },
+        {
+          "id": "use232",
+          "symbolId": "symbol122",
+          "transform": "translate(-24.059999,183.5378)"
+        }
+      ]
+    },
+    {
+      "sha256": "ea1c83d00eea0212c530b98fd794125959175ad9d1cfa067aef78d6d73502447",
+      "files": [
+        "maps/source/user-svg/leningrad-main(1).svg",
+        "maps/source/user-svg/leningrad-main(2).svg",
+        "maps/source/user-svg/leningrad-main.svg"
+      ],
+      "crossCount": 5,
+      "crossInstances": [
+        {
+          "id": "use1-1",
+          "symbolId": "g10",
+          "transform": "translate(-34.776637,105.34046)"
+        },
+        {
+          "id": "use495",
+          "symbolId": "g10",
+          "transform": "translate(-19.872365,114.11884)"
+        },
+        {
+          "id": "use496",
+          "symbolId": "g10",
+          "transform": "translate(-4.9680868,123.16856)"
+        },
+        {
+          "id": "use497",
+          "symbolId": "g10",
+          "transform": "translate(-19.872364,131.94693)"
+        },
+        {
+          "id": "use498",
+          "symbolId": "g10",
+          "transform": "translate(9.9361902,131.94694)"
+        }
+      ]
+    }
+  ],
+  "scanDigests": [
+    {
+      "sha256": "e2d718355490cbcdbecad4699aa4da2aebd477de736ee9aa26536e62347da17c",
+      "files": [
+        "maps/source/leningrad-map-scan(2).jpg",
+        "maps/source/leningrad-map-scan-current.jpg",
+        "maps/source/leningrad-map-scan.jpg"
+      ]
+    }
+  ],
+  "printedRulesCrossCount": 5,
+  "visualScanObservation": "Five German cross symbols visible near East Prussia in the bundled board scan; visual observation is not an independent hex-coordinate registration.",
+  "inference": "The 5-cross main.svg family agrees with the rules and visible scan cross count. Duplicate copies are identical bytes, not independent witnesses. Hex placements and unit identity are not authorized.",
+  "sourceAuthority": "main-five-cross-candidate-not-promoted",
+  "historicalSetupAuthorized": false
+}

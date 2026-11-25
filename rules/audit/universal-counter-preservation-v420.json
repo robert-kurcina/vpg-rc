@@ -1,0 +1,24 @@
+{
+  "checkpoint": 186,
+  "sourceCheckpoint": 185,
+  "protectedFiles": {
+    "core/terrain_tiles.js": true,
+    "core/historical_engine_browser_bundle.js": true,
+    "core/historical_crt.js": true,
+    "core/official_counter_templates.js": true,
+    "exports/arduous.svg": true,
+    "exports/leningrad.svg": true,
+    "exports/battle-for-moscow.svg": true,
+    "exports/kiev.svg": true,
+    "exports/kiev-odessa.svg": true,
+    "exports/arduous.png": true,
+    "exports/leningrad.png": true,
+    "exports/battle-for-moscow.png": true,
+    "exports/kiev.png": true,
+    "exports/kiev-odessa.png": true,
+    "maps/arduous.json": true,
+    "maps/leningrad.json": true,
+    "maps/battle-for-moscow.json": true,
+    "maps/kiev.json": true
+  }
+}

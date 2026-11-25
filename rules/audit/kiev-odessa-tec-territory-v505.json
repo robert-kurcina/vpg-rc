@@ -1,0 +1,23 @@
+{
+  "checkpoint": 271,
+  "version": "v505",
+  "chart": "maps/presentation/kiev-terrain-effects.json",
+  "evidence": [
+    "references/rules/kiev-rules.pdf §10.8",
+    "references/rules/odessa-rules.pdf §§9.4.4–9.4.5",
+    "maps/registry.json user Bessarabia 19-hex outline"
+  ],
+  "rowsAtEnd": [
+    "romanian",
+    "bessarabia"
+  ],
+  "bessarabiaSampleHex": "1212",
+  "bessarabiaSampleMap": "kiev-odessa",
+  "newActualEngineArt": "assets/terrain-chart/kiev-odessa/bessarabia.png",
+  "originalMapExportsChanged": false,
+  "historicalCampaignAuthorized": false,
+  "verification": {
+    "nodeAssertions": 147,
+    "chromiumChecks": 16
+  }
+}

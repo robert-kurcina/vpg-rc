@@ -1,0 +1,37 @@
+{
+  "checkpoint": 263,
+  "version": "v497",
+  "status": "diagnostic-not-gameplay-authorized",
+  "counts": {
+    "status": "diagnostic-not-gameplay-authorized",
+    "mapId": "kiev-odessa-composite-v256",
+    "hexes": 261,
+    "physicalEdges": 714,
+    "sourceRailEdges": 117,
+    "sourceOrdinaryRiverEdges": 105,
+    "sourceMajorRiverEdges": 22,
+    "impassableSeaOrCoast": 100,
+    "landCandidates": 614,
+    "terrain": {
+      "sea": 31,
+      "open": 139,
+      "forest": 53,
+      "swamp": 18,
+      "city": 18,
+      "majorCity": 2
+    },
+    "cityCount": 20,
+    "noRulesAuthorization": true
+  },
+  "shortcuts": [
+    "1106:1107",
+    "1106:1205"
+  ],
+  "unresolved": [
+    "Odessa-specific movement and cavalry rules",
+    "Fleet/port resolution",
+    "full rule-driven victory isolation",
+    "historical setup and campaign acceptance"
+  ],
+  "checks": 1785
+}

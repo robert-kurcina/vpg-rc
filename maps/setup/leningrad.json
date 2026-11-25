@@ -1,0 +1,158 @@
+{
+  "schemaVersion": 1,
+  "scenarioId": "leningrad",
+  "status": "source-backed-proposed-setup-not-production-activated",
+  "ruleSource": "references/rules/leningrad-rules.pdf#6.0",
+  "markerSlots": {
+    "cross": {
+      "count": 5,
+      "occupancy": [
+        1,
+        2,
+        2,
+        2,
+        2
+      ]
+    },
+    "star": {
+      "count": 5,
+      "occupancy": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    "fixedInfantry": {
+      "count": 3,
+      "occupancy": [
+        1,
+        1,
+        1
+      ]
+    },
+    "fixedMechanized": {
+      "count": 2,
+      "occupancy": [
+        1,
+        1
+      ]
+    }
+  },
+  "groups": {
+    "germanInitialInfantry": {
+      "marker": "cross",
+      "owner": "german",
+      "class": "infantry",
+      "size": "corps",
+      "pool": "germanInfantry",
+      "count": 7,
+      "printedAffiliation": "axis",
+      "printedKind": "infantry"
+    },
+    "germanInitialPanzer": {
+      "marker": "cross",
+      "owner": "german",
+      "class": "panzer",
+      "size": "corps",
+      "pool": "germanPanzer",
+      "count": 2,
+      "printedAffiliation": "axis",
+      "printedKind": "tank"
+    },
+    "sovietRearInfantryCorps": {
+      "marker": "fixedInfantry",
+      "owner": "soviet",
+      "class": "infantry",
+      "size": "corps",
+      "pool": "sovietInfantryCorps",
+      "count": 3,
+      "printedAffiliation": "soviet",
+      "printedKind": "infantry",
+      "reverseBlank": true
+    },
+    "sovietRearMechanizedCorps": {
+      "marker": "fixedMechanized",
+      "owner": "soviet",
+      "class": "mechanized",
+      "size": "corps",
+      "pool": "sovietMechanized",
+      "count": 2,
+      "printedAffiliation": "soviet",
+      "printedKind": "mechanized"
+    },
+    "sovietFrontInfantryCorps": {
+      "marker": "star",
+      "owner": "soviet",
+      "class": "infantry",
+      "size": "corps",
+      "pool": "sovietInfantryCorps",
+      "count": 1,
+      "printedAffiliation": "soviet",
+      "printedKind": "infantry",
+      "reverseBlank": true
+    },
+    "sovietFrontMechanizedCorps": {
+      "marker": "star",
+      "owner": "soviet",
+      "class": "mechanized",
+      "size": "corps",
+      "pool": "sovietMechanized",
+      "count": 2,
+      "printedAffiliation": "soviet",
+      "printedKind": "mechanized"
+    },
+    "sovietFrontArmies": {
+      "marker": "star",
+      "owner": "soviet",
+      "class": "infantry",
+      "size": "army",
+      "pool": "sovietInfantryArmies",
+      "count": 2,
+      "printedAffiliation": "soviet",
+      "printedKind": "infantry"
+    }
+  },
+  "nonAdjacentGroups": [
+    "sovietFrontArmies"
+  ],
+  "expectedStartingUnits": 19,
+  "printedRearAnchors": [
+    {
+      "printed": "0107",
+      "sourceSvgId": "use503",
+      "marker": "fixedInfantry"
+    },
+    {
+      "printed": "0607",
+      "sourceSvgId": "use1-19",
+      "marker": "fixedInfantry"
+    },
+    {
+      "printed": "1305",
+      "sourceSvgId": "use1-50",
+      "marker": "fixedMechanized"
+    },
+    {
+      "printed": "1606",
+      "sourceSvgId": "use1-79",
+      "marker": "fixedInfantry"
+    },
+    {
+      "printed": "1701",
+      "sourceSvgId": "use504",
+      "marker": "fixedMechanized"
+    }
+  ],
+  "mapSourceGame": "Target: Leningrad",
+  "concealedSetup": {
+    "groups": [
+      "sovietRearMechanizedCorps",
+      "sovietFrontMechanizedCorps"
+    ],
+    "count": 4,
+    "displayName": "Soviet Mechanized Corps",
+    "requireMixBeforeCampaign": true
+  }
+}

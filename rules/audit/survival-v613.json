@@ -1,0 +1,26 @@
+{
+  "scope": "stationary known unsupported no-advance threat; controlled actual Kiev map positions",
+  "conditionalReducedArmy6to1": {
+    "standard": 1,
+    "advanced": 1
+  },
+  "nextPhaseEliminationRisk": null,
+  "limitations": [
+    "no approach witness integration",
+    "no coordinated withdrawal",
+    "multi-attacker EX order incomplete",
+    "bounded trials",
+    "no browser or continuous campaign"
+  ],
+  "verified": {
+    "survival": 84,
+    "enemyApproach": 47,
+    "stationaryThreat": 38,
+    "withdrawal": 30,
+    "utilityArithmetic": 62,
+    "pilot": 50,
+    "controller": 16,
+    "CRT": 301,
+    "bundleModules": 61
+  }
+}

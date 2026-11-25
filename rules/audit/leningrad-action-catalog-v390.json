@@ -1,0 +1,20 @@
+{
+  "checkpoint": 156,
+  "version": "v390",
+  "assertions": 95,
+  "path": [
+    "air-sea commitment",
+    "individual source-legal battle proposals",
+    "combat consequence",
+    "movement proposal",
+    "pending movement",
+    "buildup"
+  ],
+  "result": "Read-only catalog; every displayed executable action revalidated through same campaign transaction",
+  "limitations": [
+    "One-hex movement candidates only",
+    "Individual combat proposals only, not group enumeration",
+    "Dice and result-dependent choices remain caller-supplied",
+    "Nonhistorical candidate roster"
+  ]
+}

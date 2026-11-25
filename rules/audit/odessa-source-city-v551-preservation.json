@@ -1,0 +1,90 @@
+{
+  "checkpoint": 317,
+  "version": "v551",
+  "sourceCityMarkerIdsRestored": [
+    {
+      "hex": "0201",
+      "city": "Lublin",
+      "svgId": "use1-43"
+    },
+    {
+      "hex": "0404",
+      "city": "Lvov",
+      "svgId": "use450"
+    },
+    {
+      "hex": "0502",
+      "city": "Kovel",
+      "svgId": "use451"
+    },
+    {
+      "hex": "0507",
+      "city": "Stanislavov",
+      "svgId": "use456"
+    },
+    {
+      "hex": "0706",
+      "city": "Tarnopol",
+      "svgId": "use448"
+    },
+    {
+      "hex": "0708",
+      "city": "Chernovtsy",
+      "svgId": "use455"
+    },
+    {
+      "hex": "0803",
+      "city": "Rovno",
+      "svgId": "use447"
+    },
+    {
+      "hex": "0902",
+      "city": "Sarny",
+      "svgId": "use446"
+    },
+    {
+      "hex": "0905",
+      "city": "Shepetovka",
+      "svgId": "use449"
+    },
+    {
+      "hex": "1010",
+      "city": "Iasi",
+      "svgId": "use458"
+    },
+    {
+      "hex": "1105",
+      "city": "Zhitomir",
+      "svgId": "use463"
+    },
+    {
+      "hex": "1107",
+      "city": "Vinnitsa",
+      "svgId": "use457"
+    },
+    {
+      "hex": "1408",
+      "city": "Uman",
+      "svgId": "use454"
+    },
+    {
+      "hex": "1602",
+      "city": "Chernigov",
+      "svgId": "use452"
+    },
+    {
+      "hex": "1708",
+      "city": "Kirovograd",
+      "svgId": "use453"
+    }
+  ],
+  "protectedFilesByteIdentical": 167,
+  "status": "passed",
+  "mapFileChangedOnly": "15 exact city tileMarkers[].sourceSvgId values",
+  "originalSvgModified": false,
+  "originalCounterArtModified": false,
+  "sharedCRTModified": false,
+  "mapExportModified": false,
+  "retreatStyleModified": false,
+  "sourcePolicyDigestReauthorized": true
+}

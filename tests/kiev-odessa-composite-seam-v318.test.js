@@ -1,0 +1,22 @@
+'use strict';
+const assert=require('node:assert/strict');
+const C=require('../maps/composer');
+const A=require('../core/composite_graph_audit');
+const G=require('../core/map_movement_graph');
+const base=require('../maps/kiev.json'), ext=require('../maps/odessa-extension.json');
+const copy=(x)=>JSON.parse(JSON.stringify(x));
+const board=C.compose(base,ext),result=A.audit(base,ext,board);
+assert.equal(result.metadata.baseHexes+result.metadata.extensionHexes,result.metadata.totalHexes);
+assert.equal(result.metadata.totalHexes,261);
+assert.equal(result.metadata.seamPairs,24);
+assert.equal(result.metadata.railCenterConnections,0,'do not infer movement rails from visual source polylines');
+assert.equal(result.metadata.gameplayCertified,false);
+assert.equal(board.expansionOverlay.standalone,false);
+for(const edge of result.seams){assert.ok(base.cells.some(x=>x.id===edge.baseHex));assert.ok(ext.cells.some(x=>x.id===edge.extensionHex));}
+assert.throws(()=>G.build(board),/source-geometry-not-gameplay-certified/);
+const bad=copy(board);bad.cells.push(copy(bad.cells[0]));assert.throws(()=>A.audit(base,ext,bad),/duplicate-composite-hex/);
+const unexpected=copy(board);unexpected.cells[0].id='9999';assert.throws(()=>A.audit(base,ext,unexpected),/unsourced-composite-hex/);
+const badShore=copy(board);badShore.authoredShoreHexsides.push({cellId:'9999',dir:'N'});assert.throws(()=>A.audit(base,ext,badShore),/invalid-shore-hexside/);
+const badIdentity=copy(board);badIdentity.expansionOverlay.standalone=true;assert.throws(()=>A.audit(base,ext,badIdentity),/expansion-must-not-be-standalone/);
+const badExt=copy(ext);badExt.cells[0].id=base.cells[0].id;assert.throws(()=>A.audit(base,badExt,board),/overlap/);
+console.log('PASS Kiev–Odessa composed geometry seam audit:',JSON.stringify(result.metadata));

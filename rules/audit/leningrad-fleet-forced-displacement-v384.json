@@ -1,0 +1,22 @@
+{
+  "checkpoint": 150,
+  "version": "v384",
+  "assertions": 768,
+  "sourcePdf": "references/rules/leningrad-rules.pdf §§13.1–13.2",
+  "sourcePdfSha256": "74d332e052e735e2378027a06f95e9715392773f249561bf1c00cae08a2bbfa7",
+  "status": "opt-in historical transaction pilot, not eight-turn campaign",
+  "checks": [
+    "six departure ports x six dice x two Fleet conditions, with immutable state",
+    "actual DE combat result with mandatory German advance and Fleet displacement",
+    "combat Undo and deterministic replay",
+    "actual source-legal German movement enters Fleet port and forces displacement",
+    "elimination if all other ports are German-occupied; no fictitious damage roll",
+    "second hit eliminates damaged Fleet, no-port and forged choice rejection"
+  ],
+  "limitations": [
+    "Combat advance and ground movement bind to one common reaction; the human phase controller and save schema are not yet extended to represent reaction selections",
+    "Fleet forced displacement cannot be source-certified against independent historical executable",
+    "German air-sea attacks, support commitment and full eight-turn play remain unsupported",
+    "Printed rear marker discrepancies and multi-defender retreat order remain unresolved"
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "checkpoint": 276,
+  "version": "v510",
+  "status": "diagnostic-ground-air-refit-only; historical kiev-odessa gameplay not authorized",
+  "source": [
+    "references/rules/odessa-rules.pdf §§6.0(6),10.5,11.0",
+    "maps/roster-overlays/kiev-odessa.json",
+    "maps/counter-configs/odessa-extension.json",
+    "maps/combat-configs/kiev.json"
+  ],
+  "sourceSHA256": {
+    "references/rules/odessa-rules.pdf": "c7def97fe2de9ae66dc89da5f7d3417e3283846485903b90b88f153ba9791bab",
+    "assets/official-counters/source-sheets/counters-odessa-front.jpg": "297e28ceefadb982bc7050b1e9a5039956997d34ce3368cda219b1da85badd25",
+    "assets/official-counters/source-sheets/counters-odessa-back.jpg": "74de9f736f15abd39be33c351df09a977c9cca697ceac281230a7207f78de969"
+  },
+  "sourceFace": "odessa-front-r01c07",
+  "sourceRefitFace": "odessa-back-r01c02",
+  "firstTurn": 2,
+  "airShift": 1,
+  "refitTurnsAfterUse": 1,
+  "sourceRoster": "maps/roster-overlays/kiev-odessa.json",
+  "example": {
+    "turn2": "available and committed",
+    "turn3": "REFIT; unavailable",
+    "turn4": "ready again",
+    "turn5": "available if unused on Turn4, REFIT if used on Turn4"
+  },
+  "preserved": [
+    "original German FK IV and FK V markers",
+    "other historical air/Fleet rules",
+    "five unchanged map exports",
+    "13-row TEC Sea / Coast presentation",
+    "common B4M CRT"
+  ],
+  "outstanding": [
+    "§15 Odessa Fleet and air-sea support",
+    "real reinforcement arrival/REFIT side UI",
+    "full source-defined initial deployment",
+    "Port replacements",
+    "city isolation victory",
+    "certified Romania/outside country-mask",
+    "historical campaign activation"
+  ],
+  "validation": "tests/odessa-romanian-air-refit-v510.test.js"
+}

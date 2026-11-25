@@ -1,0 +1,186 @@
+{
+  "status": "source-scan-affine-matched-presentation-only;historical-gameplay-not-authorized",
+  "sourceScanCrop": "rules/audit/visual/leningrad-east-prussia-scan-crop-v324.png",
+  "sourceScanCropSHA256": "f5cb9a5e4ea68156c6e1230e5bd36b58a6c8e7eb4fb4da837603330baaee7d73",
+  "method": "least-squares two-dimensional affine mapping of manually reviewed original-scan cross centers to explicit engine hex pixelCenter; then independently check stars against nearest physical hex",
+  "coefficientsXY": [
+    [
+      0.32088849892398763,
+      0.03930286299347887,
+      -13.24063096925639
+    ],
+    [
+      0.03661849692564466,
+      0.30331683614708416,
+      517.7537351963687
+    ]
+  ],
+  "markerObservations": [
+    {
+      "kind": "cross",
+      "scanPixelCenter": [
+        178,
+        311
+      ],
+      "mappedHex": "0109",
+      "projectedEngineCenter": [
+        56.101,
+        618.603
+      ],
+      "nearestDistance": 1.636,
+      "secondDistance": 66.103
+    },
+    {
+      "kind": "cross",
+      "scanPixelCenter": [
+        352,
+        397
+      ],
+      "mappedHex": "0210",
+      "projectedEngineCenter": [
+        115.315,
+        651.06
+      ],
+      "nearestDistance": 1.613,
+      "secondDistance": 63.777
+    },
+    {
+      "kind": "cross",
+      "scanPixelCenter": [
+        519,
+        500
+      ],
+      "mappedHex": "0310",
+      "projectedEngineCenter": [
+        172.952,
+        688.417
+      ],
+      "nearestDistance": 4.096,
+      "secondDistance": 62.063
+    },
+    {
+      "kind": "cross",
+      "scanPixelCenter": [
+        320,
+        626
+      ],
+      "mappedHex": "0211",
+      "projectedEngineCenter": [
+        114.047,
+        719.348
+      ],
+      "nearestDistance": 0.088,
+      "secondDistance": 65.418
+    },
+    {
+      "kind": "cross",
+      "scanPixelCenter": [
+        670,
+        578
+      ],
+      "mappedHex": "0411",
+      "projectedEngineCenter": [
+        224.472,
+        717.605
+      ],
+      "nearestDistance": 2.889,
+      "secondDistance": 63.043
+    },
+    {
+      "kind": "star",
+      "scanPixelCenter": [
+        175,
+        105
+      ],
+      "mappedHex": "0108",
+      "projectedEngineCenter": [
+        47.042,
+        556.01
+      ],
+      "nearestDistance": 11.229,
+      "secondDistance": 63.765
+    },
+    {
+      "kind": "star",
+      "scanPixelCenter": [
+        345,
+        215
+      ],
+      "mappedHex": "0209",
+      "projectedEngineCenter": [
+        105.916,
+        595.6
+      ],
+      "nearestDistance": 12.812,
+      "secondDistance": 53.528
+    },
+    {
+      "kind": "star",
+      "scanPixelCenter": [
+        515,
+        312
+      ],
+      "mappedHex": "0309",
+      "projectedEngineCenter": [
+        164.279,
+        631.247
+      ],
+      "nearestDistance": 13.792,
+      "secondDistance": 54.328
+    },
+    {
+      "kind": "star",
+      "scanPixelCenter": [
+        680,
+        420
+      ],
+      "mappedHex": "0410",
+      "projectedEngineCenter": [
+        221.471,
+        670.047
+      ],
+      "nearestDistance": 18.74,
+      "secondDistance": 49.665
+    },
+    {
+      "kind": "star",
+      "scanPixelCenter": [
+        858,
+        532
+      ],
+      "mappedHex": "0510",
+      "projectedEngineCenter": [
+        282.991,
+        710.537
+      ],
+      "nearestDistance": 25.305,
+      "secondDistance": 42.077
+    }
+  ],
+  "crossHexes": [
+    "0109",
+    "0210",
+    "0211",
+    "0310",
+    "0411"
+  ],
+  "starHexes": [
+    "0108",
+    "0209",
+    "0309",
+    "0410",
+    "0510"
+  ],
+  "priorPresentationRowShift": 1,
+  "supersedesRuntimeChanges": [
+    "v330UserSourceImageReview",
+    "v331HexNumberVerticalAlignment",
+    "v332DeploymentOverrides"
+  ],
+  "limitations": [
+    "Original board scan is a raster. Cross/Star centers are manually transcribed and only this southwest sector is geometrically corroborated.",
+    "Original SVG source g10/g11 instance registrations have not been promoted into scenario setup.",
+    "The full 197-versus-199-cell discrepancy remains open.",
+    "Number positions and geography outside the examined crop are not certified."
+  ]
+}

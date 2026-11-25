@@ -1,0 +1,132 @@
+{
+  "checkpoint": 214,
+  "version": "v448",
+  "scenario": "arduous",
+  "method": "Actual Chromium human controls, unmodified bundled engine, approved source map SVG; memory-loaded local files",
+  "ruleSource": "references/rules/arduous-rules.pdf \u00a712.0\u201312.4",
+  "sourcePdfSHA256": "1ac46f3e958cf1d08768f6b56964100ab0951ece7e310ac3a30e8c479a8b986c",
+  "preparation": {
+    "openingBattleDefenderHex": "0305",
+    "attackers": [
+      "arduous-front-r02c02",
+      "arduous-front-r02c03",
+      "arduous-front-r02c08"
+    ],
+    "die": 4,
+    "crtOutcome": "EX",
+    "openingActionsAfterBattle": 5,
+    "phaseTrace": [
+      [
+        1,
+        "german-combat"
+      ],
+      [
+        1,
+        "german-special-movement"
+      ],
+      [
+        1,
+        "soviet-buildup"
+      ],
+      [
+        1,
+        "soviet-special-movement"
+      ],
+      [
+        1,
+        "soviet-combat"
+      ],
+      [
+        1,
+        "soviet-movement"
+      ],
+      [
+        1,
+        "housekeeping"
+      ],
+      [
+        2,
+        "german-buildup"
+      ],
+      [
+        2,
+        "german-movement"
+      ],
+      [
+        2,
+        "german-combat"
+      ],
+      [
+        2,
+        "german-special-movement"
+      ],
+      [
+        2,
+        "soviet-buildup"
+      ],
+      [
+        2,
+        "soviet-special-movement"
+      ],
+      [
+        2,
+        "soviet-combat"
+      ],
+      [
+        2,
+        "soviet-movement"
+      ],
+      [
+        2,
+        "housekeeping"
+      ],
+      [
+        3,
+        "german-buildup"
+      ],
+      [
+        3,
+        "german-movement"
+      ],
+      [
+        3,
+        "german-combat"
+      ],
+      [
+        3,
+        "german-special-movement"
+      ],
+      [
+        3,
+        "soviet-buildup"
+      ]
+    ]
+  },
+  "replacement": {
+    "turn": 3,
+    "phase": "soviet-buildup",
+    "faceId": "arduous-front-r03c06",
+    "hex": "0504",
+    "strengthBefore": 4,
+    "strengthAfter": 8,
+    "budgetSpentBefore": 0,
+    "budgetSpentAfter": 1,
+    "sourceStatusBefore": "printed-reduced",
+    "sourceStatusAfter": "printed-full",
+    "journalActionBefore": 31,
+    "journalActionAfter": 32,
+    "fullStrengthFaceNoLongerOffered": true,
+    "unspentStepsForfeited": 0
+  },
+  "checks": 129,
+  "browserErrors": [],
+  "saveRestore": "identical",
+  "undo": "identical",
+  "replay": "identical",
+  "visual": "rules/audit/visual/arduous-turn3-soviet-replacement-v448.png",
+  "limitations": [
+    "One chosen source-valid contested opening and one Turn-3 on-map Soviet restoration",
+    "Does not prove all later-turn replacements or off-map rebuilds through browser",
+    "Does not resolve Arduous printed opening marker disagreements or certify Kiev"
+  ]
+}

@@ -1,0 +1,841 @@
+{
+  "schemaVersion": 1,
+  "id": "odessa-source-route-rail-ledger-v496",
+  "mapId": "kiev-odessa-composite-v256",
+  "status": "diagnostic-not-gameplay-authorized",
+  "hexCount": 261,
+  "railCount": 117,
+  "physicalEdgeCount": 714,
+  "sourceHashes": {
+    "maps/kiev.json": "6004d776cc3aec63ffd5f2863810e6bea04eee5c78fafa2967e115cdc6c17a36",
+    "maps/odessa-extension.json": "553233dd695a73a5cf5bb592120ca72a3f09bf914edb6ee617c740667fbf0d58",
+    "maps/source/user-svg/kiev-odessa-main.svg": "2b15c3a92a282a7efc27d54bcd8994470f0fce8ee5417d5d734969fcd2c4ab7e"
+  },
+  "links": [
+    {
+      "a": "0102",
+      "b": "0103",
+      "sourceSvgIds": [
+        "path863"
+      ]
+    },
+    {
+      "a": "0102",
+      "b": "0201",
+      "sourceSvgIds": [
+        "path864"
+      ]
+    },
+    {
+      "a": "0103",
+      "b": "0104",
+      "sourceSvgIds": [
+        "path865"
+      ]
+    },
+    {
+      "a": "0104",
+      "b": "0204",
+      "sourceSvgIds": [
+        "path865"
+      ]
+    },
+    {
+      "a": "0201",
+      "b": "0302",
+      "sourceSvgIds": [
+        "path864"
+      ]
+    },
+    {
+      "a": "0204",
+      "b": "0305",
+      "sourceSvgIds": [
+        "path865"
+      ]
+    },
+    {
+      "a": "0302",
+      "b": "0401",
+      "sourceSvgIds": [
+        "path864"
+      ]
+    },
+    {
+      "a": "0305",
+      "b": "0404",
+      "sourceSvgIds": [
+        "path865"
+      ]
+    },
+    {
+      "a": "0401",
+      "b": "0502",
+      "sourceSvgIds": [
+        "path864"
+      ]
+    },
+    {
+      "a": "0404",
+      "b": "0405",
+      "sourceSvgIds": [
+        "path866"
+      ]
+    },
+    {
+      "a": "0404",
+      "b": "0505",
+      "sourceSvgIds": [
+        "path865"
+      ]
+    },
+    {
+      "a": "0405",
+      "b": "0406",
+      "sourceSvgIds": [
+        "path866"
+      ]
+    },
+    {
+      "a": "0405",
+      "b": "0506",
+      "sourceSvgIds": [
+        "path867"
+      ]
+    },
+    {
+      "a": "0501",
+      "b": "0502",
+      "sourceSvgIds": [
+        "path864"
+      ]
+    },
+    {
+      "a": "0502",
+      "b": "0602",
+      "sourceSvgIds": [
+        "path865"
+      ]
+    },
+    {
+      "a": "0505",
+      "b": "0604",
+      "sourceSvgIds": [
+        "path865"
+      ]
+    },
+    {
+      "a": "0505",
+      "b": "0605",
+      "sourceSvgIds": [
+        "path868"
+      ]
+    },
+    {
+      "a": "0506",
+      "b": "0507",
+      "sourceSvgIds": [
+        "path867"
+      ]
+    },
+    {
+      "a": "0507",
+      "b": "0508",
+      "sourceSvgIds": [
+        "path867"
+      ]
+    },
+    {
+      "a": "0507",
+      "b": "0607",
+      "sourceSvgIds": [
+        "path882"
+      ]
+    },
+    {
+      "a": "0602",
+      "b": "0703",
+      "sourceSvgIds": [
+        "path865"
+      ]
+    },
+    {
+      "a": "0604",
+      "b": "0704",
+      "sourceSvgIds": [
+        "path865"
+      ]
+    },
+    {
+      "a": "0605",
+      "b": "0706",
+      "sourceSvgIds": [
+        "path868"
+      ]
+    },
+    {
+      "a": "0607",
+      "b": "0708",
+      "sourceSvgIds": [
+        "path882"
+      ]
+    },
+    {
+      "a": "0703",
+      "b": "0803",
+      "sourceSvgIds": [
+        "path865"
+      ]
+    },
+    {
+      "a": "0704",
+      "b": "0803",
+      "sourceSvgIds": [
+        "path865"
+      ]
+    },
+    {
+      "a": "0706",
+      "b": "0806",
+      "sourceSvgIds": [
+        "path868"
+      ]
+    },
+    {
+      "a": "0708",
+      "b": "0709",
+      "sourceSvgIds": [
+        "path882"
+      ]
+    },
+    {
+      "a": "0709",
+      "b": "0809",
+      "sourceSvgIds": [
+        "path883"
+      ]
+    },
+    {
+      "a": "0712",
+      "b": "0713",
+      "sourceSvgIds": [
+        "path883"
+      ]
+    },
+    {
+      "a": "0712",
+      "b": "0811",
+      "sourceSvgIds": [
+        "path883"
+      ]
+    },
+    {
+      "a": "0713",
+      "b": "0714",
+      "sourceSvgIds": [
+        "path883"
+      ]
+    },
+    {
+      "a": "0714",
+      "b": "0715",
+      "sourceSvgIds": [
+        "path883"
+      ]
+    },
+    {
+      "a": "0715",
+      "b": "0716",
+      "sourceSvgIds": [
+        "path883"
+      ]
+    },
+    {
+      "a": "0716",
+      "b": "0816",
+      "sourceSvgIds": [
+        "path885"
+      ]
+    },
+    {
+      "a": "0801",
+      "b": "0902",
+      "sourceSvgIds": [
+        "path869"
+      ]
+    },
+    {
+      "a": "0802",
+      "b": "0803",
+      "sourceSvgIds": [
+        "path869"
+      ]
+    },
+    {
+      "a": "0802",
+      "b": "0902",
+      "sourceSvgIds": [
+        "path869"
+      ]
+    },
+    {
+      "a": "0803",
+      "b": "0804",
+      "sourceSvgIds": [
+        "path868"
+      ]
+    },
+    {
+      "a": "0804",
+      "b": "0905",
+      "sourceSvgIds": [
+        "path868"
+      ]
+    },
+    {
+      "a": "0806",
+      "b": "0907",
+      "sourceSvgIds": [
+        "path868"
+      ]
+    },
+    {
+      "a": "0809",
+      "b": "0810",
+      "sourceSvgIds": [
+        "path883"
+      ]
+    },
+    {
+      "a": "0810",
+      "b": "0811",
+      "sourceSvgIds": [
+        "path883"
+      ]
+    },
+    {
+      "a": "0810",
+      "b": "0911",
+      "sourceSvgIds": [
+        "path884"
+      ]
+    },
+    {
+      "a": "0816",
+      "b": "0917",
+      "sourceSvgIds": [
+        "path885"
+      ]
+    },
+    {
+      "a": "0902",
+      "b": "1002",
+      "sourceSvgIds": [
+        "path870"
+      ]
+    },
+    {
+      "a": "0905",
+      "b": "1005",
+      "sourceSvgIds": [
+        "path868"
+      ]
+    },
+    {
+      "a": "0907",
+      "b": "1007",
+      "sourceSvgIds": [
+        "path868"
+      ]
+    },
+    {
+      "a": "0911",
+      "b": "1010",
+      "sourceSvgIds": [
+        "path884"
+      ]
+    },
+    {
+      "a": "0917",
+      "b": "1016",
+      "sourceSvgIds": [
+        "path885"
+      ]
+    },
+    {
+      "a": "1002",
+      "b": "1103",
+      "sourceSvgIds": [
+        "path870"
+      ]
+    },
+    {
+      "a": "1005",
+      "b": "1106",
+      "sourceSvgIds": [
+        "path868"
+      ]
+    },
+    {
+      "a": "1007",
+      "b": "1107",
+      "sourceSvgIds": [
+        "path868"
+      ]
+    },
+    {
+      "a": "1010",
+      "b": "1111",
+      "sourceSvgIds": [
+        "path884"
+      ]
+    },
+    {
+      "a": "1016",
+      "b": "1116",
+      "sourceSvgIds": [
+        "path885"
+      ]
+    },
+    {
+      "a": "1103",
+      "b": "1104",
+      "sourceSvgIds": [
+        "path874"
+      ]
+    },
+    {
+      "a": "1103",
+      "b": "1202",
+      "sourceSvgIds": [
+        "path870"
+      ]
+    },
+    {
+      "a": "1103",
+      "b": "1203",
+      "sourceSvgIds": [
+        "path873"
+      ]
+    },
+    {
+      "a": "1104",
+      "b": "1105",
+      "sourceSvgIds": [
+        "path874"
+      ]
+    },
+    {
+      "a": "1105",
+      "b": "1106",
+      "sourceSvgIds": [
+        "path874"
+      ]
+    },
+    {
+      "a": "1105",
+      "b": "1204",
+      "sourceSvgIds": [
+        "path876"
+      ]
+    },
+    {
+      "a": "1106",
+      "b": "1206",
+      "sourceSvgIds": [
+        "path868"
+      ]
+    },
+    {
+      "a": "1107",
+      "b": "1108",
+      "sourceSvgIds": [
+        "path881"
+      ]
+    },
+    {
+      "a": "1107",
+      "b": "1206",
+      "sourceSvgIds": [
+        "path868"
+      ]
+    },
+    {
+      "a": "1108",
+      "b": "1208",
+      "sourceSvgIds": [
+        "path881"
+      ]
+    },
+    {
+      "a": "1111",
+      "b": "1211",
+      "sourceSvgIds": [
+        "path884"
+      ]
+    },
+    {
+      "a": "1115",
+      "b": "1116",
+      "sourceSvgIds": [
+        "path885"
+      ]
+    },
+    {
+      "a": "1115",
+      "b": "1214",
+      "sourceSvgIds": [
+        "path885"
+      ]
+    },
+    {
+      "a": "1203",
+      "b": "1304",
+      "sourceSvgIds": [
+        "path873"
+      ]
+    },
+    {
+      "a": "1204",
+      "b": "1305",
+      "sourceSvgIds": [
+        "path876"
+      ]
+    },
+    {
+      "a": "1205",
+      "b": "1206",
+      "sourceSvgIds": [
+        "path886"
+      ]
+    },
+    {
+      "a": "1205",
+      "b": "1305",
+      "sourceSvgIds": [
+        "path886"
+      ]
+    },
+    {
+      "a": "1208",
+      "b": "1309",
+      "sourceSvgIds": [
+        "path881"
+      ]
+    },
+    {
+      "a": "1211",
+      "b": "1312",
+      "sourceSvgIds": [
+        "path884"
+      ]
+    },
+    {
+      "a": "1213",
+      "b": "1214",
+      "sourceSvgIds": [
+        "path885"
+      ]
+    },
+    {
+      "a": "1213",
+      "b": "1313",
+      "sourceSvgIds": [
+        "path885"
+      ]
+    },
+    {
+      "a": "1304",
+      "b": "1404",
+      "sourceSvgIds": [
+        "path873"
+      ]
+    },
+    {
+      "a": "1305",
+      "b": "1404",
+      "sourceSvgIds": [
+        "path875"
+      ]
+    },
+    {
+      "a": "1305",
+      "b": "1405",
+      "sourceSvgIds": [
+        "path876"
+      ]
+    },
+    {
+      "a": "1309",
+      "b": "1310",
+      "sourceSvgIds": [
+        "path881"
+      ]
+    },
+    {
+      "a": "1310",
+      "b": "1410",
+      "sourceSvgIds": [
+        "path881"
+      ]
+    },
+    {
+      "a": "1312",
+      "b": "1313",
+      "sourceSvgIds": [
+        "path885"
+      ]
+    },
+    {
+      "a": "1312",
+      "b": "1411",
+      "sourceSvgIds": [
+        "path884"
+      ]
+    },
+    {
+      "a": "1404",
+      "b": "1504",
+      "sourceSvgIds": [
+        "path873"
+      ]
+    },
+    {
+      "a": "1405",
+      "b": "1506",
+      "sourceSvgIds": [
+        "path876"
+      ]
+    },
+    {
+      "a": "1410",
+      "b": "1411",
+      "sourceSvgIds": [
+        "path881"
+      ]
+    },
+    {
+      "a": "1411",
+      "b": "1412",
+      "sourceSvgIds": [
+        "path881"
+      ]
+    },
+    {
+      "a": "1412",
+      "b": "1513",
+      "sourceSvgIds": [
+        "path881"
+      ]
+    },
+    {
+      "a": "1504",
+      "b": "1603",
+      "sourceSvgIds": [
+        "path873"
+      ]
+    },
+    {
+      "a": "1504",
+      "b": "1604",
+      "sourceSvgIds": [
+        "path876"
+      ]
+    },
+    {
+      "a": "1506",
+      "b": "1606",
+      "sourceSvgIds": [
+        "path876"
+      ]
+    },
+    {
+      "a": "1510",
+      "b": "1511",
+      "sourceSvgIds": [
+        "path880"
+      ]
+    },
+    {
+      "a": "1510",
+      "b": "1609",
+      "sourceSvgIds": [
+        "path880"
+      ]
+    },
+    {
+      "a": "1511",
+      "b": "1512",
+      "sourceSvgIds": [
+        "path880"
+      ]
+    },
+    {
+      "a": "1512",
+      "b": "1513",
+      "sourceSvgIds": [
+        "path880"
+      ]
+    },
+    {
+      "a": "1601",
+      "b": "1702",
+      "sourceSvgIds": [
+        "path871"
+      ]
+    },
+    {
+      "a": "1603",
+      "b": "1703",
+      "sourceSvgIds": [
+        "path873"
+      ]
+    },
+    {
+      "a": "1604",
+      "b": "1705",
+      "sourceSvgIds": [
+        "path876"
+      ]
+    },
+    {
+      "a": "1606",
+      "b": "1707",
+      "sourceSvgIds": [
+        "path876"
+      ]
+    },
+    {
+      "a": "1607",
+      "b": "1608",
+      "sourceSvgIds": [
+        "path876"
+      ]
+    },
+    {
+      "a": "1607",
+      "b": "1707",
+      "sourceSvgIds": [
+        "path876"
+      ]
+    },
+    {
+      "a": "1608",
+      "b": "1609",
+      "sourceSvgIds": [
+        "path880"
+      ]
+    },
+    {
+      "a": "1608",
+      "b": "1708",
+      "sourceSvgIds": [
+        "path876"
+      ]
+    },
+    {
+      "a": "1702",
+      "b": "1802",
+      "sourceSvgIds": [
+        "path871"
+      ]
+    },
+    {
+      "a": "1703",
+      "b": "1704",
+      "sourceSvgIds": [
+        "path872"
+      ]
+    },
+    {
+      "a": "1703",
+      "b": "1802",
+      "sourceSvgIds": [
+        "path872"
+      ]
+    },
+    {
+      "a": "1704",
+      "b": "1705",
+      "sourceSvgIds": [
+        "path872"
+      ]
+    },
+    {
+      "a": "1705",
+      "b": "1706",
+      "sourceSvgIds": [
+        "path876"
+      ]
+    },
+    {
+      "a": "1705",
+      "b": "1805",
+      "sourceSvgIds": [
+        "path872"
+      ]
+    },
+    {
+      "a": "1706",
+      "b": "1707",
+      "sourceSvgIds": [
+        "path876"
+      ]
+    },
+    {
+      "a": "1707",
+      "b": "1708",
+      "sourceSvgIds": [
+        "path876"
+      ]
+    },
+    {
+      "a": "1707",
+      "b": "1807",
+      "sourceSvgIds": [
+        "path877"
+      ]
+    },
+    {
+      "a": "1807",
+      "b": "1808",
+      "sourceSvgIds": [
+        "path879"
+      ]
+    },
+    {
+      "a": "1808",
+      "b": "1809",
+      "sourceSvgIds": [
+        "path879"
+      ]
+    },
+    {
+      "a": "1809",
+      "b": "1810",
+      "sourceSvgIds": [
+        "path879"
+      ]
+    },
+    {
+      "a": "1810",
+      "b": "1811",
+      "sourceSvgIds": [
+        "path879"
+      ]
+    },
+    {
+      "a": "1911",
+      "b": "1912",
+      "sourceSvgIds": [
+        "path878"
+      ]
+    }
+  ],
+  "excludedAnnotations": [
+    "1106:1107",
+    "1106:1205"
+  ],
+  "policy": "Only drawn source-centerline rail sides count as railway. Other adjacent land sides retain ordinary ground passage unless blocked by Sea, Coast or other rules.",
+  "sourceRevisionNote": "Re-pinned at checkpoint 263 / v497 after source-backed Braila city-name correction at 1016. Rail route geometry and 117 links remain identical to original v496 snapshot."
+}

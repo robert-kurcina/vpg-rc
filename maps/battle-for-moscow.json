@@ -1,0 +1,6499 @@
+{
+  "id": "oberlabs-b4m-visual",
+  "sourceGame": "Battle for Moscow \u2014 Oberlabs digital rules",
+  "geometry": {
+    "topology": "even-q-flat",
+    "columnParityDown": "odd",
+    "hexNumbers": {
+      "format": "column-row-4",
+      "placement": "nw",
+      "fontSize": 9
+    }
+  },
+  "cells": [
+    {
+      "id": "0101",
+      "column": 1,
+      "row": 1,
+      "displayNumber": "0101",
+      "pixelCenter": [
+        57.275,
+        50.95
+      ],
+      "terrain": "open",
+      "sourceTerrain": "open",
+      "terrainStatus": "source-scenario",
+      "tileMarkers": [],
+      "tileEdges": {},
+      "entryTags": [
+        "german"
+      ],
+      "sourceRef": {
+        "x": 0,
+        "y": 0,
+        "city": null
+      }
+    },
+    {
+      "id": "0102",
+      "column": 1,
+      "row": 2,
+      "displayNumber": "0102",
+      "pixelCenter": [
+        57.275,
+        152.85000000000002
+      ],
+      "terrain": "open",
+      "sourceTerrain": "open",
+      "terrainStatus": "source-scenario",
+      "tileMarkers": [],
+      "tileEdges": {
+        "NW": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          }
+        ],
+        "NE": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          }
+        ]
+      },
+      "entryTags": [
+        "german"
+      ],
+      "sourceRef": {
+        "x": 0,
+        "y": 1,
+        "city": null
+      }
+    },
+    {
+      "id": "0103",
+      "column": 1,
+      "row": 3,
+      "displayNumber": "0103",
+      "pixelCenter": [
+        57.275,
+        254.75
+      ],
+      "terrain": "open",
+      "sourceTerrain": "open",
+      "terrainStatus": "source-scenario",
+      "tileMarkers": [
+        {
+          "kind": "cross",
+          "status": "source-scenario"
+        }
+      ],
+      "tileEdges": {},
+      "entryTags": [
+        "german"
+      ],
+      "sourceRef": {
+        "x": 0,
+        "y": 2,
+        "city": null
+      }
+    },
+    {
+      "id": "0104",
+      "column": 1,
+      "row": 4,
+      "displayNumber": "0104",
+      "pixelCenter": [
+        57.275,
+        356.65000000000003
+      ],
+      "terrain": "open",
+      "sourceTerrain": "open",
+      "terrainStatus": "source-scenario",
+      "tileMarkers": [
+        {
+          "kind": "cross",
+          "status": "source-scenario"
+        }
+      ],
+      "tileEdges": {},
+      "entryTags": [
+        "german"
+      ],
+      "sourceRef": {
+        "x": 0,
+        "y": 3,
+        "city": null
+      }
+    },
+    {
+      "id": "0105",
+      "column": 1,
+      "row": 5,
+      "displayNumber": "0105",
+      "pixelCenter": [
+        57.275,
+        458.55
+      ],
+      "terrain": "open",
+      "sourceTerrain": "open",
+      "terrainStatus": "source-scenario",
+      "tileMarkers": [],
+      "tileEdges": {
+        "NW": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          }
+        ],
+        "NE": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          }
+        ],
+        "S": [
+          {
+            "kind": "river",
+            "status": "source-scenario"
+          }
+        ],
+        "SE": [
+          {
+            "kind": "river",
+            "status": "source-scenario"
+          }
+        ]
+      },
+      "entryTags": [
+        "german"
+      ],
+      "sourceRef": {
+        "x": 0,
+        "y": 4,
+        "city": null
+      }
+    },
+    {
+      "id": "0106",
+      "column": 1,
+      "row": 6,
+      "displayNumber": "0106",
+      "pixelCenter": [
+        57.275,
+        560.45
+      ],
+      "terrain": "open",
+      "sourceTerrain": "open",
+      "terrainStatus": "source-scenario",
+      "tileMarkers": [
+        {
+          "kind": "cross",
+          "status": "source-scenario"
+        }
+      ],
+      "tileEdges": {
+        "N": [
+          {
+            "kind": "river",
+            "status": "source-scenario"
+          }
+        ]
+      },
+      "entryTags": [
+        "german"
+      ],
+      "sourceRef": {
+        "x": 0,
+        "y": 5,
+        "city": null
+      }
+    },
+    {
+      "id": "0107",
+      "column": 1,
+      "row": 7,
+      "displayNumber": "0107",
+      "pixelCenter": [
+        57.275,
+        662.3500000000001
+      ],
+      "terrain": "open",
+      "sourceTerrain": "open",
+      "terrainStatus": "source-scenario",
+      "tileMarkers": [],
+      "tileEdges": {},
+      "entryTags": [
+        "german"
+      ],
+      "sourceRef": {
+        "x": 0,
+        "y": 6,
+        "city": null
+      }
+    },
+    {
+      "id": "0108",
+      "column": 1,
+      "row": 8,
+      "displayNumber": "0108",
+      "pixelCenter": [
+        57.275,
+        764.2500000000001
+      ],
+      "terrain": "open",
+      "sourceTerrain": "open",
+      "terrainStatus": "source-scenario",
+      "tileMarkers": [],
+      "tileEdges": {},
+      "entryTags": [
+        "german"
+      ],
+      "sourceRef": {
+        "x": 0,
+        "y": 7,
+        "city": null
+      }
+    },
+    {
+      "id": "0109",
+      "column": 1,
+      "row": 9,
+      "displayNumber": "0109",
+      "pixelCenter": [
+        57.275,
+        866.1500000000001
+      ],
+      "terrain": "forest",
+      "sourceTerrain": "forest",
+      "terrainStatus": "source-scenario",
+      "tileMarkers": [],
+      "tileEdges": {},
+      "entryTags": [
+        "german"
+      ],
+      "sourceRef": {
+        "x": 0,
+        "y": 8,
+        "city": null
+      }
+    },
+    {
+      "id": "0110",
+      "column": 1,
+      "row": 10,
+      "displayNumber": "0110",
+      "pixelCenter": [
+        57.275,
+        968.0500000000001
+      ],
+      "terrain": "open",
+      "sourceTerrain": "open",
+      "terrainStatus": "source-scenario",
+      "tileMarkers": [],
+      "tileEdges": {
+        "SW": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          }
+        ],
+        "NE": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          }
+        ]
+      },
+      "entryTags": [
+        "german"
+      ],
+      "sourceRef": {
+        "x": 0,
+        "y": 9,
+        "city": null
+      }
+    },
+    {
+      "id": "0111",
+      "column": 1,
+      "row": 11,
+      "displayNumber": "0111",
+      "pixelCenter": [
+        57.275,
+        1069.95
+      ],
+      "terrain": "open",
+      "sourceTerrain": "open",
+      "terrainStatus": "source-scenario",
+      "tileMarkers": [],
+      "tileEdges": {},
+      "entryTags": [
+        "german"
+      ],
+      "sourceRef": {
+        "x": 0,
+        "y": 10,
+        "city": null
+      }
+    },
+    {
+      "id": "0202",
+      "column": 2,
+      "row": 2,
+      "displayNumber": "0201",
+      "pixelCenter": [
+        143.1875,
+        101.9
+      ],
+      "terrain": "forest",
+      "sourceTerrain": "forest",
+      "terrainStatus": "source-scenario",
+      "tileMarkers": [
+        {
+          "kind": "cross",
+          "status": "source-scenario"
+        }
+      ],
+      "tileEdges": {
+        "SW": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          }
+        ],
+        "SE": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          }
+        ]
+      },
+      "entryTags": [],
+      "sourceRef": {
+        "x": 1,
+        "y": 1,
+        "city": null
+      }
+    },
+    {
+      "id": "0203",
+      "column": 2,
+      "row": 3,
+      "displayNumber": "0202",
+      "pixelCenter": [
+        143.1875,
+        203.8
+      ],
+      "terrain": "forest",
+      "sourceTerrain": "forest",
+      "terrainStatus": "source-scenario",
+      "tileMarkers": [
+        {
+          "kind": "cross",
+          "status": "source-scenario"
+        }
+      ],
+      "tileEdges": {},
+      "entryTags": [],
+      "sourceRef": {
+        "x": 1,
+        "y": 2,
+        "city": null
+      }
+    },
+    {
+      "id": "0204",
+      "column": 2,
+      "row": 4,
+      "displayNumber": "0203",
+      "pixelCenter": [
+        143.1875,
+        305.7
+      ],
+      "terrain": "forest",
+      "sourceTerrain": "forest",
+      "terrainStatus": "source-scenario",
+      "tileMarkers": [
+        {
+          "kind": "cross",
+          "status": "source-scenario"
+        }
+      ],
+      "tileEdges": {},
+      "entryTags": [],
+      "sourceRef": {
+        "x": 1,
+        "y": 3,
+        "city": null
+      }
+    },
+    {
+      "id": "0205",
+      "column": 2,
+      "row": 5,
+      "displayNumber": "0204",
+      "pixelCenter": [
+        143.1875,
+        407.6
+      ],
+      "terrain": "open",
+      "sourceTerrain": "open",
+      "terrainStatus": "source-scenario",
+      "tileMarkers": [
+        {
+          "kind": "city",
+          "status": "source-scenario",
+          "label": "Smolensk"
+        },
+        {
+          "kind": "cross",
+          "status": "source-scenario"
+        }
+      ],
+      "tileEdges": {
+        "SW": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          }
+        ],
+        "S": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          },
+          {
+            "kind": "river",
+            "status": "source-scenario"
+          }
+        ],
+        "SE": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          }
+        ]
+      },
+      "entryTags": [],
+      "sourceRef": {
+        "x": 1,
+        "y": 4,
+        "city": "normal"
+      }
+    },
+    {
+      "id": "0206",
+      "column": 2,
+      "row": 6,
+      "displayNumber": "0205",
+      "pixelCenter": [
+        143.1875,
+        509.5
+      ],
+      "terrain": "open",
+      "sourceTerrain": "open",
+      "terrainStatus": "source-scenario",
+      "tileMarkers": [
+        {
+          "kind": "cross",
+          "status": "source-scenario"
+        }
+      ],
+      "tileEdges": {
+        "N": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          },
+          {
+            "kind": "river",
+            "status": "source-scenario"
+          }
+        ],
+        "SE": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          }
+        ],
+        "NW": [
+          {
+            "kind": "river",
+            "status": "source-scenario"
+          }
+        ],
+        "NE": [
+          {
+            "kind": "river",
+            "status": "source-scenario"
+          }
+        ]
+      },
+      "entryTags": [],
+      "sourceRef": {
+        "x": 1,
+        "y": 5,
+        "city": null
+      }
+    },
+    {
+      "id": "0207",
+      "column": 2,
+      "row": 7,
+      "displayNumber": "0206",
+      "pixelCenter": [
+        143.1875,
+        611.4000000000001
+      ],
+      "terrain": "open",
+      "sourceTerrain": "open",
+      "terrainStatus": "source-scenario",
+      "tileMarkers": [
+        {
+          "kind": "cross",
+          "status": "source-scenario"
+        }
+      ],
+      "tileEdges": {},
+      "entryTags": [],
+      "sourceRef": {
+        "x": 1,
+        "y": 6,
+        "city": null
+      }
+    },
+    {
+      "id": "0208",
+      "column": 2,
+      "row": 8,
+      "displayNumber": "0207",
+      "pixelCenter": [
+        143.1875,
+        713.3000000000001
+      ],
+      "terrain": "forest",
+      "sourceTerrain": "forest",
+      "terrainStatus": "source-scenario",
+      "tileMarkers": [],
+      "tileEdges": {},
+      "entryTags": [],
+      "sourceRef": {
+        "x": 1,
+        "y": 7,
+        "city": null
+      }
+    },
+    {
+      "id": "0209",
+      "column": 2,
+      "row": 9,
+      "displayNumber": "0208",
+      "pixelCenter": [
+        143.1875,
+        815.2
+      ],
+      "terrain": "forest",
+      "sourceTerrain": "forest",
+      "terrainStatus": "source-scenario",
+      "tileMarkers": [],
+      "tileEdges": {},
+      "entryTags": [],
+      "sourceRef": {
+        "x": 1,
+        "y": 8,
+        "city": null
+      }
+    },
+    {
+      "id": "0210",
+      "column": 2,
+      "row": 10,
+      "displayNumber": "0209",
+      "pixelCenter": [
+        143.1875,
+        917.1000000000001
+      ],
+      "terrain": "forest",
+      "sourceTerrain": "forest",
+      "terrainStatus": "source-scenario",
+      "tileMarkers": [
+        {
+          "kind": "cross",
+          "status": "source-scenario"
+        }
+      ],
+      "tileEdges": {
+        "SW": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          }
+        ],
+        "SE": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          }
+        ]
+      },
+      "entryTags": [],
+      "sourceRef": {
+        "x": 1,
+        "y": 9,
+        "city": null
+      }
+    },
+    {
+      "id": "0211",
+      "column": 2,
+      "row": 11,
+      "displayNumber": "0210",
+      "pixelCenter": [
+        143.1875,
+        1019.0000000000001
+      ],
+      "terrain": "forest",
+      "sourceTerrain": "forest",
+      "terrainStatus": "source-scenario",
+      "tileMarkers": [
+        {
+          "kind": "cross",
+          "status": "source-scenario"
+        }
+      ],
+      "tileEdges": {},
+      "entryTags": [],
+      "sourceRef": {
+        "x": 1,
+        "y": 10,
+        "city": null
+      }
+    },
+    {
+      "id": "0301",
+      "column": 3,
+      "row": 1,
+      "displayNumber": "0301",
+      "pixelCenter": [
+        229.1,
+        50.95
+      ],
+      "terrain": "forest",
+      "sourceTerrain": "forest",
+      "terrainStatus": "source-scenario",
+      "tileMarkers": [
+        {
+          "kind": "star",
+          "status": "source-unit-roster"
+        }
+      ],
+      "tileEdges": {},
+      "entryTags": [],
+      "sourceRef": {
+        "x": 2,
+        "y": 0,
+        "city": null
+      }
+    },
+    {
+      "id": "0302",
+      "column": 3,
+      "row": 2,
+      "displayNumber": "0302",
+      "pixelCenter": [
+        229.1,
+        152.85000000000002
+      ],
+      "terrain": "open",
+      "sourceTerrain": "open",
+      "terrainStatus": "source-scenario",
+      "tileMarkers": [
+        {
+          "kind": "star",
+          "status": "source-unit-roster"
+        }
+      ],
+      "tileEdges": {
+        "NW": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          }
+        ],
+        "NE": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          }
+        ]
+      },
+      "entryTags": [],
+      "sourceRef": {
+        "x": 2,
+        "y": 1,
+        "city": null
+      }
+    },
+    {
+      "id": "0303",
+      "column": 3,
+      "row": 3,
+      "displayNumber": "0303",
+      "pixelCenter": [
+        229.1,
+        254.75
+      ],
+      "terrain": "open",
+      "sourceTerrain": "open",
+      "terrainStatus": "source-scenario",
+      "tileMarkers": [
+        {
+          "kind": "star",
+          "status": "source-unit-roster"
+        }
+      ],
+      "tileEdges": {},
+      "entryTags": [],
+      "sourceRef": {
+        "x": 2,
+        "y": 2,
+        "city": null
+      }
+    },
+    {
+      "id": "0304",
+      "column": 3,
+      "row": 4,
+      "displayNumber": "0304",
+      "pixelCenter": [
+        229.1,
+        356.65000000000003
+      ],
+      "terrain": "open",
+      "sourceTerrain": "open",
+      "terrainStatus": "source-scenario",
+      "tileMarkers": [
+        {
+          "kind": "star",
+          "status": "source-unit-roster"
+        }
+      ],
+      "tileEdges": {},
+      "entryTags": [],
+      "sourceRef": {
+        "x": 2,
+        "y": 3,
+        "city": null
+      }
+    },
+    {
+      "id": "0305",
+      "column": 3,
+      "row": 5,
+      "displayNumber": "0305",
+      "pixelCenter": [
+        229.1,
+        458.55
+      ],
+      "terrain": "open",
+      "sourceTerrain": "open",
+      "terrainStatus": "source-scenario",
+      "tileMarkers": [
+        {
+          "kind": "cross",
+          "status": "source-scenario"
+        }
+      ],
+      "tileEdges": {
+        "NW": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          }
+        ],
+        "NE": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          }
+        ],
+        "SW": [
+          {
+            "kind": "river",
+            "status": "source-scenario"
+          }
+        ],
+        "S": [
+          {
+            "kind": "river",
+            "status": "source-scenario"
+          }
+        ],
+        "SE": [
+          {
+            "kind": "river",
+            "status": "source-scenario"
+          }
+        ]
+      },
+      "entryTags": [],
+      "sourceRef": {
+        "x": 2,
+        "y": 4,
+        "city": null
+      }
+    },
+    {
+      "id": "0306",
+      "column": 3,
+      "row": 6,
+      "displayNumber": "0306",
+      "pixelCenter": [
+        229.1,
+        560.45
+      ],
+      "terrain": "open",
+      "sourceTerrain": "open",
+      "terrainStatus": "source-scenario",
+      "tileMarkers": [
+        {
+          "kind": "cross",
+          "status": "source-scenario"
+        }
+      ],
+      "tileEdges": {
+        "NW": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          }
+        ],
+        "S": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          }
+        ],
+        "N": [
+          {
+            "kind": "river",
+            "status": "source-scenario"
+          }
+        ]
+      },
+      "entryTags": [],
+      "sourceRef": {
+        "x": 2,
+        "y": 5,
+        "city": null
+      }
+    },
+    {
+      "id": "0307",
+      "column": 3,
+      "row": 7,
+      "displayNumber": "0307",
+      "pixelCenter": [
+        229.1,
+        662.3500000000001
+      ],
+      "terrain": "open",
+      "sourceTerrain": "open",
+      "terrainStatus": "source-scenario",
+      "tileMarkers": [
+        {
+          "kind": "city",
+          "status": "source-scenario",
+          "label": "Roslavl"
+        },
+        {
+          "kind": "cross",
+          "status": "source-scenario"
+        }
+      ],
+      "tileEdges": {
+        "N": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          }
+        ],
+        "SE": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          }
+        ]
+      },
+      "entryTags": [],
+      "sourceRef": {
+        "x": 2,
+        "y": 6,
+        "city": "normal"
+      }
+    },
+    {
+      "id": "0308",
+      "column": 3,
+      "row": 8,
+      "displayNumber": "0308",
+      "pixelCenter": [
+        229.1,
+        764.2500000000001
+      ],
+      "terrain": "forest",
+      "sourceTerrain": "forest",
+      "terrainStatus": "source-scenario",
+      "tileMarkers": [],
+      "tileEdges": {},
+      "entryTags": [],
+      "sourceRef": {
+        "x": 2,
+        "y": 7,
+        "city": null
+      }
+    },
+    {
+      "id": "0309",
+      "column": 3,
+      "row": 9,
+      "displayNumber": "0309",
+      "pixelCenter": [
+        229.1,
+        866.1500000000001
+      ],
+      "terrain": "forest",
+      "sourceTerrain": "forest",
+      "terrainStatus": "source-scenario",
+      "tileMarkers": [
+        {
+          "kind": "cross",
+          "status": "source-scenario"
+        }
+      ],
+      "tileEdges": {},
+      "entryTags": [],
+      "sourceRef": {
+        "x": 2,
+        "y": 8,
+        "city": null
+      }
+    },
+    {
+      "id": "0310",
+      "column": 3,
+      "row": 10,
+      "displayNumber": "0310",
+      "pixelCenter": [
+        229.1,
+        968.0500000000001
+      ],
+      "terrain": "open",
+      "sourceTerrain": "open",
+      "terrainStatus": "source-scenario",
+      "tileMarkers": [
+        {
+          "kind": "cross",
+          "status": "source-scenario"
+        }
+      ],
+      "tileEdges": {
+        "NW": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          }
+        ],
+        "NE": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          }
+        ]
+      },
+      "entryTags": [],
+      "sourceRef": {
+        "x": 2,
+        "y": 9,
+        "city": null
+      }
+    },
+    {
+      "id": "0311",
+      "column": 3,
+      "row": 11,
+      "displayNumber": "0311",
+      "pixelCenter": [
+        229.1,
+        1069.95
+      ],
+      "terrain": "forest",
+      "sourceTerrain": "forest",
+      "terrainStatus": "source-scenario",
+      "tileMarkers": [],
+      "tileEdges": {},
+      "entryTags": [],
+      "sourceRef": {
+        "x": 2,
+        "y": 10,
+        "city": null
+      }
+    },
+    {
+      "id": "0402",
+      "column": 4,
+      "row": 2,
+      "displayNumber": "0401",
+      "pixelCenter": [
+        315.01249999999993,
+        101.9
+      ],
+      "terrain": "forest",
+      "sourceTerrain": "forest",
+      "terrainStatus": "source-scenario",
+      "tileMarkers": [],
+      "tileEdges": {
+        "SW": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          }
+        ],
+        "SE": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          }
+        ]
+      },
+      "entryTags": [],
+      "sourceRef": {
+        "x": 3,
+        "y": 1,
+        "city": null
+      }
+    },
+    {
+      "id": "0403",
+      "column": 4,
+      "row": 3,
+      "displayNumber": "0402",
+      "pixelCenter": [
+        315.01249999999993,
+        203.8
+      ],
+      "terrain": "open",
+      "sourceTerrain": "open",
+      "terrainStatus": "source-scenario",
+      "tileMarkers": [],
+      "tileEdges": {},
+      "entryTags": [],
+      "sourceRef": {
+        "x": 3,
+        "y": 2,
+        "city": null
+      }
+    },
+    {
+      "id": "0404",
+      "column": 4,
+      "row": 4,
+      "displayNumber": "0403",
+      "pixelCenter": [
+        315.01249999999993,
+        305.7
+      ],
+      "terrain": "open",
+      "sourceTerrain": "open",
+      "terrainStatus": "source-scenario",
+      "tileMarkers": [],
+      "tileEdges": {
+        "SE": [
+          {
+            "kind": "river",
+            "status": "source-scenario"
+          }
+        ]
+      },
+      "entryTags": [],
+      "sourceRef": {
+        "x": 3,
+        "y": 3,
+        "city": null
+      }
+    },
+    {
+      "id": "0405",
+      "column": 4,
+      "row": 5,
+      "displayNumber": "0404",
+      "pixelCenter": [
+        315.01249999999993,
+        407.6
+      ],
+      "terrain": "open",
+      "sourceTerrain": "open",
+      "terrainStatus": "source-scenario",
+      "tileMarkers": [
+        {
+          "kind": "cross",
+          "status": "source-scenario"
+        }
+      ],
+      "tileEdges": {
+        "SW": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          }
+        ],
+        "NE": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          },
+          {
+            "kind": "river",
+            "status": "source-scenario"
+          }
+        ],
+        "S": [
+          {
+            "kind": "river",
+            "status": "source-scenario"
+          }
+        ],
+        "SE": [
+          {
+            "kind": "river",
+            "status": "source-scenario"
+          }
+        ]
+      },
+      "entryTags": [],
+      "sourceRef": {
+        "x": 3,
+        "y": 4,
+        "city": null
+      }
+    },
+    {
+      "id": "0406",
+      "column": 4,
+      "row": 6,
+      "displayNumber": "0405",
+      "pixelCenter": [
+        315.01249999999993,
+        509.5
+      ],
+      "terrain": "forest",
+      "sourceTerrain": "forest",
+      "terrainStatus": "source-scenario",
+      "tileMarkers": [
+        {
+          "kind": "star",
+          "status": "source-unit-roster"
+        }
+      ],
+      "tileEdges": {
+        "NW": [
+          {
+            "kind": "river",
+            "status": "source-scenario"
+          }
+        ],
+        "N": [
+          {
+            "kind": "river",
+            "status": "source-scenario"
+          }
+        ]
+      },
+      "entryTags": [],
+      "sourceRef": {
+        "x": 3,
+        "y": 5,
+        "city": null
+      }
+    },
+    {
+      "id": "0407",
+      "column": 4,
+      "row": 7,
+      "displayNumber": "0406",
+      "pixelCenter": [
+        315.01249999999993,
+        611.4000000000001
+      ],
+      "terrain": "open",
+      "sourceTerrain": "open",
+      "terrainStatus": "source-scenario",
+      "tileMarkers": [
+        {
+          "kind": "cross",
+          "status": "source-scenario"
+        }
+      ],
+      "tileEdges": {},
+      "entryTags": [],
+      "sourceRef": {
+        "x": 3,
+        "y": 6,
+        "city": null
+      }
+    },
+    {
+      "id": "0408",
+      "column": 4,
+      "row": 8,
+      "displayNumber": "0407",
+      "pixelCenter": [
+        315.01249999999993,
+        713.3000000000001
+      ],
+      "terrain": "open",
+      "sourceTerrain": "open",
+      "terrainStatus": "source-scenario",
+      "tileMarkers": [
+        {
+          "kind": "cross",
+          "status": "source-scenario"
+        }
+      ],
+      "tileEdges": {
+        "NW": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          }
+        ],
+        "SE": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          }
+        ]
+      },
+      "entryTags": [],
+      "sourceRef": {
+        "x": 3,
+        "y": 7,
+        "city": null
+      }
+    },
+    {
+      "id": "0409",
+      "column": 4,
+      "row": 9,
+      "displayNumber": "0408",
+      "pixelCenter": [
+        315.01249999999993,
+        815.2
+      ],
+      "terrain": "forest",
+      "sourceTerrain": "forest",
+      "terrainStatus": "source-scenario",
+      "tileMarkers": [
+        {
+          "kind": "cross",
+          "status": "source-scenario"
+        }
+      ],
+      "tileEdges": {},
+      "entryTags": [],
+      "sourceRef": {
+        "x": 3,
+        "y": 8,
+        "city": null
+      }
+    },
+    {
+      "id": "0410",
+      "column": 4,
+      "row": 10,
+      "displayNumber": "0409",
+      "pixelCenter": [
+        315.01249999999993,
+        917.1000000000001
+      ],
+      "terrain": "forest",
+      "sourceTerrain": "forest",
+      "terrainStatus": "source-scenario",
+      "tileMarkers": [
+        {
+          "kind": "cross",
+          "status": "source-scenario"
+        }
+      ],
+      "tileEdges": {
+        "SW": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          }
+        ],
+        "NE": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          }
+        ]
+      },
+      "entryTags": [],
+      "sourceRef": {
+        "x": 3,
+        "y": 9,
+        "city": null
+      }
+    },
+    {
+      "id": "0411",
+      "column": 4,
+      "row": 11,
+      "displayNumber": "0410",
+      "pixelCenter": [
+        315.01249999999993,
+        1019.0000000000001
+      ],
+      "terrain": "open",
+      "sourceTerrain": "open",
+      "terrainStatus": "source-scenario",
+      "tileMarkers": [
+        {
+          "kind": "cross",
+          "status": "source-scenario"
+        }
+      ],
+      "tileEdges": {},
+      "entryTags": [],
+      "sourceRef": {
+        "x": 3,
+        "y": 10,
+        "city": null
+      }
+    },
+    {
+      "id": "0501",
+      "column": 5,
+      "row": 1,
+      "displayNumber": "0501",
+      "pixelCenter": [
+        400.92499999999995,
+        50.95
+      ],
+      "terrain": "open",
+      "sourceTerrain": "fortification",
+      "terrainStatus": "source-scenario",
+      "tileMarkers": [
+        {
+          "kind": "fortification",
+          "status": "source-scenario"
+        }
+      ],
+      "tileEdges": {},
+      "entryTags": [],
+      "sourceRef": {
+        "x": 4,
+        "y": 0,
+        "city": null
+      }
+    },
+    {
+      "id": "0502",
+      "column": 5,
+      "row": 2,
+      "displayNumber": "0502",
+      "pixelCenter": [
+        400.92499999999995,
+        152.85000000000002
+      ],
+      "terrain": "open",
+      "sourceTerrain": "fortification",
+      "terrainStatus": "source-scenario",
+      "tileMarkers": [
+        {
+          "kind": "fortification",
+          "status": "source-scenario"
+        }
+      ],
+      "tileEdges": {
+        "NW": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          }
+        ],
+        "NE": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          }
+        ]
+      },
+      "entryTags": [],
+      "sourceRef": {
+        "x": 4,
+        "y": 1,
+        "city": null
+      }
+    },
+    {
+      "id": "0503",
+      "column": 5,
+      "row": 3,
+      "displayNumber": "0503",
+      "pixelCenter": [
+        400.92499999999995,
+        254.75
+      ],
+      "terrain": "open",
+      "sourceTerrain": "fortification",
+      "terrainStatus": "source-scenario",
+      "tileMarkers": [
+        {
+          "kind": "fortification",
+          "status": "source-scenario"
+        },
+        {
+          "kind": "star",
+          "status": "source-unit-roster"
+        }
+      ],
+      "tileEdges": {
+        "S": [
+          {
+            "kind": "river",
+            "status": "source-scenario"
+          }
+        ],
+        "SE": [
+          {
+            "kind": "river",
+            "status": "source-scenario"
+          }
+        ]
+      },
+      "entryTags": [],
+      "sourceRef": {
+        "x": 4,
+        "y": 2,
+        "city": null
+      }
+    },
+    {
+      "id": "0504",
+      "column": 5,
+      "row": 4,
+      "displayNumber": "0504",
+      "pixelCenter": [
+        400.92499999999995,
+        356.65000000000003
+      ],
+      "terrain": "open",
+      "sourceTerrain": "fortification",
+      "terrainStatus": "source-scenario",
+      "tileMarkers": [
+        {
+          "kind": "fortification",
+          "status": "source-scenario"
+        }
+      ],
+      "tileEdges": {
+        "SW": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          },
+          {
+            "kind": "river",
+            "status": "source-scenario"
+          }
+        ],
+        "NE": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          }
+        ],
+        "NW": [
+          {
+            "kind": "river",
+            "status": "source-scenario"
+          }
+        ],
+        "N": [
+          {
+            "kind": "river",
+            "status": "source-scenario"
+          }
+        ],
+        "SE": [
+          {
+            "kind": "river",
+            "status": "source-scenario"
+          }
+        ]
+      },
+      "entryTags": [],
+      "sourceRef": {
+        "x": 4,
+        "y": 3,
+        "city": null
+      }
+    },
+    {
+      "id": "0505",
+      "column": 5,
+      "row": 5,
+      "displayNumber": "0505",
+      "pixelCenter": [
+        400.92499999999995,
+        458.55
+      ],
+      "terrain": "open",
+      "sourceTerrain": "fortification",
+      "terrainStatus": "source-scenario",
+      "tileMarkers": [
+        {
+          "kind": "fortification",
+          "status": "source-scenario"
+        }
+      ],
+      "tileEdges": {
+        "S": [
+          {
+            "kind": "river",
+            "status": "source-scenario"
+          }
+        ],
+        "SE": [
+          {
+            "kind": "river",
+            "status": "source-scenario"
+          }
+        ],
+        "NE": [
+          {
+            "kind": "river",
+            "status": "source-scenario"
+          }
+        ],
+        "NW": [
+          {
+            "kind": "river",
+            "status": "source-scenario"
+          }
+        ]
+      },
+      "entryTags": [],
+      "sourceRef": {
+        "x": 4,
+        "y": 4,
+        "city": null
+      }
+    },
+    {
+      "id": "0506",
+      "column": 5,
+      "row": 6,
+      "displayNumber": "0506",
+      "pixelCenter": [
+        400.92499999999995,
+        560.45
+      ],
+      "terrain": "open",
+      "sourceTerrain": "fortification",
+      "terrainStatus": "source-scenario",
+      "tileMarkers": [
+        {
+          "kind": "fortification",
+          "status": "source-scenario"
+        },
+        {
+          "kind": "star",
+          "status": "source-unit-roster"
+        }
+      ],
+      "tileEdges": {
+        "N": [
+          {
+            "kind": "river",
+            "status": "source-scenario"
+          }
+        ]
+      },
+      "entryTags": [],
+      "sourceRef": {
+        "x": 4,
+        "y": 5,
+        "city": null
+      }
+    },
+    {
+      "id": "0507",
+      "column": 5,
+      "row": 7,
+      "displayNumber": "0507",
+      "pixelCenter": [
+        400.92499999999995,
+        662.3500000000001
+      ],
+      "terrain": "open",
+      "sourceTerrain": "fortification",
+      "terrainStatus": "source-scenario",
+      "tileMarkers": [
+        {
+          "kind": "fortification",
+          "status": "source-scenario"
+        },
+        {
+          "kind": "star",
+          "status": "source-unit-roster"
+        }
+      ],
+      "tileEdges": {},
+      "entryTags": [],
+      "sourceRef": {
+        "x": 4,
+        "y": 6,
+        "city": null
+      }
+    },
+    {
+      "id": "0508",
+      "column": 5,
+      "row": 8,
+      "displayNumber": "0508",
+      "pixelCenter": [
+        400.92499999999995,
+        764.2500000000001
+      ],
+      "terrain": "open",
+      "sourceTerrain": "open",
+      "terrainStatus": "source-scenario",
+      "tileMarkers": [
+        {
+          "kind": "star",
+          "status": "source-unit-roster"
+        }
+      ],
+      "tileEdges": {
+        "NW": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          }
+        ],
+        "S": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          }
+        ]
+      },
+      "entryTags": [],
+      "sourceRef": {
+        "x": 4,
+        "y": 7,
+        "city": null
+      }
+    },
+    {
+      "id": "0509",
+      "column": 5,
+      "row": 9,
+      "displayNumber": "0509",
+      "pixelCenter": [
+        400.92499999999995,
+        866.1500000000001
+      ],
+      "terrain": "open",
+      "sourceTerrain": "open",
+      "terrainStatus": "source-scenario",
+      "tileMarkers": [
+        {
+          "kind": "city",
+          "status": "source-scenario",
+          "label": "Bryansk"
+        },
+        {
+          "kind": "star",
+          "status": "source-unit-roster"
+        }
+      ],
+      "tileEdges": {
+        "N": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          }
+        ],
+        "SW": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          }
+        ],
+        "S": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          }
+        ],
+        "SE": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          }
+        ],
+        "NE": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          }
+        ]
+      },
+      "entryTags": [],
+      "sourceRef": {
+        "x": 4,
+        "y": 8,
+        "city": "normal"
+      }
+    },
+    {
+      "id": "0510",
+      "column": 5,
+      "row": 10,
+      "displayNumber": "0510",
+      "pixelCenter": [
+        400.92499999999995,
+        968.0500000000001
+      ],
+      "terrain": "forest",
+      "sourceTerrain": "forest",
+      "terrainStatus": "source-scenario",
+      "tileMarkers": [
+        {
+          "kind": "star",
+          "status": "source-unit-roster"
+        }
+      ],
+      "tileEdges": {
+        "N": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          }
+        ],
+        "S": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          }
+        ]
+      },
+      "entryTags": [],
+      "sourceRef": {
+        "x": 4,
+        "y": 9,
+        "city": null
+      }
+    },
+    {
+      "id": "0511",
+      "column": 5,
+      "row": 11,
+      "displayNumber": "0511",
+      "pixelCenter": [
+        400.92499999999995,
+        1069.95
+      ],
+      "terrain": "forest",
+      "sourceTerrain": "forest",
+      "terrainStatus": "source-scenario",
+      "tileMarkers": [
+        {
+          "kind": "star",
+          "status": "source-unit-roster"
+        }
+      ],
+      "tileEdges": {
+        "N": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          }
+        ],
+        "S": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          }
+        ]
+      },
+      "entryTags": [],
+      "sourceRef": {
+        "x": 4,
+        "y": 10,
+        "city": null
+      }
+    },
+    {
+      "id": "0602",
+      "column": 6,
+      "row": 2,
+      "displayNumber": "0601",
+      "pixelCenter": [
+        486.8375,
+        101.9
+      ],
+      "terrain": "open",
+      "sourceTerrain": "open",
+      "terrainStatus": "source-scenario",
+      "tileMarkers": [
+        {
+          "kind": "city",
+          "status": "source-scenario",
+          "label": "Rzhev"
+        }
+      ],
+      "tileEdges": {
+        "SW": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          }
+        ],
+        "S": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          }
+        ],
+        "SE": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          }
+        ]
+      },
+      "entryTags": [],
+      "sourceRef": {
+        "x": 5,
+        "y": 1,
+        "city": "normal"
+      }
+    },
+    {
+      "id": "0603",
+      "column": 6,
+      "row": 3,
+      "displayNumber": "0602",
+      "pixelCenter": [
+        486.8375,
+        203.8
+      ],
+      "terrain": "open",
+      "sourceTerrain": "open",
+      "terrainStatus": "source-scenario",
+      "tileMarkers": [],
+      "tileEdges": {
+        "N": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          }
+        ],
+        "S": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          }
+        ]
+      },
+      "entryTags": [],
+      "sourceRef": {
+        "x": 5,
+        "y": 2,
+        "city": null
+      }
+    },
+    {
+      "id": "0604",
+      "column": 6,
+      "row": 4,
+      "displayNumber": "0603",
+      "pixelCenter": [
+        486.8375,
+        305.7
+      ],
+      "terrain": "open",
+      "sourceTerrain": "open",
+      "terrainStatus": "source-scenario",
+      "tileMarkers": [
+        {
+          "kind": "city",
+          "status": "source-scenario",
+          "label": "Vyazma"
+        }
+      ],
+      "tileEdges": {
+        "SW": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          }
+        ],
+        "N": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          }
+        ],
+        "SE": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          }
+        ],
+        "NW": [
+          {
+            "kind": "river",
+            "status": "source-scenario"
+          }
+        ],
+        "S": [
+          {
+            "kind": "river",
+            "status": "source-scenario"
+          }
+        ]
+      },
+      "entryTags": [],
+      "sourceRef": {
+        "x": 5,
+        "y": 3,
+        "city": "normal"
+      }
+    },
+    {
+      "id": "0605",
+      "column": 6,
+      "row": 5,
+      "displayNumber": "0604",
+      "pixelCenter": [
+        486.8375,
+        407.6
+      ],
+      "terrain": "forest",
+      "sourceTerrain": "forest",
+      "terrainStatus": "source-scenario",
+      "tileMarkers": [],
+      "tileEdges": {
+        "SW": [
+          {
+            "kind": "river",
+            "status": "source-scenario"
+          }
+        ],
+        "NW": [
+          {
+            "kind": "river",
+            "status": "source-scenario"
+          }
+        ],
+        "N": [
+          {
+            "kind": "river",
+            "status": "source-scenario"
+          }
+        ],
+        "NE": [
+          {
+            "kind": "river",
+            "status": "source-scenario"
+          }
+        ],
+        "SE": [
+          {
+            "kind": "river",
+            "status": "source-scenario"
+          }
+        ]
+      },
+      "entryTags": [],
+      "sourceRef": {
+        "x": 5,
+        "y": 4,
+        "city": null
+      }
+    },
+    {
+      "id": "0606",
+      "column": 6,
+      "row": 6,
+      "displayNumber": "0605",
+      "pixelCenter": [
+        486.8375,
+        509.5
+      ],
+      "terrain": "open",
+      "sourceTerrain": "open",
+      "terrainStatus": "source-scenario",
+      "tileMarkers": [],
+      "tileEdges": {
+        "NW": [
+          {
+            "kind": "river",
+            "status": "source-scenario"
+          }
+        ],
+        "NE": [
+          {
+            "kind": "river",
+            "status": "source-scenario"
+          }
+        ]
+      },
+      "entryTags": [],
+      "sourceRef": {
+        "x": 5,
+        "y": 5,
+        "city": null
+      }
+    },
+    {
+      "id": "0607",
+      "column": 6,
+      "row": 7,
+      "displayNumber": "0606",
+      "pixelCenter": [
+        486.8375,
+        611.4000000000001
+      ],
+      "terrain": "open",
+      "sourceTerrain": "open",
+      "terrainStatus": "source-scenario",
+      "tileMarkers": [],
+      "tileEdges": {},
+      "entryTags": [],
+      "sourceRef": {
+        "x": 5,
+        "y": 6,
+        "city": null
+      }
+    },
+    {
+      "id": "0608",
+      "column": 6,
+      "row": 8,
+      "displayNumber": "0607",
+      "pixelCenter": [
+        486.8375,
+        713.3000000000001
+      ],
+      "terrain": "open",
+      "sourceTerrain": "open",
+      "terrainStatus": "source-scenario",
+      "tileMarkers": [],
+      "tileEdges": {},
+      "entryTags": [],
+      "sourceRef": {
+        "x": 5,
+        "y": 7,
+        "city": null
+      }
+    },
+    {
+      "id": "0609",
+      "column": 6,
+      "row": 9,
+      "displayNumber": "0608",
+      "pixelCenter": [
+        486.8375,
+        815.2
+      ],
+      "terrain": "open",
+      "sourceTerrain": "open",
+      "terrainStatus": "source-scenario",
+      "tileMarkers": [
+        {
+          "kind": "star",
+          "status": "source-unit-roster"
+        }
+      ],
+      "tileEdges": {
+        "SW": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          }
+        ],
+        "NE": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          }
+        ]
+      },
+      "entryTags": [],
+      "sourceRef": {
+        "x": 5,
+        "y": 8,
+        "city": null
+      }
+    },
+    {
+      "id": "0610",
+      "column": 6,
+      "row": 10,
+      "displayNumber": "0609",
+      "pixelCenter": [
+        486.8375,
+        917.1000000000001
+      ],
+      "terrain": "open",
+      "sourceTerrain": "open",
+      "terrainStatus": "source-scenario",
+      "tileMarkers": [],
+      "tileEdges": {
+        "NW": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          }
+        ],
+        "SE": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          }
+        ]
+      },
+      "entryTags": [],
+      "sourceRef": {
+        "x": 5,
+        "y": 9,
+        "city": null
+      }
+    },
+    {
+      "id": "0611",
+      "column": 6,
+      "row": 11,
+      "displayNumber": "0610",
+      "pixelCenter": [
+        486.8375,
+        1019.0000000000001
+      ],
+      "terrain": "open",
+      "sourceTerrain": "open",
+      "terrainStatus": "source-scenario",
+      "tileMarkers": [],
+      "tileEdges": {},
+      "entryTags": [],
+      "sourceRef": {
+        "x": 5,
+        "y": 10,
+        "city": null
+      }
+    },
+    {
+      "id": "0701",
+      "column": 7,
+      "row": 1,
+      "displayNumber": "0701",
+      "pixelCenter": [
+        572.7499999999999,
+        50.95
+      ],
+      "terrain": "forest",
+      "sourceTerrain": "forest",
+      "terrainStatus": "source-scenario",
+      "tileMarkers": [],
+      "tileEdges": {},
+      "entryTags": [],
+      "sourceRef": {
+        "x": 6,
+        "y": 0,
+        "city": null
+      }
+    },
+    {
+      "id": "0702",
+      "column": 7,
+      "row": 2,
+      "displayNumber": "0702",
+      "pixelCenter": [
+        572.7499999999999,
+        152.85000000000002
+      ],
+      "terrain": "forest",
+      "sourceTerrain": "forest",
+      "terrainStatus": "source-scenario",
+      "tileMarkers": [],
+      "tileEdges": {
+        "NW": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          }
+        ],
+        "SE": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          }
+        ]
+      },
+      "entryTags": [],
+      "sourceRef": {
+        "x": 6,
+        "y": 1,
+        "city": null
+      }
+    },
+    {
+      "id": "0703",
+      "column": 7,
+      "row": 3,
+      "displayNumber": "0703",
+      "pixelCenter": [
+        572.7499999999999,
+        254.75
+      ],
+      "terrain": "forest",
+      "sourceTerrain": "forest",
+      "terrainStatus": "source-scenario",
+      "tileMarkers": [],
+      "tileEdges": {},
+      "entryTags": [],
+      "sourceRef": {
+        "x": 6,
+        "y": 2,
+        "city": null
+      }
+    },
+    {
+      "id": "0704",
+      "column": 7,
+      "row": 4,
+      "displayNumber": "0704",
+      "pixelCenter": [
+        572.7499999999999,
+        356.65000000000003
+      ],
+      "terrain": "forest",
+      "sourceTerrain": "forest",
+      "terrainStatus": "source-scenario",
+      "tileMarkers": [],
+      "tileEdges": {
+        "NW": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          }
+        ],
+        "NE": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          }
+        ],
+        "SW": [
+          {
+            "kind": "river",
+            "status": "source-scenario"
+          }
+        ]
+      },
+      "entryTags": [],
+      "sourceRef": {
+        "x": 6,
+        "y": 3,
+        "city": null
+      }
+    },
+    {
+      "id": "0705",
+      "column": 7,
+      "row": 5,
+      "displayNumber": "0705",
+      "pixelCenter": [
+        572.7499999999999,
+        458.55
+      ],
+      "terrain": "open",
+      "sourceTerrain": "open",
+      "terrainStatus": "source-scenario",
+      "tileMarkers": [],
+      "tileEdges": {
+        "NW": [
+          {
+            "kind": "river",
+            "status": "source-scenario"
+          }
+        ],
+        "SW": [
+          {
+            "kind": "river",
+            "status": "source-scenario"
+          }
+        ],
+        "S": [
+          {
+            "kind": "river",
+            "status": "source-scenario"
+          }
+        ]
+      },
+      "entryTags": [],
+      "sourceRef": {
+        "x": 6,
+        "y": 4,
+        "city": null
+      }
+    },
+    {
+      "id": "0706",
+      "column": 7,
+      "row": 6,
+      "displayNumber": "0706",
+      "pixelCenter": [
+        572.7499999999999,
+        560.45
+      ],
+      "terrain": "open",
+      "sourceTerrain": "open",
+      "terrainStatus": "source-scenario",
+      "tileMarkers": [],
+      "tileEdges": {
+        "N": [
+          {
+            "kind": "river",
+            "status": "source-scenario"
+          }
+        ],
+        "NE": [
+          {
+            "kind": "river",
+            "status": "source-scenario"
+          }
+        ]
+      },
+      "entryTags": [],
+      "sourceRef": {
+        "x": 6,
+        "y": 5,
+        "city": null
+      }
+    },
+    {
+      "id": "0707",
+      "column": 7,
+      "row": 7,
+      "displayNumber": "0707",
+      "pixelCenter": [
+        572.7499999999999,
+        662.3500000000001
+      ],
+      "terrain": "open",
+      "sourceTerrain": "open",
+      "terrainStatus": "source-scenario",
+      "tileMarkers": [],
+      "tileEdges": {
+        "S": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          }
+        ],
+        "NE": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          }
+        ]
+      },
+      "entryTags": [],
+      "sourceRef": {
+        "x": 6,
+        "y": 6,
+        "city": null
+      }
+    },
+    {
+      "id": "0708",
+      "column": 7,
+      "row": 8,
+      "displayNumber": "0708",
+      "pixelCenter": [
+        572.7499999999999,
+        764.2500000000001
+      ],
+      "terrain": "forest",
+      "sourceTerrain": "forest",
+      "terrainStatus": "source-scenario",
+      "tileMarkers": [],
+      "tileEdges": {
+        "SW": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          }
+        ],
+        "N": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          }
+        ]
+      },
+      "entryTags": [],
+      "sourceRef": {
+        "x": 6,
+        "y": 7,
+        "city": null
+      }
+    },
+    {
+      "id": "0709",
+      "column": 7,
+      "row": 9,
+      "displayNumber": "0709",
+      "pixelCenter": [
+        572.7499999999999,
+        866.1500000000001
+      ],
+      "terrain": "open",
+      "sourceTerrain": "open",
+      "terrainStatus": "source-scenario",
+      "tileMarkers": [],
+      "tileEdges": {},
+      "entryTags": [],
+      "sourceRef": {
+        "x": 6,
+        "y": 8,
+        "city": null
+      }
+    },
+    {
+      "id": "0710",
+      "column": 7,
+      "row": 10,
+      "displayNumber": "0710",
+      "pixelCenter": [
+        572.7499999999999,
+        968.0500000000001
+      ],
+      "terrain": "open",
+      "sourceTerrain": "open",
+      "terrainStatus": "source-scenario",
+      "tileMarkers": [],
+      "tileEdges": {
+        "NW": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          }
+        ],
+        "NE": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          }
+        ]
+      },
+      "entryTags": [],
+      "sourceRef": {
+        "x": 6,
+        "y": 9,
+        "city": null
+      }
+    },
+    {
+      "id": "0711",
+      "column": 7,
+      "row": 11,
+      "displayNumber": "0711",
+      "pixelCenter": [
+        572.7499999999999,
+        1069.95
+      ],
+      "terrain": "open",
+      "sourceTerrain": "open",
+      "terrainStatus": "source-scenario",
+      "tileMarkers": [],
+      "tileEdges": {},
+      "entryTags": [],
+      "sourceRef": {
+        "x": 6,
+        "y": 10,
+        "city": null
+      }
+    },
+    {
+      "id": "0802",
+      "column": 8,
+      "row": 2,
+      "displayNumber": "0801",
+      "pixelCenter": [
+        658.6624999999999,
+        101.9
+      ],
+      "terrain": "open",
+      "sourceTerrain": "fortification",
+      "terrainStatus": "source-scenario",
+      "tileMarkers": [
+        {
+          "kind": "fortification",
+          "status": "source-scenario"
+        }
+      ],
+      "tileEdges": {},
+      "entryTags": [],
+      "sourceRef": {
+        "x": 7,
+        "y": 1,
+        "city": null
+      }
+    },
+    {
+      "id": "0803",
+      "column": 8,
+      "row": 3,
+      "displayNumber": "0802",
+      "pixelCenter": [
+        658.6624999999999,
+        203.8
+      ],
+      "terrain": "open",
+      "sourceTerrain": "fortification",
+      "terrainStatus": "source-scenario",
+      "tileMarkers": [
+        {
+          "kind": "fortification",
+          "status": "source-scenario"
+        }
+      ],
+      "tileEdges": {
+        "NW": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          }
+        ],
+        "NE": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          }
+        ]
+      },
+      "entryTags": [],
+      "sourceRef": {
+        "x": 7,
+        "y": 2,
+        "city": null
+      }
+    },
+    {
+      "id": "0804",
+      "column": 8,
+      "row": 4,
+      "displayNumber": "0803",
+      "pixelCenter": [
+        658.6624999999999,
+        305.7
+      ],
+      "terrain": "open",
+      "sourceTerrain": "fortification",
+      "terrainStatus": "source-scenario",
+      "tileMarkers": [
+        {
+          "kind": "fortification",
+          "status": "source-scenario"
+        },
+        {
+          "kind": "city",
+          "status": "source-scenario",
+          "label": "Mozhaisk"
+        },
+        {
+          "kind": "star",
+          "status": "source-unit-roster"
+        }
+      ],
+      "tileEdges": {
+        "SW": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          }
+        ],
+        "NE": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          }
+        ]
+      },
+      "entryTags": [],
+      "sourceRef": {
+        "x": 7,
+        "y": 3,
+        "city": "normal"
+      }
+    },
+    {
+      "id": "0805",
+      "column": 8,
+      "row": 5,
+      "displayNumber": "0804",
+      "pixelCenter": [
+        658.6624999999999,
+        407.6
+      ],
+      "terrain": "open",
+      "sourceTerrain": "fortification",
+      "terrainStatus": "source-scenario",
+      "tileMarkers": [
+        {
+          "kind": "fortification",
+          "status": "source-scenario"
+        }
+      ],
+      "tileEdges": {},
+      "entryTags": [],
+      "sourceRef": {
+        "x": 7,
+        "y": 4,
+        "city": null
+      }
+    },
+    {
+      "id": "0806",
+      "column": 8,
+      "row": 6,
+      "displayNumber": "0805",
+      "pixelCenter": [
+        658.6624999999999,
+        509.5
+      ],
+      "terrain": "open",
+      "sourceTerrain": "fortification",
+      "terrainStatus": "source-scenario",
+      "tileMarkers": [
+        {
+          "kind": "fortification",
+          "status": "source-scenario"
+        },
+        {
+          "kind": "city",
+          "status": "source-scenario",
+          "label": "Kaluga"
+        }
+      ],
+      "tileEdges": {
+        "S": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          },
+          {
+            "kind": "river",
+            "status": "source-scenario"
+          }
+        ],
+        "NE": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          }
+        ],
+        "SW": [
+          {
+            "kind": "river",
+            "status": "source-scenario"
+          }
+        ]
+      },
+      "entryTags": [],
+      "sourceRef": {
+        "x": 7,
+        "y": 5,
+        "city": "normal"
+      }
+    },
+    {
+      "id": "0807",
+      "column": 8,
+      "row": 7,
+      "displayNumber": "0806",
+      "pixelCenter": [
+        658.6624999999999,
+        611.4000000000001
+      ],
+      "terrain": "forest",
+      "sourceTerrain": "forest",
+      "terrainStatus": "source-scenario",
+      "tileMarkers": [],
+      "tileEdges": {
+        "N": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          },
+          {
+            "kind": "river",
+            "status": "source-scenario"
+          }
+        ],
+        "SW": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          }
+        ],
+        "NE": [
+          {
+            "kind": "river",
+            "status": "source-scenario"
+          }
+        ],
+        "SE": [
+          {
+            "kind": "river",
+            "status": "source-scenario"
+          }
+        ]
+      },
+      "entryTags": [],
+      "sourceRef": {
+        "x": 7,
+        "y": 6,
+        "city": null
+      }
+    },
+    {
+      "id": "0808",
+      "column": 8,
+      "row": 8,
+      "displayNumber": "0807",
+      "pixelCenter": [
+        658.6624999999999,
+        713.3000000000001
+      ],
+      "terrain": "open",
+      "sourceTerrain": "open",
+      "terrainStatus": "source-scenario",
+      "tileMarkers": [],
+      "tileEdges": {
+        "NE": [
+          {
+            "kind": "river",
+            "status": "source-scenario"
+          }
+        ],
+        "SE": [
+          {
+            "kind": "river",
+            "status": "source-scenario"
+          }
+        ]
+      },
+      "entryTags": [],
+      "sourceRef": {
+        "x": 7,
+        "y": 7,
+        "city": null
+      }
+    },
+    {
+      "id": "0809",
+      "column": 8,
+      "row": 9,
+      "displayNumber": "0808",
+      "pixelCenter": [
+        658.6624999999999,
+        815.2
+      ],
+      "terrain": "open",
+      "sourceTerrain": "open",
+      "terrainStatus": "source-scenario",
+      "tileMarkers": [],
+      "tileEdges": {
+        "NE": [
+          {
+            "kind": "river",
+            "status": "source-scenario"
+          }
+        ]
+      },
+      "entryTags": [],
+      "sourceRef": {
+        "x": 7,
+        "y": 8,
+        "city": null
+      }
+    },
+    {
+      "id": "0810",
+      "column": 8,
+      "row": 10,
+      "displayNumber": "0809",
+      "pixelCenter": [
+        658.6624999999999,
+        917.1000000000001
+      ],
+      "terrain": "open",
+      "sourceTerrain": "open",
+      "terrainStatus": "source-scenario",
+      "tileMarkers": [
+        {
+          "kind": "city",
+          "status": "source-scenario",
+          "label": "Orel"
+        }
+      ],
+      "tileEdges": {
+        "SW": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          }
+        ],
+        "NE": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          }
+        ]
+      },
+      "entryTags": [],
+      "sourceRef": {
+        "x": 7,
+        "y": 9,
+        "city": "normal"
+      }
+    },
+    {
+      "id": "0811",
+      "column": 8,
+      "row": 11,
+      "displayNumber": "0810",
+      "pixelCenter": [
+        658.6624999999999,
+        1019.0000000000001
+      ],
+      "terrain": "open",
+      "sourceTerrain": "open",
+      "terrainStatus": "source-scenario",
+      "tileMarkers": [],
+      "tileEdges": {},
+      "entryTags": [],
+      "sourceRef": {
+        "x": 7,
+        "y": 10,
+        "city": null
+      }
+    },
+    {
+      "id": "0901",
+      "column": 9,
+      "row": 1,
+      "displayNumber": "0901",
+      "pixelCenter": [
+        744.5749999999999,
+        50.95
+      ],
+      "terrain": "forest",
+      "sourceTerrain": "forest",
+      "terrainStatus": "source-scenario",
+      "tileMarkers": [],
+      "tileEdges": {
+        "NW": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          }
+        ],
+        "SE": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          }
+        ]
+      },
+      "entryTags": [],
+      "sourceRef": {
+        "x": 8,
+        "y": 0,
+        "city": null
+      }
+    },
+    {
+      "id": "0902",
+      "column": 9,
+      "row": 2,
+      "displayNumber": "0902",
+      "pixelCenter": [
+        744.5749999999999,
+        152.85000000000002
+      ],
+      "terrain": "forest",
+      "sourceTerrain": "forest",
+      "terrainStatus": "source-scenario",
+      "tileMarkers": [],
+      "tileEdges": {
+        "SW": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          }
+        ],
+        "SE": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          }
+        ]
+      },
+      "entryTags": [],
+      "sourceRef": {
+        "x": 8,
+        "y": 1,
+        "city": null
+      }
+    },
+    {
+      "id": "0903",
+      "column": 9,
+      "row": 3,
+      "displayNumber": "0903",
+      "pixelCenter": [
+        744.5749999999999,
+        254.75
+      ],
+      "terrain": "open",
+      "sourceTerrain": "open",
+      "terrainStatus": "source-scenario",
+      "tileMarkers": [],
+      "tileEdges": {
+        "SW": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          }
+        ],
+        "SE": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          }
+        ]
+      },
+      "entryTags": [],
+      "sourceRef": {
+        "x": 8,
+        "y": 2,
+        "city": null
+      }
+    },
+    {
+      "id": "0904",
+      "column": 9,
+      "row": 4,
+      "displayNumber": "0904",
+      "pixelCenter": [
+        744.5749999999999,
+        356.65000000000003
+      ],
+      "terrain": "open",
+      "sourceTerrain": "open",
+      "terrainStatus": "source-scenario",
+      "tileMarkers": [],
+      "tileEdges": {
+        "S": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          },
+          {
+            "kind": "river",
+            "status": "source-scenario"
+          }
+        ],
+        "NE": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          }
+        ]
+      },
+      "entryTags": [],
+      "sourceRef": {
+        "x": 8,
+        "y": 3,
+        "city": null
+      }
+    },
+    {
+      "id": "0905",
+      "column": 9,
+      "row": 5,
+      "displayNumber": "0905",
+      "pixelCenter": [
+        744.5749999999999,
+        458.55
+      ],
+      "terrain": "forest",
+      "sourceTerrain": "forest",
+      "terrainStatus": "source-scenario",
+      "tileMarkers": [],
+      "tileEdges": {
+        "SW": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          }
+        ],
+        "N": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          },
+          {
+            "kind": "river",
+            "status": "source-scenario"
+          }
+        ],
+        "NE": [
+          {
+            "kind": "river",
+            "status": "source-scenario"
+          }
+        ]
+      },
+      "entryTags": [],
+      "sourceRef": {
+        "x": 8,
+        "y": 4,
+        "city": null
+      }
+    },
+    {
+      "id": "0906",
+      "column": 9,
+      "row": 6,
+      "displayNumber": "0906",
+      "pixelCenter": [
+        744.5749999999999,
+        560.45
+      ],
+      "terrain": "forest",
+      "sourceTerrain": "forest",
+      "terrainStatus": "source-scenario",
+      "tileMarkers": [],
+      "tileEdges": {
+        "SW": [
+          {
+            "kind": "river",
+            "status": "source-scenario"
+          }
+        ],
+        "S": [
+          {
+            "kind": "river",
+            "status": "source-scenario"
+          }
+        ],
+        "SE": [
+          {
+            "kind": "river",
+            "status": "source-scenario"
+          }
+        ]
+      },
+      "entryTags": [],
+      "sourceRef": {
+        "x": 8,
+        "y": 5,
+        "city": null
+      }
+    },
+    {
+      "id": "0907",
+      "column": 9,
+      "row": 7,
+      "displayNumber": "0907",
+      "pixelCenter": [
+        744.5749999999999,
+        662.3500000000001
+      ],
+      "terrain": "open",
+      "sourceTerrain": "open",
+      "terrainStatus": "source-scenario",
+      "tileMarkers": [],
+      "tileEdges": {
+        "SW": [
+          {
+            "kind": "river",
+            "status": "source-scenario"
+          }
+        ],
+        "NW": [
+          {
+            "kind": "river",
+            "status": "source-scenario"
+          }
+        ],
+        "N": [
+          {
+            "kind": "river",
+            "status": "source-scenario"
+          }
+        ]
+      },
+      "entryTags": [],
+      "sourceRef": {
+        "x": 8,
+        "y": 6,
+        "city": null
+      }
+    },
+    {
+      "id": "0908",
+      "column": 9,
+      "row": 8,
+      "displayNumber": "0908",
+      "pixelCenter": [
+        744.5749999999999,
+        764.2500000000001
+      ],
+      "terrain": "open",
+      "sourceTerrain": "open",
+      "terrainStatus": "source-scenario",
+      "tileMarkers": [],
+      "tileEdges": {
+        "S": [
+          {
+            "kind": "river",
+            "status": "source-scenario"
+          }
+        ],
+        "SW": [
+          {
+            "kind": "river",
+            "status": "source-scenario"
+          }
+        ],
+        "NW": [
+          {
+            "kind": "river",
+            "status": "source-scenario"
+          }
+        ]
+      },
+      "entryTags": [],
+      "sourceRef": {
+        "x": 8,
+        "y": 7,
+        "city": null
+      }
+    },
+    {
+      "id": "0909",
+      "column": 9,
+      "row": 9,
+      "displayNumber": "0909",
+      "pixelCenter": [
+        744.5749999999999,
+        866.1500000000001
+      ],
+      "terrain": "open",
+      "sourceTerrain": "open",
+      "terrainStatus": "source-scenario",
+      "tileMarkers": [],
+      "tileEdges": {
+        "SW": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          }
+        ],
+        "NE": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          },
+          {
+            "kind": "river",
+            "status": "source-scenario"
+          }
+        ],
+        "N": [
+          {
+            "kind": "river",
+            "status": "source-scenario"
+          }
+        ],
+        "SE": [
+          {
+            "kind": "river",
+            "status": "source-scenario"
+          }
+        ]
+      },
+      "entryTags": [],
+      "sourceRef": {
+        "x": 8,
+        "y": 8,
+        "city": null
+      }
+    },
+    {
+      "id": "0910",
+      "column": 9,
+      "row": 10,
+      "displayNumber": "0910",
+      "pixelCenter": [
+        744.5749999999999,
+        968.0500000000001
+      ],
+      "terrain": "open",
+      "sourceTerrain": "open",
+      "terrainStatus": "source-scenario",
+      "tileMarkers": [],
+      "tileEdges": {
+        "NE": [
+          {
+            "kind": "river",
+            "status": "source-scenario"
+          }
+        ],
+        "SE": [
+          {
+            "kind": "river",
+            "status": "source-scenario"
+          }
+        ]
+      },
+      "entryTags": [],
+      "sourceRef": {
+        "x": 8,
+        "y": 9,
+        "city": null
+      }
+    },
+    {
+      "id": "0911",
+      "column": 9,
+      "row": 11,
+      "displayNumber": "0911",
+      "pixelCenter": [
+        744.5749999999999,
+        1069.95
+      ],
+      "terrain": "open",
+      "sourceTerrain": "open",
+      "terrainStatus": "source-scenario",
+      "tileMarkers": [],
+      "tileEdges": {
+        "NE": [
+          {
+            "kind": "river",
+            "status": "source-scenario"
+          }
+        ]
+      },
+      "entryTags": [],
+      "sourceRef": {
+        "x": 8,
+        "y": 10,
+        "city": null
+      }
+    },
+    {
+      "id": "1002",
+      "column": 10,
+      "row": 2,
+      "displayNumber": "1001",
+      "pixelCenter": [
+        830.4875,
+        101.9
+      ],
+      "terrain": "open",
+      "sourceTerrain": "fortification",
+      "terrainStatus": "source-scenario",
+      "tileMarkers": [
+        {
+          "kind": "fortification",
+          "status": "source-scenario"
+        }
+      ],
+      "tileEdges": {
+        "NW": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          }
+        ],
+        "S": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          }
+        ],
+        "NE": [
+          {
+            "kind": "river",
+            "status": "source-scenario"
+          }
+        ],
+        "SE": [
+          {
+            "kind": "river",
+            "status": "source-scenario"
+          }
+        ]
+      },
+      "entryTags": [],
+      "sourceRef": {
+        "x": 9,
+        "y": 1,
+        "city": null
+      }
+    },
+    {
+      "id": "1003",
+      "column": 10,
+      "row": 3,
+      "displayNumber": "1002",
+      "pixelCenter": [
+        830.4875,
+        203.8
+      ],
+      "terrain": "open",
+      "sourceTerrain": "fortification",
+      "terrainStatus": "source-scenario",
+      "tileMarkers": [
+        {
+          "kind": "fortification",
+          "status": "source-scenario"
+        }
+      ],
+      "tileEdges": {
+        "NW": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          }
+        ],
+        "N": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          }
+        ],
+        "SE": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          },
+          {
+            "kind": "river",
+            "status": "source-scenario"
+          }
+        ],
+        "NE": [
+          {
+            "kind": "river",
+            "status": "source-scenario"
+          }
+        ]
+      },
+      "entryTags": [],
+      "sourceRef": {
+        "x": 9,
+        "y": 2,
+        "city": null
+      }
+    },
+    {
+      "id": "1004",
+      "column": 10,
+      "row": 4,
+      "displayNumber": "1003",
+      "pixelCenter": [
+        830.4875,
+        305.7
+      ],
+      "terrain": "open",
+      "sourceTerrain": "fortification",
+      "terrainStatus": "source-scenario",
+      "tileMarkers": [
+        {
+          "kind": "fortification",
+          "status": "source-scenario"
+        }
+      ],
+      "tileEdges": {
+        "NW": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          }
+        ],
+        "SW": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          }
+        ],
+        "NE": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          },
+          {
+            "kind": "river",
+            "status": "source-scenario"
+          }
+        ]
+      },
+      "entryTags": [],
+      "sourceRef": {
+        "x": 9,
+        "y": 3,
+        "city": null
+      }
+    },
+    {
+      "id": "1005",
+      "column": 10,
+      "row": 5,
+      "displayNumber": "1004",
+      "pixelCenter": [
+        830.4875,
+        407.6
+      ],
+      "terrain": "open",
+      "sourceTerrain": "fortification",
+      "terrainStatus": "source-scenario",
+      "tileMarkers": [
+        {
+          "kind": "fortification",
+          "status": "source-scenario"
+        }
+      ],
+      "tileEdges": {
+        "SW": [
+          {
+            "kind": "river",
+            "status": "source-scenario"
+          }
+        ],
+        "S": [
+          {
+            "kind": "river",
+            "status": "source-scenario"
+          }
+        ]
+      },
+      "entryTags": [],
+      "sourceRef": {
+        "x": 9,
+        "y": 4,
+        "city": null
+      }
+    },
+    {
+      "id": "1006",
+      "column": 10,
+      "row": 6,
+      "displayNumber": "1005",
+      "pixelCenter": [
+        830.4875,
+        509.5
+      ],
+      "terrain": "open",
+      "sourceTerrain": "open",
+      "terrainStatus": "source-scenario",
+      "tileMarkers": [],
+      "tileEdges": {
+        "N": [
+          {
+            "kind": "river",
+            "status": "source-scenario"
+          }
+        ],
+        "NE": [
+          {
+            "kind": "river",
+            "status": "source-scenario"
+          }
+        ],
+        "SE": [
+          {
+            "kind": "river",
+            "status": "source-scenario"
+          }
+        ],
+        "S": [
+          {
+            "kind": "river",
+            "status": "source-scenario"
+          }
+        ]
+      },
+      "entryTags": [],
+      "sourceRef": {
+        "x": 9,
+        "y": 5,
+        "city": null
+      }
+    },
+    {
+      "id": "1007",
+      "column": 10,
+      "row": 7,
+      "displayNumber": "1006",
+      "pixelCenter": [
+        830.4875,
+        611.4000000000001
+      ],
+      "terrain": "open",
+      "sourceTerrain": "open",
+      "terrainStatus": "source-scenario",
+      "tileMarkers": [],
+      "tileEdges": {
+        "NW": [
+          {
+            "kind": "river",
+            "status": "source-scenario"
+          }
+        ],
+        "N": [
+          {
+            "kind": "river",
+            "status": "source-scenario"
+          }
+        ]
+      },
+      "entryTags": [],
+      "sourceRef": {
+        "x": 9,
+        "y": 6,
+        "city": null
+      }
+    },
+    {
+      "id": "1008",
+      "column": 10,
+      "row": 8,
+      "displayNumber": "1007",
+      "pixelCenter": [
+        830.4875,
+        713.3000000000001
+      ],
+      "terrain": "open",
+      "sourceTerrain": "open",
+      "terrainStatus": "source-scenario",
+      "tileMarkers": [],
+      "tileEdges": {},
+      "entryTags": [],
+      "sourceRef": {
+        "x": 9,
+        "y": 7,
+        "city": null
+      }
+    },
+    {
+      "id": "1009",
+      "column": 10,
+      "row": 9,
+      "displayNumber": "1008",
+      "pixelCenter": [
+        830.4875,
+        815.2
+      ],
+      "terrain": "open",
+      "sourceTerrain": "open",
+      "terrainStatus": "source-scenario",
+      "tileMarkers": [],
+      "tileEdges": {
+        "SW": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          },
+          {
+            "kind": "river",
+            "status": "source-scenario"
+          }
+        ],
+        "NE": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          }
+        ]
+      },
+      "entryTags": [],
+      "sourceRef": {
+        "x": 9,
+        "y": 8,
+        "city": null
+      }
+    },
+    {
+      "id": "1010",
+      "column": 10,
+      "row": 10,
+      "displayNumber": "1009",
+      "pixelCenter": [
+        830.4875,
+        917.1000000000001
+      ],
+      "terrain": "open",
+      "sourceTerrain": "open",
+      "terrainStatus": "source-scenario",
+      "tileMarkers": [],
+      "tileEdges": {
+        "NW": [
+          {
+            "kind": "river",
+            "status": "source-scenario"
+          }
+        ],
+        "SW": [
+          {
+            "kind": "river",
+            "status": "source-scenario"
+          }
+        ]
+      },
+      "entryTags": [],
+      "sourceRef": {
+        "x": 9,
+        "y": 9,
+        "city": null
+      }
+    },
+    {
+      "id": "1011",
+      "column": 10,
+      "row": 11,
+      "displayNumber": "1010",
+      "pixelCenter": [
+        830.4875,
+        1019.0000000000001
+      ],
+      "terrain": "open",
+      "sourceTerrain": "open",
+      "terrainStatus": "source-scenario",
+      "tileMarkers": [],
+      "tileEdges": {
+        "NW": [
+          {
+            "kind": "river",
+            "status": "source-scenario"
+          }
+        ],
+        "SW": [
+          {
+            "kind": "river",
+            "status": "source-scenario"
+          }
+        ]
+      },
+      "entryTags": [
+        "soviet"
+      ],
+      "sourceRef": {
+        "x": 9,
+        "y": 10,
+        "city": null
+      }
+    },
+    {
+      "id": "1101",
+      "column": 11,
+      "row": 1,
+      "displayNumber": "1101",
+      "pixelCenter": [
+        916.4,
+        50.95
+      ],
+      "terrain": "open",
+      "sourceTerrain": "open",
+      "terrainStatus": "source-scenario",
+      "tileMarkers": [],
+      "tileEdges": {
+        "SW": [
+          {
+            "kind": "river",
+            "status": "source-scenario"
+          }
+        ]
+      },
+      "entryTags": [
+        "soviet"
+      ],
+      "sourceRef": {
+        "x": 10,
+        "y": 0,
+        "city": null
+      }
+    },
+    {
+      "id": "1102",
+      "column": 11,
+      "row": 2,
+      "displayNumber": "1102",
+      "pixelCenter": [
+        916.4,
+        152.85000000000002
+      ],
+      "terrain": "open",
+      "sourceTerrain": "fortification",
+      "terrainStatus": "source-scenario",
+      "tileMarkers": [
+        {
+          "kind": "fortification",
+          "status": "source-scenario"
+        }
+      ],
+      "tileEdges": {
+        "S": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          }
+        ],
+        "NE": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          }
+        ],
+        "SW": [
+          {
+            "kind": "river",
+            "status": "source-scenario"
+          }
+        ],
+        "NW": [
+          {
+            "kind": "river",
+            "status": "source-scenario"
+          }
+        ]
+      },
+      "entryTags": [],
+      "sourceRef": {
+        "x": 10,
+        "y": 1,
+        "city": null
+      }
+    },
+    {
+      "id": "1103",
+      "column": 11,
+      "row": 3,
+      "displayNumber": "1103",
+      "pixelCenter": [
+        916.4,
+        254.75
+      ],
+      "terrain": "open",
+      "sourceTerrain": "open",
+      "terrainStatus": "source-scenario",
+      "tileMarkers": [
+        {
+          "kind": "majorCity",
+          "status": "source-scenario",
+          "label": "Moscow"
+        }
+      ],
+      "tileEdges": {
+        "N": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          }
+        ],
+        "NE": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          }
+        ],
+        "SE": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          }
+        ],
+        "S": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          },
+          {
+            "kind": "river",
+            "status": "source-scenario"
+          }
+        ],
+        "SW": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          },
+          {
+            "kind": "river",
+            "status": "source-scenario"
+          }
+        ],
+        "NW": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          },
+          {
+            "kind": "river",
+            "status": "source-scenario"
+          }
+        ]
+      },
+      "entryTags": [],
+      "sourceRef": {
+        "x": 10,
+        "y": 2,
+        "city": "moscow"
+      }
+    },
+    {
+      "id": "1104",
+      "column": 11,
+      "row": 4,
+      "displayNumber": "1104",
+      "pixelCenter": [
+        916.4,
+        356.65000000000003
+      ],
+      "terrain": "open",
+      "sourceTerrain": "fortification",
+      "terrainStatus": "source-scenario",
+      "tileMarkers": [
+        {
+          "kind": "fortification",
+          "status": "source-scenario"
+        }
+      ],
+      "tileEdges": {
+        "S": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          }
+        ],
+        "N": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          },
+          {
+            "kind": "river",
+            "status": "source-scenario"
+          }
+        ],
+        "NE": [
+          {
+            "kind": "river",
+            "status": "source-scenario"
+          }
+        ]
+      },
+      "entryTags": [],
+      "sourceRef": {
+        "x": 10,
+        "y": 3,
+        "city": null
+      }
+    },
+    {
+      "id": "1105",
+      "column": 11,
+      "row": 5,
+      "displayNumber": "1105",
+      "pixelCenter": [
+        916.4,
+        458.55
+      ],
+      "terrain": "open",
+      "sourceTerrain": "fortification",
+      "terrainStatus": "source-scenario",
+      "tileMarkers": [
+        {
+          "kind": "fortification",
+          "status": "source-scenario"
+        }
+      ],
+      "tileEdges": {
+        "S": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          },
+          {
+            "kind": "river",
+            "status": "source-scenario"
+          }
+        ],
+        "N": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          }
+        ],
+        "SW": [
+          {
+            "kind": "river",
+            "status": "source-scenario"
+          }
+        ],
+        "SE": [
+          {
+            "kind": "river",
+            "status": "source-scenario"
+          }
+        ]
+      },
+      "entryTags": [],
+      "sourceRef": {
+        "x": 10,
+        "y": 4,
+        "city": null
+      }
+    },
+    {
+      "id": "1106",
+      "column": 11,
+      "row": 6,
+      "displayNumber": "1106",
+      "pixelCenter": [
+        916.4,
+        560.45
+      ],
+      "terrain": "open",
+      "sourceTerrain": "fortification",
+      "terrainStatus": "source-scenario",
+      "tileMarkers": [
+        {
+          "kind": "fortification",
+          "status": "source-scenario"
+        }
+      ],
+      "tileEdges": {
+        "S": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          }
+        ],
+        "N": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          },
+          {
+            "kind": "river",
+            "status": "source-scenario"
+          }
+        ],
+        "NW": [
+          {
+            "kind": "river",
+            "status": "source-scenario"
+          }
+        ]
+      },
+      "entryTags": [],
+      "sourceRef": {
+        "x": 10,
+        "y": 5,
+        "city": null
+      }
+    },
+    {
+      "id": "1107",
+      "column": 11,
+      "row": 7,
+      "displayNumber": "1107",
+      "pixelCenter": [
+        916.4,
+        662.3500000000001
+      ],
+      "terrain": "open",
+      "sourceTerrain": "fortification",
+      "terrainStatus": "source-scenario",
+      "tileMarkers": [
+        {
+          "kind": "fortification",
+          "status": "source-scenario"
+        },
+        {
+          "kind": "majorCity",
+          "status": "source-scenario",
+          "label": "Tula"
+        }
+      ],
+      "tileEdges": {
+        "S": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          }
+        ],
+        "N": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          }
+        ]
+      },
+      "entryTags": [],
+      "sourceRef": {
+        "x": 10,
+        "y": 6,
+        "city": "major"
+      }
+    },
+    {
+      "id": "1108",
+      "column": 11,
+      "row": 8,
+      "displayNumber": "1108",
+      "pixelCenter": [
+        916.4,
+        764.2500000000001
+      ],
+      "terrain": "open",
+      "sourceTerrain": "open",
+      "terrainStatus": "source-scenario",
+      "tileMarkers": [],
+      "tileEdges": {
+        "N": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          }
+        ],
+        "SW": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          }
+        ]
+      },
+      "entryTags": [],
+      "sourceRef": {
+        "x": 10,
+        "y": 7,
+        "city": null
+      }
+    },
+    {
+      "id": "1109",
+      "column": 11,
+      "row": 9,
+      "displayNumber": "1109",
+      "pixelCenter": [
+        916.4,
+        866.1500000000001
+      ],
+      "terrain": "open",
+      "sourceTerrain": "open",
+      "terrainStatus": "source-scenario",
+      "tileMarkers": [],
+      "tileEdges": {},
+      "entryTags": [],
+      "sourceRef": {
+        "x": 10,
+        "y": 8,
+        "city": null
+      }
+    },
+    {
+      "id": "1110",
+      "column": 11,
+      "row": 10,
+      "displayNumber": "1110",
+      "pixelCenter": [
+        916.4,
+        968.0500000000001
+      ],
+      "terrain": "open",
+      "sourceTerrain": "open",
+      "terrainStatus": "source-scenario",
+      "tileMarkers": [],
+      "tileEdges": {},
+      "entryTags": [],
+      "sourceRef": {
+        "x": 10,
+        "y": 9,
+        "city": null
+      }
+    },
+    {
+      "id": "1111",
+      "column": 11,
+      "row": 11,
+      "displayNumber": "1111",
+      "pixelCenter": [
+        916.4,
+        1069.95
+      ],
+      "terrain": "open",
+      "sourceTerrain": "open",
+      "terrainStatus": "source-scenario",
+      "tileMarkers": [],
+      "tileEdges": {},
+      "entryTags": [
+        "soviet"
+      ],
+      "sourceRef": {
+        "x": 10,
+        "y": 10,
+        "city": null
+      }
+    },
+    {
+      "id": "1202",
+      "column": 12,
+      "row": 2,
+      "displayNumber": "1201",
+      "pixelCenter": [
+        1002.3124999999999,
+        101.9
+      ],
+      "terrain": "forest",
+      "sourceTerrain": "forest",
+      "terrainStatus": "source-scenario",
+      "tileMarkers": [],
+      "tileEdges": {
+        "SW": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          }
+        ],
+        "SE": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          }
+        ],
+        "NE": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          }
+        ]
+      },
+      "entryTags": [
+        "soviet"
+      ],
+      "sourceRef": {
+        "x": 11,
+        "y": 1,
+        "city": null
+      }
+    },
+    {
+      "id": "1203",
+      "column": 12,
+      "row": 3,
+      "displayNumber": "1202",
+      "pixelCenter": [
+        1002.3124999999999,
+        203.8
+      ],
+      "terrain": "open",
+      "sourceTerrain": "open",
+      "terrainStatus": "source-scenario",
+      "tileMarkers": [],
+      "tileEdges": {
+        "SW": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          }
+        ],
+        "SE": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          }
+        ]
+      },
+      "entryTags": [],
+      "sourceRef": {
+        "x": 11,
+        "y": 2,
+        "city": null
+      }
+    },
+    {
+      "id": "1204",
+      "column": 12,
+      "row": 4,
+      "displayNumber": "1203",
+      "pixelCenter": [
+        1002.3124999999999,
+        305.7
+      ],
+      "terrain": "open",
+      "sourceTerrain": "fortification",
+      "terrainStatus": "source-scenario",
+      "tileMarkers": [
+        {
+          "kind": "fortification",
+          "status": "source-scenario"
+        }
+      ],
+      "tileEdges": {
+        "NW": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          }
+        ],
+        "S": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          },
+          {
+            "kind": "river",
+            "status": "source-scenario"
+          }
+        ],
+        "SE": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          }
+        ],
+        "SW": [
+          {
+            "kind": "river",
+            "status": "source-scenario"
+          }
+        ]
+      },
+      "entryTags": [],
+      "sourceRef": {
+        "x": 11,
+        "y": 3,
+        "city": null
+      }
+    },
+    {
+      "id": "1205",
+      "column": 12,
+      "row": 5,
+      "displayNumber": "1204",
+      "pixelCenter": [
+        1002.3124999999999,
+        407.6
+      ],
+      "terrain": "open",
+      "sourceTerrain": "open",
+      "terrainStatus": "source-scenario",
+      "tileMarkers": [],
+      "tileEdges": {
+        "N": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          },
+          {
+            "kind": "river",
+            "status": "source-scenario"
+          }
+        ],
+        "SE": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          },
+          {
+            "kind": "river",
+            "status": "source-scenario"
+          }
+        ],
+        "S": [
+          {
+            "kind": "river",
+            "status": "source-scenario"
+          }
+        ],
+        "NE": [
+          {
+            "kind": "river",
+            "status": "source-scenario"
+          }
+        ]
+      },
+      "entryTags": [],
+      "sourceRef": {
+        "x": 11,
+        "y": 4,
+        "city": null
+      }
+    },
+    {
+      "id": "1206",
+      "column": 12,
+      "row": 6,
+      "displayNumber": "1205",
+      "pixelCenter": [
+        1002.3124999999999,
+        509.5
+      ],
+      "terrain": "open",
+      "sourceTerrain": "open",
+      "terrainStatus": "source-scenario",
+      "tileMarkers": [],
+      "tileEdges": {
+        "N": [
+          {
+            "kind": "river",
+            "status": "source-scenario"
+          }
+        ],
+        "NW": [
+          {
+            "kind": "river",
+            "status": "source-scenario"
+          }
+        ]
+      },
+      "entryTags": [],
+      "sourceRef": {
+        "x": 11,
+        "y": 5,
+        "city": null
+      }
+    },
+    {
+      "id": "1207",
+      "column": 12,
+      "row": 7,
+      "displayNumber": "1206",
+      "pixelCenter": [
+        1002.3124999999999,
+        611.4000000000001
+      ],
+      "terrain": "open",
+      "sourceTerrain": "open",
+      "terrainStatus": "source-scenario",
+      "tileMarkers": [],
+      "tileEdges": {},
+      "entryTags": [],
+      "sourceRef": {
+        "x": 11,
+        "y": 6,
+        "city": null
+      }
+    },
+    {
+      "id": "1208",
+      "column": 12,
+      "row": 8,
+      "displayNumber": "1207",
+      "pixelCenter": [
+        1002.3124999999999,
+        713.3000000000001
+      ],
+      "terrain": "open",
+      "sourceTerrain": "open",
+      "terrainStatus": "source-scenario",
+      "tileMarkers": [],
+      "tileEdges": {},
+      "entryTags": [],
+      "sourceRef": {
+        "x": 11,
+        "y": 7,
+        "city": null
+      }
+    },
+    {
+      "id": "1209",
+      "column": 12,
+      "row": 9,
+      "displayNumber": "1208",
+      "pixelCenter": [
+        1002.3124999999999,
+        815.2
+      ],
+      "terrain": "open",
+      "sourceTerrain": "open",
+      "terrainStatus": "source-scenario",
+      "tileMarkers": [],
+      "tileEdges": {},
+      "entryTags": [],
+      "sourceRef": {
+        "x": 11,
+        "y": 8,
+        "city": null
+      }
+    },
+    {
+      "id": "1210",
+      "column": 12,
+      "row": 10,
+      "displayNumber": "1209",
+      "pixelCenter": [
+        1002.3124999999999,
+        917.1000000000001
+      ],
+      "terrain": "open",
+      "sourceTerrain": "open",
+      "terrainStatus": "source-scenario",
+      "tileMarkers": [],
+      "tileEdges": {},
+      "entryTags": [],
+      "sourceRef": {
+        "x": 11,
+        "y": 9,
+        "city": null
+      }
+    },
+    {
+      "id": "1211",
+      "column": 12,
+      "row": 11,
+      "displayNumber": "1210",
+      "pixelCenter": [
+        1002.3124999999999,
+        1019.0000000000001
+      ],
+      "terrain": "open",
+      "sourceTerrain": "open",
+      "terrainStatus": "source-scenario",
+      "tileMarkers": [],
+      "tileEdges": {},
+      "entryTags": [
+        "soviet"
+      ],
+      "sourceRef": {
+        "x": 11,
+        "y": 10,
+        "city": null
+      }
+    },
+    {
+      "id": "1301",
+      "column": 13,
+      "row": 1,
+      "displayNumber": "1301",
+      "pixelCenter": [
+        1088.225,
+        50.95
+      ],
+      "terrain": "open",
+      "sourceTerrain": "open",
+      "terrainStatus": "source-scenario",
+      "tileMarkers": [],
+      "tileEdges": {
+        "SW": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          }
+        ],
+        "NE": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          }
+        ]
+      },
+      "entryTags": [
+        "soviet"
+      ],
+      "sourceRef": {
+        "x": 12,
+        "y": 0,
+        "city": null
+      }
+    },
+    {
+      "id": "1302",
+      "column": 13,
+      "row": 2,
+      "displayNumber": "1302",
+      "pixelCenter": [
+        1088.225,
+        152.85000000000002
+      ],
+      "terrain": "open",
+      "sourceTerrain": "open",
+      "terrainStatus": "source-scenario",
+      "tileMarkers": [],
+      "tileEdges": {
+        "NW": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          }
+        ],
+        "NE": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          }
+        ]
+      },
+      "entryTags": [],
+      "sourceRef": {
+        "x": 12,
+        "y": 1,
+        "city": null
+      }
+    },
+    {
+      "id": "1303",
+      "column": 13,
+      "row": 3,
+      "displayNumber": "1303",
+      "pixelCenter": [
+        1088.225,
+        254.75
+      ],
+      "terrain": "forest",
+      "sourceTerrain": "forest",
+      "terrainStatus": "source-scenario",
+      "tileMarkers": [],
+      "tileEdges": {
+        "NW": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          }
+        ],
+        "NE": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          }
+        ]
+      },
+      "entryTags": [],
+      "sourceRef": {
+        "x": 12,
+        "y": 2,
+        "city": null
+      }
+    },
+    {
+      "id": "1304",
+      "column": 13,
+      "row": 4,
+      "displayNumber": "1304",
+      "pixelCenter": [
+        1088.225,
+        356.65000000000003
+      ],
+      "terrain": "open",
+      "sourceTerrain": "open",
+      "terrainStatus": "source-scenario",
+      "tileMarkers": [],
+      "tileEdges": {
+        "NW": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          }
+        ],
+        "NE": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          }
+        ],
+        "S": [
+          {
+            "kind": "river",
+            "status": "source-scenario"
+          }
+        ],
+        "SW": [
+          {
+            "kind": "river",
+            "status": "source-scenario"
+          }
+        ]
+      },
+      "entryTags": [],
+      "sourceRef": {
+        "x": 12,
+        "y": 3,
+        "city": null
+      }
+    },
+    {
+      "id": "1305",
+      "column": 13,
+      "row": 5,
+      "displayNumber": "1305",
+      "pixelCenter": [
+        1088.225,
+        458.55
+      ],
+      "terrain": "open",
+      "sourceTerrain": "open",
+      "terrainStatus": "source-scenario",
+      "tileMarkers": [],
+      "tileEdges": {
+        "NW": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          },
+          {
+            "kind": "river",
+            "status": "source-scenario"
+          }
+        ],
+        "SE": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          }
+        ],
+        "N": [
+          {
+            "kind": "river",
+            "status": "source-scenario"
+          }
+        ],
+        "NE": [
+          {
+            "kind": "river",
+            "status": "source-scenario"
+          }
+        ]
+      },
+      "entryTags": [],
+      "sourceRef": {
+        "x": 12,
+        "y": 4,
+        "city": null
+      }
+    },
+    {
+      "id": "1306",
+      "column": 13,
+      "row": 6,
+      "displayNumber": "1306",
+      "pixelCenter": [
+        1088.225,
+        560.45
+      ],
+      "terrain": "open",
+      "sourceTerrain": "open",
+      "terrainStatus": "source-scenario",
+      "tileMarkers": [],
+      "tileEdges": {},
+      "entryTags": [],
+      "sourceRef": {
+        "x": 12,
+        "y": 5,
+        "city": null
+      }
+    },
+    {
+      "id": "1307",
+      "column": 13,
+      "row": 7,
+      "displayNumber": "1307",
+      "pixelCenter": [
+        1088.225,
+        662.3500000000001
+      ],
+      "terrain": "open",
+      "sourceTerrain": "open",
+      "terrainStatus": "source-scenario",
+      "tileMarkers": [],
+      "tileEdges": {},
+      "entryTags": [],
+      "sourceRef": {
+        "x": 12,
+        "y": 6,
+        "city": null
+      }
+    },
+    {
+      "id": "1308",
+      "column": 13,
+      "row": 8,
+      "displayNumber": "1308",
+      "pixelCenter": [
+        1088.225,
+        764.2500000000001
+      ],
+      "terrain": "open",
+      "sourceTerrain": "open",
+      "terrainStatus": "source-scenario",
+      "tileMarkers": [],
+      "tileEdges": {},
+      "entryTags": [],
+      "sourceRef": {
+        "x": 12,
+        "y": 7,
+        "city": null
+      }
+    },
+    {
+      "id": "1309",
+      "column": 13,
+      "row": 9,
+      "displayNumber": "1309",
+      "pixelCenter": [
+        1088.225,
+        866.1500000000001
+      ],
+      "terrain": "open",
+      "sourceTerrain": "open",
+      "terrainStatus": "source-scenario",
+      "tileMarkers": [],
+      "tileEdges": {},
+      "entryTags": [],
+      "sourceRef": {
+        "x": 12,
+        "y": 8,
+        "city": null
+      }
+    },
+    {
+      "id": "1310",
+      "column": 13,
+      "row": 10,
+      "displayNumber": "1310",
+      "pixelCenter": [
+        1088.225,
+        968.0500000000001
+      ],
+      "terrain": "open",
+      "sourceTerrain": "open",
+      "terrainStatus": "source-scenario",
+      "tileMarkers": [],
+      "tileEdges": {},
+      "entryTags": [],
+      "sourceRef": {
+        "x": 12,
+        "y": 9,
+        "city": null
+      }
+    },
+    {
+      "id": "1311",
+      "column": 13,
+      "row": 11,
+      "displayNumber": "1311",
+      "pixelCenter": [
+        1088.225,
+        1069.95
+      ],
+      "terrain": "open",
+      "sourceTerrain": "open",
+      "terrainStatus": "source-scenario",
+      "tileMarkers": [],
+      "tileEdges": {},
+      "entryTags": [
+        "soviet"
+      ],
+      "sourceRef": {
+        "x": 12,
+        "y": 10,
+        "city": null
+      }
+    },
+    {
+      "id": "1402",
+      "column": 14,
+      "row": 2,
+      "displayNumber": "1401",
+      "pixelCenter": [
+        1174.1375,
+        101.9
+      ],
+      "terrain": "open",
+      "sourceTerrain": "open",
+      "terrainStatus": "source-scenario",
+      "tileMarkers": [],
+      "tileEdges": {
+        "SW": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          }
+        ],
+        "SE": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          }
+        ]
+      },
+      "entryTags": [
+        "soviet"
+      ],
+      "sourceRef": {
+        "x": 13,
+        "y": 1,
+        "city": null
+      }
+    },
+    {
+      "id": "1403",
+      "column": 14,
+      "row": 3,
+      "displayNumber": "1402",
+      "pixelCenter": [
+        1174.1375,
+        203.8
+      ],
+      "terrain": "open",
+      "sourceTerrain": "open",
+      "terrainStatus": "source-scenario",
+      "tileMarkers": [],
+      "tileEdges": {
+        "SW": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          }
+        ],
+        "SE": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          }
+        ]
+      },
+      "entryTags": [
+        "soviet"
+      ],
+      "sourceRef": {
+        "x": 13,
+        "y": 2,
+        "city": null
+      }
+    },
+    {
+      "id": "1404",
+      "column": 14,
+      "row": 4,
+      "displayNumber": "1403",
+      "pixelCenter": [
+        1174.1375,
+        305.7
+      ],
+      "terrain": "open",
+      "sourceTerrain": "open",
+      "terrainStatus": "source-scenario",
+      "tileMarkers": [],
+      "tileEdges": {
+        "SW": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          }
+        ],
+        "SE": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          }
+        ]
+      },
+      "entryTags": [
+        "soviet"
+      ],
+      "sourceRef": {
+        "x": 13,
+        "y": 3,
+        "city": null
+      }
+    },
+    {
+      "id": "1405",
+      "column": 14,
+      "row": 5,
+      "displayNumber": "1404",
+      "pixelCenter": [
+        1174.1375,
+        407.6
+      ],
+      "terrain": "forest",
+      "sourceTerrain": "forest",
+      "terrainStatus": "source-scenario",
+      "tileMarkers": [],
+      "tileEdges": {
+        "SW": [
+          {
+            "kind": "river",
+            "status": "source-scenario"
+          }
+        ],
+        "S": [
+          {
+            "kind": "river",
+            "status": "source-scenario"
+          }
+        ]
+      },
+      "entryTags": [
+        "soviet"
+      ],
+      "sourceRef": {
+        "x": 13,
+        "y": 4,
+        "city": null
+      }
+    },
+    {
+      "id": "1406",
+      "column": 14,
+      "row": 6,
+      "displayNumber": "1405",
+      "pixelCenter": [
+        1174.1375,
+        509.5
+      ],
+      "terrain": "open",
+      "sourceTerrain": "open",
+      "terrainStatus": "source-scenario",
+      "tileMarkers": [
+        {
+          "kind": "city",
+          "status": "source-scenario",
+          "label": "Ryazan"
+        }
+      ],
+      "tileEdges": {
+        "NW": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          }
+        ],
+        "S": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          }
+        ],
+        "N": [
+          {
+            "kind": "river",
+            "status": "source-scenario"
+          }
+        ]
+      },
+      "entryTags": [
+        "soviet"
+      ],
+      "sourceRef": {
+        "x": 13,
+        "y": 5,
+        "city": "normal"
+      }
+    },
+    {
+      "id": "1407",
+      "column": 14,
+      "row": 7,
+      "displayNumber": "1406",
+      "pixelCenter": [
+        1174.1375,
+        611.4000000000001
+      ],
+      "terrain": "open",
+      "sourceTerrain": "open",
+      "terrainStatus": "source-scenario",
+      "tileMarkers": [],
+      "tileEdges": {
+        "N": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          }
+        ],
+        "SE": [
+          {
+            "kind": "rail",
+            "status": "source-scenario"
+          }
+        ]
+      },
+      "entryTags": [
+        "soviet"
+      ],
+      "sourceRef": {
+        "x": 13,
+        "y": 6,
+        "city": null
+      }
+    },
+    {
+      "id": "1408",
+      "column": 14,
+      "row": 8,
+      "displayNumber": "1407",
+      "pixelCenter": [
+        1174.1375,
+        713.3000000000001
+      ],
+      "terrain": "open",
+      "sourceTerrain": "open",
+      "terrainStatus": "source-scenario",
+      "tileMarkers": [],
+      "tileEdges": {},
+      "entryTags": [
+        "soviet"
+      ],
+      "sourceRef": {
+        "x": 13,
+        "y": 7,
+        "city": null
+      }
+    },
+    {
+      "id": "1409",
+      "column": 14,
+      "row": 9,
+      "displayNumber": "1408",
+      "pixelCenter": [
+        1174.1375,
+        815.2
+      ],
+      "terrain": "open",
+      "sourceTerrain": "open",
+      "terrainStatus": "source-scenario",
+      "tileMarkers": [],
+      "tileEdges": {},
+      "entryTags": [
+        "soviet"
+      ],
+      "sourceRef": {
+        "x": 13,
+        "y": 8,
+        "city": null
+      }
+    },
+    {
+      "id": "1410",
+      "column": 14,
+      "row": 10,
+      "displayNumber": "1409",
+      "pixelCenter": [
+        1174.1375,
+        917.1000000000001
+      ],
+      "terrain": "open",
+      "sourceTerrain": "open",
+      "terrainStatus": "source-scenario",
+      "tileMarkers": [],
+      "tileEdges": {},
+      "entryTags": [
+        "soviet"
+      ],
+      "sourceRef": {
+        "x": 13,
+        "y": 9,
+        "city": null
+      }
+    },
+    {
+      "id": "1411",
+      "column": 14,
+      "row": 11,
+      "displayNumber": "1410",
+      "pixelCenter": [
+        1174.1375,
+        1019.0000000000001
+      ],
+      "terrain": "open",
+      "sourceTerrain": "open",
+      "terrainStatus": "source-scenario",
+      "tileMarkers": [],
+      "tileEdges": {},
+      "entryTags": [
+        "soviet"
+      ],
+      "sourceRef": {
+        "x": 13,
+        "y": 10,
+        "city": null
+      }
+    }
+  ],
+  "mapDataProvenance": {
+    "kind": "deterministic-adapter-of-canonical-Oberlabs-scenario",
+    "source": "legacy/data/scenario.json",
+    "scenarioSHA256": "c3ff3919ef81ae1d964bdc52227f10d56fdded99606706fc2f3ea34dff7796f8",
+    "generator": "WargameTerrainAdapter.oberlabsBoard",
+    "rulesEngine": "legacy/engine.js"
+  },
+  "railwayPresentation": {
+    "schemaVersion": 1,
+    "network": "source-style-authored-polylines",
+    "anchor": "hex-center",
+    "interpolation": "clamped-cubic-b-spline",
+    "splineTension": 0.3,
+    "tieSpacing": 11,
+    "sourceOfTruth": "sourceRailRoutes + hexCenterRailConnections",
+    "semantics": "visual-only; does not alter game movement rules",
+    "junctionSnapRadius": 32,
+    "junctionRegistration": "source-curve-to-shared-hex-center"
+  },
+  "hexCenterRailConnections": [
+    {
+      "from": "0102",
+      "to": "0202",
+      "source": "oberlabs-scenario-tile-edges",
+      "status": "source-scenario"
+    },
+    {
+      "from": "0105",
+      "to": "0205",
+      "source": "oberlabs-scenario-tile-edges",
+      "status": "source-scenario"
+    },
+    {
+      "from": "0110",
+      "to": "0210",
+      "source": "oberlabs-scenario-tile-edges",
+      "status": "source-scenario"
+    },
+    {
+      "from": "0202",
+      "to": "0302",
+      "source": "oberlabs-scenario-tile-edges",
+      "status": "source-scenario"
+    },
+    {
+      "from": "0205",
+      "to": "0206",
+      "source": "oberlabs-scenario-tile-edges",
+      "status": "source-scenario"
+    },
+    {
+      "from": "0205",
+      "to": "0305",
+      "source": "oberlabs-scenario-tile-edges",
+      "status": "source-scenario"
+    },
+    {
+      "from": "0206",
+      "to": "0306",
+      "source": "oberlabs-scenario-tile-edges",
+      "status": "source-scenario"
+    },
+    {
+      "from": "0210",
+      "to": "0310",
+      "source": "oberlabs-scenario-tile-edges",
+      "status": "source-scenario"
+    },
+    {
+      "from": "0302",
+      "to": "0402",
+      "source": "oberlabs-scenario-tile-edges",
+      "status": "source-scenario"
+    },
+    {
+      "from": "0305",
+      "to": "0405",
+      "source": "oberlabs-scenario-tile-edges",
+      "status": "source-scenario"
+    },
+    {
+      "from": "0306",
+      "to": "0307",
+      "source": "oberlabs-scenario-tile-edges",
+      "status": "source-scenario"
+    },
+    {
+      "from": "0307",
+      "to": "0408",
+      "source": "oberlabs-scenario-tile-edges",
+      "status": "source-scenario"
+    },
+    {
+      "from": "0310",
+      "to": "0410",
+      "source": "oberlabs-scenario-tile-edges",
+      "status": "source-scenario"
+    },
+    {
+      "from": "0402",
+      "to": "0502",
+      "source": "oberlabs-scenario-tile-edges",
+      "status": "source-scenario"
+    },
+    {
+      "from": "0405",
+      "to": "0504",
+      "source": "oberlabs-scenario-tile-edges",
+      "status": "source-scenario"
+    },
+    {
+      "from": "0408",
+      "to": "0508",
+      "source": "oberlabs-scenario-tile-edges",
+      "status": "source-scenario"
+    },
+    {
+      "from": "0410",
+      "to": "0509",
+      "source": "oberlabs-scenario-tile-edges",
+      "status": "source-scenario"
+    },
+    {
+      "from": "0502",
+      "to": "0602",
+      "source": "oberlabs-scenario-tile-edges",
+      "status": "source-scenario"
+    },
+    {
+      "from": "0504",
+      "to": "0604",
+      "source": "oberlabs-scenario-tile-edges",
+      "status": "source-scenario"
+    },
+    {
+      "from": "0508",
+      "to": "0509",
+      "source": "oberlabs-scenario-tile-edges",
+      "status": "source-scenario"
+    },
+    {
+      "from": "0509",
+      "to": "0510",
+      "source": "oberlabs-scenario-tile-edges",
+      "status": "source-scenario"
+    },
+    {
+      "from": "0509",
+      "to": "0609",
+      "source": "oberlabs-scenario-tile-edges",
+      "status": "source-scenario"
+    },
+    {
+      "from": "0509",
+      "to": "0610",
+      "source": "oberlabs-scenario-tile-edges",
+      "status": "source-scenario"
+    },
+    {
+      "from": "0510",
+      "to": "0511",
+      "source": "oberlabs-scenario-tile-edges",
+      "status": "source-scenario"
+    },
+    {
+      "from": "0602",
+      "to": "0603",
+      "source": "oberlabs-scenario-tile-edges",
+      "status": "source-scenario"
+    },
+    {
+      "from": "0602",
+      "to": "0702",
+      "source": "oberlabs-scenario-tile-edges",
+      "status": "source-scenario"
+    },
+    {
+      "from": "0603",
+      "to": "0604",
+      "source": "oberlabs-scenario-tile-edges",
+      "status": "source-scenario"
+    },
+    {
+      "from": "0604",
+      "to": "0704",
+      "source": "oberlabs-scenario-tile-edges",
+      "status": "source-scenario"
+    },
+    {
+      "from": "0609",
+      "to": "0708",
+      "source": "oberlabs-scenario-tile-edges",
+      "status": "source-scenario"
+    },
+    {
+      "from": "0610",
+      "to": "0710",
+      "source": "oberlabs-scenario-tile-edges",
+      "status": "source-scenario"
+    },
+    {
+      "from": "0702",
+      "to": "0803",
+      "source": "oberlabs-scenario-tile-edges",
+      "status": "source-scenario"
+    },
+    {
+      "from": "0704",
+      "to": "0804",
+      "source": "oberlabs-scenario-tile-edges",
+      "status": "source-scenario"
+    },
+    {
+      "from": "0707",
+      "to": "0708",
+      "source": "oberlabs-scenario-tile-edges",
+      "status": "source-scenario"
+    },
+    {
+      "from": "0707",
+      "to": "0807",
+      "source": "oberlabs-scenario-tile-edges",
+      "status": "source-scenario"
+    },
+    {
+      "from": "0710",
+      "to": "0810",
+      "source": "oberlabs-scenario-tile-edges",
+      "status": "source-scenario"
+    },
+    {
+      "from": "0803",
+      "to": "0902",
+      "source": "oberlabs-scenario-tile-edges",
+      "status": "source-scenario"
+    },
+    {
+      "from": "0804",
+      "to": "0903",
+      "source": "oberlabs-scenario-tile-edges",
+      "status": "source-scenario"
+    },
+    {
+      "from": "0806",
+      "to": "0807",
+      "source": "oberlabs-scenario-tile-edges",
+      "status": "source-scenario"
+    },
+    {
+      "from": "0806",
+      "to": "0905",
+      "source": "oberlabs-scenario-tile-edges",
+      "status": "source-scenario"
+    },
+    {
+      "from": "0810",
+      "to": "0909",
+      "source": "oberlabs-scenario-tile-edges",
+      "status": "source-scenario"
+    },
+    {
+      "from": "0901",
+      "to": "1002",
+      "source": "oberlabs-scenario-tile-edges",
+      "status": "source-scenario"
+    },
+    {
+      "from": "0902",
+      "to": "1003",
+      "source": "oberlabs-scenario-tile-edges",
+      "status": "source-scenario"
+    },
+    {
+      "from": "0903",
+      "to": "1004",
+      "source": "oberlabs-scenario-tile-edges",
+      "status": "source-scenario"
+    },
+    {
+      "from": "0904",
+      "to": "0905",
+      "source": "oberlabs-scenario-tile-edges",
+      "status": "source-scenario"
+    },
+    {
+      "from": "0904",
+      "to": "1004",
+      "source": "oberlabs-scenario-tile-edges",
+      "status": "source-scenario"
+    },
+    {
+      "from": "0909",
+      "to": "1009",
+      "source": "oberlabs-scenario-tile-edges",
+      "status": "source-scenario"
+    },
+    {
+      "from": "1002",
+      "to": "1003",
+      "source": "oberlabs-scenario-tile-edges",
+      "status": "source-scenario"
+    },
+    {
+      "from": "1003",
+      "to": "1103",
+      "source": "oberlabs-scenario-tile-edges",
+      "status": "source-scenario"
+    },
+    {
+      "from": "1004",
+      "to": "1103",
+      "source": "oberlabs-scenario-tile-edges",
+      "status": "source-scenario"
+    },
+    {
+      "from": "1009",
+      "to": "1108",
+      "source": "oberlabs-scenario-tile-edges",
+      "status": "source-scenario"
+    },
+    {
+      "from": "1102",
+      "to": "1103",
+      "source": "oberlabs-scenario-tile-edges",
+      "status": "source-scenario"
+    },
+    {
+      "from": "1102",
+      "to": "1202",
+      "source": "oberlabs-scenario-tile-edges",
+      "status": "source-scenario"
+    },
+    {
+      "from": "1103",
+      "to": "1104",
+      "source": "oberlabs-scenario-tile-edges",
+      "status": "source-scenario"
+    },
+    {
+      "from": "1103",
+      "to": "1203",
+      "source": "oberlabs-scenario-tile-edges",
+      "status": "source-scenario"
+    },
+    {
+      "from": "1103",
+      "to": "1204",
+      "source": "oberlabs-scenario-tile-edges",
+      "status": "source-scenario"
+    },
+    {
+      "from": "1104",
+      "to": "1105",
+      "source": "oberlabs-scenario-tile-edges",
+      "status": "source-scenario"
+    },
+    {
+      "from": "1105",
+      "to": "1106",
+      "source": "oberlabs-scenario-tile-edges",
+      "status": "source-scenario"
+    },
+    {
+      "from": "1106",
+      "to": "1107",
+      "source": "oberlabs-scenario-tile-edges",
+      "status": "source-scenario"
+    },
+    {
+      "from": "1107",
+      "to": "1108",
+      "source": "oberlabs-scenario-tile-edges",
+      "status": "source-scenario"
+    },
+    {
+      "from": "1202",
+      "to": "1301",
+      "source": "oberlabs-scenario-tile-edges",
+      "status": "source-scenario"
+    },
+    {
+      "from": "1202",
+      "to": "1302",
+      "source": "oberlabs-scenario-tile-edges",
+      "status": "source-scenario"
+    },
+    {
+      "from": "1203",
+      "to": "1303",
+      "source": "oberlabs-scenario-tile-edges",
+      "status": "source-scenario"
+    },
+    {
+      "from": "1204",
+      "to": "1205",
+      "source": "oberlabs-scenario-tile-edges",
+      "status": "source-scenario"
+    },
+    {
+      "from": "1204",
+      "to": "1304",
+      "source": "oberlabs-scenario-tile-edges",
+      "status": "source-scenario"
+    },
+    {
+      "from": "1205",
+      "to": "1305",
+      "source": "oberlabs-scenario-tile-edges",
+      "status": "source-scenario"
+    },
+    {
+      "from": "1302",
+      "to": "1402",
+      "source": "oberlabs-scenario-tile-edges",
+      "status": "source-scenario"
+    },
+    {
+      "from": "1303",
+      "to": "1403",
+      "source": "oberlabs-scenario-tile-edges",
+      "status": "source-scenario"
+    },
+    {
+      "from": "1304",
+      "to": "1404",
+      "source": "oberlabs-scenario-tile-edges",
+      "status": "source-scenario"
+    },
+    {
+      "from": "1305",
+      "to": "1406",
+      "source": "oberlabs-scenario-tile-edges",
+      "status": "source-scenario"
+    },
+    {
+      "from": "1406",
+      "to": "1407",
+      "source": "oberlabs-scenario-tile-edges",
+      "status": "source-scenario"
+    }
+  ],
+  "railwayBoundaryExits": [
+    {
+      "from": "0102",
+      "dir": "NW",
+      "source": "oberlabs-scenario-tile-edge",
+      "status": "source-scenario-map-edge-exit",
+      "renderConnector": true
+    },
+    {
+      "from": "0105",
+      "dir": "NW",
+      "source": "oberlabs-scenario-tile-edge",
+      "status": "source-scenario-map-edge-exit",
+      "renderConnector": true
+    },
+    {
+      "from": "0110",
+      "dir": "SW",
+      "source": "oberlabs-scenario-tile-edge",
+      "status": "source-scenario-map-edge-exit",
+      "renderConnector": true
+    },
+    {
+      "from": "0511",
+      "dir": "S",
+      "source": "oberlabs-scenario-tile-edge",
+      "status": "source-scenario-map-edge-exit",
+      "renderConnector": true
+    },
+    {
+      "from": "0901",
+      "dir": "NW",
+      "source": "oberlabs-scenario-tile-edge",
+      "status": "source-scenario-map-edge-exit",
+      "renderConnector": true
+    },
+    {
+      "from": "1301",
+      "dir": "NE",
+      "source": "oberlabs-scenario-tile-edge",
+      "status": "source-scenario-map-edge-exit",
+      "renderConnector": true
+    },
+    {
+      "from": "1402",
+      "dir": "SE",
+      "source": "oberlabs-scenario-tile-edge",
+      "status": "source-scenario-map-edge-exit",
+      "renderConnector": true
+    },
+    {
+      "from": "1403",
+      "dir": "SE",
+      "source": "oberlabs-scenario-tile-edge",
+      "status": "source-scenario-map-edge-exit",
+      "renderConnector": true
+    },
+    {
+      "from": "1404",
+      "dir": "SE",
+      "source": "oberlabs-scenario-tile-edge",
+      "status": "source-scenario-map-edge-exit",
+      "renderConnector": true
+    },
+    {
+      "from": "1407",
+      "dir": "SE",
+      "source": "oberlabs-scenario-tile-edge",
+      "status": "source-scenario-map-edge-exit",
+      "renderConnector": true
+    }
+  ],
+  "railwayNetworkAudit": {
+    "source": "existing tileEdges from legacy/data/scenario.json",
+    "internalLinks": 70,
+    "exteriorStubs": 10,
+    "originalTileEdgesPreserved": true,
+    "v297DerivedSourceRoutes": 21,
+    "v297RouteDerivation": "maximal paths between graph junctions and map-edge exits; geometry anchored to canonical hex centers and rendered with source-style route layer"
+  },
+  "sourceRailRoutes": [
+    {
+      "sourceSvgId": "b4m-derived-route-01",
+      "source": "battle-for-moscow canonical rail graph derived into source-style anchored polylines",
+      "geometry": "derived-polyline-from-hex-center-rail-network",
+      "points": [
+        [
+          143.1875,
+          407.6
+        ],
+        [
+          57.275,
+          458.55
+        ]
+      ],
+      "anchors": [
+        {
+          "hex": "0205"
+        },
+        {
+          "hex": "0105"
+        }
+      ]
+    },
+    {
+      "sourceSvgId": "b4m-derived-route-02",
+      "source": "battle-for-moscow canonical rail graph derived into source-style anchored polylines",
+      "geometry": "derived-polyline-from-hex-center-rail-network",
+      "points": [
+        [
+          143.1875,
+          407.6
+        ],
+        [
+          143.1875,
+          509.5
+        ],
+        [
+          229.1,
+          560.45
+        ],
+        [
+          229.1,
+          662.3500000000001
+        ],
+        [
+          315.01249999999993,
+          713.3000000000001
+        ],
+        [
+          400.92499999999995,
+          764.2500000000001
+        ],
+        [
+          400.92499999999995,
+          866.1500000000001
+        ]
+      ],
+      "anchors": [
+        {
+          "hex": "0205"
+        },
+        {
+          "hex": "0206"
+        },
+        {
+          "hex": "0306"
+        },
+        {
+          "hex": "0307"
+        },
+        {
+          "hex": "0408"
+        },
+        {
+          "hex": "0508"
+        },
+        {
+          "hex": "0509"
+        }
+      ]
+    },
+    {
+      "sourceSvgId": "b4m-derived-route-03",
+      "source": "battle-for-moscow canonical rail graph derived into source-style anchored polylines",
+      "geometry": "derived-polyline-from-hex-center-rail-network",
+      "points": [
+        [
+          143.1875,
+          407.6
+        ],
+        [
+          229.1,
+          458.55
+        ],
+        [
+          315.01249999999993,
+          407.6
+        ],
+        [
+          400.92499999999995,
+          356.65000000000003
+        ],
+        [
+          486.8375,
+          305.7
+        ]
+      ],
+      "anchors": [
+        {
+          "hex": "0205"
+        },
+        {
+          "hex": "0305"
+        },
+        {
+          "hex": "0405"
+        },
+        {
+          "hex": "0504"
+        },
+        {
+          "hex": "0604"
+        }
+      ]
+    },
+    {
+      "sourceSvgId": "b4m-derived-route-04",
+      "source": "battle-for-moscow canonical rail graph derived into source-style anchored polylines",
+      "geometry": "derived-polyline-from-hex-center-rail-network",
+      "points": [
+        [
+          400.92499999999995,
+          866.1500000000001
+        ],
+        [
+          315.01249999999993,
+          917.1000000000001
+        ],
+        [
+          229.1,
+          968.0500000000001
+        ],
+        [
+          143.1875,
+          917.1000000000001
+        ],
+        [
+          57.275,
+          968.0500000000001
+        ]
+      ],
+      "anchors": [
+        {
+          "hex": "0509"
+        },
+        {
+          "hex": "0410"
+        },
+        {
+          "hex": "0310"
+        },
+        {
+          "hex": "0210"
+        },
+        {
+          "hex": "0110"
+        }
+      ]
+    },
+    {
+      "sourceSvgId": "b4m-derived-route-05",
+      "source": "battle-for-moscow canonical rail graph derived into source-style anchored polylines",
+      "geometry": "derived-polyline-from-hex-center-rail-network",
+      "points": [
+        [
+          400.92499999999995,
+          866.1500000000001
+        ],
+        [
+          400.92499999999995,
+          968.0500000000001
+        ],
+        [
+          400.92499999999995,
+          1069.95
+        ]
+      ],
+      "anchors": [
+        {
+          "hex": "0509"
+        },
+        {
+          "hex": "0510"
+        },
+        {
+          "hex": "0511"
+        }
+      ]
+    },
+    {
+      "sourceSvgId": "b4m-derived-route-06",
+      "source": "battle-for-moscow canonical rail graph derived into source-style anchored polylines",
+      "geometry": "derived-polyline-from-hex-center-rail-network",
+      "points": [
+        [
+          400.92499999999995,
+          866.1500000000001
+        ],
+        [
+          486.8375,
+          815.2
+        ],
+        [
+          572.7499999999999,
+          764.2500000000001
+        ],
+        [
+          572.7499999999999,
+          662.3500000000001
+        ],
+        [
+          658.6624999999999,
+          611.4000000000001
+        ],
+        [
+          658.6624999999999,
+          509.5
+        ],
+        [
+          744.5749999999999,
+          458.55
+        ],
+        [
+          744.5749999999999,
+          356.65000000000003
+        ],
+        [
+          830.4875,
+          305.7
+        ]
+      ],
+      "anchors": [
+        {
+          "hex": "0509"
+        },
+        {
+          "hex": "0609"
+        },
+        {
+          "hex": "0708"
+        },
+        {
+          "hex": "0707"
+        },
+        {
+          "hex": "0807"
+        },
+        {
+          "hex": "0806"
+        },
+        {
+          "hex": "0905"
+        },
+        {
+          "hex": "0904"
+        },
+        {
+          "hex": "1004"
+        }
+      ]
+    },
+    {
+      "sourceSvgId": "b4m-derived-route-07",
+      "source": "battle-for-moscow canonical rail graph derived into source-style anchored polylines",
+      "geometry": "derived-polyline-from-hex-center-rail-network",
+      "points": [
+        [
+          400.92499999999995,
+          866.1500000000001
+        ],
+        [
+          486.8375,
+          917.1000000000001
+        ],
+        [
+          572.7499999999999,
+          968.0500000000001
+        ],
+        [
+          658.6624999999999,
+          917.1000000000001
+        ],
+        [
+          744.5749999999999,
+          866.1500000000001
+        ],
+        [
+          830.4875,
+          815.2
+        ],
+        [
+          916.4,
+          764.2500000000001
+        ],
+        [
+          916.4,
+          662.3500000000001
+        ],
+        [
+          916.4,
+          560.45
+        ],
+        [
+          916.4,
+          458.55
+        ],
+        [
+          916.4,
+          356.65000000000003
+        ],
+        [
+          916.4,
+          254.75
+        ]
+      ],
+      "anchors": [
+        {
+          "hex": "0509"
+        },
+        {
+          "hex": "0610"
+        },
+        {
+          "hex": "0710"
+        },
+        {
+          "hex": "0810"
+        },
+        {
+          "hex": "0909"
+        },
+        {
+          "hex": "1009"
+        },
+        {
+          "hex": "1108"
+        },
+        {
+          "hex": "1107"
+        },
+        {
+          "hex": "1106"
+        },
+        {
+          "hex": "1105"
+        },
+        {
+          "hex": "1104"
+        },
+        {
+          "hex": "1103"
+        }
+      ]
+    },
+    {
+      "sourceSvgId": "b4m-derived-route-08",
+      "source": "battle-for-moscow canonical rail graph derived into source-style anchored polylines",
+      "geometry": "derived-polyline-from-hex-center-rail-network",
+      "points": [
+        [
+          486.8375,
+          101.9
+        ],
+        [
+          400.92499999999995,
+          152.85000000000002
+        ],
+        [
+          315.01249999999993,
+          101.9
+        ],
+        [
+          229.1,
+          152.85000000000002
+        ],
+        [
+          143.1875,
+          101.9
+        ],
+        [
+          57.275,
+          152.85000000000002
+        ]
+      ],
+      "anchors": [
+        {
+          "hex": "0602"
+        },
+        {
+          "hex": "0502"
+        },
+        {
+          "hex": "0402"
+        },
+        {
+          "hex": "0302"
+        },
+        {
+          "hex": "0202"
+        },
+        {
+          "hex": "0102"
+        }
+      ]
+    },
+    {
+      "sourceSvgId": "b4m-derived-route-09",
+      "source": "battle-for-moscow canonical rail graph derived into source-style anchored polylines",
+      "geometry": "derived-polyline-from-hex-center-rail-network",
+      "points": [
+        [
+          486.8375,
+          101.9
+        ],
+        [
+          486.8375,
+          203.8
+        ],
+        [
+          486.8375,
+          305.7
+        ]
+      ],
+      "anchors": [
+        {
+          "hex": "0602"
+        },
+        {
+          "hex": "0603"
+        },
+        {
+          "hex": "0604"
+        }
+      ]
+    },
+    {
+      "sourceSvgId": "b4m-derived-route-10",
+      "source": "battle-for-moscow canonical rail graph derived into source-style anchored polylines",
+      "geometry": "derived-polyline-from-hex-center-rail-network",
+      "points": [
+        [
+          486.8375,
+          101.9
+        ],
+        [
+          572.7499999999999,
+          152.85000000000002
+        ],
+        [
+          658.6624999999999,
+          203.8
+        ],
+        [
+          744.5749999999999,
+          152.85000000000002
+        ],
+        [
+          830.4875,
+          203.8
+        ]
+      ],
+      "anchors": [
+        {
+          "hex": "0602"
+        },
+        {
+          "hex": "0702"
+        },
+        {
+          "hex": "0803"
+        },
+        {
+          "hex": "0902"
+        },
+        {
+          "hex": "1003"
+        }
+      ]
+    },
+    {
+      "sourceSvgId": "b4m-derived-route-11",
+      "source": "battle-for-moscow canonical rail graph derived into source-style anchored polylines",
+      "geometry": "derived-polyline-from-hex-center-rail-network",
+      "points": [
+        [
+          486.8375,
+          305.7
+        ],
+        [
+          572.7499999999999,
+          356.65000000000003
+        ],
+        [
+          658.6624999999999,
+          305.7
+        ],
+        [
+          744.5749999999999,
+          254.75
+        ],
+        [
+          830.4875,
+          305.7
+        ]
+      ],
+      "anchors": [
+        {
+          "hex": "0604"
+        },
+        {
+          "hex": "0704"
+        },
+        {
+          "hex": "0804"
+        },
+        {
+          "hex": "0903"
+        },
+        {
+          "hex": "1004"
+        }
+      ]
+    },
+    {
+      "sourceSvgId": "b4m-derived-route-12",
+      "source": "battle-for-moscow canonical rail graph derived into source-style anchored polylines",
+      "geometry": "derived-polyline-from-hex-center-rail-network",
+      "points": [
+        [
+          830.4875,
+          203.8
+        ],
+        [
+          830.4875,
+          101.9
+        ],
+        [
+          744.5749999999999,
+          50.95
+        ]
+      ],
+      "anchors": [
+        {
+          "hex": "1003"
+        },
+        {
+          "hex": "1002"
+        },
+        {
+          "hex": "0901"
+        }
+      ]
+    },
+    {
+      "sourceSvgId": "b4m-derived-route-13",
+      "source": "battle-for-moscow canonical rail graph derived into source-style anchored polylines",
+      "geometry": "derived-polyline-from-hex-center-rail-network",
+      "points": [
+        [
+          830.4875,
+          203.8
+        ],
+        [
+          916.4,
+          254.75
+        ]
+      ],
+      "anchors": [
+        {
+          "hex": "1003"
+        },
+        {
+          "hex": "1103"
+        }
+      ]
+    },
+    {
+      "sourceSvgId": "b4m-derived-route-14",
+      "source": "battle-for-moscow canonical rail graph derived into source-style anchored polylines",
+      "geometry": "derived-polyline-from-hex-center-rail-network",
+      "points": [
+        [
+          830.4875,
+          305.7
+        ],
+        [
+          916.4,
+          254.75
+        ]
+      ],
+      "anchors": [
+        {
+          "hex": "1004"
+        },
+        {
+          "hex": "1103"
+        }
+      ]
+    },
+    {
+      "sourceSvgId": "b4m-derived-route-15",
+      "source": "battle-for-moscow canonical rail graph derived into source-style anchored polylines",
+      "geometry": "derived-polyline-from-hex-center-rail-network",
+      "points": [
+        [
+          916.4,
+          254.75
+        ],
+        [
+          916.4,
+          152.85000000000002
+        ],
+        [
+          1002.3124999999999,
+          101.9
+        ]
+      ],
+      "anchors": [
+        {
+          "hex": "1103"
+        },
+        {
+          "hex": "1102"
+        },
+        {
+          "hex": "1202"
+        }
+      ]
+    },
+    {
+      "sourceSvgId": "b4m-derived-route-16",
+      "source": "battle-for-moscow canonical rail graph derived into source-style anchored polylines",
+      "geometry": "derived-polyline-from-hex-center-rail-network",
+      "points": [
+        [
+          916.4,
+          254.75
+        ],
+        [
+          1002.3124999999999,
+          203.8
+        ],
+        [
+          1088.225,
+          254.75
+        ],
+        [
+          1174.1375,
+          203.8
+        ]
+      ],
+      "anchors": [
+        {
+          "hex": "1103"
+        },
+        {
+          "hex": "1203"
+        },
+        {
+          "hex": "1303"
+        },
+        {
+          "hex": "1403"
+        }
+      ]
+    },
+    {
+      "sourceSvgId": "b4m-derived-route-17",
+      "source": "battle-for-moscow canonical rail graph derived into source-style anchored polylines",
+      "geometry": "derived-polyline-from-hex-center-rail-network",
+      "points": [
+        [
+          916.4,
+          254.75
+        ],
+        [
+          1002.3124999999999,
+          305.7
+        ]
+      ],
+      "anchors": [
+        {
+          "hex": "1103"
+        },
+        {
+          "hex": "1204"
+        }
+      ]
+    },
+    {
+      "sourceSvgId": "b4m-derived-route-18",
+      "source": "battle-for-moscow canonical rail graph derived into source-style anchored polylines",
+      "geometry": "derived-polyline-from-hex-center-rail-network",
+      "points": [
+        [
+          1002.3124999999999,
+          101.9
+        ],
+        [
+          1088.225,
+          50.95
+        ]
+      ],
+      "anchors": [
+        {
+          "hex": "1202"
+        },
+        {
+          "hex": "1301"
+        }
+      ]
+    },
+    {
+      "sourceSvgId": "b4m-derived-route-19",
+      "source": "battle-for-moscow canonical rail graph derived into source-style anchored polylines",
+      "geometry": "derived-polyline-from-hex-center-rail-network",
+      "points": [
+        [
+          1002.3124999999999,
+          101.9
+        ],
+        [
+          1088.225,
+          152.85000000000002
+        ],
+        [
+          1174.1375,
+          101.9
+        ]
+      ],
+      "anchors": [
+        {
+          "hex": "1202"
+        },
+        {
+          "hex": "1302"
+        },
+        {
+          "hex": "1402"
+        }
+      ]
+    },
+    {
+      "sourceSvgId": "b4m-derived-route-20",
+      "source": "battle-for-moscow canonical rail graph derived into source-style anchored polylines",
+      "geometry": "derived-polyline-from-hex-center-rail-network",
+      "points": [
+        [
+          1002.3124999999999,
+          305.7
+        ],
+        [
+          1002.3124999999999,
+          407.6
+        ],
+        [
+          1088.225,
+          458.55
+        ],
+        [
+          1174.1375,
+          509.5
+        ],
+        [
+          1174.1375,
+          611.4000000000001
+        ]
+      ],
+      "anchors": [
+        {
+          "hex": "1204"
+        },
+        {
+          "hex": "1205"
+        },
+        {
+          "hex": "1305"
+        },
+        {
+          "hex": "1406"
+        },
+        {
+          "hex": "1407"
+        }
+      ]
+    },
+    {
+      "sourceSvgId": "b4m-derived-route-21",
+      "source": "battle-for-moscow canonical rail graph derived into source-style anchored polylines",
+      "geometry": "derived-polyline-from-hex-center-rail-network",
+      "points": [
+        [
+          1002.3124999999999,
+          305.7
+        ],
+        [
+          1088.225,
+          356.65000000000003
+        ],
+        [
+          1174.1375,
+          305.7
+        ]
+      ],
+      "anchors": [
+        {
+          "hex": "1204"
+        },
+        {
+          "hex": "1304"
+        },
+        {
+          "hex": "1404"
+        }
+      ]
+    }
+  ],
+  "authoritativeRailPolylineGeometry": true
+}

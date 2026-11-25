@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "checkpoint": 174,
+  "version": "v408",
+  "scope": "synthetic source-rules differential at Moscow; not historical setup certification",
+  "checks": 42,
+  "sourceCRT": "unchanged",
+  "engine": "unchanged",
+  "productionSelector": "legacy-b4m-v1",
+  "advancedDE": true,
+  "legacyActionParity": true,
+  "dieCommitIsolation": true,
+  "moscowDRHold": true,
+  "defaultPoliciesPreserved": true,
+  "undoAndSave": true,
+  "limitations": [
+    "Synthetic Moscow tactical board positions",
+    "No new legacy strategic AI parity claim",
+    "No active B4M production cutover"
+  ]
+}

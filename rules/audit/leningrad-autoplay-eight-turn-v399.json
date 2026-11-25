@@ -1,0 +1,53 @@
+{
+  "checkpoint": 165,
+  "version": "v399",
+  "result": "candidate eight-turn autoplay completed",
+  "actions": 179,
+  "stats": {
+    "moves": 31,
+    "combats": 2,
+    "reinforcements": 9,
+    "navalRolls": 2,
+    "turns": 8
+  },
+  "policy": {
+    "seed": 137,
+    "maxActions": 650,
+    "maxCombatsPerPhase": 1,
+    "maxCombatPhases": 2,
+    "maxGroundMovesPerPhase": 1,
+    "maxReinforcementsPerPhase": 2,
+    "maxFleetMoves": 1,
+    "maxFleetAttacks": 2
+  },
+  "terminal": {
+    "axisControlledCount": 1,
+    "cityControl": {
+      "Daugavpils": "soviet",
+      "Insterburg": "german",
+      "Kaunas": "soviet",
+      "Leningrad": "soviet",
+      "Liepaja": "soviet",
+      "Luga": "soviet",
+      "Narva": "soviet",
+      "Novgorod": "soviet",
+      "Parnu": "soviet",
+      "Pskov": "soviet",
+      "Riga": "soviet",
+      "Siauliai": "soviet",
+      "Tallinn": "soviet",
+      "Tartu": "soviet"
+    },
+    "onlyRemainingCity": "Leningrad",
+    "onlyRemainingCityIsolated": null,
+    "outcome": "soviet-victory",
+    "reason": "axis-controls-at-most-threshold",
+    "totalCities": 14
+  },
+  "limitations": [
+    "Candidate unit allocation is not a historical source certification",
+    "Deterministic baseline selector is not strategic AI",
+    "Any unsupported legal decision fails closed",
+    "No Oberlabs UX equivalence claimed"
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "checkpoint": 361,
+  "version": "v595",
+  "assertions": 37,
+  "entries": 70,
+  "transactions": 103,
+  "arrivals": [
+    {
+      "turn": 3,
+      "slot": "t3-soviet-workers-militia-1",
+      "hex": "1701",
+      "strength": "full"
+    },
+    {
+      "turn": 4,
+      "slot": "t4-german-infantry-corps-1",
+      "hex": "0211",
+      "strength": "full"
+    },
+    {
+      "turn": 4,
+      "slot": "t4-german-infantry-corps-2",
+      "hex": "0211",
+      "strength": "full"
+    },
+    {
+      "turn": 4,
+      "slot": "t4-soviet-infantry-army-1",
+      "hex": "2101",
+      "strength": "reduced"
+    },
+    {
+      "turn": 5,
+      "slot": "t5-soviet-infantry-army-1",
+      "hex": "2102",
+      "strength": "reduced"
+    },
+    {
+      "turn": 6,
+      "slot": "t6-soviet-infantry-army-1",
+      "hex": "2103",
+      "strength": "reduced"
+    },
+    {
+      "turn": 7,
+      "slot": "t7-soviet-infantry-army-1",
+      "hex": "2104",
+      "strength": "full"
+    },
+    {
+      "turn": 7,
+      "slot": "t7-soviet-infantry-army-2",
+      "hex": "2105",
+      "strength": "full"
+    },
+    {
+      "turn": 8,
+      "slot": "t8-soviet-infantry-army-1",
+      "hex": "2106",
+      "strength": "full"
+    }
+  ],
+  "air": [
+    6
+  ],
+  "scope": "Source-constrained deterministic opening; no elective movement or combat; not strategic qualification"
+}

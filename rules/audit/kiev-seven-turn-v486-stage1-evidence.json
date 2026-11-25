@@ -1,0 +1,153 @@
+{
+  "stage": 1,
+  "range": [
+    1,
+    2
+  ],
+  "checks": 53,
+  "inputHash": null,
+  "outputHash": "27e56a17cfdaab47f09d9ffc3a8905f3544f8e233786a736c425bb197c56717c",
+  "beforeActionCount": 0,
+  "afterActionCount": 20,
+  "complete": false,
+  "terminal": null,
+  "turns": [
+    {
+      "turn": 1,
+      "actions": [
+        {
+          "phase": "german-combat",
+          "kind": "combat",
+          "type": "combat",
+          "nested": "commit-battles"
+        },
+        {
+          "phase": "german-combat",
+          "kind": "combat",
+          "type": "combat",
+          "nested": "finish-combat"
+        },
+        {
+          "phase": "german-special-movement",
+          "kind": "special-movement",
+          "type": "finish-phase",
+          "nested": null
+        },
+        {
+          "phase": "soviet-buildup",
+          "kind": "buildup",
+          "type": "finish-buildup",
+          "nested": null
+        },
+        {
+          "phase": "soviet-special-movement",
+          "kind": "special-movement",
+          "type": "finish-phase",
+          "nested": null
+        },
+        {
+          "phase": "soviet-combat",
+          "kind": "combat",
+          "type": "combat",
+          "nested": "commit-battles"
+        },
+        {
+          "phase": "soviet-combat",
+          "kind": "combat",
+          "type": "combat",
+          "nested": "finish-combat"
+        },
+        {
+          "phase": "soviet-movement",
+          "kind": "movement",
+          "type": "finish-phase",
+          "nested": null
+        },
+        {
+          "phase": "housekeeping",
+          "kind": "housekeeping",
+          "type": "finish-housekeeping",
+          "nested": null
+        }
+      ],
+      "endTurn": 2,
+      "complete": false,
+      "actionCount": 9
+    },
+    {
+      "turn": 2,
+      "actions": [
+        {
+          "phase": "german-buildup",
+          "kind": "buildup",
+          "type": "finish-buildup",
+          "nested": null
+        },
+        {
+          "phase": "german-movement",
+          "kind": "movement",
+          "type": "finish-phase",
+          "nested": null
+        },
+        {
+          "phase": "german-combat",
+          "kind": "combat",
+          "type": "combat",
+          "nested": "commit-battles"
+        },
+        {
+          "phase": "german-combat",
+          "kind": "combat",
+          "type": "combat",
+          "nested": "finish-combat"
+        },
+        {
+          "phase": "german-special-movement",
+          "kind": "special-movement",
+          "type": "finish-phase",
+          "nested": null
+        },
+        {
+          "phase": "soviet-buildup",
+          "kind": "buildup",
+          "type": "finish-buildup",
+          "nested": null
+        },
+        {
+          "phase": "soviet-special-movement",
+          "kind": "special-movement",
+          "type": "finish-phase",
+          "nested": null
+        },
+        {
+          "phase": "soviet-combat",
+          "kind": "combat",
+          "type": "combat",
+          "nested": "commit-battles"
+        },
+        {
+          "phase": "soviet-combat",
+          "kind": "combat",
+          "type": "combat",
+          "nested": "finish-combat"
+        },
+        {
+          "phase": "soviet-movement",
+          "kind": "movement",
+          "type": "finish-phase",
+          "nested": null
+        },
+        {
+          "phase": "housekeeping",
+          "kind": "housekeeping",
+          "type": "finish-housekeeping",
+          "nested": null
+        }
+      ],
+      "endTurn": 3,
+      "complete": false,
+      "actionCount": 20
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,18 @@
+{
+  "baseline": "hex_wargame_v544_CHECKPOINT_310_GERMAN_INFANTRY_SOURCE_FACE_SELECTION.zip",
+  "snapshotSource": "/mnt/data/rc_dev310/russian_campaign_work",
+  "protectedGroups": [
+    "core",
+    "maps",
+    "exports",
+    "assets",
+    "references",
+    "games"
+  ],
+  "filesCompared": 372,
+  "byteIdentical": 372,
+  "changed": [],
+  "missing": [],
+  "includesSharedRendererAndRules": true,
+  "interpretation": "No modifications to historical engine code, source PDF/maps/artwork, phase configurations, source sheets, retreat styling or Support thumbnails in v545"
+}

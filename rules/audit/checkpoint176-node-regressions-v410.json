@@ -1,0 +1,175 @@
+{
+  "checkpoint": 176,
+  "version": "v410",
+  "status": "PASS",
+  "correctedPriorBatch": "Original batch inadvertently used nonexistent historical-combat-odds-v318; replaced with real leningrad-combat-odds-v318 and added shared CRT test",
+  "rows": [
+    {
+      "test": "tests/b4m-native-preview-v360.test.js",
+      "result": "PASS",
+      "seconds": 0.59,
+      "detail": "PASS B4M native preview v360: exact multi-mode movement, initial state, replacement, odds, first phase; production remains legacy"
+    },
+    {
+      "test": "tests/b4m-native-combat-v361.test.js",
+      "result": "PASS",
+      "seconds": 1.04,
+      "detail": "PASS v361 B4M native combat parity: 180 previews, 180 consequences, 57 explicit choices, 293 two-battle sequences, strict config gate"
+    },
+    {
+      "test": "tests/b4m-native-interactive-setup-v363.test.js",
+      "result": "PASS",
+      "seconds": 0.46,
+      "detail": "{\"status\":\"PASS\",\"checkpoint\":129,\"version\":\"v363\",\"places\":22,\"swaps\":1,\"shockCases\":3,\"saveRestores\":9,\"rejections\":25,\"assertions\":186}"
+    },
+    {
+      "test": "tests/browser-native-session-v367.test.js",
+      "result": "PASS",
+      "seconds": 0.31,
+      "detail": "{\"status\":\"PASS\",\"checkpoint\":133,\"hashes\":6,\"saves\":5,\"productionEngine\":\"generic-hex-v1\",\"sharedActionApi\":true,\"sharedRendering\":true}"
+    },
+    {
+      "test": "tests/b4m-native-strategic-comparison-v369.test.js",
+      "result": "PASS",
+      "seconds": 2.48,
+      "detail": "SideTurn\":\"soviet\",\"firstBaseline\":{\"type\":\"replacement\",\"choice\":{\"type\":\"restore\",\"id\":\"s10\"}},\"firstObjective\":{\"type\":\"replacement\",\"choice\":{\"type\":\"enter\",\"id\":\"s13\",\"x\":10,\"y\":2}},\"legacyFortressFirstMoscowEntry\":\"s13\",\"baselineGarrison\":\"s43\",\"objectiveGarrison\":\"s13\",\"legacyGarrison\":\"s13\",\"baselineVsLegacyUnitDifferences\":14,\"objectiveVsLegacyUnitDifferences\":13,\"objectiveMoves\":15,\"objectiveBattles\":2,\"legacyPhaseSide\":\"german\",\"baselineNativeActions\":28,\"objectiveNativeActions\":28}]}"
+    },
+    {
+      "test": "tests/b4m-native-objective-advance-v408.test.js",
+      "result": "PASS",
+      "seconds": 0.16,
+      "detail": "\",\"checkpoint\":174,\"version\":\"v408\",\"scope\":\"synthetic source-rules differential at Moscow; not historical setup certification\",\"checks\":42,\"sourceCRT\":\"unchanged\",\"engine\":\"unchanged\",\"productionSelector\":\"legacy-b4m-v1\",\"advancedDE\":true,\"legacyActionParity\":true,\"dieCommitIsolation\":true,\"moscowDRHold\":true,\"defaultPoliciesPreserved\":true,\"undoAndSave\":true,\"limitations\":[\"Synthetic Moscow tactical board positions\",\"No new legacy strategic AI parity claim\",\"No active B4M production cutover\"]}"
+    },
+    {
+      "test": "tests/b4m-native-objective-advance-campaign-v408.test.js",
+      "result": "PASS",
+      "seconds": 13.47,
+      "detail": "s\":56,\"fullStateMatches\":1080,\"matchedDice\":107,\"terminalMatches\":4,\"campaigns\":[{\"seed\":1,\"turns\":14,\"winner\":\"soviet\",\"unitLocations\":37,\"stateHash\":\"174e1cfac55c1a37550b8cb388fc899ba87d8912db162e9b3e2d3f1c0f64f360\"},{\"seed\":17,\"turns\":14,\"winner\":\"soviet\",\"unitLocations\":34,\"stateHash\":\"c8b6f3b0d7e819ea3aed34bdd0eb3c426755bf9473df2a72f4c0e951d558e0a7\"},{\"seed\":1941,\"turns\":14,\"winner\":\"soviet\",\"unitLocations\":38,\"stateHash\":\"6ca955011453a5088f63742cfaa8d64f2f9732bac2863f3b89dcac6bbba7c2de\"}]}"
+    },
+    {
+      "test": "tests/engine-shared-roster-binding-v317.test.js",
+      "result": "PASS",
+      "seconds": 8.75,
+      "detail": "PASS shared roster -> Oberlabs adapter parity; strict fail-closed executable binding; common core roster contract"
+    },
+    {
+      "test": "tests/native-combat-ui-v370.test.js",
+      "result": "PASS",
+      "seconds": 0.15,
+      "detail": "{\"status\":\"PASS\",\"checkpoint\":136,\"caseloads\":3,\"candidateGroups\":90,\"source\":\"session.legal / engine.combatOdds\",\"productionRoute\":\"generic-hex-v1\"}"
+    },
+    {
+      "test": "tests/native-city-control-v374.test.js",
+      "result": "PASS",
+      "seconds": 0.09,
+      "detail": "{\"status\":\"PASS\",\"checkpoint\":140,\"version\":\"v374\",\"cities\":11,\"verification\":[\"registry-name mapping\",\"owner v occupancy\",\"legal native capture\",\"persistent last-entrant ownership\",\"Undo\",\"save/restore\",\"read-only seed/history\",\"invalid owner rejection\",\"active victory predicate\",\"tournament disabled\"],\"productionRoute\":\"generic-hex-v1\"}"
+    },
+    {
+      "test": "tests/b4m-native-tournament-reference-v375.test.js",
+      "result": "PASS",
+      "seconds": 0.08,
+      "detail": "rman\":1,\"soviet\":1}},{\"id\":\"soviet-decisive\",\"points\":{\"german\":1,\"soviet\":3}},{\"id\":\"overlapping-german-and-soviet-minor\",\"eligible\":[{\"id\":\"german-minor\",\"side\":\"german\",\"points\":1},{\"id\":\"soviet-minor\",\"side\":\"soviet\",\"points\":1}],\"bonusPoints\":{\"german\":1,\"soviet\":0}},{\"id\":\"soviet-major\",\"points\":{\"german\":1,\"soviet\":2}}],\"bonusThresholds\":[0,7,8,11,12,16],\"communication\":[\"Moscow isolated\",\"Tula isolated\",\"both isolated\"],\"mode\":\"disabled read-only reference\",\"production\":\"generic-hex-v1\"}"
+    },
+    {
+      "test": "tests/b4m-native-replacement-policy-v366.test.js",
+      "result": "PASS",
+      "seconds": 0.22,
+      "detail": "{\"status\":\"PASS\",\"checkpoint\":132,\"version\":\"v366\",\"entry\":{\"type\":\"enter\",\"id\":\"s49\",\"x\":10,\"y\":0},\"policy\":\"preventSameTurnEntryRestore\",\"laterRestore\":true,\"sourceOptionParity\":true,\"negativeCases\":3}"
+    },
+    {
+      "test": "tests/b4m-native-reserve-redeployment-v376.test.js",
+      "result": "PASS",
+      "seconds": 0.19,
+      "detail": "{\"status\":\"PASS\",\"checkpoint\":142,\"version\":\"v376\",\"sourceMismatch\":\"0608/0803 vs 0609/0804\",\"legalDestinations\":93,\"strictEastOfFrontline\":true,\"allowedNoneSomeAll\":true,\"manualSetupPlacements\":22,\"saveUndo\":6,\"ordinaryOpeningUnchanged\":1,\"assertions\":1153,\"production\":\"generic-hex-v1\",\"mode\":\"candidate-only; tournament scoring disabled\"}"
+    },
+    {
+      "test": "tests/b4m-native-redeployment-audit-v377.test.js",
+      "result": "PASS",
+      "seconds": 0.52,
+      "detail": "{\"status\":\"PASS\",\"version\":\"v377\",\"checkpoint\":143,\"checks\":557,\"sourceCoordinates\":[\"0503\",\"0608\",\"0803\"],\"registeredCoordinates\":[\"0503\",\"0609\",\"0804\"],\"classifiedCells\":441,\"manualGermanTranspositions\":22,\"knownReferenceLegality\":\"UNVERIFIED\",\"defaultProductionEngine\":\"generic-hex-v1\"}"
+    },
+    {
+      "test": "tests/b4m-native-session-v362.test.js",
+      "result": "PASS",
+      "seconds": 3.71,
+      "detail": "{\"status\":\"PASS\",\"checkpoint\":128,\"version\":\"v362\",\"singleParity\":30,\"paired\":293,\"choiceChecks\":4,\"branches\":{\"AL\":true,\"EX\":true,\"retreat\":true,\"advance\":true},\"negative\":26,\"undoChecks\":60,\"assertions\":2447,\"productionEngine\":\"generic-hex-v1\"}"
+    },
+    {
+      "test": "tests/arduous-roster-and-victory-v410.test.js",
+      "result": "PASS",
+      "seconds": 0.09,
+      "detail": "PASS v410 Arduous photographed counters + \u00a75 victory: 237 assertions"
+    },
+    {
+      "test": "tests/kiev-roster-and-victory-v410.test.js",
+      "result": "PASS",
+      "seconds": 0.04,
+      "detail": "PASS v410 Kiev photographed counters + \u00a75 victory: 192 assertions"
+    },
+    {
+      "test": "tests/historical-housekeeping-eight-turn-v389.test.js",
+      "result": "PASS",
+      "seconds": 9.64,
+      "detail": "PASS v389 226 historical housekeeping, victory and eight-turn journal assertions; 94 source-legal actions"
+    },
+    {
+      "test": "tests/historical-combat-consequences-v359.test.js",
+      "result": "PASS",
+      "seconds": 0.53,
+      "detail": "PASS v359 shared source-bound combat consequence transactions: 68 assertions"
+    },
+    {
+      "test": "tests/historical-human-decision-gateway-v401.test.js",
+      "result": "PASS",
+      "seconds": 15.47,
+      "detail": "PASS human campaign choice/roll/restore/Undo 37 assertions"
+    },
+    {
+      "test": "tests/shared-render-profiles-v356.test.js",
+      "result": "PASS",
+      "seconds": 0.19,
+      "detail": "PASS v356: 5 registry profiles, same SVG engine, no per-game branches in rendering consumers, ID-independent output"
+    },
+    {
+      "test": "tests/universal-scenario-contract-v317.test.js",
+      "result": "PASS",
+      "seconds": 0.03,
+      "detail": "PASS universal scenario contract: 5 games, 14 domains, missing-data fail-closed and overlay validation"
+    },
+    {
+      "test": "tests/leningrad-combat-odds-v318.test.js",
+      "result": "PASS",
+      "seconds": 0.09,
+      "detail": "PASS Leningrad calculation-only combat odds and committed-battle binding 27 assertions"
+    },
+    {
+      "test": "tests/official-counters.test.js",
+      "result": "PASS",
+      "seconds": 0.09,
+      "detail": "Official counter source hash, 5 designs, 8 NATO glyphs, numeral faces, colors, damage visibility, stacking, one-hit removal and combat transitions passed."
+    },
+    {
+      "test": "tests/shared-historical-crt-v316.test.js",
+      "result": "PASS",
+      "seconds": 0.03,
+      "detail": "PASS v316 shared Oberlabs CRT: 36 cells x 5 historical mappings"
+    }
+  ],
+  "browserChecks": [
+    {
+      "test": "tests/leningrad-counter-browser-parity-v403.py",
+      "result": "PASS",
+      "detail": "Chromium, real map SVG and official counter art"
+    },
+    {
+      "test": "tests/leningrad-counter-swap-browser-v405.py",
+      "result": "PASS",
+      "detail": "Chromium, legal map/pool swaps and non-mutating rejection"
+    }
+  ],
+  "gameplayCertificationsNotInferred": [
+    "arduous movement map source-certified",
+    "kiev movement map source-certified",
+    "complete campaign for arduous/kiev"
+  ]
+}

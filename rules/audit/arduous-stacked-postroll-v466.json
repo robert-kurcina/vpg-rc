@@ -1,0 +1,34 @@
+{
+  "checkpoint": 232,
+  "version": "v466",
+  "testAssertions": 93,
+  "source": "references/rules/arduous-rules.pdf",
+  "sourceSHA256": "1ac46f3e958cf1d08768f6b56964100ab0951ece7e310ac3a30e8c479a8b986c",
+  "clauses": [
+    "§8.1 two friendly counters; at most one Soviet Army",
+    "§10.2 one attacker per attacking hexside",
+    "§10.6 mandatory defender loss and two-hex outward retreats",
+    "§10.6 EX attacker step-loss equivalence"
+  ],
+  "tests": {
+    "ex": {
+      "count": 54,
+      "attempted": 78,
+      "rejectedCandidates": 18,
+      "afterLossRetreatScans": 6
+    },
+    "drl": {
+      "count": 18,
+      "attempted": 30,
+      "rejectedCandidates": 6,
+      "afterLossRetreatScans": 2
+    }
+  },
+  "scope": "source-grounded photographed counters and certified graph; synthetic combat positions",
+  "unchanged": "No scenario CRT, map, counter, geography, or gameplay policy changes",
+  "limitations": [
+    "Not a claim of exhaustive post-roll catalog for larger combats or 4096 validation safety limit",
+    "Synthetic German first-combat state, including pre-reduced Soviet Army, is not a historical deployment",
+    "Does not certify all possible legal stacking configurations or long joint-retreat orders"
+  ]
+}

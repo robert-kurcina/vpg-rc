@@ -1,0 +1,12 @@
+{
+  "source": "v668-grade-calibration-443.json",
+  "sample": 57,
+  "histogram": {
+    "4": 5,
+    "5": 9,
+    "6": 34,
+    "7": 9
+  },
+  "moscowHeld": 7,
+  "limitation": "mixed difficulty, repeated seeds, descriptive only; not calibration or balance evidence"
+}

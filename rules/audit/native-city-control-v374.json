@@ -1,0 +1,114 @@
+{
+  "checkpoint": 140,
+  "version": "v374",
+  "status": "PASS (bounded opt-in native browser UX)",
+  "summary": "Read-only engine city-control panel, no scenario name branching in model or shared browser view",
+  "scenario": "battle-for-moscow",
+  "productionAdapter": "legacy-b4m-v1 (unchanged)",
+  "scenarioPreview": "generic-hex-v1 (opt-in only)",
+  "sourceOfTruth": {
+    "cityCoordinates": "g.cells from core/engine.js",
+    "cityNames": "registered maps/battle-for-moscow.json sourceRef matching city/majorCity tileMarkers",
+    "owners": "state.control last-entrant record (not current occupancy)",
+    "garrison": "active non-support unit positions",
+    "standardVictoryProjection": "WargameCore.result; display explicitly hypothetical prior to configured evaluation boundary",
+    "tournamentVariant": "unsupported-by-generic-v1; disabled; no alternate outcome calculated"
+  },
+  "initialCities": {
+    "total": 11,
+    "german": 2,
+    "soviet": 9,
+    "unclaimed": 0,
+    "moscow": {
+      "hex": "1103",
+      "owner": "soviet",
+      "standardVictoryPredicate": true
+    }
+  },
+  "verification": {
+    "nodeTests": [
+      "tests/native-city-control-v374.test.js",
+      "tests/b4m-native-combat-v361.test.js",
+      "tests/b4m-native-interactive-setup-v363.test.js",
+      "tests/b4m-native-continuous-campaign-v364.test.js",
+      "tests/b4m-native-expanded-turn-v366.test.js",
+      "tests/b4m-native-strategic-comparison-v369.test.js",
+      "tests/native-combat-ui-v370.test.js",
+      "tests/shared-render-profiles-v356.test.js",
+      "tests/leningrad-user-approved-left-v345.test.js",
+      "tests/smoke-current.js",
+      "tests/forest-no-shadow-v373.test.js"
+    ],
+    "chromiumIsolated": [
+      "scripts/verify-native-city-status-v374.py",
+      "scripts/verify-native-browser-v367.py",
+      "scripts/verify-native-ai-browser-v368.py",
+      "scripts/verify-native-ai-browser-v369.py",
+      "scripts/verify-native-browser-ux-v370.py",
+      "scripts/verify-native-browser-art-v373.py"
+    ],
+    "nativeCityInteractions": [
+      "source naming for 11 cities",
+      "actual legal engine move into city through map click",
+      "ownership retained after vacating",
+      "Undo restores previous owner",
+      "save/restore view exact",
+      "read-only inspection never changes seed/history",
+      "invalid owner/garrison disagreement rejected",
+      "city predicate marked only if active",
+      "tournament not simulated"
+    ],
+    "artifactRendering": "All 40 B4M art assets decode; Chromium SVG base map remains pixel-identical to v373 exporter",
+    "mapAndRulesEquivalence": {
+      "checkedFiles": 29,
+      "unchangedFiles": 29,
+      "files": [
+        "core/terrain_tiles.js",
+        "core/presentation.js",
+        "core/engine.js",
+        "games/battle-for-moscow/game.json",
+        "games/battle-for-moscow/objectives.json",
+        "exports/arduous.svg",
+        "exports/battle-for-moscow.svg",
+        "exports/kiev-odessa.svg",
+        "exports/kiev.svg",
+        "exports/leningrad.svg",
+        "exports/arduous.png",
+        "exports/battle-for-moscow.png",
+        "exports/kiev-odessa.png",
+        "exports/kiev.png",
+        "exports/leningrad-actual-delta-v339.png",
+        "exports/leningrad-fresh-v343-v344-comparison.png",
+        "exports/leningrad-previous-vs-grid-v342.png",
+        "exports/leningrad-southwest-v334.png",
+        "exports/leningrad-southwest-v335.png",
+        "exports/leningrad-southwest-v337.png",
+        "exports/leningrad-southwest-v338.png",
+        "exports/leningrad-southwest-v342.png",
+        "exports/leningrad-southwest-v344.png",
+        "exports/leningrad-sw-v331.png",
+        "exports/leningrad-sw-v332.png",
+        "exports/leningrad-sw-v333.png",
+        "exports/leningrad-user-approved-left-v345.png",
+        "exports/leningrad-v343-v344-comparison.png",
+        "exports/leningrad.png"
+      ]
+    },
+    "hostedBrowserNavigation": {
+      "attempted": true,
+      "result": "BLOCKED: net::ERR_BLOCKED_BY_ADMINISTRATOR on http://127.0.0.1:8765; not a code runtime failure"
+    }
+  },
+  "artifacts": [
+    "rules/audit/visual/b4m-native-city-panel-initial-v374.png",
+    "rules/audit/visual/b4m-native-city-table-v374.png",
+    "rules/audit/visual/b4m-native-city-panel-v374.png"
+  ],
+  "limitations": [
+    "Human city status only; no manual owner editing",
+    "No native tournament scoring implementation or independent Oberlabs scoring parity",
+    "No hosted HTTP/browser acceptance under administrator policy",
+    "B4M legacy-AI strategic parity still unproven",
+    "Four other campaigns not certified playable; Leningrad source marker discrepancies unresolved"
+  ]
+}

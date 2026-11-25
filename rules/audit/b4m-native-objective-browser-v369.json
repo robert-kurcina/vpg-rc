@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "checkpoint": 135,
+  "scope": "Chromium DOM with real browser modules and source JSON; fetch mocked due sandbox policy",
+  "initialPhase": "combat",
+  "firstSideTurn": {
+    "combats": 2,
+    "moves": 8,
+    "historySteps": 14
+  },
+  "deterministicSameSeed": true,
+  "manualSetupFailClosed": true,
+  "undo": true,
+  "saveRestore": true,
+  "browserExceptions": [],
+  "objectiveGuard": {
+    "moscowOccupant": "s13",
+    "deterministic": true
+  },
+  "productionB4MSelector": "legacy-b4m-v1",
+  "limitations": [
+    "no hosted HTTP navigation/asset acceptance",
+    "no legacy AI policy parity"
+  ]
+}

@@ -1,0 +1,165 @@
+{
+  "checkpoint": 293,
+  "version": "v527",
+  "status": "PASS-geometric-only",
+  "assertions": 389,
+  "evidenceStatus": "geometry-reconciled-candidate-only",
+  "sourceSvgSha256": "69759a57e8e46a5075924a803a6ced6905a180f3570e41bab02bd7c697bbfc5a",
+  "sides": {
+    "soviet": {
+      "sourceSvgId": "path111",
+      "total": 26,
+      "exterior": 24,
+      "internal": 2,
+      "candidateHexes": [
+        "1601",
+        "1701",
+        "1801",
+        "1802",
+        "1803",
+        "1804",
+        "1805",
+        "1806",
+        "1807",
+        "1808",
+        "1809",
+        "1810"
+      ],
+      "activeCompositeExterior": 32,
+      "activeCompositeCandidateHexes": [
+        "1601",
+        "1701",
+        "1801",
+        "1802",
+        "1803",
+        "1804",
+        "1805",
+        "1806",
+        "1807",
+        "1808",
+        "1809",
+        "1810",
+        "1911",
+        "1912",
+        "1913",
+        "1914"
+      ],
+      "internalDetails": [
+        {
+          "hex": "1810",
+          "dir": "SE",
+          "adjacentHex": "1911"
+        },
+        {
+          "hex": "1810",
+          "dir": "S",
+          "adjacentHex": "1811"
+        }
+      ]
+    },
+    "german": {
+      "sourceSvgId": "path112",
+      "total": 41,
+      "exterior": 34,
+      "internal": 7,
+      "candidateHexes": [
+        "0101",
+        "0102",
+        "0103",
+        "0104",
+        "0105",
+        "0201",
+        "0205",
+        "0301",
+        "0306",
+        "0406",
+        "0407",
+        "0508",
+        "0608",
+        "0709",
+        "0710",
+        "0711"
+      ],
+      "activeCompositeExterior": 50,
+      "activeCompositeCandidateHexes": [
+        "0101",
+        "0102",
+        "0103",
+        "0104",
+        "0105",
+        "0201",
+        "0205",
+        "0301",
+        "0306",
+        "0406",
+        "0407",
+        "0508",
+        "0608",
+        "0709",
+        "0710",
+        "0711",
+        "0712",
+        "0713",
+        "0714",
+        "0715",
+        "0716",
+        "0717",
+        "0718"
+      ],
+      "internalDetails": [
+        {
+          "hex": "0711",
+          "dir": "S",
+          "adjacentHex": "0712"
+        },
+        {
+          "hex": "0711",
+          "dir": "SE",
+          "adjacentHex": "0811"
+        },
+        {
+          "hex": "0810",
+          "dir": "S",
+          "adjacentHex": "0811"
+        },
+        {
+          "hex": "0911",
+          "dir": "SW",
+          "adjacentHex": "0811"
+        },
+        {
+          "hex": "0911",
+          "dir": "S",
+          "adjacentHex": "0912"
+        },
+        {
+          "hex": "0911",
+          "dir": "SE",
+          "adjacentHex": "1011"
+        },
+        {
+          "hex": "1010",
+          "dir": "S",
+          "adjacentHex": "1011"
+        }
+      ]
+    }
+  },
+  "preflightComparison": {
+    "legacyExitCount": 12,
+    "activeExitCount": 16,
+    "nikolaevWithLegacyExitsBlocked": {
+      "legacyReachable": false,
+      "activeReachable": true
+    }
+  },
+  "gates": {
+    "legalReinforcementEntry": false,
+    "liveVictoryCommunication": false,
+    "fullCompositeMovement": false
+  },
+  "notes": [
+    "Topology exterior ≠ source-certified reinforcement permission",
+    "No source map/counter/CRT/TEC changes"
+  ]
+}

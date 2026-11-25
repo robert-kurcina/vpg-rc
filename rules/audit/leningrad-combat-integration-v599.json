@@ -1,0 +1,18 @@
+{
+  "checkpoint": 365,
+  "version": "v599",
+  "scope": "Existing source-bound synthetic Leningrad combat fixtures on shipped map; no new browser or continuous campaign",
+  "passed": {
+    "historical-postcombat-fleet-choices-v394": 1264,
+    "historical-combat-consequences-v359": 68,
+    "advanced-crt-v557": 301
+  },
+  "total": 1633,
+  "bundleModules": 59,
+  "productionChanges": [],
+  "remaining": [
+    "Undefined 13-city victory outcomes",
+    "Owner-selected end-phase overstack removal",
+    "Broader strategic AI and browser qualification"
+  ]
+}

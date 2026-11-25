@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "baselineCheckpoint": 116,
+  "baselineVersion": "v350",
+  "approvedDeploymentSource": "user-confirmed-left-v345",
+  "approvedRiverRendering": "smooth-river-wavelets-v350",
+  "pngSHA256": "3b622a8a645b3c87f0622dd82de347c6110a10ce639058057b765ff3bb99be2f",
+  "svgSHA256": "4ad4965040952244ee4c7dc136e8726616a3c791d64dfa3b5b74fc46f3f0cd03",
+  "historicalApprovedLeftComparisonSHA256": "2e0fe3c01ea8ec86dc6201a2fb9699124c5f1f7868218f98a26ef07748bb5268",
+  "historicalTest": "provenance/llm/historical-audits/leningrad-approved-image-pixel-parity-v345.legacy.py",
+  "reason": "The pre-wavelet v345 screenshot is not pixel-identical after the user-approved v350 river styling. The source-approved host-cell geometry remains independently tested. This fixed v350 baseline guards the combined visual arrangement until the next intentionally approved style change.",
+  "updatePolicy": "Any later intentional visual changes require a new reviewed immutable baseline, not silent adjustment to this hash."
+}

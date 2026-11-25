@@ -1,0 +1,189 @@
+{
+  "stage": 2,
+  "range": [
+    3,
+    4
+  ],
+  "checks": 68,
+  "inputHash": "27e56a17cfdaab47f09d9ffc3a8905f3544f8e233786a736c425bb197c56717c",
+  "outputHash": "19f9495a6049d6c2b7ef51f3d78112287f5ef1ff6b2dfe75c37986134ef1c2cf",
+  "beforeActionCount": 20,
+  "afterActionCount": 46,
+  "complete": false,
+  "terminal": null,
+  "turns": [
+    {
+      "turn": 3,
+      "actions": [
+        {
+          "phase": "german-buildup",
+          "kind": "buildup",
+          "type": "place-reinforcement",
+          "nested": null
+        },
+        {
+          "phase": "german-buildup",
+          "kind": "buildup",
+          "type": "place-reinforcement",
+          "nested": null
+        },
+        {
+          "phase": "german-buildup",
+          "kind": "buildup",
+          "type": "finish-buildup",
+          "nested": null
+        },
+        {
+          "phase": "german-movement",
+          "kind": "movement",
+          "type": "declare-ground-move",
+          "nested": null
+        },
+        {
+          "phase": "german-movement",
+          "kind": "movement",
+          "type": "resolve-ground-move",
+          "nested": null
+        },
+        {
+          "phase": "german-movement",
+          "kind": "movement",
+          "type": "finish-phase",
+          "nested": null
+        },
+        {
+          "phase": "german-combat",
+          "kind": "combat",
+          "type": "combat",
+          "nested": "commit-battles"
+        },
+        {
+          "phase": "german-combat",
+          "kind": "combat",
+          "type": "combat",
+          "nested": "finish-combat"
+        },
+        {
+          "phase": "german-special-movement",
+          "kind": "special-movement",
+          "type": "finish-phase",
+          "nested": null
+        },
+        {
+          "phase": "soviet-buildup",
+          "kind": "buildup",
+          "type": "finish-buildup",
+          "nested": null
+        },
+        {
+          "phase": "soviet-special-movement",
+          "kind": "special-movement",
+          "type": "finish-phase",
+          "nested": null
+        },
+        {
+          "phase": "soviet-combat",
+          "kind": "combat",
+          "type": "combat",
+          "nested": "commit-battles"
+        },
+        {
+          "phase": "soviet-combat",
+          "kind": "combat",
+          "type": "combat",
+          "nested": "finish-combat"
+        },
+        {
+          "phase": "soviet-movement",
+          "kind": "movement",
+          "type": "finish-phase",
+          "nested": null
+        },
+        {
+          "phase": "housekeeping",
+          "kind": "housekeeping",
+          "type": "finish-housekeeping",
+          "nested": null
+        }
+      ],
+      "endTurn": 4,
+      "complete": false,
+      "actionCount": 35
+    },
+    {
+      "turn": 4,
+      "actions": [
+        {
+          "phase": "german-buildup",
+          "kind": "buildup",
+          "type": "finish-buildup",
+          "nested": null
+        },
+        {
+          "phase": "german-movement",
+          "kind": "movement",
+          "type": "finish-phase",
+          "nested": null
+        },
+        {
+          "phase": "german-combat",
+          "kind": "combat",
+          "type": "combat",
+          "nested": "commit-battles"
+        },
+        {
+          "phase": "german-combat",
+          "kind": "combat",
+          "type": "combat",
+          "nested": "finish-combat"
+        },
+        {
+          "phase": "german-special-movement",
+          "kind": "special-movement",
+          "type": "finish-phase",
+          "nested": null
+        },
+        {
+          "phase": "soviet-buildup",
+          "kind": "buildup",
+          "type": "finish-buildup",
+          "nested": null
+        },
+        {
+          "phase": "soviet-special-movement",
+          "kind": "special-movement",
+          "type": "finish-phase",
+          "nested": null
+        },
+        {
+          "phase": "soviet-combat",
+          "kind": "combat",
+          "type": "combat",
+          "nested": "commit-battles"
+        },
+        {
+          "phase": "soviet-combat",
+          "kind": "combat",
+          "type": "combat",
+          "nested": "finish-combat"
+        },
+        {
+          "phase": "soviet-movement",
+          "kind": "movement",
+          "type": "finish-phase",
+          "nested": null
+        },
+        {
+          "phase": "housekeeping",
+          "kind": "housekeeping",
+          "type": "finish-housekeeping",
+          "nested": null
+        }
+      ],
+      "endTurn": 5,
+      "complete": false,
+      "actionCount": 46
+    }
+  ],
+  "errors": []
+}

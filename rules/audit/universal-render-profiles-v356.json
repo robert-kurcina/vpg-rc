@@ -1,0 +1,77 @@
+{
+  "checkpoint": 122,
+  "version": "v356",
+  "base": "v355",
+  "renderer": "core/terrain_tiles.js:HexTerrainTiles.svgMap",
+  "config": "maps/registry.json",
+  "scope": "render-config-only; gameplay/map geometry/source assets unchanged",
+  "maps": [
+    {
+      "id": "battle-for-moscow",
+      "hexes": 147,
+      "errors": [],
+      "warnings": 10,
+      "svgSHA256": "3fdc2c431e77bef1fc905775476b1d309ace515189f79611be8e602d8bc3585f",
+      "svgUnchanged": true,
+      "pngSHA256": "296c6eaec76e781bacd2a171996a8a671b2432571e362beb66a88d65c3679242",
+      "pngUnchanged": true
+    },
+    {
+      "id": "arduous",
+      "hexes": 155,
+      "errors": [],
+      "warnings": 0,
+      "svgSHA256": "02f5b595b59bb52165b0916457d7d6893c4352d932bfaa7306d80c5be09b8792",
+      "svgUnchanged": true,
+      "pngSHA256": "8d460dc16c1d94a3d10746563eb744997ce00a8d9f4ddf08310f2851b704c5c3",
+      "pngUnchanged": true
+    },
+    {
+      "id": "leningrad",
+      "hexes": 197,
+      "errors": [],
+      "warnings": 6,
+      "svgSHA256": "4ad4965040952244ee4c7dc136e8726616a3c791d64dfa3b5b74fc46f3f0cd03",
+      "svgUnchanged": true,
+      "pngSHA256": "3b622a8a645b3c87f0622dd82de347c6110a10ce639058057b765ff3bb99be2f",
+      "pngUnchanged": true
+    },
+    {
+      "id": "kiev",
+      "hexes": 165,
+      "errors": [],
+      "warnings": 0,
+      "svgSHA256": "f08e21cdc1bd88b3c166b6a64a9f1599dea728a9098eb589a086409a251d967e",
+      "svgUnchanged": true,
+      "pngSHA256": "315cd61f32e131646d429c82206630b82165e183a02791c1fe5871551730ba41",
+      "pngUnchanged": true
+    },
+    {
+      "id": "kiev-odessa",
+      "hexes": 261,
+      "errors": [],
+      "warnings": 3,
+      "svgSHA256": "d09cdc1340a3d034a0e048e9d54383460336e3365dc92ecedc433dc2f10cc961",
+      "svgUnchanged": true,
+      "pngSHA256": "866615240224c1abf0c46fbc869e5562e086eaabe9b02ec75361c836c251899f",
+      "pngUnchanged": true
+    }
+  ],
+  "verified": {
+    "byteIdenticalToApprovedV355": true,
+    "sourceSVGsUnmodified": true,
+    "approvedLeningradDeploymentAndSmoothRiversPreserved": true
+  },
+  "tests": [
+    "node tests/shared-render-profiles-v356.test.js",
+    "python3 scripts/verify-shared-browser-render-v356.py",
+    "node tests/leningrad-smooth-river-wavelets-v350.test.js",
+    "node tests/leningrad-user-approved-left-v345.test.js",
+    "node tests/leningrad-canonical-projection-v347.test.js",
+    "node tests/leningrad-full-inventory-v355.test.js",
+    "node tests/universal-deployment-placement-v329.test.js",
+    "node tests/universal-scenario-contract-v317.test.js",
+    "node tests/smoke-current.js",
+    "python3 tests/leningrad-svg-footprint-v346.test.py"
+  ]
+}

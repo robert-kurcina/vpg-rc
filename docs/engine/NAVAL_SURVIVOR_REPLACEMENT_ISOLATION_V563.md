@@ -1,0 +1,10 @@
+# Checkpoint 328 / v563 — naval survivor replacement isolation
+
+## Source and scope
+Odessa §15.3 permits surviving evacuated ground units to return as regular reinforcements on later turns. An evacuated survivor is not an eliminated counter. The previous shared replacement transaction classified any previously deployed off-map unit as potentially rebuildable, including an evacuee. That could leave the same identity in the reserve and on the board, bypassing normal entry restrictions. The new guard is based on reserve membership, not scenario ID or assumed phase timing. The action catalogue skips replacement probes for these identities, but the transaction remains authoritative. Once a survivor returns, ordinary replacement rules apply again. Eliminated naval units are not added to the reserve and remain subject to existing replacement rules.
+
+## Validation
+The isolated synthetic Leningrad phase-permission harness is deliberately not evidence of a historical Leningrad naval evacuation rule. It exercises the shared engine with a previously deployed Soviet army, verifies that rebuilds are rejected on turns 4–8, checks catalogue exclusion and immutable failed actions, and confirms ordinary return, damage status, journal replay and Undo. Actual Chromium executes the regenerated shared bundle and verifies the same lifecycle (10 assertions). Existing browser bundle reproducibility and naval destination checks pass (36 Chromium assertions). Node suites: journal 38, logistics 198, return 75, CRT 301, Odessa turn-two buildup 50, general buildup 88, territory restrictions 58, territory lifecycle 45. No maps, artwork, CRT, rulebook or historical phase configuration changed.
+
+## Remaining work
+The historical phase timing for §15.3 is still not explicit. Soviet Special Movement remains a proposed convention, not a rulebook-confirmed timing. No production activation or uninterrupted campaign replay is claimed. Continue territorial and rare combat certification without treating synthetic fixtures as historical qualification.

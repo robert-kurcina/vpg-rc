@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "terrainCosts": {
+    "open": 1,
+    "forest": 2,
+    "swamp": 2,
+    "city": 1,
+    "major-city": 1,
+    "fortification": 1
+  },
+  "railCost": 1,
+  "maxStack": 2,
+  "sovietArmyMax": 1,
+  "mapBinding": "requires-verified-adjacency-and-rail-edges",
+  "executableStatus": "source-reviewed-experimental-browser",
+  "firstTurnSurpriseMovement": false,
+  "nationalStackExclusions": [
+    [
+      "romanian",
+      "hungarian"
+    ]
+  ],
+  "zocAcrossImpassableHexsides": true,
+  "majorRiverExtraCost": 1,
+  "id": "kiev",
+  "source": [
+    "references/rules/kiev-rules.pdf \u00a7\u00a77.1, 8.1, 9.1\u20139.4",
+    "references/rules/kiev-player-aid.webp Terrain Effects Chart"
+  ],
+  "fullSpecialMovementClasses": {
+    "german": [
+      "panzer",
+      "motorized"
+    ],
+    "soviet": [
+      "mechanized"
+    ]
+  },
+  "axisArmyMax": 1,
+  "allowFriendlyOverstackTransit": true
+}

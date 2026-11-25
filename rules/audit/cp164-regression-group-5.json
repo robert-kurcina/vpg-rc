@@ -1,0 +1,30 @@
+[
+  {
+    "index": 35,
+    "command": "node tests/historical-joint-order-retreat-v395.test.js",
+    "passed": true,
+    "seconds": 0.08,
+    "outputTail": "PASS v395: 30 joint-order, compulsory overstack extension, atomicity checks\n"
+  },
+  {
+    "index": 36,
+    "command": "node tests/historical-three-battle-plans-v396.test.js",
+    "passed": true,
+    "seconds": 4.13,
+    "outputTail": "PASS v396 803 assertions; 128 three-battle plans; three B4M combat results; full Undo/save\n"
+  },
+  {
+    "index": 37,
+    "command": "node tests/historical-joint-safe-retreat-v397.test.js",
+    "passed": true,
+    "seconds": 0.07,
+    "outputTail": "PASS v397: 35 adversarial source-graph retreat assertions\n"
+  },
+  {
+    "index": 38,
+    "command": "node tests/historical-retreat-search-certification-v398.test.js",
+    "passed": true,
+    "seconds": 0.05,
+    "outputTail": "PASS v398: 16 bounded retreat certification assertions\n"
+  }
+]

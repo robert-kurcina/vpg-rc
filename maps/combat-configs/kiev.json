@@ -1,0 +1,144 @@
+{
+  "schemaVersion": 1,
+  "scenarioId": "kiev",
+  "source": "references/rules/kiev-rules.pdf §§8.1, 10.1–10.9; references/rules/kiev-player-aid.webp Terrain Effects Chart",
+  "status": "source-backed-combat-policy-turn1-setup-territory-adjudicated-NOT-LIVE",
+  "crtId": "oberlabs-battle-for-moscow-crt-v1",
+  "printedAffiliationToOwner": {
+    "axis": "german",
+    "romanian": "german",
+    "hungarian": "german",
+    "slovak": "german",
+    "italian": "german",
+    "soviet": "soviet"
+  },
+  "counterKindToClass": {
+    "tank": "panzer",
+    "infantry": "infantry",
+    "mountain-infantry": "infantry",
+    "mechanized": "mechanized"
+  },
+  "counterFaceClassOverrides": {
+    "kiev-front-r04c01": {
+      "printedKind": "infantry",
+      "printedIdentifier": "Italy CSIR",
+      "printedAffiliation": "italian",
+      "unitClass": "motorized"
+    }
+  },
+  "allowedOutcomes": [
+    "NE",
+    "DR",
+    "DRL",
+    "EX",
+    "AL",
+    "DE"
+  ],
+  "modifiers": {
+    "terrainColumnShifts": {
+      "forest": -1,
+      "swamp": -1,
+      "major-city": -1
+    },
+    "allAttackersAcrossRiverShift": -1,
+    "swampTankStrengthMultiplier": 0.5,
+    "swampAffectedClasses": [
+      "panzer",
+      "mechanized"
+    ],
+    "maximumOdds": 6,
+    "majorRiverAttackMultiplier": 0.5,
+    "attackerTurnMultipliers": [
+      {
+        "owner": "soviet",
+        "kind": "mechanized",
+        "turn": 1,
+        "multiplier": 2
+      },
+      {
+        "owner": "soviet",
+        "kind": "mechanized",
+        "turn": 2,
+        "multiplier": 1.5
+      }
+    ]
+  },
+  "firstTurnCombatRestriction": {
+    "owner": "german",
+    "turn": 1,
+    "setupHexes": [
+      "0709",
+      "0809",
+      "0910",
+      "1010"
+    ]
+  },
+  "requireFirstTurnTerritorialRestriction": true,
+  "firstTurnTerritorialRestriction": {
+    "owner": "soviet",
+    "turn": 1,
+    "allowedOpeningHexes": [
+      "0708",
+      "0808",
+      "1110"
+    ],
+    "targetHexes": [
+      "0709",
+      "0809",
+      "0910",
+      "1010"
+    ],
+    "targetRegionEvidence": {
+      "coverage": "setup-hexes-adjudicated",
+      "interpretation": "scenario-turn-1-only",
+      "provenance": "Objective: Kiev printed rules §6.0(7) (page 2) and §10.8 (page 5); user-approved 2026-11-21 rule interpretation that exactly the four Romanian setup hexes are Romanian targets for this first-turn combat restriction. This is not a complete historical country boundary."
+    }
+  },
+  "retreatHexes": 2,
+  "armyStackingByOwner": {
+    "soviet": 1,
+    "german": 1
+  },
+  "safeRetreatOnly": true,
+  "retreatMode": "source-forced-ezoc-v1",
+  "supportMode": "not-yet-integrated",
+  "advanceMaxUnits": 1,
+  "cityMarkerMode": "source-typed-v1",
+  "airSupport": {
+    "mode": "photographed-shift-markers-v1",
+    "owner": "german",
+    "source": "references/rules/kiev-rules.pdf §10.5; references/rules/kiev-player-aid.webp; original photographed front/reverse counters",
+    "markers": [
+      {
+        "faceId": "kiev-front-r03c01",
+        "shiftRating": 1,
+        "firstTurn": 1
+      },
+      {
+        "faceId": "kiev-front-r03c02",
+        "shiftRating": 1,
+        "firstTurn": 1
+      }
+    ],
+    "navalAttackMode": "none"
+  },
+  "notes": [
+    "The shared B4M CRT applies by project decision, not the alternate printed Kiev CRT.",
+    "Italian CSIR is source-captioned Motorized Infantry in §11 but has a photographed infantry NATO glyph; the exact face override permits motorized special movement and infantry-style combat without reclassifying unrelated infantry counters.",
+    "§10.8 is executable as a user-adjudicated four-setup-hex Turn-1 target convention. This does NOT establish the whole geographic Romanian boundary or independently authorize the provisional Kiev movement graph.",
+    "The existing Kiev movement graph remains diagnostic-only, not promoted to historical play.",
+    "Kiev has no naval Fleet marker; Air Corps is committed to ground battles without a preliminary naval-attack window. Other scenarios retain their existing phase behavior."
+  ],
+  "scenarioInterpretation": {
+    "scope": "Turn 1 Soviet Combat Phase only",
+    "romanianHexesForRule": [
+      "0709",
+      "0809",
+      "0910",
+      "1010"
+    ],
+    "sourceLimits": "Original rule identifies Romanian setup positions but does not separately prove they exhaust historical Romanian territory",
+    "authorization": "User-adjudicated game-only definition, not geographic certification",
+    "romanianTerritoryReview": "Optional historical research; not required for this scenario-local Turn 1 rule"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "scope": "strongest discovered odds witness on hypothetical approach board",
+  "nextPhaseEliminationRisk": null,
+  "limitations": [
+    "single opposing movement phase",
+    "strongest odds not maximum casualty risk",
+    "no coordinated withdrawal, city ledger, support or advance",
+    "bounded forecast and consequence searches",
+    "no browser or campaign run"
+  ],
+  "verified": {
+    "integratedApproachSurvival": 71,
+    "survival": 84,
+    "enemyApproach": 47,
+    "stationaryThreat": 38,
+    "withdrawal": 30,
+    "utilityArithmetic": 62,
+    "pilot": 50,
+    "controller": 16,
+    "CRT": 301,
+    "bundleModules": 61
+  }
+}

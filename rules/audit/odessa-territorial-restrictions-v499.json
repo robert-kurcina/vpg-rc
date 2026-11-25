@@ -1,0 +1,12 @@
+{
+  "version": "v499",
+  "checkpoint": 265,
+  "scope": "diagnostic-only",
+  "originalSource": "odessa-rules.pdf §§9.4.4–9.4.5",
+  "syntheticTerritory": "fixture-only",
+  "sourceMapHexes": 261,
+  "sourceMaskApproved": false,
+  "annexationPersistence": true,
+  "countryMaskRequiredBeforeGameplay": true,
+  "checks": 56
+}

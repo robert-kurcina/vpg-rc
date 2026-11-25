@@ -1,0 +1,46 @@
+{
+  "checkpoint": 133,
+  "status": "PASS",
+  "files": {
+    "battle-for-moscow.svg": {
+      "sha256": "3fdc2c431e77bef1fc905775476b1d309ace515189f79611be8e602d8bc3585f",
+      "matchesCheckpoint132": true
+    },
+    "battle-for-moscow.png": {
+      "sha256": "296c6eaec76e781bacd2a171996a8a671b2432571e362beb66a88d65c3679242",
+      "matchesCheckpoint132": true
+    },
+    "arduous.svg": {
+      "sha256": "02f5b595b59bb52165b0916457d7d6893c4352d932bfaa7306d80c5be09b8792",
+      "matchesCheckpoint132": true
+    },
+    "arduous.png": {
+      "sha256": "8d460dc16c1d94a3d10746563eb744997ce00a8d9f4ddf08310f2851b704c5c3",
+      "matchesCheckpoint132": true
+    },
+    "leningrad.svg": {
+      "sha256": "4ad4965040952244ee4c7dc136e8726616a3c791d64dfa3b5b74fc46f3f0cd03",
+      "matchesCheckpoint132": true
+    },
+    "leningrad.png": {
+      "sha256": "3b622a8a645b3c87f0622dd82de347c6110a10ce639058057b765ff3bb99be2f",
+      "matchesCheckpoint132": true
+    },
+    "kiev.svg": {
+      "sha256": "f08e21cdc1bd88b3c166b6a64a9f1599dea728a9098eb589a086409a251d967e",
+      "matchesCheckpoint132": true
+    },
+    "kiev.png": {
+      "sha256": "315cd61f32e131646d429c82206630b82165e183a02791c1fe5871551730ba41",
+      "matchesCheckpoint132": true
+    },
+    "kiev-odessa.svg": {
+      "sha256": "d09cdc1340a3d034a0e048e9d54383460336e3365dc92ecedc433dc2f10cc961",
+      "matchesCheckpoint132": true
+    },
+    "kiev-odessa.png": {
+      "sha256": "866615240224c1abf0c46fbc869e5562e086eaabe9b02ec75361c836c251899f",
+      "matchesCheckpoint132": true
+    }
+  }
+}

@@ -1,0 +1,182 @@
+{
+  "version": 1,
+  "adapter": "legacy-b4m-v1",
+  "turns": 7,
+  "turnOrder": [
+    "german",
+    "soviet"
+  ],
+  "phases": [
+    {
+      "id": "replacements",
+      "kind": "replacement"
+    },
+    {
+      "id": "panzer-move",
+      "kind": "move",
+      "allowedUnitTypes": [
+        "tank"
+      ],
+      "movementMode": "panzer"
+    },
+    {
+      "id": "combat-1",
+      "kind": "combat"
+    },
+    {
+      "id": "normal-move",
+      "kind": "move",
+      "movementMode": "normal"
+    },
+    {
+      "id": "combat-2",
+      "kind": "combat"
+    },
+    {
+      "id": "rail-move",
+      "kind": "move",
+      "allowedFactions": [
+        "soviet"
+      ],
+      "movementMode": "rail"
+    }
+  ],
+  "weather": [
+    {
+      "turns": [
+        3,
+        4
+      ],
+      "name": "mud",
+      "normalMovementLimit": 1,
+      "combatMultipliers": {
+        "tank": 0.5,
+        "infantry": 1.0,
+        "shock": 1.0
+      },
+      "railUnaffected": true
+    }
+  ],
+  "combat": {
+    "table": {
+      "1": [
+        "DR",
+        "EX",
+        "EX",
+        "NE",
+        "NE",
+        "AL"
+      ],
+      "2": [
+        "DR",
+        "DR",
+        "EX",
+        "EX",
+        "NE",
+        "NE"
+      ],
+      "3": [
+        "DR",
+        "DR",
+        "DR",
+        "EX",
+        "EX",
+        "DRL"
+      ],
+      "4": [
+        "DR",
+        "DR",
+        "EX",
+        "DRL",
+        "DRL",
+        "DE"
+      ],
+      "5": [
+        "DR",
+        "DRL",
+        "DRL",
+        "DRL",
+        "DE",
+        "DE"
+      ],
+      "6": [
+        "DRL",
+        "DRL",
+        "DE",
+        "DE",
+        "DE",
+        "DE"
+      ]
+    },
+    "oddsCap": 6,
+    "terrainShifts": {
+      "forest": 1,
+      "fortification": 1
+    },
+    "cityShifts": {
+      "major": 1,
+      "moscow": 1
+    },
+    "allAttackersAcrossRiverShift": 1,
+    "sourceProfile": "oberlabs_2009_web"
+  },
+  "specialRules": [
+    {
+      "module": "scheduled-reinforcement-v1",
+      "when": {
+        "turn": 4,
+        "side": "soviet",
+        "phase": "start"
+      },
+      "unit": "s1sh",
+      "strength": "full",
+      "cost": 0,
+      "entryTag": "sovietReplacement",
+      "notInEnemyZoc": true
+    },
+    {
+      "module": "defender-holds-on-retreat-v1",
+      "condition": {
+        "result": "DR",
+        "strength": "full",
+        "cityTypes": [
+          "major",
+          "moscow"
+        ]
+      },
+      "effect": "lose-step-in-place"
+    },
+    {
+      "module": "replacement-budget-v1",
+      "german": {
+        "turn1": 0,
+        "otherwise": 1
+      },
+      "soviet": {
+        "clear": 5,
+        "mud": 4
+      }
+    },
+    {
+      "module": "communication-path-v1",
+      "edgeEntries": [
+        "germanReplacement",
+        "sovietReplacement"
+      ],
+      "capitalException": {
+        "side": "soviet",
+        "city": "moscow"
+      }
+    },
+    {
+      "module": "retreat-radial-zoc-v1",
+      "distance": 2,
+      "zocTransitBudget": 1
+    },
+    {
+      "module": "rail-path-zoc-v1",
+      "stopOnEnemyZoc": true
+    }
+  ],
+  "note": "Descriptive metadata only. The legacy Oberlabs-compatible engine executes this package until equivalence is established."
+}

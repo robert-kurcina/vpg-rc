@@ -1,0 +1,277 @@
+{
+  "schema": 1,
+  "baseline": "v316",
+  "engineSha256": "df8af5e19df0cf98aec63dc4b713e2e696b54219221cc9f52f0c563185795ce1",
+  "scenarioSha256": "c3ff3919ef81ae1d964bdc52227f10d56fdded99606706fc2f3ea34dff7796f8",
+  "profileSha256": "197f69a568a067b1e085276e1825afa8c97debb37e690e19696a4ef10637c751",
+  "policy": "balanced",
+  "seed": 123456,
+  "probes": {
+    "initialUnitCount": 39,
+    "initialSide": "german",
+    "firstGermanUnit": "g24",
+    "firstMovesHash": "c5de24e563a5a680cc3aeafcede54f0edf911e7de2b888d0da76a62589815992",
+    "firstMovesCount": 9,
+    "firstCandidatesHash": "67d73bc6f718621aceeb5927849f4880327c592b44bf981a6bc031b89d408883",
+    "firstCandidatesCount": 30,
+    "crtHash": "38353dc105d9fd5359c15f606c9ce937d00e72d582207da4b652a1b36e042ab0",
+    "replacementBudget": 0,
+    "mudTurns": [
+      3,
+      4
+    ]
+  },
+  "turns": [
+    {
+      "turn": 1,
+      "side": "german",
+      "actions": 22,
+      "eventsHash": "b693cded2270a519768aeccd97140ea44f0828e12ec283fa72934a0ac199aab1"
+    },
+    {
+      "turn": 1,
+      "side": "soviet",
+      "actions": 22,
+      "eventsHash": "b3c37db8afeb77cf367f127e5abb36e340a8b2886b247569d0fe8d52ec54fcad"
+    },
+    {
+      "turn": 2,
+      "side": "german",
+      "actions": 24,
+      "eventsHash": "f92cd742043f534b3efd57d8ea9f60650306d9756ec9874281fae140bfe5077c"
+    },
+    {
+      "turn": 2,
+      "side": "soviet",
+      "actions": 17,
+      "eventsHash": "89b0873050b4d68881c04dc12a131c4210747f6a4d73294c3b67dafd80775c09"
+    },
+    {
+      "turn": 3,
+      "side": "german",
+      "actions": 15,
+      "eventsHash": "34c627a53d76862f74b594e540d67fe88e820b0dee20ffda9e75afb0f0c1f978"
+    },
+    {
+      "turn": 3,
+      "side": "soviet",
+      "actions": 21,
+      "eventsHash": "2d936a15d37aead1271623b0518bbba8f1a8499c4d0115d65f4f1dd1ff537941"
+    },
+    {
+      "turn": 4,
+      "side": "german",
+      "actions": 14,
+      "eventsHash": "ef7f022750773a793241fec2f2e28327551a8f8b98932044216bf978d2c39a30"
+    },
+    {
+      "turn": 4,
+      "side": "soviet",
+      "actions": 26,
+      "eventsHash": "5257cdd15eec2481a23c2eeb7342909b8998ff72f3f4ffc9d2067f6dd538a947"
+    },
+    {
+      "turn": 5,
+      "side": "german",
+      "actions": 19,
+      "eventsHash": "ef2cb910a2142b5e77cb0e73bcfaa949b30112c1dc47280d5c4824ffaa7d193c"
+    },
+    {
+      "turn": 5,
+      "side": "soviet",
+      "actions": 33,
+      "eventsHash": "993ece4a2c856146d5fd669a1c7fa522c2c61ca8fe0f3bc2ce55fef06b355d17"
+    },
+    {
+      "turn": 6,
+      "side": "german",
+      "actions": 14,
+      "eventsHash": "4933e2eb639b7fce8c00a46a284c0d40fbd5ef9efc989a08f2403428b4607525"
+    },
+    {
+      "turn": 6,
+      "side": "soviet",
+      "actions": 34,
+      "eventsHash": "8392bd0291cd85383ac98e69318f5a9b95c4b4c01faae8a84416c62f20293f16"
+    },
+    {
+      "turn": 7,
+      "side": "german",
+      "actions": 13,
+      "eventsHash": "13a09462ee5bedbd66e01dd73d4fcefe1e40a846b402d8a89b0446f14df18216"
+    },
+    {
+      "turn": 7,
+      "side": "soviet",
+      "actions": 29,
+      "eventsHash": "6fde8f7413a36248033bf382c3c82310a36f6acf43550843f6b4ebc47351c972"
+    }
+  ],
+  "snapshots": [
+    {
+      "label": "auto-setup",
+      "turn": 1,
+      "side": "german",
+      "phase": "combat",
+      "seed": 123456,
+      "unitHash": "6706b04af904ef03ea4aaf8d08a091540fe345b68a7e1f2435b04e97e28deae3",
+      "controlHash": "5e4eed7d8f6c7548abea710141d543353774362310c2dc912cf1d603c9cb6546",
+      "logHash": "f70526145786fe947bdca015812f4098af1a4a1a13a837ec0af5f90a57e36d0d",
+      "stateHash": "fcb4324ebe49306026c18ccccbe251a3893cfd302b71f19f4db083682cdc7634"
+    },
+    {
+      "label": "after-german-turn-1",
+      "turn": 1,
+      "side": "soviet",
+      "phase": "replacement",
+      "seed": 2406627700,
+      "unitHash": "baecd01b3c1436a7c355ae7b0dc2bb26620cc5cff1efd290209270e967951e54",
+      "controlHash": "5e4eed7d8f6c7548abea710141d543353774362310c2dc912cf1d603c9cb6546",
+      "logHash": "b693cded2270a519768aeccd97140ea44f0828e12ec283fa72934a0ac199aab1",
+      "stateHash": "cf3753242ce8bdd44222ef0a027d662d540f36c9713cbc03f76f5199c78b9385"
+    },
+    {
+      "label": "after-soviet-turn-1",
+      "turn": 2,
+      "side": "german",
+      "phase": "replacement",
+      "seed": 1939533677,
+      "unitHash": "3b9106476c8497b3914b228a55093b53a7fb612b2b2dbced9aa7a52028ab15fb",
+      "controlHash": "5e4eed7d8f6c7548abea710141d543353774362310c2dc912cf1d603c9cb6546",
+      "logHash": "da05aba4699361e96545c7849072a374cd71271551dca9e5ca41e416ad354063",
+      "stateHash": "7e82c19cae567f1a201f7de05b185ff90343636f1685bfb0dd1aac491ed07a13"
+    },
+    {
+      "label": "after-german-turn-2",
+      "turn": 2,
+      "side": "soviet",
+      "phase": "replacement",
+      "seed": 1903911975,
+      "unitHash": "768b1be69925d2a83e2b616a06a982be2c8820a205f0b8e524e0ec87040880d4",
+      "controlHash": "b70ac8c68772c7bcaf11f332707e41b3e215993b6513dab23cc68cccb5b52ecb",
+      "logHash": "7649aef640aa0cb1d8c7dabd7241357052eb779c1315e2d1f60c4cfb71fe36ff",
+      "stateHash": "a771f7c901f2caf335ed43e1a6760e67cf07dbc76bd0f47447712943cb1bb897"
+    },
+    {
+      "label": "after-soviet-turn-2",
+      "turn": 3,
+      "side": "german",
+      "phase": "replacement",
+      "seed": 1903911975,
+      "unitHash": "5039c355e26ed7ef34e519e318bb15a99ca914eb48be2eade79cc423151e9f7a",
+      "controlHash": "b70ac8c68772c7bcaf11f332707e41b3e215993b6513dab23cc68cccb5b52ecb",
+      "logHash": "9560644798f47ca1acf3c0d6b7a47bed5b69d4baa3573b52f9b69a70e22daf33",
+      "stateHash": "8e977d9d759ef59310371cd7df694c5d8b06ff7279e663bdac6c7057eae86b75"
+    },
+    {
+      "label": "after-german-turn-3",
+      "turn": 3,
+      "side": "soviet",
+      "phase": "replacement",
+      "seed": 4050228058,
+      "unitHash": "65f40c760cbb63ffe0ad730093c524518ebd56bb58bfa3ec8adb8a0049d87117",
+      "controlHash": "b70ac8c68772c7bcaf11f332707e41b3e215993b6513dab23cc68cccb5b52ecb",
+      "logHash": "818744210121aa3b2d7742f41551a708f83cac3df6b57d480acc8f21aab143cf",
+      "stateHash": "edf48f010f5d66f94b54c61c55151142e497cbf6bbfe1f12e02d66962bc222c2"
+    },
+    {
+      "label": "after-soviet-turn-3",
+      "turn": 4,
+      "side": "german",
+      "phase": "replacement",
+      "seed": 4050228058,
+      "unitHash": "0cd5d992130892f15ed330aa5dea6e8850d4deef81e02d693d46670fc52129ca",
+      "controlHash": "b70ac8c68772c7bcaf11f332707e41b3e215993b6513dab23cc68cccb5b52ecb",
+      "logHash": "bc0c8bd6cdadf9ff5143bb1ccd568044e17e342d11119a51d7031029267b87ae",
+      "stateHash": "425238cb65bff64a1ac99b100a2c2611315ba733bc68da492a477150ce680a7e"
+    },
+    {
+      "label": "after-german-turn-4",
+      "turn": 4,
+      "side": "soviet",
+      "phase": "replacement",
+      "seed": 4050228058,
+      "unitHash": "95dfc36072cedec131900aa2f231707dbf126d35173d8bad5fccc9b93df31bc5",
+      "controlHash": "b70ac8c68772c7bcaf11f332707e41b3e215993b6513dab23cc68cccb5b52ecb",
+      "logHash": "ba9f47676aaed9ea030771f84f307a90f0fcebbc7ea4942c2b4df6a5aab5b2e4",
+      "stateHash": "42a24f367f89fb25bfef3a0fd307daef4e0a0ef51d43cd0e0f6ea56c7d100a94"
+    },
+    {
+      "label": "after-soviet-turn-4",
+      "turn": 5,
+      "side": "german",
+      "phase": "replacement",
+      "seed": 4050228058,
+      "unitHash": "46a22af0c6b58bb5c6e13cf4f1f7dee0101dc6c0a073beef49b10a2a265b683c",
+      "controlHash": "b70ac8c68772c7bcaf11f332707e41b3e215993b6513dab23cc68cccb5b52ecb",
+      "logHash": "e3f64f9c301781b3faf7aa9e643e51d009196cd4e15b87de21c04c86a401e048",
+      "stateHash": "f178c4479834f97d74427b81798a8486d26cb2f6df6ef07d1ab16f6808172188"
+    },
+    {
+      "label": "after-german-turn-5",
+      "turn": 5,
+      "side": "soviet",
+      "phase": "replacement",
+      "seed": 4050228058,
+      "unitHash": "c2bc5d2c20b651f532407b61a1e46c7dfd2c55cd9c5676af6174e0ac57f59b87",
+      "controlHash": "2a1071f32cb36b3e39ad8ce58a389a9eb5b389365af6eca9350efdf0e8a675d6",
+      "logHash": "7263d9e2f62b9d50c36d014b824456a110683f81b445e162f5b4a519df1865ea",
+      "stateHash": "78de22bb3161763837b1c66b49a14e13c05edebfcd65f3f493bbb11298d77c0b"
+    },
+    {
+      "label": "after-soviet-turn-5",
+      "turn": 6,
+      "side": "german",
+      "phase": "replacement",
+      "seed": 2068184878,
+      "unitHash": "0c0f36c84c6e4e163aa77dfff91b0040635fc1d5460cbe147538e17a9fcd1e5f",
+      "controlHash": "2a1071f32cb36b3e39ad8ce58a389a9eb5b389365af6eca9350efdf0e8a675d6",
+      "logHash": "bd2fed3666741093ca7fb9a4997d7e36f20646ef3427ba1081dbfd9e83ca6d5b",
+      "stateHash": "1e5d806fbd9b60903b9fe34bb1f93acaf92024073bfd5d1c8d70818f93c9e140"
+    },
+    {
+      "label": "after-german-turn-6",
+      "turn": 6,
+      "side": "soviet",
+      "phase": "replacement",
+      "seed": 1311194293,
+      "unitHash": "e2ddd72ea97840b8215ec53e94c441502318381a7c26e5b2026a0e86d6de3756",
+      "controlHash": "e4c97b6b8420a49317a1607d87e83120ede109041d144429bbf3a7ee90178b65",
+      "logHash": "f1af13464d6d985f9b03d481e5521464d523e2e6fc9e52496f812db2e3fe2c34",
+      "stateHash": "3b59f8cf38345d30b435c8adb8e5a0a5d6deca87b46800a8f34be751ed29753b"
+    },
+    {
+      "label": "after-soviet-turn-6",
+      "turn": 7,
+      "side": "german",
+      "phase": "replacement",
+      "seed": 2208319663,
+      "unitHash": "6bc9dc407dcbd249cbfe654f399eecdfc1e23a5d423e8b1e33a1d89e2882e0c0",
+      "controlHash": "e4c97b6b8420a49317a1607d87e83120ede109041d144429bbf3a7ee90178b65",
+      "logHash": "4ae70027726fa907d3dde25a07e2313108fdb6f7d57130f09c9407effb90680e",
+      "stateHash": "4e5ee7ee3c0ab1745636d06f4275fa4d547e9abff34baa3061a9f82d288fcb2f"
+    },
+    {
+      "label": "after-german-turn-7",
+      "turn": 7,
+      "side": "soviet",
+      "phase": "replacement",
+      "seed": 3785317954,
+      "unitHash": "7eca3bb69db5046e0fd9b156a3bc536b2107a476fced4566287e5f7476224cdb",
+      "controlHash": "d2ca239a56c10d0a664bf3189ae343aa3cc2f7f15095ef7be81cde433d6b2be9",
+      "logHash": "226298a72ac2cb8d237a9fea45c7438df1ad84dc27c004a68f8463f7bef3a0f8",
+      "stateHash": "ae8b93afad1562221d114be7e515d3ba5ae3cc7b28af32c8f3119451575b49a4"
+    },
+    {
+      "label": "after-soviet-turn-7",
+      "turn": 8,
+      "side": "german",
+      "phase": "finished",
+      "seed": 198515396,
+      "unitHash": "0ed2a0a09bcfc2fb3d4058cef1b9e4dbdc565cb32ea9354573fdb5c7e681de35",
+      "controlHash": "0a8f00fb825f8fcc7f1b8de2f24273cd8c501e53fbaa461fa1cc09d8f54e0200",
+      "logHash": "57033b772faa41b6e74de0d35e4c32ff9a7abd579470182e1e319568b15d9221",
+      "stateHash": "1ce76b214e187ccd1620f51010ac305cf59ca8e3f4eaecb6e1aaf06f025a7f33"
+    }
+  ]
+}

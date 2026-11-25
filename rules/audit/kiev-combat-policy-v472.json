@@ -1,0 +1,33 @@
+{
+  "checkpoint": 238,
+  "version": "v472",
+  "scope": "test-only Kiev combat source profile, shared-engine class exception and guard; NO game activation",
+  "assertions": 158,
+  "source": {
+    "rulebookSha256": "d55e8f0e567d1f8c7907c4fc8368954ec0e5fa8d6fe9e8e71c61acf9bb3c3756",
+    "aidSha256": "a7d239a80745463fdd3d5effc8faf6a028ab4f048713a506cb75823c448c9751",
+    "frontSha256": "9db4bc6382f174017cb23f9c907369a25e173143a29e292b656b8f48ddfc4724",
+    "backSha256": "533165e074c4c6a2774811053347d19615eb85acce69987192301c403dcefeea"
+  },
+  "proof": {
+    "italianSourceFace": "kiev-front-r04c01",
+    "italianOfficialIdentity": "Italy CSIR",
+    "combatResult": "DE",
+    "combatOdds": 4,
+    "airMarkers": [
+      {
+        "faceId": "kiev-front-r03c01",
+        "printed": "FK IV",
+        "shift": 1
+      },
+      {
+        "faceId": "kiev-front-r03c02",
+        "printed": "FK V",
+        "shift": 1
+      }
+    ],
+    "nationalTerritoryCertified": false,
+    "provisionalMovementGraphOnly": true,
+    "gameplayAuthorized": false
+  }
+}

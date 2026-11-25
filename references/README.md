@@ -1,0 +1,1 @@
+Original user-provided reference documents. File hashes are recorded in `rules/SOURCE_INDEX.json`. Source artwork and scans supplied for cartography reside under `maps/source/` and `assets/official-counters/`.

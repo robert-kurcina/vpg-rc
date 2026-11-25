@@ -1,0 +1,1333 @@
+{
+  "schemaVersion": 2,
+  "checkpoint": 184,
+  "sourceMapSha256": "0cf849eaf683cd86443d244f20e5d03f8dc18ba354f88861d039307da162742d",
+  "sourceSvgSha256": "423af8983fd90a5be17041922a612efba42bbff306683ead9fd6910413402ede",
+  "scope": "Only sustained side-follow river candidates; no gameplay legality assigned",
+  "coverage": {
+    "riverSourcePaths": 5,
+    "observedHexsides": 47,
+    "sideFollowCandidates": 47,
+    "internalSideFollowCandidates": 45,
+    "exteriorSideFollowCandidates": 2,
+    "unreviewedForGameRules": 47
+  },
+  "sideObservations": [
+    {
+      "edgeKey": "0305~0405",
+      "members": [
+        {
+          "hexId": "0305",
+          "dir": "NE"
+        },
+        {
+          "hexId": "0405",
+          "dir": "SW"
+        }
+      ],
+      "classification": "side-follow-review",
+      "sources": [
+        "path384"
+      ],
+      "observations": [
+        {
+          "svgId": "path384",
+          "relation": "side-follow-candidate",
+          "nearbyLengthPx": 16.955,
+          "sideProjectionFraction": 0.58,
+          "minimumDistancePx": 0.031
+        }
+      ],
+      "internalPair": true,
+      "certifiedRiverCrossing": false
+    },
+    {
+      "edgeKey": "0305~0406",
+      "members": [
+        {
+          "hexId": "0305",
+          "dir": "SE"
+        },
+        {
+          "hexId": "0406",
+          "dir": "NW"
+        }
+      ],
+      "classification": "side-follow-review",
+      "sources": [
+        "path384"
+      ],
+      "observations": [
+        {
+          "svgId": "path384",
+          "relation": "side-follow-candidate",
+          "nearbyLengthPx": 29.274,
+          "sideProjectionFraction": 1.0,
+          "minimumDistancePx": 0.0
+        }
+      ],
+      "internalPair": true,
+      "certifiedRiverCrossing": false
+    },
+    {
+      "edgeKey": "0306~0406",
+      "members": [
+        {
+          "hexId": "0306",
+          "dir": "NE"
+        },
+        {
+          "hexId": "0406",
+          "dir": "SW"
+        }
+      ],
+      "classification": "side-follow-review",
+      "sources": [
+        "path384"
+      ],
+      "observations": [
+        {
+          "svgId": "path384",
+          "relation": "side-follow-candidate",
+          "nearbyLengthPx": 30.996,
+          "sideProjectionFraction": 1.0,
+          "minimumDistancePx": 0.0
+        }
+      ],
+      "internalPair": true,
+      "certifiedRiverCrossing": false
+    },
+    {
+      "edgeKey": "0406~0407",
+      "members": [
+        {
+          "hexId": "0406",
+          "dir": "S"
+        },
+        {
+          "hexId": "0407",
+          "dir": "N"
+        }
+      ],
+      "classification": "side-follow-review",
+      "sources": [
+        "path384"
+      ],
+      "observations": [
+        {
+          "svgId": "path384",
+          "relation": "side-follow-candidate",
+          "nearbyLengthPx": 30.134,
+          "sideProjectionFraction": 1.0,
+          "minimumDistancePx": 0.0
+        }
+      ],
+      "internalPair": true,
+      "certifiedRiverCrossing": false
+    },
+    {
+      "edgeKey": "0407~0506",
+      "members": [
+        {
+          "hexId": "0407",
+          "dir": "NE"
+        },
+        {
+          "hexId": "0506",
+          "dir": "SW"
+        }
+      ],
+      "classification": "side-follow-review",
+      "sources": [
+        "path384"
+      ],
+      "observations": [
+        {
+          "svgId": "path384",
+          "relation": "side-follow-candidate",
+          "nearbyLengthPx": 29.349,
+          "sideProjectionFraction": 0.958,
+          "minimumDistancePx": 0.0
+        }
+      ],
+      "internalPair": true,
+      "certifiedRiverCrossing": false
+    },
+    {
+      "edgeKey": "0504~0505",
+      "members": [
+        {
+          "hexId": "0504",
+          "dir": "S"
+        },
+        {
+          "hexId": "0505",
+          "dir": "N"
+        }
+      ],
+      "classification": "side-follow-review",
+      "sources": [
+        "path383"
+      ],
+      "observations": [
+        {
+          "svgId": "path383",
+          "relation": "side-follow-candidate",
+          "nearbyLengthPx": 28.022,
+          "sideProjectionFraction": 0.99,
+          "minimumDistancePx": 0.542
+        }
+      ],
+      "internalPair": true,
+      "certifiedRiverCrossing": false
+    },
+    {
+      "edgeKey": "0506~0507",
+      "members": [
+        {
+          "hexId": "0506",
+          "dir": "S"
+        },
+        {
+          "hexId": "0507",
+          "dir": "N"
+        }
+      ],
+      "classification": "side-follow-review",
+      "sources": [
+        "path384"
+      ],
+      "observations": [
+        {
+          "svgId": "path384",
+          "relation": "side-follow-candidate",
+          "nearbyLengthPx": 28.074,
+          "sideProjectionFraction": 0.99,
+          "minimumDistancePx": 0.731
+        }
+      ],
+      "internalPair": true,
+      "certifiedRiverCrossing": false
+    },
+    {
+      "edgeKey": "1102~1103",
+      "members": [
+        {
+          "hexId": "1102",
+          "dir": "S"
+        },
+        {
+          "hexId": "1103",
+          "dir": "N"
+        }
+      ],
+      "classification": "side-follow-review",
+      "sources": [
+        "path380"
+      ],
+      "observations": [
+        {
+          "svgId": "path380",
+          "relation": "side-follow-candidate",
+          "nearbyLengthPx": 29.571,
+          "sideProjectionFraction": 0.997,
+          "minimumDistancePx": 0.674
+        }
+      ],
+      "internalPair": true,
+      "certifiedRiverCrossing": false
+    },
+    {
+      "edgeKey": "1103~1203",
+      "members": [
+        {
+          "hexId": "1103",
+          "dir": "NE"
+        },
+        {
+          "hexId": "1203",
+          "dir": "SW"
+        }
+      ],
+      "classification": "side-follow-review",
+      "sources": [
+        "path380"
+      ],
+      "observations": [
+        {
+          "svgId": "path380",
+          "relation": "side-follow-candidate",
+          "nearbyLengthPx": 29.385,
+          "sideProjectionFraction": 1.0,
+          "minimumDistancePx": 0.102
+        }
+      ],
+      "internalPair": true,
+      "certifiedRiverCrossing": false
+    },
+    {
+      "edgeKey": "1105~1206",
+      "members": [
+        {
+          "hexId": "1105",
+          "dir": "SE"
+        },
+        {
+          "hexId": "1206",
+          "dir": "NW"
+        }
+      ],
+      "classification": "side-follow-review",
+      "sources": [
+        "path381"
+      ],
+      "observations": [
+        {
+          "svgId": "path381",
+          "relation": "side-follow-candidate",
+          "nearbyLengthPx": 29.342,
+          "sideProjectionFraction": 1.0,
+          "minimumDistancePx": 0.49
+        }
+      ],
+      "internalPair": true,
+      "certifiedRiverCrossing": false
+    },
+    {
+      "edgeKey": "1106~1206",
+      "members": [
+        {
+          "hexId": "1106",
+          "dir": "NE"
+        },
+        {
+          "hexId": "1206",
+          "dir": "SW"
+        }
+      ],
+      "classification": "side-follow-review",
+      "sources": [
+        "path381"
+      ],
+      "observations": [
+        {
+          "svgId": "path381",
+          "relation": "side-follow-candidate",
+          "nearbyLengthPx": 29.942,
+          "sideProjectionFraction": 0.98,
+          "minimumDistancePx": 0.0
+        }
+      ],
+      "internalPair": true,
+      "certifiedRiverCrossing": false
+    },
+    {
+      "edgeKey": "1106~1207",
+      "members": [
+        {
+          "hexId": "1106",
+          "dir": "SE"
+        },
+        {
+          "hexId": "1207",
+          "dir": "NW"
+        }
+      ],
+      "classification": "side-follow-review",
+      "sources": [
+        "path381"
+      ],
+      "observations": [
+        {
+          "svgId": "path381",
+          "relation": "side-follow-candidate",
+          "nearbyLengthPx": 29.385,
+          "sideProjectionFraction": 1.0,
+          "minimumDistancePx": 0.0
+        }
+      ],
+      "internalPair": true,
+      "certifiedRiverCrossing": false
+    },
+    {
+      "edgeKey": "1107~1207",
+      "members": [
+        {
+          "hexId": "1107",
+          "dir": "NE"
+        },
+        {
+          "hexId": "1207",
+          "dir": "SW"
+        }
+      ],
+      "classification": "side-follow-review",
+      "sources": [
+        "path381"
+      ],
+      "observations": [
+        {
+          "svgId": "path381",
+          "relation": "side-follow-candidate",
+          "nearbyLengthPx": 29.269,
+          "sideProjectionFraction": 1.0,
+          "minimumDistancePx": 0.0
+        }
+      ],
+      "internalPair": true,
+      "certifiedRiverCrossing": false
+    },
+    {
+      "edgeKey": "1107~1208",
+      "members": [
+        {
+          "hexId": "1107",
+          "dir": "SE"
+        },
+        {
+          "hexId": "1208",
+          "dir": "NW"
+        }
+      ],
+      "classification": "side-follow-review",
+      "sources": [
+        "path381"
+      ],
+      "observations": [
+        {
+          "svgId": "path381",
+          "relation": "side-follow-candidate",
+          "nearbyLengthPx": 28.803,
+          "sideProjectionFraction": 1.0,
+          "minimumDistancePx": 0.023
+        }
+      ],
+      "internalPair": true,
+      "certifiedRiverCrossing": false
+    },
+    {
+      "edgeKey": "1108~1208",
+      "members": [
+        {
+          "hexId": "1108",
+          "dir": "NE"
+        },
+        {
+          "hexId": "1208",
+          "dir": "SW"
+        }
+      ],
+      "classification": "side-follow-review",
+      "sources": [
+        "path381"
+      ],
+      "observations": [
+        {
+          "svgId": "path381",
+          "relation": "side-follow-candidate",
+          "nearbyLengthPx": 28.158,
+          "sideProjectionFraction": 0.954,
+          "minimumDistancePx": 0.731
+        }
+      ],
+      "internalPair": true,
+      "certifiedRiverCrossing": false
+    },
+    {
+      "edgeKey": "1108~1209",
+      "members": [
+        {
+          "hexId": "1108",
+          "dir": "SE"
+        },
+        {
+          "hexId": "1209",
+          "dir": "NW"
+        }
+      ],
+      "classification": "side-follow-review",
+      "sources": [
+        "path381"
+      ],
+      "observations": [
+        {
+          "svgId": "path381",
+          "relation": "side-follow-candidate",
+          "nearbyLengthPx": 29.722,
+          "sideProjectionFraction": 0.987,
+          "minimumDistancePx": 0.0
+        }
+      ],
+      "internalPair": true,
+      "certifiedRiverCrossing": false
+    },
+    {
+      "edgeKey": "1109~1209",
+      "members": [
+        {
+          "hexId": "1109",
+          "dir": "NE"
+        },
+        {
+          "hexId": "1209",
+          "dir": "SW"
+        }
+      ],
+      "classification": "side-follow-review",
+      "sources": [
+        "path381"
+      ],
+      "observations": [
+        {
+          "svgId": "path381",
+          "relation": "side-follow-candidate",
+          "nearbyLengthPx": 28.855,
+          "sideProjectionFraction": 1.0,
+          "minimumDistancePx": 0.0
+        }
+      ],
+      "internalPair": true,
+      "certifiedRiverCrossing": false
+    },
+    {
+      "edgeKey": "1203~1204",
+      "members": [
+        {
+          "hexId": "1203",
+          "dir": "S"
+        },
+        {
+          "hexId": "1204",
+          "dir": "N"
+        }
+      ],
+      "classification": "side-follow-review",
+      "sources": [
+        "path380"
+      ],
+      "observations": [
+        {
+          "svgId": "path380",
+          "relation": "side-follow-candidate",
+          "nearbyLengthPx": 31.62,
+          "sideProjectionFraction": 1.0,
+          "minimumDistancePx": 0.0
+        }
+      ],
+      "internalPair": true,
+      "certifiedRiverCrossing": false
+    },
+    {
+      "edgeKey": "1204~1303",
+      "members": [
+        {
+          "hexId": "1204",
+          "dir": "NE"
+        },
+        {
+          "hexId": "1303",
+          "dir": "SW"
+        }
+      ],
+      "classification": "side-follow-review",
+      "sources": [
+        "path380"
+      ],
+      "observations": [
+        {
+          "svgId": "path380",
+          "relation": "side-follow-candidate",
+          "nearbyLengthPx": 30.907,
+          "sideProjectionFraction": 1.0,
+          "minimumDistancePx": 0.0
+        }
+      ],
+      "internalPair": true,
+      "certifiedRiverCrossing": false
+    },
+    {
+      "edgeKey": "1209~1210",
+      "members": [
+        {
+          "hexId": "1209",
+          "dir": "S"
+        },
+        {
+          "hexId": "1210",
+          "dir": "N"
+        }
+      ],
+      "classification": "side-follow-review",
+      "sources": [
+        "path381"
+      ],
+      "observations": [
+        {
+          "svgId": "path381",
+          "relation": "side-follow-candidate",
+          "nearbyLengthPx": 29.855,
+          "sideProjectionFraction": 0.985,
+          "minimumDistancePx": 0.0
+        }
+      ],
+      "internalPair": true,
+      "certifiedRiverCrossing": false
+    },
+    {
+      "edgeKey": "1210~1309",
+      "members": [
+        {
+          "hexId": "1210",
+          "dir": "NE"
+        },
+        {
+          "hexId": "1309",
+          "dir": "SW"
+        }
+      ],
+      "classification": "side-follow-review",
+      "sources": [
+        "path381"
+      ],
+      "observations": [
+        {
+          "svgId": "path381",
+          "relation": "side-follow-candidate",
+          "nearbyLengthPx": 29.114,
+          "sideProjectionFraction": 1.0,
+          "minimumDistancePx": 0.0
+        }
+      ],
+      "internalPair": true,
+      "certifiedRiverCrossing": false
+    },
+    {
+      "edgeKey": "1303~1304",
+      "members": [
+        {
+          "hexId": "1303",
+          "dir": "S"
+        },
+        {
+          "hexId": "1304",
+          "dir": "N"
+        }
+      ],
+      "classification": "side-follow-review",
+      "sources": [
+        "path380"
+      ],
+      "observations": [
+        {
+          "svgId": "path380",
+          "relation": "side-follow-candidate",
+          "nearbyLengthPx": 29.472,
+          "sideProjectionFraction": 1.0,
+          "minimumDistancePx": 0.191
+        }
+      ],
+      "internalPair": true,
+      "certifiedRiverCrossing": false
+    },
+    {
+      "edgeKey": "1303~1404",
+      "members": [
+        {
+          "hexId": "1303",
+          "dir": "SE"
+        },
+        {
+          "hexId": "1404",
+          "dir": "NW"
+        }
+      ],
+      "classification": "side-follow-review",
+      "sources": [
+        "path380"
+      ],
+      "observations": [
+        {
+          "svgId": "path380",
+          "relation": "side-follow-candidate",
+          "nearbyLengthPx": 29.107,
+          "sideProjectionFraction": 1.0,
+          "minimumDistancePx": 0.0
+        }
+      ],
+      "internalPair": true,
+      "certifiedRiverCrossing": false
+    },
+    {
+      "edgeKey": "1309~1310",
+      "members": [
+        {
+          "hexId": "1309",
+          "dir": "S"
+        },
+        {
+          "hexId": "1310",
+          "dir": "N"
+        }
+      ],
+      "classification": "side-follow-review",
+      "sources": [
+        "path381",
+        "path382"
+      ],
+      "observations": [
+        {
+          "svgId": "path381",
+          "relation": "side-follow-candidate",
+          "nearbyLengthPx": 30.846,
+          "sideProjectionFraction": 1.0,
+          "minimumDistancePx": 0.0
+        }
+      ],
+      "internalPair": true,
+      "certifiedRiverCrossing": false
+    },
+    {
+      "edgeKey": "1309~1410",
+      "members": [
+        {
+          "hexId": "1309",
+          "dir": "SE"
+        },
+        {
+          "hexId": "1410",
+          "dir": "NW"
+        }
+      ],
+      "classification": "side-follow-review",
+      "sources": [
+        "path382"
+      ],
+      "observations": [
+        {
+          "svgId": "path382",
+          "relation": "side-follow-candidate",
+          "nearbyLengthPx": 29.411,
+          "sideProjectionFraction": 1.0,
+          "minimumDistancePx": 0.0
+        }
+      ],
+      "internalPair": true,
+      "certifiedRiverCrossing": false
+    },
+    {
+      "edgeKey": "1310~1410",
+      "members": [
+        {
+          "hexId": "1310",
+          "dir": "NE"
+        },
+        {
+          "hexId": "1410",
+          "dir": "SW"
+        }
+      ],
+      "classification": "side-follow-review",
+      "sources": [
+        "path381",
+        "path382"
+      ],
+      "observations": [
+        {
+          "svgId": "path381",
+          "relation": "side-follow-candidate",
+          "nearbyLengthPx": 28.493,
+          "sideProjectionFraction": 0.923,
+          "minimumDistancePx": 0.0
+        }
+      ],
+      "internalPair": true,
+      "certifiedRiverCrossing": false
+    },
+    {
+      "edgeKey": "1403~1404",
+      "members": [
+        {
+          "hexId": "1403",
+          "dir": "S"
+        },
+        {
+          "hexId": "1404",
+          "dir": "N"
+        }
+      ],
+      "classification": "side-follow-review",
+      "sources": [
+        "path380"
+      ],
+      "observations": [
+        {
+          "svgId": "path380",
+          "relation": "side-follow-candidate",
+          "nearbyLengthPx": 29.746,
+          "sideProjectionFraction": 1.0,
+          "minimumDistancePx": 0.0
+        }
+      ],
+      "internalPair": true,
+      "certifiedRiverCrossing": false
+    },
+    {
+      "edgeKey": "1404~1503",
+      "members": [
+        {
+          "hexId": "1404",
+          "dir": "NE"
+        },
+        {
+          "hexId": "1503",
+          "dir": "SW"
+        }
+      ],
+      "classification": "side-follow-review",
+      "sources": [
+        "path380"
+      ],
+      "observations": [
+        {
+          "svgId": "path380",
+          "relation": "side-follow-candidate",
+          "nearbyLengthPx": 25.405,
+          "sideProjectionFraction": 0.882,
+          "minimumDistancePx": 0.246
+        }
+      ],
+      "internalPair": true,
+      "certifiedRiverCrossing": false
+    },
+    {
+      "edgeKey": "1408~1508",
+      "members": [
+        {
+          "hexId": "1408",
+          "dir": "SE"
+        },
+        {
+          "hexId": "1508",
+          "dir": "NW"
+        }
+      ],
+      "classification": "side-follow-review",
+      "sources": [
+        "path382"
+      ],
+      "observations": [
+        {
+          "svgId": "path382",
+          "relation": "side-follow-candidate",
+          "nearbyLengthPx": 30.611,
+          "sideProjectionFraction": 1.0,
+          "minimumDistancePx": 0.0
+        }
+      ],
+      "internalPair": true,
+      "certifiedRiverCrossing": false
+    },
+    {
+      "edgeKey": "1409~1410",
+      "members": [
+        {
+          "hexId": "1409",
+          "dir": "S"
+        },
+        {
+          "hexId": "1410",
+          "dir": "N"
+        }
+      ],
+      "classification": "side-follow-review",
+      "sources": [
+        "path382"
+      ],
+      "observations": [
+        {
+          "svgId": "path382",
+          "relation": "side-follow-candidate",
+          "nearbyLengthPx": 28.311,
+          "sideProjectionFraction": 1.0,
+          "minimumDistancePx": 0.213
+        }
+      ],
+      "internalPair": true,
+      "certifiedRiverCrossing": false
+    },
+    {
+      "edgeKey": "1409~1508",
+      "members": [
+        {
+          "hexId": "1409",
+          "dir": "NE"
+        },
+        {
+          "hexId": "1508",
+          "dir": "SW"
+        }
+      ],
+      "classification": "side-follow-review",
+      "sources": [
+        "path382"
+      ],
+      "observations": [
+        {
+          "svgId": "path382",
+          "relation": "side-follow-candidate",
+          "nearbyLengthPx": 30.036,
+          "sideProjectionFraction": 1.0,
+          "minimumDistancePx": 0.0
+        }
+      ],
+      "internalPair": true,
+      "certifiedRiverCrossing": false
+    },
+    {
+      "edgeKey": "1409~1509",
+      "members": [
+        {
+          "hexId": "1409",
+          "dir": "SE"
+        },
+        {
+          "hexId": "1509",
+          "dir": "NW"
+        }
+      ],
+      "classification": "side-follow-review",
+      "sources": [
+        "path382"
+      ],
+      "observations": [
+        {
+          "svgId": "path382",
+          "relation": "side-follow-candidate",
+          "nearbyLengthPx": 29.673,
+          "sideProjectionFraction": 1.0,
+          "minimumDistancePx": 0.0
+        }
+      ],
+      "internalPair": true,
+      "certifiedRiverCrossing": false
+    },
+    {
+      "edgeKey": "1410~1411",
+      "members": [
+        {
+          "hexId": "1410",
+          "dir": "S"
+        },
+        {
+          "hexId": "1411",
+          "dir": "N"
+        }
+      ],
+      "classification": "side-follow-review",
+      "sources": [
+        "path381"
+      ],
+      "observations": [
+        {
+          "svgId": "path381",
+          "relation": "side-follow-candidate",
+          "nearbyLengthPx": 23.07,
+          "sideProjectionFraction": 0.781,
+          "minimumDistancePx": 0.0
+        }
+      ],
+      "internalPair": true,
+      "certifiedRiverCrossing": false
+    },
+    {
+      "edgeKey": "1411~1510",
+      "members": [
+        {
+          "hexId": "1411",
+          "dir": "NE"
+        },
+        {
+          "hexId": "1510",
+          "dir": "SW"
+        }
+      ],
+      "classification": "side-follow-review",
+      "sources": [
+        "path381"
+      ],
+      "observations": [
+        {
+          "svgId": "path381",
+          "relation": "side-follow-candidate",
+          "nearbyLengthPx": 28.944,
+          "sideProjectionFraction": 0.922,
+          "minimumDistancePx": 0.0
+        }
+      ],
+      "internalPair": true,
+      "certifiedRiverCrossing": false
+    },
+    {
+      "edgeKey": "1505~1606",
+      "members": [
+        {
+          "hexId": "1505",
+          "dir": "SE"
+        },
+        {
+          "hexId": "1606",
+          "dir": "NW"
+        }
+      ],
+      "classification": "side-follow-review",
+      "sources": [
+        "path382"
+      ],
+      "observations": [
+        {
+          "svgId": "path382",
+          "relation": "side-follow-candidate",
+          "nearbyLengthPx": 30.353,
+          "sideProjectionFraction": 0.995,
+          "minimumDistancePx": 0.0
+        }
+      ],
+      "internalPair": true,
+      "certifiedRiverCrossing": false
+    },
+    {
+      "edgeKey": "1506~1606",
+      "members": [
+        {
+          "hexId": "1506",
+          "dir": "NE"
+        },
+        {
+          "hexId": "1606",
+          "dir": "SW"
+        }
+      ],
+      "classification": "side-follow-review",
+      "sources": [
+        "path382"
+      ],
+      "observations": [
+        {
+          "svgId": "path382",
+          "relation": "side-follow-candidate",
+          "nearbyLengthPx": 29.365,
+          "sideProjectionFraction": 1.0,
+          "minimumDistancePx": 0.502
+        }
+      ],
+      "internalPair": true,
+      "certifiedRiverCrossing": false
+    },
+    {
+      "edgeKey": "1506~1607",
+      "members": [
+        {
+          "hexId": "1506",
+          "dir": "SE"
+        },
+        {
+          "hexId": "1607",
+          "dir": "NW"
+        }
+      ],
+      "classification": "side-follow-review",
+      "sources": [
+        "path382"
+      ],
+      "observations": [
+        {
+          "svgId": "path382",
+          "relation": "side-follow-candidate",
+          "nearbyLengthPx": 28.913,
+          "sideProjectionFraction": 1.0,
+          "minimumDistancePx": 0.248
+        }
+      ],
+      "internalPair": true,
+      "certifiedRiverCrossing": false
+    },
+    {
+      "edgeKey": "1507~1508",
+      "members": [
+        {
+          "hexId": "1507",
+          "dir": "S"
+        },
+        {
+          "hexId": "1508",
+          "dir": "N"
+        }
+      ],
+      "classification": "side-follow-review",
+      "sources": [
+        "path382"
+      ],
+      "observations": [
+        {
+          "svgId": "path382",
+          "relation": "side-follow-candidate",
+          "nearbyLengthPx": 28.293,
+          "sideProjectionFraction": 1.0,
+          "minimumDistancePx": 0.055
+        }
+      ],
+      "internalPair": true,
+      "certifiedRiverCrossing": false
+    },
+    {
+      "edgeKey": "1507~1607",
+      "members": [
+        {
+          "hexId": "1507",
+          "dir": "NE"
+        },
+        {
+          "hexId": "1607",
+          "dir": "SW"
+        }
+      ],
+      "classification": "side-follow-review",
+      "sources": [
+        "path382"
+      ],
+      "observations": [
+        {
+          "svgId": "path382",
+          "relation": "side-follow-candidate",
+          "nearbyLengthPx": 27.252,
+          "sideProjectionFraction": 0.903,
+          "minimumDistancePx": 0.248
+        }
+      ],
+      "internalPair": true,
+      "certifiedRiverCrossing": false
+    },
+    {
+      "edgeKey": "1507~1608",
+      "members": [
+        {
+          "hexId": "1507",
+          "dir": "SE"
+        },
+        {
+          "hexId": "1608",
+          "dir": "NW"
+        }
+      ],
+      "classification": "side-follow-review",
+      "sources": [
+        "path382"
+      ],
+      "observations": [
+        {
+          "svgId": "path382",
+          "relation": "side-follow-candidate",
+          "nearbyLengthPx": 21.307,
+          "sideProjectionFraction": 0.73,
+          "minimumDistancePx": 0.0
+        }
+      ],
+      "internalPair": true,
+      "certifiedRiverCrossing": false
+    },
+    {
+      "edgeKey": "1510:S",
+      "members": [
+        {
+          "hexId": "1510",
+          "dir": "S"
+        }
+      ],
+      "classification": "side-follow-review",
+      "sources": [
+        "path381"
+      ],
+      "observations": [
+        {
+          "svgId": "path381",
+          "relation": "side-follow-candidate",
+          "nearbyLengthPx": 17.873,
+          "sideProjectionFraction": 0.631,
+          "minimumDistancePx": 1.263
+        }
+      ],
+      "internalPair": false,
+      "certifiedRiverCrossing": false
+    },
+    {
+      "edgeKey": "1605~1606",
+      "members": [
+        {
+          "hexId": "1605",
+          "dir": "S"
+        },
+        {
+          "hexId": "1606",
+          "dir": "N"
+        }
+      ],
+      "classification": "side-follow-review",
+      "sources": [
+        "path382"
+      ],
+      "observations": [
+        {
+          "svgId": "path382",
+          "relation": "side-follow-candidate",
+          "nearbyLengthPx": 28.293,
+          "sideProjectionFraction": 1.0,
+          "minimumDistancePx": 1.593
+        }
+      ],
+      "internalPair": true,
+      "certifiedRiverCrossing": false
+    },
+    {
+      "edgeKey": "1605~1705",
+      "members": [
+        {
+          "hexId": "1605",
+          "dir": "SE"
+        },
+        {
+          "hexId": "1705",
+          "dir": "NW"
+        }
+      ],
+      "classification": "side-follow-review",
+      "sources": [
+        "path382"
+      ],
+      "observations": [
+        {
+          "svgId": "path382",
+          "relation": "side-follow-candidate",
+          "nearbyLengthPx": 27.846,
+          "sideProjectionFraction": 0.89,
+          "minimumDistancePx": 0.0
+        }
+      ],
+      "internalPair": true,
+      "certifiedRiverCrossing": false
+    },
+    {
+      "edgeKey": "1611:SW",
+      "members": [
+        {
+          "hexId": "1611",
+          "dir": "SW"
+        }
+      ],
+      "classification": "side-follow-review",
+      "sources": [
+        "path381"
+      ],
+      "observations": [
+        {
+          "svgId": "path381",
+          "relation": "side-follow-candidate",
+          "nearbyLengthPx": 16.774,
+          "sideProjectionFraction": 0.579,
+          "minimumDistancePx": 1.263
+        }
+      ],
+      "internalPair": false,
+      "certifiedRiverCrossing": false
+    },
+    {
+      "edgeKey": "1704~1705",
+      "members": [
+        {
+          "hexId": "1704",
+          "dir": "S"
+        },
+        {
+          "hexId": "1705",
+          "dir": "N"
+        }
+      ],
+      "classification": "side-follow-review",
+      "sources": [
+        "path382"
+      ],
+      "observations": [
+        {
+          "svgId": "path382",
+          "relation": "side-follow-candidate",
+          "nearbyLengthPx": 28.421,
+          "sideProjectionFraction": 1.0,
+          "minimumDistancePx": 0.0
+        }
+      ],
+      "internalPair": true,
+      "certifiedRiverCrossing": false
+    },
+    {
+      "edgeKey": "1705~1805",
+      "members": [
+        {
+          "hexId": "1705",
+          "dir": "NE"
+        },
+        {
+          "hexId": "1805",
+          "dir": "SW"
+        }
+      ],
+      "classification": "side-follow-review",
+      "sources": [
+        "path382"
+      ],
+      "observations": [
+        {
+          "svgId": "path382",
+          "relation": "side-follow-candidate",
+          "nearbyLengthPx": 29.303,
+          "sideProjectionFraction": 0.97,
+          "minimumDistancePx": 0.357
+        }
+      ],
+      "internalPair": true,
+      "certifiedRiverCrossing": false
+    },
+    {
+      "edgeKey": "1805~1806",
+      "members": [
+        {
+          "hexId": "1805",
+          "dir": "S"
+        },
+        {
+          "hexId": "1806",
+          "dir": "N"
+        }
+      ],
+      "classification": "side-follow-review",
+      "sources": [
+        "path382"
+      ],
+      "observations": [
+        {
+          "svgId": "path382",
+          "relation": "side-follow-candidate",
+          "nearbyLengthPx": 28.566,
+          "sideProjectionFraction": 1.0,
+          "minimumDistancePx": 0.558
+        }
+      ],
+      "internalPair": true,
+      "certifiedRiverCrossing": false
+    }
+  ],
+  "authorizedForMovement": false,
+  "limitations": [
+    "A visually followed side does not yet establish a combat river crossing.",
+    "Only sustained side-following paths may enter the candidate graph.",
+    "All candidates remain unverified until gameplay river rules are certified."
+  ]
+}

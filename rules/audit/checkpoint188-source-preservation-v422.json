@@ -1,0 +1,19 @@
+{
+  "checkpoint": 188,
+  "version": "v422",
+  "scope": "protected runtime/source/artwork/map preserved from checkpoint187",
+  "filesCompared": 302,
+  "allMatched": true,
+  "directories": [
+    "core/",
+    "maps/",
+    "assets/",
+    "exports/",
+    "games/",
+    "rules_profiles/",
+    "legacy/",
+    "references/",
+    "supplied_assets/"
+  ],
+  "protectedFilesSHA256": "d08d89f67c3bf892082037e0c5dcc08f38268c9a149c5e75d3a1aa5d0b78dc52"
+}

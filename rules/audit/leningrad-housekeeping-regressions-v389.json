@@ -1,0 +1,213 @@
+{
+  "checkpoint": 155,
+  "version": "v389",
+  "passed": 29,
+  "totalPlanned": 29,
+  "results": [
+    {
+      "index": 1,
+      "command": "node scripts/verify-campaign-maps.js",
+      "passed": true,
+      "seconds": 0.41,
+      "run": "initial sequential driver"
+    },
+    {
+      "index": 2,
+      "command": "node tests/b4m-native-combat-v361.test.js",
+      "passed": true,
+      "seconds": 0.52,
+      "run": "initial sequential driver"
+    },
+    {
+      "index": 3,
+      "command": "node tests/b4m-native-redeployment-campaign-v378.test.js",
+      "passed": true,
+      "seconds": 16.11,
+      "run": "initial sequential driver"
+    },
+    {
+      "index": 4,
+      "command": "node tests/b4m-native-tournament-reference-v375.test.js",
+      "passed": true,
+      "seconds": 0.08,
+      "run": "initial sequential driver"
+    },
+    {
+      "index": 5,
+      "command": "node tests/forest-no-shadow-v373.test.js",
+      "passed": true,
+      "seconds": 0.39,
+      "run": "initial sequential driver"
+    },
+    {
+      "index": 6,
+      "command": "node tests/historical-air-sea-support-v385.test.js",
+      "passed": true,
+      "seconds": 0.13,
+      "run": "initial sequential driver"
+    },
+    {
+      "index": 7,
+      "command": "node tests/historical-combat-consequences-v359.test.js",
+      "passed": true,
+      "seconds": 0.4,
+      "run": "initial sequential driver"
+    },
+    {
+      "index": 8,
+      "command": "node tests/historical-combat-session-v386.test.js",
+      "passed": true,
+      "seconds": 0.9,
+      "run": "initial sequential driver"
+    },
+    {
+      "index": 9,
+      "command": "node tests/historical-fleet-forced-displacement-v384.test.js",
+      "passed": true,
+      "seconds": 0.2,
+      "run": "initial sequential driver"
+    },
+    {
+      "index": 10,
+      "command": "node tests/historical-fleet-opening-movement-v383.test.js",
+      "passed": true,
+      "seconds": 0.1,
+      "run": "initial sequential driver"
+    },
+    {
+      "index": 11,
+      "command": "node tests/historical-forced-retreat-v380.test.js",
+      "passed": true,
+      "seconds": 0.35,
+      "run": "initial sequential driver"
+    },
+    {
+      "index": 12,
+      "command": "node tests/historical-overstack-retreat-v381.test.js",
+      "passed": true,
+      "seconds": 0.16,
+      "run": "initial sequential driver"
+    },
+    {
+      "index": 13,
+      "command": "node tests/historical-port-fleet-retreat-v382.test.js",
+      "passed": true,
+      "seconds": 0.26,
+      "run": "initial sequential driver"
+    },
+    {
+      "index": 14,
+      "command": "node tests/historical-safe-retreat-options-v379.test.js",
+      "passed": true,
+      "seconds": 0.21,
+      "run": "initial sequential driver"
+    },
+    {
+      "index": 15,
+      "command": "node tests/leningrad-combat-commitment-v318.test.js",
+      "passed": true,
+      "seconds": 0.11,
+      "run": "initial sequential driver"
+    },
+    {
+      "index": 16,
+      "command": "node tests/leningrad-combat-geography-v318.test.js",
+      "passed": true,
+      "seconds": 0.09,
+      "run": "initial sequential driver"
+    },
+    {
+      "index": 17,
+      "command": "node tests/leningrad-full-inventory-v355.test.js",
+      "passed": true,
+      "seconds": 0.03,
+      "run": "initial sequential driver"
+    },
+    {
+      "index": 18,
+      "command": "node tests/leningrad-phase-movement-pilot-v318.test.js",
+      "passed": true,
+      "seconds": 0.06,
+      "run": "initial sequential driver"
+    },
+    {
+      "index": 19,
+      "command": "node tests/leningrad-reinforcement-ledger-v323.test.js",
+      "passed": true,
+      "seconds": 0.03,
+      "run": "initial sequential driver"
+    },
+    {
+      "index": 20,
+      "command": "node tests/scenario-opening-bridge-v358.test.js",
+      "passed": true,
+      "seconds": 0.14,
+      "run": "initial sequential driver"
+    },
+    {
+      "index": 21,
+      "command": "node tests/shared-render-profiles-v356.test.js",
+      "passed": true,
+      "seconds": 0.14,
+      "run": "initial sequential driver"
+    },
+    {
+      "index": 22,
+      "command": "node tests/smoke-current.js",
+      "passed": true,
+      "seconds": 0.03,
+      "run": "initial sequential driver"
+    },
+    {
+      "index": 23,
+      "command": "python3 tests/leningrad-approved-visual-regression-v352.test.py",
+      "passed": true,
+      "seconds": 18.966,
+      "run": "isolated after driver exceeded whole-call time limit"
+    },
+    {
+      "index": 24,
+      "command": "node tests/historical-campaign-continuation-v387.test.js",
+      "passed": true,
+      "run": "isolated remainder after driver timeout"
+    },
+    {
+      "index": 25,
+      "command": "node tests/historical-buildup-campaign-v388.test.js --write-audit",
+      "passed": true,
+      "run": "isolated remainder after driver timeout"
+    },
+    {
+      "index": 26,
+      "command": "node tests/historical-housekeeping-eight-turn-v389.test.js --write-audit",
+      "passed": true,
+      "run": "isolated remainder after driver timeout"
+    },
+    {
+      "index": 27,
+      "command": "node tests/shared-historical-crt-v316.test.js",
+      "passed": true,
+      "run": "isolated remainder after driver timeout"
+    },
+    {
+      "index": 28,
+      "command": "node tests/universal-scenario-contract-v317.test.js",
+      "passed": true,
+      "run": "isolated remainder after driver timeout"
+    },
+    {
+      "index": 29,
+      "command": "node tests/universal-deployment-placement-v329.test.js",
+      "passed": true,
+      "run": "isolated remainder after driver timeout"
+    }
+  ],
+  "method": "first 22 consecutive tests passed; the overall subprocess call reached execution time limit before completing fresh visual export; visual regression passed separately, followed by final six commands. These are independently completed checks, not one uninterrupted runner result.",
+  "sourceLimitations": [
+    "Initial formation identities and printed-host coordinates remain candidates",
+    "Leningrad 13-city outcomes not explicitly in \u00a75.0 return unresolved-source-rule",
+    "Two continuous action histories are not a certified complete historical campaign",
+    "Oberlabs UX parity remains deferred"
+  ],
+  "status": "pass-with-documented-certification-gates"
+}

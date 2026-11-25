@@ -1,0 +1,17 @@
+{
+  "checkpoint": 206,
+  "version": "v440",
+  "terrain": "swamp",
+  "input": "supplied_assets/flat/terrain-swamp.png",
+  "output": "supplied_assets/flat/terrain-swamp-v440.png",
+  "target": "#616f6fff",
+  "sourceSha256": "998c3769c48c28ae40edbc9a7669e58d5ed9eefc4679e7065711e94bb76af279",
+  "variantSha256": "ee4c3b2f29783268c5bd30cdba0180f617277ce5e7e341bd53dd89b26a0ee5b8",
+  "variantOpaqueRGBMean": [
+    96.6,
+    111.2,
+    111.0
+  ],
+  "alphaUnchanged": true,
+  "method": "second-pass stronger swamp recolor from original source tile; Open and Forest remain on v439 variants"
+}

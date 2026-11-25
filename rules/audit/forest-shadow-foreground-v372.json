@@ -1,0 +1,77 @@
+{
+  "schemaVersion": 1,
+  "checkpoint": 138,
+  "rendererVersion": "v372",
+  "sourceArchiveName": "hex_wargame_v371_CHECKPOINT_137_BROWSER_RENDER_ART_PARITY(1).zip",
+  "status": "IMPLEMENTED \u2014 style change requested by user; new whole-image rendering pending visual signoff",
+  "change": "All forest/woods 10px +X/+Y shadows: compositor order after City symbols and Lake/Coast, River/Major River and Fortification layers; retains 5px Gaussian blur, stroke 10px and opacity 25%; entire board footprint includes Sea; forest interior knockout preserves bitmap texture; deployment/modifiers/labels remain on top.",
+  "sharedRenderer": "core/terrain_tiles.js:svgMap",
+  "previousApprovedLeningradBaseline": "rules/audit/leningrad-visual-baseline-v350.json",
+  "previousBaselineModified": false,
+  "sceneIds": [
+    "battle-for-moscow",
+    "arduous",
+    "leningrad",
+    "kiev",
+    "kiev-odessa"
+  ],
+  "results": [
+    {
+      "id": "battle-for-moscow",
+      "forestHexes": 32,
+      "previousSvgSHA256": "3fdc2c431e77bef1fc905775476b1d309ace515189f79611be8e602d8bc3585f",
+      "previousPngSHA256": "296c6eaec76e781bacd2a171996a8a671b2432571e362beb66a88d65c3679242",
+      "candidateSvgSHA256": "9a5d172d6192e3aa4ae3911a194391e114e36b23b97369eed111e0df17af2980",
+      "candidatePngSHA256": "fc6fb2d24bf2021a0bdf90876d1eaad084a37e41097df35617682f5acc0e7bf1",
+      "changedPixels": 34049,
+      "percentChangedPixels": 1.639
+    },
+    {
+      "id": "arduous",
+      "forestHexes": 30,
+      "previousSvgSHA256": "02f5b595b59bb52165b0916457d7d6893c4352d932bfaa7306d80c5be09b8792",
+      "previousPngSHA256": "8d460dc16c1d94a3d10746563eb744997ce00a8d9f4ddf08310f2851b704c5c3",
+      "candidateSvgSHA256": "e5840a86b4c21314852e2b4659ba4fb6df109f88304ebfdb2485794318580881",
+      "candidatePngSHA256": "5fa56bdf632fe7af88ed00beba025db1661057f63f10f706ee65665e8f616a8a",
+      "changedPixels": 18627,
+      "percentChangedPixels": 3.088
+    },
+    {
+      "id": "leningrad",
+      "forestHexes": 44,
+      "previousSvgSHA256": "4ad4965040952244ee4c7dc136e8726616a3c791d64dfa3b5b74fc46f3f0cd03",
+      "previousPngSHA256": "3b622a8a645b3c87f0622dd82de347c6110a10ce639058057b765ff3bb99be2f",
+      "candidateSvgSHA256": "38834b01a0784dcc5104576c06d26e85c02e769ecddadd83cd6afa750cc7527f",
+      "candidatePngSHA256": "b14b13f7a9243e3395e2ba8f752a1af40ee2d3146a4c62e6b2d770ee571a735e",
+      "changedPixels": 34467,
+      "percentChangedPixels": 3.367,
+      "previousSolidSeaColoredPixelsNowChanged": 6230,
+      "previousSolidRiverColoredPixelsNowChanged": 2293
+    },
+    {
+      "id": "kiev",
+      "forestHexes": 41,
+      "previousSvgSHA256": "f08e21cdc1bd88b3c166b6a64a9f1599dea728a9098eb589a086409a251d967e",
+      "previousPngSHA256": "315cd61f32e131646d429c82206630b82165e183a02791c1fe5871551730ba41",
+      "candidateSvgSHA256": "240738ff700d115e088a9c6f7b713a636f37ded83dc0d951346954184ca6a7fa",
+      "candidatePngSHA256": "2d138d5d05acf35c95825df533e21cc1a061f9a93596d309fc6c30155fa545c7",
+      "changedPixels": 29055,
+      "percentChangedPixels": 2.722
+    },
+    {
+      "id": "kiev-odessa",
+      "forestHexes": 52,
+      "previousSvgSHA256": "d09cdc1340a3d034a0e048e9d54383460336e3365dc92ecedc433dc2f10cc961",
+      "previousPngSHA256": "866615240224c1abf0c46fbc869e5562e086eaabe9b02ec75361c836c251899f",
+      "candidateSvgSHA256": "e13fc04d93f2e2f0f01ba6d21a0130a417c6262124e7f8820afd9505eed70f70",
+      "candidatePngSHA256": "7971fb5c86a72a7312e947bf7973684f1b332a157cfa9148531becd9912c1770",
+      "changedPixels": 35672,
+      "percentChangedPixels": 1.943
+    }
+  ],
+  "notes": [
+    "Map/topology/rules data unchanged.",
+    "Current approved v350 PNG/SVG fingerprints intentionally differ because of this new user-requested style change; preserve the former approval as a historical reference.",
+    "Actual PNG exports from Inkscape of the engine-produced SVGs; no image generation."
+  ]
+}

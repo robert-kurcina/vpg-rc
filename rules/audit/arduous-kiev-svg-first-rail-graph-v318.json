@@ -1,0 +1,2495 @@
+{
+  "schemaVersion": 1,
+  "maps": {
+    "arduous": {
+      "crossings": [
+        {
+          "sourceSvgId": "path346",
+          "hexPair": [
+            "1102",
+            "1203"
+          ],
+          "intersection": [
+            581.144,
+            128.724
+          ],
+          "pathDistance": 65.851
+        },
+        {
+          "sourceSvgId": "path347",
+          "hexPair": [
+            "1303",
+            "1404"
+          ],
+          "intersection": [
+            664.777,
+            180.995
+          ],
+          "pathDistance": 27.414
+        },
+        {
+          "sourceSvgId": "path347",
+          "hexPair": [
+            "1203",
+            "1303"
+          ],
+          "intersection": [
+            626.789,
+            148.38
+          ],
+          "pathDistance": 79.817
+        },
+        {
+          "sourceSvgId": "path349",
+          "hexPair": [
+            "1402",
+            "1403"
+          ],
+          "intersection": [
+            687.358,
+            111.74
+          ],
+          "pathDistance": 19.947
+        },
+        {
+          "sourceSvgId": "path349",
+          "hexPair": [
+            "1403",
+            "1404"
+          ],
+          "intersection": [
+            690.957,
+            161.9
+          ],
+          "pathDistance": 70.615
+        },
+        {
+          "sourceSvgId": "path350",
+          "hexPair": [
+            "1404",
+            "1405"
+          ],
+          "intersection": [
+            689.929,
+            212.06
+          ],
+          "pathDistance": 21.891
+        },
+        {
+          "sourceSvgId": "path351",
+          "hexPair": [
+            "1405",
+            "1505"
+          ],
+          "intersection": [
+            707.556,
+            255.661
+          ],
+          "pathDistance": 28.987
+        },
+        {
+          "sourceSvgId": "path352",
+          "hexPair": [
+            "0907",
+            "1007"
+          ],
+          "intersection": [
+            499.873,
+            351.664
+          ],
+          "pathDistance": 31.395
+        },
+        {
+          "sourceSvgId": "path352",
+          "hexPair": [
+            "1007",
+            "1106"
+          ],
+          "intersection": [
+            539.514,
+            321.846
+          ],
+          "pathDistance": 85.351
+        },
+        {
+          "sourceSvgId": "path352",
+          "hexPair": [
+            "1106",
+            "1206"
+          ],
+          "intersection": [
+            583.436,
+            299.274
+          ],
+          "pathDistance": 136.165
+        },
+        {
+          "sourceSvgId": "path352",
+          "hexPair": [
+            "1206",
+            "1305"
+          ],
+          "intersection": [
+            625.285,
+            273.194
+          ],
+          "pathDistance": 187.581
+        },
+        {
+          "sourceSvgId": "path352",
+          "hexPair": [
+            "1305",
+            "1405"
+          ],
+          "intersection": [
+            667.89,
+            248.394
+          ],
+          "pathDistance": 238.494
+        },
+        {
+          "sourceSvgId": "path353",
+          "hexPair": [
+            "1505",
+            "1605"
+          ],
+          "intersection": [
+            754.539,
+            251.388
+          ],
+          "pathDistance": 31.363
+        },
+        {
+          "sourceSvgId": "path353",
+          "hexPair": [
+            "1605",
+            "1704"
+          ],
+          "intersection": [
+            793.587,
+            220.567
+          ],
+          "pathDistance": 81.636
+        },
+        {
+          "sourceSvgId": "path354",
+          "hexPair": [
+            "1504",
+            "1605"
+          ],
+          "intersection": [
+            752.397,
+            226.518
+          ],
+          "pathDistance": 27.843
+        },
+        {
+          "sourceSvgId": "path354",
+          "hexPair": [
+            "1404",
+            "1504"
+          ],
+          "intersection": [
+            711.026,
+            199.628
+          ],
+          "pathDistance": 81.319
+        },
+        {
+          "sourceSvgId": "path355",
+          "hexPair": [
+            "1402",
+            "1501"
+          ],
+          "intersection": [
+            712.206,
+            76.008
+          ],
+          "pathDistance": 32.258
+        },
+        {
+          "sourceSvgId": "path355",
+          "hexPair": [
+            "1501",
+            "1602"
+          ],
+          "intersection": [
+            751.944,
+            76.804
+          ],
+          "pathDistance": 74.699
+        },
+        {
+          "sourceSvgId": "path355",
+          "hexPair": [
+            "1602",
+            "1701"
+          ],
+          "intersection": [
+            796.309,
+            74.693
+          ],
+          "pathDistance": 119.962
+        },
+        {
+          "sourceSvgId": "path355",
+          "hexPair": [
+            "1701",
+            "1802"
+          ],
+          "intersection": [
+            836.882,
+            76.705
+          ],
+          "pathDistance": 163.793
+        },
+        {
+          "sourceSvgId": "path355",
+          "hexPair": [
+            "1801",
+            "1802"
+          ],
+          "intersection": [
+            915.085,
+            61.58
+          ],
+          "pathDistance": 246.236
+        },
+        {
+          "sourceSvgId": "path356",
+          "hexPair": [
+            "1704",
+            "1805"
+          ],
+          "intersection": [
+            838.689,
+            224.128
+          ],
+          "pathDistance": 28.094
+        },
+        {
+          "sourceSvgId": "path356",
+          "hexPair": [
+            "1804",
+            "1805"
+          ],
+          "intersection": [
+            899.09,
+            212.06
+          ],
+          "pathDistance": 94.577
+        },
+        {
+          "sourceSvgId": "path357",
+          "hexPair": [
+            "1704",
+            "1705"
+          ],
+          "intersection": [
+            815.905,
+            237.14
+          ],
+          "pathDistance": 18.001
+        },
+        {
+          "sourceSvgId": "path357",
+          "hexPair": [
+            "1705",
+            "1806"
+          ],
+          "intersection": [
+            837.243,
+            276.735
+          ],
+          "pathDistance": 67.181
+        },
+        {
+          "sourceSvgId": "path357",
+          "hexPair": [
+            "1806",
+            "1807"
+          ],
+          "intersection": [
+            856.583,
+            312.38
+          ],
+          "pathDistance": 117.93
+        },
+        {
+          "sourceSvgId": "path358",
+          "hexPair": [
+            "1807",
+            "1808"
+          ],
+          "intersection": [
+            891.375,
+            362.54
+          ],
+          "pathDistance": 23.559
+        },
+        {
+          "sourceSvgId": "path359",
+          "hexPair": [
+            "1505",
+            "1506"
+          ],
+          "intersection": [
+            732.607,
+            287.3
+          ],
+          "pathDistance": 32.315
+        },
+        {
+          "sourceSvgId": "path359",
+          "hexPair": [
+            "1506",
+            "1507"
+          ],
+          "intersection": [
+            731.578,
+            337.46
+          ],
+          "pathDistance": 82.588
+        },
+        {
+          "sourceSvgId": "path360",
+          "hexPair": [
+            "1409",
+            "1410"
+          ],
+          "intersection": [
+            689.73,
+            462.86
+          ],
+          "pathDistance": 24.374
+        },
+        {
+          "sourceSvgId": "path360",
+          "hexPair": [
+            "1408",
+            "1409"
+          ],
+          "intersection": [
+            690.235,
+            412.7
+          ],
+          "pathDistance": 74.895
+        },
+        {
+          "sourceSvgId": "path360",
+          "hexPair": [
+            "1408",
+            "1507"
+          ],
+          "intersection": [
+            710.569,
+            374.198
+          ],
+          "pathDistance": 123.11
+        },
+        {
+          "sourceSvgId": "path361",
+          "hexPair": [
+            "1410",
+            "1510"
+          ],
+          "intersection": [
+            711.465,
+            499.845
+          ],
+          "pathDistance": 29.618
+        },
+        {
+          "sourceSvgId": "path362",
+          "hexPair": [
+            "1709",
+            "1810"
+          ],
+          "intersection": [
+            837.983,
+            476.123
+          ],
+          "pathDistance": 66.033
+        },
+        {
+          "sourceSvgId": "path362",
+          "hexPair": [
+            "1610",
+            "1709"
+          ],
+          "intersection": [
+            792.993,
+            470.362
+          ],
+          "pathDistance": 113.556
+        },
+        {
+          "sourceSvgId": "path362",
+          "hexPair": [
+            "1510",
+            "1610"
+          ],
+          "intersection": [
+            754.608,
+            502.304
+          ],
+          "pathDistance": 164.459
+        },
+        {
+          "sourceSvgId": "path363",
+          "hexPair": [
+            "0907",
+            "1008"
+          ],
+          "intersection": [
+            501.283,
+            371.031
+          ],
+          "pathDistance": 32.388
+        },
+        {
+          "sourceSvgId": "path363",
+          "hexPair": [
+            "1008",
+            "1108"
+          ],
+          "intersection": [
+            544.576,
+            394.667
+          ],
+          "pathDistance": 81.795
+        },
+        {
+          "sourceSvgId": "path363",
+          "hexPair": [
+            "1108",
+            "1209"
+          ],
+          "intersection": [
+            585.04,
+            423.091
+          ],
+          "pathDistance": 131.672
+        },
+        {
+          "sourceSvgId": "path363",
+          "hexPair": [
+            "1209",
+            "1309"
+          ],
+          "intersection": [
+            622.714,
+            456.235
+          ],
+          "pathDistance": 182.3
+        },
+        {
+          "sourceSvgId": "path363",
+          "hexPair": [
+            "1309",
+            "1410"
+          ],
+          "intersection": [
+            665.375,
+            480.943
+          ],
+          "pathDistance": 233.231
+        },
+        {
+          "sourceSvgId": "path364",
+          "hexPair": [
+            "0606",
+            "0706"
+          ],
+          "intersection": [
+            372.052,
+            299.025
+          ],
+          "pathDistance": 30.761
+        },
+        {
+          "sourceSvgId": "path364",
+          "hexPair": [
+            "0706",
+            "0807"
+          ],
+          "intersection": [
+            411.475,
+            329.21
+          ],
+          "pathDistance": 81.607
+        },
+        {
+          "sourceSvgId": "path364",
+          "hexPair": [
+            "0807",
+            "0907"
+          ],
+          "intersection": [
+            455.247,
+            352.036
+          ],
+          "pathDistance": 131.319
+        },
+        {
+          "sourceSvgId": "path365",
+          "hexPair": [
+            "0609",
+            "0708"
+          ],
+          "intersection": [
+            374.573,
+            430.322
+          ],
+          "pathDistance": 28.064
+        },
+        {
+          "sourceSvgId": "path365",
+          "hexPair": [
+            "0708",
+            "0808"
+          ],
+          "intersection": [
+            413.205,
+            398.797
+          ],
+          "pathDistance": 78.254
+        },
+        {
+          "sourceSvgId": "path365",
+          "hexPair": [
+            "0808",
+            "0907"
+          ],
+          "intersection": [
+            456.612,
+            375.354
+          ],
+          "pathDistance": 128.523
+        },
+        {
+          "sourceSvgId": "path366",
+          "hexPair": [
+            "0610",
+            "0611"
+          ],
+          "intersection": [
+            350.051,
+            513.02
+          ],
+          "pathDistance": 8.053
+        },
+        {
+          "sourceSvgId": "path366",
+          "hexPair": [
+            "0609",
+            "0610"
+          ],
+          "intersection": [
+            347.198,
+            462.86
+          ],
+          "pathDistance": 58.772
+        },
+        {
+          "sourceSvgId": "path367",
+          "hexPair": [
+            "0506",
+            "0606"
+          ],
+          "intersection": [
+            327.562,
+            297.187
+          ],
+          "pathDistance": 31.548
+        },
+        {
+          "sourceSvgId": "path367",
+          "hexPair": [
+            "0407",
+            "0506"
+          ],
+          "intersection": [
+            283.632,
+            319.745
+          ],
+          "pathDistance": 82.647
+        },
+        {
+          "sourceSvgId": "path367",
+          "hexPair": [
+            "0407",
+            "0408"
+          ],
+          "intersection": [
+            268.853,
+            362.54
+          ],
+          "pathDistance": 130.595
+        },
+        {
+          "sourceSvgId": "path367",
+          "hexPair": [
+            "0308",
+            "0408"
+          ],
+          "intersection": [
+            243.743,
+            399.302
+          ],
+          "pathDistance": 177.726
+        },
+        {
+          "sourceSvgId": "path368",
+          "hexPair": [
+            "0508",
+            "0609"
+          ],
+          "intersection": [
+            327.244,
+            428.431
+          ],
+          "pathDistance": 23.38
+        },
+        {
+          "sourceSvgId": "path368",
+          "hexPair": [
+            "0409",
+            "0508"
+          ],
+          "intersection": [
+            286.426,
+            424.793
+          ],
+          "pathDistance": 65.591
+        },
+        {
+          "sourceSvgId": "path368",
+          "hexPair": [
+            "0308",
+            "0409"
+          ],
+          "intersection": [
+            244.837,
+            424.247
+          ],
+          "pathDistance": 107.503
+        },
+        {
+          "sourceSvgId": "path369",
+          "hexPair": [
+            "0308",
+            "0309"
+          ],
+          "intersection": [
+            220.813,
+            437.78
+          ],
+          "pathDistance": 26.187
+        },
+        {
+          "sourceSvgId": "path369",
+          "hexPair": [
+            "0210",
+            "0309"
+          ],
+          "intersection": [
+            202.966,
+            477.357
+          ],
+          "pathDistance": 73.533
+        },
+        {
+          "sourceSvgId": "path369",
+          "hexPair": [
+            "0210",
+            "0211"
+          ],
+          "intersection": [
+            184.113,
+            513.02
+          ],
+          "pathDistance": 118.288
+        },
+        {
+          "sourceSvgId": "path370",
+          "hexPair": [
+            "0110",
+            "0211"
+          ],
+          "intersection": [
+            157.925,
+            528.005
+          ],
+          "pathDistance": 70.666
+        },
+        {
+          "sourceSvgId": "path372",
+          "hexPair": [
+            "0109",
+            "0209"
+          ],
+          "intersection": [
+            159.593,
+            450.697
+          ],
+          "pathDistance": 65.653
+        },
+        {
+          "sourceSvgId": "path372",
+          "hexPair": [
+            "0209",
+            "0308"
+          ],
+          "intersection": [
+            200.123,
+            422.385
+          ],
+          "pathDistance": 120.28
+        },
+        {
+          "sourceSvgId": "path373",
+          "hexPair": [
+            "0106",
+            "0207"
+          ],
+          "intersection": [
+            159.362,
+            324.933
+          ],
+          "pathDistance": 71.183
+        },
+        {
+          "sourceSvgId": "path373",
+          "hexPair": [
+            "0207",
+            "0208"
+          ],
+          "intersection": [
+            182.728,
+            362.54
+          ],
+          "pathDistance": 118.056
+        },
+        {
+          "sourceSvgId": "path373",
+          "hexPair": [
+            "0208",
+            "0308"
+          ],
+          "intersection": [
+            204.608,
+            395.426
+          ],
+          "pathDistance": 160.151
+        },
+        {
+          "sourceSvgId": "path374",
+          "hexPair": [
+            "0205",
+            "0305"
+          ],
+          "intersection": [
+            204.061,
+            245.871
+          ],
+          "pathDistance": 76.641
+        },
+        {
+          "sourceSvgId": "path374",
+          "hexPair": [
+            "0305",
+            "0405"
+          ],
+          "intersection": [
+            243.066,
+            247.677
+          ],
+          "pathDistance": 122.673
+        },
+        {
+          "sourceSvgId": "path375",
+          "hexPair": [
+            "0505",
+            "0606"
+          ],
+          "intersection": [
+            329.034,
+            274.922
+          ],
+          "pathDistance": 25.349
+        },
+        {
+          "sourceSvgId": "path375",
+          "hexPair": [
+            "0405",
+            "0505"
+          ],
+          "intersection": [
+            287.501,
+            248.308
+          ],
+          "pathDistance": 76.376
+        },
+        {
+          "sourceSvgId": "path376",
+          "hexPair": [
+            "0803",
+            "0804"
+          ],
+          "intersection": [
+            433.864,
+            161.9
+          ],
+          "pathDistance": 59.837
+        },
+        {
+          "sourceSvgId": "path376",
+          "hexPair": [
+            "0804",
+            "0805"
+          ],
+          "intersection": [
+            430.808,
+            212.06
+          ],
+          "pathDistance": 110.642
+        },
+        {
+          "sourceSvgId": "path376",
+          "hexPair": [
+            "0705",
+            "0805"
+          ],
+          "intersection": [
+            411.325,
+            245.137
+          ],
+          "pathDistance": 149.678
+        },
+        {
+          "sourceSvgId": "path376",
+          "hexPair": [
+            "0606",
+            "0705"
+          ],
+          "intersection": [
+            370.238,
+            272.506
+          ],
+          "pathDistance": 200.342
+        },
+        {
+          "sourceSvgId": "path377",
+          "hexPair": [
+            "0211",
+            "0310"
+          ],
+          "intersection": [
+            199.68,
+            521.955
+          ],
+          "pathDistance": 37.902
+        },
+        {
+          "sourceSvgId": "path377",
+          "hexPair": [
+            "0310",
+            "0410"
+          ],
+          "intersection": [
+            242.274,
+            497.136
+          ],
+          "pathDistance": 89.61
+        },
+        {
+          "sourceSvgId": "path377",
+          "hexPair": [
+            "0410",
+            "0509"
+          ],
+          "intersection": [
+            285.416,
+            473.245
+          ],
+          "pathDistance": 140.69
+        },
+        {
+          "sourceSvgId": "path377",
+          "hexPair": [
+            "0509",
+            "0609"
+          ],
+          "intersection": [
+            329.392,
+            450.764
+          ],
+          "pathDistance": 191.512
+        },
+        {
+          "sourceSvgId": "path378",
+          "hexPair": [
+            "0410",
+            "0510"
+          ],
+          "intersection": [
+            283.727,
+            505.493
+          ],
+          "pathDistance": 34.255
+        },
+        {
+          "sourceSvgId": "path378",
+          "hexPair": [
+            "0510",
+            "0611"
+          ],
+          "intersection": [
+            329.213,
+            525.419
+          ],
+          "pathDistance": 85.707
+        },
+        {
+          "sourceSvgId": "path379",
+          "hexPair": [
+            "1411",
+            "1510"
+          ],
+          "intersection": [
+            709.97,
+            523.664
+          ],
+          "pathDistance": 26.652
+        },
+        {
+          "sourceSvgId": "path379",
+          "hexPair": [
+            "1310",
+            "1411"
+          ],
+          "intersection": [
+            668.421,
+            525.947
+          ],
+          "pathDistance": 71.318
+        },
+        {
+          "sourceSvgId": "path379",
+          "hexPair": [
+            "1211",
+            "1310"
+          ],
+          "intersection": [
+            622.883,
+            519.93
+          ],
+          "pathDistance": 120.894
+        },
+        {
+          "sourceSvgId": "path379",
+          "hexPair": [
+            "1110",
+            "1211"
+          ],
+          "intersection": [
+            586.493,
+            520.952
+          ],
+          "pathDistance": 160.102
+        },
+        {
+          "sourceSvgId": "path379",
+          "hexPair": [
+            "1010",
+            "1110"
+          ],
+          "intersection": [
+            538.859,
+            504.662
+          ],
+          "pathDistance": 212.501
+        },
+        {
+          "sourceSvgId": "path379",
+          "hexPair": [
+            "0910",
+            "1010"
+          ],
+          "intersection": [
+            502.72,
+            506.96
+          ],
+          "pathDistance": 249.864
+        },
+        {
+          "sourceSvgId": "path379",
+          "hexPair": [
+            "0811",
+            "0910"
+          ],
+          "intersection": [
+            456.4,
+            525.476
+          ],
+          "pathDistance": 300.987
+        },
+        {
+          "sourceSvgId": "path379",
+          "hexPair": [
+            "0710",
+            "0811"
+          ],
+          "intersection": [
+            413.673,
+            526.13
+          ],
+          "pathDistance": 346.652
+        },
+        {
+          "sourceSvgId": "path379",
+          "hexPair": [
+            "0611",
+            "0710"
+          ],
+          "intersection": [
+            369.842,
+            522.637
+          ],
+          "pathDistance": 391.314
+        }
+      ],
+      "adjacencyPairs": [
+        [
+          "0106",
+          "0207"
+        ],
+        [
+          "0109",
+          "0209"
+        ],
+        [
+          "0110",
+          "0211"
+        ],
+        [
+          "0205",
+          "0305"
+        ],
+        [
+          "0207",
+          "0208"
+        ],
+        [
+          "0208",
+          "0308"
+        ],
+        [
+          "0209",
+          "0308"
+        ],
+        [
+          "0210",
+          "0211"
+        ],
+        [
+          "0210",
+          "0309"
+        ],
+        [
+          "0211",
+          "0310"
+        ],
+        [
+          "0305",
+          "0405"
+        ],
+        [
+          "0308",
+          "0309"
+        ],
+        [
+          "0308",
+          "0408"
+        ],
+        [
+          "0308",
+          "0409"
+        ],
+        [
+          "0310",
+          "0410"
+        ],
+        [
+          "0405",
+          "0505"
+        ],
+        [
+          "0407",
+          "0408"
+        ],
+        [
+          "0407",
+          "0506"
+        ],
+        [
+          "0409",
+          "0508"
+        ],
+        [
+          "0410",
+          "0509"
+        ],
+        [
+          "0410",
+          "0510"
+        ],
+        [
+          "0505",
+          "0606"
+        ],
+        [
+          "0506",
+          "0606"
+        ],
+        [
+          "0508",
+          "0609"
+        ],
+        [
+          "0509",
+          "0609"
+        ],
+        [
+          "0510",
+          "0611"
+        ],
+        [
+          "0606",
+          "0705"
+        ],
+        [
+          "0606",
+          "0706"
+        ],
+        [
+          "0609",
+          "0610"
+        ],
+        [
+          "0609",
+          "0708"
+        ],
+        [
+          "0610",
+          "0611"
+        ],
+        [
+          "0611",
+          "0710"
+        ],
+        [
+          "0705",
+          "0805"
+        ],
+        [
+          "0706",
+          "0807"
+        ],
+        [
+          "0708",
+          "0808"
+        ],
+        [
+          "0710",
+          "0811"
+        ],
+        [
+          "0803",
+          "0804"
+        ],
+        [
+          "0804",
+          "0805"
+        ],
+        [
+          "0807",
+          "0907"
+        ],
+        [
+          "0808",
+          "0907"
+        ],
+        [
+          "0811",
+          "0910"
+        ],
+        [
+          "0907",
+          "1007"
+        ],
+        [
+          "0907",
+          "1008"
+        ],
+        [
+          "0910",
+          "1010"
+        ],
+        [
+          "1007",
+          "1106"
+        ],
+        [
+          "1008",
+          "1108"
+        ],
+        [
+          "1010",
+          "1110"
+        ],
+        [
+          "1102",
+          "1203"
+        ],
+        [
+          "1106",
+          "1206"
+        ],
+        [
+          "1108",
+          "1209"
+        ],
+        [
+          "1110",
+          "1211"
+        ],
+        [
+          "1203",
+          "1303"
+        ],
+        [
+          "1206",
+          "1305"
+        ],
+        [
+          "1209",
+          "1309"
+        ],
+        [
+          "1211",
+          "1310"
+        ],
+        [
+          "1303",
+          "1404"
+        ],
+        [
+          "1305",
+          "1405"
+        ],
+        [
+          "1309",
+          "1410"
+        ],
+        [
+          "1310",
+          "1411"
+        ],
+        [
+          "1402",
+          "1403"
+        ],
+        [
+          "1402",
+          "1501"
+        ],
+        [
+          "1403",
+          "1404"
+        ],
+        [
+          "1404",
+          "1405"
+        ],
+        [
+          "1404",
+          "1504"
+        ],
+        [
+          "1405",
+          "1505"
+        ],
+        [
+          "1408",
+          "1409"
+        ],
+        [
+          "1408",
+          "1507"
+        ],
+        [
+          "1409",
+          "1410"
+        ],
+        [
+          "1410",
+          "1510"
+        ],
+        [
+          "1411",
+          "1510"
+        ],
+        [
+          "1501",
+          "1602"
+        ],
+        [
+          "1504",
+          "1605"
+        ],
+        [
+          "1505",
+          "1506"
+        ],
+        [
+          "1505",
+          "1605"
+        ],
+        [
+          "1506",
+          "1507"
+        ],
+        [
+          "1510",
+          "1610"
+        ],
+        [
+          "1602",
+          "1701"
+        ],
+        [
+          "1605",
+          "1704"
+        ],
+        [
+          "1610",
+          "1709"
+        ],
+        [
+          "1701",
+          "1802"
+        ],
+        [
+          "1704",
+          "1705"
+        ],
+        [
+          "1704",
+          "1805"
+        ],
+        [
+          "1705",
+          "1806"
+        ],
+        [
+          "1709",
+          "1810"
+        ],
+        [
+          "1801",
+          "1802"
+        ],
+        [
+          "1804",
+          "1805"
+        ],
+        [
+          "1806",
+          "1807"
+        ],
+        [
+          "1807",
+          "1808"
+        ]
+      ],
+      "ambiguous": [],
+      "sideCount": 413,
+      "map": "arduous",
+      "sourceMapSha256": "0cf849eaf683cd86443d244f20e5d03f8dc18ba354f88861d039307da162742d",
+      "svgPathCount": 34,
+      "cellCount": 155,
+      "geometricNeighborPairs": 413,
+      "candidateCount": 85,
+      "derivedCount": 88,
+      "candidateNotDerived": [],
+      "derivedNotCandidate": [
+        [
+          "1801",
+          "1802"
+        ],
+        [
+          "1804",
+          "1805"
+        ],
+        [
+          "1807",
+          "1808"
+        ]
+      ],
+      "status": "diagnostic-only-not-gameplay-certified",
+      "limitations": [
+        "SVG curves are approximated by the existing 20-step curve sampler; crossings close to hex corners require review.",
+        "Geometric railway crossings do not establish permitted rail movement or terrain classification.",
+        "Hex centers and SVG registration are inherited from the approved map configuration."
+      ]
+    },
+    "kiev": {
+      "crossings": [
+        {
+          "hexPair": [
+            "0102",
+            "0201"
+          ],
+          "sourceSvgId": "path864"
+        },
+        {
+          "hexPair": [
+            "0102",
+            "0103"
+          ],
+          "sourceSvgId": "path863"
+        },
+        {
+          "hexPair": [
+            "0103",
+            "0104"
+          ],
+          "sourceSvgId": "path865"
+        },
+        {
+          "hexPair": [
+            "0104",
+            "0204"
+          ],
+          "sourceSvgId": "path865"
+        },
+        {
+          "hexPair": [
+            "0201",
+            "0302"
+          ],
+          "sourceSvgId": "path864"
+        },
+        {
+          "hexPair": [
+            "0204",
+            "0305"
+          ],
+          "sourceSvgId": "path865"
+        },
+        {
+          "hexPair": [
+            "0302",
+            "0401"
+          ],
+          "sourceSvgId": "path864"
+        },
+        {
+          "hexPair": [
+            "0305",
+            "0404"
+          ],
+          "sourceSvgId": "path865"
+        },
+        {
+          "hexPair": [
+            "0401",
+            "0502"
+          ],
+          "sourceSvgId": "path864"
+        },
+        {
+          "hexPair": [
+            "0404",
+            "0505"
+          ],
+          "sourceSvgId": "path865"
+        },
+        {
+          "hexPair": [
+            "0404",
+            "0405"
+          ],
+          "sourceSvgId": "path866"
+        },
+        {
+          "hexPair": [
+            "0405",
+            "0506"
+          ],
+          "sourceSvgId": "path867"
+        },
+        {
+          "hexPair": [
+            "0405",
+            "0406"
+          ],
+          "sourceSvgId": "path866"
+        },
+        {
+          "hexPair": [
+            "0501",
+            "0502"
+          ],
+          "sourceSvgId": "path864"
+        },
+        {
+          "hexPair": [
+            "0502",
+            "0602"
+          ],
+          "sourceSvgId": "path865"
+        },
+        {
+          "hexPair": [
+            "0505",
+            "0604"
+          ],
+          "sourceSvgId": "path865"
+        },
+        {
+          "hexPair": [
+            "0505",
+            "0605"
+          ],
+          "sourceSvgId": "path868"
+        },
+        {
+          "hexPair": [
+            "0506",
+            "0507"
+          ],
+          "sourceSvgId": "path867"
+        },
+        {
+          "hexPair": [
+            "0507",
+            "0607"
+          ],
+          "sourceSvgId": "path882"
+        },
+        {
+          "hexPair": [
+            "0507",
+            "0508"
+          ],
+          "sourceSvgId": "path867"
+        },
+        {
+          "hexPair": [
+            "0602",
+            "0703"
+          ],
+          "sourceSvgId": "path865"
+        },
+        {
+          "hexPair": [
+            "0604",
+            "0704"
+          ],
+          "sourceSvgId": "path865"
+        },
+        {
+          "hexPair": [
+            "0605",
+            "0706"
+          ],
+          "sourceSvgId": "path868"
+        },
+        {
+          "hexPair": [
+            "0607",
+            "0708"
+          ],
+          "sourceSvgId": "path882"
+        },
+        {
+          "hexPair": [
+            "0703",
+            "0803"
+          ],
+          "sourceSvgId": "path865"
+        },
+        {
+          "hexPair": [
+            "0704",
+            "0803"
+          ],
+          "sourceSvgId": "path865"
+        },
+        {
+          "hexPair": [
+            "0706",
+            "0806"
+          ],
+          "sourceSvgId": "path868"
+        },
+        {
+          "hexPair": [
+            "0708",
+            "0709"
+          ],
+          "sourceSvgId": "path882"
+        },
+        {
+          "hexPair": [
+            "0709",
+            "0809"
+          ],
+          "sourceSvgId": "path883"
+        },
+        {
+          "hexPair": [
+            "0801",
+            "0902"
+          ],
+          "sourceSvgId": "path869"
+        },
+        {
+          "hexPair": [
+            "0802",
+            "0902"
+          ],
+          "sourceSvgId": "path869"
+        },
+        {
+          "hexPair": [
+            "0802",
+            "0803"
+          ],
+          "sourceSvgId": "path869"
+        },
+        {
+          "hexPair": [
+            "0803",
+            "0804"
+          ],
+          "sourceSvgId": "path868"
+        },
+        {
+          "hexPair": [
+            "0804",
+            "0905"
+          ],
+          "sourceSvgId": "path868"
+        },
+        {
+          "hexPair": [
+            "0806",
+            "0907"
+          ],
+          "sourceSvgId": "path868"
+        },
+        {
+          "hexPair": [
+            "0809",
+            "0810"
+          ],
+          "sourceSvgId": "path883"
+        },
+        {
+          "hexPair": [
+            "0810",
+            "0911"
+          ],
+          "sourceSvgId": "path884"
+        },
+        {
+          "hexPair": [
+            "0902",
+            "1002"
+          ],
+          "sourceSvgId": "path870"
+        },
+        {
+          "hexPair": [
+            "0905",
+            "1005"
+          ],
+          "sourceSvgId": "path868"
+        },
+        {
+          "hexPair": [
+            "0907",
+            "1007"
+          ],
+          "sourceSvgId": "path868"
+        },
+        {
+          "hexPair": [
+            "0911",
+            "1010"
+          ],
+          "sourceSvgId": "path884"
+        },
+        {
+          "hexPair": [
+            "1002",
+            "1103"
+          ],
+          "sourceSvgId": "path870"
+        },
+        {
+          "hexPair": [
+            "1005",
+            "1106"
+          ],
+          "sourceSvgId": "path868"
+        },
+        {
+          "hexPair": [
+            "1007",
+            "1107"
+          ],
+          "sourceSvgId": "path868"
+        },
+        {
+          "hexPair": [
+            "1010",
+            "1111"
+          ],
+          "sourceSvgId": "path884"
+        },
+        {
+          "hexPair": [
+            "1103",
+            "1202"
+          ],
+          "sourceSvgId": "path870"
+        },
+        {
+          "hexPair": [
+            "1103",
+            "1203"
+          ],
+          "sourceSvgId": "path873"
+        },
+        {
+          "hexPair": [
+            "1103",
+            "1104"
+          ],
+          "sourceSvgId": "path874"
+        },
+        {
+          "hexPair": [
+            "1104",
+            "1105"
+          ],
+          "sourceSvgId": "path874"
+        },
+        {
+          "hexPair": [
+            "1105",
+            "1204"
+          ],
+          "sourceSvgId": "path876"
+        },
+        {
+          "hexPair": [
+            "1105",
+            "1106"
+          ],
+          "sourceSvgId": "path874"
+        },
+        {
+          "hexPair": [
+            "1106",
+            "1206"
+          ],
+          "sourceSvgId": "path868"
+        },
+        {
+          "hexPair": [
+            "1107",
+            "1206"
+          ],
+          "sourceSvgId": "path868"
+        },
+        {
+          "hexPair": [
+            "1107",
+            "1108"
+          ],
+          "sourceSvgId": "path881"
+        },
+        {
+          "hexPair": [
+            "1108",
+            "1208"
+          ],
+          "sourceSvgId": "path881"
+        },
+        {
+          "hexPair": [
+            "1201",
+            "1202"
+          ],
+          "sourceSvgId": "path870"
+        },
+        {
+          "hexPair": [
+            "1203",
+            "1304"
+          ],
+          "sourceSvgId": "path873"
+        },
+        {
+          "hexPair": [
+            "1204",
+            "1305"
+          ],
+          "sourceSvgId": "path876"
+        },
+        {
+          "hexPair": [
+            "1205",
+            "1305"
+          ],
+          "sourceSvgId": "path886"
+        },
+        {
+          "hexPair": [
+            "1205",
+            "1206"
+          ],
+          "sourceSvgId": "path886"
+        },
+        {
+          "hexPair": [
+            "1208",
+            "1309"
+          ],
+          "sourceSvgId": "path881"
+        },
+        {
+          "hexPair": [
+            "1304",
+            "1404"
+          ],
+          "sourceSvgId": "path873"
+        },
+        {
+          "hexPair": [
+            "1305",
+            "1404"
+          ],
+          "sourceSvgId": "path875"
+        },
+        {
+          "hexPair": [
+            "1305",
+            "1405"
+          ],
+          "sourceSvgId": "path876"
+        },
+        {
+          "hexPair": [
+            "1309",
+            "1310"
+          ],
+          "sourceSvgId": "path881"
+        },
+        {
+          "hexPair": [
+            "1310",
+            "1410"
+          ],
+          "sourceSvgId": "path881"
+        },
+        {
+          "hexPair": [
+            "1404",
+            "1504"
+          ],
+          "sourceSvgId": "path873"
+        },
+        {
+          "hexPair": [
+            "1405",
+            "1506"
+          ],
+          "sourceSvgId": "path876"
+        },
+        {
+          "hexPair": [
+            "1504",
+            "1603"
+          ],
+          "sourceSvgId": "path873"
+        },
+        {
+          "hexPair": [
+            "1504",
+            "1604"
+          ],
+          "sourceSvgId": "path876"
+        },
+        {
+          "hexPair": [
+            "1506",
+            "1606"
+          ],
+          "sourceSvgId": "path876"
+        },
+        {
+          "hexPair": [
+            "1510",
+            "1609"
+          ],
+          "sourceSvgId": "path880"
+        },
+        {
+          "hexPair": [
+            "1510",
+            "1511"
+          ],
+          "sourceSvgId": "path880"
+        },
+        {
+          "hexPair": [
+            "1601",
+            "1702"
+          ],
+          "sourceSvgId": "path871"
+        },
+        {
+          "hexPair": [
+            "1603",
+            "1703"
+          ],
+          "sourceSvgId": "path873"
+        },
+        {
+          "hexPair": [
+            "1604",
+            "1705"
+          ],
+          "sourceSvgId": "path876"
+        },
+        {
+          "hexPair": [
+            "1606",
+            "1707"
+          ],
+          "sourceSvgId": "path876"
+        },
+        {
+          "hexPair": [
+            "1607",
+            "1707"
+          ],
+          "sourceSvgId": "path876"
+        },
+        {
+          "hexPair": [
+            "1607",
+            "1608"
+          ],
+          "sourceSvgId": "path876"
+        },
+        {
+          "hexPair": [
+            "1608",
+            "1708"
+          ],
+          "sourceSvgId": "path876"
+        },
+        {
+          "hexPair": [
+            "1608",
+            "1609"
+          ],
+          "sourceSvgId": "path880"
+        },
+        {
+          "hexPair": [
+            "1702",
+            "1802"
+          ],
+          "sourceSvgId": "path871"
+        },
+        {
+          "hexPair": [
+            "1703",
+            "1802"
+          ],
+          "sourceSvgId": "path872"
+        },
+        {
+          "hexPair": [
+            "1703",
+            "1704"
+          ],
+          "sourceSvgId": "path872"
+        },
+        {
+          "hexPair": [
+            "1704",
+            "1705"
+          ],
+          "sourceSvgId": "path872"
+        },
+        {
+          "hexPair": [
+            "1705",
+            "1805"
+          ],
+          "sourceSvgId": "path872"
+        },
+        {
+          "hexPair": [
+            "1705",
+            "1706"
+          ],
+          "sourceSvgId": "path876"
+        },
+        {
+          "hexPair": [
+            "1706",
+            "1707"
+          ],
+          "sourceSvgId": "path876"
+        },
+        {
+          "hexPair": [
+            "1707",
+            "1807"
+          ],
+          "sourceSvgId": "path877"
+        },
+        {
+          "hexPair": [
+            "1707",
+            "1708"
+          ],
+          "sourceSvgId": "path876"
+        },
+        {
+          "hexPair": [
+            "1807",
+            "1808"
+          ],
+          "sourceSvgId": "path879"
+        },
+        {
+          "hexPair": [
+            "1808",
+            "1809"
+          ],
+          "sourceSvgId": "path879"
+        },
+        {
+          "hexPair": [
+            "1809",
+            "1810"
+          ],
+          "sourceSvgId": "path879"
+        }
+      ],
+      "adjacencyPairs": [
+        [
+          "0102",
+          "0103"
+        ],
+        [
+          "0102",
+          "0201"
+        ],
+        [
+          "0103",
+          "0104"
+        ],
+        [
+          "0104",
+          "0204"
+        ],
+        [
+          "0201",
+          "0302"
+        ],
+        [
+          "0204",
+          "0305"
+        ],
+        [
+          "0302",
+          "0401"
+        ],
+        [
+          "0305",
+          "0404"
+        ],
+        [
+          "0401",
+          "0502"
+        ],
+        [
+          "0404",
+          "0405"
+        ],
+        [
+          "0404",
+          "0505"
+        ],
+        [
+          "0405",
+          "0406"
+        ],
+        [
+          "0405",
+          "0506"
+        ],
+        [
+          "0501",
+          "0502"
+        ],
+        [
+          "0502",
+          "0602"
+        ],
+        [
+          "0505",
+          "0604"
+        ],
+        [
+          "0505",
+          "0605"
+        ],
+        [
+          "0506",
+          "0507"
+        ],
+        [
+          "0507",
+          "0508"
+        ],
+        [
+          "0507",
+          "0607"
+        ],
+        [
+          "0602",
+          "0703"
+        ],
+        [
+          "0604",
+          "0704"
+        ],
+        [
+          "0605",
+          "0706"
+        ],
+        [
+          "0607",
+          "0708"
+        ],
+        [
+          "0703",
+          "0803"
+        ],
+        [
+          "0704",
+          "0803"
+        ],
+        [
+          "0706",
+          "0806"
+        ],
+        [
+          "0708",
+          "0709"
+        ],
+        [
+          "0709",
+          "0809"
+        ],
+        [
+          "0801",
+          "0902"
+        ],
+        [
+          "0802",
+          "0803"
+        ],
+        [
+          "0802",
+          "0902"
+        ],
+        [
+          "0803",
+          "0804"
+        ],
+        [
+          "0804",
+          "0905"
+        ],
+        [
+          "0806",
+          "0907"
+        ],
+        [
+          "0809",
+          "0810"
+        ],
+        [
+          "0810",
+          "0911"
+        ],
+        [
+          "0902",
+          "1002"
+        ],
+        [
+          "0905",
+          "1005"
+        ],
+        [
+          "0907",
+          "1007"
+        ],
+        [
+          "0911",
+          "1010"
+        ],
+        [
+          "1002",
+          "1103"
+        ],
+        [
+          "1005",
+          "1106"
+        ],
+        [
+          "1007",
+          "1107"
+        ],
+        [
+          "1010",
+          "1111"
+        ],
+        [
+          "1103",
+          "1104"
+        ],
+        [
+          "1103",
+          "1202"
+        ],
+        [
+          "1103",
+          "1203"
+        ],
+        [
+          "1104",
+          "1105"
+        ],
+        [
+          "1105",
+          "1106"
+        ],
+        [
+          "1105",
+          "1204"
+        ],
+        [
+          "1106",
+          "1206"
+        ],
+        [
+          "1107",
+          "1108"
+        ],
+        [
+          "1107",
+          "1206"
+        ],
+        [
+          "1108",
+          "1208"
+        ],
+        [
+          "1201",
+          "1202"
+        ],
+        [
+          "1203",
+          "1304"
+        ],
+        [
+          "1204",
+          "1305"
+        ],
+        [
+          "1205",
+          "1206"
+        ],
+        [
+          "1205",
+          "1305"
+        ],
+        [
+          "1208",
+          "1309"
+        ],
+        [
+          "1304",
+          "1404"
+        ],
+        [
+          "1305",
+          "1404"
+        ],
+        [
+          "1305",
+          "1405"
+        ],
+        [
+          "1309",
+          "1310"
+        ],
+        [
+          "1310",
+          "1410"
+        ],
+        [
+          "1404",
+          "1504"
+        ],
+        [
+          "1405",
+          "1506"
+        ],
+        [
+          "1504",
+          "1603"
+        ],
+        [
+          "1504",
+          "1604"
+        ],
+        [
+          "1506",
+          "1606"
+        ],
+        [
+          "1510",
+          "1511"
+        ],
+        [
+          "1510",
+          "1609"
+        ],
+        [
+          "1601",
+          "1702"
+        ],
+        [
+          "1603",
+          "1703"
+        ],
+        [
+          "1604",
+          "1705"
+        ],
+        [
+          "1606",
+          "1707"
+        ],
+        [
+          "1607",
+          "1608"
+        ],
+        [
+          "1607",
+          "1707"
+        ],
+        [
+          "1608",
+          "1609"
+        ],
+        [
+          "1608",
+          "1708"
+        ],
+        [
+          "1702",
+          "1802"
+        ],
+        [
+          "1703",
+          "1704"
+        ],
+        [
+          "1703",
+          "1802"
+        ],
+        [
+          "1704",
+          "1705"
+        ],
+        [
+          "1705",
+          "1706"
+        ],
+        [
+          "1705",
+          "1805"
+        ],
+        [
+          "1706",
+          "1707"
+        ],
+        [
+          "1707",
+          "1708"
+        ],
+        [
+          "1707",
+          "1807"
+        ],
+        [
+          "1807",
+          "1808"
+        ],
+        [
+          "1808",
+          "1809"
+        ],
+        [
+          "1809",
+          "1810"
+        ]
+      ],
+      "ambiguous": [],
+      "sideCount": 442,
+      "map": "kiev",
+      "sourceMapSha256": "6ef677e0418b35b7f7f5862675158f9a3a48865942380abcf16a126b9e436268",
+      "svgPathCount": 24,
+      "cellCount": 165,
+      "geometricNeighborPairs": 442,
+      "candidateCount": 93,
+      "derivedCount": 93,
+      "candidateNotDerived": [],
+      "derivedNotCandidate": [],
+      "status": "diagnostic-only-not-gameplay-certified",
+      "limitations": [
+        "SVG curves are approximated by the existing 20-step curve sampler; crossings close to hex corners require review.",
+        "Geometric railway crossings do not establish permitted rail movement or terrain classification.",
+        "Hex centers and SVG registration are inherited from the approved map configuration."
+      ]
+    }
+  }
+}

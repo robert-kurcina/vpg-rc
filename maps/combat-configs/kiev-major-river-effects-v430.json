@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "scenarioId": "kiev",
+  "status": "source-verified-rule-module-not-gameplay-activated",
+  "source": "references/rules/kiev-player-aid.webp — Terrain Effects Chart, Major River row",
+  "majorRiverExtraCost": 1,
+  "railCrossingExempt": true,
+  "attackMultiplier": 0.5,
+  "perUnitRoundDown": true,
+  "note": "Per-unit attack multipliers apply only to major-River edges in a source-certified executable board. Kiev graph certification remains blocked; no generic B4M CRT alteration."
+}

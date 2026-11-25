@@ -1,0 +1,993 @@
+{
+  "serial": {
+    "workers": 1,
+    "jobs": 4,
+    "wallMs": 4608,
+    "successful": 4,
+    "results": [
+      {
+        "id": "job0",
+        "success": true,
+        "code": 0,
+        "signal": null,
+        "wallMs": 1205,
+        "report": {
+          "scenario": "kiev-odessa",
+          "variant": "standard",
+          "seed": 7,
+          "policy": {
+            "seed": 7,
+            "missionSeed": "00000000000000000000000000000007",
+            "selectionMode": "seeded",
+            "phaseScope": "operational",
+            "maxActions": 10,
+            "maxFleetMoves": 2,
+            "maxFleetAttacks": 3,
+            "fleetBudgetScope": "campaign",
+            "objectivePolicy": "baseline",
+            "movementLookahead": false
+          },
+          "matchup": "same",
+          "factionPolicies": {
+            "german": {
+              "seed": 7,
+              "maxActions": 10,
+              "maxCombatsPerPhase": 9007199254740991,
+              "maxCombatPhases": 9007199254740991,
+              "maxGroundMovesPerPhase": 9007199254740991,
+              "maxReinforcementsPerPhase": 9007199254740991,
+              "maxFleetMoves": 2,
+              "maxFleetAttacks": 3,
+              "fleetBudgetScope": "campaign",
+              "objectivePolicy": "baseline",
+              "movementLookahead": false,
+              "selectionMode": "seeded",
+              "attackSelection": "continuation-pilot",
+              "phaseScope": "operational",
+              "coordinatedAttacks": false,
+              "missionSeed": "00000000000000000000000000000007"
+            },
+            "soviet": {
+              "seed": 7,
+              "maxActions": 10,
+              "maxCombatsPerPhase": 9007199254740991,
+              "maxCombatPhases": 9007199254740991,
+              "maxGroundMovesPerPhase": 9007199254740991,
+              "maxReinforcementsPerPhase": 9007199254740991,
+              "maxFleetMoves": 2,
+              "maxFleetAttacks": 3,
+              "fleetBudgetScope": "campaign",
+              "objectivePolicy": "baseline",
+              "movementLookahead": false,
+              "selectionMode": "seeded",
+              "attackSelection": "continuation-pilot",
+              "phaseScope": "operational",
+              "coordinatedAttacks": false,
+              "missionSeed": "00000000000000000000000000000007"
+            }
+          },
+          "elapsedMs": 805,
+          "status": "blocked",
+          "reason": "controller-action-budget",
+          "stats": {
+            "moves": 0,
+            "combats": 1,
+            "reinforcements": 0,
+            "navalRolls": 2,
+            "turns": 0
+          },
+          "actions": 10,
+          "fleetByTurn": {
+            "1": {
+              "declare-fleet-attack": 2,
+              "roll-fleet-attack": 2
+            }
+          },
+          "odds": {
+            "6": 1
+          },
+          "outcomes": {
+            "DE": 1
+          },
+          "reasons": {
+            "source-legal-naval-commitment": 2,
+            "committed-naval-die": 2,
+            "finish-naval-window": 1,
+            "continuation-pilot-positive-utility": 1,
+            "select-committed-battle": 1,
+            "precommit-air-support": 1,
+            "post-roll-material-city-utility": 1,
+            "finish-combat": 1
+          },
+          "cityControl": {
+            "Br\u0103ila": "german",
+            "Chernigov": "soviet",
+            "Chernovtsy": "soviet",
+            "Chisinau": "soviet",
+            "Iasi": "german",
+            "Kiev": "soviet",
+            "Kirovograd": "soviet",
+            "Kovel": "soviet",
+            "Lublin": "german",
+            "Lvov": "soviet",
+            "Nikolaev": "soviet",
+            "Odessa": "soviet",
+            "Rovno": "soviet",
+            "Sarny": "soviet",
+            "Shepetovka": "soviet",
+            "Stanislavov": "soviet",
+            "Tarnopol": "soviet",
+            "Uman": "soviet",
+            "Vinnitsa": "soviet",
+            "Zhitomir": "soviet"
+          },
+          "phase": "german-special-movement",
+          "exactRestore": true,
+          "communicationChecks": 244
+        }
+      },
+      {
+        "id": "job1",
+        "success": true,
+        "code": 0,
+        "signal": null,
+        "wallMs": 1223,
+        "report": {
+          "scenario": "kiev-odessa",
+          "variant": "standard",
+          "seed": 8,
+          "policy": {
+            "seed": 8,
+            "missionSeed": "00000000000000000000000000000008",
+            "selectionMode": "seeded",
+            "phaseScope": "operational",
+            "maxActions": 10,
+            "maxFleetMoves": 2,
+            "maxFleetAttacks": 3,
+            "fleetBudgetScope": "campaign",
+            "objectivePolicy": "baseline",
+            "movementLookahead": false
+          },
+          "matchup": "same",
+          "factionPolicies": {
+            "german": {
+              "seed": 8,
+              "maxActions": 10,
+              "maxCombatsPerPhase": 9007199254740991,
+              "maxCombatPhases": 9007199254740991,
+              "maxGroundMovesPerPhase": 9007199254740991,
+              "maxReinforcementsPerPhase": 9007199254740991,
+              "maxFleetMoves": 2,
+              "maxFleetAttacks": 3,
+              "fleetBudgetScope": "campaign",
+              "objectivePolicy": "baseline",
+              "movementLookahead": false,
+              "selectionMode": "seeded",
+              "attackSelection": "continuation-pilot",
+              "phaseScope": "operational",
+              "coordinatedAttacks": false,
+              "missionSeed": "00000000000000000000000000000008"
+            },
+            "soviet": {
+              "seed": 8,
+              "maxActions": 10,
+              "maxCombatsPerPhase": 9007199254740991,
+              "maxCombatPhases": 9007199254740991,
+              "maxGroundMovesPerPhase": 9007199254740991,
+              "maxReinforcementsPerPhase": 9007199254740991,
+              "maxFleetMoves": 2,
+              "maxFleetAttacks": 3,
+              "fleetBudgetScope": "campaign",
+              "objectivePolicy": "baseline",
+              "movementLookahead": false,
+              "selectionMode": "seeded",
+              "attackSelection": "continuation-pilot",
+              "phaseScope": "operational",
+              "coordinatedAttacks": false,
+              "missionSeed": "00000000000000000000000000000008"
+            }
+          },
+          "elapsedMs": 796,
+          "status": "blocked",
+          "reason": "controller-action-budget",
+          "stats": {
+            "moves": 0,
+            "combats": 1,
+            "reinforcements": 0,
+            "navalRolls": 2,
+            "turns": 0
+          },
+          "actions": 10,
+          "fleetByTurn": {
+            "1": {
+              "declare-fleet-attack": 2,
+              "roll-fleet-attack": 2
+            }
+          },
+          "odds": {
+            "6": 1
+          },
+          "outcomes": {
+            "DE": 1
+          },
+          "reasons": {
+            "source-legal-naval-commitment": 2,
+            "committed-naval-die": 2,
+            "finish-naval-window": 1,
+            "continuation-pilot-positive-utility": 1,
+            "select-committed-battle": 1,
+            "precommit-air-support": 1,
+            "post-roll-material-city-utility": 1,
+            "finish-combat": 1
+          },
+          "cityControl": {
+            "Br\u0103ila": "german",
+            "Chernigov": "soviet",
+            "Chernovtsy": "soviet",
+            "Chisinau": "soviet",
+            "Iasi": "german",
+            "Kiev": "soviet",
+            "Kirovograd": "soviet",
+            "Kovel": "soviet",
+            "Lublin": "german",
+            "Lvov": "soviet",
+            "Nikolaev": "soviet",
+            "Odessa": "soviet",
+            "Rovno": "soviet",
+            "Sarny": "soviet",
+            "Shepetovka": "soviet",
+            "Stanislavov": "soviet",
+            "Tarnopol": "soviet",
+            "Uman": "soviet",
+            "Vinnitsa": "soviet",
+            "Zhitomir": "soviet"
+          },
+          "phase": "german-special-movement",
+          "exactRestore": true,
+          "communicationChecks": 244
+        }
+      },
+      {
+        "id": "job2",
+        "success": true,
+        "code": 0,
+        "signal": null,
+        "wallMs": 1039,
+        "report": {
+          "scenario": "kiev-odessa",
+          "variant": "standard",
+          "seed": 9,
+          "policy": {
+            "seed": 9,
+            "missionSeed": "00000000000000000000000000000009",
+            "selectionMode": "seeded",
+            "phaseScope": "operational",
+            "maxActions": 10,
+            "maxFleetMoves": 2,
+            "maxFleetAttacks": 3,
+            "fleetBudgetScope": "campaign",
+            "objectivePolicy": "baseline",
+            "movementLookahead": false
+          },
+          "matchup": "same",
+          "factionPolicies": {
+            "german": {
+              "seed": 9,
+              "maxActions": 10,
+              "maxCombatsPerPhase": 9007199254740991,
+              "maxCombatPhases": 9007199254740991,
+              "maxGroundMovesPerPhase": 9007199254740991,
+              "maxReinforcementsPerPhase": 9007199254740991,
+              "maxFleetMoves": 2,
+              "maxFleetAttacks": 3,
+              "fleetBudgetScope": "campaign",
+              "objectivePolicy": "baseline",
+              "movementLookahead": false,
+              "selectionMode": "seeded",
+              "attackSelection": "continuation-pilot",
+              "phaseScope": "operational",
+              "coordinatedAttacks": false,
+              "missionSeed": "00000000000000000000000000000009"
+            },
+            "soviet": {
+              "seed": 9,
+              "maxActions": 10,
+              "maxCombatsPerPhase": 9007199254740991,
+              "maxCombatPhases": 9007199254740991,
+              "maxGroundMovesPerPhase": 9007199254740991,
+              "maxReinforcementsPerPhase": 9007199254740991,
+              "maxFleetMoves": 2,
+              "maxFleetAttacks": 3,
+              "fleetBudgetScope": "campaign",
+              "objectivePolicy": "baseline",
+              "movementLookahead": false,
+              "selectionMode": "seeded",
+              "attackSelection": "continuation-pilot",
+              "phaseScope": "operational",
+              "coordinatedAttacks": false,
+              "missionSeed": "00000000000000000000000000000009"
+            }
+          },
+          "elapsedMs": 692,
+          "status": "blocked",
+          "reason": "controller-action-budget",
+          "stats": {
+            "moves": 0,
+            "combats": 1,
+            "reinforcements": 0,
+            "navalRolls": 2,
+            "turns": 0
+          },
+          "actions": 10,
+          "fleetByTurn": {
+            "1": {
+              "declare-fleet-attack": 2,
+              "roll-fleet-attack": 2
+            }
+          },
+          "odds": {
+            "6": 1
+          },
+          "outcomes": {
+            "DE": 1
+          },
+          "reasons": {
+            "source-legal-naval-commitment": 2,
+            "committed-naval-die": 2,
+            "finish-naval-window": 1,
+            "continuation-pilot-positive-utility": 1,
+            "select-committed-battle": 1,
+            "precommit-air-support": 1,
+            "post-roll-material-city-utility": 1,
+            "finish-combat": 1
+          },
+          "cityControl": {
+            "Br\u0103ila": "german",
+            "Chernigov": "soviet",
+            "Chernovtsy": "soviet",
+            "Chisinau": "soviet",
+            "Iasi": "german",
+            "Kiev": "soviet",
+            "Kirovograd": "soviet",
+            "Kovel": "soviet",
+            "Lublin": "german",
+            "Lvov": "soviet",
+            "Nikolaev": "soviet",
+            "Odessa": "soviet",
+            "Rovno": "soviet",
+            "Sarny": "soviet",
+            "Shepetovka": "soviet",
+            "Stanislavov": "soviet",
+            "Tarnopol": "soviet",
+            "Uman": "soviet",
+            "Vinnitsa": "soviet",
+            "Zhitomir": "soviet"
+          },
+          "phase": "german-special-movement",
+          "exactRestore": true,
+          "communicationChecks": 244
+        }
+      },
+      {
+        "id": "job3",
+        "success": true,
+        "code": 0,
+        "signal": null,
+        "wallMs": 1140,
+        "report": {
+          "scenario": "kiev-odessa",
+          "variant": "standard",
+          "seed": 10,
+          "policy": {
+            "seed": 10,
+            "missionSeed": "0000000000000000000000000000000a",
+            "selectionMode": "seeded",
+            "phaseScope": "operational",
+            "maxActions": 10,
+            "maxFleetMoves": 2,
+            "maxFleetAttacks": 3,
+            "fleetBudgetScope": "campaign",
+            "objectivePolicy": "baseline",
+            "movementLookahead": false
+          },
+          "matchup": "same",
+          "factionPolicies": {
+            "german": {
+              "seed": 10,
+              "maxActions": 10,
+              "maxCombatsPerPhase": 9007199254740991,
+              "maxCombatPhases": 9007199254740991,
+              "maxGroundMovesPerPhase": 9007199254740991,
+              "maxReinforcementsPerPhase": 9007199254740991,
+              "maxFleetMoves": 2,
+              "maxFleetAttacks": 3,
+              "fleetBudgetScope": "campaign",
+              "objectivePolicy": "baseline",
+              "movementLookahead": false,
+              "selectionMode": "seeded",
+              "attackSelection": "continuation-pilot",
+              "phaseScope": "operational",
+              "coordinatedAttacks": false,
+              "missionSeed": "0000000000000000000000000000000a"
+            },
+            "soviet": {
+              "seed": 10,
+              "maxActions": 10,
+              "maxCombatsPerPhase": 9007199254740991,
+              "maxCombatPhases": 9007199254740991,
+              "maxGroundMovesPerPhase": 9007199254740991,
+              "maxReinforcementsPerPhase": 9007199254740991,
+              "maxFleetMoves": 2,
+              "maxFleetAttacks": 3,
+              "fleetBudgetScope": "campaign",
+              "objectivePolicy": "baseline",
+              "movementLookahead": false,
+              "selectionMode": "seeded",
+              "attackSelection": "continuation-pilot",
+              "phaseScope": "operational",
+              "coordinatedAttacks": false,
+              "missionSeed": "0000000000000000000000000000000a"
+            }
+          },
+          "elapsedMs": 787,
+          "status": "blocked",
+          "reason": "controller-action-budget",
+          "stats": {
+            "moves": 0,
+            "combats": 1,
+            "reinforcements": 0,
+            "navalRolls": 2,
+            "turns": 0
+          },
+          "actions": 10,
+          "fleetByTurn": {
+            "1": {
+              "declare-fleet-attack": 2,
+              "roll-fleet-attack": 2
+            }
+          },
+          "odds": {
+            "6": 1
+          },
+          "outcomes": {
+            "DE": 1
+          },
+          "reasons": {
+            "source-legal-naval-commitment": 2,
+            "committed-naval-die": 2,
+            "finish-naval-window": 1,
+            "continuation-pilot-positive-utility": 1,
+            "select-committed-battle": 1,
+            "precommit-air-support": 1,
+            "post-roll-material-city-utility": 1,
+            "finish-combat": 1
+          },
+          "cityControl": {
+            "Br\u0103ila": "german",
+            "Chernigov": "soviet",
+            "Chernovtsy": "soviet",
+            "Chisinau": "soviet",
+            "Iasi": "german",
+            "Kiev": "soviet",
+            "Kirovograd": "soviet",
+            "Kovel": "soviet",
+            "Lublin": "german",
+            "Lvov": "soviet",
+            "Nikolaev": "soviet",
+            "Odessa": "soviet",
+            "Rovno": "soviet",
+            "Sarny": "soviet",
+            "Shepetovka": "soviet",
+            "Stanislavov": "soviet",
+            "Tarnopol": "soviet",
+            "Uman": "soviet",
+            "Vinnitsa": "soviet",
+            "Zhitomir": "soviet"
+          },
+          "phase": "german-special-movement",
+          "exactRestore": true,
+          "communicationChecks": 244
+        }
+      }
+    ]
+  },
+  "parallel": {
+    "workers": 4,
+    "jobs": 4,
+    "wallMs": 1857,
+    "successful": 4,
+    "results": [
+      {
+        "id": "job0",
+        "success": true,
+        "code": 0,
+        "signal": null,
+        "wallMs": 1762,
+        "report": {
+          "scenario": "kiev-odessa",
+          "variant": "standard",
+          "seed": 7,
+          "policy": {
+            "seed": 7,
+            "missionSeed": "00000000000000000000000000000007",
+            "selectionMode": "seeded",
+            "phaseScope": "operational",
+            "maxActions": 10,
+            "maxFleetMoves": 2,
+            "maxFleetAttacks": 3,
+            "fleetBudgetScope": "campaign",
+            "objectivePolicy": "baseline",
+            "movementLookahead": false
+          },
+          "matchup": "same",
+          "factionPolicies": {
+            "german": {
+              "seed": 7,
+              "maxActions": 10,
+              "maxCombatsPerPhase": 9007199254740991,
+              "maxCombatPhases": 9007199254740991,
+              "maxGroundMovesPerPhase": 9007199254740991,
+              "maxReinforcementsPerPhase": 9007199254740991,
+              "maxFleetMoves": 2,
+              "maxFleetAttacks": 3,
+              "fleetBudgetScope": "campaign",
+              "objectivePolicy": "baseline",
+              "movementLookahead": false,
+              "selectionMode": "seeded",
+              "attackSelection": "continuation-pilot",
+              "phaseScope": "operational",
+              "coordinatedAttacks": false,
+              "missionSeed": "00000000000000000000000000000007"
+            },
+            "soviet": {
+              "seed": 7,
+              "maxActions": 10,
+              "maxCombatsPerPhase": 9007199254740991,
+              "maxCombatPhases": 9007199254740991,
+              "maxGroundMovesPerPhase": 9007199254740991,
+              "maxReinforcementsPerPhase": 9007199254740991,
+              "maxFleetMoves": 2,
+              "maxFleetAttacks": 3,
+              "fleetBudgetScope": "campaign",
+              "objectivePolicy": "baseline",
+              "movementLookahead": false,
+              "selectionMode": "seeded",
+              "attackSelection": "continuation-pilot",
+              "phaseScope": "operational",
+              "coordinatedAttacks": false,
+              "missionSeed": "00000000000000000000000000000007"
+            }
+          },
+          "elapsedMs": 1074,
+          "status": "blocked",
+          "reason": "controller-action-budget",
+          "stats": {
+            "moves": 0,
+            "combats": 1,
+            "reinforcements": 0,
+            "navalRolls": 2,
+            "turns": 0
+          },
+          "actions": 10,
+          "fleetByTurn": {
+            "1": {
+              "declare-fleet-attack": 2,
+              "roll-fleet-attack": 2
+            }
+          },
+          "odds": {
+            "6": 1
+          },
+          "outcomes": {
+            "DE": 1
+          },
+          "reasons": {
+            "source-legal-naval-commitment": 2,
+            "committed-naval-die": 2,
+            "finish-naval-window": 1,
+            "continuation-pilot-positive-utility": 1,
+            "select-committed-battle": 1,
+            "precommit-air-support": 1,
+            "post-roll-material-city-utility": 1,
+            "finish-combat": 1
+          },
+          "cityControl": {
+            "Br\u0103ila": "german",
+            "Chernigov": "soviet",
+            "Chernovtsy": "soviet",
+            "Chisinau": "soviet",
+            "Iasi": "german",
+            "Kiev": "soviet",
+            "Kirovograd": "soviet",
+            "Kovel": "soviet",
+            "Lublin": "german",
+            "Lvov": "soviet",
+            "Nikolaev": "soviet",
+            "Odessa": "soviet",
+            "Rovno": "soviet",
+            "Sarny": "soviet",
+            "Shepetovka": "soviet",
+            "Stanislavov": "soviet",
+            "Tarnopol": "soviet",
+            "Uman": "soviet",
+            "Vinnitsa": "soviet",
+            "Zhitomir": "soviet"
+          },
+          "phase": "german-special-movement",
+          "exactRestore": true,
+          "communicationChecks": 244
+        }
+      },
+      {
+        "id": "job1",
+        "success": true,
+        "code": 0,
+        "signal": null,
+        "wallMs": 1753,
+        "report": {
+          "scenario": "kiev-odessa",
+          "variant": "standard",
+          "seed": 8,
+          "policy": {
+            "seed": 8,
+            "missionSeed": "00000000000000000000000000000008",
+            "selectionMode": "seeded",
+            "phaseScope": "operational",
+            "maxActions": 10,
+            "maxFleetMoves": 2,
+            "maxFleetAttacks": 3,
+            "fleetBudgetScope": "campaign",
+            "objectivePolicy": "baseline",
+            "movementLookahead": false
+          },
+          "matchup": "same",
+          "factionPolicies": {
+            "german": {
+              "seed": 8,
+              "maxActions": 10,
+              "maxCombatsPerPhase": 9007199254740991,
+              "maxCombatPhases": 9007199254740991,
+              "maxGroundMovesPerPhase": 9007199254740991,
+              "maxReinforcementsPerPhase": 9007199254740991,
+              "maxFleetMoves": 2,
+              "maxFleetAttacks": 3,
+              "fleetBudgetScope": "campaign",
+              "objectivePolicy": "baseline",
+              "movementLookahead": false,
+              "selectionMode": "seeded",
+              "attackSelection": "continuation-pilot",
+              "phaseScope": "operational",
+              "coordinatedAttacks": false,
+              "missionSeed": "00000000000000000000000000000008"
+            },
+            "soviet": {
+              "seed": 8,
+              "maxActions": 10,
+              "maxCombatsPerPhase": 9007199254740991,
+              "maxCombatPhases": 9007199254740991,
+              "maxGroundMovesPerPhase": 9007199254740991,
+              "maxReinforcementsPerPhase": 9007199254740991,
+              "maxFleetMoves": 2,
+              "maxFleetAttacks": 3,
+              "fleetBudgetScope": "campaign",
+              "objectivePolicy": "baseline",
+              "movementLookahead": false,
+              "selectionMode": "seeded",
+              "attackSelection": "continuation-pilot",
+              "phaseScope": "operational",
+              "coordinatedAttacks": false,
+              "missionSeed": "00000000000000000000000000000008"
+            }
+          },
+          "elapsedMs": 1227,
+          "status": "blocked",
+          "reason": "controller-action-budget",
+          "stats": {
+            "moves": 0,
+            "combats": 1,
+            "reinforcements": 0,
+            "navalRolls": 2,
+            "turns": 0
+          },
+          "actions": 10,
+          "fleetByTurn": {
+            "1": {
+              "declare-fleet-attack": 2,
+              "roll-fleet-attack": 2
+            }
+          },
+          "odds": {
+            "6": 1
+          },
+          "outcomes": {
+            "DE": 1
+          },
+          "reasons": {
+            "source-legal-naval-commitment": 2,
+            "committed-naval-die": 2,
+            "finish-naval-window": 1,
+            "continuation-pilot-positive-utility": 1,
+            "select-committed-battle": 1,
+            "precommit-air-support": 1,
+            "post-roll-material-city-utility": 1,
+            "finish-combat": 1
+          },
+          "cityControl": {
+            "Br\u0103ila": "german",
+            "Chernigov": "soviet",
+            "Chernovtsy": "soviet",
+            "Chisinau": "soviet",
+            "Iasi": "german",
+            "Kiev": "soviet",
+            "Kirovograd": "soviet",
+            "Kovel": "soviet",
+            "Lublin": "german",
+            "Lvov": "soviet",
+            "Nikolaev": "soviet",
+            "Odessa": "soviet",
+            "Rovno": "soviet",
+            "Sarny": "soviet",
+            "Shepetovka": "soviet",
+            "Stanislavov": "soviet",
+            "Tarnopol": "soviet",
+            "Uman": "soviet",
+            "Vinnitsa": "soviet",
+            "Zhitomir": "soviet"
+          },
+          "phase": "german-special-movement",
+          "exactRestore": true,
+          "communicationChecks": 244
+        }
+      },
+      {
+        "id": "job2",
+        "success": true,
+        "code": 0,
+        "signal": null,
+        "wallMs": 1596,
+        "report": {
+          "scenario": "kiev-odessa",
+          "variant": "standard",
+          "seed": 9,
+          "policy": {
+            "seed": 9,
+            "missionSeed": "00000000000000000000000000000009",
+            "selectionMode": "seeded",
+            "phaseScope": "operational",
+            "maxActions": 10,
+            "maxFleetMoves": 2,
+            "maxFleetAttacks": 3,
+            "fleetBudgetScope": "campaign",
+            "objectivePolicy": "baseline",
+            "movementLookahead": false
+          },
+          "matchup": "same",
+          "factionPolicies": {
+            "german": {
+              "seed": 9,
+              "maxActions": 10,
+              "maxCombatsPerPhase": 9007199254740991,
+              "maxCombatPhases": 9007199254740991,
+              "maxGroundMovesPerPhase": 9007199254740991,
+              "maxReinforcementsPerPhase": 9007199254740991,
+              "maxFleetMoves": 2,
+              "maxFleetAttacks": 3,
+              "fleetBudgetScope": "campaign",
+              "objectivePolicy": "baseline",
+              "movementLookahead": false,
+              "selectionMode": "seeded",
+              "attackSelection": "continuation-pilot",
+              "phaseScope": "operational",
+              "coordinatedAttacks": false,
+              "missionSeed": "00000000000000000000000000000009"
+            },
+            "soviet": {
+              "seed": 9,
+              "maxActions": 10,
+              "maxCombatsPerPhase": 9007199254740991,
+              "maxCombatPhases": 9007199254740991,
+              "maxGroundMovesPerPhase": 9007199254740991,
+              "maxReinforcementsPerPhase": 9007199254740991,
+              "maxFleetMoves": 2,
+              "maxFleetAttacks": 3,
+              "fleetBudgetScope": "campaign",
+              "objectivePolicy": "baseline",
+              "movementLookahead": false,
+              "selectionMode": "seeded",
+              "attackSelection": "continuation-pilot",
+              "phaseScope": "operational",
+              "coordinatedAttacks": false,
+              "missionSeed": "00000000000000000000000000000009"
+            }
+          },
+          "elapsedMs": 956,
+          "status": "blocked",
+          "reason": "controller-action-budget",
+          "stats": {
+            "moves": 0,
+            "combats": 1,
+            "reinforcements": 0,
+            "navalRolls": 2,
+            "turns": 0
+          },
+          "actions": 10,
+          "fleetByTurn": {
+            "1": {
+              "declare-fleet-attack": 2,
+              "roll-fleet-attack": 2
+            }
+          },
+          "odds": {
+            "6": 1
+          },
+          "outcomes": {
+            "DE": 1
+          },
+          "reasons": {
+            "source-legal-naval-commitment": 2,
+            "committed-naval-die": 2,
+            "finish-naval-window": 1,
+            "continuation-pilot-positive-utility": 1,
+            "select-committed-battle": 1,
+            "precommit-air-support": 1,
+            "post-roll-material-city-utility": 1,
+            "finish-combat": 1
+          },
+          "cityControl": {
+            "Br\u0103ila": "german",
+            "Chernigov": "soviet",
+            "Chernovtsy": "soviet",
+            "Chisinau": "soviet",
+            "Iasi": "german",
+            "Kiev": "soviet",
+            "Kirovograd": "soviet",
+            "Kovel": "soviet",
+            "Lublin": "german",
+            "Lvov": "soviet",
+            "Nikolaev": "soviet",
+            "Odessa": "soviet",
+            "Rovno": "soviet",
+            "Sarny": "soviet",
+            "Shepetovka": "soviet",
+            "Stanislavov": "soviet",
+            "Tarnopol": "soviet",
+            "Uman": "soviet",
+            "Vinnitsa": "soviet",
+            "Zhitomir": "soviet"
+          },
+          "phase": "german-special-movement",
+          "exactRestore": true,
+          "communicationChecks": 244
+        }
+      },
+      {
+        "id": "job3",
+        "success": true,
+        "code": 0,
+        "signal": null,
+        "wallMs": 1852,
+        "report": {
+          "scenario": "kiev-odessa",
+          "variant": "standard",
+          "seed": 10,
+          "policy": {
+            "seed": 10,
+            "missionSeed": "0000000000000000000000000000000a",
+            "selectionMode": "seeded",
+            "phaseScope": "operational",
+            "maxActions": 10,
+            "maxFleetMoves": 2,
+            "maxFleetAttacks": 3,
+            "fleetBudgetScope": "campaign",
+            "objectivePolicy": "baseline",
+            "movementLookahead": false
+          },
+          "matchup": "same",
+          "factionPolicies": {
+            "german": {
+              "seed": 10,
+              "maxActions": 10,
+              "maxCombatsPerPhase": 9007199254740991,
+              "maxCombatPhases": 9007199254740991,
+              "maxGroundMovesPerPhase": 9007199254740991,
+              "maxReinforcementsPerPhase": 9007199254740991,
+              "maxFleetMoves": 2,
+              "maxFleetAttacks": 3,
+              "fleetBudgetScope": "campaign",
+              "objectivePolicy": "baseline",
+              "movementLookahead": false,
+              "selectionMode": "seeded",
+              "attackSelection": "continuation-pilot",
+              "phaseScope": "operational",
+              "coordinatedAttacks": false,
+              "missionSeed": "0000000000000000000000000000000a"
+            },
+            "soviet": {
+              "seed": 10,
+              "maxActions": 10,
+              "maxCombatsPerPhase": 9007199254740991,
+              "maxCombatPhases": 9007199254740991,
+              "maxGroundMovesPerPhase": 9007199254740991,
+              "maxReinforcementsPerPhase": 9007199254740991,
+              "maxFleetMoves": 2,
+              "maxFleetAttacks": 3,
+              "fleetBudgetScope": "campaign",
+              "objectivePolicy": "baseline",
+              "movementLookahead": false,
+              "selectionMode": "seeded",
+              "attackSelection": "continuation-pilot",
+              "phaseScope": "operational",
+              "coordinatedAttacks": false,
+              "missionSeed": "0000000000000000000000000000000a"
+            }
+          },
+          "elapsedMs": 1227,
+          "status": "blocked",
+          "reason": "controller-action-budget",
+          "stats": {
+            "moves": 0,
+            "combats": 1,
+            "reinforcements": 0,
+            "navalRolls": 2,
+            "turns": 0
+          },
+          "actions": 10,
+          "fleetByTurn": {
+            "1": {
+              "declare-fleet-attack": 2,
+              "roll-fleet-attack": 2
+            }
+          },
+          "odds": {
+            "6": 1
+          },
+          "outcomes": {
+            "DE": 1
+          },
+          "reasons": {
+            "source-legal-naval-commitment": 2,
+            "committed-naval-die": 2,
+            "finish-naval-window": 1,
+            "continuation-pilot-positive-utility": 1,
+            "select-committed-battle": 1,
+            "precommit-air-support": 1,
+            "post-roll-material-city-utility": 1,
+            "finish-combat": 1
+          },
+          "cityControl": {
+            "Br\u0103ila": "german",
+            "Chernigov": "soviet",
+            "Chernovtsy": "soviet",
+            "Chisinau": "soviet",
+            "Iasi": "german",
+            "Kiev": "soviet",
+            "Kirovograd": "soviet",
+            "Kovel": "soviet",
+            "Lublin": "german",
+            "Lvov": "soviet",
+            "Nikolaev": "soviet",
+            "Odessa": "soviet",
+            "Rovno": "soviet",
+            "Sarny": "soviet",
+            "Shepetovka": "soviet",
+            "Stanislavov": "soviet",
+            "Tarnopol": "soviet",
+            "Uman": "soviet",
+            "Vinnitsa": "soviet",
+            "Zhitomir": "soviet"
+          },
+          "phase": "german-special-movement",
+          "exactRestore": true,
+          "communicationChecks": 244
+        }
+      }
+    ]
+  },
+  "journalHashes": {
+    "job0.journal.json": "7a179082c03c341bb8e3a9049692f41708cda05c17bc1f0c3dcef6af0d204bd3",
+    "job1.journal.json": "9efcdc345a0c46d3e4f5a58129e9d2153211fa58ea7997b113c6ef1348637ffa",
+    "job2.journal.json": "ea80c9efdcd86979b02053b88fc906ee43699dabc87a714546b6a94ce500fc2d",
+    "job3.journal.json": "6daa9459ce0ef3b784a2d6df858c7eeae44c9dc232f903daa150987a0cd16bb7"
+  },
+  "limitations": "Four bounded 10-action Kiev\u2013Odessa runs, one batch per worker count; earlier 8-job attempt interrupted. No full campaign throughput claim."
+}

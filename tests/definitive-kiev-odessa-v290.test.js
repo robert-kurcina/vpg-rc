@@ -1,0 +1,20 @@
+const assert=require('assert'),fs=require('fs'),T=require('../core/terrain_tiles'),C=require('../maps/composer'),P=require('../core/presentation');
+const b=JSON.parse(fs.readFileSync('maps/kiev.json')),e=JSON.parse(fs.readFileSync('maps/odessa-extension.json')),c=C.compose(b,e);
+assert.equal(c.cells.length,230);assert(!c.authoritativeCompositeSvg,'No special renderer');
+assert.equal(c.cells.filter(x=>!x.terrain).length,0,'All hexes have bitmap terrain');
+const city=e.v289SourceImportAudit.cities;const ids=new Set([...city.minor.hexIds,...city.major.hexIds]);assert.equal(ids.size,20);
+for(const id of ids)assert.equal(c.cells.find(x=>x.id===id).terrain,'open','city terrain '+id);
+assert.equal(c.sourceRailRoutes.length,24);assert.equal(c.authoredShoreHexsides.length,32);
+assert.equal(c.compositeEntryEdges.length,82);
+assert.equal(c.sourceWaterScanContours,null);assert.equal(c.sourceBitmapRiverInk,null);
+assert.equal(c.sourceWaterRoutes.length,0);assert.equal(c.sourceSeaInteriorMode,'no-sea-polygons');
+const edges=T.gridSegmentData(c,...T.gridRadii(c.geometry));let riv=0,maj=0;
+for(const x of edges){const cell=c.cells.find(z=>z.id===x.cellId);const es=cell.tileEdges?.[x.dir]||[];
+ for(const kind of ['river','majorRiver'])if(es.some(z=>z.kind===kind)){if(kind==='river')riv++;else maj++;if(x.neighborId){const other=c.cells.find(z=>z.id===x.neighborId);assert((other.tileEdges?.[T.OPP[x.dir]]||[]).some(z=>z.kind===kind),`reciprocal ${x.cellId}:${x.dir}`)}}}
+assert.equal(riv,105);assert.equal(maj,25);
+const result=T.validate(c,{requireReciprocal:true});assert.equal(result.errors.length,0,result.errors.join('\n'));
+const opts=P.options('kiev-odessa',{width:1290,height:1280,showGrid:true,showNumbers:true,textures:{open:'open.png',forest:'forest.png',swamp:'swamp.png'}});
+const svg=T.svgMap(c,opts);
+for(const token of ['class="terrain-texture"','class="hex-number"','data-layer="cities"','registered-shoreline-wavelets','authored-center-rail','feature-water','entry-boundary'])assert(svg.includes(token),token);
+assert(!svg.includes('definitive-user-map'));assert(!svg.includes('sea-region-cell'));assert(!svg.includes('source-registered-river-fill'));assert(!svg.includes('svg-authored-river'));assert(!svg.includes('source-water-variable-depth'));
+console.log('v290 composite: 230 cells, 20 open-city cells, 105 minor+25 major river hexsides, 32 coast hexsides, 24 rails, 82 entry edges, original render pipeline. PASS');

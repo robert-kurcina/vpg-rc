@@ -1,0 +1,90 @@
+{
+  "checkpoint": 184,
+  "results": [
+    {
+      "name": "arduous-brest-combat-v411.test.js",
+      "status": "PASS",
+      "detail": "PASS reverse-only one-step Brest combat pipeline: 11 assertions\n"
+    },
+    {
+      "name": "arduous-brest-garrison-v411.test.js",
+      "status": "PASS",
+      "detail": "PASS Arduous source-bound one-step Brest garrison: 30 assertions\n"
+    },
+    {
+      "name": "arduous-full-source-opening-v413.test.js",
+      "status": "PASS",
+      "detail": "\":\"0609\",\"sourceSvgId\":\"use336\",\"kind\":\"fixedMechanized\",\"terrain\":\"open\",\"anchorSource\":\"rule-and-authored-city\",\"ruleSource\":\"arduous-rules.pdf \u00a76.0 #2\"},{\"hex\":\"1510\",\"sourceSvgId\":\"use338\",\"kind\":\"fixedMechanized\",\"terrain\":\"open\",\"anchorSource\":\"rule-and-authored-city\",\"ruleSource\":\"arduous-rules.pdf \u00a76.0 #2\"}]}}\n"
+    },
+    {
+      "name": "arduous-presentation-overrides-v415.test.js",
+      "status": "PASS",
+      "detail": "PASS Arduous presentation-only German Infantry corrections 27 checks\n"
+    },
+    {
+      "name": "arduous-rail-reconciliation-v411.test.js",
+      "status": "PASS",
+      "detail": "PASS Arduous source-rail reconciliation: 11 assertions\n"
+    },
+    {
+      "name": "arduous-river-candidates-v418.test.js",
+      "status": "PASS",
+      "detail": "PASS Arduous source graph: 45 river candidates, zero incident-contact entries; 12 checks\n"
+    },
+    {
+      "name": "arduous-roster-and-victory-v410.test.js",
+      "status": "PASS",
+      "detail": "PASS v410 Arduous photographed counters + \u00a75 victory: 237 assertions\n"
+    },
+    {
+      "name": "arduous-topology-probe-v418.test.js",
+      "status": "PASS",
+      "detail": "PASS Arduous source topology probe 33 checks; movement probe was TEST-ONLY\n"
+    },
+    {
+      "name": "b4m-native-objective-advance-v408.test.js",
+      "status": "PASS",
+      "detail": "ed\",\"productionSelector\":\"legacy-b4m-v1\",\"advancedDE\":true,\"legacyActionParity\":true,\"dieCommitIsolation\":true,\"moscowDRHold\":true,\"defaultPoliciesPreserved\":true,\"undoAndSave\":true,\"limitations\":[\"Synthetic Moscow tactical board positions\",\"No new legacy strategic AI parity claim\",\"No active B4M production cutover\"]}\n"
+    },
+    {
+      "name": "kiev-roster-and-victory-v410.test.js",
+      "status": "PASS",
+      "detail": "PASS v410 Kiev photographed counters + \u00a75 victory: 192 assertions\n"
+    },
+    {
+      "name": "leningrad-counter-face-parity-v403.test.js",
+      "status": "PASS",
+      "detail": "Counter source-face projection v403: 552 assertions PASS; 28 ground front/back pairs checked; four concealed/revealed Corps; sheet SHA256 verified\n"
+    },
+    {
+      "name": "leningrad-movement-lifecycle-v318.test.js",
+      "status": "PASS",
+      "detail": "PASS Leningrad bounded movement lifecycle 32 assertions\n"
+    },
+    {
+      "name": "leningrad-setup-validator-v319.test.js",
+      "status": "PASS",
+      "detail": "PASS Leningrad proposed setup validator 12+ checks\n"
+    },
+    {
+      "name": "map-movement-graph-v318.test.js",
+      "status": "PASS",
+      "detail": "PASS movement graph 1080 assertions; hexes 197 edges 533 rails 80\n"
+    },
+    {
+      "name": "shared-historical-crt-v316.test.js",
+      "status": "PASS",
+      "detail": "PASS v316 shared Oberlabs CRT: 36 cells x 5 historical mappings\n"
+    },
+    {
+      "name": "shared-render-profiles-v356.test.js",
+      "status": "PASS",
+      "detail": "PASS v356: 5 registry profiles, same SVG engine, no per-game branches in rendering consumers, ID-independent output\n"
+    },
+    {
+      "name": "universal-scenario-contract-v317.test.js",
+      "status": "PASS",
+      "detail": "PASS universal scenario contract: 5 games, 14 domains, missing-data fail-closed and overlay validation\n"
+    }
+  ]
+}

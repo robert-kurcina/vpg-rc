@@ -1,0 +1,124 @@
+{
+  "status": "exploratory-not-human-balance",
+  "summary": {
+    "pairs": 8,
+    "historicalWins": {
+      "german": 0,
+      "soviet": 8,
+      "draw": 0
+    },
+    "graduatedWins": {
+      "german": 7,
+      "soviet": 0,
+      "draw": 1
+    },
+    "changedCityControl": 7
+  },
+  "matched": [
+    {
+      "scenario": "battle-for-moscow",
+      "variant": "advanced",
+      "seed": 79,
+      "stacking": "historical",
+      "historicalWinner": "soviet",
+      "graduatedWinner": "german",
+      "historicalCounterfactualGrade": "soviet-marginal",
+      "graduatedGrade": "german-marginal",
+      "historicalGermanVP": 5,
+      "graduatedGermanVP": 8,
+      "changedCityControl": true
+    },
+    {
+      "scenario": "battle-for-moscow",
+      "variant": "standard",
+      "seed": 41,
+      "stacking": "historical",
+      "historicalWinner": "soviet",
+      "graduatedWinner": "german",
+      "historicalCounterfactualGrade": "soviet-marginal",
+      "graduatedGrade": "german-marginal",
+      "historicalGermanVP": 5,
+      "graduatedGermanVP": 7,
+      "changedCityControl": true
+    },
+    {
+      "scenario": "battle-for-moscow",
+      "variant": "advanced",
+      "seed": 149,
+      "stacking": "historical",
+      "historicalWinner": "soviet",
+      "graduatedWinner": "german",
+      "historicalCounterfactualGrade": "draw",
+      "graduatedGrade": "german-marginal",
+      "historicalGermanVP": 6,
+      "graduatedGermanVP": 7,
+      "changedCityControl": true
+    },
+    {
+      "scenario": "battle-for-moscow",
+      "variant": "advanced",
+      "seed": 53,
+      "stacking": "historical",
+      "historicalWinner": "soviet",
+      "graduatedWinner": "german",
+      "historicalCounterfactualGrade": "draw",
+      "graduatedGrade": "german-minor",
+      "historicalGermanVP": 6,
+      "graduatedGermanVP": 9,
+      "changedCityControl": true
+    },
+    {
+      "scenario": "battle-for-moscow",
+      "variant": "advanced",
+      "seed": 97,
+      "stacking": "historical",
+      "historicalWinner": "soviet",
+      "graduatedWinner": "german",
+      "historicalCounterfactualGrade": "draw",
+      "graduatedGrade": "german-marginal",
+      "historicalGermanVP": 6,
+      "graduatedGermanVP": 8,
+      "changedCityControl": true
+    },
+    {
+      "scenario": "battle-for-moscow",
+      "variant": "standard",
+      "seed": 149,
+      "stacking": "historical",
+      "historicalWinner": "soviet",
+      "graduatedWinner": "draw",
+      "historicalCounterfactualGrade": "draw",
+      "graduatedGrade": "draw",
+      "historicalGermanVP": 6,
+      "graduatedGermanVP": 6,
+      "changedCityControl": false
+    },
+    {
+      "scenario": "battle-for-moscow",
+      "variant": "standard",
+      "seed": 53,
+      "stacking": "historical",
+      "historicalWinner": "soviet",
+      "graduatedWinner": "german",
+      "historicalCounterfactualGrade": "german-marginal",
+      "graduatedGrade": "german-minor",
+      "historicalGermanVP": 7,
+      "graduatedGermanVP": 9,
+      "changedCityControl": true
+    },
+    {
+      "scenario": "battle-for-moscow",
+      "variant": "standard",
+      "seed": 97,
+      "stacking": "historical",
+      "historicalWinner": "soviet",
+      "graduatedWinner": "german",
+      "historicalCounterfactualGrade": "draw",
+      "graduatedGrade": "german-marginal",
+      "historicalGermanVP": 6,
+      "graduatedGermanVP": 7,
+      "changedCityControl": true
+    }
+  ],
+  "excluded": []
+}

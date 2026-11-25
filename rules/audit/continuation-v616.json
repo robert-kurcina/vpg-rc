@@ -1,0 +1,11 @@
+{
+  "scope": "**Checkpoint 382 / v616 \u2014 Paired continuation witnesses.** Added `Threat.create(context).compareContinuations(args)` for a proposed known friendly combat and focal stack. Compares unchanged board, replayed coordinated withdrawal witness, and actual no-advance combat consequences for each die and bounded legal casualty/retreat choice. Reports original focal-unit survival, enemy removals, attacking-unit removals and stationary enemy exposure on resulting boards. Automatic NE and concealed odds explicitly excluded from consequence simulation. No enemy pursuit, full phase continuation, advance, city ownership utility, strategic ranking or unconditional elimination risk; recommendation remains null. No default/pilot selection changes. New actual-map test 105 assertions including 24 prior withdrawal fixture assertions; survival 84, integrated forecast 71, utility 62, CRT 301 = 623 executed assertions. Bundle parity 61 modules. Next: evaluate enemy approaches on surviving positions, account for combined attack and withdrawal and positional utility before activating desperation. Deferred final three tasks unchanged.",
+  "verified": {
+    "continuationIncludingWithdrawal": 105,
+    "conditionalSurvival": 84,
+    "integratedForecastSurvival": 71,
+    "utility": 62,
+    "sharedCRT": 301,
+    "bundleModules": 61
+  }
+}

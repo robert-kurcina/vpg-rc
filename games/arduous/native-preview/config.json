@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "scenarioId": "arduous",
+  "status": "candidate-setup-engine-preview-not-historically-certified",
+  "map": "../../../maps/arduous.json",
+  "counterConfig": "../../../maps/counter-configs/arduous.json",
+  "setup": "../../../maps/setup/arduous.json",
+  "profile": "../../../maps/movement-configs/arduous.json",
+  "phaseConfig": "../../../maps/phase-configs/arduous.json",
+  "combatPolicy": "../../../maps/combat-configs/arduous.json",
+  "buildupPolicy": "../../../maps/buildup-configs/arduous.json",
+  "housekeepingPolicy": "../../../maps/housekeeping-configs/arduous.json",
+  "inventoryPolicy": "../../../maps/setup/arduous-inventory.json",
+  "fixedPolicy": "../../../maps/setup/arduous-fixed-pieces.json",
+  "mapExport": "../../../exports/arduous.svg",
+  "mapViewBox": [
+    -28,
+    -28,
+    956,
+    631
+  ],
+  "candidateFixture": "arduous-source-setup-v419",
+  "sourceGame": "The Arduous Beginning"
+}

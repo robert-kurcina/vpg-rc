@@ -1,0 +1,265 @@
+{
+  "schemaVersion": 1,
+  "source": "maps/source/user-svg/leningrad-main.svg",
+  "sourceSHA256": "ea1c83d00eea0212c530b98fd794125959175ad9d1cfa067aef78d6d73502447",
+  "basis": "authored SVG use-element rendered bounding-box centers",
+  "matching": "nearest existing physical cell pixelCenter within 0.06 SVG units",
+  "usesScans": false,
+  "modifiesRenderer": false,
+  "gameplayCertified": false,
+  "assignments": [
+    {
+      "sourceSvgId": "use1-1",
+      "symbolId": "g10",
+      "kind": "cross",
+      "faction": "german",
+      "hostCell": "0210",
+      "sourceSvgCenter": [
+        114.0448,
+        652.0541
+      ],
+      "hostPhysicalCenter": [
+        114.045,
+        652.054
+      ],
+      "centerError": 0.000224
+    },
+    {
+      "sourceSvgId": "use495",
+      "symbolId": "g10",
+      "kind": "cross",
+      "faction": "german",
+      "hostCell": "0310",
+      "sourceSvgCenter": [
+        170.3761,
+        685.2321
+      ],
+      "hostPhysicalCenter": [
+        170.376,
+        685.232
+      ],
+      "centerError": 0.000141
+    },
+    {
+      "sourceSvgId": "use497",
+      "symbolId": "g10",
+      "kind": "cross",
+      "faction": "german",
+      "hostCell": "0311",
+      "sourceSvgCenter": [
+        170.3761,
+        752.6141
+      ],
+      "hostPhysicalCenter": [
+        170.376,
+        752.614
+      ],
+      "centerError": 0.000141
+    },
+    {
+      "sourceSvgId": "use496",
+      "symbolId": "g10",
+      "kind": "cross",
+      "faction": "german",
+      "hostCell": "0411",
+      "sourceSvgCenter": [
+        226.7071,
+        719.4361
+      ],
+      "hostPhysicalCenter": [
+        226.707,
+        719.436
+      ],
+      "centerError": 0.000141
+    },
+    {
+      "sourceSvgId": "use498",
+      "symbolId": "g10",
+      "kind": "cross",
+      "faction": "german",
+      "hostCell": "0511",
+      "sourceSvgCenter": [
+        283.0381,
+        752.6141
+      ],
+      "hostPhysicalCenter": [
+        283.039,
+        752.614
+      ],
+      "centerError": 0.000906
+    },
+    {
+      "sourceSvgId": "use1-6",
+      "symbolId": "g11",
+      "kind": "star",
+      "faction": "soviet",
+      "hostCell": "0209",
+      "sourceSvgCenter": [
+        114.0448,
+        585.6981
+      ],
+      "hostPhysicalCenter": [
+        114.045,
+        585.698
+      ],
+      "centerError": 0.000224
+    },
+    {
+      "sourceSvgId": "use499",
+      "symbolId": "g11",
+      "kind": "star",
+      "faction": "soviet",
+      "hostCell": "0309",
+      "sourceSvgCenter": [
+        170.3761,
+        618.8761
+      ],
+      "hostPhysicalCenter": [
+        170.376,
+        618.876
+      ],
+      "centerError": 0.000141
+    },
+    {
+      "sourceSvgId": "use500",
+      "symbolId": "g11",
+      "kind": "star",
+      "faction": "soviet",
+      "hostCell": "0410",
+      "sourceSvgCenter": [
+        226.7071,
+        652.0541
+      ],
+      "hostPhysicalCenter": [
+        226.707,
+        652.054
+      ],
+      "centerError": 0.000141
+    },
+    {
+      "sourceSvgId": "use501",
+      "symbolId": "g11",
+      "kind": "star",
+      "faction": "soviet",
+      "hostCell": "0510",
+      "sourceSvgCenter": [
+        283.0381,
+        685.2321
+      ],
+      "hostPhysicalCenter": [
+        283.039,
+        685.232
+      ],
+      "centerError": 0.000906
+    },
+    {
+      "sourceSvgId": "use502",
+      "symbolId": "g11",
+      "kind": "star",
+      "faction": "soviet",
+      "hostCell": "0611",
+      "sourceSvgCenter": [
+        339.3691,
+        719.4361
+      ],
+      "hostPhysicalCenter": [
+        339.37,
+        719.436
+      ],
+      "centerError": 0.000906
+    }
+  ],
+  "cityAssignments": [
+    {
+      "name": "Liepaja",
+      "sourceSvgId": "use433",
+      "previousHostCell": "0208",
+      "hostCell": "0208",
+      "centerError": 0.0002
+    },
+    {
+      "name": "Insterburg",
+      "sourceSvgId": "use434",
+      "previousHostCell": "0211",
+      "hostCell": "0311",
+      "centerError": 0.0001
+    },
+    {
+      "name": "Siauliai",
+      "sourceSvgId": "use431",
+      "previousHostCell": "0609",
+      "hostCell": "0609",
+      "centerError": 0.0009
+    },
+    {
+      "name": "Riga",
+      "sourceSvgId": "use432",
+      "previousHostCell": "0707",
+      "hostCell": "0707",
+      "centerError": 0.0013
+    },
+    {
+      "name": "Kaunas",
+      "sourceSvgId": "use429",
+      "previousHostCell": "0710",
+      "hostCell": "0710",
+      "centerError": 1.0261
+    },
+    {
+      "name": "Parnu",
+      "sourceSvgId": "use422",
+      "previousHostCell": "0804",
+      "hostCell": "0804",
+      "centerError": 0.0009
+    },
+    {
+      "name": "Tallinn",
+      "sourceSvgId": "use463",
+      "previousHostCell": "0901",
+      "hostCell": "0901",
+      "centerError": 0.0004
+    },
+    {
+      "name": "Daugavpils",
+      "sourceSvgId": "use428",
+      "previousHostCell": "1109",
+      "hostCell": "1109",
+      "centerError": 1.6844
+    },
+    {
+      "name": "Tartu",
+      "sourceSvgId": "use423",
+      "previousHostCell": "1205",
+      "hostCell": "1205",
+      "centerError": 0.0001
+    },
+    {
+      "name": "Narva",
+      "sourceSvgId": "use424",
+      "previousHostCell": "1402",
+      "hostCell": "1402",
+      "centerError": 0.001
+    },
+    {
+      "name": "Pskov",
+      "sourceSvgId": "use425",
+      "previousHostCell": "1406",
+      "hostCell": "1406",
+      "centerError": 0.0009
+    },
+    {
+      "name": "Luga",
+      "sourceSvgId": "use426",
+      "previousHostCell": "1604",
+      "hostCell": "1604",
+      "centerError": 0.0009
+    },
+    {
+      "name": "Novgorod",
+      "sourceSvgId": "use427",
+      "previousHostCell": "1805",
+      "hostCell": "1805",
+      "centerError": 0.0001
+    }
+  ]
+}

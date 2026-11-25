@@ -1,0 +1,34 @@
+{
+  "checkpoint": 96,
+  "date": "2026-11-19",
+  "purpose": "Source SVG comparison and universal deployment icon restoration",
+  "sources": {
+    "user_uploaded_svg": {
+      "name": "leningrad-main(4).svg",
+      "sha256": "ea1c83d00eea0212c530b98fd794125959175ad9d1cfa067aef78d6d73502447"
+    },
+    "archived_svg": {
+      "path": "maps/source/user-svg/leningrad-main.svg",
+      "sha256": "ea1c83d00eea0212c530b98fd794125959175ad9d1cfa067aef78d6d73502447"
+    },
+    "map": "maps/leningrad.json",
+    "renderer": "core/terrain_tiles.js"
+  },
+  "svg_identical": true,
+  "verified_behavior_before": "Checkpoint 95 introduced sourceCentered=board.sourceGame===Target: Leningrad, moving Leningrad icons to center while leaving other maps at bottom-center.",
+  "change": "Removed scenario-specific center override; all markers now use same bottom-center translation and universal FACTIONS.deploymentIcons scale.",
+  "not_resolved": [
+    "Source SVG renders flat green/pink/beige terrain and purple routes; existing procedural/textured renderer differs in appearance.",
+    "Source SVG German use-instance placements differ from scan/user-confirmed historic hex IDs; source is preserved and not silently re-registered.",
+    "197 versus 199 hex count discrepancy remains open.",
+    "No gameplay deployment activation granted by visual changes."
+  ],
+  "tests": [
+    "tests/leningrad-deployment-geometry-v328.test.js",
+    "tests/universal-deployment-placement-v329.test.js",
+    "tests/leningrad-map-deployment-correction-v327.test.js",
+    "tests/leningrad-setup-validator-v319.test.js",
+    "tests/universal-scenario-contract-v317.test.js",
+    "tests/smoke-current.js"
+  ]
+}

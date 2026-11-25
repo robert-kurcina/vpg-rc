@@ -1,0 +1,19 @@
+{
+  "checkpoint": 153,
+  "version": "v387",
+  "assertions": 110,
+  "scope": "source-bound consecutive-phase journal",
+  "verified": [
+    "Real Leningrad opening German combat -> German special ground movement -> blocked Soviet buildup",
+    "Fleet special movement -> Soviet combat -> Soviet movement using a separately trusted origin",
+    "Ground entry into Fleet port requires committed displacement destination before die",
+    "Cross-phase Undo, replay, source hashes, checksum and in-progress save restoration",
+    "All five games retain one shared B4M CRT; no graphics/rules changed"
+  ],
+  "limitations": [
+    "Not a complete eight-turn campaign",
+    "No implementation of buildup/reinforcement/housekeeping",
+    "Synthetic post-buildup Fleet boundary is not a certified historical game history",
+    "No player-facing UX integration; no proof of source-coordinate reconciliation"
+  ]
+}

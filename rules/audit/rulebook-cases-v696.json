@@ -1,0 +1,33 @@
+{
+  "checkpoint": 474,
+  "majorHeadings": 70,
+  "numberedCases": {
+    "b4m": 20,
+    "arduous": 33,
+    "leningrad": 33,
+    "kiev": 32,
+    "odessa": 15
+  },
+  "sourceAssetsUnchanged": 29,
+  "sourceNumberDuplicates": {
+    "arduous": [
+      "10.2",
+      "10.3"
+    ],
+    "odessa": [
+      "10.5",
+      "15.3"
+    ]
+  },
+  "correction": "B4M printed page 3 \u00a79.1 separated text fragment e, if",
+  "verification": [
+    "source case coverage",
+    "unique anchors and links",
+    "reproducible text-only rebuild",
+    "major heading navigation",
+    "B4M source movement, combat, consequences, final",
+    "B4M stacked foundation",
+    "shared historical CRT"
+  ],
+  "limitations": "No full semantic table or reading-order certification; no historical ruling changes."
+}

@@ -1,0 +1,186 @@
+{
+  "scenario": "leningrad",
+  "variant": "advanced",
+  "seed": 476,
+  "policy": {
+    "seed": 476,
+    "missionSeed": "000000000000000000000000000001dc",
+    "selectionMode": "seeded",
+    "phaseScope": "operational",
+    "maxActions": 5000,
+    "maxFleetMoves": 2,
+    "maxFleetAttacks": 3,
+    "fleetBudgetScope": "campaign",
+    "objectivePolicy": "baseline",
+    "movementLookahead": false
+  },
+  "matchup": "same",
+  "factionPolicies": {
+    "german": {
+      "seed": 476,
+      "maxActions": 5000,
+      "maxCombatsPerPhase": 9007199254740991,
+      "maxCombatPhases": 9007199254740991,
+      "maxGroundMovesPerPhase": 9007199254740991,
+      "maxReinforcementsPerPhase": 9007199254740991,
+      "maxFleetMoves": 2,
+      "maxFleetAttacks": 3,
+      "fleetBudgetScope": "campaign",
+      "objectivePolicy": "baseline",
+      "movementLookahead": false,
+      "selectionMode": "seeded",
+      "attackSelection": "continuation-pilot",
+      "phaseScope": "operational",
+      "coordinatedAttacks": false,
+      "missionSeed": "000000000000000000000000000001dc"
+    },
+    "soviet": {
+      "seed": 476,
+      "maxActions": 5000,
+      "maxCombatsPerPhase": 9007199254740991,
+      "maxCombatPhases": 9007199254740991,
+      "maxGroundMovesPerPhase": 9007199254740991,
+      "maxReinforcementsPerPhase": 9007199254740991,
+      "maxFleetMoves": 2,
+      "maxFleetAttacks": 3,
+      "fleetBudgetScope": "campaign",
+      "objectivePolicy": "baseline",
+      "movementLookahead": false,
+      "selectionMode": "seeded",
+      "attackSelection": "continuation-pilot",
+      "phaseScope": "operational",
+      "coordinatedAttacks": false,
+      "missionSeed": "000000000000000000000000000001dc"
+    }
+  },
+  "elapsedMs": 21726,
+  "status": "complete",
+  "reason": null,
+  "detail": null,
+  "decision": {
+    "status": "complete",
+    "terminal": {
+      "axisControlledCount": 9,
+      "cityControl": {
+        "Daugavpils": "german",
+        "Insterburg": "german",
+        "Kaunas": "german",
+        "Leningrad": "soviet",
+        "Liepaja": "german",
+        "Luga": "soviet",
+        "Narva": "soviet",
+        "Novgorod": "soviet",
+        "Parnu": "german",
+        "Pskov": "german",
+        "Riga": "german",
+        "Siauliai": "german",
+        "Tallinn": "soviet",
+        "Tartu": "german"
+      },
+      "onlyRemainingCity": "Leningrad",
+      "onlyRemainingCityIsolated": null,
+      "outcome": "soviet-victory",
+      "reason": "axis-controls-at-most-threshold",
+      "totalCities": 14
+    }
+  },
+  "stats": {
+    "moves": 193,
+    "combats": 20,
+    "reinforcements": 9,
+    "navalRolls": 2,
+    "turns": 8
+  },
+  "actions": 570,
+  "fleetByTurn": {
+    "1": {
+      "declare-fleet-attack": 1,
+      "roll-fleet-attack": 1,
+      "declare-fleet-move": 1,
+      "roll-fleet-move": 1
+    },
+    "2": {
+      "declare-fleet-attack": 1,
+      "roll-fleet-attack": 1,
+      "declare-fleet-move": 1,
+      "roll-fleet-move": 1
+    }
+  },
+  "odds": {
+    "2": 3,
+    "3": 1,
+    "5": 4,
+    "6": 8,
+    "1.5": 4
+  },
+  "outcomes": {
+    "DR": 5,
+    "DE": 5,
+    "EX": 3,
+    "DRL": 6,
+    "NE": 1
+  },
+  "reasons": {
+    "source-legal-naval-commitment": 2,
+    "committed-naval-die": 2,
+    "finish-naval-window": 8,
+    "continuation-pilot-positive-utility": 8,
+    "select-committed-battle": 20,
+    "precommit-air-support": 20,
+    "post-roll-material-city-utility": 20,
+    "finish-combat": 16,
+    "objective-directed-ground-movement": 193,
+    "finish-pending-movement": 193,
+    "finish-movement-phase": 31,
+    "finish-buildup": 15,
+    "source-legal-fleet-movement": 2,
+    "committed-fleet-move-die": 2,
+    "no-optional-attack": 8,
+    "finish-turn": 8,
+    "source-legal-replacement": 13,
+    "source-legal-reinforcement": 9
+  },
+  "cityControl": {
+    "Daugavpils": "german",
+    "Insterburg": "german",
+    "Kaunas": "german",
+    "Leningrad": "soviet",
+    "Liepaja": "german",
+    "Luga": "soviet",
+    "Narva": "soviet",
+    "Novgorod": "soviet",
+    "Parnu": "german",
+    "Pskov": "german",
+    "Riga": "german",
+    "Siauliai": "german",
+    "Tallinn": "soviet",
+    "Tartu": "german"
+  },
+  "terminal": {
+    "axisControlledCount": 9,
+    "cityControl": {
+      "Daugavpils": "german",
+      "Insterburg": "german",
+      "Kaunas": "german",
+      "Leningrad": "soviet",
+      "Liepaja": "german",
+      "Luga": "soviet",
+      "Narva": "soviet",
+      "Novgorod": "soviet",
+      "Parnu": "german",
+      "Pskov": "german",
+      "Riga": "german",
+      "Siauliai": "german",
+      "Tallinn": "soviet",
+      "Tartu": "german"
+    },
+    "onlyRemainingCity": "Leningrad",
+    "onlyRemainingCityIsolated": null,
+    "outcome": "soviet-victory",
+    "reason": "axis-controls-at-most-threshold",
+    "totalCities": 14
+  },
+  "phase": null,
+  "exactRestore": true,
+  "communicationChecks": 122
+}

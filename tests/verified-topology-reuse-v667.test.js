@@ -1,0 +1,22 @@
+'use strict';
+const A=require('node:assert/strict'), H=require('../core/hexside_features'), G=require('../core/map_movement_graph');
+const map=structuredClone(require('../maps/kiev-odessa-composite-experimental-v531.json'));
+const scope=require('../maps/movement-configs/kiev-odessa-experimental-v531.json').experimentalGraphScope;
+const record=require('../maps/movement-configs/experimental-source-graph-ledgers.json').maps[map.id];
+const options={experimentalScope:scope};
+let n=0;const eq=(a,b)=>{A.deepEqual(a,b);n++;};const ok=x=>{A.ok(x);n++;};const rejects=(fn,pattern)=>{A.throws(fn,pattern);n++;};
+const a=H.inspectWithGraph(map,options), pristine=structuredClone(a.board), b=H.inspectWithGraph(structuredClone(map),options);
+eq(a.board,b.board);ok(a.board!==b.board);ok(a.board.cells!==b.board.cells);ok(a.board.edges!==b.board.edges);
+ok(a.ledger===b.ledger);ok(Object.isFrozen(a.ledger));ok(Object.isFrozen(a.ledger.edges));ok(Object.isFrozen(a.ledger.metadata));ok(a.ledger.edges.every(Object.isFrozen));
+const cell=Object.keys(a.board.cells)[0];a.board.cells[cell].terrain='corrupt';a.board.edges[0].rail=!a.board.edges[0].rail;a.board.metadata.edgeCount=-1;
+eq(b.board,pristine);eq(G.build(map,options),pristine);eq(H.inspectWithGraph(map,options).board,pristine);
+rejects(()=>{a.ledger.edges[0].rail=false;},TypeError);
+const changed=structuredClone(map);changed.cells[0].terrain=changed.cells[0].terrain==='sea'?'open':'sea';
+rejects(()=>H.inspectWithGraph(changed,options),/fingerprint-mismatch/);
+rejects(()=>H.inspectWithGraph(map,{experimentalScope:'bad'}),/not-gameplay-certified/);
+const previous=record.board.edges[0].rail;
+try{record.board.edges[0].rail=!previous;rejects(()=>H.inspectWithGraph(map,options),/fingerprint-mismatch/);}finally{record.board.edges[0].rail=previous;}
+eq(H.inspectWithGraph(map,options).board,pristine);ok(H.inspectWithGraph(map,options).ledger===a.ledger);
+const kiev=H.inspectWithGraph(require('../maps/kiev.json'));
+ok(kiev.ledger!==a.ledger);eq(kiev.ledger.metadata.mapId,require('../maps/kiev.json').id);eq(H.inspectWithGraph(map,options).board,pristine);
+console.log('PASS verified topology reuse:',n,'assertions');

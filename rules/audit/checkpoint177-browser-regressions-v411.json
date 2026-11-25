@@ -1,0 +1,14 @@
+{
+  "checkpoint": 177,
+  "version": "v411",
+  "status": "PASS",
+  "checks": [
+    {
+      "test": "tests/leningrad-counter-swap-browser-v405.py",
+      "result": "PASS",
+      "execution": "Actual isolated headless Chromium, shared historical browser engine bundle, published Leningrad map SVG, photographed counter artwork; pool-map swapping, selected highlights, invalid swap rejection, drag, phase transition and no browser errors",
+      "screenshotArtifact": "rules/audit/visual/leningrad-counter-swap-v405.png",
+      "note": "Existing screenshot/JSON were preserved byte-for-byte from checkpoint 176 after the browser test; no fake Arduous render created"
+    }
+  ]
+}

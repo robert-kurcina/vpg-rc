@@ -1,0 +1,92 @@
+{
+  "checkpoint": 196,
+  "version": "v430",
+  "scope": "Source-configured Kiev Major River mechanics and desktop terrain tooltips",
+  "selectedNodeSuites": 15,
+  "selectedNodeSuitesPassed": 15,
+  "majorRiverAssertions": 18,
+  "tooltipSourceAssertions": 14,
+  "playableBrowserEvidence": {
+    "arduous": "rules/audit/visual/arduous-desktop-terrain-tooltip-v430.png",
+    "leningrad": "rules/audit/visual/leningrad-desktop-terrain-tooltip-v430.png"
+  },
+  "browserAcceptanceLimitations": [
+    "Full Battle for Moscow Chromium hover batch did not complete under the execution window",
+    "Complete interactive touch browser batch did not produce a final audit record; only code-level touch suppression is independently verifiable"
+  ],
+  "kievGameStatus": "provisional; executable Kiev map graph not authorized",
+  "mapAndCRTPreservation": {
+    "core/historical_crt.js": {
+      "preserved": true,
+      "sha256": "6a43c47ae52c6c110728403fd680406ba99d8e67bd14f234cb82f38c703b22e6"
+    },
+    "core/engine.js": {
+      "preserved": true,
+      "sha256": "a00db3a992524d1a9cfce5024838d40e38c29fea7c91ea2d099ef30d5515fabf"
+    },
+    "core/terrain_tiles.js": {
+      "preserved": true,
+      "sha256": "c2490ccea4559ad3c7740da909f72f9a0d3f99f907c8043eb273acc4b76eac4a"
+    },
+    "maps/kiev.json": {
+      "preserved": true,
+      "sha256": "901db1cbe3abec3f0cb4a65b8d05f95ae63ad5a741c3f7d593118f6fcae2523a"
+    },
+    "maps/arduous.json": {
+      "preserved": true,
+      "sha256": "0cf849eaf683cd86443d244f20e5d03f8dc18ba354f88861d039307da162742d"
+    },
+    "maps/leningrad.json": {
+      "preserved": true,
+      "sha256": "3ec95353555af6703d2fd006b11b55e2b98685e296f36e528da85547d6933b17"
+    },
+    "maps/battle-for-moscow.json": {
+      "preserved": true,
+      "sha256": "0cbbee55d2079c931b54d6692599e53a2edb28d43390636f0b2cb47e7aa40005"
+    },
+    "maps/odessa-extension.json": {
+      "preserved": true,
+      "sha256": "365aadeb36a288c1cd4d46d6520168c6860400928d5a405950ed770fe83ff916"
+    },
+    "exports/kiev.svg": {
+      "preserved": true,
+      "sha256": "500c9a6789c50d0b9f8a0ed4af16548ba7968377ccfde83de6eb26000fe0182a"
+    },
+    "exports/kiev.png": {
+      "preserved": true,
+      "sha256": "7937044b73f4d96dd353964fdff4f475d9f0c9310ab6296aa9d1de213ee23c5f"
+    },
+    "exports/arduous.svg": {
+      "preserved": true,
+      "sha256": "e499063eb7be9757b1beb58f1c54e1bef5232c5cd94d8e0a8196c426e556661b"
+    },
+    "exports/arduous.png": {
+      "preserved": true,
+      "sha256": "5e5a1d9d4307ce1951a56207e3cc0ba383a40c37ed3a76d16eec59399c2b4a8a"
+    },
+    "exports/leningrad.svg": {
+      "preserved": true,
+      "sha256": "e45856f7d56b5acfecf7083b405b9465d1c21459d698ac65e9196f581f832925"
+    },
+    "exports/leningrad.png": {
+      "preserved": true,
+      "sha256": "a9f1886cd3c9d85bfe5238e82a79a613550b98170ff08967ff08f14e20690ed2"
+    },
+    "exports/battle-for-moscow.svg": {
+      "preserved": true,
+      "sha256": "487a050a42cf41554886b0fcef85baf68e40354f784428623926f1a9354f4de1"
+    },
+    "exports/battle-for-moscow.png": {
+      "preserved": true,
+      "sha256": "6305899525da4a453a4f2f1d13607b32913c65e86a5f8657b004701bfe4e0332"
+    },
+    "exports/kiev-odessa.svg": {
+      "preserved": true,
+      "sha256": "7cb5fafbb18babd2b4b2a5129e6802607dd4b0df8b07e46491319c07ecb9c71c"
+    },
+    "exports/kiev-odessa.png": {
+      "preserved": true,
+      "sha256": "f7a84021dda8a796b8b04cfe018d15b6ad043e8a39e08ff7f0d7eccab721f71a"
+    }
+  }
+}

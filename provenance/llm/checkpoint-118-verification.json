@@ -1,0 +1,25 @@
+{
+  "checkpoint": 118,
+  "version": "v352",
+  "status": "PREVIEW_ONLY",
+  "tests": [
+    "9 JS targeted suites passed",
+    "1 Python current visual-baseline regression passed",
+    "fresh five-map PNG+SVG pairwise equality to v351 passed"
+  ],
+  "sourceArchive": "hex_wargame_v351_CHECKPOINT_117_CANONICAL_STATE_MIGRATION.zip",
+  "sha256": {
+    "core/canonical_state_migration.js": "ba0a6687a66352feab69b4afb0d72c4c6e49f4226d70972feac88d38b3cefc20",
+    "tests/leningrad-canonical-movement-snapshot-v352.test.js": "94c6554bce13657ed2a8e519872e54762323d0547869608c5fe256cacce18d9b",
+    "tests/leningrad-approved-visual-regression-v352.test.py": "b27dbc7e737cab3ba45b5b85ea49c7c27c2a03cc6afe549ade936600c6128d32",
+    "rules/audit/leningrad-movement-snapshot-migration-v352.json": "fe4cf4084c4ea212ccf33339db4754180ff05302cdb7b77f95b76e302cf267e6",
+    "rules/audit/leningrad-visual-baseline-v350.json": "210b5960c038aa3bf11794d7180ccf58731af4add5893b570149bcc48b4e9e3c",
+    "maps/leningrad.json": "3ec95353555af6703d2fd006b11b55e2b98685e296f36e528da85547d6933b17",
+    "core/terrain_tiles.js": "903c0a5161713d21101ce23e1c308a4c224e395060fdd7aefd21270edc64b1b0",
+    "core/presentation.js": "fc4ea463adfb22a33089c29d433d2c11ad1e39ce6f838769912f296d70a2238b",
+    "exports/leningrad.svg": "4ad4965040952244ee4c7dc136e8726616a3c791d64dfa3b5b74fc46f3f0cd03",
+    "exports/leningrad.png": "3b622a8a645b3c87f0622dd82de347c6110a10ce639058057b765ff3bb99be2f"
+  },
+  "visualBaseline": "v350 user-reviewed smooth-wavelet render",
+  "productionActivation": false
+}

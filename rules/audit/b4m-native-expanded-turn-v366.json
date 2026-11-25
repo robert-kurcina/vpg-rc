@@ -1,0 +1,656 @@
+{
+  "schemaVersion": 1,
+  "checkpoint": 132,
+  "version": "v366",
+  "status": "opt-in-expanded-seven-turn-differential-parity",
+  "reference": "in-repository Oberlabs-compatible legacy/engine.js (not independently verified upstream)",
+  "test": "tests/b4m-native-expanded-turn-v366.test.js",
+  "policyTest": "tests/b4m-native-replacement-policy-v366.test.js",
+  "summary": {
+    "status": "PASS",
+    "checkpoint": 132,
+    "version": "v366",
+    "cases": [
+      {
+        "seed": 17,
+        "moveChoice": "first",
+        "setupMode": "automatic",
+        "turns": 7,
+        "multiMovePhases": 27,
+        "multiReplacementPhases": 6,
+        "maximumMovesPerPhase": 4,
+        "maximumReplacementsPerPhase": 5,
+        "communicationChecks": 237,
+        "communicationConnected": 237,
+        "communicationDisconnected": 0,
+        "manualPlacements": 0,
+        "phases": 55,
+        "realMoves": 108,
+        "realBattles": 16,
+        "realReplacements": 33,
+        "shockPlacements": 1,
+        "savedRestores": 3,
+        "stateChecks": 214,
+        "choiceChecks": 174,
+        "undoReplays": 125,
+        "phasesByTurn": {
+          "1": 6,
+          "2": 8,
+          "3": 8,
+          "4": 9,
+          "5": 8,
+          "6": 8,
+          "7": 8
+        },
+        "turnEnds": [
+          [
+            1,
+            "german",
+            1,
+            "soviet"
+          ],
+          [
+            1,
+            "soviet",
+            2,
+            "german"
+          ],
+          [
+            2,
+            "german",
+            2,
+            "soviet"
+          ],
+          [
+            2,
+            "soviet",
+            3,
+            "german"
+          ],
+          [
+            3,
+            "german",
+            3,
+            "soviet"
+          ],
+          [
+            3,
+            "soviet",
+            4,
+            "german"
+          ],
+          [
+            4,
+            "german",
+            4,
+            "soviet"
+          ],
+          [
+            4,
+            "soviet",
+            5,
+            "german"
+          ],
+          [
+            5,
+            "german",
+            5,
+            "soviet"
+          ],
+          [
+            5,
+            "soviet",
+            6,
+            "german"
+          ],
+          [
+            6,
+            "german",
+            6,
+            "soviet"
+          ],
+          [
+            6,
+            "soviet",
+            7,
+            "german"
+          ],
+          [
+            7,
+            "german",
+            7,
+            "soviet"
+          ],
+          [
+            7,
+            "soviet",
+            8,
+            "german"
+          ]
+        ],
+        "multiBattlePhases": 4,
+        "allCombatOutcomes": {
+          "DR": 4,
+          "DE": 1,
+          "EX": 7,
+          "NE": 3,
+          "AL": 1
+        },
+        "alternateChoices": {
+          "AL": 0,
+          "EX": 2,
+          "retreat": 4,
+          "advance": 1
+        },
+        "materialChoiceDifferences": {
+          "AL": 0,
+          "EX": 0,
+          "retreat": 4,
+          "advance": 1
+        },
+        "invalidRollChecks": 16,
+        "pendingSaveRestores": 8,
+        "combatPhaseDeclares": 16,
+        "combatPhaseMax": 2
+      },
+      {
+        "seed": 101,
+        "moveChoice": "last",
+        "setupMode": "automatic",
+        "turns": 7,
+        "multiMovePhases": 27,
+        "multiReplacementPhases": 6,
+        "maximumMovesPerPhase": 4,
+        "maximumReplacementsPerPhase": 5,
+        "communicationChecks": 240,
+        "communicationConnected": 231,
+        "communicationDisconnected": 9,
+        "manualPlacements": 0,
+        "phases": 55,
+        "realMoves": 108,
+        "realBattles": 15,
+        "realReplacements": 30,
+        "shockPlacements": 1,
+        "savedRestores": 3,
+        "stateChecks": 210,
+        "choiceChecks": 167,
+        "undoReplays": 124,
+        "phasesByTurn": {
+          "1": 6,
+          "2": 8,
+          "3": 8,
+          "4": 9,
+          "5": 8,
+          "6": 8,
+          "7": 8
+        },
+        "turnEnds": [
+          [
+            1,
+            "german",
+            1,
+            "soviet"
+          ],
+          [
+            1,
+            "soviet",
+            2,
+            "german"
+          ],
+          [
+            2,
+            "german",
+            2,
+            "soviet"
+          ],
+          [
+            2,
+            "soviet",
+            3,
+            "german"
+          ],
+          [
+            3,
+            "german",
+            3,
+            "soviet"
+          ],
+          [
+            3,
+            "soviet",
+            4,
+            "german"
+          ],
+          [
+            4,
+            "german",
+            4,
+            "soviet"
+          ],
+          [
+            4,
+            "soviet",
+            5,
+            "german"
+          ],
+          [
+            5,
+            "german",
+            5,
+            "soviet"
+          ],
+          [
+            5,
+            "soviet",
+            6,
+            "german"
+          ],
+          [
+            6,
+            "german",
+            6,
+            "soviet"
+          ],
+          [
+            6,
+            "soviet",
+            7,
+            "german"
+          ],
+          [
+            7,
+            "german",
+            7,
+            "soviet"
+          ],
+          [
+            7,
+            "soviet",
+            8,
+            "german"
+          ]
+        ],
+        "multiBattlePhases": 6,
+        "allCombatOutcomes": {
+          "DR": 6,
+          "DE": 1,
+          "AL": 4,
+          "EX": 2,
+          "NE": 2
+        },
+        "alternateChoices": {
+          "AL": 2,
+          "EX": 2,
+          "retreat": 6,
+          "advance": 1
+        },
+        "materialChoiceDifferences": {
+          "AL": 2,
+          "EX": 2,
+          "retreat": 6,
+          "advance": 1
+        },
+        "invalidRollChecks": 15,
+        "pendingSaveRestores": 12,
+        "combatPhaseDeclares": 15,
+        "combatPhaseMax": 2
+      },
+      {
+        "seed": 2026,
+        "moveChoice": "first",
+        "setupMode": "automatic",
+        "turns": 7,
+        "multiMovePhases": 27,
+        "multiReplacementPhases": 5,
+        "maximumMovesPerPhase": 4,
+        "maximumReplacementsPerPhase": 5,
+        "communicationChecks": 240,
+        "communicationConnected": 234,
+        "communicationDisconnected": 6,
+        "manualPlacements": 0,
+        "phases": 55,
+        "realMoves": 108,
+        "realBattles": 24,
+        "realReplacements": 29,
+        "shockPlacements": 1,
+        "savedRestores": 3,
+        "stateChecks": 218,
+        "choiceChecks": 177,
+        "undoReplays": 133,
+        "phasesByTurn": {
+          "1": 6,
+          "2": 8,
+          "3": 8,
+          "4": 9,
+          "5": 8,
+          "6": 8,
+          "7": 8
+        },
+        "turnEnds": [
+          [
+            1,
+            "german",
+            1,
+            "soviet"
+          ],
+          [
+            1,
+            "soviet",
+            2,
+            "german"
+          ],
+          [
+            2,
+            "german",
+            2,
+            "soviet"
+          ],
+          [
+            2,
+            "soviet",
+            3,
+            "german"
+          ],
+          [
+            3,
+            "german",
+            3,
+            "soviet"
+          ],
+          [
+            3,
+            "soviet",
+            4,
+            "german"
+          ],
+          [
+            4,
+            "german",
+            4,
+            "soviet"
+          ],
+          [
+            4,
+            "soviet",
+            5,
+            "german"
+          ],
+          [
+            5,
+            "german",
+            5,
+            "soviet"
+          ],
+          [
+            5,
+            "soviet",
+            6,
+            "german"
+          ],
+          [
+            6,
+            "german",
+            6,
+            "soviet"
+          ],
+          [
+            6,
+            "soviet",
+            7,
+            "german"
+          ],
+          [
+            7,
+            "german",
+            7,
+            "soviet"
+          ],
+          [
+            7,
+            "soviet",
+            8,
+            "german"
+          ]
+        ],
+        "multiBattlePhases": 12,
+        "allCombatOutcomes": {
+          "DR": 8,
+          "NE": 10,
+          "EX": 5,
+          "DRL": 1
+        },
+        "alternateChoices": {
+          "AL": 0,
+          "EX": 1,
+          "retreat": 10,
+          "advance": 0
+        },
+        "materialChoiceDifferences": {
+          "AL": 0,
+          "EX": 0,
+          "retreat": 9,
+          "advance": 0
+        },
+        "invalidRollChecks": 24,
+        "pendingSaveRestores": 24,
+        "combatPhaseDeclares": 24,
+        "combatPhaseMax": 2
+      },
+      {
+        "seed": 509,
+        "moveChoice": "last",
+        "setupMode": "manual",
+        "turns": 7,
+        "multiMovePhases": 27,
+        "multiReplacementPhases": 6,
+        "maximumMovesPerPhase": 4,
+        "maximumReplacementsPerPhase": 5,
+        "communicationChecks": 235,
+        "communicationConnected": 229,
+        "communicationDisconnected": 6,
+        "manualPlacements": 22,
+        "phases": 55,
+        "realMoves": 108,
+        "realBattles": 13,
+        "realReplacements": 32,
+        "shockPlacements": 1,
+        "savedRestores": 3,
+        "stateChecks": 233,
+        "choiceChecks": 161,
+        "undoReplays": 122,
+        "phasesByTurn": {
+          "1": 6,
+          "2": 8,
+          "3": 8,
+          "4": 9,
+          "5": 8,
+          "6": 8,
+          "7": 8
+        },
+        "turnEnds": [
+          [
+            1,
+            "german",
+            1,
+            "soviet"
+          ],
+          [
+            1,
+            "soviet",
+            2,
+            "german"
+          ],
+          [
+            2,
+            "german",
+            2,
+            "soviet"
+          ],
+          [
+            2,
+            "soviet",
+            3,
+            "german"
+          ],
+          [
+            3,
+            "german",
+            3,
+            "soviet"
+          ],
+          [
+            3,
+            "soviet",
+            4,
+            "german"
+          ],
+          [
+            4,
+            "german",
+            4,
+            "soviet"
+          ],
+          [
+            4,
+            "soviet",
+            5,
+            "german"
+          ],
+          [
+            5,
+            "german",
+            5,
+            "soviet"
+          ],
+          [
+            5,
+            "soviet",
+            6,
+            "german"
+          ],
+          [
+            6,
+            "german",
+            6,
+            "soviet"
+          ],
+          [
+            6,
+            "soviet",
+            7,
+            "german"
+          ],
+          [
+            7,
+            "german",
+            7,
+            "soviet"
+          ],
+          [
+            7,
+            "soviet",
+            8,
+            "german"
+          ]
+        ],
+        "multiBattlePhases": 3,
+        "allCombatOutcomes": {
+          "DR": 3,
+          "EX": 5,
+          "NE": 3,
+          "AL": 2
+        },
+        "alternateChoices": {
+          "AL": 0,
+          "EX": 3,
+          "retreat": 4,
+          "advance": 0
+        },
+        "materialChoiceDifferences": {
+          "AL": 0,
+          "EX": 1,
+          "retreat": 4,
+          "advance": 0
+        },
+        "invalidRollChecks": 13,
+        "pendingSaveRestores": 6,
+        "combatPhaseDeclares": 13,
+        "combatPhaseMax": 2
+      }
+    ],
+    "totals": {
+      "multiMovePhases": 108,
+      "multiReplacementPhases": 23,
+      "communicationChecks": 952,
+      "communicationConnected": 931,
+      "communicationDisconnected": 21,
+      "manualPlacements": 22,
+      "phases": 220,
+      "realMoves": 432,
+      "realBattles": 68,
+      "realReplacements": 124,
+      "shockPlacements": 4,
+      "savedRestores": 12,
+      "stateChecks": 875,
+      "choiceChecks": 679,
+      "undoReplays": 504,
+      "multiBattlePhases": 25,
+      "invalidRollChecks": 68,
+      "pendingSaveRestores": 50,
+      "combatPhaseDeclares": 68
+    },
+    "peakMovements": 4,
+    "peakReplacements": 5,
+    "terminalFixtures": 3,
+    "materialChoiceDifferences": {
+      "AL": 2,
+      "EX": 3,
+      "retreat": 23,
+      "advance": 2
+    }
+  },
+  "policy": {
+    "status": "PASS",
+    "checkpoint": 132,
+    "version": "v366",
+    "entry": {
+      "type": "enter",
+      "id": "s49",
+      "x": 10,
+      "y": 0
+    },
+    "policy": "preventSameTurnEntryRestore",
+    "laterRestore": true,
+    "sourceOptionParity": true,
+    "negativeCases": 3
+  },
+  "sourceSHA256": {
+    "legacy/engine.js": "1aa696a10fd2fbb2369bfbf1d5f7ca37b05f2ab26fb9d6e9fd9b9731ac1dc53d",
+    "core/engine.js": "7f19954634c51f46b0ddf78fd04cbfcbbe6c6b0c5c2632eb6ba86e7e082566ec",
+    "core/native_preview_config.js": "2e0abc905dde44fa0d6ba6ee91c3c18d4533629d3577c6def62f76f58c79775f",
+    "core/native_session_actions.js": "998b89a0b68baa24a78cc47aab5766d2333767bf293a7b575fc0a895c313d16c",
+    "core/session.js": "901d31caf89bbe08fdeddbf6f7203cf243c735ca0371c59eeea5434a8fc4805e",
+    "games/battle-for-moscow/game.json": "9d5ccd8e80b3fb2ea1018e26ccac9ebf26e3bf9081920c162347dcb94ef23f39",
+    "games/battle-for-moscow/native-preview/config.json": "f727111350a199a8302860002b3f9adc47f0e5e661cc52910e35fc92ccae6a53",
+    "tests/b4m-native-expanded-turn-v366.test.js": "8c104bd09014ea73be7701fdd9f73d4d976e6dc54d120783ec172077d3969a21",
+    "tests/b4m-native-replacement-policy-v366.test.js": "006eb7428dd45b3caa25ca06f433bef0ebc94ec8d18bdfb5b7ff88582584c105"
+  },
+  "verified": [
+    "Four independently evolving full seven-turn games match legacy for positions, strengths, city control, side, phase, committed RNG and victory",
+    "Up to four distinct-unit moves in a movement phase, all checked against source legal paths after prior moves",
+    "More than one replacement in each eligible phase, exhausting the source budget where possible and checking new options after every commit",
+    "A just-entered reduced unit cannot restore in that same turn but can in a later turn subject to budget and communication; policy is opt-in and validated",
+    "Dynamic communication (including disconnected lines) matches the legacy executable on every checked unit state",
+    "German Moscow capture, Soviet Moscow-plus-other-city, and Soviet-only-Moscow draw all match at the actual terminal phase transition",
+    "Multi-battle declaration queues, committed dice, chosen consequences, Undo and replay remain differentially checked",
+    "The user-approved five map renders and the production B4M legacy browser selector are unchanged"
+  ],
+  "limitations": [
+    "Not exhaustive: four seeded action policies, no universal AI or native browser UX certification",
+    "The scripted move picker stops after four different units per movement phase; remaining units and optional choices may still be untested",
+    "Replacement actions are exhausted within the scenario budget but the picker does not enumerate every replacement order",
+    "Three reachable control-state victory fixtures are counterfactuals; does not reproduce every possible Moscow campaign",
+    "Communication checks use evolving sampled campaign boards and do not exhaust every possible enemy ZOC arrangement",
+    "Retreat and combat choices remain bounded by earlier v365 tests; independent upstream Oberlabs parity remains incomplete"
+  ]
+}

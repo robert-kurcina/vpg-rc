@@ -1,0 +1,11 @@
+{
+  "checkpoint": 170,
+  "version": "v404",
+  "assertions": 29,
+  "status": "PASS",
+  "scope": "Candidate historical deployment validated against §6 source markers; four hidden mechanized identities mixed, versioned save and turn-1 handoff",
+  "limitations": [
+    "Source coordinate disagreement remains open",
+    "Local browser cannot prevent developer-tools inspection of concealed identities"
+  ]
+}

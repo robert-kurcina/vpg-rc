@@ -1,0 +1,129 @@
+{
+  "version": 1,
+  "turns": 5,
+  "turnOrder": [
+    "blue",
+    "red"
+  ],
+  "phases": [
+    {
+      "id": "movement",
+      "kind": "move",
+      "movementMode": "normal"
+    },
+    {
+      "id": "combat",
+      "kind": "combat"
+    }
+  ],
+  "movement": {
+    "terrainCosts": {
+      "open": 1,
+      "forest": 2,
+      "hill": 2
+    },
+    "zocStops": true,
+    "oneUnitPerCell": true,
+    "friendlyTransit": true
+  },
+  "combat": {
+    "oddsCap": 5,
+    "terrainShifts": {
+      "forest": 1,
+      "hill": 1
+    },
+    "cityShifts": {
+      "capital": 1,
+      "depot": 0
+    },
+    "table": {
+      "1": [
+        "AL",
+        "NE",
+        "NE",
+        "DR",
+        "DR",
+        "EX"
+      ],
+      "2": [
+        "NE",
+        "DR",
+        "DR",
+        "EX",
+        "DE",
+        "DE"
+      ],
+      "3": [
+        "DR",
+        "DR",
+        "EX",
+        "DE",
+        "DE",
+        "DE"
+      ],
+      "4": [
+        "DR",
+        "EX",
+        "DE",
+        "DE",
+        "DE",
+        "DE"
+      ],
+      "5": [
+        "EX",
+        "DE",
+        "DE",
+        "DE",
+        "DE",
+        "DE"
+      ]
+    },
+    "retreatModule": "one-hex-open-v1",
+    "outcomesModule": "step-exchange-v1"
+  },
+  "weather": [
+    {
+      "name": "mud",
+      "turns": [
+        3
+      ],
+      "normalMovementLimit": 1,
+      "combatMultipliers": {
+        "armor": 0.5
+      },
+      "mudIgnoresTerrainCosts": true
+    }
+  ],
+  "specialRules": [
+    {
+      "module": "reinforcement-event-v1",
+      "when": {
+        "turn": 3,
+        "side": "red",
+        "phase": "start"
+      },
+      "unit": {
+        "id": "r7",
+        "faction": "red",
+        "type": "scout",
+        "full": 3,
+        "reduced": 1,
+        "movement": 3,
+        "strength": "full"
+      },
+      "entryCells": [
+        [
+          6,
+          6
+        ],
+        [
+          6,
+          5
+        ]
+      ],
+      "requireVacant": true,
+      "notInEnemyZoc": true
+    }
+  ],
+  "sourceNote": "Illustrative original small game; not a historical game."
+}

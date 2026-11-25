@@ -1,0 +1,16 @@
+{
+  "checkpoint": 168,
+  "version": "v402",
+  "group": 6,
+  "completed": 1,
+  "passed": 1,
+  "results": [
+    {
+      "index": 40,
+      "command": "node tests/historical-human-decision-gateway-v401.test.js",
+      "passed": true,
+      "seconds": 13.78,
+      "outputTail": "PASS human campaign choice/roll/restore/Undo 37 assertions\n"
+    }
+  ]
+}

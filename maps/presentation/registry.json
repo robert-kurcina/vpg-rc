@@ -1,0 +1,117 @@
+{
+  "schemaVersion": 1,
+  "template": "oberlabs-phase-guided",
+  "componentIds": [
+    "game-title",
+    "map-stage",
+    "status-turn-header",
+    "phase-context-panel",
+    "rules-reference-window",
+    "sequence-of-play-tab",
+    "how-to-tab",
+    "terrain-effects-tab",
+    "combat-results-tab",
+    "close-reference-window"
+  ],
+  "games": {
+    "battle-for-moscow": {
+      "status": "baseline-ui-functional",
+      "reference": "references/ux/oberlabs/manifest.json",
+      "referenceTabs": [
+        "sequence-of-play",
+        "how-to",
+        "terrain-effects",
+        "combat-results"
+      ],
+      "rulesData": "games/battle-for-moscow/rules.json"
+    },
+    "arduous": {
+      "status": "presentation-adapter-deferred",
+      "referenceTabs": [
+        "sequence-of-play",
+        "how-to",
+        "terrain-effects",
+        "combat-results"
+      ],
+      "requires": [
+        "scenario-phase-config",
+        "scenario-terrain-rules",
+        "scenario-guidance"
+      ]
+    },
+    "leningrad": {
+      "status": "presentation-adapter-deferred",
+      "referenceTabs": [
+        "sequence-of-play",
+        "how-to",
+        "terrain-effects",
+        "combat-results"
+      ],
+      "requires": [
+        "scenario-phase-config",
+        "scenario-terrain-rules",
+        "scenario-guidance"
+      ]
+    },
+    "kiev": {
+      "status": "presentation-adapter-deferred",
+      "referenceTabs": [
+        "sequence-of-play",
+        "how-to",
+        "terrain-effects",
+        "combat-results"
+      ],
+      "requires": [
+        "scenario-phase-config",
+        "scenario-terrain-rules",
+        "scenario-guidance"
+      ]
+    },
+    "kiev-odessa": {
+      "status": "presentation-adapter-deferred",
+      "composition": "kiev + odessa expansion rules and roster",
+      "referenceTabs": [
+        "sequence-of-play",
+        "how-to",
+        "terrain-effects",
+        "combat-results"
+      ],
+      "requires": [
+        "kiev-phase-config",
+        "odessa-rule-overrides",
+        "scenario-terrain-rules",
+        "scenario-guidance"
+      ]
+    }
+  },
+  "designConstraints": [
+    "One shared presentation component implementation, no per-game copied UI implementations",
+    "Preserve user-approved historical maps and SVG-driven counters unchanged",
+    "Keep Oberlabs player interaction order and game-specific actions",
+    "Generate charts from active configuration; suppress non-applicable rows",
+    "Use universal roster API and shared CRT, retain scenario-specific modifiers",
+    "Avoid claiming upstream feature parity from screenshots alone"
+  ],
+  "implementationStatus": "declarative-contract-only; shared live shell and tabbed reference UI not yet wired",
+  "sourceComparison": "references/ux/oberlabs/SOURCE_COMPARISON.md",
+  "requiredActionContract": [
+    "legal-actions-by-phase",
+    "commit-action",
+    "pending-decision",
+    "undo",
+    "optional-rule-availability",
+    "city-control-overlay"
+  ],
+  "upstreamB4mBaseline": {
+    "combatSelection": "defender-first",
+    "battleDeclaration": "queue-before-resolution",
+    "referenceTabs": [
+      "sequence-of-play",
+      "how-to",
+      "terrain-effects",
+      "combat-results"
+    ],
+    "cityControlInteraction": "turn-information-toggle",
+    "tournamentMode": "optional"
+  }
+}

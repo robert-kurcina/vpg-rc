@@ -1,0 +1,76 @@
+{
+  "checkpoint": 142,
+  "version": "v376",
+  "title": "Experimental configurable Soviet reserve-redeployment workflow before Turn 1 German combat",
+  "status": "candidate-only; source discrepancies and external legality parity unresolved; tournament scoring remains read-only and disabled",
+  "sourceEvidence": {
+    "publishedTournamentRules": "https://oberlabs.com/b4m/tournamentrules.html#6.0",
+    "publishedStandardRules": "https://oberlabs.com/b4m/rules.html",
+    "rules": "After German setup, Soviet player may redeploy none, some, or all three reserve armies, one per hex, east of Soviet frontline and outside German ZOC",
+    "publishedReserveHexes": [
+      "0503",
+      "0608",
+      "0803"
+    ],
+    "publishedMozhaiskHex": "0803",
+    "engineSourceOpeningReserveHexes": [
+      "0503",
+      "0609",
+      "0804"
+    ],
+    "engineSourceMozhaiskHex": "0804",
+    "engineIdentifiedReserveIds": [
+      "s16",
+      "s30",
+      "s43"
+    ],
+    "identityMethod": "14 on-board Soviet opening counters; these three alone are not within German ZOC across baseline German starting hexes",
+    "contradiction": "The printed tournament 0608/0803 locations do not contain the expected source-baseline reserve units; 0803 is not the current engine Mozhaisk city hex. No silent ID/board relabel performed.",
+    "conservativeCandidate": "strict x > maximum x of all nonreserve Soviet starting units, with unoccupied and no German ZOC. Each reserve may remain/return to its original starting hex. This may under-include historically legal placements and is not certified."
+  },
+  "implementation": {
+    "sharedRulesKernel": "core/engine.js: openingRedeploymentOptions, redeployOpeningUnit, finishOpeningRedeployment, currentPhase, configuration validation",
+    "optionalScenarioProfile": "games/battle-for-moscow/native-preview/config.json: deployments.openingRedeployment",
+    "humanActionSession": "core/native_session_actions.js, core/session.js (unchanged), core/native_session_save.js",
+    "nativeBrowser": "games/battle-for-moscow/native-preview/index.html; core/native_browser_view.js",
+    "nativeAI": "core/native_session_ai.js chooses source-permitted zero-move setup option",
+    "currentTournamentScoring": "core/native_tournament_scoring.js remains informational; no executable tournament outcome",
+    "activation": "Explicit unchecked candidate-redeployment checkbox in opt-in native browser only. Standard games remain unchanged; initial German combat follows precombat setup."
+  },
+  "testEvidence": {
+    "node": "tests/b4m-native-reserve-redeployment-v376.test.js",
+    "browser": "scripts/verify-native-redeployment-v376.py",
+    "assertionChecks": 1153,
+    "sourceInitialNonGermanZocReserves": 3,
+    "candidateLegalDestinationsAtStartForS16": 93,
+    "manualGermanSetupPlacements": 22,
+    "saveUndoCases": 6,
+    "moves": "none, one, three and return-to-origin verified",
+    "mutationRejections": "west, occupied, enemy ZOC, other units, wrong phase, malformed config, forged completion save",
+    "browserActions": "real Chromium click on s16 button, click hex 0606, Undo, JSON file upload restore, explicit confirm to combat, Undo",
+    "browserArtworkDecoded": 40,
+    "fullCampaignSuite": "existing v364-v369 suites passed on unchanged standard default setup, including AI",
+    "mapRegression": "v373 no-shadow, shared profiles, Leningrad approval and map export manifest tests pass",
+    "hostedBrowser": "not available due administrator block",
+    "originalOberlabsExecutableParity": "NOT VERIFIED"
+  },
+  "sourcePreservation": {
+    "baselineZip": "hex_wargame_v375_CHECKPOINT_141_TOURNAMENT_REFERENCE.zip",
+    "rendererMapVisualAndProductionDataFilesCompared": 64,
+    "unchangedCount": 64,
+    "changedCount": 0,
+    "acceptedVisualBaseline": "v373 Forest no shadow",
+    "originalSourceGameEngine": "legacy-b4m-v1",
+    "tournamentEnabled": false,
+    "productionRoutingChanged": false
+  },
+  "openGates": [
+    "Reconcile published tournament coordinates 0608/0803 with source baseline 0609/0804 (Mozhaisk)",
+    "Obtain executable Oberlabs redeployment destination set and verify east-of-frontline interpretation; candidate is conservative, not exhaustive",
+    "Independently compare tournament finalResults ambiguous minor-outcome branch; certify seven-turn optional-mode adjudication",
+    "Verify complete human UX, hosted browser navigation, legacy strategic AI parity and other four historical scenarios"
+  ],
+  "artifacts": [
+    "rules/audit/visual/b4m-opening-redeployment-browser-v376.png"
+  ]
+}

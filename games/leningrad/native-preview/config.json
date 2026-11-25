@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "scenarioId": "leningrad",
+  "status": "candidate-setup-engine-preview-not-historically-certified",
+  "map": "../../../maps/leningrad.json",
+  "counterConfig": "../../../maps/counter-configs/leningrad.json",
+  "setup": "../../../maps/setup/leningrad.json",
+  "profile": "../../../maps/movement-configs/leningrad.json",
+  "phaseConfig": "../../../maps/phase-configs/leningrad.json",
+  "combatPolicy": "../../../maps/combat-configs/leningrad.json",
+  "buildupPolicy": "../../../maps/buildup-configs/leningrad.json",
+  "housekeepingPolicy": "../../../maps/housekeeping-configs/leningrad.json",
+  "mapExport": "../../../exports/leningrad.svg",
+  "candidateFixture": "leningrad-source-setup-v357",
+  "sourceGame": "Target: Leningrad",
+  "mapViewBox": [
+    -28,
+    -28,
+    1250,
+    819
+  ]
+}

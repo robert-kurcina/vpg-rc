@@ -1,0 +1,115 @@
+{
+  "checkpoint": 187,
+  "version": "v421",
+  "results": [
+    {
+      "suite": "universal-counter-geometry-v420",
+      "status": "pass",
+      "durationSeconds": 0.19,
+      "detail": ""
+    },
+    {
+      "suite": "shared-historical-crt-v316",
+      "status": "pass",
+      "durationSeconds": 0.03,
+      "detail": ""
+    },
+    {
+      "suite": "historical-player-deployment-v404",
+      "status": "pass",
+      "durationSeconds": 0.09,
+      "detail": ""
+    },
+    {
+      "suite": "arduous-executable-graph-v419",
+      "status": "pass",
+      "durationSeconds": 0.14,
+      "detail": ""
+    },
+    {
+      "suite": "arduous-seven-turn-smoke-v419",
+      "status": "pass",
+      "durationSeconds": 2.54,
+      "detail": ""
+    },
+    {
+      "suite": "arduous-combat-river-fortification-v419",
+      "status": "pass",
+      "durationSeconds": 0.07,
+      "detail": ""
+    },
+    {
+      "suite": "arduous-full-source-opening-v413",
+      "status": "pass",
+      "durationSeconds": 0.06,
+      "detail": ""
+    },
+    {
+      "suite": "arduous-river-candidates-v418",
+      "status": "pass",
+      "durationSeconds": 0.07,
+      "detail": ""
+    },
+    {
+      "suite": "leningrad-shared-wavelet-v315",
+      "status": "pass",
+      "durationSeconds": 0.05,
+      "detail": ""
+    },
+    {
+      "suite": "cross-game-movement-profiles-v318",
+      "status": "pass",
+      "durationSeconds": 0.03,
+      "detail": ""
+    },
+    {
+      "suite": "historical-human-decision-gateway-v401",
+      "status": "pass",
+      "durationSeconds": null,
+      "detail": "Passed on 40-second isolated rerun: 37 assertions"
+    },
+    {
+      "suite": "historical-combat-session-v386",
+      "status": "pass",
+      "durationSeconds": 0.96,
+      "detail": ""
+    },
+    {
+      "suite": "universal-scenario-contract-v317",
+      "status": "pass",
+      "durationSeconds": 0.03,
+      "detail": ""
+    },
+    {
+      "suite": "arduous-presentation-overrides-v415",
+      "status": "pass",
+      "durationSeconds": 0.12,
+      "detail": ""
+    },
+    {
+      "suite": "leningrad-counter-face-parity-v403",
+      "status": "pass",
+      "durationSeconds": 0.04,
+      "detail": ""
+    },
+    {
+      "suite": "map-movement-graph-v318",
+      "status": "pass",
+      "durationSeconds": 0.06,
+      "detail": ""
+    },
+    {
+      "suite": "oberlabs-presentation-contract-v317",
+      "status": "pass",
+      "durationSeconds": 0.03,
+      "detail": ""
+    }
+  ],
+  "summary": {
+    "passed": 17,
+    "failed": 0,
+    "timedOut": 0
+  },
+  "preexistingStaleTest": "leningrad-source-coast-wavelets-v312 requires removed exports-v312 directory; also fails on checkpoint 186",
+  "note": "Human decision suite passed on isolated rerun after an 8-second per-test budget interruption. Obsolete v311/v312 Coast tests depend on historical export directories removed before checkpoint 187."
+}

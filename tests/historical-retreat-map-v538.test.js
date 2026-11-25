@@ -1,0 +1,27 @@
+'use strict';
+const assert=require('assert/strict');
+const Retreat=require('../core/historical_retreat_map_ux');
+let n=0;const ok=(actual,expected,reason)=>{assert.deepEqual(actual,expected,reason);n++};
+const cells=['0205','0306','0405','0305','0404','0901','0902'].map((id,i)=>({id,pixelCenter:[i*60,20+(i%2)*35]}));
+const units={sovietA:{hex:'0205'},sovietB:{hex:'0901'}};
+const option=(paths,loss='axisA',advance=null)=>({type:'combat',action:{type:'resolve-battle',die:3,choices:{attackerLossIds:[loss],...(paths?{retreatPaths:paths}:{}),...(advance?{advanceUnitId:advance}:{})}}});
+const a=option({sovietA:['0306','0405']}),b=option({sovietA:['0306','0405']},'axisB'),c=option({sovietA:['0305','0405']}),d=option({sovietA:['0305','0404']}),e=option({sovietA:['0306','0405'],sovietB:['0902']});
+const plain=option(null);
+let model=Retreat.model({options:[a,b,c,d,e,plain],units,cells});
+ok(model.active,true,'legal routes active');ok(model.routes.length,4,'identical routes grouped; no-retreat excluded');
+ok(model.routes[0].options,[a,b],'casualty alternatives share route without being combined');
+ok(model.routes[0].routes[0].hexes,['0205','0306','0405'],'origin and intermediate steps');
+ok(model.routes[3].routes.length,2,'joint retreats carry both defenders');
+ok(Retreat.atDestination(model,'0405'),['retreat-0','retreat-1','retreat-3'],'shared destination routes remain distinguishable');
+ok(Retreat.atDestination(model,'0902'),['retreat-3'],'second defender destination');
+ok(Retreat.actionsForRoute(model,'retreat-0'),[a,b],'commit uses exact original legal actions');
+ok(Retreat.routeById(model,'retreat-0').label,'0205 → 0306 → 0405','short player route label');
+ok(Retreat.actionsForRoute(model,'not-listed'),[],'no new legal action');
+ok(Retreat.segment([0,0],[100,0],12),{start:[12,0],end:[88,0]},'explicit legacy 12-unit trim remains supported');
+ok(Retreat.segment([0,0],[3,4]),null,'no degenerate arrows');
+model=Retreat.model({options:[plain],units,cells});ok(model.active,false,'no arrows without actual retreat');ok(model.routes.length,0,'nonretreat choices unaffected');
+model=Retreat.model({options:[option({sovietA:['0306','9999']})],units,cells});ok(model.active,false,'reject path without pixel-center; do not guess');
+model=Retreat.model({options:[option({fake:['0306']})],units,cells});ok(model.active,false,'reject missing unit origin');
+model=Retreat.model({options:[option({sovietA:['0306','unknown']})],units,cells});ok(model.active,false,'reject invalid hex ID');
+try{Retreat.model({options:null,units,cells});assert.fail('must reject missing legal options')}catch(e){assert.match(e.message,/validated/);n++}
+console.log('PASS v538 map-retreat model:',n,'assertions');

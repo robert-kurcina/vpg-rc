@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "engine": "core/movement_rules.js",
+  "configurations": {
+    "arduous": {"profile": "arduous.json", "status": "source-backed-fixture-only"},
+    "leningrad": {"profile": "leningrad.json", "status": "source-backed-fixture-only"},
+    "kiev": {"profile": "kiev.json", "status": "source-backed-fixture-only"},
+    "kiev-odessa": {"extends": "kiev", "status": "land-movement-only; expansion naval and home-army restrictions pending"}
+  },
+  "baseline": "Battle for Moscow continues to use its tested Oberlabs-compatible movement adjudicator until parity migration"
+}

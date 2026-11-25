@@ -1,0 +1,16 @@
+{
+  "checkpoint": 168,
+  "version": "v402",
+  "group": 7,
+  "completed": 1,
+  "passed": 1,
+  "results": [
+    {
+      "index": 41,
+      "command": "python3 scripts/verify-historical-human-browser-v402.py",
+      "passed": true,
+      "seconds": 17.65,
+      "outputTail": ": \"PASS\",\n  \"browser\": \"real isolated Chromium with source-byte JSON fetch\",\n  \"networkNavigation\": \"blocked by administrator; not independently certified\",\n  \"scenario\": \"leningrad\",\n  \"setup\": \"candidate, not certified\",\n  \"moduleCount\": 38,\n  \"counterCount\": 19,\n  \"mapSvgSHA256\": \"e45856f7d56b5acfecf7083b405b9465d1c21459d698ac65e9196f581f832925\",\n  \"sameByteStateAsNode\": true,\n  \"battleViaGUI\": true,\n  \"dieCommitBeforeConsequences\": true,\n  \"pendingDieFileRestore\": true,\n  \"saveDownload\": true,\n  \"counterClickFilter\": true,\n  \"invalidSaveFailClosed\": true,\n  \"undo\": true,\n  \"baselineAiStep\": true,\n  \"baselineAiSide\": true,\n  \"visualScreenshot\": \"rules/audit/visual/leningrad-human-browser-v402.png\",\n  \"limitations\": [\n    \"Source-certified individual counter assignment and printed coordinates pending\",\n    \"Full eight-turn user-operated browser acceptance not yet demonstrated\",\n    \"Hosted Chromium navigation blocked by administrator\",\n    \"Oberlabs UX parity deferred by user\"\n  ]\n}\n"
+    }
+  ]
+}

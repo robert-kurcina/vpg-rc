@@ -1,0 +1,2171 @@
+{
+  "schemaVersion": 1,
+  "scope": "SVG-first per-hex forest/swamp overlays; no raster color sampling; no gameplay certification",
+  "mapId": "arduous",
+  "sourceSvgSha256": "423af8983fd90a5be17041922a612efba42bbff306683ead9fd6910413402ede",
+  "sourceMapSha256": "0cf849eaf683cd86443d244f20e5d03f8dc18ba354f88861d039307da162742d",
+  "registrationStatus": "existing-map-SVG-to-pixel-registration-not-independently-certified",
+  "counts": {
+    "hexes": 155,
+    "forest": 30,
+    "swamp": 20,
+    "noAuthoredOverlay": 105,
+    "maxMarkerCenterResidualPx": 3.9744
+  },
+  "authoredGeometry": [
+    {
+      "hexId": "0208",
+      "feature": "forest",
+      "sourceSvgId": "path207",
+      "visualGeometry": "transformed-filled-svg-path",
+      "vectorCentroidPx": [
+        180.7975,
+        386.9752
+      ],
+      "centerResidualPx": 0.6773,
+      "nextNearestHexId": "0307",
+      "nextNearestDistancePx": 48.7921
+    },
+    {
+      "hexId": "0305",
+      "feature": "forest",
+      "sourceSvgId": "path205",
+      "visualGeometry": "transformed-filled-svg-path",
+      "vectorCentroidPx": [
+        219.5818,
+        262.8303
+      ],
+      "centerResidualPx": 3.5018,
+      "nextNearestHexId": "0206",
+      "nextNearestDistancePx": 46.034
+    },
+    {
+      "hexId": "0307",
+      "feature": "forest",
+      "sourceSvgId": "path206",
+      "visualGeometry": "transformed-filled-svg-path",
+      "vectorCentroidPx": [
+        223.0678,
+        361.8828
+      ],
+      "centerResidualPx": 0.6583,
+      "nextNearestHexId": "0407",
+      "nextNearestDistancePx": 48.9328
+    },
+    {
+      "hexId": "0309",
+      "feature": "forest",
+      "sourceSvgId": "path270",
+      "visualGeometry": "transformed-filled-svg-path",
+      "vectorCentroidPx": [
+        223.1614,
+        461.6341
+      ],
+      "centerResidualPx": 1.233,
+      "nextNearestHexId": "0409",
+      "nextNearestDistancePx": 48.5699
+    },
+    {
+      "hexId": "0310",
+      "feature": "forest",
+      "sourceSvgId": "path271",
+      "visualGeometry": "transformed-filled-svg-path",
+      "vectorCentroidPx": [
+        223.1614,
+        512.2362
+      ],
+      "centerResidualPx": 0.7948,
+      "nextNearestHexId": "0410",
+      "nextNearestDistancePx": 48.7885
+    },
+    {
+      "hexId": "0410",
+      "feature": "forest",
+      "sourceSvgId": "path272",
+      "visualGeometry": "transformed-filled-svg-path",
+      "vectorCentroidPx": [
+        267.1867,
+        489.009
+      ],
+      "centerResidualPx": 2.0223,
+      "nextNearestHexId": "0510",
+      "nextNearestDistancePx": 47.2749
+    },
+    {
+      "hexId": "0411",
+      "feature": "forest",
+      "sourceSvgId": "path273",
+      "visualGeometry": "transformed-filled-svg-path",
+      "vectorCentroidPx": [
+        267.1867,
+        539.6111
+      ],
+      "centerResidualPx": 2.287,
+      "nextNearestHexId": "0510",
+      "nextNearestDistancePx": 48.6361
+    },
+    {
+      "hexId": "0509",
+      "feature": "forest",
+      "sourceSvgId": "path274",
+      "visualGeometry": "transformed-filled-svg-path",
+      "vectorCentroidPx": [
+        307.8893,
+        461.6341
+      ],
+      "centerResidualPx": 1.2261,
+      "nextNearestHexId": "0409",
+      "nextNearestDistancePx": 48.6663
+    },
+    {
+      "hexId": "0510",
+      "feature": "forest",
+      "sourceSvgId": "path275",
+      "visualGeometry": "transformed-filled-svg-path",
+      "vectorCentroidPx": [
+        307.8893,
+        512.2362
+      ],
+      "centerResidualPx": 0.7841,
+      "nextNearestHexId": "0410",
+      "nextNearestDistancePx": 48.8845
+    },
+    {
+      "hexId": "0610",
+      "feature": "forest",
+      "sourceSvgId": "path290",
+      "visualGeometry": "transformed-filled-svg-path",
+      "vectorCentroidPx": [
+        351.9145,
+        487.3499
+      ],
+      "centerResidualPx": 1.6721,
+      "nextNearestHexId": "0709",
+      "nextNearestDistancePx": 47.6504
+    },
+    {
+      "hexId": "0611",
+      "feature": "swamp",
+      "sourceSvgId": "path299",
+      "visualGeometry": "transformed-filled-svg-path",
+      "vectorCentroidPx": [
+        349.7539,
+        536.9554
+      ],
+      "centerResidualPx": 1.2905,
+      "nextNearestHexId": "0510",
+      "nextNearestDistancePx": 48.206
+    },
+    {
+      "hexId": "0706",
+      "feature": "forest",
+      "sourceSvgId": "path289",
+      "visualGeometry": "transformed-filled-svg-path",
+      "vectorCentroidPx": [
+        391.7865,
+        311.4868
+      ],
+      "centerResidualPx": 1.3434,
+      "nextNearestHexId": "0606",
+      "nextNearestDistancePx": 47.979
+    },
+    {
+      "hexId": "0708",
+      "feature": "swamp",
+      "sourceSvgId": "path297",
+      "visualGeometry": "transformed-filled-svg-path",
+      "vectorCentroidPx": [
+        393.7792,
+        410.8649
+      ],
+      "centerResidualPx": 2.0847,
+      "nextNearestHexId": "0808",
+      "nextNearestDistancePx": 47.5236
+    },
+    {
+      "hexId": "0709",
+      "feature": "swamp",
+      "sourceSvgId": "path298",
+      "visualGeometry": "transformed-filled-svg-path",
+      "vectorCentroidPx": [
+        392.1179,
+        461.4671
+      ],
+      "centerResidualPx": 1.5466,
+      "nextNearestHexId": "0609",
+      "nextNearestDistancePx": 48.017
+    },
+    {
+      "hexId": "0810",
+      "feature": "swamp",
+      "sourceSvgId": "path306",
+      "visualGeometry": "transformed-filled-svg-path",
+      "vectorCentroidPx": [
+        435.3124,
+        488.0124
+      ],
+      "centerResidualPx": 0.1097,
+      "nextNearestHexId": "0910",
+      "nextNearestDistancePx": 49.1888
+    },
+    {
+      "hexId": "0811",
+      "feature": "swamp",
+      "sourceSvgId": "path307",
+      "visualGeometry": "transformed-filled-svg-path",
+      "vectorCentroidPx": [
+        433.6511,
+        536.9554
+      ],
+      "centerResidualPx": 1.9501,
+      "nextNearestHexId": "0710",
+      "nextNearestDistancePx": 47.3554
+    },
+    {
+      "hexId": "0910",
+      "feature": "swamp",
+      "sourceSvgId": "path313",
+      "visualGeometry": "transformed-filled-svg-path",
+      "vectorCentroidPx": [
+        479.3377,
+        514.5578
+      ],
+      "centerResidualPx": 2.2685,
+      "nextNearestHexId": "1011",
+      "nextNearestDistancePx": 47.0809
+    },
+    {
+      "hexId": "1004",
+      "feature": "forest",
+      "sourceSvgId": "path282",
+      "visualGeometry": "transformed-filled-svg-path",
+      "vectorCentroidPx": [
+        519.7089,
+        186.2258
+      ],
+      "centerResidualPx": 0.8542,
+      "nextNearestHexId": "0903",
+      "nextNearestDistancePx": 48.5697
+    },
+    {
+      "hexId": "1006",
+      "feature": "forest",
+      "sourceSvgId": "path287",
+      "visualGeometry": "transformed-filled-svg-path",
+      "vectorCentroidPx": [
+        519.7089,
+        285.771
+      ],
+      "centerResidualPx": 1.5807,
+      "nextNearestHexId": "0905",
+      "nextNearestDistancePx": 48.1863
+    },
+    {
+      "hexId": "1009",
+      "feature": "forest",
+      "sourceSvgId": "path288",
+      "visualGeometry": "transformed-filled-svg-path",
+      "vectorCentroidPx": [
+        521.3703,
+        437.5773
+      ],
+      "centerResidualPx": 1.2765,
+      "nextNearestHexId": "1108",
+      "nextNearestDistancePx": 48.1108
+    },
+    {
+      "hexId": "1010",
+      "feature": "swamp",
+      "sourceSvgId": "path308",
+      "visualGeometry": "transformed-filled-svg-path",
+      "vectorCentroidPx": [
+        521.7017,
+        487.1829
+      ],
+      "centerResidualPx": 1.7626,
+      "nextNearestHexId": "1109",
+      "nextNearestDistancePx": 47.5414
+    },
+    {
+      "hexId": "1011",
+      "feature": "swamp",
+      "sourceSvgId": "path309",
+      "visualGeometry": "transformed-filled-svg-path",
+      "vectorCentroidPx": [
+        520.0403,
+        536.1259
+      ],
+      "centerResidualPx": 1.9753,
+      "nextNearestHexId": "1010",
+      "nextNearestDistancePx": 48.1859
+    },
+    {
+      "hexId": "1102",
+      "feature": "forest",
+      "sourceSvgId": "path283",
+      "visualGeometry": "transformed-filled-svg-path",
+      "vectorCentroidPx": [
+        562.0729,
+        111.567
+      ],
+      "centerResidualPx": 0.5075,
+      "nextNearestHexId": "1003",
+      "nextNearestDistancePx": 48.9755
+    },
+    {
+      "hexId": "1105",
+      "feature": "forest",
+      "sourceSvgId": "path276",
+      "visualGeometry": "transformed-filled-svg-path",
+      "vectorCentroidPx": [
+        562.9036,
+        263.3733
+      ],
+      "centerResidualPx": 1.2063,
+      "nextNearestHexId": "1206",
+      "nextNearestDistancePx": 48.4123
+    },
+    {
+      "hexId": "1106",
+      "feature": "forest",
+      "sourceSvgId": "path277",
+      "visualGeometry": "transformed-filled-svg-path",
+      "vectorCentroidPx": [
+        562.9036,
+        313.9754
+      ],
+      "centerResidualPx": 1.6341,
+      "nextNearestHexId": "1207",
+      "nextNearestDistancePx": 48.1954
+    },
+    {
+      "hexId": "1107",
+      "feature": "swamp",
+      "sourceSvgId": "path300",
+      "visualGeometry": "transformed-filled-svg-path",
+      "vectorCentroidPx": [
+        562.4043,
+        361.9219
+      ],
+      "centerResidualPx": 0.635,
+      "nextNearestHexId": "1007",
+      "nextNearestDistancePx": 48.8589
+    },
+    {
+      "hexId": "1108",
+      "feature": "swamp",
+      "sourceSvgId": "path304",
+      "visualGeometry": "transformed-filled-svg-path",
+      "vectorCentroidPx": [
+        562.4043,
+        416.6717
+      ],
+      "centerResidualPx": 3.9744,
+      "nextNearestHexId": "1109",
+      "nextNearestDistancePx": 46.1885
+    },
+    {
+      "hexId": "1110",
+      "feature": "swamp",
+      "sourceSvgId": "path312",
+      "visualGeometry": "transformed-filled-svg-path",
+      "vectorCentroidPx": [
+        561.5736,
+        512.8987
+      ],
+      "centerResidualPx": 0.9839,
+      "nextNearestHexId": "1010",
+      "nextNearestDistancePx": 48.3959
+    },
+    {
+      "hexId": "1206",
+      "feature": "forest",
+      "sourceSvgId": "path291",
+      "visualGeometry": "transformed-filled-svg-path",
+      "vectorCentroidPx": [
+        602.7755,
+        286.6005
+      ],
+      "centerResidualPx": 2.3224,
+      "nextNearestHexId": "1105",
+      "nextNearestDistancePx": 47.0372
+    },
+    {
+      "hexId": "1207",
+      "feature": "swamp",
+      "sourceSvgId": "path301",
+      "visualGeometry": "transformed-filled-svg-path",
+      "vectorCentroidPx": [
+        603.1069,
+        336.2061
+      ],
+      "centerResidualPx": 2.2624,
+      "nextNearestHexId": "1106",
+      "nextNearestDistancePx": 47.0377
+    },
+    {
+      "hexId": "1208",
+      "feature": "swamp",
+      "sourceSvgId": "path303",
+      "visualGeometry": "transformed-filled-svg-path",
+      "vectorCentroidPx": [
+        605.5989,
+        388.4673
+      ],
+      "centerResidualPx": 1.0434,
+      "nextNearestHexId": "1308",
+      "nextNearestDistancePx": 48.3432
+    },
+    {
+      "hexId": "1209",
+      "feature": "swamp",
+      "sourceSvgId": "path305",
+      "visualGeometry": "transformed-filled-svg-path",
+      "vectorCentroidPx": [
+        602.2762,
+        439.0694
+      ],
+      "centerResidualPx": 3.0045,
+      "nextNearestHexId": "1109",
+      "nextNearestDistancePx": 46.3051
+    },
+    {
+      "hexId": "1210",
+      "feature": "swamp",
+      "sourceSvgId": "path310",
+      "visualGeometry": "transformed-filled-svg-path",
+      "vectorCentroidPx": [
+        605.5989,
+        489.6715
+      ],
+      "centerResidualPx": 1.8354,
+      "nextNearestHexId": "1310",
+      "nextNearestDistancePx": 47.9061
+    },
+    {
+      "hexId": "1211",
+      "feature": "swamp",
+      "sourceSvgId": "path311",
+      "visualGeometry": "transformed-filled-svg-path",
+      "vectorCentroidPx": [
+        603.9375,
+        538.6145
+      ],
+      "centerResidualPx": 1.1715,
+      "nextNearestHexId": "1110",
+      "nextNearestDistancePx": 48.6622
+    },
+    {
+      "hexId": "1306",
+      "feature": "forest",
+      "sourceSvgId": "path292",
+      "visualGeometry": "transformed-filled-svg-path",
+      "vectorCentroidPx": [
+        648.4621,
+        311.4868
+      ],
+      "centerResidualPx": 1.3649,
+      "nextNearestHexId": "1406",
+      "nextNearestDistancePx": 47.9543
+    },
+    {
+      "hexId": "1307",
+      "feature": "swamp",
+      "sourceSvgId": "path302",
+      "visualGeometry": "transformed-filled-svg-path",
+      "vectorCentroidPx": [
+        647.9628,
+        361.9219
+      ],
+      "centerResidualPx": 0.816,
+      "nextNearestHexId": "1407",
+      "nextNearestDistancePx": 48.5242
+    },
+    {
+      "hexId": "1403",
+      "feature": "forest",
+      "sourceSvgId": "path285",
+      "visualGeometry": "transformed-filled-svg-path",
+      "vectorCentroidPx": [
+        691.6567,
+        136.4533
+      ],
+      "centerResidualPx": 1.8239,
+      "nextNearestHexId": "1502",
+      "nextNearestDistancePx": 47.5756
+    },
+    {
+      "hexId": "1504",
+      "feature": "forest",
+      "sourceSvgId": "path286",
+      "visualGeometry": "transformed-filled-svg-path",
+      "vectorCentroidPx": [
+        732.3593,
+        211.9417
+      ],
+      "centerResidualPx": 0.1282,
+      "nextNearestHexId": "1604",
+      "nextNearestDistancePx": 49.1941
+    },
+    {
+      "hexId": "1609",
+      "feature": "forest",
+      "sourceSvgId": "path293",
+      "visualGeometry": "transformed-filled-svg-path",
+      "vectorCentroidPx": [
+        774.7232,
+        435.0887
+      ],
+      "centerResidualPx": 2.6915,
+      "nextNearestHexId": "1608",
+      "nextNearestDistancePx": 47.4687
+    },
+    {
+      "hexId": "1701",
+      "feature": "swamp",
+      "sourceSvgId": "path169",
+      "visualGeometry": "transformed-filled-svg-path",
+      "vectorCentroidPx": [
+        817.4185,
+        60.7979
+      ],
+      "centerResidualPx": 0.8148,
+      "nextNearestHexId": "1801",
+      "nextNearestDistancePx": 48.7052
+    },
+    {
+      "hexId": "1702",
+      "feature": "forest",
+      "sourceSvgId": "path280",
+      "visualGeometry": "transformed-filled-svg-path",
+      "vectorCentroidPx": [
+        817.9178,
+        114.0556
+      ],
+      "centerResidualPx": 2.4273,
+      "nextNearestHexId": "1803",
+      "nextNearestDistancePx": 47.5197
+    },
+    {
+      "hexId": "1703",
+      "feature": "forest",
+      "sourceSvgId": "path281",
+      "visualGeometry": "transformed-filled-svg-path",
+      "vectorCentroidPx": [
+        817.9178,
+        164.6577
+      ],
+      "centerResidualPx": 2.8522,
+      "nextNearestHexId": "1804",
+      "nextNearestDistancePx": 47.3095
+    },
+    {
+      "hexId": "1707",
+      "feature": "forest",
+      "sourceSvgId": "path295",
+      "visualGeometry": "transformed-filled-svg-path",
+      "vectorCentroidPx": [
+        817.0872,
+        362.0889
+      ],
+      "centerResidualPx": 0.4627,
+      "nextNearestHexId": "1607",
+      "nextNearestDistancePx": 48.9798
+    },
+    {
+      "hexId": "1708",
+      "feature": "swamp",
+      "sourceSvgId": "path61",
+      "visualGeometry": "transformed-filled-svg-path",
+      "vectorCentroidPx": [
+        817.2064,
+        414.1125
+      ],
+      "centerResidualPx": 1.4126,
+      "nextNearestHexId": "1809",
+      "nextNearestDistancePx": 48.579
+    },
+    {
+      "hexId": "1709",
+      "feature": "forest",
+      "sourceSvgId": "path278",
+      "visualGeometry": "transformed-filled-svg-path",
+      "vectorCentroidPx": [
+        817.0872,
+        464.1227
+      ],
+      "centerResidualPx": 1.2669,
+      "nextNearestHexId": "1610",
+      "nextNearestDistancePx": 48.5767
+    },
+    {
+      "hexId": "1710",
+      "feature": "forest",
+      "sourceSvgId": "path279",
+      "visualGeometry": "transformed-filled-svg-path",
+      "vectorCentroidPx": [
+        817.0872,
+        514.7248
+      ],
+      "centerResidualPx": 1.7079,
+      "nextNearestHexId": "1611",
+      "nextNearestDistancePx": 48.3615
+    },
+    {
+      "hexId": "1801",
+      "feature": "forest",
+      "sourceSvgId": "path284",
+      "visualGeometry": "transformed-filled-svg-path",
+      "vectorCentroidPx": [
+        858.6204,
+        35.2491
+      ],
+      "centerResidualPx": 1.6075,
+      "nextNearestHexId": "1701",
+      "nextNearestDistancePx": 49.0897
+    },
+    {
+      "hexId": "1808",
+      "feature": "forest",
+      "sourceSvgId": "path296",
+      "visualGeometry": "transformed-filled-svg-path",
+      "vectorCentroidPx": [
+        859.4511,
+        388.6343
+      ],
+      "centerResidualPx": 1.0299,
+      "nextNearestHexId": "1708",
+      "nextNearestDistancePx": 48.6329
+    },
+    {
+      "hexId": "1809",
+      "feature": "swamp",
+      "sourceSvgId": "path60",
+      "visualGeometry": "transformed-filled-svg-path",
+      "vectorCentroidPx": [
+        860.2472,
+        440.5037
+      ],
+      "centerResidualPx": 2.7928,
+      "nextNearestHexId": "1810",
+      "nextNearestDistancePx": 47.4403
+    },
+    {
+      "hexId": "1811",
+      "feature": "forest",
+      "sourceSvgId": "path294",
+      "visualGeometry": "transformed-filled-svg-path",
+      "vectorCentroidPx": [
+        859.4511,
+        537.952
+      ],
+      "centerResidualPx": 0.2322,
+      "nextNearestHexId": "1710",
+      "nextNearestDistancePx": 49.0673
+    }
+  ],
+  "hexes": [
+    {
+      "hexId": "0105",
+      "terrainOverlay": null,
+      "sourceSvgIds": [],
+      "visualClassification": "no-authored-forest-or-swamp-overlay",
+      "previousTerrainValue": "open",
+      "previousTerrainStatus": "source-svg-scan-reviewed-open-v412",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "0106",
+      "terrainOverlay": null,
+      "sourceSvgIds": [],
+      "visualClassification": "no-authored-forest-or-swamp-overlay",
+      "previousTerrainValue": "open",
+      "previousTerrainStatus": "source-svg-scan-reviewed-open-v412",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "0107",
+      "terrainOverlay": null,
+      "sourceSvgIds": [],
+      "visualClassification": "no-authored-forest-or-swamp-overlay",
+      "previousTerrainValue": "open",
+      "previousTerrainStatus": "source-svg-scan-reviewed-open-v412",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "0108",
+      "terrainOverlay": null,
+      "sourceSvgIds": [],
+      "visualClassification": "no-authored-forest-or-swamp-overlay",
+      "previousTerrainValue": "open",
+      "previousTerrainStatus": "source-svg-scan-reviewed-open-v412",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "0109",
+      "terrainOverlay": null,
+      "sourceSvgIds": [],
+      "visualClassification": "no-authored-forest-or-swamp-overlay",
+      "previousTerrainValue": "open",
+      "previousTerrainStatus": "source-svg-scan-reviewed-open-v412",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "0110",
+      "terrainOverlay": null,
+      "sourceSvgIds": [],
+      "visualClassification": "no-authored-forest-or-swamp-overlay",
+      "previousTerrainValue": "open",
+      "previousTerrainStatus": "source-svg-scan-reviewed-open-v412",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "0205",
+      "terrainOverlay": null,
+      "sourceSvgIds": [],
+      "visualClassification": "no-authored-forest-or-swamp-overlay",
+      "previousTerrainValue": "open",
+      "previousTerrainStatus": "source-svg-scan-reviewed-open-v412",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "0206",
+      "terrainOverlay": null,
+      "sourceSvgIds": [],
+      "visualClassification": "no-authored-forest-or-swamp-overlay",
+      "previousTerrainValue": "open",
+      "previousTerrainStatus": "source-svg-scan-reviewed-open-v412",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "0207",
+      "terrainOverlay": null,
+      "sourceSvgIds": [],
+      "visualClassification": "no-authored-forest-or-swamp-overlay",
+      "previousTerrainValue": "open",
+      "previousTerrainStatus": "source-svg-scan-reviewed-open-v412",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "0208",
+      "terrainOverlay": "forest",
+      "sourceSvgIds": [
+        "path207"
+      ],
+      "visualClassification": "authored-svg-feature",
+      "previousTerrainValue": "forest",
+      "previousTerrainStatus": "user-svg-authored-forest",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "0209",
+      "terrainOverlay": null,
+      "sourceSvgIds": [],
+      "visualClassification": "no-authored-forest-or-swamp-overlay",
+      "previousTerrainValue": "open",
+      "previousTerrainStatus": "source-svg-scan-reviewed-open-v412",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "0210",
+      "terrainOverlay": null,
+      "sourceSvgIds": [],
+      "visualClassification": "no-authored-forest-or-swamp-overlay",
+      "previousTerrainValue": "open",
+      "previousTerrainStatus": "source-svg-scan-reviewed-open-v412",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "0211",
+      "terrainOverlay": null,
+      "sourceSvgIds": [],
+      "visualClassification": "no-authored-forest-or-swamp-overlay",
+      "previousTerrainValue": "open",
+      "previousTerrainStatus": "source-svg-scan-reviewed-open-v412",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "0305",
+      "terrainOverlay": "forest",
+      "sourceSvgIds": [
+        "path205"
+      ],
+      "visualClassification": "authored-svg-feature",
+      "previousTerrainValue": "forest",
+      "previousTerrainStatus": "user-svg-authored-forest",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "0306",
+      "terrainOverlay": null,
+      "sourceSvgIds": [],
+      "visualClassification": "no-authored-forest-or-swamp-overlay",
+      "previousTerrainValue": "open",
+      "previousTerrainStatus": "source-svg-scan-reviewed-open-v412",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "0307",
+      "terrainOverlay": "forest",
+      "sourceSvgIds": [
+        "path206"
+      ],
+      "visualClassification": "authored-svg-feature",
+      "previousTerrainValue": "forest",
+      "previousTerrainStatus": "user-svg-authored-forest",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "0308",
+      "terrainOverlay": null,
+      "sourceSvgIds": [],
+      "visualClassification": "no-authored-forest-or-swamp-overlay",
+      "previousTerrainValue": "open",
+      "previousTerrainStatus": "source-svg-scan-reviewed-open-v412",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "0309",
+      "terrainOverlay": "forest",
+      "sourceSvgIds": [
+        "path270"
+      ],
+      "visualClassification": "authored-svg-feature",
+      "previousTerrainValue": "forest",
+      "previousTerrainStatus": "user-svg-authored-forest",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "0310",
+      "terrainOverlay": "forest",
+      "sourceSvgIds": [
+        "path271"
+      ],
+      "visualClassification": "authored-svg-feature",
+      "previousTerrainValue": "forest",
+      "previousTerrainStatus": "user-svg-authored-forest",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "0405",
+      "terrainOverlay": null,
+      "sourceSvgIds": [],
+      "visualClassification": "no-authored-forest-or-swamp-overlay",
+      "previousTerrainValue": "open",
+      "previousTerrainStatus": "source-svg-scan-reviewed-open-v412",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "0406",
+      "terrainOverlay": null,
+      "sourceSvgIds": [],
+      "visualClassification": "no-authored-forest-or-swamp-overlay",
+      "previousTerrainValue": "open",
+      "previousTerrainStatus": "source-svg-scan-reviewed-open-v412",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "0407",
+      "terrainOverlay": null,
+      "sourceSvgIds": [],
+      "visualClassification": "no-authored-forest-or-swamp-overlay",
+      "previousTerrainValue": "open",
+      "previousTerrainStatus": "source-svg-scan-reviewed-open-v412",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "0408",
+      "terrainOverlay": null,
+      "sourceSvgIds": [],
+      "visualClassification": "no-authored-forest-or-swamp-overlay",
+      "previousTerrainValue": "open",
+      "previousTerrainStatus": "source-svg-scan-reviewed-open-v412",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "0409",
+      "terrainOverlay": null,
+      "sourceSvgIds": [],
+      "visualClassification": "no-authored-forest-or-swamp-overlay",
+      "previousTerrainValue": "open",
+      "previousTerrainStatus": "source-svg-scan-reviewed-open-v412",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "0410",
+      "terrainOverlay": "forest",
+      "sourceSvgIds": [
+        "path272"
+      ],
+      "visualClassification": "authored-svg-feature",
+      "previousTerrainValue": "forest",
+      "previousTerrainStatus": "user-svg-authored-forest",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "0411",
+      "terrainOverlay": "forest",
+      "sourceSvgIds": [
+        "path273"
+      ],
+      "visualClassification": "authored-svg-feature",
+      "previousTerrainValue": "forest",
+      "previousTerrainStatus": "user-svg-authored-forest",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "0504",
+      "terrainOverlay": null,
+      "sourceSvgIds": [],
+      "visualClassification": "no-authored-forest-or-swamp-overlay",
+      "previousTerrainValue": "open",
+      "previousTerrainStatus": "source-svg-scan-reviewed-open-v412",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "0505",
+      "terrainOverlay": null,
+      "sourceSvgIds": [],
+      "visualClassification": "no-authored-forest-or-swamp-overlay",
+      "previousTerrainValue": "open",
+      "previousTerrainStatus": "source-svg-scan-reviewed-open-v412",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "0506",
+      "terrainOverlay": null,
+      "sourceSvgIds": [],
+      "visualClassification": "no-authored-forest-or-swamp-overlay",
+      "previousTerrainValue": "open",
+      "previousTerrainStatus": "source-svg-scan-reviewed-open-v412",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "0507",
+      "terrainOverlay": null,
+      "sourceSvgIds": [],
+      "visualClassification": "no-authored-forest-or-swamp-overlay",
+      "previousTerrainValue": "open",
+      "previousTerrainStatus": "source-svg-scan-reviewed-open-v412",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "0508",
+      "terrainOverlay": null,
+      "sourceSvgIds": [],
+      "visualClassification": "no-authored-forest-or-swamp-overlay",
+      "previousTerrainValue": "open",
+      "previousTerrainStatus": "source-svg-scan-reviewed-open-v412",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "0509",
+      "terrainOverlay": "forest",
+      "sourceSvgIds": [
+        "path274"
+      ],
+      "visualClassification": "authored-svg-feature",
+      "previousTerrainValue": "forest",
+      "previousTerrainStatus": "user-svg-authored-forest",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "0510",
+      "terrainOverlay": "forest",
+      "sourceSvgIds": [
+        "path275"
+      ],
+      "visualClassification": "authored-svg-feature",
+      "previousTerrainValue": "forest",
+      "previousTerrainStatus": "user-svg-authored-forest",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "0604",
+      "terrainOverlay": null,
+      "sourceSvgIds": [],
+      "visualClassification": "no-authored-forest-or-swamp-overlay",
+      "previousTerrainValue": "open",
+      "previousTerrainStatus": "source-svg-scan-reviewed-open-v412",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "0605",
+      "terrainOverlay": null,
+      "sourceSvgIds": [],
+      "visualClassification": "no-authored-forest-or-swamp-overlay",
+      "previousTerrainValue": "open",
+      "previousTerrainStatus": "source-svg-scan-reviewed-open-v412",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "0606",
+      "terrainOverlay": null,
+      "sourceSvgIds": [],
+      "visualClassification": "no-authored-forest-or-swamp-overlay",
+      "previousTerrainValue": "open",
+      "previousTerrainStatus": "source-svg-scan-reviewed-open-v412",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "0607",
+      "terrainOverlay": null,
+      "sourceSvgIds": [],
+      "visualClassification": "no-authored-forest-or-swamp-overlay",
+      "previousTerrainValue": "open",
+      "previousTerrainStatus": "source-svg-scan-reviewed-open-v412",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "0608",
+      "terrainOverlay": null,
+      "sourceSvgIds": [],
+      "visualClassification": "no-authored-forest-or-swamp-overlay",
+      "previousTerrainValue": "open",
+      "previousTerrainStatus": "source-svg-scan-reviewed-open-v412",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "0609",
+      "terrainOverlay": null,
+      "sourceSvgIds": [],
+      "visualClassification": "no-authored-forest-or-swamp-overlay",
+      "previousTerrainValue": "open",
+      "previousTerrainStatus": "source-svg-scan-reviewed-open-v412",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "0610",
+      "terrainOverlay": "forest",
+      "sourceSvgIds": [
+        "path290"
+      ],
+      "visualClassification": "authored-svg-feature",
+      "previousTerrainValue": "forest",
+      "previousTerrainStatus": "user-svg-authored-forest",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "0611",
+      "terrainOverlay": "swamp",
+      "sourceSvgIds": [
+        "path299"
+      ],
+      "visualClassification": "authored-svg-feature",
+      "previousTerrainValue": "swamp",
+      "previousTerrainStatus": "user-svg-authored-swamp",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "0703",
+      "terrainOverlay": null,
+      "sourceSvgIds": [],
+      "visualClassification": "no-authored-forest-or-swamp-overlay",
+      "previousTerrainValue": "open",
+      "previousTerrainStatus": "source-svg-scan-reviewed-open-v412",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "0704",
+      "terrainOverlay": null,
+      "sourceSvgIds": [],
+      "visualClassification": "no-authored-forest-or-swamp-overlay",
+      "previousTerrainValue": "open",
+      "previousTerrainStatus": "source-svg-scan-reviewed-open-v412",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "0705",
+      "terrainOverlay": null,
+      "sourceSvgIds": [],
+      "visualClassification": "no-authored-forest-or-swamp-overlay",
+      "previousTerrainValue": "open",
+      "previousTerrainStatus": "source-svg-scan-reviewed-open-v412",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "0706",
+      "terrainOverlay": "forest",
+      "sourceSvgIds": [
+        "path289"
+      ],
+      "visualClassification": "authored-svg-feature",
+      "previousTerrainValue": "forest",
+      "previousTerrainStatus": "user-svg-authored-forest",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "0707",
+      "terrainOverlay": null,
+      "sourceSvgIds": [],
+      "visualClassification": "no-authored-forest-or-swamp-overlay",
+      "previousTerrainValue": "open",
+      "previousTerrainStatus": "source-svg-scan-reviewed-open-v412",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "0708",
+      "terrainOverlay": "swamp",
+      "sourceSvgIds": [
+        "path297"
+      ],
+      "visualClassification": "authored-svg-feature",
+      "previousTerrainValue": "swamp",
+      "previousTerrainStatus": "user-svg-authored-swamp",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "0709",
+      "terrainOverlay": "swamp",
+      "sourceSvgIds": [
+        "path298"
+      ],
+      "visualClassification": "authored-svg-feature",
+      "previousTerrainValue": "swamp",
+      "previousTerrainStatus": "user-svg-authored-swamp",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "0710",
+      "terrainOverlay": null,
+      "sourceSvgIds": [],
+      "visualClassification": "no-authored-forest-or-swamp-overlay",
+      "previousTerrainValue": "open",
+      "previousTerrainStatus": "source-svg-scan-reviewed-open-v412",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "0803",
+      "terrainOverlay": null,
+      "sourceSvgIds": [],
+      "visualClassification": "no-authored-forest-or-swamp-overlay",
+      "previousTerrainValue": "open",
+      "previousTerrainStatus": "source-svg-scan-reviewed-open-v412",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "0804",
+      "terrainOverlay": null,
+      "sourceSvgIds": [],
+      "visualClassification": "no-authored-forest-or-swamp-overlay",
+      "previousTerrainValue": "open",
+      "previousTerrainStatus": "source-svg-scan-reviewed-open-v412",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "0805",
+      "terrainOverlay": null,
+      "sourceSvgIds": [],
+      "visualClassification": "no-authored-forest-or-swamp-overlay",
+      "previousTerrainValue": "open",
+      "previousTerrainStatus": "source-svg-scan-reviewed-open-v412",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "0806",
+      "terrainOverlay": null,
+      "sourceSvgIds": [],
+      "visualClassification": "no-authored-forest-or-swamp-overlay",
+      "previousTerrainValue": "open",
+      "previousTerrainStatus": "source-svg-scan-reviewed-open-v412",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "0807",
+      "terrainOverlay": null,
+      "sourceSvgIds": [],
+      "visualClassification": "no-authored-forest-or-swamp-overlay",
+      "previousTerrainValue": "open",
+      "previousTerrainStatus": "source-svg-scan-reviewed-open-v412",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "0808",
+      "terrainOverlay": null,
+      "sourceSvgIds": [],
+      "visualClassification": "no-authored-forest-or-swamp-overlay",
+      "previousTerrainValue": "open",
+      "previousTerrainStatus": "source-svg-scan-reviewed-open-v412",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "0809",
+      "terrainOverlay": null,
+      "sourceSvgIds": [],
+      "visualClassification": "no-authored-forest-or-swamp-overlay",
+      "previousTerrainValue": "open",
+      "previousTerrainStatus": "source-svg-scan-reviewed-open-v412",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "0810",
+      "terrainOverlay": "swamp",
+      "sourceSvgIds": [
+        "path306"
+      ],
+      "visualClassification": "authored-svg-feature",
+      "previousTerrainValue": "swamp",
+      "previousTerrainStatus": "user-svg-authored-swamp",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "0811",
+      "terrainOverlay": "swamp",
+      "sourceSvgIds": [
+        "path307"
+      ],
+      "visualClassification": "authored-svg-feature",
+      "previousTerrainValue": "swamp",
+      "previousTerrainStatus": "user-svg-authored-swamp",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "0903",
+      "terrainOverlay": null,
+      "sourceSvgIds": [],
+      "visualClassification": "no-authored-forest-or-swamp-overlay",
+      "previousTerrainValue": "open",
+      "previousTerrainStatus": "source-svg-scan-reviewed-open-v412",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "0904",
+      "terrainOverlay": null,
+      "sourceSvgIds": [],
+      "visualClassification": "no-authored-forest-or-swamp-overlay",
+      "previousTerrainValue": "open",
+      "previousTerrainStatus": "source-svg-scan-reviewed-open-v412",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "0905",
+      "terrainOverlay": null,
+      "sourceSvgIds": [],
+      "visualClassification": "no-authored-forest-or-swamp-overlay",
+      "previousTerrainValue": "open",
+      "previousTerrainStatus": "source-svg-scan-reviewed-open-v412",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "0906",
+      "terrainOverlay": null,
+      "sourceSvgIds": [],
+      "visualClassification": "no-authored-forest-or-swamp-overlay",
+      "previousTerrainValue": "open",
+      "previousTerrainStatus": "source-svg-scan-reviewed-open-v412",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "0907",
+      "terrainOverlay": null,
+      "sourceSvgIds": [],
+      "visualClassification": "no-authored-forest-or-swamp-overlay",
+      "previousTerrainValue": "open",
+      "previousTerrainStatus": "source-svg-scan-reviewed-open-v412",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "0908",
+      "terrainOverlay": null,
+      "sourceSvgIds": [],
+      "visualClassification": "no-authored-forest-or-swamp-overlay",
+      "previousTerrainValue": "open",
+      "previousTerrainStatus": "source-svg-scan-reviewed-open-v412",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "0909",
+      "terrainOverlay": null,
+      "sourceSvgIds": [],
+      "visualClassification": "no-authored-forest-or-swamp-overlay",
+      "previousTerrainValue": "open",
+      "previousTerrainStatus": "source-svg-scan-reviewed-open-v412",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "0910",
+      "terrainOverlay": "swamp",
+      "sourceSvgIds": [
+        "path313"
+      ],
+      "visualClassification": "authored-svg-feature",
+      "previousTerrainValue": "swamp",
+      "previousTerrainStatus": "user-svg-authored-swamp",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "1003",
+      "terrainOverlay": null,
+      "sourceSvgIds": [],
+      "visualClassification": "no-authored-forest-or-swamp-overlay",
+      "previousTerrainValue": "open",
+      "previousTerrainStatus": "source-svg-scan-reviewed-open-v412",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "1004",
+      "terrainOverlay": "forest",
+      "sourceSvgIds": [
+        "path282"
+      ],
+      "visualClassification": "authored-svg-feature",
+      "previousTerrainValue": "forest",
+      "previousTerrainStatus": "user-svg-authored-forest",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "1005",
+      "terrainOverlay": null,
+      "sourceSvgIds": [],
+      "visualClassification": "no-authored-forest-or-swamp-overlay",
+      "previousTerrainValue": "open",
+      "previousTerrainStatus": "source-svg-scan-reviewed-open-v412",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "1006",
+      "terrainOverlay": "forest",
+      "sourceSvgIds": [
+        "path287"
+      ],
+      "visualClassification": "authored-svg-feature",
+      "previousTerrainValue": "forest",
+      "previousTerrainStatus": "user-svg-authored-forest",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "1007",
+      "terrainOverlay": null,
+      "sourceSvgIds": [],
+      "visualClassification": "no-authored-forest-or-swamp-overlay",
+      "previousTerrainValue": "open",
+      "previousTerrainStatus": "source-svg-scan-reviewed-open-v412",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "1008",
+      "terrainOverlay": null,
+      "sourceSvgIds": [],
+      "visualClassification": "no-authored-forest-or-swamp-overlay",
+      "previousTerrainValue": "open",
+      "previousTerrainStatus": "source-svg-scan-reviewed-open-v412",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "1009",
+      "terrainOverlay": "forest",
+      "sourceSvgIds": [
+        "path288"
+      ],
+      "visualClassification": "authored-svg-feature",
+      "previousTerrainValue": "forest",
+      "previousTerrainStatus": "user-svg-authored-forest",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "1010",
+      "terrainOverlay": "swamp",
+      "sourceSvgIds": [
+        "path308"
+      ],
+      "visualClassification": "authored-svg-feature",
+      "previousTerrainValue": "swamp",
+      "previousTerrainStatus": "user-svg-authored-swamp",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "1011",
+      "terrainOverlay": "swamp",
+      "sourceSvgIds": [
+        "path309"
+      ],
+      "visualClassification": "authored-svg-feature",
+      "previousTerrainValue": "swamp",
+      "previousTerrainStatus": "user-svg-authored-swamp",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "1102",
+      "terrainOverlay": "forest",
+      "sourceSvgIds": [
+        "path283"
+      ],
+      "visualClassification": "authored-svg-feature",
+      "previousTerrainValue": "forest",
+      "previousTerrainStatus": "user-svg-authored-forest",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "1103",
+      "terrainOverlay": null,
+      "sourceSvgIds": [],
+      "visualClassification": "no-authored-forest-or-swamp-overlay",
+      "previousTerrainValue": "open",
+      "previousTerrainStatus": "source-svg-scan-reviewed-open-v412",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "1104",
+      "terrainOverlay": null,
+      "sourceSvgIds": [],
+      "visualClassification": "no-authored-forest-or-swamp-overlay",
+      "previousTerrainValue": "open",
+      "previousTerrainStatus": "source-svg-scan-reviewed-open-v412",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "1105",
+      "terrainOverlay": "forest",
+      "sourceSvgIds": [
+        "path276"
+      ],
+      "visualClassification": "authored-svg-feature",
+      "previousTerrainValue": "forest",
+      "previousTerrainStatus": "user-svg-authored-forest",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "1106",
+      "terrainOverlay": "forest",
+      "sourceSvgIds": [
+        "path277"
+      ],
+      "visualClassification": "authored-svg-feature",
+      "previousTerrainValue": "forest",
+      "previousTerrainStatus": "user-svg-authored-forest",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "1107",
+      "terrainOverlay": "swamp",
+      "sourceSvgIds": [
+        "path300"
+      ],
+      "visualClassification": "authored-svg-feature",
+      "previousTerrainValue": "swamp",
+      "previousTerrainStatus": "user-svg-authored-swamp",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "1108",
+      "terrainOverlay": "swamp",
+      "sourceSvgIds": [
+        "path304"
+      ],
+      "visualClassification": "authored-svg-feature",
+      "previousTerrainValue": "swamp",
+      "previousTerrainStatus": "user-svg-authored-swamp",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "1109",
+      "terrainOverlay": null,
+      "sourceSvgIds": [],
+      "visualClassification": "no-authored-forest-or-swamp-overlay",
+      "previousTerrainValue": "open",
+      "previousTerrainStatus": "source-svg-scan-reviewed-open-v412",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "1110",
+      "terrainOverlay": "swamp",
+      "sourceSvgIds": [
+        "path312"
+      ],
+      "visualClassification": "authored-svg-feature",
+      "previousTerrainValue": "swamp",
+      "previousTerrainStatus": "user-svg-authored-swamp",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "1202",
+      "terrainOverlay": null,
+      "sourceSvgIds": [],
+      "visualClassification": "no-authored-forest-or-swamp-overlay",
+      "previousTerrainValue": "open",
+      "previousTerrainStatus": "source-svg-scan-reviewed-open-v412",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "1203",
+      "terrainOverlay": null,
+      "sourceSvgIds": [],
+      "visualClassification": "no-authored-forest-or-swamp-overlay",
+      "previousTerrainValue": "open",
+      "previousTerrainStatus": "source-svg-scan-reviewed-open-v412",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "1204",
+      "terrainOverlay": null,
+      "sourceSvgIds": [],
+      "visualClassification": "no-authored-forest-or-swamp-overlay",
+      "previousTerrainValue": "open",
+      "previousTerrainStatus": "source-svg-scan-reviewed-open-v412",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "1205",
+      "terrainOverlay": null,
+      "sourceSvgIds": [],
+      "visualClassification": "no-authored-forest-or-swamp-overlay",
+      "previousTerrainValue": "open",
+      "previousTerrainStatus": "source-svg-scan-reviewed-open-v412",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "1206",
+      "terrainOverlay": "forest",
+      "sourceSvgIds": [
+        "path291"
+      ],
+      "visualClassification": "authored-svg-feature",
+      "previousTerrainValue": "forest",
+      "previousTerrainStatus": "user-svg-authored-forest",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "1207",
+      "terrainOverlay": "swamp",
+      "sourceSvgIds": [
+        "path301"
+      ],
+      "visualClassification": "authored-svg-feature",
+      "previousTerrainValue": "swamp",
+      "previousTerrainStatus": "user-svg-authored-swamp",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "1208",
+      "terrainOverlay": "swamp",
+      "sourceSvgIds": [
+        "path303"
+      ],
+      "visualClassification": "authored-svg-feature",
+      "previousTerrainValue": "swamp",
+      "previousTerrainStatus": "user-svg-authored-swamp",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "1209",
+      "terrainOverlay": "swamp",
+      "sourceSvgIds": [
+        "path305"
+      ],
+      "visualClassification": "authored-svg-feature",
+      "previousTerrainValue": "swamp",
+      "previousTerrainStatus": "user-svg-authored-swamp",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "1210",
+      "terrainOverlay": "swamp",
+      "sourceSvgIds": [
+        "path310"
+      ],
+      "visualClassification": "authored-svg-feature",
+      "previousTerrainValue": "swamp",
+      "previousTerrainStatus": "user-svg-authored-swamp",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "1211",
+      "terrainOverlay": "swamp",
+      "sourceSvgIds": [
+        "path311"
+      ],
+      "visualClassification": "authored-svg-feature",
+      "previousTerrainValue": "swamp",
+      "previousTerrainStatus": "user-svg-authored-swamp",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "1302",
+      "terrainOverlay": null,
+      "sourceSvgIds": [],
+      "visualClassification": "no-authored-forest-or-swamp-overlay",
+      "previousTerrainValue": "open",
+      "previousTerrainStatus": "source-svg-scan-reviewed-open-v412",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "1303",
+      "terrainOverlay": null,
+      "sourceSvgIds": [],
+      "visualClassification": "no-authored-forest-or-swamp-overlay",
+      "previousTerrainValue": "open",
+      "previousTerrainStatus": "source-svg-scan-reviewed-open-v412",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "1304",
+      "terrainOverlay": null,
+      "sourceSvgIds": [],
+      "visualClassification": "no-authored-forest-or-swamp-overlay",
+      "previousTerrainValue": "open",
+      "previousTerrainStatus": "source-svg-scan-reviewed-open-v412",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "1305",
+      "terrainOverlay": null,
+      "sourceSvgIds": [],
+      "visualClassification": "no-authored-forest-or-swamp-overlay",
+      "previousTerrainValue": "open",
+      "previousTerrainStatus": "source-svg-scan-reviewed-open-v412",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "1306",
+      "terrainOverlay": "forest",
+      "sourceSvgIds": [
+        "path292"
+      ],
+      "visualClassification": "authored-svg-feature",
+      "previousTerrainValue": "forest",
+      "previousTerrainStatus": "user-svg-authored-forest",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "1307",
+      "terrainOverlay": "swamp",
+      "sourceSvgIds": [
+        "path302"
+      ],
+      "visualClassification": "authored-svg-feature",
+      "previousTerrainValue": "swamp",
+      "previousTerrainStatus": "user-svg-authored-swamp",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "1308",
+      "terrainOverlay": null,
+      "sourceSvgIds": [],
+      "visualClassification": "no-authored-forest-or-swamp-overlay",
+      "previousTerrainValue": "open",
+      "previousTerrainStatus": "source-svg-scan-reviewed-open-v412",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "1309",
+      "terrainOverlay": null,
+      "sourceSvgIds": [],
+      "visualClassification": "no-authored-forest-or-swamp-overlay",
+      "previousTerrainValue": "open",
+      "previousTerrainStatus": "source-svg-scan-reviewed-open-v412",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "1310",
+      "terrainOverlay": null,
+      "sourceSvgIds": [],
+      "visualClassification": "no-authored-forest-or-swamp-overlay",
+      "previousTerrainValue": "open",
+      "previousTerrainStatus": "source-svg-scan-reviewed-open-v412",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "1402",
+      "terrainOverlay": null,
+      "sourceSvgIds": [],
+      "visualClassification": "no-authored-forest-or-swamp-overlay",
+      "previousTerrainValue": "open",
+      "previousTerrainStatus": "source-svg-scan-reviewed-open-v412",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "1403",
+      "terrainOverlay": "forest",
+      "sourceSvgIds": [
+        "path285"
+      ],
+      "visualClassification": "authored-svg-feature",
+      "previousTerrainValue": "forest",
+      "previousTerrainStatus": "user-svg-authored-forest",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "1404",
+      "terrainOverlay": null,
+      "sourceSvgIds": [],
+      "visualClassification": "no-authored-forest-or-swamp-overlay",
+      "previousTerrainValue": "open",
+      "previousTerrainStatus": "source-svg-scan-reviewed-open-v412",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "1405",
+      "terrainOverlay": null,
+      "sourceSvgIds": [],
+      "visualClassification": "no-authored-forest-or-swamp-overlay",
+      "previousTerrainValue": "open",
+      "previousTerrainStatus": "source-svg-scan-reviewed-open-v412",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "1406",
+      "terrainOverlay": null,
+      "sourceSvgIds": [],
+      "visualClassification": "no-authored-forest-or-swamp-overlay",
+      "previousTerrainValue": "open",
+      "previousTerrainStatus": "source-svg-scan-reviewed-open-v412",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "1407",
+      "terrainOverlay": null,
+      "sourceSvgIds": [],
+      "visualClassification": "no-authored-forest-or-swamp-overlay",
+      "previousTerrainValue": "open",
+      "previousTerrainStatus": "source-svg-scan-reviewed-open-v412",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "1408",
+      "terrainOverlay": null,
+      "sourceSvgIds": [],
+      "visualClassification": "no-authored-forest-or-swamp-overlay",
+      "previousTerrainValue": "open",
+      "previousTerrainStatus": "source-svg-scan-reviewed-open-v412",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "1409",
+      "terrainOverlay": null,
+      "sourceSvgIds": [],
+      "visualClassification": "no-authored-forest-or-swamp-overlay",
+      "previousTerrainValue": "open",
+      "previousTerrainStatus": "source-svg-scan-reviewed-open-v412",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "1410",
+      "terrainOverlay": null,
+      "sourceSvgIds": [],
+      "visualClassification": "no-authored-forest-or-swamp-overlay",
+      "previousTerrainValue": "open",
+      "previousTerrainStatus": "source-svg-scan-reviewed-open-v412",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "1411",
+      "terrainOverlay": null,
+      "sourceSvgIds": [],
+      "visualClassification": "no-authored-forest-or-swamp-overlay",
+      "previousTerrainValue": "open",
+      "previousTerrainStatus": "source-svg-scan-reviewed-open-v412",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "1501",
+      "terrainOverlay": null,
+      "sourceSvgIds": [],
+      "visualClassification": "no-authored-forest-or-swamp-overlay",
+      "previousTerrainValue": "open",
+      "previousTerrainStatus": "source-svg-scan-reviewed-open-v412",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "1502",
+      "terrainOverlay": null,
+      "sourceSvgIds": [],
+      "visualClassification": "no-authored-forest-or-swamp-overlay",
+      "previousTerrainValue": "open",
+      "previousTerrainStatus": "source-svg-scan-reviewed-open-v412",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "1503",
+      "terrainOverlay": null,
+      "sourceSvgIds": [],
+      "visualClassification": "no-authored-forest-or-swamp-overlay",
+      "previousTerrainValue": "open",
+      "previousTerrainStatus": "source-svg-scan-reviewed-open-v412",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "1504",
+      "terrainOverlay": "forest",
+      "sourceSvgIds": [
+        "path286"
+      ],
+      "visualClassification": "authored-svg-feature",
+      "previousTerrainValue": "forest",
+      "previousTerrainStatus": "user-svg-authored-forest",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "1505",
+      "terrainOverlay": null,
+      "sourceSvgIds": [],
+      "visualClassification": "no-authored-forest-or-swamp-overlay",
+      "previousTerrainValue": "open",
+      "previousTerrainStatus": "source-svg-scan-reviewed-open-v412",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "1506",
+      "terrainOverlay": null,
+      "sourceSvgIds": [],
+      "visualClassification": "no-authored-forest-or-swamp-overlay",
+      "previousTerrainValue": "open",
+      "previousTerrainStatus": "source-svg-scan-reviewed-open-v412",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "1507",
+      "terrainOverlay": null,
+      "sourceSvgIds": [],
+      "visualClassification": "no-authored-forest-or-swamp-overlay",
+      "previousTerrainValue": "open",
+      "previousTerrainStatus": "source-svg-scan-reviewed-open-v412",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "1508",
+      "terrainOverlay": null,
+      "sourceSvgIds": [],
+      "visualClassification": "no-authored-forest-or-swamp-overlay",
+      "previousTerrainValue": "open",
+      "previousTerrainStatus": "source-svg-scan-reviewed-open-v412",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "1509",
+      "terrainOverlay": null,
+      "sourceSvgIds": [],
+      "visualClassification": "no-authored-forest-or-swamp-overlay",
+      "previousTerrainValue": "open",
+      "previousTerrainStatus": "source-svg-scan-reviewed-open-v412",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "1510",
+      "terrainOverlay": null,
+      "sourceSvgIds": [],
+      "visualClassification": "no-authored-forest-or-swamp-overlay",
+      "previousTerrainValue": "open",
+      "previousTerrainStatus": "source-svg-scan-reviewed-open-v412",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "1601",
+      "terrainOverlay": null,
+      "sourceSvgIds": [],
+      "visualClassification": "no-authored-forest-or-swamp-overlay",
+      "previousTerrainValue": "open",
+      "previousTerrainStatus": "source-svg-scan-reviewed-open-v412",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "1602",
+      "terrainOverlay": null,
+      "sourceSvgIds": [],
+      "visualClassification": "no-authored-forest-or-swamp-overlay",
+      "previousTerrainValue": "open",
+      "previousTerrainStatus": "source-svg-scan-reviewed-open-v412",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "1603",
+      "terrainOverlay": null,
+      "sourceSvgIds": [],
+      "visualClassification": "no-authored-forest-or-swamp-overlay",
+      "previousTerrainValue": "open",
+      "previousTerrainStatus": "source-svg-scan-reviewed-open-v412",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "1604",
+      "terrainOverlay": null,
+      "sourceSvgIds": [],
+      "visualClassification": "no-authored-forest-or-swamp-overlay",
+      "previousTerrainValue": "open",
+      "previousTerrainStatus": "source-svg-scan-reviewed-open-v412",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "1605",
+      "terrainOverlay": null,
+      "sourceSvgIds": [],
+      "visualClassification": "no-authored-forest-or-swamp-overlay",
+      "previousTerrainValue": "open",
+      "previousTerrainStatus": "source-svg-scan-reviewed-open-v412",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "1606",
+      "terrainOverlay": null,
+      "sourceSvgIds": [],
+      "visualClassification": "no-authored-forest-or-swamp-overlay",
+      "previousTerrainValue": "open",
+      "previousTerrainStatus": "source-svg-scan-reviewed-open-v412",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "1607",
+      "terrainOverlay": null,
+      "sourceSvgIds": [],
+      "visualClassification": "no-authored-forest-or-swamp-overlay",
+      "previousTerrainValue": "open",
+      "previousTerrainStatus": "source-svg-scan-reviewed-open-v412",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "1608",
+      "terrainOverlay": null,
+      "sourceSvgIds": [],
+      "visualClassification": "no-authored-forest-or-swamp-overlay",
+      "previousTerrainValue": "open",
+      "previousTerrainStatus": "source-svg-scan-reviewed-open-v412",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "1609",
+      "terrainOverlay": "forest",
+      "sourceSvgIds": [
+        "path293"
+      ],
+      "visualClassification": "authored-svg-feature",
+      "previousTerrainValue": "forest",
+      "previousTerrainStatus": "user-svg-authored-forest",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "1610",
+      "terrainOverlay": null,
+      "sourceSvgIds": [],
+      "visualClassification": "no-authored-forest-or-swamp-overlay",
+      "previousTerrainValue": "open",
+      "previousTerrainStatus": "source-svg-scan-reviewed-open-v412",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "1611",
+      "terrainOverlay": null,
+      "sourceSvgIds": [],
+      "visualClassification": "no-authored-forest-or-swamp-overlay",
+      "previousTerrainValue": "open",
+      "previousTerrainStatus": "source-svg-scan-reviewed-open-v412",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "1701",
+      "terrainOverlay": "swamp",
+      "sourceSvgIds": [
+        "path169"
+      ],
+      "visualClassification": "authored-svg-feature",
+      "previousTerrainValue": "swamp",
+      "previousTerrainStatus": "user-svg-authored-swamp",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "1702",
+      "terrainOverlay": "forest",
+      "sourceSvgIds": [
+        "path280"
+      ],
+      "visualClassification": "authored-svg-feature",
+      "previousTerrainValue": "forest",
+      "previousTerrainStatus": "user-svg-authored-forest",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "1703",
+      "terrainOverlay": "forest",
+      "sourceSvgIds": [
+        "path281"
+      ],
+      "visualClassification": "authored-svg-feature",
+      "previousTerrainValue": "forest",
+      "previousTerrainStatus": "user-svg-authored-forest",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "1704",
+      "terrainOverlay": null,
+      "sourceSvgIds": [],
+      "visualClassification": "no-authored-forest-or-swamp-overlay",
+      "previousTerrainValue": "open",
+      "previousTerrainStatus": "source-svg-scan-reviewed-open-v412",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "1705",
+      "terrainOverlay": null,
+      "sourceSvgIds": [],
+      "visualClassification": "no-authored-forest-or-swamp-overlay",
+      "previousTerrainValue": "open",
+      "previousTerrainStatus": "source-svg-scan-reviewed-open-v412",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "1706",
+      "terrainOverlay": null,
+      "sourceSvgIds": [],
+      "visualClassification": "no-authored-forest-or-swamp-overlay",
+      "previousTerrainValue": "open",
+      "previousTerrainStatus": "source-svg-scan-reviewed-open-v412",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "1707",
+      "terrainOverlay": "forest",
+      "sourceSvgIds": [
+        "path295"
+      ],
+      "visualClassification": "authored-svg-feature",
+      "previousTerrainValue": "forest",
+      "previousTerrainStatus": "user-svg-authored-forest",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "1708",
+      "terrainOverlay": "swamp",
+      "sourceSvgIds": [
+        "path61"
+      ],
+      "visualClassification": "authored-svg-feature",
+      "previousTerrainValue": "swamp",
+      "previousTerrainStatus": "user-svg-authored-swamp",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "1709",
+      "terrainOverlay": "forest",
+      "sourceSvgIds": [
+        "path278"
+      ],
+      "visualClassification": "authored-svg-feature",
+      "previousTerrainValue": "forest",
+      "previousTerrainStatus": "user-svg-authored-forest",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "1710",
+      "terrainOverlay": "forest",
+      "sourceSvgIds": [
+        "path279"
+      ],
+      "visualClassification": "authored-svg-feature",
+      "previousTerrainValue": "forest",
+      "previousTerrainStatus": "user-svg-authored-forest",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "1801",
+      "terrainOverlay": "forest",
+      "sourceSvgIds": [
+        "path284"
+      ],
+      "visualClassification": "authored-svg-feature",
+      "previousTerrainValue": "forest",
+      "previousTerrainStatus": "user-svg-authored-forest",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "1802",
+      "terrainOverlay": null,
+      "sourceSvgIds": [],
+      "visualClassification": "no-authored-forest-or-swamp-overlay",
+      "previousTerrainValue": "open",
+      "previousTerrainStatus": "source-svg-scan-reviewed-open-v412",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "1803",
+      "terrainOverlay": null,
+      "sourceSvgIds": [],
+      "visualClassification": "no-authored-forest-or-swamp-overlay",
+      "previousTerrainValue": "open",
+      "previousTerrainStatus": "source-svg-scan-reviewed-open-v412",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "1804",
+      "terrainOverlay": null,
+      "sourceSvgIds": [],
+      "visualClassification": "no-authored-forest-or-swamp-overlay",
+      "previousTerrainValue": "open",
+      "previousTerrainStatus": "source-svg-scan-reviewed-open-v412",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "1805",
+      "terrainOverlay": null,
+      "sourceSvgIds": [],
+      "visualClassification": "no-authored-forest-or-swamp-overlay",
+      "previousTerrainValue": "open",
+      "previousTerrainStatus": "source-svg-scan-reviewed-open-v412",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "1806",
+      "terrainOverlay": null,
+      "sourceSvgIds": [],
+      "visualClassification": "no-authored-forest-or-swamp-overlay",
+      "previousTerrainValue": "open",
+      "previousTerrainStatus": "source-svg-scan-reviewed-open-v412",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "1807",
+      "terrainOverlay": null,
+      "sourceSvgIds": [],
+      "visualClassification": "no-authored-forest-or-swamp-overlay",
+      "previousTerrainValue": "open",
+      "previousTerrainStatus": "source-svg-scan-reviewed-open-v412",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "1808",
+      "terrainOverlay": "forest",
+      "sourceSvgIds": [
+        "path296"
+      ],
+      "visualClassification": "authored-svg-feature",
+      "previousTerrainValue": "forest",
+      "previousTerrainStatus": "user-svg-authored-forest",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "1809",
+      "terrainOverlay": "swamp",
+      "sourceSvgIds": [
+        "path60"
+      ],
+      "visualClassification": "authored-svg-feature",
+      "previousTerrainValue": "swamp",
+      "previousTerrainStatus": "user-svg-authored-swamp",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "1810",
+      "terrainOverlay": null,
+      "sourceSvgIds": [],
+      "visualClassification": "no-authored-forest-or-swamp-overlay",
+      "previousTerrainValue": "open",
+      "previousTerrainStatus": "source-svg-scan-reviewed-open-v412",
+      "gameplayTerrainCertified": false
+    },
+    {
+      "hexId": "1811",
+      "terrainOverlay": "forest",
+      "sourceSvgIds": [
+        "path294"
+      ],
+      "visualClassification": "authored-svg-feature",
+      "previousTerrainValue": "forest",
+      "previousTerrainStatus": "user-svg-authored-forest",
+      "gameplayTerrainCertified": false
+    }
+  ],
+  "untranscribedHexes": [],
+  "assumptions": [
+    "The authored forests/swamp layers are exhaustive for those two visual overlays.",
+    "A hex without those overlays is not asserted to lack other features or to allow movement.",
+    "Source SVG paths have higher visual authority than original scanned artwork."
+  ],
+  "authorizedForMovement": false
+}

@@ -1,0 +1,43 @@
+{
+  "checkpoint": 290,
+  "version": "v524",
+  "status": "PASS",
+  "assertions": 57,
+  "scenarioId": "kiev-odessa",
+  "startingUnits": 37,
+  "startingBySide": {
+    "axis": 17,
+    "soviet": 20
+  },
+  "sourceSelectedFrontlineStars": [
+    "0205",
+    "0304",
+    "0305",
+    "0401",
+    "0403",
+    "0502",
+    "0503",
+    "0708",
+    "0808",
+    "1110",
+    "1111"
+  ],
+  "unoccupiedAuthoredFrontlineStars": [
+    "1113"
+  ],
+  "unknownRomanianPositions": [
+    "0709",
+    "0809",
+    "0910",
+    "1010"
+  ],
+  "readyForHistoricalCampaign": false,
+  "blockers": [
+    "frontline-stars:12-instead-of-11",
+    "rear-deployment-symbol-disagreement",
+    "unclassified-political-territory:211",
+    "not-certified-movement-and-eastern-communication",
+    "unverified-selected-romanian-hexes:0709,0809,0910,1010"
+  ],
+  "explanation": "Player-chosen synthetic test allocation, NOT a historically validated opening. Does not resolve Romania, 12/11 stars, mechanized icon disagreement, or connectivity."
+}

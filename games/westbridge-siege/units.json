@@ -1,0 +1,108 @@
+{
+  "units": [
+    {
+      "id": "a1",
+      "faction": "amber",
+      "type": "cavalry",
+      "full": 5,
+      "reduced": 2,
+      "movement": 3,
+      "strength": "full",
+      "position": {
+        "x": 0,
+        "y": 1
+      }
+    },
+    {
+      "id": "a2",
+      "faction": "amber",
+      "type": "infantry",
+      "full": 4,
+      "reduced": 2,
+      "movement": 2,
+      "strength": "full",
+      "position": {
+        "x": 0,
+        "y": 2
+      }
+    },
+    {
+      "id": "a3",
+      "faction": "amber",
+      "type": "infantry",
+      "full": 3,
+      "reduced": 1,
+      "movement": 3,
+      "strength": "full",
+      "position": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "id": "a4",
+      "faction": "amber",
+      "type": "infantry",
+      "full": 3,
+      "reduced": 1,
+      "movement": 2,
+      "strength": "full",
+      "position": {
+        "x": 0,
+        "y": 4
+      }
+    },
+    {
+      "id": "v1",
+      "faction": "violet",
+      "type": "cavalry",
+      "full": 5,
+      "reduced": 2,
+      "movement": 3,
+      "strength": "full",
+      "position": {
+        "x": 4,
+        "y": 1
+      }
+    },
+    {
+      "id": "v2",
+      "faction": "violet",
+      "type": "infantry",
+      "full": 4,
+      "reduced": 2,
+      "movement": 2,
+      "strength": "full",
+      "position": {
+        "x": 4,
+        "y": 2
+      }
+    },
+    {
+      "id": "v3",
+      "faction": "violet",
+      "type": "infantry",
+      "full": 3,
+      "reduced": 1,
+      "movement": 3,
+      "strength": "full",
+      "position": {
+        "x": 4,
+        "y": 3
+      }
+    },
+    {
+      "id": "v4",
+      "faction": "violet",
+      "type": "infantry",
+      "full": 3,
+      "reduced": 1,
+      "movement": 2,
+      "strength": "full",
+      "position": {
+        "x": 4,
+        "y": 4
+      }
+    }
+  ]
+}

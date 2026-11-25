@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 1,
+  "scenarioId": "kiev-odessa",
+  "status": "source-setup-audit-not-gameplay-authorized",
+  "source": {
+    "odessaRules": "references/rules/odessa-rules.pdf",
+    "odessaRulesSha256": "c7def97fe2de9ae66dc89da5f7d3417e3283846485903b90b88f153ba9791bab",
+    "kievRules": "references/rules/kiev-rules.pdf",
+    "kievRulesSha256": "d55e8f0e567d1f8c7907c4fc8368954ec0e5fa8d6fe9e8e71c61acf9bb3c3756",
+    "sections": [
+      "Odessa §0.0",
+      "Odessa §6.0(3)",
+      "Odessa §6.0(4)",
+      "Odessa §6.0(6)",
+      "Odessa §6.0(7)",
+      "Kiev §6.0"
+    ]
+  },
+  "rearSoviet": {
+    "positions": {
+      "0406": "infantry-army",
+      "0705": "mechanized-corps",
+      "0803": "mechanized-corps",
+      "1007": "infantry-army",
+      "1106": "mechanized-corps",
+      "1215": "cavalry-corps",
+      "1309": "mechanized-corps"
+    },
+    "source": "Odessa §6.0(3): adds 1215 and a Cavalry Corps to the original six Kiev hexes"
+  },
+  "frontlineSoviet": {
+    "sourceMarkerKind": "star",
+    "expectedHexes": 11,
+    "counts": {
+      "infantry-army": 4,
+      "mechanized-corps": 6,
+      "cavalry-corps": 1
+    },
+    "noAdjacentArmies": true,
+    "source": "Odessa §6.0(4): eleven red-star frontline hexes, one unit per hex"
+  },
+  "odessaPortStart": {
+    "hex": "1513",
+    "city": "Odessa",
+    "units": [
+      "soviet-coastal-army",
+      "soviet-black-sea-fleet"
+    ]
+  },
+  "romaniaStart": {
+    "germanInfantry": 3,
+    "romanianGround": 4,
+    "territoryRequired": "romania",
+    "source": "Odessa §6.0(7) overrides Kiev's one-Romanian setup; source names no exact seven country-hex assignments",
+    "verifiedSetupHexes": [
+      "0709",
+      "0809",
+      "0910",
+      "1010"
+    ],
+    "verifiedSetupAuthority": "Objective: Kiev §6.0(7), four Romanian setup crosses; Odessa §6.0(7) increases the number of Romanian-area starting units without explicitly revoking these four setup locations",
+    "verifiedSetupScope": "setup-only-subset; not a full Romania country mask or movement border"
+  },
+  "romanianAir": {
+    "turn": 2,
+    "designKey": "romanian-air-support",
+    "source": "Odessa §§6.0(6),11.0"
+  },
+  "doNotAutoResolve": [
+    "twelve-versus-eleven-frontline-stars",
+    "source-rear-1309-versus-map-0706-mechanized-marker",
+    "unclassified-romanian-territory",
+    "unbound-base-kiev-german-and-romanian-unit-ids"
+  ]
+}

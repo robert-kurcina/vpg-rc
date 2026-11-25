@@ -1,0 +1,33 @@
+{
+  "checkpoint": 148,
+  "version": "v382",
+  "scope": "opt-in photographed Fleet marker and DR/DRL/EX optional no-retreat",
+  "sourcePdf": "references/rules/leningrad-rules.pdf §§10.4, 10.6, 13.1–13.3",
+  "sourcePdfSha256": "74d332e052e735e2378027a06f95e9715392773f249561bf1c00cae08a2bbfa7",
+  "assertions": 54,
+  "ports": {
+    "Liepaja": "0208",
+    "Riga": "0707",
+    "Parnu": "0804",
+    "Tallinn": "0901",
+    "Narva": "1402",
+    "Leningrad": "1701"
+  },
+  "sourceFront": "leningrad-front-r04c08",
+  "sourceBack": "leningrad-back-r04c01",
+  "verified": [
+    "undamaged Fleet defensive odds shift and map preview parity",
+    "pure source-bound Soviet attack shift from occupied Fleet port",
+    "damaged Fleet no shift and still eligible",
+    "DR/DRL/EX source-faced outcomes and Undo",
+    "declined retreat leaves Soviet ground in port and prohibits attacker advance",
+    "explicit marker validation and absent/mismatched/invalid marker rejection",
+    "typed ordinary and major city geography"
+  ],
+  "limitations": [
+    "Marker is externally supplied in test state, not initialized in gameplay setup",
+    "Fleet movement, damage checks, air-sea attacks and mixed-origin offensive Fleet support not certified",
+    "Full naval support and human post-combat choice UX not certified",
+    "Order-dependent joint overstack extensions, rear hex numbering, 8-turn play not certified"
+  ]
+}

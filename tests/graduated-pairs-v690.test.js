@@ -1,0 +1,25 @@
+'use strict';
+const A=require('node:assert/strict'),{analyze}=require('../scripts/analyze-graduated-pairs'),G=require('../core/graduated_mode');
+const p=G.profile('battle-for-moscow'),ledger=Object.fromEntries(Object.keys(p.weights).map(k=>[k,'soviet']));
+const base={scenario:p.scenario,variant:'standard',seed:41,stacking:'historical',grades:{german:0,soviet:0},factionPolicies:{},status:'complete',exactRestore:true,terminal:{winner:'soviet'},cityControl:ledger,winner:'soviet'};
+const graduated={...base,victoryMode:'graduated',graduated:G.evaluate(p,ledger)};
+let r=analyze([base,graduated]);A.equal(r.summary.pairs,1);A.equal(r.summary.changedCityControl,0);
+A.equal(analyze([base,{...graduated,stacking:'double'}]).summary.pairs,0);
+A.equal(analyze([base,{...graduated,exactRestore:false}]).excluded[0].reason,'incomplete-or-unverified');
+A.equal(analyze([base,{...graduated,graduated:{...graduated.graduated,germanVP:77}}]).excluded[0].reason,'graduated-report-mismatch');
+A.throws(()=>analyze([base,base]),/Duplicate mode/);
+console.log('5 paired victory research controls passed');
+// Real archived larger-game report format, including terminal.outcome and nested score.
+const archive=require('../rules/audit/graduated-victory-v689.json');
+const archivedRows=['historical','graduated'].flatMap(m=>archive[m].results.filter(x=>x.success&&x.code===0).map(x=>x.report));
+const verified=analyze(archivedRows);A.equal(verified.summary.pairs,9);A.equal(verified.excluded.length,2);
+const large=archivedRows.filter(x=>x.scenario==='leningrad'&&x.variant==='standard');
+A.equal(analyze(large).summary.pairs,1);
+const reversed=Object.fromEntries(Object.entries(large[1].cityControl).reverse());
+A.equal(analyze([large[0],{...large[1],cityControl:reversed}]).summary.changedCityControl,0);
+A.equal(analyze([large[0],{...large[1],terminal:{...large[1].terminal,outcome:'german-victory'}}]).excluded[0].reason,'terminal-winner-mismatch');
+A.equal(analyze([{...large[0],terminal:{...large[0].terminal,outcome:'unresolved-source-rule'}},large[1]]).summary.historicalWins.unresolved,1);
+A.equal(analyze([large[0],{...large[1],policy:{...large[1].policy,movementLookahead:true}}]).summary.pairs,0);
+const badLedger={...large[1].terminal.cityControl};badLedger.Leningrad='german';
+A.equal(analyze([large[0],{...large[1],terminal:{...large[1].terminal,cityControl:badLedger}}]).excluded[0].reason,'terminal-ledger-mismatch');
+console.log('7 additional cross-scenario pairing controls passed');

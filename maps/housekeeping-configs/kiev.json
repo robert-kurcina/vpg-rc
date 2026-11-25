@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "scenarioId": "kiev",
+  "source": [
+    "references/rules/kiev-rules.pdf §4.0 (seven game turns)",
+    "references/rules/kiev-rules.pdf §5.0 (all 16 Axis victory; 14 or fewer Soviet victory; exactly 15 draw)",
+    "references/rules/kiev-rules.pdf §5.0 (Lublin and Iasi initially Axis-controlled)"
+  ],
+  "mode": "city-count-three-way-v1",
+  "cityCount": 16,
+  "axisOwner": "german",
+  "defenderOwner": "soviet",
+  "germanVictoryAtLeast": 16,
+  "sovietVictoryAtMost": 14,
+  "draw": {
+    "axisCityCount": 15
+  },
+  "initialControlOverrides": {
+    "Lublin": "german",
+    "Iasi": "german"
+  },
+  "sourceStatus": "source-scored; campaign start, map movement, and buildup not yet certified",
+  "initialDefaultOwner": "soviet"
+}

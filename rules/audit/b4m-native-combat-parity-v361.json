@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "checkpoint": 127,
+  "version": "v361",
+  "status": "opt-in-differential-combat-parity-not-live",
+  "reference": "existing executable legacy/engine.js",
+  "productionEngine": "legacy-b4m-v1",
+  "fingerprints": {
+    "source": {
+      "map": "dbdef938b8df85b9970df18b1999b94f98beb894dfdf0793f6e2f406be7be3a5",
+      "units": "90752f9e74671b977de453fe805412cbd0f6af47d4eca04ed42e744c35f35429",
+      "deployments": "b9fa194ed39e28a2bcbc5e984de046b559e6ea752aa14ce73f88a7fe22ecec1f",
+      "rules": "353ffbdbedc1b6d122fd43bb747b501053eaa6e82146f520b4c1314adf43750a",
+      "objectives": "391c471a5f4154298d59f94b3a6dda1a2b490686893553d7dca61af3a80e4ae7"
+    },
+    "nativePreviewProfile": "9f8a71bc08291401cfd63e7de25cc1eca846fce5a44db712b57edc2f555db397"
+  },
+  "sourceOpening": {
+    "unitRecords": 39,
+    "openingAttackCandidates": 30
+  },
+  "combat": {
+    "openingPreviews": 180,
+    "isolatedTransactions": 180,
+    "choicesProbed": 180,
+    "choiceTransactions": 57,
+    "choiceBranches": {
+      "AL": 1,
+      "EX": 17,
+      "retreat": 39,
+      "advance": 39
+    },
+    "crtResults": {
+      "DR": 39,
+      "EX": 33,
+      "DRL": 41,
+      "NE": 20,
+      "AL": 8,
+      "DE": 39
+    },
+    "twoBattleSequences": 293,
+    "seededBattleRolls": 586,
+    "fortifiedCityHoldCases": 2,
+    "exactUnitStrengthPositionCityControl": true,
+    "identicalCommittedRandomStream": true
+  },
+  "negative": {
+    "duplicateDeclaration": true,
+    "invalidAttackerChoiceAtomic": true,
+    "invalidRetreatAtomic": true,
+    "productionSelectorPreserved": true
+  },
+  "limits": [
+    "Tests use the unchanged initial layout; this is not a sequential seven-turn campaign",
+    "Two-battle cases are independently legal opening declarations; other orders and multi-turn decisions are not covered",
+    "Legacy executable is the regression oracle, not independent proof of historical rules",
+    "Human browser controls and native Undo/save/AI are not migrated",
+    "Manual German setup and interactive Soviet Shock placement are still outstanding",
+    "Native preview remains opt-in; legacy/B4M production routing remains unchanged"
+  ]
+}

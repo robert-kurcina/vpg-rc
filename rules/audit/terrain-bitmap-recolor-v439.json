@@ -1,0 +1,74 @@
+{
+  "open": {
+    "input": "supplied_assets/flat/terrain-open.png",
+    "output": "supplied_assets/flat/terrain-open-v439.png",
+    "target": "#dcd4c9ff",
+    "sourceSha256": "6bd4e479dbf8dbbaaf24dc204b7aa2d17a62f229ad8e55a83a102256b4a0a100",
+    "variantSha256": "3abcae4105dd7c3f4f1d1c64fcba9f2b679764f2eab021a5fbeac213bd67c10d",
+    "originalOpaqueRGBMean": [
+      119.3,
+      128.8,
+      40.3
+    ],
+    "variantOpaqueRGBMean": [
+      220.0,
+      212.0,
+      201.0
+    ],
+    "sourceDimensions": [
+      887,
+      768
+    ],
+    "alphaUnchanged": true,
+    "labLightnessDetailRetention": 0.86,
+    "labChromaDetailRetention": 0.59
+  },
+  "forest": {
+    "input": "supplied_assets/flat/terrain-forest.png",
+    "output": "supplied_assets/flat/terrain-forest-v439.png",
+    "target": "#727f61ff",
+    "sourceSha256": "278528a568c49ef998804495f6c66409e066bb8beca2bedff7ee80eb0d5bed1d",
+    "variantSha256": "4bf3bcf62b7c09dc59fb9998faa7f3b0f564d2eca9df33765316371f979be3b4",
+    "originalOpaqueRGBMean": [
+      73.4,
+      90.0,
+      36.1
+    ],
+    "variantOpaqueRGBMean": [
+      114.5,
+      127.8,
+      97.0
+    ],
+    "sourceDimensions": [
+      887,
+      768
+    ],
+    "alphaUnchanged": true,
+    "labLightnessDetailRetention": 0.83,
+    "labChromaDetailRetention": 0.72
+  },
+  "swamp": {
+    "input": "supplied_assets/flat/terrain-swamp.png",
+    "output": "supplied_assets/flat/terrain-swamp-v439.png",
+    "target": "#616f6fff",
+    "sourceSha256": "998c3769c48c28ae40edbc9a7669e58d5ed9eefc4679e7065711e94bb76af279",
+    "variantSha256": "37b4dd62e14983f26ce66511b7385723a56c4ec11f5229a7f23870095aafa799",
+    "originalOpaqueRGBMean": [
+      109.5,
+      118.5,
+      67.8
+    ],
+    "variantOpaqueRGBMean": [
+      94.0,
+      111.5,
+      110.9
+    ],
+    "sourceDimensions": [
+      444,
+      384
+    ],
+    "alphaUnchanged": true,
+    "labLightnessDetailRetention": 0.85,
+    "labChromaDetailRetention": 0.64
+  }
+}

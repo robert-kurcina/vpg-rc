@@ -1,0 +1,10 @@
+{
+  "checkpoint": 234,
+  "version": "v468",
+  "assertions": 20,
+  "status": "PASS",
+  "scope": "real Chromium shared-engine candidate deployment API; not a Kiev game UI or campaign",
+  "method": "isolated Chromium executing the normal compact browser engine, supplied original Kiev JSON and test-only selected counters",
+  "productionAuthorized": false,
+  "note": "Complete Romanian target territory mask and live campaign remain gated"
+}

@@ -1,0 +1,498 @@
+{
+  "schemaVersion": 1,
+  "checkpoint": 130,
+  "version": "v364",
+  "status": "continuous-seven-turn-differential-preview-only",
+  "source": "Actual B4M source map, units, CRT, objectives and legacy/engine.js reference implementation",
+  "test": "tests/b4m-native-continuous-campaign-v364.test.js",
+  "summary": {
+    "status": "PASS",
+    "checkpoint": 130,
+    "version": "v364",
+    "cases": [
+      {
+        "seed": 17,
+        "moveChoice": "first",
+        "setupMode": "automatic",
+        "turns": 7,
+        "manualPlacements": 0,
+        "phases": 55,
+        "realMoves": 27,
+        "realBattles": 11,
+        "realReplacements": 11,
+        "shockPlacements": 1,
+        "savedRestores": 3,
+        "stateChecks": 106,
+        "choiceChecks": 53,
+        "undoReplays": 39,
+        "phasesByTurn": {
+          "1": 6,
+          "2": 8,
+          "3": 8,
+          "4": 9,
+          "5": 8,
+          "6": 8,
+          "7": 8
+        },
+        "turnEnds": [
+          [
+            1,
+            "german",
+            1,
+            "soviet"
+          ],
+          [
+            1,
+            "soviet",
+            2,
+            "german"
+          ],
+          [
+            2,
+            "german",
+            2,
+            "soviet"
+          ],
+          [
+            2,
+            "soviet",
+            3,
+            "german"
+          ],
+          [
+            3,
+            "german",
+            3,
+            "soviet"
+          ],
+          [
+            3,
+            "soviet",
+            4,
+            "german"
+          ],
+          [
+            4,
+            "german",
+            4,
+            "soviet"
+          ],
+          [
+            4,
+            "soviet",
+            5,
+            "german"
+          ],
+          [
+            5,
+            "german",
+            5,
+            "soviet"
+          ],
+          [
+            5,
+            "soviet",
+            6,
+            "german"
+          ],
+          [
+            6,
+            "german",
+            6,
+            "soviet"
+          ],
+          [
+            6,
+            "soviet",
+            7,
+            "german"
+          ],
+          [
+            7,
+            "german",
+            7,
+            "soviet"
+          ],
+          [
+            7,
+            "soviet",
+            8,
+            "german"
+          ]
+        ]
+      },
+      {
+        "seed": 101,
+        "moveChoice": "last",
+        "setupMode": "automatic",
+        "turns": 7,
+        "manualPlacements": 0,
+        "phases": 55,
+        "realMoves": 27,
+        "realBattles": 9,
+        "realReplacements": 9,
+        "shockPlacements": 1,
+        "savedRestores": 3,
+        "stateChecks": 102,
+        "choiceChecks": 56,
+        "undoReplays": 37,
+        "phasesByTurn": {
+          "1": 6,
+          "2": 8,
+          "3": 8,
+          "4": 9,
+          "5": 8,
+          "6": 8,
+          "7": 8
+        },
+        "turnEnds": [
+          [
+            1,
+            "german",
+            1,
+            "soviet"
+          ],
+          [
+            1,
+            "soviet",
+            2,
+            "german"
+          ],
+          [
+            2,
+            "german",
+            2,
+            "soviet"
+          ],
+          [
+            2,
+            "soviet",
+            3,
+            "german"
+          ],
+          [
+            3,
+            "german",
+            3,
+            "soviet"
+          ],
+          [
+            3,
+            "soviet",
+            4,
+            "german"
+          ],
+          [
+            4,
+            "german",
+            4,
+            "soviet"
+          ],
+          [
+            4,
+            "soviet",
+            5,
+            "german"
+          ],
+          [
+            5,
+            "german",
+            5,
+            "soviet"
+          ],
+          [
+            5,
+            "soviet",
+            6,
+            "german"
+          ],
+          [
+            6,
+            "german",
+            6,
+            "soviet"
+          ],
+          [
+            6,
+            "soviet",
+            7,
+            "german"
+          ],
+          [
+            7,
+            "german",
+            7,
+            "soviet"
+          ],
+          [
+            7,
+            "soviet",
+            8,
+            "german"
+          ]
+        ]
+      },
+      {
+        "seed": 2026,
+        "moveChoice": "first",
+        "setupMode": "automatic",
+        "turns": 7,
+        "manualPlacements": 0,
+        "phases": 55,
+        "realMoves": 27,
+        "realBattles": 13,
+        "realReplacements": 8,
+        "shockPlacements": 1,
+        "savedRestores": 3,
+        "stateChecks": 105,
+        "choiceChecks": 53,
+        "undoReplays": 41,
+        "phasesByTurn": {
+          "1": 6,
+          "2": 8,
+          "3": 8,
+          "4": 9,
+          "5": 8,
+          "6": 8,
+          "7": 8
+        },
+        "turnEnds": [
+          [
+            1,
+            "german",
+            1,
+            "soviet"
+          ],
+          [
+            1,
+            "soviet",
+            2,
+            "german"
+          ],
+          [
+            2,
+            "german",
+            2,
+            "soviet"
+          ],
+          [
+            2,
+            "soviet",
+            3,
+            "german"
+          ],
+          [
+            3,
+            "german",
+            3,
+            "soviet"
+          ],
+          [
+            3,
+            "soviet",
+            4,
+            "german"
+          ],
+          [
+            4,
+            "german",
+            4,
+            "soviet"
+          ],
+          [
+            4,
+            "soviet",
+            5,
+            "german"
+          ],
+          [
+            5,
+            "german",
+            5,
+            "soviet"
+          ],
+          [
+            5,
+            "soviet",
+            6,
+            "german"
+          ],
+          [
+            6,
+            "german",
+            6,
+            "soviet"
+          ],
+          [
+            6,
+            "soviet",
+            7,
+            "german"
+          ],
+          [
+            7,
+            "german",
+            7,
+            "soviet"
+          ],
+          [
+            7,
+            "soviet",
+            8,
+            "german"
+          ]
+        ]
+      },
+      {
+        "seed": 509,
+        "moveChoice": "last",
+        "setupMode": "manual",
+        "turns": 7,
+        "manualPlacements": 22,
+        "phases": 55,
+        "realMoves": 27,
+        "realBattles": 10,
+        "realReplacements": 11,
+        "shockPlacements": 1,
+        "savedRestores": 3,
+        "stateChecks": 128,
+        "choiceChecks": 56,
+        "undoReplays": 38,
+        "phasesByTurn": {
+          "1": 6,
+          "2": 8,
+          "3": 8,
+          "4": 9,
+          "5": 8,
+          "6": 8,
+          "7": 8
+        },
+        "turnEnds": [
+          [
+            1,
+            "german",
+            1,
+            "soviet"
+          ],
+          [
+            1,
+            "soviet",
+            2,
+            "german"
+          ],
+          [
+            2,
+            "german",
+            2,
+            "soviet"
+          ],
+          [
+            2,
+            "soviet",
+            3,
+            "german"
+          ],
+          [
+            3,
+            "german",
+            3,
+            "soviet"
+          ],
+          [
+            3,
+            "soviet",
+            4,
+            "german"
+          ],
+          [
+            4,
+            "german",
+            4,
+            "soviet"
+          ],
+          [
+            4,
+            "soviet",
+            5,
+            "german"
+          ],
+          [
+            5,
+            "german",
+            5,
+            "soviet"
+          ],
+          [
+            5,
+            "soviet",
+            6,
+            "german"
+          ],
+          [
+            6,
+            "german",
+            6,
+            "soviet"
+          ],
+          [
+            6,
+            "soviet",
+            7,
+            "german"
+          ],
+          [
+            7,
+            "german",
+            7,
+            "soviet"
+          ],
+          [
+            7,
+            "soviet",
+            8,
+            "german"
+          ]
+        ]
+      }
+    ],
+    "totals": {
+      "manualPlacements": 22,
+      "phases": 220,
+      "realMoves": 108,
+      "realBattles": 43,
+      "realReplacements": 39,
+      "shockPlacements": 4,
+      "savedRestores": 12,
+      "stateChecks": 441,
+      "choiceChecks": 218,
+      "undoReplays": 155
+    }
+  },
+  "sourceSHA256": {
+    "core/engine.js": "c8ab3b29e438abffb39b4fb5850a6f94b58dcf524fc04e63386baedfc1e1efba",
+    "core/native_session_actions.js": "998b89a0b68baa24a78cc47aab5766d2333767bf293a7b575fc0a895c313d16c",
+    "core/native_session_save.js": "84d1e32f6fbeba820bd7f7a47fd22be90995d66eaaeb72876424184e7894297b",
+    "core/session.js": "901d31caf89bbe08fdeddbf6f7203cf243c735ca0371c59eeea5434a8fc4805e",
+    "core/native_preview_config.js": "27dbe982e98e1f8a25a37641df486d90a90a85bb744a5f19b22d45b3a28f2f5f",
+    "legacy/engine.js": "1aa696a10fd2fbb2369bfbf1d5f7ca37b05f2ab26fb9d6e9fd9b9731ac1dc53d",
+    "games/battle-for-moscow/game.json": "9d5ccd8e80b3fb2ea1018e26ccac9ebf26e3bf9081920c162347dcb94ef23f39",
+    "games/battle-for-moscow/native-preview/config.json": "4f6585ec4adcd670e2dd12f8601d6cfc016e9b1ce181e0b75339c6d0e213cd40",
+    "tests/b4m-native-continuous-campaign-v364.test.js": "452841c1a1658a12ab2f5e3b616cdfde2083b85dab8d5c9eb735c177d16913aa"
+  },
+  "checks": [
+    "Four distinct sequential games start in opening German combat, progress through all true phase/turn boundaries and end after seven turns",
+    "One game begins with actual 22-unit manual placement and setup confirmation, not a synthetic setup preset",
+    "Legacy and shared native engines independently execute selected legal movement, combat, and replacement transactions on evolving state",
+    "Turn-four Shock reinforcement choice is made only when reached by actual preceding German and Soviet turns",
+    "Full positions, counter strengths, control, side, turn, terminal winner and RNG state are compared after each action and phase",
+    "Native Undo/replay, middle-campaign save/restore and postgame save/Undo/replay are verified",
+    "Shared engine now transitions the active side cursor to first faction and increments the final half-turn counter on the end-of-campaign boundary; finished state offers no playable phase"
+  ],
+  "limitations": [
+    "A bounded deterministic set of four chosen histories: at most one move per movement phase, one replacement per replacement phase, and one battle per combat phase",
+    "Not exhaustive move/retreat/exchange or simultaneous multi-battle choice parity under a continuously evolving game (earlier bounded parity tests cover selected cases)",
+    "The legacy in-repository implementation is the behavioral oracle; separate live Oberlabs UX/implementation verification is still required",
+    "No playable native browser interface or native AI parity; production remains legacy-b4m-v1",
+    "This demonstrates B4M full-turn core execution, not readiness of Leningrad, Arduous, Kiev or Kiev–Odessa rules"
+  ]
+}

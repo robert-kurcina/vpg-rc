@@ -1,0 +1,97 @@
+{
+  "status": "PASS",
+  "checkpoint": 175,
+  "version": "v409",
+  "rows": [
+    {
+      "test": "tests/b4m-native-preview-v360.test.js",
+      "result": "PASS",
+      "seconds": 0.3,
+      "detail": null
+    },
+    {
+      "test": "tests/b4m-native-combat-v361.test.js",
+      "result": "PASS",
+      "seconds": 0.59,
+      "detail": null
+    },
+    {
+      "test": "tests/b4m-native-interactive-setup-v363.test.js",
+      "result": "PASS",
+      "seconds": 0.22,
+      "detail": null
+    },
+    {
+      "test": "tests/browser-native-session-v367.test.js",
+      "result": "PASS",
+      "seconds": 0.16,
+      "detail": null
+    },
+    {
+      "test": "tests/b4m-native-strategic-comparison-v369.test.js",
+      "result": "PASS",
+      "seconds": 1.84,
+      "detail": null
+    },
+    {
+      "test": "tests/b4m-native-objective-advance-v408.test.js",
+      "result": "PASS",
+      "seconds": 0.12,
+      "detail": null
+    },
+    {
+      "test": "tests/b4m-native-objective-advance-campaign-v408.test.js",
+      "result": "PASS",
+      "seconds": 11.11,
+      "detail": null
+    },
+    {
+      "test": "tests/engine-shared-roster-binding-v317.test.js",
+      "result": "PASS",
+      "seconds": 6.95,
+      "detail": null
+    },
+    {
+      "test": "tests/native-combat-ui-v370.test.js",
+      "result": "PASS",
+      "seconds": 0.14,
+      "detail": null
+    },
+    {
+      "test": "tests/native-city-control-v374.test.js",
+      "result": "PASS",
+      "seconds": 0.1,
+      "detail": null
+    },
+    {
+      "test": "tests/b4m-native-tournament-reference-v375.test.js",
+      "result": "PASS",
+      "seconds": 0.08,
+      "detail": null
+    },
+    {
+      "test": "tests/b4m-native-replacement-policy-v366.test.js",
+      "result": "PASS",
+      "seconds": 0.14,
+      "detail": null
+    },
+    {
+      "test": "tests/b4m-native-reserve-redeployment-v376.test.js",
+      "result": "PASS",
+      "seconds": 0.15,
+      "detail": null
+    },
+    {
+      "test": "tests/b4m-native-redeployment-audit-v377.test.js",
+      "result": "PASS",
+      "seconds": 0.37,
+      "detail": null
+    },
+    {
+      "test": "tests/b4m-native-session-v362.test.js",
+      "result": "PASS",
+      "seconds": 3.15,
+      "detail": null
+    }
+  ]
+}

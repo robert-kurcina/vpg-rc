@@ -1,0 +1,160 @@
+{
+  "baseline": "v646",
+  "candidate": "v647",
+  "scope": "matched 30-action qualification harness; single sequential run each; report equality except elapsedMs, not cross-version journal equality",
+  "before": {
+    "scenario": "kiev-odessa",
+    "variant": "standard",
+    "seed": 7,
+    "policy": {
+      "seed": 7,
+      "missionSeed": "00000000000000000000000000000007",
+      "selectionMode": "seeded",
+      "phaseScope": "operational",
+      "maxActions": 30,
+      "maxFleetMoves": 2,
+      "maxFleetAttacks": 3,
+      "fleetBudgetScope": "campaign"
+    },
+    "elapsedMs": 10479,
+    "status": "blocked",
+    "reason": "controller-action-budget",
+    "stats": {
+      "moves": 9,
+      "combats": 1,
+      "reinforcements": 0,
+      "navalRolls": 2,
+      "turns": 0
+    },
+    "actions": 30,
+    "fleetByTurn": {
+      "1": {
+        "declare-fleet-attack": 2,
+        "roll-fleet-attack": 2
+      }
+    },
+    "odds": {
+      "6": 1
+    },
+    "outcomes": {
+      "DE": 1
+    },
+    "reasons": {
+      "source-legal-naval-commitment": 2,
+      "committed-naval-die": 2,
+      "finish-naval-window": 1,
+      "continuation-pilot-positive-utility": 1,
+      "select-committed-battle": 1,
+      "precommit-air-support": 1,
+      "post-roll-material-city-utility": 1,
+      "finish-combat": 1,
+      "objective-directed-ground-movement": 9,
+      "finish-pending-movement": 9,
+      "finish-movement-phase": 1,
+      "finish-buildup": 1
+    },
+    "cityControl": {
+      "Br\u0103ila": "soviet",
+      "Chernigov": "soviet",
+      "Chernovtsy": "soviet",
+      "Chisinau": "soviet",
+      "Iasi": "german",
+      "Kiev": "soviet",
+      "Kirovograd": "soviet",
+      "Kovel": "soviet",
+      "Lublin": "german",
+      "Lvov": "soviet",
+      "Nikolaev": "soviet",
+      "Odessa": "soviet",
+      "Rovno": "soviet",
+      "Sarny": "soviet",
+      "Shepetovka": "soviet",
+      "Stanislavov": "soviet",
+      "Tarnopol": "soviet",
+      "Uman": "soviet",
+      "Vinnitsa": "soviet",
+      "Zhitomir": "soviet"
+    },
+    "phase": "soviet-special-movement",
+    "exactRestore": true,
+    "communicationChecks": 242
+  },
+  "after": {
+    "scenario": "kiev-odessa",
+    "variant": "standard",
+    "seed": 7,
+    "policy": {
+      "seed": 7,
+      "missionSeed": "00000000000000000000000000000007",
+      "selectionMode": "seeded",
+      "phaseScope": "operational",
+      "maxActions": 30,
+      "maxFleetMoves": 2,
+      "maxFleetAttacks": 3,
+      "fleetBudgetScope": "campaign"
+    },
+    "elapsedMs": 7480,
+    "status": "blocked",
+    "reason": "controller-action-budget",
+    "stats": {
+      "moves": 9,
+      "combats": 1,
+      "reinforcements": 0,
+      "navalRolls": 2,
+      "turns": 0
+    },
+    "actions": 30,
+    "fleetByTurn": {
+      "1": {
+        "declare-fleet-attack": 2,
+        "roll-fleet-attack": 2
+      }
+    },
+    "odds": {
+      "6": 1
+    },
+    "outcomes": {
+      "DE": 1
+    },
+    "reasons": {
+      "source-legal-naval-commitment": 2,
+      "committed-naval-die": 2,
+      "finish-naval-window": 1,
+      "continuation-pilot-positive-utility": 1,
+      "select-committed-battle": 1,
+      "precommit-air-support": 1,
+      "post-roll-material-city-utility": 1,
+      "finish-combat": 1,
+      "objective-directed-ground-movement": 9,
+      "finish-pending-movement": 9,
+      "finish-movement-phase": 1,
+      "finish-buildup": 1
+    },
+    "cityControl": {
+      "Br\u0103ila": "soviet",
+      "Chernigov": "soviet",
+      "Chernovtsy": "soviet",
+      "Chisinau": "soviet",
+      "Iasi": "german",
+      "Kiev": "soviet",
+      "Kirovograd": "soviet",
+      "Kovel": "soviet",
+      "Lublin": "german",
+      "Lvov": "soviet",
+      "Nikolaev": "soviet",
+      "Odessa": "soviet",
+      "Rovno": "soviet",
+      "Sarny": "soviet",
+      "Shepetovka": "soviet",
+      "Stanislavov": "soviet",
+      "Tarnopol": "soviet",
+      "Uman": "soviet",
+      "Vinnitsa": "soviet",
+      "Zhitomir": "soviet"
+    },
+    "phase": "soviet-special-movement",
+    "exactRestore": true,
+    "communicationChecks": 242
+  },
+  "elapsedReductionPercent": 28.619143048000762
+}

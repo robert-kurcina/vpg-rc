@@ -1,0 +1,52 @@
+{
+  "status": "PASS",
+  "checkpoint": 134,
+  "description": "Deterministic native AI selected actions replayed against legacy rules engine; strategy parity NOT tested",
+  "policy": {
+    "schemaVersion": 1,
+    "mode": "deterministic-baseline",
+    "maxPhases": 12,
+    "maxActions": 180,
+    "maxMovesPerPhase": 8,
+    "maxBattlesPerPhase": 2,
+    "maxReplacementsPerPhase": 8,
+    "minAttackOdds": 1
+  },
+  "runs": 4,
+  "sideTurns": 56,
+  "actions": 1089,
+  "combatDeclarations": 105,
+  "resolvedBattles": 105,
+  "movements": 518,
+  "replacements": 137,
+  "shockPlacements": 4,
+  "savedSnapshots": 41,
+  "undoReplays": 56,
+  "fullStateMatches": 1089,
+  "matchedDice": 105,
+  "terminalMatches": 4,
+  "baselineDistinctFromLegacyPolicy": true,
+  "campaigns": [
+    {
+      "seed": 1,
+      "turns": 14,
+      "winner": "soviet",
+      "unitLocations": 37,
+      "stateHash": "d6f7bc769b64f47b214f163e933bfb5f08cb38f6ec8c65b47a1d77e8763ca210"
+    },
+    {
+      "seed": 17,
+      "turns": 14,
+      "winner": "soviet",
+      "unitLocations": 34,
+      "stateHash": "03e30e4fb2d4aeee3a78825d18c995b4ecc3b5b0b43cb99c2ff34b332eb16600"
+    },
+    {
+      "seed": 1941,
+      "turns": 14,
+      "winner": "soviet",
+      "unitLocations": 37,
+      "stateHash": "faf4eecff315b0ee86747a25e3f58b1f4a54b2f8116b34db2bfef987a4c5adf2"
+    }
+  ]
+}

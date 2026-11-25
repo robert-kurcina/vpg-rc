@@ -1,0 +1,34 @@
+'use strict';
+const assert=require('node:assert/strict');
+const Odds=require('../core/historical_combat_odds');
+const Move=require('../core/movement_rules');
+const Path=require('../core/pathfinding');
+const T=require('../core/terrain_tooltips');
+const playerAid=require('../maps/combat-configs/kiev-major-river-effects-v430.json');
+const profile=require('../maps/movement-configs/kiev.json');
+const source=require('../rules/audit/kiev-definitive-city-river-v429.json');
+let n=0;const eq=(a,b)=>{assert.deepEqual(a,b);n++};
+const policy={source:playerAid.source,modifiers:{terrainColumnShifts:{forest:-1,swamp:-1,'major-city':-1},allAttackersAcrossRiverShift:-1,swampTankStrengthMultiplier:.5,swampAffectedClasses:['panzer','mechanized'],maximumOdds:6,majorRiverAttackMultiplier:playerAid.attackMultiplier}};
+const unit=(value,kind='infantry')=>({value,kind});
+const base={attackers:[unit(7),unit(5),unit(3)],defenders:[unit(4)],attackerIds:['a','b','c'],defenderTerrain:'open',allAttackersAcrossRiver:false,policy};
+eq(source.majorRiverCount,10);eq(playerAid.attackMultiplier,.5);eq(profile.majorRiverExtraCost,1);
+eq(Odds.evaluate({...base,majorRiverCrossers:['a','b']}).attackStrength,3+2+3);
+eq(Odds.evaluate({...base,majorRiverCrossers:['a']}).attackStrength,3+5+3);
+eq(Odds.evaluate({...base,majorRiverCrossers:[]}).attackStrength,15);
+eq(Odds.evaluate({...base,majorRiverCrossers:['a','b']}).rawOdds,2);
+eq(Odds.evaluate({...base,majorRiverCrossers:['a','b'],allAttackersAcrossRiver:true}).finalOdds,1);
+eq(Odds.evaluate({...base,majorRiverCrossers:['a','b']}).finalOdds,2);
+assert.throws(()=>Odds.evaluate({...base,majorRiverCrossers:['x']}),/Major River/);n++;
+assert.throws(()=>Odds.evaluate({...base,majorRiverCrossers:['a','a']}),/Major River/);n++;
+assert.throws(()=>Odds.evaluate({...base,majorRiverCrossers:['a'],policy:null}),/Major River/);n++;
+// Major River movement charge applies for a normal crossing but not rail crossing.
+const board={cells:{A:{terrain:'open',verified:true,rail:true},B:{terrain:'open',verified:true,rail:true}},edges:[{a:'A',b:'B',verified:true,majorRiver:true,rail:false}]};
+const ctx={profile,board,phase:{owner:'german',kind:'movement'},turn:2,units:{g:{id:'g',owner:'german',hex:'A',class:'infantry',size:'corps',mp:2}}};
+eq(Move.move(ctx,{unitId:'g',path:['A','B']}).cost,2);
+ctx.board.edges[0].rail=true;eq(Move.move(ctx,{unitId:'g',path:['A','B']}).cost,1);
+ctx.board.edges[0].rail=false;ctx.units.g.mp=1;eq(Move.move(ctx,{unitId:'g',path:['A','B']}).ok,false);
+// A one-step crossing attacker is rounded down to zero before totaling.
+eq(Odds.evaluate({...base,attackers:[unit(1),unit(5),unit(3)],majorRiverCrossers:['a']}).attackStrength,8);
+const tooltip=T.describe({id:'0101',terrain:'open',tileEdges:{N:[{kind:'majorRiver'},{kind:'rail'}]}},{movement:profile,combat:{modifiers:policy.modifiers}});
+assert.match(tooltip,/Major River/);assert.match(tooltip,/rounded down/);n+=2;
+console.log(`PASS Kiev Major River source-configured rules: ${n} assertions`);

@@ -1,0 +1,24 @@
+{
+  "checkpoint": 375,
+  "version": "v609",
+  "scope": "opt-in historical autoplay single-battle utility pilot and pure decision evaluator",
+  "tested": {
+    "utilityArithmetic": 62,
+    "actualMapKievPilotAndScreen": 50,
+    "controllerContract": 16,
+    "sharedCRT": 301,
+    "bundleModules": 60
+  },
+  "provisionalDesperationThresholds": {
+    "1:2": 0.75,
+    "1:1": 0.5
+  },
+  "defaultChanged": false,
+  "limitations": [
+    "No computed elimination-risk forecast",
+    "Provisional outcome category utilities are not actual positional or casualty valuation",
+    "No joint plan optimization or air allocation",
+    "No concealed strength estimate",
+    "No new Chromium or full seeded campaign run"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "checkpoint": 187,
+  "version": "v421",
+  "previousCheckpoint": 186,
+  "protectedUnchanged": 111,
+  "unexpectedChanges": [],
+  "expectedViewerChange": "maps/index.html",
+  "rendererChange": "core/terrain_tiles.js: added shared browser-only applyCoastPresentation; existing default svgMap output unmodified",
+  "legacyTests": "v311 and v312 coast suites still reference removed historical export directories; fail identically in v420 baseline",
+  "browserAcceptance": [
+    "tests/shared-settings-browser-v421.py",
+    "tests/map-viewer-settings-v421.py"
+  ],
+  "nodeAcceptance": [
+    "tests/shared-display-policy-v421.test.js",
+    "tests/universal-counter-geometry-v420.test.js",
+    "tests/shared-historical-crt-v316.test.js"
+  ],
+  "openAcceptance": "Contested seven-turn Arduous campaign still pending"
+}

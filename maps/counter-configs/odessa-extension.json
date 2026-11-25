@@ -1,0 +1,1539 @@
+{
+  "schemaVersion": 1,
+  "mapId": "odessa-extension",
+  "gameSet": "odessa",
+  "faceSource": {
+    "front": {
+      "file": "assets/official-counters/source-sheets/counters-odessa-front.jpg",
+      "sha256": "297e28ceefadb982bc7050b1e9a5039956997d34ce3368cda219b1da85badd25",
+      "width": 582,
+      "height": 156
+    },
+    "back": {
+      "file": "assets/official-counters/source-sheets/counters-odessa-back.jpg",
+      "sha256": "74de9f736f15abd39be33c351df09a977c9cca697ceac281230a7207f78de969",
+      "width": 579,
+      "height": 158
+    }
+  },
+  "faceOrder": "horizontal-mirror across sheet: front row r column c corresponds to back row r column 9-c",
+  "colorPolicy": "per-face sampled color stored as provenance; per-unit fields use source palette, not generic faction CSS",
+  "faces": {
+    "front": [
+      {
+        "faceId": "odessa-front-r01c01",
+        "source": "front",
+        "row": 1,
+        "column": 1,
+        "crop": [
+          5,
+          7,
+          71,
+          69
+        ],
+        "observedFieldColor": "#9f9f9f",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "printed-face-transcribed-unit-identity-unverified",
+        "pairedFaceId": "odessa-back-r01c08",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "naval-marker",
+          "visibleNotation": "Black Sea; horizontal arrow 1",
+          "printedAffiliation": "soviet",
+          "visibility": "printed",
+          "designKey": "odessa-front-col01"
+        },
+        "sourceIdentityKey": "soviet-black-sea-fleet",
+        "sourceIdentityStatus": "identified-by-odessa-pdf",
+        "sourceCitation": {
+          "pdf": "references/rules/odessa-rules.pdf",
+          "sha256": "c7def97fe2de9ae66dc89da5f7d3417e3283846485903b90b88f153ba9791bab",
+          "page": 2,
+          "section": "15.1, 15.2, 15.5"
+        },
+        "supportVectorFieldColor": "#e5454d"
+      },
+      {
+        "faceId": "odessa-front-r01c02",
+        "source": "front",
+        "row": 1,
+        "column": 2,
+        "crop": [
+          76,
+          7,
+          72,
+          69
+        ],
+        "observedFieldColor": "#d84b54",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "printed-face-transcribed-unit-identity-unverified",
+        "pairedFaceId": "odessa-back-r01c07",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "coastal-infantry",
+          "visibleNotation": "Coast; XXXX; 4-4",
+          "printedAffiliation": "soviet",
+          "visibility": "printed",
+          "designKey": "odessa-front-col02"
+        },
+        "sourceIdentityKey": "soviet-coastal-army",
+        "sourceIdentityStatus": "identified-by-odessa-pdf",
+        "sourceCitation": {
+          "pdf": "references/rules/odessa-rules.pdf",
+          "sha256": "c7def97fe2de9ae66dc89da5f7d3417e3283846485903b90b88f153ba9791bab",
+          "page": 1,
+          "section": "6.0(3), 15.2"
+        }
+      },
+      {
+        "faceId": "odessa-front-r01c03",
+        "source": "front",
+        "row": 1,
+        "column": 3,
+        "crop": [
+          148,
+          7,
+          72,
+          69
+        ],
+        "observedFieldColor": "#f03d50",
+        "unitId": null,
+        "identityStatus": "source-cavalry-type-inferred-gameplay-id-unbound",
+        "role": "blank-face-of-single-sided-cavalry-counter",
+        "pairedFaceId": "odessa-back-r01c06",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "blank",
+          "visibleNotation": "blank face",
+          "printedAffiliation": "none",
+          "visibility": "blank",
+          "designKey": "odessa-front-col03"
+        },
+        "sourceIdentityKey": "soviet-cavalry-corps-a",
+        "sourceIdentityStatus": "inferred-from-PDF-and-printed-cavalry-symbol",
+        "sourceCitation": {
+          "pdf": "references/rules/odessa-rules.pdf",
+          "sha256": "c7def97fe2de9ae66dc89da5f7d3417e3283846485903b90b88f153ba9791bab",
+          "page": 1,
+          "section": "1.0, 6.0(3-4, 7), 9.4.3"
+        },
+        "singleSidedPlayableFaceId": "odessa-back-r01c06"
+      },
+      {
+        "faceId": "odessa-front-r01c04",
+        "source": "front",
+        "row": 1,
+        "column": 4,
+        "crop": [
+          220,
+          7,
+          71,
+          69
+        ],
+        "observedFieldColor": "#795f48",
+        "unitId": null,
+        "identityStatus": "source-cavalry-type-inferred-gameplay-id-unbound",
+        "role": "blank-face-of-single-sided-cavalry-counter",
+        "pairedFaceId": "odessa-back-r01c05",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "blank",
+          "visibleNotation": "blank face",
+          "printedAffiliation": "none",
+          "visibility": "blank",
+          "designKey": "odessa-front-col04"
+        },
+        "sourceIdentityKey": "soviet-cavalry-corps-b",
+        "sourceIdentityStatus": "inferred-from-PDF-and-printed-cavalry-symbol",
+        "sourceCitation": {
+          "pdf": "references/rules/odessa-rules.pdf",
+          "sha256": "c7def97fe2de9ae66dc89da5f7d3417e3283846485903b90b88f153ba9791bab",
+          "page": 1,
+          "section": "1.0, 6.0(3-4, 7), 9.4.3"
+        },
+        "singleSidedPlayableFaceId": "odessa-back-r01c05"
+      },
+      {
+        "faceId": "odessa-front-r01c05",
+        "source": "front",
+        "row": 1,
+        "column": 5,
+        "crop": [
+          291,
+          7,
+          71,
+          69
+        ],
+        "observedFieldColor": "#8cb2e3",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "printed-face-transcribed-unit-identity-unverified",
+        "pairedFaceId": "odessa-back-r01c04",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "infantry",
+          "visibleNotation": "Rom; XXXX; H; 3-5-3",
+          "printedAffiliation": "romanian",
+          "visibility": "printed",
+          "designKey": "odessa-front-col05"
+        },
+        "sourceIdentityKey": "romanian-home-army",
+        "sourceIdentityStatus": "identified-by-odessa-pdf",
+        "sourceCitation": {
+          "pdf": "references/rules/odessa-rules.pdf",
+          "sha256": "c7def97fe2de9ae66dc89da5f7d3417e3283846485903b90b88f153ba9791bab",
+          "page": 1,
+          "section": "9.4.4"
+        }
+      },
+      {
+        "faceId": "odessa-front-r01c06",
+        "source": "front",
+        "row": 1,
+        "column": 6,
+        "crop": [
+          362,
+          7,
+          72,
+          69
+        ],
+        "observedFieldColor": "#96afd8",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "printed-face-transcribed-unit-identity-unverified",
+        "pairedFaceId": "odessa-back-r01c03",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "infantry",
+          "visibleNotation": "Rom; XXXX; 4; 6-4",
+          "printedAffiliation": "romanian",
+          "visibility": "printed",
+          "designKey": "odessa-front-col06"
+        },
+        "sourceIdentityKey": "romanian-4th-army",
+        "sourceIdentityStatus": "identified-by-odessa-pdf",
+        "sourceCitation": {
+          "pdf": "references/rules/odessa-rules.pdf",
+          "sha256": "c7def97fe2de9ae66dc89da5f7d3417e3283846485903b90b88f153ba9791bab",
+          "page": 1,
+          "section": "1.0, 6.0(7)"
+        }
+      },
+      {
+        "faceId": "odessa-front-r01c07",
+        "source": "front",
+        "row": 1,
+        "column": 7,
+        "crop": [
+          434,
+          7,
+          72,
+          69
+        ],
+        "observedFieldColor": "#90b2d7",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "printed-face-transcribed-unit-identity-unverified",
+        "pairedFaceId": "odessa-back-r01c02",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "air-marker",
+          "visibleNotation": "Rom I AK; aircraft silhouette; 1; right arrow",
+          "printedAffiliation": "romanian",
+          "visibility": "printed",
+          "designKey": "odessa-front-col07"
+        },
+        "sourceIdentityKey": "romanian-air-support",
+        "sourceIdentityStatus": "identified-by-odessa-pdf",
+        "sourceCitation": {
+          "pdf": "references/rules/odessa-rules.pdf",
+          "sha256": "c7def97fe2de9ae66dc89da5f7d3417e3283846485903b90b88f153ba9791bab",
+          "page": 2,
+          "section": "10.5, 11.0"
+        }
+      },
+      {
+        "faceId": "odessa-front-r01c08",
+        "source": "front",
+        "row": 1,
+        "column": 8,
+        "crop": [
+          506,
+          7,
+          71,
+          69
+        ],
+        "observedFieldColor": "#91b1d8",
+        "unitId": null,
+        "identityStatus": "source-cavalry-type-inferred-gameplay-id-unbound",
+        "role": "blank-face-of-single-sided-cavalry-counter",
+        "pairedFaceId": "odessa-back-r01c01",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "blank",
+          "visibleNotation": "blank face",
+          "printedAffiliation": "none",
+          "visibility": "blank",
+          "designKey": "odessa-front-col08"
+        },
+        "sourceIdentityKey": "romanian-cavalry-corps",
+        "sourceIdentityStatus": "inferred-from-PDF-and-printed-cavalry-symbol",
+        "sourceCitation": {
+          "pdf": "references/rules/odessa-rules.pdf",
+          "sha256": "c7def97fe2de9ae66dc89da5f7d3417e3283846485903b90b88f153ba9791bab",
+          "page": 1,
+          "section": "1.0, 6.0(3-4, 7), 9.4.3"
+        },
+        "singleSidedPlayableFaceId": "odessa-back-r01c01"
+      },
+      {
+        "faceId": "odessa-front-r02c01",
+        "source": "front",
+        "row": 2,
+        "column": 1,
+        "crop": [
+          5,
+          76,
+          71,
+          70
+        ],
+        "observedFieldColor": "#111111",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "printed-face-transcribed-unit-identity-unverified",
+        "pairedFaceId": "odessa-back-r02c08",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "naval-marker",
+          "visibleNotation": "Black Sea; horizontal arrow 1",
+          "printedAffiliation": "soviet",
+          "visibility": "printed",
+          "designKey": "odessa-front-col01"
+        },
+        "sourceIdentityKey": "soviet-black-sea-fleet",
+        "sourceIdentityStatus": "identified-by-odessa-pdf",
+        "sourceCitation": {
+          "pdf": "references/rules/odessa-rules.pdf",
+          "sha256": "c7def97fe2de9ae66dc89da5f7d3417e3283846485903b90b88f153ba9791bab",
+          "page": 2,
+          "section": "15.1, 15.2, 15.5"
+        },
+        "supportVectorFieldColor": "#e5454d"
+      },
+      {
+        "faceId": "odessa-front-r02c02",
+        "source": "front",
+        "row": 2,
+        "column": 2,
+        "crop": [
+          76,
+          76,
+          72,
+          70
+        ],
+        "observedFieldColor": "#b55f5e",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "printed-face-transcribed-unit-identity-unverified",
+        "pairedFaceId": "odessa-back-r02c07",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "coastal-infantry",
+          "visibleNotation": "Coast; XXXX; 4-4",
+          "printedAffiliation": "soviet",
+          "visibility": "printed",
+          "designKey": "odessa-front-col02"
+        },
+        "sourceIdentityKey": "soviet-coastal-army",
+        "sourceIdentityStatus": "identified-by-odessa-pdf",
+        "sourceCitation": {
+          "pdf": "references/rules/odessa-rules.pdf",
+          "sha256": "c7def97fe2de9ae66dc89da5f7d3417e3283846485903b90b88f153ba9791bab",
+          "page": 1,
+          "section": "6.0(3), 15.2"
+        }
+      },
+      {
+        "faceId": "odessa-front-r02c03",
+        "source": "front",
+        "row": 2,
+        "column": 3,
+        "crop": [
+          148,
+          76,
+          72,
+          70
+        ],
+        "observedFieldColor": "#e1464e",
+        "unitId": null,
+        "identityStatus": "source-cavalry-type-inferred-gameplay-id-unbound",
+        "role": "blank-face-of-single-sided-cavalry-counter",
+        "pairedFaceId": "odessa-back-r02c06",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "blank",
+          "visibleNotation": "blank face",
+          "printedAffiliation": "none",
+          "visibility": "blank",
+          "designKey": "odessa-front-col03"
+        },
+        "sourceIdentityKey": "soviet-cavalry-corps-a",
+        "sourceIdentityStatus": "inferred-from-PDF-and-printed-cavalry-symbol",
+        "sourceCitation": {
+          "pdf": "references/rules/odessa-rules.pdf",
+          "sha256": "c7def97fe2de9ae66dc89da5f7d3417e3283846485903b90b88f153ba9791bab",
+          "page": 1,
+          "section": "1.0, 6.0(3-4, 7), 9.4.3"
+        },
+        "singleSidedPlayableFaceId": "odessa-back-r02c06"
+      },
+      {
+        "faceId": "odessa-front-r02c04",
+        "source": "front",
+        "row": 2,
+        "column": 4,
+        "crop": [
+          220,
+          76,
+          71,
+          70
+        ],
+        "observedFieldColor": "#7a603f",
+        "unitId": null,
+        "identityStatus": "source-cavalry-type-inferred-gameplay-id-unbound",
+        "role": "blank-face-of-single-sided-cavalry-counter",
+        "pairedFaceId": "odessa-back-r02c05",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "blank",
+          "visibleNotation": "blank face",
+          "printedAffiliation": "none",
+          "visibility": "blank",
+          "designKey": "odessa-front-col04"
+        },
+        "sourceIdentityKey": "soviet-cavalry-corps-b",
+        "sourceIdentityStatus": "inferred-from-PDF-and-printed-cavalry-symbol",
+        "sourceCitation": {
+          "pdf": "references/rules/odessa-rules.pdf",
+          "sha256": "c7def97fe2de9ae66dc89da5f7d3417e3283846485903b90b88f153ba9791bab",
+          "page": 1,
+          "section": "1.0, 6.0(3-4, 7), 9.4.3"
+        },
+        "singleSidedPlayableFaceId": "odessa-back-r02c05"
+      },
+      {
+        "faceId": "odessa-front-r02c05",
+        "source": "front",
+        "row": 2,
+        "column": 5,
+        "crop": [
+          291,
+          76,
+          71,
+          70
+        ],
+        "observedFieldColor": "#8db1e3",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "printed-face-transcribed-unit-identity-unverified",
+        "pairedFaceId": "odessa-back-r02c04",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "infantry",
+          "visibleNotation": "Rom; XXXX; H; 3-5-3",
+          "printedAffiliation": "romanian",
+          "visibility": "printed",
+          "designKey": "odessa-front-col05"
+        },
+        "sourceIdentityKey": "romanian-home-army",
+        "sourceIdentityStatus": "identified-by-odessa-pdf",
+        "sourceCitation": {
+          "pdf": "references/rules/odessa-rules.pdf",
+          "sha256": "c7def97fe2de9ae66dc89da5f7d3417e3283846485903b90b88f153ba9791bab",
+          "page": 1,
+          "section": "9.4.4"
+        }
+      },
+      {
+        "faceId": "odessa-front-r02c06",
+        "source": "front",
+        "row": 2,
+        "column": 6,
+        "crop": [
+          362,
+          76,
+          72,
+          70
+        ],
+        "observedFieldColor": "#93afe1",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "printed-face-transcribed-unit-identity-unverified",
+        "pairedFaceId": "odessa-back-r02c03",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "infantry",
+          "visibleNotation": "Rom; XXXX; 4; 6-4",
+          "printedAffiliation": "romanian",
+          "visibility": "printed",
+          "designKey": "odessa-front-col06"
+        },
+        "sourceIdentityKey": "romanian-4th-army",
+        "sourceIdentityStatus": "identified-by-odessa-pdf",
+        "sourceCitation": {
+          "pdf": "references/rules/odessa-rules.pdf",
+          "sha256": "c7def97fe2de9ae66dc89da5f7d3417e3283846485903b90b88f153ba9791bab",
+          "page": 1,
+          "section": "1.0, 6.0(7)"
+        }
+      },
+      {
+        "faceId": "odessa-front-r02c07",
+        "source": "front",
+        "row": 2,
+        "column": 7,
+        "crop": [
+          434,
+          76,
+          72,
+          70
+        ],
+        "observedFieldColor": "#93b0dc",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "printed-face-transcribed-unit-identity-unverified",
+        "pairedFaceId": "odessa-back-r02c02",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "air-marker",
+          "visibleNotation": "Rom I AK; aircraft silhouette; 1; right arrow",
+          "printedAffiliation": "romanian",
+          "visibility": "printed",
+          "designKey": "odessa-front-col07"
+        },
+        "sourceIdentityKey": "romanian-air-support",
+        "sourceIdentityStatus": "identified-by-odessa-pdf",
+        "sourceCitation": {
+          "pdf": "references/rules/odessa-rules.pdf",
+          "sha256": "c7def97fe2de9ae66dc89da5f7d3417e3283846485903b90b88f153ba9791bab",
+          "page": 2,
+          "section": "10.5, 11.0"
+        }
+      },
+      {
+        "faceId": "odessa-front-r02c08",
+        "source": "front",
+        "row": 2,
+        "column": 8,
+        "crop": [
+          506,
+          76,
+          71,
+          70
+        ],
+        "observedFieldColor": "#94afdc",
+        "unitId": null,
+        "identityStatus": "source-cavalry-type-inferred-gameplay-id-unbound",
+        "role": "blank-face-of-single-sided-cavalry-counter",
+        "pairedFaceId": "odessa-back-r02c01",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "blank",
+          "visibleNotation": "blank face",
+          "printedAffiliation": "none",
+          "visibility": "blank",
+          "designKey": "odessa-front-col08"
+        },
+        "sourceIdentityKey": "romanian-cavalry-corps",
+        "sourceIdentityStatus": "inferred-from-PDF-and-printed-cavalry-symbol",
+        "sourceCitation": {
+          "pdf": "references/rules/odessa-rules.pdf",
+          "sha256": "c7def97fe2de9ae66dc89da5f7d3417e3283846485903b90b88f153ba9791bab",
+          "page": 1,
+          "section": "1.0, 6.0(3-4, 7), 9.4.3"
+        },
+        "singleSidedPlayableFaceId": "odessa-back-r02c01"
+      }
+    ],
+    "back": [
+      {
+        "faceId": "odessa-back-r01c01",
+        "source": "back",
+        "row": 1,
+        "column": 1,
+        "crop": [
+          5,
+          8,
+          71,
+          72
+        ],
+        "observedFieldColor": "#c8d7ee",
+        "unitId": null,
+        "identityStatus": "source-cavalry-type-inferred-gameplay-id-unbound",
+        "role": "single-sided-cavalry-printed-face",
+        "pairedFaceId": "odessa-front-r01c08",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "cavalry",
+          "visibleNotation": "Rom; XXX; cavalry; 3-4",
+          "printedAffiliation": "romanian",
+          "visibility": "printed",
+          "designKey": "odessa-back-col01"
+        },
+        "sourceIdentityKey": "romanian-cavalry-corps",
+        "sourceIdentityStatus": "inferred-from-PDF-and-printed-cavalry-symbol",
+        "sourceCitation": {
+          "pdf": "references/rules/odessa-rules.pdf",
+          "sha256": "c7def97fe2de9ae66dc89da5f7d3417e3283846485903b90b88f153ba9791bab",
+          "page": 1,
+          "section": "1.0, 6.0(3-4, 7), 9.4.3"
+        },
+        "singleSidedPlayableFaceId": "odessa-back-r01c01"
+      },
+      {
+        "faceId": "odessa-back-r01c02",
+        "source": "back",
+        "row": 1,
+        "column": 2,
+        "crop": [
+          76,
+          8,
+          71,
+          72
+        ],
+        "observedFieldColor": "#c8d7ee",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "printed-face-transcribed-unit-identity-unverified",
+        "pairedFaceId": "odessa-front-r01c07",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "air-marker",
+          "visibleNotation": "Rom I AK; REFIT",
+          "printedAffiliation": "romanian",
+          "visibility": "printed",
+          "designKey": "odessa-back-col02"
+        },
+        "sourceIdentityKey": "romanian-air-support",
+        "sourceIdentityStatus": "identified-by-odessa-pdf",
+        "sourceCitation": {
+          "pdf": "references/rules/odessa-rules.pdf",
+          "sha256": "c7def97fe2de9ae66dc89da5f7d3417e3283846485903b90b88f153ba9791bab",
+          "page": 2,
+          "section": "10.5, 11.0"
+        }
+      },
+      {
+        "faceId": "odessa-back-r01c03",
+        "source": "back",
+        "row": 1,
+        "column": 3,
+        "crop": [
+          147,
+          8,
+          71,
+          72
+        ],
+        "observedFieldColor": "#c9d5eb",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "printed-face-transcribed-unit-identity-unverified",
+        "pairedFaceId": "odessa-front-r01c06",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "infantry",
+          "visibleNotation": "Rom; XXXX; 4; 3-4",
+          "printedAffiliation": "romanian",
+          "visibility": "printed",
+          "designKey": "odessa-back-col03"
+        },
+        "sourceIdentityKey": "romanian-4th-army",
+        "sourceIdentityStatus": "identified-by-odessa-pdf",
+        "sourceCitation": {
+          "pdf": "references/rules/odessa-rules.pdf",
+          "sha256": "c7def97fe2de9ae66dc89da5f7d3417e3283846485903b90b88f153ba9791bab",
+          "page": 1,
+          "section": "1.0, 6.0(7)"
+        }
+      },
+      {
+        "faceId": "odessa-back-r01c04",
+        "source": "back",
+        "row": 1,
+        "column": 4,
+        "crop": [
+          218,
+          8,
+          72,
+          72
+        ],
+        "observedFieldColor": "#c9d1e6",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "printed-face-transcribed-unit-identity-unverified",
+        "pairedFaceId": "odessa-front-r01c05",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "infantry",
+          "visibleNotation": "Rom; XXXX; H; 1-3-3",
+          "printedAffiliation": "romanian",
+          "visibility": "printed",
+          "designKey": "odessa-back-col04"
+        },
+        "sourceIdentityKey": "romanian-home-army",
+        "sourceIdentityStatus": "identified-by-odessa-pdf",
+        "sourceCitation": {
+          "pdf": "references/rules/odessa-rules.pdf",
+          "sha256": "c7def97fe2de9ae66dc89da5f7d3417e3283846485903b90b88f153ba9791bab",
+          "page": 1,
+          "section": "9.4.4"
+        }
+      },
+      {
+        "faceId": "odessa-back-r01c05",
+        "source": "back",
+        "row": 1,
+        "column": 5,
+        "crop": [
+          290,
+          8,
+          71,
+          72
+        ],
+        "observedFieldColor": "#ce9a6b",
+        "unitId": null,
+        "identityStatus": "source-cavalry-type-inferred-gameplay-id-unbound",
+        "role": "single-sided-cavalry-printed-face",
+        "pairedFaceId": "odessa-front-r01c04",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "cavalry",
+          "visibleNotation": "XXX; cavalry; 2-4",
+          "printedAffiliation": "soviet",
+          "visibility": "printed",
+          "designKey": "odessa-back-col05"
+        },
+        "sourceIdentityKey": "soviet-cavalry-corps-b",
+        "sourceIdentityStatus": "inferred-from-PDF-and-printed-cavalry-symbol",
+        "sourceCitation": {
+          "pdf": "references/rules/odessa-rules.pdf",
+          "sha256": "c7def97fe2de9ae66dc89da5f7d3417e3283846485903b90b88f153ba9791bab",
+          "page": 1,
+          "section": "1.0, 6.0(3-4, 7), 9.4.3"
+        },
+        "singleSidedPlayableFaceId": "odessa-back-r01c05"
+      },
+      {
+        "faceId": "odessa-back-r01c06",
+        "source": "back",
+        "row": 1,
+        "column": 6,
+        "crop": [
+          361,
+          8,
+          71,
+          72
+        ],
+        "observedFieldColor": "#977b65",
+        "unitId": null,
+        "identityStatus": "source-cavalry-type-inferred-gameplay-id-unbound",
+        "role": "single-sided-cavalry-printed-face",
+        "pairedFaceId": "odessa-front-r01c03",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "cavalry",
+          "visibleNotation": "XXXX; cavalry; 2-4",
+          "printedAffiliation": "soviet",
+          "visibility": "printed",
+          "designKey": "odessa-back-col06"
+        },
+        "sourceIdentityKey": "soviet-cavalry-corps-a",
+        "sourceIdentityStatus": "inferred-from-PDF-and-printed-cavalry-symbol",
+        "sourceCitation": {
+          "pdf": "references/rules/odessa-rules.pdf",
+          "sha256": "c7def97fe2de9ae66dc89da5f7d3417e3283846485903b90b88f153ba9791bab",
+          "page": 1,
+          "section": "1.0, 6.0(3-4, 7), 9.4.3"
+        },
+        "singleSidedPlayableFaceId": "odessa-back-r01c06"
+      },
+      {
+        "faceId": "odessa-back-r01c07",
+        "source": "back",
+        "row": 1,
+        "column": 7,
+        "crop": [
+          432,
+          8,
+          71,
+          72
+        ],
+        "observedFieldColor": "#a3726b",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "printed-face-transcribed-unit-identity-unverified",
+        "pairedFaceId": "odessa-front-r01c02",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "coastal-infantry",
+          "visibleNotation": "Coast; XXXX; 2-4",
+          "printedAffiliation": "soviet",
+          "visibility": "printed",
+          "designKey": "odessa-back-col07"
+        },
+        "sourceIdentityKey": "soviet-coastal-army",
+        "sourceIdentityStatus": "identified-by-odessa-pdf",
+        "sourceCitation": {
+          "pdf": "references/rules/odessa-rules.pdf",
+          "sha256": "c7def97fe2de9ae66dc89da5f7d3417e3283846485903b90b88f153ba9791bab",
+          "page": 1,
+          "section": "6.0(3), 15.2"
+        }
+      },
+      {
+        "faceId": "odessa-back-r01c08",
+        "source": "back",
+        "row": 1,
+        "column": 8,
+        "crop": [
+          503,
+          8,
+          71,
+          72
+        ],
+        "observedFieldColor": "#e99a95",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "printed-face-transcribed-unit-identity-unverified",
+        "pairedFaceId": "odessa-front-r01c01",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "naval-marker",
+          "visibleNotation": "Black Sea; DAMAGED",
+          "printedAffiliation": "soviet",
+          "visibility": "printed",
+          "designKey": "odessa-back-col08"
+        },
+        "sourceIdentityKey": "soviet-black-sea-fleet",
+        "sourceIdentityStatus": "identified-by-odessa-pdf",
+        "sourceCitation": {
+          "pdf": "references/rules/odessa-rules.pdf",
+          "sha256": "c7def97fe2de9ae66dc89da5f7d3417e3283846485903b90b88f153ba9791bab",
+          "page": 2,
+          "section": "15.1, 15.2, 15.5"
+        }
+      },
+      {
+        "faceId": "odessa-back-r02c01",
+        "source": "back",
+        "row": 2,
+        "column": 1,
+        "crop": [
+          5,
+          80,
+          71,
+          71
+        ],
+        "observedFieldColor": "#c5d4e2",
+        "unitId": null,
+        "identityStatus": "source-cavalry-type-inferred-gameplay-id-unbound",
+        "role": "single-sided-cavalry-printed-face",
+        "pairedFaceId": "odessa-front-r02c08",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "cavalry",
+          "visibleNotation": "Rom; XXX; cavalry; 3-4",
+          "printedAffiliation": "romanian",
+          "visibility": "printed",
+          "designKey": "odessa-back-col01"
+        },
+        "sourceIdentityKey": "romanian-cavalry-corps",
+        "sourceIdentityStatus": "inferred-from-PDF-and-printed-cavalry-symbol",
+        "sourceCitation": {
+          "pdf": "references/rules/odessa-rules.pdf",
+          "sha256": "c7def97fe2de9ae66dc89da5f7d3417e3283846485903b90b88f153ba9791bab",
+          "page": 1,
+          "section": "1.0, 6.0(3-4, 7), 9.4.3"
+        },
+        "singleSidedPlayableFaceId": "odessa-back-r02c01"
+      },
+      {
+        "faceId": "odessa-back-r02c02",
+        "source": "back",
+        "row": 2,
+        "column": 2,
+        "crop": [
+          76,
+          80,
+          71,
+          71
+        ],
+        "observedFieldColor": "#c8d7ee",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "printed-face-transcribed-unit-identity-unverified",
+        "pairedFaceId": "odessa-front-r02c07",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "air-marker",
+          "visibleNotation": "Rom I AK; REFIT",
+          "printedAffiliation": "romanian",
+          "visibility": "printed",
+          "designKey": "odessa-back-col02"
+        },
+        "sourceIdentityKey": "romanian-air-support",
+        "sourceIdentityStatus": "identified-by-odessa-pdf",
+        "sourceCitation": {
+          "pdf": "references/rules/odessa-rules.pdf",
+          "sha256": "c7def97fe2de9ae66dc89da5f7d3417e3283846485903b90b88f153ba9791bab",
+          "page": 2,
+          "section": "10.5, 11.0"
+        }
+      },
+      {
+        "faceId": "odessa-back-r02c03",
+        "source": "back",
+        "row": 2,
+        "column": 3,
+        "crop": [
+          147,
+          80,
+          71,
+          71
+        ],
+        "observedFieldColor": "#cad5e9",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "printed-face-transcribed-unit-identity-unverified",
+        "pairedFaceId": "odessa-front-r02c06",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "infantry",
+          "visibleNotation": "Rom; XXXX; 4; 3-4",
+          "printedAffiliation": "romanian",
+          "visibility": "printed",
+          "designKey": "odessa-back-col03"
+        },
+        "sourceIdentityKey": "romanian-4th-army",
+        "sourceIdentityStatus": "identified-by-odessa-pdf",
+        "sourceCitation": {
+          "pdf": "references/rules/odessa-rules.pdf",
+          "sha256": "c7def97fe2de9ae66dc89da5f7d3417e3283846485903b90b88f153ba9791bab",
+          "page": 1,
+          "section": "1.0, 6.0(7)"
+        }
+      },
+      {
+        "faceId": "odessa-back-r02c04",
+        "source": "back",
+        "row": 2,
+        "column": 4,
+        "crop": [
+          218,
+          80,
+          72,
+          71
+        ],
+        "observedFieldColor": "#cdd6e7",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "printed-face-transcribed-unit-identity-unverified",
+        "pairedFaceId": "odessa-front-r02c05",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "infantry",
+          "visibleNotation": "Rom; XXXX; H; 1-3-3",
+          "printedAffiliation": "romanian",
+          "visibility": "printed",
+          "designKey": "odessa-back-col04"
+        },
+        "sourceIdentityKey": "romanian-home-army",
+        "sourceIdentityStatus": "identified-by-odessa-pdf",
+        "sourceCitation": {
+          "pdf": "references/rules/odessa-rules.pdf",
+          "sha256": "c7def97fe2de9ae66dc89da5f7d3417e3283846485903b90b88f153ba9791bab",
+          "page": 1,
+          "section": "9.4.4"
+        }
+      },
+      {
+        "faceId": "odessa-back-r02c05",
+        "source": "back",
+        "row": 2,
+        "column": 5,
+        "crop": [
+          290,
+          80,
+          71,
+          71
+        ],
+        "observedFieldColor": "#d2a274",
+        "unitId": null,
+        "identityStatus": "source-cavalry-type-inferred-gameplay-id-unbound",
+        "role": "single-sided-cavalry-printed-face",
+        "pairedFaceId": "odessa-front-r02c04",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "cavalry",
+          "visibleNotation": "XXX; cavalry; 2-4",
+          "printedAffiliation": "soviet",
+          "visibility": "printed",
+          "designKey": "odessa-back-col05"
+        },
+        "sourceIdentityKey": "soviet-cavalry-corps-b",
+        "sourceIdentityStatus": "inferred-from-PDF-and-printed-cavalry-symbol",
+        "sourceCitation": {
+          "pdf": "references/rules/odessa-rules.pdf",
+          "sha256": "c7def97fe2de9ae66dc89da5f7d3417e3283846485903b90b88f153ba9791bab",
+          "page": 1,
+          "section": "1.0, 6.0(3-4, 7), 9.4.3"
+        },
+        "singleSidedPlayableFaceId": "odessa-back-r02c05"
+      },
+      {
+        "faceId": "odessa-back-r02c06",
+        "source": "back",
+        "row": 2,
+        "column": 6,
+        "crop": [
+          361,
+          80,
+          71,
+          71
+        ],
+        "observedFieldColor": "#997c6c",
+        "unitId": null,
+        "identityStatus": "source-cavalry-type-inferred-gameplay-id-unbound",
+        "role": "single-sided-cavalry-printed-face",
+        "pairedFaceId": "odessa-front-r02c03",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "cavalry",
+          "visibleNotation": "XXXX; cavalry; 2-4",
+          "printedAffiliation": "soviet",
+          "visibility": "printed",
+          "designKey": "odessa-back-col06"
+        },
+        "sourceIdentityKey": "soviet-cavalry-corps-a",
+        "sourceIdentityStatus": "inferred-from-PDF-and-printed-cavalry-symbol",
+        "sourceCitation": {
+          "pdf": "references/rules/odessa-rules.pdf",
+          "sha256": "c7def97fe2de9ae66dc89da5f7d3417e3283846485903b90b88f153ba9791bab",
+          "page": 1,
+          "section": "1.0, 6.0(3-4, 7), 9.4.3"
+        },
+        "singleSidedPlayableFaceId": "odessa-back-r02c06"
+      },
+      {
+        "faceId": "odessa-back-r02c07",
+        "source": "back",
+        "row": 2,
+        "column": 7,
+        "crop": [
+          432,
+          80,
+          71,
+          71
+        ],
+        "observedFieldColor": "#c4837f",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "printed-face-transcribed-unit-identity-unverified",
+        "pairedFaceId": "odessa-front-r02c02",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "coastal-infantry",
+          "visibleNotation": "Coast; XXXX; 2-4",
+          "printedAffiliation": "soviet",
+          "visibility": "printed",
+          "designKey": "odessa-back-col07"
+        },
+        "sourceIdentityKey": "soviet-coastal-army",
+        "sourceIdentityStatus": "identified-by-odessa-pdf",
+        "sourceCitation": {
+          "pdf": "references/rules/odessa-rules.pdf",
+          "sha256": "c7def97fe2de9ae66dc89da5f7d3417e3283846485903b90b88f153ba9791bab",
+          "page": 1,
+          "section": "6.0(3), 15.2"
+        }
+      },
+      {
+        "faceId": "odessa-back-r02c08",
+        "source": "back",
+        "row": 2,
+        "column": 8,
+        "crop": [
+          503,
+          80,
+          71,
+          71
+        ],
+        "observedFieldColor": "#f79e98",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "printed-face-transcribed-unit-identity-unverified",
+        "pairedFaceId": "odessa-front-r02c01",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "naval-marker",
+          "visibleNotation": "Black Sea; DAMAGED",
+          "printedAffiliation": "soviet",
+          "visibility": "printed",
+          "designKey": "odessa-back-col08"
+        },
+        "sourceIdentityKey": "soviet-black-sea-fleet",
+        "sourceIdentityStatus": "identified-by-odessa-pdf",
+        "sourceCitation": {
+          "pdf": "references/rules/odessa-rules.pdf",
+          "sha256": "c7def97fe2de9ae66dc89da5f7d3417e3283846485903b90b88f153ba9791bab",
+          "page": 2,
+          "section": "15.1, 15.2, 15.5"
+        }
+      }
+    ]
+  },
+  "positionPairs": [
+    {
+      "front": "odessa-front-r01c01",
+      "back": "odessa-back-r01c08",
+      "pairingBasis": "horizontal-sheet-mirror",
+      "unitId": null,
+      "identityStatus": "printed-id-unverified",
+      "sourceIdentityKey": "soviet-black-sea-fleet",
+      "sourceIdentityStatus": "identified-by-odessa-pdf"
+    },
+    {
+      "front": "odessa-front-r01c02",
+      "back": "odessa-back-r01c07",
+      "pairingBasis": "horizontal-sheet-mirror",
+      "unitId": null,
+      "identityStatus": "printed-id-unverified",
+      "sourceIdentityKey": "soviet-coastal-army",
+      "sourceIdentityStatus": "identified-by-odessa-pdf"
+    },
+    {
+      "front": "odessa-front-r01c03",
+      "back": "odessa-back-r01c06",
+      "pairingBasis": "horizontal-sheet-mirror",
+      "unitId": null,
+      "identityStatus": "printed-id-unverified",
+      "sourceIdentityKey": null,
+      "sourceIdentityStatus": "unresolved-from-pdf"
+    },
+    {
+      "front": "odessa-front-r01c04",
+      "back": "odessa-back-r01c05",
+      "pairingBasis": "horizontal-sheet-mirror",
+      "unitId": null,
+      "identityStatus": "printed-id-unverified",
+      "sourceIdentityKey": null,
+      "sourceIdentityStatus": "unresolved-from-pdf"
+    },
+    {
+      "front": "odessa-front-r01c05",
+      "back": "odessa-back-r01c04",
+      "pairingBasis": "horizontal-sheet-mirror",
+      "unitId": null,
+      "identityStatus": "printed-id-unverified",
+      "sourceIdentityKey": "romanian-home-army",
+      "sourceIdentityStatus": "identified-by-odessa-pdf"
+    },
+    {
+      "front": "odessa-front-r01c06",
+      "back": "odessa-back-r01c03",
+      "pairingBasis": "horizontal-sheet-mirror",
+      "unitId": null,
+      "identityStatus": "printed-id-unverified",
+      "sourceIdentityKey": "romanian-4th-army",
+      "sourceIdentityStatus": "identified-by-odessa-pdf"
+    },
+    {
+      "front": "odessa-front-r01c07",
+      "back": "odessa-back-r01c02",
+      "pairingBasis": "horizontal-sheet-mirror",
+      "unitId": null,
+      "identityStatus": "printed-id-unverified",
+      "sourceIdentityKey": "romanian-air-support",
+      "sourceIdentityStatus": "identified-by-odessa-pdf"
+    },
+    {
+      "front": "odessa-front-r01c08",
+      "back": "odessa-back-r01c01",
+      "pairingBasis": "horizontal-sheet-mirror",
+      "unitId": null,
+      "identityStatus": "printed-id-unverified",
+      "sourceIdentityKey": null,
+      "sourceIdentityStatus": "unresolved-from-pdf"
+    },
+    {
+      "front": "odessa-front-r02c01",
+      "back": "odessa-back-r02c08",
+      "pairingBasis": "horizontal-sheet-mirror",
+      "unitId": null,
+      "identityStatus": "printed-id-unverified",
+      "sourceIdentityKey": "soviet-black-sea-fleet",
+      "sourceIdentityStatus": "identified-by-odessa-pdf"
+    },
+    {
+      "front": "odessa-front-r02c02",
+      "back": "odessa-back-r02c07",
+      "pairingBasis": "horizontal-sheet-mirror",
+      "unitId": null,
+      "identityStatus": "printed-id-unverified",
+      "sourceIdentityKey": "soviet-coastal-army",
+      "sourceIdentityStatus": "identified-by-odessa-pdf"
+    },
+    {
+      "front": "odessa-front-r02c03",
+      "back": "odessa-back-r02c06",
+      "pairingBasis": "horizontal-sheet-mirror",
+      "unitId": null,
+      "identityStatus": "printed-id-unverified",
+      "sourceIdentityKey": null,
+      "sourceIdentityStatus": "unresolved-from-pdf"
+    },
+    {
+      "front": "odessa-front-r02c04",
+      "back": "odessa-back-r02c05",
+      "pairingBasis": "horizontal-sheet-mirror",
+      "unitId": null,
+      "identityStatus": "printed-id-unverified",
+      "sourceIdentityKey": null,
+      "sourceIdentityStatus": "unresolved-from-pdf"
+    },
+    {
+      "front": "odessa-front-r02c05",
+      "back": "odessa-back-r02c04",
+      "pairingBasis": "horizontal-sheet-mirror",
+      "unitId": null,
+      "identityStatus": "printed-id-unverified",
+      "sourceIdentityKey": "romanian-home-army",
+      "sourceIdentityStatus": "identified-by-odessa-pdf"
+    },
+    {
+      "front": "odessa-front-r02c06",
+      "back": "odessa-back-r02c03",
+      "pairingBasis": "horizontal-sheet-mirror",
+      "unitId": null,
+      "identityStatus": "printed-id-unverified",
+      "sourceIdentityKey": "romanian-4th-army",
+      "sourceIdentityStatus": "identified-by-odessa-pdf"
+    },
+    {
+      "front": "odessa-front-r02c07",
+      "back": "odessa-back-r02c02",
+      "pairingBasis": "horizontal-sheet-mirror",
+      "unitId": null,
+      "identityStatus": "printed-id-unverified",
+      "sourceIdentityKey": "romanian-air-support",
+      "sourceIdentityStatus": "identified-by-odessa-pdf"
+    },
+    {
+      "front": "odessa-front-r02c08",
+      "back": "odessa-back-r02c01",
+      "pairingBasis": "horizontal-sheet-mirror",
+      "unitId": null,
+      "identityStatus": "printed-id-unverified",
+      "sourceIdentityKey": null,
+      "sourceIdentityStatus": "unresolved-from-pdf"
+    }
+  ],
+  "positionPairingStatus": "B4M confirmed by printed labels; other sets provisional from mirrored artwork layout",
+  "unitFacePairs": {},
+  "unitIdsVerified": 0,
+  "unitIdWarning": "Unit IDs and front/reverse pairing require manual print-label verification. Slot keys are not unit identities.",
+  "physicalSheetCopies": {
+    "rows": 2,
+    "rowInterpretation": "same artwork repeated in each row; these are physical print copies, not independently verified distinct unit IDs",
+    "verification": "manual visual inspection of supplied Odessa front/back sheets"
+  },
+  "transcriptionNotes": [
+    "Front/back sheet columns pair horizontally: back column = 9 - front column; do not horizontally mirror text or symbols.",
+    "Front columns 3, 4 and 8 are visibly blank; their paired backs have printed symbols. Do not infer these are absent units.",
+    "Designs repeat in both rows, so the 16 physical print slots are not 16 uniquely identified units.",
+    "Visible labels such as Rom I AK, 4, H, Coast and Black Sea are not globally unique game unit IDs. Do not promote them to unitFacePairs without roster evidence.",
+    "Affiliation labels are visual transcription for classification; axis on unlabeled counters is provisional and not used for rule legality.",
+    "Checkpoint 25: three blank-front/reverse-only positions are cavalry-symbol designs. The Odessa PDF names exactly two Soviet cavalry corps and Romanian cavalry. Their class/faction attribution is a constrained inference, not printed historical unit ID; render printed reverse as sole playable face; do not infer full/reduced status."
+  ],
+  "visualTranscriptionStatus": "odessa-face-designs-reviewed-unit-ids-unverified",
+  "rulesPDF": {
+    "file": "references/rules/odessa-rules.pdf",
+    "sha256": "c7def97fe2de9ae66dc89da5f7d3417e3283846485903b90b88f153ba9791bab",
+    "title": "Objective: Odessa Rules v1.0",
+    "pages": 2,
+    "relation": "supplement-to-objective-kiev",
+    "precedence": "Odessa expansion rules override conflicting Kiev rules (§0.0)",
+    "piecesPerPDF": 8,
+    "printedRowsInSuppliedImages": 2,
+    "distinctPrintDesigns": 8,
+    "gameplayMultiplicity": "not independently established from duplicate print rows"
+  },
+  "sourceIdentifiedDesigns": [
+    {
+      "designColumn": 1,
+      "identityKey": "soviet-black-sea-fleet",
+      "faction": "soviet",
+      "kind": "naval-marker",
+      "frontState": "undamaged",
+      "backState": "damaged",
+      "section": "15.1, 15.2, 15.5",
+      "pdfPage": 2,
+      "frontFaceId": "odessa-front-r01c01",
+      "backFaceId": "odessa-back-r01c08",
+      "gameplayUnitId": null
+    },
+    {
+      "designColumn": 2,
+      "identityKey": "soviet-coastal-army",
+      "faction": "soviet",
+      "kind": "coastal-infantry",
+      "frontState": "full",
+      "backState": "reduced",
+      "section": "6.0(3), 15.2",
+      "pdfPage": 1,
+      "frontFaceId": "odessa-front-r01c02",
+      "backFaceId": "odessa-back-r01c07",
+      "gameplayUnitId": null
+    },
+    {
+      "designColumn": 3,
+      "identityKey": "soviet-cavalry-corps-a",
+      "faction": "soviet",
+      "kind": "cavalry",
+      "frontState": "blank",
+      "backState": "single-printed-face",
+      "section": "1.0, 6.0(3-4, 7), 9.4.3",
+      "pdfPage": 1,
+      "frontFaceId": "odessa-front-r01c03",
+      "backFaceId": "odessa-back-r01c06",
+      "gameplayUnitId": null,
+      "identityEvidence": "inference: three cavalry additions in PDF match three blank-front/cavalry-symbol reverse print designs; exact historic ID unnumbered"
+    },
+    {
+      "designColumn": 4,
+      "identityKey": "soviet-cavalry-corps-b",
+      "faction": "soviet",
+      "kind": "cavalry",
+      "frontState": "blank",
+      "backState": "single-printed-face",
+      "section": "1.0, 6.0(3-4, 7), 9.4.3",
+      "pdfPage": 1,
+      "frontFaceId": "odessa-front-r01c04",
+      "backFaceId": "odessa-back-r01c05",
+      "gameplayUnitId": null,
+      "identityEvidence": "inference: three cavalry additions in PDF match three blank-front/cavalry-symbol reverse print designs; exact historic ID unnumbered"
+    },
+    {
+      "designColumn": 5,
+      "identityKey": "romanian-home-army",
+      "faction": "romanian",
+      "kind": "infantry",
+      "frontState": "full",
+      "backState": "reduced",
+      "section": "9.4.4",
+      "pdfPage": 1,
+      "frontFaceId": "odessa-front-r01c05",
+      "backFaceId": "odessa-back-r01c04",
+      "gameplayUnitId": null
+    },
+    {
+      "designColumn": 6,
+      "identityKey": "romanian-4th-army",
+      "faction": "romanian",
+      "kind": "infantry",
+      "frontState": "full",
+      "backState": "reduced",
+      "section": "1.0, 6.0(7)",
+      "pdfPage": 1,
+      "frontFaceId": "odessa-front-r01c06",
+      "backFaceId": "odessa-back-r01c03",
+      "gameplayUnitId": null
+    },
+    {
+      "designColumn": 7,
+      "identityKey": "romanian-air-support",
+      "faction": "romanian",
+      "kind": "air-marker",
+      "frontState": "ready",
+      "backState": "refit",
+      "section": "10.5, 11.0",
+      "pdfPage": 2,
+      "frontFaceId": "odessa-front-r01c07",
+      "backFaceId": "odessa-back-r01c02",
+      "gameplayUnitId": null
+    },
+    {
+      "designColumn": 8,
+      "identityKey": "romanian-cavalry-corps",
+      "faction": "romanian",
+      "kind": "cavalry",
+      "frontState": "blank",
+      "backState": "single-printed-face",
+      "section": "1.0, 6.0(3-4, 7), 9.4.3",
+      "pdfPage": 1,
+      "frontFaceId": "odessa-front-r01c08",
+      "backFaceId": "odessa-back-r01c01",
+      "gameplayUnitId": null,
+      "identityEvidence": "inference: three cavalry additions in PDF match three blank-front/cavalry-symbol reverse print designs; exact historic ID unnumbered"
+    }
+  ],
+  "unresolvedDesignColumns": [],
+  "gameplayBindingStatus": "8 stable synthetic scenario IDs linked to artwork and setup constraints; historical IDs and final placements not fully resolved; no playable engine binding",
+  "pdfGameplayRequirements": {
+    "setup": {
+      "sovietCoastalArmy": "Odessa hex 1513",
+      "sovietBlackSeaFleet": "Odessa hex 1513, undamaged",
+      "romanianUnits": "all four Romanian units in Romania",
+      "axisOther": "three German infantry units in Romania"
+    },
+    "reinforcement": {
+      "romanianAirSupport": "Game Turn 2"
+    },
+    "fleet": {
+      "ports": [
+        "Odessa",
+        "Nikolaev"
+      ],
+      "damageOnMoveOrRetreatDie": 1,
+      "damagedCannotRepair": true,
+      "supportOddsShift": 1,
+      "stackFree": true,
+      "allowsGroundRetreatIgnoredEvenWhenDamaged": true
+    },
+    "cavalry": {
+      "sovietAndRomanianCanMoveBothMovementPhases": true,
+      "specialPhaseMaxMovementFraction": 0.5
+    },
+    "romanianHomeArmy": {
+      "restrictedToRomaniaUntilBessarabiaAnnexed": true,
+      "mayAttackAcrossBorder": true,
+      "cannotAdvanceAcrossBorder": true
+    }
+  },
+  "cavalryInference": {
+    "status": "source-backed-inference-not-printed-unit-id",
+    "reason": "Odessa PDF describes two Soviet cavalry corps and Romanian cavalry; source image shows precisely three remaining cavalry-symbol designs, each on reverse of a blank front; unit size markings retained exactly, not converted to external historical IDs",
+    "sourcePDF": "references/rules/odessa-rules.pdf",
+    "sections": [
+      "1.0",
+      "6.0",
+      "9.4.3"
+    ],
+    "columns": [
+      3,
+      4,
+      8
+    ],
+    "facePresentation": "Show reverse printed face as active counter face; do not treat blank front as stronger/full step",
+    "limitation": "No gameplayUnitId assigned; scenario setup/roster wiring pending"
+  },
+  "playableDesignRegistry": [
+    {
+      "designKey": "soviet-black-sea-fleet",
+      "designColumn": 1,
+      "side": "soviet",
+      "unitClass": "naval-marker",
+      "displayFaceId": "odessa-front-r01c01",
+      "alternateFaceId": "odessa-back-r01c08",
+      "isSingleSided": false,
+      "historicalUnitId": null,
+      "gameplayUnitId": null,
+      "countPerDesignUnverified": true,
+      "identityEvidence": "explicit-pdf"
+    },
+    {
+      "designKey": "soviet-coastal-army",
+      "designColumn": 2,
+      "side": "soviet",
+      "unitClass": "coastal-infantry",
+      "displayFaceId": "odessa-front-r01c02",
+      "alternateFaceId": "odessa-back-r01c07",
+      "isSingleSided": false,
+      "historicalUnitId": null,
+      "gameplayUnitId": null,
+      "countPerDesignUnverified": true,
+      "identityEvidence": "explicit-pdf"
+    },
+    {
+      "designKey": "soviet-cavalry-corps-a",
+      "designColumn": 3,
+      "side": "soviet",
+      "unitClass": "cavalry",
+      "displayFaceId": "odessa-back-r01c06",
+      "alternateFaceId": null,
+      "isSingleSided": true,
+      "historicalUnitId": null,
+      "gameplayUnitId": null,
+      "countPerDesignUnverified": true,
+      "identityEvidence": "inferred-pdf-and-source-symbol"
+    },
+    {
+      "designKey": "soviet-cavalry-corps-b",
+      "designColumn": 4,
+      "side": "soviet",
+      "unitClass": "cavalry",
+      "displayFaceId": "odessa-back-r01c05",
+      "alternateFaceId": null,
+      "isSingleSided": true,
+      "historicalUnitId": null,
+      "gameplayUnitId": null,
+      "countPerDesignUnverified": true,
+      "identityEvidence": "inferred-pdf-and-source-symbol"
+    },
+    {
+      "designKey": "romanian-home-army",
+      "designColumn": 5,
+      "side": "romanian",
+      "unitClass": "infantry",
+      "displayFaceId": "odessa-front-r01c05",
+      "alternateFaceId": "odessa-back-r01c04",
+      "isSingleSided": false,
+      "historicalUnitId": null,
+      "gameplayUnitId": null,
+      "countPerDesignUnverified": true,
+      "identityEvidence": "explicit-pdf"
+    },
+    {
+      "designKey": "romanian-4th-army",
+      "designColumn": 6,
+      "side": "romanian",
+      "unitClass": "infantry",
+      "displayFaceId": "odessa-front-r01c06",
+      "alternateFaceId": "odessa-back-r01c03",
+      "isSingleSided": false,
+      "historicalUnitId": null,
+      "gameplayUnitId": null,
+      "countPerDesignUnverified": true,
+      "identityEvidence": "explicit-pdf"
+    },
+    {
+      "designKey": "romanian-air-support",
+      "designColumn": 7,
+      "side": "romanian",
+      "unitClass": "air-marker",
+      "displayFaceId": "odessa-front-r01c07",
+      "alternateFaceId": "odessa-back-r01c02",
+      "isSingleSided": false,
+      "historicalUnitId": null,
+      "gameplayUnitId": null,
+      "countPerDesignUnverified": true,
+      "identityEvidence": "explicit-pdf"
+    },
+    {
+      "designKey": "romanian-cavalry-corps",
+      "designColumn": 8,
+      "side": "romanian",
+      "unitClass": "cavalry",
+      "displayFaceId": "odessa-back-r01c01",
+      "alternateFaceId": null,
+      "isSingleSided": true,
+      "historicalUnitId": null,
+      "gameplayUnitId": null,
+      "countPerDesignUnverified": true,
+      "identityEvidence": "inferred-pdf-and-source-symbol"
+    }
+  ],
+  "rosterOverlay": "maps/roster-overlays/kiev-odessa.json"
+}

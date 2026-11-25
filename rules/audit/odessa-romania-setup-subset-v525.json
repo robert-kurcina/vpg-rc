@@ -1,0 +1,23 @@
+{
+  "checkpoint": 291,
+  "version": "v525",
+  "assertions": 56,
+  "status": "PASS",
+  "scope": "Kiev–Odessa initial setup-only",
+  "approvedRomanianHexes": [
+    "0709",
+    "0809",
+    "0910",
+    "1010"
+  ],
+  "initialUnits": 37,
+  "initialRomaniaUnits": 7,
+  "allSevenOnVerifiedSetupSubset": true,
+  "unresolved": [
+    "frontline-stars:12-instead-of-11",
+    "rear-deployment-symbol-disagreement",
+    "not-certified-movement-and-eastern-communication",
+    "full-romanian-country-border-still-unverified-for-movement"
+  ],
+  "notes": "Four Romanian setup crosses are source-backed initial destinations, not a Romanian political border or movement authorization."
+}

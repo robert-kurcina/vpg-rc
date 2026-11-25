@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "checkpoint": 129,
+  "version": "v363",
+  "status": "bounded-differential-preview-only",
+  "oracle": "legacy/engine.js + supplied Battle for Moscow scenario",
+  "test": "tests/b4m-native-interactive-setup-v363.test.js",
+  "result": {
+    "status": "PASS",
+    "checkpoint": 129,
+    "version": "v363",
+    "places": 22,
+    "swaps": 1,
+    "shockCases": 3,
+    "saveRestores": 9,
+    "rejections": 25,
+    "assertions": 186
+  },
+  "sourceHashes": {
+    "core/engine.js": "f0eb95b9be5ad671f18024307d8a107c98d9ec08893ad3b7a35fcb9ef9baf99b",
+    "core/native_session_actions.js": "998b89a0b68baa24a78cc47aab5766d2333767bf293a7b575fc0a895c313d16c",
+    "core/native_session_save.js": "84d1e32f6fbeba820bd7f7a47fd22be90995d66eaaeb72876424184e7894297b",
+    "core/native_preview_config.js": "27dbe982e98e1f8a25a37641df486d90a90a85bb744a5f19b22d45b3a28f2f5f",
+    "core/session.js": "901d31caf89bbe08fdeddbf6f7203cf243c735ca0371c59eeea5434a8fc4805e",
+    "legacy/engine.js": "1aa696a10fd2fbb2369bfbf1d5f7ca37b05f2ab26fb9d6e9fd9b9731ac1dc53d",
+    "games/battle-for-moscow/native-preview/config.json": "4f6585ec4adcd670e2dd12f8601d6cfc016e9b1ce181e0b75339c6d0e213cd40",
+    "games/battle-for-moscow/game.json": "9d5ccd8e80b3fb2ea1018e26ccac9ebf26e3bf9081920c162347dcb94ef23f39"
+  },
+  "verified": [
+    "Manual 22 German start crosses, fixed 14 Soviet ground counters, source-matched placement and one occupied-cross swap",
+    "Setup confirmation requires all 22; phase advances into German combat; session Undo and saves restore selection state",
+    "Turn-4 source scheduled event uses a human selected entry: 17 opening-layout eligible hexes match legacy",
+    "Free full-strength Shock placement, no automatic unit placement, and Soviet four-step ordinary replacement budget",
+    "Alternative valid entry selections, illegal choices, occupied/ZOC checks and replay after Undo"
+  ],
+  "limits": [
+    "Turn-4 tests reproduce a synthetic valid phase boundary using the initial board; they are not full four-turn playthroughs",
+    "Node-only generic preview; production still launches legacy/index.html",
+    "B4M native preview save fingerprint changes with this policy and older preview saves require explicit compatibility handling",
+    "No proof yet for seven-turn victory, AI decisions or human browser interface parity"
+  ]
+}

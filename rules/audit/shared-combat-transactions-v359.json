@@ -1,0 +1,107 @@
+{
+  "checkpoint": 125,
+  "version": "v359",
+  "status": "bounded-combat-transactions-not-complete-gameplay",
+  "source": {
+    "rulesPDF": "references/rules/leningrad-rules.pdf",
+    "rulesSHA256": "74d332e052e735e2378027a06f95e9715392773f249561bf1c00cae08a2bbfa7",
+    "counterConfig": "maps/counter-configs/leningrad.json",
+    "counterSHA256": "2bda18e255e5f9f65cc6b974408e7e7ddc4cd179c9e41eadfa0596e1f0e40440",
+    "scenarioCombatConfig": "maps/combat-configs/leningrad.json",
+    "configSHA256": "bf10e755c2ef1ff3c18cfedea3976390338195cb0e6086cd3493d07202aa25da"
+  },
+  "coverage": {
+    "outcomes": [
+      "NE",
+      "DE",
+      "AL",
+      "DR",
+      "DRL",
+      "EX"
+    ],
+    "subset": "source-verified counter faces, user-supplied die, safe outward 2-hex retreat only",
+    "notIntegrated": [
+      "live RNG/choice workflow",
+      "forced EZOC step loss and elimination",
+      "retreat overflow",
+      "Fleet/port exceptions",
+      "air/naval support",
+      "city terrain classification",
+      "browser UX",
+      "full turn progression"
+    ]
+  },
+  "opening": {
+    "units": 19,
+    "cursor": {
+      "scenarioId": "leningrad",
+      "turn": 1,
+      "index": 2,
+      "complete": false
+    },
+    "sourceFaceAttackerIds": [
+      "leningrad-front-r03c03",
+      "leningrad-front-r03c05"
+    ],
+    "defenderId": "leningrad-front-r01c04",
+    "battle": {
+      "outcome": "DE",
+      "die": 6,
+      "odds": 5,
+      "battle": {
+        "defenderHex": "0309",
+        "attackers": [
+          "leningrad-front-r03c03",
+          "leningrad-front-r03c05"
+        ],
+        "defenders": [
+          "leningrad-front-r01c04"
+        ]
+      },
+      "revealed": [],
+      "losses": [
+        {
+          "unitId": "leningrad-front-r01c04",
+          "removed": true,
+          "defenderEliminated": true
+        }
+      ],
+      "retreats": [],
+      "advanced": "leningrad-front-r03c03",
+      "geography": {
+        "hex": "0309",
+        "terrainStatus": "authoritative-user-svg-v301",
+        "crossings": [
+          {
+            "unitId": "leningrad-front-r03c03",
+            "from": "0210",
+            "to": "0309",
+            "river": false,
+            "source": "leningrad-user-svg-v301"
+          },
+          {
+            "unitId": "leningrad-front-r03c05",
+            "from": "0310",
+            "to": "0309",
+            "river": false,
+            "source": "leningrad-user-svg-v301"
+          }
+        ]
+      },
+      "source": "references/rules/leningrad-rules.pdf §§7.2, 7.4, 8.1, 10.0–10.7",
+      "scope": "verified-effects-safe-retreat-only"
+    },
+    "after": {
+      "remainingUnits": 18,
+      "advancedHex": "0309"
+    },
+    "postFinishCursor": {
+      "scenarioId": "leningrad",
+      "turn": 1,
+      "index": 3,
+      "complete": false
+    },
+    "undoRestoredOriginalState": true
+  },
+  "visualBaseline": "v350 user-approved Leningrad; only backend combat files/config/tests altered"
+}

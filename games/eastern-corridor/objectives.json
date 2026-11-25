@@ -1,0 +1,38 @@
+{
+  "scoringMode": "end-only",
+  "points": [
+    {
+      "type": "control",
+      "cell": [
+        3,
+        3
+      ],
+      "points": 8
+    },
+    {
+      "type": "control",
+      "cell": [
+        1,
+        3
+      ],
+      "points": 3
+    },
+    {
+      "type": "control",
+      "cell": [
+        5,
+        3
+      ],
+      "points": 3
+    },
+    {
+      "type": "enemy-steps-lost",
+      "pointsPerStep": 1
+    }
+  ],
+  "victory": {
+    "mode": "highest-vp",
+    "evaluation": "after-final-side",
+    "drawOnTie": true
+  }
+}

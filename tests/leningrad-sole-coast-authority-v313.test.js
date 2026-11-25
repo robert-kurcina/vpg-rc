@@ -1,0 +1,20 @@
+'use strict';
+const fs=require('fs'),assert=require('assert');
+const board=JSON.parse(fs.readFileSync('maps/leningrad.json','utf8'));
+const svg=fs.readFileSync('exports-v313/leningrad.svg','utf8');
+const coastRoutes=board.sourceWaterRoutes.filter(x=>x.kind==='coast');
+assert.equal(coastRoutes.length,1,'Leningrad must have exactly one authored Coast source route');
+assert.equal(coastRoutes[0].sourceSvgId,'path482');
+assert.equal(coastRoutes[0].points.length,54);
+assert.equal(board.sourceCoastRenderingMode,'source-path-coast-wavelets');
+assert.equal(board.coastVisualAuthority.sourceSvgId,'path482');
+assert.equal((svg.match(/class="source-coast-connected-wavelet-fringe"/g)||[]).length,1,'exactly one visual coast wavelet');
+assert(svg.includes('data-coast-render-source="sourceWaterRoutes-only"'));
+for(const forbidden of ['class="source-authored-coast"','class="registered-shoreline-wavelets"','class="explicit-coast-edge"','class="source-coast-authored-path"'])
+ assert(!svg.includes(forbidden),'unexpected competing coast drawing: '+forbidden);
+assert.equal((svg.match(/class="source-authored-lake"/g)||[]).length,4);
+const cell=board.cells.find(c=>c.id==='0208');
+assert(cell,'Liepaja cell missing');
+const faceDirs=board.authoredShoreHexsides.filter(e=>e.cellId==='0208'&&e.kind==='coast').map(e=>e.dir).sort();
+assert.deepEqual(faceDirs,['N','NW','SW'].sort());
+console.log('PASS v313: path482 is sole coastline visual geometry; no duplicate Coast bands or strokes; four Lake paths retained; Liepaja faces 1/5/6 preserved');

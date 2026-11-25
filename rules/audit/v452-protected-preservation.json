@@ -1,0 +1,15 @@
+{
+  "checkpoint": 218,
+  "version": "v452",
+  "baselineArchive": "hex_wargame_v451_CHECKPOINT_217_ARDUOUS_GERMAN_COMMUNICATION.zip",
+  "protectedFilesCompared": 320,
+  "protectedFilesIdentical": 316,
+  "protectedFilesChanged": [
+    "core/historical_engine_browser_bundle.js",
+    "core/historical_campaign_human.js",
+    "core/historical_campaign_action_catalog.js",
+    "core/historical_browser_app.js"
+  ],
+  "ruleCRTMapArtUnchanged": true,
+  "note": "Shared browser choice catalogue, human pending-die cache, UI notice and regenerated bundle only"
+}

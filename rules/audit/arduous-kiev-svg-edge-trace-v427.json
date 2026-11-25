@@ -1,0 +1,2203 @@
+{
+  "schemaVersion": 1,
+  "description": "Source-element traceability and hexside reciprocity diagnostic. Kiev uses definitive SVG; movement remains uncertified.",
+  "maps": {
+    "arduous": {
+      "sourceSvg": "maps/source/user-svg/arduous-map-temp(3).svg",
+      "sourceSvgSHA256": "423af8983fd90a5be17041922a612efba42bbff306683ead9fd6910413402ede",
+      "mapId": "arduous-native-draft-v231",
+      "sourceImageSHA256": "9e41cf83ff001a616c5b6651784b8ac8206fc2eb04048dc41b1a3a0b3c3fa8f4",
+      "authorizedForMovement": false,
+      "counts": {
+        "railCandidates": 85,
+        "railTracedToExistingSvgIds": 85,
+        "railMissingSvgIds": 0,
+        "authoredHexsideFeatureMarks": 0,
+        "hexsidePairsWithMarks": 0,
+        "hexsideIssues": 0
+      },
+      "missingSvgIds": [],
+      "hexsideKinds": {},
+      "hexsideStatuses": {},
+      "hexsideIssues": [],
+      "railCandidates": [
+        {
+          "pair": "0106:0207",
+          "from": "0106",
+          "to": "0207",
+          "direction": "SE",
+          "sourceSvgIds": [
+            "path373"
+          ],
+          "status": "source-svg-railway-center-snap-visual-candidate",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "0109:0209",
+          "from": "0109",
+          "to": "0209",
+          "direction": "NE",
+          "sourceSvgIds": [
+            "path372"
+          ],
+          "status": "source-svg-railway-center-snap-visual-candidate",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "0110:0211",
+          "from": "0110",
+          "to": "0211",
+          "direction": "SE",
+          "sourceSvgIds": [
+            "path370"
+          ],
+          "status": "source-svg-railway-center-snap-visual-candidate",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "0205:0305",
+          "from": "0205",
+          "to": "0305",
+          "direction": "SE",
+          "sourceSvgIds": [
+            "path374"
+          ],
+          "status": "source-svg-railway-center-snap-visual-candidate",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "0207:0208",
+          "from": "0207",
+          "to": "0208",
+          "direction": "S",
+          "sourceSvgIds": [
+            "path373"
+          ],
+          "status": "source-svg-railway-center-snap-visual-candidate",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "0208:0308",
+          "from": "0208",
+          "to": "0308",
+          "direction": "SE",
+          "sourceSvgIds": [
+            "path373"
+          ],
+          "status": "source-svg-railway-center-snap-visual-candidate",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "0209:0308",
+          "from": "0209",
+          "to": "0308",
+          "direction": "NE",
+          "sourceSvgIds": [
+            "path372"
+          ],
+          "status": "source-svg-railway-center-snap-visual-candidate",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "0210:0211",
+          "from": "0210",
+          "to": "0211",
+          "direction": "S",
+          "sourceSvgIds": [
+            "path369"
+          ],
+          "status": "source-svg-railway-center-snap-visual-candidate",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "0210:0309",
+          "from": "0210",
+          "to": "0309",
+          "direction": "NE",
+          "sourceSvgIds": [
+            "path369"
+          ],
+          "status": "source-svg-railway-center-snap-visual-candidate",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "0211:0310",
+          "from": "0211",
+          "to": "0310",
+          "direction": "NE",
+          "sourceSvgIds": [
+            "path377"
+          ],
+          "status": "source-svg-railway-center-snap-visual-candidate",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "0305:0405",
+          "from": "0305",
+          "to": "0405",
+          "direction": "NE",
+          "sourceSvgIds": [
+            "path374"
+          ],
+          "status": "source-svg-railway-center-snap-visual-candidate",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "0308:0309",
+          "from": "0308",
+          "to": "0309",
+          "direction": "S",
+          "sourceSvgIds": [
+            "path369"
+          ],
+          "status": "source-svg-railway-center-snap-visual-candidate",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "0308:0408",
+          "from": "0308",
+          "to": "0408",
+          "direction": "NE",
+          "sourceSvgIds": [
+            "path367"
+          ],
+          "status": "source-svg-railway-center-snap-visual-candidate",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "0308:0409",
+          "from": "0308",
+          "to": "0409",
+          "direction": "SE",
+          "sourceSvgIds": [
+            "path368"
+          ],
+          "status": "source-svg-railway-center-snap-visual-candidate",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "0310:0410",
+          "from": "0310",
+          "to": "0410",
+          "direction": "NE",
+          "sourceSvgIds": [
+            "path377"
+          ],
+          "status": "source-svg-railway-center-snap-visual-candidate",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "0405:0505",
+          "from": "0405",
+          "to": "0505",
+          "direction": "SE",
+          "sourceSvgIds": [
+            "path375"
+          ],
+          "status": "source-svg-railway-center-snap-visual-candidate",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "0407:0408",
+          "from": "0407",
+          "to": "0408",
+          "direction": "S",
+          "sourceSvgIds": [
+            "path367"
+          ],
+          "status": "source-svg-railway-center-snap-visual-candidate",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "0407:0506",
+          "from": "0407",
+          "to": "0506",
+          "direction": "NE",
+          "sourceSvgIds": [
+            "path367"
+          ],
+          "status": "source-svg-railway-center-snap-visual-candidate",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "0409:0508",
+          "from": "0409",
+          "to": "0508",
+          "direction": "NE",
+          "sourceSvgIds": [
+            "path368"
+          ],
+          "status": "source-svg-railway-center-snap-visual-candidate",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "0410:0509",
+          "from": "0410",
+          "to": "0509",
+          "direction": "NE",
+          "sourceSvgIds": [
+            "path377"
+          ],
+          "status": "source-svg-railway-center-snap-visual-candidate",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "0410:0510",
+          "from": "0410",
+          "to": "0510",
+          "direction": "SE",
+          "sourceSvgIds": [
+            "path378"
+          ],
+          "status": "source-svg-railway-center-snap-visual-candidate",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "0505:0606",
+          "from": "0505",
+          "to": "0606",
+          "direction": "SE",
+          "sourceSvgIds": [
+            "path375"
+          ],
+          "status": "source-svg-railway-center-snap-visual-candidate",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "0506:0606",
+          "from": "0506",
+          "to": "0606",
+          "direction": "NE",
+          "sourceSvgIds": [
+            "path367"
+          ],
+          "status": "source-svg-railway-center-snap-visual-candidate",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "0508:0609",
+          "from": "0508",
+          "to": "0609",
+          "direction": "SE",
+          "sourceSvgIds": [
+            "path368"
+          ],
+          "status": "source-svg-railway-center-snap-visual-candidate",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "0509:0609",
+          "from": "0509",
+          "to": "0609",
+          "direction": "NE",
+          "sourceSvgIds": [
+            "path377"
+          ],
+          "status": "source-svg-railway-center-snap-visual-candidate",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "0510:0611",
+          "from": "0510",
+          "to": "0611",
+          "direction": "SE",
+          "sourceSvgIds": [
+            "path378"
+          ],
+          "status": "source-svg-railway-center-snap-visual-candidate",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "0606:0705",
+          "from": "0606",
+          "to": "0705",
+          "direction": "NE",
+          "sourceSvgIds": [
+            "path376"
+          ],
+          "status": "source-svg-railway-center-snap-visual-candidate",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "0606:0706",
+          "from": "0606",
+          "to": "0706",
+          "direction": "SE",
+          "sourceSvgIds": [
+            "path364"
+          ],
+          "status": "source-svg-railway-center-snap-visual-candidate",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "0609:0610",
+          "from": "0609",
+          "to": "0610",
+          "direction": "S",
+          "sourceSvgIds": [
+            "path366"
+          ],
+          "status": "source-svg-railway-center-snap-visual-candidate",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "0609:0708",
+          "from": "0609",
+          "to": "0708",
+          "direction": "NE",
+          "sourceSvgIds": [
+            "path365"
+          ],
+          "status": "source-svg-railway-center-snap-visual-candidate",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "0610:0611",
+          "from": "0610",
+          "to": "0611",
+          "direction": "S",
+          "sourceSvgIds": [
+            "path366"
+          ],
+          "status": "source-svg-railway-center-snap-visual-candidate",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "0611:0710",
+          "from": "0611",
+          "to": "0710",
+          "direction": "NE",
+          "sourceSvgIds": [
+            "path379"
+          ],
+          "status": "source-svg-railway-center-snap-visual-candidate",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "0705:0805",
+          "from": "0705",
+          "to": "0805",
+          "direction": "NE",
+          "sourceSvgIds": [
+            "path376"
+          ],
+          "status": "source-svg-railway-center-snap-visual-candidate",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "0706:0807",
+          "from": "0706",
+          "to": "0807",
+          "direction": "SE",
+          "sourceSvgIds": [
+            "path364"
+          ],
+          "status": "source-svg-railway-center-snap-visual-candidate",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "0708:0808",
+          "from": "0708",
+          "to": "0808",
+          "direction": "NE",
+          "sourceSvgIds": [
+            "path365"
+          ],
+          "status": "source-svg-railway-center-snap-visual-candidate",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "0710:0811",
+          "from": "0710",
+          "to": "0811",
+          "direction": "SE",
+          "sourceSvgIds": [
+            "path379"
+          ],
+          "status": "source-svg-railway-center-snap-visual-candidate",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "0803:0804",
+          "from": "0803",
+          "to": "0804",
+          "direction": "S",
+          "sourceSvgIds": [
+            "path376"
+          ],
+          "status": "source-svg-railway-center-snap-visual-candidate",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "0804:0805",
+          "from": "0804",
+          "to": "0805",
+          "direction": "S",
+          "sourceSvgIds": [
+            "path376"
+          ],
+          "status": "source-svg-railway-center-snap-visual-candidate",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "0807:0907",
+          "from": "0807",
+          "to": "0907",
+          "direction": "SE",
+          "sourceSvgIds": [
+            "path364"
+          ],
+          "status": "source-svg-railway-center-snap-visual-candidate",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "0808:0907",
+          "from": "0808",
+          "to": "0907",
+          "direction": "NE",
+          "sourceSvgIds": [
+            "path365"
+          ],
+          "status": "source-svg-railway-center-snap-visual-candidate",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "0811:0910",
+          "from": "0811",
+          "to": "0910",
+          "direction": "NE",
+          "sourceSvgIds": [
+            "path379"
+          ],
+          "status": "source-svg-railway-center-snap-visual-candidate",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "0907:1007",
+          "from": "0907",
+          "to": "1007",
+          "direction": "NE",
+          "sourceSvgIds": [
+            "path352"
+          ],
+          "status": "source-svg-railway-center-snap-visual-candidate",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "0907:1008",
+          "from": "0907",
+          "to": "1008",
+          "direction": "SE",
+          "sourceSvgIds": [
+            "path363"
+          ],
+          "status": "source-svg-railway-center-snap-visual-candidate",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "0910:1010",
+          "from": "0910",
+          "to": "1010",
+          "direction": "NE",
+          "sourceSvgIds": [
+            "path379"
+          ],
+          "status": "source-svg-railway-center-snap-visual-candidate",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "1007:1106",
+          "from": "1007",
+          "to": "1106",
+          "direction": "NE",
+          "sourceSvgIds": [
+            "path352"
+          ],
+          "status": "source-svg-railway-center-snap-visual-candidate",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "1008:1108",
+          "from": "1008",
+          "to": "1108",
+          "direction": "SE",
+          "sourceSvgIds": [
+            "path363"
+          ],
+          "status": "source-svg-railway-center-snap-visual-candidate",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "1010:1110",
+          "from": "1010",
+          "to": "1110",
+          "direction": "SE",
+          "sourceSvgIds": [
+            "path379"
+          ],
+          "status": "source-svg-railway-center-snap-visual-candidate",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "1102:1203",
+          "from": "1102",
+          "to": "1203",
+          "direction": "SE",
+          "sourceSvgIds": [
+            "path346"
+          ],
+          "status": "source-svg-railway-center-snap-visual-candidate",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "1106:1206",
+          "from": "1106",
+          "to": "1206",
+          "direction": "NE",
+          "sourceSvgIds": [
+            "path352"
+          ],
+          "status": "source-svg-railway-center-snap-visual-candidate",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "1108:1209",
+          "from": "1108",
+          "to": "1209",
+          "direction": "SE",
+          "sourceSvgIds": [
+            "path363"
+          ],
+          "status": "source-svg-railway-center-snap-visual-candidate",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "1110:1211",
+          "from": "1110",
+          "to": "1211",
+          "direction": "SE",
+          "sourceSvgIds": [
+            "path379"
+          ],
+          "status": "source-svg-railway-center-snap-visual-candidate",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "1203:1303",
+          "from": "1203",
+          "to": "1303",
+          "direction": "SE",
+          "sourceSvgIds": [
+            "path347"
+          ],
+          "status": "source-svg-railway-center-snap-visual-candidate",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "1206:1305",
+          "from": "1206",
+          "to": "1305",
+          "direction": "NE",
+          "sourceSvgIds": [
+            "path352"
+          ],
+          "status": "source-svg-railway-center-snap-visual-candidate",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "1209:1309",
+          "from": "1209",
+          "to": "1309",
+          "direction": "SE",
+          "sourceSvgIds": [
+            "path363"
+          ],
+          "status": "source-svg-railway-center-snap-visual-candidate",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "1211:1310",
+          "from": "1211",
+          "to": "1310",
+          "direction": "NE",
+          "sourceSvgIds": [
+            "path379"
+          ],
+          "status": "source-svg-railway-center-snap-visual-candidate",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "1303:1404",
+          "from": "1303",
+          "to": "1404",
+          "direction": "SE",
+          "sourceSvgIds": [
+            "path347"
+          ],
+          "status": "source-svg-railway-center-snap-visual-candidate",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "1305:1405",
+          "from": "1305",
+          "to": "1405",
+          "direction": "NE",
+          "sourceSvgIds": [
+            "path352"
+          ],
+          "status": "source-svg-railway-center-snap-visual-candidate",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "1309:1410",
+          "from": "1309",
+          "to": "1410",
+          "direction": "SE",
+          "sourceSvgIds": [
+            "path363"
+          ],
+          "status": "source-svg-railway-center-snap-visual-candidate",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "1310:1411",
+          "from": "1310",
+          "to": "1411",
+          "direction": "SE",
+          "sourceSvgIds": [
+            "path379"
+          ],
+          "status": "source-svg-railway-center-snap-visual-candidate",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "1402:1403",
+          "from": "1402",
+          "to": "1403",
+          "direction": "S",
+          "sourceSvgIds": [
+            "path349"
+          ],
+          "status": "source-svg-railway-center-snap-visual-candidate",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "1402:1501",
+          "from": "1402",
+          "to": "1501",
+          "direction": "NE",
+          "sourceSvgIds": [
+            "path355"
+          ],
+          "status": "source-svg-railway-center-snap-visual-candidate",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "1403:1404",
+          "from": "1403",
+          "to": "1404",
+          "direction": "S",
+          "sourceSvgIds": [
+            "path349"
+          ],
+          "status": "source-svg-railway-center-snap-visual-candidate",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "1404:1405",
+          "from": "1404",
+          "to": "1405",
+          "direction": "S",
+          "sourceSvgIds": [
+            "path350"
+          ],
+          "status": "source-svg-railway-center-snap-visual-candidate",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "1404:1504",
+          "from": "1404",
+          "to": "1504",
+          "direction": "SE",
+          "sourceSvgIds": [
+            "path354"
+          ],
+          "status": "source-svg-railway-center-snap-visual-candidate",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "1405:1505",
+          "from": "1405",
+          "to": "1505",
+          "direction": "SE",
+          "sourceSvgIds": [
+            "path351"
+          ],
+          "status": "source-svg-railway-center-snap-visual-candidate",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "1408:1409",
+          "from": "1408",
+          "to": "1409",
+          "direction": "S",
+          "sourceSvgIds": [
+            "path360"
+          ],
+          "status": "source-svg-railway-center-snap-visual-candidate",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "1408:1507",
+          "from": "1408",
+          "to": "1507",
+          "direction": "NE",
+          "sourceSvgIds": [
+            "path360"
+          ],
+          "status": "source-svg-railway-center-snap-visual-candidate",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "1409:1410",
+          "from": "1409",
+          "to": "1410",
+          "direction": "S",
+          "sourceSvgIds": [
+            "path360"
+          ],
+          "status": "source-svg-railway-center-snap-visual-candidate",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "1410:1510",
+          "from": "1410",
+          "to": "1510",
+          "direction": "SE",
+          "sourceSvgIds": [
+            "path361"
+          ],
+          "status": "source-svg-railway-center-snap-visual-candidate",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "1411:1510",
+          "from": "1411",
+          "to": "1510",
+          "direction": "NE",
+          "sourceSvgIds": [
+            "path379"
+          ],
+          "status": "source-svg-railway-center-snap-visual-candidate",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "1501:1602",
+          "from": "1501",
+          "to": "1602",
+          "direction": "SE",
+          "sourceSvgIds": [
+            "path355"
+          ],
+          "status": "source-svg-railway-center-snap-visual-candidate",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "1504:1605",
+          "from": "1504",
+          "to": "1605",
+          "direction": "SE",
+          "sourceSvgIds": [
+            "path354"
+          ],
+          "status": "source-svg-railway-center-snap-visual-candidate",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "1505:1506",
+          "from": "1505",
+          "to": "1506",
+          "direction": "S",
+          "sourceSvgIds": [
+            "path359"
+          ],
+          "status": "source-svg-railway-center-snap-visual-candidate",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "1505:1605",
+          "from": "1505",
+          "to": "1605",
+          "direction": "NE",
+          "sourceSvgIds": [
+            "path353"
+          ],
+          "status": "source-svg-railway-center-snap-visual-candidate",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "1506:1507",
+          "from": "1506",
+          "to": "1507",
+          "direction": "S",
+          "sourceSvgIds": [
+            "path359"
+          ],
+          "status": "source-svg-railway-center-snap-visual-candidate",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "1510:1610",
+          "from": "1510",
+          "to": "1610",
+          "direction": "NE",
+          "sourceSvgIds": [
+            "path362"
+          ],
+          "status": "source-svg-railway-center-snap-visual-candidate",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "1602:1701",
+          "from": "1602",
+          "to": "1701",
+          "direction": "NE",
+          "sourceSvgIds": [
+            "path355"
+          ],
+          "status": "source-svg-railway-center-snap-visual-candidate",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "1605:1704",
+          "from": "1605",
+          "to": "1704",
+          "direction": "NE",
+          "sourceSvgIds": [
+            "path353"
+          ],
+          "status": "source-svg-railway-center-snap-visual-candidate",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "1610:1709",
+          "from": "1610",
+          "to": "1709",
+          "direction": "NE",
+          "sourceSvgIds": [
+            "path362"
+          ],
+          "status": "source-svg-railway-center-snap-visual-candidate",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "1701:1802",
+          "from": "1701",
+          "to": "1802",
+          "direction": "SE",
+          "sourceSvgIds": [
+            "path355"
+          ],
+          "status": "source-svg-railway-center-snap-visual-candidate",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "1704:1705",
+          "from": "1704",
+          "to": "1705",
+          "direction": "S",
+          "sourceSvgIds": [
+            "path357"
+          ],
+          "status": "source-svg-railway-center-snap-visual-candidate",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "1704:1805",
+          "from": "1704",
+          "to": "1805",
+          "direction": "SE",
+          "sourceSvgIds": [
+            "path356"
+          ],
+          "status": "source-svg-railway-center-snap-visual-candidate",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "1705:1806",
+          "from": "1705",
+          "to": "1806",
+          "direction": "SE",
+          "sourceSvgIds": [
+            "path357"
+          ],
+          "status": "source-svg-railway-center-snap-visual-candidate",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "1709:1810",
+          "from": "1709",
+          "to": "1810",
+          "direction": "SE",
+          "sourceSvgIds": [
+            "path362"
+          ],
+          "status": "source-svg-railway-center-snap-visual-candidate",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "1806:1807",
+          "from": "1806",
+          "to": "1807",
+          "direction": "S",
+          "sourceSvgIds": [
+            "path357"
+          ],
+          "status": "source-svg-railway-center-snap-visual-candidate",
+          "tracedToSvg": true,
+          "movementCertified": false
+        }
+      ],
+      "limitations": [
+        "SVG element ID existence proves traceability only, not that a line truly follows the named hex-center adjacency",
+        "Authorial SVG geometry and inferred grid calibration are not automatically certified for gameplay",
+        "Hexside marks may represent visual candidates rather than verified river or rail restrictions",
+        "Candidate links and feature marks must not be promoted to executable movement permissions"
+      ]
+    },
+    "kiev": {
+      "sourceSvg": "maps/source/user-svg/kiev-odessa-main.svg",
+      "sourceSvgSHA256": "2b15c3a92a282a7efc27d54bcd8994470f0fce8ee5417d5d734969fcd2c4ab7e",
+      "mapId": "kiev-native-draft-v231",
+      "sourceImageSHA256": "c08af048799b8d0fd35ed9d1f128e94e03a404f5ddc497efd792fccbbdeb8df2",
+      "authorizedForMovement": false,
+      "counts": {
+        "railCandidates": 93,
+        "railTracedToExistingSvgIds": 93,
+        "railMissingSvgIds": 0,
+        "authoredHexsideFeatureMarks": 230,
+        "hexsidePairsWithMarks": 112,
+        "hexsideIssues": 0
+      },
+      "missingSvgIds": [],
+      "hexsideKinds": {
+        "rail": 186,
+        "river": 20,
+        "majorRiver": 24
+      },
+      "hexsideStatuses": {
+        "definitive-svg-finite-hexside-v427": 186,
+        "source-visual-candidate-v234-not-playable": 44
+      },
+      "hexsideIssues": [],
+      "railCandidates": [
+        {
+          "pair": "0102:0103",
+          "from": "0102",
+          "to": "0103",
+          "direction": "S",
+          "sourceSvgIds": [
+            "path863"
+          ],
+          "status": "definitive-svg-finite-hexside-v427",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "0102:0201",
+          "from": "0102",
+          "to": "0201",
+          "direction": "NE",
+          "sourceSvgIds": [
+            "path864"
+          ],
+          "status": "definitive-svg-finite-hexside-v427",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "0103:0104",
+          "from": "0103",
+          "to": "0104",
+          "direction": "S",
+          "sourceSvgIds": [
+            "path865"
+          ],
+          "status": "definitive-svg-finite-hexside-v427",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "0104:0204",
+          "from": "0104",
+          "to": "0204",
+          "direction": "SE",
+          "sourceSvgIds": [
+            "path865"
+          ],
+          "status": "definitive-svg-finite-hexside-v427",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "0201:0302",
+          "from": "0201",
+          "to": "0302",
+          "direction": "SE",
+          "sourceSvgIds": [
+            "path864"
+          ],
+          "status": "definitive-svg-finite-hexside-v427",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "0204:0305",
+          "from": "0204",
+          "to": "0305",
+          "direction": "SE",
+          "sourceSvgIds": [
+            "path865"
+          ],
+          "status": "definitive-svg-finite-hexside-v427",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "0302:0401",
+          "from": "0302",
+          "to": "0401",
+          "direction": "NE",
+          "sourceSvgIds": [
+            "path864"
+          ],
+          "status": "definitive-svg-finite-hexside-v427",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "0305:0404",
+          "from": "0305",
+          "to": "0404",
+          "direction": "NE",
+          "sourceSvgIds": [
+            "path865"
+          ],
+          "status": "definitive-svg-finite-hexside-v427",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "0401:0502",
+          "from": "0401",
+          "to": "0502",
+          "direction": "SE",
+          "sourceSvgIds": [
+            "path864"
+          ],
+          "status": "definitive-svg-finite-hexside-v427",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "0404:0405",
+          "from": "0404",
+          "to": "0405",
+          "direction": "S",
+          "sourceSvgIds": [
+            "path866"
+          ],
+          "status": "definitive-svg-finite-hexside-v427",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "0404:0505",
+          "from": "0404",
+          "to": "0505",
+          "direction": "SE",
+          "sourceSvgIds": [
+            "path865"
+          ],
+          "status": "definitive-svg-finite-hexside-v427",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "0405:0406",
+          "from": "0405",
+          "to": "0406",
+          "direction": "S",
+          "sourceSvgIds": [
+            "path866"
+          ],
+          "status": "definitive-svg-finite-hexside-v427",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "0405:0506",
+          "from": "0405",
+          "to": "0506",
+          "direction": "SE",
+          "sourceSvgIds": [
+            "path867"
+          ],
+          "status": "definitive-svg-finite-hexside-v427",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "0501:0502",
+          "from": "0501",
+          "to": "0502",
+          "direction": "S",
+          "sourceSvgIds": [
+            "path864"
+          ],
+          "status": "definitive-svg-finite-hexside-v427",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "0502:0602",
+          "from": "0502",
+          "to": "0602",
+          "direction": "SE",
+          "sourceSvgIds": [
+            "path865"
+          ],
+          "status": "definitive-svg-finite-hexside-v427",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "0505:0604",
+          "from": "0505",
+          "to": "0604",
+          "direction": "NE",
+          "sourceSvgIds": [
+            "path865"
+          ],
+          "status": "definitive-svg-finite-hexside-v427",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "0505:0605",
+          "from": "0505",
+          "to": "0605",
+          "direction": "SE",
+          "sourceSvgIds": [
+            "path868"
+          ],
+          "status": "definitive-svg-finite-hexside-v427",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "0506:0507",
+          "from": "0506",
+          "to": "0507",
+          "direction": "S",
+          "sourceSvgIds": [
+            "path867"
+          ],
+          "status": "definitive-svg-finite-hexside-v427",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "0507:0508",
+          "from": "0507",
+          "to": "0508",
+          "direction": "S",
+          "sourceSvgIds": [
+            "path867"
+          ],
+          "status": "definitive-svg-finite-hexside-v427",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "0507:0607",
+          "from": "0507",
+          "to": "0607",
+          "direction": "SE",
+          "sourceSvgIds": [
+            "path882"
+          ],
+          "status": "definitive-svg-finite-hexside-v427",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "0602:0703",
+          "from": "0602",
+          "to": "0703",
+          "direction": "SE",
+          "sourceSvgIds": [
+            "path865"
+          ],
+          "status": "definitive-svg-finite-hexside-v427",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "0604:0704",
+          "from": "0604",
+          "to": "0704",
+          "direction": "NE",
+          "sourceSvgIds": [
+            "path865"
+          ],
+          "status": "definitive-svg-finite-hexside-v427",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "0605:0706",
+          "from": "0605",
+          "to": "0706",
+          "direction": "SE",
+          "sourceSvgIds": [
+            "path868"
+          ],
+          "status": "definitive-svg-finite-hexside-v427",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "0607:0708",
+          "from": "0607",
+          "to": "0708",
+          "direction": "SE",
+          "sourceSvgIds": [
+            "path882"
+          ],
+          "status": "definitive-svg-finite-hexside-v427",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "0703:0803",
+          "from": "0703",
+          "to": "0803",
+          "direction": "SE",
+          "sourceSvgIds": [
+            "path865"
+          ],
+          "status": "definitive-svg-finite-hexside-v427",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "0704:0803",
+          "from": "0704",
+          "to": "0803",
+          "direction": "NE",
+          "sourceSvgIds": [
+            "path865"
+          ],
+          "status": "definitive-svg-finite-hexside-v427",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "0706:0806",
+          "from": "0706",
+          "to": "0806",
+          "direction": "SE",
+          "sourceSvgIds": [
+            "path868"
+          ],
+          "status": "definitive-svg-finite-hexside-v427",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "0708:0709",
+          "from": "0708",
+          "to": "0709",
+          "direction": "S",
+          "sourceSvgIds": [
+            "path882"
+          ],
+          "status": "definitive-svg-finite-hexside-v427",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "0709:0809",
+          "from": "0709",
+          "to": "0809",
+          "direction": "SE",
+          "sourceSvgIds": [
+            "path883"
+          ],
+          "status": "definitive-svg-finite-hexside-v427",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "0801:0902",
+          "from": "0801",
+          "to": "0902",
+          "direction": "SE",
+          "sourceSvgIds": [
+            "path869"
+          ],
+          "status": "definitive-svg-finite-hexside-v427",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "0802:0803",
+          "from": "0802",
+          "to": "0803",
+          "direction": "S",
+          "sourceSvgIds": [
+            "path869"
+          ],
+          "status": "definitive-svg-finite-hexside-v427",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "0802:0902",
+          "from": "0802",
+          "to": "0902",
+          "direction": "NE",
+          "sourceSvgIds": [
+            "path869"
+          ],
+          "status": "definitive-svg-finite-hexside-v427",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "0803:0804",
+          "from": "0803",
+          "to": "0804",
+          "direction": "S",
+          "sourceSvgIds": [
+            "path868"
+          ],
+          "status": "definitive-svg-finite-hexside-v427",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "0804:0905",
+          "from": "0804",
+          "to": "0905",
+          "direction": "SE",
+          "sourceSvgIds": [
+            "path868"
+          ],
+          "status": "definitive-svg-finite-hexside-v427",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "0806:0907",
+          "from": "0806",
+          "to": "0907",
+          "direction": "SE",
+          "sourceSvgIds": [
+            "path868"
+          ],
+          "status": "definitive-svg-finite-hexside-v427",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "0809:0810",
+          "from": "0809",
+          "to": "0810",
+          "direction": "S",
+          "sourceSvgIds": [
+            "path883"
+          ],
+          "status": "definitive-svg-finite-hexside-v427",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "0810:0911",
+          "from": "0810",
+          "to": "0911",
+          "direction": "SE",
+          "sourceSvgIds": [
+            "path884"
+          ],
+          "status": "definitive-svg-finite-hexside-v427",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "0902:1002",
+          "from": "0902",
+          "to": "1002",
+          "direction": "SE",
+          "sourceSvgIds": [
+            "path870"
+          ],
+          "status": "definitive-svg-finite-hexside-v427",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "0905:1005",
+          "from": "0905",
+          "to": "1005",
+          "direction": "SE",
+          "sourceSvgIds": [
+            "path868"
+          ],
+          "status": "definitive-svg-finite-hexside-v427",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "0907:1007",
+          "from": "0907",
+          "to": "1007",
+          "direction": "SE",
+          "sourceSvgIds": [
+            "path868"
+          ],
+          "status": "definitive-svg-finite-hexside-v427",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "0911:1010",
+          "from": "0911",
+          "to": "1010",
+          "direction": "NE",
+          "sourceSvgIds": [
+            "path884"
+          ],
+          "status": "definitive-svg-finite-hexside-v427",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "1002:1103",
+          "from": "1002",
+          "to": "1103",
+          "direction": "SE",
+          "sourceSvgIds": [
+            "path870"
+          ],
+          "status": "definitive-svg-finite-hexside-v427",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "1005:1106",
+          "from": "1005",
+          "to": "1106",
+          "direction": "SE",
+          "sourceSvgIds": [
+            "path868"
+          ],
+          "status": "definitive-svg-finite-hexside-v427",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "1007:1107",
+          "from": "1007",
+          "to": "1107",
+          "direction": "NE",
+          "sourceSvgIds": [
+            "path868"
+          ],
+          "status": "definitive-svg-finite-hexside-v427",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "1010:1111",
+          "from": "1010",
+          "to": "1111",
+          "direction": "SE",
+          "sourceSvgIds": [
+            "path884"
+          ],
+          "status": "definitive-svg-finite-hexside-v427",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "1103:1104",
+          "from": "1103",
+          "to": "1104",
+          "direction": "S",
+          "sourceSvgIds": [
+            "path874"
+          ],
+          "status": "definitive-svg-finite-hexside-v427",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "1103:1202",
+          "from": "1103",
+          "to": "1202",
+          "direction": "NE",
+          "sourceSvgIds": [
+            "path870"
+          ],
+          "status": "definitive-svg-finite-hexside-v427",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "1103:1203",
+          "from": "1103",
+          "to": "1203",
+          "direction": "SE",
+          "sourceSvgIds": [
+            "path873"
+          ],
+          "status": "definitive-svg-finite-hexside-v427",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "1104:1105",
+          "from": "1104",
+          "to": "1105",
+          "direction": "S",
+          "sourceSvgIds": [
+            "path874"
+          ],
+          "status": "definitive-svg-finite-hexside-v427",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "1105:1106",
+          "from": "1105",
+          "to": "1106",
+          "direction": "S",
+          "sourceSvgIds": [
+            "path874"
+          ],
+          "status": "definitive-svg-finite-hexside-v427",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "1105:1204",
+          "from": "1105",
+          "to": "1204",
+          "direction": "NE",
+          "sourceSvgIds": [
+            "path876"
+          ],
+          "status": "definitive-svg-finite-hexside-v427",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "1106:1206",
+          "from": "1106",
+          "to": "1206",
+          "direction": "SE",
+          "sourceSvgIds": [
+            "path868"
+          ],
+          "status": "definitive-svg-finite-hexside-v427",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "1107:1108",
+          "from": "1107",
+          "to": "1108",
+          "direction": "S",
+          "sourceSvgIds": [
+            "path881"
+          ],
+          "status": "definitive-svg-finite-hexside-v427",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "1107:1206",
+          "from": "1107",
+          "to": "1206",
+          "direction": "NE",
+          "sourceSvgIds": [
+            "path868"
+          ],
+          "status": "definitive-svg-finite-hexside-v427",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "1108:1208",
+          "from": "1108",
+          "to": "1208",
+          "direction": "SE",
+          "sourceSvgIds": [
+            "path881"
+          ],
+          "status": "definitive-svg-finite-hexside-v427",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "1201:1202",
+          "from": "1201",
+          "to": "1202",
+          "direction": "S",
+          "sourceSvgIds": [
+            "path870"
+          ],
+          "status": "definitive-svg-finite-hexside-v427",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "1203:1304",
+          "from": "1203",
+          "to": "1304",
+          "direction": "SE",
+          "sourceSvgIds": [
+            "path873"
+          ],
+          "status": "definitive-svg-finite-hexside-v427",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "1204:1305",
+          "from": "1204",
+          "to": "1305",
+          "direction": "SE",
+          "sourceSvgIds": [
+            "path876"
+          ],
+          "status": "definitive-svg-finite-hexside-v427",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "1205:1206",
+          "from": "1205",
+          "to": "1206",
+          "direction": "S",
+          "sourceSvgIds": [
+            "path886"
+          ],
+          "status": "definitive-svg-finite-hexside-v427",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "1205:1305",
+          "from": "1205",
+          "to": "1305",
+          "direction": "NE",
+          "sourceSvgIds": [
+            "path886"
+          ],
+          "status": "definitive-svg-finite-hexside-v427",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "1208:1309",
+          "from": "1208",
+          "to": "1309",
+          "direction": "SE",
+          "sourceSvgIds": [
+            "path881"
+          ],
+          "status": "definitive-svg-finite-hexside-v427",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "1304:1404",
+          "from": "1304",
+          "to": "1404",
+          "direction": "SE",
+          "sourceSvgIds": [
+            "path873"
+          ],
+          "status": "definitive-svg-finite-hexside-v427",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "1305:1404",
+          "from": "1305",
+          "to": "1404",
+          "direction": "NE",
+          "sourceSvgIds": [
+            "path875"
+          ],
+          "status": "definitive-svg-finite-hexside-v427",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "1305:1405",
+          "from": "1305",
+          "to": "1405",
+          "direction": "SE",
+          "sourceSvgIds": [
+            "path876"
+          ],
+          "status": "definitive-svg-finite-hexside-v427",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "1309:1310",
+          "from": "1309",
+          "to": "1310",
+          "direction": "S",
+          "sourceSvgIds": [
+            "path881"
+          ],
+          "status": "definitive-svg-finite-hexside-v427",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "1310:1410",
+          "from": "1310",
+          "to": "1410",
+          "direction": "SE",
+          "sourceSvgIds": [
+            "path881"
+          ],
+          "status": "definitive-svg-finite-hexside-v427",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "1404:1504",
+          "from": "1404",
+          "to": "1504",
+          "direction": "NE",
+          "sourceSvgIds": [
+            "path873"
+          ],
+          "status": "definitive-svg-finite-hexside-v427",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "1405:1506",
+          "from": "1405",
+          "to": "1506",
+          "direction": "SE",
+          "sourceSvgIds": [
+            "path876"
+          ],
+          "status": "definitive-svg-finite-hexside-v427",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "1504:1603",
+          "from": "1504",
+          "to": "1603",
+          "direction": "NE",
+          "sourceSvgIds": [
+            "path873"
+          ],
+          "status": "definitive-svg-finite-hexside-v427",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "1504:1604",
+          "from": "1504",
+          "to": "1604",
+          "direction": "SE",
+          "sourceSvgIds": [
+            "path876"
+          ],
+          "status": "definitive-svg-finite-hexside-v427",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "1506:1606",
+          "from": "1506",
+          "to": "1606",
+          "direction": "SE",
+          "sourceSvgIds": [
+            "path876"
+          ],
+          "status": "definitive-svg-finite-hexside-v427",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "1510:1511",
+          "from": "1510",
+          "to": "1511",
+          "direction": "S",
+          "sourceSvgIds": [
+            "path880"
+          ],
+          "status": "definitive-svg-finite-hexside-v427",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "1510:1609",
+          "from": "1510",
+          "to": "1609",
+          "direction": "NE",
+          "sourceSvgIds": [
+            "path880"
+          ],
+          "status": "definitive-svg-finite-hexside-v427",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "1601:1702",
+          "from": "1601",
+          "to": "1702",
+          "direction": "SE",
+          "sourceSvgIds": [
+            "path871"
+          ],
+          "status": "definitive-svg-finite-hexside-v427",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "1603:1703",
+          "from": "1603",
+          "to": "1703",
+          "direction": "NE",
+          "sourceSvgIds": [
+            "path873"
+          ],
+          "status": "definitive-svg-finite-hexside-v427",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "1604:1705",
+          "from": "1604",
+          "to": "1705",
+          "direction": "SE",
+          "sourceSvgIds": [
+            "path876"
+          ],
+          "status": "definitive-svg-finite-hexside-v427",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "1606:1707",
+          "from": "1606",
+          "to": "1707",
+          "direction": "SE",
+          "sourceSvgIds": [
+            "path876"
+          ],
+          "status": "definitive-svg-finite-hexside-v427",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "1607:1608",
+          "from": "1607",
+          "to": "1608",
+          "direction": "S",
+          "sourceSvgIds": [
+            "path876"
+          ],
+          "status": "definitive-svg-finite-hexside-v427",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "1607:1707",
+          "from": "1607",
+          "to": "1707",
+          "direction": "NE",
+          "sourceSvgIds": [
+            "path876"
+          ],
+          "status": "definitive-svg-finite-hexside-v427",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "1608:1609",
+          "from": "1608",
+          "to": "1609",
+          "direction": "S",
+          "sourceSvgIds": [
+            "path880"
+          ],
+          "status": "definitive-svg-finite-hexside-v427",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "1608:1708",
+          "from": "1608",
+          "to": "1708",
+          "direction": "NE",
+          "sourceSvgIds": [
+            "path876"
+          ],
+          "status": "definitive-svg-finite-hexside-v427",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "1702:1802",
+          "from": "1702",
+          "to": "1802",
+          "direction": "SE",
+          "sourceSvgIds": [
+            "path871"
+          ],
+          "status": "definitive-svg-finite-hexside-v427",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "1703:1704",
+          "from": "1703",
+          "to": "1704",
+          "direction": "S",
+          "sourceSvgIds": [
+            "path872"
+          ],
+          "status": "definitive-svg-finite-hexside-v427",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "1703:1802",
+          "from": "1703",
+          "to": "1802",
+          "direction": "NE",
+          "sourceSvgIds": [
+            "path872"
+          ],
+          "status": "definitive-svg-finite-hexside-v427",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "1704:1705",
+          "from": "1704",
+          "to": "1705",
+          "direction": "S",
+          "sourceSvgIds": [
+            "path872"
+          ],
+          "status": "definitive-svg-finite-hexside-v427",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "1705:1706",
+          "from": "1705",
+          "to": "1706",
+          "direction": "S",
+          "sourceSvgIds": [
+            "path876"
+          ],
+          "status": "definitive-svg-finite-hexside-v427",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "1705:1805",
+          "from": "1705",
+          "to": "1805",
+          "direction": "SE",
+          "sourceSvgIds": [
+            "path872"
+          ],
+          "status": "definitive-svg-finite-hexside-v427",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "1706:1707",
+          "from": "1706",
+          "to": "1707",
+          "direction": "S",
+          "sourceSvgIds": [
+            "path876"
+          ],
+          "status": "definitive-svg-finite-hexside-v427",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "1707:1708",
+          "from": "1707",
+          "to": "1708",
+          "direction": "S",
+          "sourceSvgIds": [
+            "path876"
+          ],
+          "status": "definitive-svg-finite-hexside-v427",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "1707:1807",
+          "from": "1707",
+          "to": "1807",
+          "direction": "SE",
+          "sourceSvgIds": [
+            "path877"
+          ],
+          "status": "definitive-svg-finite-hexside-v427",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "1807:1808",
+          "from": "1807",
+          "to": "1808",
+          "direction": "S",
+          "sourceSvgIds": [
+            "path879"
+          ],
+          "status": "definitive-svg-finite-hexside-v427",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "1808:1809",
+          "from": "1808",
+          "to": "1809",
+          "direction": "S",
+          "sourceSvgIds": [
+            "path879"
+          ],
+          "status": "definitive-svg-finite-hexside-v427",
+          "tracedToSvg": true,
+          "movementCertified": false
+        },
+        {
+          "pair": "1809:1810",
+          "from": "1809",
+          "to": "1810",
+          "direction": "S",
+          "sourceSvgIds": [
+            "path879"
+          ],
+          "status": "definitive-svg-finite-hexside-v427",
+          "tracedToSvg": true,
+          "movementCertified": false
+        }
+      ],
+      "limitations": [
+        "SVG element ID existence proves traceability only, not that a line truly follows the named hex-center adjacency",
+        "Authorial SVG geometry and inferred grid calibration are not automatically certified for gameplay",
+        "Hexside marks may represent visual candidates rather than verified river or rail restrictions",
+        "Candidate links and feature marks must not be promoted to executable movement permissions"
+      ]
+    }
+  }
+}

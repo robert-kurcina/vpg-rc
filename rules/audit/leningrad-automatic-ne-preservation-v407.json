@@ -1,0 +1,66 @@
+{
+  "checkpoint": 173,
+  "version": "v407",
+  "baselineArchive": "hex_wargame_v406_CHECKPOINT_172_LENINGRAD_EIGHT_TURN_BROWSER.zip",
+  "baselineFileCount": 953,
+  "modifiedPriorFiles": [
+    "PLAN.md",
+    "README.md",
+    "UPDATE.md",
+    "core/historical_browser_app.js",
+    "core/historical_campaign_action_catalog.js",
+    "core/historical_engine_browser_bundle.js",
+    "games/leningrad/native-preview/index.html",
+    "games/leningrad/native-preview/style.css"
+  ],
+  "addedFiles": [
+    "core/HISTORICAL_AUTOMATIC_NE.md",
+    "rules/audit/leningrad-all-human-browser-v407.json",
+    "rules/audit/leningrad-automatic-ne-preservation-v407.json",
+    "rules/audit/visual/leningrad-automatic-ne-v407.png",
+    "scripts/package-checkpoint173.py",
+    "scripts/verify-leningrad-all-human-v407.py",
+    "tests/leningrad-all-human-browser-v407.py"
+  ],
+  "deletedFiles": [],
+  "protectedOriginalFilesCompared": 14,
+  "protectedOriginalFileHashes": {
+    "exports/battle-for-moscow.svg": "487a050a42cf41554886b0fcef85baf68e40354f784428623926f1a9354f4de1",
+    "exports/arduous.svg": "0443d50a7f7bbe36c508cf9e32a18d20f765cad93588c4cbb65fdbd5db7eedf7",
+    "exports/leningrad.svg": "e45856f7d56b5acfecf7083b405b9465d1c21459d698ac65e9196f581f832925",
+    "exports/kiev.svg": "5f455d80d6d30eec822d898f41ec12c21fc03a7f4fd165ddd51fa2b7c28324a4",
+    "exports/kiev-odessa.svg": "7cb5fafbb18babd2b4b2a5129e6802607dd4b0df8b07e46491319c07ecb9c71c",
+    "core/historical_crt.js": "6a43c47ae52c6c110728403fd680406ba99d8e67bd14f234cb82f38c703b22e6",
+    "core/historical_campaign_session.js": "e573a15d43d166eca8fe6dbab94ea9c6d17970b9627731f216fb5b7d623e8ac7",
+    "core/historical_deployment_session.js": "10bcb9916da2583b45120a31da466fd2e3cb936ab2d3512668e6a4c02ad0144d",
+    "core/official_counter_templates.js": "c4278e9416e4ffd6460caedb9878b51500e0b64b6d01a774ee5a390b7a046321",
+    "maps/registry.json": "79d1fd8419bfde92d630af9ae4a1a5093c672848daf3d5a35486793439b3377b",
+    "games/battle-for-moscow/game.json": "9d5ccd8e80b3fb2ea1018e26ccac9ebf26e3bf9081920c162347dcb94ef23f39",
+    "maps/leningrad.json": "3ec95353555af6703d2fd006b11b55e2b98685e296f36e528da85547d6933b17",
+    "maps/setup/leningrad.json": "3ed0e7a28e4aa84efb3cb9e3851fa55f3be6d7fc26250bc2f9550f2a1ef46d19",
+    "assets/official-counters/source-counters.svg": "a45fd59ebc50fac41686289e41d387d83474f81b0b7da25fe37107ce132ad51b"
+  },
+  "sourceEditScope": "Shared legal-action-catalog automatic-NE metadata, generated historical browser bundle, generic browser view and Leningrad page/CSS",
+  "noAlternateCRTorCombatRules": true,
+  "allFiveMapExportsUnchanged": true,
+  "LeningradSetupAndCounterSourceUnchanged": true,
+  "BattleForMoscowProductionUnchanged": true,
+  "humanOnlyAcceptance": {
+    "uiDecisions": 122,
+    "engineActions": 114,
+    "d6Commitments": 5,
+    "automaticNE": 3,
+    "combatDeclarations": 8,
+    "postRollChoices": 8,
+    "baselineAICalls": 0,
+    "turns": 8,
+    "outcome": "soviet-victory"
+  },
+  "remainingGates": [
+    "Source PDF/SVG rear-coordinate conflicts",
+    "Leningrad historical unit allocation certification",
+    "B4M native production cutover",
+    "Three further historical campaigns",
+    "Oberlabs UX alignment (deferred)"
+  ]
+}

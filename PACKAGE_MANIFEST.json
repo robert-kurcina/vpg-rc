@@ -1,0 +1,18 @@
+{
+  "version": "v701",
+  "checkpoint": 479,
+  "packageRevision": "clean-3",
+  "baseline": "hex_wargame_v700_CHECKPOINT_478_LENINGRAD_ACCEPTANCE.zip",
+  "description": "10/10 fresh historical headless acceptance; resumable qualification runner",
+  "originalFileCount": 2094,
+  "originalFileCategories": {
+    "retained": 1883,
+    "historical_visual": 144,
+    "historical_packaging": 64,
+    "archived_root_document": 3
+  },
+  "companionArchive": "hex_wargame_v681_HISTORICAL_EVIDENCE.zip",
+  "relocationManifest": "provenance/archive/v681/RELOCATION_MANIFEST.json",
+  "archivedOriginalManifest": "provenance/archive/v681/PACKAGE_MANIFEST.json",
+  "limitations": "Full semantic reading order and tables, outstanding historical adjudications, broader variant acceptance, hosted/full browser acceptance remain open. Difficulty rankings provisional."
+}

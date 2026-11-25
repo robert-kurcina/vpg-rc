@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "description": "Explicit source evidence authorization for generating executable movement graphs. No implicit acceptance by game name or visual fidelity.",
+  "maps": {
+    "leningrad-native-draft-v231": {
+      "status": "verified",
+      "evidenceTier": "source-authoritative",
+      "mapId": "leningrad-native-draft-v231",
+      "sourceGame": "Target: Leningrad",
+      "sourceImageSHA256": "e2d718355490cbcdbecad4699aa4da2aebd477de736ee9aa26536e62347da17c",
+      "geometryStatus": "source-authoritative-leningrad-main-svg-grid",
+      "terrainStatus": "authoritative-user-svg-v301",
+      "railStatus": "source-grid-snap-v301",
+      "riverStatus": "source-hexside-registered-v301",
+      "edgeSource": "leningrad-user-svg-v301",
+      "coverage": "leningrad-svg-v301-authoritative-terrain-and-rail; other gameplay rules not certified",
+      "sourceReference": "maps/leningrad.json v301 source import"
+    },
+    "arduous-native-draft-v231": {
+      "status": "verified",
+      "mapId": "arduous-native-draft-v231",
+      "sourceGame": "The Arduous Beginning",
+      "sourceImageSHA256": "9e41cf83ff001a616c5b6651784b8ac8206fc2eb04048dc41b1a3a0b3c3fa8f4",
+      "geometryStatus": "image-grid-contrast-fit-visual-candidate",
+      "evidenceTier": "source-authoritative",
+      "edgeMode": "source-reviewed-v1",
+      "edgeLedgerSHA256": "6ddce78c831789fb8e854e46ebeda245da785eeb97990e572691b88ae93c9e17",
+      "terrainStatuses": [
+        "source-svg-scan-reviewed-open-v412",
+        "user-svg-authored-forest",
+        "user-svg-authored-swamp"
+      ],
+      "railStatus": "source-svg-railway-center-snap-visual-candidate",
+      "riverStatus": "user-confirmed-45-side-follow-v419",
+      "edgeSource": "arduous-svg-reviewed-v419",
+      "coverage": "155 cells, 413 reciprocal edges; 85 rail links, 45 user-confirmed river sides; not a certification of historic setup"
+    },
+    "kiev-native-draft-v231": {
+      "status": "verified",
+      "evidenceTier": "source-authoritative",
+      "mapId": "kiev-native-draft-v231",
+      "sourceGame": "Objective: Kiev",
+      "sourceImageSHA256": "c08af048799b8d0fd35ed9d1f128e94e03a404f5ddc497efd792fccbbdeb8df2",
+      "geometryStatus": "image-grid-contrast-fit-visual-candidate",
+      "edgeMode": "source-reviewed-v1",
+      "sourceEvidenceMode": "definitive-city-layer-v1",
+      "edgeLedgerSHA256": "e8a1e30d69d56ffa17dc322c7e278b1701b4518919e48f35945cce18039513b9",
+      "terrainStatuses": [
+        "definitive-user-svg-terrain-v428",
+        "source-typed-city-terrain-v429",
+        "user-adjudicated-terrain-v435"
+      ],
+      "railStatus": "definitive-svg-finite-hexside-v427",
+      "edgeSource": "kiev-odessa-main-svg-city-river-rail-v433",
+      "coverage": "source-reviewed Kiev SVG land-map connectivity: 165 hexes, 442 edges, 93 rail, 72 ordinary River, 10 Major River. Experimental human browser campaign; NOT historical setup/strategy certification.",
+      "authorizationScope": "source-svg-geometry-for-experimental-gameplay",
+      "sourceReference": "maps/source/user-svg/kiev-odessa-main.svg; source-reviewed-edge-ledgers.json and source v429/v427 audits; user adjudication 1502"
+    },
+    "kiev-odessa-composite-v256": {
+      "status": "experimental",
+      "mapId": "kiev-odessa-composite-v256",
+      "sourceGame": "Objective: Kiev + Odessa Expansion",
+      "sourceImageSHA256": "c08af048799b8d0fd35ed9d1f128e94e03a404f5ddc497efd792fccbbdeb8df2",
+      "geometryStatus": "image-grid-contrast-fit-visual-candidate",
+      "evidenceTier": "source-derived-candidate",
+      "edgeMode": "source-vector-experimental-v1",
+      "authorizationScope": "source-pinned-composite-experimental-v531",
+      "mapDigest": "cfdbb26c68ba28c22a19fe538a14797eb7abf7bf488a603204bbacb2a9003403",
+      "edgeLedgerSHA256": "9bc2da3fe0dbdc8bea39040d171d70427d345f99101eead9e3965041bc997440",
+      "coverage": "Explicitly experimental source-SVG topology: 261 cells, 714 physical links (614 traversable candidates). NOT historical movement certification."
+    }
+  }
+}

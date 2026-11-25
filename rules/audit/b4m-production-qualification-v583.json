@@ -1,0 +1,33 @@
+{
+  "checkpoint": 349,
+  "version": "v583",
+  "productionRoute": "generic-hex-v1",
+  "routeAssertions": 10,
+  "sourceEvidence": {
+    "pdfFirstPassConditions": 101,
+    "boundedSourceTested": 17,
+    "indexedUnverified": 84,
+    "playerAidTranscribedFields": 34,
+    "legacySourceAssertions": "PASS"
+  },
+  "nativeStandardDifferential": {
+    "continuousCampaigns": 4,
+    "expandedCampaigns": 4,
+    "expandedMoves": 432,
+    "expandedBattles": 68,
+    "expandedReplacements": 124,
+    "expandedCommunicationChecks": 952,
+    "expandedDisconnected": 21,
+    "expandedUndoReplays": 504,
+    "objectiveAdvanceChecks": 42,
+    "replacementPolicy": "PASS"
+  },
+  "browserCRTAssertions": 108,
+  "sharedCRTAssertions": 301,
+  "bundleModules": 59,
+  "limitations": [
+    "Legacy differential is not independent printed-rule certification.",
+    "Historical v408 selector label is a snapshot, superseded by v409 production cutover.",
+    "No new continuous Chromium campaign or strategic AI qualification."
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "checkpoint": 111,
+  "version": "v345",
+  "source": "rules/audit/visual/leningrad-user-approved-before-after-v345.png",
+  "approvedSide": "left",
+  "approvedPreviousVersion": "v343",
+  "rejectedSide": "right",
+  "rejectedPreviousVersion": "v344",
+  "finding": "User confirmed left side has the correct deployment arrangement. Left is v343 before and right is v344 after.",
+  "activeInternalHostCells": {
+    "cross": [
+      "0210",
+      "0310",
+      "0311",
+      "0411",
+      "0511"
+    ],
+    "star": [
+      "0209",
+      "0309",
+      "0410",
+      "0510",
+      "0611"
+    ]
+  },
+  "freshExportRegression": {
+    "script": "tests/leningrad-approved-image-pixel-parity-v345.test.py",
+    "sourceCrop": [
+      0,
+      0,
+      680,
+      529
+    ],
+    "freshMapCrop": [
+      0,
+      290,
+      680,
+      819
+    ],
+    "expectedDifferentPixels": 0,
+    "method": "Fresh Node.js universal map exporter and Inkscape PNG; PIL RGB pixel comparison of actual engine export against approved left image",
+    "reference": "original user-uploaded screenshot, not assistant-generated reference"
+  },
+  "unchanged": [
+    "universal renderer",
+    "printed coordinate configuration",
+    "terrain",
+    "water features",
+    "railways",
+    "city assignments",
+    "movement topology"
+  ],
+  "knownOpenItems": [
+    "197-versus-199-hex discrepancy",
+    "canonical historical numbering",
+    "full SVG visual parity",
+    "historical gameplay activation"
+  ],
+  "userUploadSHA256": "2e0fe3c01ea8ec86dc6201a2fb9699124c5f1f7868218f98a26ef07748bb5268"
+}

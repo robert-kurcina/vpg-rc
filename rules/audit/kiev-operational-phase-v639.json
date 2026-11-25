@@ -1,0 +1,34 @@
+{
+  "checkpoint": 405,
+  "version": "v639",
+  "scope": "operational phase policy",
+  "assertions": {
+    "operational": 43,
+    "objective": 18,
+    "defensive": 40,
+    "communication": 45,
+    "positional": 76,
+    "concentration": 19,
+    "fallback": 49,
+    "rankedPlan": 6,
+    "controller": 16,
+    "continuation": 74,
+    "crt": 301,
+    "preroll": 89
+  },
+  "total": 776,
+  "movementPhase": {
+    "scenario": "kiev",
+    "moves": 4,
+    "actions": 9,
+    "distinctFormations": 4,
+    "restoreExact": true
+  },
+  "constructedCombatFixtures": {
+    "standardCommittedEngagements": 2,
+    "advancedCommittedEngagements": 2
+  },
+  "bundleModules": 62,
+  "fullCampaign": false,
+  "chromium": false
+}

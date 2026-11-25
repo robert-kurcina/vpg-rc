@@ -1,0 +1,30 @@
+{
+  "version": "v496",
+  "status": "diagnostic-not-gameplay-authorized",
+  "rails": 117,
+  "added": 77,
+  "removedAnnotations": 2,
+  "physicalEdges": 714,
+  "impassableSeaCoastEdges": 100,
+  "shortcuts": {
+    "1106:1107": {
+      "groundCost": 1,
+      "railCost": 2,
+      "railPath": [
+        "1106",
+        "1206",
+        "1107"
+      ]
+    },
+    "1106:1205": {
+      "groundCost": 1,
+      "railCost": 2,
+      "railPath": [
+        "1106",
+        "1206",
+        "1205"
+      ]
+    }
+  },
+  "checks": 3247
+}

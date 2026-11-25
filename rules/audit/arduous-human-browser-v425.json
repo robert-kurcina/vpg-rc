@@ -1,0 +1,761 @@
+{
+  "checkpoint": 191,
+  "version": "v425",
+  "source": "original Arduous browser scripts and exported SVG, loaded from in-memory local project fixture",
+  "counts": {
+    "movement": 4,
+    "combatDeclarations": 2,
+    "postCombat": 2,
+    "die": 0,
+    "automaticNE": 2,
+    "reinforcements": 4,
+    "replacements": 0,
+    "airChoices": 1,
+    "other": 82,
+    "uiDecisions": 101
+  },
+  "errors": [],
+  "complete": true,
+  "turn": 7,
+  "terminal": {
+    "axisControlledCount": 0,
+    "cityControl": {
+      "Baranovichi": "soviet",
+      "Brest-Litovsk": "soviet",
+      "Gomel": "soviet",
+      "Minsk": "soviet",
+      "Mogilev": "soviet",
+      "Orsha": "soviet",
+      "Polotsk": "soviet",
+      "Roslavl": "soviet",
+      "Smolensk": "soviet",
+      "Velikie Luki": "soviet",
+      "Vilnius": "soviet",
+      "Vitebsk": "soviet"
+    },
+    "onlyRemainingCity": null,
+    "onlyRemainingCityIsolated": null,
+    "outcome": "soviet-victory",
+    "reason": "axis-controls-at-most-threshold",
+    "totalCities": 12
+  },
+  "actionCount": 99,
+  "limitations": [
+    "Scripted legal choices through the real human controls; not an AI strength test",
+    "Candidate scenario opening; printed source marker disagreements unresolved",
+    "Source JS and map SVG loaded in-memory; hosted navigation and physical iPad Safari not tested",
+    "Specialized d6, replacement, retreat and advance UI branches remain unexercised in this 99-action run; complementary contested engine-only v422 test covers game transactions"
+  ],
+  "decisionTrace": [
+    {
+      "phase": "german-combat",
+      "actor": "german",
+      "turn": 1,
+      "kind": "other",
+      "actionsAfter": 1
+    },
+    {
+      "phase": "german-combat",
+      "actor": "german",
+      "turn": 1,
+      "kind": "combatDeclarations",
+      "actionsAfter": 2
+    },
+    {
+      "phase": "german-combat",
+      "actor": "german",
+      "turn": 1,
+      "kind": "other",
+      "actionsAfter": 3
+    },
+    {
+      "phase": "german-combat",
+      "actor": "german",
+      "turn": 1,
+      "kind": "airChoices",
+      "actionsAfter": 4
+    },
+    {
+      "phase": "german-combat",
+      "actor": "german",
+      "turn": 1,
+      "kind": "automaticNE",
+      "actionsAfter": 4
+    },
+    {
+      "phase": "german-combat",
+      "actor": "german",
+      "turn": 1,
+      "kind": "postCombat",
+      "actionsAfter": 5
+    },
+    {
+      "phase": "german-combat",
+      "actor": "german",
+      "turn": 1,
+      "kind": "other",
+      "actionsAfter": 6
+    },
+    {
+      "phase": "german-special-movement",
+      "actor": "german",
+      "turn": 1,
+      "kind": "movement",
+      "actionsAfter": 7
+    },
+    {
+      "phase": "german-special-movement",
+      "actor": "german",
+      "turn": 1,
+      "kind": "movementResolved",
+      "actionsAfter": 8
+    },
+    {
+      "phase": "german-special-movement",
+      "actor": "german",
+      "turn": 1,
+      "kind": "other",
+      "actionsAfter": 9
+    },
+    {
+      "phase": "soviet-buildup",
+      "actor": "soviet",
+      "turn": 1,
+      "kind": "reinforcements",
+      "actionsAfter": 10
+    },
+    {
+      "phase": "soviet-buildup",
+      "actor": "soviet",
+      "turn": 1,
+      "kind": "reinforcements",
+      "actionsAfter": 11
+    },
+    {
+      "phase": "soviet-buildup",
+      "actor": "soviet",
+      "turn": 1,
+      "kind": "reinforcements",
+      "actionsAfter": 12
+    },
+    {
+      "phase": "soviet-buildup",
+      "actor": "soviet",
+      "turn": 1,
+      "kind": "reinforcements",
+      "actionsAfter": 13
+    },
+    {
+      "phase": "soviet-buildup",
+      "actor": "soviet",
+      "turn": 1,
+      "kind": "other",
+      "actionsAfter": 14
+    },
+    {
+      "phase": "soviet-special-movement",
+      "actor": "soviet",
+      "turn": 1,
+      "kind": "movement",
+      "actionsAfter": 15
+    },
+    {
+      "phase": "soviet-special-movement",
+      "actor": "soviet",
+      "turn": 1,
+      "kind": "movementResolved",
+      "actionsAfter": 16
+    },
+    {
+      "phase": "soviet-special-movement",
+      "actor": "soviet",
+      "turn": 1,
+      "kind": "other",
+      "actionsAfter": 17
+    },
+    {
+      "phase": "soviet-combat",
+      "actor": "soviet",
+      "turn": 1,
+      "kind": "combatDeclarations",
+      "actionsAfter": 18
+    },
+    {
+      "phase": "soviet-combat",
+      "actor": "soviet",
+      "turn": 1,
+      "kind": "other",
+      "actionsAfter": 19
+    },
+    {
+      "phase": "soviet-combat",
+      "actor": "soviet",
+      "turn": 1,
+      "kind": "automaticNE",
+      "actionsAfter": 19
+    },
+    {
+      "phase": "soviet-combat",
+      "actor": "soviet",
+      "turn": 1,
+      "kind": "postCombat",
+      "actionsAfter": 20
+    },
+    {
+      "phase": "soviet-combat",
+      "actor": "soviet",
+      "turn": 1,
+      "kind": "other",
+      "actionsAfter": 21
+    },
+    {
+      "phase": "soviet-movement",
+      "actor": "soviet",
+      "turn": 1,
+      "kind": "movement",
+      "actionsAfter": 22
+    },
+    {
+      "phase": "soviet-movement",
+      "actor": "soviet",
+      "turn": 1,
+      "kind": "movementResolved",
+      "actionsAfter": 23
+    },
+    {
+      "phase": "soviet-movement",
+      "actor": "soviet",
+      "turn": 1,
+      "kind": "other",
+      "actionsAfter": 24
+    },
+    {
+      "phase": "housekeeping",
+      "actor": "system",
+      "turn": 1,
+      "kind": "other",
+      "actionsAfter": 25
+    },
+    {
+      "phase": "german-buildup",
+      "actor": "german",
+      "turn": 2,
+      "kind": "other",
+      "actionsAfter": 26
+    },
+    {
+      "phase": "german-movement",
+      "actor": "german",
+      "turn": 2,
+      "kind": "movement",
+      "actionsAfter": 27
+    },
+    {
+      "phase": "german-movement",
+      "actor": "german",
+      "turn": 2,
+      "kind": "movementResolved",
+      "actionsAfter": 28
+    },
+    {
+      "phase": "german-movement",
+      "actor": "german",
+      "turn": 2,
+      "kind": "other",
+      "actionsAfter": 29
+    },
+    {
+      "phase": "german-combat",
+      "actor": "german",
+      "turn": 2,
+      "kind": "other",
+      "actionsAfter": 30
+    },
+    {
+      "phase": "german-combat",
+      "actor": "german",
+      "turn": 2,
+      "kind": "other",
+      "actionsAfter": 31
+    },
+    {
+      "phase": "german-combat",
+      "actor": "german",
+      "turn": 2,
+      "kind": "other",
+      "actionsAfter": 32
+    },
+    {
+      "phase": "german-special-movement",
+      "actor": "german",
+      "turn": 2,
+      "kind": "other",
+      "actionsAfter": 33
+    },
+    {
+      "phase": "soviet-buildup",
+      "actor": "soviet",
+      "turn": 2,
+      "kind": "other",
+      "actionsAfter": 34
+    },
+    {
+      "phase": "soviet-special-movement",
+      "actor": "soviet",
+      "turn": 2,
+      "kind": "other",
+      "actionsAfter": 35
+    },
+    {
+      "phase": "soviet-combat",
+      "actor": "soviet",
+      "turn": 2,
+      "kind": "other",
+      "actionsAfter": 36
+    },
+    {
+      "phase": "soviet-combat",
+      "actor": "soviet",
+      "turn": 2,
+      "kind": "other",
+      "actionsAfter": 37
+    },
+    {
+      "phase": "soviet-movement",
+      "actor": "soviet",
+      "turn": 2,
+      "kind": "other",
+      "actionsAfter": 38
+    },
+    {
+      "phase": "housekeeping",
+      "actor": "system",
+      "turn": 2,
+      "kind": "other",
+      "actionsAfter": 39
+    },
+    {
+      "phase": "german-buildup",
+      "actor": "german",
+      "turn": 3,
+      "kind": "other",
+      "actionsAfter": 40
+    },
+    {
+      "phase": "german-movement",
+      "actor": "german",
+      "turn": 3,
+      "kind": "other",
+      "actionsAfter": 41
+    },
+    {
+      "phase": "german-combat",
+      "actor": "german",
+      "turn": 3,
+      "kind": "other",
+      "actionsAfter": 42
+    },
+    {
+      "phase": "german-combat",
+      "actor": "german",
+      "turn": 3,
+      "kind": "other",
+      "actionsAfter": 43
+    },
+    {
+      "phase": "german-combat",
+      "actor": "german",
+      "turn": 3,
+      "kind": "other",
+      "actionsAfter": 44
+    },
+    {
+      "phase": "german-special-movement",
+      "actor": "german",
+      "turn": 3,
+      "kind": "other",
+      "actionsAfter": 45
+    },
+    {
+      "phase": "soviet-buildup",
+      "actor": "soviet",
+      "turn": 3,
+      "kind": "other",
+      "actionsAfter": 46
+    },
+    {
+      "phase": "soviet-special-movement",
+      "actor": "soviet",
+      "turn": 3,
+      "kind": "other",
+      "actionsAfter": 47
+    },
+    {
+      "phase": "soviet-combat",
+      "actor": "soviet",
+      "turn": 3,
+      "kind": "other",
+      "actionsAfter": 48
+    },
+    {
+      "phase": "soviet-combat",
+      "actor": "soviet",
+      "turn": 3,
+      "kind": "other",
+      "actionsAfter": 49
+    },
+    {
+      "phase": "soviet-movement",
+      "actor": "soviet",
+      "turn": 3,
+      "kind": "other",
+      "actionsAfter": 50
+    },
+    {
+      "phase": "housekeeping",
+      "actor": "system",
+      "turn": 3,
+      "kind": "other",
+      "actionsAfter": 51
+    },
+    {
+      "phase": "german-buildup",
+      "actor": "german",
+      "turn": 4,
+      "kind": "other",
+      "actionsAfter": 52
+    },
+    {
+      "phase": "german-movement",
+      "actor": "german",
+      "turn": 4,
+      "kind": "other",
+      "actionsAfter": 53
+    },
+    {
+      "phase": "german-combat",
+      "actor": "german",
+      "turn": 4,
+      "kind": "other",
+      "actionsAfter": 54
+    },
+    {
+      "phase": "german-combat",
+      "actor": "german",
+      "turn": 4,
+      "kind": "other",
+      "actionsAfter": 55
+    },
+    {
+      "phase": "german-combat",
+      "actor": "german",
+      "turn": 4,
+      "kind": "other",
+      "actionsAfter": 56
+    },
+    {
+      "phase": "german-special-movement",
+      "actor": "german",
+      "turn": 4,
+      "kind": "other",
+      "actionsAfter": 57
+    },
+    {
+      "phase": "soviet-buildup",
+      "actor": "soviet",
+      "turn": 4,
+      "kind": "other",
+      "actionsAfter": 58
+    },
+    {
+      "phase": "soviet-special-movement",
+      "actor": "soviet",
+      "turn": 4,
+      "kind": "other",
+      "actionsAfter": 59
+    },
+    {
+      "phase": "soviet-combat",
+      "actor": "soviet",
+      "turn": 4,
+      "kind": "other",
+      "actionsAfter": 60
+    },
+    {
+      "phase": "soviet-combat",
+      "actor": "soviet",
+      "turn": 4,
+      "kind": "other",
+      "actionsAfter": 61
+    },
+    {
+      "phase": "soviet-movement",
+      "actor": "soviet",
+      "turn": 4,
+      "kind": "other",
+      "actionsAfter": 62
+    },
+    {
+      "phase": "housekeeping",
+      "actor": "system",
+      "turn": 4,
+      "kind": "other",
+      "actionsAfter": 63
+    },
+    {
+      "phase": "german-buildup",
+      "actor": "german",
+      "turn": 5,
+      "kind": "other",
+      "actionsAfter": 64
+    },
+    {
+      "phase": "german-movement",
+      "actor": "german",
+      "turn": 5,
+      "kind": "other",
+      "actionsAfter": 65
+    },
+    {
+      "phase": "german-combat",
+      "actor": "german",
+      "turn": 5,
+      "kind": "other",
+      "actionsAfter": 66
+    },
+    {
+      "phase": "german-combat",
+      "actor": "german",
+      "turn": 5,
+      "kind": "other",
+      "actionsAfter": 67
+    },
+    {
+      "phase": "german-combat",
+      "actor": "german",
+      "turn": 5,
+      "kind": "other",
+      "actionsAfter": 68
+    },
+    {
+      "phase": "german-special-movement",
+      "actor": "german",
+      "turn": 5,
+      "kind": "other",
+      "actionsAfter": 69
+    },
+    {
+      "phase": "soviet-buildup",
+      "actor": "soviet",
+      "turn": 5,
+      "kind": "other",
+      "actionsAfter": 70
+    },
+    {
+      "phase": "soviet-special-movement",
+      "actor": "soviet",
+      "turn": 5,
+      "kind": "other",
+      "actionsAfter": 71
+    },
+    {
+      "phase": "soviet-combat",
+      "actor": "soviet",
+      "turn": 5,
+      "kind": "other",
+      "actionsAfter": 72
+    },
+    {
+      "phase": "soviet-combat",
+      "actor": "soviet",
+      "turn": 5,
+      "kind": "other",
+      "actionsAfter": 73
+    },
+    {
+      "phase": "soviet-movement",
+      "actor": "soviet",
+      "turn": 5,
+      "kind": "other",
+      "actionsAfter": 74
+    },
+    {
+      "phase": "housekeeping",
+      "actor": "system",
+      "turn": 5,
+      "kind": "other",
+      "actionsAfter": 75
+    },
+    {
+      "phase": "german-buildup",
+      "actor": "german",
+      "turn": 6,
+      "kind": "other",
+      "actionsAfter": 76
+    },
+    {
+      "phase": "german-movement",
+      "actor": "german",
+      "turn": 6,
+      "kind": "other",
+      "actionsAfter": 77
+    },
+    {
+      "phase": "german-combat",
+      "actor": "german",
+      "turn": 6,
+      "kind": "other",
+      "actionsAfter": 78
+    },
+    {
+      "phase": "german-combat",
+      "actor": "german",
+      "turn": 6,
+      "kind": "other",
+      "actionsAfter": 79
+    },
+    {
+      "phase": "german-combat",
+      "actor": "german",
+      "turn": 6,
+      "kind": "other",
+      "actionsAfter": 80
+    },
+    {
+      "phase": "german-special-movement",
+      "actor": "german",
+      "turn": 6,
+      "kind": "other",
+      "actionsAfter": 81
+    },
+    {
+      "phase": "soviet-buildup",
+      "actor": "soviet",
+      "turn": 6,
+      "kind": "other",
+      "actionsAfter": 82
+    },
+    {
+      "phase": "soviet-special-movement",
+      "actor": "soviet",
+      "turn": 6,
+      "kind": "other",
+      "actionsAfter": 83
+    },
+    {
+      "phase": "soviet-combat",
+      "actor": "soviet",
+      "turn": 6,
+      "kind": "other",
+      "actionsAfter": 84
+    },
+    {
+      "phase": "soviet-combat",
+      "actor": "soviet",
+      "turn": 6,
+      "kind": "other",
+      "actionsAfter": 85
+    },
+    {
+      "phase": "soviet-movement",
+      "actor": "soviet",
+      "turn": 6,
+      "kind": "other",
+      "actionsAfter": 86
+    },
+    {
+      "phase": "housekeeping",
+      "actor": "system",
+      "turn": 6,
+      "kind": "other",
+      "actionsAfter": 87
+    },
+    {
+      "phase": "german-buildup",
+      "actor": "german",
+      "turn": 7,
+      "kind": "other",
+      "actionsAfter": 88
+    },
+    {
+      "phase": "german-movement",
+      "actor": "german",
+      "turn": 7,
+      "kind": "other",
+      "actionsAfter": 89
+    },
+    {
+      "phase": "german-combat",
+      "actor": "german",
+      "turn": 7,
+      "kind": "other",
+      "actionsAfter": 90
+    },
+    {
+      "phase": "german-combat",
+      "actor": "german",
+      "turn": 7,
+      "kind": "other",
+      "actionsAfter": 91
+    },
+    {
+      "phase": "german-combat",
+      "actor": "german",
+      "turn": 7,
+      "kind": "other",
+      "actionsAfter": 92
+    },
+    {
+      "phase": "german-special-movement",
+      "actor": "german",
+      "turn": 7,
+      "kind": "other",
+      "actionsAfter": 93
+    },
+    {
+      "phase": "soviet-buildup",
+      "actor": "soviet",
+      "turn": 7,
+      "kind": "other",
+      "actionsAfter": 94
+    },
+    {
+      "phase": "soviet-special-movement",
+      "actor": "soviet",
+      "turn": 7,
+      "kind": "other",
+      "actionsAfter": 95
+    },
+    {
+      "phase": "soviet-combat",
+      "actor": "soviet",
+      "turn": 7,
+      "kind": "other",
+      "actionsAfter": 96
+    },
+    {
+      "phase": "soviet-combat",
+      "actor": "soviet",
+      "turn": 7,
+      "kind": "other",
+      "actionsAfter": 97
+    },
+    {
+      "phase": "soviet-movement",
+      "actor": "soviet",
+      "turn": 7,
+      "kind": "other",
+      "actionsAfter": 98
+    },
+    {
+      "phase": "housekeeping",
+      "actor": "system",
+      "turn": 7,
+      "kind": "other",
+      "actionsAfter": 99
+    }
+  ],
+  "finalStateHash": "02af434be22aecf5a6c19aeb27d9799a4e98f7f6db99e5fc903828b12d24e0c4",
+  "bundleSHA256": "0a057a6f56e48c873464eff6f4f0ee84e8b661bdd68f8c4d5c21bbdf484460f9",
+  "testMethod": "101 scripted selections via actual UI controls; no baseline AI commit calls; fresh Chromium save/restore across stages"
+}

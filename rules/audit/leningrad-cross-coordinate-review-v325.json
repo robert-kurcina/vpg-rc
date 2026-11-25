@@ -1,0 +1,130 @@
+{
+  "schemaVersion": 2,
+  "scenario": "leningrad",
+  "status": "user-screenshot-correction-pending-registration-fix",
+  "sourceScan": "maps/source/leningrad-map-scan-current.jpg",
+  "sourceScanSha256": "e2d718355490cbcdbecad4699aa4da2aebd477de736ee9aa26536e62347da17c",
+  "diagnosticCrop": "rules/audit/visual/leningrad-east-prussia-scan-crop-v324.png",
+  "diagnosticCropSha256": "f5cb9a5e4ea68156c6e1230e5bd36b58a6c8e7eb4fb4da837603330baaee7d73",
+  "coordinateFrame": "pixels relative to unmodified v324 scan-derived diagnostic crop",
+  "userSuppliedReferences": [
+    {
+      "path": "rules/audit/visual/leningrad-user-board-scan-v326.png",
+      "sha256": "bae41db5e00e4802bb1c64cd0461fcd360776434bff79a466ddfac4979a39626"
+    },
+    {
+      "path": "rules/audit/visual/leningrad-user-overlay-comparison-v326.png",
+      "sha256": "a1928129ffd22cee08d512f081b123148af294cc18bcf715d268516860934631"
+    }
+  ],
+  "reviewedBlackCrosses": [
+    {
+      "hex": "0109",
+      "cropPixelCenter": [
+        178,
+        311
+      ],
+      "reviewBasis": "cross next to visible 0109 number",
+      "coordinateConfidence": "high"
+    },
+    {
+      "hex": "0210",
+      "cropPixelCenter": [
+        352,
+        397
+      ],
+      "reviewBasis": "cross beneath visible 0210 number",
+      "coordinateConfidence": "high"
+    },
+    {
+      "hex": "0310",
+      "cropPixelCenter": [
+        519,
+        500
+      ],
+      "reviewBasis": "cross beneath visible 0310 number",
+      "coordinateConfidence": "high"
+    },
+    {
+      "hex": "0211",
+      "cropPixelCenter": [
+        320,
+        626
+      ],
+      "reviewBasis": "cross in Insterburg hex, column 02 bottom row in supplied board screenshot",
+      "coordinateConfidence": "high"
+    },
+    {
+      "hex": "0411",
+      "cropPixelCenter": [
+        670,
+        578
+      ],
+      "reviewBasis": "cross beneath visible 0411 number",
+      "coordinateConfidence": "high"
+    }
+  ],
+  "reviewedCandidateHexes": [
+    "0109",
+    "0210",
+    "0211",
+    "0310",
+    "0411"
+  ],
+  "temporarySvgRegistry": [
+    "0109",
+    "0210",
+    "0310",
+    "0411"
+  ],
+  "mainSvgRegistry": [
+    "0210",
+    "0310",
+    "0311",
+    "0411",
+    "0511"
+  ],
+  "temporaryComparison": {
+    "scanOnly": [
+      "0211"
+    ],
+    "candidateOnly": [],
+    "shared": [
+      "0109",
+      "0210",
+      "0310",
+      "0411"
+    ]
+  },
+  "mainComparison": {
+    "scanOnly": [
+      "0109",
+      "0211"
+    ],
+    "candidateOnly": [
+      "0311",
+      "0511"
+    ],
+    "shared": [
+      "0210",
+      "0310",
+      "0411"
+    ]
+  },
+  "sovietStarCorrection": {
+    "boardScanHex": "0510",
+    "legacyConfusedWith": "0511",
+    "mapStarAt0510": true
+  },
+  "legacyCityRegistrationConflict": {
+    "city": "Insterburg",
+    "scanHex": "0211",
+    "mapJsonHex": "0311"
+  },
+  "uncertainties": [
+    "Source SVG and map JSON registrations have not been rewritten or graph-certified",
+    "Counter assignments and all other deployments require independent verification"
+  ],
+  "sourcePolicy": "No historical setup activation; original SVG, printed scan, map JSON, and gameplay untouched",
+  "historicalSetupAuthorized": false
+}

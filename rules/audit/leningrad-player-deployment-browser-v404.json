@@ -1,0 +1,17 @@
+{
+  "checkpoint": 170,
+  "status": "PASS",
+  "sourceMapUnchanged": true,
+  "officialCounters": 19,
+  "validMove": true,
+  "invalidMoveRejected": true,
+  "mixRequired": true,
+  "setupSaveRestore": true,
+  "customCampaignSaveRestore": true,
+  "checksumRejectsModification": true,
+  "turnOneHandoff": true,
+  "actionsAfterHandoff": 1,
+  "pageErrors": [],
+  "screenshot": "rules/audit/visual/leningrad-player-deployment-v404.png",
+  "scope": "Isolated actual Chromium with byte-identical shared engine/map and official counter SVG templates"
+}

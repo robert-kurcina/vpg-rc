@@ -1,0 +1,25 @@
+'use strict';
+const assert=require('node:assert/strict'),fs=require('fs'),path=require('path');
+const root=path.resolve(__dirname,'..');const T=require('../core/terrain_tiles');const P=require('../core/presentation');const C=require('../maps/composer');
+const base=JSON.parse(fs.readFileSync(path.join(root,'maps/kiev.json')));const ext=JSON.parse(fs.readFileSync(path.join(root,'maps/odessa-extension.json')));const board=C.compose(base,ext);
+const opts=P.options('kiev-odessa',{id:'city-forest-regression',showGrid:true});
+const svg=T.svgMap(board,opts);
+const where=(needle)=>{const i=svg.indexOf(needle);assert(i>=0,'Missing '+needle);return i;};
+assert.equal((svg.match(/class="major-city-gray-hex"/g)||[]).length,2);
+assert(svg.includes('data-major-city-hex="1404"')&&svg.includes('data-major-city-hex="1513"'));
+assert.match(svg,/class="major-city-gray-hex"[^>]*fill="#ccc"/);
+assert.doesNotMatch(svg,/forest-shadow|feGaussianBlur/);
+assert(where('data-layer="open-terrain"')<where('data-layer="swamp-terrain"'));
+assert(where('data-layer="swamp-terrain"')<where('data-layer="forest-terrain"'));
+assert(where('data-layer="open-terrain"')<where('data-layer="forest-terrain"'));
+assert(where('data-layer="major-city-ground"')<where('data-layer="forest-terrain"'));
+assert(where('data-layer="city-hex-highlights"')<where('data-layer="forest-terrain"'));
+assert(where('data-layer="major-city-ground"')<where('data-layer="city-hex-highlights"'));
+assert(where('data-layer="city-hex-highlights"')<where('data-layer="forest-terrain"'));
+assert(where('data-layer="cities"')>where('data-layer="forest-terrain"'));
+assert(where('data-layer="city-hex-highlights"')<where('data-layer="cities"'));
+assert.match(svg,/class="city-hex-highlight"[^>]*stroke-width="11\.60"/);
+assert.equal((svg.match(/class="city-hex-highlight"/g)||[]).length,board.cells.filter(c=>c.city||c.tileMarkers?.some(m=>m.kind==='city'||m.kind==='majorCity')).length);
+const legacy=T.svgMap(JSON.parse(fs.readFileSync(path.join(root,'maps/kiev.json'))),P.options('kiev',{id:'legacy-kiev'}));
+assert(!legacy.includes('forest-shadow-layer'));assert(legacy.includes('major-city-ground-layer')); // universal style without shadow
+console.log('v295 city, major-city terrain and forest layer checks pass');

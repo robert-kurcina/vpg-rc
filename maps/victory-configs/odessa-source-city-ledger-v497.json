@@ -1,0 +1,145 @@
+{
+  "schemaVersion": 1,
+  "id": "odessa-source-city-ledger-v497",
+  "status": "source-candidate-not-gameplay-authorized",
+  "source": [
+    "references/rules/odessa-rules.pdf §5 (20 cities; three initially Axis-controlled; isolation outcomes)",
+    "references/rules/odessa-rules.pdf §15.1 (ports Odessa/Nikolaev)",
+    "maps/source/kiev-odessa-map-scan.jpg (printed Braila, hex 1016; active display Brăila)",
+    "maps/source/user-svg/kiev-odessa-main.svg (city placement geometry)"
+  ],
+  "sourceSHA256": {
+    "maps/source/kiev-odessa-map-scan.jpg": "cb7f3dad98fc2a68055e2899fc7d85b14c356176fcb6fc99be79079199e5d6be",
+    "maps/source/user-svg/kiev-odessa-main.svg": "2b15c3a92a282a7efc27d54bcd8994470f0fce8ee5417d5d734969fcd2c4ab7e",
+    "references/rules/odessa-rules.pdf": "c7def97fe2de9ae66dc89da5f7d3417e3283846485903b90b88f153ba9791bab"
+  },
+  "mapId": "kiev-odessa-composite-v256",
+  "cityCount": 20,
+  "cities": [
+    {
+      "name": "Lublin",
+      "hex": "0201",
+      "kind": "city"
+    },
+    {
+      "name": "Lvov",
+      "hex": "0404",
+      "kind": "city"
+    },
+    {
+      "name": "Kovel",
+      "hex": "0502",
+      "kind": "city"
+    },
+    {
+      "name": "Stanislavov",
+      "hex": "0507",
+      "kind": "city"
+    },
+    {
+      "name": "Tarnopol",
+      "hex": "0706",
+      "kind": "city"
+    },
+    {
+      "name": "Chernovtsy",
+      "hex": "0708",
+      "kind": "city"
+    },
+    {
+      "name": "Rovno",
+      "hex": "0803",
+      "kind": "city"
+    },
+    {
+      "name": "Sarny",
+      "hex": "0902",
+      "kind": "city"
+    },
+    {
+      "name": "Shepetovka",
+      "hex": "0905",
+      "kind": "city"
+    },
+    {
+      "name": "Iasi",
+      "hex": "1010",
+      "kind": "city"
+    },
+    {
+      "name": "Brăila",
+      "hex": "1016",
+      "kind": "city"
+    },
+    {
+      "name": "Zhitomir",
+      "hex": "1105",
+      "kind": "city"
+    },
+    {
+      "name": "Vinnitsa",
+      "hex": "1107",
+      "kind": "city"
+    },
+    {
+      "name": "Chisinau",
+      "hex": "1211",
+      "kind": "city"
+    },
+    {
+      "name": "Kiev",
+      "hex": "1404",
+      "kind": "major-city"
+    },
+    {
+      "name": "Uman",
+      "hex": "1408",
+      "kind": "city"
+    },
+    {
+      "name": "Odessa",
+      "hex": "1513",
+      "kind": "major-city"
+    },
+    {
+      "name": "Chernigov",
+      "hex": "1602",
+      "kind": "city"
+    },
+    {
+      "name": "Kirovograd",
+      "hex": "1708",
+      "kind": "city"
+    },
+    {
+      "name": "Nikolaev",
+      "hex": "1811",
+      "kind": "city"
+    }
+  ],
+  "addedCityNames": [
+    "Brăila",
+    "Chisinau",
+    "Odessa",
+    "Nikolaev"
+  ],
+  "initialAxisCities": [
+    "Lublin",
+    "Iasi",
+    "Brăila"
+  ],
+  "ports": [
+    "Odessa",
+    "Nikolaev"
+  ],
+  "victoryRule": {
+    "turns": 7,
+    "axisAllCities": 20,
+    "axis19Isolated": true,
+    "sovietAtMost": 17,
+    "soviet18BothCommunicated": true,
+    "draw19NotIsolated": true,
+    "draw18EitherIsolated": true
+  },
+  "note": "Victory evaluator in this checkpoint requires externally supplied isolation flags and remains diagnostic; no live Odessa campaign, graph, fleet, or setup authorized."
+}

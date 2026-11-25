@@ -1,0 +1,128 @@
+[
+  {
+    "test": "tests/kiev-definitive-city-river-v429.test.js",
+    "result": "PASS",
+    "seconds": 0.08,
+    "excerpt": "Kiev city/river source geometry and movement gate: PASS\n\n"
+  },
+  {
+    "test": "tests/kiev-definitive-terrain-v428.test.js",
+    "result": "PASS",
+    "seconds": 0.07,
+    "excerpt": "PASS Kiev source terrain: 149 explicit, 16 city-overlays open, 3 corrections; movement gate remains closed.\n\n"
+  },
+  {
+    "test": "tests/kiev-definitive-rail-v427.test.js",
+    "result": "PASS",
+    "seconds": 6.34,
+    "excerpt": "PASS v427: 93 definitive-source Kiev rails; 186 reciprocal sides; five retired links, one new; no gameplay authorization.\n\n"
+  },
+  {
+    "test": "tests/kiev-roster-and-victory-v410.test.js",
+    "result": "PASS",
+    "seconds": 0.06,
+    "excerpt": "PASS v410 Kiev photographed counters + \u00a75 victory: 192 assertions\n\n"
+  },
+  {
+    "test": "tests/kiev-rail-parity-v300.test.js",
+    "result": "PASS",
+    "seconds": 0.09,
+    "excerpt": "PASS v300: 24 identical authored railway paths, exact SVG rail geometry, clipped to Kiev hex footprint\n\n"
+  },
+  {
+    "test": "tests/kiev-odessa-composite-seam-v318.test.js",
+    "result": "PASS",
+    "seconds": 0.09,
+    "excerpt": "PASS Kiev\u2013Odessa composed geometry seam audit: {\"baseMapId\":\"kiev-native-draft-v231\",\"extensionMapId\":\"odessa-extension\",\"compositeMapId\":\"kiev-odessa-composite-v256\",\"baseHexes\":165,\"extensionHexes\":96,\"totalHexes\":261,\"seamPairs\":24,\"blockedByAuthoredShore\":0,\"authoredShoreEntries\":32,\"railCenterConnections\":0,\"gameplayCertified\":false,\"graphPurpose\":\"geometry-audit-only\"}\n\n"
+  },
+  {
+    "test": "tests/kiev-odessa-svg-side-occupancy-v318.test.js",
+    "result": "PASS",
+    "seconds": 0.17,
+    "excerpt": "kiev-odessa-svg-side-occupancy: PASS\n\n"
+  },
+  {
+    "test": "tests/cross-game-movement-profiles-v318.test.js",
+    "result": "PASS",
+    "seconds": 0.03,
+    "excerpt": "Cross-game movement profile tests: 29 passed\n\n"
+  },
+  {
+    "test": "tests/cross-game-movement-registry-v318.test.js",
+    "result": "PASS",
+    "seconds": 0.03,
+    "excerpt": "Movement registry: four historical configurations verified\n\n"
+  },
+  {
+    "test": "tests/cross-game-movement-v318.test.js",
+    "result": "PASS",
+    "seconds": 0.03,
+    "excerpt": "Cross-game movement: 28 assertions passed\n\n"
+  },
+  {
+    "test": "tests/arduous-executable-graph-v419.test.js",
+    "result": "PASS",
+    "seconds": 0.08,
+    "excerpt": "PASS Arduous executable graph 21 checks (155 hexes, 85 rails, 45 river sides)\n\n"
+  },
+  {
+    "test": "tests/arduous-combat-river-fortification-v419.test.js",
+    "result": "PASS",
+    "seconds": 0.06,
+    "excerpt": "PASS Arduous shared CRT, fortification and approved river combat 17 checks\n\n"
+  },
+  {
+    "test": "tests/arduous-full-source-opening-v413.test.js",
+    "result": "PASS",
+    "seconds": 0.07,
+    "excerpt": "rrison\",\"hex\":\"0211\",\"owner\":\"soviet\",\"sourceFaceId\":\"arduous-front-r04c03\",\"activeFaceId\":\"arduous-back-r04c06\",\"sourceMapMarkerSvgId\":\"use337\",\"printedValues\":\"3-4\",\"printedAffiliation\":\"axis\",\"ruleSource\":\"references/rules/arduous-rules.pdf \u00a76.0, printed page 2\"}],\"sourceNamedCityAnchors\":{\"fixedMechanized\":[{\"hex\":\"0907\",\"sourceSvgId\":\"use334\",\"kind\":\"fixedMechanized\",\"terrain\":\"open\",\"anchorSource\":\"rule-and-authored-city\",\"ruleSource\":\"arduous-rules.pdf \u00a76.0 #2\"},{\"hex\":\"0609\",\"sourceSvgId\":\"use336\",\"kind\":\"fixedMechanized\",\"terrain\":\"open\",\"anchorSource\":\"rule-and-authored-city\",\"ruleSource\":\"arduous-rules.pdf \u00a76.0 #2\"},{\"hex\":\"1510\",\"sourceSvgId\":\"use338\",\"kind\":\"fixedMechanized\",\"terrain\":\"open\",\"anchorSource\":\"rule-and-authored-city\",\"ruleSource\":\"arduous-rules.pdf \u00a76.0 #2\"}]}}\n\n"
+  },
+  {
+    "test": "tests/arduous-seven-turn-smoke-v419.test.js",
+    "result": "PASS",
+    "seconds": 2.46,
+    "excerpt": "even-turn source transaction smoke {\"checkpoint\":185,\"version\":\"v419\",\"scope\":\"seven-turn no-optional-combat-or-movement source-transaction smoke\",\"actions\":89,\"housekeeping\":7,\"reinforcements\":[{\"slot\":\"t1-sovietreinforcementarmies-1\",\"hex\":\"1801\"},{\"slot\":\"t1-sovietreinforcementarmies-2\",\"hex\":\"1802\"},{\"slot\":\"t1-sovietreinforcementmechanized-1\",\"hex\":\"1801\"},{\"slot\":\"t1-sovietreinforcementmechanized-2\",\"hex\":\"1802\"},{\"slot\":\"t2-sovietreinforcementarmies-1\",\"hex\":\"1803\"},{\"slot\":\"t2-sovietreinforcementmechanized-1\",\"hex\":\"1803\"},{\"slot\":\"t3-sovietreinforcementarmies-1\",\"hex\":\"1804\"}],\"terminal\":\"soviet-victory\",\"limitations\":[\"No optional attacks or movement exercised\",\"This is not a full human-play or AI-play acceptance\",\"The source opening uses a deterministic candidate assignment\"]}\n\n"
+  },
+  {
+    "test": "tests/arduous-roster-and-victory-v410.test.js",
+    "result": "PASS",
+    "seconds": 0.1,
+    "excerpt": "PASS v410 Arduous photographed counters + \u00a75 victory: 237 assertions\n\n"
+  },
+  {
+    "test": "tests/leningrad-combat-odds-v318.test.js",
+    "result": "PASS",
+    "seconds": 0.07,
+    "excerpt": "PASS Leningrad calculation-only combat odds and committed-battle binding 27 assertions\n\n"
+  },
+  {
+    "test": "tests/leningrad-combat-geography-v318.test.js",
+    "result": "PASS",
+    "seconds": 0.09,
+    "excerpt": "PASS Leningrad certified combat geography and deployment reconciliation 22 assertions\n\n"
+  },
+  {
+    "test": "tests/leningrad-combat-commitment-v318.test.js",
+    "result": "PASS",
+    "seconds": 0.1,
+    "excerpt": "PASS Leningrad immutable combat commitment 21 assertions\n\n"
+  },
+  {
+    "test": "tests/leningrad-movement-lifecycle-v318.test.js",
+    "result": "PASS",
+    "seconds": 0.07,
+    "excerpt": "PASS Leningrad bounded movement lifecycle 32 assertions\n\n"
+  },
+  {
+    "test": "tests/leningrad-canonical-projection-v347.test.js",
+    "result": "PASS",
+    "seconds": 0.06,
+    "excerpt": "PASS v347: 186 canonical IDs, 11 visual-only sea cells, exact 502-edge physical topology, fail-closed projection\n\n"
+  },
+  {
+    "test": "tests/leningrad-reinforcement-rules-v322.test.js",
+    "result": "PASS",
+    "seconds": 0.03,
+    "excerpt": "Leningrad reinforcement source-schedule/admission: passed\n\n"
+  }
+]

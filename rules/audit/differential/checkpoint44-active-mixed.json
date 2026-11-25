@@ -1,0 +1,11 @@
+{
+  "checkpoint": 44,
+  "reference": "bundled legacy Oberlabs-compatible B4M UI",
+  "candidate": "opt-in persistent WargameSession browser pilot",
+  "scope": "local two-browser parity, not upstream Oberlabs execution",
+  "checkpoints": 21,
+  "status": "pass",
+  "actions": ["replacement-entry", "finish-replacement", "panzer-special-movement", "finish-special", "defender-first-combat-declaration", "commit-die", "combat-resolution", "ordinary-movement", "end-half-turn", "nested-undo", "deterministic-combat-replay", "undo-through-replacement"],
+  "limitations": ["replacement restoration and Panzer special movement are not exercised together", "phase-Undo used-unit state differs between local legacy UI and shared session", "import/export and solo AI session adoption remain unverified"],
+  "test": "tests/b4m-browser-session-active-mixed-v317.py"
+}

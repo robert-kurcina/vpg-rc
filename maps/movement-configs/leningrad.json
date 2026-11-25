@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "terrainCosts": {
+    "open": 1,
+    "forest": 2,
+    "swamp": 2,
+    "city": 1,
+    "major-city": 1,
+    "fortification": 1
+  },
+  "railCost": 1,
+  "maxStack": 2,
+  "sovietArmyMax": 1,
+  "mapBinding": "requires-verified-adjacency-and-rail-edges",
+  "executableStatus": "verified-test-fixtures-only",
+  "firstTurnSurpriseMovement": false,
+  "nationalStackExclusions": [],
+  "majorRiverExtraCost": 0,
+  "id": "leningrad",
+  "source": [
+    "references/rules/leningrad-rules.pdf \u00a7\u00a77.1, 8.1, 9.1\u20139.4",
+    "references/rules/leningrad-aid.webp Terrain Effects Chart"
+  ],
+  "fullSpecialMovementClasses": {
+    "german": [
+      "panzer"
+    ],
+    "soviet": [
+      "mechanized"
+    ]
+  },
+  "allowFriendlyOverstackTransit": true
+}

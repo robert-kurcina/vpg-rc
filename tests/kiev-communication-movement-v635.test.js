@@ -1,0 +1,43 @@
+'use strict';
+const A=require('node:assert/strict'),Auto=require('../core/historical_campaign_autoplay'),Campaign=require('../core/historical_campaign_session'),Catalog=require('../core/historical_campaign_action_catalog');
+const F=require('./fixtures/kiev-source-opening-v437');
+const map=F.map,counterConfig=F.counterConfig,profile=require('../maps/movement-configs/kiev.json'),config=require('../maps/phase-configs/kiev.json');
+const combatPolicy=require('../maps/combat-configs/kiev.json');
+const committed=require('../core/historical_deployment_session').create({map,setupSpec:F.setupSpec,counterConfig,inventory:F.inventory,phaseConfig:config,movementProfile:profile,phaseFactories:{combat:()=>({})},allocation:F.allocation,placements:F.placements}).commit();
+const ctx={...committed.opening,map,profile,config,counterConfig,combatPolicy,enableAirSupport:true,buildupPolicy:require('../maps/buildup-configs/kiev.json'),buildupAllocation:committed.allocation,housekeepingPolicy:require('../maps/housekeeping-configs/kiev.json')};
+let n=0;const ok=(v,m)=>{A.ok(v,m);n++};const eq=(a,b,m)=>{A.deepEqual(a,b,m);n++};
+const cursor={...ctx.cursor,turn:3,index:config.phases.findIndex(p=>p.id==='german-movement')};
+const c={...ctx,actor:'german',cursor,state:structuredClone(Campaign.create(ctx).snapshot().state)};
+const s=Campaign.create(c),snap=s.snapshot(),before=s.save();
+const options=Catalog.discover({session:s,context:c,enumerateCombinedPlans:false});
+const ranked=Auto.rankObjectiveMoves({snapshot:snap,context:c,commands:options.commands,communication:true});
+ok(ranked.length>0);ok(ranked.length<=32);ok(ranked.every(x=>x.score>0));
+const B=require('../core/historical_buildup_phase').create({map,profile,config,counterConfig,policy:c.buildupPolicy,allocation:c.buildupAllocation,combatPolicy});
+for(const x of ranked){const {unitId,path}=x.action.request;const projected={...snap.state.units,[unitId]:{...snap.state.units[unitId],hex:path.at(-1)}};let net=0;for(const u of Object.values(snap.state.units).filter(u=>u.hex&&!u.marker)){const a=B.communicated(u.hex,u.owner,snap.state.units),b=B.communicated(projected[u.id].hex,u.owner,projected);net+=(Number(b)-Number(a))*(u.owner===snap.actor?1:-1);}eq(x.communication.net,net);}
+for(let i=1;i<ranked.length;i++)ok(ranked[i-1].score>=ranked[i].score);
+const d=Auto.decide({session:s,context:c,policy:{attackSelection:'continuation-pilot'}});
+eq(d.reason,'objective-directed-ground-movement');eq(d.action,ranked[0].action);eq(s.save(),before);
+const moved=s.execute(d.action).session;ok(moved.snapshot().pendingGround);
+const resolved=Auto.decide({session:moved,context:c,policy:{attackSelection:'continuation-pilot'}});eq(resolved.status,'action');ok(moved.execute(resolved.action).session.snapshot());
+const baseline=Auto.decide({session:s,context:c});eq(baseline.reason,'source-legal-ground-movement');
+const allFriendly={...snap,state:{...snap.state,cityControl:Object.fromEntries(Object.keys(snap.state.cityControl).map(k=>[k,snap.actor]))}};
+eq(Auto.rankObjectiveMoves({snapshot:allFriendly,context:c,commands:options.commands}),[]);
+console.log('PASS communication movement',n,'assertions; ranked',ranked.length,'best',JSON.stringify(ranked[0]));
+// Construct an isolated interior unit and compare a hypothetical relocation to
+// its source boundary. This is a scoring fixture, not a legal-move assertion.
+const board=require('../core/movement_binding').build(map,profile).board;
+const boundary=new Set(c.buildupPolicy.entryEdge.german);
+const interior=Object.keys(board.cells).find(h=>!boundary.has(h)&&board.cells[h].terrain==='open'&&board.edges.filter(e=>e.verified&&!e.impassable&&!e.allSea&&!e.lake&&(e.a===h||e.b===h)).length>=3);
+const neighbors=board.edges.filter(e=>e.verified&&!e.impassable&&!e.allSea&&!e.lake&&(e.a===interior||e.b===interior)).map(e=>e.a===interior?e.b:e.a);
+const friendly=Object.values(snap.state.units).find(u=>u.owner==='german');
+const enemies=Object.values(snap.state.units).filter(u=>u.owner==='soviet').slice(0,neighbors.length);
+const isolated=Object.fromEntries([{...friendly,hex:interior},...enemies.map((u,i)=>({...u,hex:neighbors[i]}))].map(u=>[u.id,u]));
+const dest=[...boundary].find(h=>!neighbors.includes(h));
+eq(B.communicated(interior,'german',isolated),false);
+const cc=Object.fromEntries(Object.keys(snap.state.cityControl).map(k=>[k,'german']));
+const fixture={...snap,state:{...snap.state,units:isolated,cityControl:cc}};
+const hypothetical={type:'declare-ground-move',request:{unitId:friendly.id,path:[interior,dest]}};
+const result=Auto.rankObjectiveMoves({snapshot:fixture,context:c,commands:[hypothetical],communication:true});
+eq(result.length,1);eq(result[0].communication.friendlyRestored,1);ok(result[0].score>0);
+const blocked=Auto.rankObjectiveMoves({snapshot:{...fixture,state:{...fixture.state,supportMarkers:{fleet:{hex:dest}}}},context:c,commands:[hypothetical],communication:true});eq(blocked,[]);
+console.log('PASS communication transition fixture; total',n);

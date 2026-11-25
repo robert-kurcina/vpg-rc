@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 1,
+  "scenarioId": "kiev",
+  "mode": "phase-simulation-only",
+  "source": "references/rules/kiev-rules.pdf \u00a7\u00a74.0, 6.0",
+  "turns": 7,
+  "players": [
+    "german",
+    "soviet"
+  ],
+  "firstTurnStart": "german-combat",
+  "phases": [
+    {
+      "id": "german-buildup",
+      "owner": "german",
+      "kind": "buildup",
+      "permissions": [
+        "replace",
+        "reinforce"
+      ]
+    },
+    {
+      "id": "german-movement",
+      "owner": "german",
+      "kind": "movement",
+      "permissions": [
+        "move"
+      ]
+    },
+    {
+      "id": "german-combat",
+      "owner": "german",
+      "kind": "combat",
+      "permissions": [
+        "declare-attack",
+        "resolve-combat"
+      ]
+    },
+    {
+      "id": "german-special-movement",
+      "owner": "german",
+      "kind": "special-movement",
+      "permissions": [
+        "move"
+      ]
+    },
+    {
+      "id": "soviet-buildup",
+      "owner": "soviet",
+      "kind": "buildup",
+      "permissions": [
+        "replace",
+        "reinforce"
+      ]
+    },
+    {
+      "id": "soviet-special-movement",
+      "owner": "soviet",
+      "kind": "special-movement",
+      "permissions": [
+        "move"
+      ]
+    },
+    {
+      "id": "soviet-combat",
+      "owner": "soviet",
+      "kind": "combat",
+      "permissions": [
+        "declare-attack",
+        "resolve-combat"
+      ]
+    },
+    {
+      "id": "soviet-movement",
+      "owner": "soviet",
+      "kind": "movement",
+      "permissions": [
+        "move"
+      ]
+    },
+    {
+      "id": "housekeeping",
+      "owner": "system",
+      "kind": "housekeeping",
+      "permissions": [
+        "end-turn"
+      ]
+    }
+  ],
+  "notes": [
+    "Axis is represented internally by german player identifier; includes German-allied contingents.",
+    "The first game turn begins at Axis Combat, omitting Axis Build-Up and Axis Movement (Kiev \u00a76.0(9)).",
+    "Permissions are descriptive and cannot authorize gameplay without source-backed legality handlers."
+  ]
+}

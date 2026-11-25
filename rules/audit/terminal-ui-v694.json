@@ -1,0 +1,367 @@
+{
+  "baseline": "v693",
+  "checkpoint": 472,
+  "evidence": "Previously played checkpoint 469 journals, hash-verified replay; actual isolated Chromium with transaction fixture, not fresh AI campaigns or real-origin IndexedDB.",
+  "results": [
+    {
+      "scenario": "arduous",
+      "mode": "historical",
+      "actions": 645,
+      "outcome": "soviet-victory",
+      "terminal": {
+        "axisControlledCount": 5,
+        "cityControl": {
+          "Baranovichi": "soviet",
+          "Brest-Litovsk": "german",
+          "Gomel": "soviet",
+          "Minsk": "german",
+          "Mogilev": "soviet",
+          "Orsha": "soviet",
+          "Polotsk": "soviet",
+          "Roslavl": "soviet",
+          "Smolensk": "soviet",
+          "Velikie Luki": "german",
+          "Vilnius": "german",
+          "Vitebsk": "german"
+        },
+        "onlyRemainingCity": null,
+        "onlyRemainingCityIsolated": null,
+        "outcome": "soviet-victory",
+        "reason": "axis-controls-at-most-threshold",
+        "totalCities": 12
+      },
+      "exactRestore": true,
+      "terminalUndoRedo": true,
+      "storageFixture": true,
+      "bytes": 116073
+    },
+    {
+      "scenario": "leningrad",
+      "mode": "historical",
+      "actions": 539,
+      "outcome": "soviet-victory",
+      "terminal": {
+        "axisControlledCount": 7,
+        "cityControl": {
+          "Daugavpils": "german",
+          "Insterburg": "german",
+          "Kaunas": "german",
+          "Leningrad": "soviet",
+          "Liepaja": "german",
+          "Luga": "german",
+          "Narva": "soviet",
+          "Novgorod": "soviet",
+          "Parnu": "soviet",
+          "Pskov": "soviet",
+          "Riga": "german",
+          "Siauliai": "german",
+          "Tallinn": "soviet",
+          "Tartu": "soviet"
+        },
+        "onlyRemainingCity": "Leningrad",
+        "onlyRemainingCityIsolated": null,
+        "outcome": "soviet-victory",
+        "reason": "axis-controls-at-most-threshold",
+        "totalCities": 14
+      },
+      "exactRestore": true,
+      "terminalUndoRedo": true,
+      "storageFixture": true,
+      "bytes": 93946
+    },
+    {
+      "scenario": "kiev",
+      "mode": "historical",
+      "actions": 600,
+      "outcome": "soviet-victory",
+      "terminal": {
+        "axisControlledCount": 11,
+        "cityControl": {
+          "Chernigov": "soviet",
+          "Chernovtsy": "german",
+          "Iasi": "soviet",
+          "Kiev": "soviet",
+          "Kirovograd": "german",
+          "Kovel": "german",
+          "Lublin": "german",
+          "Lvov": "german",
+          "Rovno": "german",
+          "Sarny": "german",
+          "Shepetovka": "german",
+          "Stanislavov": "german",
+          "Tarnopol": "german",
+          "Uman": "soviet",
+          "Vinnitsa": "soviet",
+          "Zhitomir": "german"
+        },
+        "onlyRemainingCity": null,
+        "onlyRemainingCityIsolated": null,
+        "outcome": "soviet-victory",
+        "reason": "axis-controls-at-most-threshold",
+        "totalCities": 16
+      },
+      "exactRestore": true,
+      "terminalUndoRedo": true,
+      "storageFixture": true,
+      "bytes": 106774
+    },
+    {
+      "scenario": "kiev-odessa",
+      "mode": "historical",
+      "actions": 632,
+      "outcome": "soviet-victory",
+      "terminal": {
+        "axisControlledCount": 10,
+        "cityControl": {
+          "Brăila": "german",
+          "Chernigov": "soviet",
+          "Chernovtsy": "soviet",
+          "Chisinau": "soviet",
+          "Iasi": "german",
+          "Kiev": "soviet",
+          "Kirovograd": "german",
+          "Kovel": "german",
+          "Lublin": "german",
+          "Lvov": "german",
+          "Nikolaev": "soviet",
+          "Odessa": "soviet",
+          "Rovno": "german",
+          "Sarny": "german",
+          "Shepetovka": "german",
+          "Stanislavov": "soviet",
+          "Tarnopol": "german",
+          "Uman": "soviet",
+          "Vinnitsa": "soviet",
+          "Zhitomir": "soviet"
+        },
+        "cityIsolation": null,
+        "isolatedSovietCities": [],
+        "onlyRemainingCity": null,
+        "onlyRemainingCityIsolated": null,
+        "outcome": "soviet-victory",
+        "reason": "axis-controls-at-most-threshold",
+        "remainingSovietCities": [
+          "Stanislavov",
+          "Chernovtsy",
+          "Zhitomir",
+          "Vinnitsa",
+          "Chisinau",
+          "Kiev",
+          "Uman",
+          "Odessa",
+          "Chernigov",
+          "Nikolaev"
+        ],
+        "totalCities": 20
+      },
+      "exactRestore": true,
+      "terminalUndoRedo": true,
+      "storageFixture": true,
+      "bytes": 114715
+    },
+    {
+      "scenario": "arduous",
+      "mode": "graduated",
+      "actions": 648,
+      "outcome": "german-victory",
+      "terminal": {
+        "axisControlledCount": 6,
+        "cityControl": {
+          "Baranovichi": "german",
+          "Brest-Litovsk": "german",
+          "Gomel": "soviet",
+          "Minsk": "german",
+          "Mogilev": "soviet",
+          "Orsha": "german",
+          "Polotsk": "german",
+          "Roslavl": "soviet",
+          "Smolensk": "german",
+          "Velikie Luki": "soviet",
+          "Vilnius": "soviet",
+          "Vitebsk": "soviet"
+        },
+        "graduated": {
+          "germanVP": 8,
+          "grade": "german-marginal",
+          "index": 5,
+          "sovietVP": 6,
+          "totalVP": 14,
+          "winner": "german"
+        },
+        "historical": {
+          "outcome": "soviet-victory",
+          "reason": "axis-controls-at-most-threshold"
+        },
+        "onlyRemainingCity": null,
+        "onlyRemainingCityIsolated": null,
+        "outcome": "german-victory",
+        "reason": "experimental-graduated-victory",
+        "totalCities": 12
+      },
+      "exactRestore": true,
+      "terminalUndoRedo": true,
+      "storageFixture": true,
+      "bytes": 116301
+    },
+    {
+      "scenario": "leningrad",
+      "mode": "graduated",
+      "actions": 516,
+      "outcome": "draw",
+      "terminal": {
+        "axisControlledCount": 7,
+        "cityControl": {
+          "Daugavpils": "soviet",
+          "Insterburg": "german",
+          "Kaunas": "german",
+          "Leningrad": "soviet",
+          "Liepaja": "german",
+          "Luga": "german",
+          "Narva": "german",
+          "Novgorod": "soviet",
+          "Parnu": "soviet",
+          "Pskov": "soviet",
+          "Riga": "german",
+          "Siauliai": "german",
+          "Tallinn": "soviet",
+          "Tartu": "soviet"
+        },
+        "graduated": {
+          "germanVP": 7,
+          "grade": "draw",
+          "index": 4,
+          "sovietVP": 9,
+          "totalVP": 16,
+          "winner": "draw"
+        },
+        "historical": {
+          "outcome": "soviet-victory",
+          "reason": "axis-controls-at-most-threshold"
+        },
+        "onlyRemainingCity": "Leningrad",
+        "onlyRemainingCityIsolated": null,
+        "outcome": "draw",
+        "reason": "experimental-graduated-victory",
+        "totalCities": 14
+      },
+      "exactRestore": true,
+      "terminalUndoRedo": true,
+      "storageFixture": true,
+      "bytes": 90166
+    },
+    {
+      "scenario": "kiev-odessa",
+      "mode": "graduated",
+      "actions": 632,
+      "outcome": "draw",
+      "terminal": {
+        "axisControlledCount": 10,
+        "cityControl": {
+          "Brăila": "german",
+          "Chernigov": "soviet",
+          "Chernovtsy": "soviet",
+          "Chisinau": "soviet",
+          "Iasi": "german",
+          "Kiev": "soviet",
+          "Kirovograd": "german",
+          "Kovel": "german",
+          "Lublin": "german",
+          "Lvov": "german",
+          "Nikolaev": "soviet",
+          "Odessa": "soviet",
+          "Rovno": "german",
+          "Sarny": "german",
+          "Shepetovka": "german",
+          "Stanislavov": "soviet",
+          "Tarnopol": "german",
+          "Uman": "soviet",
+          "Vinnitsa": "soviet",
+          "Zhitomir": "soviet"
+        },
+        "cityIsolation": null,
+        "graduated": {
+          "germanVP": 10,
+          "grade": "draw",
+          "index": 4,
+          "sovietVP": 14,
+          "totalVP": 24,
+          "winner": "draw"
+        },
+        "historical": {
+          "outcome": "soviet-victory",
+          "reason": "axis-controls-at-most-threshold"
+        },
+        "isolatedSovietCities": [],
+        "onlyRemainingCity": null,
+        "onlyRemainingCityIsolated": null,
+        "outcome": "draw",
+        "reason": "experimental-graduated-victory",
+        "remainingSovietCities": [
+          "Stanislavov",
+          "Chernovtsy",
+          "Zhitomir",
+          "Vinnitsa",
+          "Chisinau",
+          "Kiev",
+          "Uman",
+          "Odessa",
+          "Chernigov",
+          "Nikolaev"
+        ],
+        "totalCities": 20
+      },
+      "exactRestore": true,
+      "terminalUndoRedo": true,
+      "storageFixture": true,
+      "bytes": 114715
+    },
+    {
+      "scenario": "kiev",
+      "mode": "graduated",
+      "actions": 562,
+      "outcome": "german-victory",
+      "terminal": {
+        "axisControlledCount": 12,
+        "cityControl": {
+          "Chernigov": "soviet",
+          "Chernovtsy": "soviet",
+          "Iasi": "german",
+          "Kiev": "german",
+          "Kirovograd": "soviet",
+          "Kovel": "german",
+          "Lublin": "german",
+          "Lvov": "german",
+          "Rovno": "german",
+          "Sarny": "german",
+          "Shepetovka": "german",
+          "Stanislavov": "german",
+          "Tarnopol": "german",
+          "Uman": "soviet",
+          "Vinnitsa": "german",
+          "Zhitomir": "german"
+        },
+        "graduated": {
+          "germanVP": 14,
+          "grade": "german-minor",
+          "index": 6,
+          "sovietVP": 4,
+          "totalVP": 18,
+          "winner": "german"
+        },
+        "historical": {
+          "outcome": "soviet-victory",
+          "reason": "axis-controls-at-most-threshold"
+        },
+        "onlyRemainingCity": null,
+        "onlyRemainingCityIsolated": null,
+        "outcome": "german-victory",
+        "reason": "experimental-graduated-victory",
+        "totalCities": 16
+      },
+      "exactRestore": true,
+      "terminalUndoRedo": true,
+      "storageFixture": true,
+      "bytes": 100726
+    }
+  ]
+}

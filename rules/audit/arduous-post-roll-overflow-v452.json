@@ -1,0 +1,51 @@
+{
+  "checkpoint": 218,
+  "version": "v452",
+  "source": "references/rules/arduous-rules.pdf \u00a710 combat",
+  "sourcePdfSHA256": "1ac46f3e958cf1d08768f6b56964100ab0951ece7e310ac3a30e8c479a8b986c",
+  "scenario": "arduous",
+  "defenderHex": "0306",
+  "attackerIds": [
+    "arduous-front-r03c06",
+    "arduous-front-r04c02",
+    "arduous-front-r05c01",
+    "arduous-front-r05c02"
+  ],
+  "die": 2,
+  "crtOutcome": "EX",
+  "optionsShown": 128,
+  "truncated": true,
+  "firstChoiceLosses": [
+    {
+      "attackPoints": 3,
+      "defensePoints": 3,
+      "removed": false,
+      "unitId": "arduous-front-r02c07"
+    },
+    {
+      "attackPoints": 4,
+      "defensePoints": 4,
+      "removed": false,
+      "unitId": "arduous-front-r03c06"
+    },
+    {
+      "attackPoints": 2,
+      "defensePoints": 2,
+      "hex": "0206",
+      "reason": "forced-retreat-ezoc",
+      "removed": true,
+      "unitId": "arduous-front-r02c07"
+    },
+    {
+      "attackPoints": 3,
+      "defensePoints": 3,
+      "hex": "0206",
+      "reason": "forced-retreat-ezoc",
+      "removed": false,
+      "unitId": "arduous-front-r02c08"
+    }
+  ],
+  "tests": 35,
+  "pageErrors": [],
+  "limitation": "Catalog is intentionally limited to 128 validated candidate consequences; not every source-legal choice is presented."
+}

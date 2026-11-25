@@ -1,0 +1,50 @@
+[
+  {
+    "id": "arduous-standard",
+    "scenario": "arduous",
+    "variant": "standard",
+    "seed": 476
+  },
+  {
+    "id": "arduous-advanced",
+    "scenario": "arduous",
+    "variant": "advanced",
+    "seed": 476
+  },
+  {
+    "id": "leningrad-standard",
+    "scenario": "leningrad",
+    "variant": "standard",
+    "seed": 476
+  },
+  {
+    "id": "leningrad-advanced",
+    "scenario": "leningrad",
+    "variant": "advanced",
+    "seed": 476
+  },
+  {
+    "id": "kiev-standard",
+    "scenario": "kiev",
+    "variant": "standard",
+    "seed": 476
+  },
+  {
+    "id": "kiev-advanced",
+    "scenario": "kiev",
+    "variant": "advanced",
+    "seed": 476
+  },
+  {
+    "id": "kiev-odessa-standard",
+    "scenario": "kiev-odessa",
+    "variant": "standard",
+    "seed": 476
+  },
+  {
+    "id": "kiev-odessa-advanced",
+    "scenario": "kiev-odessa",
+    "variant": "advanced",
+    "seed": 476
+  }
+]

@@ -1,0 +1,68 @@
+/* Reusable, nonmodal Air Support window. No map or gameplay changes. */
+.support-window,.support-launcher{font:13px system-ui,-apple-system,sans-serif;color:#24363c}
+.support-window[hidden],.support-launcher[hidden]{display:none!important}
+.support-window{position:fixed;z-index:25;width:min(338px,calc(100vw - 24px));max-height:min(78dvh,670px);display:flex;flex-direction:column;background:#fbfdfc;border:1px solid #9db0b6;border-radius:11px;box-shadow:0 9px 30px #10233148;overflow:hidden}
+.support-window-head{padding:9px 12px;display:flex;align-items:center;justify-content:space-between;gap:10px;background:#e8eeef;border-bottom:1px solid #c2d0d3;cursor:grab;touch-action:none;user-select:none}
+.support-window.is-dragging .support-window-head{cursor:grabbing}
+.support-window-heading{display:flex;flex-direction:column;min-width:0;gap:2px}
+.support-window-title{font-size:14px;font-weight:750}
+.support-window-summary{font-size:11px;color:#556c74;font-variant-numeric:tabular-nums}
+.support-window-tools{display:flex;gap:4px}
+.support-window .support-window-tool{min-width:32px;width:32px;min-height:32px;padding:3px;margin:0;border:1px solid #bac9cb;border-radius:6px;background:#fff;color:#294450;font-size:20px;line-height:1;cursor:pointer}
+.support-window-body{overflow:auto;overscroll-behavior:contain;padding:11px;min-height:0}
+.support-window-body[hidden]{display:none!important}
+.support-window-caption{font-size:11px;color:#536971;margin:0 0 9px}
+.support-window-list{display:grid;gap:8px}
+.support-window-card{display:grid;grid-template-columns:62px minmax(0,1fr) auto;align-items:center;gap:9px;padding:9px;border-radius:8px;border:1px solid #d2dee1;background:#fff}
+.support-window-counter{height:62px;width:62px;display:grid;place-items:center;font-size:10px;font-weight:700;background:transparent;border-radius:0;overflow:visible}
+.support-window-counter .support-counter-svg{width:62px;height:62px;display:block;overflow:visible;pointer-events:none}
+.support-window-details{min-width:0}
+.support-window-card-title{display:flex;align-items:center;flex-wrap:wrap;gap:5px;line-height:1.4}
+.support-window-card-title strong{font-weight:700}
+.support-window-badge{font-size:10px;background:#e9eeef;color:#41575e;border-radius:4px;padding:2px 5px;white-space:nowrap}
+.support-window-card[data-support-status="refit"] .support-window-badge,.support-window-card[data-support-status="not-arrived"] .support-window-badge{background:#edf0f2;color:#65747a}
+.support-window-card[data-support-status="committed"] .support-window-badge{background:#f4e5cb;color:#75491e}
+.support-window-effect{margin-top:3px;font-size:11px;color:#304e5e}
+.support-window-note{font-size:10px;color:#71818a;line-height:1.35;margin-top:3px}
+.support-window .support-window-assign{margin:0;padding:7px 9px;min-height:34px;align-self:center;border-radius:5px;border:1px solid #2b5e7d;background:#2b5e7d;color:white;font-weight:650;font-size:11px;cursor:pointer}
+.support-window-footer{margin-top:9px}
+.support-window .support-window-skip{width:100%;padding:8px;background:#e9f0f2;border:1px solid #bcccd0;border-radius:6px;color:#284554;font-weight:650;font-size:12px;cursor:pointer;margin:0}
+.support-window-footnote,.support-window-empty{font-size:11px;color:#657b82;line-height:1.4;margin:4px 0}
+.support-launcher{position:fixed;z-index:26;top:86px;right:16px;padding:10px 15px;border:1px solid #2a596e;border-radius:20px;background:#24495e;color:#fff;font-size:12px;font-weight:700;box-shadow:0 2px 10px #122c3444;cursor:pointer}
+.support-window.is-collapsed{max-height:none}
+@media(max-width:800px),(pointer:coarse){
+ .support-window{left:8px!important;right:8px!important;top:auto!important;bottom:calc(9px + env(safe-area-inset-bottom,0px))!important;width:auto;max-height:min(54dvh,470px);border-radius:12px;z-index:27}
+ .support-window-head{cursor:default;touch-action:auto;min-height:45px}
+ .support-window .support-window-tool{min-width:44px;min-height:44px}
+ .support-window-card{grid-template-columns:62px minmax(0,1fr) auto}
+ .support-window .support-window-assign,.support-window .support-window-skip{min-height:44px}
+ .support-launcher{top:auto;bottom:calc(76px + env(safe-area-inset-bottom,0px));right:14px;min-height:44px;z-index:28}
+ body[data-layout-mode="mobile"][data-mobile-controls-open="true"] .support-window,
+ body[data-layout-mode="mobile"][data-mobile-controls-open="true"] .support-launcher{visibility:hidden;pointer-events:none}
+}
+@media(prefers-reduced-motion:reduce){.support-window{scroll-behavior:auto}}
+/* Fleet occupies a separate section of the same support utility window. */
+.support-window-group-title{font-size:11px;font-weight:750;text-transform:uppercase;letter-spacing:.04em;color:#4d626c;margin:5px 1px 0}
+.support-window-fleet{border-color:#b5c9cf;background:#f9fcfd}
+.support-window-fleet[data-fleet-status="damaged"] .support-window-badge{color:#803d30;background:#fae8e5}
+.support-window-fleet[data-fleet-status="eliminated"] .support-window-badge{color:#6e7577;background:#e6eaeb}
+.support-window-card-actions{display:flex;gap:4px;flex-wrap:wrap;justify-content:end}
+.support-window .support-window-naval-attack{background:#e7f1f4;color:#18465c;border-color:#7aa0b2}
+.support-window-fleet-actions{display:grid;grid-template-columns:1fr;gap:5px}
+.support-window-fleet-actions .support-window-skip{text-align:left}
+.support-window-footer .support-window-skip+.support-window-skip{margin-top:6px}
+.support-window-card.support-window-pickable{cursor:pointer;outline-offset:2px}
+.support-window-card.support-window-pickable:hover,.support-window-card.support-window-pickable:focus-visible{border-color:#237bad;background:#f0f9fc}
+.support-window-card.support-window-pickable.is-selected{border:2px solid #237bad;background:#eaf6fb;padding:8px}
+.support-window-target-status{padding:8px 9px;background:#f0f7fa;border:1px solid #bad5e3;border-radius:6px;font-size:12px;line-height:1.5;margin-bottom:6px}
+.support-window-confirm{display:grid;gap:6px;padding:9px;border:1px solid #d6c28c;background:#fff8e5;border-radius:6px;margin-bottom:8px}
+.support-window-confirm .support-window-assign{min-height:40px;text-align:center}
+
+/* Support decisions do not exist during source-setup placement. Keep the map unobstructed, particularly on touch devices; normal visibility resumes on Begin Turn 1. */
+body.historical-deployment-active .support-window,body.historical-deployment-active .support-launcher{display:none!important}
+/* Keep the bottom-right Controls launcher reachable even when support is
+   collapsed or expanded. Apply to forced mobile layout as well as touch. */
+body[data-layout-mode="mobile"] .support-window{left:8px!important;right:8px!important;top:auto!important;bottom:calc(76px + env(safe-area-inset-bottom,0px))!important;width:auto;max-height:min(54dvh,470px)}
+body[data-layout-mode="mobile"] .support-launcher{top:auto;bottom:calc(76px + env(safe-area-inset-bottom,0px));right:14px;min-height:44px}
+body[data-layout-mode="mobile"][data-mobile-controls-open="true"] .support-window,
+body[data-layout-mode="mobile"][data-mobile-controls-open="true"] .support-launcher{visibility:hidden;pointer-events:none}

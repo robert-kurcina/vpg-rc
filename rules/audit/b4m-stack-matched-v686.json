@@ -1,0 +1,1016 @@
+{
+  "workers": 4,
+  "jobs": 12,
+  "wallMs": 10992,
+  "successful": 12,
+  "results": [
+    {
+      "id": "historical-standard-7",
+      "success": true,
+      "code": 0,
+      "signal": null,
+      "wallMs": 2971,
+      "report": {
+        "scenario": "battle-for-moscow",
+        "variant": "standard",
+        "stacking": "historical",
+        "seed": 7,
+        "grades": {
+          "german": 0,
+          "soviet": 0
+        },
+        "factionPolicies": {
+          "german": {
+            "schemaVersion": 1,
+            "mode": "objective-guard-v1",
+            "maxPhases": 12,
+            "maxActions": 180,
+            "maxMovesPerPhase": 8,
+            "maxBattlesPerPhase": 2,
+            "maxReplacementsPerPhase": 8,
+            "minAttackOdds": 1
+          },
+          "soviet": {
+            "schemaVersion": 1,
+            "mode": "objective-guard-v1",
+            "maxPhases": 12,
+            "maxActions": 180,
+            "maxMovesPerPhase": 8,
+            "maxBattlesPerPhase": 2,
+            "maxReplacementsPerPhase": 8,
+            "minAttackOdds": 1
+          }
+        },
+        "elapsedMs": 2856,
+        "status": "complete",
+        "reason": null,
+        "actions": 260,
+        "sideTurns": 14,
+        "counts": {
+          "declare-battle": 23,
+          "finish-phase": 55,
+          "resolve-pending": 23,
+          "move": 122,
+          "replacement": 36,
+          "place-reinforcement": 1
+        },
+        "stats": {
+          "moves": 122,
+          "combats": 23,
+          "replacements": 36,
+          "reinforcements": 1,
+          "turns": 7
+        },
+        "cityControl": {
+          "1,4": "german",
+          "2,6": "german",
+          "4,8": "soviet",
+          "5,1": "german",
+          "5,3": "german",
+          "7,3": "german",
+          "7,5": "german",
+          "7,9": "soviet",
+          "10,2": "soviet",
+          "10,6": "soviet",
+          "13,5": "soviet"
+        },
+        "stepsLost": {
+          "german": 12,
+          "soviet": 13
+        },
+        "winner": "soviet",
+        "terminal": {
+          "winner": "soviet"
+        },
+        "stateHash": "623729ccfcd9a1941590321d263a9139531d40a986a377f622beb0a420066ad4",
+        "stackedCombats": 0,
+        "stackedCityHolds": 0,
+        "exactRestore": true
+      }
+    },
+    {
+      "id": "double-standard-7",
+      "success": true,
+      "code": 0,
+      "signal": null,
+      "wallMs": 4334,
+      "report": {
+        "scenario": "battle-for-moscow",
+        "variant": "standard",
+        "stacking": "double",
+        "seed": 7,
+        "grades": {
+          "german": 0,
+          "soviet": 0
+        },
+        "factionPolicies": {
+          "german": {
+            "schemaVersion": 1,
+            "mode": "objective-guard-v1",
+            "maxPhases": 12,
+            "maxActions": 180,
+            "maxMovesPerPhase": 8,
+            "maxBattlesPerPhase": 2,
+            "maxReplacementsPerPhase": 8,
+            "minAttackOdds": 1
+          },
+          "soviet": {
+            "schemaVersion": 1,
+            "mode": "objective-guard-v1",
+            "maxPhases": 12,
+            "maxActions": 180,
+            "maxMovesPerPhase": 8,
+            "maxBattlesPerPhase": 2,
+            "maxReplacementsPerPhase": 8,
+            "minAttackOdds": 1
+          }
+        },
+        "elapsedMs": 4227,
+        "status": "complete",
+        "reason": null,
+        "actions": 283,
+        "sideTurns": 14,
+        "counts": {
+          "declare-battle": 24,
+          "finish-phase": 55,
+          "resolve-pending": 24,
+          "move": 143,
+          "replacement": 36,
+          "place-reinforcement": 1
+        },
+        "stats": {
+          "moves": 143,
+          "combats": 24,
+          "replacements": 36,
+          "reinforcements": 1,
+          "turns": 7
+        },
+        "cityControl": {
+          "1,4": "german",
+          "2,6": "german",
+          "4,8": "soviet",
+          "5,1": "german",
+          "5,3": "soviet",
+          "7,3": "soviet",
+          "7,5": "german",
+          "7,9": "soviet",
+          "10,2": "soviet",
+          "10,6": "soviet",
+          "13,5": "soviet"
+        },
+        "stepsLost": {
+          "german": 17,
+          "soviet": 14
+        },
+        "winner": "soviet",
+        "terminal": {
+          "winner": "soviet"
+        },
+        "stateHash": "8cc96f50e681a68e51bc5fa9dff5e184bf699d61200d72a4fb62a43f6419e90a",
+        "stackedCombats": 8,
+        "stackedCityHolds": 0,
+        "exactRestore": true
+      }
+    },
+    {
+      "id": "historical-advanced-7",
+      "success": true,
+      "code": 0,
+      "signal": null,
+      "wallMs": 4013,
+      "report": {
+        "scenario": "battle-for-moscow",
+        "variant": "advanced",
+        "stacking": "historical",
+        "seed": 7,
+        "grades": {
+          "german": 0,
+          "soviet": 0
+        },
+        "factionPolicies": {
+          "german": {
+            "schemaVersion": 1,
+            "mode": "objective-guard-v1",
+            "maxPhases": 12,
+            "maxActions": 180,
+            "maxMovesPerPhase": 8,
+            "maxBattlesPerPhase": 2,
+            "maxReplacementsPerPhase": 8,
+            "minAttackOdds": 1
+          },
+          "soviet": {
+            "schemaVersion": 1,
+            "mode": "objective-guard-v1",
+            "maxPhases": 12,
+            "maxActions": 180,
+            "maxMovesPerPhase": 8,
+            "maxBattlesPerPhase": 2,
+            "maxReplacementsPerPhase": 8,
+            "minAttackOdds": 1
+          }
+        },
+        "elapsedMs": 3895,
+        "status": "complete",
+        "reason": null,
+        "actions": 281,
+        "sideTurns": 14,
+        "counts": {
+          "declare-battle": 28,
+          "finish-phase": 55,
+          "resolve-pending": 28,
+          "move": 131,
+          "replacement": 38,
+          "place-reinforcement": 1
+        },
+        "stats": {
+          "moves": 131,
+          "combats": 28,
+          "replacements": 38,
+          "reinforcements": 1,
+          "turns": 7
+        },
+        "cityControl": {
+          "1,4": "german",
+          "2,6": "german",
+          "4,8": "soviet",
+          "5,1": "german",
+          "5,3": "german",
+          "7,3": "german",
+          "7,5": "german",
+          "7,9": "soviet",
+          "10,2": "soviet",
+          "10,6": "soviet",
+          "13,5": "soviet"
+        },
+        "stepsLost": {
+          "german": 22,
+          "soviet": 16
+        },
+        "winner": "soviet",
+        "terminal": {
+          "winner": "soviet"
+        },
+        "stateHash": "8f752415a1a64bea8bc770dc20f5e6a93421016b5451d2cdf53b6d47d874765a",
+        "stackedCombats": 0,
+        "stackedCityHolds": 0,
+        "exactRestore": true
+      }
+    },
+    {
+      "id": "double-advanced-7",
+      "success": true,
+      "code": 0,
+      "signal": null,
+      "wallMs": 4230,
+      "report": {
+        "scenario": "battle-for-moscow",
+        "variant": "advanced",
+        "stacking": "double",
+        "seed": 7,
+        "grades": {
+          "german": 0,
+          "soviet": 0
+        },
+        "factionPolicies": {
+          "german": {
+            "schemaVersion": 1,
+            "mode": "objective-guard-v1",
+            "maxPhases": 12,
+            "maxActions": 180,
+            "maxMovesPerPhase": 8,
+            "maxBattlesPerPhase": 2,
+            "maxReplacementsPerPhase": 8,
+            "minAttackOdds": 1
+          },
+          "soviet": {
+            "schemaVersion": 1,
+            "mode": "objective-guard-v1",
+            "maxPhases": 12,
+            "maxActions": 180,
+            "maxMovesPerPhase": 8,
+            "maxBattlesPerPhase": 2,
+            "maxReplacementsPerPhase": 8,
+            "minAttackOdds": 1
+          }
+        },
+        "elapsedMs": 4122,
+        "status": "complete",
+        "reason": null,
+        "actions": 266,
+        "sideTurns": 14,
+        "counts": {
+          "declare-battle": 23,
+          "finish-phase": 55,
+          "resolve-pending": 23,
+          "move": 132,
+          "replacement": 32,
+          "place-reinforcement": 1
+        },
+        "stats": {
+          "moves": 132,
+          "combats": 23,
+          "replacements": 32,
+          "reinforcements": 1,
+          "turns": 7
+        },
+        "cityControl": {
+          "1,4": "german",
+          "2,6": "german",
+          "4,8": "soviet",
+          "5,1": "german",
+          "5,3": "german",
+          "7,3": "german",
+          "7,5": "soviet",
+          "7,9": "soviet",
+          "10,2": "soviet",
+          "10,6": "soviet",
+          "13,5": "soviet"
+        },
+        "stepsLost": {
+          "german": 10,
+          "soviet": 11
+        },
+        "winner": "soviet",
+        "terminal": {
+          "winner": "soviet"
+        },
+        "stateHash": "450a2c02d08899fd5a0c654ccb852791b533a943aa85075cff5e5e8a2c7821a0",
+        "stackedCombats": 10,
+        "stackedCityHolds": 0,
+        "exactRestore": true
+      }
+    },
+    {
+      "id": "historical-standard-19",
+      "success": true,
+      "code": 0,
+      "signal": null,
+      "wallMs": 2906,
+      "report": {
+        "scenario": "battle-for-moscow",
+        "variant": "standard",
+        "stacking": "historical",
+        "seed": 19,
+        "grades": {
+          "german": 0,
+          "soviet": 0
+        },
+        "factionPolicies": {
+          "german": {
+            "schemaVersion": 1,
+            "mode": "objective-guard-v1",
+            "maxPhases": 12,
+            "maxActions": 180,
+            "maxMovesPerPhase": 8,
+            "maxBattlesPerPhase": 2,
+            "maxReplacementsPerPhase": 8,
+            "minAttackOdds": 1
+          },
+          "soviet": {
+            "schemaVersion": 1,
+            "mode": "objective-guard-v1",
+            "maxPhases": 12,
+            "maxActions": 180,
+            "maxMovesPerPhase": 8,
+            "maxBattlesPerPhase": 2,
+            "maxReplacementsPerPhase": 8,
+            "minAttackOdds": 1
+          }
+        },
+        "elapsedMs": 2724,
+        "status": "complete",
+        "reason": null,
+        "actions": 268,
+        "sideTurns": 14,
+        "counts": {
+          "declare-battle": 26,
+          "finish-phase": 55,
+          "resolve-pending": 26,
+          "move": 124,
+          "replacement": 36,
+          "place-reinforcement": 1
+        },
+        "stats": {
+          "moves": 124,
+          "combats": 26,
+          "replacements": 36,
+          "reinforcements": 1,
+          "turns": 7
+        },
+        "cityControl": {
+          "1,4": "german",
+          "2,6": "german",
+          "4,8": "soviet",
+          "5,1": "german",
+          "5,3": "german",
+          "7,3": "german",
+          "7,5": "german",
+          "7,9": "soviet",
+          "10,2": "soviet",
+          "10,6": "soviet",
+          "13,5": "soviet"
+        },
+        "stepsLost": {
+          "german": 14,
+          "soviet": 12
+        },
+        "winner": "soviet",
+        "terminal": {
+          "winner": "soviet"
+        },
+        "stateHash": "0fe8260c627f172852d305b0530ac858bd18e0c4499319aad100416d26d5d7cf",
+        "stackedCombats": 0,
+        "stackedCityHolds": 0,
+        "exactRestore": true
+      }
+    },
+    {
+      "id": "double-standard-19",
+      "success": true,
+      "code": 0,
+      "signal": null,
+      "wallMs": 4020,
+      "report": {
+        "scenario": "battle-for-moscow",
+        "variant": "standard",
+        "stacking": "double",
+        "seed": 19,
+        "grades": {
+          "german": 0,
+          "soviet": 0
+        },
+        "factionPolicies": {
+          "german": {
+            "schemaVersion": 1,
+            "mode": "objective-guard-v1",
+            "maxPhases": 12,
+            "maxActions": 180,
+            "maxMovesPerPhase": 8,
+            "maxBattlesPerPhase": 2,
+            "maxReplacementsPerPhase": 8,
+            "minAttackOdds": 1
+          },
+          "soviet": {
+            "schemaVersion": 1,
+            "mode": "objective-guard-v1",
+            "maxPhases": 12,
+            "maxActions": 180,
+            "maxMovesPerPhase": 8,
+            "maxBattlesPerPhase": 2,
+            "maxReplacementsPerPhase": 8,
+            "minAttackOdds": 1
+          }
+        },
+        "elapsedMs": 3909,
+        "status": "complete",
+        "reason": null,
+        "actions": 272,
+        "sideTurns": 14,
+        "counts": {
+          "declare-battle": 20,
+          "finish-phase": 55,
+          "resolve-pending": 20,
+          "move": 141,
+          "replacement": 35,
+          "place-reinforcement": 1
+        },
+        "stats": {
+          "moves": 141,
+          "combats": 20,
+          "replacements": 35,
+          "reinforcements": 1,
+          "turns": 7
+        },
+        "cityControl": {
+          "1,4": "german",
+          "2,6": "german",
+          "4,8": "soviet",
+          "5,1": "german",
+          "5,3": "german",
+          "7,3": "german",
+          "7,5": "soviet",
+          "7,9": "soviet",
+          "10,2": "soviet",
+          "10,6": "soviet",
+          "13,5": "soviet"
+        },
+        "stepsLost": {
+          "german": 19,
+          "soviet": 14
+        },
+        "winner": "soviet",
+        "terminal": {
+          "winner": "soviet"
+        },
+        "stateHash": "b910e8e115c3fd299f855d6e4c8e24a3a7b8b205edac288cefba91508b17f485",
+        "stackedCombats": 8,
+        "stackedCityHolds": 0,
+        "exactRestore": true
+      }
+    },
+    {
+      "id": "historical-advanced-19",
+      "success": true,
+      "code": 0,
+      "signal": null,
+      "wallMs": 3946,
+      "report": {
+        "scenario": "battle-for-moscow",
+        "variant": "advanced",
+        "stacking": "historical",
+        "seed": 19,
+        "grades": {
+          "german": 0,
+          "soviet": 0
+        },
+        "factionPolicies": {
+          "german": {
+            "schemaVersion": 1,
+            "mode": "objective-guard-v1",
+            "maxPhases": 12,
+            "maxActions": 180,
+            "maxMovesPerPhase": 8,
+            "maxBattlesPerPhase": 2,
+            "maxReplacementsPerPhase": 8,
+            "minAttackOdds": 1
+          },
+          "soviet": {
+            "schemaVersion": 1,
+            "mode": "objective-guard-v1",
+            "maxPhases": 12,
+            "maxActions": 180,
+            "maxMovesPerPhase": 8,
+            "maxBattlesPerPhase": 2,
+            "maxReplacementsPerPhase": 8,
+            "minAttackOdds": 1
+          }
+        },
+        "elapsedMs": 3787,
+        "status": "complete",
+        "reason": null,
+        "actions": 266,
+        "sideTurns": 14,
+        "counts": {
+          "declare-battle": 25,
+          "finish-phase": 55,
+          "resolve-pending": 25,
+          "move": 128,
+          "replacement": 32,
+          "place-reinforcement": 1
+        },
+        "stats": {
+          "moves": 128,
+          "combats": 25,
+          "replacements": 32,
+          "reinforcements": 1,
+          "turns": 7
+        },
+        "cityControl": {
+          "1,4": "german",
+          "2,6": "german",
+          "4,8": "soviet",
+          "5,1": "german",
+          "5,3": "german",
+          "7,3": "german",
+          "7,5": "german",
+          "7,9": "soviet",
+          "10,2": "soviet",
+          "10,6": "soviet",
+          "13,5": "soviet"
+        },
+        "stepsLost": {
+          "german": 8,
+          "soviet": 8
+        },
+        "winner": "soviet",
+        "terminal": {
+          "winner": "soviet"
+        },
+        "stateHash": "be27ca4d8146a1494a57fd6355fd46c9a76fcad9fe879c9401b1ae463faa89f9",
+        "stackedCombats": 0,
+        "stackedCityHolds": 0,
+        "exactRestore": true
+      }
+    },
+    {
+      "id": "double-advanced-19",
+      "success": true,
+      "code": 0,
+      "signal": null,
+      "wallMs": 3103,
+      "report": {
+        "scenario": "battle-for-moscow",
+        "variant": "advanced",
+        "stacking": "double",
+        "seed": 19,
+        "grades": {
+          "german": 0,
+          "soviet": 0
+        },
+        "factionPolicies": {
+          "german": {
+            "schemaVersion": 1,
+            "mode": "objective-guard-v1",
+            "maxPhases": 12,
+            "maxActions": 180,
+            "maxMovesPerPhase": 8,
+            "maxBattlesPerPhase": 2,
+            "maxReplacementsPerPhase": 8,
+            "minAttackOdds": 1
+          },
+          "soviet": {
+            "schemaVersion": 1,
+            "mode": "objective-guard-v1",
+            "maxPhases": 12,
+            "maxActions": 180,
+            "maxMovesPerPhase": 8,
+            "maxBattlesPerPhase": 2,
+            "maxReplacementsPerPhase": 8,
+            "minAttackOdds": 1
+          }
+        },
+        "elapsedMs": 2988,
+        "status": "complete",
+        "reason": null,
+        "actions": 261,
+        "sideTurns": 14,
+        "counts": {
+          "declare-battle": 23,
+          "finish-phase": 55,
+          "resolve-pending": 23,
+          "move": 127,
+          "replacement": 32,
+          "place-reinforcement": 1
+        },
+        "stats": {
+          "moves": 127,
+          "combats": 23,
+          "replacements": 32,
+          "reinforcements": 1,
+          "turns": 7
+        },
+        "cityControl": {
+          "1,4": "german",
+          "2,6": "german",
+          "4,8": "soviet",
+          "5,1": "german",
+          "5,3": "german",
+          "7,3": "german",
+          "7,5": "german",
+          "7,9": "soviet",
+          "10,2": "soviet",
+          "10,6": "soviet",
+          "13,5": "soviet"
+        },
+        "stepsLost": {
+          "german": 9,
+          "soviet": 9
+        },
+        "winner": "soviet",
+        "terminal": {
+          "winner": "soviet"
+        },
+        "stateHash": "a73b8f3715f3301e653f6a3683e473a956b644f898cdf4fc24c03849d0e5e34d",
+        "stackedCombats": 11,
+        "stackedCityHolds": 0,
+        "exactRestore": true
+      }
+    },
+    {
+      "id": "historical-standard-61",
+      "success": true,
+      "code": 0,
+      "signal": null,
+      "wallMs": 2864,
+      "report": {
+        "scenario": "battle-for-moscow",
+        "variant": "standard",
+        "stacking": "historical",
+        "seed": 61,
+        "grades": {
+          "german": 0,
+          "soviet": 0
+        },
+        "factionPolicies": {
+          "german": {
+            "schemaVersion": 1,
+            "mode": "objective-guard-v1",
+            "maxPhases": 12,
+            "maxActions": 180,
+            "maxMovesPerPhase": 8,
+            "maxBattlesPerPhase": 2,
+            "maxReplacementsPerPhase": 8,
+            "minAttackOdds": 1
+          },
+          "soviet": {
+            "schemaVersion": 1,
+            "mode": "objective-guard-v1",
+            "maxPhases": 12,
+            "maxActions": 180,
+            "maxMovesPerPhase": 8,
+            "maxBattlesPerPhase": 2,
+            "maxReplacementsPerPhase": 8,
+            "minAttackOdds": 1
+          }
+        },
+        "elapsedMs": 2774,
+        "status": "complete",
+        "reason": null,
+        "actions": 266,
+        "sideTurns": 14,
+        "counts": {
+          "declare-battle": 26,
+          "finish-phase": 55,
+          "resolve-pending": 26,
+          "move": 123,
+          "replacement": 35,
+          "place-reinforcement": 1
+        },
+        "stats": {
+          "moves": 123,
+          "combats": 26,
+          "replacements": 35,
+          "reinforcements": 1,
+          "turns": 7
+        },
+        "cityControl": {
+          "1,4": "german",
+          "2,6": "german",
+          "4,8": "soviet",
+          "5,1": "german",
+          "5,3": "german",
+          "7,3": "german",
+          "7,5": "german",
+          "7,9": "soviet",
+          "10,2": "soviet",
+          "10,6": "soviet",
+          "13,5": "soviet"
+        },
+        "stepsLost": {
+          "german": 11,
+          "soviet": 14
+        },
+        "winner": "soviet",
+        "terminal": {
+          "winner": "soviet"
+        },
+        "stateHash": "a61b297af52bc7c5b679be92b1d920b527a1815bd24bb0c4a0b9ddb58cd07535",
+        "stackedCombats": 0,
+        "stackedCityHolds": 0,
+        "exactRestore": true
+      }
+    },
+    {
+      "id": "double-standard-61",
+      "success": true,
+      "code": 0,
+      "signal": null,
+      "wallMs": 2711,
+      "report": {
+        "scenario": "battle-for-moscow",
+        "variant": "standard",
+        "stacking": "double",
+        "seed": 61,
+        "grades": {
+          "german": 0,
+          "soviet": 0
+        },
+        "factionPolicies": {
+          "german": {
+            "schemaVersion": 1,
+            "mode": "objective-guard-v1",
+            "maxPhases": 12,
+            "maxActions": 180,
+            "maxMovesPerPhase": 8,
+            "maxBattlesPerPhase": 2,
+            "maxReplacementsPerPhase": 8,
+            "minAttackOdds": 1
+          },
+          "soviet": {
+            "schemaVersion": 1,
+            "mode": "objective-guard-v1",
+            "maxPhases": 12,
+            "maxActions": 180,
+            "maxMovesPerPhase": 8,
+            "maxBattlesPerPhase": 2,
+            "maxReplacementsPerPhase": 8,
+            "minAttackOdds": 1
+          }
+        },
+        "elapsedMs": 2618,
+        "status": "complete",
+        "reason": null,
+        "actions": 271,
+        "sideTurns": 14,
+        "counts": {
+          "declare-battle": 24,
+          "finish-phase": 55,
+          "resolve-pending": 24,
+          "move": 132,
+          "replacement": 35,
+          "place-reinforcement": 1
+        },
+        "stats": {
+          "moves": 132,
+          "combats": 24,
+          "replacements": 35,
+          "reinforcements": 1,
+          "turns": 7
+        },
+        "cityControl": {
+          "1,4": "german",
+          "2,6": "german",
+          "4,8": "soviet",
+          "5,1": "german",
+          "5,3": "german",
+          "7,3": "german",
+          "7,5": "soviet",
+          "7,9": "soviet",
+          "10,2": "soviet",
+          "10,6": "soviet",
+          "13,5": "soviet"
+        },
+        "stepsLost": {
+          "german": 18,
+          "soviet": 14
+        },
+        "winner": "soviet",
+        "terminal": {
+          "winner": "soviet"
+        },
+        "stateHash": "06b7ee82ee5e38396009cf490cb940f4905929f1c86760266dd1c511c0c4d51c",
+        "stackedCombats": 7,
+        "stackedCityHolds": 0,
+        "exactRestore": true
+      }
+    },
+    {
+      "id": "historical-advanced-61",
+      "success": true,
+      "code": 0,
+      "signal": null,
+      "wallMs": 2680,
+      "report": {
+        "scenario": "battle-for-moscow",
+        "variant": "advanced",
+        "stacking": "historical",
+        "seed": 61,
+        "grades": {
+          "german": 0,
+          "soviet": 0
+        },
+        "factionPolicies": {
+          "german": {
+            "schemaVersion": 1,
+            "mode": "objective-guard-v1",
+            "maxPhases": 12,
+            "maxActions": 180,
+            "maxMovesPerPhase": 8,
+            "maxBattlesPerPhase": 2,
+            "maxReplacementsPerPhase": 8,
+            "minAttackOdds": 1
+          },
+          "soviet": {
+            "schemaVersion": 1,
+            "mode": "objective-guard-v1",
+            "maxPhases": 12,
+            "maxActions": 180,
+            "maxMovesPerPhase": 8,
+            "maxBattlesPerPhase": 2,
+            "maxReplacementsPerPhase": 8,
+            "minAttackOdds": 1
+          }
+        },
+        "elapsedMs": 2572,
+        "status": "complete",
+        "reason": null,
+        "actions": 274,
+        "sideTurns": 14,
+        "counts": {
+          "declare-battle": 28,
+          "finish-phase": 55,
+          "resolve-pending": 28,
+          "move": 123,
+          "replacement": 39,
+          "place-reinforcement": 1
+        },
+        "stats": {
+          "moves": 123,
+          "combats": 28,
+          "replacements": 39,
+          "reinforcements": 1,
+          "turns": 7
+        },
+        "cityControl": {
+          "1,4": "german",
+          "2,6": "german",
+          "4,8": "soviet",
+          "5,1": "german",
+          "5,3": "german",
+          "7,3": "german",
+          "7,5": "german",
+          "7,9": "soviet",
+          "10,2": "soviet",
+          "10,6": "soviet",
+          "13,5": "soviet"
+        },
+        "stepsLost": {
+          "german": 17,
+          "soviet": 18
+        },
+        "winner": "soviet",
+        "terminal": {
+          "winner": "soviet"
+        },
+        "stateHash": "de4ad33b5f79d5373f7a6bffdb4a117e1d81a714357553baaff0d478ea656cca",
+        "stackedCombats": 0,
+        "stackedCityHolds": 0,
+        "exactRestore": true
+      }
+    },
+    {
+      "id": "double-advanced-61",
+      "success": true,
+      "code": 0,
+      "signal": null,
+      "wallMs": 2809,
+      "report": {
+        "scenario": "battle-for-moscow",
+        "variant": "advanced",
+        "stacking": "double",
+        "seed": 61,
+        "grades": {
+          "german": 0,
+          "soviet": 0
+        },
+        "factionPolicies": {
+          "german": {
+            "schemaVersion": 1,
+            "mode": "objective-guard-v1",
+            "maxPhases": 12,
+            "maxActions": 180,
+            "maxMovesPerPhase": 8,
+            "maxBattlesPerPhase": 2,
+            "maxReplacementsPerPhase": 8,
+            "minAttackOdds": 1
+          },
+          "soviet": {
+            "schemaVersion": 1,
+            "mode": "objective-guard-v1",
+            "maxPhases": 12,
+            "maxActions": 180,
+            "maxMovesPerPhase": 8,
+            "maxBattlesPerPhase": 2,
+            "maxReplacementsPerPhase": 8,
+            "minAttackOdds": 1
+          }
+        },
+        "elapsedMs": 2597,
+        "status": "complete",
+        "reason": null,
+        "actions": 277,
+        "sideTurns": 14,
+        "counts": {
+          "declare-battle": 22,
+          "finish-phase": 55,
+          "resolve-pending": 22,
+          "move": 138,
+          "replacement": 39,
+          "place-reinforcement": 1
+        },
+        "stats": {
+          "moves": 138,
+          "combats": 22,
+          "replacements": 39,
+          "reinforcements": 1,
+          "turns": 7
+        },
+        "cityControl": {
+          "1,4": "german",
+          "2,6": "german",
+          "4,8": "soviet",
+          "5,1": "soviet",
+          "5,3": "german",
+          "7,3": "german",
+          "7,5": "german",
+          "7,9": "soviet",
+          "10,2": "soviet",
+          "10,6": "soviet",
+          "13,5": "soviet"
+        },
+        "stepsLost": {
+          "german": 16,
+          "soviet": 17
+        },
+        "winner": "soviet",
+        "terminal": {
+          "winner": "soviet"
+        },
+        "stateHash": "072a4e70c757f3d59e6d8da761eeb0ed0d1c81600f99b88150c89a3b95d00b71",
+        "stackedCombats": 8,
+        "stackedCityHolds": 0,
+        "exactRestore": true
+      }
+    }
+  ]
+}

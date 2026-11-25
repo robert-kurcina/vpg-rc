@@ -1,0 +1,1484 @@
+{
+  "schemaVersion": 1,
+  "checkpoint": 178,
+  "scope": "Arduous whole-cell base terrain source transcription; not gameplay graph certification",
+  "sourceSvgSha256": "423af8983fd90a5be17041922a612efba42bbff306683ead9fd6910413402ede",
+  "sourceScanSha256": "9e41cf83ff001a616c5b6651784b8ac8206fc2eb04048dc41b1a3a0b3c3fa8f4",
+  "counts": {
+    "hexes": 155,
+    "forest": 30,
+    "swamp": 20,
+    "reviewedOpen": 105,
+    "currentlyUnclassified": 0,
+    "openCityHexes": [
+      "0211",
+      "0907"
+    ]
+  },
+  "method": {
+    "primary": "Exact authored forest/swamp layer paths and source-registered cell IDs",
+    "corroboration": "SHA-256 pinned original board-scan whole-cell center color test",
+    "threshold": 0.5,
+    "negativeEvidence": "Every one of the 105 unmarked hex centers is below forest and swamp majority thresholds",
+    "limitations": [
+      "Center evidence alone does not settle every possible terrain boundary",
+      "River and reinforcement hexsides, rail semantics and full game setup are separate",
+      "Source SVG contains a missing embedded PNG reference; separately bundled original board scan is used"
+    ]
+  },
+  "records": [
+    {
+      "hexId": "0105",
+      "terrain": "open",
+      "review": "SVG-without-forest-or-swamp-overlay + independently corroborating supplied board scan",
+      "previousTerrain": "open",
+      "previousStatus": "source-svg-scan-reviewed-open-v412",
+      "greenFraction": 0.0,
+      "swampFraction": 0.030113,
+      "cityMarker": false
+    },
+    {
+      "hexId": "0106",
+      "terrain": "open",
+      "review": "SVG-without-forest-or-swamp-overlay + independently corroborating supplied board scan",
+      "previousTerrain": "open",
+      "previousStatus": "source-svg-scan-reviewed-open-v412",
+      "greenFraction": 0.056462,
+      "swampFraction": 0.08532,
+      "cityMarker": false
+    },
+    {
+      "hexId": "0107",
+      "terrain": "open",
+      "review": "SVG-without-forest-or-swamp-overlay + independently corroborating supplied board scan",
+      "previousTerrain": "open",
+      "previousStatus": "source-svg-scan-reviewed-open-v412",
+      "greenFraction": 0.067754,
+      "swampFraction": 0.097867,
+      "cityMarker": false
+    },
+    {
+      "hexId": "0108",
+      "terrain": "open",
+      "review": "SVG-without-forest-or-swamp-overlay + independently corroborating supplied board scan",
+      "previousTerrain": "open",
+      "previousStatus": "source-svg-scan-reviewed-open-v412",
+      "greenFraction": 0.074028,
+      "swampFraction": 0.097867,
+      "cityMarker": false
+    },
+    {
+      "hexId": "0109",
+      "terrain": "open",
+      "review": "SVG-without-forest-or-swamp-overlay + independently corroborating supplied board scan",
+      "previousTerrain": "open",
+      "previousStatus": "source-svg-scan-reviewed-open-v412",
+      "greenFraction": 0.140527,
+      "swampFraction": 0.125471,
+      "cityMarker": false
+    },
+    {
+      "hexId": "0110",
+      "terrain": "open",
+      "review": "SVG-without-forest-or-swamp-overlay + independently corroborating supplied board scan",
+      "previousTerrain": "open",
+      "previousStatus": "source-svg-scan-reviewed-open-v412",
+      "greenFraction": 0.101631,
+      "swampFraction": 0.151819,
+      "cityMarker": false
+    },
+    {
+      "hexId": "0205",
+      "terrain": "open",
+      "review": "SVG-without-forest-or-swamp-overlay + independently corroborating supplied board scan",
+      "previousTerrain": "open",
+      "previousStatus": "source-svg-scan-reviewed-open-v412",
+      "greenFraction": 0.114178,
+      "swampFraction": 0.209536,
+      "cityMarker": false
+    },
+    {
+      "hexId": "0206",
+      "terrain": "open",
+      "review": "SVG-without-forest-or-swamp-overlay + independently corroborating supplied board scan",
+      "previousTerrain": "open",
+      "previousStatus": "source-svg-scan-reviewed-open-v412",
+      "greenFraction": 0.074028,
+      "swampFraction": 0.10665,
+      "cityMarker": false
+    },
+    {
+      "hexId": "0207",
+      "terrain": "open",
+      "review": "SVG-without-forest-or-swamp-overlay + independently corroborating supplied board scan",
+      "previousTerrain": "open",
+      "previousStatus": "source-svg-scan-reviewed-open-v412",
+      "greenFraction": 0.121706,
+      "swampFraction": 0.212045,
+      "cityMarker": false
+    },
+    {
+      "hexId": "0208",
+      "terrain": "forest",
+      "sourceSvgId": "path207",
+      "review": "authored-source-svg-marker",
+      "greenFraction": 0.848181,
+      "swampFraction": 0.29611
+    },
+    {
+      "hexId": "0209",
+      "terrain": "open",
+      "review": "SVG-without-forest-or-swamp-overlay + independently corroborating supplied board scan",
+      "previousTerrain": "open",
+      "previousStatus": "source-svg-scan-reviewed-open-v412",
+      "greenFraction": 0.065245,
+      "swampFraction": 0.21079,
+      "cityMarker": false
+    },
+    {
+      "hexId": "0210",
+      "terrain": "open",
+      "review": "SVG-without-forest-or-swamp-overlay + independently corroborating supplied board scan",
+      "previousTerrain": "open",
+      "previousStatus": "source-svg-scan-reviewed-open-v412",
+      "greenFraction": 0.069009,
+      "swampFraction": 0.287327,
+      "cityMarker": false
+    },
+    {
+      "hexId": "0211",
+      "terrain": "open",
+      "review": "SVG-without-forest-or-swamp-overlay + independently corroborating supplied board scan",
+      "previousTerrain": "open",
+      "previousStatus": "source-svg-scan-reviewed-open-v412",
+      "greenFraction": 0.001255,
+      "swampFraction": 0.058971,
+      "cityMarker": true
+    },
+    {
+      "hexId": "0305",
+      "terrain": "forest",
+      "sourceSvgId": "path205",
+      "review": "authored-source-svg-marker",
+      "greenFraction": 0.851945,
+      "swampFraction": 0.329987
+    },
+    {
+      "hexId": "0306",
+      "terrain": "open",
+      "review": "SVG-without-forest-or-swamp-overlay + independently corroborating supplied board scan",
+      "previousTerrain": "open",
+      "previousStatus": "source-svg-scan-reviewed-open-v412",
+      "greenFraction": 0.062735,
+      "swampFraction": 0.080301,
+      "cityMarker": false
+    },
+    {
+      "hexId": "0307",
+      "terrain": "forest",
+      "sourceSvgId": "path206",
+      "review": "authored-source-svg-marker",
+      "greenFraction": 0.830615,
+      "swampFraction": 0.306148
+    },
+    {
+      "hexId": "0308",
+      "terrain": "open",
+      "review": "SVG-without-forest-or-swamp-overlay + independently corroborating supplied board scan",
+      "previousTerrain": "open",
+      "previousStatus": "source-svg-scan-reviewed-open-v412",
+      "greenFraction": 0.124216,
+      "swampFraction": 0.158093,
+      "cityMarker": false
+    },
+    {
+      "hexId": "0309",
+      "terrain": "forest",
+      "sourceSvgId": "path270",
+      "review": "authored-source-svg-marker",
+      "greenFraction": 0.973651,
+      "swampFraction": 0.215809
+    },
+    {
+      "hexId": "0310",
+      "terrain": "forest",
+      "sourceSvgId": "path271",
+      "review": "authored-source-svg-marker",
+      "greenFraction": 0.932246,
+      "swampFraction": 0.158093
+    },
+    {
+      "hexId": "0405",
+      "terrain": "open",
+      "review": "SVG-without-forest-or-swamp-overlay + independently corroborating supplied board scan",
+      "previousTerrain": "open",
+      "previousStatus": "source-svg-scan-reviewed-open-v412",
+      "greenFraction": 0.135508,
+      "swampFraction": 0.062735,
+      "cityMarker": false
+    },
+    {
+      "hexId": "0406",
+      "terrain": "open",
+      "review": "SVG-without-forest-or-swamp-overlay + independently corroborating supplied board scan",
+      "previousTerrain": "open",
+      "previousStatus": "source-svg-scan-reviewed-open-v412",
+      "greenFraction": 0.033877,
+      "swampFraction": 0.202008,
+      "cityMarker": false
+    },
+    {
+      "hexId": "0407",
+      "terrain": "open",
+      "review": "SVG-without-forest-or-swamp-overlay + independently corroborating supplied board scan",
+      "previousTerrain": "open",
+      "previousStatus": "source-svg-scan-reviewed-open-v412",
+      "greenFraction": 0.087829,
+      "swampFraction": 0.289837,
+      "cityMarker": false
+    },
+    {
+      "hexId": "0408",
+      "terrain": "open",
+      "review": "SVG-without-forest-or-swamp-overlay + independently corroborating supplied board scan",
+      "previousTerrain": "open",
+      "previousStatus": "source-svg-scan-reviewed-open-v412",
+      "greenFraction": 0.033877,
+      "swampFraction": 0.074028,
+      "cityMarker": false
+    },
+    {
+      "hexId": "0409",
+      "terrain": "open",
+      "review": "SVG-without-forest-or-swamp-overlay + independently corroborating supplied board scan",
+      "previousTerrain": "open",
+      "previousStatus": "source-svg-scan-reviewed-open-v412",
+      "greenFraction": 0.010038,
+      "swampFraction": 0.025094,
+      "cityMarker": false
+    },
+    {
+      "hexId": "0410",
+      "terrain": "forest",
+      "sourceSvgId": "path272",
+      "review": "authored-source-svg-marker",
+      "greenFraction": 0.964868,
+      "swampFraction": 0.163112
+    },
+    {
+      "hexId": "0411",
+      "terrain": "forest",
+      "sourceSvgId": "path273",
+      "review": "authored-source-svg-marker",
+      "greenFraction": 0.987453,
+      "swampFraction": 0.17064
+    },
+    {
+      "hexId": "0504",
+      "terrain": "open",
+      "review": "SVG-without-forest-or-swamp-overlay + independently corroborating supplied board scan",
+      "previousTerrain": "open",
+      "previousStatus": "source-svg-scan-reviewed-open-v412",
+      "greenFraction": 0.002509,
+      "swampFraction": 0.0,
+      "cityMarker": false
+    },
+    {
+      "hexId": "0505",
+      "terrain": "open",
+      "review": "SVG-without-forest-or-swamp-overlay + independently corroborating supplied board scan",
+      "previousTerrain": "open",
+      "previousStatus": "source-svg-scan-reviewed-open-v412",
+      "greenFraction": 0.087829,
+      "swampFraction": 0.065245,
+      "cityMarker": false
+    },
+    {
+      "hexId": "0506",
+      "terrain": "open",
+      "review": "SVG-without-forest-or-swamp-overlay + independently corroborating supplied board scan",
+      "previousTerrain": "open",
+      "previousStatus": "source-svg-scan-reviewed-open-v412",
+      "greenFraction": 0.072773,
+      "swampFraction": 0.045169,
+      "cityMarker": false
+    },
+    {
+      "hexId": "0507",
+      "terrain": "open",
+      "review": "SVG-without-forest-or-swamp-overlay + independently corroborating supplied board scan",
+      "previousTerrain": "open",
+      "previousStatus": "source-svg-scan-reviewed-open-v412",
+      "greenFraction": 0.0,
+      "swampFraction": 0.0,
+      "cityMarker": false
+    },
+    {
+      "hexId": "0508",
+      "terrain": "open",
+      "review": "SVG-without-forest-or-swamp-overlay + independently corroborating supplied board scan",
+      "previousTerrain": "open",
+      "previousStatus": "source-svg-scan-reviewed-open-v412",
+      "greenFraction": 0.051443,
+      "swampFraction": 0.079046,
+      "cityMarker": false
+    },
+    {
+      "hexId": "0509",
+      "terrain": "forest",
+      "sourceSvgId": "path274",
+      "review": "authored-source-svg-marker",
+      "greenFraction": 0.966123,
+      "swampFraction": 0.096612
+    },
+    {
+      "hexId": "0510",
+      "terrain": "forest",
+      "sourceSvgId": "path275",
+      "review": "authored-source-svg-marker",
+      "greenFraction": 0.953576,
+      "swampFraction": 0.228356
+    },
+    {
+      "hexId": "0604",
+      "terrain": "open",
+      "review": "SVG-without-forest-or-swamp-overlay + independently corroborating supplied board scan",
+      "previousTerrain": "open",
+      "previousStatus": "source-svg-scan-reviewed-open-v412",
+      "greenFraction": 0.0,
+      "swampFraction": 0.001255,
+      "cityMarker": false
+    },
+    {
+      "hexId": "0605",
+      "terrain": "open",
+      "review": "SVG-without-forest-or-swamp-overlay + independently corroborating supplied board scan",
+      "previousTerrain": "open",
+      "previousStatus": "source-svg-scan-reviewed-open-v412",
+      "greenFraction": 0.0,
+      "swampFraction": 0.0,
+      "cityMarker": false
+    },
+    {
+      "hexId": "0606",
+      "terrain": "open",
+      "review": "SVG-without-forest-or-swamp-overlay + independently corroborating supplied board scan",
+      "previousTerrain": "open",
+      "previousStatus": "source-svg-scan-reviewed-open-v412",
+      "greenFraction": 0.065245,
+      "swampFraction": 0.259724,
+      "cityMarker": true
+    },
+    {
+      "hexId": "0607",
+      "terrain": "open",
+      "review": "SVG-without-forest-or-swamp-overlay + independently corroborating supplied board scan",
+      "previousTerrain": "open",
+      "previousStatus": "source-svg-scan-reviewed-open-v412",
+      "greenFraction": 0.0,
+      "swampFraction": 0.0,
+      "cityMarker": false
+    },
+    {
+      "hexId": "0608",
+      "terrain": "open",
+      "review": "SVG-without-forest-or-swamp-overlay + independently corroborating supplied board scan",
+      "previousTerrain": "open",
+      "previousStatus": "source-svg-scan-reviewed-open-v412",
+      "greenFraction": 0.0,
+      "swampFraction": 0.0,
+      "cityMarker": false
+    },
+    {
+      "hexId": "0609",
+      "terrain": "open",
+      "review": "SVG-without-forest-or-swamp-overlay + independently corroborating supplied board scan",
+      "previousTerrain": "open",
+      "previousStatus": "source-svg-scan-reviewed-open-v412",
+      "greenFraction": 0.076537,
+      "swampFraction": 0.313676,
+      "cityMarker": true
+    },
+    {
+      "hexId": "0610",
+      "terrain": "forest",
+      "sourceSvgId": "path290",
+      "review": "authored-source-svg-marker",
+      "greenFraction": 0.95734,
+      "swampFraction": 0.089084
+    },
+    {
+      "hexId": "0611",
+      "terrain": "swamp",
+      "sourceSvgId": "path299",
+      "review": "authored-source-svg-marker",
+      "greenFraction": 0.051443,
+      "swampFraction": 0.986198
+    },
+    {
+      "hexId": "0703",
+      "terrain": "open",
+      "review": "SVG-without-forest-or-swamp-overlay + independently corroborating supplied board scan",
+      "previousTerrain": "open",
+      "previousStatus": "source-svg-scan-reviewed-open-v412",
+      "greenFraction": 0.040151,
+      "swampFraction": 0.159348,
+      "cityMarker": false
+    },
+    {
+      "hexId": "0704",
+      "terrain": "open",
+      "review": "SVG-without-forest-or-swamp-overlay + independently corroborating supplied board scan",
+      "previousTerrain": "open",
+      "previousStatus": "source-svg-scan-reviewed-open-v412",
+      "greenFraction": 0.008783,
+      "swampFraction": 0.001255,
+      "cityMarker": false
+    },
+    {
+      "hexId": "0705",
+      "terrain": "open",
+      "review": "SVG-without-forest-or-swamp-overlay + independently corroborating supplied board scan",
+      "previousTerrain": "open",
+      "previousStatus": "source-svg-scan-reviewed-open-v412",
+      "greenFraction": 0.076537,
+      "swampFraction": 0.043915,
+      "cityMarker": false
+    },
+    {
+      "hexId": "0706",
+      "terrain": "forest",
+      "sourceSvgId": "path289",
+      "review": "authored-source-svg-marker",
+      "greenFraction": 0.968632,
+      "swampFraction": 0.217064
+    },
+    {
+      "hexId": "0707",
+      "terrain": "open",
+      "review": "SVG-without-forest-or-swamp-overlay + independently corroborating supplied board scan",
+      "previousTerrain": "open",
+      "previousStatus": "source-svg-scan-reviewed-open-v412",
+      "greenFraction": 0.0,
+      "swampFraction": 0.0,
+      "cityMarker": false
+    },
+    {
+      "hexId": "0708",
+      "terrain": "swamp",
+      "sourceSvgId": "path297",
+      "review": "authored-source-svg-marker",
+      "greenFraction": 0.052698,
+      "swampFraction": 0.982434
+    },
+    {
+      "hexId": "0709",
+      "terrain": "swamp",
+      "sourceSvgId": "path298",
+      "review": "authored-source-svg-marker",
+      "greenFraction": 0.135508,
+      "swampFraction": 0.938519
+    },
+    {
+      "hexId": "0710",
+      "terrain": "open",
+      "review": "SVG-without-forest-or-swamp-overlay + independently corroborating supplied board scan",
+      "previousTerrain": "open",
+      "previousStatus": "source-svg-scan-reviewed-open-v412",
+      "greenFraction": 0.071518,
+      "swampFraction": 0.046424,
+      "cityMarker": false
+    },
+    {
+      "hexId": "0803",
+      "terrain": "open",
+      "review": "SVG-without-forest-or-swamp-overlay + independently corroborating supplied board scan",
+      "previousTerrain": "open",
+      "previousStatus": "source-svg-scan-reviewed-open-v412",
+      "greenFraction": 0.053952,
+      "swampFraction": 0.129235,
+      "cityMarker": false
+    },
+    {
+      "hexId": "0804",
+      "terrain": "open",
+      "review": "SVG-without-forest-or-swamp-overlay + independently corroborating supplied board scan",
+      "previousTerrain": "open",
+      "previousStatus": "source-svg-scan-reviewed-open-v412",
+      "greenFraction": 0.030113,
+      "swampFraction": 0.016311,
+      "cityMarker": false
+    },
+    {
+      "hexId": "0805",
+      "terrain": "open",
+      "review": "SVG-without-forest-or-swamp-overlay + independently corroborating supplied board scan",
+      "previousTerrain": "open",
+      "previousStatus": "source-svg-scan-reviewed-open-v412",
+      "greenFraction": 0.053952,
+      "swampFraction": 0.069009,
+      "cityMarker": false
+    },
+    {
+      "hexId": "0806",
+      "terrain": "open",
+      "review": "SVG-without-forest-or-swamp-overlay + independently corroborating supplied board scan",
+      "previousTerrain": "open",
+      "previousStatus": "source-svg-scan-reviewed-open-v412",
+      "greenFraction": 0.0,
+      "swampFraction": 0.0,
+      "cityMarker": false
+    },
+    {
+      "hexId": "0807",
+      "terrain": "open",
+      "review": "SVG-without-forest-or-swamp-overlay + independently corroborating supplied board scan",
+      "previousTerrain": "open",
+      "previousStatus": "source-svg-scan-reviewed-open-v412",
+      "greenFraction": 0.082811,
+      "swampFraction": 0.072773,
+      "cityMarker": false
+    },
+    {
+      "hexId": "0808",
+      "terrain": "open",
+      "review": "SVG-without-forest-or-swamp-overlay + independently corroborating supplied board scan",
+      "previousTerrain": "open",
+      "previousStatus": "source-svg-scan-reviewed-open-v412",
+      "greenFraction": 0.052698,
+      "swampFraction": 0.055207,
+      "cityMarker": false
+    },
+    {
+      "hexId": "0809",
+      "terrain": "open",
+      "review": "SVG-without-forest-or-swamp-overlay + independently corroborating supplied board scan",
+      "previousTerrain": "open",
+      "previousStatus": "source-svg-scan-reviewed-open-v412",
+      "greenFraction": 0.0,
+      "swampFraction": 0.0,
+      "cityMarker": false
+    },
+    {
+      "hexId": "0810",
+      "terrain": "swamp",
+      "sourceSvgId": "path306",
+      "review": "authored-source-svg-marker",
+      "greenFraction": 0.220828,
+      "swampFraction": 0.967378
+    },
+    {
+      "hexId": "0811",
+      "terrain": "swamp",
+      "sourceSvgId": "path307",
+      "review": "authored-source-svg-marker",
+      "greenFraction": 0.141782,
+      "swampFraction": 0.973651
+    },
+    {
+      "hexId": "0903",
+      "terrain": "open",
+      "review": "SVG-without-forest-or-swamp-overlay + independently corroborating supplied board scan",
+      "previousTerrain": "open",
+      "previousStatus": "source-svg-scan-reviewed-open-v412",
+      "greenFraction": 0.0,
+      "swampFraction": 0.309912,
+      "cityMarker": false
+    },
+    {
+      "hexId": "0904",
+      "terrain": "open",
+      "review": "SVG-without-forest-or-swamp-overlay + independently corroborating supplied board scan",
+      "previousTerrain": "open",
+      "previousStatus": "source-svg-scan-reviewed-open-v412",
+      "greenFraction": 0.010038,
+      "swampFraction": 0.0,
+      "cityMarker": false
+    },
+    {
+      "hexId": "0905",
+      "terrain": "open",
+      "review": "SVG-without-forest-or-swamp-overlay + independently corroborating supplied board scan",
+      "previousTerrain": "open",
+      "previousStatus": "source-svg-scan-reviewed-open-v412",
+      "greenFraction": 0.0,
+      "swampFraction": 0.0,
+      "cityMarker": false
+    },
+    {
+      "hexId": "0906",
+      "terrain": "open",
+      "review": "SVG-without-forest-or-swamp-overlay + independently corroborating supplied board scan",
+      "previousTerrain": "open",
+      "previousStatus": "source-svg-scan-reviewed-open-v412",
+      "greenFraction": 0.0,
+      "swampFraction": 0.067754,
+      "cityMarker": false
+    },
+    {
+      "hexId": "0907",
+      "terrain": "open",
+      "review": "SVG-without-forest-or-swamp-overlay + independently corroborating supplied board scan",
+      "previousTerrain": "open",
+      "previousStatus": "source-svg-scan-reviewed-open-v412",
+      "greenFraction": 0.0,
+      "swampFraction": 0.003764,
+      "cityMarker": true
+    },
+    {
+      "hexId": "0908",
+      "terrain": "open",
+      "review": "SVG-without-forest-or-swamp-overlay + independently corroborating supplied board scan",
+      "previousTerrain": "open",
+      "previousStatus": "source-svg-scan-reviewed-open-v412",
+      "greenFraction": 0.0,
+      "swampFraction": 0.005019,
+      "cityMarker": false
+    },
+    {
+      "hexId": "0909",
+      "terrain": "open",
+      "review": "SVG-without-forest-or-swamp-overlay + independently corroborating supplied board scan",
+      "previousTerrain": "open",
+      "previousStatus": "source-svg-scan-reviewed-open-v412",
+      "greenFraction": 0.0,
+      "swampFraction": 0.001255,
+      "cityMarker": false
+    },
+    {
+      "hexId": "0910",
+      "terrain": "swamp",
+      "sourceSvgId": "path313",
+      "review": "authored-source-svg-marker",
+      "greenFraction": 0.074028,
+      "swampFraction": 0.987453
+    },
+    {
+      "hexId": "1003",
+      "terrain": "open",
+      "review": "SVG-without-forest-or-swamp-overlay + independently corroborating supplied board scan",
+      "previousTerrain": "open",
+      "previousStatus": "source-svg-scan-reviewed-open-v412",
+      "greenFraction": 0.0,
+      "swampFraction": 0.0,
+      "cityMarker": false
+    },
+    {
+      "hexId": "1004",
+      "terrain": "forest",
+      "sourceSvgId": "path282",
+      "review": "authored-source-svg-marker",
+      "greenFraction": 0.971142,
+      "swampFraction": 0.076537
+    },
+    {
+      "hexId": "1005",
+      "terrain": "open",
+      "review": "SVG-without-forest-or-swamp-overlay + independently corroborating supplied board scan",
+      "previousTerrain": "open",
+      "previousStatus": "source-svg-scan-reviewed-open-v412",
+      "greenFraction": 0.0,
+      "swampFraction": 0.0,
+      "cityMarker": false
+    },
+    {
+      "hexId": "1006",
+      "terrain": "forest",
+      "sourceSvgId": "path287",
+      "review": "authored-source-svg-marker",
+      "greenFraction": 0.954831,
+      "swampFraction": 0.101631
+    },
+    {
+      "hexId": "1007",
+      "terrain": "open",
+      "review": "SVG-without-forest-or-swamp-overlay + independently corroborating supplied board scan",
+      "previousTerrain": "open",
+      "previousStatus": "source-svg-scan-reviewed-open-v412",
+      "greenFraction": 0.074028,
+      "swampFraction": 0.046424,
+      "cityMarker": false
+    },
+    {
+      "hexId": "1008",
+      "terrain": "open",
+      "review": "SVG-without-forest-or-swamp-overlay + independently corroborating supplied board scan",
+      "previousTerrain": "open",
+      "previousStatus": "source-svg-scan-reviewed-open-v412",
+      "greenFraction": 0.033877,
+      "swampFraction": 0.038896,
+      "cityMarker": false
+    },
+    {
+      "hexId": "1009",
+      "terrain": "forest",
+      "sourceSvgId": "path288",
+      "review": "authored-source-svg-marker",
+      "greenFraction": 0.998745,
+      "swampFraction": 0.050188
+    },
+    {
+      "hexId": "1010",
+      "terrain": "swamp",
+      "sourceSvgId": "path308",
+      "review": "authored-source-svg-marker",
+      "greenFraction": 0.165621,
+      "swampFraction": 0.983689
+    },
+    {
+      "hexId": "1011",
+      "terrain": "swamp",
+      "sourceSvgId": "path309",
+      "review": "authored-source-svg-marker",
+      "greenFraction": 0.086575,
+      "swampFraction": 0.988708
+    },
+    {
+      "hexId": "1102",
+      "terrain": "forest",
+      "sourceSvgId": "path283",
+      "review": "authored-source-svg-marker",
+      "greenFraction": 0.988708,
+      "swampFraction": 0.120452
+    },
+    {
+      "hexId": "1103",
+      "terrain": "open",
+      "review": "SVG-without-forest-or-swamp-overlay + independently corroborating supplied board scan",
+      "previousTerrain": "open",
+      "previousStatus": "source-svg-scan-reviewed-open-v412",
+      "greenFraction": 0.0,
+      "swampFraction": 0.002509,
+      "cityMarker": false
+    },
+    {
+      "hexId": "1104",
+      "terrain": "open",
+      "review": "SVG-without-forest-or-swamp-overlay + independently corroborating supplied board scan",
+      "previousTerrain": "open",
+      "previousStatus": "source-svg-scan-reviewed-open-v412",
+      "greenFraction": 0.0,
+      "swampFraction": 0.04266,
+      "cityMarker": false
+    },
+    {
+      "hexId": "1105",
+      "terrain": "forest",
+      "sourceSvgId": "path276",
+      "review": "authored-source-svg-marker",
+      "greenFraction": 0.997491,
+      "swampFraction": 0.071518
+    },
+    {
+      "hexId": "1106",
+      "terrain": "forest",
+      "sourceSvgId": "path277",
+      "review": "authored-source-svg-marker",
+      "greenFraction": 0.97867,
+      "swampFraction": 0.181932
+    },
+    {
+      "hexId": "1107",
+      "terrain": "swamp",
+      "sourceSvgId": "path300",
+      "review": "authored-source-svg-marker",
+      "greenFraction": 0.092848,
+      "swampFraction": 0.981179
+    },
+    {
+      "hexId": "1108",
+      "terrain": "swamp",
+      "sourceSvgId": "path304",
+      "review": "authored-source-svg-marker",
+      "greenFraction": 0.06399,
+      "swampFraction": 0.988708
+    },
+    {
+      "hexId": "1109",
+      "terrain": "open",
+      "review": "SVG-without-forest-or-swamp-overlay + independently corroborating supplied board scan",
+      "previousTerrain": "open",
+      "previousStatus": "source-svg-scan-reviewed-open-v412",
+      "greenFraction": 0.0,
+      "swampFraction": 0.001255,
+      "cityMarker": false
+    },
+    {
+      "hexId": "1110",
+      "terrain": "swamp",
+      "sourceSvgId": "path312",
+      "review": "authored-source-svg-marker",
+      "greenFraction": 0.130489,
+      "swampFraction": 0.956085
+    },
+    {
+      "hexId": "1202",
+      "terrain": "open",
+      "review": "SVG-without-forest-or-swamp-overlay + independently corroborating supplied board scan",
+      "previousTerrain": "open",
+      "previousStatus": "source-svg-scan-reviewed-open-v412",
+      "greenFraction": 0.0,
+      "swampFraction": 0.0,
+      "cityMarker": false
+    },
+    {
+      "hexId": "1203",
+      "terrain": "open",
+      "review": "SVG-without-forest-or-swamp-overlay + independently corroborating supplied board scan",
+      "previousTerrain": "open",
+      "previousStatus": "source-svg-scan-reviewed-open-v412",
+      "greenFraction": 0.111669,
+      "swampFraction": 0.230866,
+      "cityMarker": true
+    },
+    {
+      "hexId": "1204",
+      "terrain": "open",
+      "review": "SVG-without-forest-or-swamp-overlay + independently corroborating supplied board scan",
+      "previousTerrain": "open",
+      "previousStatus": "source-svg-scan-reviewed-open-v412",
+      "greenFraction": 0.0,
+      "swampFraction": 0.0,
+      "cityMarker": false
+    },
+    {
+      "hexId": "1205",
+      "terrain": "open",
+      "review": "SVG-without-forest-or-swamp-overlay + independently corroborating supplied board scan",
+      "previousTerrain": "open",
+      "previousStatus": "source-svg-scan-reviewed-open-v412",
+      "greenFraction": 0.0,
+      "swampFraction": 0.0,
+      "cityMarker": false
+    },
+    {
+      "hexId": "1206",
+      "terrain": "forest",
+      "sourceSvgId": "path291",
+      "review": "authored-source-svg-marker",
+      "greenFraction": 0.930991,
+      "swampFraction": 0.144291
+    },
+    {
+      "hexId": "1207",
+      "terrain": "swamp",
+      "sourceSvgId": "path301",
+      "review": "authored-source-svg-marker",
+      "greenFraction": 0.180678,
+      "swampFraction": 0.959849
+    },
+    {
+      "hexId": "1208",
+      "terrain": "swamp",
+      "sourceSvgId": "path303",
+      "review": "authored-source-svg-marker",
+      "greenFraction": 0.289837,
+      "swampFraction": 0.920954
+    },
+    {
+      "hexId": "1209",
+      "terrain": "swamp",
+      "sourceSvgId": "path305",
+      "review": "authored-source-svg-marker",
+      "greenFraction": 0.111669,
+      "swampFraction": 0.988708
+    },
+    {
+      "hexId": "1210",
+      "terrain": "swamp",
+      "sourceSvgId": "path310",
+      "review": "authored-source-svg-marker",
+      "greenFraction": 0.183187,
+      "swampFraction": 0.954831
+    },
+    {
+      "hexId": "1211",
+      "terrain": "swamp",
+      "sourceSvgId": "path311",
+      "review": "authored-source-svg-marker",
+      "greenFraction": 0.135508,
+      "swampFraction": 0.979925
+    },
+    {
+      "hexId": "1302",
+      "terrain": "open",
+      "review": "SVG-without-forest-or-swamp-overlay + independently corroborating supplied board scan",
+      "previousTerrain": "open",
+      "previousStatus": "source-svg-scan-reviewed-open-v412",
+      "greenFraction": 0.0,
+      "swampFraction": 0.060226,
+      "cityMarker": false
+    },
+    {
+      "hexId": "1303",
+      "terrain": "open",
+      "review": "SVG-without-forest-or-swamp-overlay + independently corroborating supplied board scan",
+      "previousTerrain": "open",
+      "previousStatus": "source-svg-scan-reviewed-open-v412",
+      "greenFraction": 0.058971,
+      "swampFraction": 0.107905,
+      "cityMarker": false
+    },
+    {
+      "hexId": "1304",
+      "terrain": "open",
+      "review": "SVG-without-forest-or-swamp-overlay + independently corroborating supplied board scan",
+      "previousTerrain": "open",
+      "previousStatus": "source-svg-scan-reviewed-open-v412",
+      "greenFraction": 0.013802,
+      "swampFraction": 0.017566,
+      "cityMarker": false
+    },
+    {
+      "hexId": "1305",
+      "terrain": "open",
+      "review": "SVG-without-forest-or-swamp-overlay + independently corroborating supplied board scan",
+      "previousTerrain": "open",
+      "previousStatus": "source-svg-scan-reviewed-open-v412",
+      "greenFraction": 0.087829,
+      "swampFraction": 0.057716,
+      "cityMarker": false
+    },
+    {
+      "hexId": "1306",
+      "terrain": "forest",
+      "sourceSvgId": "path292",
+      "review": "authored-source-svg-marker",
+      "greenFraction": 0.996236,
+      "swampFraction": 0.235885
+    },
+    {
+      "hexId": "1307",
+      "terrain": "swamp",
+      "sourceSvgId": "path302",
+      "review": "authored-source-svg-marker",
+      "greenFraction": 0.084065,
+      "swampFraction": 0.968632
+    },
+    {
+      "hexId": "1308",
+      "terrain": "open",
+      "review": "SVG-without-forest-or-swamp-overlay + independently corroborating supplied board scan",
+      "previousTerrain": "open",
+      "previousStatus": "source-svg-scan-reviewed-open-v412",
+      "greenFraction": 0.0,
+      "swampFraction": 0.041405,
+      "cityMarker": false
+    },
+    {
+      "hexId": "1309",
+      "terrain": "open",
+      "review": "SVG-without-forest-or-swamp-overlay + independently corroborating supplied board scan",
+      "previousTerrain": "open",
+      "previousStatus": "source-svg-scan-reviewed-open-v412",
+      "greenFraction": 0.067754,
+      "swampFraction": 0.087829,
+      "cityMarker": false
+    },
+    {
+      "hexId": "1310",
+      "terrain": "open",
+      "review": "SVG-without-forest-or-swamp-overlay + independently corroborating supplied board scan",
+      "previousTerrain": "open",
+      "previousStatus": "source-svg-scan-reviewed-open-v412",
+      "greenFraction": 0.055207,
+      "swampFraction": 0.060226,
+      "cityMarker": false
+    },
+    {
+      "hexId": "1402",
+      "terrain": "open",
+      "review": "SVG-without-forest-or-swamp-overlay + independently corroborating supplied board scan",
+      "previousTerrain": "open",
+      "previousStatus": "source-svg-scan-reviewed-open-v412",
+      "greenFraction": 0.041405,
+      "swampFraction": 0.114178,
+      "cityMarker": true
+    },
+    {
+      "hexId": "1403",
+      "terrain": "forest",
+      "sourceSvgId": "path285",
+      "review": "authored-source-svg-marker",
+      "greenFraction": 0.987453,
+      "swampFraction": 0.086575
+    },
+    {
+      "hexId": "1404",
+      "terrain": "open",
+      "review": "SVG-without-forest-or-swamp-overlay + independently corroborating supplied board scan",
+      "previousTerrain": "open",
+      "previousStatus": "source-svg-scan-reviewed-open-v412",
+      "greenFraction": 0.051443,
+      "swampFraction": 0.193225,
+      "cityMarker": true
+    },
+    {
+      "hexId": "1405",
+      "terrain": "open",
+      "review": "SVG-without-forest-or-swamp-overlay + independently corroborating supplied board scan",
+      "previousTerrain": "open",
+      "previousStatus": "source-svg-scan-reviewed-open-v412",
+      "greenFraction": 0.095358,
+      "swampFraction": 0.130489,
+      "cityMarker": false
+    },
+    {
+      "hexId": "1406",
+      "terrain": "open",
+      "review": "SVG-without-forest-or-swamp-overlay + independently corroborating supplied board scan",
+      "previousTerrain": "open",
+      "previousStatus": "source-svg-scan-reviewed-open-v412",
+      "greenFraction": 0.0,
+      "swampFraction": 0.001255,
+      "cityMarker": false
+    },
+    {
+      "hexId": "1407",
+      "terrain": "open",
+      "review": "SVG-without-forest-or-swamp-overlay + independently corroborating supplied board scan",
+      "previousTerrain": "open",
+      "previousStatus": "source-svg-scan-reviewed-open-v412",
+      "greenFraction": 0.038896,
+      "swampFraction": 0.022585,
+      "cityMarker": false
+    },
+    {
+      "hexId": "1408",
+      "terrain": "open",
+      "review": "SVG-without-forest-or-swamp-overlay + independently corroborating supplied board scan",
+      "previousTerrain": "open",
+      "previousStatus": "source-svg-scan-reviewed-open-v412",
+      "greenFraction": 0.023839,
+      "swampFraction": 0.022585,
+      "cityMarker": false
+    },
+    {
+      "hexId": "1409",
+      "terrain": "open",
+      "review": "SVG-without-forest-or-swamp-overlay + independently corroborating supplied board scan",
+      "previousTerrain": "open",
+      "previousStatus": "source-svg-scan-reviewed-open-v412",
+      "greenFraction": 0.072773,
+      "swampFraction": 0.111669,
+      "cityMarker": false
+    },
+    {
+      "hexId": "1410",
+      "terrain": "open",
+      "review": "SVG-without-forest-or-swamp-overlay + independently corroborating supplied board scan",
+      "previousTerrain": "open",
+      "previousStatus": "source-svg-scan-reviewed-open-v412",
+      "greenFraction": 0.069009,
+      "swampFraction": 0.071518,
+      "cityMarker": false
+    },
+    {
+      "hexId": "1411",
+      "terrain": "open",
+      "review": "SVG-without-forest-or-swamp-overlay + independently corroborating supplied board scan",
+      "previousTerrain": "open",
+      "previousStatus": "source-svg-scan-reviewed-open-v412",
+      "greenFraction": 0.056462,
+      "swampFraction": 0.144291,
+      "cityMarker": false
+    },
+    {
+      "hexId": "1501",
+      "terrain": "open",
+      "review": "SVG-without-forest-or-swamp-overlay + independently corroborating supplied board scan",
+      "previousTerrain": "open",
+      "previousStatus": "source-svg-scan-reviewed-open-v412",
+      "greenFraction": 0.022585,
+      "swampFraction": 0.013802,
+      "cityMarker": false
+    },
+    {
+      "hexId": "1502",
+      "terrain": "open",
+      "review": "SVG-without-forest-or-swamp-overlay + independently corroborating supplied board scan",
+      "previousTerrain": "open",
+      "previousStatus": "source-svg-scan-reviewed-open-v412",
+      "greenFraction": 0.032622,
+      "swampFraction": 0.047679,
+      "cityMarker": false
+    },
+    {
+      "hexId": "1503",
+      "terrain": "open",
+      "review": "SVG-without-forest-or-swamp-overlay + independently corroborating supplied board scan",
+      "previousTerrain": "open",
+      "previousStatus": "source-svg-scan-reviewed-open-v412",
+      "greenFraction": 0.0,
+      "swampFraction": 0.008783,
+      "cityMarker": false
+    },
+    {
+      "hexId": "1504",
+      "terrain": "forest",
+      "sourceSvgId": "path286",
+      "review": "authored-source-svg-marker",
+      "greenFraction": 0.991217,
+      "swampFraction": 0.061481
+    },
+    {
+      "hexId": "1505",
+      "terrain": "open",
+      "review": "SVG-without-forest-or-swamp-overlay + independently corroborating supplied board scan",
+      "previousTerrain": "open",
+      "previousStatus": "source-svg-scan-reviewed-open-v412",
+      "greenFraction": 0.072773,
+      "swampFraction": 0.267252,
+      "cityMarker": true
+    },
+    {
+      "hexId": "1506",
+      "terrain": "open",
+      "review": "SVG-without-forest-or-swamp-overlay + independently corroborating supplied board scan",
+      "previousTerrain": "open",
+      "previousStatus": "source-svg-scan-reviewed-open-v412",
+      "greenFraction": 0.060226,
+      "swampFraction": 0.040151,
+      "cityMarker": false
+    },
+    {
+      "hexId": "1507",
+      "terrain": "open",
+      "review": "SVG-without-forest-or-swamp-overlay + independently corroborating supplied board scan",
+      "previousTerrain": "open",
+      "previousStatus": "source-svg-scan-reviewed-open-v412",
+      "greenFraction": 0.116688,
+      "swampFraction": 0.135508,
+      "cityMarker": true
+    },
+    {
+      "hexId": "1508",
+      "terrain": "open",
+      "review": "SVG-without-forest-or-swamp-overlay + independently corroborating supplied board scan",
+      "previousTerrain": "open",
+      "previousStatus": "source-svg-scan-reviewed-open-v412",
+      "greenFraction": 0.008783,
+      "swampFraction": 0.006274,
+      "cityMarker": false
+    },
+    {
+      "hexId": "1509",
+      "terrain": "open",
+      "review": "SVG-without-forest-or-swamp-overlay + independently corroborating supplied board scan",
+      "previousTerrain": "open",
+      "previousStatus": "source-svg-scan-reviewed-open-v412",
+      "greenFraction": 0.0,
+      "swampFraction": 0.0,
+      "cityMarker": false
+    },
+    {
+      "hexId": "1510",
+      "terrain": "open",
+      "review": "SVG-without-forest-or-swamp-overlay + independently corroborating supplied board scan",
+      "previousTerrain": "open",
+      "previousStatus": "source-svg-scan-reviewed-open-v412",
+      "greenFraction": 0.114178,
+      "swampFraction": 0.326223,
+      "cityMarker": true
+    },
+    {
+      "hexId": "1601",
+      "terrain": "open",
+      "review": "SVG-without-forest-or-swamp-overlay + independently corroborating supplied board scan",
+      "previousTerrain": "open",
+      "previousStatus": "source-svg-scan-reviewed-open-v412",
+      "greenFraction": 0.102886,
+      "swampFraction": 0.196989,
+      "cityMarker": false
+    },
+    {
+      "hexId": "1602",
+      "terrain": "open",
+      "review": "SVG-without-forest-or-swamp-overlay + independently corroborating supplied board scan",
+      "previousTerrain": "open",
+      "previousStatus": "source-svg-scan-reviewed-open-v412",
+      "greenFraction": 0.02133,
+      "swampFraction": 0.025094,
+      "cityMarker": false
+    },
+    {
+      "hexId": "1603",
+      "terrain": "open",
+      "review": "SVG-without-forest-or-swamp-overlay + independently corroborating supplied board scan",
+      "previousTerrain": "open",
+      "previousStatus": "source-svg-scan-reviewed-open-v412",
+      "greenFraction": 0.0,
+      "swampFraction": 0.003764,
+      "cityMarker": false
+    },
+    {
+      "hexId": "1604",
+      "terrain": "open",
+      "review": "SVG-without-forest-or-swamp-overlay + independently corroborating supplied board scan",
+      "previousTerrain": "open",
+      "previousStatus": "source-svg-scan-reviewed-open-v412",
+      "greenFraction": 0.0,
+      "swampFraction": 0.001255,
+      "cityMarker": false
+    },
+    {
+      "hexId": "1605",
+      "terrain": "open",
+      "review": "SVG-without-forest-or-swamp-overlay + independently corroborating supplied board scan",
+      "previousTerrain": "open",
+      "previousStatus": "source-svg-scan-reviewed-open-v412",
+      "greenFraction": 0.111669,
+      "swampFraction": 0.114178,
+      "cityMarker": false
+    },
+    {
+      "hexId": "1606",
+      "terrain": "open",
+      "review": "SVG-without-forest-or-swamp-overlay + independently corroborating supplied board scan",
+      "previousTerrain": "open",
+      "previousStatus": "source-svg-scan-reviewed-open-v412",
+      "greenFraction": 0.010038,
+      "swampFraction": 0.002509,
+      "cityMarker": false
+    },
+    {
+      "hexId": "1607",
+      "terrain": "open",
+      "review": "SVG-without-forest-or-swamp-overlay + independently corroborating supplied board scan",
+      "previousTerrain": "open",
+      "previousStatus": "source-svg-scan-reviewed-open-v412",
+      "greenFraction": 0.0,
+      "swampFraction": 0.0,
+      "cityMarker": false
+    },
+    {
+      "hexId": "1608",
+      "terrain": "open",
+      "review": "SVG-without-forest-or-swamp-overlay + independently corroborating supplied board scan",
+      "previousTerrain": "open",
+      "previousStatus": "source-svg-scan-reviewed-open-v412",
+      "greenFraction": 0.002509,
+      "swampFraction": 0.006274,
+      "cityMarker": false
+    },
+    {
+      "hexId": "1609",
+      "terrain": "forest",
+      "sourceSvgId": "path293",
+      "review": "authored-source-svg-marker",
+      "greenFraction": 1.0,
+      "swampFraction": 0.100376
+    },
+    {
+      "hexId": "1610",
+      "terrain": "open",
+      "review": "SVG-without-forest-or-swamp-overlay + independently corroborating supplied board scan",
+      "previousTerrain": "open",
+      "previousStatus": "source-svg-scan-reviewed-open-v412",
+      "greenFraction": 0.056462,
+      "swampFraction": 0.111669,
+      "cityMarker": false
+    },
+    {
+      "hexId": "1611",
+      "terrain": "open",
+      "review": "SVG-without-forest-or-swamp-overlay + independently corroborating supplied board scan",
+      "previousTerrain": "open",
+      "previousStatus": "source-svg-scan-reviewed-open-v412",
+      "greenFraction": 0.003764,
+      "swampFraction": 0.031368,
+      "cityMarker": false
+    },
+    {
+      "hexId": "1701",
+      "terrain": "swamp",
+      "sourceSvgId": "path169",
+      "review": "authored-source-svg-marker",
+      "greenFraction": 0.102886,
+      "swampFraction": 0.988708
+    },
+    {
+      "hexId": "1702",
+      "terrain": "forest",
+      "sourceSvgId": "path280",
+      "review": "authored-source-svg-marker",
+      "greenFraction": 0.973651,
+      "swampFraction": 0.06399
+    },
+    {
+      "hexId": "1703",
+      "terrain": "forest",
+      "sourceSvgId": "path281",
+      "review": "authored-source-svg-marker",
+      "greenFraction": 0.996236,
+      "swampFraction": 0.046424
+    },
+    {
+      "hexId": "1704",
+      "terrain": "open",
+      "review": "SVG-without-forest-or-swamp-overlay + independently corroborating supplied board scan",
+      "previousTerrain": "open",
+      "previousStatus": "source-svg-scan-reviewed-open-v412",
+      "greenFraction": 0.101631,
+      "swampFraction": 0.145546,
+      "cityMarker": true
+    },
+    {
+      "hexId": "1705",
+      "terrain": "open",
+      "review": "SVG-without-forest-or-swamp-overlay + independently corroborating supplied board scan",
+      "previousTerrain": "open",
+      "previousStatus": "source-svg-scan-reviewed-open-v412",
+      "greenFraction": 0.066499,
+      "swampFraction": 0.096612,
+      "cityMarker": false
+    },
+    {
+      "hexId": "1706",
+      "terrain": "open",
+      "review": "SVG-without-forest-or-swamp-overlay + independently corroborating supplied board scan",
+      "previousTerrain": "open",
+      "previousStatus": "source-svg-scan-reviewed-open-v412",
+      "greenFraction": 0.0,
+      "swampFraction": 0.0,
+      "cityMarker": false
+    },
+    {
+      "hexId": "1707",
+      "terrain": "forest",
+      "sourceSvgId": "path295",
+      "review": "authored-source-svg-marker",
+      "greenFraction": 0.972396,
+      "swampFraction": 0.124216
+    },
+    {
+      "hexId": "1708",
+      "terrain": "swamp",
+      "sourceSvgId": "path61",
+      "review": "authored-source-svg-marker",
+      "greenFraction": 0.08532,
+      "swampFraction": 0.973651
+    },
+    {
+      "hexId": "1709",
+      "terrain": "forest",
+      "sourceSvgId": "path278",
+      "review": "authored-source-svg-marker",
+      "greenFraction": 0.928482,
+      "swampFraction": 0.125471
+    },
+    {
+      "hexId": "1710",
+      "terrain": "forest",
+      "sourceSvgId": "path279",
+      "review": "authored-source-svg-marker",
+      "greenFraction": 0.991217,
+      "swampFraction": 0.194479
+    },
+    {
+      "hexId": "1801",
+      "terrain": "forest",
+      "sourceSvgId": "path284",
+      "review": "authored-source-svg-marker",
+      "greenFraction": 1.0,
+      "swampFraction": 0.032622
+    },
+    {
+      "hexId": "1802",
+      "terrain": "open",
+      "review": "SVG-without-forest-or-swamp-overlay + independently corroborating supplied board scan",
+      "previousTerrain": "open",
+      "previousStatus": "source-svg-scan-reviewed-open-v412",
+      "greenFraction": 0.069009,
+      "swampFraction": 0.038896,
+      "cityMarker": false
+    },
+    {
+      "hexId": "1803",
+      "terrain": "open",
+      "review": "SVG-without-forest-or-swamp-overlay + independently corroborating supplied board scan",
+      "previousTerrain": "open",
+      "previousStatus": "source-svg-scan-reviewed-open-v412",
+      "greenFraction": 0.001255,
+      "swampFraction": 0.025094,
+      "cityMarker": false
+    },
+    {
+      "hexId": "1804",
+      "terrain": "open",
+      "review": "SVG-without-forest-or-swamp-overlay + independently corroborating supplied board scan",
+      "previousTerrain": "open",
+      "previousStatus": "source-svg-scan-reviewed-open-v412",
+      "greenFraction": 0.0,
+      "swampFraction": 0.028858,
+      "cityMarker": false
+    },
+    {
+      "hexId": "1805",
+      "terrain": "open",
+      "review": "SVG-without-forest-or-swamp-overlay + independently corroborating supplied board scan",
+      "previousTerrain": "open",
+      "previousStatus": "source-svg-scan-reviewed-open-v412",
+      "greenFraction": 0.051443,
+      "swampFraction": 0.131744,
+      "cityMarker": false
+    },
+    {
+      "hexId": "1806",
+      "terrain": "open",
+      "review": "SVG-without-forest-or-swamp-overlay + independently corroborating supplied board scan",
+      "previousTerrain": "open",
+      "previousStatus": "source-svg-scan-reviewed-open-v412",
+      "greenFraction": 0.052698,
+      "swampFraction": 0.075282,
+      "cityMarker": false
+    },
+    {
+      "hexId": "1807",
+      "terrain": "open",
+      "review": "SVG-without-forest-or-swamp-overlay + independently corroborating supplied board scan",
+      "previousTerrain": "open",
+      "previousStatus": "source-svg-scan-reviewed-open-v412",
+      "greenFraction": 0.045169,
+      "swampFraction": 0.335006,
+      "cityMarker": true
+    },
+    {
+      "hexId": "1808",
+      "terrain": "forest",
+      "sourceSvgId": "path296",
+      "review": "authored-source-svg-marker",
+      "greenFraction": 1.0,
+      "swampFraction": 0.174404
+    },
+    {
+      "hexId": "1809",
+      "terrain": "swamp",
+      "sourceSvgId": "path60",
+      "review": "authored-source-svg-marker",
+      "greenFraction": 0.143036,
+      "swampFraction": 0.961104
+    },
+    {
+      "hexId": "1810",
+      "terrain": "open",
+      "review": "SVG-without-forest-or-swamp-overlay + independently corroborating supplied board scan",
+      "previousTerrain": "open",
+      "previousStatus": "source-svg-scan-reviewed-open-v412",
+      "greenFraction": 0.045169,
+      "swampFraction": 0.082811,
+      "cityMarker": false
+    },
+    {
+      "hexId": "1811",
+      "terrain": "forest",
+      "sourceSvgId": "path294",
+      "review": "authored-source-svg-marker",
+      "greenFraction": 0.993726,
+      "swampFraction": 0.326223
+    }
+  ],
+  "terrainOnly": true,
+  "authorizedForMovement": false,
+  "sourceMapSha256": "0cf849eaf683cd86443d244f20e5d03f8dc18ba354f88861d039307da162742d"
+}

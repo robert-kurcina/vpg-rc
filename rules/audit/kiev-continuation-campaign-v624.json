@@ -1,0 +1,125 @@
+{
+  "checkpoint": 390,
+  "version": "v624",
+  "runs": [
+    {
+      "seed": 7,
+      "variant": "standard",
+      "status": "complete",
+      "reason": null,
+      "detail": null,
+      "decision": {
+        "status": "complete",
+        "terminal": {
+          "axisControlledCount": 2,
+          "cityControl": {
+            "Chernigov": "soviet",
+            "Chernovtsy": "soviet",
+            "Iasi": "german",
+            "Kiev": "soviet",
+            "Kirovograd": "soviet",
+            "Kovel": "soviet",
+            "Lublin": "german",
+            "Lvov": "soviet",
+            "Rovno": "soviet",
+            "Sarny": "soviet",
+            "Shepetovka": "soviet",
+            "Stanislavov": "soviet",
+            "Tarnopol": "soviet",
+            "Uman": "soviet",
+            "Vinnitsa": "soviet",
+            "Zhitomir": "soviet"
+          },
+          "onlyRemainingCity": null,
+          "onlyRemainingCityIsolated": null,
+          "outcome": "soviet-victory",
+          "reason": "axis-controls-at-most-threshold",
+          "totalCities": 16
+        }
+      },
+      "stats": {
+        "moves": 27,
+        "combats": 0,
+        "reinforcements": 6,
+        "navalRolls": 0,
+        "turns": 7
+      },
+      "actions": 137,
+      "outcomes": {},
+      "oddsDistribution": {},
+      "attackSelection": "continuation-pilot",
+      "terminal": "soviet-victory",
+      "phase": null,
+      "elapsedSeconds": 32.27
+    },
+    {
+      "seed": 42,
+      "variant": "advanced",
+      "status": "complete",
+      "reason": null,
+      "detail": null,
+      "decision": {
+        "status": "complete",
+        "terminal": {
+          "axisControlledCount": 2,
+          "cityControl": {
+            "Chernigov": "soviet",
+            "Chernovtsy": "soviet",
+            "Iasi": "german",
+            "Kiev": "soviet",
+            "Kirovograd": "soviet",
+            "Kovel": "soviet",
+            "Lublin": "german",
+            "Lvov": "soviet",
+            "Rovno": "soviet",
+            "Sarny": "soviet",
+            "Shepetovka": "soviet",
+            "Stanislavov": "soviet",
+            "Tarnopol": "soviet",
+            "Uman": "soviet",
+            "Vinnitsa": "soviet",
+            "Zhitomir": "soviet"
+          },
+          "onlyRemainingCity": null,
+          "onlyRemainingCityIsolated": null,
+          "outcome": "soviet-victory",
+          "reason": "axis-controls-at-most-threshold",
+          "totalCities": 16
+        }
+      },
+      "stats": {
+        "moves": 27,
+        "combats": 0,
+        "reinforcements": 6,
+        "navalRolls": 0,
+        "turns": 7
+      },
+      "actions": 137,
+      "outcomes": {},
+      "oddsDistribution": {},
+      "attackSelection": "continuation-pilot",
+      "terminal": "soviet-victory",
+      "phase": null,
+      "elapsedSeconds": 31.58
+    }
+  ],
+  "tacticalAcceptance": "failed: no battles in either pilot run",
+  "limitations": "Bounded seeded controller, not strategic play; no per-candidate rejection telemetry. Exact terminal restore passed.",
+  "baseline": {
+    "standard": {
+      "battles": 12,
+      "axisCities": 3,
+      "automaticNE": 2
+    },
+    "advanced": {
+      "battles": 14,
+      "axisCities": 3,
+      "automaticNE": 0
+    }
+  },
+  "regressions": {
+    "pilotAssertions": 74,
+    "crtAssertions": 301,
+    "bundleModules": 61
+  }
+}

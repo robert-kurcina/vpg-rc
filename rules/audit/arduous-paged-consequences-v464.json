@@ -1,0 +1,19 @@
+{
+  "checkpoint": 230,
+  "version": "v464",
+  "scenario": "arduous",
+  "choicePage": 2,
+  "pageTwoChoices": 128,
+  "pageThreeChoices": 128,
+  "uniqueChoicesViewed": 384,
+  "pageTwoLoadSeconds": 2.22,
+  "assertions": 54,
+  "pageErrors": [],
+  "cancellation": {
+    "progress": "Checking consequences\u2026 173 attempted \u00b7 153 validated. Cancel is available.",
+    "cancelledInFlight": true,
+    "committedDieAndSavePreserved": true,
+    "resumedToPageThree": true
+  },
+  "scope": "Incremental, cancellable source-validated EX paging through actual browser controls; no claim of exhaustive source consequences."
+}

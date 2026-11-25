@@ -1,0 +1,26 @@
+'use strict';
+const fs=require('fs'),assert=require('assert');
+const T=require('../core/terrain_tiles');
+const source=fs.readFileSync('core/terrain_tiles.js','utf8');
+const board=JSON.parse(fs.readFileSync('maps/leningrad.json','utf8'));
+const svg=fs.readFileSync('exports/leningrad.svg','utf8');
+const routes=board.sourceWaterRoutes.filter(x=>x.kind==='coast');
+assert.equal(routes.length,1);
+assert.equal(routes[0].sourceSvgId,'path482');
+assert.equal(routes[0].points.length,54);
+assert.equal(board.sourceCoastRenderingMode,'source-path-coast-wavelets');
+assert(source.includes('function seededShoreSideSamples('));
+const hexsideSource=source.slice(source.indexOf('function waterSideSamples('),source.indexOf('function bodyNearSea('));
+const sourcePathSource=source.slice(source.indexOf('function sourcePathCoastWavelet('),source.indexOf('// Source-defined coastline/lake centerlines.'));
+assert(hexsideSource.includes('seededShoreSideSamples('),'Kiev–Odessa hexsides must call shared wavelet primitive');
+assert(sourcePathSource.includes('seededShoreSideSamples('),'Leningrad must call the same wavelet primitive');
+assert(!sourcePathSource.includes('Math.sin(cur.s/'),'obsolete Leningrad-only sine distortion still present');
+assert.equal((svg.match(/class="source-coast-connected-wavelet-fringe"/g)||[]).length,1);
+assert(svg.includes('data-wavelet-algorithm="shared-seeded-shore-side-samples"'));
+for(const bad of ['class="registered-shoreline-wavelets"','class="source-authored-coast"','class="explicit-coast-edge"'])
+ assert(!svg.includes(bad),'duplicate Leningrad Coast geometry: '+bad);
+assert.equal((svg.match(/class="source-authored-lake"/g)||[]).length,4);
+assert.deepEqual(board.authoredShoreHexsides.filter(e=>e.cellId==='0208'&&e.kind==='coast').map(e=>e.dir).sort(),['N','NW','SW'].sort());
+const report=T.validate(board,{requireReciprocal:false});
+assert.equal(report.errors.length,0,report.errors.join('; '));
+console.log('PASS v315: Leningrad & Kiev–Odessa share seeded wavelet function; path482 sole source; 4 lakes and Liepāja 1/5/6 preserved');

@@ -1,0 +1,27 @@
+{
+  "checkpoint": 185,
+  "version": "v419",
+  "mode": "Chromium in-memory original scripts, project JSON and exported SVG; HTTP navigation is blocked in this runtime",
+  "results": [
+    {
+      "game": "arduous",
+      "startingUnits": 30,
+      "phase": "german-combat",
+      "setupMode": true,
+      "concealedShuffle": true,
+      "humanActionUndoAndSaveRestore": true,
+      "realExportedMapLoaded": true,
+      "pageErrors": []
+    },
+    {
+      "game": "leningrad",
+      "startingUnits": 19,
+      "phase": "german-combat",
+      "setupMode": true,
+      "concealedShuffle": false,
+      "humanActionUndoAndSaveRestore": false,
+      "realExportedMapLoaded": true,
+      "pageErrors": []
+    }
+  ]
+}

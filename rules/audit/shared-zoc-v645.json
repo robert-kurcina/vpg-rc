@@ -1,0 +1,195 @@
+{
+  "checkpoint": 411,
+  "version": "v645",
+  "baselineAdvancedCampaign": null,
+  "baselineAdvancedProgress": [
+    "opening kiev-odessa advanced german-combat",
+    "kiev-odessa advanced turn 1 {\"moves\":0,\"combats\":0,\"reinforcements\":0,\"navalRolls\":0,\"turns\":0}",
+    "kiev-odessa advanced turn 2 {\"moves\":20,\"combats\":3,\"reinforcements\":0,\"navalRolls\":2,\"turns\":1}",
+    "kiev-odessa advanced turn 3 {\"moves\":52,\"combats\":8,\"reinforcements\":2,\"navalRolls\":5,\"turns\":2}",
+    "kiev-odessa advanced turn 4 {\"moves\":87,\"combats\":12,\"reinforcements\":4,\"navalRolls\":7,\"turns\":3}",
+    "kiev-odessa advanced turn 5 {\"moves\":115,\"combats\":15,\"reinforcements\":4,\"navalRolls\":10,\"turns\":4}",
+    "kiev-odessa advanced turn 6 {\"moves\":140,\"combats\":18,\"reinforcements\":5,\"navalRolls\":12,\"turns\":5}"
+  ],
+  "optimizedAdvancedOpening": {
+    "scenario": "kiev-odessa",
+    "variant": "advanced",
+    "seed": 42,
+    "policy": {
+      "seed": 42,
+      "missionSeed": "0000000000000000000000000000002a",
+      "selectionMode": "seeded",
+      "phaseScope": "operational",
+      "maxActions": 30,
+      "maxFleetMoves": 2,
+      "maxFleetAttacks": 3,
+      "fleetBudgetScope": "turn"
+    },
+    "elapsedMs": 14032,
+    "status": "blocked",
+    "reason": "controller-action-budget",
+    "stats": {
+      "moves": 6,
+      "combats": 3,
+      "reinforcements": 0,
+      "navalRolls": 2,
+      "turns": 0
+    },
+    "actions": 30,
+    "fleetByTurn": {
+      "1": {
+        "declare-fleet-attack": 2,
+        "roll-fleet-attack": 2
+      }
+    },
+    "odds": {
+      "5": 1,
+      "6": 2
+    },
+    "outcomes": {
+      "DE": 2,
+      "DRL": 1
+    },
+    "reasons": {
+      "source-legal-naval-commitment": 2,
+      "committed-naval-die": 2,
+      "finish-naval-window": 1,
+      "continuation-pilot-positive-utility": 1,
+      "select-committed-battle": 3,
+      "precommit-air-support": 3,
+      "post-roll-material-city-utility": 3,
+      "finish-combat": 1,
+      "objective-directed-ground-movement": 6,
+      "finish-pending-movement": 6,
+      "finish-movement-phase": 1,
+      "finish-buildup": 1
+    },
+    "cityControl": {
+      "Br\u0103ila": "german",
+      "Chernigov": "soviet",
+      "Chernovtsy": "soviet",
+      "Chisinau": "soviet",
+      "Iasi": "german",
+      "Kiev": "soviet",
+      "Kirovograd": "soviet",
+      "Kovel": "soviet",
+      "Lublin": "german",
+      "Lvov": "german",
+      "Nikolaev": "soviet",
+      "Odessa": "soviet",
+      "Rovno": "soviet",
+      "Sarny": "soviet",
+      "Shepetovka": "soviet",
+      "Stanislavov": "soviet",
+      "Tarnopol": "soviet",
+      "Uman": "soviet",
+      "Vinnitsa": "soviet",
+      "Zhitomir": "soviet"
+    },
+    "phase": "soviet-special-movement",
+    "exactRestore": true,
+    "communicationChecks": 238
+  },
+  "baselineAdvancedOpening": {
+    "scenario": "kiev-odessa",
+    "variant": "advanced",
+    "seed": 42,
+    "policy": {
+      "seed": 42,
+      "missionSeed": "0000000000000000000000000000002a",
+      "selectionMode": "seeded",
+      "phaseScope": "operational",
+      "maxActions": 30,
+      "maxFleetMoves": 2,
+      "maxFleetAttacks": 3,
+      "fleetBudgetScope": "turn"
+    },
+    "elapsedMs": 11506,
+    "status": "blocked",
+    "reason": "controller-action-budget",
+    "stats": {
+      "moves": 6,
+      "combats": 3,
+      "reinforcements": 0,
+      "navalRolls": 2,
+      "turns": 0
+    },
+    "actions": 30,
+    "fleetByTurn": {
+      "1": {
+        "declare-fleet-attack": 2,
+        "roll-fleet-attack": 2
+      }
+    },
+    "odds": {
+      "5": 1,
+      "6": 2
+    },
+    "outcomes": {
+      "DE": 2,
+      "DRL": 1
+    },
+    "reasons": {
+      "source-legal-naval-commitment": 2,
+      "committed-naval-die": 2,
+      "finish-naval-window": 1,
+      "continuation-pilot-positive-utility": 1,
+      "select-committed-battle": 3,
+      "precommit-air-support": 3,
+      "post-roll-material-city-utility": 3,
+      "finish-combat": 1,
+      "objective-directed-ground-movement": 6,
+      "finish-pending-movement": 6,
+      "finish-movement-phase": 1,
+      "finish-buildup": 1
+    },
+    "cityControl": {
+      "Br\u0103ila": "german",
+      "Chernigov": "soviet",
+      "Chernovtsy": "soviet",
+      "Chisinau": "soviet",
+      "Iasi": "german",
+      "Kiev": "soviet",
+      "Kirovograd": "soviet",
+      "Kovel": "soviet",
+      "Lublin": "german",
+      "Lvov": "german",
+      "Nikolaev": "soviet",
+      "Odessa": "soviet",
+      "Rovno": "soviet",
+      "Sarny": "soviet",
+      "Shepetovka": "soviet",
+      "Stanislavov": "soviet",
+      "Tarnopol": "soviet",
+      "Uman": "soviet",
+      "Vinnitsa": "soviet",
+      "Zhitomir": "soviet"
+    },
+    "phase": "soviet-special-movement",
+    "exactRestore": true,
+    "communicationChecks": 238
+  },
+  "openingReportParityExcludingElapsed": true,
+  "zocMicrobenchmark": {
+    "old": {
+      "ms": 258.175695,
+      "hits": 9500
+    },
+    "new": {
+      "ms": 197.344558,
+      "hits": 9500
+    },
+    "queries": 33000
+  },
+  "checks": {
+    "zocOracle": 5120,
+    "legalPathfinding": 69,
+    "coastZoc": 103,
+    "forcedDisplacementBaseline": 768,
+    "catalogBaseline": 112,
+    "fleetBudget": 15,
+    "bundleModules": 62
+  },
+  "knownFailure": "pathfinding-v318 line 42 expects Kiev not-gameplay-certified; reproduces on v643",
+  "limitations": "Microbenchmark uses synthetic units on Kiev map; concurrent campaign load; no end-to-end speedup claim. Full optimized campaign not qualified. No browser run."
+}

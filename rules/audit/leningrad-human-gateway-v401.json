@@ -1,0 +1,51 @@
+{
+  "checkpoint": 167,
+  "version": "v401",
+  "scenarioId": "leningrad",
+  "assertions": 37,
+  "openingPhase": "german-combat",
+  "openingBattleProposals": 22,
+  "testedBattle": {
+    "defenderHex": "0309",
+    "attackers": [
+      "leningrad-front-r03c03"
+    ]
+  },
+  "committedDie": 1,
+  "postRollOutcome": "DR",
+  "postRollCandidates": 14,
+  "openedMovementChoices": 3,
+  "sourceSetup": {
+    "candidateValid": true,
+    "historicalSetupAuthorized": false,
+    "printedAnchorDisagreements": [
+      {
+        "rulebookPrintedHex": "1305",
+        "sourceSvgId": "use1-50",
+        "marker": "fixedMechanized",
+        "physicalCellId": "1406",
+        "renderedNumber": "1306",
+        "renderedNumberMatchesRulebook": false,
+        "numberRegistryCellId": "1405",
+        "numberRegistryMatchesSource": false
+      },
+      {
+        "rulebookPrintedHex": "1701",
+        "sourceSvgId": "use504",
+        "marker": "fixedMechanized",
+        "physicalCellId": "1802",
+        "renderedNumber": "1702",
+        "renderedNumberMatchesRulebook": false,
+        "numberRegistryCellId": null,
+        "numberRegistryMatchesSource": false
+      }
+    ]
+  },
+  "limitations": [
+    "Source rules specify player-selected starting counter identities, not a single canonical allocation",
+    "Two printed versus registered SVG map-number anchors still disagree",
+    "Human decision gateway is headless and not the deferred Oberlabs UX",
+    "Post-roll alternatives are bounded and not necessarily exhaustive",
+    "No source-certified player-operated full eight-turn campaign is claimed"
+  ]
+}

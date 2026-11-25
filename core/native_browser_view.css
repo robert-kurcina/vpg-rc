@@ -1,0 +1,37 @@
+:root{color-scheme:light;font:14px/1.5 system-ui,-apple-system,Segoe UI,Arial,sans-serif;background:#f1f2ef;color:#18242b}*{box-sizing:border-box}body{margin:0}header{background:#243642;color:#f0f4f3;padding:13px 24px;display:flex;align-items:center;justify-content:space-between;gap:15px}header h1{margin:0;font-size:21px;letter-spacing:.1px}header h1 span{font-size:13px;color:#bed0d7;font-weight:400}header p{margin:2px 0 0;font-size:12px;color:#cdd9d9}header a{color:#fff}main{display:grid;grid-template-columns:minmax(295px,360px) minmax(0,1fr);min-height:calc(100vh - 82px)}aside{padding:12px;background:#fff;border-right:1px solid #cbd3d2;max-height:calc(100vh - 82px);overflow-y:auto}section{margin-bottom:12px}aside section{border-bottom:1px solid #e1e6e5;padding-bottom:11px}h2{font-size:15px;margin:3px 0 9px}button,.file-button{background:#e6ecf0;border:1px solid #b8c7d0;border-radius:5px;color:#203640;font:inherit;padding:7px 10px;cursor:pointer;text-align:center}button:hover,.file-button:hover{background:#d7e5ec}button:disabled{cursor:not-allowed;opacity:.45}button.active,button.primary{background:#25445d;color:#fff}label{display:block;font-size:12px;color:#475760;margin-bottom:6px}label.check{display:flex;align-items:center;gap:7px}input[type=number],input[type=text],select{width:100%;padding:6px;font:inherit;border:1px solid #b9c4c6;border-radius:4px;margin-top:2px}.actions{display:flex;flex-wrap:wrap;gap:7px;margin:7px 0}.actions>*{flex:1}.unit-selection{display:flex;flex-wrap:wrap;gap:4px}.unit-selection button{font-size:12px;padding:4px 6px}#options-panel{max-height:180px;overflow:auto}#options-panel button{display:block;width:100%;text-align:left;margin:4px 0;font-size:12px}#message{margin:5px 0 9px;padding:7px;background:#f2f6f8;min-height:37px;border-radius:4px}#message.error{background:#fff0ec;color:#9f3425}#game-status{font-size:12px;color:#34566e}#phase-status{font-weight:700;margin:7px 0;background:#edf1eb;padding:7px;border-radius:4px}#battle-panel{font-size:12px}#battle-panel label{margin:6px 0}#battle-panel summary{cursor:pointer}#history{font-family:ui-monospace,monospace;white-space:pre-wrap;font-size:11px;max-height:210px;overflow:auto}.board-space{overflow:auto;min-width:0;padding:8px;background:#e9eeec}#map{min-width:720px;max-width:1650px;margin:auto}#map>svg{display:block;width:100%;height:auto}.caption{max-width:950px;margin:8px auto;font-size:12px;color:#52626b}.native-select-halo{fill:none;stroke:#efad21;stroke-width:4;pointer-events:none}.native-option-halo{fill:#eec44f;fill-opacity:.18;stroke:#bd7a0c;stroke-width:3;pointer-events:none}.native-board-hit{fill:transparent;stroke:none;cursor:pointer}.native-counter-layer{cursor:pointer}@media(max-width:830px){main{grid-template-columns:1fr}aside{max-height:none}#map{min-width:700px}header{padding:10px}header h1{font-size:18px}}
+
+.native-defender-halo{fill:none;stroke:#d05828;stroke-width:5;stroke-dasharray:8 4;pointer-events:none}.native-attacker-halo{fill:none;stroke:#2e75a0;stroke-width:3;stroke-dasharray:4 3;pointer-events:none}.phase-guidance{background:#f1f6f8;border-left:3px solid #51768c;padding:8px;font-size:12px;line-height:1.4}.combat-target-controls{display:flex;flex-direction:column;gap:4px;margin-top:6px}.combat-target-controls button{text-align:left;font-size:12px}.combat-target-controls p{font-size:12px;margin:3px 0}.reference-tabs{display:flex;flex-wrap:wrap;gap:3px}.reference-tabs button{font-size:11px;padding:5px}.native-reference-crt{border-collapse:collapse;font-size:11px;width:100%}.native-reference-crt th,.native-reference-crt td{border:1px solid #d0d9dc;padding:3px;text-align:center}#reference-content h3{font-size:13px;margin:10px 0 3px}#reference-content p,#reference-content li{font-size:12px;margin:4px 0}#reference-section[hidden]{display:none}
+
+.native-city-table{border-collapse:collapse;width:100%;font-size:11px}.native-city-table th,.native-city-table td{padding:4px 5px;border-bottom:1px solid #dce3e6;text-align:left;vertical-align:top}.native-city-table th:first-child{font-weight:600}.native-city-table [data-city-owner]:not([data-city-owner="unclaimed"]){font-weight:700}.city-summary{font-size:12px;font-weight:600}.city-caption{font-size:11px;color:#56636b;margin:6px 0}
+
+.native-city-details{margin:4px 0 10px;border:1px solid #d1dadd;border-radius:4px;padding:4px 6px}.native-city-details>summary{font-size:12px;font-weight:600;cursor:pointer}.native-city-details[open]{padding-bottom:8px}#city-summary-inline{margin:3px 0 5px;font-size:11px}.native-city-details .city-summary{margin:8px 0 4px}
+
+.redeployment-audit{font-size:11px;line-height:1.35;color:#53616a;margin:5px 0;overflow-wrap:anywhere}
+
+.redeployment-evidence{border-top:1px solid #dce3e6;padding:2px 0;margin:5px 0}.redeployment-evidence[hidden]{display:none}.redeployment-evidence .redeployment-audit{margin:5px 0}
+
+/* Universal game-panel tabs and Settings controls. */
+.game-tab-strip{display:flex;gap:4px;padding:9px 12px;border-bottom:1px solid #dce4e4;background:#eef2f2}
+.game-tab-strip button{flex:1;margin:0;font-weight:600}
+.game-tab-strip [aria-selected="true"]{background:#25445d;color:#fff;border-color:#25445d}
+aside[data-active-tab="settings"]>section:not(#settings-section){display:none!important}
+aside[data-active-tab="settings"]>#message{display:none!important}
+#settings-section[hidden]{display:none!important}
+#settings-section h3{font-size:13px;margin:12px 0 5px}
+.setting-switch{display:flex;align-items:center;gap:7px;padding:6px 0;cursor:pointer;font-weight:500}
+.setting-switch input{width:auto!important;margin:0!important;flex:none}
+.setting-disabled{opacity:.50;cursor:not-allowed}
+.setting-caption{font-size:11px;line-height:1.4;color:#5e7077;margin:5px 0 12px}
+
+/* iPad layouts prioritize map navigation and legible touch controls. */
+@media(max-width:1199px){main{grid-template-columns:1fr;min-height:0}.board-space{order:-1}aside{max-height:none;overflow:visible;border-right:none}.board-space{padding:9px}#map{min-width:0}header{flex-wrap:wrap}.unit-selection button,#options-panel button,.combat-target-controls button{min-height:44px}}
+@media(max-width:600px){header{padding:10px}header h1{font-size:19px}.board-space{padding:6px}aside{padding:8px}.actions>*{min-height:44px}}
+
+/* Phase-scoped source-legal reinforcement and resupply guidance. */
+.native-reinforcement-halo{fill:rgba(76,174,219,.30);stroke:#237bad;stroke-width:3;pointer-events:none}
+.native-resupply-halo{fill:rgba(237,178,54,.29);stroke:#a66d0d;stroke-width:3;pointer-events:none}
+.native-rebuild-halo{fill:rgba(111,190,128,.27);stroke:#388051;stroke-width:3;pointer-events:none}
+
+
+
+.crt-reference-scroll{overflow-x:auto;max-width:100%}.crt-reference-table{border-collapse:collapse;white-space:nowrap;font:11px ui-monospace,monospace}.crt-reference-table th,.crt-reference-table td{border:1px solid #afbfc8;padding:4px 6px;text-align:center}

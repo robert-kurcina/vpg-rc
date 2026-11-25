@@ -1,0 +1,219 @@
+{
+  "schemaVersion": 1,
+  "scenarioId": "arduous",
+  "sourceGame": "The Arduous Beginning",
+  "source": [
+    "references/rules/arduous-rules.pdf §§6, 11–12",
+    "references/rules/arduous-aid.webp Turn Record Track"
+  ],
+  "sourceIdentityStatus": "source-validated-opening-and-reinforcement-pools",
+  "printedAffiliationToOwner": {
+    "axis": "german",
+    "soviet": "soviet"
+  },
+  "replacementSteps": {
+    "german": [
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1
+    ],
+    "soviet": [
+      0,
+      0,
+      1,
+      2,
+      3,
+      3,
+      3
+    ]
+  },
+  "entryEdge": {
+    "german": [
+      "0105",
+      "0106",
+      "0107",
+      "0108",
+      "0109",
+      "0110"
+    ],
+    "soviet": [
+      "1801",
+      "1802",
+      "1803",
+      "1804",
+      "1805",
+      "1806",
+      "1807",
+      "1808",
+      "1809",
+      "1810",
+      "1811"
+    ]
+  },
+  "initialCityControl": {
+    "Brest-Litovsk": "soviet",
+    "Vilnius": "soviet",
+    "Baranovichi": "soviet",
+    "Minsk": "soviet",
+    "Polotsk": "soviet",
+    "Velikie Luki": "soviet",
+    "Vitebsk": "soviet",
+    "Orsha": "soviet",
+    "Mogilev": "soviet",
+    "Gomel": "soviet",
+    "Smolensk": "soviet",
+    "Roslavl": "soviet"
+  },
+  "initialGroups": {
+    "germanInitialPanzer": {
+      "class": "panzer",
+      "size": "corps"
+    },
+    "germanInitialInfantry": {
+      "class": "infantry",
+      "size": "corps"
+    },
+    "sovietFrontArmies": {
+      "class": "infantry",
+      "size": "army"
+    },
+    "sovietFrontMechanized": {
+      "class": "mechanized",
+      "size": "corps"
+    },
+    "sovietFixedArmies": {
+      "class": "infantry",
+      "size": "army"
+    },
+    "sovietFixedMechanized": {
+      "class": "mechanized",
+      "size": "corps"
+    }
+  },
+  "specialMilitiaGroup": null,
+  "reinforcements": [
+    {
+      "slotId": "t1-sovietreinforcementarmies-1",
+      "turn": 1,
+      "owner": "soviet",
+      "kind": "ground",
+      "group": "sovietReinforcementArmies",
+      "index": 0,
+      "strength": "full",
+      "printedKind": "infantry",
+      "printedAffiliation": "soviet",
+      "printedValues": "8-4",
+      "placement": "edge",
+      "class": "infantry",
+      "size": "army"
+    },
+    {
+      "slotId": "t1-sovietreinforcementarmies-2",
+      "turn": 1,
+      "owner": "soviet",
+      "kind": "ground",
+      "group": "sovietReinforcementArmies",
+      "index": 1,
+      "strength": "full",
+      "printedKind": "infantry",
+      "printedAffiliation": "soviet",
+      "printedValues": "8-4",
+      "placement": "edge",
+      "class": "infantry",
+      "size": "army"
+    },
+    {
+      "slotId": "t1-sovietreinforcementmechanized-1",
+      "turn": 1,
+      "owner": "soviet",
+      "kind": "ground",
+      "group": "sovietReinforcementMechanized",
+      "index": 0,
+      "strength": "full",
+      "printedKind": "mechanized",
+      "printedAffiliation": "soviet",
+      "printedValues": "?-6",
+      "placement": "edge",
+      "class": "mechanized",
+      "size": "corps"
+    },
+    {
+      "slotId": "t1-sovietreinforcementmechanized-2",
+      "turn": 1,
+      "owner": "soviet",
+      "kind": "ground",
+      "group": "sovietReinforcementMechanized",
+      "index": 1,
+      "strength": "full",
+      "printedKind": "mechanized",
+      "printedAffiliation": "soviet",
+      "printedValues": "?-6",
+      "placement": "edge",
+      "class": "mechanized",
+      "size": "corps"
+    },
+    {
+      "slotId": "t2-sovietreinforcementarmies-1",
+      "turn": 2,
+      "owner": "soviet",
+      "kind": "ground",
+      "group": "sovietReinforcementArmies",
+      "index": 2,
+      "strength": "full",
+      "printedKind": "infantry",
+      "printedAffiliation": "soviet",
+      "printedValues": "8-4",
+      "placement": "edge",
+      "class": "infantry",
+      "size": "army"
+    },
+    {
+      "slotId": "t2-sovietreinforcementmechanized-1",
+      "turn": 2,
+      "owner": "soviet",
+      "kind": "ground",
+      "group": "sovietReinforcementMechanized",
+      "index": 2,
+      "strength": "full",
+      "printedKind": "mechanized",
+      "printedAffiliation": "soviet",
+      "printedValues": "?-6",
+      "placement": "edge",
+      "class": "mechanized",
+      "size": "corps"
+    },
+    {
+      "slotId": "t3-sovietreinforcementarmies-1",
+      "turn": 3,
+      "owner": "soviet",
+      "kind": "ground",
+      "group": "sovietReinforcementArmies",
+      "index": 3,
+      "strength": "full",
+      "printedKind": "infantry",
+      "printedAffiliation": "soviet",
+      "printedValues": "8-4",
+      "placement": "edge",
+      "class": "infantry",
+      "size": "army"
+    }
+  ],
+  "supportArrivals": [],
+  "notes": [
+    "Seven due Soviet reinforcements allocated to original photographed faces; concealed Mechanized Corps remain untried on arrival.",
+    "Brest fixed one-step Garrison is validated independently from the ordinary source pool."
+  ],
+  "replacementExcludedFaces": [
+    {
+      "faceId": "arduous-front-r04c01",
+      "kind": "mechanized",
+      "owner": "soviet",
+      "revealedIdentifier": "6",
+      "ruleSource": "references/rules/arduous-rules.pdf §12.0, printed p.6: Soviet 6th Mechanized Corps (red symbol box) cannot return after destruction; assets/official-counters/source-sheets/counters-arduous-back.jpg row 4 column 8"
+    }
+  ]
+}

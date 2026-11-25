@@ -1,0 +1,77 @@
+{
+  "checkpoint": 95,
+  "uploadedSvgSha256": "ea1c83d00eea0212c530b98fd794125959175ad9d1cfa067aef78d6d73502447",
+  "archivedSvgSha256": "ea1c83d00eea0212c530b98fd794125959175ad9d1cfa067aef78d6d73502447",
+  "source": "User uploaded leningrad-main(4).svg; identical to archived maps/source/user-svg/leningrad-main.svg",
+  "sourceSvgCrossInstances": {
+    "use1-1": {
+      "bbox": [
+        76.4907,
+        618.876,
+        75.1082,
+        66.3562
+      ],
+      "center": [
+        114.0448,
+        652.0541
+      ]
+    },
+    "use495": {
+      "bbox": [
+        132.822,
+        652.054,
+        75.1082,
+        66.3562
+      ],
+      "center": [
+        170.3761,
+        685.2321
+      ]
+    },
+    "use496": {
+      "bbox": [
+        189.153,
+        686.258,
+        75.1082,
+        66.3562
+      ],
+      "center": [
+        226.7071,
+        719.4361
+      ]
+    },
+    "use497": {
+      "bbox": [
+        132.822,
+        719.436,
+        75.1082,
+        66.3562
+      ],
+      "center": [
+        170.3761,
+        752.6141
+      ]
+    },
+    "use498": {
+      "bbox": [
+        245.484,
+        719.436,
+        75.1082,
+        66.3562
+      ],
+      "center": [
+        283.0381,
+        752.6141
+      ]
+    }
+  },
+  "engineBug": "Generic bottom-center deployment offset displaced symbols away from the source SVG hex centers",
+  "fix": "Leningrad cross and star glyph anchors now use pixelCenter (no y offset). Other maps keep previous placement.",
+  "historicalRegistration": "German cross hex assignments from user-confirmed v327 screenshot review; source SVG remains a separate, conflicting authored registration at 0311 and 0511. No unreviewed changes to hex IDs.",
+  "tests": "tests/leningrad-deployment-geometry-v328.test.js",
+  "unresolved": [
+    "197-vs-199 cells",
+    "source SVG cross IDs use497/use498 differ from board scan assignments",
+    "Insterburg icon and city artwork overlap at geometric center; source authoring vs presentation conflict"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "scope": "**Checkpoint 383 / v617 \u2014 Bounded enemy responses to continuation witnesses.** Optional `compareContinuations({enemyResponse:true})` evaluates existing approach-and-survival forecasts on each surviving position after inaction, coordinated withdrawal, or sampled attack consequences. Shared response-evaluation cap plus per-position movement and casualty budgets; skipped evaluations explicitly marked budget-exhausted. Conditional strongest-odds witnesses only, not probabilities of enemy action or joint responses against multiple positions. Forecasts are independent and may reuse enemy formations across positions. No attacker advance, combined attack/withdrawal, positional utility or live desperation activation. Existing comparison defaults unchanged. New test 120 assertions (105 inherited plus 15 response checks); integrated forecast 71, survival 84, utility 62, CRT 301 = 638 total. Bundle parity 61 modules. Next: compare utility with phase-aware continuations and combined attack/withdrawal; preserve deferred final three tasks.",
+  "verified": {
+    "continuationIncludingResponse": 120,
+    "integratedForecastSurvival": 71,
+    "conditionalSurvival": 84,
+    "utility": 62,
+    "sharedCRT": 301,
+    "bundleModules": 61
+  }
+}

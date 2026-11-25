@@ -1,0 +1,47 @@
+{
+  "checkpoint": 197,
+  "version": "v431",
+  "tested": "actual project modules and HTML in Chromium, in-memory source/asset shim",
+  "results": [
+    {
+      "game": "arduous",
+      "sourceHex": "0105",
+      "display": "0105 \u00b7 Open\nMovement: 1 MP to enter (base)\nCombat: No terrain odds-column modifier\nBase effects only \u00b7 weather, units and phases may alter results",
+      "delayed": true,
+      "stablePosition": true,
+      "escDismiss": true,
+      "actionCancel": true,
+      "settings": true,
+      "touchNoHover": true,
+      "pageErrors": []
+    },
+    {
+      "game": "leningrad",
+      "sourceHex": "0208",
+      "display": "0208 \u00b7 City \u00b7 Liepaja\nMovement: 1 MP to enter (base)\nCombat: No terrain odds-column modifier\nRail sides: SE \u00b7 1 MP on eligible rail moves\nBase effects only \u00b7 weather, units and phases may alter results",
+      "delayed": true,
+      "stablePosition": true,
+      "escDismiss": true,
+      "actionCancel": true,
+      "settings": true,
+      "touchNoHover": true,
+      "pageErrors": []
+    },
+    {
+      "game": "battle-for-moscow",
+      "sourceHex": "1411",
+      "display": "1411 \u00b7 Open\nMovement: 1 MP to enter (base)\nCombat: No terrain odds-column modifier\nBase effects only \u00b7 weather, units and phases may alter results",
+      "delayed": true,
+      "stablePosition": true,
+      "escDismiss": true,
+      "actionCancel": true,
+      "settings": true,
+      "touchNoHover": true,
+      "pageErrors": []
+    },
+    {
+      "game": "touch iPad simulation",
+      "touchNoHover": true
+    }
+  ]
+}

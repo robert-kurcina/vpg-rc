@@ -1,0 +1,42 @@
+{
+  "checkpoint": 94,
+  "engineRelease": "v327",
+  "status": "runtime-deployment-marker-and-numbering-corrected-historical-setup-gated",
+  "currentCrosses": [
+    "0109",
+    "0210",
+    "0211",
+    "0310",
+    "0411"
+  ],
+  "currentInsterburg": "0211",
+  "currentSovietStar": "0510",
+  "cellCount": 197,
+  "legacyGridCellCountAssertion": 199,
+  "displayOffsets": {
+    "format": "column-row-4",
+    "placement": "nw",
+    "fontSize": 8,
+    "strokeWidth": 2
+  },
+  "changes": [
+    "add German cross to 0109",
+    "add German cross and relocate Insterburg to 0211",
+    "remove German cross and Insterburg city from 0311",
+    "remove German cross from 0511",
+    "preserve existing star at 0510",
+    "remove legacy printed number offsets from runtime display only; historic v307 audit retained"
+  ],
+  "sourcesAndActualEngineRenderSHA256": {
+    "maps/source/leningrad-map-scan-current.jpg": "e2d718355490cbcdbecad4699aa4da2aebd477de736ee9aa26536e62347da17c",
+    "rules/audit/visual/leningrad-user-board-scan-v326.png": "bae41db5e00e4802bb1c64cd0461fcd360776434bff79a466ddfac4979a39626",
+    "rules/audit/visual/leningrad-user-overlay-comparison-v326.png": "a1928129ffd22cee08d512f081b123148af294cc18bcf715d268516860934631",
+    "exports/leningrad.svg": "99ccd637af852803b90f4321229ceb54008d2072075ac41318cad896ca868540",
+    "rules/audit/visual/leningrad-engine-render-v327.png": "b6570f10e7a84724b4b4003f4f644b877e351b4ef39a2b705054ff97fcc8a9d2"
+  },
+  "notCertified": [
+    "other map locations and original source SVG cross coordinates",
+    "historical initial units, reinforcements and full playthrough",
+    "legacy v301 cell-count expectation 199, current board 197"
+  ]
+}

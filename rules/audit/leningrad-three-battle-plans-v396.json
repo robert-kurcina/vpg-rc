@@ -1,0 +1,18 @@
+{
+  "checkpoint": 162,
+  "version": "v396",
+  "assertions": 803,
+  "scenario": "leningrad candidate source-counter opening",
+  "legacyTwoBattlePlans": 128,
+  "threeBattlePlans": 128,
+  "expandedExhaustive": false,
+  "combatResults": 3,
+  "actualPhaseAfterCombat": "german-special-movement",
+  "preservation": "No action catalog choices commit game state or consume dice",
+  "limits": [
+    "Three-battle enumeration deliberately capped and flagged incomplete",
+    "No exhaustive four-or-more battle partitions",
+    "Candidate Leningrad unit identity and two coordinate anchors remain uncertified",
+    "Result options for complex historical consequences remain bounded"
+  ]
+}

@@ -1,0 +1,94 @@
+[
+  {
+    "id": "battle-for-moscow",
+    "title": "Battle for Moscow",
+    "hexes": 147,
+    "file": "battle-for-moscow.svg",
+    "svgSHA256": "b553c6a297c4cd06d56f9497f0e74566e5f0234043aa633da794f7506d36cf8d",
+    "viewBox": "-45.00 -45.00 1690.00 1229.00",
+    "entryStrokes": 13,
+    "errors": [],
+    "warnings": [
+      "0102 NW: rail at unverified/off-board boundary",
+      "0105 NW: rail at unverified/off-board boundary",
+      "0110 SW: rail at unverified/off-board boundary",
+      "0511 S: rail at unverified/off-board boundary",
+      "0901 NW: rail at unverified/off-board boundary",
+      "1301 NE: rail at unverified/off-board boundary",
+      "1402 SE: rail at unverified/off-board boundary",
+      "1403 SE: rail at unverified/off-board boundary",
+      "1404 SE: rail at unverified/off-board boundary",
+      "1407 SE: rail at unverified/off-board boundary"
+    ],
+    "visualStatus": "scenario-based",
+    "png": "battle-for-moscow.png",
+    "pngSHA256": "52d2e114e78fcd1eab77223c0b33cce96b6e99fa620008a0a85998a768b6f322"
+  },
+  {
+    "id": "arduous",
+    "title": "The Arduous Beginning",
+    "hexes": 155,
+    "file": "arduous.svg",
+    "svgSHA256": "200f283f023d868c8b35707423107c4770e427c13617d5ecac5723d2810fa4f6",
+    "viewBox": "-28.00 -28.00 956.00 631.00",
+    "entryStrokes": 2,
+    "errors": [],
+    "warnings": [],
+    "visualStatus": "Source-reviewed whole-cell base terrain, full movement/hexside/setup not yet certified",
+    "png": "arduous.png",
+    "pngSHA256": "d4f2f1d3c699e52b8597c4a7a5c5158b5fec1e6928f40be2c3a02390c718dd6c"
+  },
+  {
+    "id": "leningrad",
+    "title": "Target: Leningrad",
+    "hexes": 197,
+    "file": "leningrad.svg",
+    "svgSHA256": "0434bd31652abf004ea45a00a33a925d845dc98ed98712be88b33cc85cfbc639",
+    "viewBox": "-28.00 -28.00 1250.00 819.00",
+    "entryStrokes": 6,
+    "errors": [],
+    "warnings": [
+      "0411 S: river at unverified/off-board boundary",
+      "0711 SW: river at unverified/off-board boundary",
+      "0811 S: river at unverified/off-board boundary",
+      "1109 S: river at unverified/off-board boundary",
+      "1309 S: river at unverified/off-board boundary",
+      "1901 NE: river at unverified/off-board boundary"
+    ],
+    "visualStatus": "v302 definitive source-geometry reconstruction: terrain symbols mandatory; Coast/Lake mapped segment-by-segment; rails exact SVG polylines",
+    "png": "leningrad.png",
+    "pngSHA256": "b48693371ce3102e8c912a40e70d5748395692aeab38529f9b36a7202e998af6"
+  },
+  {
+    "id": "kiev",
+    "title": "Objective: Kiev",
+    "hexes": 165,
+    "file": "kiev.svg",
+    "svgSHA256": "71243cbe6fcde936b31b76bdeaa201f7c5c2171489a96c36c7bef97960ef8b02",
+    "viewBox": "-35.00 -35.00 1269.00 841.00",
+    "entryStrokes": 2,
+    "errors": [],
+    "warnings": [],
+    "visualStatus": "v436: user-confirmed tenth Kiev Soviet star at 0708; 1502 user-adjudicated Forest and three removals retained; Kiev campaign remains gated",
+    "png": "kiev.png",
+    "pngSHA256": "9d558ad2c03cbc788ba471adf3e1964a7cedd04b422176cddac0011fb5fe6b8f"
+  },
+  {
+    "id": "kiev-odessa",
+    "title": "Objective: Kiev + Odessa Expansion",
+    "hexes": 261,
+    "file": "kiev-odessa.svg",
+    "svgSHA256": "a4db7676c320788dc3bbb1a20a98d2d6da5226b7f0d327f36a47862101292e90",
+    "viewBox": "-35.00 -35.00 1360.00 1350.00",
+    "entryStrokes": 23,
+    "errors": [],
+    "warnings": [
+      "0918 SE: majorRiver at unverified/off-board boundary",
+      "0918 S: majorRiver at unverified/off-board boundary",
+      "1017 S: majorRiver at unverified/off-board boundary"
+    ],
+    "visualStatus": "v290 source SVG geometry in existing engine; hexside topology imported; gameplay rules remain provisional",
+    "png": "kiev-odessa.png",
+    "pngSHA256": "d61b60d3de75e5fc50291d15cc2990da213c59f5041b91702dd0bf40bff62499"
+  }
+]

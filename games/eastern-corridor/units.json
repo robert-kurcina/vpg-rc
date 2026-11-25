@@ -1,0 +1,160 @@
+{
+  "units": [
+    {
+      "id": "b1",
+      "faction": "blue",
+      "type": "armor",
+      "full": 5,
+      "reduced": 2,
+      "movement": 3,
+      "strength": "full",
+      "position": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "id": "b2",
+      "faction": "blue",
+      "type": "infantry",
+      "full": 4,
+      "reduced": 2,
+      "movement": 2,
+      "strength": "full",
+      "position": {
+        "x": 0,
+        "y": 1
+      }
+    },
+    {
+      "id": "b3",
+      "faction": "blue",
+      "type": "infantry",
+      "full": 4,
+      "reduced": 2,
+      "movement": 2,
+      "strength": "full",
+      "position": {
+        "x": 0,
+        "y": 2
+      }
+    },
+    {
+      "id": "b4",
+      "faction": "blue",
+      "type": "infantry",
+      "full": 4,
+      "reduced": 2,
+      "movement": 2,
+      "strength": "full",
+      "position": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "id": "b5",
+      "faction": "blue",
+      "type": "scout",
+      "full": 2,
+      "reduced": 1,
+      "movement": 4,
+      "strength": "full",
+      "position": {
+        "x": 0,
+        "y": 4
+      }
+    },
+    {
+      "id": "b6",
+      "faction": "blue",
+      "type": "infantry",
+      "full": 3,
+      "reduced": 1,
+      "movement": 2,
+      "strength": "full",
+      "position": {
+        "x": 0,
+        "y": 5
+      }
+    },
+    {
+      "id": "r1",
+      "faction": "red",
+      "type": "armor",
+      "full": 5,
+      "reduced": 2,
+      "movement": 3,
+      "strength": "full",
+      "position": {
+        "x": 6,
+        "y": 0
+      }
+    },
+    {
+      "id": "r2",
+      "faction": "red",
+      "type": "infantry",
+      "full": 4,
+      "reduced": 2,
+      "movement": 2,
+      "strength": "full",
+      "position": {
+        "x": 6,
+        "y": 1
+      }
+    },
+    {
+      "id": "r3",
+      "faction": "red",
+      "type": "infantry",
+      "full": 4,
+      "reduced": 2,
+      "movement": 2,
+      "strength": "full",
+      "position": {
+        "x": 6,
+        "y": 2
+      }
+    },
+    {
+      "id": "r4",
+      "faction": "red",
+      "type": "infantry",
+      "full": 4,
+      "reduced": 2,
+      "movement": 2,
+      "strength": "full",
+      "position": {
+        "x": 6,
+        "y": 3
+      }
+    },
+    {
+      "id": "r5",
+      "faction": "red",
+      "type": "scout",
+      "full": 2,
+      "reduced": 1,
+      "movement": 4,
+      "strength": "full",
+      "position": {
+        "x": 6,
+        "y": 4
+      }
+    },
+    {
+      "id": "r6",
+      "faction": "red",
+      "type": "infantry",
+      "full": 3,
+      "reduced": 1,
+      "movement": 2,
+      "strength": "full",
+      "position": {
+        "x": 6,
+        "y": 5
+      }
+    }
+  ]
+}

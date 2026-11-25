@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "sourceSvg": "maps/source/user-svg/leningrad-main.svg",
+  "sourceSvgSHA256": "ea1c83d00eea0212c530b98fd794125959175ad9d1cfa067aef78d6d73502447",
+  "runtimeMapSHA256": "3ec95353555af6703d2fd006b11b55e2b98685e296f36e528da85547d6933b17",
+  "sourceGridPathCount": 200,
+  "distinctSourceGridCenters": 199,
+  "runtimeHexCells": 197,
+  "matchedRuntimeCells": 197,
+  "duplicateSvgGridPaths": [
+    {
+      "svgPathIds": [
+        "path172",
+        "path68"
+      ],
+      "physicalCenter": [
+        1128.005,
+        519.342
+      ]
+    }
+  ],
+  "gridOnlyUnpaintedOutlines": [
+    {
+      "geometrySlot": "1801",
+      "runtimeCell": null,
+      "sourceSvgPaths": [
+        "path142"
+      ],
+      "x": 1015.343,
+      "y": 54.848,
+      "nearestRuntimeCell": "1701",
+      "nearestDistancePx": 65.375,
+      "terrainPaintBBoxHits": {
+        "open": [],
+        "forest": [],
+        "swamp": [],
+        "sea": []
+      }
+    },
+    {
+      "geometrySlot": "2001",
+      "runtimeCell": null,
+      "sourceSvgPaths": [
+        "path144"
+      ],
+      "x": 1128.005,
+      "y": 54.848,
+      "nearestRuntimeCell": "1901",
+      "nearestDistancePx": 65.375,
+      "terrainPaintBBoxHits": {
+        "open": [],
+        "forest": [],
+        "swamp": [],
+        "sea": []
+      }
+    }
+  ],
+  "runtimeCellsWithoutSourceGridPosition": [],
+  "historicalLegacyCellCount": 199,
+  "sourceFootprintReconciled": true,
+  "semanticBoundary": "200 SVG grid paths = 199 unique outlines including two unpainted north-edge outline-only slots. 197 runtime terrain cells is the backed terrain footprint; no unit/terrain/new hex registered. Geometry-slot names are internal coordinates, not certified historical printed IDs.",
+  "approvedVisualBaseline": "v345 user-approved left render; preserved without mutation"
+}

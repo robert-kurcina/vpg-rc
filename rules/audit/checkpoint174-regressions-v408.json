@@ -1,0 +1,73 @@
+{
+  "status": "PASS_FOR_LISTED_COMMANDS",
+  "checkpoint": 174,
+  "version": "v408",
+  "passed": 12,
+  "completedCommands": [
+    {
+      "command": "node tests/b4m-native-ai-session-v368.test.js",
+      "status": "PASS"
+    },
+    {
+      "command": "node tests/b4m-native-objective-ai-campaign-v369.test.js",
+      "status": "PASS"
+    },
+    {
+      "command": "node tests/b4m-native-strategic-comparison-v369.test.js",
+      "status": "PASS"
+    },
+    {
+      "command": "node tests/b4m-native-combat-v361.test.js",
+      "status": "PASS"
+    },
+    {
+      "command": "node tests/b4m-native-reserve-redeployment-v376.test.js",
+      "status": "PASS"
+    },
+    {
+      "command": "node tests/printed-coordinate-registry-v340.test.js",
+      "status": "PASS"
+    },
+    {
+      "command": "node tests/universal-scenario-contract-v317.test.js",
+      "status": "PASS"
+    },
+    {
+      "command": "node tests/b4m-native-preview-v360.test.js",
+      "status": "PASS"
+    },
+    {
+      "command": "node tests/shared-render-profiles-v356.test.js",
+      "status": "PASS"
+    },
+    {
+      "command": "node tests/b4m-native-objective-advance-v408.test.js",
+      "status": "PASS"
+    },
+    {
+      "command": "node tests/b4m-native-objective-advance-campaign-v408.test.js",
+      "status": "PASS"
+    },
+    {
+      "command": "python3 scripts/verify-native-objective-advance-browser-v408.py",
+      "status": "PASS"
+    }
+  ],
+  "incompleteRetestAttempts": [
+    {
+      "command": "node tests/b4m-native-expanded-turn-v366.test.js",
+      "status": "TIMEOUT",
+      "scope": "Uncompleted in checkpoint 174; prior released v407 result not re-certified"
+    },
+    {
+      "command": "node tests/historical-deployment-campaign-v404.test.js",
+      "status": "TIMEOUT",
+      "scope": "Uncompleted in checkpoint 174; prior released v407 result not re-certified"
+    }
+  ],
+  "limits": [
+    "No hosted HTTP/browser acceptance",
+    "No strategic strength improvement measured",
+    "No production engine selector change"
+  ]
+}

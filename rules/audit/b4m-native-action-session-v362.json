@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "checkpoint": 128,
+  "version": "v362",
+  "status": "opt-in-session-undo-save-parity-not-browser-playable",
+  "oracle": "legacy/engine.js; executable B4M scenario data",
+  "test": "tests/b4m-native-session-v362.test.js",
+  "result": {
+    "status": "PASS",
+    "checkpoint": 128,
+    "version": "v362",
+    "singleParity": 30,
+    "paired": 293,
+    "choiceChecks": 4,
+    "branches": {
+      "AL": true,
+      "EX": true,
+      "retreat": true,
+      "advance": true
+    },
+    "negative": 26,
+    "undoChecks": 60,
+    "assertions": 2447,
+    "productionEngine": "legacy-b4m-v1"
+  },
+  "sources": {
+    "core/session.js": "901d31caf89bbe08fdeddbf6f7203cf243c735ca0371c59eeea5434a8fc4805e",
+    "core/native_session_actions.js": "cba8ae5a310a4dbdad2c126e77478e7af9691f9a7b8d74e3fa6e3fae023ada4c",
+    "core/native_session_save.js": "f9fb721691fbc6d167841d5861fb4751217b0c3b7eb485d86fa28a6598ca8f17",
+    "core/engine.js": "6270e477581ef7640324fb81b6c9caf030a6ebc3dd2fef6527f9010d74cd628c",
+    "legacy/engine.js": "1aa696a10fd2fbb2369bfbf1d5f7ca37b05f2ab26fb9d6e9fd9b9731ac1dc53d",
+    "games/battle-for-moscow/game.json": "9d5ccd8e80b3fb2ea1018e26ccac9ebf26e3bf9081920c162347dcb94ef23f39",
+    "games/battle-for-moscow/native-preview/config.json": "9f8a71bc08291401cfd63e7de25cc1eca846fce5a44db712b57edc2f555db397"
+  },
+  "preservation": {
+    "productionEngine": "legacy-b4m-v1",
+    "nativeAPI": "WargameSession, engine=generic-hex-v1, opt-in Node only",
+    "legacySessionSaveVersion": 2,
+    "nativePreviewSaveVersion": 1
+  },
+  "limitations": [
+    "Only opening-state combat and disjoint two-battle sequences, not a continuous seven-turn campaign",
+    "A checksum detects accidental corruption; without a secret key it is not a digital signature",
+    "Original browser remains on legacy action/session code; no native browser UI migration",
+    "Manual setup, Turn-4 Shock, later-turn phase gating, AI and live persistence remain unverified",
+    "Legacy executable is the behavioral oracle; tests do not independently certify printed rule accuracy"
+  ]
+}

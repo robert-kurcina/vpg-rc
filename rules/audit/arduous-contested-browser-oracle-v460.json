@@ -1,0 +1,3277 @@
+{
+  "checkpoint": 226,
+  "version": "v460",
+  "scenarioId": "arduous",
+  "source": "Current shared engine campaign and deterministic legal-action controller; NOT browser acceptance",
+  "policy": {
+    "seed": 7,
+    "selectionMode": "seeded",
+    "maxActions": 700,
+    "maxCombatsPerPhase": 1,
+    "maxCombatPhases": 16,
+    "maxGroundMovesPerPhase": 1,
+    "maxReinforcementsPerPhase": 4,
+    "maxFleetMoves": 0,
+    "maxFleetAttacks": 0
+  },
+  "openingStateHash": "ab85eef4fcd613f7aaf5f5cb6270fc88852610a743de8d30cb561522dfbfe337",
+  "finalStateHash": "904229f5bdcfdd603a950578ffb086f4fccb7e22efd60293477bd20803eae260",
+  "outcome": "soviet-victory",
+  "actions": [
+    {
+      "index": 0,
+      "turn": 1,
+      "phaseId": "german-combat",
+      "actor": "german",
+      "actionCount": 0,
+      "action": {
+        "type": "combat",
+        "action": {
+          "type": "finish-air-sea"
+        }
+      },
+      "reason": "finish-naval-window",
+      "afterActionCount": 1,
+      "afterPhaseId": "german-combat",
+      "afterStateHash": "f42de552cec754f5a52f3d09b328c59a0ede0c7af453dcdd2c9c06e1b831ee67"
+    },
+    {
+      "index": 1,
+      "turn": 1,
+      "phaseId": "german-combat",
+      "actor": "german",
+      "actionCount": 1,
+      "action": {
+        "type": "combat",
+        "action": {
+          "type": "commit-battles",
+          "battles": [
+            {
+              "defenderHex": "0305",
+              "attackers": [
+                "arduous-front-r02c02",
+                "arduous-front-r02c03",
+                "arduous-front-r02c08"
+              ]
+            }
+          ]
+        }
+      },
+      "reason": "source-legal-combat-plan",
+      "afterActionCount": 2,
+      "afterPhaseId": "german-combat",
+      "afterStateHash": "694b7e77f660d8a80caa9698c0d2e83838ef3d65e951201761a77e5e46ee2044"
+    },
+    {
+      "index": 2,
+      "turn": 1,
+      "phaseId": "german-combat",
+      "actor": "german",
+      "actionCount": 2,
+      "action": {
+        "type": "combat",
+        "action": {
+          "type": "select-battle",
+          "defenderHex": "0305"
+        }
+      },
+      "reason": "select-committed-battle",
+      "afterActionCount": 3,
+      "afterPhaseId": "german-combat",
+      "afterStateHash": "098881778fb17cac730cbdaa3ca08a8cc06fd32a2b7c404b8742b56997760a6d"
+    },
+    {
+      "index": 3,
+      "turn": 1,
+      "phaseId": "german-combat",
+      "actor": "german",
+      "actionCount": 3,
+      "action": {
+        "type": "combat",
+        "action": {
+          "type": "commit-ground-air",
+          "faceId": "arduous-front-r03c02"
+        }
+      },
+      "reason": "precommit-air-support",
+      "afterActionCount": 4,
+      "afterPhaseId": "german-combat",
+      "afterStateHash": "33b86f7ac2dbf0ae6d387c823ea589fe47fd8bf4144e88933bcbcb1dee0a04c7"
+    },
+    {
+      "index": 4,
+      "turn": 1,
+      "phaseId": "german-combat",
+      "actor": "german",
+      "actionCount": 4,
+      "action": {
+        "type": "combat",
+        "action": {
+          "type": "resolve-battle",
+          "die": 4,
+          "choices": {
+            "attackerLossIds": [
+              "arduous-front-r02c03",
+              "arduous-front-r02c08"
+            ],
+            "retreatPaths": {
+              "arduous-front-r03c06": [
+                "0405",
+                "0504"
+              ]
+            },
+            "advanceUnitId": "arduous-front-r02c03"
+          }
+        }
+      },
+      "reason": "post-roll-validated-consequence",
+      "afterActionCount": 5,
+      "afterPhaseId": "german-combat",
+      "afterStateHash": "785c2971c21f8a455ed94d5edf53f6e722a7ecde4c38691bd14e30278ae62b4c"
+    },
+    {
+      "index": 5,
+      "turn": 1,
+      "phaseId": "german-combat",
+      "actor": "german",
+      "actionCount": 5,
+      "action": {
+        "type": "combat",
+        "action": {
+          "type": "finish-combat"
+        }
+      },
+      "reason": "finish-combat",
+      "afterActionCount": 6,
+      "afterPhaseId": "german-special-movement",
+      "afterStateHash": "f7ce66a20e6e1ab26c5708b0a23a6ee1a3d54a83ee7061bc4c6dbbd523c79f0c"
+    },
+    {
+      "index": 6,
+      "turn": 1,
+      "phaseId": "german-special-movement",
+      "actor": "german",
+      "actionCount": 6,
+      "action": {
+        "type": "declare-ground-move",
+        "request": {
+          "unitId": "arduous-front-r02c07",
+          "path": [
+            "0306",
+            "0305"
+          ]
+        }
+      },
+      "reason": "source-legal-ground-movement",
+      "afterActionCount": 7,
+      "afterPhaseId": "german-special-movement",
+      "afterStateHash": "7a2b210cf84567b934f33223203ae2141edf426bd369661a045fd4a2690c1dc4"
+    },
+    {
+      "index": 7,
+      "turn": 1,
+      "phaseId": "german-special-movement",
+      "actor": "german",
+      "actionCount": 7,
+      "action": {
+        "type": "resolve-ground-move"
+      },
+      "reason": "finish-pending-movement",
+      "afterActionCount": 8,
+      "afterPhaseId": "german-special-movement",
+      "afterStateHash": "7bb60c6cd60c566580a82b632b2e1ba672b967a3f4f6e227176dea8514d73f8b"
+    },
+    {
+      "index": 8,
+      "turn": 1,
+      "phaseId": "german-special-movement",
+      "actor": "german",
+      "actionCount": 8,
+      "action": {
+        "type": "finish-phase"
+      },
+      "reason": "finish-movement-phase",
+      "afterActionCount": 9,
+      "afterPhaseId": "soviet-buildup",
+      "afterStateHash": "ad69d7304608248955db22c8fe92c256dad4b9ef81f421c730fbdf51d3c0884e"
+    },
+    {
+      "index": 9,
+      "turn": 1,
+      "phaseId": "soviet-buildup",
+      "actor": "soviet",
+      "actionCount": 9,
+      "action": {
+        "type": "place-reinforcement",
+        "slotId": "t1-sovietreinforcementmechanized-1",
+        "hex": "1803"
+      },
+      "reason": "source-legal-reinforcement",
+      "afterActionCount": 10,
+      "afterPhaseId": "soviet-buildup",
+      "afterStateHash": "32740019d25fcc8471ee414aff777c02cea482fab5b26f80467fe78e588ddf0b"
+    },
+    {
+      "index": 10,
+      "turn": 1,
+      "phaseId": "soviet-buildup",
+      "actor": "soviet",
+      "actionCount": 10,
+      "action": {
+        "type": "place-reinforcement",
+        "slotId": "t1-sovietreinforcementarmies-2",
+        "hex": "1810"
+      },
+      "reason": "source-legal-reinforcement",
+      "afterActionCount": 11,
+      "afterPhaseId": "soviet-buildup",
+      "afterStateHash": "a1d86a34715a6e2efce6b9e7a0378bc83597808299fae9795f803474d7aeb10f"
+    },
+    {
+      "index": 11,
+      "turn": 1,
+      "phaseId": "soviet-buildup",
+      "actor": "soviet",
+      "actionCount": 11,
+      "action": {
+        "type": "place-reinforcement",
+        "slotId": "t1-sovietreinforcementarmies-1",
+        "hex": "1809"
+      },
+      "reason": "source-legal-reinforcement",
+      "afterActionCount": 12,
+      "afterPhaseId": "soviet-buildup",
+      "afterStateHash": "f2cbab681bb4f2e0835dd9216491288b6993eabb59165a4344a27ab0288be7f6"
+    },
+    {
+      "index": 12,
+      "turn": 1,
+      "phaseId": "soviet-buildup",
+      "actor": "soviet",
+      "actionCount": 12,
+      "action": {
+        "type": "place-reinforcement",
+        "slotId": "t1-sovietreinforcementmechanized-2",
+        "hex": "1802"
+      },
+      "reason": "source-legal-reinforcement",
+      "afterActionCount": 13,
+      "afterPhaseId": "soviet-buildup",
+      "afterStateHash": "0a21f93857fac11a0453ba884e7dea2289cd974d19f904dd1a5a7b96dd810ad5"
+    },
+    {
+      "index": 13,
+      "turn": 1,
+      "phaseId": "soviet-buildup",
+      "actor": "soviet",
+      "actionCount": 13,
+      "action": {
+        "type": "finish-buildup"
+      },
+      "reason": "finish-buildup",
+      "afterActionCount": 14,
+      "afterPhaseId": "soviet-special-movement",
+      "afterStateHash": "b0b29898135c28d7b2a252c7fe2caec4b3ce899bdbc3e357d13d76333f2abcd9"
+    },
+    {
+      "index": 14,
+      "turn": 1,
+      "phaseId": "soviet-special-movement",
+      "actor": "soviet",
+      "actionCount": 14,
+      "action": {
+        "type": "declare-ground-move",
+        "request": {
+          "unitId": "arduous-front-r05c02",
+          "path": [
+            "0407",
+            "0506",
+            "0505",
+            "0504",
+            "0604",
+            "0703",
+            "0803"
+          ]
+        }
+      },
+      "reason": "source-legal-ground-movement",
+      "afterActionCount": 15,
+      "afterPhaseId": "soviet-special-movement",
+      "afterStateHash": "1d7ec9cfce013b08e8cdcc4b37ad0da8c901f55cbf2987ab3864400844f0a422"
+    },
+    {
+      "index": 15,
+      "turn": 1,
+      "phaseId": "soviet-special-movement",
+      "actor": "soviet",
+      "actionCount": 15,
+      "action": {
+        "type": "resolve-ground-move"
+      },
+      "reason": "finish-pending-movement",
+      "afterActionCount": 16,
+      "afterPhaseId": "soviet-special-movement",
+      "afterStateHash": "315f65e39a446a4d34aaa82772fe6c6b95294f44b4279ac3a73c7f9962f5bab6"
+    },
+    {
+      "index": 16,
+      "turn": 1,
+      "phaseId": "soviet-special-movement",
+      "actor": "soviet",
+      "actionCount": 16,
+      "action": {
+        "type": "finish-phase"
+      },
+      "reason": "finish-movement-phase",
+      "afterActionCount": 17,
+      "afterPhaseId": "soviet-combat",
+      "afterStateHash": "ce2d65dc679261e1a9f620c51f5bd3e7516c0198ef77a6bfa709ba55b2ed2a70"
+    },
+    {
+      "index": 17,
+      "turn": 1,
+      "phaseId": "soviet-combat",
+      "actor": "soviet",
+      "actionCount": 17,
+      "action": {
+        "type": "combat",
+        "action": {
+          "type": "commit-battles",
+          "battles": [
+            {
+              "defenderHex": "0108",
+              "attackers": [
+                "arduous-front-r03c04",
+                "arduous-front-r04c01"
+              ]
+            }
+          ]
+        }
+      },
+      "reason": "source-legal-combat-plan",
+      "afterActionCount": 18,
+      "afterPhaseId": "soviet-combat",
+      "afterStateHash": "a9c310b51b7a5972d71c179d7a549be3c9d45d8a010035e274b93aa8726594dc"
+    },
+    {
+      "index": 18,
+      "turn": 1,
+      "phaseId": "soviet-combat",
+      "actor": "soviet",
+      "actionCount": 18,
+      "action": {
+        "type": "combat",
+        "action": {
+          "type": "select-battle",
+          "defenderHex": "0108"
+        }
+      },
+      "reason": "select-committed-battle",
+      "afterActionCount": 19,
+      "afterPhaseId": "soviet-combat",
+      "afterStateHash": "b82e55fd44e2bcc6fb1f4073ea84195084c3921b01c303f13df2305c19e47402"
+    },
+    {
+      "index": 19,
+      "turn": 1,
+      "phaseId": "soviet-combat",
+      "actor": "soviet",
+      "actionCount": 19,
+      "action": {
+        "type": "combat",
+        "action": {
+          "type": "resolve-battle",
+          "die": null,
+          "choices": {}
+        }
+      },
+      "reason": "post-roll-validated-consequence",
+      "afterActionCount": 20,
+      "afterPhaseId": "soviet-combat",
+      "afterStateHash": "6c465c35ec954ba7244d0aa4eafd4294f5239bc4d23961f3b9dbfa11c19ec698"
+    },
+    {
+      "index": 20,
+      "turn": 1,
+      "phaseId": "soviet-combat",
+      "actor": "soviet",
+      "actionCount": 20,
+      "action": {
+        "type": "combat",
+        "action": {
+          "type": "finish-combat"
+        }
+      },
+      "reason": "finish-combat",
+      "afterActionCount": 21,
+      "afterPhaseId": "soviet-movement",
+      "afterStateHash": "9fd3f4b91791af36f7e7468a0d1b5f6aba686f27d4c2c3bad554fde9cc3457f8"
+    },
+    {
+      "index": 21,
+      "turn": 1,
+      "phaseId": "soviet-movement",
+      "actor": "soviet",
+      "actionCount": 21,
+      "action": {
+        "type": "declare-ground-move",
+        "request": {
+          "unitId": "arduous-front-r05c04",
+          "path": [
+            "0907",
+            "0808",
+            "0809",
+            "0810"
+          ]
+        }
+      },
+      "reason": "source-legal-ground-movement",
+      "afterActionCount": 22,
+      "afterPhaseId": "soviet-movement",
+      "afterStateHash": "cdc33e5e3f6661e709b16e6fe512e1738a4fb9c945aad5abb22f2e8850591d0e"
+    },
+    {
+      "index": 22,
+      "turn": 1,
+      "phaseId": "soviet-movement",
+      "actor": "soviet",
+      "actionCount": 22,
+      "action": {
+        "type": "resolve-ground-move"
+      },
+      "reason": "finish-pending-movement",
+      "afterActionCount": 23,
+      "afterPhaseId": "soviet-movement",
+      "afterStateHash": "6662f9d2f0ee1486bb0d3596bfdae261fb5a8fa91ab47e46dfae36e15e2278fd"
+    },
+    {
+      "index": 23,
+      "turn": 1,
+      "phaseId": "soviet-movement",
+      "actor": "soviet",
+      "actionCount": 23,
+      "action": {
+        "type": "finish-phase"
+      },
+      "reason": "finish-movement-phase",
+      "afterActionCount": 24,
+      "afterPhaseId": "housekeeping",
+      "afterStateHash": "a9e09fbfcd91df2355dd9ffcb4bab809af5d61e0adbbe9b7f6cd87e886ca0e83"
+    },
+    {
+      "index": 24,
+      "turn": 1,
+      "phaseId": "housekeeping",
+      "actor": "system",
+      "actionCount": 24,
+      "action": {
+        "type": "finish-housekeeping"
+      },
+      "reason": "finish-turn",
+      "afterActionCount": 25,
+      "afterPhaseId": "german-buildup",
+      "afterStateHash": "03f92bdf82833e67593df00a6ca50068754978626077bf812e59a72b78bff1b4"
+    },
+    {
+      "index": 25,
+      "turn": 2,
+      "phaseId": "german-buildup",
+      "actor": "german",
+      "actionCount": 25,
+      "action": {
+        "type": "finish-buildup"
+      },
+      "reason": "finish-buildup",
+      "afterActionCount": 26,
+      "afterPhaseId": "german-movement",
+      "afterStateHash": "62faeea179856f60dcd7d3d25aa35037902c74769d68041385d0c74b80b9c0ee"
+    },
+    {
+      "index": 26,
+      "turn": 2,
+      "phaseId": "german-movement",
+      "actor": "german",
+      "actionCount": 26,
+      "action": {
+        "type": "declare-ground-move",
+        "request": {
+          "unitId": "arduous-front-r02c03",
+          "path": [
+            "0305",
+            "0405"
+          ]
+        }
+      },
+      "reason": "source-legal-ground-movement",
+      "afterActionCount": 27,
+      "afterPhaseId": "german-movement",
+      "afterStateHash": "b8c7ec58e1f58f83d5338125c6a818d9a35606f6d4d043d9b785880b34e0c405"
+    },
+    {
+      "index": 27,
+      "turn": 2,
+      "phaseId": "german-movement",
+      "actor": "german",
+      "actionCount": 27,
+      "action": {
+        "type": "resolve-ground-move"
+      },
+      "reason": "finish-pending-movement",
+      "afterActionCount": 28,
+      "afterPhaseId": "german-movement",
+      "afterStateHash": "9482a344b09f2b806596e3ec359ddae846835e0ec6b1b4a75709230f0ff86f28"
+    },
+    {
+      "index": 28,
+      "turn": 2,
+      "phaseId": "german-movement",
+      "actor": "german",
+      "actionCount": 28,
+      "action": {
+        "type": "finish-phase"
+      },
+      "reason": "finish-movement-phase",
+      "afterActionCount": 29,
+      "afterPhaseId": "german-combat",
+      "afterStateHash": "36faeed5e28ebcf7f7bc0ae2064d490a91efd4c7a06361401819bc15065555d9"
+    },
+    {
+      "index": 29,
+      "turn": 2,
+      "phaseId": "german-combat",
+      "actor": "german",
+      "actionCount": 29,
+      "action": {
+        "type": "combat",
+        "action": {
+          "type": "finish-air-sea"
+        }
+      },
+      "reason": "finish-naval-window",
+      "afterActionCount": 30,
+      "afterPhaseId": "german-combat",
+      "afterStateHash": "6c1100be167a2dc0e791451adb0379e1d33e04960e4f00ed60fab7df2c65fb9f"
+    },
+    {
+      "index": 30,
+      "turn": 2,
+      "phaseId": "german-combat",
+      "actor": "german",
+      "actionCount": 30,
+      "action": {
+        "type": "combat",
+        "action": {
+          "type": "commit-battles",
+          "battles": [
+            {
+              "defenderHex": "0208",
+              "attackers": [
+                "arduous-front-r01c02",
+                "arduous-front-r01c03",
+                "arduous-front-r02c06"
+              ]
+            }
+          ]
+        }
+      },
+      "reason": "source-legal-combat-plan",
+      "afterActionCount": 31,
+      "afterPhaseId": "german-combat",
+      "afterStateHash": "1a36e5622cf77b6c84c787b2b79270b25b8a1aeb7569e85ebb0ea023d5bddf8f"
+    },
+    {
+      "index": 31,
+      "turn": 2,
+      "phaseId": "german-combat",
+      "actor": "german",
+      "actionCount": 31,
+      "action": {
+        "type": "combat",
+        "action": {
+          "type": "select-battle",
+          "defenderHex": "0208"
+        }
+      },
+      "reason": "select-committed-battle",
+      "afterActionCount": 32,
+      "afterPhaseId": "german-combat",
+      "afterStateHash": "bd25be3eab1f7cef08bd5d1a1c7aaab6e1a18ed108de9d3337d4051025130441"
+    },
+    {
+      "index": 32,
+      "turn": 2,
+      "phaseId": "german-combat",
+      "actor": "german",
+      "actionCount": 32,
+      "action": {
+        "type": "combat",
+        "action": {
+          "type": "commit-ground-air",
+          "faceId": "arduous-front-r03c02"
+        }
+      },
+      "reason": "precommit-air-support",
+      "afterActionCount": 33,
+      "afterPhaseId": "german-combat",
+      "afterStateHash": "3b253964e97acb27502964395cd96a730eb80204a0abc9a5389601a6ebadac66"
+    },
+    {
+      "index": 33,
+      "turn": 2,
+      "phaseId": "german-combat",
+      "actor": "german",
+      "actionCount": 33,
+      "action": {
+        "type": "combat",
+        "action": {
+          "type": "resolve-battle",
+          "die": 1,
+          "choices": {
+            "retreatPaths": {
+              "arduous-front-r03c04": [
+                "0308",
+                "0408"
+              ]
+            },
+            "advanceUnitId": "arduous-front-r01c02"
+          }
+        }
+      },
+      "reason": "post-roll-validated-consequence",
+      "afterActionCount": 34,
+      "afterPhaseId": "german-combat",
+      "afterStateHash": "8c6a2f17074af9e427418d1a157a79a404297fdad9da30d3ad053d5fae3c6524"
+    },
+    {
+      "index": 34,
+      "turn": 2,
+      "phaseId": "german-combat",
+      "actor": "german",
+      "actionCount": 34,
+      "action": {
+        "type": "combat",
+        "action": {
+          "type": "finish-combat"
+        }
+      },
+      "reason": "finish-combat",
+      "afterActionCount": 35,
+      "afterPhaseId": "german-special-movement",
+      "afterStateHash": "70b54cd4cd3d348a73a6b908e9a36c891f29ab47688416e7851839c2287ba921"
+    },
+    {
+      "index": 35,
+      "turn": 2,
+      "phaseId": "german-special-movement",
+      "actor": "german",
+      "actionCount": 35,
+      "action": {
+        "type": "declare-ground-move",
+        "request": {
+          "unitId": "arduous-front-r01c03",
+          "path": [
+            "0108",
+            "0107",
+            "0106",
+            "0206",
+            "0306"
+          ]
+        }
+      },
+      "reason": "source-legal-ground-movement",
+      "afterActionCount": 36,
+      "afterPhaseId": "german-special-movement",
+      "afterStateHash": "aa56071f98c0db9e85b100b04feca581c345f7b88c6f923ae8db7b8cd1861fd8"
+    },
+    {
+      "index": 36,
+      "turn": 2,
+      "phaseId": "german-special-movement",
+      "actor": "german",
+      "actionCount": 36,
+      "action": {
+        "type": "resolve-ground-move"
+      },
+      "reason": "finish-pending-movement",
+      "afterActionCount": 37,
+      "afterPhaseId": "german-special-movement",
+      "afterStateHash": "295153a3ed7e9f97074a868735464a285c640fcb988c9245f80779c6ce7d17e1"
+    },
+    {
+      "index": 37,
+      "turn": 2,
+      "phaseId": "german-special-movement",
+      "actor": "german",
+      "actionCount": 37,
+      "action": {
+        "type": "finish-phase"
+      },
+      "reason": "finish-movement-phase",
+      "afterActionCount": 38,
+      "afterPhaseId": "soviet-buildup",
+      "afterStateHash": "57e1fea585a4e76413132e77b7283a6ab27e888f1633c971cfd22f412b68cdba"
+    },
+    {
+      "index": 38,
+      "turn": 2,
+      "phaseId": "soviet-buildup",
+      "actor": "soviet",
+      "actionCount": 38,
+      "action": {
+        "type": "place-reinforcement",
+        "slotId": "t2-sovietreinforcementarmies-1",
+        "hex": "1811"
+      },
+      "reason": "source-legal-reinforcement",
+      "afterActionCount": 39,
+      "afterPhaseId": "soviet-buildup",
+      "afterStateHash": "3239e3052d4d00dbae74b136bea73e9a1daedd93933fdaefda4a33eaaabdda1b"
+    },
+    {
+      "index": 39,
+      "turn": 2,
+      "phaseId": "soviet-buildup",
+      "actor": "soviet",
+      "actionCount": 39,
+      "action": {
+        "type": "place-reinforcement",
+        "slotId": "t2-sovietreinforcementmechanized-1",
+        "hex": "1806"
+      },
+      "reason": "source-legal-reinforcement",
+      "afterActionCount": 40,
+      "afterPhaseId": "soviet-buildup",
+      "afterStateHash": "3c141b29665d723d9310867a08163e846ebe3324b4dd5a1dba6321b36e7e0ff4"
+    },
+    {
+      "index": 40,
+      "turn": 2,
+      "phaseId": "soviet-buildup",
+      "actor": "soviet",
+      "actionCount": 40,
+      "action": {
+        "type": "finish-buildup"
+      },
+      "reason": "finish-buildup",
+      "afterActionCount": 41,
+      "afterPhaseId": "soviet-special-movement",
+      "afterStateHash": "879bf4fe75e81c655476cea61f45e749b73595b21f6e250ced11dbae5b86a3c1"
+    },
+    {
+      "index": 41,
+      "turn": 2,
+      "phaseId": "soviet-special-movement",
+      "actor": "soviet",
+      "actionCount": 41,
+      "action": {
+        "type": "declare-ground-move",
+        "request": {
+          "unitId": "arduous-front-r03c08",
+          "path": [
+            "1402",
+            "1501",
+            "1602"
+          ]
+        }
+      },
+      "reason": "source-legal-ground-movement",
+      "afterActionCount": 42,
+      "afterPhaseId": "soviet-special-movement",
+      "afterStateHash": "2b7c24b0e637b15d58987b6a038494748d453f852c768cb10eeb0bbd4c3d6814"
+    },
+    {
+      "index": 42,
+      "turn": 2,
+      "phaseId": "soviet-special-movement",
+      "actor": "soviet",
+      "actionCount": 42,
+      "action": {
+        "type": "resolve-ground-move"
+      },
+      "reason": "finish-pending-movement",
+      "afterActionCount": 43,
+      "afterPhaseId": "soviet-special-movement",
+      "afterStateHash": "d21c5f050e80ca8b79a032ec502a5dc5f7da1047a2f0feda96cdb0783bd451f6"
+    },
+    {
+      "index": 43,
+      "turn": 2,
+      "phaseId": "soviet-special-movement",
+      "actor": "soviet",
+      "actionCount": 43,
+      "action": {
+        "type": "finish-phase"
+      },
+      "reason": "finish-movement-phase",
+      "afterActionCount": 44,
+      "afterPhaseId": "soviet-combat",
+      "afterStateHash": "cb68810ceeac786a540acd36c3d719c412e374a61719ea550967a72432dbfcef"
+    },
+    {
+      "index": 44,
+      "turn": 2,
+      "phaseId": "soviet-combat",
+      "actor": "soviet",
+      "actionCount": 44,
+      "action": {
+        "type": "combat",
+        "action": {
+          "type": "commit-battles",
+          "battles": [
+            {
+              "defenderHex": "0109",
+              "attackers": [
+                "arduous-front-r03c05"
+              ]
+            }
+          ]
+        }
+      },
+      "reason": "source-legal-combat-plan",
+      "afterActionCount": 45,
+      "afterPhaseId": "soviet-combat",
+      "afterStateHash": "1f29bbf3bb509bd0d21fe0a1dd140b090a0eddd8597842aaf4769e46a5e23935"
+    },
+    {
+      "index": 45,
+      "turn": 2,
+      "phaseId": "soviet-combat",
+      "actor": "soviet",
+      "actionCount": 45,
+      "action": {
+        "type": "combat",
+        "action": {
+          "type": "select-battle",
+          "defenderHex": "0109"
+        }
+      },
+      "reason": "select-committed-battle",
+      "afterActionCount": 46,
+      "afterPhaseId": "soviet-combat",
+      "afterStateHash": "9ea6eb81e9bf44bd965006a66b01cf6edc71af17f854fcba56dc030091cf1f54"
+    },
+    {
+      "index": 46,
+      "turn": 2,
+      "phaseId": "soviet-combat",
+      "actor": "soviet",
+      "actionCount": 46,
+      "action": {
+        "type": "combat",
+        "action": {
+          "type": "resolve-battle",
+          "die": null,
+          "choices": {}
+        }
+      },
+      "reason": "post-roll-validated-consequence",
+      "afterActionCount": 47,
+      "afterPhaseId": "soviet-combat",
+      "afterStateHash": "d8506124dfadf9582bee7ee1c92ee9c96a50eab7ed1d27f753832b36353b22f2"
+    },
+    {
+      "index": 47,
+      "turn": 2,
+      "phaseId": "soviet-combat",
+      "actor": "soviet",
+      "actionCount": 47,
+      "action": {
+        "type": "combat",
+        "action": {
+          "type": "finish-combat"
+        }
+      },
+      "reason": "finish-combat",
+      "afterActionCount": 48,
+      "afterPhaseId": "soviet-movement",
+      "afterStateHash": "d6eb65fe2b9ce0dd904d831a7da7d24ca65c8813cbaaaa36dc9c844f52098bd6"
+    },
+    {
+      "index": 48,
+      "turn": 2,
+      "phaseId": "soviet-movement",
+      "actor": "soviet",
+      "actionCount": 48,
+      "action": {
+        "type": "declare-ground-move",
+        "request": {
+          "unitId": "arduous-front-r03c07",
+          "path": [
+            "0907",
+            "1008",
+            "1108",
+            "1208"
+          ]
+        }
+      },
+      "reason": "source-legal-ground-movement",
+      "afterActionCount": 49,
+      "afterPhaseId": "soviet-movement",
+      "afterStateHash": "c85c1240cbb9065ce86d877c58bcf45894b99f9bba68ca504bec989e2dc1f59c"
+    },
+    {
+      "index": 49,
+      "turn": 2,
+      "phaseId": "soviet-movement",
+      "actor": "soviet",
+      "actionCount": 49,
+      "action": {
+        "type": "resolve-ground-move"
+      },
+      "reason": "finish-pending-movement",
+      "afterActionCount": 50,
+      "afterPhaseId": "soviet-movement",
+      "afterStateHash": "8b936aa9992ee38cb20db48b40549214476d43bd2b8e3f3e1a52839643f968eb"
+    },
+    {
+      "index": 50,
+      "turn": 2,
+      "phaseId": "soviet-movement",
+      "actor": "soviet",
+      "actionCount": 50,
+      "action": {
+        "type": "finish-phase"
+      },
+      "reason": "finish-movement-phase",
+      "afterActionCount": 51,
+      "afterPhaseId": "housekeeping",
+      "afterStateHash": "61f3d085ce009b7199ee1446ec3dd90afff1326d420ff7efd3d6b9904bd2c223"
+    },
+    {
+      "index": 51,
+      "turn": 2,
+      "phaseId": "housekeeping",
+      "actor": "system",
+      "actionCount": 51,
+      "action": {
+        "type": "finish-housekeeping"
+      },
+      "reason": "finish-turn",
+      "afterActionCount": 52,
+      "afterPhaseId": "german-buildup",
+      "afterStateHash": "aa5c57382bc218fd1049a154ce3721f08c81703ffb8ac30bcf14a5ebda94c7f8"
+    },
+    {
+      "index": 52,
+      "turn": 3,
+      "phaseId": "german-buildup",
+      "actor": "german",
+      "actionCount": 52,
+      "action": {
+        "type": "finish-buildup"
+      },
+      "reason": "finish-buildup",
+      "afterActionCount": 53,
+      "afterPhaseId": "german-movement",
+      "afterStateHash": "57bafd31b5dc027b2502e324b1a682e02dfa18b95f1bc9280dbbc214e7e94309"
+    },
+    {
+      "index": 53,
+      "turn": 3,
+      "phaseId": "german-movement",
+      "actor": "german",
+      "actionCount": 53,
+      "action": {
+        "type": "declare-ground-move",
+        "request": {
+          "unitId": "arduous-front-r01c03",
+          "path": [
+            "0306",
+            "0407"
+          ]
+        }
+      },
+      "reason": "source-legal-ground-movement",
+      "afterActionCount": 54,
+      "afterPhaseId": "german-movement",
+      "afterStateHash": "b11ee93135f29b5de03c1eca094734385e1950ba16b500819b5caff7f5c0973a"
+    },
+    {
+      "index": 54,
+      "turn": 3,
+      "phaseId": "german-movement",
+      "actor": "german",
+      "actionCount": 54,
+      "action": {
+        "type": "resolve-ground-move"
+      },
+      "reason": "finish-pending-movement",
+      "afterActionCount": 55,
+      "afterPhaseId": "german-movement",
+      "afterStateHash": "d8622b2ac0898570935894756e9f8c4c602ec5e878e3a57cf8205634e7039d75"
+    },
+    {
+      "index": 55,
+      "turn": 3,
+      "phaseId": "german-movement",
+      "actor": "german",
+      "actionCount": 55,
+      "action": {
+        "type": "finish-phase"
+      },
+      "reason": "finish-movement-phase",
+      "afterActionCount": 56,
+      "afterPhaseId": "german-combat",
+      "afterStateHash": "f51ef98d8604fb1901b2ff8312139e124ce20395b2239daf8caa2dc80fc3ac62"
+    },
+    {
+      "index": 56,
+      "turn": 3,
+      "phaseId": "german-combat",
+      "actor": "german",
+      "actionCount": 56,
+      "action": {
+        "type": "combat",
+        "action": {
+          "type": "finish-air-sea"
+        }
+      },
+      "reason": "finish-naval-window",
+      "afterActionCount": 57,
+      "afterPhaseId": "german-combat",
+      "afterStateHash": "e19458d8ea98f57ce977f0a410024c47a8bec272291caaec2c4cf88bc052fb3c"
+    },
+    {
+      "index": 57,
+      "turn": 3,
+      "phaseId": "german-combat",
+      "actor": "german",
+      "actionCount": 57,
+      "action": {
+        "type": "combat",
+        "action": {
+          "type": "commit-battles",
+          "battles": [
+            {
+              "defenderHex": "0406",
+              "attackers": [
+                "arduous-front-r02c07",
+                "arduous-front-r02c08",
+                "arduous-front-r02c03",
+                "arduous-front-r01c03"
+              ]
+            }
+          ]
+        }
+      },
+      "reason": "source-legal-combat-plan",
+      "afterActionCount": 58,
+      "afterPhaseId": "german-combat",
+      "afterStateHash": "fb414106ede1656dfc103d859fe555115d94cdaa7d9819811ae9a9be9ba0e24b"
+    },
+    {
+      "index": 58,
+      "turn": 3,
+      "phaseId": "german-combat",
+      "actor": "german",
+      "actionCount": 58,
+      "action": {
+        "type": "combat",
+        "action": {
+          "type": "select-battle",
+          "defenderHex": "0406"
+        }
+      },
+      "reason": "select-committed-battle",
+      "afterActionCount": 59,
+      "afterPhaseId": "german-combat",
+      "afterStateHash": "22f250caff9cdd870d09a8bcdb09c0b8db08122023b7335dc279037d6a3236ea"
+    },
+    {
+      "index": 59,
+      "turn": 3,
+      "phaseId": "german-combat",
+      "actor": "german",
+      "actionCount": 59,
+      "action": {
+        "type": "combat",
+        "action": {
+          "type": "commit-ground-air",
+          "faceId": null
+        }
+      },
+      "reason": "precommit-air-support",
+      "afterActionCount": 60,
+      "afterPhaseId": "german-combat",
+      "afterStateHash": "c384a3073982155c45bf09bb9915edb2f4ad7f344f5abbda98053b7712c59e33"
+    },
+    {
+      "index": 60,
+      "turn": 3,
+      "phaseId": "german-combat",
+      "actor": "german",
+      "actionCount": 60,
+      "action": {
+        "type": "combat",
+        "action": {
+          "type": "resolve-battle",
+          "die": 1,
+          "choices": {}
+        }
+      },
+      "reason": "post-roll-validated-consequence",
+      "afterActionCount": 61,
+      "afterPhaseId": "german-combat",
+      "afterStateHash": "cafa0987af3a0acee79c5ec1a141fbd8e4e08b8477e1e1b1df0315b03b6dff20"
+    },
+    {
+      "index": 61,
+      "turn": 3,
+      "phaseId": "german-combat",
+      "actor": "german",
+      "actionCount": 61,
+      "action": {
+        "type": "combat",
+        "action": {
+          "type": "finish-combat"
+        }
+      },
+      "reason": "finish-combat",
+      "afterActionCount": 62,
+      "afterPhaseId": "german-special-movement",
+      "afterStateHash": "9b9fb69deab8d7a9dabffe9050343f857c5d7980b4bacccd939e5156206be123"
+    },
+    {
+      "index": 62,
+      "turn": 3,
+      "phaseId": "german-special-movement",
+      "actor": "german",
+      "actionCount": 62,
+      "action": {
+        "type": "declare-ground-move",
+        "request": {
+          "unitId": "arduous-front-r01c03",
+          "path": [
+            "0407",
+            "0507"
+          ]
+        }
+      },
+      "reason": "source-legal-ground-movement",
+      "afterActionCount": 63,
+      "afterPhaseId": "german-special-movement",
+      "afterStateHash": "517e7c080dbf621ab6e7b814a3557ff82e487a277cce5c8df53803299897f01b"
+    },
+    {
+      "index": 63,
+      "turn": 3,
+      "phaseId": "german-special-movement",
+      "actor": "german",
+      "actionCount": 63,
+      "action": {
+        "type": "resolve-ground-move"
+      },
+      "reason": "finish-pending-movement",
+      "afterActionCount": 64,
+      "afterPhaseId": "german-special-movement",
+      "afterStateHash": "bf82d12a877a98deca3339f9d777bf1eaddaea2078a49e3e2ebf44d79b20720f"
+    },
+    {
+      "index": 64,
+      "turn": 3,
+      "phaseId": "german-special-movement",
+      "actor": "german",
+      "actionCount": 64,
+      "action": {
+        "type": "finish-phase"
+      },
+      "reason": "finish-movement-phase",
+      "afterActionCount": 65,
+      "afterPhaseId": "soviet-buildup",
+      "afterStateHash": "1e4fd06f0b493fa6652ab84f42e85e6c5bea3f171ee83703564fc479d4492ac5"
+    },
+    {
+      "index": 65,
+      "turn": 3,
+      "phaseId": "soviet-buildup",
+      "actor": "soviet",
+      "actionCount": 65,
+      "action": {
+        "type": "place-reinforcement",
+        "slotId": "t3-sovietreinforcementarmies-1",
+        "hex": "1804"
+      },
+      "reason": "source-legal-reinforcement",
+      "afterActionCount": 66,
+      "afterPhaseId": "soviet-buildup",
+      "afterStateHash": "6970b7680f657eb453d7cc90b5493fe1f3c36b30c63a32f1600cb3f480fe3cd2"
+    },
+    {
+      "index": 66,
+      "turn": 3,
+      "phaseId": "soviet-buildup",
+      "actor": "soviet",
+      "actionCount": 66,
+      "action": {
+        "type": "apply-replacement",
+        "unitId": "arduous-front-r05c01",
+        "hex": "1801"
+      },
+      "reason": "source-legal-replacement",
+      "afterActionCount": 67,
+      "afterPhaseId": "soviet-buildup",
+      "afterStateHash": "6989b4d25c6366fd4a3cc9762791bb00df29f0f381f6281abad6f40d9c7a42b5"
+    },
+    {
+      "index": 67,
+      "turn": 3,
+      "phaseId": "soviet-buildup",
+      "actor": "soviet",
+      "actionCount": 67,
+      "action": {
+        "type": "finish-buildup"
+      },
+      "reason": "finish-buildup",
+      "afterActionCount": 68,
+      "afterPhaseId": "soviet-special-movement",
+      "afterStateHash": "d247ced671492ff20d565c558e87667e480fd51cdb49624fa5734ca8bf474fa6"
+    },
+    {
+      "index": 68,
+      "turn": 3,
+      "phaseId": "soviet-special-movement",
+      "actor": "soviet",
+      "actionCount": 68,
+      "action": {
+        "type": "declare-ground-move",
+        "request": {
+          "unitId": "arduous-front-r05c04",
+          "path": [
+            "0810",
+            "0809",
+            "0808",
+            "0907"
+          ]
+        }
+      },
+      "reason": "source-legal-ground-movement",
+      "afterActionCount": 69,
+      "afterPhaseId": "soviet-special-movement",
+      "afterStateHash": "b09d51d16e8a5d1b35db63d6992884511ea93136382fd0a02940e259bef55bdc"
+    },
+    {
+      "index": 69,
+      "turn": 3,
+      "phaseId": "soviet-special-movement",
+      "actor": "soviet",
+      "actionCount": 69,
+      "action": {
+        "type": "resolve-ground-move"
+      },
+      "reason": "finish-pending-movement",
+      "afterActionCount": 70,
+      "afterPhaseId": "soviet-special-movement",
+      "afterStateHash": "d3b15d9bf479b0cd8d8b81b86f25402d874a61144741207f6aa53e32d53cc2d5"
+    },
+    {
+      "index": 70,
+      "turn": 3,
+      "phaseId": "soviet-special-movement",
+      "actor": "soviet",
+      "actionCount": 70,
+      "action": {
+        "type": "finish-phase"
+      },
+      "reason": "finish-movement-phase",
+      "afterActionCount": 71,
+      "afterPhaseId": "soviet-combat",
+      "afterStateHash": "8fc151ec9c520ecc5ab880a4a6f24404985c9e3c2a1b3e655e6aa8d88c4f3acf"
+    },
+    {
+      "index": 71,
+      "turn": 3,
+      "phaseId": "soviet-combat",
+      "actor": "soviet",
+      "actionCount": 71,
+      "action": {
+        "type": "combat",
+        "action": {
+          "type": "commit-battles",
+          "battles": [
+            {
+              "defenderHex": "0208",
+              "attackers": [
+                "arduous-front-r04c01",
+                "arduous-front-r04c02"
+              ]
+            }
+          ]
+        }
+      },
+      "reason": "source-legal-combat-plan",
+      "afterActionCount": 72,
+      "afterPhaseId": "soviet-combat",
+      "afterStateHash": "6fd1989f6446575c2bcf7431058da9ede5f517bda173f9023b50319e0a3769fe"
+    },
+    {
+      "index": 72,
+      "turn": 3,
+      "phaseId": "soviet-combat",
+      "actor": "soviet",
+      "actionCount": 72,
+      "action": {
+        "type": "combat",
+        "action": {
+          "type": "select-battle",
+          "defenderHex": "0208"
+        }
+      },
+      "reason": "select-committed-battle",
+      "afterActionCount": 73,
+      "afterPhaseId": "soviet-combat",
+      "afterStateHash": "adee5e0b2802a3c51d056e4e5b0e0ac8b035561b33e16a25bc24f88de80de17c"
+    },
+    {
+      "index": 73,
+      "turn": 3,
+      "phaseId": "soviet-combat",
+      "actor": "soviet",
+      "actionCount": 73,
+      "action": {
+        "type": "combat",
+        "action": {
+          "type": "resolve-battle",
+          "die": null,
+          "choices": {}
+        }
+      },
+      "reason": "post-roll-validated-consequence",
+      "afterActionCount": 74,
+      "afterPhaseId": "soviet-combat",
+      "afterStateHash": "7915b695c4c4a0da9f319d8b59136e52a7e7745742c19bacce30c271de86dfb4"
+    },
+    {
+      "index": 74,
+      "turn": 3,
+      "phaseId": "soviet-combat",
+      "actor": "soviet",
+      "actionCount": 74,
+      "action": {
+        "type": "combat",
+        "action": {
+          "type": "finish-combat"
+        }
+      },
+      "reason": "finish-combat",
+      "afterActionCount": 75,
+      "afterPhaseId": "soviet-movement",
+      "afterStateHash": "991b2ae2cef4cd9268ce8b6bf189fd00b29faf89a689c50968f7e0204ab0b883"
+    },
+    {
+      "index": 75,
+      "turn": 3,
+      "phaseId": "soviet-movement",
+      "actor": "soviet",
+      "actionCount": 75,
+      "action": {
+        "type": "declare-ground-move",
+        "request": {
+          "unitId": "arduous-front-r05c05",
+          "path": [
+            "1510",
+            "1611"
+          ]
+        }
+      },
+      "reason": "source-legal-ground-movement",
+      "afterActionCount": 76,
+      "afterPhaseId": "soviet-movement",
+      "afterStateHash": "714b6ec2f34dc19842a273596104d27ada2fadcadeead418fd1feec2b5a05526"
+    },
+    {
+      "index": 76,
+      "turn": 3,
+      "phaseId": "soviet-movement",
+      "actor": "soviet",
+      "actionCount": 76,
+      "action": {
+        "type": "resolve-ground-move"
+      },
+      "reason": "finish-pending-movement",
+      "afterActionCount": 77,
+      "afterPhaseId": "soviet-movement",
+      "afterStateHash": "3afbe4f2faf32d365779618300369a81cc51e8489cfbf73219ba4b4ed1d0bb77"
+    },
+    {
+      "index": 77,
+      "turn": 3,
+      "phaseId": "soviet-movement",
+      "actor": "soviet",
+      "actionCount": 77,
+      "action": {
+        "type": "finish-phase"
+      },
+      "reason": "finish-movement-phase",
+      "afterActionCount": 78,
+      "afterPhaseId": "housekeeping",
+      "afterStateHash": "e029cced0d366ffbb36d670efe38c94c8986dea514bd1701f32a72c5f39c1bf2"
+    },
+    {
+      "index": 78,
+      "turn": 3,
+      "phaseId": "housekeeping",
+      "actor": "system",
+      "actionCount": 78,
+      "action": {
+        "type": "finish-housekeeping"
+      },
+      "reason": "finish-turn",
+      "afterActionCount": 79,
+      "afterPhaseId": "german-buildup",
+      "afterStateHash": "1e328c9932115a280127dc738a5a6186114b0610c262283a101fa3ed456159f2"
+    },
+    {
+      "index": 79,
+      "turn": 4,
+      "phaseId": "german-buildup",
+      "actor": "german",
+      "actionCount": 79,
+      "action": {
+        "type": "apply-replacement",
+        "unitId": "arduous-front-r02c03",
+        "hex": null
+      },
+      "reason": "source-legal-replacement",
+      "afterActionCount": 80,
+      "afterPhaseId": "german-buildup",
+      "afterStateHash": "1ab6f3fb433324f51da01dbf7c024bbb94214dad4af854801083dfa1de2ea336"
+    },
+    {
+      "index": 80,
+      "turn": 4,
+      "phaseId": "german-buildup",
+      "actor": "german",
+      "actionCount": 80,
+      "action": {
+        "type": "finish-buildup"
+      },
+      "reason": "finish-buildup",
+      "afterActionCount": 81,
+      "afterPhaseId": "german-movement",
+      "afterStateHash": "1fa03f2efd755f49238be091d01702e5d13f0eb679c5419a1a10a62946f74777"
+    },
+    {
+      "index": 81,
+      "turn": 4,
+      "phaseId": "german-movement",
+      "actor": "german",
+      "actionCount": 81,
+      "action": {
+        "type": "declare-ground-move",
+        "request": {
+          "unitId": "arduous-front-r01c03",
+          "path": [
+            "0507",
+            "0607",
+            "0707",
+            "0708"
+          ]
+        }
+      },
+      "reason": "source-legal-ground-movement",
+      "afterActionCount": 82,
+      "afterPhaseId": "german-movement",
+      "afterStateHash": "d30eaed847948e33d3ab78cd33d552945304e845f74a86b71d8bbde26310c2d3"
+    },
+    {
+      "index": 82,
+      "turn": 4,
+      "phaseId": "german-movement",
+      "actor": "german",
+      "actionCount": 82,
+      "action": {
+        "type": "resolve-ground-move"
+      },
+      "reason": "finish-pending-movement",
+      "afterActionCount": 83,
+      "afterPhaseId": "german-movement",
+      "afterStateHash": "b65b5650bf018ae08c9f2663b85df680ee04f21d88fb90511e1c8d6f5a362200"
+    },
+    {
+      "index": 83,
+      "turn": 4,
+      "phaseId": "german-movement",
+      "actor": "german",
+      "actionCount": 83,
+      "action": {
+        "type": "finish-phase"
+      },
+      "reason": "finish-movement-phase",
+      "afterActionCount": 84,
+      "afterPhaseId": "german-combat",
+      "afterStateHash": "39982599ee3fc2fa4fda9f19bd24db2d5ba4c2646285dd95e3e8a7e47f1729d4"
+    },
+    {
+      "index": 84,
+      "turn": 4,
+      "phaseId": "german-combat",
+      "actor": "german",
+      "actionCount": 84,
+      "action": {
+        "type": "combat",
+        "action": {
+          "type": "finish-air-sea"
+        }
+      },
+      "reason": "finish-naval-window",
+      "afterActionCount": 85,
+      "afterPhaseId": "german-combat",
+      "afterStateHash": "60be974cf9134f78d946b5807a7a1e7ab0b0f360d708f8ac83517d475f996be0"
+    },
+    {
+      "index": 85,
+      "turn": 4,
+      "phaseId": "german-combat",
+      "actor": "german",
+      "actionCount": 85,
+      "action": {
+        "type": "combat",
+        "action": {
+          "type": "commit-battles",
+          "battles": [
+            {
+              "defenderHex": "0504",
+              "attackers": [
+                "arduous-front-r02c03"
+              ]
+            }
+          ]
+        }
+      },
+      "reason": "source-legal-combat-plan",
+      "afterActionCount": 86,
+      "afterPhaseId": "german-combat",
+      "afterStateHash": "b72d0f6fd4f9efa12228b9b711837a66ec6764a6490431b50732195a3a82461d"
+    },
+    {
+      "index": 86,
+      "turn": 4,
+      "phaseId": "german-combat",
+      "actor": "german",
+      "actionCount": 86,
+      "action": {
+        "type": "combat",
+        "action": {
+          "type": "select-battle",
+          "defenderHex": "0504"
+        }
+      },
+      "reason": "select-committed-battle",
+      "afterActionCount": 87,
+      "afterPhaseId": "german-combat",
+      "afterStateHash": "e41bd5afc6d844bba0ba28ac6f5ed228d891cdd1bf07a2502c4aac28be12dee5"
+    },
+    {
+      "index": 87,
+      "turn": 4,
+      "phaseId": "german-combat",
+      "actor": "german",
+      "actionCount": 87,
+      "action": {
+        "type": "combat",
+        "action": {
+          "type": "commit-ground-air",
+          "faceId": "arduous-front-r03c02"
+        }
+      },
+      "reason": "precommit-air-support",
+      "afterActionCount": 88,
+      "afterPhaseId": "german-combat",
+      "afterStateHash": "02cbd709bdb038d9359f2e5d0ecbf76fa095ee7d315767fb894bed7dfbb23bb8"
+    },
+    {
+      "index": 88,
+      "turn": 4,
+      "phaseId": "german-combat",
+      "actor": "german",
+      "actionCount": 88,
+      "action": {
+        "type": "combat",
+        "action": {
+          "type": "resolve-battle",
+          "die": 6,
+          "choices": {}
+        }
+      },
+      "reason": "post-roll-validated-consequence",
+      "afterActionCount": 89,
+      "afterPhaseId": "german-combat",
+      "afterStateHash": "3106fdedf1a093fe49d31b16b74ac2ef17db75429a1a6e12d4e4440d546b5375"
+    },
+    {
+      "index": 89,
+      "turn": 4,
+      "phaseId": "german-combat",
+      "actor": "german",
+      "actionCount": 89,
+      "action": {
+        "type": "combat",
+        "action": {
+          "type": "finish-combat"
+        }
+      },
+      "reason": "finish-combat",
+      "afterActionCount": 90,
+      "afterPhaseId": "german-special-movement",
+      "afterStateHash": "133fec17f05004cedbdd4305b2cec8e65e768f25c5975ae6d37fe80a4277a61a"
+    },
+    {
+      "index": 90,
+      "turn": 4,
+      "phaseId": "german-special-movement",
+      "actor": "german",
+      "actionCount": 90,
+      "action": {
+        "type": "declare-ground-move",
+        "request": {
+          "unitId": "arduous-front-r02c07",
+          "path": [
+            "0305",
+            "0206",
+            "0105"
+          ]
+        }
+      },
+      "reason": "source-legal-ground-movement",
+      "afterActionCount": 91,
+      "afterPhaseId": "german-special-movement",
+      "afterStateHash": "43c2555fa392d83b1d14b3dd970fb14d442cab81e532044e970f13e551a26be8"
+    },
+    {
+      "index": 91,
+      "turn": 4,
+      "phaseId": "german-special-movement",
+      "actor": "german",
+      "actionCount": 91,
+      "action": {
+        "type": "resolve-ground-move"
+      },
+      "reason": "finish-pending-movement",
+      "afterActionCount": 92,
+      "afterPhaseId": "german-special-movement",
+      "afterStateHash": "45c12b737cb1b097ebc68dada3cf298dc08d31d0f7d7d9568bfee704869477d2"
+    },
+    {
+      "index": 92,
+      "turn": 4,
+      "phaseId": "german-special-movement",
+      "actor": "german",
+      "actionCount": 92,
+      "action": {
+        "type": "finish-phase"
+      },
+      "reason": "finish-movement-phase",
+      "afterActionCount": 93,
+      "afterPhaseId": "soviet-buildup",
+      "afterStateHash": "b76dc7c922ebd49ecc202a1059e2202b6f30a9896f3e9f01cda9ff1211063acf"
+    },
+    {
+      "index": 93,
+      "turn": 4,
+      "phaseId": "soviet-buildup",
+      "actor": "soviet",
+      "actionCount": 93,
+      "action": {
+        "type": "apply-replacement",
+        "unitId": "arduous-front-r03c06",
+        "hex": null
+      },
+      "reason": "source-legal-replacement",
+      "afterActionCount": 94,
+      "afterPhaseId": "soviet-buildup",
+      "afterStateHash": "d98b7f7924700cc45efb78be71b7d6a0624a2d4d822c17491aefb4c5e9fbeed1"
+    },
+    {
+      "index": 94,
+      "turn": 4,
+      "phaseId": "soviet-buildup",
+      "actor": "soviet",
+      "actionCount": 94,
+      "action": {
+        "type": "finish-buildup"
+      },
+      "reason": "finish-buildup",
+      "afterActionCount": 95,
+      "afterPhaseId": "soviet-special-movement",
+      "afterStateHash": "e7d9987b42d93fa3507049266ccc77059d695178918fce8a0bc71ace1c83906b"
+    },
+    {
+      "index": 95,
+      "turn": 4,
+      "phaseId": "soviet-special-movement",
+      "actor": "soviet",
+      "actionCount": 95,
+      "action": {
+        "type": "declare-ground-move",
+        "request": {
+          "unitId": "arduous-front-r05c04",
+          "path": [
+            "0907",
+            "0908",
+            "0909",
+            "0910",
+            "1011"
+          ]
+        }
+      },
+      "reason": "source-legal-ground-movement",
+      "afterActionCount": 96,
+      "afterPhaseId": "soviet-special-movement",
+      "afterStateHash": "fd24fbe82c2d266b950f3cd302a82c84b29221704488c95ae0d8a5a1970f057c"
+    },
+    {
+      "index": 96,
+      "turn": 4,
+      "phaseId": "soviet-special-movement",
+      "actor": "soviet",
+      "actionCount": 96,
+      "action": {
+        "type": "resolve-ground-move"
+      },
+      "reason": "finish-pending-movement",
+      "afterActionCount": 97,
+      "afterPhaseId": "soviet-special-movement",
+      "afterStateHash": "9ae9047b4ff245751772e98802c611860f9f3cc5254e8345aaf6166c5f441b4a"
+    },
+    {
+      "index": 97,
+      "turn": 4,
+      "phaseId": "soviet-special-movement",
+      "actor": "soviet",
+      "actionCount": 97,
+      "action": {
+        "type": "finish-phase"
+      },
+      "reason": "finish-movement-phase",
+      "afterActionCount": 98,
+      "afterPhaseId": "soviet-combat",
+      "afterStateHash": "b2e061d17a54e1ccbb2e8b96d0120a3d7348bd632d13331fcf5363fe915bc15e"
+    },
+    {
+      "index": 98,
+      "turn": 4,
+      "phaseId": "soviet-combat",
+      "actor": "soviet",
+      "actionCount": 98,
+      "action": {
+        "type": "combat",
+        "action": {
+          "type": "commit-battles",
+          "battles": [
+            {
+              "defenderHex": "0405",
+              "attackers": [
+                "arduous-front-r03c06"
+              ]
+            }
+          ]
+        }
+      },
+      "reason": "source-legal-combat-plan",
+      "afterActionCount": 99,
+      "afterPhaseId": "soviet-combat",
+      "afterStateHash": "58d5f5024c26e32928117eefa31ed95af4de7d2900dc22c58c0e100f886c86c1"
+    },
+    {
+      "index": 99,
+      "turn": 4,
+      "phaseId": "soviet-combat",
+      "actor": "soviet",
+      "actionCount": 99,
+      "action": {
+        "type": "combat",
+        "action": {
+          "type": "select-battle",
+          "defenderHex": "0405"
+        }
+      },
+      "reason": "select-committed-battle",
+      "afterActionCount": 100,
+      "afterPhaseId": "soviet-combat",
+      "afterStateHash": "f822b7ee4da035d82c70ba9f984594cd97d928ea2f0841c91bcb1166a89243c2"
+    },
+    {
+      "index": 100,
+      "turn": 4,
+      "phaseId": "soviet-combat",
+      "actor": "soviet",
+      "actionCount": 100,
+      "action": {
+        "type": "combat",
+        "action": {
+          "type": "resolve-battle",
+          "die": 1,
+          "choices": {
+            "retreatPaths": {
+              "arduous-front-r02c03": [
+                "0305",
+                "0206"
+              ]
+            }
+          }
+        }
+      },
+      "reason": "post-roll-validated-consequence",
+      "afterActionCount": 101,
+      "afterPhaseId": "soviet-combat",
+      "afterStateHash": "e065586ae0642aac1ee127c50089aaeebdcf4e90f8284cc7570901244db74585"
+    },
+    {
+      "index": 101,
+      "turn": 4,
+      "phaseId": "soviet-combat",
+      "actor": "soviet",
+      "actionCount": 101,
+      "action": {
+        "type": "combat",
+        "action": {
+          "type": "finish-combat"
+        }
+      },
+      "reason": "finish-combat",
+      "afterActionCount": 102,
+      "afterPhaseId": "soviet-movement",
+      "afterStateHash": "23516a51700f1f254e994750332d3a5ffa5345b010d9c5cf8c02b36b99bf0508"
+    },
+    {
+      "index": 102,
+      "turn": 4,
+      "phaseId": "soviet-movement",
+      "actor": "soviet",
+      "actionCount": 102,
+      "action": {
+        "type": "declare-ground-move",
+        "request": {
+          "unitId": "arduous-front-r05c05",
+          "path": [
+            "1611",
+            "1510",
+            "1410",
+            "1309",
+            "1209",
+            "1208"
+          ]
+        }
+      },
+      "reason": "source-legal-ground-movement",
+      "afterActionCount": 103,
+      "afterPhaseId": "soviet-movement",
+      "afterStateHash": "68d9696f6d99b021f2288f8308a2c23d8827f1fac4eca1975a93c9f007407a65"
+    },
+    {
+      "index": 103,
+      "turn": 4,
+      "phaseId": "soviet-movement",
+      "actor": "soviet",
+      "actionCount": 103,
+      "action": {
+        "type": "resolve-ground-move"
+      },
+      "reason": "finish-pending-movement",
+      "afterActionCount": 104,
+      "afterPhaseId": "soviet-movement",
+      "afterStateHash": "603cfcc6df138ee007136065e0566bc7061e7a3e46ac229e2d6a9dc9dc832e53"
+    },
+    {
+      "index": 104,
+      "turn": 4,
+      "phaseId": "soviet-movement",
+      "actor": "soviet",
+      "actionCount": 104,
+      "action": {
+        "type": "finish-phase"
+      },
+      "reason": "finish-movement-phase",
+      "afterActionCount": 105,
+      "afterPhaseId": "housekeeping",
+      "afterStateHash": "4dfc78b9db247ed6324937f178dd06153bf7d851d9d6ef3842000aabfc6f10e5"
+    },
+    {
+      "index": 105,
+      "turn": 4,
+      "phaseId": "housekeeping",
+      "actor": "system",
+      "actionCount": 105,
+      "action": {
+        "type": "finish-housekeeping"
+      },
+      "reason": "finish-turn",
+      "afterActionCount": 106,
+      "afterPhaseId": "german-buildup",
+      "afterStateHash": "138e433f279857288674b381613730e7e1e7ecedd8cd8d1cc136c020e15f7b60"
+    },
+    {
+      "index": 106,
+      "turn": 5,
+      "phaseId": "german-buildup",
+      "actor": "german",
+      "actionCount": 106,
+      "action": {
+        "type": "apply-replacement",
+        "unitId": "arduous-front-r02c08",
+        "hex": null
+      },
+      "reason": "source-legal-replacement",
+      "afterActionCount": 107,
+      "afterPhaseId": "german-buildup",
+      "afterStateHash": "b8e471afc30492749b13acb85eed8e89d8464fff40ee2ac6f20d4b3f842963f0"
+    },
+    {
+      "index": 107,
+      "turn": 5,
+      "phaseId": "german-buildup",
+      "actor": "german",
+      "actionCount": 107,
+      "action": {
+        "type": "finish-buildup"
+      },
+      "reason": "finish-buildup",
+      "afterActionCount": 108,
+      "afterPhaseId": "german-movement",
+      "afterStateHash": "95d3a12f77825c58942a819bc77f500a1006143bc9f8597901972540de98e973"
+    },
+    {
+      "index": 108,
+      "turn": 5,
+      "phaseId": "german-movement",
+      "actor": "german",
+      "actionCount": 108,
+      "action": {
+        "type": "declare-ground-move",
+        "request": {
+          "unitId": "arduous-front-r02c08",
+          "path": [
+            "0306",
+            "0406",
+            "0506",
+            "0606",
+            "0605"
+          ]
+        }
+      },
+      "reason": "source-legal-ground-movement",
+      "afterActionCount": 109,
+      "afterPhaseId": "german-movement",
+      "afterStateHash": "5018e63d19049172609283b3b4af30883f74581c54c5b4f720ad2d41dc285722"
+    },
+    {
+      "index": 109,
+      "turn": 5,
+      "phaseId": "german-movement",
+      "actor": "german",
+      "actionCount": 109,
+      "action": {
+        "type": "resolve-ground-move"
+      },
+      "reason": "finish-pending-movement",
+      "afterActionCount": 110,
+      "afterPhaseId": "german-movement",
+      "afterStateHash": "51bce8e4b1f26f9078b13454824e03648938f311e44f6117fff4dc0b15e4fa1a"
+    },
+    {
+      "index": 110,
+      "turn": 5,
+      "phaseId": "german-movement",
+      "actor": "german",
+      "actionCount": 110,
+      "action": {
+        "type": "finish-phase"
+      },
+      "reason": "finish-movement-phase",
+      "afterActionCount": 111,
+      "afterPhaseId": "german-combat",
+      "afterStateHash": "98444ed1b4011b559b4e2163fc949cd4cd255de1af3a8760fbe1a498225173c7"
+    },
+    {
+      "index": 111,
+      "turn": 5,
+      "phaseId": "german-combat",
+      "actor": "german",
+      "actionCount": 111,
+      "action": {
+        "type": "combat",
+        "action": {
+          "type": "finish-air-sea"
+        }
+      },
+      "reason": "finish-naval-window",
+      "afterActionCount": 112,
+      "afterPhaseId": "german-combat",
+      "afterStateHash": "27dddff4828ab29716ee6abb835742f68aeb385ec2d1ab1458d668a2d28ccd2b"
+    },
+    {
+      "index": 112,
+      "turn": 5,
+      "phaseId": "german-combat",
+      "actor": "german",
+      "actionCount": 112,
+      "action": {
+        "type": "combat",
+        "action": {
+          "type": "commit-battles",
+          "battles": [
+            {
+              "defenderHex": "0209",
+              "attackers": [
+                "arduous-front-r01c04",
+                "arduous-front-r01c06",
+                "arduous-front-r01c02"
+              ]
+            }
+          ]
+        }
+      },
+      "reason": "source-legal-combat-plan",
+      "afterActionCount": 113,
+      "afterPhaseId": "german-combat",
+      "afterStateHash": "5c7d4b23a47ddca963e974a4bbec7552c9ea77ed27e6d326678c6bc6f85d52af"
+    },
+    {
+      "index": 113,
+      "turn": 5,
+      "phaseId": "german-combat",
+      "actor": "german",
+      "actionCount": 113,
+      "action": {
+        "type": "combat",
+        "action": {
+          "type": "select-battle",
+          "defenderHex": "0209"
+        }
+      },
+      "reason": "select-committed-battle",
+      "afterActionCount": 114,
+      "afterPhaseId": "german-combat",
+      "afterStateHash": "3571011518bd8cfba3a8af390e70a45b9ea10efdd55d41203391a3a8d1d3ca3e"
+    },
+    {
+      "index": 114,
+      "turn": 5,
+      "phaseId": "german-combat",
+      "actor": "german",
+      "actionCount": 114,
+      "action": {
+        "type": "combat",
+        "action": {
+          "type": "commit-ground-air",
+          "faceId": "arduous-front-r03c01"
+        }
+      },
+      "reason": "precommit-air-support",
+      "afterActionCount": 115,
+      "afterPhaseId": "german-combat",
+      "afterStateHash": "f46adf9825d091bb1114bf024d1e1251a850cfeada6af72192755eca924e332c"
+    },
+    {
+      "index": 115,
+      "turn": 5,
+      "phaseId": "german-combat",
+      "actor": "german",
+      "actionCount": 115,
+      "action": {
+        "type": "combat",
+        "action": {
+          "type": "resolve-battle",
+          "die": 4,
+          "choices": {
+            "advanceUnitId": "arduous-front-r01c02"
+          }
+        }
+      },
+      "reason": "post-roll-validated-consequence",
+      "afterActionCount": 116,
+      "afterPhaseId": "german-combat",
+      "afterStateHash": "ffb825944643dbfc6eabd4b1257c89a4ca3beebffd51d2fafc9faeae13fd3f97"
+    },
+    {
+      "index": 116,
+      "turn": 5,
+      "phaseId": "german-combat",
+      "actor": "german",
+      "actionCount": 116,
+      "action": {
+        "type": "combat",
+        "action": {
+          "type": "finish-combat"
+        }
+      },
+      "reason": "finish-combat",
+      "afterActionCount": 117,
+      "afterPhaseId": "german-special-movement",
+      "afterStateHash": "4d00b76f8b87bc6b52283fd66a780c12b8dd4083361fb78337de0e27b269470d"
+    },
+    {
+      "index": 117,
+      "turn": 5,
+      "phaseId": "german-special-movement",
+      "actor": "german",
+      "actionCount": 117,
+      "action": {
+        "type": "declare-ground-move",
+        "request": {
+          "unitId": "arduous-front-r02c01",
+          "path": [
+            "0205",
+            "0105",
+            "0106"
+          ]
+        }
+      },
+      "reason": "source-legal-ground-movement",
+      "afterActionCount": 118,
+      "afterPhaseId": "german-special-movement",
+      "afterStateHash": "58e478692a419bb1ced4c9dd7d39f709037d8fda314d655663a732207d08d9ed"
+    },
+    {
+      "index": 118,
+      "turn": 5,
+      "phaseId": "german-special-movement",
+      "actor": "german",
+      "actionCount": 118,
+      "action": {
+        "type": "resolve-ground-move"
+      },
+      "reason": "finish-pending-movement",
+      "afterActionCount": 119,
+      "afterPhaseId": "german-special-movement",
+      "afterStateHash": "dfa010471d1a2d12a8539622e481609d43c395786b64ef8866a41187ccbab242"
+    },
+    {
+      "index": 119,
+      "turn": 5,
+      "phaseId": "german-special-movement",
+      "actor": "german",
+      "actionCount": 119,
+      "action": {
+        "type": "finish-phase"
+      },
+      "reason": "finish-movement-phase",
+      "afterActionCount": 120,
+      "afterPhaseId": "soviet-buildup",
+      "afterStateHash": "4a94fbf8df956f00bfc993da5dc0017d2a5a26b414c446ab9389972285350b5c"
+    },
+    {
+      "index": 120,
+      "turn": 5,
+      "phaseId": "soviet-buildup",
+      "actor": "soviet",
+      "actionCount": 120,
+      "action": {
+        "type": "finish-buildup"
+      },
+      "reason": "finish-buildup",
+      "afterActionCount": 121,
+      "afterPhaseId": "soviet-special-movement",
+      "afterStateHash": "d39aa03cdede7d7e0bcb30cab8a1367c3164e57c7c2280037f06a61b276f0cca"
+    },
+    {
+      "index": 121,
+      "turn": 5,
+      "phaseId": "soviet-special-movement",
+      "actor": "soviet",
+      "actionCount": 121,
+      "action": {
+        "type": "declare-ground-move",
+        "request": {
+          "unitId": "arduous-front-r05c07",
+          "path": [
+            "1802",
+            "1701"
+          ]
+        }
+      },
+      "reason": "source-legal-ground-movement",
+      "afterActionCount": 122,
+      "afterPhaseId": "soviet-special-movement",
+      "afterStateHash": "7674c8c83988e9de605361f884fc7fcad5bc247b7efbd6109658f9258fd31978"
+    },
+    {
+      "index": 122,
+      "turn": 5,
+      "phaseId": "soviet-special-movement",
+      "actor": "soviet",
+      "actionCount": 122,
+      "action": {
+        "type": "resolve-ground-move"
+      },
+      "reason": "finish-pending-movement",
+      "afterActionCount": 123,
+      "afterPhaseId": "soviet-special-movement",
+      "afterStateHash": "81378adb358cef02d1328e4992b801e536b6cda9a2c17ee2115ad359d88d332b"
+    },
+    {
+      "index": 123,
+      "turn": 5,
+      "phaseId": "soviet-special-movement",
+      "actor": "soviet",
+      "actionCount": 123,
+      "action": {
+        "type": "finish-phase"
+      },
+      "reason": "finish-movement-phase",
+      "afterActionCount": 124,
+      "afterPhaseId": "soviet-combat",
+      "afterStateHash": "aa81ff6381db256c5037ac8598f53a9e6038c18800ae33341e5a3efaee5397c0"
+    },
+    {
+      "index": 124,
+      "turn": 5,
+      "phaseId": "soviet-combat",
+      "actor": "soviet",
+      "actionCount": 124,
+      "action": {
+        "type": "combat",
+        "action": {
+          "type": "commit-battles",
+          "battles": [
+            {
+              "defenderHex": "0110",
+              "attackers": [
+                "arduous-front-r03c05",
+                "arduous:brest-garrison"
+              ]
+            }
+          ]
+        }
+      },
+      "reason": "source-legal-combat-plan",
+      "afterActionCount": 125,
+      "afterPhaseId": "soviet-combat",
+      "afterStateHash": "0b41cb89a87bc6587e1989e780f1e98d6a374afe008ffbc6310c564bdbd30a00"
+    },
+    {
+      "index": 125,
+      "turn": 5,
+      "phaseId": "soviet-combat",
+      "actor": "soviet",
+      "actionCount": 125,
+      "action": {
+        "type": "combat",
+        "action": {
+          "type": "select-battle",
+          "defenderHex": "0110"
+        }
+      },
+      "reason": "select-committed-battle",
+      "afterActionCount": 126,
+      "afterPhaseId": "soviet-combat",
+      "afterStateHash": "a717cbcb90a2cb9a64e9772afc2bbd5d9a1418f94f9d58893f0776b2b9ca1a36"
+    },
+    {
+      "index": 126,
+      "turn": 5,
+      "phaseId": "soviet-combat",
+      "actor": "soviet",
+      "actionCount": 126,
+      "action": {
+        "type": "combat",
+        "action": {
+          "type": "resolve-battle",
+          "die": null,
+          "choices": {}
+        }
+      },
+      "reason": "post-roll-validated-consequence",
+      "afterActionCount": 127,
+      "afterPhaseId": "soviet-combat",
+      "afterStateHash": "a08edd27e785a70e76df01a292fb6bae9743a665fdb40b4da3cf749d39acc3fa"
+    },
+    {
+      "index": 127,
+      "turn": 5,
+      "phaseId": "soviet-combat",
+      "actor": "soviet",
+      "actionCount": 127,
+      "action": {
+        "type": "combat",
+        "action": {
+          "type": "finish-combat"
+        }
+      },
+      "reason": "finish-combat",
+      "afterActionCount": 128,
+      "afterPhaseId": "soviet-movement",
+      "afterStateHash": "e7519ef0a8ffd34408511f4f44a45d86b90aba5693eafb17c196ffebb5d1e814"
+    },
+    {
+      "index": 128,
+      "turn": 5,
+      "phaseId": "soviet-movement",
+      "actor": "soviet",
+      "actionCount": 128,
+      "action": {
+        "type": "declare-ground-move",
+        "request": {
+          "unitId": "arduous-front-r04c04",
+          "path": [
+            "1510",
+            "1509"
+          ]
+        }
+      },
+      "reason": "source-legal-ground-movement",
+      "afterActionCount": 129,
+      "afterPhaseId": "soviet-movement",
+      "afterStateHash": "a4ae6449a09d97560e715ead5d0f45a1973bed219ec481b7e6d9cebf9e143c90"
+    },
+    {
+      "index": 129,
+      "turn": 5,
+      "phaseId": "soviet-movement",
+      "actor": "soviet",
+      "actionCount": 129,
+      "action": {
+        "type": "resolve-ground-move"
+      },
+      "reason": "finish-pending-movement",
+      "afterActionCount": 130,
+      "afterPhaseId": "soviet-movement",
+      "afterStateHash": "8fe29905ae00f5b4916ff29f7d191de27b66bc36d56a371a6a609920698ea0a6"
+    },
+    {
+      "index": 130,
+      "turn": 5,
+      "phaseId": "soviet-movement",
+      "actor": "soviet",
+      "actionCount": 130,
+      "action": {
+        "type": "finish-phase"
+      },
+      "reason": "finish-movement-phase",
+      "afterActionCount": 131,
+      "afterPhaseId": "housekeeping",
+      "afterStateHash": "bb03a3778ede31df7de5819a5bb35a67fbc1852331412631b81f740326bc2cb4"
+    },
+    {
+      "index": 131,
+      "turn": 5,
+      "phaseId": "housekeeping",
+      "actor": "system",
+      "actionCount": 131,
+      "action": {
+        "type": "finish-housekeeping"
+      },
+      "reason": "finish-turn",
+      "afterActionCount": 132,
+      "afterPhaseId": "german-buildup",
+      "afterStateHash": "c222c870274880ef6b97b96959e38189d3fb71a9519e37309a7cc82df0a2b5f8"
+    },
+    {
+      "index": 132,
+      "turn": 6,
+      "phaseId": "german-buildup",
+      "actor": "german",
+      "actionCount": 132,
+      "action": {
+        "type": "finish-buildup"
+      },
+      "reason": "finish-buildup",
+      "afterActionCount": 133,
+      "afterPhaseId": "german-movement",
+      "afterStateHash": "4fb909238f7d4d697976fac692fb0cdc43488e5d97d96bdeba706e5f5c2bd150"
+    },
+    {
+      "index": 133,
+      "turn": 6,
+      "phaseId": "german-movement",
+      "actor": "german",
+      "actionCount": 133,
+      "action": {
+        "type": "declare-ground-move",
+        "request": {
+          "unitId": "arduous-front-r02c08",
+          "path": [
+            "0605",
+            "0606",
+            "0607",
+            "0707"
+          ]
+        }
+      },
+      "reason": "source-legal-ground-movement",
+      "afterActionCount": 134,
+      "afterPhaseId": "german-movement",
+      "afterStateHash": "e1dc8e19261da1ad2dcdd47156ff2b884e2ebcc9604595ba6071f38fa40b857c"
+    },
+    {
+      "index": 134,
+      "turn": 6,
+      "phaseId": "german-movement",
+      "actor": "german",
+      "actionCount": 134,
+      "action": {
+        "type": "resolve-ground-move"
+      },
+      "reason": "finish-pending-movement",
+      "afterActionCount": 135,
+      "afterPhaseId": "german-movement",
+      "afterStateHash": "43c4fb2aab077531e6d3ebc4ee58a349b81d3021b4bee20d72f0d63daa3699f4"
+    },
+    {
+      "index": 135,
+      "turn": 6,
+      "phaseId": "german-movement",
+      "actor": "german",
+      "actionCount": 135,
+      "action": {
+        "type": "finish-phase"
+      },
+      "reason": "finish-movement-phase",
+      "afterActionCount": 136,
+      "afterPhaseId": "german-combat",
+      "afterStateHash": "d0657e8ed0c31188f9da053e8ceb0c7e0ed0a4b880e6aa2b9dd78b1cddb86f77"
+    },
+    {
+      "index": 136,
+      "turn": 6,
+      "phaseId": "german-combat",
+      "actor": "german",
+      "actionCount": 136,
+      "action": {
+        "type": "combat",
+        "action": {
+          "type": "finish-air-sea"
+        }
+      },
+      "reason": "finish-naval-window",
+      "afterActionCount": 137,
+      "afterPhaseId": "german-combat",
+      "afterStateHash": "cc40d14b1094c95e1c09ec39bb05ade9eea75a7681cd0f456bc596623673b059"
+    },
+    {
+      "index": 137,
+      "turn": 6,
+      "phaseId": "german-combat",
+      "actor": "german",
+      "actionCount": 137,
+      "action": {
+        "type": "combat",
+        "action": {
+          "type": "commit-battles",
+          "battles": [
+            {
+              "defenderHex": "0210",
+              "attackers": [
+                "arduous-front-r01c05",
+                "arduous-front-r01c07",
+                "arduous-front-r01c02"
+              ]
+            }
+          ]
+        }
+      },
+      "reason": "source-legal-combat-plan",
+      "afterActionCount": 138,
+      "afterPhaseId": "german-combat",
+      "afterStateHash": "832df7aa3033fedb57b6b102d9ae9119f239464cfff9b437e26f484897ed03f4"
+    },
+    {
+      "index": 138,
+      "turn": 6,
+      "phaseId": "german-combat",
+      "actor": "german",
+      "actionCount": 138,
+      "action": {
+        "type": "combat",
+        "action": {
+          "type": "select-battle",
+          "defenderHex": "0210"
+        }
+      },
+      "reason": "select-committed-battle",
+      "afterActionCount": 139,
+      "afterPhaseId": "german-combat",
+      "afterStateHash": "f51c6ee457f1cd9414c0376c69eb197d67c6a6b16b0d50d79f8c65f832cb0036"
+    },
+    {
+      "index": 139,
+      "turn": 6,
+      "phaseId": "german-combat",
+      "actor": "german",
+      "actionCount": 139,
+      "action": {
+        "type": "combat",
+        "action": {
+          "type": "commit-ground-air",
+          "faceId": "arduous-front-r03c01"
+        }
+      },
+      "reason": "precommit-air-support",
+      "afterActionCount": 140,
+      "afterPhaseId": "german-combat",
+      "afterStateHash": "225568949a3f7e7ad28f0c0597b93348b5c27fc77a7330b45f6c0904eb3b9871"
+    },
+    {
+      "index": 140,
+      "turn": 6,
+      "phaseId": "german-combat",
+      "actor": "german",
+      "actionCount": 140,
+      "action": {
+        "type": "combat",
+        "action": {
+          "type": "resolve-battle",
+          "die": 5,
+          "choices": {
+            "advanceUnitId": "arduous-front-r01c02"
+          }
+        }
+      },
+      "reason": "post-roll-validated-consequence",
+      "afterActionCount": 141,
+      "afterPhaseId": "german-combat",
+      "afterStateHash": "ac5b37ee024aba9cc6b5df616f559be4eb15a36aaa7ef11fd4aed9c0f466bf6e"
+    },
+    {
+      "index": 141,
+      "turn": 6,
+      "phaseId": "german-combat",
+      "actor": "german",
+      "actionCount": 141,
+      "action": {
+        "type": "combat",
+        "action": {
+          "type": "finish-combat"
+        }
+      },
+      "reason": "finish-combat",
+      "afterActionCount": 142,
+      "afterPhaseId": "german-special-movement",
+      "afterStateHash": "54e977998956125ebad81f588dda4ae993af9541c5f5d3d8fe2f880332e70b14"
+    },
+    {
+      "index": 142,
+      "turn": 6,
+      "phaseId": "german-special-movement",
+      "actor": "german",
+      "actionCount": 142,
+      "action": {
+        "type": "declare-ground-move",
+        "request": {
+          "unitId": "arduous-front-r01c04",
+          "path": [
+            "0108",
+            "0107",
+            "0106",
+            "0105"
+          ]
+        }
+      },
+      "reason": "source-legal-ground-movement",
+      "afterActionCount": 143,
+      "afterPhaseId": "german-special-movement",
+      "afterStateHash": "d82dc203d87d42743dd78e9911c0ae09ee35af4590c4bd6283b4c7b942f85d9b"
+    },
+    {
+      "index": 143,
+      "turn": 6,
+      "phaseId": "german-special-movement",
+      "actor": "german",
+      "actionCount": 143,
+      "action": {
+        "type": "resolve-ground-move"
+      },
+      "reason": "finish-pending-movement",
+      "afterActionCount": 144,
+      "afterPhaseId": "german-special-movement",
+      "afterStateHash": "c0d325dd06bed2c5b3708cb8ac80d7d291b8dc8cedabd0d871f7493aeae29b84"
+    },
+    {
+      "index": 144,
+      "turn": 6,
+      "phaseId": "german-special-movement",
+      "actor": "german",
+      "actionCount": 144,
+      "action": {
+        "type": "finish-phase"
+      },
+      "reason": "finish-movement-phase",
+      "afterActionCount": 145,
+      "afterPhaseId": "soviet-buildup",
+      "afterStateHash": "7c961748341ab31df19683d4017647b177dbd3805fe58fa6334968d46991b12d"
+    },
+    {
+      "index": 145,
+      "turn": 6,
+      "phaseId": "soviet-buildup",
+      "actor": "soviet",
+      "actionCount": 145,
+      "action": {
+        "type": "apply-replacement",
+        "unitId": "arduous-front-r03c05",
+        "hex": "1505"
+      },
+      "reason": "source-legal-replacement",
+      "afterActionCount": 146,
+      "afterPhaseId": "soviet-buildup",
+      "afterStateHash": "b318193b25af1a14bf49c6853e78e0958aa1ab76b5c3256413f813a2f11feaf9"
+    },
+    {
+      "index": 146,
+      "turn": 6,
+      "phaseId": "soviet-buildup",
+      "actor": "soviet",
+      "actionCount": 146,
+      "action": {
+        "type": "finish-buildup"
+      },
+      "reason": "finish-buildup",
+      "afterActionCount": 147,
+      "afterPhaseId": "soviet-special-movement",
+      "afterStateHash": "b7e19883d62ebbc6dd3c9242041e72889207eb727163824f386fa337eab6259c"
+    },
+    {
+      "index": 147,
+      "turn": 6,
+      "phaseId": "soviet-special-movement",
+      "actor": "soviet",
+      "actionCount": 147,
+      "action": {
+        "type": "declare-ground-move",
+        "request": {
+          "unitId": "arduous-front-r05c04",
+          "path": [
+            "1011",
+            "0910",
+            "0909",
+            "0908",
+            "0808"
+          ]
+        }
+      },
+      "reason": "source-legal-ground-movement",
+      "afterActionCount": 148,
+      "afterPhaseId": "soviet-special-movement",
+      "afterStateHash": "f21e436b8ff94c31c8c1e3b67a6efdbc99b81fe8dde8a23ecbd0760ace21537c"
+    },
+    {
+      "index": 148,
+      "turn": 6,
+      "phaseId": "soviet-special-movement",
+      "actor": "soviet",
+      "actionCount": 148,
+      "action": {
+        "type": "resolve-ground-move"
+      },
+      "reason": "finish-pending-movement",
+      "afterActionCount": 149,
+      "afterPhaseId": "soviet-special-movement",
+      "afterStateHash": "021883c01bb3e4f87fd2b2fce9d9593ba223510e16c8af21e0a77614df8f13ef"
+    },
+    {
+      "index": 149,
+      "turn": 6,
+      "phaseId": "soviet-special-movement",
+      "actor": "soviet",
+      "actionCount": 149,
+      "action": {
+        "type": "finish-phase"
+      },
+      "reason": "finish-movement-phase",
+      "afterActionCount": 150,
+      "afterPhaseId": "soviet-combat",
+      "afterStateHash": "0140dbc989fa36e6e38f72b79c18259f03e77374c3cc586c92022781924511aa"
+    },
+    {
+      "index": 150,
+      "turn": 6,
+      "phaseId": "soviet-combat",
+      "actor": "soviet",
+      "actionCount": 150,
+      "action": {
+        "type": "combat",
+        "action": {
+          "type": "commit-battles",
+          "battles": [
+            {
+              "defenderHex": "0708",
+              "attackers": [
+                "arduous-front-r05c03"
+              ]
+            }
+          ]
+        }
+      },
+      "reason": "source-legal-combat-plan",
+      "afterActionCount": 151,
+      "afterPhaseId": "soviet-combat",
+      "afterStateHash": "4760bcd810a92a08fad525c7b4164d7bffca484980723f226308925de9886f3d"
+    },
+    {
+      "index": 151,
+      "turn": 6,
+      "phaseId": "soviet-combat",
+      "actor": "soviet",
+      "actionCount": 151,
+      "action": {
+        "type": "combat",
+        "action": {
+          "type": "select-battle",
+          "defenderHex": "0708"
+        }
+      },
+      "reason": "select-committed-battle",
+      "afterActionCount": 152,
+      "afterPhaseId": "soviet-combat",
+      "afterStateHash": "45dc788fd22b832d9c7c95b8541f3fe622e1c48730843bf43f04446a41b5835f"
+    },
+    {
+      "index": 152,
+      "turn": 6,
+      "phaseId": "soviet-combat",
+      "actor": "soviet",
+      "actionCount": 152,
+      "action": {
+        "type": "combat",
+        "action": {
+          "type": "resolve-battle",
+          "die": null,
+          "choices": {}
+        }
+      },
+      "reason": "post-roll-validated-consequence",
+      "afterActionCount": 153,
+      "afterPhaseId": "soviet-combat",
+      "afterStateHash": "242193da7bb4c65d3d9c083e5913543e15ff33e72e20cf006693369d1867d660"
+    },
+    {
+      "index": 153,
+      "turn": 6,
+      "phaseId": "soviet-combat",
+      "actor": "soviet",
+      "actionCount": 153,
+      "action": {
+        "type": "combat",
+        "action": {
+          "type": "finish-combat"
+        }
+      },
+      "reason": "finish-combat",
+      "afterActionCount": 154,
+      "afterPhaseId": "soviet-movement",
+      "afterStateHash": "b40a69e4734f99d45ae2e9a9a0ab30284bc02671e01d8a0e1a9f1a32f11c3737"
+    },
+    {
+      "index": 154,
+      "turn": 6,
+      "phaseId": "soviet-movement",
+      "actor": "soviet",
+      "actionCount": 154,
+      "action": {
+        "type": "declare-ground-move",
+        "request": {
+          "unitId": "arduous-front-r03c07",
+          "path": [
+            "1208",
+            "1108"
+          ]
+        }
+      },
+      "reason": "source-legal-ground-movement",
+      "afterActionCount": 155,
+      "afterPhaseId": "soviet-movement",
+      "afterStateHash": "431b9dc036dbd58db60c374e688170d0921c8d42c717391ba5edf93b78762a5f"
+    },
+    {
+      "index": 155,
+      "turn": 6,
+      "phaseId": "soviet-movement",
+      "actor": "soviet",
+      "actionCount": 155,
+      "action": {
+        "type": "resolve-ground-move"
+      },
+      "reason": "finish-pending-movement",
+      "afterActionCount": 156,
+      "afterPhaseId": "soviet-movement",
+      "afterStateHash": "2a4be064322854de62ad2643d2f4b6e78728859bd9602b708a2b64300a554bbd"
+    },
+    {
+      "index": 156,
+      "turn": 6,
+      "phaseId": "soviet-movement",
+      "actor": "soviet",
+      "actionCount": 156,
+      "action": {
+        "type": "finish-phase"
+      },
+      "reason": "finish-movement-phase",
+      "afterActionCount": 157,
+      "afterPhaseId": "housekeeping",
+      "afterStateHash": "8f0b93eab74ebf9a96d2334f22fcbf371739d1afdbca46f5fd33088b4f03810a"
+    },
+    {
+      "index": 157,
+      "turn": 6,
+      "phaseId": "housekeeping",
+      "actor": "system",
+      "actionCount": 157,
+      "action": {
+        "type": "finish-housekeeping"
+      },
+      "reason": "finish-turn",
+      "afterActionCount": 158,
+      "afterPhaseId": "german-buildup",
+      "afterStateHash": "cab2b3c33d1da3ea24edee7cb6f4005d5bac2a44acb8065f4f95057a6b9e479b"
+    },
+    {
+      "index": 158,
+      "turn": 7,
+      "phaseId": "german-buildup",
+      "actor": "german",
+      "actionCount": 158,
+      "action": {
+        "type": "finish-buildup"
+      },
+      "reason": "finish-buildup",
+      "afterActionCount": 159,
+      "afterPhaseId": "german-movement",
+      "afterStateHash": "5c5ae62fdea08c9fdec67b22b24c9cdaf5f3baa933c032caff192201fa904209"
+    },
+    {
+      "index": 159,
+      "turn": 7,
+      "phaseId": "german-movement",
+      "actor": "german",
+      "actionCount": 159,
+      "action": {
+        "type": "declare-ground-move",
+        "request": {
+          "unitId": "arduous-front-r02c02",
+          "path": [
+            "0205",
+            "0305",
+            "0406",
+            "0506",
+            "0607"
+          ]
+        }
+      },
+      "reason": "source-legal-ground-movement",
+      "afterActionCount": 160,
+      "afterPhaseId": "german-movement",
+      "afterStateHash": "c951eaf671ea63e4982be93f3389a6bcff2cfc4b9223ef227f4aefdca76e59a5"
+    },
+    {
+      "index": 160,
+      "turn": 7,
+      "phaseId": "german-movement",
+      "actor": "german",
+      "actionCount": 160,
+      "action": {
+        "type": "resolve-ground-move"
+      },
+      "reason": "finish-pending-movement",
+      "afterActionCount": 161,
+      "afterPhaseId": "german-movement",
+      "afterStateHash": "31ea0c74b52016d6b60fb554b6d1f83ce10aa50e21ee1f629a7b47effb56c0a4"
+    },
+    {
+      "index": 161,
+      "turn": 7,
+      "phaseId": "german-movement",
+      "actor": "german",
+      "actionCount": 161,
+      "action": {
+        "type": "finish-phase"
+      },
+      "reason": "finish-movement-phase",
+      "afterActionCount": 162,
+      "afterPhaseId": "german-combat",
+      "afterStateHash": "c3d4670c195fdae928237a5d299adf9182b66de0d775245c8927a59a643eac40"
+    },
+    {
+      "index": 162,
+      "turn": 7,
+      "phaseId": "german-combat",
+      "actor": "german",
+      "actionCount": 162,
+      "action": {
+        "type": "combat",
+        "action": {
+          "type": "finish-air-sea"
+        }
+      },
+      "reason": "finish-naval-window",
+      "afterActionCount": 163,
+      "afterPhaseId": "german-combat",
+      "afterStateHash": "8ca797b446724b999cf48d189c3d4563637beeb920596b21c15c716e0e2059bc"
+    },
+    {
+      "index": 163,
+      "turn": 7,
+      "phaseId": "german-combat",
+      "actor": "german",
+      "actionCount": 163,
+      "action": {
+        "type": "combat",
+        "action": {
+          "type": "commit-battles",
+          "battles": [
+            {
+              "defenderHex": "0808",
+              "attackers": [
+                "arduous-front-r02c08"
+              ]
+            }
+          ]
+        }
+      },
+      "reason": "source-legal-combat-plan",
+      "afterActionCount": 164,
+      "afterPhaseId": "german-combat",
+      "afterStateHash": "65d04b7ea668d5b3f0c3dcf090a8c5bf425f7d3fab77675bb89a13253377e5ef"
+    },
+    {
+      "index": 164,
+      "turn": 7,
+      "phaseId": "german-combat",
+      "actor": "german",
+      "actionCount": 164,
+      "action": {
+        "type": "combat",
+        "action": {
+          "type": "select-battle",
+          "defenderHex": "0808"
+        }
+      },
+      "reason": "select-committed-battle",
+      "afterActionCount": 165,
+      "afterPhaseId": "german-combat",
+      "afterStateHash": "a978926ace2efd6598b667a7aaa7078dcffbcd057adf64a71c60446e1bc86387"
+    },
+    {
+      "index": 165,
+      "turn": 7,
+      "phaseId": "german-combat",
+      "actor": "german",
+      "actionCount": 165,
+      "action": {
+        "type": "combat",
+        "action": {
+          "type": "commit-ground-air",
+          "faceId": "arduous-front-r03c01"
+        }
+      },
+      "reason": "precommit-air-support",
+      "afterActionCount": 166,
+      "afterPhaseId": "german-combat",
+      "afterStateHash": "d514744307291a65f7e07d66b0035e503552a7478266dd3f25cd85fc5788a540"
+    },
+    {
+      "index": 166,
+      "turn": 7,
+      "phaseId": "german-combat",
+      "actor": "german",
+      "actionCount": 166,
+      "action": {
+        "type": "combat",
+        "action": {
+          "type": "resolve-battle",
+          "die": 2,
+          "choices": {
+            "retreatPaths": {
+              "arduous-front-r05c04": [
+                "0907",
+                "1008"
+              ]
+            }
+          }
+        }
+      },
+      "reason": "post-roll-validated-consequence",
+      "afterActionCount": 167,
+      "afterPhaseId": "german-combat",
+      "afterStateHash": "1f74e383cc4effd9833d26f246ef1d644f5f666b25eb93a37640b506ac15e593"
+    },
+    {
+      "index": 167,
+      "turn": 7,
+      "phaseId": "german-combat",
+      "actor": "german",
+      "actionCount": 167,
+      "action": {
+        "type": "combat",
+        "action": {
+          "type": "finish-combat"
+        }
+      },
+      "reason": "finish-combat",
+      "afterActionCount": 168,
+      "afterPhaseId": "german-special-movement",
+      "afterStateHash": "2f2aead41d5ac5ec3af68b670a5a8fa60704744939923221714c2e536b4491d4"
+    },
+    {
+      "index": 168,
+      "turn": 7,
+      "phaseId": "german-special-movement",
+      "actor": "german",
+      "actionCount": 168,
+      "action": {
+        "type": "declare-ground-move",
+        "request": {
+          "unitId": "arduous-front-r01c02",
+          "path": [
+            "0210",
+            "0209"
+          ]
+        }
+      },
+      "reason": "source-legal-ground-movement",
+      "afterActionCount": 169,
+      "afterPhaseId": "german-special-movement",
+      "afterStateHash": "78edad207bd2e6c21596ab9cb0ccfb0188dbfb2b1f24ccfc9a9e66106b3fc647"
+    },
+    {
+      "index": 169,
+      "turn": 7,
+      "phaseId": "german-special-movement",
+      "actor": "german",
+      "actionCount": 169,
+      "action": {
+        "type": "resolve-ground-move"
+      },
+      "reason": "finish-pending-movement",
+      "afterActionCount": 170,
+      "afterPhaseId": "german-special-movement",
+      "afterStateHash": "7626510b7094363bd9e232cf54a30d244c1e553d5e8b95dd9660e8575b35531f"
+    },
+    {
+      "index": 170,
+      "turn": 7,
+      "phaseId": "german-special-movement",
+      "actor": "german",
+      "actionCount": 170,
+      "action": {
+        "type": "finish-phase"
+      },
+      "reason": "finish-movement-phase",
+      "afterActionCount": 171,
+      "afterPhaseId": "soviet-buildup",
+      "afterStateHash": "d02736458a05e5fd196e0b421a2c661a1aa2c7ebd2beb8fd3cafa36c436a2473"
+    },
+    {
+      "index": 171,
+      "turn": 7,
+      "phaseId": "soviet-buildup",
+      "actor": "soviet",
+      "actionCount": 171,
+      "action": {
+        "type": "apply-replacement",
+        "unitId": "arduous-front-r03c05",
+        "hex": null
+      },
+      "reason": "source-legal-replacement",
+      "afterActionCount": 172,
+      "afterPhaseId": "soviet-buildup",
+      "afterStateHash": "87a74382aa1e806c34719b9e27ad077e54a1d8622e844a41d3a8e720ce18baa2"
+    },
+    {
+      "index": 172,
+      "turn": 7,
+      "phaseId": "soviet-buildup",
+      "actor": "soviet",
+      "actionCount": 172,
+      "action": {
+        "type": "finish-buildup"
+      },
+      "reason": "finish-buildup",
+      "afterActionCount": 173,
+      "afterPhaseId": "soviet-special-movement",
+      "afterStateHash": "31421e81d1f1bf855cd9bc0e461712fcaead472f1ef0e6de59672df864322bd6"
+    },
+    {
+      "index": 173,
+      "turn": 7,
+      "phaseId": "soviet-special-movement",
+      "actor": "soviet",
+      "actionCount": 173,
+      "action": {
+        "type": "declare-ground-move",
+        "request": {
+          "unitId": "arduous-front-r03c08",
+          "path": [
+            "1602",
+            "1501",
+            "1402"
+          ]
+        }
+      },
+      "reason": "source-legal-ground-movement",
+      "afterActionCount": 174,
+      "afterPhaseId": "soviet-special-movement",
+      "afterStateHash": "2ff061c33a975ed8dd1aeb49465a5faf1edeebacc16762b6880d9b1ecedb5875"
+    },
+    {
+      "index": 174,
+      "turn": 7,
+      "phaseId": "soviet-special-movement",
+      "actor": "soviet",
+      "actionCount": 174,
+      "action": {
+        "type": "resolve-ground-move"
+      },
+      "reason": "finish-pending-movement",
+      "afterActionCount": 175,
+      "afterPhaseId": "soviet-special-movement",
+      "afterStateHash": "af5020f130b7f42cee7aece94c0eec1f8a71b41b90a1aa7fe52a847f2a79b667"
+    },
+    {
+      "index": 175,
+      "turn": 7,
+      "phaseId": "soviet-special-movement",
+      "actor": "soviet",
+      "actionCount": 175,
+      "action": {
+        "type": "finish-phase"
+      },
+      "reason": "finish-movement-phase",
+      "afterActionCount": 176,
+      "afterPhaseId": "soviet-combat",
+      "afterStateHash": "8e164d92dd4a4b77a0025edd50644d28d1ed2a0386b700fddc359c132a956896"
+    },
+    {
+      "index": 176,
+      "turn": 7,
+      "phaseId": "soviet-combat",
+      "actor": "soviet",
+      "actionCount": 176,
+      "action": {
+        "type": "combat",
+        "action": {
+          "type": "commit-battles",
+          "battles": [
+            {
+              "defenderHex": "0110",
+              "attackers": [
+                "arduous:brest-garrison"
+              ]
+            }
+          ]
+        }
+      },
+      "reason": "source-legal-combat-plan",
+      "afterActionCount": 177,
+      "afterPhaseId": "soviet-combat",
+      "afterStateHash": "8217792871ad6eca041b87c662c648ebb90dc5b2b85ec382fe6e086df55afdb5"
+    },
+    {
+      "index": 177,
+      "turn": 7,
+      "phaseId": "soviet-combat",
+      "actor": "soviet",
+      "actionCount": 177,
+      "action": {
+        "type": "combat",
+        "action": {
+          "type": "select-battle",
+          "defenderHex": "0110"
+        }
+      },
+      "reason": "select-committed-battle",
+      "afterActionCount": 178,
+      "afterPhaseId": "soviet-combat",
+      "afterStateHash": "05445b8cd3dd5d04532be1ab2d27764fa5b2dd89e587db7ec608184be4c00d75"
+    },
+    {
+      "index": 178,
+      "turn": 7,
+      "phaseId": "soviet-combat",
+      "actor": "soviet",
+      "actionCount": 178,
+      "action": {
+        "type": "combat",
+        "action": {
+          "type": "resolve-battle",
+          "die": null,
+          "choices": {}
+        }
+      },
+      "reason": "post-roll-validated-consequence",
+      "afterActionCount": 179,
+      "afterPhaseId": "soviet-combat",
+      "afterStateHash": "d7b67b92b5d4d2d42e75cd6da09514a405fc96a700005c938e36b44fd138b2b7"
+    },
+    {
+      "index": 179,
+      "turn": 7,
+      "phaseId": "soviet-combat",
+      "actor": "soviet",
+      "actionCount": 179,
+      "action": {
+        "type": "combat",
+        "action": {
+          "type": "finish-combat"
+        }
+      },
+      "reason": "finish-combat",
+      "afterActionCount": 180,
+      "afterPhaseId": "soviet-movement",
+      "afterStateHash": "41104043055ad3b085f6e06b167dcc8125a90b79e7a348a7c3d6536120147497"
+    },
+    {
+      "index": 180,
+      "turn": 7,
+      "phaseId": "soviet-movement",
+      "actor": "soviet",
+      "actionCount": 180,
+      "action": {
+        "type": "declare-ground-move",
+        "request": {
+          "unitId": "arduous-front-r05c06",
+          "path": [
+            "1803",
+            "1703",
+            "1604"
+          ]
+        }
+      },
+      "reason": "source-legal-ground-movement",
+      "afterActionCount": 181,
+      "afterPhaseId": "soviet-movement",
+      "afterStateHash": "164f7ee4160476dc399ecaa15337993859f31831dcf960bd4a1b6fa3eb05ef29"
+    },
+    {
+      "index": 181,
+      "turn": 7,
+      "phaseId": "soviet-movement",
+      "actor": "soviet",
+      "actionCount": 181,
+      "action": {
+        "type": "resolve-ground-move"
+      },
+      "reason": "finish-pending-movement",
+      "afterActionCount": 182,
+      "afterPhaseId": "soviet-movement",
+      "afterStateHash": "ecd799c67d207fcaa72af96c370a50f79c343288af75a6ebddf8b9ed3d6f3edf"
+    },
+    {
+      "index": 182,
+      "turn": 7,
+      "phaseId": "soviet-movement",
+      "actor": "soviet",
+      "actionCount": 182,
+      "action": {
+        "type": "finish-phase"
+      },
+      "reason": "finish-movement-phase",
+      "afterActionCount": 183,
+      "afterPhaseId": "housekeeping",
+      "afterStateHash": "5886733204632193e7f7d92c8f488c8435eee763a1c7a4bd3be20005d84afc55"
+    },
+    {
+      "index": 183,
+      "turn": 7,
+      "phaseId": "housekeeping",
+      "actor": "system",
+      "actionCount": 183,
+      "action": {
+        "type": "finish-housekeeping"
+      },
+      "reason": "finish-turn",
+      "afterActionCount": 184,
+      "afterPhaseId": null,
+      "afterStateHash": "904229f5bdcfdd603a950578ffb086f4fccb7e22efd60293477bd20803eae260"
+    }
+  ]
+}

@@ -1,0 +1,97 @@
+{
+  "schemaVersion": 1,
+  "scenarioId": "leningrad",
+  "mode": "phase-simulation-only",
+  "source": "references/rules/leningrad-rules.pdf §§4.0, 6.0",
+  "turns": 8,
+  "players": [
+    "german",
+    "soviet"
+  ],
+  "firstTurnStart": "german-combat",
+  "phases": [
+    {
+      "id": "german-buildup",
+      "owner": "german",
+      "kind": "buildup",
+      "permissions": [
+        "replace",
+        "reinforce"
+      ]
+    },
+    {
+      "id": "german-movement",
+      "owner": "german",
+      "kind": "movement",
+      "permissions": [
+        "move"
+      ]
+    },
+    {
+      "id": "german-combat",
+      "owner": "german",
+      "kind": "combat",
+      "permissions": [
+        "declare-attack",
+        "resolve-combat"
+      ]
+    },
+    {
+      "id": "german-special-movement",
+      "owner": "german",
+      "kind": "special-movement",
+      "permissions": [
+        "move"
+      ]
+    },
+    {
+      "id": "soviet-buildup",
+      "owner": "soviet",
+      "kind": "buildup",
+      "permissions": [
+        "replace",
+        "reinforce"
+      ]
+    },
+    {
+      "id": "soviet-special-movement",
+      "owner": "soviet",
+      "kind": "special-movement",
+      "permissions": [
+        "move",
+        "move-support"
+      ]
+    },
+    {
+      "id": "soviet-combat",
+      "owner": "soviet",
+      "kind": "combat",
+      "permissions": [
+        "declare-attack",
+        "resolve-combat"
+      ]
+    },
+    {
+      "id": "soviet-movement",
+      "owner": "soviet",
+      "kind": "movement",
+      "permissions": [
+        "move"
+      ]
+    },
+    {
+      "id": "housekeeping",
+      "owner": "system",
+      "kind": "housekeeping",
+      "permissions": [
+        "end-turn"
+      ]
+    }
+  ],
+  "notes": [
+    "First turn skips German build-up and ordinary movement (setup rule).",
+    "A phase cursor does not validate movement, combat, supply, victory, placement or legal actions.",
+    "Action permissions are identifiers for future bindings, not executable gameplay authority.",
+    "Opt-in Fleet relocation uses move-support permission during Soviet special movement only; phase permission is not an independent legality rule."
+  ]
+}

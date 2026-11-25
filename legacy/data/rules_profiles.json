@@ -1,0 +1,170 @@
+{
+  "defaultRuleset": "oberlabs_2009_web",
+  "profiles": {
+    "oberlabs_2009_web": {
+      "mudTurns": [
+        3,
+        4
+      ],
+      "mudAttackerMultiplier": {
+        "tank": 0.5,
+        "infantry": 1.0,
+        "shock": 1.0
+      },
+      "mudNormalMovementMaxHexes": 1,
+      "mudRailMovementUnaffected": true,
+      "sovietReplacements": {
+        "normal": 5,
+        "mud": 4
+      },
+      "germanReplacements": 1,
+      "crtByOdds": {
+        "1": [
+          "DR",
+          "EX",
+          "EX",
+          "NE",
+          "NE",
+          "AL"
+        ],
+        "2": [
+          "DR",
+          "DR",
+          "EX",
+          "EX",
+          "NE",
+          "NE"
+        ],
+        "3": [
+          "DR",
+          "DR",
+          "DR",
+          "EX",
+          "EX",
+          "DRL"
+        ],
+        "4": [
+          "DR",
+          "DR",
+          "EX",
+          "DRL",
+          "DRL",
+          "DE"
+        ],
+        "5": [
+          "DR",
+          "DRL",
+          "DRL",
+          "DRL",
+          "DE",
+          "DE"
+        ],
+        "6": [
+          "DRL",
+          "DRL",
+          "DE",
+          "DE",
+          "DE",
+          "DE"
+        ]
+      },
+      "victory": {
+        "mode": "standard",
+        "evaluatedAt": "end_of_turn_7",
+        "moscow": [
+          10,
+          2
+        ],
+        "germanWin": "german_controls_moscow",
+        "sovietWin": "soviet_controls_moscow_and_at_least_one_other_city",
+        "draw": "soviet_controls_moscow_and_german_controls_all_other_cities",
+        "ownership": "last_army_to_enter_city"
+      },
+      "id": "oberlabs_2009_web",
+      "status": "canonical",
+      "tournamentVictory": {
+        "mode": "separate_optional_variant",
+        "source": "function finalResults; tournamentMode branch",
+        "factors": [
+          "Moscow control",
+          "Tula control",
+          "communication status",
+          "German Panzer steps"
+        ],
+        "enabledByDefault": false
+      },
+      "rulesSource": "ober-b4m.zip / js/b4m.min.js and img/crt.png"
+    },
+    "chadwick_pdf_main": {
+      "mudTurns": [
+        3,
+        4
+      ],
+      "mudAttackerMultiplier": {
+        "tank": 0.5,
+        "infantry": 0.5,
+        "shock": 0.5
+      },
+      "mudNormalMovementMaxHexes": 1,
+      "mudRailMovementUnaffected": true,
+      "sovietReplacements": {
+        "normal": 5,
+        "mud": 5
+      },
+      "germanReplacements": 1,
+      "crtByOdds": {
+        "1": [
+          "AL",
+          "NE",
+          "NE",
+          "EX",
+          "EX",
+          "DR"
+        ],
+        "2": [
+          "NE",
+          "NE",
+          "EX",
+          "EX",
+          "DR",
+          "DR"
+        ],
+        "3": [
+          "EX",
+          "EX",
+          "DR",
+          "DR",
+          "DR",
+          "DRL"
+        ],
+        "4": [
+          "EX",
+          "DR",
+          "DR",
+          "DRL",
+          "DRL",
+          "DE"
+        ],
+        "5": [
+          "DR",
+          "DRL",
+          "DRL",
+          "DRL",
+          "DE",
+          "DE"
+        ],
+        "6": [
+          "DR",
+          "DRL",
+          "DE",
+          "DE",
+          "DE",
+          "DE"
+        ]
+      },
+      "victory": "Moscow control at end of turn seven",
+      "id": "chadwick_pdf_main",
+      "status": "noncanonical_reference"
+    }
+  }
+}

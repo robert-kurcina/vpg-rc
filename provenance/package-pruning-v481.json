@@ -1,0 +1,345 @@
+{
+  "checkpoint": 247,
+  "version": "v481",
+  "distributionPolicy": "source-preserving / omit regenerable old visual evidence and old export logs only",
+  "excludedFileCount": 54,
+  "excludedUncompressedBytes": 60142828,
+  "keptSourceVisuals": [
+    "rules/audit/visual/arduous-river-candidates.png",
+    "rules/audit/visual/kiev-clean-distribution-browser-v479.png",
+    "rules/audit/visual/kiev-movement-edge-review-browser-v478.png",
+    "rules/audit/visual/kiev-romanian-borders-browser-v481.png",
+    "rules/audit/visual/kiev-romanian-setup-outlines-detail-v481.png",
+    "rules/audit/visual/kiev-setup-browser-v469.png",
+    "rules/audit/visual/kiev-territory-citations-browser-v477.png",
+    "rules/audit/visual/kiev-territory-review-browser-v470.png",
+    "rules/audit/visual/leningrad-east-prussia-scan-crop-v324.png"
+  ],
+  "recovery": "Historical excluded evidence remains intact in checkpoint 244 (v478); source/tests regenerate diagnostic renders. No source materials, gameplay files or current maps are omitted.",
+  "omitted": [
+    {
+      "path": "export-log-v338.txt",
+      "bytes": 2377,
+      "sha256": "53b45b4ac992a2c84f841eb7b26d268aabd4519fff6ec99ea2d1d593d168d7db",
+      "reason": "obsolete top-level renderer/export log; export inputs and version history preserved"
+    },
+    {
+      "path": "export-log-v339.txt",
+      "bytes": 3280,
+      "sha256": "c3feaaca53cb347c5f3a66a30b8bb8b4ce7b85f418eb235c7faf15a07fdfaa48",
+      "reason": "obsolete top-level renderer/export log; export inputs and version history preserved"
+    },
+    {
+      "path": "export-log-v342.txt",
+      "bytes": 3280,
+      "sha256": "9ce7476f02f3058cf31471f8b6f0bdf585b63df35a6f7011a858b9eb063064d2",
+      "reason": "obsolete top-level renderer/export log; export inputs and version history preserved"
+    },
+    {
+      "path": "render-log-v331.txt",
+      "bytes": 2377,
+      "sha256": "53b45b4ac992a2c84f841eb7b26d268aabd4519fff6ec99ea2d1d593d168d7db",
+      "reason": "obsolete top-level renderer/export log; export inputs and version history preserved"
+    },
+    {
+      "path": "rules/audit/visual/arduous-contested-seven-turn-chromium-v460.png",
+      "bytes": 1155814,
+      "sha256": "73de1a5fa44023e0c1283ed2bddebe5122faec4578be4d4fd5381115a6cd4ee7",
+      "reason": "reproducible historical diagnostic/browser image; source/test generators preserved"
+    },
+    {
+      "path": "rules/audit/visual/arduous-desktop-terrain-tooltip-v430.png",
+      "bytes": 1198754,
+      "sha256": "17d6c0f035008ebef9f997e225b7481f7ac3c0bef85ebdeb0c61ef75ff022468",
+      "reason": "reproducible historical diagnostic/browser image; source/test generators preserved"
+    },
+    {
+      "path": "rules/audit/visual/arduous-desktop-toggle-ipad-portrait-v424.png",
+      "bytes": 926557,
+      "sha256": "f2606fdaa1fc95166138175ac7dfac36c2fac590c01139441da62da8e1f031e5",
+      "reason": "reproducible historical diagnostic/browser image; source/test generators preserved"
+    },
+    {
+      "path": "rules/audit/visual/arduous-human-terminal-v425.png",
+      "bytes": 1169526,
+      "sha256": "76042d821d8a721419cf1134c445489d805dfaf77fad5595ea85cc4f54a720bb",
+      "reason": "reproducible historical diagnostic/browser image; source/test generators preserved"
+    },
+    {
+      "path": "rules/audit/visual/arduous-mobile-first-ipad-landscape-v424.png",
+      "bytes": 1179457,
+      "sha256": "0d37bfe788224cd6722450d3cae61aa09224bc94f3c422658f0c90586651597a",
+      "reason": "reproducible historical diagnostic/browser image; source/test generators preserved"
+    },
+    {
+      "path": "rules/audit/visual/arduous-mobile-first-ipad-portrait-v424.png",
+      "bytes": 974735,
+      "sha256": "0cf7ff6583ff220f1bcd5c3e1635f359cd8185eb458f7cac5427b56586d982e0",
+      "reason": "reproducible historical diagnostic/browser image; source/test generators preserved"
+    },
+    {
+      "path": "rules/audit/visual/arduous-mobile-first-phone-v424.png",
+      "bytes": 244561,
+      "sha256": "3baefb374601ff0cfd02cc2cb72a2355aa025a550139543b4dedaedadf1356bc",
+      "reason": "reproducible historical diagnostic/browser image; source/test generators preserved"
+    },
+    {
+      "path": "rules/audit/visual/arduous-postroll-page-three-v461.png",
+      "bytes": 1073674,
+      "sha256": "0f38a4a406b2f9e2f27df7061b98330c6ba0bf2244a19775958ceef39064b917",
+      "reason": "reproducible historical diagnostic/browser image; source/test generators preserved"
+    },
+    {
+      "path": "rules/audit/visual/arduous-postroll-page-three-v464.png",
+      "bytes": 1076912,
+      "sha256": "6db20656458a600291f2b1d3618e73f0968971f3a3ae7519253604d31f98da04",
+      "reason": "reproducible historical diagnostic/browser image; source/test generators preserved"
+    },
+    {
+      "path": "rules/audit/visual/arduous-settings-v421.png",
+      "bytes": 1252020,
+      "sha256": "9836a73710e66da3bd1b258f6e6c6393d269414886176c4139be0a0c7d6f016c",
+      "reason": "reproducible historical diagnostic/browser image; source/test generators preserved"
+    },
+    {
+      "path": "rules/audit/visual/arduous-shared-browser-v419.png",
+      "bytes": 1099895,
+      "sha256": "0aab05d33e4218fbc9bd7ed6e3505f9b896956aff61c59fb8c5e5b914c5a0d88",
+      "reason": "reproducible historical diagnostic/browser image; source/test generators preserved"
+    },
+    {
+      "path": "rules/audit/visual/arduous-sixth-eliminated-replacement-v450.png",
+      "bytes": 1155754,
+      "sha256": "93c0c4fb990b70c61da74b6326681a9b1b52f173062477f3c7e386a3aef40980",
+      "reason": "reproducible historical diagnostic/browser image; source/test generators preserved"
+    },
+    {
+      "path": "rules/audit/visual/arduous-tablet-ipad-landscape-v423.png",
+      "bytes": 111807,
+      "sha256": "5eb38a0886dd153d9920200789415dbec28d5e8276e1e7946eea496e88c65fd9",
+      "reason": "reproducible historical diagnostic/browser image; source/test generators preserved"
+    },
+    {
+      "path": "rules/audit/visual/arduous-tablet-ipad-portrait-v423.png",
+      "bytes": 235015,
+      "sha256": "84868c68878bd8d8a87ca1b9a86e5b9a7a7c941a46cfaaee2378303a98f41c4f",
+      "reason": "reproducible historical diagnostic/browser image; source/test generators preserved"
+    },
+    {
+      "path": "rules/audit/visual/arduous-terrain-hexside-hover-v431.png",
+      "bytes": 1140955,
+      "sha256": "4644e2a143c544481a5184959a698c09742d940176614e64cba9e724974679c2",
+      "reason": "reproducible historical diagnostic/browser image; source/test generators preserved"
+    },
+    {
+      "path": "rules/audit/visual/arduous-terrain-notch-hover-v432.png",
+      "bytes": 1146615,
+      "sha256": "8d90bf1dcabc4c5630916b6594c99a1da8b99bcb2de651e37e57234a922b8239",
+      "reason": "reproducible historical diagnostic/browser image; source/test generators preserved"
+    },
+    {
+      "path": "rules/audit/visual/arduous-turn3-offmap-rebuild-v450.png",
+      "bytes": 1171529,
+      "sha256": "c63072e9e91226d20af993deb55610c4bf16a04924b02c1276818828b8a7b098",
+      "reason": "reproducible historical diagnostic/browser image; source/test generators preserved"
+    },
+    {
+      "path": "rules/audit/visual/arduous-turn3-soviet-replacement-v448.png",
+      "bytes": 1154972,
+      "sha256": "f022d15b894ba076935290bffb6431948b29f1f881ffe37c68f4d3b6d2684786",
+      "reason": "reproducible historical diagnostic/browser image; source/test generators preserved"
+    },
+    {
+      "path": "rules/audit/visual/arduous-turn4-german-city-rebuild-v458.png",
+      "bytes": 1167701,
+      "sha256": "f1fa326555ce306948fe8c5ce6a1f68604498e9a1eb0250ca76c0fbc731d34f1",
+      "reason": "reproducible historical diagnostic/browser image; source/test generators preserved"
+    },
+    {
+      "path": "rules/audit/visual/arduous-turn4-german-rebuild-v452.png",
+      "bytes": 1160494,
+      "sha256": "5dd2730d4b092cff6554eb8388e3130efae0fc6963698b1f736ff2f2007cae12",
+      "reason": "reproducible historical diagnostic/browser image; source/test generators preserved"
+    },
+    {
+      "path": "rules/audit/visual/b4m-default-shared-native-v409.png",
+      "bytes": 1285135,
+      "sha256": "a8502e6b731da24bd83f0bbf4ecafe359b34569ca7d3e9e92609755cb32f914d",
+      "reason": "reproducible historical diagnostic/browser image; source/test generators preserved"
+    },
+    {
+      "path": "rules/audit/visual/battle-for-moscow-mobile-first-ipad-portrait-v424.png",
+      "bytes": 1143632,
+      "sha256": "6620a982c78d9d7029d5cb518a7ddc10bc9ea0a92de13bc081216e8c51dd0e7f",
+      "reason": "reproducible historical diagnostic/browser image; source/test generators preserved"
+    },
+    {
+      "path": "rules/audit/visual/battle-for-moscow-settings-v421.png",
+      "bytes": 1487885,
+      "sha256": "285d66862b06bce7575b737f83877cf4b9f0d6014fbb5b6fc372a1589fb7a533",
+      "reason": "reproducible historical diagnostic/browser image; source/test generators preserved"
+    },
+    {
+      "path": "rules/audit/visual/battle-for-moscow-tablet-ipad-landscape-v423.png",
+      "bytes": 278489,
+      "sha256": "363b9248ae4fe76164b440573b6a0fbf333b3ac30416b3fac1dc01692d833e4f",
+      "reason": "reproducible historical diagnostic/browser image; source/test generators preserved"
+    },
+    {
+      "path": "rules/audit/visual/battle-for-moscow-tablet-ipad-portrait-v423.png",
+      "bytes": 418694,
+      "sha256": "c025d78c12f20da3b1898f830825b7a2579307d859716769ea203704b37dafaa",
+      "reason": "reproducible historical diagnostic/browser image; source/test generators preserved"
+    },
+    {
+      "path": "rules/audit/visual/kiev-black-city-border-dots-v454.png",
+      "bytes": 624300,
+      "sha256": "a5eaa8bc06455aca82c43a9b69631e9370dd3a7f6b04244e1c0d0dcbe26414dc",
+      "reason": "reproducible historical diagnostic/browser image; source/test generators preserved"
+    },
+    {
+      "path": "rules/audit/visual/kiev-city-black-dots-v453.png",
+      "bytes": 852830,
+      "sha256": "eba85bf1b3505caaa78a7564afbe9937c0574e038a5c20f964145ef28edc9500",
+      "reason": "reproducible historical diagnostic/browser image; source/test generators preserved"
+    },
+    {
+      "path": "rules/audit/visual/kiev-city-borders-v453-v454-comparison.png",
+      "bytes": 675264,
+      "sha256": "d7ac5f5d61b396976fa3b7254642b5d4a661a6cef4b828e552dd8e9b9dbd9acc",
+      "reason": "reproducible historical diagnostic/browser image; source/test generators preserved"
+    },
+    {
+      "path": "rules/audit/visual/kiev-city-dashes-v446-v447-comparison.png",
+      "bytes": 555077,
+      "sha256": "1b36fb4f28195b64d23e79fb8fc19bf9484bcc2a51029e12053118b2d436784c",
+      "reason": "reproducible historical diagnostic/browser image; source/test generators preserved"
+    },
+    {
+      "path": "rules/audit/visual/kiev-city-dots-only-v457.png",
+      "bytes": 615664,
+      "sha256": "4ea4ca54d5885a871cd6a556aa0f652bf313083e2a80f6492c3cbe6c01560baf",
+      "reason": "reproducible historical diagnostic/browser image; source/test generators preserved"
+    },
+    {
+      "path": "rules/audit/visual/kiev-rail-source-reconciliation-v427.png",
+      "bytes": 1433592,
+      "sha256": "c7cb0847cb41ed26b4fca113153d4e8a06f1819ed0672ef874720042fd1290f6",
+      "reason": "reproducible historical diagnostic/browser image; source/test generators preserved"
+    },
+    {
+      "path": "rules/audit/visual/kiev-romania-evidence-v444.png",
+      "bytes": 3060706,
+      "sha256": "d96e39000d5a212be39bd40f01ef75105c5f4aa7b5fc95907b1147f82dfdbf99",
+      "reason": "reproducible historical diagnostic/browser image; source/test generators preserved"
+    },
+    {
+      "path": "rules/audit/visual/kiev-romania-evidence-v444.svg",
+      "bytes": 8853283,
+      "sha256": "1983491e8118f99ecd370f93e3365cf35e3d97d432c728c9e01261b00259ae44",
+      "reason": "reproducible historical diagnostic/browser image; source/test generators preserved"
+    },
+    {
+      "path": "rules/audit/visual/kiev-source-river-hexsides-v429.png",
+      "bytes": 1420175,
+      "sha256": "b967b6d43732a966c7563f387dc142cffc3273bb6607a6827ee0f378c9e7a6ed",
+      "reason": "reproducible historical diagnostic/browser image; source/test generators preserved"
+    },
+    {
+      "path": "rules/audit/visual/kiev-swamp-1111-v440-v441-comparison.png",
+      "bytes": 833297,
+      "sha256": "b02fc8c303c88287ba6c056c03608b2d4114029791b0bb5e800bc4f77ac3ad98",
+      "reason": "reproducible historical diagnostic/browser image; source/test generators preserved"
+    },
+    {
+      "path": "rules/audit/visual/kiev-terrain-corrections-v428.png",
+      "bytes": 1411044,
+      "sha256": "921f9aa02acea11decb049ae9c7d5b22e420fad15b9a3194a5c59bb40bfd1f5c",
+      "reason": "reproducible historical diagnostic/browser image; source/test generators preserved"
+    },
+    {
+      "path": "rules/audit/visual/kiev-terrain-palette-v438-v439-comparison.png",
+      "bytes": 2050595,
+      "sha256": "6f4e1ff97d13cba20a7367f7d8cdd046d0f6de637fab5db0c9d99f0973f8d16f",
+      "reason": "reproducible historical diagnostic/browser image; source/test generators preserved"
+    },
+    {
+      "path": "rules/audit/visual/leningrad-automatic-ne-v407.png",
+      "bytes": 1189353,
+      "sha256": "49880842edf1b7f4b675dad9e3949d909885c12873f5cb2c430ca803d2577208",
+      "reason": "reproducible historical diagnostic/browser image; source/test generators preserved"
+    },
+    {
+      "path": "rules/audit/visual/leningrad-coast-flat-settings-v421.png",
+      "bytes": 1235723,
+      "sha256": "1985a24f27774a8dfaf39b013dc37fa0779456cdf31f9bc0448ec50cb82b8905",
+      "reason": "reproducible historical diagnostic/browser image; source/test generators preserved"
+    },
+    {
+      "path": "rules/audit/visual/leningrad-counter-swap-v405.png",
+      "bytes": 1167285,
+      "sha256": "70a7dae8bced3b43bbcf2875c8899d17d42264304cc42596e1650aaa98c3da6a",
+      "reason": "reproducible historical diagnostic/browser image; source/test generators preserved"
+    },
+    {
+      "path": "rules/audit/visual/leningrad-desktop-terrain-tooltip-v430.png",
+      "bytes": 1223594,
+      "sha256": "448ec36982eb8e55d74f4cb537f52ab916402328b8987fc16665e763f495e302",
+      "reason": "reproducible historical diagnostic/browser image; source/test generators preserved"
+    },
+    {
+      "path": "rules/audit/visual/leningrad-mobile-first-ipad-portrait-v424.png",
+      "bytes": 949194,
+      "sha256": "96d4fe9b21ea5abe4eaa6978a245b3f0ce7b160b290fd402fdde5a394310c251",
+      "reason": "reproducible historical diagnostic/browser image; source/test generators preserved"
+    },
+    {
+      "path": "rules/audit/visual/leningrad-settings-v421.png",
+      "bytes": 1247633,
+      "sha256": "5c4a86c4675e1c98302bf926a5aad6d5fbef38e99a472f177e35ec36513e7120",
+      "reason": "reproducible historical diagnostic/browser image; source/test generators preserved"
+    },
+    {
+      "path": "rules/audit/visual/leningrad-shared-browser-v419.png",
+      "bytes": 1087897,
+      "sha256": "a60155812d9b81697a422d78288b2949023c5ad022d12c68735283963ba2e9ce",
+      "reason": "reproducible historical diagnostic/browser image; source/test generators preserved"
+    },
+    {
+      "path": "rules/audit/visual/leningrad-tablet-ipad-landscape-v423.png",
+      "bytes": 152157,
+      "sha256": "d60c1d3f5096b1122d06ed3a337a22d65c7ce349e6e93e573b85c6ad97ffe950",
+      "reason": "reproducible historical diagnostic/browser image; source/test generators preserved"
+    },
+    {
+      "path": "rules/audit/visual/leningrad-tablet-ipad-portrait-v423.png",
+      "bytes": 312208,
+      "sha256": "09794c460d914ec84fc152e730ae9d2af3452fb1893cb206db1354b685e4cbf8",
+      "reason": "reproducible historical diagnostic/browser image; source/test generators preserved"
+    },
+    {
+      "path": "rules/audit/visual/two-finger-first-touch-arduous-v423.png",
+      "bytes": 650596,
+      "sha256": "27a06f3f2b11c797cd4dda615ca0691cb43e63ef16bd6d500beba2df99eed192",
+      "reason": "reproducible historical diagnostic/browser image; source/test generators preserved"
+    },
+    {
+      "path": "rules/audit/visual/universal-counter-arduous-v420.png",
+      "bytes": 1277593,
+      "sha256": "927cde5727f3f493bf4ef8420bdb5f8e1e661367072d90814f10c63e80737f66",
+      "reason": "reproducible historical diagnostic/browser image; source/test generators preserved"
+    },
+    {
+      "path": "rules/audit/visual/universal-counter-battle-for-moscow-v420.png",
+      "bytes": 1571513,
+      "sha256": "d4494e08842f434c5307ded9814212949b800efc8819c0b9369acb2f50ddf0f6",
+      "reason": "reproducible historical diagnostic/browser image; source/test generators preserved"
+    },
+    {
+      "path": "rules/audit/visual/universal-counter-leningrad-v420.png",
+      "bytes": 1270359,
+      "sha256": "575f3990bd1dc159ac666e5d413e7e391b80da697c1581e6741a19be951a46d6",
+      "reason": "reproducible historical diagnostic/browser image; source/test generators preserved"
+    }
+  ]
+}

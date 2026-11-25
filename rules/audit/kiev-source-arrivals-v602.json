@@ -1,0 +1,46 @@
+{
+  "checkpoint": 368,
+  "version": "v602",
+  "assertions": 26,
+  "entries": 61,
+  "transactions": 81,
+  "arrivals": [
+    {
+      "turn": 2,
+      "slot": "t2-slovak",
+      "hex": "0101",
+      "strength": "full"
+    },
+    {
+      "turn": 2,
+      "slot": "t2-hungarian",
+      "hex": "0101",
+      "strength": "full"
+    },
+    {
+      "turn": 3,
+      "slot": "t3-german-infantry",
+      "hex": "0102",
+      "strength": "full"
+    },
+    {
+      "turn": 3,
+      "slot": "t3-italian-motorized",
+      "hex": "0102",
+      "strength": "full"
+    },
+    {
+      "turn": 5,
+      "slot": "t5-soviet-army",
+      "hex": "1601",
+      "strength": "full"
+    },
+    {
+      "turn": 6,
+      "slot": "t6-soviet-army",
+      "hex": "1701",
+      "strength": "full"
+    }
+  ],
+  "scope": "Source-constrained deterministic opening; no elective movement or combat; not strategic qualification"
+}

@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "status": "PREVIEW_ONLY",
+  "checkpoint": 118,
+  "scenarioId": "leningrad",
+  "canonicalRegistrationAuthority": "candidate from current printed-label translation; NOT independently historical-certified",
+  "productionSaveIntegration": false,
+  "canonicalIDsActivated": false,
+  "sourceMapSHA256": "3ec95353555af6703d2fd006b11b55e2b98685e296f36e528da85547d6933b17",
+  "sharedRendererSHA256": "903c0a5161713d21101ce23e1c308a4c224e395060fdd7aefd21270edc64b1b0",
+  "physicalFrom": "0208",
+  "physicalTo": "0307",
+  "canonicalFrom": "0107",
+  "canonicalTo": "0207",
+  "phaseAfterFinish": "german-combat",
+  "undoEntries": 2,
+  "priorPhase": "german-movement",
+  "currentStateAndPriorCursorPreserved": true,
+  "roundTripPassed": true,
+  "certifiedPhysicalBoardCells": 197,
+  "candidateCanonicalCells": 186,
+  "visualOnlyCells": 11,
+  "blockers": [
+    "historical coordinate certification",
+    "visual-only water rendering composition",
+    "full game references",
+    "production save/restore versioning",
+    "combat consequences and Undo integration"
+  ]
+}

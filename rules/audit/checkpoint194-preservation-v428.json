@@ -1,0 +1,54 @@
+{
+  "checkpoint": 194,
+  "version": "v428",
+  "baseline": "checkpoint193/v427",
+  "unchangedProtectedFiles": 228,
+  "changedProtectedFiles": [],
+  "otherFourMapExportsByteIdentical": true,
+  "kievPngSourceCorrections": 3,
+  "kievPngChangedPixels": 10364,
+  "kievPngChangedPixelsConfinedToThreeCorrectedHexes": true,
+  "kievCorrectedHexIds": [
+    "0403",
+    "0608",
+    "1009"
+  ],
+  "kievExplicitTerrainSourceHexes": 149,
+  "cityOverlayHexesPending": 16,
+  "kievRailLinksUnchanged": 93,
+  "kievGameplayGateRemainsBlocked": true,
+  "testRuns": {
+    "PASS": 24,
+    "FAIL": 0,
+    "TIMEOUT": 0
+  },
+  "changedExistingFiles": [
+    "PLAN.md",
+    "README.md",
+    "UPDATE.md",
+    "core/map_certification_readiness.js",
+    "core/terrain_evidence.js",
+    "exports/kiev.png",
+    "exports/kiev.svg",
+    "exports/manifest.json",
+    "maps/kiev.json",
+    "rules/audit/arduous-kiev-certification-readiness-v318.json",
+    "rules/audit/arduous-kiev-svg-first-rail-graph-v318.json",
+    "rules/audit/arduous-kiev-terrain-evidence-v318.json",
+    "tests/map-certification-readiness-v318.test.js",
+    "tests/terrain-evidence-v318.test.js"
+  ],
+  "addedFiles": [
+    "docs/engine/KIEV_TERRAIN_RECONCILIATION_V428.md",
+    "rules/audit/checkpoint194-regressions.json",
+    "rules/audit/kiev-definitive-terrain-v428.json",
+    "rules/audit/visual/kiev-terrain-corrections-v428.png",
+    "tests/kiev-definitive-terrain-v428.test.js",
+    "tests/kiev-definitive-terrain-v428.test.py",
+    "tools/reconcile-kiev-terrain-v428.py",
+    "tools/render-kiev-terrain-delta-v428.py",
+    "tools/run-checkpoint194-regressions.py"
+  ],
+  "removedFiles": [],
+  "preExistingFailureNotRerun": "Older v289/v290 Kiev-Odessa 230-hex snapshot tests, previously failing on v427; current composite is 261."
+}

@@ -1,0 +1,256 @@
+{
+  "checkpoint": 167,
+  "version": "v401",
+  "planned": 40,
+  "passed": 40,
+  "method": "The combined runner completed the first 34 before its overall execution timeout; remaining 6 completed as independent sequential processes, with source captured. No claim of single combined run success.",
+  "scope": "Prior 39 cross-game contracts plus the new headless source-backed human decision gateway",
+  "results": [
+    {
+      "command": "node scripts/verify-campaign-maps.js",
+      "passed": true,
+      "seconds": 0.49,
+      "method": "original combined 40-command process, completed before runner timeout"
+    },
+    {
+      "command": "node tests/b4m-native-combat-v361.test.js",
+      "passed": true,
+      "seconds": 0.72,
+      "method": "original combined 40-command process, completed before runner timeout"
+    },
+    {
+      "command": "node tests/b4m-native-redeployment-campaign-v378.test.js",
+      "passed": true,
+      "seconds": 18.34,
+      "method": "original combined 40-command process, completed before runner timeout"
+    },
+    {
+      "command": "node tests/b4m-native-tournament-reference-v375.test.js",
+      "passed": true,
+      "seconds": 0.1,
+      "method": "original combined 40-command process, completed before runner timeout"
+    },
+    {
+      "command": "node tests/forest-no-shadow-v373.test.js",
+      "passed": true,
+      "seconds": 0.6,
+      "method": "original combined 40-command process, completed before runner timeout"
+    },
+    {
+      "command": "node tests/historical-air-sea-support-v385.test.js",
+      "passed": true,
+      "seconds": 0.19,
+      "method": "original combined 40-command process, completed before runner timeout"
+    },
+    {
+      "command": "node tests/historical-combat-consequences-v359.test.js",
+      "passed": true,
+      "seconds": 0.52,
+      "method": "original combined 40-command process, completed before runner timeout"
+    },
+    {
+      "command": "node tests/historical-combat-session-v386.test.js",
+      "passed": true,
+      "seconds": 1.08,
+      "method": "original combined 40-command process, completed before runner timeout"
+    },
+    {
+      "command": "node tests/historical-fleet-forced-displacement-v384.test.js",
+      "passed": true,
+      "seconds": 0.24,
+      "method": "original combined 40-command process, completed before runner timeout"
+    },
+    {
+      "command": "node tests/historical-fleet-opening-movement-v383.test.js",
+      "passed": true,
+      "seconds": 0.13,
+      "method": "original combined 40-command process, completed before runner timeout"
+    },
+    {
+      "command": "node tests/historical-forced-retreat-v380.test.js",
+      "passed": true,
+      "seconds": 0.38,
+      "method": "original combined 40-command process, completed before runner timeout"
+    },
+    {
+      "command": "node tests/historical-overstack-retreat-v381.test.js",
+      "passed": true,
+      "seconds": 0.2,
+      "method": "original combined 40-command process, completed before runner timeout"
+    },
+    {
+      "command": "node tests/historical-port-fleet-retreat-v382.test.js",
+      "passed": true,
+      "seconds": 0.33,
+      "method": "original combined 40-command process, completed before runner timeout"
+    },
+    {
+      "command": "node tests/historical-safe-retreat-options-v379.test.js",
+      "passed": true,
+      "seconds": 0.33,
+      "method": "original combined 40-command process, completed before runner timeout"
+    },
+    {
+      "command": "node tests/leningrad-combat-commitment-v318.test.js",
+      "passed": true,
+      "seconds": 0.17,
+      "method": "original combined 40-command process, completed before runner timeout"
+    },
+    {
+      "command": "node tests/leningrad-combat-geography-v318.test.js",
+      "passed": true,
+      "seconds": 0.13,
+      "method": "original combined 40-command process, completed before runner timeout"
+    },
+    {
+      "command": "node tests/leningrad-full-inventory-v355.test.js",
+      "passed": true,
+      "seconds": 0.04,
+      "method": "original combined 40-command process, completed before runner timeout"
+    },
+    {
+      "command": "node tests/leningrad-phase-movement-pilot-v318.test.js",
+      "passed": true,
+      "seconds": 0.1,
+      "method": "original combined 40-command process, completed before runner timeout"
+    },
+    {
+      "command": "node tests/leningrad-reinforcement-ledger-v323.test.js",
+      "passed": true,
+      "seconds": 0.04,
+      "method": "original combined 40-command process, completed before runner timeout"
+    },
+    {
+      "command": "node tests/scenario-opening-bridge-v358.test.js",
+      "passed": true,
+      "seconds": 0.18,
+      "method": "original combined 40-command process, completed before runner timeout"
+    },
+    {
+      "command": "node tests/shared-render-profiles-v356.test.js",
+      "passed": true,
+      "seconds": 0.17,
+      "method": "original combined 40-command process, completed before runner timeout"
+    },
+    {
+      "command": "node tests/smoke-current.js",
+      "passed": true,
+      "seconds": 0.03,
+      "method": "original combined 40-command process, completed before runner timeout"
+    },
+    {
+      "command": "python3 tests/leningrad-approved-visual-regression-v352.test.py",
+      "passed": true,
+      "seconds": 21.84,
+      "method": "original combined 40-command process, completed before runner timeout"
+    },
+    {
+      "command": "node tests/historical-campaign-continuation-v387.test.js",
+      "passed": true,
+      "seconds": 1.83,
+      "method": "original combined 40-command process, completed before runner timeout"
+    },
+    {
+      "command": "node tests/historical-buildup-campaign-v388.test.js",
+      "passed": true,
+      "seconds": 1.16,
+      "method": "original combined 40-command process, completed before runner timeout"
+    },
+    {
+      "command": "node tests/historical-housekeeping-eight-turn-v389.test.js",
+      "passed": true,
+      "seconds": 9.23,
+      "method": "original combined 40-command process, completed before runner timeout"
+    },
+    {
+      "command": "node tests/shared-historical-crt-v316.test.js",
+      "passed": true,
+      "seconds": 0.04,
+      "method": "original combined 40-command process, completed before runner timeout"
+    },
+    {
+      "command": "node tests/universal-scenario-contract-v317.test.js",
+      "passed": true,
+      "seconds": 0.04,
+      "method": "original combined 40-command process, completed before runner timeout"
+    },
+    {
+      "command": "node tests/universal-deployment-placement-v329.test.js",
+      "passed": true,
+      "seconds": 0.28,
+      "method": "original combined 40-command process, completed before runner timeout"
+    },
+    {
+      "command": "node tests/historical-mixed-combat-eight-turn-v390.test.js",
+      "passed": true,
+      "seconds": 7.25,
+      "method": "original combined 40-command process, completed before runner timeout"
+    },
+    {
+      "command": "node tests/historical-campaign-action-catalog-v390.test.js",
+      "passed": true,
+      "seconds": 2.85,
+      "method": "original combined 40-command process, completed before runner timeout"
+    },
+    {
+      "command": "node tests/historical-campaign-path-plans-v391.test.js",
+      "passed": true,
+      "seconds": 5.21,
+      "method": "original combined 40-command process, completed before runner timeout"
+    },
+    {
+      "command": "node tests/historical-campaign-combat-decisions-v392.test.js",
+      "passed": true,
+      "seconds": 4.28,
+      "method": "original combined 40-command process, completed before runner timeout"
+    },
+    {
+      "command": "node tests/historical-postcasualty-retreat-v393.test.js",
+      "passed": true,
+      "seconds": 4.15,
+      "method": "original combined 40-command process, completed before runner timeout"
+    },
+    {
+      "command": "node tests/historical-postcombat-fleet-choices-v394.test.js",
+      "passed": true,
+      "seconds": 16.43,
+      "method": "independent sequential process after original combined runner was interrupted",
+      "outputTail": "PASS v394 1264 assertions; five port choices, two Fleet conditions, saved pre-roll commitments\n"
+    },
+    {
+      "command": "node tests/historical-joint-order-retreat-v395.test.js",
+      "passed": true,
+      "seconds": 0.1,
+      "method": "independent sequential process after original combined runner was interrupted",
+      "outputTail": "PASS v395: 30 joint-order, compulsory overstack extension, atomicity checks\n"
+    },
+    {
+      "command": "node tests/historical-three-battle-plans-v396.test.js",
+      "passed": true,
+      "seconds": 4.22,
+      "method": "independent sequential process after original combined runner was interrupted",
+      "outputTail": "PASS v396 803 assertions; 128 three-battle plans; three B4M combat results; full Undo/save\n"
+    },
+    {
+      "command": "node tests/historical-joint-safe-retreat-v397.test.js",
+      "passed": true,
+      "seconds": 0.07,
+      "method": "independent sequential process after original combined runner was interrupted",
+      "outputTail": "PASS v397: 35 adversarial source-graph retreat assertions\n"
+    },
+    {
+      "command": "node tests/historical-retreat-search-certification-v398.test.js",
+      "passed": true,
+      "seconds": 0.05,
+      "method": "independent sequential process after original combined runner was interrupted",
+      "outputTail": "PASS v398: 16 bounded retreat certification assertions\n"
+    },
+    {
+      "command": "node tests/historical-human-decision-gateway-v401.test.js",
+      "passed": true,
+      "seconds": 13.43,
+      "method": "independent sequential process after original combined runner was interrupted",
+      "outputTail": "PASS human campaign choice/roll/restore/Undo 37 assertions\n"
+    }
+  ]
+}

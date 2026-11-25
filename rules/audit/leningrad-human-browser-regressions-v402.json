@@ -1,0 +1,334 @@
+{
+  "checkpoint": 168,
+  "version": "v402",
+  "method": "Seven completely finished independent groups; original large combined runs timed out and are not claimed as passing",
+  "groups": [
+    {
+      "group": 1,
+      "completed": 12,
+      "passed": 12
+    },
+    {
+      "group": 2,
+      "completed": 10,
+      "passed": 10
+    },
+    {
+      "group": 3,
+      "completed": 1,
+      "passed": 1
+    },
+    {
+      "group": 4,
+      "completed": 11,
+      "passed": 11
+    },
+    {
+      "group": 5,
+      "completed": 5,
+      "passed": 5
+    },
+    {
+      "group": 6,
+      "completed": 1,
+      "passed": 1
+    },
+    {
+      "group": 7,
+      "completed": 1,
+      "passed": 1
+    }
+  ],
+  "planned": 41,
+  "passed": 41,
+  "failed": 0,
+  "results": [
+    {
+      "index": 1,
+      "command": "node scripts/verify-campaign-maps.js",
+      "passed": true,
+      "seconds": 0.28,
+      "outputTail": "4cbb65fdbd5db7eedf7\",\n      \"pngSHA256\": \"e072d32beb8c34faf258e636dffbb42161ddb291524fc740292c0ddec5bc0108\",\n      \"warnings\": 0\n    },\n    {\n      \"id\": \"leningrad\",\n      \"hexes\": 197,\n      \"svgSHA256\": \"e45856f7d56b5acfecf7083b405b9465d1c21459d698ac65e9196f581f832925\",\n      \"pngSHA256\": \"a9f1886cd3c9d85bfe5238e82a79a613550b98170ff08967ff08f14e20690ed2\",\n      \"warnings\": 6\n    },\n    {\n      \"id\": \"kiev\",\n      \"hexes\": 165,\n      \"svgSHA256\": \"5f455d80d6d30eec822d898f41ec12c21fc03a7f4fd165ddd51fa2b7c28324a4\",\n      \"pngSHA256\": \"b355b35fc0cd620c55f8c63cc61e4a7a2e96e9044c972f9a4e65b7a239b3a9ff\",\n      \"warnings\": 0\n    },\n    {\n      \"id\": \"kiev-odessa\",\n      \"hexes\": 261,\n      \"svgSHA256\": \"7cb5fafbb18babd2b4b2a5129e6802607dd4b0df8b07e46491319c07ecb9c71c\",\n      \"pngSHA256\": \"f7a84021dda8a796b8b04cfe018d15b6ad043e8a39e08ff7f0d7eccab721f71a\",\n      \"warnings\": 3\n    }\n  ],\n  \"approvedLeningradHistorical\": \"v350\",\n  \"activeVisualBaseline\": \"v373-no-forest-shadow-user-accepted\"\n}\n"
+    },
+    {
+      "index": 2,
+      "command": "node tests/b4m-native-combat-v361.test.js",
+      "passed": true,
+      "seconds": 0.52,
+      "outputTail": "PASS v361 B4M native combat parity: 180 previews, 180 consequences, 57 explicit choices, 293 two-battle sequences, strict config gate\n"
+    },
+    {
+      "index": 3,
+      "command": "node tests/b4m-native-redeployment-campaign-v378.test.js",
+      "passed": true,
+      "seconds": 15.99,
+      "outputTail": "56,\"actions\":1052,\"declarations\":103,\"combat\":103,\"moves\":477,\"replacements\":145,\"reinforcements\":4,\"saveRestores\":33,\"undoReplays\":65,\"parityChecks\":1056,\"scoreReads\":56,\"scoreAmbiguities\":0,\"scoreNeverEnabled\":56},\"campaigns\":[{\"name\":\"no-change\",\"seed\":17,\"openingMoves\":0,\"sideTurns\":14,\"battles\":25,\"realMoves\":113,\"result\":\"soviet\",\"stateHash\":\"3beeaee2338d2054bc64276f6c7c86f6c992dddb2e2062198fbb3bda1e4ed42a\"},{\"name\":\"one-northern\",\"seed\":1941,\"openingMoves\":1,\"sideTurns\":14,\"battles\":27,\"realMoves\":125,\"result\":\"soviet\",\"stateHash\":\"c54255aa808a785db819883b9bca004d6f714b449911883a96da173c5148ff05\"},{\"name\":\"one-southern\",\"seed\":17,\"openingMoves\":1,\"sideTurns\":14,\"battles\":25,\"realMoves\":112,\"result\":\"soviet\",\"stateHash\":\"5bd1593739b51b445928dbaefac302cac6b15aaaa236a8f856509733efe66f4d\"},{\"name\":\"three-separated\",\"seed\":1,\"openingMoves\":3,\"sideTurns\":14,\"battles\":26,\"realMoves\":127,\"result\":\"soviet\",\"stateHash\":\"9ec63252d765afb7cc29aabe3e7a328254dfd542d84d3f9f26c6d447a66ec493\"}]}\n"
+    },
+    {
+      "index": 4,
+      "command": "node tests/b4m-native-tournament-reference-v375.test.js",
+      "passed": true,
+      "seconds": 0.1,
+      "outputTail": "{\"status\":\"PASS\",\"checkpoint\":141,\"version\":\"v375\",\"primaryCases\":[{\"id\":\"german-decisive\",\"points\":{\"german\":4,\"soviet\":0}},{\"id\":\"german-major\",\"points\":{\"german\":3,\"soviet\":0}},{\"id\":\"soviet-minor\",\"points\":{\"german\":1,\"soviet\":1}},{\"id\":\"soviet-decisive\",\"points\":{\"german\":1,\"soviet\":3}},{\"id\":\"overlapping-german-and-soviet-minor\",\"eligible\":[{\"id\":\"german-minor\",\"side\":\"german\",\"points\":1},{\"id\":\"soviet-minor\",\"side\":\"soviet\",\"points\":1}],\"bonusPoints\":{\"german\":1,\"soviet\":0}},{\"id\":\"soviet-major\",\"points\":{\"german\":1,\"soviet\":2}}],\"bonusThresholds\":[0,7,8,11,12,16],\"communication\":[\"Moscow isolated\",\"Tula isolated\",\"both isolated\"],\"mode\":\"disabled read-only reference\",\"production\":\"legacy-b4m-v1\"}\n"
+    },
+    {
+      "index": 5,
+      "command": "node tests/forest-no-shadow-v373.test.js",
+      "passed": true,
+      "seconds": 0.41,
+      "outputTail": "PASS v373: 5 shared maps, 199 Forest/Woods cells, no shadow, bitmap texture and layer priority retained\n"
+    },
+    {
+      "index": 6,
+      "command": "node tests/historical-air-sea-support-v385.test.js",
+      "passed": true,
+      "seconds": 0.13,
+      "outputTail": "PASS v385: 163 source-bound air-sea/ground support checks\n"
+    },
+    {
+      "index": 7,
+      "command": "node tests/historical-combat-consequences-v359.test.js",
+      "passed": true,
+      "seconds": 0.42,
+      "outputTail": "PASS v359 shared source-bound combat consequence transactions: 68 assertions\n"
+    },
+    {
+      "index": 8,
+      "command": "node tests/historical-combat-session-v386.test.js",
+      "passed": true,
+      "seconds": 0.89,
+      "outputTail": "PASS v386: 84 replay-validated historical combat session assertions\n"
+    },
+    {
+      "index": 9,
+      "command": "node tests/historical-fleet-forced-displacement-v384.test.js",
+      "passed": true,
+      "seconds": 0.2,
+      "outputTail": "PASS v384: 768 source-bound Fleet compulsory-displacement assertions\n"
+    },
+    {
+      "index": 10,
+      "command": "node tests/historical-fleet-opening-movement-v383.test.js",
+      "passed": true,
+      "seconds": 0.1,
+      "outputTail": "PASS v383: 716 opening, port-hazard, and Fleet special-movement checks\n"
+    },
+    {
+      "index": 11,
+      "command": "node tests/historical-forced-retreat-v380.test.js",
+      "passed": true,
+      "seconds": 0.32,
+      "outputTail": "PASS v380: 298 forced-retreat, post-combat, Undo and fail-closed assertions\n"
+    },
+    {
+      "index": 12,
+      "command": "node tests/historical-overstack-retreat-v381.test.js",
+      "passed": true,
+      "seconds": 0.15,
+      "outputTail": "PASS v381: 39 overstack-extension, rollback and source-boundary assertions\n"
+    },
+    {
+      "index": 13,
+      "command": "node tests/historical-port-fleet-retreat-v382.test.js",
+      "passed": true,
+      "seconds": 0.25,
+      "outputTail": "PASS v382: 54 source-bound Fleet/port retreat tests\n"
+    },
+    {
+      "index": 14,
+      "command": "node tests/historical-safe-retreat-options-v379.test.js",
+      "passed": true,
+      "seconds": 0.25,
+      "outputTail": "PASS v379: 516 safe-retreat assertions, 151 certified map-cell enumerations, 7 opening safe routes, 45 dual-counter joint choices\n"
+    },
+    {
+      "index": 15,
+      "command": "node tests/leningrad-combat-commitment-v318.test.js",
+      "passed": true,
+      "seconds": 0.1,
+      "outputTail": "PASS Leningrad immutable combat commitment 21 assertions\n"
+    },
+    {
+      "index": 16,
+      "command": "node tests/leningrad-combat-geography-v318.test.js",
+      "passed": true,
+      "seconds": 0.1,
+      "outputTail": "PASS Leningrad certified combat geography and deployment reconciliation 22 assertions\n"
+    },
+    {
+      "index": 17,
+      "command": "node tests/leningrad-full-inventory-v355.test.js",
+      "passed": true,
+      "seconds": 0.03,
+      "outputTail": "PASS v355 source-bound Leningrad inventory / allocation: 68 assertions\n"
+    },
+    {
+      "index": 18,
+      "command": "node tests/leningrad-phase-movement-pilot-v318.test.js",
+      "passed": true,
+      "seconds": 0.06,
+      "outputTail": "PASS Leningrad phase/movement pilot 18 checks (no historical scenario activation)\n"
+    },
+    {
+      "index": 19,
+      "command": "node tests/leningrad-reinforcement-ledger-v323.test.js",
+      "passed": true,
+      "seconds": 0.03,
+      "outputTail": "Leningrad provisional reinforcement transactional ledger: passed\n"
+    },
+    {
+      "index": 20,
+      "command": "node tests/scenario-opening-bridge-v358.test.js",
+      "passed": true,
+      "seconds": 0.14,
+      "outputTail": "PASS v358 generic opening bridge: 44 assertions; 19 configured source faces -> actual German combat declaration and map-backed odds; no unauthorized combat resolution/phase advance\n"
+    },
+    {
+      "index": 21,
+      "command": "node tests/shared-render-profiles-v356.test.js",
+      "passed": true,
+      "seconds": 0.15,
+      "outputTail": "PASS v356: 5 registry profiles, same SVG engine, no per-game branches in rendering consumers, ID-independent output\n"
+    },
+    {
+      "index": 22,
+      "command": "node tests/smoke-current.js",
+      "passed": true,
+      "seconds": 0.02,
+      "outputTail": "PASS current package smoke: five maps + shared CRT + sources\n"
+    },
+    {
+      "index": 23,
+      "command": "python3 tests/leningrad-approved-visual-regression-v352.test.py",
+      "passed": true,
+      "seconds": 19.69,
+      "outputTail": ".\n----------------------------------------------------------------------\nRan 1 test in 18.975s\n\nOK\n"
+    },
+    {
+      "index": 24,
+      "command": "node tests/historical-campaign-continuation-v387.test.js",
+      "passed": true,
+      "seconds": 1.71,
+      "outputTail": "PASS v387 110 consecutive-phase historical campaign continuation assertions\n"
+    },
+    {
+      "index": 25,
+      "command": "node tests/historical-buildup-campaign-v388.test.js",
+      "passed": true,
+      "seconds": 1.19,
+      "outputTail": "PASS v388 88 historical buildup and replacement integration assertions\n"
+    },
+    {
+      "index": 26,
+      "command": "node tests/historical-housekeeping-eight-turn-v389.test.js",
+      "passed": true,
+      "seconds": 7.74,
+      "outputTail": "PASS v389 226 historical housekeeping, victory and eight-turn journal assertions; 94 source-legal actions\n"
+    },
+    {
+      "index": 27,
+      "command": "node tests/shared-historical-crt-v316.test.js",
+      "passed": true,
+      "seconds": 0.03,
+      "outputTail": "PASS v316 shared Oberlabs CRT: 36 cells x 5 historical mappings\n"
+    },
+    {
+      "index": 28,
+      "command": "node tests/universal-scenario-contract-v317.test.js",
+      "passed": true,
+      "seconds": 0.03,
+      "outputTail": "PASS universal scenario contract: 5 games, 14 domains, missing-data fail-closed and overlay validation\n"
+    },
+    {
+      "index": 29,
+      "command": "node tests/universal-deployment-placement-v329.test.js",
+      "passed": true,
+      "seconds": 0.23,
+      "outputTail": "PASS v329: five-game universal bottom-center deployment renderer for 137 icons\n"
+    },
+    {
+      "index": 30,
+      "command": "node tests/historical-mixed-combat-eight-turn-v390.test.js",
+      "passed": true,
+      "seconds": 7.27,
+      "outputTail": "PASS v390 63 real mixed-combat, reinforcement and eight-turn persistence assertions; 110 actions; replacement=true\n"
+    },
+    {
+      "index": 31,
+      "command": "node tests/historical-campaign-action-catalog-v390.test.js",
+      "passed": true,
+      "seconds": 2.58,
+      "outputTail": "PASS v390 109 source-validated action discovery assertions\n"
+    },
+    {
+      "index": 32,
+      "command": "node tests/historical-campaign-path-plans-v391.test.js",
+      "passed": true,
+      "seconds": 5.19,
+      "outputTail": "PASS v391 2703 actions, 128 joint plans, 270 reachable destinations, 229 multi-hex choices\n"
+    },
+    {
+      "index": 33,
+      "command": "node tests/historical-campaign-combat-decisions-v392.test.js",
+      "passed": true,
+      "seconds": 4.05,
+      "outputTail": "PASS v392 281 assertions; 10 multi-attacker choices, 128 bounded two-battle plans, 21 die-1 options\n"
+    },
+    {
+      "index": 34,
+      "command": "node tests/historical-postcasualty-retreat-v393.test.js",
+      "passed": true,
+      "seconds": 3.99,
+      "outputTail": "PASS v393 155 assertions; EX 52 DRL 24 new-after-loss 12\n"
+    },
+    {
+      "index": 35,
+      "command": "node tests/historical-postcombat-fleet-choices-v394.test.js",
+      "passed": true,
+      "seconds": 16.99,
+      "outputTail": "PASS v394 1264 assertions; five port choices, two Fleet conditions, saved pre-roll commitments\n"
+    },
+    {
+      "index": 36,
+      "command": "node tests/historical-joint-order-retreat-v395.test.js",
+      "passed": true,
+      "seconds": 0.07,
+      "outputTail": "PASS v395: 30 joint-order, compulsory overstack extension, atomicity checks\n"
+    },
+    {
+      "index": 37,
+      "command": "node tests/historical-three-battle-plans-v396.test.js",
+      "passed": true,
+      "seconds": 3.97,
+      "outputTail": "PASS v396 803 assertions; 128 three-battle plans; three B4M combat results; full Undo/save\n"
+    },
+    {
+      "index": 38,
+      "command": "node tests/historical-joint-safe-retreat-v397.test.js",
+      "passed": true,
+      "seconds": 0.08,
+      "outputTail": "PASS v397: 35 adversarial source-graph retreat assertions\n"
+    },
+    {
+      "index": 39,
+      "command": "node tests/historical-retreat-search-certification-v398.test.js",
+      "passed": true,
+      "seconds": 0.06,
+      "outputTail": "PASS v398: 16 bounded retreat certification assertions\n"
+    },
+    {
+      "index": 40,
+      "command": "node tests/historical-human-decision-gateway-v401.test.js",
+      "passed": true,
+      "seconds": 13.78,
+      "outputTail": "PASS human campaign choice/roll/restore/Undo 37 assertions\n"
+    },
+    {
+      "index": 41,
+      "command": "python3 scripts/verify-historical-human-browser-v402.py",
+      "passed": true,
+      "seconds": 17.65,
+      "outputTail": ": \"PASS\",\n  \"browser\": \"real isolated Chromium with source-byte JSON fetch\",\n  \"networkNavigation\": \"blocked by administrator; not independently certified\",\n  \"scenario\": \"leningrad\",\n  \"setup\": \"candidate, not certified\",\n  \"moduleCount\": 38,\n  \"counterCount\": 19,\n  \"mapSvgSHA256\": \"e45856f7d56b5acfecf7083b405b9465d1c21459d698ac65e9196f581f832925\",\n  \"sameByteStateAsNode\": true,\n  \"battleViaGUI\": true,\n  \"dieCommitBeforeConsequences\": true,\n  \"pendingDieFileRestore\": true,\n  \"saveDownload\": true,\n  \"counterClickFilter\": true,\n  \"invalidSaveFailClosed\": true,\n  \"undo\": true,\n  \"baselineAiStep\": true,\n  \"baselineAiSide\": true,\n  \"visualScreenshot\": \"rules/audit/visual/leningrad-human-browser-v402.png\",\n  \"limitations\": [\n    \"Source-certified individual counter assignment and printed coordinates pending\",\n    \"Full eight-turn user-operated browser acceptance not yet demonstrated\",\n    \"Hosted Chromium navigation blocked by administrator\",\n    \"Oberlabs UX parity deferred by user\"\n  ]\n}\n"
+    }
+  ]
+}

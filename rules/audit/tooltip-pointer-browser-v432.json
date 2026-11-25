@@ -1,0 +1,40 @@
+{
+  "checkpoint": 198,
+  "version": "v432",
+  "cases": [
+    {
+      "game": "arduous",
+      "rightAndLeftSides": true,
+      "cursorJitterStable": true,
+      "dismissesWithPanel": true,
+      "nonInteractive": true,
+      "errors": []
+    },
+    {
+      "game": "leningrad",
+      "rightAndLeftSides": true,
+      "cursorJitterStable": true,
+      "dismissesWithPanel": true,
+      "nonInteractive": true,
+      "errors": []
+    },
+    {
+      "game": "battle-for-moscow",
+      "rightAndLeftSides": true,
+      "cursorJitterStable": true,
+      "dismissesWithPanel": true,
+      "nonInteractive": true,
+      "errors": []
+    },
+    {
+      "game": "narrow desktop viewport",
+      "bottomAndTopSides": true,
+      "viewportSafety": true,
+      "settingsDismissal": true
+    },
+    {
+      "game": "touch iPad simulation",
+      "tooltipAndPointerSuppressed": true
+    }
+  ]
+}

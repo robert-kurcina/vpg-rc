@@ -1,0 +1,17 @@
+{
+  "checkpoint": 157,
+  "version": "v391",
+  "assertions": 2375,
+  "combinedPlansChecked": 46,
+  "turnOneSovietMovementChoices": 270,
+  "multiHexChoices": 229,
+  "railModeChoices": 39,
+  "verifiedDestinationCoverage": 270,
+  "selection": "lowest-cost source-valid representative per destination per mode",
+  "exclusions": [
+    "Multi-unit attackers within one battle are not exhaustively enumerated",
+    "Combination plans are capped at 128 and must disclose truncation",
+    "All combat dice, losses and outcomes still require authoritative postcommit decisions",
+    "Candidate historical counter setup remains unverified"
+  ]
+}

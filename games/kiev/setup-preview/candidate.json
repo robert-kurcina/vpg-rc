@@ -1,0 +1,104 @@
+{
+  "schemaVersion": 1,
+  "scenarioId": "kiev",
+  "status": "synthetic-legal-sample-not-historical-starting-allocation",
+  "allocation": {
+    "germanReinforcementInfantry": [
+      "kiev-front-r01c07"
+    ],
+    "germanInitialPanzer": [
+      "kiev-front-r01c01",
+      "kiev-front-r01c02",
+      "kiev-front-r01c03"
+    ],
+    "germanPolandInfantry": [
+      "kiev-front-r01c04",
+      "kiev-front-r01c05",
+      "kiev-front-r01c06",
+      "kiev-front-r01c08",
+      "kiev-front-r02c01",
+      "kiev-front-r02c02",
+      "kiev-front-r02c03"
+    ],
+    "germanRomaniaInfantry": [
+      "kiev-front-r02c04",
+      "kiev-front-r02c05",
+      "kiev-front-r02c06"
+    ],
+    "romanianInitialArmy": [
+      "kiev-front-r02c08"
+    ],
+    "hungarianReinforcementInfantry": [
+      "kiev-front-r04c08"
+    ],
+    "slovakReinforcementInfantry": [
+      "kiev-front-r02c07"
+    ],
+    "italianReinforcementMotorized": [
+      "kiev-front-r04c01"
+    ],
+    "sovietFrontArmies": [
+      "kiev-front-r03c04",
+      "kiev-front-r03c05",
+      "kiev-front-r03c06",
+      "kiev-front-r03c07"
+    ],
+    "sovietFrontMechanized": [
+      "kiev-front-r04c02",
+      "kiev-front-r04c03",
+      "kiev-front-r05c01",
+      "kiev-front-r05c02",
+      "kiev-front-r05c03",
+      "kiev-front-r05c04"
+    ],
+    "sovietFixedArmies": [
+      "kiev-front-r03c08",
+      "kiev-front-r04c04"
+    ],
+    "sovietFixedMechanized": [
+      "kiev-front-r05c05",
+      "kiev-front-r05c06",
+      "kiev-front-r05c07",
+      "kiev-front-r05c08"
+    ],
+    "sovietReinforcementArmies": [
+      "kiev-front-r04c05",
+      "kiev-front-r04c06"
+    ],
+    "sovietReplacementOnlyArmy": [
+      "kiev-front-r04c07"
+    ]
+  },
+  "placements": {
+    "kiev-front-r01c01": "0105",
+    "kiev-front-r01c02": "0203",
+    "kiev-front-r01c03": "0204",
+    "kiev-front-r01c04": "0105",
+    "kiev-front-r01c05": "0203",
+    "kiev-front-r01c06": "0204",
+    "kiev-front-r01c08": "0301",
+    "kiev-front-r02c01": "0302",
+    "kiev-front-r02c02": "0303",
+    "kiev-front-r02c03": "0402",
+    "kiev-front-r02c04": "0709",
+    "kiev-front-r02c05": "0809",
+    "kiev-front-r02c06": "0910",
+    "kiev-front-r02c08": "1010",
+    "kiev-front-r03c08": "0406",
+    "kiev-front-r04c04": "1007",
+    "kiev-front-r05c05": "0705",
+    "kiev-front-r05c06": "0803",
+    "kiev-front-r05c07": "1106",
+    "kiev-front-r05c08": "1309",
+    "kiev-front-r03c04": "0205",
+    "kiev-front-r03c05": "0401",
+    "kiev-front-r03c06": "0708",
+    "kiev-front-r03c07": "1110",
+    "kiev-front-r04c02": "0304",
+    "kiev-front-r04c03": "0305",
+    "kiev-front-r05c01": "0403",
+    "kiev-front-r05c02": "0502",
+    "kiev-front-r05c03": "0503",
+    "kiev-front-r05c04": "0808"
+  }
+}

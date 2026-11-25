@@ -1,0 +1,31 @@
+'use strict';
+const assert=require('node:assert/strict');
+const V=require('../core/hex_visual_features');
+const map=require('../maps/arduous.json');
+const ledger=require('../rules/audit/arduous-svg-linear-per-hex-v318.json');
+const original=V.normalize(map);
+const before=JSON.stringify(original);
+const enriched=V.withSvgLinearObservations(original,ledger,map);
+assert.equal(original.hexCount,155);
+assert.equal(JSON.stringify(original),before,'source view must remain unchanged');
+assert.equal(enriched.svgLinearObservations.railDerivedPairs,88);
+assert.equal(original.svgLinearObservations,undefined);
+let stubs=0,river=0,reinforcement=0;
+for(const h of Object.values(enriched.hexes))for(const s of Object.values(h.sides)){
+ stubs+=(s.svgRailObservations||[]).length;
+ river+=(s.svgRiverObservations||[]).length;
+ reinforcement+=(s.svgReinforcementObservations||[]).length;
+ assert.equal(s.movementAuthorized,undefined);
+}
+assert.equal(stubs,176);assert.equal(river,ledger.counts.riverSideObservations);
+assert.equal(reinforcement,ledger.counts.reinforcementSideObservations);
+assert.equal(enriched.railLinksMapped,85,'existing registered rail links must not be replaced');
+assert.equal(ledger.authorizedForMovement,false);
+assert.deepEqual(ledger.railDerivedNotRegistered,[['1801','1802'],['1804','1805'],['1807','1808']]);
+const broken=structuredClone(ledger);
+broken.hexes['1801'].railStubs.NE={to:'9999',sourceSvgIds:['path346'],visualOnly:true,status:'svg-derived-visual-crossing'};
+assert.throws(()=>V.withSvgLinearObservations(original,broken,map),/invalid rail observation/);
+const incomplete=structuredClone(ledger);delete incomplete.hexes['1801'];
+assert.throws(()=>V.withSvgLinearObservations(original,incomplete,map),/incomplete/);
+assert.throws(()=>V.withSvgLinearObservations(original,{...ledger,authorizedForMovement:true},map),/invalid svg linear ledger/);
+console.log('arduous-svg-linear-hex: PASS', {stubs,river,reinforcement});

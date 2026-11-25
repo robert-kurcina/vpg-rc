@@ -1,0 +1,47 @@
+{
+  "checkpoint": 246,
+  "version": "v480",
+  "status": "PASS",
+  "assertions": 57,
+  "authorization": "user-adjudicated-Turn-1-four-hex-combat-rule-only",
+  "sourceRulesSha256": "d55e8f0e567d1f8c7907c4fc8368954ec0e5fa8d6fe9e8e71c61acf9bb3c3756",
+  "startingRomanianSetupHexes": [
+    "0709",
+    "0809",
+    "0910",
+    "1010"
+  ],
+  "eligibleSovietOriginalHexes": [
+    "0708",
+    "0808",
+    "1110"
+  ],
+  "verifiedAgainstActualCandidate": {
+    "hexes": 165,
+    "edges": 442,
+    "campaignActions": 8,
+    "axisRomanianUnitMovedFrom": "0910",
+    "axisRomanianUnitMovedTo": "0909",
+    "endToEndSovietFirstTurnAttack": {
+      "defenderHex": "0709",
+      "attackers": [
+        "kiev-front-r03c06"
+      ]
+    }
+  },
+  "scope": {
+    "historicalCountryBoundaryCertified": false,
+    "scenarioScopedFirstTurnTargetConvention": true,
+    "noSourceTerritoryDraftPromoted": true,
+    "gameplayMovementGraphCertified": false,
+    "productionKievPlayable": false,
+    "noSourceMapChange": true,
+    "noCommonCRTChange": true
+  },
+  "provenance": {
+    "graph": "f63cc74fac795875fb89e38167a1f2fb70b78712480df7ce4fe20060c78f1c36",
+    "map": "dcf72e17ed9f1ee22f65bcd11e41916d9c3bfc3feb25f2a39731f7025e067d3f",
+    "combat": "62769163272302c17a85aadd9916de6bd76ff9b6bc85ec03a23c37e1c51150f3",
+    "rule": "d55e8f0e567d1f8c7907c4fc8368954ec0e5fa8d6fe9e8e71c61acf9bb3c3756"
+  }
+}

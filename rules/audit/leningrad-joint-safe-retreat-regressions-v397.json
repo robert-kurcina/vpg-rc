@@ -1,0 +1,192 @@
+{
+  "checkpoint": 163,
+  "version": "v397",
+  "fullRegressionStatus": "inconclusive-in-combined-run",
+  "plannedCommands": 38,
+  "passedCommandsInCapturedIncompleteRuns": 29,
+  "completedCommandObservations": [
+    {
+      "index": 1,
+      "command": "node scripts/verify-campaign-maps.js",
+      "elapsedSeconds": 0.29,
+      "run": "cp163_core.log"
+    },
+    {
+      "index": 2,
+      "command": "node tests/b4m-native-combat-v361.test.js",
+      "elapsedSeconds": 0.54,
+      "run": "cp163_core.log"
+    },
+    {
+      "index": 3,
+      "command": "node tests/b4m-native-redeployment-campaign-v378.test.js",
+      "elapsedSeconds": 15.86,
+      "run": "cp163_core.log"
+    },
+    {
+      "index": 4,
+      "command": "node tests/b4m-native-tournament-reference-v375.test.js",
+      "elapsedSeconds": 0.08,
+      "run": "cp163_core.log"
+    },
+    {
+      "index": 5,
+      "command": "node tests/forest-no-shadow-v373.test.js",
+      "elapsedSeconds": 0.55,
+      "run": "cp163_regression.log"
+    },
+    {
+      "index": 6,
+      "command": "node tests/historical-air-sea-support-v385.test.js",
+      "elapsedSeconds": 0.16,
+      "run": "cp163_regression.log"
+    },
+    {
+      "index": 7,
+      "command": "node tests/historical-combat-consequences-v359.test.js",
+      "elapsedSeconds": 0.51,
+      "run": "cp163_regression.log"
+    },
+    {
+      "index": 8,
+      "command": "node tests/historical-combat-session-v386.test.js",
+      "elapsedSeconds": 1.04,
+      "run": "cp163_regression.log"
+    },
+    {
+      "index": 9,
+      "command": "node tests/historical-fleet-forced-displacement-v384.test.js",
+      "elapsedSeconds": 0.22,
+      "run": "cp163_regression.log"
+    },
+    {
+      "index": 10,
+      "command": "node tests/historical-fleet-opening-movement-v383.test.js",
+      "elapsedSeconds": 0.14,
+      "run": "cp163_regression.log"
+    },
+    {
+      "index": 11,
+      "command": "node tests/historical-forced-retreat-v380.test.js",
+      "elapsedSeconds": 0.43,
+      "run": "cp163_regression.log"
+    },
+    {
+      "index": 12,
+      "command": "node tests/historical-overstack-retreat-v381.test.js",
+      "elapsedSeconds": 0.19,
+      "run": "cp163_regression.log"
+    },
+    {
+      "index": 13,
+      "command": "node tests/historical-port-fleet-retreat-v382.test.js",
+      "elapsedSeconds": 0.3,
+      "run": "cp163_regression.log"
+    },
+    {
+      "index": 14,
+      "command": "node tests/historical-safe-retreat-options-v379.test.js",
+      "elapsedSeconds": 0.27,
+      "run": "cp163_regression.log"
+    },
+    {
+      "index": 15,
+      "command": "node tests/leningrad-combat-commitment-v318.test.js",
+      "elapsedSeconds": 0.13,
+      "run": "cp163_regression.log"
+    },
+    {
+      "index": 16,
+      "command": "node tests/leningrad-combat-geography-v318.test.js",
+      "elapsedSeconds": 0.12,
+      "run": "cp163_regression.log"
+    },
+    {
+      "index": 17,
+      "command": "node tests/leningrad-full-inventory-v355.test.js",
+      "elapsedSeconds": 0.04,
+      "run": "cp163_regression.log"
+    },
+    {
+      "index": 18,
+      "command": "node tests/leningrad-phase-movement-pilot-v318.test.js",
+      "elapsedSeconds": 0.08,
+      "run": "cp163_regression.log"
+    },
+    {
+      "index": 19,
+      "command": "node tests/leningrad-reinforcement-ledger-v323.test.js",
+      "elapsedSeconds": 0.03,
+      "run": "cp163_regression.log"
+    },
+    {
+      "index": 20,
+      "command": "node tests/scenario-opening-bridge-v358.test.js",
+      "elapsedSeconds": 0.16,
+      "run": "cp163_regression.log"
+    },
+    {
+      "index": 21,
+      "command": "node tests/shared-render-profiles-v356.test.js",
+      "elapsedSeconds": 0.17,
+      "run": "cp163_regression.log"
+    },
+    {
+      "index": 22,
+      "command": "node tests/smoke-current.js",
+      "elapsedSeconds": 0.03,
+      "run": "cp163_regression.log"
+    },
+    {
+      "index": 24,
+      "command": "node tests/historical-campaign-continuation-v387.test.js",
+      "elapsedSeconds": 1.7,
+      "run": "cp163_regression.log"
+    },
+    {
+      "index": 25,
+      "command": "node tests/historical-buildup-campaign-v388.test.js",
+      "elapsedSeconds": 1.16,
+      "run": "cp163_regression.log"
+    },
+    {
+      "index": 26,
+      "command": "node tests/historical-housekeeping-eight-turn-v389.test.js",
+      "elapsedSeconds": 8.23,
+      "run": "cp163_regression.log"
+    },
+    {
+      "index": 27,
+      "command": "node tests/shared-historical-crt-v316.test.js",
+      "elapsedSeconds": 0.03,
+      "run": "cp163_regression.log"
+    },
+    {
+      "index": 28,
+      "command": "node tests/universal-scenario-contract-v317.test.js",
+      "elapsedSeconds": 0.03,
+      "run": "cp163_regression.log"
+    },
+    {
+      "index": 29,
+      "command": "node tests/universal-deployment-placement-v329.test.js",
+      "elapsedSeconds": 0.43,
+      "run": "cp163_regression.log"
+    },
+    {
+      "index": 35,
+      "command": "node tests/historical-postcombat-fleet-choices-v394.test.js",
+      "elapsedSeconds": 16.7,
+      "run": "cp163_core.log"
+    }
+  ],
+  "runnerLimitations": [
+    "Combined and sequential suite runners were interrupted by execution timeout/stalls despite many completed commands",
+    "The report deliberately does not claim a completed 38/38 run",
+    "Independent manual executions of the expensive Leningrad fresh render, Fleet stress test, mixed combat campaign, path and combat catalogs, and 3-battle integration passed but are not substituted for a complete batched run"
+  ],
+  "focusedAssertionEvidence": "rules/audit/leningrad-joint-safe-retreat-v397.json",
+  "previousCertifiedCheckpoint": "v396 has 37/37; these are historical results, not a substitute for v397 rerun",
+  "crt": "one unchanged B4M CRT for all 5 scenarios",
+  "visual": "protected accepted no-shadow exports unchanged"
+}

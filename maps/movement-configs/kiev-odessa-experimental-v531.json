@@ -1,0 +1,153 @@
+{
+  "schemaVersion": 1,
+  "terrainCosts": {
+    "open": 1,
+    "forest": 2,
+    "swamp": 2,
+    "city": 1,
+    "major-city": 1,
+    "fortification": 1
+  },
+  "railCost": 1,
+  "maxStack": 2,
+  "sovietArmyMax": 1,
+  "mapBinding": "source-pinned-261-hex-experimental-graph",
+  "executableStatus": "explicit-experimental-play-v531-not-historically-certified",
+  "firstTurnSurpriseMovement": false,
+  "nationalStackExclusions": [
+    [
+      "romanian",
+      "hungarian"
+    ]
+  ],
+  "zocAcrossImpassableHexsides": true,
+  "majorRiverExtraCost": 1,
+  "id": "kiev-odessa",
+  "source": [
+    "references/rules/kiev-rules.pdf \u00a7\u00a77.1, 8.1, 9.1\u20139.4",
+    "references/rules/kiev-player-aid.webp Terrain Effects Chart",
+    "references/rules/odessa-rules.pdf \u00a79.4.3 (both sides cavalry; half MP, can begin in EZOC)",
+    "references/rules/odessa-rules.pdf \u00a79.4.4 (Romanian Home Army/Bessarabia annexation)",
+    "references/rules/odessa-rules.pdf \u00a79.4.5 (Hungarian territory restriction)"
+  ],
+  "fullSpecialMovementClasses": {
+    "german": [
+      "panzer",
+      "motorized"
+    ],
+    "soviet": [
+      "mechanized"
+    ]
+  },
+  "axisArmyMax": 1,
+  "halfSpecialMovementClasses": {
+    "german": [
+      "cavalry"
+    ],
+    "soviet": [
+      "cavalry"
+    ]
+  },
+  "specialMoveFromEZOCClasses": {
+    "german": [
+      "cavalry"
+    ],
+    "soviet": [
+      "cavalry"
+    ]
+  },
+  "unresolvedOdessaRules": [
+    "Source-bound Home Army identity in active starting units and combat Advance/Retreat gateway acceptance",
+    "\u00a715 Fleet and port rules",
+    "Odessa setup and reinforcement integration",
+    "Odessa victory isolation adjudication and campaign acceptance",
+    "Combined 172 newly appended traversable connections remain historically unqualified; this scope is experimental only"
+  ],
+  "territorialPolicy": {
+    "schemaVersion": 1,
+    "regionField": "sourceTerritory",
+    "regions": [
+      "romania",
+      "bessarabia",
+      "outside"
+    ],
+    "restrictedSourceUnits": [
+      {
+        "sourceIdentityKey": "romanian-home-army",
+        "nationality": "romanian",
+        "sourceFaceIds": [
+          "odessa-front-r01c05",
+          "odessa-front-r02c05",
+          "odessa-back-r01c04",
+          "odessa-back-r02c04"
+        ],
+        "beforeAnnexation": [
+          "romania"
+        ],
+        "afterAnnexation": [
+          "romania",
+          "bessarabia"
+        ],
+        "forbidAdvanceAcrossRomanianBorder": true
+      }
+    ],
+    "nationalEntryExclusions": [
+      {
+        "nationality": "hungarian",
+        "regions": [
+          "romania",
+          "bessarabia"
+        ]
+      }
+    ],
+    "annexation": {
+      "region": "bessarabia",
+      "flag": "bessarabiaAnnexed",
+      "clearOfOwner": "soviet",
+      "approvedFootprint": {
+        "boardId": "kiev-odessa-composite-v256",
+        "mapHexCount": 261,
+        "region": "bessarabia",
+        "evidence": "user-adjudicated",
+        "source": "user-confirmed-hostcell-list-2026-11-22",
+        "hostCells": [
+          "1111",
+          "1112",
+          "1113",
+          "1114",
+          "1115",
+          "1116",
+          "1211",
+          "1212",
+          "1213",
+          "1214",
+          "1215",
+          "1312",
+          "1313",
+          "1314",
+          "1315",
+          "1316",
+          "1413",
+          "1414",
+          "1514"
+        ]
+      }
+    },
+    "approvedLandMask": {
+      "boardId": "kiev-odessa-composite-v256",
+      "source": "user-approved-seven-hex-romania-mask-v575",
+      "romania": [
+        "0709",
+        "0809",
+        "0910",
+        "1010",
+        "1012",
+        "1014",
+        "1016"
+      ]
+    }
+  },
+  "territoryCoverage": "User-approved gameplay mask: 7 Romania, 19 Bessarabia, 204 outside, 31 sea excluded.",
+  "experimentalGraphScope": "source-pinned-composite-experimental-v531",
+  "allowFriendlyOverstackTransit": true
+}

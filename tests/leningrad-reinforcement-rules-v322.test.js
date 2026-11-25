@@ -1,0 +1,33 @@
+const assert=require('node:assert/strict');
+const rules=require('../core/leningrad_reinforcement_rules.js');
+const a=rules.schedule;
+assert.equal(a.length,10);
+assert.deepEqual(a.filter(s=>s.owner==='german').map(s=>s.turn),[4,4,6]);
+assert.deepEqual(a.filter(s=>s.type==='infantry-army').map(s=>s.strength),['reduced','reduced','reduced','full','full','full']);
+assert.equal(rules.due(1).length,0);
+assert.equal(rules.due(4,'soviet').length,1);
+assert.equal(rules.due(7,'soviet').length,2);
+assert.equal(rules.due(8,'soviet').length,1);
+assert.throws(()=>rules.due(9));assert.throws(()=>rules.due(4,'axis'));
+assert.equal(a.every(s=>s.unitFaceId===null&&!s.identityVerified),true);
+const german=rules.due(4,'german')[0];
+const ctx={hexExists:x=>x==='0501',friendlyEntryEdge:(o,x)=>o==='german'&&x==='0501',enemyOccupies:()=>false,enemyZoc:()=>false,canStack:()=>true};
+let r=rules.validatePlacement({slotId:german.slotId,turn:4,owner:'german',hex:'0501',context:ctx});
+assert.equal(r.valid,true);assert.equal(r.historicalRosterAuthorized,false);assert.equal(r.stateChanged,false);
+for(const [field,value] of [['friendlyEntryEdge',()=>false],['enemyOccupies',()=>true],['enemyZoc',()=>true],['canStack',()=>false]]){
+ const bad=rules.validatePlacement({slotId:german.slotId,turn:4,owner:'german',hex:'0501',context:{...ctx,[field]:value}});
+ assert.equal(bad.valid,false,field);
+}
+assert.equal(rules.validatePlacement({slotId:german.slotId,turn:3,owner:'german',hex:'0501',context:ctx}).valid,false);
+assert.equal(rules.validatePlacement({slotId:german.slotId,turn:4,owner:'german',hex:'0501',context:{}}).valid,false);
+const militia=rules.due(3,'soviet')[0];
+const mctx={hexExists:x=>x==='1201',isLeningrad:x=>x==='1201',enemyOccupies:()=>false,enemyZoc:()=>true};
+assert.equal(rules.validatePlacement({slotId:militia.slotId,turn:3,owner:'soviet',hex:'1201',context:mctx}).valid,true);
+assert.equal(rules.validatePlacement({slotId:militia.slotId,turn:3,owner:'soviet',hex:'1201',context:{...mctx,enemyOccupies:()=>true}}).valid,false);
+assert.equal(rules.validatePlacement({slotId:militia.slotId,turn:3,owner:'soviet',hex:'1201',context:{...mctx,isLeningrad:()=>false}}).valid,false);
+const air=rules.due(6,'german')[0];assert.equal(rules.validatePlacement({slotId:air.slotId,turn:6,owner:'german',hex:'0501',context:ctx}).valid,false);
+assert.equal(rules.expiration({turn:4,owner:'german',placedSlotIds:[german.slotId]}).lostGroundSlotIds.length,1);
+assert.equal(rules.expiration({turn:6,owner:'german'}).unresolvedSupportSlotIds.length,1);
+assert.throws(()=>rules.expiration({turn:4,owner:'german',placedSlotIds:[german.slotId,german.slotId]}));
+assert.throws(()=>rules.expiration({turn:4,owner:'german',placedSlotIds:[militia.slotId]}));
+console.log('Leningrad reinforcement source-schedule/admission: passed');

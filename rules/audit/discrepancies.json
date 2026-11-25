@@ -1,0 +1,113 @@
+{
+  "schemaVersion": 1,
+  "items": [
+    {
+      "id": "B4M-AUDIT-001",
+      "kind": "documentation-ambiguity",
+      "source": [
+        "legacy/engine.js:2",
+        "legacy/engine.js:legalMoves",
+        "b4m-rules.pdf:12.1",
+        "b4m-rules.pdf:12.2"
+      ],
+      "finding": "Header says mud infantry unaffected, but that is correct for combat strengths only. All non-rail movement is limited to one hex during mud under \u00a712.1.",
+      "disposition": "clarify-header-in-future; preserve executable behavior",
+      "status": "explained-no-runtime-conflict"
+    },
+    {
+      "id": "B4M-AUDIT-002",
+      "kind": "unverified-rule-parity",
+      "source": [
+        "legacy/engine.js:retreatOptions",
+        "b4m-rules.pdf:9.3"
+      ],
+      "finding": "Legacy retreat search permits paths beyond two hexes and at most one EZOC transit. Formal comparison to Oberlabs executable paths has not yet been frozen.",
+      "disposition": "differential retreat fixtures required",
+      "status": "open"
+    },
+    {
+      "id": "B4M-AUDIT-003",
+      "kind": "test-coverage-gap",
+      "source": [
+        "rules/tests/freeze-b4m.js"
+      ],
+      "finding": "Single balanced-policy seed baseline does not cover manual setup, explicit retreat/stand-fast decisions, alternate AI policies, or source conflict variants.",
+      "disposition": "add direct input/output differential fixtures before kernel extraction",
+      "status": "open"
+    },
+    {
+      "id": "B4M-AUDIT-004",
+      "kind": "source-vs-executable-disagreement",
+      "source": [
+        "references/rules/b4m-rules.pdf:10.1",
+        "legacy/engine.js:replacementOptions",
+        "legacy/engine.js:applyReplacement",
+        "rules/tests/b4m-known-replacement-gap.js"
+      ],
+      "finding": "Printed \u00a710.1 forbids creating a full-strength unit from an off-map replacement using two steps in one Player Turn. Legacy API permits enter(s49) followed by restore(s49) in turn two when called sequentially. This is reproducible and not a proof that existing AI turn policy uses the sequence. User expressly ruled on 2026-11-18 that the unit must remain reduced on entry; restoration must occur in a later replacement/resupply opportunity.",
+      "disposition": "DONE: user forbids same-turn enter+restore; enforce with per-turn replacement-entry history; later-turn restoration is legal when otherwise eligible. The pre-change engine is frozen as legacy/engine-v316-frozen.js.",
+      "status": "resolved-user-ruling"
+    },
+    {
+      "id": "B4M-AUDIT-005",
+      "kind": "architecture-parity-gap",
+      "source": [
+        "legacy/engine.js:playSide",
+        "legacy/engine.js:endSide",
+        "rules/tests/b4m-multiattacker-phase.js"
+      ],
+      "finding": "playSide executes replacements, special movement, combat, ordinary movement and endSide as an AI policy macro; the public state does not enforce a nine-phase action transition model. Fourteen AI half-turns are reproducible, but this is not evidence that a human can advance all phases individually or that event ordering matches independent Oberlabs UI.",
+      "disposition": "WIP: preserve Oberlabs UX sequencing and decisions as authority. Capture actual Oberlabs user-visible actions before designing the v321/v322 phase API; do not derive phase UX from PDF headings.",
+      "status": "open"
+    },
+    {
+      "id": "B4M-AUDIT-006",
+      "kind": "action-validation-rng-side-effect",
+      "source": [
+        "legacy/engine.js:resolveAttack",
+        "legacy/engine.js:rollCombatDie",
+        "rules/tests/b4m-invalid-choice-rng.js"
+      ],
+      "finding": "For a valid battle with an invalid explicit player choice and no supplied die, resolveAttack consumes a seeded random die before validating the choice. It throws without changing unit positions, strengths, or log, but seed advances. Supplying an explicit die keeps state entirely unchanged. This may desynchronize replays if a browser sends malformed choices. UI inspection: prepareCurrentHumanBattle rolls once after attack declaration and stores pendingBattle.die; the subsequent consequence choice resolves with that explicit die, so this side effect is not demonstrated in the ordinary human UI.",
+      "disposition": "DEFERRED: lower-level direct-API side effect; revisit at the v320\u2013v322 common action API boundary. Preserve B4M UI timing; independently verify upstream Oberlabs and test invalid-command RNG isolation.",
+      "status": "deferred-api-only"
+    },
+    {
+      "id": "B4M-AUDIT-007",
+      "kind": "ux-state-characterization",
+      "source": [
+        "legacy/ui.js:saveUndo",
+        "legacy/ui.js:resolveCurrentHumanBattle",
+        "legacy/ui.js:undo.onclick",
+        "rules/tests/b4m-human-combat-undo.js",
+        "rules/tests/b4m-browser-combat-undo.py"
+      ],
+      "finding": "Undo restores the serialized pending battle, die and seed, but resets transient combatChoice to defaults rather than preserving earlier casualty priority, retreat choice, or advance selection. Potential usability surprise; not verified against upstream Oberlabs. Checkpoint 10 browser-click resolve/Undo/replay across six CRT outcomes and nested two-combat queue confirms serialized battle/die restoration; the transient-selection default reset remains as characterized.",
+      "disposition": "DEFERRED: preserve baseline; compare upstream UX before any separate choice-state snapshot enhancement.",
+      "status": "deferred-ux-enhancement"
+    },
+    {
+      "id": "B4M-AUDIT-008",
+      "kind": "replacement-option-visibility-risk",
+      "source": [
+        "legacy/ui.js:renderActions",
+        "rules/tests/b4m-dual-browser-parity.py"
+      ],
+      "finding": "Replacement UI sorts all legal entry/restore actions then slices to the first 70. Some engine-legal choices may be omitted from the rendered list; in the dual-run fixture the frozen engine exposes Restore s49 through its API but that specific button is not shown. This is a local implementation issue, not proof of upstream Oberlabs behavior.",
+      "disposition": "WIP: quantify affected scenarios and compare original Oberlabs user flow before changing visibility/pagination; retain implementation for baseline characterization.",
+      "status": "open-local-ux-gap"
+    },
+    {
+      "id": "B4M-AUDIT-009",
+      "kind": "player-aid-vs-oberlabs-profile",
+      "source": [
+        "references/rules/b4m-aid.webp:Game Turn Record Track",
+        "legacy/data/rules_profiles.json:oberlabs_2009_web.sovietReplacements",
+        "rules/audit/b4m-player-aid-atomic.json"
+      ],
+      "finding": "The bundled Player Aid prints five Soviet replacement steps on game turns 3 and 4, whereas the local Oberlabs profile sets four for mud turns. The Player Aid image is clear; this is not a transcription ambiguity.",
+      "disposition": "WIP: retain Oberlabs-first runtime profile (four during mud) pending independently obtained upstream Oberlabs executable behavior; do not silently substitute aid value.",
+      "status": "open-source-profile-difference"
+    }
+  ]
+}

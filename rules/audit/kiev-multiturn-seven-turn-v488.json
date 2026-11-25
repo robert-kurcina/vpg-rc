@@ -1,0 +1,112 @@
+{
+  "checkpoint": 254,
+  "version": "v488",
+  "scope": "one 7-turn continuous source-legal illustrative Kiev browser campaign with three German/Soviet combats in Turns 1 and 3, including DR retreat and advance, three replacements, movement, reinforcements and terminal adjudication",
+  "limits": [
+    "Source-legal illustrative deployment is not certified as exact historical setup",
+    "Three selected battles across two turns do not establish exhaustive strategic AI or every historical combat branch",
+    "Kiev\u2013Odessa remains nonplayable"
+  ],
+  "assertions": 91,
+  "browserChecks": 262,
+  "stages": [
+    {
+      "stage": 1,
+      "browserChecks": 80,
+      "actionCount": 27,
+      "saveSha256": "be842f786c32a1581524ee5634675419e517d863d8ab6cfefc7bdfc2fefd021e"
+    },
+    {
+      "stage": 2,
+      "browserChecks": 84,
+      "actionCount": 57,
+      "saveSha256": "34f25d50e9e4da557bea6c7b0b7712be3de6686f9251ef9b5c704991ae2094b3"
+    },
+    {
+      "stage": 3,
+      "browserChecks": 63,
+      "actionCount": 81,
+      "saveSha256": "5f74ae09d57c13ccb917a96e5801dd4cea2f9cf9d1ba87eb71d12613f420c739"
+    },
+    {
+      "stage": 4,
+      "browserChecks": 35,
+      "actionCount": 92,
+      "saveSha256": "a1bbfb9ec666ecfe5d3652091d121575edc1fc5b91f21c77a1e61dc70af07d74"
+    }
+  ],
+  "actions": 92,
+  "turns": 7,
+  "combatResults": [
+    {
+      "turn": 1,
+      "actor": "german",
+      "target": "0205",
+      "outcome": "EX",
+      "die": 3,
+      "air": "kiev-front-r03c01"
+    },
+    {
+      "turn": 1,
+      "actor": "soviet",
+      "target": "0204",
+      "outcome": "AL",
+      "die": 6,
+      "air": null
+    },
+    {
+      "turn": 3,
+      "actor": "german",
+      "target": "0304",
+      "outcome": "DR",
+      "die": 1,
+      "air": null
+    }
+  ],
+  "replacements": [
+    {
+      "turn": 2,
+      "unitId": "kiev-front-r03c04",
+      "hex": null
+    },
+    {
+      "turn": 2,
+      "unitId": "kiev-front-r04c03",
+      "hex": "1601"
+    },
+    {
+      "turn": 4,
+      "unitId": "kiev-front-r01c01",
+      "hex": null
+    }
+  ],
+  "reinforcements": 4,
+  "groundMoves": 1,
+  "terminal": {
+    "axisControlledCount": 2,
+    "cityControl": {
+      "Chernigov": "soviet",
+      "Chernovtsy": "soviet",
+      "Iasi": "german",
+      "Kiev": "soviet",
+      "Kirovograd": "soviet",
+      "Kovel": "soviet",
+      "Lublin": "german",
+      "Lvov": "soviet",
+      "Rovno": "soviet",
+      "Sarny": "soviet",
+      "Shepetovka": "soviet",
+      "Stanislavov": "soviet",
+      "Tarnopol": "soviet",
+      "Uman": "soviet",
+      "Vinnitsa": "soviet",
+      "Zhitomir": "soviet"
+    },
+    "onlyRemainingCity": null,
+    "onlyRemainingCityIsolated": null,
+    "outcome": "soviet-victory",
+    "reason": "axis-controls-at-most-threshold",
+    "totalCities": 16
+  },
+  "screenshot": "rules/audit/visual/kiev-multiturn-terminal-browser-v488.png"
+}

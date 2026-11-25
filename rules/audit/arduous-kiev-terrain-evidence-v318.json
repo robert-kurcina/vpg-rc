@@ -1,0 +1,1955 @@
+{
+  "schemaVersion": 1,
+  "status": "source-readiness-audit-not-executable",
+  "maps": {
+    "arduous": {
+      "mapId": "arduous-native-draft-v231",
+      "sourceGame": "The Arduous Beginning",
+      "sourceImageSHA256": "9e41cf83ff001a616c5b6651784b8ac8206fc2eb04048dc41b1a3a0b3c3fa8f4",
+      "geometryStatus": "image-grid-contrast-fit-visual-candidate",
+      "authorizedForMovement": false,
+      "coverage": {
+        "markedTerrainHexes": 50,
+        "reviewedOpenTerrainHexes": 105,
+        "unresolvedTerrainHexes": 0,
+        "unknownTerrainHexes": 0,
+        "railCandidateLinks": 85,
+        "candidateHexsideFeatureMarks": 0
+      },
+      "verifiedAuthoredTerrainHexes": [
+        "0208",
+        "0305",
+        "0307",
+        "0309",
+        "0310",
+        "0410",
+        "0411",
+        "0509",
+        "0510",
+        "0610",
+        "0611",
+        "0706",
+        "0708",
+        "0709",
+        "0810",
+        "0811",
+        "0910",
+        "1004",
+        "1006",
+        "1009",
+        "1010",
+        "1011",
+        "1102",
+        "1105",
+        "1106",
+        "1107",
+        "1108",
+        "1110",
+        "1206",
+        "1207",
+        "1208",
+        "1209",
+        "1210",
+        "1211",
+        "1306",
+        "1307",
+        "1403",
+        "1504",
+        "1609",
+        "1701",
+        "1702",
+        "1703",
+        "1707",
+        "1708",
+        "1709",
+        "1710",
+        "1801",
+        "1808",
+        "1809",
+        "1811"
+      ],
+      "reviewedOpenTerrainHexes": [
+        "0105",
+        "0106",
+        "0107",
+        "0108",
+        "0109",
+        "0110",
+        "0205",
+        "0206",
+        "0207",
+        "0209",
+        "0210",
+        "0211",
+        "0306",
+        "0308",
+        "0405",
+        "0406",
+        "0407",
+        "0408",
+        "0409",
+        "0504",
+        "0505",
+        "0506",
+        "0507",
+        "0508",
+        "0604",
+        "0605",
+        "0606",
+        "0607",
+        "0608",
+        "0609",
+        "0703",
+        "0704",
+        "0705",
+        "0707",
+        "0710",
+        "0803",
+        "0804",
+        "0805",
+        "0806",
+        "0807",
+        "0808",
+        "0809",
+        "0903",
+        "0904",
+        "0905",
+        "0906",
+        "0907",
+        "0908",
+        "0909",
+        "1003",
+        "1005",
+        "1007",
+        "1008",
+        "1103",
+        "1104",
+        "1109",
+        "1202",
+        "1203",
+        "1204",
+        "1205",
+        "1302",
+        "1303",
+        "1304",
+        "1305",
+        "1308",
+        "1309",
+        "1310",
+        "1402",
+        "1404",
+        "1405",
+        "1406",
+        "1407",
+        "1408",
+        "1409",
+        "1410",
+        "1411",
+        "1501",
+        "1502",
+        "1503",
+        "1505",
+        "1506",
+        "1507",
+        "1508",
+        "1509",
+        "1510",
+        "1601",
+        "1602",
+        "1603",
+        "1604",
+        "1605",
+        "1606",
+        "1607",
+        "1608",
+        "1610",
+        "1611",
+        "1704",
+        "1705",
+        "1706",
+        "1802",
+        "1803",
+        "1804",
+        "1805",
+        "1806",
+        "1807",
+        "1810"
+      ],
+      "terrainReviewHexes": [],
+      "unknownTerrainHexes": [],
+      "railReviewEdges": [
+        "0106:0207",
+        "0109:0209",
+        "0110:0211",
+        "0205:0305",
+        "0207:0208",
+        "0208:0308",
+        "0209:0308",
+        "0210:0211",
+        "0210:0309",
+        "0211:0310",
+        "0305:0405",
+        "0308:0309",
+        "0308:0408",
+        "0308:0409",
+        "0310:0410",
+        "0405:0505",
+        "0407:0408",
+        "0407:0506",
+        "0409:0508",
+        "0410:0509",
+        "0410:0510",
+        "0505:0606",
+        "0506:0606",
+        "0508:0609",
+        "0509:0609",
+        "0510:0611",
+        "0606:0705",
+        "0606:0706",
+        "0609:0610",
+        "0609:0708",
+        "0610:0611",
+        "0611:0710",
+        "0705:0805",
+        "0706:0807",
+        "0708:0808",
+        "0710:0811",
+        "0803:0804",
+        "0804:0805",
+        "0807:0907",
+        "0808:0907",
+        "0811:0910",
+        "0907:1007",
+        "0907:1008",
+        "0910:1010",
+        "1007:1106",
+        "1008:1108",
+        "1010:1110",
+        "1102:1203",
+        "1106:1206",
+        "1108:1209",
+        "1110:1211",
+        "1203:1303",
+        "1206:1305",
+        "1209:1309",
+        "1211:1310",
+        "1303:1404",
+        "1305:1405",
+        "1309:1410",
+        "1310:1411",
+        "1402:1403",
+        "1402:1501",
+        "1403:1404",
+        "1404:1405",
+        "1404:1504",
+        "1405:1505",
+        "1408:1409",
+        "1408:1507",
+        "1409:1410",
+        "1410:1510",
+        "1411:1510",
+        "1501:1602",
+        "1504:1605",
+        "1505:1506",
+        "1505:1605",
+        "1506:1507",
+        "1510:1610",
+        "1602:1701",
+        "1605:1704",
+        "1610:1709",
+        "1701:1802",
+        "1704:1705",
+        "1704:1805",
+        "1705:1806",
+        "1709:1810",
+        "1806:1807"
+      ],
+      "railCandidateStatuses": {
+        "source-svg-railway-center-snap-visual-candidate": 85
+      },
+      "hexsideCandidateKinds": {},
+      "hexsideReviewMarks": [],
+      "limitations": [
+        "Source-reviewed whole-cell base terrain does not certify hexside movement",
+        "Geometry calibration is a visual candidate, not a certified movement lattice",
+        "Rail center snaps and river/major-river features are not gameplay certified"
+      ]
+    },
+    "kiev": {
+      "mapId": "kiev-native-draft-v231",
+      "sourceGame": "Objective: Kiev",
+      "sourceImageSHA256": "c08af048799b8d0fd35ed9d1f128e94e03a404f5ddc497efd792fccbbdeb8df2",
+      "geometryStatus": "image-grid-contrast-fit-visual-candidate",
+      "authorizedForMovement": false,
+      "coverage": {
+        "markedTerrainHexes": 149,
+        "reviewedOpenTerrainHexes": 0,
+        "unresolvedTerrainHexes": 16,
+        "unknownTerrainHexes": 0,
+        "railCandidateLinks": 93,
+        "candidateHexsideFeatureMarks": 230
+      },
+      "verifiedAuthoredTerrainHexes": [
+        "0101",
+        "0102",
+        "0103",
+        "0104",
+        "0105",
+        "0202",
+        "0203",
+        "0204",
+        "0205",
+        "0301",
+        "0302",
+        "0303",
+        "0304",
+        "0305",
+        "0306",
+        "0401",
+        "0402",
+        "0403",
+        "0405",
+        "0406",
+        "0407",
+        "0501",
+        "0503",
+        "0504",
+        "0505",
+        "0506",
+        "0508",
+        "0601",
+        "0602",
+        "0603",
+        "0604",
+        "0605",
+        "0606",
+        "0607",
+        "0608",
+        "0701",
+        "0702",
+        "0703",
+        "0704",
+        "0705",
+        "0707",
+        "0709",
+        "0710",
+        "0711",
+        "0801",
+        "0802",
+        "0804",
+        "0805",
+        "0806",
+        "0807",
+        "0808",
+        "0809",
+        "0810",
+        "0901",
+        "0903",
+        "0904",
+        "0906",
+        "0907",
+        "0908",
+        "0909",
+        "0910",
+        "0911",
+        "1001",
+        "1002",
+        "1003",
+        "1004",
+        "1005",
+        "1006",
+        "1007",
+        "1008",
+        "1009",
+        "1101",
+        "1102",
+        "1103",
+        "1104",
+        "1106",
+        "1108",
+        "1109",
+        "1110",
+        "1111",
+        "1201",
+        "1202",
+        "1203",
+        "1204",
+        "1205",
+        "1206",
+        "1207",
+        "1208",
+        "1209",
+        "1210",
+        "1301",
+        "1302",
+        "1303",
+        "1304",
+        "1305",
+        "1306",
+        "1307",
+        "1308",
+        "1309",
+        "1310",
+        "1311",
+        "1401",
+        "1402",
+        "1403",
+        "1405",
+        "1406",
+        "1407",
+        "1409",
+        "1410",
+        "1501",
+        "1502",
+        "1503",
+        "1504",
+        "1505",
+        "1506",
+        "1507",
+        "1508",
+        "1509",
+        "1510",
+        "1511",
+        "1601",
+        "1603",
+        "1604",
+        "1605",
+        "1606",
+        "1607",
+        "1608",
+        "1609",
+        "1610",
+        "1701",
+        "1702",
+        "1703",
+        "1704",
+        "1705",
+        "1706",
+        "1707",
+        "1709",
+        "1710",
+        "1711",
+        "1801",
+        "1802",
+        "1803",
+        "1804",
+        "1805",
+        "1806",
+        "1807",
+        "1808",
+        "1809",
+        "1810"
+      ],
+      "reviewedOpenTerrainHexes": [],
+      "terrainReviewHexes": [
+        "0201",
+        "0404",
+        "0502",
+        "0507",
+        "0706",
+        "0708",
+        "0803",
+        "0902",
+        "0905",
+        "1010",
+        "1105",
+        "1107",
+        "1404",
+        "1408",
+        "1602",
+        "1708"
+      ],
+      "unknownTerrainHexes": [],
+      "railReviewEdges": [
+        "0102:0103",
+        "0102:0201",
+        "0103:0104",
+        "0104:0204",
+        "0201:0302",
+        "0204:0305",
+        "0302:0401",
+        "0305:0404",
+        "0401:0502",
+        "0404:0405",
+        "0404:0505",
+        "0405:0406",
+        "0405:0506",
+        "0501:0502",
+        "0502:0602",
+        "0505:0604",
+        "0505:0605",
+        "0506:0507",
+        "0507:0508",
+        "0507:0607",
+        "0602:0703",
+        "0604:0704",
+        "0605:0706",
+        "0607:0708",
+        "0703:0803",
+        "0704:0803",
+        "0706:0806",
+        "0708:0709",
+        "0709:0809",
+        "0801:0902",
+        "0802:0803",
+        "0802:0902",
+        "0803:0804",
+        "0804:0905",
+        "0806:0907",
+        "0809:0810",
+        "0810:0911",
+        "0902:1002",
+        "0905:1005",
+        "0907:1007",
+        "0911:1010",
+        "1002:1103",
+        "1005:1106",
+        "1007:1107",
+        "1010:1111",
+        "1103:1104",
+        "1103:1202",
+        "1103:1203",
+        "1104:1105",
+        "1105:1106",
+        "1105:1204",
+        "1106:1206",
+        "1107:1108",
+        "1107:1206",
+        "1108:1208",
+        "1201:1202",
+        "1203:1304",
+        "1204:1305",
+        "1205:1206",
+        "1205:1305",
+        "1208:1309",
+        "1304:1404",
+        "1305:1404",
+        "1305:1405",
+        "1309:1310",
+        "1310:1410",
+        "1404:1504",
+        "1405:1506",
+        "1504:1603",
+        "1504:1604",
+        "1506:1606",
+        "1510:1511",
+        "1510:1609",
+        "1601:1702",
+        "1603:1703",
+        "1604:1705",
+        "1606:1707",
+        "1607:1608",
+        "1607:1707",
+        "1608:1609",
+        "1608:1708",
+        "1702:1802",
+        "1703:1704",
+        "1703:1802",
+        "1704:1705",
+        "1705:1706",
+        "1705:1805",
+        "1706:1707",
+        "1707:1708",
+        "1707:1807",
+        "1807:1808",
+        "1808:1809",
+        "1809:1810"
+      ],
+      "railCandidateStatuses": {
+        "definitive-svg-finite-hexside-v427": 93
+      },
+      "hexsideCandidateKinds": {
+        "rail": 186,
+        "river": 20,
+        "majorRiver": 24
+      },
+      "hexsideReviewMarks": [
+        {
+          "cellId": "0102",
+          "direction": "NE",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "0102",
+          "direction": "S",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "0103",
+          "direction": "N",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "0103",
+          "direction": "S",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "0104",
+          "direction": "N",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "0104",
+          "direction": "SE",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "0201",
+          "direction": "SE",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "0201",
+          "direction": "SW",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "0204",
+          "direction": "NW",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "0204",
+          "direction": "SE",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "0301",
+          "direction": "SE",
+          "kind": "river",
+          "status": "source-visual-candidate-v234-not-playable"
+        },
+        {
+          "cellId": "0302",
+          "direction": "NE",
+          "kind": "river",
+          "status": "source-visual-candidate-v234-not-playable"
+        },
+        {
+          "cellId": "0302",
+          "direction": "NE",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "0302",
+          "direction": "NW",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "0305",
+          "direction": "NE",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "0305",
+          "direction": "NW",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "0401",
+          "direction": "NW",
+          "kind": "river",
+          "status": "source-visual-candidate-v234-not-playable"
+        },
+        {
+          "cellId": "0401",
+          "direction": "S",
+          "kind": "river",
+          "status": "source-visual-candidate-v234-not-playable"
+        },
+        {
+          "cellId": "0401",
+          "direction": "SE",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "0401",
+          "direction": "SW",
+          "kind": "river",
+          "status": "source-visual-candidate-v234-not-playable"
+        },
+        {
+          "cellId": "0401",
+          "direction": "SW",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "0402",
+          "direction": "N",
+          "kind": "river",
+          "status": "source-visual-candidate-v234-not-playable"
+        },
+        {
+          "cellId": "0402",
+          "direction": "NE",
+          "kind": "river",
+          "status": "source-visual-candidate-v234-not-playable"
+        },
+        {
+          "cellId": "0402",
+          "direction": "SE",
+          "kind": "river",
+          "status": "source-visual-candidate-v234-not-playable"
+        },
+        {
+          "cellId": "0403",
+          "direction": "NE",
+          "kind": "river",
+          "status": "source-visual-candidate-v234-not-playable"
+        },
+        {
+          "cellId": "0403",
+          "direction": "SE",
+          "kind": "river",
+          "status": "source-visual-candidate-v234-not-playable"
+        },
+        {
+          "cellId": "0404",
+          "direction": "NE",
+          "kind": "river",
+          "status": "source-visual-candidate-v234-not-playable"
+        },
+        {
+          "cellId": "0404",
+          "direction": "S",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "0404",
+          "direction": "SE",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "0404",
+          "direction": "SW",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "0405",
+          "direction": "N",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "0405",
+          "direction": "S",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "0405",
+          "direction": "SE",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "0406",
+          "direction": "N",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "0501",
+          "direction": "S",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "0502",
+          "direction": "N",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "0502",
+          "direction": "NW",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "0502",
+          "direction": "SE",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "0502",
+          "direction": "SW",
+          "kind": "river",
+          "status": "source-visual-candidate-v234-not-playable"
+        },
+        {
+          "cellId": "0503",
+          "direction": "NW",
+          "kind": "river",
+          "status": "source-visual-candidate-v234-not-playable"
+        },
+        {
+          "cellId": "0503",
+          "direction": "SW",
+          "kind": "river",
+          "status": "source-visual-candidate-v234-not-playable"
+        },
+        {
+          "cellId": "0504",
+          "direction": "NW",
+          "kind": "river",
+          "status": "source-visual-candidate-v234-not-playable"
+        },
+        {
+          "cellId": "0504",
+          "direction": "S",
+          "kind": "river",
+          "status": "source-visual-candidate-v234-not-playable"
+        },
+        {
+          "cellId": "0504",
+          "direction": "SW",
+          "kind": "river",
+          "status": "source-visual-candidate-v234-not-playable"
+        },
+        {
+          "cellId": "0505",
+          "direction": "N",
+          "kind": "river",
+          "status": "source-visual-candidate-v234-not-playable"
+        },
+        {
+          "cellId": "0505",
+          "direction": "NE",
+          "kind": "river",
+          "status": "source-visual-candidate-v234-not-playable"
+        },
+        {
+          "cellId": "0505",
+          "direction": "NE",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "0505",
+          "direction": "NW",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "0505",
+          "direction": "SE",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "0506",
+          "direction": "NW",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "0506",
+          "direction": "S",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "0507",
+          "direction": "N",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "0507",
+          "direction": "S",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "0507",
+          "direction": "SE",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "0508",
+          "direction": "N",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "0602",
+          "direction": "NW",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "0602",
+          "direction": "SE",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "0604",
+          "direction": "NE",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "0604",
+          "direction": "SW",
+          "kind": "river",
+          "status": "source-visual-candidate-v234-not-playable"
+        },
+        {
+          "cellId": "0604",
+          "direction": "SW",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "0605",
+          "direction": "NW",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "0605",
+          "direction": "SE",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "0607",
+          "direction": "NW",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "0607",
+          "direction": "SE",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "0703",
+          "direction": "NW",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "0703",
+          "direction": "SE",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "0704",
+          "direction": "NE",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "0704",
+          "direction": "SW",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "0706",
+          "direction": "NW",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "0706",
+          "direction": "SE",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "0708",
+          "direction": "NW",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "0708",
+          "direction": "S",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "0709",
+          "direction": "N",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "0709",
+          "direction": "SE",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "0801",
+          "direction": "SE",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "0802",
+          "direction": "NE",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "0802",
+          "direction": "S",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "0803",
+          "direction": "N",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "0803",
+          "direction": "NW",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "0803",
+          "direction": "S",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "0803",
+          "direction": "SW",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "0804",
+          "direction": "N",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "0804",
+          "direction": "SE",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "0806",
+          "direction": "NW",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "0806",
+          "direction": "SE",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "0809",
+          "direction": "NW",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "0809",
+          "direction": "S",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "0810",
+          "direction": "N",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "0810",
+          "direction": "SE",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "0902",
+          "direction": "NW",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "0902",
+          "direction": "SE",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "0902",
+          "direction": "SW",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "0905",
+          "direction": "NW",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "0905",
+          "direction": "SE",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "0907",
+          "direction": "NW",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "0907",
+          "direction": "SE",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "0911",
+          "direction": "NE",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "0911",
+          "direction": "NW",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "1002",
+          "direction": "NW",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "1002",
+          "direction": "SE",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "1005",
+          "direction": "NW",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "1005",
+          "direction": "SE",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "1007",
+          "direction": "NE",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "1007",
+          "direction": "NW",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "1010",
+          "direction": "SE",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "1010",
+          "direction": "SW",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "1103",
+          "direction": "NE",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "1103",
+          "direction": "NW",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "1103",
+          "direction": "S",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "1103",
+          "direction": "SE",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "1104",
+          "direction": "N",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "1104",
+          "direction": "S",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "1105",
+          "direction": "N",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "1105",
+          "direction": "NE",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "1105",
+          "direction": "S",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "1106",
+          "direction": "N",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "1106",
+          "direction": "NW",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "1106",
+          "direction": "SE",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "1107",
+          "direction": "NE",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "1107",
+          "direction": "S",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "1107",
+          "direction": "SW",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "1108",
+          "direction": "N",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "1108",
+          "direction": "SE",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "1111",
+          "direction": "NW",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "1201",
+          "direction": "S",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "1202",
+          "direction": "N",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "1202",
+          "direction": "SW",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "1203",
+          "direction": "NW",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "1203",
+          "direction": "SE",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "1204",
+          "direction": "SE",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "1204",
+          "direction": "SW",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "1205",
+          "direction": "NE",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "1205",
+          "direction": "S",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "1206",
+          "direction": "N",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "1206",
+          "direction": "NW",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "1206",
+          "direction": "SW",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "1208",
+          "direction": "NW",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "1208",
+          "direction": "SE",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "1304",
+          "direction": "NW",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "1304",
+          "direction": "SE",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "1305",
+          "direction": "NE",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "1305",
+          "direction": "NW",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "1305",
+          "direction": "SE",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "1305",
+          "direction": "SW",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "1309",
+          "direction": "NW",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "1309",
+          "direction": "S",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "1310",
+          "direction": "N",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "1310",
+          "direction": "SE",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "1401",
+          "direction": "SE",
+          "kind": "majorRiver",
+          "status": "source-visual-candidate-v234-not-playable"
+        },
+        {
+          "cellId": "1402",
+          "direction": "NE",
+          "kind": "majorRiver",
+          "status": "source-visual-candidate-v234-not-playable"
+        },
+        {
+          "cellId": "1402",
+          "direction": "SE",
+          "kind": "majorRiver",
+          "status": "source-visual-candidate-v234-not-playable"
+        },
+        {
+          "cellId": "1403",
+          "direction": "NE",
+          "kind": "majorRiver",
+          "status": "source-visual-candidate-v234-not-playable"
+        },
+        {
+          "cellId": "1403",
+          "direction": "SE",
+          "kind": "majorRiver",
+          "status": "source-visual-candidate-v234-not-playable"
+        },
+        {
+          "cellId": "1404",
+          "direction": "NE",
+          "kind": "majorRiver",
+          "status": "source-visual-candidate-v234-not-playable"
+        },
+        {
+          "cellId": "1404",
+          "direction": "NE",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "1404",
+          "direction": "NW",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "1404",
+          "direction": "SE",
+          "kind": "majorRiver",
+          "status": "source-visual-candidate-v234-not-playable"
+        },
+        {
+          "cellId": "1404",
+          "direction": "SW",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "1405",
+          "direction": "NE",
+          "kind": "majorRiver",
+          "status": "source-visual-candidate-v234-not-playable"
+        },
+        {
+          "cellId": "1405",
+          "direction": "NW",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "1405",
+          "direction": "SE",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "1410",
+          "direction": "NW",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "1502",
+          "direction": "NW",
+          "kind": "majorRiver",
+          "status": "source-visual-candidate-v234-not-playable"
+        },
+        {
+          "cellId": "1502",
+          "direction": "SW",
+          "kind": "majorRiver",
+          "status": "source-visual-candidate-v234-not-playable"
+        },
+        {
+          "cellId": "1503",
+          "direction": "NW",
+          "kind": "majorRiver",
+          "status": "source-visual-candidate-v234-not-playable"
+        },
+        {
+          "cellId": "1503",
+          "direction": "SW",
+          "kind": "majorRiver",
+          "status": "source-visual-candidate-v234-not-playable"
+        },
+        {
+          "cellId": "1504",
+          "direction": "NE",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "1504",
+          "direction": "NW",
+          "kind": "majorRiver",
+          "status": "source-visual-candidate-v234-not-playable"
+        },
+        {
+          "cellId": "1504",
+          "direction": "SE",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "1504",
+          "direction": "SW",
+          "kind": "majorRiver",
+          "status": "source-visual-candidate-v234-not-playable"
+        },
+        {
+          "cellId": "1504",
+          "direction": "SW",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "1505",
+          "direction": "NW",
+          "kind": "majorRiver",
+          "status": "source-visual-candidate-v234-not-playable"
+        },
+        {
+          "cellId": "1505",
+          "direction": "S",
+          "kind": "majorRiver",
+          "status": "source-visual-candidate-v234-not-playable"
+        },
+        {
+          "cellId": "1505",
+          "direction": "SW",
+          "kind": "majorRiver",
+          "status": "source-visual-candidate-v234-not-playable"
+        },
+        {
+          "cellId": "1506",
+          "direction": "N",
+          "kind": "majorRiver",
+          "status": "source-visual-candidate-v234-not-playable"
+        },
+        {
+          "cellId": "1506",
+          "direction": "NE",
+          "kind": "majorRiver",
+          "status": "source-visual-candidate-v234-not-playable"
+        },
+        {
+          "cellId": "1506",
+          "direction": "NW",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "1506",
+          "direction": "SE",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "1510",
+          "direction": "NE",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "1510",
+          "direction": "S",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "1511",
+          "direction": "N",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "1601",
+          "direction": "SE",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "1603",
+          "direction": "NE",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "1603",
+          "direction": "SW",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "1604",
+          "direction": "NW",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "1604",
+          "direction": "SE",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "1605",
+          "direction": "S",
+          "kind": "majorRiver",
+          "status": "source-visual-candidate-v234-not-playable"
+        },
+        {
+          "cellId": "1605",
+          "direction": "SW",
+          "kind": "majorRiver",
+          "status": "source-visual-candidate-v234-not-playable"
+        },
+        {
+          "cellId": "1606",
+          "direction": "N",
+          "kind": "majorRiver",
+          "status": "source-visual-candidate-v234-not-playable"
+        },
+        {
+          "cellId": "1606",
+          "direction": "NE",
+          "kind": "majorRiver",
+          "status": "source-visual-candidate-v234-not-playable"
+        },
+        {
+          "cellId": "1606",
+          "direction": "NW",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "1606",
+          "direction": "SE",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "1607",
+          "direction": "NE",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "1607",
+          "direction": "S",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "1608",
+          "direction": "N",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "1608",
+          "direction": "NE",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "1608",
+          "direction": "S",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "1609",
+          "direction": "N",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "1609",
+          "direction": "SW",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "1702",
+          "direction": "NW",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "1702",
+          "direction": "SE",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "1703",
+          "direction": "NE",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "1703",
+          "direction": "S",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "1703",
+          "direction": "SW",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "1704",
+          "direction": "N",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "1704",
+          "direction": "S",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "1705",
+          "direction": "N",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "1705",
+          "direction": "NW",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "1705",
+          "direction": "S",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "1705",
+          "direction": "SE",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "1706",
+          "direction": "N",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "1706",
+          "direction": "S",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "1706",
+          "direction": "SW",
+          "kind": "majorRiver",
+          "status": "source-visual-candidate-v234-not-playable"
+        },
+        {
+          "cellId": "1707",
+          "direction": "N",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "1707",
+          "direction": "NW",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "1707",
+          "direction": "S",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "1707",
+          "direction": "SE",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "1707",
+          "direction": "SW",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "1708",
+          "direction": "N",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "1708",
+          "direction": "SW",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "1802",
+          "direction": "NW",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "1802",
+          "direction": "SW",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "1805",
+          "direction": "NW",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "1807",
+          "direction": "NW",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "1807",
+          "direction": "S",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "1808",
+          "direction": "N",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "1808",
+          "direction": "S",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "1809",
+          "direction": "N",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "1809",
+          "direction": "S",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        },
+        {
+          "cellId": "1810",
+          "direction": "N",
+          "kind": "rail",
+          "status": "definitive-svg-finite-hexside-v427"
+        }
+      ],
+      "limitations": [
+        "Source-reviewed whole-cell base terrain does not certify hexside movement",
+        "Geometry calibration is a visual candidate, not a certified movement lattice",
+        "Rail center snaps and river/major-river features are not gameplay certified"
+      ]
+    }
+  }
+}

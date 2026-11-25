@@ -1,0 +1,31 @@
+'use strict';
+const assert=require('node:assert/strict'),fs=require('fs');
+const T=require('../core/terrain_tiles'), C=require('../maps/composer'), F=require('../core/factions'), P=require('../core/presentation');
+const base=require('../maps/kiev.json'),ext=require('../maps/odessa-extension.json'), board=C.compose(base,ext);
+const svg=fs.readFileSync('exports/kiev-odessa.svg','utf8');
+assert.equal(base.cells.length,165);
+assert.equal(board.cells.length,261);
+assert.equal(ext.v292SourceSeaAudit.sourceSymbols,33);
+assert.equal(ext.authoritativeSeaHexes.length,31);
+assert.equal(board.cells.filter(c=>c.terrain==='sea').length,31);
+assert.equal(new Set(board.cells.map(c=>c.id)).size,261);
+assert.equal(T.validate(board,{requireReciprocal:false}).errors.length,0);
+for(const id of ext.authoritativeSeaHexes){
+ const cell=board.cells.find(c=>c.id===id); assert.equal(cell.terrain,'sea');assert.equal(cell.terrainTextureOpacityMultiplier,0);
+ assert(svg.includes(`data-hex-id="${id}"`),id);
+}
+const opts=P.options('kiev-odessa');assert.deepEqual([opts.numberStyle.offsetX,opts.numberStyle.offsetY],[-5,5]);
+assert(svg.includes('stroke="#ffffff" stroke-opacity=".25"'));
+assert(svg.includes('class="german-deployment-backplate"'));
+assert(svg.includes('fill="#c83b45"'));
+assert.equal(F.reinforcements.german.width,20);assert.equal(F.reinforcements.soviet.width,20);
+assert(!svg.includes('class="sea-region-cell"'));
+assert(!svg.includes('source-purple-water-area'));
+const [rx,ry]=T.gridRadii(board.geometry);
+const all=T.gridSegmentData(board,rx,ry), lookup=new Map(board.cells.map(c=>[c.id,c]));
+const expected=all.filter(side=>lookup.get(side.cellId)?.terrain!=='sea'&&(!side.neighborId||lookup.get(side.neighborId)?.terrain!=='sea')).length;
+assert.equal((svg.match(/class="grid-line"/g)||[]).length,expected,'grid sea-facing and sea edges must be hidden');
+assert.equal(board.sourceRailRoutes.length,24);
+const deployments=board.cells.flatMap(c=>(c.tileMarkers||[]).filter(m=>['cross','star','fixedInfantry','fixedMechanized','fixedCavalry'].includes(m.kind)));
+assert.equal(deployments.length,36);
+console.log('PASS v292: 31 unique sea cells from 33 SVG uses, coastline grid suppressed, 20px entries, 25% overlays, source rails/deployments preserved');

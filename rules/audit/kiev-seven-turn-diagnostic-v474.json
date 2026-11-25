@@ -1,0 +1,51 @@
+{
+  "checkpoint": 240,
+  "version": "v474",
+  "assertions": 119,
+  "classification": "ISOLATED-DIAGNOSTIC-NOT-AUTHORIZED-KIEV-GAMEPLAY",
+  "graph": {
+    "hexes": 165,
+    "edges": 442,
+    "rails": 93,
+    "rivers": 72,
+    "majorRivers": 10,
+    "originalPolicyStatus": "provisional",
+    "productionGraphAuthorized": false
+  },
+  "source": {
+    "rulebookSha256": "d55e8f0e567d1f8c7907c4fc8368954ec0e5fa8d6fe9e8e71c61acf9bb3c3756",
+    "svgSha256": "2b15c3a92a282a7efc27d54bcd8994470f0fce8ee5417d5d734969fcd2c4ab7e",
+    "sourceMapSha256": "dcf72e17ed9f1ee22f65bcd11e41916d9c3bfc3feb25f2a39731f7025e067d3f",
+    "productionGraphPolicySha256": "f63cc74fac795875fb89e38167a1f2fb70b78712480df7ce4fe20060c78f1c36"
+  },
+  "scope": {
+    "testProcessPolicyInjection": true,
+    "testProcessTerritoryMaskBypass": true,
+    "sourceLegalButNonhistoricalOpening": true,
+    "genuineKievHexsides": true,
+    "certifiedRomanianTerritory": false,
+    "airMarkers": [
+      "kiev-front-r03c01"
+    ],
+    "realSharedEngineAndCRT": true,
+    "fullCampaignAcceptance": false
+  },
+  "result": {
+    "actions": 138,
+    "sevenTurnHousekeeping": 7,
+    "moves": 27,
+    "battles": 1,
+    "reinforcements": 6,
+    "terminalOutcome": "soviet-victory",
+    "endingSourceFaces": 36,
+    "restore": true,
+    "undo": true,
+    "phases": 138
+  },
+  "limitations": [
+    "No country boundary: one source restriction bypassed in TEST ONLY",
+    "Source-legal 30-unit allocation is not a certified historical opening",
+    "Only one battlefield engagement and short moves; no adversarial campaign",
+    "Source movement authorization remains deliberately withheld in production"
+  ]
+}

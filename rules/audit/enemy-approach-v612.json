@@ -1,0 +1,24 @@
+{
+  "scope": "synthetic actual-map Kiev, both CRTs; first opposing ground movement phase, direct approaches only",
+  "verified": {
+    "enemyApproach": 47,
+    "stationaryThreat": 38,
+    "withdrawal": 30,
+    "utilityArithmetic": 62,
+    "pilot": 50,
+    "controller": 16,
+    "CRT": 301,
+    "bundleModules": 61
+  },
+  "limitations": [
+    "stationary friendly positions",
+    "no clearing moves",
+    "no later phases or arrivals",
+    "no Fleet reactions",
+    "concealed movement omitted",
+    "no city ledger transition",
+    "no probability of actual elimination",
+    "no live policy activation",
+    "no Chromium or full campaign"
+  ]
+}

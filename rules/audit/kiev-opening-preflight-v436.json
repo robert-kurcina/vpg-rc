@@ -1,0 +1,125 @@
+{
+  "checkpoint": 202,
+  "version": "v436",
+  "assertions": 289,
+  "sourceFilePins": {
+    "rules": "d55e8f0e567d1f8c7907c4fc8368954ec0e5fa8d6fe9e8e71c61acf9bb3c3756",
+    "playerAid": "a7d239a80745463fdd3d5effc8faf6a028ab4f048713a506cb75823c448c9751",
+    "sourceSvg": "2b15c3a92a282a7efc27d54bcd8994470f0fce8ee5417d5d734969fcd2c4ab7e",
+    "counterFront": "9db4bc6382f174017cb23f9c907369a25e173143a29e292b656b8f48ddfc4724",
+    "counterBack": "533165e074c4c6a2774811053347d19615eb85acce69987192301c403dcefeea"
+  },
+  "sourceInventory": {
+    "facePairs": 40,
+    "ground": 37,
+    "nonGround": 3,
+    "pools": {
+      "germanPanzer": 3,
+      "germanInfantry": 11,
+      "romanianArmy": 1,
+      "hungarianInfantry": 1,
+      "slovakInfantry": 1,
+      "italianMotorized": 1,
+      "sovietArmies": 9,
+      "sovietMechanized": 10,
+      "airSupport": 2,
+      "gameTurn": 1
+    },
+    "startingGround": 30,
+    "reinforcementGround": 6,
+    "sovietReplacementOnly": 1
+  },
+  "openingMarkerAudit": {
+    "sourceMapStarCount": 10,
+    "svgAuthoredStarCount": 8,
+    "nonSvgStarHexes": [
+      "0502",
+      "0708"
+    ],
+    "rulesStarCount": 10,
+    "germanCrossCount": 11,
+    "fixedInfantryHexes": [
+      "0406",
+      "1007"
+    ],
+    "fixedMechanizedHexes": [
+      "0705",
+      "0803",
+      "1106",
+      "1309"
+    ],
+    "blockingErrors": [],
+    "sourceAuthorization": "candidate-slots-match-not-activated"
+  },
+  "tracks": {
+    "reinforcements": [
+      {
+        "slotId": "t2-slovak",
+        "turn": 2,
+        "owner": "german",
+        "nationality": "slovak",
+        "group": "slovakReinforcementInfantry"
+      },
+      {
+        "slotId": "t2-hungarian",
+        "turn": 2,
+        "owner": "german",
+        "nationality": "hungarian",
+        "group": "hungarianReinforcementInfantry"
+      },
+      {
+        "slotId": "t3-german-infantry",
+        "turn": 3,
+        "owner": "german",
+        "nationality": "german",
+        "group": "germanReinforcementInfantry"
+      },
+      {
+        "slotId": "t3-italian-motorized",
+        "turn": 3,
+        "owner": "german",
+        "nationality": "italian",
+        "group": "italianReinforcementMotorized"
+      },
+      {
+        "slotId": "t5-soviet-army",
+        "turn": 5,
+        "owner": "soviet",
+        "nationality": "soviet",
+        "group": "sovietReinforcementArmies"
+      },
+      {
+        "slotId": "t6-soviet-army",
+        "turn": 6,
+        "owner": "soviet",
+        "nationality": "soviet",
+        "group": "sovietReinforcementArmies"
+      }
+    ],
+    "replacementSteps": {
+      "german": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "soviet": [
+        0,
+        2,
+        2,
+        3,
+        3,
+        4,
+        4
+      ]
+    }
+  },
+  "knownBlockers": [
+    "Kiev counter face allocations and historical opening gameplay still require certification",
+    "Kiev graph still provisional",
+    "SVG-derived entry borders remain visual candidates, not independent rule certification"
+  ]
+}

@@ -1,0 +1,241 @@
+{
+  "checkpoint": 172,
+  "version": "v406",
+  "status": "PASS",
+  "scope": "Isolated real Chromium with shipped shared engine bundle, approved map SVG and official counter templates",
+  "candidateSourceSetup": true,
+  "concealedMixed": true,
+  "humanInterfaceAction": true,
+  "humanActionCount": 8,
+  "midCampaignHumanUndoReapplies": 2,
+  "baselineSideCalls": 24,
+  "sideTurns": [
+    {
+      "startTurn": 1,
+      "startActor": "german",
+      "endTurn": 1,
+      "endActor": "soviet",
+      "actions": 8,
+      "message": "Baseline finished german side (8 actions)."
+    },
+    {
+      "startTurn": 1,
+      "startActor": "soviet",
+      "endTurn": 1,
+      "endActor": "system",
+      "actions": 13,
+      "message": "Baseline finished soviet side (13 actions)."
+    },
+    {
+      "startTurn": 1,
+      "startActor": "system",
+      "endTurn": 2,
+      "endActor": "german",
+      "actions": 1,
+      "message": "Baseline finished system side (1 actions)."
+    },
+    {
+      "startTurn": 2,
+      "startActor": "german",
+      "endTurn": 2,
+      "endActor": "soviet",
+      "actions": 12,
+      "message": "Baseline finished german side (11 actions)."
+    },
+    {
+      "startTurn": 2,
+      "startActor": "soviet",
+      "endTurn": 2,
+      "endActor": "system",
+      "actions": 9,
+      "message": "Baseline finished soviet side (9 actions)."
+    },
+    {
+      "startTurn": 2,
+      "startActor": "system",
+      "endTurn": 3,
+      "endActor": "german",
+      "actions": 1,
+      "message": "Baseline finished system side (1 actions)."
+    },
+    {
+      "startTurn": 3,
+      "startActor": "german",
+      "endTurn": 3,
+      "endActor": "soviet",
+      "actions": 12,
+      "message": "Baseline finished german side (11 actions)."
+    },
+    {
+      "startTurn": 3,
+      "startActor": "soviet",
+      "endTurn": 3,
+      "endActor": "system",
+      "actions": 10,
+      "message": "Baseline finished soviet side (10 actions)."
+    },
+    {
+      "startTurn": 3,
+      "startActor": "system",
+      "endTurn": 4,
+      "endActor": "german",
+      "actions": 1,
+      "message": "Baseline finished system side (1 actions)."
+    },
+    {
+      "startTurn": 4,
+      "startActor": "german",
+      "endTurn": 4,
+      "endActor": "soviet",
+      "actions": 10,
+      "message": "Baseline finished german side (9 actions)."
+    },
+    {
+      "startTurn": 4,
+      "startActor": "soviet",
+      "endTurn": 4,
+      "endActor": "system",
+      "actions": 11,
+      "message": "Baseline finished soviet side (11 actions)."
+    },
+    {
+      "startTurn": 4,
+      "startActor": "system",
+      "endTurn": 5,
+      "endActor": "german",
+      "actions": 1,
+      "message": "Baseline finished system side (1 actions)."
+    },
+    {
+      "startTurn": 5,
+      "startActor": "german",
+      "endTurn": 5,
+      "endActor": "soviet",
+      "actions": 10,
+      "message": "Baseline finished german side (9 actions)."
+    },
+    {
+      "startTurn": 5,
+      "startActor": "soviet",
+      "endTurn": 5,
+      "endActor": "system",
+      "actions": 11,
+      "message": "Baseline finished soviet side (11 actions)."
+    },
+    {
+      "startTurn": 5,
+      "startActor": "system",
+      "endTurn": 6,
+      "endActor": "german",
+      "actions": 1,
+      "message": "Baseline finished system side (1 actions)."
+    },
+    {
+      "startTurn": 6,
+      "startActor": "german",
+      "endTurn": 6,
+      "endActor": "soviet",
+      "actions": 10,
+      "message": "Baseline finished german side (9 actions)."
+    },
+    {
+      "startTurn": 6,
+      "startActor": "soviet",
+      "endTurn": 6,
+      "endActor": "system",
+      "actions": 11,
+      "message": "Baseline finished soviet side (11 actions)."
+    },
+    {
+      "startTurn": 6,
+      "startActor": "system",
+      "endTurn": 7,
+      "endActor": "german",
+      "actions": 1,
+      "message": "Baseline finished system side (1 actions)."
+    },
+    {
+      "startTurn": 7,
+      "startActor": "german",
+      "endTurn": 7,
+      "endActor": "soviet",
+      "actions": 10,
+      "message": "Baseline finished german side (9 actions)."
+    },
+    {
+      "startTurn": 7,
+      "startActor": "soviet",
+      "endTurn": 7,
+      "endActor": "system",
+      "actions": 11,
+      "message": "Baseline finished soviet side (11 actions)."
+    },
+    {
+      "startTurn": 7,
+      "startActor": "system",
+      "endTurn": 8,
+      "endActor": "german",
+      "actions": 1,
+      "message": "Baseline finished system side (1 actions)."
+    },
+    {
+      "startTurn": 8,
+      "startActor": "german",
+      "endTurn": 8,
+      "endActor": "soviet",
+      "actions": 10,
+      "message": "Baseline finished german side (9 actions)."
+    },
+    {
+      "startTurn": 8,
+      "startActor": "soviet",
+      "endTurn": 8,
+      "endActor": "system",
+      "actions": 10,
+      "message": "Baseline finished soviet side (10 actions)."
+    },
+    {
+      "startTurn": 8,
+      "startActor": "system",
+      "endTurn": 8,
+      "endActor": "system",
+      "actions": 1,
+      "message": "Baseline finished system side (1 actions)."
+    }
+  ],
+  "totalCampaignActions": 177,
+  "turns": 8,
+  "terminal": {
+    "axisControlledCount": 1,
+    "cityControl": {
+      "Daugavpils": "soviet",
+      "Insterburg": "german",
+      "Kaunas": "soviet",
+      "Leningrad": "soviet",
+      "Liepaja": "soviet",
+      "Luga": "soviet",
+      "Narva": "soviet",
+      "Novgorod": "soviet",
+      "Parnu": "soviet",
+      "Pskov": "soviet",
+      "Riga": "soviet",
+      "Siauliai": "soviet",
+      "Tallinn": "soviet",
+      "Tartu": "soviet"
+    },
+    "onlyRemainingCity": "Leningrad",
+    "onlyRemainingCityIsolated": null,
+    "outcome": "soviet-victory",
+    "reason": "axis-controls-at-most-threshold",
+    "totalCities": 14
+  },
+  "saveRestoreAcrossBrowserSessions": true,
+  "terminalSaveRestored": true,
+  "pageErrors": [],
+  "limitations": [
+    "Candidate deployment source coordinates not historically certified",
+    "The deterministic baseline is not a strategic AI",
+    "One or more actual German human UI commands per turn; remainder of each side is baseline-engine controlled",
+    "Isolated browser local transport fixture, not hosted browser HTTP acceptance"
+  ]
+}

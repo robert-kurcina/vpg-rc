@@ -1,0 +1,55 @@
+{
+  "checkpoint": 173,
+  "version": "v407",
+  "mode": "human-only-real-browser",
+  "sourceTransport": "isolated local fixture",
+  "starting": {
+    "deployed": 19,
+    "concealedMixed": true
+  },
+  "counts": {
+    "humanCommands": 98,
+    "humanDieCommitments": 5,
+    "humanAutomaticNoDie": 3,
+    "humanPostRollChoices": 8,
+    "humanBattleDeclarations": 8,
+    "humanUndoReapplies": 0,
+    "baselineCalls": 0
+  },
+  "errors": [],
+  "fullCampaign": true,
+  "turn": 8,
+  "terminal": {
+    "axisControlledCount": 1,
+    "cityControl": {
+      "Daugavpils": "soviet",
+      "Insterburg": "german",
+      "Kaunas": "soviet",
+      "Leningrad": "soviet",
+      "Liepaja": "soviet",
+      "Luga": "soviet",
+      "Narva": "soviet",
+      "Novgorod": "soviet",
+      "Parnu": "soviet",
+      "Pskov": "soviet",
+      "Riga": "soviet",
+      "Siauliai": "soviet",
+      "Tallinn": "soviet",
+      "Tartu": "soviet"
+    },
+    "onlyRemainingCity": "Leningrad",
+    "onlyRemainingCityIsolated": null,
+    "outcome": "soviet-victory",
+    "reason": "axis-controls-at-most-threshold",
+    "totalCities": 14
+  },
+  "interfaceDecisions": 122,
+  "campaignActions": 114,
+  "limitations": [
+    "Uses source-backed candidate opening, not source-certified historical deployment",
+    "Action selection is scripted; choices all use genuine browser human controls rather than AI policy",
+    "Recorded test dice are manually selected, not sampled from RNG",
+    "Source transport uses local JSON fixture; hosted HTTP not exercised",
+    "Physical map symbol vs rulebook coordinate disagreements remain unresolved"
+  ]
+}

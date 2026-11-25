@@ -1,0 +1,281 @@
+{
+  "schemaVersion": 1,
+  "id": "kiev-odessa-unit-overlay",
+  "kind": "scenario-unit-overlay",
+  "standalone": false,
+  "baseGame": "kiev",
+  "expansionMap": "odessa-extension",
+  "rulesAuthority": "references/rules/odessa-rules.pdf",
+  "counterConfig": "maps/counter-configs/odessa-extension.json",
+  "idPolicy": "Namespaced synthetic identifiers derived from unique source-design keys; not historical IDs, not physical print-slot IDs",
+  "units": [
+    {
+      "id": "kiev-odessa/soviet-black-sea-fleet",
+      "idType": "engine-generated-source-design-key",
+      "historicalUnitId": null,
+      "designKey": "soviet-black-sea-fleet",
+      "side": "soviet",
+      "class": "naval-marker",
+      "art": {
+        "displayFaceId": "odessa-front-r01c01",
+        "alternateFaceId": "odessa-back-r01c08",
+        "singleSided": false,
+        "sourceColumn": 1
+      },
+      "initial": {
+        "kind": "fixed",
+        "hex": "1513",
+        "startingFace": "undamaged",
+        "reference": "Odessa §6.0(3)"
+      },
+      "identityEvidence": "explicit-pdf",
+      "status": "declarative-roster-not-executable"
+    },
+    {
+      "id": "kiev-odessa/soviet-coastal-army",
+      "idType": "engine-generated-source-design-key",
+      "historicalUnitId": null,
+      "designKey": "soviet-coastal-army",
+      "side": "soviet",
+      "class": "coastal-infantry",
+      "art": {
+        "displayFaceId": "odessa-front-r01c02",
+        "alternateFaceId": "odessa-back-r01c07",
+        "singleSided": false,
+        "sourceColumn": 2
+      },
+      "initial": {
+        "kind": "fixed",
+        "hex": "1513",
+        "startingFace": "full",
+        "reference": "Odessa §6.0(3)"
+      },
+      "identityEvidence": "explicit-pdf",
+      "status": "declarative-roster-not-executable"
+    },
+    {
+      "id": "kiev-odessa/soviet-cavalry-corps-a",
+      "idType": "engine-generated-source-design-key",
+      "historicalUnitId": null,
+      "designKey": "soviet-cavalry-corps-a",
+      "side": "soviet",
+      "class": "cavalry",
+      "art": {
+        "displayFaceId": "odessa-back-r01c06",
+        "alternateFaceId": null,
+        "singleSided": true,
+        "sourceColumn": 3
+      },
+      "initial": {
+        "kind": "pool",
+        "poolId": "soviet-rear-cavalry",
+        "fixedHex": null,
+        "reference": "Odessa §6.0(3)"
+      },
+      "identityEvidence": "inferred-pdf-and-source-symbol",
+      "status": "declarative-roster-not-executable"
+    },
+    {
+      "id": "kiev-odessa/soviet-cavalry-corps-b",
+      "idType": "engine-generated-source-design-key",
+      "historicalUnitId": null,
+      "designKey": "soviet-cavalry-corps-b",
+      "side": "soviet",
+      "class": "cavalry",
+      "art": {
+        "displayFaceId": "odessa-back-r01c05",
+        "alternateFaceId": null,
+        "singleSided": true,
+        "sourceColumn": 4
+      },
+      "initial": {
+        "kind": "pool",
+        "poolId": "soviet-front-cavalry",
+        "fixedHex": null,
+        "reference": "Odessa §6.0(4)"
+      },
+      "identityEvidence": "inferred-pdf-and-source-symbol",
+      "status": "declarative-roster-not-executable"
+    },
+    {
+      "id": "kiev-odessa/romanian-home-army",
+      "idType": "engine-generated-source-design-key",
+      "historicalUnitId": null,
+      "designKey": "romanian-home-army",
+      "side": "romanian",
+      "class": "infantry",
+      "art": {
+        "displayFaceId": "odessa-front-r01c05",
+        "alternateFaceId": "odessa-back-r01c04",
+        "singleSided": false,
+        "sourceColumn": 5
+      },
+      "initial": {
+        "kind": "region",
+        "region": "Romania",
+        "fixedHex": null,
+        "reference": "Odessa §6.0(7)"
+      },
+      "identityEvidence": "explicit-pdf",
+      "status": "declarative-roster-not-executable"
+    },
+    {
+      "id": "kiev-odessa/romanian-4th-army",
+      "idType": "engine-generated-source-design-key",
+      "historicalUnitId": null,
+      "designKey": "romanian-4th-army",
+      "side": "romanian",
+      "class": "infantry",
+      "art": {
+        "displayFaceId": "odessa-front-r01c06",
+        "alternateFaceId": "odessa-back-r01c03",
+        "singleSided": false,
+        "sourceColumn": 6
+      },
+      "initial": {
+        "kind": "region",
+        "region": "Romania",
+        "fixedHex": null,
+        "reference": "Odessa §6.0(7)"
+      },
+      "identityEvidence": "explicit-pdf",
+      "status": "declarative-roster-not-executable"
+    },
+    {
+      "id": "kiev-odessa/romanian-air-support",
+      "idType": "engine-generated-source-design-key",
+      "historicalUnitId": null,
+      "designKey": "romanian-air-support",
+      "side": "romanian",
+      "class": "air-marker",
+      "art": {
+        "displayFaceId": "odessa-front-r01c07",
+        "alternateFaceId": "odessa-back-r01c02",
+        "singleSided": false,
+        "sourceColumn": 7
+      },
+      "initial": {
+        "kind": "reinforcement-track",
+        "turn": 2,
+        "fixedHex": null,
+        "reference": "Odessa §§6.0(6), 11.0"
+      },
+      "identityEvidence": "explicit-pdf",
+      "status": "declarative-roster-not-executable"
+    },
+    {
+      "id": "kiev-odessa/romanian-cavalry-corps",
+      "idType": "engine-generated-source-design-key",
+      "historicalUnitId": null,
+      "designKey": "romanian-cavalry-corps",
+      "side": "romanian",
+      "class": "cavalry",
+      "art": {
+        "displayFaceId": "odessa-back-r01c01",
+        "alternateFaceId": null,
+        "singleSided": true,
+        "sourceColumn": 8
+      },
+      "initial": {
+        "kind": "region",
+        "region": "Romania",
+        "fixedHex": null,
+        "reference": "Odessa §6.0(7)"
+      },
+      "identityEvidence": "inferred-pdf-and-source-symbol",
+      "status": "declarative-roster-not-executable"
+    }
+  ],
+  "setupConstraints": {
+    "sovietRearCavalry": {
+      "count": 1,
+      "candidateHexes": [
+        "0406",
+        "0705",
+        "0803",
+        "1007",
+        "1106",
+        "1215",
+        "1309"
+      ],
+      "groupIncludes": {
+        "fullStrengthArmies": 2,
+        "untriedMechanizedCorps": 4,
+        "cavalry": 1
+      },
+      "allocation": "requires map tiny-symbol corroboration before choosing exact cavalry hex",
+      "source": "Odessa §6.0(3)"
+    },
+    "sovietFrontCavalry": {
+      "count": 1,
+      "candidateKind": "eleven-red-star-frontline-hexes",
+      "groupIncludes": {
+        "fullStrengthInfantryArmies": 4,
+        "mechanizedCorps": 6,
+        "cavalry": 1
+      },
+      "allocation": "one unit per star; no same-side adjacent armies; exact cavalry hex unverified",
+      "source": "Odessa §6.0(4)"
+    },
+    "romanianGround": {
+      "region": "Romania",
+      "source": "Odessa §6.0(7)",
+      "units": [
+        "romanian-home-army",
+        "romanian-4th-army",
+        "romanian-cavalry-corps"
+      ],
+      "status": "source-reconciled-base-plus-expansion; pending-executable-placement",
+      "count": 4,
+      "baseGameContribution": {
+        "count": 1,
+        "printedIdentifier": "Rom 3",
+        "unitClass": "infantry",
+        "side": "romanian",
+        "printedValues": "6-4",
+        "frontFaceId": "kiev-front-r02c08",
+        "reverseFaceId": "kiev-back-r02c01",
+        "counterConfig": "maps/counter-configs/kiev.json",
+        "reference": "Kiev §6.0(7): one Romanian infantry unit in Romania",
+        "gameplayUnitId": null,
+        "bindingStatus": "source-face-identified-but-no-verified-base-roster-id"
+      },
+      "expansionContribution": {
+        "count": 3,
+        "designKeys": [
+          "romanian-home-army",
+          "romanian-4th-army",
+          "romanian-cavalry-corps"
+        ],
+        "reference": "Odessa §6.0(7): four Romanian units total in Romania"
+      },
+      "airSupportExclusion": {
+        "unitId": "kiev-odessa/romanian-air-support",
+        "arrivalTurn": 2,
+        "reference": "Odessa §6.0(6), §11.0",
+        "reason": "reinforcement, not one of the four on-map setup units"
+      },
+      "sourceReconciliation": "Kiev has one Romanian infantry unit; Odessa adds three ground designs. 1+3=4; Odessa overrides Kiev setup count, not base unit identity."
+    },
+    "axisOther": {
+      "germanInfantryCount": 3,
+      "region": "Romania",
+      "source": "Odessa §6.0(7)",
+      "bindToKievUnits": "WIP",
+      "baseGameContinuation": "Three original Kiev German infantry setup units remain; determine original source-face IDs before executable roster binding"
+    }
+  },
+  "reinforcements": [
+    {
+      "unitId": "kiev-odessa/romanian-air-support",
+      "turn": 2,
+      "source": "Odessa §§6.0(6),11.0"
+    }
+  ],
+  "rulesOverrides": {
+    "precedence": "odessa-over-kiev-on-conflict",
+    "source": "Odessa §0.0",
+    "status": "metadata-only"
+  },
+  "readiness": "declarative overlay, source-reconciled Romanian count; base Kiev gameplay IDs and exact eligible placements still unbound"
+}

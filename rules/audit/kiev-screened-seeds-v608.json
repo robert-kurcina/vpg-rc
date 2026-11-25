@@ -1,0 +1,143 @@
+{
+  "checkpoint": 374,
+  "version": "v608",
+  "baseline": "v607",
+  "runs": {
+    "standard": {
+      "seed": 7,
+      "variant": "standard",
+      "status": "complete",
+      "reason": null,
+      "detail": null,
+      "decision": {
+        "status": "complete",
+        "terminal": {
+          "axisControlledCount": 3,
+          "cityControl": {
+            "Chernigov": "soviet",
+            "Chernovtsy": "soviet",
+            "Iasi": "german",
+            "Kiev": "soviet",
+            "Kirovograd": "soviet",
+            "Kovel": "soviet",
+            "Lublin": "german",
+            "Lvov": "soviet",
+            "Rovno": "soviet",
+            "Sarny": "soviet",
+            "Shepetovka": "soviet",
+            "Stanislavov": "soviet",
+            "Tarnopol": "german",
+            "Uman": "soviet",
+            "Vinnitsa": "soviet",
+            "Zhitomir": "soviet"
+          },
+          "onlyRemainingCity": null,
+          "onlyRemainingCityIsolated": null,
+          "outcome": "soviet-victory",
+          "reason": "axis-controls-at-most-threshold",
+          "totalCities": 16
+        }
+      },
+      "stats": {
+        "moves": 27,
+        "combats": 12,
+        "reinforcements": 6,
+        "navalRolls": 0,
+        "turns": 7
+      },
+      "actions": 176,
+      "outcomes": {
+        "EX": 5,
+        "DR": 1,
+        "DRL": 1,
+        "NE": 3,
+        "DE": 2
+      },
+      "oddsDistribution": {
+        "1": 2,
+        "2": 4,
+        "3": 1,
+        "4": 1,
+        "5": 1,
+        "6": 1,
+        "below-minimum": 2
+      },
+      "attackSelection": "screen-known-futile",
+      "terminal": "soviet-victory",
+      "phase": null
+    },
+    "advanced": {
+      "seed": 42,
+      "variant": "advanced",
+      "status": "complete",
+      "reason": null,
+      "detail": null,
+      "decision": {
+        "status": "complete",
+        "terminal": {
+          "axisControlledCount": 3,
+          "cityControl": {
+            "Chernigov": "soviet",
+            "Chernovtsy": "soviet",
+            "Iasi": "german",
+            "Kiev": "soviet",
+            "Kirovograd": "soviet",
+            "Kovel": "german",
+            "Lublin": "german",
+            "Lvov": "soviet",
+            "Rovno": "soviet",
+            "Sarny": "soviet",
+            "Shepetovka": "soviet",
+            "Stanislavov": "soviet",
+            "Tarnopol": "soviet",
+            "Uman": "soviet",
+            "Vinnitsa": "soviet",
+            "Zhitomir": "soviet"
+          },
+          "onlyRemainingCity": null,
+          "onlyRemainingCityIsolated": null,
+          "outcome": "soviet-victory",
+          "reason": "axis-controls-at-most-threshold",
+          "totalCities": 16
+        }
+      },
+      "stats": {
+        "moves": 27,
+        "combats": 14,
+        "reinforcements": 6,
+        "navalRolls": 0,
+        "turns": 7
+      },
+      "actions": 180,
+      "outcomes": {
+        "EX": 3,
+        "NE": 6,
+        "DE": 1,
+        "AL": 1,
+        "DRL": 2,
+        "DR": 1
+      },
+      "oddsDistribution": {
+        "1": 2,
+        "2": 1,
+        "5": 3,
+        "1.5": 2,
+        "0.5": 6
+      },
+      "attackSelection": "screen-known-futile",
+      "terminal": "soviet-victory",
+      "phase": null
+    }
+  },
+  "previousAutomaticNE": {
+    "standard": 8,
+    "advanced": 5
+  },
+  "terminalReplayPassed": true,
+  "limitations": [
+    "One ground movement and one combat per phase; not strategic AI qualification.",
+    "Different action counts change deterministic dice sequence; not a controlled dice comparison.",
+    "Remaining automatic NE cause not individually traced.",
+    "No Chromium run."
+  ]
+}

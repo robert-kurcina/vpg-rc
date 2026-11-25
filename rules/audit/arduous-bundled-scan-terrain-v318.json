@@ -1,0 +1,2671 @@
+{
+  "schemaVersion": 1,
+  "scope": "Arduous bundled source scan and authored SVG terrain corroboration; not gameplay certification",
+  "sourceMapSha256": "0cf849eaf683cd86443d244f20e5d03f8dc18ba354f88861d039307da162742d",
+  "sourceScanSha256": "9e41cf83ff001a616c5b6651784b8ac8206fc2eb04048dc41b1a3a0b3c3fa8f4",
+  "sourceScanPath": "maps/source/arduous-map-scan.webp",
+  "scanDimensions": [
+    900,
+    575
+  ],
+  "sampleMethod": {
+    "shape": "ellipse",
+    "radiusX": 17,
+    "radiusY": 15,
+    "greenThreshold": 0.5,
+    "yellowBrownThreshold": 0.5,
+    "limitations": "Samples hex centers only; roads, text, coastlines and boundaries require independent interpretation"
+  },
+  "coverage": {
+    "hexes": 155,
+    "authoredForestCorroborated": 30,
+    "authoredSwampCorroborated": 20,
+    "unresolvedWithoutForestOrSwampCenterColor": 105,
+    "unresolvedWithDominantForestOrSwampCenterColor": 0,
+    "stillUntranscribed": 0
+  },
+  "hexEvidence": [
+    {
+      "hexId": "0105",
+      "currentTerrain": "open",
+      "currentStatus": "source-svg-scan-reviewed-open-v412",
+      "centerPx": [
+        138.15,
+        262.22
+      ],
+      "rasterObservation": "neither-forest-nor-swamp-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.0,
+        "yellowBrownFraction": 0.030113
+      },
+      "authoredSvgTerrain": false,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "0106",
+      "currentTerrain": "open",
+      "currentStatus": "source-svg-scan-reviewed-open-v412",
+      "centerPx": [
+        138.15,
+        312.38
+      ],
+      "rasterObservation": "neither-forest-nor-swamp-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.056462,
+        "yellowBrownFraction": 0.08532
+      },
+      "authoredSvgTerrain": false,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "0107",
+      "currentTerrain": "open",
+      "currentStatus": "source-svg-scan-reviewed-open-v412",
+      "centerPx": [
+        138.15,
+        362.54
+      ],
+      "rasterObservation": "neither-forest-nor-swamp-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.067754,
+        "yellowBrownFraction": 0.097867
+      },
+      "authoredSvgTerrain": false,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "0108",
+      "currentTerrain": "open",
+      "currentStatus": "source-svg-scan-reviewed-open-v412",
+      "centerPx": [
+        138.15,
+        412.7
+      ],
+      "rasterObservation": "neither-forest-nor-swamp-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.074028,
+        "yellowBrownFraction": 0.097867
+      },
+      "authoredSvgTerrain": false,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "0109",
+      "currentTerrain": "open",
+      "currentStatus": "source-svg-scan-reviewed-open-v412",
+      "centerPx": [
+        138.15,
+        462.86
+      ],
+      "rasterObservation": "neither-forest-nor-swamp-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.140527,
+        "yellowBrownFraction": 0.125471
+      },
+      "authoredSvgTerrain": false,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "0110",
+      "currentTerrain": "open",
+      "currentStatus": "source-svg-scan-reviewed-open-v412",
+      "centerPx": [
+        138.15,
+        513.02
+      ],
+      "rasterObservation": "neither-forest-nor-swamp-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.101631,
+        "yellowBrownFraction": 0.151819
+      },
+      "authoredSvgTerrain": false,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "0205",
+      "currentTerrain": "open",
+      "currentStatus": "source-svg-scan-reviewed-open-v412",
+      "centerPx": [
+        180.59,
+        237.14
+      ],
+      "rasterObservation": "neither-forest-nor-swamp-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.114178,
+        "yellowBrownFraction": 0.209536
+      },
+      "authoredSvgTerrain": false,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "0206",
+      "currentTerrain": "open",
+      "currentStatus": "source-svg-scan-reviewed-open-v412",
+      "centerPx": [
+        180.59,
+        287.3
+      ],
+      "rasterObservation": "neither-forest-nor-swamp-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.074028,
+        "yellowBrownFraction": 0.10665
+      },
+      "authoredSvgTerrain": false,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "0207",
+      "currentTerrain": "open",
+      "currentStatus": "source-svg-scan-reviewed-open-v412",
+      "centerPx": [
+        180.59,
+        337.46
+      ],
+      "rasterObservation": "neither-forest-nor-swamp-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.121706,
+        "yellowBrownFraction": 0.212045
+      },
+      "authoredSvgTerrain": false,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "0208",
+      "currentTerrain": "forest",
+      "currentStatus": "user-svg-authored-forest",
+      "centerPx": [
+        180.59,
+        387.62
+      ],
+      "rasterObservation": "forest-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.848181,
+        "yellowBrownFraction": 0.29611
+      },
+      "authoredSvgTerrain": true,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "0209",
+      "currentTerrain": "open",
+      "currentStatus": "source-svg-scan-reviewed-open-v412",
+      "centerPx": [
+        180.59,
+        437.78
+      ],
+      "rasterObservation": "neither-forest-nor-swamp-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.065245,
+        "yellowBrownFraction": 0.21079
+      },
+      "authoredSvgTerrain": false,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "0210",
+      "currentTerrain": "open",
+      "currentStatus": "source-svg-scan-reviewed-open-v412",
+      "centerPx": [
+        180.59,
+        487.94
+      ],
+      "rasterObservation": "neither-forest-nor-swamp-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.069009,
+        "yellowBrownFraction": 0.287327
+      },
+      "authoredSvgTerrain": false,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "0211",
+      "currentTerrain": "open",
+      "currentStatus": "source-svg-scan-reviewed-open-v412",
+      "centerPx": [
+        180.59,
+        538.1
+      ],
+      "rasterObservation": "neither-forest-nor-swamp-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.001255,
+        "yellowBrownFraction": 0.058971
+      },
+      "authoredSvgTerrain": false,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "0305",
+      "currentTerrain": "forest",
+      "currentStatus": "user-svg-authored-forest",
+      "centerPx": [
+        223.03,
+        262.22
+      ],
+      "rasterObservation": "forest-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.851945,
+        "yellowBrownFraction": 0.329987
+      },
+      "authoredSvgTerrain": true,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "0306",
+      "currentTerrain": "open",
+      "currentStatus": "source-svg-scan-reviewed-open-v412",
+      "centerPx": [
+        223.03,
+        312.38
+      ],
+      "rasterObservation": "neither-forest-nor-swamp-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.062735,
+        "yellowBrownFraction": 0.080301
+      },
+      "authoredSvgTerrain": false,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "0307",
+      "currentTerrain": "forest",
+      "currentStatus": "user-svg-authored-forest",
+      "centerPx": [
+        223.03,
+        362.54
+      ],
+      "rasterObservation": "forest-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.830615,
+        "yellowBrownFraction": 0.306148
+      },
+      "authoredSvgTerrain": true,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "0308",
+      "currentTerrain": "open",
+      "currentStatus": "source-svg-scan-reviewed-open-v412",
+      "centerPx": [
+        223.03,
+        412.7
+      ],
+      "rasterObservation": "neither-forest-nor-swamp-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.124216,
+        "yellowBrownFraction": 0.158093
+      },
+      "authoredSvgTerrain": false,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "0309",
+      "currentTerrain": "forest",
+      "currentStatus": "user-svg-authored-forest",
+      "centerPx": [
+        223.03,
+        462.86
+      ],
+      "rasterObservation": "forest-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.973651,
+        "yellowBrownFraction": 0.215809
+      },
+      "authoredSvgTerrain": true,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "0310",
+      "currentTerrain": "forest",
+      "currentStatus": "user-svg-authored-forest",
+      "centerPx": [
+        223.03,
+        513.02
+      ],
+      "rasterObservation": "forest-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.932246,
+        "yellowBrownFraction": 0.158093
+      },
+      "authoredSvgTerrain": true,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "0405",
+      "currentTerrain": "open",
+      "currentStatus": "source-svg-scan-reviewed-open-v412",
+      "centerPx": [
+        265.47,
+        237.14
+      ],
+      "rasterObservation": "neither-forest-nor-swamp-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.135508,
+        "yellowBrownFraction": 0.062735
+      },
+      "authoredSvgTerrain": false,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "0406",
+      "currentTerrain": "open",
+      "currentStatus": "source-svg-scan-reviewed-open-v412",
+      "centerPx": [
+        265.47,
+        287.3
+      ],
+      "rasterObservation": "neither-forest-nor-swamp-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.033877,
+        "yellowBrownFraction": 0.202008
+      },
+      "authoredSvgTerrain": false,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "0407",
+      "currentTerrain": "open",
+      "currentStatus": "source-svg-scan-reviewed-open-v412",
+      "centerPx": [
+        265.47,
+        337.46
+      ],
+      "rasterObservation": "neither-forest-nor-swamp-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.087829,
+        "yellowBrownFraction": 0.289837
+      },
+      "authoredSvgTerrain": false,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "0408",
+      "currentTerrain": "open",
+      "currentStatus": "source-svg-scan-reviewed-open-v412",
+      "centerPx": [
+        265.47,
+        387.62
+      ],
+      "rasterObservation": "neither-forest-nor-swamp-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.033877,
+        "yellowBrownFraction": 0.074028
+      },
+      "authoredSvgTerrain": false,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "0409",
+      "currentTerrain": "open",
+      "currentStatus": "source-svg-scan-reviewed-open-v412",
+      "centerPx": [
+        265.47,
+        437.78
+      ],
+      "rasterObservation": "neither-forest-nor-swamp-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.010038,
+        "yellowBrownFraction": 0.025094
+      },
+      "authoredSvgTerrain": false,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "0410",
+      "currentTerrain": "forest",
+      "currentStatus": "user-svg-authored-forest",
+      "centerPx": [
+        265.47,
+        487.94
+      ],
+      "rasterObservation": "forest-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.964868,
+        "yellowBrownFraction": 0.163112
+      },
+      "authoredSvgTerrain": true,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "0411",
+      "currentTerrain": "forest",
+      "currentStatus": "user-svg-authored-forest",
+      "centerPx": [
+        265.47,
+        538.1
+      ],
+      "rasterObservation": "forest-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.987453,
+        "yellowBrownFraction": 0.17064
+      },
+      "authoredSvgTerrain": true,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "0504",
+      "currentTerrain": "open",
+      "currentStatus": "source-svg-scan-reviewed-open-v412",
+      "centerPx": [
+        307.91,
+        212.06
+      ],
+      "rasterObservation": "neither-forest-nor-swamp-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.002509,
+        "yellowBrownFraction": 0.0
+      },
+      "authoredSvgTerrain": false,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "0505",
+      "currentTerrain": "open",
+      "currentStatus": "source-svg-scan-reviewed-open-v412",
+      "centerPx": [
+        307.91,
+        262.22
+      ],
+      "rasterObservation": "neither-forest-nor-swamp-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.087829,
+        "yellowBrownFraction": 0.065245
+      },
+      "authoredSvgTerrain": false,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "0506",
+      "currentTerrain": "open",
+      "currentStatus": "source-svg-scan-reviewed-open-v412",
+      "centerPx": [
+        307.91,
+        312.38
+      ],
+      "rasterObservation": "neither-forest-nor-swamp-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.072773,
+        "yellowBrownFraction": 0.045169
+      },
+      "authoredSvgTerrain": false,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "0507",
+      "currentTerrain": "open",
+      "currentStatus": "source-svg-scan-reviewed-open-v412",
+      "centerPx": [
+        307.91,
+        362.54
+      ],
+      "rasterObservation": "neither-forest-nor-swamp-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.0,
+        "yellowBrownFraction": 0.0
+      },
+      "authoredSvgTerrain": false,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "0508",
+      "currentTerrain": "open",
+      "currentStatus": "source-svg-scan-reviewed-open-v412",
+      "centerPx": [
+        307.91,
+        412.7
+      ],
+      "rasterObservation": "neither-forest-nor-swamp-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.051443,
+        "yellowBrownFraction": 0.079046
+      },
+      "authoredSvgTerrain": false,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "0509",
+      "currentTerrain": "forest",
+      "currentStatus": "user-svg-authored-forest",
+      "centerPx": [
+        307.91,
+        462.86
+      ],
+      "rasterObservation": "forest-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.966123,
+        "yellowBrownFraction": 0.096612
+      },
+      "authoredSvgTerrain": true,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "0510",
+      "currentTerrain": "forest",
+      "currentStatus": "user-svg-authored-forest",
+      "centerPx": [
+        307.91,
+        513.02
+      ],
+      "rasterObservation": "forest-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.953576,
+        "yellowBrownFraction": 0.228356
+      },
+      "authoredSvgTerrain": true,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "0604",
+      "currentTerrain": "open",
+      "currentStatus": "source-svg-scan-reviewed-open-v412",
+      "centerPx": [
+        350.35,
+        186.98
+      ],
+      "rasterObservation": "neither-forest-nor-swamp-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.0,
+        "yellowBrownFraction": 0.001255
+      },
+      "authoredSvgTerrain": false,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "0605",
+      "currentTerrain": "open",
+      "currentStatus": "source-svg-scan-reviewed-open-v412",
+      "centerPx": [
+        350.35,
+        237.14
+      ],
+      "rasterObservation": "neither-forest-nor-swamp-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.0,
+        "yellowBrownFraction": 0.0
+      },
+      "authoredSvgTerrain": false,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "0606",
+      "currentTerrain": "open",
+      "currentStatus": "source-svg-scan-reviewed-open-v412",
+      "centerPx": [
+        350.35,
+        287.3
+      ],
+      "rasterObservation": "neither-forest-nor-swamp-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.065245,
+        "yellowBrownFraction": 0.259724
+      },
+      "authoredSvgTerrain": false,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "0607",
+      "currentTerrain": "open",
+      "currentStatus": "source-svg-scan-reviewed-open-v412",
+      "centerPx": [
+        350.35,
+        337.46
+      ],
+      "rasterObservation": "neither-forest-nor-swamp-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.0,
+        "yellowBrownFraction": 0.0
+      },
+      "authoredSvgTerrain": false,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "0608",
+      "currentTerrain": "open",
+      "currentStatus": "source-svg-scan-reviewed-open-v412",
+      "centerPx": [
+        350.35,
+        387.62
+      ],
+      "rasterObservation": "neither-forest-nor-swamp-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.0,
+        "yellowBrownFraction": 0.0
+      },
+      "authoredSvgTerrain": false,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "0609",
+      "currentTerrain": "open",
+      "currentStatus": "source-svg-scan-reviewed-open-v412",
+      "centerPx": [
+        350.35,
+        437.78
+      ],
+      "rasterObservation": "neither-forest-nor-swamp-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.076537,
+        "yellowBrownFraction": 0.313676
+      },
+      "authoredSvgTerrain": false,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "0610",
+      "currentTerrain": "forest",
+      "currentStatus": "user-svg-authored-forest",
+      "centerPx": [
+        350.35,
+        487.94
+      ],
+      "rasterObservation": "forest-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.95734,
+        "yellowBrownFraction": 0.089084
+      },
+      "authoredSvgTerrain": true,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "0611",
+      "currentTerrain": "swamp",
+      "currentStatus": "user-svg-authored-swamp",
+      "centerPx": [
+        350.35,
+        538.1
+      ],
+      "rasterObservation": "swamp-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.051443,
+        "yellowBrownFraction": 0.986198
+      },
+      "authoredSvgTerrain": true,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "0703",
+      "currentTerrain": "open",
+      "currentStatus": "source-svg-scan-reviewed-open-v412",
+      "centerPx": [
+        392.79,
+        161.9
+      ],
+      "rasterObservation": "neither-forest-nor-swamp-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.040151,
+        "yellowBrownFraction": 0.159348
+      },
+      "authoredSvgTerrain": false,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "0704",
+      "currentTerrain": "open",
+      "currentStatus": "source-svg-scan-reviewed-open-v412",
+      "centerPx": [
+        392.79,
+        212.06
+      ],
+      "rasterObservation": "neither-forest-nor-swamp-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.008783,
+        "yellowBrownFraction": 0.001255
+      },
+      "authoredSvgTerrain": false,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "0705",
+      "currentTerrain": "open",
+      "currentStatus": "source-svg-scan-reviewed-open-v412",
+      "centerPx": [
+        392.79,
+        262.22
+      ],
+      "rasterObservation": "neither-forest-nor-swamp-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.076537,
+        "yellowBrownFraction": 0.043915
+      },
+      "authoredSvgTerrain": false,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "0706",
+      "currentTerrain": "forest",
+      "currentStatus": "user-svg-authored-forest",
+      "centerPx": [
+        392.79,
+        312.38
+      ],
+      "rasterObservation": "forest-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.968632,
+        "yellowBrownFraction": 0.217064
+      },
+      "authoredSvgTerrain": true,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "0707",
+      "currentTerrain": "open",
+      "currentStatus": "source-svg-scan-reviewed-open-v412",
+      "centerPx": [
+        392.79,
+        362.54
+      ],
+      "rasterObservation": "neither-forest-nor-swamp-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.0,
+        "yellowBrownFraction": 0.0
+      },
+      "authoredSvgTerrain": false,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "0708",
+      "currentTerrain": "swamp",
+      "currentStatus": "user-svg-authored-swamp",
+      "centerPx": [
+        392.79,
+        412.7
+      ],
+      "rasterObservation": "swamp-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.052698,
+        "yellowBrownFraction": 0.982434
+      },
+      "authoredSvgTerrain": true,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "0709",
+      "currentTerrain": "swamp",
+      "currentStatus": "user-svg-authored-swamp",
+      "centerPx": [
+        392.79,
+        462.86
+      ],
+      "rasterObservation": "swamp-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.135508,
+        "yellowBrownFraction": 0.938519
+      },
+      "authoredSvgTerrain": true,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "0710",
+      "currentTerrain": "open",
+      "currentStatus": "source-svg-scan-reviewed-open-v412",
+      "centerPx": [
+        392.79,
+        513.02
+      ],
+      "rasterObservation": "neither-forest-nor-swamp-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.071518,
+        "yellowBrownFraction": 0.046424
+      },
+      "authoredSvgTerrain": false,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "0803",
+      "currentTerrain": "open",
+      "currentStatus": "source-svg-scan-reviewed-open-v412",
+      "centerPx": [
+        435.23,
+        136.82
+      ],
+      "rasterObservation": "neither-forest-nor-swamp-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.053952,
+        "yellowBrownFraction": 0.129235
+      },
+      "authoredSvgTerrain": false,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "0804",
+      "currentTerrain": "open",
+      "currentStatus": "source-svg-scan-reviewed-open-v412",
+      "centerPx": [
+        435.23,
+        186.98
+      ],
+      "rasterObservation": "neither-forest-nor-swamp-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.030113,
+        "yellowBrownFraction": 0.016311
+      },
+      "authoredSvgTerrain": false,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "0805",
+      "currentTerrain": "open",
+      "currentStatus": "source-svg-scan-reviewed-open-v412",
+      "centerPx": [
+        435.23,
+        237.14
+      ],
+      "rasterObservation": "neither-forest-nor-swamp-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.053952,
+        "yellowBrownFraction": 0.069009
+      },
+      "authoredSvgTerrain": false,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "0806",
+      "currentTerrain": "open",
+      "currentStatus": "source-svg-scan-reviewed-open-v412",
+      "centerPx": [
+        435.23,
+        287.3
+      ],
+      "rasterObservation": "neither-forest-nor-swamp-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.0,
+        "yellowBrownFraction": 0.0
+      },
+      "authoredSvgTerrain": false,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "0807",
+      "currentTerrain": "open",
+      "currentStatus": "source-svg-scan-reviewed-open-v412",
+      "centerPx": [
+        435.23,
+        337.46
+      ],
+      "rasterObservation": "neither-forest-nor-swamp-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.082811,
+        "yellowBrownFraction": 0.072773
+      },
+      "authoredSvgTerrain": false,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "0808",
+      "currentTerrain": "open",
+      "currentStatus": "source-svg-scan-reviewed-open-v412",
+      "centerPx": [
+        435.23,
+        387.62
+      ],
+      "rasterObservation": "neither-forest-nor-swamp-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.052698,
+        "yellowBrownFraction": 0.055207
+      },
+      "authoredSvgTerrain": false,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "0809",
+      "currentTerrain": "open",
+      "currentStatus": "source-svg-scan-reviewed-open-v412",
+      "centerPx": [
+        435.23,
+        437.78
+      ],
+      "rasterObservation": "neither-forest-nor-swamp-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.0,
+        "yellowBrownFraction": 0.0
+      },
+      "authoredSvgTerrain": false,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "0810",
+      "currentTerrain": "swamp",
+      "currentStatus": "user-svg-authored-swamp",
+      "centerPx": [
+        435.23,
+        487.94
+      ],
+      "rasterObservation": "swamp-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.220828,
+        "yellowBrownFraction": 0.967378
+      },
+      "authoredSvgTerrain": true,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "0811",
+      "currentTerrain": "swamp",
+      "currentStatus": "user-svg-authored-swamp",
+      "centerPx": [
+        435.23,
+        538.1
+      ],
+      "rasterObservation": "swamp-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.141782,
+        "yellowBrownFraction": 0.973651
+      },
+      "authoredSvgTerrain": true,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "0903",
+      "currentTerrain": "open",
+      "currentStatus": "source-svg-scan-reviewed-open-v412",
+      "centerPx": [
+        477.67,
+        161.9
+      ],
+      "rasterObservation": "neither-forest-nor-swamp-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.0,
+        "yellowBrownFraction": 0.309912
+      },
+      "authoredSvgTerrain": false,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "0904",
+      "currentTerrain": "open",
+      "currentStatus": "source-svg-scan-reviewed-open-v412",
+      "centerPx": [
+        477.67,
+        212.06
+      ],
+      "rasterObservation": "neither-forest-nor-swamp-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.010038,
+        "yellowBrownFraction": 0.0
+      },
+      "authoredSvgTerrain": false,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "0905",
+      "currentTerrain": "open",
+      "currentStatus": "source-svg-scan-reviewed-open-v412",
+      "centerPx": [
+        477.67,
+        262.22
+      ],
+      "rasterObservation": "neither-forest-nor-swamp-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.0,
+        "yellowBrownFraction": 0.0
+      },
+      "authoredSvgTerrain": false,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "0906",
+      "currentTerrain": "open",
+      "currentStatus": "source-svg-scan-reviewed-open-v412",
+      "centerPx": [
+        477.67,
+        312.38
+      ],
+      "rasterObservation": "neither-forest-nor-swamp-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.0,
+        "yellowBrownFraction": 0.067754
+      },
+      "authoredSvgTerrain": false,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "0907",
+      "currentTerrain": "open",
+      "currentStatus": "source-svg-scan-reviewed-open-v412",
+      "centerPx": [
+        477.67,
+        362.54
+      ],
+      "rasterObservation": "neither-forest-nor-swamp-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.0,
+        "yellowBrownFraction": 0.003764
+      },
+      "authoredSvgTerrain": false,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "0908",
+      "currentTerrain": "open",
+      "currentStatus": "source-svg-scan-reviewed-open-v412",
+      "centerPx": [
+        477.67,
+        412.7
+      ],
+      "rasterObservation": "neither-forest-nor-swamp-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.0,
+        "yellowBrownFraction": 0.005019
+      },
+      "authoredSvgTerrain": false,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "0909",
+      "currentTerrain": "open",
+      "currentStatus": "source-svg-scan-reviewed-open-v412",
+      "centerPx": [
+        477.67,
+        462.86
+      ],
+      "rasterObservation": "neither-forest-nor-swamp-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.0,
+        "yellowBrownFraction": 0.001255
+      },
+      "authoredSvgTerrain": false,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "0910",
+      "currentTerrain": "swamp",
+      "currentStatus": "user-svg-authored-swamp",
+      "centerPx": [
+        477.67,
+        513.02
+      ],
+      "rasterObservation": "swamp-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.074028,
+        "yellowBrownFraction": 0.987453
+      },
+      "authoredSvgTerrain": true,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "1003",
+      "currentTerrain": "open",
+      "currentStatus": "source-svg-scan-reviewed-open-v412",
+      "centerPx": [
+        520.11,
+        136.82
+      ],
+      "rasterObservation": "neither-forest-nor-swamp-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.0,
+        "yellowBrownFraction": 0.0
+      },
+      "authoredSvgTerrain": false,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "1004",
+      "currentTerrain": "forest",
+      "currentStatus": "user-svg-authored-forest",
+      "centerPx": [
+        520.11,
+        186.98
+      ],
+      "rasterObservation": "forest-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.971142,
+        "yellowBrownFraction": 0.076537
+      },
+      "authoredSvgTerrain": true,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "1005",
+      "currentTerrain": "open",
+      "currentStatus": "source-svg-scan-reviewed-open-v412",
+      "centerPx": [
+        520.11,
+        237.14
+      ],
+      "rasterObservation": "neither-forest-nor-swamp-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.0,
+        "yellowBrownFraction": 0.0
+      },
+      "authoredSvgTerrain": false,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "1006",
+      "currentTerrain": "forest",
+      "currentStatus": "user-svg-authored-forest",
+      "centerPx": [
+        520.11,
+        287.3
+      ],
+      "rasterObservation": "forest-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.954831,
+        "yellowBrownFraction": 0.101631
+      },
+      "authoredSvgTerrain": true,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "1007",
+      "currentTerrain": "open",
+      "currentStatus": "source-svg-scan-reviewed-open-v412",
+      "centerPx": [
+        520.11,
+        337.46
+      ],
+      "rasterObservation": "neither-forest-nor-swamp-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.074028,
+        "yellowBrownFraction": 0.046424
+      },
+      "authoredSvgTerrain": false,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "1008",
+      "currentTerrain": "open",
+      "currentStatus": "source-svg-scan-reviewed-open-v412",
+      "centerPx": [
+        520.11,
+        387.62
+      ],
+      "rasterObservation": "neither-forest-nor-swamp-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.033877,
+        "yellowBrownFraction": 0.038896
+      },
+      "authoredSvgTerrain": false,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "1009",
+      "currentTerrain": "forest",
+      "currentStatus": "user-svg-authored-forest",
+      "centerPx": [
+        520.11,
+        437.78
+      ],
+      "rasterObservation": "forest-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.998745,
+        "yellowBrownFraction": 0.050188
+      },
+      "authoredSvgTerrain": true,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "1010",
+      "currentTerrain": "swamp",
+      "currentStatus": "user-svg-authored-swamp",
+      "centerPx": [
+        520.11,
+        487.94
+      ],
+      "rasterObservation": "swamp-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.165621,
+        "yellowBrownFraction": 0.983689
+      },
+      "authoredSvgTerrain": true,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "1011",
+      "currentTerrain": "swamp",
+      "currentStatus": "user-svg-authored-swamp",
+      "centerPx": [
+        520.11,
+        538.1
+      ],
+      "rasterObservation": "swamp-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.086575,
+        "yellowBrownFraction": 0.988708
+      },
+      "authoredSvgTerrain": true,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "1102",
+      "currentTerrain": "forest",
+      "currentStatus": "user-svg-authored-forest",
+      "centerPx": [
+        562.55,
+        111.74
+      ],
+      "rasterObservation": "forest-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.988708,
+        "yellowBrownFraction": 0.120452
+      },
+      "authoredSvgTerrain": true,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "1103",
+      "currentTerrain": "open",
+      "currentStatus": "source-svg-scan-reviewed-open-v412",
+      "centerPx": [
+        562.55,
+        161.9
+      ],
+      "rasterObservation": "neither-forest-nor-swamp-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.0,
+        "yellowBrownFraction": 0.002509
+      },
+      "authoredSvgTerrain": false,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "1104",
+      "currentTerrain": "open",
+      "currentStatus": "source-svg-scan-reviewed-open-v412",
+      "centerPx": [
+        562.55,
+        212.06
+      ],
+      "rasterObservation": "neither-forest-nor-swamp-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.0,
+        "yellowBrownFraction": 0.04266
+      },
+      "authoredSvgTerrain": false,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "1105",
+      "currentTerrain": "forest",
+      "currentStatus": "user-svg-authored-forest",
+      "centerPx": [
+        562.55,
+        262.22
+      ],
+      "rasterObservation": "forest-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.997491,
+        "yellowBrownFraction": 0.071518
+      },
+      "authoredSvgTerrain": true,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "1106",
+      "currentTerrain": "forest",
+      "currentStatus": "user-svg-authored-forest",
+      "centerPx": [
+        562.55,
+        312.38
+      ],
+      "rasterObservation": "forest-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.97867,
+        "yellowBrownFraction": 0.181932
+      },
+      "authoredSvgTerrain": true,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "1107",
+      "currentTerrain": "swamp",
+      "currentStatus": "user-svg-authored-swamp",
+      "centerPx": [
+        562.55,
+        362.54
+      ],
+      "rasterObservation": "swamp-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.092848,
+        "yellowBrownFraction": 0.981179
+      },
+      "authoredSvgTerrain": true,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "1108",
+      "currentTerrain": "swamp",
+      "currentStatus": "user-svg-authored-swamp",
+      "centerPx": [
+        562.55,
+        412.7
+      ],
+      "rasterObservation": "swamp-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.06399,
+        "yellowBrownFraction": 0.988708
+      },
+      "authoredSvgTerrain": true,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "1109",
+      "currentTerrain": "open",
+      "currentStatus": "source-svg-scan-reviewed-open-v412",
+      "centerPx": [
+        562.55,
+        462.86
+      ],
+      "rasterObservation": "neither-forest-nor-swamp-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.0,
+        "yellowBrownFraction": 0.001255
+      },
+      "authoredSvgTerrain": false,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "1110",
+      "currentTerrain": "swamp",
+      "currentStatus": "user-svg-authored-swamp",
+      "centerPx": [
+        562.55,
+        513.02
+      ],
+      "rasterObservation": "swamp-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.130489,
+        "yellowBrownFraction": 0.956085
+      },
+      "authoredSvgTerrain": true,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "1202",
+      "currentTerrain": "open",
+      "currentStatus": "source-svg-scan-reviewed-open-v412",
+      "centerPx": [
+        604.99,
+        86.66
+      ],
+      "rasterObservation": "neither-forest-nor-swamp-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.0,
+        "yellowBrownFraction": 0.0
+      },
+      "authoredSvgTerrain": false,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "1203",
+      "currentTerrain": "open",
+      "currentStatus": "source-svg-scan-reviewed-open-v412",
+      "centerPx": [
+        604.99,
+        136.82
+      ],
+      "rasterObservation": "neither-forest-nor-swamp-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.111669,
+        "yellowBrownFraction": 0.230866
+      },
+      "authoredSvgTerrain": false,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "1204",
+      "currentTerrain": "open",
+      "currentStatus": "source-svg-scan-reviewed-open-v412",
+      "centerPx": [
+        604.99,
+        186.98
+      ],
+      "rasterObservation": "neither-forest-nor-swamp-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.0,
+        "yellowBrownFraction": 0.0
+      },
+      "authoredSvgTerrain": false,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "1205",
+      "currentTerrain": "open",
+      "currentStatus": "source-svg-scan-reviewed-open-v412",
+      "centerPx": [
+        604.99,
+        237.14
+      ],
+      "rasterObservation": "neither-forest-nor-swamp-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.0,
+        "yellowBrownFraction": 0.0
+      },
+      "authoredSvgTerrain": false,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "1206",
+      "currentTerrain": "forest",
+      "currentStatus": "user-svg-authored-forest",
+      "centerPx": [
+        604.99,
+        287.3
+      ],
+      "rasterObservation": "forest-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.930991,
+        "yellowBrownFraction": 0.144291
+      },
+      "authoredSvgTerrain": true,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "1207",
+      "currentTerrain": "swamp",
+      "currentStatus": "user-svg-authored-swamp",
+      "centerPx": [
+        604.99,
+        337.46
+      ],
+      "rasterObservation": "swamp-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.180678,
+        "yellowBrownFraction": 0.959849
+      },
+      "authoredSvgTerrain": true,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "1208",
+      "currentTerrain": "swamp",
+      "currentStatus": "user-svg-authored-swamp",
+      "centerPx": [
+        604.99,
+        387.62
+      ],
+      "rasterObservation": "swamp-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.289837,
+        "yellowBrownFraction": 0.920954
+      },
+      "authoredSvgTerrain": true,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "1209",
+      "currentTerrain": "swamp",
+      "currentStatus": "user-svg-authored-swamp",
+      "centerPx": [
+        604.99,
+        437.78
+      ],
+      "rasterObservation": "swamp-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.111669,
+        "yellowBrownFraction": 0.988708
+      },
+      "authoredSvgTerrain": true,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "1210",
+      "currentTerrain": "swamp",
+      "currentStatus": "user-svg-authored-swamp",
+      "centerPx": [
+        604.99,
+        487.94
+      ],
+      "rasterObservation": "swamp-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.183187,
+        "yellowBrownFraction": 0.954831
+      },
+      "authoredSvgTerrain": true,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "1211",
+      "currentTerrain": "swamp",
+      "currentStatus": "user-svg-authored-swamp",
+      "centerPx": [
+        604.99,
+        538.1
+      ],
+      "rasterObservation": "swamp-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.135508,
+        "yellowBrownFraction": 0.979925
+      },
+      "authoredSvgTerrain": true,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "1302",
+      "currentTerrain": "open",
+      "currentStatus": "source-svg-scan-reviewed-open-v412",
+      "centerPx": [
+        647.43,
+        111.74
+      ],
+      "rasterObservation": "neither-forest-nor-swamp-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.0,
+        "yellowBrownFraction": 0.060226
+      },
+      "authoredSvgTerrain": false,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "1303",
+      "currentTerrain": "open",
+      "currentStatus": "source-svg-scan-reviewed-open-v412",
+      "centerPx": [
+        647.43,
+        161.9
+      ],
+      "rasterObservation": "neither-forest-nor-swamp-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.058971,
+        "yellowBrownFraction": 0.107905
+      },
+      "authoredSvgTerrain": false,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "1304",
+      "currentTerrain": "open",
+      "currentStatus": "source-svg-scan-reviewed-open-v412",
+      "centerPx": [
+        647.43,
+        212.06
+      ],
+      "rasterObservation": "neither-forest-nor-swamp-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.013802,
+        "yellowBrownFraction": 0.017566
+      },
+      "authoredSvgTerrain": false,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "1305",
+      "currentTerrain": "open",
+      "currentStatus": "source-svg-scan-reviewed-open-v412",
+      "centerPx": [
+        647.43,
+        262.22
+      ],
+      "rasterObservation": "neither-forest-nor-swamp-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.087829,
+        "yellowBrownFraction": 0.057716
+      },
+      "authoredSvgTerrain": false,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "1306",
+      "currentTerrain": "forest",
+      "currentStatus": "user-svg-authored-forest",
+      "centerPx": [
+        647.43,
+        312.38
+      ],
+      "rasterObservation": "forest-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.996236,
+        "yellowBrownFraction": 0.235885
+      },
+      "authoredSvgTerrain": true,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "1307",
+      "currentTerrain": "swamp",
+      "currentStatus": "user-svg-authored-swamp",
+      "centerPx": [
+        647.43,
+        362.54
+      ],
+      "rasterObservation": "swamp-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.084065,
+        "yellowBrownFraction": 0.968632
+      },
+      "authoredSvgTerrain": true,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "1308",
+      "currentTerrain": "open",
+      "currentStatus": "source-svg-scan-reviewed-open-v412",
+      "centerPx": [
+        647.43,
+        412.7
+      ],
+      "rasterObservation": "neither-forest-nor-swamp-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.0,
+        "yellowBrownFraction": 0.041405
+      },
+      "authoredSvgTerrain": false,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "1309",
+      "currentTerrain": "open",
+      "currentStatus": "source-svg-scan-reviewed-open-v412",
+      "centerPx": [
+        647.43,
+        462.86
+      ],
+      "rasterObservation": "neither-forest-nor-swamp-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.067754,
+        "yellowBrownFraction": 0.087829
+      },
+      "authoredSvgTerrain": false,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "1310",
+      "currentTerrain": "open",
+      "currentStatus": "source-svg-scan-reviewed-open-v412",
+      "centerPx": [
+        647.43,
+        513.02
+      ],
+      "rasterObservation": "neither-forest-nor-swamp-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.055207,
+        "yellowBrownFraction": 0.060226
+      },
+      "authoredSvgTerrain": false,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "1402",
+      "currentTerrain": "open",
+      "currentStatus": "source-svg-scan-reviewed-open-v412",
+      "centerPx": [
+        689.87,
+        86.66
+      ],
+      "rasterObservation": "neither-forest-nor-swamp-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.041405,
+        "yellowBrownFraction": 0.114178
+      },
+      "authoredSvgTerrain": false,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "1403",
+      "currentTerrain": "forest",
+      "currentStatus": "user-svg-authored-forest",
+      "centerPx": [
+        689.87,
+        136.82
+      ],
+      "rasterObservation": "forest-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.987453,
+        "yellowBrownFraction": 0.086575
+      },
+      "authoredSvgTerrain": true,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "1404",
+      "currentTerrain": "open",
+      "currentStatus": "source-svg-scan-reviewed-open-v412",
+      "centerPx": [
+        689.87,
+        186.98
+      ],
+      "rasterObservation": "neither-forest-nor-swamp-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.051443,
+        "yellowBrownFraction": 0.193225
+      },
+      "authoredSvgTerrain": false,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "1405",
+      "currentTerrain": "open",
+      "currentStatus": "source-svg-scan-reviewed-open-v412",
+      "centerPx": [
+        689.87,
+        237.14
+      ],
+      "rasterObservation": "neither-forest-nor-swamp-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.095358,
+        "yellowBrownFraction": 0.130489
+      },
+      "authoredSvgTerrain": false,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "1406",
+      "currentTerrain": "open",
+      "currentStatus": "source-svg-scan-reviewed-open-v412",
+      "centerPx": [
+        689.87,
+        287.3
+      ],
+      "rasterObservation": "neither-forest-nor-swamp-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.0,
+        "yellowBrownFraction": 0.001255
+      },
+      "authoredSvgTerrain": false,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "1407",
+      "currentTerrain": "open",
+      "currentStatus": "source-svg-scan-reviewed-open-v412",
+      "centerPx": [
+        689.87,
+        337.46
+      ],
+      "rasterObservation": "neither-forest-nor-swamp-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.038896,
+        "yellowBrownFraction": 0.022585
+      },
+      "authoredSvgTerrain": false,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "1408",
+      "currentTerrain": "open",
+      "currentStatus": "source-svg-scan-reviewed-open-v412",
+      "centerPx": [
+        689.87,
+        387.62
+      ],
+      "rasterObservation": "neither-forest-nor-swamp-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.023839,
+        "yellowBrownFraction": 0.022585
+      },
+      "authoredSvgTerrain": false,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "1409",
+      "currentTerrain": "open",
+      "currentStatus": "source-svg-scan-reviewed-open-v412",
+      "centerPx": [
+        689.87,
+        437.78
+      ],
+      "rasterObservation": "neither-forest-nor-swamp-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.072773,
+        "yellowBrownFraction": 0.111669
+      },
+      "authoredSvgTerrain": false,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "1410",
+      "currentTerrain": "open",
+      "currentStatus": "source-svg-scan-reviewed-open-v412",
+      "centerPx": [
+        689.87,
+        487.94
+      ],
+      "rasterObservation": "neither-forest-nor-swamp-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.069009,
+        "yellowBrownFraction": 0.071518
+      },
+      "authoredSvgTerrain": false,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "1411",
+      "currentTerrain": "open",
+      "currentStatus": "source-svg-scan-reviewed-open-v412",
+      "centerPx": [
+        689.87,
+        538.1
+      ],
+      "rasterObservation": "neither-forest-nor-swamp-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.056462,
+        "yellowBrownFraction": 0.144291
+      },
+      "authoredSvgTerrain": false,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "1501",
+      "currentTerrain": "open",
+      "currentStatus": "source-svg-scan-reviewed-open-v412",
+      "centerPx": [
+        732.31,
+        61.58
+      ],
+      "rasterObservation": "neither-forest-nor-swamp-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.022585,
+        "yellowBrownFraction": 0.013802
+      },
+      "authoredSvgTerrain": false,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "1502",
+      "currentTerrain": "open",
+      "currentStatus": "source-svg-scan-reviewed-open-v412",
+      "centerPx": [
+        732.31,
+        111.74
+      ],
+      "rasterObservation": "neither-forest-nor-swamp-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.032622,
+        "yellowBrownFraction": 0.047679
+      },
+      "authoredSvgTerrain": false,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "1503",
+      "currentTerrain": "open",
+      "currentStatus": "source-svg-scan-reviewed-open-v412",
+      "centerPx": [
+        732.31,
+        161.9
+      ],
+      "rasterObservation": "neither-forest-nor-swamp-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.0,
+        "yellowBrownFraction": 0.008783
+      },
+      "authoredSvgTerrain": false,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "1504",
+      "currentTerrain": "forest",
+      "currentStatus": "user-svg-authored-forest",
+      "centerPx": [
+        732.31,
+        212.06
+      ],
+      "rasterObservation": "forest-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.991217,
+        "yellowBrownFraction": 0.061481
+      },
+      "authoredSvgTerrain": true,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "1505",
+      "currentTerrain": "open",
+      "currentStatus": "source-svg-scan-reviewed-open-v412",
+      "centerPx": [
+        732.31,
+        262.22
+      ],
+      "rasterObservation": "neither-forest-nor-swamp-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.072773,
+        "yellowBrownFraction": 0.267252
+      },
+      "authoredSvgTerrain": false,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "1506",
+      "currentTerrain": "open",
+      "currentStatus": "source-svg-scan-reviewed-open-v412",
+      "centerPx": [
+        732.31,
+        312.38
+      ],
+      "rasterObservation": "neither-forest-nor-swamp-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.060226,
+        "yellowBrownFraction": 0.040151
+      },
+      "authoredSvgTerrain": false,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "1507",
+      "currentTerrain": "open",
+      "currentStatus": "source-svg-scan-reviewed-open-v412",
+      "centerPx": [
+        732.31,
+        362.54
+      ],
+      "rasterObservation": "neither-forest-nor-swamp-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.116688,
+        "yellowBrownFraction": 0.135508
+      },
+      "authoredSvgTerrain": false,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "1508",
+      "currentTerrain": "open",
+      "currentStatus": "source-svg-scan-reviewed-open-v412",
+      "centerPx": [
+        732.31,
+        412.7
+      ],
+      "rasterObservation": "neither-forest-nor-swamp-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.008783,
+        "yellowBrownFraction": 0.006274
+      },
+      "authoredSvgTerrain": false,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "1509",
+      "currentTerrain": "open",
+      "currentStatus": "source-svg-scan-reviewed-open-v412",
+      "centerPx": [
+        732.31,
+        462.86
+      ],
+      "rasterObservation": "neither-forest-nor-swamp-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.0,
+        "yellowBrownFraction": 0.0
+      },
+      "authoredSvgTerrain": false,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "1510",
+      "currentTerrain": "open",
+      "currentStatus": "source-svg-scan-reviewed-open-v412",
+      "centerPx": [
+        732.31,
+        513.02
+      ],
+      "rasterObservation": "neither-forest-nor-swamp-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.114178,
+        "yellowBrownFraction": 0.326223
+      },
+      "authoredSvgTerrain": false,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "1601",
+      "currentTerrain": "open",
+      "currentStatus": "source-svg-scan-reviewed-open-v412",
+      "centerPx": [
+        774.75,
+        36.5
+      ],
+      "rasterObservation": "neither-forest-nor-swamp-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.102886,
+        "yellowBrownFraction": 0.196989
+      },
+      "authoredSvgTerrain": false,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "1602",
+      "currentTerrain": "open",
+      "currentStatus": "source-svg-scan-reviewed-open-v412",
+      "centerPx": [
+        774.75,
+        86.66
+      ],
+      "rasterObservation": "neither-forest-nor-swamp-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.02133,
+        "yellowBrownFraction": 0.025094
+      },
+      "authoredSvgTerrain": false,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "1603",
+      "currentTerrain": "open",
+      "currentStatus": "source-svg-scan-reviewed-open-v412",
+      "centerPx": [
+        774.75,
+        136.82
+      ],
+      "rasterObservation": "neither-forest-nor-swamp-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.0,
+        "yellowBrownFraction": 0.003764
+      },
+      "authoredSvgTerrain": false,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "1604",
+      "currentTerrain": "open",
+      "currentStatus": "source-svg-scan-reviewed-open-v412",
+      "centerPx": [
+        774.75,
+        186.98
+      ],
+      "rasterObservation": "neither-forest-nor-swamp-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.0,
+        "yellowBrownFraction": 0.001255
+      },
+      "authoredSvgTerrain": false,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "1605",
+      "currentTerrain": "open",
+      "currentStatus": "source-svg-scan-reviewed-open-v412",
+      "centerPx": [
+        774.75,
+        237.14
+      ],
+      "rasterObservation": "neither-forest-nor-swamp-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.111669,
+        "yellowBrownFraction": 0.114178
+      },
+      "authoredSvgTerrain": false,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "1606",
+      "currentTerrain": "open",
+      "currentStatus": "source-svg-scan-reviewed-open-v412",
+      "centerPx": [
+        774.75,
+        287.3
+      ],
+      "rasterObservation": "neither-forest-nor-swamp-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.010038,
+        "yellowBrownFraction": 0.002509
+      },
+      "authoredSvgTerrain": false,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "1607",
+      "currentTerrain": "open",
+      "currentStatus": "source-svg-scan-reviewed-open-v412",
+      "centerPx": [
+        774.75,
+        337.46
+      ],
+      "rasterObservation": "neither-forest-nor-swamp-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.0,
+        "yellowBrownFraction": 0.0
+      },
+      "authoredSvgTerrain": false,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "1608",
+      "currentTerrain": "open",
+      "currentStatus": "source-svg-scan-reviewed-open-v412",
+      "centerPx": [
+        774.75,
+        387.62
+      ],
+      "rasterObservation": "neither-forest-nor-swamp-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.002509,
+        "yellowBrownFraction": 0.006274
+      },
+      "authoredSvgTerrain": false,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "1609",
+      "currentTerrain": "forest",
+      "currentStatus": "user-svg-authored-forest",
+      "centerPx": [
+        774.75,
+        437.78
+      ],
+      "rasterObservation": "forest-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 1.0,
+        "yellowBrownFraction": 0.100376
+      },
+      "authoredSvgTerrain": true,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "1610",
+      "currentTerrain": "open",
+      "currentStatus": "source-svg-scan-reviewed-open-v412",
+      "centerPx": [
+        774.75,
+        487.94
+      ],
+      "rasterObservation": "neither-forest-nor-swamp-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.056462,
+        "yellowBrownFraction": 0.111669
+      },
+      "authoredSvgTerrain": false,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "1611",
+      "currentTerrain": "open",
+      "currentStatus": "source-svg-scan-reviewed-open-v412",
+      "centerPx": [
+        774.75,
+        538.1
+      ],
+      "rasterObservation": "neither-forest-nor-swamp-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.003764,
+        "yellowBrownFraction": 0.031368
+      },
+      "authoredSvgTerrain": false,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "1701",
+      "currentTerrain": "swamp",
+      "currentStatus": "user-svg-authored-swamp",
+      "centerPx": [
+        817.19,
+        61.58
+      ],
+      "rasterObservation": "swamp-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.102886,
+        "yellowBrownFraction": 0.988708
+      },
+      "authoredSvgTerrain": true,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "1702",
+      "currentTerrain": "forest",
+      "currentStatus": "user-svg-authored-forest",
+      "centerPx": [
+        817.19,
+        111.74
+      ],
+      "rasterObservation": "forest-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.973651,
+        "yellowBrownFraction": 0.06399
+      },
+      "authoredSvgTerrain": true,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "1703",
+      "currentTerrain": "forest",
+      "currentStatus": "user-svg-authored-forest",
+      "centerPx": [
+        817.19,
+        161.9
+      ],
+      "rasterObservation": "forest-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.996236,
+        "yellowBrownFraction": 0.046424
+      },
+      "authoredSvgTerrain": true,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "1704",
+      "currentTerrain": "open",
+      "currentStatus": "source-svg-scan-reviewed-open-v412",
+      "centerPx": [
+        817.19,
+        212.06
+      ],
+      "rasterObservation": "neither-forest-nor-swamp-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.101631,
+        "yellowBrownFraction": 0.145546
+      },
+      "authoredSvgTerrain": false,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "1705",
+      "currentTerrain": "open",
+      "currentStatus": "source-svg-scan-reviewed-open-v412",
+      "centerPx": [
+        817.19,
+        262.22
+      ],
+      "rasterObservation": "neither-forest-nor-swamp-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.066499,
+        "yellowBrownFraction": 0.096612
+      },
+      "authoredSvgTerrain": false,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "1706",
+      "currentTerrain": "open",
+      "currentStatus": "source-svg-scan-reviewed-open-v412",
+      "centerPx": [
+        817.19,
+        312.38
+      ],
+      "rasterObservation": "neither-forest-nor-swamp-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.0,
+        "yellowBrownFraction": 0.0
+      },
+      "authoredSvgTerrain": false,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "1707",
+      "currentTerrain": "forest",
+      "currentStatus": "user-svg-authored-forest",
+      "centerPx": [
+        817.19,
+        362.54
+      ],
+      "rasterObservation": "forest-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.972396,
+        "yellowBrownFraction": 0.124216
+      },
+      "authoredSvgTerrain": true,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "1708",
+      "currentTerrain": "swamp",
+      "currentStatus": "user-svg-authored-swamp",
+      "centerPx": [
+        817.19,
+        412.7
+      ],
+      "rasterObservation": "swamp-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.08532,
+        "yellowBrownFraction": 0.973651
+      },
+      "authoredSvgTerrain": true,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "1709",
+      "currentTerrain": "forest",
+      "currentStatus": "user-svg-authored-forest",
+      "centerPx": [
+        817.19,
+        462.86
+      ],
+      "rasterObservation": "forest-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.928482,
+        "yellowBrownFraction": 0.125471
+      },
+      "authoredSvgTerrain": true,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "1710",
+      "currentTerrain": "forest",
+      "currentStatus": "user-svg-authored-forest",
+      "centerPx": [
+        817.19,
+        513.02
+      ],
+      "rasterObservation": "forest-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.991217,
+        "yellowBrownFraction": 0.194479
+      },
+      "authoredSvgTerrain": true,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "1801",
+      "currentTerrain": "forest",
+      "currentStatus": "user-svg-authored-forest",
+      "centerPx": [
+        859.63,
+        36.5
+      ],
+      "rasterObservation": "forest-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 1.0,
+        "yellowBrownFraction": 0.032622
+      },
+      "authoredSvgTerrain": true,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "1802",
+      "currentTerrain": "open",
+      "currentStatus": "source-svg-scan-reviewed-open-v412",
+      "centerPx": [
+        859.63,
+        86.66
+      ],
+      "rasterObservation": "neither-forest-nor-swamp-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.069009,
+        "yellowBrownFraction": 0.038896
+      },
+      "authoredSvgTerrain": false,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "1803",
+      "currentTerrain": "open",
+      "currentStatus": "source-svg-scan-reviewed-open-v412",
+      "centerPx": [
+        859.63,
+        136.82
+      ],
+      "rasterObservation": "neither-forest-nor-swamp-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.001255,
+        "yellowBrownFraction": 0.025094
+      },
+      "authoredSvgTerrain": false,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "1804",
+      "currentTerrain": "open",
+      "currentStatus": "source-svg-scan-reviewed-open-v412",
+      "centerPx": [
+        859.63,
+        186.98
+      ],
+      "rasterObservation": "neither-forest-nor-swamp-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.0,
+        "yellowBrownFraction": 0.028858
+      },
+      "authoredSvgTerrain": false,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "1805",
+      "currentTerrain": "open",
+      "currentStatus": "source-svg-scan-reviewed-open-v412",
+      "centerPx": [
+        859.63,
+        237.14
+      ],
+      "rasterObservation": "neither-forest-nor-swamp-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.051443,
+        "yellowBrownFraction": 0.131744
+      },
+      "authoredSvgTerrain": false,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "1806",
+      "currentTerrain": "open",
+      "currentStatus": "source-svg-scan-reviewed-open-v412",
+      "centerPx": [
+        859.63,
+        287.3
+      ],
+      "rasterObservation": "neither-forest-nor-swamp-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.052698,
+        "yellowBrownFraction": 0.075282
+      },
+      "authoredSvgTerrain": false,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "1807",
+      "currentTerrain": "open",
+      "currentStatus": "source-svg-scan-reviewed-open-v412",
+      "centerPx": [
+        859.63,
+        337.46
+      ],
+      "rasterObservation": "neither-forest-nor-swamp-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.045169,
+        "yellowBrownFraction": 0.335006
+      },
+      "authoredSvgTerrain": false,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "1808",
+      "currentTerrain": "forest",
+      "currentStatus": "user-svg-authored-forest",
+      "centerPx": [
+        859.63,
+        387.62
+      ],
+      "rasterObservation": "forest-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 1.0,
+        "yellowBrownFraction": 0.174404
+      },
+      "authoredSvgTerrain": true,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "1809",
+      "currentTerrain": "swamp",
+      "currentStatus": "user-svg-authored-swamp",
+      "centerPx": [
+        859.63,
+        437.78
+      ],
+      "rasterObservation": "swamp-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.143036,
+        "yellowBrownFraction": 0.961104
+      },
+      "authoredSvgTerrain": true,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "1810",
+      "currentTerrain": "open",
+      "currentStatus": "source-svg-scan-reviewed-open-v412",
+      "centerPx": [
+        859.63,
+        487.94
+      ],
+      "rasterObservation": "neither-forest-nor-swamp-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.045169,
+        "yellowBrownFraction": 0.082811
+      },
+      "authoredSvgTerrain": false,
+      "movementCertifiedByThisAudit": false
+    },
+    {
+      "hexId": "1811",
+      "currentTerrain": "forest",
+      "currentStatus": "user-svg-authored-forest",
+      "centerPx": [
+        859.63,
+        538.1
+      ],
+      "rasterObservation": "forest-color-dominant",
+      "sample": {
+        "pixelCount": 797,
+        "greenFraction": 0.993726,
+        "yellowBrownFraction": 0.326223
+      },
+      "authoredSvgTerrain": true,
+      "movementCertifiedByThisAudit": false
+    }
+  ],
+  "previousBlockerCorrection": "The original source scan IS bundled at maps/source/arduous-map-scan.webp; the SVG relative PNG href is a different missing filename.",
+  "remainingTasks": [
+    "review and explicitly transcribe unclassified cells, notably 0211 and 0907",
+    "confirm whole-hex terrain with SVG layers and board, not color alone",
+    "independently validate boundary, rail, river and reinforcement game semantics"
+  ],
+  "authorizedForMovement": false
+}

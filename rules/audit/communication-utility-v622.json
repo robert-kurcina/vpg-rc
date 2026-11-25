@@ -1,0 +1,16 @@
+{
+  "checkpoint": 388,
+  "version": "v622",
+  "continuationAssertions": 410,
+  "newCommunicationAssertions": 64,
+  "utilityArithmetic": 62,
+  "sharedCRT": 301,
+  "total": 773,
+  "bundleModules": 61,
+  "limitations": [
+    "Diagnostic only; no new browser or campaign run",
+    "Land communication only, not special replacement exceptions",
+    "Provisional utility weights; no live desperation authorization",
+    "Bounded continuation witnesses and no advance"
+  ]
+}

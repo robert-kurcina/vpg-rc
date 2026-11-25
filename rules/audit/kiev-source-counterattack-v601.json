@@ -1,0 +1,22 @@
+{
+  "checkpoint": 367,
+  "version": "v601",
+  "scope": "Printed Kiev \u00a7\u00a710.0,10.8,10.9; actual-map declarations and odds calculation with original face values, synthetic positions; existing isolated regressions. No new Chromium or continuous campaign.",
+  "passed": {
+    "kiev-source-counterattack-v601": 32,
+    "kiev-first-turn-combat-v442": 45,
+    "kiev-turn-one-romania-convention-v480": 57,
+    "kiev-combat-policy-v472": 159,
+    "kiev-ground-air-campaign-v473": 52,
+    "advanced-crt-v557": 301
+  },
+  "total": 646,
+  "bundleModules": 59,
+  "productionChanges": [],
+  "remaining": [
+    "Standalone reinforcement and replacement integration",
+    "Owner-selected end-phase overstack removal",
+    "Outstanding B4M and Leningrad policy adjudications",
+    "Strategic AI and browser qualification"
+  ]
+}

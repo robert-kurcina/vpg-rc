@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "checkpoint": 136,
+  "scenario": "battle-for-moscow",
+  "mode": "defender-first",
+  "alternativeMode": "attacker-first",
+  "referenceTabs": [
+    "sequence",
+    "howto",
+    "terrain",
+    "crt"
+  ],
+  "verified": [
+    "defender-first click sequence",
+    "no RNG on defender inspection",
+    "legal attacker suggestions via native session",
+    "nonadjacent attacker fail closed",
+    "locked dice",
+    "two-step Undo",
+    "four active-config reference tabs",
+    "alternate ordering from config",
+    "malformed profile fail closed"
+  ],
+  "productionEngine": "legacy-b4m-v1",
+  "limitations": [
+    "isolated real Chromium DOM; JSON fetch backed by local files",
+    "no hosted HTTP asset loading",
+    "no independent upstream UX acceptance"
+  ]
+}

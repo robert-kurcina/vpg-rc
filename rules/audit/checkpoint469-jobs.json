@@ -1,0 +1,16 @@
+[
+  {
+    "id": "leningrad-standard-historical-41",
+    "scenario": "leningrad",
+    "variant": "standard",
+    "seed": 41,
+    "victoryMode": "historical"
+  },
+  {
+    "id": "leningrad-standard-graduated-41",
+    "scenario": "leningrad",
+    "variant": "standard",
+    "seed": 41,
+    "victoryMode": "graduated"
+  }
+]

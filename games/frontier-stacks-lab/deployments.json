@@ -1,0 +1,59 @@
+{
+  "mode": "zone-swap",
+  "presets": [
+    {
+      "id": "default",
+      "label": "Two-unit stacks with support and a concealed corps",
+      "units": {
+        "a1": {
+          "x": 0,
+          "y": 1
+        },
+        "a2": {
+          "x": 0,
+          "y": 1
+        },
+        "a3": {
+          "x": 0,
+          "y": 3
+        },
+        "a4": {
+          "x": 0,
+          "y": 4
+        },
+        "v1": {
+          "x": 4,
+          "y": 1
+        },
+        "v2": {
+          "x": 4,
+          "y": 1
+        },
+        "v3": {
+          "x": 4,
+          "y": 3
+        },
+        "v4": {
+          "x": 4,
+          "y": 4
+        },
+        "air1": {
+          "x": 0,
+          "y": 1
+        },
+        "v-untried": {
+          "x": 4,
+          "y": 5
+        }
+      }
+    }
+  ],
+  "placementTags": {
+    "amber": "amberZone",
+    "violet": "violetZone"
+  },
+  "requiredCounts": {
+    "amber": 4,
+    "violet": 5
+  }
+}

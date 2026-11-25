@@ -1,0 +1,259 @@
+{
+  "schemaVersion": 1,
+  "scenarioId": "kiev",
+  "sourceGame": "Objective: Kiev",
+  "source": [
+    "references/rules/kiev-rules.pdf §§4.0, 6.0, 11.0, 12.0",
+    "references/rules/kiev-player-aid.webp Game Turn Record Track"
+  ],
+  "sourceIdentityStatus": "source-checked-configuration-NOT-activated",
+  "sourceBoundaryStatus": "SOURCE_GUIDED_VISUAL_GEOMETRY_NOT_RULE_CERTIFIED",
+  "printedAffiliationToOwner": {
+    "axis": "german",
+    "romanian": "german",
+    "hungarian": "german",
+    "slovak": "german",
+    "italian": "german",
+    "soviet": "soviet"
+  },
+  "replacementSteps": {
+    "german": [
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1
+    ],
+    "soviet": [
+      0,
+      2,
+      2,
+      3,
+      3,
+      4,
+      4
+    ]
+  },
+  "entryEdge": {
+    "german": [
+      "0101",
+      "0102",
+      "0103",
+      "0104",
+      "0105",
+      "0201",
+      "0205",
+      "0301",
+      "0306",
+      "0406",
+      "0407",
+      "0508",
+      "0608",
+      "0709",
+      "0710",
+      "0711",
+      "0810",
+      "0911",
+      "1010"
+    ],
+    "soviet": [
+      "1601",
+      "1701",
+      "1801",
+      "1802",
+      "1803",
+      "1804",
+      "1805",
+      "1806",
+      "1807",
+      "1808",
+      "1809",
+      "1810"
+    ]
+  },
+  "initialCityControl": {
+    "Chernigov": "soviet",
+    "Chernovtsy": "soviet",
+    "Iasi": "german",
+    "Kiev": "soviet",
+    "Kirovograd": "soviet",
+    "Kovel": "soviet",
+    "Lublin": "german",
+    "Lvov": "soviet",
+    "Rovno": "soviet",
+    "Sarny": "soviet",
+    "Shepetovka": "soviet",
+    "Stanislavov": "soviet",
+    "Tarnopol": "soviet",
+    "Uman": "soviet",
+    "Vinnitsa": "soviet",
+    "Zhitomir": "soviet"
+  },
+  "initialGroups": {
+    "germanInitialPanzer": {
+      "class": "panzer",
+      "size": "corps"
+    },
+    "germanPolandInfantry": {
+      "class": "infantry",
+      "size": "corps"
+    },
+    "germanRomaniaInfantry": {
+      "class": "infantry",
+      "size": "corps"
+    },
+    "romanianInitialArmy": {
+      "class": "infantry",
+      "size": "army"
+    },
+    "sovietFrontArmies": {
+      "class": "infantry",
+      "size": "army"
+    },
+    "sovietFrontMechanized": {
+      "class": "mechanized",
+      "size": "corps"
+    },
+    "sovietFixedArmies": {
+      "class": "infantry",
+      "size": "army"
+    },
+    "sovietFixedMechanized": {
+      "class": "mechanized",
+      "size": "corps"
+    }
+  },
+  "specialMilitiaGroup": null,
+  "reinforcements": [
+    {
+      "slotId": "t2-slovak",
+      "group": "slovakReinforcementInfantry",
+      "index": 0,
+      "turn": 2,
+      "owner": "german",
+      "kind": "ground",
+      "strength": "full",
+      "printedKind": "infantry",
+      "printedAffiliation": "slovak",
+      "printedValues": "3-4",
+      "placement": "edge",
+      "nationality": "slovak",
+      "class": "infantry",
+      "size": "corps"
+    },
+    {
+      "slotId": "t2-hungarian",
+      "group": "hungarianReinforcementInfantry",
+      "index": 0,
+      "turn": 2,
+      "owner": "german",
+      "kind": "ground",
+      "strength": "full",
+      "printedKind": "infantry",
+      "printedAffiliation": "hungarian",
+      "printedValues": "4-4",
+      "placement": "edge",
+      "nationality": "hungarian",
+      "class": "infantry",
+      "size": "corps"
+    },
+    {
+      "slotId": "t3-german-infantry",
+      "group": "germanReinforcementInfantry",
+      "index": 0,
+      "turn": 3,
+      "owner": "german",
+      "kind": "ground",
+      "strength": "full",
+      "printedAffiliation": "axis",
+      "placement": "edge",
+      "nationality": "german",
+      "class": "infantry",
+      "size": "corps",
+      "printedKinds": [
+        "infantry",
+        "mountain-infantry"
+      ],
+      "printedValues": "6-4"
+    },
+    {
+      "slotId": "t3-italian-motorized",
+      "group": "italianReinforcementMotorized",
+      "index": 0,
+      "turn": 3,
+      "owner": "german",
+      "kind": "ground",
+      "strength": "full",
+      "printedKind": "infantry",
+      "printedAffiliation": "italian",
+      "printedValues": "4-4",
+      "placement": "edge",
+      "nationality": "italian",
+      "class": "motorized",
+      "size": "corps"
+    },
+    {
+      "slotId": "t5-soviet-army",
+      "group": "sovietReinforcementArmies",
+      "index": 0,
+      "turn": 5,
+      "owner": "soviet",
+      "kind": "ground",
+      "strength": "full",
+      "printedKind": "infantry",
+      "printedAffiliation": "soviet",
+      "printedValues": "8-4",
+      "placement": "edge",
+      "nationality": "soviet",
+      "class": "infantry",
+      "size": "army"
+    },
+    {
+      "slotId": "t6-soviet-army",
+      "group": "sovietReinforcementArmies",
+      "index": 1,
+      "turn": 6,
+      "owner": "soviet",
+      "kind": "ground",
+      "strength": "full",
+      "printedKind": "infantry",
+      "printedAffiliation": "soviet",
+      "printedValues": "8-4",
+      "placement": "edge",
+      "nationality": "soviet",
+      "class": "infantry",
+      "size": "army"
+    }
+  ],
+  "supportArrivals": [],
+  "replacementOnlyReserveGroup": "sovietReplacementOnlyArmy",
+  "knownEngineBlockers": [
+    "The source reviewed Kiev movement graph remains provisional and Buildup.create refuses it.",
+    "Entry boundary selections are SVG-traced visual candidates, not separately ratified rules entry hexes.",
+    "4th Soviet Mechanized Corps exemption is source-face bound, but Kiev campaign transaction requires graph certification before live execution."
+  ],
+  "notes": [
+    "Italian source art records infantry, but Kiev rules 6.0(6), 9.4.1 and 11.0 expressly define Italian CSIR as motorized; retain photographed printed kind with motorized gameplay class.",
+    "All six scheduled ground arrivals must be offered in their specific turn or forfeited under rule 11.0.",
+    "No ally-nationality flattening: the shared reinforcement path must retain Hungarian, Slovak, and Italian identities.",
+    "The replacement-only Soviet Infantry Army is eligible for rebuild from Turn 2 under the shared source-authorized reserve path; not an arrival on the reinforcement track."
+  ],
+  "replacementOnlyEarliestTurn": 2,
+  "replacementReserveGroups": {
+    "sovietReplacementOnlyArmy": {
+      "class": "infantry",
+      "size": "army"
+    }
+  },
+  "replacementExcludedFaces": [
+    {
+      "faceId": "kiev-front-r04c02",
+      "kind": "mechanized",
+      "owner": "soviet",
+      "revealedIdentifier": "4",
+      "ruleSource": "references/rules/kiev-rules.pdf §12.0 (4th Soviet Mechanized Corps cannot be replaced once destroyed)"
+    }
+  ]
+}

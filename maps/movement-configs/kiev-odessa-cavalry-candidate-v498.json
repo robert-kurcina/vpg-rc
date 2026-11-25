@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "terrainCosts": {
+    "open": 1,
+    "forest": 2,
+    "swamp": 2,
+    "city": 1,
+    "major-city": 1,
+    "fortification": 1
+  },
+  "railCost": 1,
+  "maxStack": 2,
+  "sovietArmyMax": 1,
+  "mapBinding": "read-only-261-hex-composite-preflight; not a registered production graph",
+  "executableStatus": "source-reviewed-diagnostic-not-authorized",
+  "firstTurnSurpriseMovement": false,
+  "nationalStackExclusions": [
+    [
+      "romanian",
+      "hungarian"
+    ]
+  ],
+  "majorRiverExtraCost": 1,
+  "id": "kiev-odessa",
+  "source": [
+    "references/rules/kiev-rules.pdf §§7.1, 8.1, 9.1–9.4",
+    "references/rules/kiev-player-aid.webp Terrain Effects Chart",
+    "references/rules/odessa-rules.pdf §9.4.3 (both sides cavalry; half MP, can begin in EZOC)"
+  ],
+  "fullSpecialMovementClasses": {
+    "german": [
+      "panzer",
+      "motorized"
+    ],
+    "soviet": [
+      "mechanized"
+    ]
+  },
+  "axisArmyMax": 1,
+  "halfSpecialMovementClasses": {
+    "german": [
+      "cavalry"
+    ],
+    "soviet": [
+      "cavalry"
+    ]
+  },
+  "specialMoveFromEZOCClasses": {
+    "german": [
+      "cavalry"
+    ],
+    "soviet": [
+      "cavalry"
+    ]
+  },
+  "unresolvedOdessaRules": [
+    "§9.4.4 Romanian Home Army territorial and annexation rules",
+    "§9.4.5 Hungarian restriction",
+    "§15 Fleet and port rules",
+    "Odessa setup and victory integration"
+  ]
+}

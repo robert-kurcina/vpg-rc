@@ -1,0 +1,18 @@
+{
+  "checkpoint": 159,
+  "version": "v393",
+  "assertions": 155,
+  "exAfterLossRoutes": 7,
+  "exBeforeLossRoutes": 8,
+  "newlyAvailableRoutes": 12,
+  "exCandidates": 52,
+  "drlCandidates": 24,
+  "postLossStages": 3,
+  "evidence": "Certified Leningrad graph and photographed source counter face pairs; adversarial nonhistorical positions",
+  "limits": [
+    "Historical unit-to-formation assignments and two source coordinate anchors remain unverified",
+    "Fleet displacement decision discovery still incomplete",
+    "Joint retreat enumeration that cannot be certified fails closed",
+    "Post-roll catalog is bounded and not a complete human or AI campaign controller"
+  ]
+}

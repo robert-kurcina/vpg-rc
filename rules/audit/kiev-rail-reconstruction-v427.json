@@ -1,0 +1,58 @@
+{
+  "checkpoint": 193,
+  "version": "v427",
+  "map": "kiev",
+  "source": {
+    "definitiveSvg": "maps/source/user-svg/kiev-odessa-main.svg",
+    "sha256": "2b15c3a92a282a7efc27d54bcd8994470f0fce8ee5417d5d734969fcd2c4ab7e",
+    "routes": 24,
+    "olderDraftSvg": "maps/source/user-svg/kiev-map-temp(5).svg",
+    "olderDraftSha256": "5aee54442a5688dabc3ec0b37c711b5e98709c72d99cc68d1a5f9f08e6bc0142",
+    "olderDraftRoutes": 36
+  },
+  "hexes": 165,
+  "physicalInternalSides": 442,
+  "definitiveSourceLinks": 93,
+  "originalRegisteredLinks": 97,
+  "currentRegisteredLinks": 93,
+  "registeredMissingFromDefinitive": [
+    "0101:0102",
+    "0101:0201",
+    "0306:0406",
+    "0711:0810",
+    "1501:1601"
+  ],
+  "definitiveMissingFromRegistered": [
+    "0501:0502"
+  ],
+  "definitiveNotInOldDraft": [
+    "0102:0201",
+    "0204:0305",
+    "0302:0401",
+    "0305:0404",
+    "0501:0502",
+    "0505:0604",
+    "0806:0907",
+    "1005:1106",
+    "1106:1206",
+    "1208:1309",
+    "1504:1603",
+    "1504:1604",
+    "1603:1703",
+    "1703:1802",
+    "1705:1805"
+  ],
+  "oldDraftNotInDefinitive": [
+    "0101:0102"
+  ],
+  "oldDraftFiniteCrossingCount": 79,
+  "reciprocalRailSideRecords": 186,
+  "unresolvedGeometricCrossings": 0,
+  "status": "rail-geometry-reconciled-not-gameplay-certified",
+  "limitations": [
+    "Uses actual finite renderer hexside endpoints, not extended Voronoi boundaries.",
+    "The two source paths that cross a *prolonged* border outside the real hexside do not create links.",
+    "The older temporary SVG has a different rail network and is not the approved visible map.",
+    "Terrain, rivers, and Kiev\u2013Odessa extension movement are outside the scope."
+  ]
+}

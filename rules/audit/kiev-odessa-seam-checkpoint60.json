@@ -1,0 +1,166 @@
+{
+  "schemaVersion": 1,
+  "checkpoint": 60,
+  "scope": "geometric topology, not movement legality",
+  "metadata": {
+    "baseMapId": "kiev-native-draft-v231",
+    "extensionMapId": "odessa-extension",
+    "compositeMapId": "kiev-odessa-composite-v256",
+    "baseHexes": 165,
+    "extensionHexes": 96,
+    "totalHexes": 261,
+    "seamPairs": 24,
+    "blockedByAuthoredShore": 0,
+    "authoredShoreEntries": 32,
+    "railCenterConnections": 0,
+    "gameplayCertified": false,
+    "graphPurpose": "geometry-audit-only"
+  },
+  "seams": [
+    {
+      "baseHex": "0711",
+      "extensionHex": "0712",
+      "baseSide": "S",
+      "extensionSide": "N"
+    },
+    {
+      "baseHex": "0711",
+      "extensionHex": "0811",
+      "baseSide": "SE",
+      "extensionSide": "NW"
+    },
+    {
+      "baseHex": "0810",
+      "extensionHex": "0811",
+      "baseSide": "S",
+      "extensionSide": "N"
+    },
+    {
+      "baseHex": "0911",
+      "extensionHex": "0811",
+      "baseSide": "SW",
+      "extensionSide": "NE"
+    },
+    {
+      "baseHex": "0911",
+      "extensionHex": "0912",
+      "baseSide": "S",
+      "extensionSide": "N"
+    },
+    {
+      "baseHex": "0911",
+      "extensionHex": "1011",
+      "baseSide": "SE",
+      "extensionSide": "NW"
+    },
+    {
+      "baseHex": "1010",
+      "extensionHex": "1011",
+      "baseSide": "S",
+      "extensionSide": "N"
+    },
+    {
+      "baseHex": "1111",
+      "extensionHex": "1011",
+      "baseSide": "SW",
+      "extensionSide": "NE"
+    },
+    {
+      "baseHex": "1111",
+      "extensionHex": "1112",
+      "baseSide": "S",
+      "extensionSide": "N"
+    },
+    {
+      "baseHex": "1111",
+      "extensionHex": "1211",
+      "baseSide": "SE",
+      "extensionSide": "NW"
+    },
+    {
+      "baseHex": "1210",
+      "extensionHex": "1211",
+      "baseSide": "S",
+      "extensionSide": "N"
+    },
+    {
+      "baseHex": "1311",
+      "extensionHex": "1211",
+      "baseSide": "SW",
+      "extensionSide": "NE"
+    },
+    {
+      "baseHex": "1311",
+      "extensionHex": "1312",
+      "baseSide": "S",
+      "extensionSide": "N"
+    },
+    {
+      "baseHex": "1311",
+      "extensionHex": "1411",
+      "baseSide": "SE",
+      "extensionSide": "NW"
+    },
+    {
+      "baseHex": "1410",
+      "extensionHex": "1411",
+      "baseSide": "S",
+      "extensionSide": "N"
+    },
+    {
+      "baseHex": "1511",
+      "extensionHex": "1411",
+      "baseSide": "SW",
+      "extensionSide": "NE"
+    },
+    {
+      "baseHex": "1511",
+      "extensionHex": "1512",
+      "baseSide": "S",
+      "extensionSide": "N"
+    },
+    {
+      "baseHex": "1511",
+      "extensionHex": "1611",
+      "baseSide": "SE",
+      "extensionSide": "NW"
+    },
+    {
+      "baseHex": "1610",
+      "extensionHex": "1611",
+      "baseSide": "S",
+      "extensionSide": "N"
+    },
+    {
+      "baseHex": "1711",
+      "extensionHex": "1611",
+      "baseSide": "SW",
+      "extensionSide": "NE"
+    },
+    {
+      "baseHex": "1711",
+      "extensionHex": "1712",
+      "baseSide": "S",
+      "extensionSide": "N"
+    },
+    {
+      "baseHex": "1711",
+      "extensionHex": "1811",
+      "baseSide": "SE",
+      "extensionSide": "NW"
+    },
+    {
+      "baseHex": "1810",
+      "extensionHex": "1811",
+      "baseSide": "S",
+      "extensionSide": "N"
+    },
+    {
+      "baseHex": "1810",
+      "extensionHex": "1911",
+      "baseSide": "SE",
+      "extensionSide": "NW"
+    }
+  ],
+  "blockedSeams": []
+}

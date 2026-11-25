@@ -1,0 +1,161 @@
+{
+  "version": "v582",
+  "scope": "Two bounded deterministic legal-action runs, not strategic AI; one seed per CRT mode",
+  "runs": [
+    {
+      "seed": 7,
+      "variant": "standard",
+      "status": "complete",
+      "reason": null,
+      "detail": null,
+      "decision": {
+        "status": "complete",
+        "terminal": {
+          "axisControlledCount": 4,
+          "cityControl": {
+            "Br\u0103ila": "german",
+            "Chernigov": "soviet",
+            "Chernovtsy": "soviet",
+            "Chisinau": "soviet",
+            "Iasi": "german",
+            "Kiev": "soviet",
+            "Kirovograd": "soviet",
+            "Kovel": "soviet",
+            "Lublin": "german",
+            "Lvov": "german",
+            "Nikolaev": "soviet",
+            "Odessa": "soviet",
+            "Rovno": "soviet",
+            "Sarny": "soviet",
+            "Shepetovka": "soviet",
+            "Stanislavov": "soviet",
+            "Tarnopol": "soviet",
+            "Uman": "soviet",
+            "Vinnitsa": "soviet",
+            "Zhitomir": "soviet"
+          },
+          "cityIsolation": null,
+          "isolatedSovietCities": [],
+          "onlyRemainingCity": null,
+          "onlyRemainingCityIsolated": null,
+          "outcome": "soviet-victory",
+          "reason": "axis-controls-at-most-threshold",
+          "remainingSovietCities": [
+            "Kovel",
+            "Stanislavov",
+            "Tarnopol",
+            "Chernovtsy",
+            "Rovno",
+            "Sarny",
+            "Shepetovka",
+            "Zhitomir",
+            "Vinnitsa",
+            "Chisinau",
+            "Kiev",
+            "Uman",
+            "Odessa",
+            "Chernigov",
+            "Kirovograd",
+            "Nikolaev"
+          ],
+          "totalCities": 20
+        }
+      },
+      "stats": {
+        "moves": 27,
+        "combats": 14,
+        "reinforcements": 6,
+        "navalRolls": 3,
+        "turns": 7
+      },
+      "actions": 205,
+      "outcomes": {
+        "DRL": 2,
+        "NE": 8,
+        "EX": 3,
+        "DR": 1
+      },
+      "terminal": "soviet-victory",
+      "phase": null
+    },
+    {
+      "seed": 42,
+      "variant": "advanced",
+      "status": "complete",
+      "reason": null,
+      "detail": null,
+      "decision": {
+        "status": "complete",
+        "terminal": {
+          "axisControlledCount": 3,
+          "cityControl": {
+            "Br\u0103ila": "german",
+            "Chernigov": "soviet",
+            "Chernovtsy": "soviet",
+            "Chisinau": "soviet",
+            "Iasi": "german",
+            "Kiev": "soviet",
+            "Kirovograd": "soviet",
+            "Kovel": "soviet",
+            "Lublin": "german",
+            "Lvov": "soviet",
+            "Nikolaev": "soviet",
+            "Odessa": "soviet",
+            "Rovno": "soviet",
+            "Sarny": "soviet",
+            "Shepetovka": "soviet",
+            "Stanislavov": "soviet",
+            "Tarnopol": "soviet",
+            "Uman": "soviet",
+            "Vinnitsa": "soviet",
+            "Zhitomir": "soviet"
+          },
+          "cityIsolation": null,
+          "isolatedSovietCities": [],
+          "onlyRemainingCity": null,
+          "onlyRemainingCityIsolated": null,
+          "outcome": "soviet-victory",
+          "reason": "axis-controls-at-most-threshold",
+          "remainingSovietCities": [
+            "Lvov",
+            "Kovel",
+            "Stanislavov",
+            "Tarnopol",
+            "Chernovtsy",
+            "Rovno",
+            "Sarny",
+            "Shepetovka",
+            "Zhitomir",
+            "Vinnitsa",
+            "Chisinau",
+            "Kiev",
+            "Uman",
+            "Odessa",
+            "Chernigov",
+            "Kirovograd",
+            "Nikolaev"
+          ],
+          "totalCities": 20
+        }
+      },
+      "stats": {
+        "moves": 27,
+        "combats": 14,
+        "reinforcements": 6,
+        "navalRolls": 3,
+        "turns": 7
+      },
+      "actions": 204,
+      "outcomes": {
+        "DRL": 3,
+        "NE": 6,
+        "EX": 2,
+        "DR": 2,
+        "AL": 1
+      },
+      "terminal": "soviet-victory",
+      "phase": null
+    }
+  ],
+  "exactTerminalReplay": true
+}

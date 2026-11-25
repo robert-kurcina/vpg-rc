@@ -1,0 +1,34 @@
+{
+  "checkpoint": 146,
+  "version": "v380",
+  "scope": "opt-in, source-bound forced EZOC and physically blocked two-hex retreat; overstack-only and Fleet exceptions blocked",
+  "assertions": 297,
+  "certifiedCellsChecked": 151,
+  "safeOptionComparisonCells": 145,
+  "forcedStep": {
+    "sourceStrengthBefore": 8,
+    "after": 4,
+    "route": [
+      "0409",
+      "0508"
+    ]
+  },
+  "forcedElimination": {
+    "route": [
+      "0209",
+      "0208"
+    ],
+    "oneEZOCStepLoss": true,
+    "terminalEZOCElimination": true
+  },
+  "noPhysicalExitElimination": true,
+  "exchangePostLossForcedElimination": true,
+  "overstackOnlyFailsClosed": true,
+  "sourcePdf": "references/rules/leningrad-rules.pdf §§7.2,7.4,8.1,10.6,13.2",
+  "sourcePdfSha256": "74d332e052e735e2378027a06f95e9715392773f249561bf1c00cae08a2bbfa7",
+  "knownLimitations": [
+    "No overstack extension or Fleet-port exception; no eight-turn human gameplay",
+    "No independent historical executable comparison; synthetic adversarial arrangements are bounded structural tests",
+    "The safe-only pre-combat preview is not a forced/post-loss preview"
+  ]
+}

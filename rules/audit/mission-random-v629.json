@@ -1,0 +1,19 @@
+{
+  "checkpoint": 395,
+  "version": "v629",
+  "tests": {
+    "missionRngNode": 42,
+    "historicalChromium": 22,
+    "nativeChromium": 7,
+    "legacyController": 16,
+    "sharedCRT": 301,
+    "nativeSessionParity": 2447,
+    "browserBundleModules": 62
+  },
+  "limitations": [
+    "Native B4M retains 32-bit combat RNG; new historical missions use 128-bit master and domain-separated streams.",
+    "Old numeric diagnostic campaigns retain old dice sequence; legacy seedless human saves retain compatibility behavior.",
+    "Manual explicit die controls remain. Redo and localStorage persistence deferred.",
+    "Test stream API available; legacy harnesses not migrated. No full campaign rerun."
+  ]
+}

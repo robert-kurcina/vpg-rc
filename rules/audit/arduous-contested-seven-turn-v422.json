@@ -1,0 +1,63 @@
+{
+  "checkpoint": 188,
+  "version": "v422",
+  "scenario": "arduous",
+  "scope": "contested headless seven-turn source-transaction acceptance",
+  "policy": {
+    "seed": 7,
+    "selectionMode": "seeded",
+    "maxActions": 700,
+    "maxCombatsPerPhase": 1,
+    "maxCombatPhases": 16,
+    "maxGroundMovesPerPhase": 1,
+    "maxReinforcementsPerPhase": 4,
+    "maxFleetMoves": 0,
+    "maxFleetAttacks": 0
+  },
+  "actionCount": 184,
+  "statistics": {
+    "turns": 7,
+    "moves": 27,
+    "battles": 14,
+    "reinforcements": 7,
+    "combatDeclarations": 14,
+    "airChoices": 7,
+    "postCombatAdvances": 3,
+    "postCombatRetreats": 3,
+    "replacements": 6,
+    "combatTurns": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "dieRolls": [
+      4,
+      1,
+      1,
+      6,
+      1,
+      4,
+      2
+    ]
+  },
+  "final": {
+    "outcome": "soviet-victory",
+    "axisControlledCities": 0,
+    "stateSHA256": "136d55201af77fcd27b9241f451e044b80574cb1ff26a22da54177f5d8bf8322",
+    "journalSHA256": "32a205cb44350565a9e77d3abbeb2bc4251c2dd6c9090c34f9c0cf0fbc7902a0"
+  },
+  "saves": {
+    "turn3": "restored exactly",
+    "terminal": "restored exactly"
+  },
+  "limitations": [
+    "Test uses one candidate opening allocation; source marker overrides do not change gameplay",
+    "Deterministic legal-action controller is not strategic AI or interactive human play",
+    "One seeded run does not certify all possible retreats, replacements, or source rule variants",
+    "Only actions and consequences observed in this run count as tested"
+  ]
+}

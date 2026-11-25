@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "checkpoint": 269,
+  "version": "v503",
+  "change": "Move existing per-hex Romania and Bessarabia outline layer to between fortifications and river/water layers",
+  "actualEngine": "core/terrain_tiles.js::svgMap",
+  "layerOrder": [
+    "terrain",
+    "fortifications",
+    "setup-region-outlines",
+    "rivers",
+    "water-bodies",
+    "roads",
+    "railways",
+    "hex-grid",
+    "coordinates"
+  ],
+  "polygons": {
+    "romanian-turn1-setup": 4,
+    "bessarabia": 19
+  },
+  "stylesUnchanged": true,
+  "territorialGameDataUnchanged": true,
+  "otherThreeMapsUnchanged": true,
+  "exports": {
+    "kiev": {
+      "svgSHA256": "71243cbe6fcde936b31b76bdeaa201f7c5c2171489a96c36c7bef97960ef8b02",
+      "pngSHA256": "9d558ad2c03cbc788ba471adf3e1964a7cedd04b422176cddac0011fb5fe6b8f",
+      "changedPixelsAbove10": 964,
+      "differenceBoundingBox": [
+        541,
+        578,
+        767,
+        716
+      ]
+    },
+    "kiev-odessa": {
+      "svgSHA256": "a4db7676c320788dc3bbb1a20a98d2d6da5226b7f0d327f36a47862101292e90",
+      "pngSHA256": "d61b60d3de75e5fc50291d15cc2990da213c59f5041b91702dd0bf40bff62499",
+      "changedPixelsAbove10": 6855,
+      "differenceBoundingBox": [
+        542,
+        578,
+        1049,
+        1108
+      ]
+    }
+  },
+  "browserScreenshot": "rules/audit/visual/odessa-territory-under-water-browser-v503.png",
+  "browserScreenshotSHA256": "960fb0abce14de9ac10907662c016d6a98057f1f0a5d60b2a1e84f4c1b944c3a"
+}

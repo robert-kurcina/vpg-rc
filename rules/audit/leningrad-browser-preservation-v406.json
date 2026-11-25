@@ -1,0 +1,45 @@
+{
+  "checkpoint": 172,
+  "version": "v406",
+  "baselineArchive": "hex_wargame_v405_CHECKPOINT_171_CLICK_TO_SWAP_DEPLOYMENT.zip",
+  "filesInPriorArchive": 948,
+  "preservedByteForByte": 944,
+  "modifiedPriorFiles": [
+    "PACKAGE_MANIFEST.json",
+    "PLAN.md",
+    "README.md",
+    "UPDATE.md"
+  ],
+  "addedFiles": [
+    "rules/audit/leningrad-browser-preservation-v406.json",
+    "rules/audit/leningrad-full-browser-v406.json",
+    "scripts/package-checkpoint172.py",
+    "scripts/verify-leningrad-browser-eight-turn-v406.py",
+    "tests/leningrad-eight-turn-browser-v406.py"
+  ],
+  "deletedFiles": [],
+  "protectedSourceBytesUnchanged": true,
+  "approvedMapExportsUnchanged": true,
+  "criticalSourceSha256": {
+    "exports/battle-for-moscow.svg": "487a050a42cf41554886b0fcef85baf68e40354f784428623926f1a9354f4de1",
+    "exports/arduous.svg": "0443d50a7f7bbe36c508cf9e32a18d20f765cad93588c4cbb65fdbd5db7eedf7",
+    "exports/leningrad.svg": "e45856f7d56b5acfecf7083b405b9465d1c21459d698ac65e9196f581f832925",
+    "exports/kiev.svg": "5f455d80d6d30eec822d898f41ec12c21fc03a7f4fd165ddd51fa2b7c28324a4",
+    "exports/kiev-odessa.svg": "7cb5fafbb18babd2b4b2a5129e6802607dd4b0df8b07e46491319c07ecb9c71c",
+    "core/historical_crt.js": "6a43c47ae52c6c110728403fd680406ba99d8e67bd14f234cb82f38c703b22e6",
+    "core/historical_engine_browser_bundle.js": "699cfda5bdbb60511e07ebaecc62a057ae07047d1990823456eda936b458331e",
+    "core/historical_browser_app.js": "cc37cf34d61256e778b5bb91b33203a90f3d42f9e98e4b4cc8e5ee1719f103ad",
+    "core/historical_campaign_session.js": "e573a15d43d166eca8fe6dbab94ea9c6d17970b9627731f216fb5b7d623e8ac7",
+    "core/historical_deployment_session.js": "10bcb9916da2583b45120a31da466fd2e3cb936ab2d3512668e6a4c02ad0144d",
+    "maps/registry.json": "79d1fd8419bfde92d630af9ae4a1a5093c672848daf3d5a35486793439b3377b",
+    "core/official_counter_templates.js": "c4278e9416e4ffd6460caedb9878b51500e0b64b6d01a774ee5a390b7a046321",
+    "games/leningrad/native-preview/index.html": "ecd23bdef3dae7a89fc2ad893f26af8eb732d10d06bcff6400f329abf473e592",
+    "games/battle-for-moscow/game.json": "9d5ccd8e80b3fb2ea1018e26ccac9ebf26e3bf9081920c162347dcb94ef23f39"
+  },
+  "scope": "Only source-level browser acceptance tests, audit, documentation and archival manifest; gameplay, art, CRT, map and production routing untouched",
+  "limits": [
+    "Candidate Leningrad source positions not certified",
+    "Only one manual action per German turn",
+    "No hosted HTTP navigation"
+  ]
+}

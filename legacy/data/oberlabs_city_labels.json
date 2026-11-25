@@ -1,0 +1,17 @@
+{
+  "source": "legacy/assets/map.png",
+  "reviewStatus": "visually-transcribed-not-certified",
+  "labels": {
+    "0205": "Smolensk",
+    "0307": "Roslavl",
+    "0509": "Bryansk",
+    "0602": "Rzhev",
+    "0604": "Vyazma",
+    "0804": "Mozhaisk",
+    "0806": "Kaluga",
+    "0810": "Orel",
+    "1103": "Moscow",
+    "1107": "Tula",
+    "1406": "Ryazan"
+  }
+}

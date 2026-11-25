@@ -1,0 +1,202 @@
+{
+  "checkpoint": 166,
+  "version": "v400",
+  "scope": "candidate Leningrad eight-turn baseline selector with seeded legal-action variation",
+  "policy": {
+    "seed": 42,
+    "selectionMode": "seeded",
+    "maxActions": 650,
+    "maxCombatsPerPhase": 1,
+    "maxCombatPhases": 12,
+    "maxGroundMovesPerPhase": 1,
+    "maxReinforcementsPerPhase": 2,
+    "maxFleetMoves": 1,
+    "maxFleetAttacks": 2
+  },
+  "runs": [
+    {
+      "seed": 7,
+      "status": "complete",
+      "actions": 209,
+      "stats": {
+        "moves": 31,
+        "combats": 12,
+        "reinforcements": 9,
+        "navalRolls": 2,
+        "turns": 8
+      },
+      "combatTurns": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "combatOutcomes": {
+        "EX": 1,
+        "NE": 7,
+        "DE": 4
+      },
+      "combatRolls": [
+        3,
+        5,
+        5,
+        5,
+        6,
+        3,
+        5
+      ],
+      "cityCount": 2,
+      "victory": "soviet-victory",
+      "terminalCityControl": {
+        "Daugavpils": "soviet",
+        "Insterburg": "german",
+        "Kaunas": "soviet",
+        "Leningrad": "soviet",
+        "Liepaja": "soviet",
+        "Luga": "soviet",
+        "Narva": "soviet",
+        "Novgorod": "soviet",
+        "Parnu": "soviet",
+        "Pskov": "soviet",
+        "Riga": "soviet",
+        "Siauliai": "german",
+        "Tallinn": "soviet",
+        "Tartu": "soviet"
+      },
+      "journalSHA256": "832ca6aa7269d6da949ab49542f7c28119578a5e1288191b36be65600b4b5a81",
+      "stateSHA256": "0c628e896bc4fe5980c1408f248e1f17585fbdc072b5c23a81f6a1b1a1ce1895"
+    },
+    {
+      "seed": 42,
+      "status": "complete",
+      "actions": 201,
+      "stats": {
+        "moves": 31,
+        "combats": 10,
+        "reinforcements": 9,
+        "navalRolls": 2,
+        "turns": 8
+      },
+      "combatTurns": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "combatOutcomes": {
+        "DR": 2,
+        "NE": 5,
+        "DE": 2,
+        "EX": 1
+      },
+      "combatRolls": [
+        2,
+        6,
+        4,
+        5,
+        3
+      ],
+      "cityCount": 2,
+      "victory": "soviet-victory",
+      "terminalCityControl": {
+        "Daugavpils": "german",
+        "Insterburg": "german",
+        "Kaunas": "soviet",
+        "Leningrad": "soviet",
+        "Liepaja": "soviet",
+        "Luga": "soviet",
+        "Narva": "soviet",
+        "Novgorod": "soviet",
+        "Parnu": "soviet",
+        "Pskov": "soviet",
+        "Riga": "soviet",
+        "Siauliai": "soviet",
+        "Tallinn": "soviet",
+        "Tartu": "soviet"
+      },
+      "journalSHA256": "60fdf2505d26908bb5434197b7eacd418cca1d7b4e6b4b2d13d91cafc428c31d",
+      "stateSHA256": "0fbfd4d2edcdd73fe5e5bd53fb79af0ebb6a426b203075db75b5837cc2caa5b0"
+    },
+    {
+      "seed": 901,
+      "status": "complete",
+      "actions": 205,
+      "stats": {
+        "moves": 31,
+        "combats": 12,
+        "reinforcements": 9,
+        "navalRolls": 2,
+        "turns": 8
+      },
+      "combatTurns": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "combatOutcomes": {
+        "DRL": 2,
+        "NE": 10
+      },
+      "combatRolls": [
+        3,
+        5,
+        1,
+        5,
+        5
+      ],
+      "cityCount": 3,
+      "victory": "soviet-victory",
+      "terminalCityControl": {
+        "Daugavpils": "soviet",
+        "Insterburg": "german",
+        "Kaunas": "german",
+        "Leningrad": "soviet",
+        "Liepaja": "soviet",
+        "Luga": "soviet",
+        "Narva": "soviet",
+        "Novgorod": "soviet",
+        "Parnu": "soviet",
+        "Pskov": "soviet",
+        "Riga": "soviet",
+        "Siauliai": "german",
+        "Tallinn": "soviet",
+        "Tartu": "soviet"
+      },
+      "journalSHA256": "9209a450a224e96083f5ef90b47131a4c980834149beb8619af34974d70996fa",
+      "stateSHA256": "1d1e198e75cb24f78de27bace58ef853eb9fca4194932e057d0c846aa6c488be"
+    }
+  ],
+  "completed": 3,
+  "uniqueTerminalStates": 3,
+  "uniqueJournals": 3,
+  "observedCombatOutcomes": [
+    "DE",
+    "DR",
+    "DRL",
+    "EX",
+    "NE"
+  ],
+  "uniqueCombatTurns": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "midCampaignReplay": "identical journal and final state",
+  "limitations": [
+    "Same source-uncertified candidate counter allocation for all three runs",
+    "Seeded legal-action selection is a deterministic test policy, not a strategic AI",
+    "All three games may share the same victor despite materially different board states",
+    "Only one-battle combat declarations and twelve combat phases permitted by this test policy",
+    "Rare unsupported joint retreats and incomplete source identities remain open"
+  ]
+}

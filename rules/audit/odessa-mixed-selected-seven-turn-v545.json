@@ -1,0 +1,82 @@
+{
+  "checkpoint": 311,
+  "version": "v545",
+  "status": "PASS",
+  "scope": "Node seven-turn contested journal, browser-stage replay groundwork",
+  "assertions": 98,
+  "mixedConcealedIdentities": 10,
+  "mixedPhysicalFaceAssignments": {
+    "kiev-front-r04c02": "kiev-front-r05c02",
+    "kiev-front-r04c03": "kiev-front-r05c03",
+    "kiev-front-r05c01": "kiev-front-r05c04",
+    "kiev-front-r05c02": "kiev-front-r05c05",
+    "kiev-front-r05c03": "kiev-front-r05c06",
+    "kiev-front-r05c04": "kiev-front-r05c07",
+    "kiev-front-r05c05": "kiev-front-r05c08",
+    "kiev-front-r05c06": "kiev-front-r04c02",
+    "kiev-front-r05c07": "kiev-front-r04c03",
+    "kiev-front-r05c08": "kiev-front-r05c01"
+  },
+  "reservedGermanFace": "kiev-front-r02c06",
+  "reinforcements": [
+    {
+      "turn": 2,
+      "slot": "t2-slovak",
+      "id": "kiev-front-r02c07",
+      "hex": "0101"
+    },
+    {
+      "turn": 2,
+      "slot": "t2-hungarian",
+      "id": "kiev-front-r04c08",
+      "hex": "0101"
+    },
+    {
+      "turn": 3,
+      "slot": "t3-german-infantry",
+      "id": "kiev-front-r02c06",
+      "hex": "0102"
+    },
+    {
+      "turn": 3,
+      "slot": "t3-italian-motorized",
+      "id": "kiev-front-r04c01",
+      "hex": "0102"
+    },
+    {
+      "turn": 5,
+      "slot": "t5-soviet-army",
+      "id": "kiev-front-r04c05",
+      "hex": "1601"
+    },
+    {
+      "turn": 6,
+      "slot": "t6-soviet-army",
+      "id": "kiev-front-r04c06",
+      "hex": "1701"
+    }
+  ],
+  "housekeeping": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "steps": 80,
+  "finalStateHash": "2bf9d46816b9c5923959e80709461268b5a94b8102451b1ffff650fed2b6c7a7",
+  "savedStages": [
+    "turn1-opening",
+    "post-exchange",
+    "turn3-pre-arrivals",
+    "turn6-pre-arrival",
+    "terminal"
+  ],
+  "historicalCertification": false,
+  "limitations": [
+    "Naval evacuation phase not source authorized",
+    "Source topology and Romania territorial authority remain experimental"
+  ]
+}

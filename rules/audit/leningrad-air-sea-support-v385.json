@@ -1,0 +1,35 @@
+{
+  "checkpoint": 151,
+  "version": "v385",
+  "source": "references/rules/leningrad-rules.pdf §§6, 10.5, 11, 13.3",
+  "pdfSha256": "74d332e052e735e2378027a06f95e9715392773f249561bf1c00cae08a2bbfa7",
+  "assertions": 163,
+  "airMarkers": [
+    {
+      "faceId": "leningrad-front-r04c05",
+      "shiftRating": 1,
+      "firstTurn": 1
+    },
+    {
+      "faceId": "leningrad-front-r04c04",
+      "shiftRating": 2,
+      "firstTurn": 6
+    }
+  ],
+  "verified": [
+    "Turn 1/Turn 6 availability",
+    "source-faces and shifts",
+    "one die per Fleet attack",
+    "once per turn mutual exclusion of sea and ground air use",
+    "Fleet first-hit damage and second-hit elimination",
+    "pre-declaration air-sea phase gate",
+    "source-bound ground shifts change B4M CRT column",
+    "transaction Undo and deterministic replay"
+  ],
+  "limits": [
+    "Opt-in German combat transaction; no full eight-turn orchestration or human browser air choices",
+    "Air-use tracking is in bounded game state, not yet included in the versioned full-campaign save contract",
+    "Turn-6 arrival is source-scheduled availability, not yet a general reinforcement event",
+    "Independent source-executable parity unverified"
+  ]
+}

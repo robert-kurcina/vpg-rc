@@ -1,0 +1,69 @@
+{
+  "checkpoint": 169,
+  "version": "v403",
+  "baseline": "v402 Checkpoint 168",
+  "purpose": "Correct displayed Leningrad counter fields from canonical front/reverse source rather than length-adjusting incorrect internal-ID labels",
+  "sourceSheetHashes": {
+    "front": "9de02c03808c7e983b9402edafc116e05146b9b6fb07b793a2e3229cc695c603",
+    "back": "f66739d885334f6bcedc307311b68a883175761a5929e990e264e0e3152e813e"
+  },
+  "sourceTranscriptionCorrection": "The four concealed Soviet Mechanized Corps display a printed asterisk (*) next to their concealed ?-6 frontage; source config previously stored null",
+  "verifiedFaceBehavior": {
+    "frontHiddenMechanized": "*-?-6; no formation number",
+    "revealedMechanizedBackValues": [
+      "4\u00b72\u00b76",
+      "6\u00b73\u00b76",
+      "4\u00b72\u00b76",
+      "2\u00b71\u00b76"
+    ],
+    "sovietArmyFrontBack": "8-4 -> 4-4, size XXXX",
+    "sovietThreeFourCorps": "3-4 front, blank reverse (one-step); no fabricated damaged face",
+    "germanTankExample": "12-6 -> 6-6, size XXX",
+    "digitText": "black as in photographed sources",
+    "invalidSideStatus": "reject wrong activeFaceId or nonexistent reverse combat face"
+  },
+  "tests": {
+    "sourceFaceProjection": "552 assertions PASSED; all 28 ground front/back pairs examined",
+    "actualBrowserInitial": "19 live counters, 4 concealed asterisks, 0px vertical-label overflow, accepted SVG source loaded",
+    "actualHumanBrowser": "Full real Chromium combat, precommitted die, Undo, save/load, AI side, Node-vs-browser state hash PASSED",
+    "inventoryAndCurrentCore": "Source transcription, inventory, initial setup, campaign continuation, shared CRT and universal contract targeted regressions PASSED",
+    "mapAndVisual": "Five map manifest verification PASSED with existing nonfatal warnings; fresh Leningrad approved visual regression PASSED"
+  },
+  "baselineComparison": {
+    "existingFilesUnchangedAtAudit": 921,
+    "existingFilesModifiedAtAudit": [
+      "core/historical_browser_app.js",
+      "games/leningrad/native-preview/index.html",
+      "maps/counter-configs/leningrad.json",
+      "scripts/verify-historical-human-browser-v402.py"
+    ],
+    "newFilesAtAudit": [
+      "core/historical_counter_face_projection.js",
+      "rules/audit/leningrad-human-browser-v403.json",
+      "rules/audit/visual/leningrad-canonical-faces-v403.png",
+      "rules/audit/visual/leningrad-human-browser-v403.png",
+      "scripts/verify-historical-counter-browser-v403.py",
+      "tests/leningrad-counter-browser-parity-v403.py",
+      "tests/leningrad-counter-face-parity-v403.test.js"
+    ],
+    "deleted": [],
+    "protectedFilesUnchanged": [
+      "exports/leningrad.svg",
+      "exports/leningrad.png",
+      "maps/leningrad.json",
+      "rules_profiles/shared-crt.json",
+      "assets/official-counters/source-sheets/counters-leningrad-front.jpg",
+      "assets/official-counters/source-sheets/counters-leningrad-back.jpg",
+      "core/official_counter_templates.js",
+      "core/counter_visuals.js",
+      "core/historical_campaign_session.js",
+      "core/historical_engine_browser_bundle.js"
+    ]
+  },
+  "limits": [
+    "User-approved v373 terrain and common B4M CRT unchanged",
+    "Historic original photo/art unchanged",
+    "Candidate historical setup and printed coordinate discrepancies remain unresolved",
+    "No change to production Battle for Moscow, game rules, or original counters source SVG"
+  ]
+}

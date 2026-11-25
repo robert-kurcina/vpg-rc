@@ -1,0 +1,50 @@
+[
+  {
+    "game": "arduous",
+    "before": {
+      "x": 200,
+      "y": 30
+    },
+    "after": {
+      "x": 270,
+      "y": 80
+    },
+    "firstTouchHint": true,
+    "singleFingerNoPan": true,
+    "twoFingerPan": true,
+    "noRepeatHint": true,
+    "pageErrors": []
+  },
+  {
+    "game": "leningrad",
+    "before": {
+      "x": 200,
+      "y": 30
+    },
+    "after": {
+      "x": 270,
+      "y": 80
+    },
+    "firstTouchHint": true,
+    "singleFingerNoPan": true,
+    "twoFingerPan": true,
+    "noRepeatHint": true,
+    "pageErrors": []
+  },
+  {
+    "game": "battle-for-moscow",
+    "before": {
+      "x": 200,
+      "y": 30
+    },
+    "after": {
+      "x": 270,
+      "y": 80
+    },
+    "firstTouchHint": true,
+    "singleFingerNoPan": true,
+    "twoFingerPan": true,
+    "noRepeatHint": true,
+    "pageErrors": []
+  }
+]

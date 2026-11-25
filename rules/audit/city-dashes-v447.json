@@ -1,0 +1,100 @@
+{
+  "checkpoint": 213,
+  "version": "v447",
+  "change": "SVG city-hex linecap round -> butt, preserving the inset orange dash style",
+  "dash": {
+    "color": "#ed8d30",
+    "opacity": 0.95,
+    "width": 4.5,
+    "pattern": [
+      10,
+      4
+    ],
+    "cap": "butt",
+    "join": "round"
+  },
+  "bug": "Round dash caps extend 2.25 units from each end, closing a nominal 4-unit gap.",
+  "protectedFilesIdenticalToV446": 279,
+  "protectedMismatches": [],
+  "sourceHashes": {
+    "maps/registry.json": "33eca120e2a92b64b07c42a84f0a54a63411d9b5446cd4f14a97f3ae3a9ae6c8",
+    "maps/kiev.json": "dcf72e17ed9f1ee22f65bcd11e41916d9c3bfc3feb25f2a39731f7025e067d3f",
+    "maps/battle-for-moscow.json": "0cbbee55d2079c931b54d6692599e53a2edb28d43390636f0b2cb47e7aa40005"
+  },
+  "mapSvgDifferencesOnlyCityLineCaps": {
+    "battle-for-moscow": true,
+    "arduous": true,
+    "leningrad": true,
+    "kiev": true,
+    "kiev-odessa": true
+  },
+  "regeneratedExports": {
+    "battle-for-moscow": {
+      "svgSHA256": "03a401195a1afb164f52a9d4b561659ae1905b1b9149d3e9d1f5f9234c933110",
+      "pngSHA256": "d43c42c4bb18b253315dba6dc9489ddd66ff1f8595993f2852735132c16ee3f2",
+      "errors": [],
+      "warnings": [
+        "0102 NW: rail at unverified/off-board boundary",
+        "0105 NW: rail at unverified/off-board boundary",
+        "0110 SW: rail at unverified/off-board boundary",
+        "0511 S: rail at unverified/off-board boundary",
+        "0901 NW: rail at unverified/off-board boundary",
+        "1301 NE: rail at unverified/off-board boundary",
+        "1402 SE: rail at unverified/off-board boundary",
+        "1403 SE: rail at unverified/off-board boundary",
+        "1404 SE: rail at unverified/off-board boundary",
+        "1407 SE: rail at unverified/off-board boundary"
+      ]
+    },
+    "arduous": {
+      "svgSHA256": "e1b8139cb8507c4cba94d74812fc7eca791b248cdb79372c66e30ec194afc19e",
+      "pngSHA256": "c93b632a371f630b0c04b4e531f456232f024f4a51bc87390d7aeb1ba64812ca",
+      "errors": [],
+      "warnings": []
+    },
+    "leningrad": {
+      "svgSHA256": "cb50d24abe74ad8029ad4005f7efbb65228f0630623f42ad0d39b7ae665d6a05",
+      "pngSHA256": "d97293ac6662d9e1d5e7e063c2f6664b1df9acac626c6a9d56829219373a0f58",
+      "errors": [],
+      "warnings": [
+        "0411 S: river at unverified/off-board boundary",
+        "0711 SW: river at unverified/off-board boundary",
+        "0811 S: river at unverified/off-board boundary",
+        "1109 S: river at unverified/off-board boundary",
+        "1309 S: river at unverified/off-board boundary",
+        "1901 NE: river at unverified/off-board boundary"
+      ]
+    },
+    "kiev": {
+      "svgSHA256": "7fd8feab8b7ab11bffc12693f26731dd3078143125d617c94699706b93150e66",
+      "pngSHA256": "1b26bf39a62d8f9447b0fbbec7890d784db0001eb14440759dc041f8c06628e4",
+      "errors": [],
+      "warnings": []
+    },
+    "kiev-odessa": {
+      "svgSHA256": "8be48fe5481415f1f5b3eadbae8d87cf55c1242028b5ffc49ffc4e2df25ec337",
+      "pngSHA256": "e6ddf426ea656a22ff6dd43b74d07e687270ced4a9d69e1dbf30186ea7d1581f",
+      "errors": [],
+      "warnings": [
+        "0918 SE: majorRiver at unverified/off-board boundary",
+        "0918 S: majorRiver at unverified/off-board boundary",
+        "1017 S: majorRiver at unverified/off-board boundary"
+      ]
+    }
+  },
+  "rasterValidation": {
+    "sampleMap": "kiev",
+    "cityHex": "0706",
+    "northEdgeOrangeRuns": 3,
+    "clearGaps": 2,
+    "test": "tests/city-dash-raster-v447.py"
+  },
+  "regressions": [
+    "tests/city-dash-visibility-v447.test.js",
+    "tests/city-dash-raster-v447.py",
+    "tests/city-outline-inset-v446.test.js",
+    "tests/kiev-source-reviewed-candidate-v433.test.js",
+    "tests/kiev-opening-preflight-v436.test.js",
+    "tests/shared-historical-crt-v316.test.js"
+  ]
+}

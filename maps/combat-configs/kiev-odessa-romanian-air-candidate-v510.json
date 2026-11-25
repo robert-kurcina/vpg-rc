@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "id": "odessa-romanian-air-refit-candidate-v510",
+  "scenarioId": "kiev-odessa",
+  "status": "diagnostic-ground-support-only; not-live; fleet-targeting-deferred",
+  "source": [
+    "references/rules/odessa-rules.pdf §§6.0(6),10.5,11.0",
+    "maps/roster-overlays/kiev-odessa.json",
+    "maps/counter-configs/odessa-extension.json",
+    "maps/combat-configs/kiev.json"
+  ],
+  "sourceSHA256": {
+    "references/rules/odessa-rules.pdf": "c7def97fe2de9ae66dc89da5f7d3417e3283846485903b90b88f153ba9791bab",
+    "assets/official-counters/source-sheets/counters-odessa-front.jpg": "297e28ceefadb982bc7050b1e9a5039956997d34ce3368cda219b1da85badd25",
+    "assets/official-counters/source-sheets/counters-odessa-back.jpg": "74de9f736f15abd39be33c351df09a977c9cca697ceac281230a7207f78de969"
+  },
+  "baseAirSupportConfig": "maps/combat-configs/kiev.json",
+  "printedAffiliationToOwner": {
+    "axis": "german",
+    "romanian": "german"
+  },
+  "airSupport": {
+    "mode": "photographed-shift-markers-v1",
+    "owner": "german",
+    "navalAttackMode": "none",
+    "markers": [
+      {
+        "faceId": "kiev-front-r03c01",
+        "shiftRating": 1,
+        "firstTurn": 1
+      },
+      {
+        "faceId": "kiev-front-r03c02",
+        "shiftRating": 1,
+        "firstTurn": 1
+      },
+      {
+        "faceId": "odessa-front-r01c07",
+        "shiftRating": 1,
+        "firstTurn": 2,
+        "cooldownTurns": 1,
+        "refitFaceId": "odessa-back-r01c02"
+      }
+    ],
+    "requireRosterFaceBinding": true
+  },
+  "notes": [
+    "Romanian air unit is a Game Turn 2 reinforcement; first action eligibility is the Axis Combat Phase of Turn 2.",
+    "After a committed use, its printed reverse REFIT side indicates that the next Game Turn is ineligible; following turns are eligible unless used again.",
+    "German FK IV and FK V remain usable on consecutive turns and retain their original Kiev photographed-face registrations.",
+    "No historical Odessa Fleet target is enabled by this candidate; §15 air-versus-Fleet integration remains separately gated.",
+    "The combined 261-hex Kiev–Odessa historical campaign remains non-playable; this policy is diagnostic only."
+  ]
+}

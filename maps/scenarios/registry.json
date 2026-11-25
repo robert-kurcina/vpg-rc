@@ -1,0 +1,348 @@
+{
+  "schemaVersion": 1,
+  "contract": "universal-scenario-domains-v1",
+  "policy": {
+    "oneEngine": true,
+    "onePresentationFramework": true,
+    "defaultInheritance": "forbidden",
+    "typedModulesOnly": true,
+    "noUnverifiedExecutableActivation": true,
+    "originalB4MAuthority": "Oberlabs-compatible runtime remains unchanged during migration"
+  },
+  "domains": {
+    "players": "Player factions and turn order",
+    "phases": "Ordered phases, permissions and extra phases",
+    "roster": "Counter identities, sides and strengths",
+    "deployment": "Starting hexes, regions and reinforcements",
+    "victory": "Victory points, objectives, end checks and tie-breaks",
+    "map": "Hex geometry, layers and features",
+    "weather": "Weather schedules, effects and transition rules",
+    "terrain": "Movement and combat terrain effects",
+    "crt": "Combat result table, odds, shifts and roll policy",
+    "microrules": "Typed optional named rule modules",
+    "soloAI": "Available AI policies and permitted actions",
+    "presentation": "Player UX, legal action selection, rules tabs",
+    "turns": "Turn calendar and game length",
+    "logistics": "Supply, replacement and special logistics"
+  },
+  "games": [
+    {
+      "id": "battle-for-moscow",
+      "mode": "baseline-executable",
+      "extends": null,
+      "domains": {
+        "players": {
+          "status": "baseline-source",
+          "source": "games/battle-for-moscow/rules.json#/turnOrder"
+        },
+        "phases": {
+          "status": "baseline-source",
+          "source": "games/battle-for-moscow/rules.json#/phases"
+        },
+        "roster": {
+          "status": "baseline-source",
+          "source": "maps/rosters/registry.json#battle-for-moscow"
+        },
+        "deployment": {
+          "status": "baseline-source",
+          "source": "games/battle-for-moscow/units.json"
+        },
+        "victory": {
+          "status": "unmapped",
+          "source": null
+        },
+        "map": {
+          "status": "baseline-source",
+          "source": "maps/battle-for-moscow.json"
+        },
+        "weather": {
+          "status": "baseline-source",
+          "source": "games/battle-for-moscow/rules.json#/weather"
+        },
+        "terrain": {
+          "status": "unmapped",
+          "source": null
+        },
+        "crt": {
+          "status": "baseline-source",
+          "source": "games/battle-for-moscow/rules.json#/combat/table"
+        },
+        "microrules": {
+          "status": "baseline-source",
+          "source": "games/battle-for-moscow/rules.json#/specialRules"
+        },
+        "soloAI": {
+          "status": "baseline-source",
+          "source": "core/ai.js"
+        },
+        "presentation": {
+          "status": "baseline-source",
+          "source": "maps/presentation/registry.json#battle-for-moscow"
+        },
+        "turns": {
+          "status": "baseline-source",
+          "source": "games/battle-for-moscow/rules.json#/turns"
+        },
+        "logistics": {
+          "status": "baseline-source",
+          "source": "games/battle-for-moscow/rules.json#/specialRules"
+        }
+      }
+    },
+    {
+      "id": "arduous",
+      "mode": "historical-non-executable",
+      "extends": null,
+      "domains": {
+        "players": {
+          "status": "source-bound-non-executable",
+          "source": "maps/phase-configs/arduous.json"
+        },
+        "phases": {
+          "status": "source-bound-non-executable",
+          "source": "maps/phase-configs/arduous.json"
+        },
+        "roster": {
+          "status": "source-bound-non-executable",
+          "source": "maps/rosters/registry.json#arduous"
+        },
+        "deployment": {
+          "status": "pending-source-mapping",
+          "source": null
+        },
+        "victory": {
+          "status": "pending-source-mapping",
+          "source": null
+        },
+        "map": {
+          "status": "source-bound-non-executable",
+          "source": "maps/registry.json#arduous"
+        },
+        "weather": {
+          "status": "pending-source-mapping",
+          "source": null
+        },
+        "terrain": {
+          "status": "pending-source-mapping",
+          "source": null
+        },
+        "crt": {
+          "status": "pending-source-mapping",
+          "source": null
+        },
+        "microrules": {
+          "status": "pending-source-mapping",
+          "source": null
+        },
+        "soloAI": {
+          "status": "pending-source-mapping",
+          "source": null
+        },
+        "presentation": {
+          "status": "source-bound-non-executable",
+          "source": "maps/presentation/registry.json#arduous"
+        },
+        "turns": {
+          "status": "source-bound-non-executable",
+          "source": "maps/phase-configs/arduous.json"
+        },
+        "logistics": {
+          "status": "pending-source-mapping",
+          "source": null
+        }
+      }
+    },
+    {
+      "id": "leningrad",
+      "mode": "historical-non-executable",
+      "extends": null,
+      "domains": {
+        "players": {
+          "status": "source-bound-non-executable",
+          "source": "maps/phase-configs/leningrad.json"
+        },
+        "phases": {
+          "status": "source-bound-non-executable",
+          "source": "maps/phase-configs/leningrad.json"
+        },
+        "roster": {
+          "status": "source-bound-non-executable",
+          "source": "maps/rosters/registry.json#leningrad"
+        },
+        "deployment": {
+          "status": "source-bound-non-executable",
+          "source": "maps/setup/leningrad.json"
+        },
+        "victory": {
+          "status": "pending-source-mapping",
+          "source": null
+        },
+        "map": {
+          "status": "source-bound-non-executable",
+          "source": "maps/registry.json#leningrad"
+        },
+        "weather": {
+          "status": "pending-source-mapping",
+          "source": null
+        },
+        "terrain": {
+          "status": "pending-source-mapping",
+          "source": null
+        },
+        "crt": {
+          "status": "pending-source-mapping",
+          "source": null
+        },
+        "microrules": {
+          "status": "pending-source-mapping",
+          "source": null
+        },
+        "soloAI": {
+          "status": "pending-source-mapping",
+          "source": null
+        },
+        "presentation": {
+          "status": "source-bound-non-executable",
+          "source": "maps/presentation/registry.json#leningrad"
+        },
+        "turns": {
+          "status": "source-bound-non-executable",
+          "source": "maps/phase-configs/leningrad.json"
+        },
+        "logistics": {
+          "status": "pending-source-mapping",
+          "source": null
+        }
+      }
+    },
+    {
+      "id": "kiev",
+      "mode": "historical-non-executable",
+      "extends": null,
+      "domains": {
+        "players": {
+          "status": "pending-source-mapping",
+          "source": null
+        },
+        "phases": {
+          "status": "source-bound-non-executable",
+          "source": "maps/phase-configs/kiev.json"
+        },
+        "roster": {
+          "status": "source-bound-non-executable",
+          "source": "maps/rosters/registry.json#kiev"
+        },
+        "deployment": {
+          "status": "pending-source-mapping",
+          "source": null
+        },
+        "victory": {
+          "status": "pending-source-mapping",
+          "source": null
+        },
+        "map": {
+          "status": "source-bound-non-executable",
+          "source": "maps/registry.json#kiev"
+        },
+        "weather": {
+          "status": "pending-source-mapping",
+          "source": null
+        },
+        "terrain": {
+          "status": "pending-source-mapping",
+          "source": null
+        },
+        "crt": {
+          "status": "pending-source-mapping",
+          "source": null
+        },
+        "microrules": {
+          "status": "pending-source-mapping",
+          "source": null
+        },
+        "soloAI": {
+          "status": "pending-source-mapping",
+          "source": null
+        },
+        "presentation": {
+          "status": "source-bound-non-executable",
+          "source": "maps/presentation/registry.json#kiev"
+        },
+        "turns": {
+          "status": "pending-source-mapping",
+          "source": null
+        },
+        "logistics": {
+          "status": "pending-source-mapping",
+          "source": null
+        }
+      }
+    },
+    {
+      "id": "kiev-odessa",
+      "mode": "historical-non-executable",
+      "extends": "kiev",
+      "domains": {
+        "players": {
+          "status": "pending-source-mapping",
+          "source": null
+        },
+        "phases": {
+          "status": "source-bound-non-executable",
+          "source": "maps/phase-configs/kiev-odessa.json"
+        },
+        "roster": {
+          "status": "source-bound-non-executable",
+          "source": "maps/rosters/registry.json#kiev-odessa",
+          "inherits": "kiev"
+        },
+        "deployment": {
+          "status": "pending-source-mapping",
+          "source": null
+        },
+        "victory": {
+          "status": "pending-source-mapping",
+          "source": null
+        },
+        "map": {
+          "status": "source-bound-non-executable",
+          "source": "maps/registry.json#kiev-odessa",
+          "inherits": "kiev"
+        },
+        "weather": {
+          "status": "pending-source-mapping",
+          "source": null
+        },
+        "terrain": {
+          "status": "pending-source-mapping",
+          "source": null
+        },
+        "crt": {
+          "status": "pending-source-mapping",
+          "source": null
+        },
+        "microrules": {
+          "status": "pending-source-mapping",
+          "source": null
+        },
+        "soloAI": {
+          "status": "pending-source-mapping",
+          "source": null
+        },
+        "presentation": {
+          "status": "source-bound-non-executable",
+          "source": "maps/presentation/registry.json#kiev-odessa",
+          "inherits": "kiev"
+        },
+        "turns": {
+          "status": "pending-source-mapping",
+          "source": null
+        },
+        "logistics": {
+          "status": "pending-source-mapping",
+          "source": null
+        }
+      }
+    }
+  ]
+}

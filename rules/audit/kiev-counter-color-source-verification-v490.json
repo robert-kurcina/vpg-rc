@@ -1,0 +1,118 @@
+{
+  "checkpoint": 256,
+  "version": "v490",
+  "status": "verified-source-pixel-corrections",
+  "sourceSHA256": {
+    "front": "9db4bc6382f174017cb23f9c907369a25e173143a29e292b656b8f48ddfc4724",
+    "back": "533165e074c4c6a2774811053347d19615eb85acce69987192301c403dcefeea"
+  },
+  "correctedFaces": [
+    {
+      "faceId": "kiev-front-r01c03",
+      "side": "front",
+      "printed": "German Panzer Corps 48",
+      "incorrectMetadata": "#485c51",
+      "correctedMetadata": "#8ba195",
+      "measuredSourcePatchMedian": "#8ba195",
+      "maxChannelDelta": 0.0,
+      "sourcePatch": [
+        308,
+        76,
+        321,
+        97
+      ]
+    },
+    {
+      "faceId": "kiev-front-r02c03",
+      "side": "front",
+      "printed": "German Infantry Corps 54",
+      "incorrectMetadata": "#4b5b51",
+      "correctedMetadata": "#8ba195",
+      "measuredSourcePatchMedian": "#8ba195",
+      "maxChannelDelta": 0.0,
+      "sourcePatch": [
+        308,
+        224,
+        321,
+        245
+      ]
+    },
+    {
+      "faceId": "kiev-front-r03c03",
+      "side": "front",
+      "printed": "Game Turn marker",
+      "incorrectMetadata": "#4a5b51",
+      "correctedMetadata": "#8ba195",
+      "measuredSourcePatchMedian": "#8ba195",
+      "maxChannelDelta": 0.0,
+      "sourcePatch": [
+        308,
+        402,
+        321,
+        422
+      ]
+    },
+    {
+      "faceId": "kiev-front-r04c02",
+      "side": "front",
+      "printed": "Soviet concealed Mechanized Corps",
+      "incorrectMetadata": "#95bf91",
+      "correctedMetadata": "#d7a477",
+      "measuredSourcePatchMedian": "#d7a477",
+      "maxChannelDelta": 0.0,
+      "sourcePatch": [
+        168,
+        547,
+        181,
+        567
+      ]
+    },
+    {
+      "faceId": "kiev-front-r04c03",
+      "side": "front",
+      "printed": "Soviet concealed Mechanized Corps",
+      "incorrectMetadata": "#745332",
+      "correctedMetadata": "#d7a477",
+      "measuredSourcePatchMedian": "#d7a477",
+      "maxChannelDelta": 0.0,
+      "sourcePatch": [
+        308,
+        547,
+        321,
+        567
+      ]
+    },
+    {
+      "faceId": "kiev-front-r05c03",
+      "side": "front",
+      "printed": "Soviet concealed Mechanized Corps",
+      "incorrectMetadata": "#745332",
+      "correctedMetadata": "#d7a477",
+      "measuredSourcePatchMedian": "#d7a477",
+      "maxChannelDelta": 0.0,
+      "sourcePatch": [
+        308,
+        730,
+        321,
+        752
+      ]
+    },
+    {
+      "faceId": "kiev-back-r04c02",
+      "side": "back",
+      "printed": "Soviet reduced Infantry Army 40",
+      "incorrectMetadata": "#c0bccd",
+      "correctedMetadata": "#f8a19a",
+      "measuredSourcePatchMedian": "#f8a198",
+      "maxChannelDelta": 2.0,
+      "sourcePatch": [
+        166,
+        552,
+        179,
+        573
+      ]
+    }
+  ],
+  "checksPassed": 142,
+  "scope": "presentation metadata only; no generic palette normalization or gameplay rule change"
+}

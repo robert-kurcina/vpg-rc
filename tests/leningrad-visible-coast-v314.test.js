@@ -1,0 +1,20 @@
+'use strict';
+const fs=require('fs'),assert=require('assert');
+const T=require('../core/terrain_tiles');
+const board=JSON.parse(fs.readFileSync('maps/leningrad.json','utf8'));
+const svg=fs.readFileSync('exports-v314/leningrad.svg','utf8');
+const routes=board.sourceWaterRoutes.filter(r=>r.kind==='coast');
+assert.equal(routes.length,1);
+assert.equal(routes[0].sourceSvgId,'path482');
+assert.equal(routes[0].points.length,54);
+assert.equal(board.sourceCoastRenderingMode,'source-path-coast-wavelets');
+assert.equal((svg.match(/class="source-coast-connected-wavelet-fringe"/g)||[]).length,1);
+assert(svg.includes('data-wavelet-direction="landward"'));
+assert(svg.includes('data-coast-reference="exact-svg-polyline"'));
+assert(!svg.includes('data-wavelet-direction="seaward"'));
+for (const bad of ['class="source-authored-coast"','class="registered-shoreline-wavelets"','class="explicit-coast-edge"'])
+ assert(!svg.includes(bad),'duplicate coastline '+bad);
+assert.equal((svg.match(/class="source-authored-lake"/g)||[]).length,4);
+const liep=board.authoredShoreHexsides.filter(x=>x.cellId==='0208'&&x.kind==='coast').map(x=>x.dir).sort();
+assert.deepEqual(liep,['N','SW','NW'].sort());
+console.log('PASS v314: exactly one source-anchored landward wavelet; original path482 retained; Liepaja faces and four Lakes preserved');

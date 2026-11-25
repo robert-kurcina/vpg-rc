@@ -1,0 +1,2068 @@
+{
+  "schemaVersion": 1,
+  "mapId": "leningrad",
+  "gameSet": "leningrad",
+  "faceSource": {
+    "front": {
+      "file": "assets/official-counters/source-sheets/counters-leningrad-front.jpg",
+      "sha256": "9de02c03808c7e983b9402edafc116e05146b9b6fb07b793a2e3229cc695c603",
+      "width": 748,
+      "height": 424
+    },
+    "back": {
+      "file": "assets/official-counters/source-sheets/counters-leningrad-back.jpg",
+      "sha256": "f66739d885334f6bcedc307311b68a883175761a5929e990e264e0e3152e813e",
+      "width": 748,
+      "height": 424
+    }
+  },
+  "faceOrder": "horizontal-mirror across sheet: front row r column c corresponds to back row r column 9-c",
+  "colorPolicy": "per-face sampled color stored as provenance; per-unit fields use source palette, not generic faction CSS",
+  "faces": {
+    "front": [
+      {
+        "faceId": "leningrad-front-r01c01",
+        "source": "front",
+        "row": 1,
+        "column": 1,
+        "crop": [
+          5,
+          8,
+          92,
+          98
+        ],
+        "observedFieldColor": "#b49070",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "unknown-until-transcribed",
+        "pairedFaceId": "leningrad-back-r01c08",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "infantry",
+          "printedIdentifier": "22",
+          "printedValues": "3-4",
+          "printedAffiliation": "soviet",
+          "notes": "printed face only; unit identity requires validated roster mapping"
+        },
+        "printedPairValidation": "unresolved"
+      },
+      {
+        "faceId": "leningrad-front-r01c02",
+        "source": "front",
+        "row": 1,
+        "column": 2,
+        "crop": [
+          97,
+          8,
+          93,
+          98
+        ],
+        "observedFieldColor": "#d7a479",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "unknown-until-transcribed",
+        "pairedFaceId": "leningrad-back-r01c07",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "infantry",
+          "printedIdentifier": "24",
+          "printedValues": "3-4",
+          "printedAffiliation": "soviet",
+          "notes": "printed face only; unit identity requires validated roster mapping"
+        },
+        "printedPairValidation": "unresolved"
+      },
+      {
+        "faceId": "leningrad-front-r01c03",
+        "source": "front",
+        "row": 1,
+        "column": 3,
+        "crop": [
+          190,
+          8,
+          92,
+          98
+        ],
+        "observedFieldColor": "#d6a273",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "unknown-until-transcribed",
+        "pairedFaceId": "leningrad-back-r01c06",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "infantry",
+          "printedIdentifier": "65",
+          "printedValues": "3-4",
+          "printedAffiliation": "soviet",
+          "notes": "printed face only; unit identity requires validated roster mapping"
+        },
+        "printedPairValidation": "unresolved"
+      },
+      {
+        "faceId": "leningrad-front-r01c04",
+        "source": "front",
+        "row": 1,
+        "column": 4,
+        "crop": [
+          282,
+          8,
+          92,
+          98
+        ],
+        "observedFieldColor": "#d7a477",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "unknown-until-transcribed",
+        "pairedFaceId": "leningrad-back-r01c05",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "infantry",
+          "printedIdentifier": "1 Rsv",
+          "printedValues": "3-4",
+          "printedAffiliation": "soviet",
+          "notes": "printed face only; unit identity requires validated roster mapping"
+        },
+        "printedPairValidation": "unresolved"
+      },
+      {
+        "faceId": "leningrad-front-r01c05",
+        "source": "front",
+        "row": 1,
+        "column": 5,
+        "crop": [
+          374,
+          8,
+          92,
+          98
+        ],
+        "observedFieldColor": "#d8a475",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "unknown-until-transcribed",
+        "pairedFaceId": "leningrad-back-r01c04",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "mechanized",
+          "printedIdentifier": "*",
+          "printedValues": "?-6",
+          "printedAffiliation": "soviet",
+          "notes": "printed face only; unit identity requires validated roster mapping",
+          "classificationEvidence": "Target: Leningrad Rules v1.0 §3.3 and §6.0(2), PDF pp.1–2; Soviet untried Mechanized Corps; counter source front/reverse"
+        },
+        "printedPairValidation": "unresolved"
+      },
+      {
+        "faceId": "leningrad-front-r01c06",
+        "source": "front",
+        "row": 1,
+        "column": 6,
+        "crop": [
+          466,
+          8,
+          92,
+          98
+        ],
+        "observedFieldColor": "#d7a477",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "unknown-until-transcribed",
+        "pairedFaceId": "leningrad-back-r01c03",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "mechanized",
+          "printedIdentifier": "*",
+          "printedValues": "?-6",
+          "printedAffiliation": "soviet",
+          "notes": "printed face only; unit identity requires validated roster mapping",
+          "classificationEvidence": "Target: Leningrad Rules v1.0 §3.3 and §6.0(2), PDF pp.1–2; Soviet untried Mechanized Corps; counter source front/reverse"
+        },
+        "printedPairValidation": "unresolved"
+      },
+      {
+        "faceId": "leningrad-front-r01c07",
+        "source": "front",
+        "row": 1,
+        "column": 7,
+        "crop": [
+          558,
+          8,
+          93,
+          98
+        ],
+        "observedFieldColor": "#d7a477",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "unknown-until-transcribed",
+        "pairedFaceId": "leningrad-back-r01c02",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "mechanized",
+          "printedIdentifier": "*",
+          "printedValues": "?-6",
+          "printedAffiliation": "soviet",
+          "notes": "printed face only; unit identity requires validated roster mapping",
+          "classificationEvidence": "Target: Leningrad Rules v1.0 §3.3 and §6.0(2), PDF pp.1–2; Soviet untried Mechanized Corps; counter source front/reverse"
+        },
+        "printedPairValidation": "unresolved"
+      },
+      {
+        "faceId": "leningrad-front-r01c08",
+        "source": "front",
+        "row": 1,
+        "column": 8,
+        "crop": [
+          651,
+          8,
+          92,
+          98
+        ],
+        "observedFieldColor": "#d7a477",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "unknown-until-transcribed",
+        "pairedFaceId": "leningrad-back-r01c01",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "mechanized",
+          "printedIdentifier": "*",
+          "printedValues": "?-6",
+          "printedAffiliation": "soviet",
+          "notes": "printed face only; unit identity requires validated roster mapping",
+          "classificationEvidence": "Target: Leningrad Rules v1.0 §3.3 and §6.0(2), PDF pp.1–2; Soviet untried Mechanized Corps; counter source front/reverse"
+        },
+        "printedPairValidation": "unresolved"
+      },
+      {
+        "faceId": "leningrad-front-r02c01",
+        "source": "front",
+        "row": 2,
+        "column": 1,
+        "crop": [
+          5,
+          106,
+          92,
+          98
+        ],
+        "observedFieldColor": "#c15854",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "unknown-until-transcribed",
+        "pairedFaceId": "leningrad-back-r02c08",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "infantry",
+          "printedIdentifier": "8",
+          "printedValues": "8-4",
+          "printedAffiliation": "soviet",
+          "notes": "printed face only; unit identity requires validated roster mapping"
+        },
+        "printedPairValidation": "printed-pair-agrees",
+        "sourceIdentityKey": "leningrad:soviet:infantry:8"
+      },
+      {
+        "faceId": "leningrad-front-r02c02",
+        "source": "front",
+        "row": 2,
+        "column": 2,
+        "crop": [
+          97,
+          106,
+          93,
+          98
+        ],
+        "observedFieldColor": "#ce5157",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "unknown-until-transcribed",
+        "pairedFaceId": "leningrad-back-r02c07",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "infantry",
+          "printedIdentifier": "11",
+          "printedValues": "8-4",
+          "printedAffiliation": "soviet",
+          "notes": "printed face only; unit identity requires validated roster mapping"
+        },
+        "printedPairValidation": "printed-pair-agrees",
+        "sourceIdentityKey": "leningrad:soviet:infantry:11"
+      },
+      {
+        "faceId": "leningrad-front-r02c03",
+        "source": "front",
+        "row": 2,
+        "column": 3,
+        "crop": [
+          190,
+          106,
+          92,
+          98
+        ],
+        "observedFieldColor": "#e64451",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "unknown-until-transcribed",
+        "pairedFaceId": "leningrad-back-r02c06",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "infantry",
+          "printedIdentifier": "48",
+          "printedValues": "8-4",
+          "printedAffiliation": "soviet",
+          "notes": "printed face only; unit identity requires validated roster mapping"
+        },
+        "printedPairValidation": "printed-pair-agrees",
+        "sourceIdentityKey": "leningrad:soviet:infantry:48"
+      },
+      {
+        "faceId": "leningrad-front-r02c04",
+        "source": "front",
+        "row": 2,
+        "column": 4,
+        "crop": [
+          282,
+          106,
+          92,
+          98
+        ],
+        "observedFieldColor": "#e74552",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "unknown-until-transcribed",
+        "pairedFaceId": "leningrad-back-r02c05",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "infantry",
+          "printedIdentifier": "34",
+          "printedValues": "8-4",
+          "printedAffiliation": "soviet",
+          "notes": "printed face only; unit identity requires validated roster mapping"
+        },
+        "printedPairValidation": "printed-pair-agrees",
+        "sourceIdentityKey": "leningrad:soviet:infantry:34"
+      },
+      {
+        "faceId": "leningrad-front-r02c05",
+        "source": "front",
+        "row": 2,
+        "column": 5,
+        "crop": [
+          374,
+          106,
+          92,
+          98
+        ],
+        "observedFieldColor": "#e64650",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "unknown-until-transcribed",
+        "pairedFaceId": "leningrad-back-r02c04",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "infantry",
+          "printedIdentifier": "42",
+          "printedValues": "8-4",
+          "printedAffiliation": "soviet",
+          "notes": "printed face only; unit identity requires validated roster mapping"
+        },
+        "printedPairValidation": "printed-pair-agrees",
+        "sourceIdentityKey": "leningrad:soviet:infantry:42"
+      },
+      {
+        "faceId": "leningrad-front-r02c06",
+        "source": "front",
+        "row": 2,
+        "column": 6,
+        "crop": [
+          466,
+          106,
+          92,
+          98
+        ],
+        "observedFieldColor": "#e74552",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "unknown-until-transcribed",
+        "pairedFaceId": "leningrad-back-r02c03",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "infantry",
+          "printedIdentifier": "52",
+          "printedValues": "8-4",
+          "printedAffiliation": "soviet",
+          "notes": "printed face only; unit identity requires validated roster mapping"
+        },
+        "printedPairValidation": "printed-pair-agrees",
+        "sourceIdentityKey": "leningrad:soviet:infantry:52"
+      },
+      {
+        "faceId": "leningrad-front-r02c07",
+        "source": "front",
+        "row": 2,
+        "column": 7,
+        "crop": [
+          558,
+          106,
+          93,
+          98
+        ],
+        "observedFieldColor": "#e74552",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "unknown-until-transcribed",
+        "pairedFaceId": "leningrad-back-r02c02",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "infantry",
+          "printedIdentifier": "54",
+          "printedValues": "8-4",
+          "printedAffiliation": "soviet",
+          "notes": "printed face only; unit identity requires validated roster mapping"
+        },
+        "printedPairValidation": "printed-pair-agrees",
+        "sourceIdentityKey": "leningrad:soviet:infantry:54"
+      },
+      {
+        "faceId": "leningrad-front-r02c08",
+        "source": "front",
+        "row": 2,
+        "column": 8,
+        "crop": [
+          651,
+          106,
+          92,
+          98
+        ],
+        "observedFieldColor": "#e74552",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "unknown-until-transcribed",
+        "pairedFaceId": "leningrad-back-r02c01",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "infantry",
+          "printedIdentifier": "55",
+          "printedValues": "8-4",
+          "printedAffiliation": "soviet",
+          "notes": "printed face only; unit identity requires validated roster mapping"
+        },
+        "printedPairValidation": "printed-pair-agrees",
+        "sourceIdentityKey": "leningrad:soviet:infantry:55"
+      },
+      {
+        "faceId": "leningrad-front-r03c01",
+        "source": "front",
+        "row": 3,
+        "column": 1,
+        "crop": [
+          5,
+          224,
+          92,
+          95
+        ],
+        "observedFieldColor": "#809187",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "unknown-until-transcribed",
+        "pairedFaceId": "leningrad-back-r03c08",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "tank",
+          "printedIdentifier": "41",
+          "printedValues": "12-6",
+          "printedAffiliation": "axis",
+          "notes": "printed face only; unit identity requires validated roster mapping"
+        },
+        "printedPairValidation": "printed-pair-agrees",
+        "sourceIdentityKey": "leningrad:axis:tank:41"
+      },
+      {
+        "faceId": "leningrad-front-r03c02",
+        "source": "front",
+        "row": 3,
+        "column": 2,
+        "crop": [
+          97,
+          224,
+          93,
+          95
+        ],
+        "observedFieldColor": "#8ca095",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "unknown-until-transcribed",
+        "pairedFaceId": "leningrad-back-r03c07",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "tank",
+          "printedIdentifier": "56",
+          "printedValues": "10-6",
+          "printedAffiliation": "axis",
+          "notes": "printed face only; unit identity requires validated roster mapping"
+        },
+        "printedPairValidation": "printed-pair-agrees",
+        "sourceIdentityKey": "leningrad:axis:tank:56"
+      },
+      {
+        "faceId": "leningrad-front-r03c03",
+        "source": "front",
+        "row": 3,
+        "column": 3,
+        "crop": [
+          190,
+          224,
+          92,
+          95
+        ],
+        "observedFieldColor": "#92a399",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "unknown-until-transcribed",
+        "pairedFaceId": "leningrad-back-r03c06",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "infantry",
+          "printedIdentifier": "1",
+          "printedValues": "8-4",
+          "printedAffiliation": "axis",
+          "notes": "printed face only; unit identity requires validated roster mapping"
+        },
+        "printedPairValidation": "printed-pair-agrees",
+        "sourceIdentityKey": "leningrad:axis:infantry:1"
+      },
+      {
+        "faceId": "leningrad-front-r03c04",
+        "source": "front",
+        "row": 3,
+        "column": 4,
+        "crop": [
+          282,
+          224,
+          92,
+          95
+        ],
+        "observedFieldColor": "#8ca095",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "unknown-until-transcribed",
+        "pairedFaceId": "leningrad-back-r03c05",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "infantry",
+          "printedIdentifier": "2",
+          "printedValues": "8-4",
+          "printedAffiliation": "axis",
+          "notes": "printed face only; unit identity requires validated roster mapping"
+        },
+        "printedPairValidation": "printed-pair-agrees",
+        "sourceIdentityKey": "leningrad:axis:infantry:2"
+      },
+      {
+        "faceId": "leningrad-front-r03c05",
+        "source": "front",
+        "row": 3,
+        "column": 5,
+        "crop": [
+          374,
+          224,
+          92,
+          95
+        ],
+        "observedFieldColor": "#8ca095",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "unknown-until-transcribed",
+        "pairedFaceId": "leningrad-back-r03c04",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "infantry",
+          "printedIdentifier": "10",
+          "printedValues": "8-4",
+          "printedAffiliation": "axis",
+          "notes": "printed face only; unit identity requires validated roster mapping"
+        },
+        "printedPairValidation": "printed-pair-agrees",
+        "sourceIdentityKey": "leningrad:axis:infantry:10"
+      },
+      {
+        "faceId": "leningrad-front-r03c06",
+        "source": "front",
+        "row": 3,
+        "column": 6,
+        "crop": [
+          466,
+          224,
+          92,
+          95
+        ],
+        "observedFieldColor": "#8ca095",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "unknown-until-transcribed",
+        "pairedFaceId": "leningrad-back-r03c03",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "infantry",
+          "printedIdentifier": "23",
+          "printedValues": "6-4",
+          "printedAffiliation": "axis",
+          "notes": "printed face only; unit identity requires validated roster mapping"
+        },
+        "printedPairValidation": "printed-pair-agrees",
+        "sourceIdentityKey": "leningrad:axis:infantry:23"
+      },
+      {
+        "faceId": "leningrad-front-r03c07",
+        "source": "front",
+        "row": 3,
+        "column": 7,
+        "crop": [
+          558,
+          224,
+          93,
+          95
+        ],
+        "observedFieldColor": "#8ca095",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "unknown-until-transcribed",
+        "pairedFaceId": "leningrad-back-r03c02",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "infantry",
+          "printedIdentifier": "26",
+          "printedValues": "6-4",
+          "printedAffiliation": "axis",
+          "notes": "printed face only; unit identity requires validated roster mapping"
+        },
+        "printedPairValidation": "printed-pair-agrees",
+        "sourceIdentityKey": "leningrad:axis:infantry:26"
+      },
+      {
+        "faceId": "leningrad-front-r03c08",
+        "source": "front",
+        "row": 3,
+        "column": 8,
+        "crop": [
+          651,
+          224,
+          92,
+          95
+        ],
+        "observedFieldColor": "#8ca095",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "unknown-until-transcribed",
+        "pairedFaceId": "leningrad-back-r03c01",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "infantry",
+          "printedIdentifier": "28",
+          "printedValues": "6-4",
+          "printedAffiliation": "axis",
+          "notes": "printed face only; unit identity requires validated roster mapping"
+        },
+        "printedPairValidation": "printed-pair-agrees",
+        "sourceIdentityKey": "leningrad:axis:infantry:28"
+      },
+      {
+        "faceId": "leningrad-front-r04c01",
+        "source": "front",
+        "row": 4,
+        "column": 1,
+        "crop": [
+          5,
+          319,
+          92,
+          95
+        ],
+        "observedFieldColor": "#809187",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "unknown-until-transcribed",
+        "pairedFaceId": "leningrad-back-r04c08",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "infantry",
+          "printedIdentifier": "38",
+          "printedValues": "6-4",
+          "printedAffiliation": "axis",
+          "notes": "printed face only; unit identity requires validated roster mapping"
+        },
+        "printedPairValidation": "printed-pair-agrees",
+        "sourceIdentityKey": "leningrad:axis:infantry:38"
+      },
+      {
+        "faceId": "leningrad-front-r04c02",
+        "source": "front",
+        "row": 4,
+        "column": 2,
+        "crop": [
+          97,
+          319,
+          93,
+          95
+        ],
+        "observedFieldColor": "#8f9f95",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "unknown-until-transcribed",
+        "pairedFaceId": "leningrad-back-r04c07",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "infantry",
+          "printedIdentifier": "42",
+          "printedValues": "6-4",
+          "printedAffiliation": "axis",
+          "notes": "printed face only; unit identity requires validated roster mapping"
+        },
+        "printedPairValidation": "printed-pair-agrees",
+        "sourceIdentityKey": "leningrad:axis:infantry:42"
+      },
+      {
+        "faceId": "leningrad-front-r04c03",
+        "source": "front",
+        "row": 4,
+        "column": 3,
+        "crop": [
+          190,
+          319,
+          92,
+          95
+        ],
+        "observedFieldColor": "#8fa599",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "unknown-until-transcribed",
+        "pairedFaceId": "leningrad-back-r04c06",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "infantry",
+          "printedIdentifier": "50",
+          "printedValues": "6-4",
+          "printedAffiliation": "axis",
+          "notes": "printed face only; unit identity requires validated roster mapping"
+        },
+        "printedPairValidation": "printed-pair-agrees",
+        "sourceIdentityKey": "leningrad:axis:infantry:50"
+      },
+      {
+        "faceId": "leningrad-front-r04c04",
+        "source": "front",
+        "row": 4,
+        "column": 4,
+        "crop": [
+          282,
+          319,
+          92,
+          95
+        ],
+        "observedFieldColor": "#909d96",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "unknown-until-transcribed",
+        "pairedFaceId": "leningrad-back-r04c05",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "air-support",
+          "printedIdentifier": "FK VIII",
+          "printedValues": "2 / arrow",
+          "printedAffiliation": "axis",
+          "notes": "special marker / not an ordinary maneuver unit"
+        },
+        "printedPairValidation": "special-pair-agrees"
+      },
+      {
+        "faceId": "leningrad-front-r04c05",
+        "source": "front",
+        "row": 4,
+        "column": 5,
+        "crop": [
+          374,
+          319,
+          92,
+          95
+        ],
+        "observedFieldColor": "#03120b",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "unknown-until-transcribed",
+        "pairedFaceId": "leningrad-back-r04c04",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "air-support",
+          "printedIdentifier": "FK I",
+          "printedValues": "1 / arrow",
+          "printedAffiliation": "axis",
+          "notes": "special marker / not an ordinary maneuver unit"
+        },
+        "printedPairValidation": "special-pair-agrees",
+        "supportVectorFieldColor": "#8ba396"
+      },
+      {
+        "faceId": "leningrad-front-r04c06",
+        "source": "front",
+        "row": 4,
+        "column": 6,
+        "crop": [
+          466,
+          319,
+          92,
+          95
+        ],
+        "observedFieldColor": "#8d9e94",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "unknown-until-transcribed",
+        "pairedFaceId": "leningrad-back-r04c03",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "game-turn",
+          "printedIdentifier": "GAME TURN",
+          "printedValues": null,
+          "printedAffiliation": "neutral",
+          "notes": "special marker / not an ordinary maneuver unit"
+        },
+        "printedPairValidation": "special-pair-agrees"
+      },
+      {
+        "faceId": "leningrad-front-r04c07",
+        "source": "front",
+        "row": 4,
+        "column": 7,
+        "crop": [
+          558,
+          319,
+          93,
+          95
+        ],
+        "observedFieldColor": "#997346",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "unknown-until-transcribed",
+        "pairedFaceId": "leningrad-back-r04c02",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "infantry",
+          "printedIdentifier": "WMM",
+          "printedValues": "2·5·3",
+          "printedAffiliation": "soviet",
+          "notes": "printed face only; unit identity requires validated roster mapping",
+          "classificationEvidence": "Target: Leningrad Rules v1.0 §6.0(6), §11.0 p.2/p.5: Leningrad Workers Militia is a Soviet Infantry Corps"
+        },
+        "printedPairValidation": "printed-pair-agrees",
+        "sourceIdentityKey": "leningrad:soviet:infantry:WMM"
+      },
+      {
+        "faceId": "leningrad-front-r04c08",
+        "source": "front",
+        "row": 4,
+        "column": 8,
+        "crop": [
+          651,
+          319,
+          92,
+          95
+        ],
+        "observedFieldColor": "#eb4352",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "unknown-until-transcribed",
+        "pairedFaceId": "leningrad-back-r04c01",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "naval-marker",
+          "printedIdentifier": "Baltic Sea",
+          "printedValues": "1 / arrow",
+          "printedAffiliation": "soviet",
+          "notes": "special marker / not an ordinary maneuver unit"
+        },
+        "printedPairValidation": "special-pair-agrees"
+      }
+    ],
+    "back": [
+      {
+        "faceId": "leningrad-back-r01c01",
+        "source": "back",
+        "row": 1,
+        "column": 1,
+        "crop": [
+          5,
+          7,
+          92,
+          99
+        ],
+        "observedFieldColor": "#cfa279",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "unknown-until-transcribed",
+        "pairedFaceId": "leningrad-front-r01c08",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "mechanized",
+          "printedIdentifier": "1",
+          "printedValues": "4·2·6",
+          "printedAffiliation": "soviet",
+          "notes": "printed face only; unit identity requires validated roster mapping",
+          "classificationEvidence": "Target: Leningrad Rules v1.0 §3.3 and §6.0(2), PDF pp.1–2; Soviet untried Mechanized Corps; counter source front/reverse"
+        },
+        "printedPairValidation": "unresolved"
+      },
+      {
+        "faceId": "leningrad-back-r01c02",
+        "source": "back",
+        "row": 1,
+        "column": 2,
+        "crop": [
+          97,
+          7,
+          93,
+          99
+        ],
+        "observedFieldColor": "#a57d5a",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "unknown-until-transcribed",
+        "pairedFaceId": "leningrad-front-r01c07",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "mechanized",
+          "printedIdentifier": "12",
+          "printedValues": "4·2·6",
+          "printedAffiliation": "soviet",
+          "notes": "printed face only; unit identity requires validated roster mapping",
+          "classificationEvidence": "Target: Leningrad Rules v1.0 §3.3 and §6.0(2), PDF pp.1–2; Soviet untried Mechanized Corps; counter source front/reverse"
+        },
+        "printedPairValidation": "unresolved"
+      },
+      {
+        "faceId": "leningrad-back-r01c03",
+        "source": "back",
+        "row": 1,
+        "column": 3,
+        "crop": [
+          190,
+          7,
+          92,
+          99
+        ],
+        "observedFieldColor": "#dba57f",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "unknown-until-transcribed",
+        "pairedFaceId": "leningrad-front-r01c06",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "mechanized",
+          "printedIdentifier": "3",
+          "printedValues": "6·3·6",
+          "printedAffiliation": "soviet",
+          "notes": "printed face only; unit identity requires validated roster mapping",
+          "classificationEvidence": "Target: Leningrad Rules v1.0 §3.3 and §6.0(2), PDF pp.1–2; Soviet untried Mechanized Corps; counter source front/reverse"
+        },
+        "printedPairValidation": "unresolved"
+      },
+      {
+        "faceId": "leningrad-back-r01c04",
+        "source": "back",
+        "row": 1,
+        "column": 4,
+        "crop": [
+          282,
+          7,
+          92,
+          99
+        ],
+        "observedFieldColor": "#cb9a6f",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "unknown-until-transcribed",
+        "pairedFaceId": "leningrad-front-r01c05",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "mechanized",
+          "printedIdentifier": "10",
+          "printedValues": "2·1·6",
+          "printedAffiliation": "soviet",
+          "notes": "printed face only; unit identity requires validated roster mapping",
+          "classificationEvidence": "Target: Leningrad Rules v1.0 §3.3 and §6.0(2), PDF pp.1–2; Soviet untried Mechanized Corps; counter source front/reverse"
+        },
+        "printedPairValidation": "unresolved"
+      },
+      {
+        "faceId": "leningrad-back-r01c05",
+        "source": "back",
+        "row": 1,
+        "column": 5,
+        "crop": [
+          374,
+          7,
+          92,
+          99
+        ],
+        "observedFieldColor": "#a78059",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "unknown-until-transcribed",
+        "pairedFaceId": "leningrad-front-r01c04",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "blank",
+          "printedIdentifier": null,
+          "printedValues": null,
+          "printedAffiliation": "neutral",
+          "notes": "special marker / not an ordinary maneuver unit"
+        },
+        "printedPairValidation": "unresolved"
+      },
+      {
+        "faceId": "leningrad-back-r01c06",
+        "source": "back",
+        "row": 1,
+        "column": 6,
+        "crop": [
+          466,
+          7,
+          92,
+          99
+        ],
+        "observedFieldColor": "#a07a55",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "unknown-until-transcribed",
+        "pairedFaceId": "leningrad-front-r01c03",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "blank",
+          "printedIdentifier": null,
+          "printedValues": null,
+          "printedAffiliation": "neutral",
+          "notes": "special marker / not an ordinary maneuver unit"
+        },
+        "printedPairValidation": "unresolved"
+      },
+      {
+        "faceId": "leningrad-back-r01c07",
+        "source": "back",
+        "row": 1,
+        "column": 7,
+        "crop": [
+          558,
+          7,
+          93,
+          99
+        ],
+        "observedFieldColor": "#b78d67",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "unknown-until-transcribed",
+        "pairedFaceId": "leningrad-front-r01c02",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "blank",
+          "printedIdentifier": null,
+          "printedValues": null,
+          "printedAffiliation": "neutral",
+          "notes": "special marker / not an ordinary maneuver unit"
+        },
+        "printedPairValidation": "unresolved"
+      },
+      {
+        "faceId": "leningrad-back-r01c08",
+        "source": "back",
+        "row": 1,
+        "column": 8,
+        "crop": [
+          651,
+          7,
+          92,
+          99
+        ],
+        "observedFieldColor": "#d1a580",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "unknown-until-transcribed",
+        "pairedFaceId": "leningrad-front-r01c01",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "blank",
+          "printedIdentifier": null,
+          "printedValues": null,
+          "printedAffiliation": "neutral",
+          "notes": "special marker / not an ordinary maneuver unit"
+        },
+        "printedPairValidation": "unresolved"
+      },
+      {
+        "faceId": "leningrad-back-r02c01",
+        "source": "back",
+        "row": 2,
+        "column": 1,
+        "crop": [
+          5,
+          106,
+          92,
+          98
+        ],
+        "observedFieldColor": "#f2a39c",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "unknown-until-transcribed",
+        "pairedFaceId": "leningrad-front-r02c08",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "infantry",
+          "printedIdentifier": "55",
+          "printedValues": "4-4",
+          "printedAffiliation": "soviet",
+          "notes": "printed face only; unit identity requires validated roster mapping"
+        },
+        "printedPairValidation": "printed-pair-agrees",
+        "sourceIdentityKey": "leningrad:soviet:infantry:55"
+      },
+      {
+        "faceId": "leningrad-back-r02c02",
+        "source": "back",
+        "row": 2,
+        "column": 2,
+        "crop": [
+          97,
+          106,
+          93,
+          98
+        ],
+        "observedFieldColor": "#b17c6e",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "unknown-until-transcribed",
+        "pairedFaceId": "leningrad-front-r02c07",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "infantry",
+          "printedIdentifier": "54",
+          "printedValues": "4-4",
+          "printedAffiliation": "soviet",
+          "notes": "printed face only; unit identity requires validated roster mapping"
+        },
+        "printedPairValidation": "printed-pair-agrees",
+        "sourceIdentityKey": "leningrad:soviet:infantry:54"
+      },
+      {
+        "faceId": "leningrad-back-r02c03",
+        "source": "back",
+        "row": 2,
+        "column": 3,
+        "crop": [
+          190,
+          106,
+          92,
+          98
+        ],
+        "observedFieldColor": "#fba29e",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "unknown-until-transcribed",
+        "pairedFaceId": "leningrad-front-r02c06",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "infantry",
+          "printedIdentifier": "52",
+          "printedValues": "4-4",
+          "printedAffiliation": "soviet",
+          "notes": "printed face only; unit identity requires validated roster mapping"
+        },
+        "printedPairValidation": "printed-pair-agrees",
+        "sourceIdentityKey": "leningrad:soviet:infantry:52"
+      },
+      {
+        "faceId": "leningrad-back-r02c04",
+        "source": "back",
+        "row": 2,
+        "column": 4,
+        "crop": [
+          282,
+          106,
+          92,
+          98
+        ],
+        "observedFieldColor": "#faa097",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "unknown-until-transcribed",
+        "pairedFaceId": "leningrad-front-r02c05",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "infantry",
+          "printedIdentifier": "42",
+          "printedValues": "4-4",
+          "printedAffiliation": "soviet",
+          "notes": "printed face only; unit identity requires validated roster mapping"
+        },
+        "printedPairValidation": "printed-pair-agrees",
+        "sourceIdentityKey": "leningrad:soviet:infantry:42"
+      },
+      {
+        "faceId": "leningrad-back-r02c05",
+        "source": "back",
+        "row": 2,
+        "column": 5,
+        "crop": [
+          374,
+          106,
+          92,
+          98
+        ],
+        "observedFieldColor": "#f2a89f",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "unknown-until-transcribed",
+        "pairedFaceId": "leningrad-front-r02c04",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "infantry",
+          "printedIdentifier": "34",
+          "printedValues": "4-4",
+          "printedAffiliation": "soviet",
+          "notes": "printed face only; unit identity requires validated roster mapping"
+        },
+        "printedPairValidation": "printed-pair-agrees",
+        "sourceIdentityKey": "leningrad:soviet:infantry:34"
+      },
+      {
+        "faceId": "leningrad-back-r02c06",
+        "source": "back",
+        "row": 2,
+        "column": 6,
+        "crop": [
+          466,
+          106,
+          92,
+          98
+        ],
+        "observedFieldColor": "#f3a99e",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "unknown-until-transcribed",
+        "pairedFaceId": "leningrad-front-r02c03",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "infantry",
+          "printedIdentifier": "48",
+          "printedValues": "4-4",
+          "printedAffiliation": "soviet",
+          "notes": "printed face only; unit identity requires validated roster mapping"
+        },
+        "printedPairValidation": "printed-pair-agrees",
+        "sourceIdentityKey": "leningrad:soviet:infantry:48"
+      },
+      {
+        "faceId": "leningrad-back-r02c07",
+        "source": "back",
+        "row": 2,
+        "column": 7,
+        "crop": [
+          558,
+          106,
+          93,
+          98
+        ],
+        "observedFieldColor": "#f9aaa3",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "unknown-until-transcribed",
+        "pairedFaceId": "leningrad-front-r02c02",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "infantry",
+          "printedIdentifier": "11",
+          "printedValues": "4-4",
+          "printedAffiliation": "soviet",
+          "notes": "printed face only; unit identity requires validated roster mapping"
+        },
+        "printedPairValidation": "printed-pair-agrees",
+        "sourceIdentityKey": "leningrad:soviet:infantry:11"
+      },
+      {
+        "faceId": "leningrad-back-r02c08",
+        "source": "back",
+        "row": 2,
+        "column": 8,
+        "crop": [
+          651,
+          106,
+          92,
+          98
+        ],
+        "observedFieldColor": "#e0a096",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "unknown-until-transcribed",
+        "pairedFaceId": "leningrad-front-r02c01",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "infantry",
+          "printedIdentifier": "8",
+          "printedValues": "4-4",
+          "printedAffiliation": "soviet",
+          "notes": "printed face only; unit identity requires validated roster mapping"
+        },
+        "printedPairValidation": "printed-pair-agrees",
+        "sourceIdentityKey": "leningrad:soviet:infantry:8"
+      },
+      {
+        "faceId": "leningrad-back-r03c01",
+        "source": "back",
+        "row": 3,
+        "column": 1,
+        "crop": [
+          5,
+          220,
+          92,
+          97
+        ],
+        "observedFieldColor": "#cbd8cf",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "unknown-until-transcribed",
+        "pairedFaceId": "leningrad-front-r03c08",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "infantry",
+          "printedIdentifier": "28",
+          "printedValues": "3-4",
+          "printedAffiliation": "axis",
+          "notes": "printed face only; unit identity requires validated roster mapping"
+        },
+        "printedPairValidation": "printed-pair-agrees",
+        "sourceIdentityKey": "leningrad:axis:infantry:28"
+      },
+      {
+        "faceId": "leningrad-back-r03c02",
+        "source": "back",
+        "row": 3,
+        "column": 2,
+        "crop": [
+          97,
+          220,
+          93,
+          97
+        ],
+        "observedFieldColor": "#86958e",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "unknown-until-transcribed",
+        "pairedFaceId": "leningrad-front-r03c07",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "infantry",
+          "printedIdentifier": "26",
+          "printedValues": "3-4",
+          "printedAffiliation": "axis",
+          "notes": "printed face only; unit identity requires validated roster mapping"
+        },
+        "printedPairValidation": "printed-pair-agrees",
+        "sourceIdentityKey": "leningrad:axis:infantry:26"
+      },
+      {
+        "faceId": "leningrad-back-r03c03",
+        "source": "back",
+        "row": 3,
+        "column": 3,
+        "crop": [
+          190,
+          220,
+          92,
+          97
+        ],
+        "observedFieldColor": "#cddcd5",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "unknown-until-transcribed",
+        "pairedFaceId": "leningrad-front-r03c06",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "infantry",
+          "printedIdentifier": "23",
+          "printedValues": "3-4",
+          "printedAffiliation": "axis",
+          "notes": "printed face only; unit identity requires validated roster mapping"
+        },
+        "printedPairValidation": "printed-pair-agrees",
+        "sourceIdentityKey": "leningrad:axis:infantry:23"
+      },
+      {
+        "faceId": "leningrad-back-r03c04",
+        "source": "back",
+        "row": 3,
+        "column": 4,
+        "crop": [
+          282,
+          220,
+          92,
+          97
+        ],
+        "observedFieldColor": "#d1e0d9",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "unknown-until-transcribed",
+        "pairedFaceId": "leningrad-front-r03c05",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "infantry",
+          "printedIdentifier": "10",
+          "printedValues": "4-4",
+          "printedAffiliation": "axis",
+          "notes": "printed face only; unit identity requires validated roster mapping"
+        },
+        "printedPairValidation": "printed-pair-agrees",
+        "sourceIdentityKey": "leningrad:axis:infantry:10"
+      },
+      {
+        "faceId": "leningrad-back-r03c05",
+        "source": "back",
+        "row": 3,
+        "column": 5,
+        "crop": [
+          374,
+          220,
+          92,
+          97
+        ],
+        "observedFieldColor": "#cad9d2",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "unknown-until-transcribed",
+        "pairedFaceId": "leningrad-front-r03c04",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "infantry",
+          "printedIdentifier": "2",
+          "printedValues": "4-4",
+          "printedAffiliation": "axis",
+          "notes": "printed face only; unit identity requires validated roster mapping"
+        },
+        "printedPairValidation": "printed-pair-agrees",
+        "sourceIdentityKey": "leningrad:axis:infantry:2"
+      },
+      {
+        "faceId": "leningrad-back-r03c06",
+        "source": "back",
+        "row": 3,
+        "column": 6,
+        "crop": [
+          466,
+          220,
+          92,
+          97
+        ],
+        "observedFieldColor": "#d3e2db",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "unknown-until-transcribed",
+        "pairedFaceId": "leningrad-front-r03c03",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "infantry",
+          "printedIdentifier": "1",
+          "printedValues": "4-4",
+          "printedAffiliation": "axis",
+          "notes": "printed face only; unit identity requires validated roster mapping"
+        },
+        "printedPairValidation": "printed-pair-agrees",
+        "sourceIdentityKey": "leningrad:axis:infantry:1"
+      },
+      {
+        "faceId": "leningrad-back-r03c07",
+        "source": "back",
+        "row": 3,
+        "column": 7,
+        "crop": [
+          558,
+          220,
+          93,
+          97
+        ],
+        "observedFieldColor": "#c2d1ca",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "unknown-until-transcribed",
+        "pairedFaceId": "leningrad-front-r03c02",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "tank",
+          "printedIdentifier": "56",
+          "printedValues": "5-6",
+          "printedAffiliation": "axis",
+          "notes": "printed face only; unit identity requires validated roster mapping"
+        },
+        "printedPairValidation": "printed-pair-agrees",
+        "sourceIdentityKey": "leningrad:axis:tank:56"
+      },
+      {
+        "faceId": "leningrad-back-r03c08",
+        "source": "back",
+        "row": 3,
+        "column": 8,
+        "crop": [
+          651,
+          220,
+          92,
+          97
+        ],
+        "observedFieldColor": "#c9d9cf",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "unknown-until-transcribed",
+        "pairedFaceId": "leningrad-front-r03c01",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "tank",
+          "printedIdentifier": "41",
+          "printedValues": "6-6",
+          "printedAffiliation": "axis",
+          "notes": "printed face only; unit identity requires validated roster mapping"
+        },
+        "printedPairValidation": "printed-pair-agrees",
+        "sourceIdentityKey": "leningrad:axis:tank:41"
+      },
+      {
+        "faceId": "leningrad-back-r04c01",
+        "source": "back",
+        "row": 4,
+        "column": 1,
+        "crop": [
+          5,
+          317,
+          92,
+          97
+        ],
+        "observedFieldColor": "#f2a39c",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "unknown-until-transcribed",
+        "pairedFaceId": "leningrad-front-r04c08",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "naval-marker",
+          "printedIdentifier": "Baltic Sea",
+          "printedValues": "DAMAGED",
+          "printedAffiliation": "soviet",
+          "notes": "special marker / not an ordinary maneuver unit"
+        },
+        "printedPairValidation": "special-pair-agrees"
+      },
+      {
+        "faceId": "leningrad-back-r04c02",
+        "source": "back",
+        "row": 4,
+        "column": 2,
+        "crop": [
+          97,
+          317,
+          93,
+          97
+        ],
+        "observedFieldColor": "#a07c5c",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "unknown-until-transcribed",
+        "pairedFaceId": "leningrad-front-r04c07",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "infantry",
+          "printedIdentifier": "WMM",
+          "printedValues": "1·2·3",
+          "printedAffiliation": "soviet",
+          "notes": "printed face only; unit identity requires validated roster mapping",
+          "classificationEvidence": "Target: Leningrad Rules v1.0 §6.0(6), §11.0 p.2/p.5: Leningrad Workers Militia is a Soviet Infantry Corps"
+        },
+        "printedPairValidation": "printed-pair-agrees",
+        "sourceIdentityKey": "leningrad:soviet:infantry:WMM"
+      },
+      {
+        "faceId": "leningrad-back-r04c03",
+        "source": "back",
+        "row": 4,
+        "column": 3,
+        "crop": [
+          190,
+          317,
+          92,
+          97
+        ],
+        "observedFieldColor": "#d5a87e",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "unknown-until-transcribed",
+        "pairedFaceId": "leningrad-front-r04c06",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "game-turn",
+          "printedIdentifier": "GAME TURN",
+          "printedValues": null,
+          "printedAffiliation": "neutral",
+          "notes": "special marker / not an ordinary maneuver unit"
+        },
+        "printedPairValidation": "special-pair-agrees"
+      },
+      {
+        "faceId": "leningrad-back-r04c04",
+        "source": "back",
+        "row": 4,
+        "column": 4,
+        "crop": [
+          282,
+          317,
+          92,
+          97
+        ],
+        "observedFieldColor": "#8ba396",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "unknown-until-transcribed",
+        "pairedFaceId": "leningrad-front-r04c05",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "air-support",
+          "printedIdentifier": "FK I",
+          "printedValues": "1 / arrow",
+          "printedAffiliation": "axis",
+          "notes": "special marker / not an ordinary maneuver unit"
+        },
+        "printedPairValidation": "special-pair-agrees"
+      },
+      {
+        "faceId": "leningrad-back-r04c05",
+        "source": "back",
+        "row": 4,
+        "column": 5,
+        "crop": [
+          374,
+          317,
+          92,
+          97
+        ],
+        "observedFieldColor": "#899d92",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "unknown-until-transcribed",
+        "pairedFaceId": "leningrad-front-r04c04",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "air-support",
+          "printedIdentifier": "FK VIII",
+          "printedValues": "2 / arrow",
+          "printedAffiliation": "axis",
+          "notes": "special marker / not an ordinary maneuver unit"
+        },
+        "printedPairValidation": "special-pair-agrees"
+      },
+      {
+        "faceId": "leningrad-back-r04c06",
+        "source": "back",
+        "row": 4,
+        "column": 6,
+        "crop": [
+          466,
+          317,
+          92,
+          97
+        ],
+        "observedFieldColor": "#b3c2bb",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "unknown-until-transcribed",
+        "pairedFaceId": "leningrad-front-r04c03",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "infantry",
+          "printedIdentifier": "50",
+          "printedValues": "3-4",
+          "printedAffiliation": "axis",
+          "notes": "printed face only; unit identity requires validated roster mapping"
+        },
+        "printedPairValidation": "printed-pair-agrees",
+        "sourceIdentityKey": "leningrad:axis:infantry:50"
+      },
+      {
+        "faceId": "leningrad-back-r04c07",
+        "source": "back",
+        "row": 4,
+        "column": 7,
+        "crop": [
+          558,
+          317,
+          93,
+          97
+        ],
+        "observedFieldColor": "#c9d8d1",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "unknown-until-transcribed",
+        "pairedFaceId": "leningrad-front-r04c02",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "infantry",
+          "printedIdentifier": "42",
+          "printedValues": "3-4",
+          "printedAffiliation": "axis",
+          "notes": "printed face only; unit identity requires validated roster mapping"
+        },
+        "printedPairValidation": "printed-pair-agrees",
+        "sourceIdentityKey": "leningrad:axis:infantry:42"
+      },
+      {
+        "faceId": "leningrad-back-r04c08",
+        "source": "back",
+        "row": 4,
+        "column": 8,
+        "crop": [
+          651,
+          317,
+          92,
+          97
+        ],
+        "observedFieldColor": "#d1e1d7",
+        "unitId": null,
+        "identityStatus": "unverified",
+        "role": "unknown-until-transcribed",
+        "pairedFaceId": "leningrad-front-r04c01",
+        "visualTranscription": {
+          "status": "manually-reviewed-from-source-image",
+          "kind": "infantry",
+          "printedIdentifier": "38",
+          "printedValues": "3-4",
+          "printedAffiliation": "axis",
+          "notes": "printed face only; unit identity requires validated roster mapping"
+        },
+        "printedPairValidation": "printed-pair-agrees",
+        "sourceIdentityKey": "leningrad:axis:infantry:38"
+      }
+    ]
+  },
+  "positionPairs": [
+    {
+      "front": "leningrad-front-r01c01",
+      "back": "leningrad-back-r01c08",
+      "pairingBasis": "horizontal-sheet-mirror",
+      "unitId": null,
+      "identityStatus": "printed-id-unverified"
+    },
+    {
+      "front": "leningrad-front-r01c02",
+      "back": "leningrad-back-r01c07",
+      "pairingBasis": "horizontal-sheet-mirror",
+      "unitId": null,
+      "identityStatus": "printed-id-unverified"
+    },
+    {
+      "front": "leningrad-front-r01c03",
+      "back": "leningrad-back-r01c06",
+      "pairingBasis": "horizontal-sheet-mirror",
+      "unitId": null,
+      "identityStatus": "printed-id-unverified"
+    },
+    {
+      "front": "leningrad-front-r01c04",
+      "back": "leningrad-back-r01c05",
+      "pairingBasis": "horizontal-sheet-mirror",
+      "unitId": null,
+      "identityStatus": "printed-id-unverified"
+    },
+    {
+      "front": "leningrad-front-r01c05",
+      "back": "leningrad-back-r01c04",
+      "pairingBasis": "horizontal-sheet-mirror",
+      "unitId": null,
+      "identityStatus": "printed-id-unverified"
+    },
+    {
+      "front": "leningrad-front-r01c06",
+      "back": "leningrad-back-r01c03",
+      "pairingBasis": "horizontal-sheet-mirror",
+      "unitId": null,
+      "identityStatus": "printed-id-unverified"
+    },
+    {
+      "front": "leningrad-front-r01c07",
+      "back": "leningrad-back-r01c02",
+      "pairingBasis": "horizontal-sheet-mirror",
+      "unitId": null,
+      "identityStatus": "printed-id-unverified"
+    },
+    {
+      "front": "leningrad-front-r01c08",
+      "back": "leningrad-back-r01c01",
+      "pairingBasis": "horizontal-sheet-mirror",
+      "unitId": null,
+      "identityStatus": "printed-id-unverified"
+    },
+    {
+      "front": "leningrad-front-r02c01",
+      "back": "leningrad-back-r02c08",
+      "pairingBasis": "horizontal-sheet-mirror",
+      "unitId": null,
+      "identityStatus": "printed-id-unverified"
+    },
+    {
+      "front": "leningrad-front-r02c02",
+      "back": "leningrad-back-r02c07",
+      "pairingBasis": "horizontal-sheet-mirror",
+      "unitId": null,
+      "identityStatus": "printed-id-unverified"
+    },
+    {
+      "front": "leningrad-front-r02c03",
+      "back": "leningrad-back-r02c06",
+      "pairingBasis": "horizontal-sheet-mirror",
+      "unitId": null,
+      "identityStatus": "printed-id-unverified"
+    },
+    {
+      "front": "leningrad-front-r02c04",
+      "back": "leningrad-back-r02c05",
+      "pairingBasis": "horizontal-sheet-mirror",
+      "unitId": null,
+      "identityStatus": "printed-id-unverified"
+    },
+    {
+      "front": "leningrad-front-r02c05",
+      "back": "leningrad-back-r02c04",
+      "pairingBasis": "horizontal-sheet-mirror",
+      "unitId": null,
+      "identityStatus": "printed-id-unverified"
+    },
+    {
+      "front": "leningrad-front-r02c06",
+      "back": "leningrad-back-r02c03",
+      "pairingBasis": "horizontal-sheet-mirror",
+      "unitId": null,
+      "identityStatus": "printed-id-unverified"
+    },
+    {
+      "front": "leningrad-front-r02c07",
+      "back": "leningrad-back-r02c02",
+      "pairingBasis": "horizontal-sheet-mirror",
+      "unitId": null,
+      "identityStatus": "printed-id-unverified"
+    },
+    {
+      "front": "leningrad-front-r02c08",
+      "back": "leningrad-back-r02c01",
+      "pairingBasis": "horizontal-sheet-mirror",
+      "unitId": null,
+      "identityStatus": "printed-id-unverified"
+    },
+    {
+      "front": "leningrad-front-r03c01",
+      "back": "leningrad-back-r03c08",
+      "pairingBasis": "horizontal-sheet-mirror",
+      "unitId": null,
+      "identityStatus": "printed-id-unverified"
+    },
+    {
+      "front": "leningrad-front-r03c02",
+      "back": "leningrad-back-r03c07",
+      "pairingBasis": "horizontal-sheet-mirror",
+      "unitId": null,
+      "identityStatus": "printed-id-unverified"
+    },
+    {
+      "front": "leningrad-front-r03c03",
+      "back": "leningrad-back-r03c06",
+      "pairingBasis": "horizontal-sheet-mirror",
+      "unitId": null,
+      "identityStatus": "printed-id-unverified"
+    },
+    {
+      "front": "leningrad-front-r03c04",
+      "back": "leningrad-back-r03c05",
+      "pairingBasis": "horizontal-sheet-mirror",
+      "unitId": null,
+      "identityStatus": "printed-id-unverified"
+    },
+    {
+      "front": "leningrad-front-r03c05",
+      "back": "leningrad-back-r03c04",
+      "pairingBasis": "horizontal-sheet-mirror",
+      "unitId": null,
+      "identityStatus": "printed-id-unverified"
+    },
+    {
+      "front": "leningrad-front-r03c06",
+      "back": "leningrad-back-r03c03",
+      "pairingBasis": "horizontal-sheet-mirror",
+      "unitId": null,
+      "identityStatus": "printed-id-unverified"
+    },
+    {
+      "front": "leningrad-front-r03c07",
+      "back": "leningrad-back-r03c02",
+      "pairingBasis": "horizontal-sheet-mirror",
+      "unitId": null,
+      "identityStatus": "printed-id-unverified"
+    },
+    {
+      "front": "leningrad-front-r03c08",
+      "back": "leningrad-back-r03c01",
+      "pairingBasis": "horizontal-sheet-mirror",
+      "unitId": null,
+      "identityStatus": "printed-id-unverified"
+    },
+    {
+      "front": "leningrad-front-r04c01",
+      "back": "leningrad-back-r04c08",
+      "pairingBasis": "horizontal-sheet-mirror",
+      "unitId": null,
+      "identityStatus": "printed-id-unverified"
+    },
+    {
+      "front": "leningrad-front-r04c02",
+      "back": "leningrad-back-r04c07",
+      "pairingBasis": "horizontal-sheet-mirror",
+      "unitId": null,
+      "identityStatus": "printed-id-unverified"
+    },
+    {
+      "front": "leningrad-front-r04c03",
+      "back": "leningrad-back-r04c06",
+      "pairingBasis": "horizontal-sheet-mirror",
+      "unitId": null,
+      "identityStatus": "printed-id-unverified"
+    },
+    {
+      "front": "leningrad-front-r04c04",
+      "back": "leningrad-back-r04c05",
+      "pairingBasis": "horizontal-sheet-mirror",
+      "unitId": null,
+      "identityStatus": "printed-id-unverified"
+    },
+    {
+      "front": "leningrad-front-r04c05",
+      "back": "leningrad-back-r04c04",
+      "pairingBasis": "horizontal-sheet-mirror",
+      "unitId": null,
+      "identityStatus": "printed-id-unverified"
+    },
+    {
+      "front": "leningrad-front-r04c06",
+      "back": "leningrad-back-r04c03",
+      "pairingBasis": "horizontal-sheet-mirror",
+      "unitId": null,
+      "identityStatus": "printed-id-unverified"
+    },
+    {
+      "front": "leningrad-front-r04c07",
+      "back": "leningrad-back-r04c02",
+      "pairingBasis": "horizontal-sheet-mirror",
+      "unitId": null,
+      "identityStatus": "printed-id-unverified"
+    },
+    {
+      "front": "leningrad-front-r04c08",
+      "back": "leningrad-back-r04c01",
+      "pairingBasis": "horizontal-sheet-mirror",
+      "unitId": null,
+      "identityStatus": "printed-id-unverified"
+    }
+  ],
+  "positionPairingStatus": "B4M confirmed by printed labels; other sets provisional from mirrored artwork layout",
+  "unitFacePairs": {},
+  "unitIdsVerified": 0,
+  "unitIdWarning": "Unit IDs and front/reverse pairing require manual print-label verification. Slot keys are not unit identities.",
+  "faceTranscription": {
+    "status": "complete-face-level-manual-source-reading",
+    "frontFaceCount": 32,
+    "backFaceCount": 32,
+    "pairValidation": {
+      "printed-pair-agrees": 20,
+      "special-pair-agrees": 4,
+      "unresolved": 8
+    },
+    "gameplayIdentityStatus": "not-verified-against-scenario-rosters",
+    "remarks": "Printed IDs, strengths and factions are captured per face; printed matches do not imply unique engine IDs. All 8-column printed sheets pair front column c to reverse column 9-c.",
+    "sourceIdentityKeys": 20,
+    "sourceIdentityNote": "Only front/reverse printed agreement, not an assignment into gameplay unit rosters"
+  },
+  "sourcePrintedUnitPairs": {
+    "leningrad:soviet:infantry:8": {
+      "front": "leningrad-front-r02c01",
+      "back": "leningrad-back-r02c08"
+    },
+    "leningrad:soviet:infantry:11": {
+      "front": "leningrad-front-r02c02",
+      "back": "leningrad-back-r02c07"
+    },
+    "leningrad:soviet:infantry:48": {
+      "front": "leningrad-front-r02c03",
+      "back": "leningrad-back-r02c06"
+    },
+    "leningrad:soviet:infantry:34": {
+      "front": "leningrad-front-r02c04",
+      "back": "leningrad-back-r02c05"
+    },
+    "leningrad:soviet:infantry:42": {
+      "front": "leningrad-front-r02c05",
+      "back": "leningrad-back-r02c04"
+    },
+    "leningrad:soviet:infantry:52": {
+      "front": "leningrad-front-r02c06",
+      "back": "leningrad-back-r02c03"
+    },
+    "leningrad:soviet:infantry:54": {
+      "front": "leningrad-front-r02c07",
+      "back": "leningrad-back-r02c02"
+    },
+    "leningrad:soviet:infantry:55": {
+      "front": "leningrad-front-r02c08",
+      "back": "leningrad-back-r02c01"
+    },
+    "leningrad:axis:tank:41": {
+      "front": "leningrad-front-r03c01",
+      "back": "leningrad-back-r03c08"
+    },
+    "leningrad:axis:tank:56": {
+      "front": "leningrad-front-r03c02",
+      "back": "leningrad-back-r03c07"
+    },
+    "leningrad:axis:infantry:1": {
+      "front": "leningrad-front-r03c03",
+      "back": "leningrad-back-r03c06"
+    },
+    "leningrad:axis:infantry:2": {
+      "front": "leningrad-front-r03c04",
+      "back": "leningrad-back-r03c05"
+    },
+    "leningrad:axis:infantry:10": {
+      "front": "leningrad-front-r03c05",
+      "back": "leningrad-back-r03c04"
+    },
+    "leningrad:axis:infantry:23": {
+      "front": "leningrad-front-r03c06",
+      "back": "leningrad-back-r03c03"
+    },
+    "leningrad:axis:infantry:26": {
+      "front": "leningrad-front-r03c07",
+      "back": "leningrad-back-r03c02"
+    },
+    "leningrad:axis:infantry:28": {
+      "front": "leningrad-front-r03c08",
+      "back": "leningrad-back-r03c01"
+    },
+    "leningrad:axis:infantry:38": {
+      "front": "leningrad-front-r04c01",
+      "back": "leningrad-back-r04c08"
+    },
+    "leningrad:axis:infantry:42": {
+      "front": "leningrad-front-r04c02",
+      "back": "leningrad-back-r04c07"
+    },
+    "leningrad:axis:infantry:50": {
+      "front": "leningrad-front-r04c03",
+      "back": "leningrad-back-r04c06"
+    },
+    "leningrad:soviet:infantry:WMM": {
+      "front": "leningrad-front-r04c07",
+      "back": "leningrad-back-r04c02"
+    }
+  }
+}

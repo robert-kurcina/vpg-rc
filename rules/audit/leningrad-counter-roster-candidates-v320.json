@@ -1,0 +1,88 @@
+{
+  "schemaVersion": 1,
+  "source": "printed-face-transcription-only",
+  "status": "structural-check-passed-not-authorized",
+  "germanGroundFaceCount": 11,
+  "infantryFaceCount": 9,
+  "panzerFaceCount": 2,
+  "specialGroundMarkers": [
+    {
+      "faceId": "leningrad-front-r04c07",
+      "printedIdentifier": "WMM",
+      "printedValues": "2·5·3"
+    }
+  ],
+  "reinforcementCandidateFaceIds": [
+    "leningrad-front-r03c06",
+    "leningrad-front-r03c07",
+    "leningrad-front-r03c08",
+    "leningrad-front-r04c01",
+    "leningrad-front-r04c02",
+    "leningrad-front-r04c03"
+  ],
+  "possibleReinforcementPairs": [
+    [
+      "leningrad-front-r03c06",
+      "leningrad-front-r03c07"
+    ],
+    [
+      "leningrad-front-r03c06",
+      "leningrad-front-r03c08"
+    ],
+    [
+      "leningrad-front-r03c06",
+      "leningrad-front-r04c01"
+    ],
+    [
+      "leningrad-front-r03c06",
+      "leningrad-front-r04c02"
+    ],
+    [
+      "leningrad-front-r03c06",
+      "leningrad-front-r04c03"
+    ],
+    [
+      "leningrad-front-r03c07",
+      "leningrad-front-r03c08"
+    ],
+    [
+      "leningrad-front-r03c07",
+      "leningrad-front-r04c01"
+    ],
+    [
+      "leningrad-front-r03c07",
+      "leningrad-front-r04c02"
+    ],
+    [
+      "leningrad-front-r03c07",
+      "leningrad-front-r04c03"
+    ],
+    [
+      "leningrad-front-r03c08",
+      "leningrad-front-r04c01"
+    ],
+    [
+      "leningrad-front-r03c08",
+      "leningrad-front-r04c02"
+    ],
+    [
+      "leningrad-front-r03c08",
+      "leningrad-front-r04c03"
+    ],
+    [
+      "leningrad-front-r04c01",
+      "leningrad-front-r04c02"
+    ],
+    [
+      "leningrad-front-r04c01",
+      "leningrad-front-r04c03"
+    ],
+    [
+      "leningrad-front-r04c02",
+      "leningrad-front-r04c03"
+    ]
+  ],
+  "selectedReinforcementPair": null,
+  "historicalRosterAuthorized": false,
+  "errors": []
+}

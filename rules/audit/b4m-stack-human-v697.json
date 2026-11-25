@@ -1,0 +1,195 @@
+{
+  "version": "v697",
+  "checkpoint": 475,
+  "configuration": "Moscow Standard CRT double stacking",
+  "browser": "isolated Chromium, source transport fixture",
+  "cases": [
+    {
+      "outcome": "EX",
+      "seed": 15839,
+      "choices": {
+        "defenderLossId": "s5",
+        "advanceId": "none",
+        "exchangeOrder": [
+          "g24"
+        ],
+        "retreats": {
+          "s3": {
+            "x": 9,
+            "y": 4
+          },
+          "s5": {
+            "x": 8,
+            "y": 4
+          }
+        }
+      },
+      "pendingSHA256": "6479ce4516a8491ba42d7bfe53a69db378ba5971e01e94cf6ebd9ccc56bbda67",
+      "resolvedSHA256": "0324738a0b318e1dd57bbc3efcb48a96aad2de04198f6286a20d6dd1adc669a6",
+      "combat": {
+        "turn": 2,
+        "side": "german",
+        "type": "combat",
+        "attackers": [
+          "g24",
+          "g41",
+          "g57",
+          "g46",
+          "g47",
+          "g56"
+        ],
+        "defender": "s3",
+        "defenders": [
+          "s3",
+          "s5"
+        ],
+        "odds": 4,
+        "roll": 3,
+        "result": "EX",
+        "defenderLossId": "s5",
+        "attackerLoss": null,
+        "exchangeLosses": [
+          "g24"
+        ],
+        "retreats": {
+          "s3": {
+            "to": {
+              "x": 9,
+              "y": 4
+            },
+            "cost": 0,
+            "path": [
+              {
+                "x": 8,
+                "y": 3
+              },
+              {
+                "x": 9,
+                "y": 4
+              }
+            ]
+          },
+          "s5": {
+            "to": {
+              "x": 8,
+              "y": 4
+            },
+            "cost": 0,
+            "path": [
+              {
+                "x": 8,
+                "y": 3
+              },
+              {
+                "x": 8,
+                "y": 4
+              }
+            ]
+          }
+        },
+        "advanceId": null,
+        "cleared": true,
+        "stacked": true,
+        "cityHold": false
+      }
+    },
+    {
+      "outcome": "DRL",
+      "seed": 31677,
+      "choices": {
+        "defenderLossId": "s5",
+        "advanceId": "none",
+        "retreats": {
+          "s3": {
+            "x": 9,
+            "y": 4
+          },
+          "s5": {
+            "x": 8,
+            "y": 4
+          }
+        }
+      },
+      "pendingSHA256": "14d4f9b2d1495bc638cfe855a72bf519e15a82734851cd6ff516aee57d7ccf8f",
+      "resolvedSHA256": "0d5e4562f4499b6c5eba7deb02da71afe96b03f843c4dece8a4e413b0db23a2f",
+      "combat": {
+        "turn": 2,
+        "side": "german",
+        "type": "combat",
+        "attackers": [
+          "g24",
+          "g41",
+          "g57",
+          "g46",
+          "g47",
+          "g56"
+        ],
+        "defender": "s3",
+        "defenders": [
+          "s3",
+          "s5"
+        ],
+        "odds": 4,
+        "roll": 4,
+        "result": "DRL",
+        "defenderLossId": "s5",
+        "attackerLoss": null,
+        "exchangeLosses": [],
+        "retreats": {
+          "s3": {
+            "to": {
+              "x": 9,
+              "y": 4
+            },
+            "cost": 0,
+            "path": [
+              {
+                "x": 8,
+                "y": 3
+              },
+              {
+                "x": 9,
+                "y": 4
+              }
+            ]
+          },
+          "s5": {
+            "to": {
+              "x": 8,
+              "y": 4
+            },
+            "cost": 0,
+            "path": [
+              {
+                "x": 8,
+                "y": 3
+              },
+              {
+                "x": 8,
+                "y": 4
+              }
+            ]
+          }
+        },
+        "advanceId": null,
+        "cleared": true,
+        "stacked": true,
+        "cityHold": false
+      }
+    }
+  ],
+  "passed": [
+    "EX and DRL browser exact session and Undo/Redo",
+    "invalid endpoint atomicity",
+    "stacked foundation",
+    "DR/Stand Fast browser",
+    "native combat parity",
+    "shared historical CRT",
+    "Advanced CRT",
+    "browser bundle parity and naval assertions"
+  ],
+  "limitations": [
+    "Targeted fixtures, not full campaign or actual hosted-origin tests",
+    "No runtime changes"
+  ]
+}

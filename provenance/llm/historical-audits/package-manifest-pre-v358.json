@@ -1,0 +1,1376 @@
+{
+  "baseline": "v317-audit-checkpoint (v316 runtime unchanged)",
+  "distribution": "clean-source-and-references",
+  "changes": {
+    "releaseNotesMoved": 33,
+    "oldCleanupManifestMoved": true,
+    "exportsDirectory": "exports-v315 -> exports",
+    "sourceReferencesAdded": 12,
+    "historicalVersionArchivesBundled": false,
+    "rootReadmeReplaced": true,
+    "v317AuditCheckpoint": "B4M preliminary 28-rule mapping, source assertions, frozen 14-half-turn trace, discrepancies"
+  },
+  "retained": [
+    "PLAN.md",
+    "assets",
+    "core",
+    "exports",
+    "games",
+    "legacy",
+    "maps",
+    "provenance",
+    "references",
+    "rules",
+    "rules_profiles",
+    "scripts",
+    "supplied_assets",
+    "tests"
+  ],
+  "excluded": [
+    "historical full ZIPs",
+    "temporary screenshots and preview crops",
+    "obsolete root-level release note duplicates"
+  ],
+  "files": [
+    {
+      "path": "PLAN.md",
+      "size": 22037,
+      "sha256": "ae2986e0c941791f8bd7c4d47aaae7a9eaf9813f5874440b601fb807b4d5280f"
+    },
+    {
+      "path": "README.md",
+      "size": 2864,
+      "sha256": "2413671413ab1648c96830784bc6eaf4f89c46d6de465c9cab0f634a303f24b9"
+    },
+    {
+      "path": "app.js",
+      "size": 19955,
+      "sha256": "7a2473357b26c37586a2aa1d23c922766dbcf7edfdfa4855313303508c7ecc76"
+    },
+    {
+      "path": "assets/map-symbols/german-symbol122.json",
+      "size": 1126,
+      "sha256": "633421faf5544f864d846783ad65429a5eaa336d7eee54e3f3256abf906e8e0a"
+    },
+    {
+      "path": "assets/map-symbols/german-symbol122.svg",
+      "size": 1637,
+      "sha256": "54ccdfcd9c5953852c3436387c7934daf659b5cfe65835375efc6b0e6cdee27b"
+    },
+    {
+      "path": "assets/official-counters/B4M_PALETTE_NOTE.md",
+      "size": 487,
+      "sha256": "e796fe16bd052d60334cb684018b89c888a2c2b2a403f812e0baf4bb0b9afde2"
+    },
+    {
+      "path": "assets/official-counters/preview.html",
+      "size": 4492,
+      "sha256": "80d13a76bb6870e93a7df2c4249c904e44c5248c7f2c13f558839706e9de3c0b"
+    },
+    {
+      "path": "assets/official-counters/reference-sheets/INDEX.json",
+      "size": 1996,
+      "sha256": "130393be1e950023a8ffd59bb9df722f34cb4d39415a4eacf5e1a6eedc47c97f"
+    },
+    {
+      "path": "assets/official-counters/reference-sheets/sheet-1.png",
+      "size": 5210873,
+      "sha256": "aa265c138332a422020dcfe256b7c922b571e520d75c61cfefc8d69519869509"
+    },
+    {
+      "path": "assets/official-counters/reference-sheets/sheet-2.png",
+      "size": 5597603,
+      "sha256": "a9d3204d9013ca0f4507b920b448c912005edd446e0221400f23e89b4dfb0c90"
+    },
+    {
+      "path": "assets/official-counters/reference-sheets/sheet-3.png",
+      "size": 4561055,
+      "sha256": "1807791f4585d99df97d8e76073d1e1512b43617a996d6b152275e2c0b8827a8"
+    },
+    {
+      "path": "assets/official-counters/reference-sheets/sheet-4.png",
+      "size": 4686269,
+      "sha256": "065decdd88c11de3e2bf164f5439ecba36665e8e09808ab8b3b77e382ea6d44b"
+    },
+    {
+      "path": "assets/official-counters/reference-sheets/sheet-5.png",
+      "size": 1716706,
+      "sha256": "0566cd93d90e26aed9e40d6dd7b64f6f831bb499937e82dad3cfcf4b6896eaa6"
+    },
+    {
+      "path": "assets/official-counters/source-counters.svg",
+      "size": 31225301,
+      "sha256": "a45fd59ebc50fac41686289e41d387d83474f81b0b7da25fe37107ce132ad51b"
+    },
+    {
+      "path": "assets/official-counters/source-manifest.json",
+      "size": 2802,
+      "sha256": "30632eb521bad51e8d682aed194def9a99f5fae6285568ad8a491c83a8a89df2"
+    },
+    {
+      "path": "assets/official-counters/typography-profile.json",
+      "size": 288,
+      "sha256": "a6f93400ba41aeab831c00edd6f39a7d9b91c62f2e04db9301966991a7e6e05b"
+    },
+    {
+      "path": "core/adapter.js",
+      "size": 1378,
+      "sha256": "284019bcdd01f13f1ba9e6c2ea53c8026d0974b2153d9b5f4c6bf0168c780b2e"
+    },
+    {
+      "path": "core/ai.js",
+      "size": 3301,
+      "sha256": "0533325b739be2f6ffbaa98972dd34338bf0f34fe5f4dedf76f1ec77824ceefa"
+    },
+    {
+      "path": "core/counter_visuals.js",
+      "size": 6774,
+      "sha256": "7c6cc96dde448a8f479871f5268386873b81dbbb98e579f12b93b839a3137a9e"
+    },
+    {
+      "path": "core/engine.js",
+      "size": 52891,
+      "sha256": "b5f4a800076294c5f03b012ed83bd229c5fcfa7d9e6f6c68971f5f040b7e16ef"
+    },
+    {
+      "path": "core/factions.js",
+      "size": 952,
+      "sha256": "4ef202ee6417c9aa454ca88f8523571d0e3e22a1a725777d0c8aec76579aad5a"
+    },
+    {
+      "path": "core/historical_crt.js",
+      "size": 1169,
+      "sha256": "6a43c47ae52c6c110728403fd680406ba99d8e67bd14f234cb82f38c703b22e6"
+    },
+    {
+      "path": "core/modules.js",
+      "size": 6123,
+      "sha256": "fe41337d081c4f3b5a7b977f09ebcd69a6f51292e853b89bf0f67b2fa6180390"
+    },
+    {
+      "path": "core/official_counter_templates.js",
+      "size": 260683,
+      "sha256": "c4278e9416e4ffd6460caedb9878b51500e0b64b6d01a774ee5a390b7a046321"
+    },
+    {
+      "path": "core/presentation.js",
+      "size": 3334,
+      "sha256": "cb3f9990bcce54d1f3b39fda50cc6d58a2c3f95230550c92b8903e3b614141c9"
+    },
+    {
+      "path": "core/stack_view.js",
+      "size": 1951,
+      "sha256": "0eef0e4164f8717445950c8ebf8478c8d170c6567112218d08e0c323607738aa"
+    },
+    {
+      "path": "core/terrain_adapter.js",
+      "size": 5281,
+      "sha256": "4deb67b857ffa7b70158c9e492d12d5869d801ce2c88f8d61f93ae79b4a2e805"
+    },
+    {
+      "path": "core/terrain_tiles.js",
+      "size": 150386,
+      "sha256": "38275215d61ae3bb5020057d6b9e6cc2368b328e01dff0570ec9a32d519416b3"
+    },
+    {
+      "path": "core/ui.css",
+      "size": 733,
+      "sha256": "d5f2470618f9afa74e417d103b737c5f9484d888a5d83fde2ead4b970ef14ce8"
+    },
+    {
+      "path": "exports/arduous.png",
+      "size": 2839759,
+      "sha256": "552f41758d44d0071aa45076b9edf5aa7b4e70e442d538b9ed84d25c6fdd96e1"
+    },
+    {
+      "path": "exports/arduous.svg",
+      "size": 4101772,
+      "sha256": "92893c3aae9948acd7cb17b7482bafb5afe56224263dfeb7ca81904aaf682ca7"
+    },
+    {
+      "path": "exports/battle-for-moscow.png",
+      "size": 2728604,
+      "sha256": "cce051563b75fc1e918200ad326075408ecb5ef469036e3902764cc793c92df8"
+    },
+    {
+      "path": "exports/battle-for-moscow.svg",
+      "size": 4314228,
+      "sha256": "fd888206fc9da5917692c845a8898130851381999197d722eee739aae9d8169e"
+    },
+    {
+      "path": "exports/gallery.html",
+      "size": 1216,
+      "sha256": "623aca1dc64435cdd95962925a58f66d670635270a0c19b8eb0d6ca1c7b5eec2"
+    },
+    {
+      "path": "exports/kiev-odessa.png",
+      "size": 2781654,
+      "sha256": "bf46af6854399746c7a18e5f7984fc737adcdb7b4dfbd11574944f1b5a0dbc29"
+    },
+    {
+      "path": "exports/kiev-odessa.svg",
+      "size": 4461073,
+      "sha256": "9c2b5d28f6408d6dffcdf57fa111a2568463c62e69fa91bfa387d7e02749ca10"
+    },
+    {
+      "path": "exports/kiev.png",
+      "size": 3048005,
+      "sha256": "8faa66a943dec0e8872405ea2d662905f1e98e498f6c28cc89661c1d7d78e932"
+    },
+    {
+      "path": "exports/kiev.svg",
+      "size": 4257390,
+      "sha256": "1caebfd63ca2f2d2890ffd9b4bb5225b03088a9779d9ef67f1c40cd66e6ce7e8"
+    },
+    {
+      "path": "exports/leningrad.png",
+      "size": 2823956,
+      "sha256": "187a8167be36557d69f0d64be8e995542faf94dd87dadc6e9efdce39914ac6fc"
+    },
+    {
+      "path": "exports/leningrad.svg",
+      "size": 4120758,
+      "sha256": "56d3e0acae29e45930e23c7ef04408062f2160754fc26b74bde4bb7535c2fb58"
+    },
+    {
+      "path": "exports/manifest.json",
+      "size": 2971,
+      "sha256": "774fd60d6f602999bb29230de28db90be514842032eab89cd7a3919e17601680"
+    },
+    {
+      "path": "games/battle-for-moscow/deployments.json",
+      "size": 19468,
+      "sha256": "b9fa194ed39e28a2bcbc5e984de046b559e6ea752aa14ce73f88a7fe22ecec1f"
+    },
+    {
+      "path": "games/battle-for-moscow/game.json",
+      "size": 475,
+      "sha256": "9d5ccd8e80b3fb2ea1018e26ccac9ebf26e3bf9081920c162347dcb94ef23f39"
+    },
+    {
+      "path": "games/battle-for-moscow/map.json",
+      "size": 18632,
+      "sha256": "dbdef938b8df85b9970df18b1999b94f98beb894dfdf0793f6e2f406be7be3a5"
+    },
+    {
+      "path": "games/battle-for-moscow/objectives.json",
+      "size": 1002,
+      "sha256": "391c471a5f4154298d59f94b3a6dda1a2b490686893553d7dca61af3a80e4ae7"
+    },
+    {
+      "path": "games/battle-for-moscow/rules.json",
+      "size": 3170,
+      "sha256": "353ffbdbedc1b6d122fd43bb747b501053eaa6e82146f520b4c1314adf43750a"
+    },
+    {
+      "path": "games/battle-for-moscow/units.json",
+      "size": 9254,
+      "sha256": "7478034c7d0092ed884d4df65ca7a379e905eb9fe061f7c7b8580da6ced796f8"
+    },
+    {
+      "path": "games/catalog.json",
+      "size": 1571,
+      "sha256": "4b5e329a8f9742cd2c2ad7654ae8b6b7ecea728c72eb798cb8c4e0be063f5432"
+    },
+    {
+      "path": "games/eastern-corridor/deployments.json",
+      "size": 891,
+      "sha256": "b38089254c04dc2b146f5a4ec88e11204b6cc563f9ef1e4a5834475b66c9e7fb"
+    },
+    {
+      "path": "games/eastern-corridor/game.json",
+      "size": 420,
+      "sha256": "8eda686686891080bfbce7f6042c2e85c03794b32e4486e8be20a583f787a59e"
+    },
+    {
+      "path": "games/eastern-corridor/map.json",
+      "size": 5389,
+      "sha256": "d3e5aa459c895aa4764212c3414dce871d141c04402e1fbb3a580b91b6db0b2f"
+    },
+    {
+      "path": "games/eastern-corridor/objectives.json",
+      "size": 533,
+      "sha256": "baceabeaffb8b8ce45ce15bd22e483375e572690cabddca390431015689df120"
+    },
+    {
+      "path": "games/eastern-corridor/rules.json",
+      "size": 2045,
+      "sha256": "729ce114f3c34b025d525c87f583539b4d489062fe6e31cc0066488ba492827f"
+    },
+    {
+      "path": "games/eastern-corridor/units.json",
+      "size": 2701,
+      "sha256": "51cc72bbbb9632a4f2f332e25d2be11fe2c8bf5bf117546f5427593ea5cc7186"
+    },
+    {
+      "path": "games/frontier-relief/deployments.json",
+      "size": 778,
+      "sha256": "5f702625af2d4b1b6d24883b053de70f698690e2289d0a84bbf3b89f40534c4c"
+    },
+    {
+      "path": "games/frontier-relief/game.json",
+      "size": 476,
+      "sha256": "fa90fa57cdfae6d4a046931fa376d576254fc6ce9a57fd6892851b54f42115f9"
+    },
+    {
+      "path": "games/frontier-relief/map.json",
+      "size": 3593,
+      "sha256": "e9fc331c5ccf808a1ba67cf91d4d5b7943f92125893678ce8a86dc984a678379"
+    },
+    {
+      "path": "games/frontier-relief/objectives.json",
+      "size": 925,
+      "sha256": "92755032b6ed800051946fdbdab813c29482358c95bff9c54dcb10eb7ffa7a34"
+    },
+    {
+      "path": "games/frontier-relief/rules.json",
+      "size": 3397,
+      "sha256": "d909c5148813ba3e5acb635a94e687705514995beb883ace1140af3009dfe332"
+    },
+    {
+      "path": "games/frontier-relief/units.json",
+      "size": 2020,
+      "sha256": "5d387ae6b0a16d70cd7da96929f13ecfb5f192bf3422301a0f8c119eaf72809d"
+    },
+    {
+      "path": "games/frontier-stacked-combat/deployments.json",
+      "size": 121,
+      "sha256": "226cf3043873eeddb279cffb6ccfbef0a8ed5a8db57e2808baa43ae62a054f8a"
+    },
+    {
+      "path": "games/frontier-stacked-combat/game.json",
+      "size": 514,
+      "sha256": "7d9f3b551e2bcedea0a4f1608a0407859e77811e8877498c3ce9a3f24205a67a"
+    },
+    {
+      "path": "games/frontier-stacked-combat/map.json",
+      "size": 3593,
+      "sha256": "e9fc331c5ccf808a1ba67cf91d4d5b7943f92125893678ce8a86dc984a678379"
+    },
+    {
+      "path": "games/frontier-stacked-combat/objectives.json",
+      "size": 925,
+      "sha256": "92755032b6ed800051946fdbdab813c29482358c95bff9c54dcb10eb7ffa7a34"
+    },
+    {
+      "path": "games/frontier-stacked-combat/rules.json",
+      "size": 4216,
+      "sha256": "15135980eb8e93442f04b6ec6d5d2a0370fdc40901122ffc68452dc98ed88c8d"
+    },
+    {
+      "path": "games/frontier-stacked-combat/units.json",
+      "size": 3404,
+      "sha256": "d037cc4e44277d6a72a49cb841c196de7682fdcfef4b00385247a603e4b1e514"
+    },
+    {
+      "path": "games/frontier-stacks-lab/deployments.json",
+      "size": 941,
+      "sha256": "4f1cae0aa1d26e554d7952f136a59db7ac3485480fc1c6778b34d8e1bef47489"
+    },
+    {
+      "path": "games/frontier-stacks-lab/game.json",
+      "size": 502,
+      "sha256": "a8bf34a4544ea15df2a009c05ca8bc5ea69207259ab65cb0eaa5e318e717a93a"
+    },
+    {
+      "path": "games/frontier-stacks-lab/map.json",
+      "size": 3593,
+      "sha256": "e9fc331c5ccf808a1ba67cf91d4d5b7943f92125893678ce8a86dc984a678379"
+    },
+    {
+      "path": "games/frontier-stacks-lab/objectives.json",
+      "size": 925,
+      "sha256": "92755032b6ed800051946fdbdab813c29482358c95bff9c54dcb10eb7ffa7a34"
+    },
+    {
+      "path": "games/frontier-stacks-lab/rules.json",
+      "size": 4108,
+      "sha256": "51acf287c5a350c154e721d1e87a32eb015114c89538213fb64caa3e7baa7a7f"
+    },
+    {
+      "path": "games/frontier-stacks-lab/units.json",
+      "size": 3402,
+      "sha256": "7496044c3660c5ee5652a96fd81ad74f10cf5293e224cbee7a19f46065c901ae"
+    },
+    {
+      "path": "games/kiev-exceptions-lab/deployments.json",
+      "size": 121,
+      "sha256": "226cf3043873eeddb279cffb6ccfbef0a8ed5a8db57e2808baa43ae62a054f8a"
+    },
+    {
+      "path": "games/kiev-exceptions-lab/game.json",
+      "size": 609,
+      "sha256": "257768787026ec96c35019c04f53eb99799e046d84e1887abe006abb9e016815"
+    },
+    {
+      "path": "games/kiev-exceptions-lab/map.json",
+      "size": 3704,
+      "sha256": "4d9f2ab57e130569740155b6365cd5790d0337811eb586e37c36f20c6d5d584a"
+    },
+    {
+      "path": "games/kiev-exceptions-lab/objectives.json",
+      "size": 925,
+      "sha256": "92755032b6ed800051946fdbdab813c29482358c95bff9c54dcb10eb7ffa7a34"
+    },
+    {
+      "path": "games/kiev-exceptions-lab/rules.json",
+      "size": 5399,
+      "sha256": "f36a5ee8507103bb1a4ce2dbb215725f7dd190d313bdd6fddff433b122b3453d"
+    },
+    {
+      "path": "games/kiev-exceptions-lab/units.json",
+      "size": 3851,
+      "sha256": "4b3dd4bcffa4acf9c432ebc470b8285932ded5ed13773f53446862dfb308be21"
+    },
+    {
+      "path": "games/westbridge-siege/deployments.json",
+      "size": 636,
+      "sha256": "76f580490cd11a8b2f6a112c0c5ad69a9dc01a0a287f057d0f60d4e1f5fc244a"
+    },
+    {
+      "path": "games/westbridge-siege/game.json",
+      "size": 493,
+      "sha256": "755d9479bf96da9b423502b6423712d689b4232efa8eb103656ef17d9baeb2de"
+    },
+    {
+      "path": "games/westbridge-siege/map.json",
+      "size": 2769,
+      "sha256": "614dea6a5e88ba15a3969ef569a59c63f77c821e71da7ed034946a91ded6b9f0"
+    },
+    {
+      "path": "games/westbridge-siege/objectives.json",
+      "size": 925,
+      "sha256": "92755032b6ed800051946fdbdab813c29482358c95bff9c54dcb10eb7ffa7a34"
+    },
+    {
+      "path": "games/westbridge-siege/rules.json",
+      "size": 1746,
+      "sha256": "b8f42b153d287f92c620baf7dc574a5a14385e5708b5dee3cebc7d4007e7c938"
+    },
+    {
+      "path": "games/westbridge-siege/units.json",
+      "size": 1830,
+      "sha256": "cbb81464db85dee6e148a7bbf80920374282028b54e9e101f01e8a29e57d7b19"
+    },
+    {
+      "path": "index.html",
+      "size": 5422,
+      "sha256": "25db0a53f6a59c278e8c10f58538121b2b2679820bc1a63a030145886710e285"
+    },
+    {
+      "path": "legacy/assault-retention-v16.js",
+      "size": 10440,
+      "sha256": "306f58f2a28c39803729baa110cf0514aa7d11dd84e0a6253668d74bb1c6fe57"
+    },
+    {
+      "path": "legacy/assets/honeycomb.min.js",
+      "size": 13083,
+      "sha256": "ab6fe1122c9ed0aae1a28273a8745975eacae1f6e77013f89618528add5c9cd9"
+    },
+    {
+      "path": "legacy/capital-assault.js",
+      "size": 9760,
+      "sha256": "b717b26aa0f944eff2b833062f02605471bdab794bb2427db0702857a07ff0c4"
+    },
+    {
+      "path": "legacy/data/oberlabs_city_labels.json",
+      "size": 357,
+      "sha256": "73d60037affbb824bb2f0a30038d68c92173d2c139422397c7cb375b6e4a71fd"
+    },
+    {
+      "path": "legacy/data/offline-data.js",
+      "size": 16231,
+      "sha256": "c18736b7d71d71e560500b5eeb233a5562a268fdba261fa5efdfb3443546b187"
+    },
+    {
+      "path": "legacy/data/opening-book-data.js",
+      "size": 12419,
+      "sha256": "ae45d883841885725c0abf6e78d82684853fd1f7c30cb78bdbe7f2a3fc399c34"
+    },
+    {
+      "path": "legacy/data/opening_book.json",
+      "size": 17925,
+      "sha256": "ecc067ce65780e8684669b6cef06c5eceb619aab2908357006f35585e24ea17f"
+    },
+    {
+      "path": "legacy/data/pilot-results.js",
+      "size": 13364,
+      "sha256": "c4519fae1a0c3d5c993339095ec0a98f6179e3af586f42700032410e4b38bf0e"
+    },
+    {
+      "path": "legacy/data/rules_profiles.json",
+      "size": 3345,
+      "sha256": "197f69a568a067b1e085276e1825afa8c97debb37e690e19696a4ef10637c751"
+    },
+    {
+      "path": "legacy/data/scenario.json",
+      "size": 27985,
+      "sha256": "c3ff3919ef81ae1d964bdc52227f10d56fdded99606706fc2f3ea34dff7796f8"
+    },
+    {
+      "path": "legacy/engine.js",
+      "size": 42400,
+      "sha256": "df8af5e19df0cf98aec63dc4b713e2e696b54219221cc9f52f0c563185795ce1"
+    },
+    {
+      "path": "legacy/german-assault-v15.js",
+      "size": 6920,
+      "sha256": "64ebee61314d9e5e51001c326d025843afd225a94ce3dc6bc2b2dbd758b4f401"
+    },
+    {
+      "path": "legacy/index.html",
+      "size": 15863,
+      "sha256": "eabcc0d10817e9f99b311c8992011dbf104228a87ce2506f058d10bceb02043d"
+    },
+    {
+      "path": "legacy/oberlabs-play.css",
+      "size": 5314,
+      "sha256": "c18f6c28fbfb3b5bf34e117a827064d75e6ef3121c01c77de696b16027311267"
+    },
+    {
+      "path": "legacy/oberlabs-play.js",
+      "size": 5915,
+      "sha256": "bd1ae4c1eaa204e49a2b604cc340dabe1a44c9e41fbe04c744fdb37d2a35240c"
+    },
+    {
+      "path": "legacy/opening-book.js",
+      "size": 11462,
+      "sha256": "0c53f2098ba9fc72e23bccd675494206750f7abab0216d3a1043df9c07b3abdd"
+    },
+    {
+      "path": "legacy/opening-stage.js",
+      "size": 1303,
+      "sha256": "17633a5c833f5f7553147cb586275439c990ebdc5f44bf9df41f6a3b856151b3"
+    },
+    {
+      "path": "legacy/outcome-learning.js",
+      "size": 7902,
+      "sha256": "6f54eb5cb228cc5d1075b6aae5ecfd83c3557a908fdb8a83da429d08464ae863"
+    },
+    {
+      "path": "legacy/pivot-policy.js",
+      "size": 6060,
+      "sha256": "776922413ef1cffc8b2042404e0b511509e43b3fab311a01373595dcbf435b08"
+    },
+    {
+      "path": "legacy/simulation-worker.js",
+      "size": 14836,
+      "sha256": "9e4344454f709caebab9e70fd03b476647d9c4712711625391d5ac6ce67cd968"
+    },
+    {
+      "path": "legacy/soviet-defense.js",
+      "size": 9563,
+      "sha256": "561b434a42b224d6434deef8b162646ebc5fd9e740e0c5591055ce6ec0e0e308"
+    },
+    {
+      "path": "legacy/style.css",
+      "size": 6195,
+      "sha256": "5056c1185e49087f20ef6c15b31d227b769b38260ef0ca64235ac8f2a48d83ef"
+    },
+    {
+      "path": "legacy/ui.js",
+      "size": 39356,
+      "sha256": "6c657f4b90e3809209f375e1af980a022fb92d4fcbfc082dcc5bae4390d7ea34"
+    },
+    {
+      "path": "maps/arduous.json",
+      "size": 377780,
+      "sha256": "21e0a071a6734e533b89fba0ef7368d1eac631836619c006e422f0fadf20e1f4"
+    },
+    {
+      "path": "maps/battle-for-moscow.json",
+      "size": 130889,
+      "sha256": "0cbbee55d2079c931b54d6692599e53a2edb28d43390636f0b2cb47e7aa40005"
+    },
+    {
+      "path": "maps/composer.js",
+      "size": 9876,
+      "sha256": "b9c74b844dd26540d7d74fc46219e5ec1adc855a0494e4ca3514a9b7a98f7a04"
+    },
+    {
+      "path": "maps/index.html",
+      "size": 7567,
+      "sha256": "578ebb25877d75e8eaf4ce650fe11c45739cd1c4396c345492a3ce1e8e7753e9"
+    },
+    {
+      "path": "maps/kiev.json",
+      "size": 640537,
+      "sha256": "7f3ec9c107c3b5a8459db17f5bcc19cbd9f90596b18f7e4b0cbc3bbd56d43c1c"
+    },
+    {
+      "path": "maps/leningrad.json",
+      "size": 239126,
+      "sha256": "1add33f505e1637c2fcf11f5017cad1d0fd2467780b763d6b25e89a4e725ddb8"
+    },
+    {
+      "path": "maps/odessa-extension.json",
+      "size": 648716,
+      "sha256": "365aadeb36a288c1cd4d46d6520168c6860400928d5a405950ed770fe83ff916"
+    },
+    {
+      "path": "maps/registry.json",
+      "size": 1912,
+      "sha256": "de376c802493425292c6b9b6caf69cffa2c2f12e5d789703c7ec01e0ce71fe9f"
+    },
+    {
+      "path": "maps/source/arduous-map-scan.webp",
+      "size": 132678,
+      "sha256": "9e41cf83ff001a616c5b6651784b8ac8206fc2eb04048dc41b1a3a0b3c3fa8f4"
+    },
+    {
+      "path": "maps/source/kiev-map-scan.jpg",
+      "size": 259545,
+      "sha256": "c08af048799b8d0fd35ed9d1f128e94e03a404f5ddc497efd792fccbbdeb8df2"
+    },
+    {
+      "path": "maps/source/kiev-odessa-map-scan.jpg",
+      "size": 713439,
+      "sha256": "cb7f3dad98fc2a68055e2899fc7d85b14c356176fcb6fc99be79079199e5d6be"
+    },
+    {
+      "path": "maps/source/leningrad-map-scan(2).jpg",
+      "size": 260490,
+      "sha256": "e2d718355490cbcdbecad4699aa4da2aebd477de736ee9aa26536e62347da17c"
+    },
+    {
+      "path": "maps/source/leningrad-map-scan-current.jpg",
+      "size": 260490,
+      "sha256": "e2d718355490cbcdbecad4699aa4da2aebd477de736ee9aa26536e62347da17c"
+    },
+    {
+      "path": "maps/source/leningrad-map-scan.jpg",
+      "size": 260490,
+      "sha256": "e2d718355490cbcdbecad4699aa4da2aebd477de736ee9aa26536e62347da17c"
+    },
+    {
+      "path": "maps/source/odessa-entry-edges-baseline-v259.json",
+      "size": 2611,
+      "sha256": "fad43ccaed4b2ddd77c8c3c6f854b4464e70216b415e8c7ce732b0314bcab2e7"
+    },
+    {
+      "path": "maps/source/odessa-map-scan.webp",
+      "size": 103912,
+      "sha256": "21e497a932131d839cbb6e54bed27be4ac422641ca4b07b1a0f604909d5482a8"
+    },
+    {
+      "path": "maps/source/user-svg/arduous-map-temp(1).svg",
+      "size": 123872,
+      "sha256": "423af8983fd90a5be17041922a612efba42bbff306683ead9fd6910413402ede"
+    },
+    {
+      "path": "maps/source/user-svg/arduous-map-temp(3).svg",
+      "size": 123872,
+      "sha256": "423af8983fd90a5be17041922a612efba42bbff306683ead9fd6910413402ede"
+    },
+    {
+      "path": "maps/source/user-svg/arduous-svg-extract.json",
+      "size": 209622,
+      "sha256": "4ce7140215a3ea6a0c520e22c526e6d9e5847433b89f1549eb9d9221627aa92a"
+    },
+    {
+      "path": "maps/source/user-svg/kiev-map-temp(3).svg",
+      "size": 508461,
+      "sha256": "5aee54442a5688dabc3ec0b37c711b5e98709c72d99cc68d1a5f9f08e6bc0142"
+    },
+    {
+      "path": "maps/source/user-svg/kiev-map-temp(5).svg",
+      "size": 508461,
+      "sha256": "5aee54442a5688dabc3ec0b37c711b5e98709c72d99cc68d1a5f9f08e6bc0142"
+    },
+    {
+      "path": "maps/source/user-svg/kiev-odessa-main.svg",
+      "size": 470378,
+      "sha256": "2b15c3a92a282a7efc27d54bcd8994470f0fce8ee5417d5d734969fcd2c4ab7e"
+    },
+    {
+      "path": "maps/source/user-svg/kiev-svg-extract.json",
+      "size": 249770,
+      "sha256": "be94d16380dc1dfb9f86b6727fdebf6bde126c3f64097c0b9cb3c234a783ed52"
+    },
+    {
+      "path": "maps/source/user-svg/leningrad-main(1).svg",
+      "size": 200499,
+      "sha256": "ea1c83d00eea0212c530b98fd794125959175ad9d1cfa067aef78d6d73502447"
+    },
+    {
+      "path": "maps/source/user-svg/leningrad-main(2).svg",
+      "size": 200499,
+      "sha256": "ea1c83d00eea0212c530b98fd794125959175ad9d1cfa067aef78d6d73502447"
+    },
+    {
+      "path": "maps/source/user-svg/leningrad-main.svg",
+      "size": 200499,
+      "sha256": "ea1c83d00eea0212c530b98fd794125959175ad9d1cfa067aef78d6d73502447"
+    },
+    {
+      "path": "maps/source/user-svg/leningrad-map-temp(1).svg",
+      "size": 136261,
+      "sha256": "1d1fa6dc41c4133cae661d5aa129ab08389f935084cabd604d530b4bf5b57ec0"
+    },
+    {
+      "path": "maps/source/user-svg/leningrad-map-temp(3).svg",
+      "size": 136261,
+      "sha256": "1d1fa6dc41c4133cae661d5aa129ab08389f935084cabd604d530b4bf5b57ec0"
+    },
+    {
+      "path": "maps/source/user-svg/leningrad-svg-extract.json",
+      "size": 254203,
+      "sha256": "b7fbf1cb5ea272ab5866b291130c950871c10d9265a7bf833fe6d9efabb01c79"
+    },
+    {
+      "path": "maps/source/user-svg/odessa-extension-svg-extract.json",
+      "size": 114447,
+      "sha256": "d60624333a6cd0f20e612ba03792ae1320d485b053166426453bbb6e86d9ab85"
+    },
+    {
+      "path": "maps/source/user-svg/odessa-map-temp(1).svg",
+      "size": 62260,
+      "sha256": "93476e9f577b19d24b41133bad8340a87bdfef2c47ce2530cba7db708b038265"
+    },
+    {
+      "path": "maps/source/user-svg/odessa-map-temp(4).svg",
+      "size": 62260,
+      "sha256": "93476e9f577b19d24b41133bad8340a87bdfef2c47ce2530cba7db708b038265"
+    },
+    {
+      "path": "provenance/llm/README.md",
+      "size": 698,
+      "sha256": "657795afd67e20874ee5911042902831590ddc60e6c763f819145bcb362a37c3"
+    },
+    {
+      "path": "provenance/llm/historical-audits/CLEANUP_MANIFEST.json",
+      "size": 9080,
+      "sha256": "79eff6f7264253ed44657405b0a4b2ed4dc39d04878f8dfa9764d4ebd60600b6"
+    },
+    {
+      "path": "provenance/llm/release-history/RELEASE_NOTES_v282.md",
+      "size": 1159,
+      "sha256": "3c523bbe10f500a9a81637d7984eefaa18c0eaa4dab315b0551065fe00a796a9"
+    },
+    {
+      "path": "provenance/llm/release-history/RELEASE_NOTES_v283.md",
+      "size": 2325,
+      "sha256": "18bb237047b247a9742563073a8413937f3ab5c3d5dd1bf1925d917fb54bb877"
+    },
+    {
+      "path": "provenance/llm/release-history/RELEASE_NOTES_v286.md",
+      "size": 3675,
+      "sha256": "9a99a880545e47e29920c5e83759b804e8467b87c10fde570daccf5111c70880"
+    },
+    {
+      "path": "provenance/llm/release-history/RELEASE_NOTES_v287.md",
+      "size": 3420,
+      "sha256": "5e79be2ecfa97b097bcd6b5e45e477aed95da0c560bd262f89677e61f59ef668"
+    },
+    {
+      "path": "provenance/llm/release-history/RELEASE_NOTES_v288.md",
+      "size": 3102,
+      "sha256": "70249475af6d808b6c9e3eb178ec5288da719319f47c97d562c0640bb4383258"
+    },
+    {
+      "path": "provenance/llm/release-history/RELEASE_NOTES_v289.md",
+      "size": 3793,
+      "sha256": "63af150348a9a3b9d6406db0892f7e7143834ec166a37240655b32d63ac5db44"
+    },
+    {
+      "path": "provenance/llm/release-history/RELEASE_NOTES_v290.md",
+      "size": 3077,
+      "sha256": "d0f4bedf0249f5b5d8ddbf5ed4c60b01c4a2b804d92c5c7e7a209876040f950d"
+    },
+    {
+      "path": "provenance/llm/release-history/RELEASE_NOTES_v291.md",
+      "size": 1633,
+      "sha256": "930e8f0aeb9d7b1abb7c82c58d8460bc4f79d13a496504b0d5b9210cd98f8869"
+    },
+    {
+      "path": "provenance/llm/release-history/RELEASE_NOTES_v292.md",
+      "size": 1761,
+      "sha256": "d32a1bc7b7f21a21b27d2b8117799e9921a8b1f278e9a8796193d65d5598c7c3"
+    },
+    {
+      "path": "provenance/llm/release-history/RELEASE_NOTES_v293.md",
+      "size": 997,
+      "sha256": "650ae6c3e35bd2dca517576e1e09f8f6235b4859519a89d42db498971207fd01"
+    },
+    {
+      "path": "provenance/llm/release-history/RELEASE_NOTES_v294.md",
+      "size": 578,
+      "sha256": "c673347310ba030a9326e5d28963a6d95d093d8982f267a4e1652932541c4d91"
+    },
+    {
+      "path": "provenance/llm/release-history/RELEASE_NOTES_v295.md",
+      "size": 1286,
+      "sha256": "ba3788bcec3d1d81e4bd261f889bb60d7ba1f8d20df583f726dd0e6bb2215ccf"
+    },
+    {
+      "path": "provenance/llm/release-history/RELEASE_NOTES_v296.md",
+      "size": 976,
+      "sha256": "673db9316cadd649c25cc6692c9de3464f9c8096abb4c83b4446634e0ebdfa97"
+    },
+    {
+      "path": "provenance/llm/release-history/RELEASE_NOTES_v297.md",
+      "size": 185,
+      "sha256": "21543e2aa290141923b3d0cf8b2210b042aea4eb30a342b870c9d6121675ff8f"
+    },
+    {
+      "path": "provenance/llm/release-history/RELEASE_NOTES_v298.md",
+      "size": 626,
+      "sha256": "ce95da4941628daa061917b50fe32ca07f687514f1409d1f67daa01564098dc9"
+    },
+    {
+      "path": "provenance/llm/release-history/RELEASE_NOTES_v299.md",
+      "size": 530,
+      "sha256": "1807b16d77b6428d8b4e5f5a03deb4f040c228563ed0d590a89106e5fa1c97c3"
+    },
+    {
+      "path": "provenance/llm/release-history/RELEASE_NOTES_v300.md",
+      "size": 1265,
+      "sha256": "35808f9d5a3336e6d4ef0ae8c319ff75f66df2cf9e062ab42d471c730a54a8e5"
+    },
+    {
+      "path": "provenance/llm/release-history/RELEASE_NOTES_v301.md",
+      "size": 2333,
+      "sha256": "465e222b11759eafbde4e12f906d9998d65ade4ace1d1b31202ab765341455df"
+    },
+    {
+      "path": "provenance/llm/release-history/RELEASE_NOTES_v302.md",
+      "size": 798,
+      "sha256": "5f86c4046013dc56cbec419762b12d5b4e7295a5b8c898c7728041aa5d267b44"
+    },
+    {
+      "path": "provenance/llm/release-history/RELEASE_NOTES_v303.md",
+      "size": 474,
+      "sha256": "729f332bad6ff8fdcce8ee5083758a623fe441b4c866b75942440cea93b58878"
+    },
+    {
+      "path": "provenance/llm/release-history/RELEASE_NOTES_v304.md",
+      "size": 605,
+      "sha256": "f3b633f75f3aa27e914318a92bd7c427fc4628c3330c5c461134a62ec22f5ddc"
+    },
+    {
+      "path": "provenance/llm/release-history/RELEASE_NOTES_v305.md",
+      "size": 735,
+      "sha256": "99c415d9e6db21055db9babff7e6a2f69c3b2da5897213abc1bd92f6f9ea44b7"
+    },
+    {
+      "path": "provenance/llm/release-history/RELEASE_NOTES_v306.md",
+      "size": 562,
+      "sha256": "6b7d02eea362e465216e5c24a9d107f0e0acde0c3f5f6bb6b2098400726751a3"
+    },
+    {
+      "path": "provenance/llm/release-history/RELEASE_NOTES_v307.md",
+      "size": 1837,
+      "sha256": "d159fb7d58428b835905ce02955a2626c2aa8e6b87c4cefb8b5665f92069dcf1"
+    },
+    {
+      "path": "provenance/llm/release-history/RELEASE_NOTES_v308.md",
+      "size": 737,
+      "sha256": "4c678c6d2d8e949d9a90a8c96ff84a56de109169b35bb1c2be57f7d7ad3745d2"
+    },
+    {
+      "path": "provenance/llm/release-history/RELEASE_NOTES_v309.md",
+      "size": 420,
+      "sha256": "e00689209310408c9b51065d1179d4417d3fadfbe32c373b17815a182968f631"
+    },
+    {
+      "path": "provenance/llm/release-history/RELEASE_NOTES_v310.md",
+      "size": 652,
+      "sha256": "6d6cd49ec5ab90c1e6ca94631bc9afc5c16094772ac2b424499fcdab355458bc"
+    },
+    {
+      "path": "provenance/llm/release-history/RELEASE_NOTES_v311.md",
+      "size": 728,
+      "sha256": "71b6fb0dc5f77a7ee39369fc7db571c25650476ce8d85a7fd1d9f15eb8803a97"
+    },
+    {
+      "path": "provenance/llm/release-history/RELEASE_NOTES_v312.md",
+      "size": 567,
+      "sha256": "d2aea28ae686a5dfd881264e92a7580ccf5852a4289d7832a2c49658e5bd0308"
+    },
+    {
+      "path": "provenance/llm/release-history/RELEASE_NOTES_v313.md",
+      "size": 590,
+      "sha256": "3a1c469cbffd9197a54126c9c01da7557854e1e069e51da35fe57eff1053768a"
+    },
+    {
+      "path": "provenance/llm/release-history/RELEASE_NOTES_v314.md",
+      "size": 458,
+      "sha256": "e2db4a314f7809fda52fe18cb2036c0fe64058b670b44fc6ec7b0a55817d2edc"
+    },
+    {
+      "path": "provenance/llm/release-history/RELEASE_NOTES_v315.md",
+      "size": 785,
+      "sha256": "d3aefba95031846563e8abba5f91821c7d00d714741cee1450ad946f158e76c6"
+    },
+    {
+      "path": "provenance/llm/release-history/RELEASE_NOTES_v316.md",
+      "size": 863,
+      "sha256": "520a03f6a8015df32565f14c31becb1db3bca2d4ded41d45859f1fd2eb842c36"
+    },
+    {
+      "path": "references/README.md",
+      "size": 210,
+      "sha256": "fb292c6779df1a256c2669906fbaf12324af821eca1816e7321bc4942455bc38"
+    },
+    {
+      "path": "references/rules/SOURCE_INDEX.json",
+      "size": 1944,
+      "sha256": "bdc95ce2c6ebdbe4d9c679d2063f5242836028afdfb0d471e9deebec624feecd"
+    },
+    {
+      "path": "references/rules/arduous-aid.webp",
+      "size": 64078,
+      "sha256": "c88f512358b2333884789c248a983d7fb15f6569a0839afbbaa1ef9a518a2806"
+    },
+    {
+      "path": "references/rules/arduous-rules.pdf",
+      "size": 373130,
+      "sha256": "1ac46f3e958cf1d08768f6b56964100ab0951ece7e310ac3a30e8c479a8b986c"
+    },
+    {
+      "path": "references/rules/b4m-aid.webp",
+      "size": 66522,
+      "sha256": "b5e5130f5b5becc1fd70b52c7f94d14c8e1fcb7d9ba5985cb8010ae8cc873894"
+    },
+    {
+      "path": "references/rules/b4m-rules.pdf",
+      "size": 303022,
+      "sha256": "ee148b48a0af52457afd380053397f02283128d808ad8697e8dd7d1114c3fc65"
+    },
+    {
+      "path": "references/rules/crt-arduous.png",
+      "size": 421275,
+      "sha256": "2c8c041cf509ef208f233afc95ba8cb20f60db884175061f9bc537a71af42eab"
+    },
+    {
+      "path": "references/rules/crt-kiev.png",
+      "size": 912923,
+      "sha256": "753c8e422cdb808d6eab7c50f797bd5007dbb52c90712b4f2c477d40ba0b3399"
+    },
+    {
+      "path": "references/rules/crt-leningrad.png",
+      "size": 284976,
+      "sha256": "25bda01998810dc9cb414dbf60f5d673f547cf068d9b24cd6c62a311651a76bf"
+    },
+    {
+      "path": "references/rules/kiev-player-aid.webp",
+      "size": 65566,
+      "sha256": "a7d239a80745463fdd3d5effc8faf6a028ab4f048713a506cb75823c448c9751"
+    },
+    {
+      "path": "references/rules/kiev-rules.pdf",
+      "size": 341233,
+      "sha256": "d55e8f0e567d1f8c7907c4fc8368954ec0e5fa8d6fe9e8e71c61acf9bb3c3756"
+    },
+    {
+      "path": "references/rules/leningrad-aid.webp",
+      "size": 67578,
+      "sha256": "241d97d9766eca4e712be4a01178165ceadfbfb435a4fe387d6f720ad08b7579"
+    },
+    {
+      "path": "references/rules/leningrad-rules.pdf",
+      "size": 345596,
+      "sha256": "74d332e052e735e2378027a06f95e9715392773f249561bf1c00cae08a2bbfa7"
+    },
+    {
+      "path": "references/rules/odessa-rules.pdf",
+      "size": 304132,
+      "sha256": "c7def97fe2de9ae66dc89da5f7d3417e3283846485903b90b88f153ba9791bab"
+    },
+    {
+      "path": "rules/audit/B4M-COMPLIANCE.md",
+      "size": 3028,
+      "sha256": "dae2090d203fa623030ad589e80bf7355bffb38856c8967a2bb222dc96d35b5f"
+    },
+    {
+      "path": "rules/audit/b4m-manifest.json",
+      "size": 19599,
+      "sha256": "42f85a1c4986e267a0a8a920ae90b9c4149cef26584d69e5dc5ceb5a80d9b943"
+    },
+    {
+      "path": "rules/audit/discrepancies.json",
+      "size": 1460,
+      "sha256": "4a2e42b88eee18018a40f39cb6455b68007e0832dac9a8cf2fea1d61ceaab7c6"
+    },
+    {
+      "path": "rules/tests/b4m-source-assertions.js",
+      "size": 2379,
+      "sha256": "bfa889161153504c2fe6247914d2df5e951a4934a6539f934938a876253622d0"
+    },
+    {
+      "path": "rules/tests/fixtures/b4m-balanced-seed123456.json",
+      "size": 10538,
+      "sha256": "f87c5cc4603505a4b492cfc52ca79b7ee51edecadeabe2fd5a6a7726be4fd700"
+    },
+    {
+      "path": "rules/tests/freeze-b4m.js",
+      "size": 3004,
+      "sha256": "bf99a83787a3fbf12d3da1b43fd150118b08ccebdae052d72ea2f0b4fa89773f"
+    },
+    {
+      "path": "rules_profiles/shared-crt.json",
+      "size": 1460,
+      "sha256": "d84d66d7e45e45310eebf54d86b755ae6375a298d977b69c64a6c1f44812b1c9"
+    },
+    {
+      "path": "scripts/audit-odessa-hex-correlation.py",
+      "size": 5304,
+      "sha256": "8ab1887c3799c96ffac78c39bca19756c41e914b9e6d93252c34b23d92354af2"
+    },
+    {
+      "path": "scripts/audit-v281-bottom-rows.py",
+      "size": 3574,
+      "sha256": "057af4f91ed9aebaa658e03e646695a3ed4d02901ea00b66816acf0a1c91c17f"
+    },
+    {
+      "path": "scripts/capture-runtime.py",
+      "size": 12718,
+      "sha256": "2419f50e9872fef46dac3cb912848c45bb3b8a4b6bfbb422364a27c724b9eadb"
+    },
+    {
+      "path": "scripts/export-campaign-maps.js",
+      "size": 3452,
+      "sha256": "0bbde96fff8fbbc7279cf9dbb03ad9866743810930cd75417b9010a9071f1e50"
+    },
+    {
+      "path": "scripts/export-water-audit-v288.js",
+      "size": 1271,
+      "sha256": "ac06168f7a95617ce18b3a70b5cd10bc206c33513a4144400f5b46213a9c0f19"
+    },
+    {
+      "path": "scripts/extract-odessa-source-rivers.py",
+      "size": 4129,
+      "sha256": "126eb8d462948942ffcbc79e8e7a825c80563b518b29cd480e7dc61628b4f9fb"
+    },
+    {
+      "path": "scripts/finalize-authoritative-composite.py",
+      "size": 2192,
+      "sha256": "e28f54cf14a1a2d662b6ba2241f3a14403e9b6e849d1b203db36eb1a2c922736"
+    },
+    {
+      "path": "scripts/import-kiev-odessa-authoritative.py",
+      "size": 7334,
+      "sha256": "29b8fa52130aad32e8dbe00f3f4868e6c3cccf693c5c2cbbfc4be01778a7723a"
+    },
+    {
+      "path": "scripts/import-official-counters.py",
+      "size": 11950,
+      "sha256": "62ec1cda8d9214093e75d5fc37003fdd59cd7f50a68dda600024b5401260e652"
+    },
+    {
+      "path": "scripts/import-v291-rail-deployment.py",
+      "size": 6220,
+      "sha256": "7131939f87256e7e7db28c77a375d5d0dcd5234e1f87060eccc4b7b289ce7169"
+    },
+    {
+      "path": "scripts/patch-composer-v290.py",
+      "size": 4381,
+      "sha256": "11031b2fca47dcaa84c7a40faaa84b6c772f1717686692f6a821ed7a623b7b69"
+    },
+    {
+      "path": "scripts/register-authoritative-water.py",
+      "size": 5223,
+      "sha256": "342abf6efa506584cf1f70b27d1ef5cd58d791e60d660eb54928c5d92498dc6d"
+    },
+    {
+      "path": "scripts/register-entry-v290.py",
+      "size": 2733,
+      "sha256": "7dee0cda464090d90535a62d3c624ded19a05327c60ac138b6218a4da9a770fd"
+    },
+    {
+      "path": "scripts/reproject-odessa-reinforcements.py",
+      "size": 4310,
+      "sha256": "ba1ca5dca1912cc4ca79d46ac17727efd4d16e3d6c9eeb7ab52438344e5d7554"
+    },
+    {
+      "path": "scripts/restore-engine-composite-v290.py",
+      "size": 5642,
+      "sha256": "fc56bf83eaf95d7df2807a8f0dc7d0800e55a1ded5dee1530feb95512d1292a4"
+    },
+    {
+      "path": "scripts/verify-campaign-maps.js",
+      "size": 15363,
+      "sha256": "6f4cc059aee72d30b97a5d33acc4037c90c91152ec08040b18e172cffe16f520"
+    },
+    {
+      "path": "scripts/verify-counter-typography.py",
+      "size": 2789,
+      "sha256": "ba8d907cf180ec4c23cb99441f1fd7622f712af67c0f5c24cc2d8e8b883303a8"
+    },
+    {
+      "path": "scripts/verify-live-generic.py",
+      "size": 2518,
+      "sha256": "56ac3f19f9d45cca75786087f2e08d36536fb715e70b3071bf62cc1e6c0cdfba"
+    },
+    {
+      "path": "scripts/verify-live-moscow.py",
+      "size": 2208,
+      "sha256": "3a96824c62b1d74e36be28028e259206dd30917c55dad04c683c19a9851fb04c"
+    },
+    {
+      "path": "scripts/verify-moscow-stacking.py",
+      "size": 7515,
+      "sha256": "7a9fbadb7f68b3103172c7273c76cdee187108b7c80b38b1cb4c9152cf40e137"
+    },
+    {
+      "path": "scripts/verify-oberlabs-play.py",
+      "size": 4479,
+      "sha256": "411b9e42b7997e3fbfb4882687c7993677d5ad05e3a20b2689815115d70a0695"
+    },
+    {
+      "path": "scripts/verify-railway-splines.js",
+      "size": 3494,
+      "sha256": "8a5eb082c086b3d156f1194dd31add878599cd73568108603a6074ee585b934e"
+    },
+    {
+      "path": "scripts/verify-source-path-integrity.py",
+      "size": 2363,
+      "sha256": "8b3bad0fcfebf2a16feae4a253c69860e38fab92073e6ecae53e77c39006dbd1"
+    },
+    {
+      "path": "scripts/verify-v277-rails-glyph.js",
+      "size": 4130,
+      "sha256": "e38e5af825f272ef914844e0a0a330f1431e5b3aa2cf3494c9d433dc30915d41"
+    },
+    {
+      "path": "scripts/verify-v278-water-z.js",
+      "size": 1130,
+      "sha256": "259327cf4cad9131782279ee7325257633a7aa4ef13d54a53ae73c2386df71db"
+    },
+    {
+      "path": "scripts/verify-v280-source-hexside.js",
+      "size": 4893,
+      "sha256": "104b11d41b1f66c34a05bc1972fcfbc4ae2a352119cd56717a640a10547a4051"
+    },
+    {
+      "path": "scripts/verify-v281-lower-coast.js",
+      "size": 1560,
+      "sha256": "7e132fee19f65e5d2ac4f5ab1a4e3c58095793a26b81d06b91de0486f74839b2"
+    },
+    {
+      "path": "serve.py",
+      "size": 316,
+      "sha256": "ebf43218bdf88326979fc4b9ee72732b7da6761fd6bb6dec3363a96b9da71649"
+    },
+    {
+      "path": "style.css",
+      "size": 5592,
+      "sha256": "65ad79536a2cb273cc2ff72a23f137eee6d1eed02ed7a903e600fc1f8b9ac1f5"
+    },
+    {
+      "path": "supplied_assets/flat/city-hex-highlight.svg",
+      "size": 512,
+      "sha256": "b5a3a54190c1f944b5992385528c2dfd7a64724edbcb0c3a68f746cade150ba9"
+    },
+    {
+      "path": "supplied_assets/flat/fortification-overlay.svg",
+      "size": 2726,
+      "sha256": "38ca3dbe723f1be4920ccb71247ed11e70b7cb4f765b305442f249fec7ae547b"
+    },
+    {
+      "path": "supplied_assets/flat/terrain-forest.png",
+      "size": 803727,
+      "sha256": "278528a568c49ef998804495f6c66409e066bb8beca2bedff7ee80eb0d5bed1d"
+    },
+    {
+      "path": "supplied_assets/flat/terrain-hills.png",
+      "size": 250613,
+      "sha256": "e30adbd903834afcba2683237ec52a502957a97029b54c843afae6c5d31240d4"
+    },
+    {
+      "path": "supplied_assets/flat/terrain-mountain.png",
+      "size": 262478,
+      "sha256": "589dc50184b8f8b26b15e08a9c09c324bd87e75558f0ca15bd09cedf006fa809"
+    },
+    {
+      "path": "supplied_assets/flat/terrain-open.png",
+      "size": 671477,
+      "sha256": "6bd4e479dbf8dbbaaf24dc204b7aa2d17a62f229ad8e55a83a102256b4a0a100"
+    },
+    {
+      "path": "supplied_assets/flat/terrain-rough.png",
+      "size": 276923,
+      "sha256": "8a4e24293f1c8cd4b0ea6a3fc5bf1a738adca4c37d587440e9d6ea00c51fc920"
+    },
+    {
+      "path": "supplied_assets/flat/terrain-swamp.png",
+      "size": 238405,
+      "sha256": "998c3769c48c28ae40edbc9a7669e58d5ed9eefc4679e7065711e94bb76af279"
+    },
+    {
+      "path": "supplied_assets/flat/terrain-woods.png",
+      "size": 224640,
+      "sha256": "96b3bafab9e4926088c55d0d7f603f6aef73e7b2d8fa6573f954e6c1a3b858a3"
+    },
+    {
+      "path": "tests/arduous-leningrad-user-corrections-v310.test.js",
+      "size": 1551,
+      "sha256": "6efe9cd3f4f36bbd7bf40581dea7a8751832de978afbae15764ca6654489fae6"
+    },
+    {
+      "path": "tests/authoritative-kiev-odessa-v289.test.js",
+      "size": 2586,
+      "sha256": "6ef4eb699f6862e835fd8ff2b04f2b2b312c361c2f42f96e428d5eb6790bf798"
+    },
+    {
+      "path": "tests/city-forest-layer-v295.test.js",
+      "size": 2457,
+      "sha256": "86ba067207425871a4faf35d833b1292a17c30cf9e60f5c4aa2c5e449371cfd5"
+    },
+    {
+      "path": "tests/coast-reinforcement-style-v293.test.js",
+      "size": 2210,
+      "sha256": "f61b0e851cf6fb46932c3a5e72b785f5a10da0ba3ccd3d9785c277e6c6b93df1"
+    },
+    {
+      "path": "tests/definitive-kiev-odessa-v290.test.js",
+      "size": 2444,
+      "sha256": "d5ca7ab050bba6a118c716a4279ca2de2dfa447d6f94bb31d77c385e974df146"
+    },
+    {
+      "path": "tests/deployment-white-alpha-v294.test.js",
+      "size": 826,
+      "sha256": "1ffbd50b9ceb2fa37cffb799c096c76cb7ed485eac17cfad2beea93c44fc57f5"
+    },
+    {
+      "path": "tests/forest-shadow-major-river-v296.test.js",
+      "size": 2270,
+      "sha256": "abefa02a43eb2b7a37e99bef822cd6c58eb9961abead4d7ef768ab6d6f8de831"
+    },
+    {
+      "path": "tests/grid-rail-snap-v299.test.js",
+      "size": 1945,
+      "sha256": "5be02dce8a1157e9e384a30598e6363f9146cfb42d565254d3da160054fbde35"
+    },
+    {
+      "path": "tests/kiev-rail-parity-v300.test.js",
+      "size": 2175,
+      "sha256": "b1822941c7d66005c2ead19c2984819d6f86481a069dbd3c1b001da80bc6445d"
+    },
+    {
+      "path": "tests/leningrad-coast-coordinates-v307.test.js",
+      "size": 1510,
+      "sha256": "33b7cc03d14b1f8cf413eaca75bd5ceaae4872472baab68c4b7eb4eb2263b938"
+    },
+    {
+      "path": "tests/leningrad-coast-wavelets-v311.test.js",
+      "size": 1702,
+      "sha256": "069769d7d375c9176cff0c43970a65ed96dfb5d5af07570f2a934a602b9d1b00"
+    },
+    {
+      "path": "tests/leningrad-exact-water-v305.test.js",
+      "size": 1667,
+      "sha256": "0aab201e670575c95baf3fe316fc0810a4a9836cc82e21b69b909ba58f4bc982"
+    },
+    {
+      "path": "tests/leningrad-liepaja-coast-v308.test.js",
+      "size": 1458,
+      "sha256": "4e1e34e6503580762aa57e10328aed3f25a83c83d0248277b7ab7eea55f90a67"
+    },
+    {
+      "path": "tests/leningrad-river-source-v304.test.js",
+      "size": 1605,
+      "sha256": "eb91c4ecff389db306c0c94c5fa2eac96c362304c1edf117c99ac91f3f135d24"
+    },
+    {
+      "path": "tests/leningrad-shared-wavelet-v315.test.js",
+      "size": 2074,
+      "sha256": "57ed7e9b0734405cfe6014c364b8efd6b251e51f9bd68e04adbb5252bf49c4a5"
+    },
+    {
+      "path": "tests/leningrad-sole-coast-authority-v313.test.js",
+      "size": 1537,
+      "sha256": "4379d31da7fd1d431901949a75e0230dfcf3d128cd60079ebc9af1116d74784b"
+    },
+    {
+      "path": "tests/leningrad-source-coast-wavelets-v312.test.js",
+      "size": 1720,
+      "sha256": "850ba19fbc7e2795b5d4da6ff1b8779e4de9e5cf135f01fccb0f997702fcaa75"
+    },
+    {
+      "path": "tests/leningrad-source-lakes-v306.test.js",
+      "size": 1312,
+      "sha256": "a7f44314273daa8ef90af35b41926dc8216988b1d592e1a7d0e2cc9bb479efbb"
+    },
+    {
+      "path": "tests/leningrad-source-v302.test.js",
+      "size": 1257,
+      "sha256": "8cb4a541179ae6721cef93169d393df8f8b8de1a28d174429d3100e1a9ae0b89"
+    },
+    {
+      "path": "tests/leningrad-svg-v301.test.js",
+      "size": 2452,
+      "sha256": "a0f00388e688aad7de2936e87067ac5b9ad5fe108bb7660c5e741d25cfd26571"
+    },
+    {
+      "path": "tests/leningrad-visible-coast-v314.test.js",
+      "size": 1322,
+      "sha256": "29533541b16e7eb0ee94bcc6c687b73c315fb1d909b620d7af17c4065357e582"
+    },
+    {
+      "path": "tests/leningrad-wavelets-v309.test.js",
+      "size": 1058,
+      "sha256": "228e89f4189c1160f6d6580f57a51b3d59f3c3bf6137f8875b29afd29f29bae1"
+    },
+    {
+      "path": "tests/odessa-source-terrain.test.js",
+      "size": 1759,
+      "sha256": "67c9d30ddaf81ed697865a94f6df2d51434942f1eef776856b765c3e344729be"
+    },
+    {
+      "path": "tests/official-counters.test.js",
+      "size": 6592,
+      "sha256": "db9fd5f64e4f1e31637348673be5066f6ff0f403086d7f0aa4c786573930bc78"
+    },
+    {
+      "path": "tests/shared-historical-crt-v316.test.js",
+      "size": 745,
+      "sha256": "551f1b1871d29fd8f4af28f61d85f124307fec75abdf867ef03728dad965d3a1"
+    },
+    {
+      "path": "tests/shoreline-layer-exclusion-v303.test.js",
+      "size": 1557,
+      "sha256": "2902f33f139fc6281595bc7d8b85957c22097f1e9efae13e85e845b01a954237"
+    },
+    {
+      "path": "tests/smoke-current.js",
+      "size": 763,
+      "sha256": "de30e8e6f7d3ad9d19dfa3c725ebaaac89bc8683e887b83269b0d955078b7ab6"
+    },
+    {
+      "path": "tests/svg-rail-deployments-v291.test.js",
+      "size": 1915,
+      "sha256": "e1a3a6580e63dd9bdc20ab852cf0cef86a802fe22285493dba4406613ce634ff"
+    },
+    {
+      "path": "tests/svg-sea-style-v292.test.js",
+      "size": 2260,
+      "sha256": "673d7b6f8f15eba0b55f305d8770cfa4a80af06e5e3a4b2e4347b46b08b923f2"
+    },
+    {
+      "path": "tests/universal-rail-deployment-v298.test.js",
+      "size": 2653,
+      "sha256": "85a9ad1bbdb75f71d41c3b4bdf42b91a87e30154680defecbf22770f77031fa8"
+    },
+    {
+      "path": "tests/universal-style-b4m-v297.test.js",
+      "size": 1572,
+      "sha256": "ef33704b23a03e056a35b5ec294f07fa56d9be407ea9aa0b4706c0c9d3d56585"
+    },
+    {
+      "path": "tests/verify-v286-source-registration.py",
+      "size": 3224,
+      "sha256": "3e632faec16ed111cf24e46e3f5517949c42af56225ad60e5d731d58c3719e37"
+    },
+    {
+      "path": "tests/water-restoration-v287.test.js",
+      "size": 1963,
+      "sha256": "f091766c23b245f022435d0162ac1005e031e9b4e9f8f02e7082dae979986ec3"
+    },
+    {
+      "path": "tests/water-topology-v288.test.js",
+      "size": 1684,
+      "sha256": "4eae1737487e18ebf9307fe2e020a81a8d9344c54a60dfd74e0b550901793ad3"
+    }
+  ]
+}

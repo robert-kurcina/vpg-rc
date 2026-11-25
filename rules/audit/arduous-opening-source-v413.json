@@ -1,0 +1,154 @@
+{
+  "schemaVersion": 1,
+  "checkpoint": 179,
+  "version": "v413",
+  "scenario": "The Arduous Beginning",
+  "referenceRules": "references/rules/arduous-rules.pdf §6.0 printed page 2, §11.0 printed page 6",
+  "sourceHashes": {
+    "maps/arduous.json": "0cf849eaf683cd86443d244f20e5d03f8dc18ba354f88861d039307da162742d",
+    "maps/source/user-svg/arduous-map-temp(3).svg": "423af8983fd90a5be17041922a612efba42bbff306683ead9fd6910413402ede",
+    "maps/counter-configs/arduous.json": "de3c08a7aad765978462d05189a61da1e1b29a150ec08de7f00c45c832c0f238",
+    "maps/setup/arduous.json": "d4029dae6a5376e50a1e0308f4edaaa443332d3e00c7ac3d2f4f6c2088e29879",
+    "maps/setup/arduous-inventory.json": "09024dcddcec1bc189ab0053f7aadb5bdf56765dcec4165b409ecaadb3146289",
+    "maps/setup/arduous-fixed-pieces.json": "2180c1400b65dfcf57de7635d19d36ee2887c271eeda7edeb76a91e24841e3a9"
+  },
+  "mapSourceSvgMatchesOriginal": true,
+  "counterPoolCounts": {
+    "germanPanzer": 5,
+    "germanInfantry": 11,
+    "sovietArmies": 10,
+    "sovietMechanized": 10,
+    "airSupport": 2,
+    "gameTurn": 1,
+    "brestLocation": 1
+  },
+  "allocationCounts": {
+    "germanInitialPanzer": 5,
+    "germanInitialInfantry": 11,
+    "sovietFrontArmies": 3,
+    "sovietFrontMechanized": 4,
+    "sovietFixedArmies": 3,
+    "sovietFixedMechanized": 3,
+    "sovietReinforcementArmies": 4,
+    "sovietReinforcementMechanized": 3
+  },
+  "namedCityAnchors": {
+    "Brest-Litovsk": {
+      "hex": "0211",
+      "sourceSvgId": "use337"
+    },
+    "Baranovichi": {
+      "hex": "0609",
+      "sourceSvgId": "use336"
+    },
+    "Minsk": {
+      "hex": "0907",
+      "sourceSvgId": "use334"
+    },
+    "Velikie Luki": {
+      "hex": "1402",
+      "sourceSvgId": "use1"
+    },
+    "Gomel": {
+      "hex": "1510",
+      "sourceSvgId": "use338"
+    }
+  },
+  "sourceMarkerSlots": {
+    "cross": [
+      "0107",
+      "0108",
+      "0109",
+      "0110",
+      "0205",
+      "0206",
+      "0207",
+      "0306"
+    ],
+    "star": [
+      "0208",
+      "0209",
+      "0210",
+      "0305",
+      "0307",
+      "0406",
+      "0407"
+    ],
+    "fixedInfantry": [
+      "0907",
+      "1402",
+      "1510"
+    ],
+    "fixedMechanized": [
+      "0907",
+      "0609",
+      "1510"
+    ]
+  },
+  "namedCityOverrideUsedForMechanized": [
+    "Minsk",
+    "Baranovichi",
+    "Gomel"
+  ],
+  "annotationsRequiringCorrection": [
+    {
+      "hex": "0211",
+      "kind": "fixedMechanized",
+      "reason": "Brest has a Garrison, not a Mechanized Corps; rule §6.0"
+    },
+    {
+      "hex": "0907",
+      "kind": "fixedMechanized",
+      "reason": "Named Soviet rear fixed setup in rule §6.0"
+    },
+    {
+      "hex": "1510",
+      "kind": "fixedMechanized",
+      "reason": "Named Soviet rear fixed setup in rule §6.0"
+    }
+  ],
+  "missingAuthoredMechanizedGlyphAtBaranovichi": true,
+  "reverseOnlyBrest": {
+    "hex": "0211",
+    "owner": "soviet",
+    "sourceFaceId": "arduous-front-r04c03",
+    "reverseFaceId": "arduous-back-r04c06",
+    "printedValues": "3-4"
+  },
+  "expectedOpeningUnits": 30,
+  "expectedGerman": 16,
+  "expectedSoviet": 14,
+  "expectedReinforcements": {
+    "sovietArmy": 4,
+    "sovietMechanized": 3,
+    "byTurn": [
+      {
+        "turn": 1,
+        "sovietReinforcementArmies": 2,
+        "sovietReinforcementMechanized": 2
+      },
+      {
+        "turn": 2,
+        "sovietReinforcementArmies": 1,
+        "sovietReinforcementMechanized": 1
+      },
+      {
+        "turn": 3,
+        "sovietReinforcementArmies": 1,
+        "sovietReinforcementMechanized": 0
+      }
+    ]
+  },
+  "sharedSetupImplementation": "core/scenario_starting_setup.js + core/historical_deployment_session.js + core/scenario_opening_bridge.js",
+  "sharedExceptionalPieceImplementation": "core/historical_fixed_source_pieces.js",
+  "campaignStatus": "NOT_ACTIVE",
+  "movementGraphStatus": "source-geometry-not-gameplay-certified",
+  "crtStatus": "unchanged B4M common CRT",
+  "renderStatus": "unchanged accepted v373 renderer and five map exports",
+  "limitations": [
+    "Named-city anchors are sourced from the rulebook and authored city labels; misleading fixed unit SVG glyph metadata is not accepted as game rules.",
+    "No board grid/river hexside combat certification is asserted by this setup audit.",
+    "The test chooses deterministic counter faces solely as a legal fixture; source does not prescribe the player-selected starting identity assignment.",
+    "The browser route for Arduous remains unactivated until movement/phase/combat integration."
+  ]
+}

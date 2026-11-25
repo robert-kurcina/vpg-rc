@@ -1,0 +1,28 @@
+{
+  "checkpoint": 217,
+  "version": "v451",
+  "source": "references/rules/arduous-rules.pdf printed p.6 §§12.0–12.4",
+  "rulePdfSha256": "1ac46f3e958cf1d08768f6b56964100ab0951ece7e310ac3a30e8c479a8b986c",
+  "sourceGermanCounter": "arduous-front-r01c06",
+  "printedFace": "8-4",
+  "legalWestEdgeHexesInCandidateOpening": [
+    "0105",
+    "0106"
+  ],
+  "westEdgeHexes": [
+    "0105",
+    "0106",
+    "0107",
+    "0108",
+    "0109",
+    "0110"
+  ],
+  "citiesChecked": 12,
+  "independentOracleCases": 1560,
+  "assertions": 1644,
+  "proofScope": "source-grounded shared engine with test-only synthetic eliminations, captured-city control and blocking units; no real German battle casualties claimed",
+  "deferred": [
+    "German player-facing combat elimination and off-map rebuild in same Chromium action journal",
+    "Complete seven-turn contested campaign acceptance"
+  ]
+}

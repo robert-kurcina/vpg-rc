@@ -1,0 +1,63 @@
+{
+  "checkpoint": 174,
+  "version": "v408",
+  "baselineArchive": "hex_wargame_v407_CHECKPOINT_173_LENINGRAD_ALL_HUMAN_AUTOMATIC_NE.zip",
+  "previousFiles": 960,
+  "modifiedPriorFiles": [
+    "PLAN.md",
+    "README.md",
+    "UPDATE.md",
+    "core/B4M_NATIVE_MIGRATION.md",
+    "core/native_browser_view.js",
+    "core/native_session_ai.js",
+    "games/battle-for-moscow/native-preview/index.html"
+  ],
+  "addedFiles": [
+    "core/B4M_OBJECTIVE_ADVANCE.md",
+    "games/battle-for-moscow/native-preview/ai-config-capture.json",
+    "rules/audit/b4m-native-objective-advance-browser-v408.json",
+    "rules/audit/b4m-native-objective-advance-campaign-v408.json",
+    "rules/audit/b4m-objective-advance-v408.json",
+    "rules/audit/checkpoint174-regressions-v408.json",
+    "rules/audit/checkpoint174-source-preservation-v408.json",
+    "scripts/__pycache__/native_browser_asset_fixture.cpython-313.pyc",
+    "scripts/package-checkpoint174.py",
+    "scripts/verify-native-objective-advance-browser-v408.py",
+    "tests/b4m-native-objective-advance-campaign-v408.test.js",
+    "tests/b4m-native-objective-advance-v408.test.js"
+  ],
+  "deletedFiles": [],
+  "protectedSourceSha256": {
+    "exports/battle-for-moscow.svg": "487a050a42cf41554886b0fcef85baf68e40354f784428623926f1a9354f4de1",
+    "exports/arduous.svg": "0443d50a7f7bbe36c508cf9e32a18d20f765cad93588c4cbb65fdbd5db7eedf7",
+    "exports/leningrad.svg": "e45856f7d56b5acfecf7083b405b9465d1c21459d698ac65e9196f581f832925",
+    "exports/kiev.svg": "5f455d80d6d30eec822d898f41ec12c21fc03a7f4fd165ddd51fa2b7c28324a4",
+    "exports/kiev-odessa.svg": "7cb5fafbb18babd2b4b2a5129e6802607dd4b0df8b07e46491319c07ecb9c71c",
+    "core/engine.js": "a00db3a992524d1a9cfce5024838d40e38c29fea7c91ea2d099ef30d5515fabf",
+    "core/historical_crt.js": "6a43c47ae52c6c110728403fd680406ba99d8e67bd14f234cb82f38c703b22e6",
+    "core/historical_campaign_session.js": "e573a15d43d166eca8fe6dbab94ea9c6d17970b9627731f216fb5b7d623e8ac7",
+    "core/historical_deployment_session.js": "10bcb9916da2583b45120a31da466fd2e3cb936ab2d3512668e6a4c02ad0144d",
+    "core/official_counter_templates.js": "c4278e9416e4ffd6460caedb9878b51500e0b64b6d01a774ee5a390b7a046321",
+    "core/terrain_tiles.js": "b22370cee101031125b94531862a99bc26c62c92077ea6bba21e1e467b620a07",
+    "maps/registry.json": "79d1fd8419bfde92d630af9ae4a1a5093c672848daf3d5a35486793439b3377b",
+    "games/battle-for-moscow/game.json": "9d5ccd8e80b3fb2ea1018e26ccac9ebf26e3bf9081920c162347dcb94ef23f39",
+    "games/battle-for-moscow/rules.json": "353ffbdbedc1b6d122fd43bb747b501053eaa6e82146f520b4c1314adf43750a",
+    "games/battle-for-moscow/units.json": "90752f9e74671b977de453fe805412cbd0f6af47d4eca04ed42e744c35f35429",
+    "maps/leningrad.json": "3ec95353555af6703d2fd006b11b55e2b98685e296f36e528da85547d6933b17",
+    "maps/setup/leningrad.json": "3ed0e7a28e4aa84efb3cb9e3851fa55f3be6d7fc26250bc2f9550f2a1ef46d19",
+    "assets/official-counters/source-counters.svg": "a45fd59ebc50fac41686289e41d387d83474f81b0b7da25fe37107ce132ad51b"
+  },
+  "sharedCRTUnchanged": true,
+  "sharedEngineUnchanged": true,
+  "acceptedFiveMapExportsUnchanged": true,
+  "productionB4MSelectorUnchanged": true,
+  "newAIMode": "objective-advance-v1",
+  "tests": "rules/audit/checkpoint174-regressions-v408.json",
+  "remainingGates": [
+    "B4M native production cutover",
+    "B4M tournament source coordinate reconciliation",
+    "Leningrad historical source coordinate certification",
+    "Full Arduous, Kiev and Kiev\u2013Odessa gameplay",
+    "Broad Oberlabs UX parity deferred"
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "source": "user-approved-seven-hex-romania-mask-v575",
+  "romania": [
+    "0709",
+    "0809",
+    "0910",
+    "1010",
+    "1012",
+    "1014",
+    "1016"
+  ],
+  "bessarabia": [
+    "1111",
+    "1112",
+    "1113",
+    "1114",
+    "1115",
+    "1116",
+    "1211",
+    "1212",
+    "1213",
+    "1214",
+    "1215",
+    "1312",
+    "1313",
+    "1314",
+    "1315",
+    "1316",
+    "1413",
+    "1414",
+    "1514"
+  ],
+  "coverage": {
+    "romania": 7,
+    "bessarabia": 19,
+    "outside": 204,
+    "sea": 31
+  },
+  "scope": "User-approved game-material adjudication; no external geography. Standalone Kiev retains its four-hex first-turn rule; the Odessa-only territorial policy uses all seven Romanian hexes.",
+  "kievRomanianIntersection": [
+    "0709",
+    "0809",
+    "0910",
+    "1010"
+  ]
+}

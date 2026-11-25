@@ -1,0 +1,13 @@
+{
+  "checkpoint": 216,
+  "version": "v450",
+  "rulePdfSha256": "1ac46f3e958cf1d08768f6b56964100ab0951ece7e310ac3a30e8c479a8b986c",
+  "ruleSource": "references/rules/arduous-rules.pdf §12.0, printed p.6: Soviet 6th Mechanized Corps (red symbol box) cannot return after destruction; assets/official-counters/source-sheets/counters-arduous-back.jpg row 4 column 8",
+  "prohibitedFace": "arduous-front-r04c01",
+  "pairedRevealedFace": "arduous-back-r04c08",
+  "revealedFormation": "6",
+  "allowedCounter": "arduous-front-r04c02",
+  "unitLevelAssertions": 23,
+  "phase": 3,
+  "limitation": "Unit-level synthetic removal proves shared rules; browser acceptance uses actual combat."
+}

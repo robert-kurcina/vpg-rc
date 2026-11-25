@@ -1,0 +1,40 @@
+{
+  "checkpoint": 263,
+  "version": "v497",
+  "status": "diagnostic-not-gameplay-authorized",
+  "correctedCity": {
+    "hex": "1016",
+    "name": "Brăila",
+    "oldName": "Balti"
+  },
+  "cityCount": 20,
+  "initialAxisCities": [
+    "Lublin",
+    "Iasi",
+    "Brăila"
+  ],
+  "additionalCities": [
+    "Brăila",
+    "Chisinau",
+    "Odessa",
+    "Nikolaev"
+  ],
+  "ports": [
+    "Odessa",
+    "Nikolaev"
+  ],
+  "majorCities": [
+    "Kiev",
+    "Odessa"
+  ],
+  "victoryConditionCases": {
+    "axis20": "german-victory",
+    "axis19Isolated": "german-victory",
+    "axis19Connected": "draw",
+    "axis18BothConnected": "soviet-victory",
+    "axis18AnyIsolated": "draw",
+    "axis17OrBelow": "soviet-victory",
+    "missingIsolation": "undetermined"
+  },
+  "checks": 135
+}

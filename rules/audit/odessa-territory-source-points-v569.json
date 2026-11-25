@@ -1,0 +1,29 @@
+{
+  "version": "v569",
+  "evidence": {
+    "outside": {
+      "0105": "Kiev §6 setup step 8",
+      "0203": "Kiev §6 setup step 8",
+      "0204": "Kiev §6 setup step 8",
+      "0301": "Kiev §6 setup step 8",
+      "0302": "Kiev §6 setup step 8",
+      "0303": "Kiev §6 setup step 8",
+      "0402": "Kiev §6 setup step 8",
+      "0201": "Kiev §5 Lublin; Odessa §5"
+    },
+    "romania": {
+      "1010": "Kiev §6 setup step 7 and §5 Iasi",
+      "1016": "Odessa §5 Braila",
+      "0709": "Kiev §6 setup step 7",
+      "0809": "Kiev §6 setup step 7",
+      "0910": "Kiev §6 setup step 7"
+    }
+  },
+  "coverage": {
+    "outside": 8,
+    "romania": 5,
+    "bessarabia": 19,
+    "unclassified": 229
+  },
+  "scope": "Only printed setup and named cities; no interpolated boundaries."
+}

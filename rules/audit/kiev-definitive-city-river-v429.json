@@ -1,0 +1,604 @@
+{
+  "checkpoint": 195,
+  "version": "v429",
+  "sourceFile": "maps/source/user-svg/kiev-odessa-main.svg",
+  "sourceSvgSha256": "2b15c3a92a282a7efc27d54bcd8994470f0fce8ee5417d5d734969fcd2c4ab7e",
+  "playerAid": "references/rules/kiev-player-aid.webp",
+  "playerAidSha256": "a7d239a80745463fdd3d5effc8faf6a028ab4f048713a506cb75823c448c9751",
+  "scope": "Objective: Kiev 165-cell upper board only",
+  "method": "authored city terrain layer + exact finite renderer hexside centerline matching",
+  "cityGameplayTerrain": {
+    "0201": {
+      "svgId": "use1-43",
+      "type": "city",
+      "distancePx": 0.698
+    },
+    "0404": {
+      "svgId": "use450",
+      "type": "city",
+      "distancePx": 0.435
+    },
+    "0502": {
+      "svgId": "use451",
+      "type": "city",
+      "distancePx": 0.702
+    },
+    "0507": {
+      "svgId": "use456",
+      "type": "city",
+      "distancePx": 0.502
+    },
+    "0706": {
+      "svgId": "use448",
+      "type": "city",
+      "distancePx": 0.534
+    },
+    "0708": {
+      "svgId": "use455",
+      "type": "city",
+      "distancePx": 0.652
+    },
+    "0803": {
+      "svgId": "use447",
+      "type": "city",
+      "distancePx": 0.649
+    },
+    "0902": {
+      "svgId": "use446",
+      "type": "city",
+      "distancePx": 0.817
+    },
+    "0905": {
+      "svgId": "use449",
+      "type": "city",
+      "distancePx": 0.616
+    },
+    "1010": {
+      "svgId": "use458",
+      "type": "city",
+      "distancePx": 0.679
+    },
+    "1105": {
+      "svgId": "use463",
+      "type": "city",
+      "distancePx": 0.699
+    },
+    "1107": {
+      "svgId": "use457",
+      "type": "city",
+      "distancePx": 0.731
+    },
+    "1404": {
+      "svgId": "use2",
+      "type": "major-city",
+      "distancePx": 0.832
+    },
+    "1408": {
+      "svgId": "use454",
+      "type": "city",
+      "distancePx": 0.937
+    },
+    "1602": {
+      "svgId": "use452",
+      "type": "city",
+      "distancePx": 1.012
+    },
+    "1708": {
+      "svgId": "use453",
+      "type": "city",
+      "distancePx": 1.018
+    }
+  },
+  "baseTerrainUnderCity": "not specified by source; existing display-only Open fallback retained",
+  "cityCount": 16,
+  "cityTypes": {
+    "city": 15,
+    "major-city": 1
+  },
+  "riverHexsides": [
+    {
+      "hexPair": "0301:0401",
+      "kind": "river",
+      "sourceSvgId": "path609",
+      "coverageFraction": 0.9892
+    },
+    {
+      "hexPair": "0302:0401",
+      "kind": "river",
+      "sourceSvgId": "path609",
+      "coverageFraction": 1
+    },
+    {
+      "hexPair": "0401:0402",
+      "kind": "river",
+      "sourceSvgId": "path609",
+      "coverageFraction": 1
+    },
+    {
+      "hexPair": "0402:0502",
+      "kind": "river",
+      "sourceSvgId": "path609",
+      "coverageFraction": 1
+    },
+    {
+      "hexPair": "0402:0503",
+      "kind": "river",
+      "sourceSvgId": "path609",
+      "coverageFraction": 1
+    },
+    {
+      "hexPair": "0403:0503",
+      "kind": "river",
+      "sourceSvgId": "path609",
+      "coverageFraction": 1
+    },
+    {
+      "hexPair": "0403:0504",
+      "kind": "river",
+      "sourceSvgId": "path609",
+      "coverageFraction": 1
+    },
+    {
+      "hexPair": "0404:0504",
+      "kind": "river",
+      "sourceSvgId": "path609",
+      "coverageFraction": 1
+    },
+    {
+      "hexPair": "0504:0505",
+      "kind": "river",
+      "sourceSvgId": "path609",
+      "coverageFraction": 1
+    },
+    {
+      "hexPair": "0505:0604",
+      "kind": "river",
+      "sourceSvgId": "path609",
+      "coverageFraction": 1
+    },
+    {
+      "hexPair": "0507:0606",
+      "kind": "river",
+      "sourceSvgId": "path610",
+      "coverageFraction": 0.9975
+    },
+    {
+      "hexPair": "0604:0605",
+      "kind": "river",
+      "sourceSvgId": "path609",
+      "coverageFraction": 1
+    },
+    {
+      "hexPair": "0606:0607",
+      "kind": "river",
+      "sourceSvgId": "path610",
+      "coverageFraction": 1
+    },
+    {
+      "hexPair": "0607:0608",
+      "kind": "river",
+      "sourceSvgId": "path611",
+      "coverageFraction": 0.9874
+    },
+    {
+      "hexPair": "0607:0707",
+      "kind": "river",
+      "sourceSvgId": "path610",
+      "coverageFraction": 1
+    },
+    {
+      "hexPair": "0608:0708",
+      "kind": "river",
+      "sourceSvgId": "path611",
+      "coverageFraction": 1
+    },
+    {
+      "hexPair": "0707:0708",
+      "kind": "river",
+      "sourceSvgId": "path610",
+      "coverageFraction": 1
+    },
+    {
+      "hexPair": "0707:0807",
+      "kind": "river",
+      "sourceSvgId": "path610",
+      "coverageFraction": 1
+    },
+    {
+      "hexPair": "0708:0709",
+      "kind": "river",
+      "sourceSvgId": "path611",
+      "coverageFraction": 1
+    },
+    {
+      "hexPair": "0709:0808",
+      "kind": "river",
+      "sourceSvgId": "path611",
+      "coverageFraction": 1
+    },
+    {
+      "hexPair": "0806:0807",
+      "kind": "river",
+      "sourceSvgId": "path610",
+      "coverageFraction": 1
+    },
+    {
+      "hexPair": "0807:0907",
+      "kind": "river",
+      "sourceSvgId": "path610",
+      "coverageFraction": 1
+    },
+    {
+      "hexPair": "0808:0809",
+      "kind": "river",
+      "sourceSvgId": "path611",
+      "coverageFraction": 1
+    },
+    {
+      "hexPair": "0809:0909",
+      "kind": "river",
+      "sourceSvgId": "path611",
+      "coverageFraction": 1
+    },
+    {
+      "hexPair": "0907:0908",
+      "kind": "river",
+      "sourceSvgId": "path610",
+      "coverageFraction": 1
+    },
+    {
+      "hexPair": "0908:1007",
+      "kind": "river",
+      "sourceSvgId": "path610",
+      "coverageFraction": 1
+    },
+    {
+      "hexPair": "0909:0910",
+      "kind": "river",
+      "sourceSvgId": "path611",
+      "coverageFraction": 1
+    },
+    {
+      "hexPair": "0910:1009",
+      "kind": "river",
+      "sourceSvgId": "path611",
+      "coverageFraction": 1
+    },
+    {
+      "hexPair": "1007:1008",
+      "kind": "river",
+      "sourceSvgId": "path610",
+      "coverageFraction": 1
+    },
+    {
+      "hexPair": "1008:1108",
+      "kind": "river",
+      "sourceSvgId": "path610",
+      "coverageFraction": 1
+    },
+    {
+      "hexPair": "1009:1010",
+      "kind": "river",
+      "sourceSvgId": "path611",
+      "coverageFraction": 1
+    },
+    {
+      "hexPair": "1010:1110",
+      "kind": "river",
+      "sourceSvgId": "path611",
+      "coverageFraction": 1
+    },
+    {
+      "hexPair": "1010:1111",
+      "kind": "river",
+      "sourceSvgId": "path611",
+      "coverageFraction": 1
+    },
+    {
+      "hexPair": "1108:1109",
+      "kind": "river",
+      "sourceSvgId": "path610",
+      "coverageFraction": 1
+    },
+    {
+      "hexPair": "1109:1208",
+      "kind": "river",
+      "sourceSvgId": "path610",
+      "coverageFraction": 1
+    },
+    {
+      "hexPair": "1201:1301",
+      "kind": "river",
+      "sourceSvgId": "path615",
+      "coverageFraction": 0.9745
+    },
+    {
+      "hexPair": "1208:1209",
+      "kind": "river",
+      "sourceSvgId": "path610",
+      "coverageFraction": 1
+    },
+    {
+      "hexPair": "1208:1308",
+      "kind": "river",
+      "sourceSvgId": "path614",
+      "coverageFraction": 0.9845
+    },
+    {
+      "hexPair": "1209:1309",
+      "kind": "river",
+      "sourceSvgId": "path610",
+      "coverageFraction": 1
+    },
+    {
+      "hexPair": "1209:1310",
+      "kind": "river",
+      "sourceSvgId": "path610",
+      "coverageFraction": 1
+    },
+    {
+      "hexPair": "1210:1310",
+      "kind": "river",
+      "sourceSvgId": "path610",
+      "coverageFraction": 1
+    },
+    {
+      "hexPair": "1210:1311",
+      "kind": "river",
+      "sourceSvgId": "path610",
+      "coverageFraction": 1
+    },
+    {
+      "hexPair": "1301:1302",
+      "kind": "river",
+      "sourceSvgId": "path615",
+      "coverageFraction": 1
+    },
+    {
+      "hexPair": "1302:1401",
+      "kind": "river",
+      "sourceSvgId": "path615",
+      "coverageFraction": 1
+    },
+    {
+      "hexPair": "1308:1309",
+      "kind": "river",
+      "sourceSvgId": "path614",
+      "coverageFraction": 1
+    },
+    {
+      "hexPair": "1309:1408",
+      "kind": "river",
+      "sourceSvgId": "path614",
+      "coverageFraction": 1
+    },
+    {
+      "hexPair": "1401:1402",
+      "kind": "river",
+      "sourceSvgId": "path615",
+      "coverageFraction": 1
+    },
+    {
+      "hexPair": "1401:1501",
+      "kind": "river",
+      "sourceSvgId": "path616",
+      "coverageFraction": 0.9734
+    },
+    {
+      "hexPair": "1401:1502",
+      "kind": "river",
+      "sourceSvgId": "path616",
+      "coverageFraction": 1
+    },
+    {
+      "hexPair": "1402:1502",
+      "kind": "river",
+      "sourceSvgId": "path615",
+      "coverageFraction": 1
+    },
+    {
+      "hexPair": "1402:1503",
+      "kind": "river",
+      "sourceSvgId": "path615",
+      "coverageFraction": 1
+    },
+    {
+      "hexPair": "1403:1503",
+      "kind": "river",
+      "sourceSvgId": "path615",
+      "coverageFraction": 1
+    },
+    {
+      "hexPair": "1403:1504",
+      "kind": "river",
+      "sourceSvgId": "path615",
+      "coverageFraction": 0.9946
+    },
+    {
+      "hexPair": "1404:1504",
+      "kind": "majorRiver",
+      "sourceSvgId": "path619",
+      "coverageFraction": 0.984
+    },
+    {
+      "hexPair": "1404:1505",
+      "kind": "majorRiver",
+      "sourceSvgId": "path619",
+      "coverageFraction": 1
+    },
+    {
+      "hexPair": "1405:1505",
+      "kind": "majorRiver",
+      "sourceSvgId": "path619",
+      "coverageFraction": 1
+    },
+    {
+      "hexPair": "1408:1409",
+      "kind": "river",
+      "sourceSvgId": "path614",
+      "coverageFraction": 1
+    },
+    {
+      "hexPair": "1409:1509",
+      "kind": "river",
+      "sourceSvgId": "path614",
+      "coverageFraction": 1
+    },
+    {
+      "hexPair": "1501:1502",
+      "kind": "river",
+      "sourceSvgId": "path617",
+      "coverageFraction": 0.9775
+    },
+    {
+      "hexPair": "1501:1601",
+      "kind": "river",
+      "sourceSvgId": "path617",
+      "coverageFraction": 0.9955
+    },
+    {
+      "hexPair": "1503:1504",
+      "kind": "river",
+      "sourceSvgId": "path618",
+      "coverageFraction": 0.9775
+    },
+    {
+      "hexPair": "1503:1603",
+      "kind": "river",
+      "sourceSvgId": "path618",
+      "coverageFraction": 1
+    },
+    {
+      "hexPair": "1505:1506",
+      "kind": "majorRiver",
+      "sourceSvgId": "path619",
+      "coverageFraction": 1
+    },
+    {
+      "hexPair": "1506:1605",
+      "kind": "majorRiver",
+      "sourceSvgId": "path619",
+      "coverageFraction": 1
+    },
+    {
+      "hexPair": "1509:1510",
+      "kind": "river",
+      "sourceSvgId": "path614",
+      "coverageFraction": 1
+    },
+    {
+      "hexPair": "1510:1609",
+      "kind": "river",
+      "sourceSvgId": "path614",
+      "coverageFraction": 1
+    },
+    {
+      "hexPair": "1602:1603",
+      "kind": "river",
+      "sourceSvgId": "path618",
+      "coverageFraction": 1
+    },
+    {
+      "hexPair": "1602:1703",
+      "kind": "river",
+      "sourceSvgId": "path618",
+      "coverageFraction": 1
+    },
+    {
+      "hexPair": "1605:1606",
+      "kind": "majorRiver",
+      "sourceSvgId": "path619",
+      "coverageFraction": 1
+    },
+    {
+      "hexPair": "1606:1706",
+      "kind": "majorRiver",
+      "sourceSvgId": "path619",
+      "coverageFraction": 1
+    },
+    {
+      "hexPair": "1609:1610",
+      "kind": "river",
+      "sourceSvgId": "path614",
+      "coverageFraction": 1
+    },
+    {
+      "hexPair": "1610:1710",
+      "kind": "river",
+      "sourceSvgId": "path614",
+      "coverageFraction": 1
+    },
+    {
+      "hexPair": "1702:1703",
+      "kind": "river",
+      "sourceSvgId": "path618",
+      "coverageFraction": 1
+    },
+    {
+      "hexPair": "1702:1802",
+      "kind": "river",
+      "sourceSvgId": "path618",
+      "coverageFraction": 1
+    },
+    {
+      "hexPair": "1706:1707",
+      "kind": "majorRiver",
+      "sourceSvgId": "path619",
+      "coverageFraction": 1
+    },
+    {
+      "hexPair": "1707:1806",
+      "kind": "majorRiver",
+      "sourceSvgId": "path619",
+      "coverageFraction": 1
+    },
+    {
+      "hexPair": "1710:1711",
+      "kind": "river",
+      "sourceSvgId": "path614",
+      "coverageFraction": 0.9958
+    },
+    {
+      "hexPair": "1710:1809",
+      "kind": "river",
+      "sourceSvgId": "path613",
+      "coverageFraction": 0.9871
+    },
+    {
+      "hexPair": "1710:1810",
+      "kind": "river",
+      "sourceSvgId": "path613",
+      "coverageFraction": 1
+    },
+    {
+      "hexPair": "1711:1810",
+      "kind": "river",
+      "sourceSvgId": "path613",
+      "coverageFraction": 1
+    },
+    {
+      "hexPair": "1801:1802",
+      "kind": "river",
+      "sourceSvgId": "path618",
+      "coverageFraction": 1
+    },
+    {
+      "hexPair": "1806:1807",
+      "kind": "majorRiver",
+      "sourceSvgId": "path619",
+      "coverageFraction": 1
+    }
+  ],
+  "riverCount": 72,
+  "majorRiverCount": 10,
+  "riverGeometryVerified": true,
+  "movementAuthorized": false,
+  "combatAuthorized": false,
+  "limitations": [
+    "Only side-following lines with >=90% finite-side overlap within 1.5px are included.",
+    "Incidental point contacts do not enter the river list.",
+    "Major River changes movement and halves each crossing attacker strength; the current shared engine does not implement that mechanic.",
+    "Source-derived edge geometry is not an authorization to activate the Kiev campaign.",
+    "This does not certify the Kiev\u2013Odessa extension seam."
+  ]
+}

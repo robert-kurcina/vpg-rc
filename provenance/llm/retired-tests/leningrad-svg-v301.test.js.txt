@@ -1,0 +1,37 @@
+'use strict';
+const assert=require('node:assert/strict'),fs=require('node:fs'),crypto=require('node:crypto');
+const T=require('../core/terrain_tiles');
+const b=require('../maps/leningrad.json'),a=b.v301ImportAudit;
+assert.equal(b.cells.length,199);
+assert.equal(new Set(b.cells.map(c=>c.id)).size,199);
+assert.deepEqual(Object.fromEntries(Object.entries(a.totalTerrain).sort()),{forest:44,open:89,sea:46,swamp:20});
+assert.equal(a.terrain.sea.uniqueCells,47); // Source overlap at Liepaja overridden by existing city=open rule
+assert.equal(a.citySeaConflicts.length,1);
+assert.equal(a.citySeaConflicts[0].cellId,'0208');
+assert.equal(b.authoritativeSeaHexes.length,46);
+assert.equal(b.sourceRailRoutes.length,14);
+assert.equal(b.hexCenterRailConnections.length,80);
+assert.equal(b.railwayBoundaryExits.length,10);
+assert.equal(b.railwayGeometryMode,'hex-face-midpoint');
+assert.equal(b.authoredShoreHexsides.filter(e=>e.kind==='coast').length,12);
+assert.equal(b.authoredShoreHexsides.filter(e=>e.kind==='lake').length,10);
+assert.equal(b.sourceWaterRoutes.filter(e=>e.kind==='river').length,10);
+assert.equal(b.sourceWaterRoutes.filter(e=>e.kind==='lake').length,4);
+assert.equal(a.reinforcements.german,9);
+assert.equal(a.reinforcements.soviet,14);
+assert.equal(b.cells.filter(c=>c.city).length,14);
+assert.equal(b.cells.find(c=>c.id==='1701').city.name,'Leningrad');
+assert.equal(b.cells.flatMap(c=>c.tileMarkers||[]).filter(m=>['star','cross','fixedInfantry','fixedMechanized','fixedCavalry'].includes(m.kind)).length,15);
+assert.equal(a.cities.major[1][0],'UNMAPPED:use462');
+assert.deepEqual(T.validate(b,{requireReciprocal:true}).errors,[]);
+for(const edge of b.hexCenterRailConnections){
+ const from=b.cells.find(c=>c.id===edge.from);
+ assert(T.DIRS.some(d=>T.neighbor(from,d,b.geometry)===edge.to));
+}
+const svg=fs.readFileSync('exports-v301/leningrad.svg','utf8');
+assert(svg.includes('data-rail-geometry="hex-face-midpoint"'));
+assert.equal((svg.match(/class="grid-face-rail"/g)||[]).length,90);
+assert(!svg.includes('class="water-region-cell"'),'Sea has extraneous water polygon renderer');
+assert.equal((svg.match(/class="hex-tile"/g)||[]).length,199);
+assert.equal(crypto.createHash('sha256').update(fs.readFileSync('maps/source/user-svg/leningrad-main.svg')).digest('hex'),a.sha256);
+console.log('PASS v301: SVG terrain, 199 cells, city/sea conflict, rail midpoints, cities, deployments, river/lake/coast registration and source hash');

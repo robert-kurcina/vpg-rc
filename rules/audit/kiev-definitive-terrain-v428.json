@@ -1,0 +1,1100 @@
+{
+  "checkpoint": 194,
+  "version": "v428",
+  "map": "kiev",
+  "sourceSvgSha256": "2b15c3a92a282a7efc27d54bcd8994470f0fce8ee5417d5d734969fcd2c4ab7e",
+  "source": "maps/source/user-svg/kiev-odessa-main.svg",
+  "method": "Inkscape --query-all explicit use/path terrain markers registered to calibrated engine hex centers",
+  "counts": {
+    "forest": 41,
+    "open": 97,
+    "swamp": 11
+  },
+  "sourceCertifiedHexes": 149,
+  "cityOverlayWithoutBaseSymbol": [
+    "0201",
+    "0404",
+    "0502",
+    "0507",
+    "0706",
+    "0708",
+    "0803",
+    "0902",
+    "0905",
+    "1010",
+    "1105",
+    "1107",
+    "1404",
+    "1408",
+    "1602",
+    "1708"
+  ],
+  "correctedTerrainHexes": [
+    "0403",
+    "0608",
+    "1009"
+  ],
+  "unresolvedRiverHexsides": "not addressed by this audit",
+  "sourceDuplicates": {
+    "1704": [
+      "use595",
+      "use603"
+    ],
+    "1705": [
+      "use598",
+      "use604"
+    ]
+  },
+  "certifiedRecords": [
+    {
+      "id": "0101",
+      "terrain": "open",
+      "sourceSvgIds": [
+        "use1-53"
+      ]
+    },
+    {
+      "id": "0102",
+      "terrain": "forest",
+      "sourceSvgIds": [
+        "use919"
+      ]
+    },
+    {
+      "id": "0103",
+      "terrain": "forest",
+      "sourceSvgIds": [
+        "use920"
+      ]
+    },
+    {
+      "id": "0104",
+      "terrain": "open",
+      "sourceSvgIds": [
+        "use470"
+      ]
+    },
+    {
+      "id": "0105",
+      "terrain": "open",
+      "sourceSvgIds": [
+        "use471"
+      ]
+    },
+    {
+      "id": "0202",
+      "terrain": "forest",
+      "sourceSvgIds": [
+        "use921"
+      ]
+    },
+    {
+      "id": "0203",
+      "terrain": "open",
+      "sourceSvgIds": [
+        "use472"
+      ]
+    },
+    {
+      "id": "0204",
+      "terrain": "open",
+      "sourceSvgIds": [
+        "use473"
+      ]
+    },
+    {
+      "id": "0205",
+      "terrain": "forest",
+      "sourceSvgIds": [
+        "use934"
+      ]
+    },
+    {
+      "id": "0301",
+      "terrain": "forest",
+      "sourceSvgIds": [
+        "use918"
+      ]
+    },
+    {
+      "id": "0302",
+      "terrain": "open",
+      "sourceSvgIds": [
+        "use568"
+      ]
+    },
+    {
+      "id": "0303",
+      "terrain": "open",
+      "sourceSvgIds": [
+        "use474"
+      ]
+    },
+    {
+      "id": "0304",
+      "terrain": "open",
+      "sourceSvgIds": [
+        "use475"
+      ]
+    },
+    {
+      "id": "0305",
+      "terrain": "forest",
+      "sourceSvgIds": [
+        "use933"
+      ]
+    },
+    {
+      "id": "0306",
+      "terrain": "forest",
+      "sourceSvgIds": [
+        "use935"
+      ]
+    },
+    {
+      "id": "0401",
+      "terrain": "forest",
+      "sourceSvgIds": [
+        "use917"
+      ]
+    },
+    {
+      "id": "0402",
+      "terrain": "open",
+      "sourceSvgIds": [
+        "use476"
+      ]
+    },
+    {
+      "id": "0403",
+      "terrain": "open",
+      "sourceSvgIds": [
+        "use477"
+      ]
+    },
+    {
+      "id": "0405",
+      "terrain": "open",
+      "sourceSvgIds": [
+        "use565"
+      ]
+    },
+    {
+      "id": "0406",
+      "terrain": "forest",
+      "sourceSvgIds": [
+        "use936"
+      ]
+    },
+    {
+      "id": "0407",
+      "terrain": "forest",
+      "sourceSvgIds": [
+        "use937"
+      ]
+    },
+    {
+      "id": "0501",
+      "terrain": "swamp",
+      "sourceSvgIds": [
+        "use412"
+      ]
+    },
+    {
+      "id": "0503",
+      "terrain": "open",
+      "sourceSvgIds": [
+        "use478"
+      ]
+    },
+    {
+      "id": "0504",
+      "terrain": "open",
+      "sourceSvgIds": [
+        "use479"
+      ]
+    },
+    {
+      "id": "0505",
+      "terrain": "open",
+      "sourceSvgIds": [
+        "use564"
+      ]
+    },
+    {
+      "id": "0506",
+      "terrain": "forest",
+      "sourceSvgIds": [
+        "use938"
+      ]
+    },
+    {
+      "id": "0508",
+      "terrain": "forest",
+      "sourceSvgIds": [
+        "use940"
+      ]
+    },
+    {
+      "id": "0601",
+      "terrain": "swamp",
+      "sourceSvgIds": [
+        "use413"
+      ]
+    },
+    {
+      "id": "0602",
+      "terrain": "forest",
+      "sourceSvgIds": [
+        "use922"
+      ]
+    },
+    {
+      "id": "0603",
+      "terrain": "open",
+      "sourceSvgIds": [
+        "use567"
+      ]
+    },
+    {
+      "id": "0604",
+      "terrain": "forest",
+      "sourceSvgIds": [
+        "use932"
+      ]
+    },
+    {
+      "id": "0605",
+      "terrain": "open",
+      "sourceSvgIds": [
+        "use563"
+      ]
+    },
+    {
+      "id": "0606",
+      "terrain": "forest",
+      "sourceSvgIds": [
+        "use939"
+      ]
+    },
+    {
+      "id": "0607",
+      "terrain": "open",
+      "sourceSvgIds": [
+        "use560"
+      ]
+    },
+    {
+      "id": "0608",
+      "terrain": "open",
+      "sourceSvgIds": [
+        "use559"
+      ]
+    },
+    {
+      "id": "0701",
+      "terrain": "swamp",
+      "sourceSvgIds": [
+        "use414"
+      ]
+    },
+    {
+      "id": "0702",
+      "terrain": "swamp",
+      "sourceSvgIds": [
+        "use415"
+      ]
+    },
+    {
+      "id": "0703",
+      "terrain": "open",
+      "sourceSvgIds": [
+        "use566"
+      ]
+    },
+    {
+      "id": "0704",
+      "terrain": "forest",
+      "sourceSvgIds": [
+        "use931"
+      ]
+    },
+    {
+      "id": "0705",
+      "terrain": "open",
+      "sourceSvgIds": [
+        "use562"
+      ]
+    },
+    {
+      "id": "0707",
+      "terrain": "open",
+      "sourceSvgIds": [
+        "use561"
+      ]
+    },
+    {
+      "id": "0709",
+      "terrain": "open",
+      "sourceSvgIds": [
+        "use558"
+      ]
+    },
+    {
+      "id": "0710",
+      "terrain": "forest",
+      "sourceSvgIds": [
+        "use948"
+      ]
+    },
+    {
+      "id": "0711",
+      "terrain": "forest",
+      "sourceSvgIds": [
+        "use960"
+      ]
+    },
+    {
+      "id": "0801",
+      "terrain": "forest",
+      "sourceSvgIds": [
+        "use915"
+      ]
+    },
+    {
+      "id": "0802",
+      "terrain": "forest",
+      "sourceSvgIds": [
+        "use916"
+      ]
+    },
+    {
+      "id": "0804",
+      "terrain": "open",
+      "sourceSvgIds": [
+        "use480"
+      ]
+    },
+    {
+      "id": "0805",
+      "terrain": "open",
+      "sourceSvgIds": [
+        "use481"
+      ]
+    },
+    {
+      "id": "0806",
+      "terrain": "open",
+      "sourceSvgIds": [
+        "use520"
+      ]
+    },
+    {
+      "id": "0807",
+      "terrain": "open",
+      "sourceSvgIds": [
+        "use521"
+      ]
+    },
+    {
+      "id": "0808",
+      "terrain": "forest",
+      "sourceSvgIds": [
+        "use947"
+      ]
+    },
+    {
+      "id": "0809",
+      "terrain": "forest",
+      "sourceSvgIds": [
+        "use949"
+      ]
+    },
+    {
+      "id": "0810",
+      "terrain": "forest",
+      "sourceSvgIds": [
+        "use961"
+      ]
+    },
+    {
+      "id": "0901",
+      "terrain": "forest",
+      "sourceSvgIds": [
+        "use1-8"
+      ]
+    },
+    {
+      "id": "0903",
+      "terrain": "open",
+      "sourceSvgIds": [
+        "use569"
+      ]
+    },
+    {
+      "id": "0904",
+      "terrain": "forest",
+      "sourceSvgIds": [
+        "use930"
+      ]
+    },
+    {
+      "id": "0906",
+      "terrain": "open",
+      "sourceSvgIds": [
+        "use498"
+      ]
+    },
+    {
+      "id": "0907",
+      "terrain": "open",
+      "sourceSvgIds": [
+        "use499"
+      ]
+    },
+    {
+      "id": "0908",
+      "terrain": "forest",
+      "sourceSvgIds": [
+        "use946"
+      ]
+    },
+    {
+      "id": "0909",
+      "terrain": "open",
+      "sourceSvgIds": [
+        "use557"
+      ]
+    },
+    {
+      "id": "0910",
+      "terrain": "forest",
+      "sourceSvgIds": [
+        "use959"
+      ]
+    },
+    {
+      "id": "0911",
+      "terrain": "forest",
+      "sourceSvgIds": [
+        "use958"
+      ]
+    },
+    {
+      "id": "1001",
+      "terrain": "swamp",
+      "sourceSvgIds": [
+        "use416"
+      ]
+    },
+    {
+      "id": "1002",
+      "terrain": "swamp",
+      "sourceSvgIds": [
+        "use417"
+      ]
+    },
+    {
+      "id": "1003",
+      "terrain": "open",
+      "sourceSvgIds": [
+        "use484"
+      ]
+    },
+    {
+      "id": "1004",
+      "terrain": "open",
+      "sourceSvgIds": [
+        "use485"
+      ]
+    },
+    {
+      "id": "1005",
+      "terrain": "open",
+      "sourceSvgIds": [
+        "use571"
+      ]
+    },
+    {
+      "id": "1006",
+      "terrain": "forest",
+      "sourceSvgIds": [
+        "use941"
+      ]
+    },
+    {
+      "id": "1007",
+      "terrain": "open",
+      "sourceSvgIds": [
+        "use496"
+      ]
+    },
+    {
+      "id": "1008",
+      "terrain": "open",
+      "sourceSvgIds": [
+        "use497"
+      ]
+    },
+    {
+      "id": "1009",
+      "terrain": "open",
+      "sourceSvgIds": [
+        "use556"
+      ]
+    },
+    {
+      "id": "1101",
+      "terrain": "swamp",
+      "sourceSvgIds": [
+        "use419"
+      ]
+    },
+    {
+      "id": "1102",
+      "terrain": "forest",
+      "sourceSvgIds": [
+        "use926"
+      ]
+    },
+    {
+      "id": "1103",
+      "terrain": "open",
+      "sourceSvgIds": [
+        "use482"
+      ]
+    },
+    {
+      "id": "1104",
+      "terrain": "open",
+      "sourceSvgIds": [
+        "use483"
+      ]
+    },
+    {
+      "id": "1106",
+      "terrain": "open",
+      "sourceSvgIds": [
+        "use570"
+      ]
+    },
+    {
+      "id": "1108",
+      "terrain": "open",
+      "sourceSvgIds": [
+        "use494"
+      ]
+    },
+    {
+      "id": "1109",
+      "terrain": "open",
+      "sourceSvgIds": [
+        "use495"
+      ]
+    },
+    {
+      "id": "1110",
+      "terrain": "forest",
+      "sourceSvgIds": [
+        "use945"
+      ]
+    },
+    {
+      "id": "1111",
+      "terrain": "forest",
+      "sourceSvgIds": [
+        "use953"
+      ]
+    },
+    {
+      "id": "1201",
+      "terrain": "swamp",
+      "sourceSvgIds": [
+        "use418"
+      ]
+    },
+    {
+      "id": "1202",
+      "terrain": "forest",
+      "sourceSvgIds": [
+        "use927"
+      ]
+    },
+    {
+      "id": "1203",
+      "terrain": "forest",
+      "sourceSvgIds": [
+        "use928"
+      ]
+    },
+    {
+      "id": "1204",
+      "terrain": "forest",
+      "sourceSvgIds": [
+        "use929"
+      ]
+    },
+    {
+      "id": "1205",
+      "terrain": "open",
+      "sourceSvgIds": [
+        "use500"
+      ]
+    },
+    {
+      "id": "1206",
+      "terrain": "open",
+      "sourceSvgIds": [
+        "use501"
+      ]
+    },
+    {
+      "id": "1207",
+      "terrain": "forest",
+      "sourceSvgIds": [
+        "use942"
+      ]
+    },
+    {
+      "id": "1208",
+      "terrain": "open",
+      "sourceSvgIds": [
+        "use555"
+      ]
+    },
+    {
+      "id": "1209",
+      "terrain": "forest",
+      "sourceSvgIds": [
+        "use944"
+      ]
+    },
+    {
+      "id": "1210",
+      "terrain": "open",
+      "sourceSvgIds": [
+        "use554"
+      ]
+    },
+    {
+      "id": "1301",
+      "terrain": "swamp",
+      "sourceSvgIds": [
+        "use420"
+      ]
+    },
+    {
+      "id": "1302",
+      "terrain": "open",
+      "sourceSvgIds": [
+        "use486"
+      ]
+    },
+    {
+      "id": "1303",
+      "terrain": "open",
+      "sourceSvgIds": [
+        "use487"
+      ]
+    },
+    {
+      "id": "1304",
+      "terrain": "open",
+      "sourceSvgIds": [
+        "use488"
+      ]
+    },
+    {
+      "id": "1305",
+      "terrain": "open",
+      "sourceSvgIds": [
+        "use489"
+      ]
+    },
+    {
+      "id": "1306",
+      "terrain": "open",
+      "sourceSvgIds": [
+        "use490"
+      ]
+    },
+    {
+      "id": "1307",
+      "terrain": "open",
+      "sourceSvgIds": [
+        "use491"
+      ]
+    },
+    {
+      "id": "1308",
+      "terrain": "open",
+      "sourceSvgIds": [
+        "use492"
+      ]
+    },
+    {
+      "id": "1309",
+      "terrain": "open",
+      "sourceSvgIds": [
+        "use493"
+      ]
+    },
+    {
+      "id": "1310",
+      "terrain": "open",
+      "sourceSvgIds": [
+        "use518"
+      ]
+    },
+    {
+      "id": "1311",
+      "terrain": "open",
+      "sourceSvgIds": [
+        "use519"
+      ]
+    },
+    {
+      "id": "1401",
+      "terrain": "swamp",
+      "sourceSvgIds": [
+        "use421"
+      ]
+    },
+    {
+      "id": "1402",
+      "terrain": "forest",
+      "sourceSvgIds": [
+        "use925"
+      ]
+    },
+    {
+      "id": "1403",
+      "terrain": "open",
+      "sourceSvgIds": [
+        "use608"
+      ]
+    },
+    {
+      "id": "1405",
+      "terrain": "open",
+      "sourceSvgIds": [
+        "use502"
+      ]
+    },
+    {
+      "id": "1406",
+      "terrain": "open",
+      "sourceSvgIds": [
+        "use503"
+      ]
+    },
+    {
+      "id": "1407",
+      "terrain": "open",
+      "sourceSvgIds": [
+        "use572"
+      ]
+    },
+    {
+      "id": "1409",
+      "terrain": "open",
+      "sourceSvgIds": [
+        "use516"
+      ]
+    },
+    {
+      "id": "1410",
+      "terrain": "open",
+      "sourceSvgIds": [
+        "use517"
+      ]
+    },
+    {
+      "id": "1501",
+      "terrain": "forest",
+      "sourceSvgIds": [
+        "use923"
+      ]
+    },
+    {
+      "id": "1502",
+      "terrain": "swamp",
+      "sourceSvgIds": [
+        "use422"
+      ]
+    },
+    {
+      "id": "1503",
+      "terrain": "forest",
+      "sourceSvgIds": [
+        "use924"
+      ]
+    },
+    {
+      "id": "1504",
+      "terrain": "open",
+      "sourceSvgIds": [
+        "use506"
+      ]
+    },
+    {
+      "id": "1505",
+      "terrain": "open",
+      "sourceSvgIds": [
+        "use507"
+      ]
+    },
+    {
+      "id": "1506",
+      "terrain": "open",
+      "sourceSvgIds": [
+        "use504"
+      ]
+    },
+    {
+      "id": "1507",
+      "terrain": "open",
+      "sourceSvgIds": [
+        "use505"
+      ]
+    },
+    {
+      "id": "1508",
+      "terrain": "open",
+      "sourceSvgIds": [
+        "use512"
+      ]
+    },
+    {
+      "id": "1509",
+      "terrain": "open",
+      "sourceSvgIds": [
+        "use513"
+      ]
+    },
+    {
+      "id": "1510",
+      "terrain": "open",
+      "sourceSvgIds": [
+        "use514"
+      ]
+    },
+    {
+      "id": "1511",
+      "terrain": "open",
+      "sourceSvgIds": [
+        "use515"
+      ]
+    },
+    {
+      "id": "1601",
+      "terrain": "open",
+      "sourceSvgIds": [
+        "use609"
+      ]
+    },
+    {
+      "id": "1603",
+      "terrain": "open",
+      "sourceSvgIds": [
+        "use508"
+      ]
+    },
+    {
+      "id": "1604",
+      "terrain": "open",
+      "sourceSvgIds": [
+        "use509"
+      ]
+    },
+    {
+      "id": "1605",
+      "terrain": "open",
+      "sourceSvgIds": [
+        "use605"
+      ]
+    },
+    {
+      "id": "1606",
+      "terrain": "forest",
+      "sourceSvgIds": [
+        "use943"
+      ]
+    },
+    {
+      "id": "1607",
+      "terrain": "open",
+      "sourceSvgIds": [
+        "use510"
+      ]
+    },
+    {
+      "id": "1608",
+      "terrain": "open",
+      "sourceSvgIds": [
+        "use511"
+      ]
+    },
+    {
+      "id": "1609",
+      "terrain": "open",
+      "sourceSvgIds": [
+        "use522"
+      ]
+    },
+    {
+      "id": "1610",
+      "terrain": "open",
+      "sourceSvgIds": [
+        "use523"
+      ]
+    },
+    {
+      "id": "1701",
+      "terrain": "open",
+      "sourceSvgIds": [
+        "use596"
+      ]
+    },
+    {
+      "id": "1702",
+      "terrain": "open",
+      "sourceSvgIds": [
+        "use597"
+      ]
+    },
+    {
+      "id": "1703",
+      "terrain": "open",
+      "sourceSvgIds": [
+        "use594"
+      ]
+    },
+    {
+      "id": "1704",
+      "terrain": "open",
+      "sourceSvgIds": [
+        "use595",
+        "use603"
+      ]
+    },
+    {
+      "id": "1705",
+      "terrain": "open",
+      "sourceSvgIds": [
+        "use598",
+        "use604"
+      ]
+    },
+    {
+      "id": "1706",
+      "terrain": "open",
+      "sourceSvgIds": [
+        "use606"
+      ]
+    },
+    {
+      "id": "1707",
+      "terrain": "open",
+      "sourceSvgIds": [
+        "use607"
+      ]
+    },
+    {
+      "id": "1709",
+      "terrain": "open",
+      "sourceSvgIds": [
+        "use524"
+      ]
+    },
+    {
+      "id": "1710",
+      "terrain": "open",
+      "sourceSvgIds": [
+        "use525"
+      ]
+    },
+    {
+      "id": "1711",
+      "terrain": "open",
+      "sourceSvgIds": [
+        "use526"
+      ]
+    },
+    {
+      "id": "1801",
+      "terrain": "open",
+      "sourceSvgIds": [
+        "use591"
+      ]
+    },
+    {
+      "id": "1802",
+      "terrain": "open",
+      "sourceSvgIds": [
+        "use592"
+      ]
+    },
+    {
+      "id": "1803",
+      "terrain": "open",
+      "sourceSvgIds": [
+        "use589"
+      ]
+    },
+    {
+      "id": "1804",
+      "terrain": "open",
+      "sourceSvgIds": [
+        "use590"
+      ]
+    },
+    {
+      "id": "1805",
+      "terrain": "open",
+      "sourceSvgIds": [
+        "use593"
+      ]
+    },
+    {
+      "id": "1806",
+      "terrain": "open",
+      "sourceSvgIds": [
+        "use601"
+      ]
+    },
+    {
+      "id": "1807",
+      "terrain": "open",
+      "sourceSvgIds": [
+        "use602"
+      ]
+    },
+    {
+      "id": "1808",
+      "terrain": "open",
+      "sourceSvgIds": [
+        "use599"
+      ]
+    },
+    {
+      "id": "1809",
+      "terrain": "open",
+      "sourceSvgIds": [
+        "use600"
+      ]
+    },
+    {
+      "id": "1810",
+      "terrain": "open",
+      "sourceSvgIds": [
+        "use585"
+      ]
+    }
+  ],
+  "limitations": [
+    "Authoritative source has no explicit base terrain marks in 16 city hexes.",
+    "No source-authoritative river or Major River gameplay hexsides are certified here.",
+    "The shared movement graph remains blocked."
+  ]
+}

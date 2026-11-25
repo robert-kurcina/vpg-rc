@@ -1,0 +1,297 @@
+{
+  "victory": {
+    "mode": "priority-predicates",
+    "evaluation": "after-final-soviet-phase",
+    "decisions": [
+      {
+        "if": {
+          "type": "controls",
+          "faction": "german",
+          "cell": [
+            10,
+            2
+          ]
+        },
+        "winner": "german"
+      },
+      {
+        "if": {
+          "type": "all",
+          "children": [
+            {
+              "type": "controls",
+              "faction": "soviet",
+              "cell": [
+                10,
+                2
+              ]
+            },
+            {
+              "type": "some-other-controlled-city",
+              "faction": "soviet",
+              "exclude": [
+                10,
+                2
+              ]
+            }
+          ]
+        },
+        "winner": "soviet"
+      }
+    ],
+    "otherwise": "draw"
+  },
+  "scoringMode": "none",
+  "controlMode": "last-entrant",
+  "tournamentVariant": {
+    "status": "reference-scoring-only",
+    "enabled": false,
+    "setupStatus": "candidate-redeployment-unverified",
+    "source": "https://oberlabs.com/b4m/tournamentrules.html",
+    "communicationSource": "https://oberlabs.com/b4m/rules.html",
+    "profile": {
+      "format": "conditional-points-v1",
+      "decisions": [
+        {
+          "id": "german-decisive",
+          "winner": "german",
+          "points": 3,
+          "if": {
+            "type": "all",
+            "children": [
+              {
+                "type": "controls",
+                "faction": "german",
+                "cell": [
+                  10,
+                  2
+                ]
+              },
+              {
+                "type": "controls",
+                "faction": "german",
+                "cell": [
+                  10,
+                  6
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "german-major",
+          "winner": "german",
+          "points": 2,
+          "if": {
+            "type": "all",
+            "children": [
+              {
+                "type": "controls",
+                "faction": "german",
+                "cell": [
+                  10,
+                  2
+                ]
+              },
+              {
+                "type": "controls",
+                "faction": "soviet",
+                "cell": [
+                  10,
+                  6
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "german-minor",
+          "winner": "german",
+          "points": 1,
+          "if": {
+            "type": "all",
+            "children": [
+              {
+                "type": "controls",
+                "faction": "soviet",
+                "cell": [
+                  10,
+                  2
+                ]
+              },
+              {
+                "type": "controls",
+                "faction": "german",
+                "cell": [
+                  10,
+                  6
+                ]
+              },
+              {
+                "type": "not",
+                "child": {
+                  "type": "communicates",
+                  "faction": "soviet",
+                  "cell": [
+                    10,
+                    2
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "id": "soviet-minor",
+          "winner": "soviet",
+          "points": 1,
+          "if": {
+            "type": "all",
+            "children": [
+              {
+                "type": "controls",
+                "faction": "soviet",
+                "cell": [
+                  10,
+                  2
+                ]
+              },
+              {
+                "type": "controls",
+                "faction": "german",
+                "cell": [
+                  10,
+                  6
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "soviet-major",
+          "winner": "soviet",
+          "points": 2,
+          "if": {
+            "type": "all",
+            "children": [
+              {
+                "type": "controls",
+                "faction": "soviet",
+                "cell": [
+                  10,
+                  2
+                ]
+              },
+              {
+                "type": "controls",
+                "faction": "soviet",
+                "cell": [
+                  10,
+                  6
+                ]
+              },
+              {
+                "type": "any",
+                "children": [
+                  {
+                    "type": "not",
+                    "child": {
+                      "type": "communicates",
+                      "faction": "soviet",
+                      "cell": [
+                        10,
+                        2
+                      ]
+                    }
+                  },
+                  {
+                    "type": "not",
+                    "child": {
+                      "type": "communicates",
+                      "faction": "soviet",
+                      "cell": [
+                        10,
+                        6
+                      ]
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "soviet-decisive",
+          "winner": "soviet",
+          "points": 3,
+          "if": {
+            "type": "all",
+            "children": [
+              {
+                "type": "controls",
+                "faction": "soviet",
+                "cell": [
+                  10,
+                  2
+                ]
+              },
+              {
+                "type": "controls",
+                "faction": "soviet",
+                "cell": [
+                  10,
+                  6
+                ]
+              },
+              {
+                "type": "communicates",
+                "faction": "soviet",
+                "cell": [
+                  10,
+                  2
+                ]
+              },
+              {
+                "type": "communicates",
+                "faction": "soviet",
+                "cell": [
+                  10,
+                  6
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "bonuses": [
+        {
+          "id": "panzer-preservation",
+          "beneficiary": "german",
+          "points": 1,
+          "side": "german",
+          "unitType": "tank",
+          "minSteps": 12,
+          "fullSteps": 2,
+          "reducedSteps": 1
+        },
+        {
+          "id": "panzer-attrition",
+          "beneficiary": "soviet",
+          "points": 1,
+          "side": "german",
+          "unitType": "tank",
+          "maxSteps": 7,
+          "fullSteps": 2,
+          "reducedSteps": 1
+        }
+      ]
+    },
+    "ruleTextOverlap": "The published Soviet minor condition does not require Moscow communication; it overlaps German minor when Moscow is isolated. Without independently executable Oberlabs finalResults, the scorer must not pick a winning category in that case.",
+    "allowedOverlaps": [
+      [
+        "german-minor",
+        "soviet-minor"
+      ]
+    ]
+  }
+}

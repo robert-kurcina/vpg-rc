@@ -1,0 +1,17 @@
+const fs=require('fs'),assert=require('assert');
+const T=require('../core/terrain_tiles');
+const board=JSON.parse(fs.readFileSync('maps/leningrad.json','utf8'));
+const source=require('path').join('exports-v308','leningrad.svg');
+const svg=fs.readFileSync(source,'utf8');
+const lie=board.cells.find(c=>c.id==='0208');
+assert(lie && lie.tileMarkers.some(m=>m.label==='Liepaja'));
+const local=board.authoredShoreHexsides.filter(e=>e.cellId==='0208'&&e.kind==='coast').map(e=>e.dir).sort();
+assert.deepStrictEqual(local,['N','NW','SW'].sort(),'Liepāja Coast must use faces 1,5,6');
+assert(svg.includes('data-number-cell="0208" data-display-number="0107"'),'Liepāja printed number missing');
+assert(svg.includes('data-number-cell="0901" data-display-number="0801"'),'Tallinn number unexpectedly changed');
+const route=board.sourceWaterRoutes.find(r=>r.kind==='coast');
+const coords=lie.pixelCenter,radX=board.geometry.calibration.pitchX*2/3,radY=board.geometry.calibration.pitchY/Math.sqrt(3);
+const expected={6:[coords[0]-radX,coords[1]],7:[coords[0]-radX/2,coords[1]-radY*Math.sqrt(3)/2],8:[coords[0]+radX/2,coords[1]-radY*Math.sqrt(3)/2]};
+for(const [idx,point] of Object.entries(expected))assert(route.points[+idx].every((v,i)=>Math.abs(v-point[i])<.005),`Incorrect Coast vertex ${idx}`);
+assert.equal(T.validate(board,{requireReciprocal:false}).errors.length,0);
+console.log('PASS v308: Liepāja printed 0107, Coast faces 1/5/6; Tallinn 0801; map valid');

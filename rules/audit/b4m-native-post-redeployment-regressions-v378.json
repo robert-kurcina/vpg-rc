@@ -1,0 +1,107 @@
+{
+  "checkpoint": 144,
+  "version": "v378",
+  "scope": "bounded local regression, no original executable or hosted-browser parity",
+  "results": [
+    {
+      "command": "node scripts/verify-campaign-maps.js",
+      "status": "PASS",
+      "returnCode": 0,
+      "elapsedSeconds": 0.39,
+      "lastOutput": "beb8c34faf258e636dffbb42161ddb291524fc740292c0ddec5bc0108\",\n      \"warnings\": 0\n    },\n    {\n      \"id\": \"leningrad\",\n      \"hexes\": 197,\n      \"svgSHA256\": \"e45856f7d56b5acfecf7083b405b9465d1c21459d698ac65e9196f581f832925\",\n      \"pngSHA256\": \"a9f1886cd3c9d85bfe5238e82a79a613550b98170ff08967ff08f14e20690ed2\",\n      \"warnings\": 6\n    },\n    {\n      \"id\": \"kiev\",\n      \"hexes\": 165,\n      \"svgSHA256\": \"5f455d80d6d30eec822d898f41ec12c21fc03a7f4fd165ddd51fa2b7c28324a4\",\n      \"pngSHA256\": \"b355b35fc0cd620c55f8c63cc61e4a7a2e96e9044c972f9a4e65b7a239b3a9ff\",\n      \"warnings\": 0\n    },\n    {\n      \"id\": \"kiev-odessa\",\n      \"hexes\": 261,\n      \"svgSHA256\": \"7cb5fafbb18babd2b4b2a5129e6802607dd4b0df8b07e46491319c07ecb9c71c\",\n      \"pngSHA256\": \"f7a84021dda8a796b8b04cfe018d15b6ad043e8a39e08ff7f0d7eccab721f71a\",\n      \"warnings\": 3\n    }\n  ],\n  \"approvedLeningradHistorical\": \"v350\",\n  \"activeVisualBaseline\": \"v373-no-forest-shadow-user-accepted\"\n}"
+    },
+    {
+      "command": "node tests/b4m-native-ai-session-v368.test.js",
+      "status": "PASS",
+      "returnCode": 0,
+      "elapsedSeconds": 12.82,
+      "lastOutput": "ainst legacy rules engine; strategy parity NOT tested\",\"policy\":{\"schemaVersion\":1,\"mode\":\"deterministic-baseline\",\"maxPhases\":12,\"maxActions\":180,\"maxMovesPerPhase\":8,\"maxBattlesPerPhase\":2,\"maxReplacementsPerPhase\":8,\"minAttackOdds\":1},\"runs\":4,\"sideTurns\":56,\"actions\":1089,\"combatDeclarations\":105,\"resolvedBattles\":105,\"movements\":518,\"replacements\":137,\"shockPlacements\":4,\"savedSnapshots\":41,\"undoReplays\":56,\"fullStateMatches\":1089,\"matchedDice\":105,\"terminalMatches\":4,\"baselineDistinctFromLegacyPolicy\":true,\"campaigns\":[{\"seed\":1,\"turns\":14,\"winner\":\"soviet\",\"unitLocations\":37,\"stateHash\":\"8d341df105caf09c5e27680d7f07921dc152690ef0aa50b823fc3f5fc35dcdad\"},{\"seed\":17,\"turns\":14,\"winner\":\"soviet\",\"unitLocations\":34,\"stateHash\":\"5c96ab832e42dbbdc98301fce999cdaac3fbf53696b55f8f8a51818cd2be2350\"},{\"seed\":1941,\"turns\":14,\"winner\":\"soviet\",\"unitLocations\":37,\"stateHash\":\"126b1e2616fd4e4e3e534993d39973324a8d12c2526805428410643108f39a73\"}]}"
+    },
+    {
+      "command": "node tests/b4m-native-combat-v361.test.js",
+      "status": "PASS",
+      "returnCode": 0,
+      "elapsedSeconds": 0.58,
+      "lastOutput": "PASS v361 B4M native combat parity: 180 previews, 180 consequences, 57 explicit choices, 293 two-battle sequences, strict config gate"
+    },
+    {
+      "command": "node tests/b4m-native-continuous-campaign-v364.test.js",
+      "status": "PASS",
+      "returnCode": 0,
+      "elapsedSeconds": 2.79,
+      "lastOutput": "an\"],[6,\"german\",6,\"soviet\"],[6,\"soviet\",7,\"german\"],[7,\"german\",7,\"soviet\"],[7,\"soviet\",8,\"german\"]]},{\"seed\":509,\"moveChoice\":\"last\",\"setupMode\":\"manual\",\"turns\":7,\"manualPlacements\":22,\"phases\":55,\"realMoves\":27,\"realBattles\":10,\"realReplacements\":11,\"shockPlacements\":1,\"savedRestores\":3,\"stateChecks\":128,\"choiceChecks\":56,\"undoReplays\":38,\"phasesByTurn\":{\"1\":6,\"2\":8,\"3\":8,\"4\":9,\"5\":8,\"6\":8,\"7\":8},\"turnEnds\":[[1,\"german\",1,\"soviet\"],[1,\"soviet\",2,\"german\"],[2,\"german\",2,\"soviet\"],[2,\"soviet\",3,\"german\"],[3,\"german\",3,\"soviet\"],[3,\"soviet\",4,\"german\"],[4,\"german\",4,\"soviet\"],[4,\"soviet\",5,\"german\"],[5,\"german\",5,\"soviet\"],[5,\"soviet\",6,\"german\"],[6,\"german\",6,\"soviet\"],[6,\"soviet\",7,\"german\"],[7,\"german\",7,\"soviet\"],[7,\"soviet\",8,\"german\"]]}],\"totals\":{\"manualPlacements\":22,\"phases\":220,\"realMoves\":108,\"realBattles\":43,\"realReplacements\":39,\"shockPlacements\":4,\"savedRestores\":12,\"stateChecks\":441,\"choiceChecks\":218,\"undoReplays\":155}}"
+    },
+    {
+      "command": "node tests/b4m-native-expanded-turn-v366.test.js",
+      "status": "PASS",
+      "returnCode": 0,
+      "elapsedSeconds": 11.28,
+      "lastOutput": "n\"],[6,\"german\",6,\"soviet\"],[6,\"soviet\",7,\"german\"],[7,\"german\",7,\"soviet\"],[7,\"soviet\",8,\"german\"]],\"multiBattlePhases\":3,\"allCombatOutcomes\":{\"DR\":3,\"EX\":5,\"NE\":3,\"AL\":2},\"alternateChoices\":{\"AL\":0,\"EX\":3,\"retreat\":4,\"advance\":0},\"materialChoiceDifferences\":{\"AL\":0,\"EX\":1,\"retreat\":4,\"advance\":0},\"invalidRollChecks\":13,\"pendingSaveRestores\":6,\"combatPhaseDeclares\":13,\"combatPhaseMax\":2}],\"totals\":{\"multiMovePhases\":108,\"multiReplacementPhases\":23,\"communicationChecks\":952,\"communicationConnected\":931,\"communicationDisconnected\":21,\"manualPlacements\":22,\"phases\":220,\"realMoves\":432,\"realBattles\":68,\"realReplacements\":124,\"shockPlacements\":4,\"savedRestores\":12,\"stateChecks\":875,\"choiceChecks\":679,\"undoReplays\":504,\"multiBattlePhases\":25,\"invalidRollChecks\":68,\"pendingSaveRestores\":50,\"combatPhaseDeclares\":68},\"peakMovements\":4,\"peakReplacements\":5,\"terminalFixtures\":3,\"materialChoiceDifferences\":{\"AL\":2,\"EX\":3,\"retreat\":23,\"advance\":2}}"
+    },
+    {
+      "command": "node tests/b4m-native-redeployment-audit-v377.test.js",
+      "status": "PASS",
+      "returnCode": 0,
+      "elapsedSeconds": 0.48,
+      "lastOutput": "{\"status\":\"PASS\",\"version\":\"v377\",\"checkpoint\":143,\"checks\":557,\"sourceCoordinates\":[\"0503\",\"0608\",\"0803\"],\"registeredCoordinates\":[\"0503\",\"0609\",\"0804\"],\"classifiedCells\":441,\"manualGermanTranspositions\":22,\"knownReferenceLegality\":\"UNVERIFIED\",\"defaultProductionEngine\":\"legacy-b4m-v1\"}"
+    },
+    {
+      "command": "node tests/b4m-native-redeployment-campaign-v378.test.js",
+      "status": "PASS",
+      "returnCode": 0,
+      "elapsedSeconds": 17.6,
+      "lastOutput": ",\"moves\":477,\"replacements\":145,\"reinforcements\":4,\"saveRestores\":33,\"undoReplays\":65,\"parityChecks\":1056,\"scoreReads\":56,\"scoreAmbiguities\":0,\"scoreNeverEnabled\":56},\"campaigns\":[{\"name\":\"no-change\",\"seed\":17,\"openingMoves\":0,\"sideTurns\":14,\"battles\":25,\"realMoves\":113,\"result\":\"soviet\",\"stateHash\":\"3beeaee2338d2054bc64276f6c7c86f6c992dddb2e2062198fbb3bda1e4ed42a\"},{\"name\":\"one-northern\",\"seed\":1941,\"openingMoves\":1,\"sideTurns\":14,\"battles\":27,\"realMoves\":125,\"result\":\"soviet\",\"stateHash\":\"c54255aa808a785db819883b9bca004d6f714b449911883a96da173c5148ff05\"},{\"name\":\"one-southern\",\"seed\":17,\"openingMoves\":1,\"sideTurns\":14,\"battles\":25,\"realMoves\":112,\"result\":\"soviet\",\"stateHash\":\"5bd1593739b51b445928dbaefac302cac6b15aaaa236a8f856509733efe66f4d\"},{\"name\":\"three-separated\",\"seed\":1,\"openingMoves\":3,\"sideTurns\":14,\"battles\":26,\"realMoves\":127,\"result\":\"soviet\",\"stateHash\":\"9ec63252d765afb7cc29aabe3e7a328254dfd542d84d3f9f26c6d447a66ec493\"}]}"
+    },
+    {
+      "command": "node tests/b4m-native-reserve-redeployment-v376.test.js",
+      "status": "PASS",
+      "returnCode": 0,
+      "elapsedSeconds": 0.17,
+      "lastOutput": "{\"status\":\"PASS\",\"checkpoint\":142,\"version\":\"v376\",\"sourceMismatch\":\"0608/0803 vs 0609/0804\",\"legalDestinations\":93,\"strictEastOfFrontline\":true,\"allowedNoneSomeAll\":true,\"manualSetupPlacements\":22,\"saveUndo\":6,\"ordinaryOpeningUnchanged\":1,\"assertions\":1153,\"production\":\"legacy-b4m-v1\",\"mode\":\"candidate-only; tournament scoring disabled\"}"
+    },
+    {
+      "command": "node tests/b4m-native-tournament-reference-v375.test.js",
+      "status": "PASS",
+      "returnCode": 0,
+      "elapsedSeconds": 0.1,
+      "lastOutput": "{\"status\":\"PASS\",\"checkpoint\":141,\"version\":\"v375\",\"primaryCases\":[{\"id\":\"german-decisive\",\"points\":{\"german\":4,\"soviet\":0}},{\"id\":\"german-major\",\"points\":{\"german\":3,\"soviet\":0}},{\"id\":\"soviet-minor\",\"points\":{\"german\":1,\"soviet\":1}},{\"id\":\"soviet-decisive\",\"points\":{\"german\":1,\"soviet\":3}},{\"id\":\"overlapping-german-and-soviet-minor\",\"eligible\":[{\"id\":\"german-minor\",\"side\":\"german\",\"points\":1},{\"id\":\"soviet-minor\",\"side\":\"soviet\",\"points\":1}],\"bonusPoints\":{\"german\":1,\"soviet\":0}},{\"id\":\"soviet-major\",\"points\":{\"german\":1,\"soviet\":2}}],\"bonusThresholds\":[0,7,8,11,12,16],\"communication\":[\"Moscow isolated\",\"Tula isolated\",\"both isolated\"],\"mode\":\"disabled read-only reference\",\"production\":\"legacy-b4m-v1\"}"
+    },
+    {
+      "command": "node tests/forest-no-shadow-v373.test.js",
+      "status": "PASS",
+      "returnCode": 0,
+      "elapsedSeconds": 0.47,
+      "lastOutput": "PASS v373: 5 shared maps, 199 Forest/Woods cells, no shadow, bitmap texture and layer priority retained"
+    },
+    {
+      "command": "node tests/native-city-control-v374.test.js",
+      "status": "PASS",
+      "returnCode": 0,
+      "elapsedSeconds": 0.13,
+      "lastOutput": "{\"status\":\"PASS\",\"checkpoint\":140,\"version\":\"v374\",\"cities\":11,\"verification\":[\"registry-name mapping\",\"owner v occupancy\",\"legal native capture\",\"persistent last-entrant ownership\",\"Undo\",\"save/restore\",\"read-only seed/history\",\"invalid owner rejection\",\"active victory predicate\",\"tournament disabled\"],\"productionRoute\":\"legacy-b4m-v1\"}"
+    },
+    {
+      "command": "node tests/shared-render-profiles-v356.test.js",
+      "status": "PASS",
+      "returnCode": 0,
+      "elapsedSeconds": 0.23,
+      "lastOutput": "PASS v356: 5 registry profiles, same SVG engine, no per-game branches in rendering consumers, ID-independent output"
+    },
+    {
+      "command": "node tests/smoke-current.js",
+      "status": "PASS",
+      "returnCode": 0,
+      "elapsedSeconds": 0.03,
+      "lastOutput": "PASS current package smoke: five maps + shared CRT + sources"
+    },
+    {
+      "command": "python3 tests/leningrad-approved-visual-regression-v352.test.py",
+      "status": "PASS",
+      "returnCode": 0,
+      "elapsedSeconds": 19.64,
+      "lastOutput": ".\n----------------------------------------------------------------------\nRan 1 test in 18.896s\n\nOK"
+    }
+  ],
+  "passed": 14,
+  "total": 14
+}

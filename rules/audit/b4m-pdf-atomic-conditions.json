@@ -1,0 +1,1956 @@
+{
+  "schemaVersion": 1,
+  "scope": "First-pass manually decomposed conditions from printed B4M PDF \u00a7\u00a74\u201312. Not a proven exhaustive inventory, rule-count denominator, or executable compliance certificate.",
+  "sourceSha256": "ee148b48a0af52457afd380053397f02283128d808ad8697e8dd7d1114c3fc65",
+  "sourceIndex": "rules/audit/b4m-pdf-clause-index.json",
+  "count": 101,
+  "statusPolicy": "source-tested means a specifically identified source-informed executable assertion supports the bounded evidenceClaim, not full clause compliance or independent upstream Oberlabs parity",
+  "conditions": [
+    {
+      "id": "pdf.4.0.seven-turns",
+      "source": {
+        "document": "references/rules/b4m-rules.pdf",
+        "section": "4.0",
+        "pdfSheet": 2
+      },
+      "condition": "Campaign lasts seven game turns",
+      "auditStatus": "source-tested",
+      "authority": "printed-pdf; Oberlabs precedence applies to documented exceptions",
+      "linkedLegacyMappings": [
+        "b4m.4.turn-order"
+      ],
+      "targetedTests": [
+        "tests/b4m-source-phase-setup-v584.test.js"
+      ],
+      "evidenceClaim": "Seven turns terminate at the next turn cursor; terminal state tested separately",
+      "evidenceScope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.4.0.nine-phases",
+      "source": {
+        "document": "references/rules/b4m-rules.pdf",
+        "section": "4.0",
+        "pdfSheet": 2
+      },
+      "condition": "Each game turn has nine ordered phases",
+      "auditStatus": "source-tested",
+      "authority": "printed-pdf; Oberlabs precedence applies to documented exceptions",
+      "linkedLegacyMappings": [
+        "b4m.4.turn-order"
+      ],
+      "targetedTests": [
+        "tests/b4m-source-phase-setup-v584.test.js"
+      ],
+      "evidenceClaim": "Four phase entries per side plus automatic housekeeping; ordered seven-turn trace including exceptions",
+      "evidenceScope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.4.0.phase-commit",
+      "source": {
+        "document": "references/rules/b4m-rules.pdf",
+        "section": "4.0",
+        "pdfSheet": 2
+      },
+      "condition": "Complete one phase before moving to the next",
+      "auditStatus": "source-tested",
+      "authority": "printed-pdf; Oberlabs precedence applies to documented exceptions",
+      "linkedLegacyMappings": [
+        "b4m.4.turn-order"
+      ],
+      "targetedTests": [
+        "tests/b4m-source-combat-v586.test.js"
+      ],
+      "evidenceClaim": "Cannot end combat with pending declared battles",
+      "evidenceScope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.4.0.german-replace",
+      "source": {
+        "document": "references/rules/b4m-rules.pdf",
+        "section": "4.0",
+        "pdfSheet": 2
+      },
+      "condition": "Phase 1: German replacements",
+      "auditStatus": "source-tested",
+      "authority": "printed-pdf; Oberlabs precedence applies to documented exceptions",
+      "linkedLegacyMappings": [
+        "b4m.4.turn-order"
+      ],
+      "targetedTests": [
+        "tests/b4m-source-phase-setup-v584.test.js"
+      ],
+      "evidenceClaim": "German replacement phase occurs on turns 2\u20137",
+      "evidenceScope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.4.0.panzer-move",
+      "source": {
+        "document": "references/rules/b4m-rules.pdf",
+        "section": "4.0",
+        "pdfSheet": 2
+      },
+      "condition": "Phase 2: German panzer special movement",
+      "auditStatus": "source-tested",
+      "authority": "printed-pdf; Oberlabs precedence applies to documented exceptions",
+      "linkedLegacyMappings": [
+        "b4m.4.turn-order"
+      ],
+      "targetedTests": [
+        "tests/b4m-source-phase-setup-v584.test.js"
+      ],
+      "evidenceClaim": "German panzer phase occurs in sequence on turns 2\u20137",
+      "evidenceScope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.4.0.german-combat",
+      "source": {
+        "document": "references/rules/b4m-rules.pdf",
+        "section": "4.0",
+        "pdfSheet": 2
+      },
+      "condition": "Phase 3: German combat",
+      "auditStatus": "source-tested",
+      "authority": "printed-pdf; Oberlabs precedence applies to documented exceptions",
+      "linkedLegacyMappings": [
+        "b4m.4.turn-order"
+      ],
+      "targetedTests": [
+        "tests/b4m-source-phase-setup-v584.test.js"
+      ],
+      "evidenceClaim": "German combat phase occurs in sequence each turn",
+      "evidenceScope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.4.0.german-move",
+      "source": {
+        "document": "references/rules/b4m-rules.pdf",
+        "section": "4.0",
+        "pdfSheet": 2
+      },
+      "condition": "Phase 4: German ordinary movement",
+      "auditStatus": "source-tested",
+      "authority": "printed-pdf; Oberlabs precedence applies to documented exceptions",
+      "linkedLegacyMappings": [
+        "b4m.4.turn-order"
+      ],
+      "targetedTests": [
+        "tests/b4m-source-phase-setup-v584.test.js"
+      ],
+      "evidenceClaim": "German normal movement phase occurs in sequence each turn",
+      "evidenceScope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.4.0.soviet-replace",
+      "source": {
+        "document": "references/rules/b4m-rules.pdf",
+        "section": "4.0",
+        "pdfSheet": 2
+      },
+      "condition": "Phase 5: Soviet replacements",
+      "auditStatus": "source-tested",
+      "authority": "printed-pdf; Oberlabs precedence applies to documented exceptions",
+      "linkedLegacyMappings": [
+        "b4m.4.turn-order"
+      ],
+      "targetedTests": [
+        "tests/b4m-source-phase-setup-v584.test.js"
+      ],
+      "evidenceClaim": "Soviet replacement phase occurs in sequence each turn",
+      "evidenceScope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.4.0.rail-move",
+      "source": {
+        "document": "references/rules/b4m-rules.pdf",
+        "section": "4.0",
+        "pdfSheet": 2
+      },
+      "condition": "Phase 6: Soviet rail movement",
+      "auditStatus": "source-tested",
+      "authority": "printed-pdf; Oberlabs precedence applies to documented exceptions",
+      "linkedLegacyMappings": [
+        "b4m.4.turn-order"
+      ],
+      "targetedTests": [
+        "tests/b4m-source-phase-setup-v584.test.js"
+      ],
+      "evidenceClaim": "Soviet rail phase occurs in sequence each turn",
+      "evidenceScope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.4.0.soviet-combat",
+      "source": {
+        "document": "references/rules/b4m-rules.pdf",
+        "section": "4.0",
+        "pdfSheet": 2
+      },
+      "condition": "Phase 7: Soviet combat",
+      "auditStatus": "source-tested",
+      "authority": "printed-pdf; Oberlabs precedence applies to documented exceptions",
+      "linkedLegacyMappings": [
+        "b4m.4.turn-order"
+      ],
+      "targetedTests": [
+        "tests/b4m-source-phase-setup-v584.test.js"
+      ],
+      "evidenceClaim": "Soviet combat phase occurs in sequence each turn",
+      "evidenceScope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.4.0.soviet-move",
+      "source": {
+        "document": "references/rules/b4m-rules.pdf",
+        "section": "4.0",
+        "pdfSheet": 2
+      },
+      "condition": "Phase 8: Soviet ordinary movement",
+      "auditStatus": "source-tested",
+      "authority": "printed-pdf; Oberlabs precedence applies to documented exceptions",
+      "linkedLegacyMappings": [
+        "b4m.4.turn-order"
+      ],
+      "targetedTests": [
+        "tests/b4m-source-phase-setup-v584.test.js"
+      ],
+      "evidenceClaim": "Soviet normal movement phase occurs in sequence each turn",
+      "evidenceScope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.4.0.housekeeping",
+      "source": {
+        "document": "references/rules/b4m-rules.pdf",
+        "section": "4.0",
+        "pdfSheet": 2
+      },
+      "condition": "Phase 9: advance game turn or determine result",
+      "auditStatus": "source-tested",
+      "authority": "printed-pdf; Oberlabs precedence applies to documented exceptions",
+      "linkedLegacyMappings": [
+        "b4m.4.turn-order"
+      ],
+      "targetedTests": [
+        "tests/b4m-source-phase-setup-v584.test.js"
+      ],
+      "evidenceClaim": "Ordered phase trace includes automatic turn boundaries; housekeeping is not a separate interactive phase",
+      "evidenceScope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.5.0.german-win",
+      "source": {
+        "document": "references/rules/b4m-rules.pdf",
+        "section": "5.0",
+        "pdfSheet": 2
+      },
+      "condition": "German controls Moscow at end of turn 7",
+      "auditStatus": "source-tested",
+      "authority": "printed-pdf; Oberlabs precedence applies to documented exceptions",
+      "linkedLegacyMappings": [
+        "b4m.5.endgame"
+      ],
+      "targetedTests": [
+        "rules/tests/b4m-source-assertions.js"
+      ],
+      "evidenceScope": "bounded-fixture-not-exhaustive",
+      "evidenceClaim": "Moscow-controlled German victory at turn seven"
+    },
+    {
+      "id": "pdf.5.0.soviet-win",
+      "source": {
+        "document": "references/rules/b4m-rules.pdf",
+        "section": "5.0",
+        "pdfSheet": 2
+      },
+      "condition": "Soviet controls Moscow and at least one other city at end of turn 7",
+      "auditStatus": "source-tested",
+      "authority": "printed-pdf; Oberlabs precedence applies to documented exceptions",
+      "linkedLegacyMappings": [
+        "b4m.5.endgame"
+      ],
+      "targetedTests": [
+        "rules/tests/b4m-source-assertions.js"
+      ],
+      "evidenceScope": "bounded-fixture-not-exhaustive",
+      "evidenceClaim": "Soviet Moscow plus another city victory"
+    },
+    {
+      "id": "pdf.5.0.draw",
+      "source": {
+        "document": "references/rules/b4m-rules.pdf",
+        "section": "5.0",
+        "pdfSheet": 2
+      },
+      "condition": "Any other end-of-game control combination is a draw",
+      "auditStatus": "source-tested",
+      "authority": "printed-pdf; Oberlabs precedence applies to documented exceptions",
+      "linkedLegacyMappings": [
+        "b4m.5.endgame"
+      ],
+      "targetedTests": [
+        "rules/tests/b4m-source-assertions.js"
+      ],
+      "evidenceScope": "bounded-fixture-not-exhaustive",
+      "evidenceClaim": "Final draw under selected city-control configuration"
+    },
+    {
+      "id": "pdf.5.0.ownership",
+      "source": {
+        "document": "references/rules/b4m-rules.pdf",
+        "section": "5.0",
+        "pdfSheet": 2
+      },
+      "condition": "City control is based on last friendly unit entering",
+      "auditStatus": "source-indexed-unverified",
+      "authority": "printed-pdf; Oberlabs precedence applies to documented exceptions",
+      "linkedLegacyMappings": [
+        "b4m.5.endgame"
+      ],
+      "targetedTests": []
+    },
+    {
+      "id": "pdf.6.0.shock-track",
+      "source": {
+        "document": "references/rules/b4m-rules.pdf",
+        "section": "6.0",
+        "pdfSheet": 2
+      },
+      "condition": "1st Shock Army starts on turn-four track space",
+      "auditStatus": "source-tested",
+      "authority": "printed-pdf; Oberlabs precedence applies to documented exceptions",
+      "linkedLegacyMappings": [
+        "b4m.6.manual-setup",
+        "b4m.6.auto-setup"
+      ],
+      "targetedTests": [
+        "rules/tests/b4m-reinforcement-retreat.js"
+      ],
+      "evidenceScope": "bounded-fixture-not-exhaustive",
+      "evidenceClaim": "Shock initially off-map; track graphic position not tested"
+    },
+    {
+      "id": "pdf.6.0.soviet-start",
+      "source": {
+        "document": "references/rules/b4m-rules.pdf",
+        "section": "6.0",
+        "pdfSheet": 2
+      },
+      "condition": "Of sixteen ordinary Soviet armies, fourteen reduced armies occupy the red-star starting positions; two remain off-map",
+      "auditStatus": "source-tested",
+      "authority": "printed-pdf; Oberlabs precedence applies to documented exceptions",
+      "linkedLegacyMappings": [
+        "b4m.6.manual-setup",
+        "b4m.6.auto-setup"
+      ],
+      "targetedTests": [
+        "tests/b4m-source-phase-setup-v584.test.js"
+      ],
+      "evidenceClaim": "14 deployed of 16 ordinary Soviet armies; all reduced by separate assertion; exact red-star artwork not tested",
+      "evidenceScope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.6.0.soviet-reserve",
+      "source": {
+        "document": "references/rules/b4m-rules.pdf",
+        "section": "6.0",
+        "pdfSheet": 2
+      },
+      "condition": "Two Soviet armies remain off-map after setup",
+      "auditStatus": "source-tested",
+      "authority": "printed-pdf; Oberlabs precedence applies to documented exceptions",
+      "linkedLegacyMappings": [
+        "b4m.6.manual-setup",
+        "b4m.6.auto-setup"
+      ],
+      "targetedTests": [
+        "tests/b4m-source-phase-setup-v584.test.js"
+      ],
+      "evidenceClaim": "Two ordinary Soviet armies off-map initially",
+      "evidenceScope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.6.0.german-start",
+      "source": {
+        "document": "references/rules/b4m-rules.pdf",
+        "section": "6.0",
+        "pdfSheet": 2
+      },
+      "condition": "German full-strength units occupy black-cross starting hexes",
+      "auditStatus": "source-tested",
+      "authority": "printed-pdf; Oberlabs precedence applies to documented exceptions",
+      "linkedLegacyMappings": [
+        "b4m.6.manual-setup",
+        "b4m.6.auto-setup"
+      ],
+      "targetedTests": [
+        "tests/b4m-source-phase-setup-v584.test.js"
+      ],
+      "evidenceClaim": "German full-strength deployment uses registered starting hexes; 22 units checked separately",
+      "evidenceScope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.6.0.opening-exception",
+      "source": {
+        "document": "references/rules/b4m-rules.pdf",
+        "section": "6.0",
+        "pdfSheet": 2
+      },
+      "condition": "German turn 1 starts at combat, skipping replacements and special movement",
+      "auditStatus": "source-tested",
+      "authority": "printed-pdf; Oberlabs precedence applies to documented exceptions",
+      "linkedLegacyMappings": [
+        "b4m.6.manual-setup",
+        "b4m.6.auto-setup"
+      ],
+      "targetedTests": [
+        "tests/b4m-source-phase-setup-v584.test.js"
+      ],
+      "evidenceClaim": "Opening starts in German combat, no replacement or panzer phase in Turn 1 trace",
+      "evidenceScope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.7.0.zoc-six",
+      "source": {
+        "document": "references/rules/b4m-rules.pdf",
+        "section": "7.0",
+        "pdfSheet": 2
+      },
+      "condition": "Every unit projects ZOC into all six adjacent hexes, including enemy-occupied hexes",
+      "auditStatus": "source-tested",
+      "authority": "printed-pdf; Oberlabs precedence applies to documented exceptions",
+      "linkedLegacyMappings": [],
+      "targetedTests": [
+        "tests/b4m-source-movement-v585.test.js"
+      ],
+      "evidenceClaim": "Six adjacent hexes receive ZOC in interior fixture",
+      "evidenceScope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.7.1.entry-stop",
+      "source": {
+        "document": "references/rules/b4m-rules.pdf",
+        "section": "7.1",
+        "pdfSheet": 2
+      },
+      "condition": "Entering enemy ZOC ends movement immediately",
+      "auditStatus": "source-tested",
+      "authority": "printed-pdf; Oberlabs precedence applies to documented exceptions",
+      "linkedLegacyMappings": [
+        "b4m.7.1.zoc-stop"
+      ],
+      "targetedTests": [
+        "tests/b4m-source-movement-v585.test.js"
+      ],
+      "evidenceClaim": "No intermediate path hex in EZOC in fixture",
+      "evidenceScope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.7.1.leave-ezoc",
+      "source": {
+        "document": "references/rules/b4m-rules.pdf",
+        "section": "7.1",
+        "pdfSheet": 2
+      },
+      "condition": "Leaving enemy ZOC carries no special penalty",
+      "auditStatus": "source-tested",
+      "authority": "printed-pdf; Oberlabs precedence applies to documented exceptions",
+      "linkedLegacyMappings": [
+        "b4m.7.1.zoc-stop"
+      ],
+      "targetedTests": [
+        "tests/b4m-source-movement-v585.test.js"
+      ],
+      "evidenceClaim": "Departure from EZOC into non-EZOC costs normal open/fortification movement",
+      "evidenceScope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.7.1.ezoc-to-ezoc",
+      "source": {
+        "document": "references/rules/b4m-rules.pdf",
+        "section": "7.1",
+        "pdfSheet": 2
+      },
+      "condition": "Movement from one enemy ZOC directly to another is allowed but must stop",
+      "auditStatus": "source-tested",
+      "authority": "printed-pdf; Oberlabs precedence applies to documented exceptions",
+      "linkedLegacyMappings": [
+        "b4m.7.1.zoc-stop"
+      ],
+      "targetedTests": [
+        "tests/b4m-source-movement-v585.test.js"
+      ],
+      "evidenceClaim": "Direct EZOC to EZOC entry allowed",
+      "evidenceScope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.7.2.retreat-end",
+      "source": {
+        "document": "references/rules/b4m-rules.pdf",
+        "section": "7.2",
+        "pdfSheet": 2
+      },
+      "condition": "Defender ending a retreat in enemy ZOC is eliminated",
+      "auditStatus": "source-tested",
+      "authority": "printed-pdf; Oberlabs precedence applies to documented exceptions",
+      "linkedLegacyMappings": [
+        "b4m.7.2.retreat-zoc"
+      ],
+      "targetedTests": [
+        "tests/b4m-source-consequences-v587.test.js"
+      ],
+      "evidenceClaim": "Enemy ZOC excluded from retreat endpoints; blocked retreat elimination tested separately",
+      "evidenceScope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.7.3.communication",
+      "source": {
+        "document": "references/rules/b4m-rules.pdf",
+        "section": "7.3",
+        "pdfSheet": 2
+      },
+      "condition": "Enemy ZOCs obstruct replacement communication traces",
+      "auditStatus": "source-tested",
+      "authority": "printed-pdf; Oberlabs precedence applies to documented exceptions",
+      "linkedLegacyMappings": [
+        "b4m.7.3.communication-zoc"
+      ],
+      "targetedTests": [
+        "tests/b4m-source-communication-v588.test.js"
+      ],
+      "evidenceClaim": "Surrounded origin cannot trace through enemy occupation or ZOC",
+      "evidenceScope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.8.0.eligible-phase",
+      "source": {
+        "document": "references/rules/b4m-rules.pdf",
+        "section": "8.0",
+        "pdfSheet": 2
+      },
+      "condition": "Units move only in eligible movement phases",
+      "auditStatus": "source-tested",
+      "authority": "printed-pdf; Oberlabs precedence applies to documented exceptions",
+      "linkedLegacyMappings": [],
+      "targetedTests": [
+        "tests/b4m-source-movement-v585.test.js"
+      ],
+      "evidenceClaim": "Combat phase and infantry Panzer phase reject movement",
+      "evidenceScope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.8.0.unit-at-time",
+      "source": {
+        "document": "references/rules/b4m-rules.pdf",
+        "section": "8.0",
+        "pdfSheet": 2
+      },
+      "condition": "Move units individually between adjacent hexes",
+      "auditStatus": "source-tested",
+      "authority": "printed-pdf; Oberlabs precedence applies to documented exceptions",
+      "linkedLegacyMappings": [],
+      "targetedTests": [
+        "tests/b4m-source-movement-v585.test.js"
+      ],
+      "evidenceClaim": "Every returned route step adjacent in fixture",
+      "evidenceScope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.8.0.movement-allowance",
+      "source": {
+        "document": "references/rules/b4m-rules.pdf",
+        "section": "8.0",
+        "pdfSheet": 2
+      },
+      "condition": "Do not exceed movement allowance after terrain/weather costs",
+      "auditStatus": "source-tested",
+      "authority": "printed-pdf; Oberlabs precedence applies to documented exceptions",
+      "linkedLegacyMappings": [],
+      "targetedTests": [
+        "tests/b4m-source-movement-v585.test.js"
+      ],
+      "evidenceClaim": "Clear weather allowance respected; forest entry costs two",
+      "evidenceScope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.8.1.rail-start",
+      "source": {
+        "document": "references/rules/b4m-rules.pdf",
+        "section": "8.1",
+        "pdfSheet": 2
+      },
+      "condition": "Only Soviets starting rail phase on railroad qualify",
+      "auditStatus": "source-tested",
+      "authority": "printed-pdf; Oberlabs precedence applies to documented exceptions",
+      "linkedLegacyMappings": [
+        "b4m.8.1.soviet-rail"
+      ],
+      "targetedTests": [
+        "tests/b4m-source-movement-v585.test.js"
+      ],
+      "evidenceClaim": "Rail phase rejects off-rail origin and admits rail origin",
+      "evidenceScope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.8.1.rail-connected",
+      "source": {
+        "document": "references/rules/b4m-rules.pdf",
+        "section": "8.1",
+        "pdfSheet": 2
+      },
+      "condition": "Rail movement follows connected rail hexes only",
+      "auditStatus": "source-tested",
+      "authority": "printed-pdf; Oberlabs precedence applies to documented exceptions",
+      "linkedLegacyMappings": [
+        "b4m.8.1.soviet-rail"
+      ],
+      "targetedTests": [
+        "tests/b4m-source-movement-v585.test.js"
+      ],
+      "evidenceClaim": "Returned rail routes follow registered rail directions",
+      "evidenceScope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.8.1.rail-cost",
+      "source": {
+        "document": "references/rules/b4m-rules.pdf",
+        "section": "8.1",
+        "pdfSheet": 2
+      },
+      "condition": "Rail movement costs exactly one point per entered hex irrespective of terrain",
+      "auditStatus": "source-tested",
+      "authority": "printed-pdf; Oberlabs precedence applies to documented exceptions",
+      "linkedLegacyMappings": [
+        "b4m.8.1.soviet-rail"
+      ],
+      "targetedTests": [
+        "tests/b4m-source-movement-v585.test.js"
+      ],
+      "evidenceClaim": "Rail cost equals route length, including forest",
+      "evidenceScope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.8.2.1.enemy-occupied",
+      "source": {
+        "document": "references/rules/b4m-rules.pdf",
+        "section": "8.2.1",
+        "pdfSheet": 2
+      },
+      "condition": "Movement cannot enter enemy-occupied hex",
+      "auditStatus": "source-tested",
+      "authority": "printed-pdf; Oberlabs precedence applies to documented exceptions",
+      "linkedLegacyMappings": [
+        "b4m.8.2.1.enemy-occupation"
+      ],
+      "targetedTests": [
+        "tests/b4m-source-movement-v585.test.js"
+      ],
+      "evidenceClaim": "Enemy occupied destination rejected",
+      "evidenceScope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.8.2.2.friendly-transit",
+      "source": {
+        "document": "references/rules/b4m-rules.pdf",
+        "section": "8.2.2",
+        "pdfSheet": 2
+      },
+      "condition": "Movement may enter friendly-occupied hex",
+      "auditStatus": "source-tested",
+      "authority": "printed-pdf; Oberlabs precedence applies to documented exceptions",
+      "linkedLegacyMappings": [
+        "b4m.8.2.2.stacking"
+      ],
+      "targetedTests": [
+        "tests/b4m-source-movement-v585.test.js"
+      ],
+      "evidenceClaim": "Friendly occupied hex appears as intermediate route hex",
+      "evidenceScope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.8.2.2.phase-end-stacking",
+      "source": {
+        "document": "references/rules/b4m-rules.pdf",
+        "section": "8.2.2",
+        "pdfSheet": 2
+      },
+      "condition": "No more than one friendly unit per hex at phase end",
+      "auditStatus": "source-tested",
+      "authority": "printed-pdf; Oberlabs precedence applies to documented exceptions",
+      "linkedLegacyMappings": [
+        "b4m.8.2.2.stacking"
+      ],
+      "targetedTests": [
+        "tests/b4m-source-movement-v585.test.js"
+      ],
+      "evidenceClaim": "Ending movement on friendly occupied hex rejected in one-unit fixture",
+      "evidenceScope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.8.3.ezoc-stop",
+      "source": {
+        "document": "references/rules/b4m-rules.pdf",
+        "section": "8.3",
+        "pdfSheet": 2
+      },
+      "condition": "Entering enemy ZOC ends movement",
+      "auditStatus": "source-tested",
+      "authority": "printed-pdf; Oberlabs precedence applies to documented exceptions",
+      "linkedLegacyMappings": [
+        "b4m.8.3.ezoc-entry"
+      ],
+      "targetedTests": [
+        "tests/b4m-source-movement-v585.test.js"
+      ],
+      "evidenceClaim": "No intermediate path hex in EZOC",
+      "evidenceScope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.8.3.ezoc-leave",
+      "source": {
+        "document": "references/rules/b4m-rules.pdf",
+        "section": "8.3",
+        "pdfSheet": 2
+      },
+      "condition": "Leaving enemy ZOC is allowed without penalty",
+      "auditStatus": "source-tested",
+      "authority": "printed-pdf; Oberlabs precedence applies to documented exceptions",
+      "linkedLegacyMappings": [
+        "b4m.8.3.ezoc-entry"
+      ],
+      "targetedTests": [
+        "tests/b4m-source-movement-v585.test.js"
+      ],
+      "evidenceClaim": "Normal cost when leaving EZOC",
+      "evidenceScope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.9.0.voluntary",
+      "source": {
+        "document": "references/rules/b4m-rules.pdf",
+        "section": "9.0",
+        "pdfSheet": 2
+      },
+      "condition": "Attacks are voluntary and never mandatory",
+      "auditStatus": "source-tested",
+      "authority": "printed-pdf; Oberlabs precedence applies to documented exceptions",
+      "linkedLegacyMappings": [
+        "b4m.9.declaration"
+      ],
+      "targetedTests": [
+        "tests/b4m-source-combat-v586.test.js"
+      ],
+      "evidenceClaim": "Empty combat phase can be completed with adjacent opponents",
+      "evidenceScope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.9.0.adjacency",
+      "source": {
+        "document": "references/rules/b4m-rules.pdf",
+        "section": "9.0",
+        "pdfSheet": 2
+      },
+      "condition": "Each attacker must be adjacent to its declared defender",
+      "auditStatus": "source-tested",
+      "authority": "printed-pdf; Oberlabs precedence applies to documented exceptions",
+      "linkedLegacyMappings": [
+        "b4m.9.declaration"
+      ],
+      "targetedTests": [
+        "tests/b4m-source-combat-v586.test.js"
+      ],
+      "evidenceClaim": "Nonadjacent attacker invalidates odds",
+      "evidenceScope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.9.0.declare-all",
+      "source": {
+        "document": "references/rules/b4m-rules.pdf",
+        "section": "9.0",
+        "pdfSheet": 2
+      },
+      "condition": "Declare all battles before resolving any",
+      "auditStatus": "source-tested",
+      "authority": "printed-pdf; Oberlabs precedence applies to documented exceptions",
+      "linkedLegacyMappings": [
+        "b4m.9.declaration"
+      ],
+      "targetedTests": [
+        "tests/b4m-source-combat-v586.test.js"
+      ],
+      "evidenceClaim": "Preview blocked before declaration lock",
+      "evidenceScope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.9.0.single-attack",
+      "source": {
+        "document": "references/rules/b4m-rules.pdf",
+        "section": "9.0",
+        "pdfSheet": 2
+      },
+      "condition": "Each friendly unit attacks at most once per combat phase",
+      "auditStatus": "source-tested",
+      "authority": "printed-pdf; Oberlabs precedence applies to documented exceptions",
+      "linkedLegacyMappings": [
+        "b4m.9.declaration"
+      ],
+      "targetedTests": [
+        "tests/b4m-source-combat-v586.test.js"
+      ],
+      "evidenceClaim": "Previously committed attacker rejected despite otherwise legal second target",
+      "evidenceScope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.9.0.single-defense",
+      "source": {
+        "document": "references/rules/b4m-rules.pdf",
+        "section": "9.0",
+        "pdfSheet": 2
+      },
+      "condition": "Each enemy unit is attacked at most once per combat phase",
+      "auditStatus": "source-tested",
+      "authority": "printed-pdf; Oberlabs precedence applies to documented exceptions",
+      "linkedLegacyMappings": [
+        "b4m.9.declaration"
+      ],
+      "targetedTests": [
+        "tests/b4m-source-combat-v586.test.js"
+      ],
+      "evidenceClaim": "Second attacker cannot declare separate attack on already declared target",
+      "evidenceScope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.9.0.commit",
+      "source": {
+        "document": "references/rules/b4m-rules.pdf",
+        "section": "9.0",
+        "pdfSheet": 2
+      },
+      "condition": "Declared battles cannot be changed after commitment",
+      "auditStatus": "source-tested",
+      "authority": "printed-pdf; Oberlabs precedence applies to documented exceptions",
+      "linkedLegacyMappings": [
+        "b4m.9.declaration"
+      ],
+      "targetedTests": [
+        "tests/b4m-source-combat-v586.test.js"
+      ],
+      "evidenceClaim": "Locked declaration list cannot be cleared",
+      "evidenceScope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.9.0.battle-order",
+      "source": {
+        "document": "references/rules/b4m-rules.pdf",
+        "section": "9.0",
+        "pdfSheet": 2
+      },
+      "condition": "Resolve declared battles individually in attacker-selected order",
+      "auditStatus": "source-tested",
+      "authority": "printed-pdf; Oberlabs precedence applies to documented exceptions",
+      "linkedLegacyMappings": [
+        "b4m.9.declaration"
+      ],
+      "targetedTests": [
+        "tests/b4m-source-combat-v586.test.js"
+      ],
+      "evidenceClaim": "Attacker declaration order retained through individual resolution",
+      "evidenceScope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.9.0.combat-strength",
+      "source": {
+        "document": "references/rules/b4m-rules.pdf",
+        "section": "9.0",
+        "pdfSheet": 2
+      },
+      "condition": "Sum eligible attacker combat strengths",
+      "auditStatus": "source-tested",
+      "authority": "printed-pdf; Oberlabs precedence applies to documented exceptions",
+      "linkedLegacyMappings": [
+        "b4m.9.declaration"
+      ],
+      "targetedTests": [
+        "tests/b4m-source-combat-v586.test.js"
+      ],
+      "evidenceClaim": "Two original eight-strength attackers sum to sixteen",
+      "evidenceScope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.9.0.odds-floor",
+      "source": {
+        "document": "references/rules/b4m-rules.pdf",
+        "section": "9.0",
+        "pdfSheet": 2
+      },
+      "condition": "Divide total attacker strength by defender strength and discard fractions",
+      "auditStatus": "source-tested",
+      "authority": "printed-pdf; Oberlabs precedence applies to documented exceptions",
+      "linkedLegacyMappings": [
+        "b4m.9.declaration"
+      ],
+      "targetedTests": [
+        "tests/b4m-source-combat-v586.test.js"
+      ],
+      "evidenceClaim": "Sixteen against five floors to 3:1",
+      "evidenceScope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.9.0.terrain-before-die",
+      "source": {
+        "document": "references/rules/b4m-rules.pdf",
+        "section": "9.0",
+        "pdfSheet": 2
+      },
+      "condition": "Apply terrain odds adjustments before rolling CRT die",
+      "auditStatus": "source-tested",
+      "authority": "printed-pdf; Oberlabs precedence applies to documented exceptions",
+      "linkedLegacyMappings": [
+        "b4m.9.declaration"
+      ],
+      "targetedTests": [
+        "tests/b4m-source-combat-v586.test.js"
+      ],
+      "evidenceClaim": "Moscow and river shifts reduce raw 3:1 to 1:1 before roll",
+      "evidenceScope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.9.0.one-die",
+      "source": {
+        "document": "references/rules/b4m-rules.pdf",
+        "section": "9.0",
+        "pdfSheet": 2
+      },
+      "condition": "Use one six-sided die to determine CRT result",
+      "auditStatus": "source-tested",
+      "authority": "printed-pdf; Oberlabs precedence applies to documented exceptions",
+      "linkedLegacyMappings": [
+        "b4m.9.declaration"
+      ],
+      "targetedTests": [
+        "tests/b4m-source-combat-v586.test.js"
+      ],
+      "evidenceClaim": "Committed die cannot be substituted; next battle receives separate roll",
+      "evidenceScope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.9.0.apply-now",
+      "source": {
+        "document": "references/rules/b4m-rules.pdf",
+        "section": "9.0",
+        "pdfSheet": 2
+      },
+      "condition": "Apply each result immediately",
+      "auditStatus": "source-tested",
+      "authority": "printed-pdf; Oberlabs precedence applies to documented exceptions",
+      "linkedLegacyMappings": [
+        "b4m.9.declaration"
+      ],
+      "targetedTests": [
+        "tests/b4m-source-combat-v586.test.js"
+      ],
+      "evidenceClaim": "Second declared battle applies defender elimination before phase completion",
+      "evidenceScope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.9.0.advance",
+      "source": {
+        "document": "references/rules/b4m-rules.pdf",
+        "section": "9.0",
+        "pdfSheet": 2
+      },
+      "condition": "One eligible surviving attacker may advance to the newly vacated defender hex",
+      "auditStatus": "source-tested",
+      "authority": "printed-pdf; Oberlabs precedence applies to documented exceptions",
+      "linkedLegacyMappings": [
+        "b4m.9.declaration"
+      ],
+      "targetedTests": [
+        "tests/b4m-source-consequences-v587.test.js"
+      ],
+      "evidenceClaim": "Chosen surviving attacker occupies vacated original defender hex",
+      "evidenceScope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.9.1.odds-cap",
+      "source": {
+        "document": "references/rules/b4m-rules.pdf",
+        "section": "9.1",
+        "pdfSheet": 2
+      },
+      "condition": "Cap odds higher than 6:1 at 6:1",
+      "auditStatus": "source-tested",
+      "authority": "printed-pdf; Oberlabs precedence applies to documented exceptions",
+      "linkedLegacyMappings": [
+        "b4m.9.1.odds"
+      ],
+      "targetedTests": [
+        "tests/b4m-source-combat-v586.test.js"
+      ],
+      "evidenceClaim": "Thirty-six against four caps raw odds at six",
+      "evidenceScope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.9.1.below-one",
+      "source": {
+        "document": "references/rules/b4m-rules.pdf",
+        "section": "9.1",
+        "pdfSheet": 2
+      },
+      "condition": "Adjusted odds below 1:1 produce no effect",
+      "auditStatus": "source-indexed-unverified",
+      "authority": "printed-pdf; Oberlabs precedence applies to documented exceptions",
+      "linkedLegacyMappings": [
+        "b4m.9.1.odds"
+      ],
+      "targetedTests": []
+    },
+    {
+      "id": "pdf.9.2.forest-shift",
+      "source": {
+        "document": "references/rules/b4m-rules.pdf",
+        "section": "9.2",
+        "pdfSheet": 2
+      },
+      "condition": "Defender in forest causes one-column odds shift left",
+      "auditStatus": "source-tested",
+      "authority": "printed-pdf; Oberlabs precedence applies to documented exceptions",
+      "linkedLegacyMappings": [
+        "b4m.9.2.forest",
+        "b4m.9.2.major-city",
+        "b4m.9.2.fortification",
+        "b4m.9.2.river"
+      ],
+      "targetedTests": [
+        "tests/b4m-source-combat-v586.test.js"
+      ],
+      "evidenceClaim": "Forest defender on shipped map imposes one shift",
+      "evidenceScope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.9.2.major-city-shift",
+      "source": {
+        "document": "references/rules/b4m-rules.pdf",
+        "section": "9.2",
+        "pdfSheet": 2
+      },
+      "condition": "Defender in Moscow or Tula causes one-column odds shift left",
+      "auditStatus": "source-tested",
+      "authority": "printed-pdf; Oberlabs precedence applies to documented exceptions",
+      "linkedLegacyMappings": [
+        "b4m.9.2.forest",
+        "b4m.9.2.major-city",
+        "b4m.9.2.fortification",
+        "b4m.9.2.river"
+      ],
+      "targetedTests": [
+        "tests/b4m-source-combat-v586.test.js"
+      ],
+      "evidenceClaim": "Moscow defender imposes one city shift when not all attackers cross river",
+      "evidenceScope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.9.2.soviet-fort-shift",
+      "source": {
+        "document": "references/rules/b4m-rules.pdf",
+        "section": "9.2",
+        "pdfSheet": 2
+      },
+      "condition": "Soviet defender in fortification causes one-column odds shift left",
+      "auditStatus": "source-tested",
+      "authority": "printed-pdf; Oberlabs precedence applies to documented exceptions",
+      "linkedLegacyMappings": [
+        "b4m.9.2.forest",
+        "b4m.9.2.major-city",
+        "b4m.9.2.fortification",
+        "b4m.9.2.river"
+      ],
+      "targetedTests": [
+        "tests/b4m-source-combat-v586.test.js"
+      ],
+      "evidenceClaim": "Soviet Tula defender incurs fortification and city shifts; German fortification fixture has none",
+      "evidenceScope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.9.2.all-cross-river",
+      "source": {
+        "document": "references/rules/b4m-rules.pdf",
+        "section": "9.2",
+        "pdfSheet": 2
+      },
+      "condition": "One-column shift if every attacker attacks across a river hexside",
+      "auditStatus": "source-tested",
+      "authority": "printed-pdf; Oberlabs precedence applies to documented exceptions",
+      "linkedLegacyMappings": [
+        "b4m.9.2.forest",
+        "b4m.9.2.major-city",
+        "b4m.9.2.fortification",
+        "b4m.9.2.river"
+      ],
+      "targetedTests": [
+        "tests/b4m-source-combat-v586.test.js"
+      ],
+      "evidenceClaim": "All river crossings impose one shift; mixed crossings fixture does not",
+      "evidenceScope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.9.2.cumulative",
+      "source": {
+        "document": "references/rules/b4m-rules.pdf",
+        "section": "9.2",
+        "pdfSheet": 2
+      },
+      "condition": "All applicable terrain odds shifts are cumulative",
+      "auditStatus": "source-tested",
+      "authority": "printed-pdf; Oberlabs precedence applies to documented exceptions",
+      "linkedLegacyMappings": [
+        "b4m.9.2.forest",
+        "b4m.9.2.major-city",
+        "b4m.9.2.fortification",
+        "b4m.9.2.river"
+      ],
+      "targetedTests": [
+        "tests/b4m-source-combat-v586.test.js"
+      ],
+      "evidenceClaim": "Tula city and fortification cumulatively reduce 4:1 to 2:1",
+      "evidenceScope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.9.3.ne",
+      "source": {
+        "document": "references/rules/b4m-rules.pdf",
+        "section": "9.3",
+        "pdfSheet": 1
+      },
+      "condition": "NE result leaves units unchanged",
+      "auditStatus": "source-tested",
+      "authority": "printed-pdf; Oberlabs precedence applies to documented exceptions",
+      "linkedLegacyMappings": [
+        "b4m.9.3.crt",
+        "b4m.9.3.retreat",
+        "b4m.9.3.stand-fast"
+      ],
+      "targetedTests": [
+        "tests/b4m-source-combat-v586.test.js"
+      ],
+      "evidenceClaim": "NE leaves all unit positions and strengths unchanged",
+      "evidenceScope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.9.3.dr-two",
+      "source": {
+        "document": "references/rules/b4m-rules.pdf",
+        "section": "9.3",
+        "pdfSheet": 1
+      },
+      "condition": "DR requires two progressively farther retreat hexes",
+      "auditStatus": "source-tested",
+      "authority": "printed-pdf; Oberlabs precedence applies to documented exceptions",
+      "linkedLegacyMappings": [
+        "b4m.9.3.crt",
+        "b4m.9.3.retreat",
+        "b4m.9.3.stand-fast"
+      ],
+      "targetedTests": [
+        "rules/tests/b4m-reinforcement-retreat.js"
+      ],
+      "evidenceScope": "bounded-fixture-not-exhaustive",
+      "evidenceClaim": "Enumerated legal retreat paths have at least two steps"
+    },
+    {
+      "id": "pdf.9.3.dr-avoid-ezoc",
+      "source": {
+        "document": "references/rules/b4m-rules.pdf",
+        "section": "9.3",
+        "pdfSheet": 1
+      },
+      "condition": "Retreat avoids enemy ZOC if possible",
+      "auditStatus": "source-tested",
+      "authority": "printed-pdf; Oberlabs precedence applies to documented exceptions",
+      "linkedLegacyMappings": [
+        "b4m.9.3.crt",
+        "b4m.9.3.retreat",
+        "b4m.9.3.stand-fast"
+      ],
+      "targetedTests": [
+        "tests/b4m-source-consequences-v587.test.js"
+      ],
+      "evidenceClaim": "Safe route preferred in tested open-map fixture",
+      "evidenceScope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.9.3.dr-ezoc-step",
+      "source": {
+        "document": "references/rules/b4m-rules.pdf",
+        "section": "9.3",
+        "pdfSheet": 1
+      },
+      "condition": "Retreat through unavoidable enemy ZOC costs one step",
+      "auditStatus": "source-tested",
+      "authority": "printed-pdf; Oberlabs precedence applies to documented exceptions",
+      "linkedLegacyMappings": [
+        "b4m.9.3.crt",
+        "b4m.9.3.retreat",
+        "b4m.9.3.stand-fast"
+      ],
+      "targetedTests": [
+        "rules/tests/b4m-retreat-adjudication.js"
+      ],
+      "evidenceScope": "bounded-fixture-not-exhaustive",
+      "evidenceClaim": "A one-ZOC retreat transit costs one defender step"
+    },
+    {
+      "id": "pdf.9.3.dr-ezoc-end",
+      "source": {
+        "document": "references/rules/b4m-rules.pdf",
+        "section": "9.3",
+        "pdfSheet": 1
+      },
+      "condition": "Ending retreat in enemy ZOC eliminates defender",
+      "auditStatus": "source-tested",
+      "authority": "printed-pdf; Oberlabs precedence applies to documented exceptions",
+      "linkedLegacyMappings": [
+        "b4m.9.3.crt",
+        "b4m.9.3.retreat",
+        "b4m.9.3.stand-fast"
+      ],
+      "targetedTests": [
+        "tests/b4m-source-consequences-v587.test.js"
+      ],
+      "evidenceClaim": "Enemy ZOC endpoints excluded; no legal retreat eliminates defender in blocked fixture",
+      "evidenceScope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.9.3.dr-occupancy",
+      "source": {
+        "document": "references/rules/b4m-rules.pdf",
+        "section": "9.3",
+        "pdfSheet": 1
+      },
+      "condition": "Retreat cannot pass through enemy units or finish on friendly unit",
+      "auditStatus": "source-tested",
+      "authority": "printed-pdf; Oberlabs precedence applies to documented exceptions",
+      "linkedLegacyMappings": [
+        "b4m.9.3.crt",
+        "b4m.9.3.retreat",
+        "b4m.9.3.stand-fast"
+      ],
+      "targetedTests": [
+        "tests/b4m-source-consequences-v587.test.js"
+      ],
+      "evidenceClaim": "Friendly occupied endpoint and enemy occupied transit excluded in fixture",
+      "evidenceScope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.9.3.dr-no-route",
+      "source": {
+        "document": "references/rules/b4m-rules.pdf",
+        "section": "9.3",
+        "pdfSheet": 1
+      },
+      "condition": "No legal retreat path eliminates defender",
+      "auditStatus": "source-tested",
+      "authority": "printed-pdf; Oberlabs precedence applies to documented exceptions",
+      "linkedLegacyMappings": [
+        "b4m.9.3.crt",
+        "b4m.9.3.retreat",
+        "b4m.9.3.stand-fast"
+      ],
+      "targetedTests": [
+        "rules/tests/b4m-retreat-adjudication.js"
+      ],
+      "evidenceScope": "bounded-fixture-not-exhaustive",
+      "evidenceClaim": "Blocked retreat eliminates defender in controlled case"
+    },
+    {
+      "id": "pdf.9.3.stand-fast",
+      "source": {
+        "document": "references/rules/b4m-rules.pdf",
+        "section": "9.3",
+        "pdfSheet": 1
+      },
+      "condition": "Defending major city allows DR conversion to one step loss and no retreat",
+      "auditStatus": "source-indexed-unverified",
+      "authority": "printed-pdf; Oberlabs precedence applies to documented exceptions",
+      "linkedLegacyMappings": [
+        "b4m.9.3.crt",
+        "b4m.9.3.retreat",
+        "b4m.9.3.stand-fast"
+      ],
+      "targetedTests": []
+    },
+    {
+      "id": "pdf.9.3.drl-loss-first",
+      "source": {
+        "document": "references/rules/b4m-rules.pdf",
+        "section": "9.3",
+        "pdfSheet": 1
+      },
+      "condition": "DRL loses one step before retreat",
+      "auditStatus": "source-tested",
+      "authority": "printed-pdf; Oberlabs precedence applies to documented exceptions",
+      "linkedLegacyMappings": [
+        "b4m.9.3.crt",
+        "b4m.9.3.retreat",
+        "b4m.9.3.stand-fast"
+      ],
+      "targetedTests": [
+        "rules/tests/b4m-retreat-adjudication.js"
+      ],
+      "evidenceScope": "bounded-fixture-not-exhaustive",
+      "evidenceClaim": "DRL causes strength reduction in one legal retreat fixture; ordering not instrumented"
+    },
+    {
+      "id": "pdf.9.3.full-to-reduced",
+      "source": {
+        "document": "references/rules/b4m-rules.pdf",
+        "section": "9.3",
+        "pdfSheet": 1
+      },
+      "condition": "Step loss flips full unit to reduced",
+      "auditStatus": "source-tested",
+      "authority": "printed-pdf; Oberlabs precedence applies to documented exceptions",
+      "linkedLegacyMappings": [
+        "b4m.9.3.crt",
+        "b4m.9.3.retreat",
+        "b4m.9.3.stand-fast"
+      ],
+      "targetedTests": [
+        "tests/b4m-source-consequences-v587.test.js"
+      ],
+      "evidenceClaim": "EX flips full defender and chosen full attacker to reduced",
+      "evidenceScope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.9.3.reduced-eliminate",
+      "source": {
+        "document": "references/rules/b4m-rules.pdf",
+        "section": "9.3",
+        "pdfSheet": 1
+      },
+      "condition": "Step loss eliminates reduced unit",
+      "auditStatus": "source-tested",
+      "authority": "printed-pdf; Oberlabs precedence applies to documented exceptions",
+      "linkedLegacyMappings": [
+        "b4m.9.3.crt",
+        "b4m.9.3.retreat",
+        "b4m.9.3.stand-fast"
+      ],
+      "targetedTests": [
+        "tests/b4m-source-combat-v586.test.js"
+      ],
+      "evidenceClaim": "Reduced defender eliminated by DRL",
+      "evidenceScope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.9.3.de",
+      "source": {
+        "document": "references/rules/b4m-rules.pdf",
+        "section": "9.3",
+        "pdfSheet": 1
+      },
+      "condition": "DE eliminates defender regardless of strength",
+      "auditStatus": "source-tested",
+      "authority": "printed-pdf; Oberlabs precedence applies to documented exceptions",
+      "linkedLegacyMappings": [
+        "b4m.9.3.crt",
+        "b4m.9.3.retreat",
+        "b4m.9.3.stand-fast"
+      ],
+      "targetedTests": [
+        "tests/b4m-source-final-v589.test.js"
+      ],
+      "evidenceClaim": "DE eliminates both full and reduced defenders in direct native fixtures",
+      "evidenceScope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.9.3.ex-defender",
+      "source": {
+        "document": "references/rules/b4m-rules.pdf",
+        "section": "9.3",
+        "pdfSheet": 1
+      },
+      "condition": "EX first applies one defender step loss",
+      "auditStatus": "source-tested",
+      "authority": "printed-pdf; Oberlabs precedence applies to documented exceptions",
+      "linkedLegacyMappings": [
+        "b4m.9.3.crt",
+        "b4m.9.3.retreat",
+        "b4m.9.3.stand-fast"
+      ],
+      "targetedTests": [
+        "rules/tests/b4m-ex-order-policy.js"
+      ],
+      "evidenceScope": "bounded-fixture-not-exhaustive",
+      "evidenceClaim": "One EX reduces a full defender to reduced"
+    },
+    {
+      "id": "pdf.9.3.ex-attacker",
+      "source": {
+        "document": "references/rules/b4m-rules.pdf",
+        "section": "9.3",
+        "pdfSheet": 1
+      },
+      "condition": "EX attacker loses at least the defender original step-loss strength in printed strengths",
+      "auditStatus": "source-tested",
+      "authority": "printed-pdf; Oberlabs precedence applies to documented exceptions",
+      "linkedLegacyMappings": [
+        "b4m.9.3.crt",
+        "b4m.9.3.retreat",
+        "b4m.9.3.stand-fast"
+      ],
+      "targetedTests": [
+        "tests/b4m-source-consequences-v587.test.js"
+      ],
+      "evidenceClaim": "One selected attacker matches printed defender step loss in fixture",
+      "evidenceScope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.9.3.ex-extra-no-match",
+      "source": {
+        "document": "references/rules/b4m-rules.pdf",
+        "section": "9.3",
+        "pdfSheet": 1
+      },
+      "condition": "Attacker EX does not match extra defender loss due to inability to retreat",
+      "auditStatus": "source-tested",
+      "authority": "printed-pdf; Oberlabs precedence applies to documented exceptions",
+      "linkedLegacyMappings": [
+        "b4m.9.3.crt",
+        "b4m.9.3.retreat",
+        "b4m.9.3.stand-fast"
+      ],
+      "targetedTests": [
+        "tests/b4m-source-consequences-v587.test.js"
+      ],
+      "evidenceClaim": "Blocked retreat extra loss does not increase exchange liability in fixture",
+      "evidenceScope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.9.3.al",
+      "source": {
+        "document": "references/rules/b4m-rules.pdf",
+        "section": "9.3",
+        "pdfSheet": 1
+      },
+      "condition": "AL causes one chosen attacker step loss, without retreat",
+      "auditStatus": "source-tested",
+      "authority": "printed-pdf; Oberlabs precedence applies to documented exceptions",
+      "linkedLegacyMappings": [
+        "b4m.9.3.crt",
+        "b4m.9.3.retreat",
+        "b4m.9.3.stand-fast"
+      ],
+      "targetedTests": [
+        "tests/b4m-source-consequences-v587.test.js"
+      ],
+      "evidenceClaim": "AL reduces selected attacker with defender unmoved",
+      "evidenceScope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.10.0.per-side-budget",
+      "source": {
+        "document": "references/rules/b4m-rules.pdf",
+        "section": "10.0",
+        "pdfSheet": 1
+      },
+      "condition": "Each side receives turn-track replacement steps on its own replacement phase",
+      "auditStatus": "source-tested",
+      "authority": "printed-pdf; Oberlabs precedence applies to documented exceptions",
+      "linkedLegacyMappings": [
+        "b4m.10.replacement-budget"
+      ],
+      "targetedTests": [
+        "tests/b4m-source-phase-setup-v584.test.js"
+      ],
+      "evidenceClaim": "Both faction budgets checked for all seven turns against adopted Oberlabs profile",
+      "evidenceScope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.10.0.enter-reduced",
+      "source": {
+        "document": "references/rules/b4m-rules.pdf",
+        "section": "10.0",
+        "pdfSheet": 1
+      },
+      "condition": "One step returns an off-map unit at reduced strength",
+      "auditStatus": "source-tested",
+      "authority": "printed-pdf; Oberlabs precedence applies to documented exceptions",
+      "linkedLegacyMappings": [
+        "b4m.10.replacement-budget"
+      ],
+      "targetedTests": [
+        "rules/tests/b4m-known-replacement-gap.js"
+      ],
+      "evidenceScope": "bounded-fixture-not-exhaustive",
+      "evidenceClaim": "Thirty eligible returning units entered reduced"
+    },
+    {
+      "id": "pdf.10.0.restore",
+      "source": {
+        "document": "references/rules/b4m-rules.pdf",
+        "section": "10.0",
+        "pdfSheet": 1
+      },
+      "condition": "One step restores eligible reduced on-map unit to full",
+      "auditStatus": "source-tested",
+      "authority": "printed-pdf; Oberlabs precedence applies to documented exceptions",
+      "linkedLegacyMappings": [
+        "b4m.10.replacement-budget"
+      ],
+      "targetedTests": [
+        "rules/tests/b4m-known-replacement-gap.js"
+      ],
+      "evidenceScope": "bounded-fixture-not-exhaustive",
+      "evidenceClaim": "Later-turn restoration succeeds when eligible"
+    },
+    {
+      "id": "pdf.10.0.friendly-control",
+      "source": {
+        "document": "references/rules/b4m-rules.pdf",
+        "section": "10.0",
+        "pdfSheet": 1
+      },
+      "condition": "Friendly-controlled cities are those last entered by friendly units",
+      "auditStatus": "source-indexed-unverified",
+      "authority": "printed-pdf; Oberlabs precedence applies to documented exceptions",
+      "linkedLegacyMappings": [
+        "b4m.10.replacement-budget"
+      ],
+      "targetedTests": []
+    },
+    {
+      "id": "pdf.10.0.soviet-communication",
+      "source": {
+        "document": "references/rules/b4m-rules.pdf",
+        "section": "10.0",
+        "pdfSheet": 1
+      },
+      "condition": "Soviet communication path connects to red northeast/east/southeast map edge",
+      "auditStatus": "source-tested",
+      "authority": "printed-pdf; Oberlabs precedence applies to documented exceptions",
+      "linkedLegacyMappings": [
+        "b4m.10.replacement-budget"
+      ],
+      "targetedTests": [
+        "tests/b4m-source-communication-v588.test.js"
+      ],
+      "evidenceClaim": "Open interior Soviet origin reaches configured red edge",
+      "evidenceScope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.10.0.communication-no-ezoc",
+      "source": {
+        "document": "references/rules/b4m-rules.pdf",
+        "section": "10.0",
+        "pdfSheet": 1
+      },
+      "condition": "Communication path outside originating hex excludes enemy units and enemy ZOC",
+      "auditStatus": "source-tested",
+      "authority": "printed-pdf; Oberlabs precedence applies to documented exceptions",
+      "linkedLegacyMappings": [
+        "b4m.10.replacement-budget"
+      ],
+      "targetedTests": [
+        "tests/b4m-source-communication-v588.test.js"
+      ],
+      "evidenceClaim": "Blocked surrounding exits prevent trace; origin edge in EZOC separately succeeds",
+      "evidenceScope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.10.0.friendly-no-negate",
+      "source": {
+        "document": "references/rules/b4m-rules.pdf",
+        "section": "10.0",
+        "pdfSheet": 1
+      },
+      "condition": "Friendly units never negate enemy ZOC for communication",
+      "auditStatus": "source-tested",
+      "authority": "printed-pdf; Oberlabs precedence applies to documented exceptions",
+      "linkedLegacyMappings": [
+        "b4m.10.replacement-budget"
+      ],
+      "targetedTests": [
+        "tests/b4m-source-communication-v588.test.js"
+      ],
+      "evidenceClaim": "Friendly-occupied exit remains in enemy ZOC and trace fails",
+      "evidenceScope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.10.1.one-step-per-turn",
+      "source": {
+        "document": "references/rules/b4m-rules.pdf",
+        "section": "10.1",
+        "pdfSheet": 1
+      },
+      "condition": "Unit returning off-map cannot receive second step on same player turn",
+      "auditStatus": "source-tested",
+      "authority": "printed-pdf; Oberlabs precedence applies to documented exceptions",
+      "linkedLegacyMappings": [
+        "b4m.10.1.one-step"
+      ],
+      "targetedTests": [
+        "rules/tests/b4m-known-replacement-gap.js"
+      ],
+      "evidenceScope": "bounded-fixture-not-exhaustive",
+      "evidenceClaim": "Explicit user ruling: same-turn restore rejected after entry"
+    },
+    {
+      "id": "pdf.10.2.soviet-edge",
+      "source": {
+        "document": "references/rules/b4m-rules.pdf",
+        "section": "10.2",
+        "pdfSheet": 1
+      },
+      "condition": "Soviet new unit may enter empty red-border hex outside enemy ZOC",
+      "auditStatus": "source-tested",
+      "authority": "printed-pdf; Oberlabs precedence applies to documented exceptions",
+      "linkedLegacyMappings": [
+        "b4m.10.2.soviet-eligibility"
+      ],
+      "targetedTests": [
+        "tests/b4m-source-communication-v588.test.js"
+      ],
+      "evidenceClaim": "Empty red edge admits reserve until enemy ZOC is introduced; black edge rejected",
+      "evidenceScope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.10.2.soviet-city",
+      "source": {
+        "document": "references/rules/b4m-rules.pdf",
+        "section": "10.2",
+        "pdfSheet": 1
+      },
+      "condition": "Soviet new unit may enter empty friendly city in communication to red edge",
+      "auditStatus": "source-tested",
+      "authority": "printed-pdf; Oberlabs precedence applies to documented exceptions",
+      "linkedLegacyMappings": [
+        "b4m.10.2.soviet-eligibility"
+      ],
+      "targetedTests": [
+        "tests/b4m-source-communication-v588.test.js"
+      ],
+      "evidenceClaim": "Empty friendly communicating city admits reserve; hostile and isolated city rejected",
+      "evidenceScope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.10.2.city-limit",
+      "source": {
+        "document": "references/rules/b4m-rules.pdf",
+        "section": "10.2",
+        "pdfSheet": 1
+      },
+      "condition": "At most one unit occupies each city",
+      "auditStatus": "source-tested",
+      "authority": "printed-pdf; Oberlabs precedence applies to documented exceptions",
+      "linkedLegacyMappings": [
+        "b4m.10.2.soviet-eligibility"
+      ],
+      "targetedTests": [
+        "tests/b4m-source-communication-v588.test.js"
+      ],
+      "evidenceClaim": "Occupied Moscow rejects reserve even with capital exception",
+      "evidenceScope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.10.2.soviet-restore-communication",
+      "source": {
+        "document": "references/rules/b4m-rules.pdf",
+        "section": "10.2",
+        "pdfSheet": 1
+      },
+      "condition": "Existing reduced Soviet unit requires communication for restoration",
+      "auditStatus": "source-tested",
+      "authority": "printed-pdf; Oberlabs precedence applies to documented exceptions",
+      "linkedLegacyMappings": [
+        "b4m.10.2.soviet-eligibility"
+      ],
+      "targetedTests": [
+        "tests/b4m-source-communication-v588.test.js"
+      ],
+      "evidenceClaim": "Isolated noncapital reduced unit cannot restore; open trace permits restore",
+      "evidenceScope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.10.2.moscow-exception",
+      "source": {
+        "document": "references/rules/b4m-rules.pdf",
+        "section": "10.2",
+        "pdfSheet": 1
+      },
+      "condition": "Moscow permits Soviet return or restoration without communication",
+      "auditStatus": "source-tested",
+      "authority": "printed-pdf; Oberlabs precedence applies to documented exceptions",
+      "linkedLegacyMappings": [
+        "b4m.10.2.soviet-eligibility"
+      ],
+      "targetedTests": [
+        "tests/b4m-source-communication-v588.test.js"
+      ],
+      "evidenceClaim": "Isolated Soviet Moscow permits restoration and empty-city entry",
+      "evidenceScope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.10.3.german-west",
+      "source": {
+        "document": "references/rules/b4m-rules.pdf",
+        "section": "10.3",
+        "pdfSheet": 1
+      },
+      "condition": "German entry and communication use west black-border edge",
+      "auditStatus": "source-tested",
+      "authority": "printed-pdf; Oberlabs precedence applies to documented exceptions",
+      "linkedLegacyMappings": [
+        "b4m.10.3.german-eligibility"
+      ],
+      "targetedTests": [
+        "tests/b4m-source-communication-v588.test.js"
+      ],
+      "evidenceClaim": "German west entry accepted and red entry rejected",
+      "evidenceScope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.10.3.no-german-moscow-exception",
+      "source": {
+        "document": "references/rules/b4m-rules.pdf",
+        "section": "10.3",
+        "pdfSheet": 1
+      },
+      "condition": "German replacements receive no Moscow exception",
+      "auditStatus": "source-tested",
+      "authority": "printed-pdf; Oberlabs precedence applies to documented exceptions",
+      "linkedLegacyMappings": [
+        "b4m.10.3.german-eligibility"
+      ],
+      "targetedTests": [
+        "tests/b4m-source-communication-v588.test.js"
+      ],
+      "evidenceClaim": "Isolated German Moscow rejects restore and reserve entry",
+      "evidenceScope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.10.4.unused-expire",
+      "source": {
+        "document": "references/rules/b4m-rules.pdf",
+        "section": "10.4",
+        "pdfSheet": 1
+      },
+      "condition": "Unused replacement steps cannot be carried to later turns",
+      "auditStatus": "source-tested",
+      "authority": "printed-pdf; Oberlabs precedence applies to documented exceptions",
+      "linkedLegacyMappings": [
+        "b4m.10.4.unused"
+      ],
+      "targetedTests": [
+        "tests/b4m-source-communication-v588.test.js"
+      ],
+      "evidenceClaim": "Unused Soviet budget does not carry forward; next mud turn budget four",
+      "evidenceScope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.11.0.shock-only",
+      "source": {
+        "document": "references/rules/b4m-rules.pdf",
+        "section": "11.0",
+        "pdfSheet": 1
+      },
+      "condition": "Only Soviet receives a reinforcement unit",
+      "auditStatus": "source-tested",
+      "authority": "printed-pdf; Oberlabs precedence applies to documented exceptions",
+      "linkedLegacyMappings": [
+        "b4m.11.shock"
+      ],
+      "targetedTests": [
+        "rules/tests/b4m-reinforcement-retreat.js"
+      ],
+      "evidenceScope": "bounded-fixture-not-exhaustive",
+      "evidenceClaim": "German side has no Shock reinforcement options"
+    },
+    {
+      "id": "pdf.11.0.shock-full",
+      "source": {
+        "document": "references/rules/b4m-rules.pdf",
+        "section": "11.0",
+        "pdfSheet": 1
+      },
+      "condition": "Reinforcement enters full strength",
+      "auditStatus": "source-tested",
+      "authority": "printed-pdf; Oberlabs precedence applies to documented exceptions",
+      "linkedLegacyMappings": [
+        "b4m.11.shock"
+      ],
+      "targetedTests": [
+        "rules/tests/b4m-reinforcement-retreat.js"
+      ],
+      "evidenceScope": "bounded-fixture-not-exhaustive",
+      "evidenceClaim": "Shock placement yields full strength"
+    },
+    {
+      "id": "pdf.11.0.shock-placement",
+      "source": {
+        "document": "references/rules/b4m-rules.pdf",
+        "section": "11.0",
+        "pdfSheet": 1
+      },
+      "condition": "Reinforcement enters vacant red-border hex outside enemy ZOC",
+      "auditStatus": "source-tested",
+      "authority": "printed-pdf; Oberlabs precedence applies to documented exceptions",
+      "linkedLegacyMappings": [
+        "b4m.11.shock"
+      ],
+      "targetedTests": [
+        "rules/tests/b4m-reinforcement-retreat.js"
+      ],
+      "evidenceScope": "bounded-fixture-not-exhaustive",
+      "evidenceClaim": "All enumerated Shock options use red-border hexes; occupancy checked separately"
+    },
+    {
+      "id": "pdf.12.0.mud-turns",
+      "source": {
+        "document": "references/rules/b4m-rules.pdf",
+        "section": "12.0",
+        "pdfSheet": 1
+      },
+      "condition": "Turns three and four use mud rules; remaining turns clear",
+      "auditStatus": "source-tested",
+      "authority": "printed-pdf; Oberlabs precedence applies to documented exceptions",
+      "linkedLegacyMappings": [],
+      "targetedTests": [
+        "rules/tests/b4m-source-assertions.js"
+      ],
+      "evidenceScope": "bounded-fixture-not-exhaustive",
+      "evidenceClaim": "Turns 3 and 4 mud; turns 2 and 5 clear"
+    },
+    {
+      "id": "pdf.12.1.one-hex",
+      "source": {
+        "document": "references/rules/b4m-rules.pdf",
+        "section": "12.1",
+        "pdfSheet": 1
+      },
+      "condition": "All non-rail movement is limited to one hex per movement phase on mud turns",
+      "auditStatus": "source-tested",
+      "authority": "printed-pdf; Oberlabs precedence applies to documented exceptions",
+      "linkedLegacyMappings": [
+        "b4m.12.1.mud-movement"
+      ],
+      "targetedTests": [
+        "rules/tests/b4m-source-assertions.js"
+      ],
+      "evidenceScope": "bounded-fixture-not-exhaustive",
+      "evidenceClaim": "German available movement on turns 3\u20134 limited to one hex; non-German not tested"
+    },
+    {
+      "id": "pdf.12.1.rail-exception",
+      "source": {
+        "document": "references/rules/b4m-rules.pdf",
+        "section": "12.1",
+        "pdfSheet": 1
+      },
+      "condition": "Soviet rail movement is exempt from one-hex mud limit",
+      "auditStatus": "source-tested",
+      "authority": "printed-pdf; Oberlabs precedence applies to documented exceptions",
+      "linkedLegacyMappings": [
+        "b4m.12.1.mud-movement"
+      ],
+      "targetedTests": [
+        "tests/b4m-source-movement-v585.test.js"
+      ],
+      "evidenceClaim": "Soviet rail movement exceeds one hex in mud",
+      "evidenceScope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.12.2.attacker-tanks-halved",
+      "source": {
+        "document": "references/rules/b4m-rules.pdf",
+        "section": "12.2",
+        "pdfSheet": 1
+      },
+      "condition": "Attacking panzer/tank total strength is halved on mud turns",
+      "auditStatus": "source-tested",
+      "authority": "printed-pdf; Oberlabs precedence applies to documented exceptions",
+      "linkedLegacyMappings": [
+        "b4m.12.2.mud-combat"
+      ],
+      "targetedTests": [
+        "tests/b4m-source-combat-v586.test.js"
+      ],
+      "evidenceClaim": "Mud halves original nine-strength tank attack",
+      "evidenceScope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.12.2.defense-not-halved",
+      "source": {
+        "document": "references/rules/b4m-rules.pdf",
+        "section": "12.2",
+        "pdfSheet": 1
+      },
+      "condition": "Defending tank strength is unaffected by mud",
+      "auditStatus": "source-tested",
+      "authority": "printed-pdf; Oberlabs precedence applies to documented exceptions",
+      "linkedLegacyMappings": [
+        "b4m.12.2.mud-combat"
+      ],
+      "targetedTests": [
+        "tests/b4m-source-combat-v586.test.js"
+      ],
+      "evidenceClaim": "Mud does not halve German tank defense",
+      "evidenceScope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.12.2.infantry-unaffected",
+      "source": {
+        "document": "references/rules/b4m-rules.pdf",
+        "section": "12.2",
+        "pdfSheet": 1
+      },
+      "condition": "Attacking infantry strength unaffected by mud",
+      "auditStatus": "source-tested",
+      "authority": "printed-pdf; Oberlabs precedence applies to documented exceptions",
+      "linkedLegacyMappings": [
+        "b4m.12.2.mud-combat"
+      ],
+      "targetedTests": [
+        "tests/b4m-source-combat-v586.test.js"
+      ],
+      "evidenceClaim": "Mud leaves eight-strength infantry attack unchanged",
+      "evidenceScope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.12.2.retain-fraction",
+      "source": {
+        "document": "references/rules/b4m-rules.pdf",
+        "section": "12.2",
+        "pdfSheet": 1
+      },
+      "condition": "Halved tank combat strength retains fractional part",
+      "auditStatus": "source-tested",
+      "authority": "printed-pdf; Oberlabs precedence applies to documented exceptions",
+      "linkedLegacyMappings": [
+        "b4m.12.2.mud-combat"
+      ],
+      "targetedTests": [
+        "tests/b4m-source-combat-v586.test.js"
+      ],
+      "evidenceClaim": "Mud mixed attack retains half-point",
+      "evidenceScope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.12.2.exchange-printed",
+      "source": {
+        "document": "references/rules/b4m-rules.pdf",
+        "section": "12.2",
+        "pdfSheet": 1
+      },
+      "condition": "Mud EX liability uses printed combat strengths, not halved attack strength",
+      "auditStatus": "source-tested",
+      "authority": "printed-pdf; Oberlabs precedence applies to documented exceptions",
+      "linkedLegacyMappings": [
+        "b4m.12.2.mud-combat"
+      ],
+      "targetedTests": [
+        "tests/b4m-source-consequences-v587.test.js"
+      ],
+      "evidenceClaim": "Mud tank exchange uses full printed five-point step loss; second attacker remains full",
+      "evidenceScope": "bounded-fixture-not-exhaustive"
+    }
+  ],
+  "evidenceRegister": "rules/audit/b4m-atomic-evidence.json"
+}

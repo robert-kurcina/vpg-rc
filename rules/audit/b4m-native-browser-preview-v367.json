@@ -1,0 +1,36 @@
+{
+  "status": "PASS",
+  "checkpoint": 133,
+  "scenario": "battle-for-moscow",
+  "scope": "isolated Chromium DOM with actual source JS/JSON, fetch mocked due admin navigation restriction",
+  "initialOnBoard": 36,
+  "initialRoster": 39,
+  "nativeEngine": "generic-hex-v1",
+  "initialPhase": "combat",
+  "movement": {
+    "id": "g24",
+    "at": {
+      "x": 0,
+      "y": 4,
+      "cost": 1,
+      "path": [
+        {
+          "x": 0,
+          "y": 4
+        }
+      ]
+    }
+  },
+  "undo": true,
+  "versionedSaveRestore": true,
+  "manualSetupCounterChoices": 22,
+  "unplacedManualStart": 14,
+  "currentMapViewBox": "-45.00 -45.00 1690.00 1229.00",
+  "javascriptExceptions": [],
+  "productionRoutingChanged": false,
+  "limitations": [
+    "no real HTTP navigation",
+    "no AI or full browser UX parity",
+    "not upstream Oberlabs independent certification"
+  ]
+}

@@ -1,0 +1,22 @@
+'use strict';
+// Guard current production wiring independently of historical audit snapshots.
+const assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path');
+const root=path.resolve(__dirname,'..');
+const read=p=>fs.readFileSync(path.join(root,p),'utf8');
+const json=p=>JSON.parse(read(p));
+let checks=0; const ok=(x,m)=>{assert.ok(x,m);checks++;};
+const game=json('games/battle-for-moscow/game.json');
+const entry=json('games/catalog.json').games.find(x=>x.directory===game.id);
+ok(game.engine==='generic-hex-v1','shared engine');
+ok(game.browserEntry==='index.html','canonical entry');
+ok(entry.type==='historical','historical catalog');
+ok(entry.entryPath==='games/battle-for-moscow/index.html','catalog route');
+const route=read(entry.entryPath);
+ok(route.includes("location.replace('native-preview/index.html')"),'native redirect');
+ok(!route.includes('legacy/index.html'),'no legacy redirect');
+ok(read('index.html').includes('href="'+entry.entryPath+'"'),'home canonical launch');
+ok(!read('index.html').includes('href="legacy/index.html"'),'no legacy home launch');
+const native=read('games/battle-for-moscow/native-preview/index.html');
+ok(!native.includes('legacy/index.html'),'no legacy native launch');
+ok(fs.existsSync(path.join(root,'games/battle-for-moscow',game.nativeProfile)),'native profile exists');
+console.log(`PASS current B4M production route: ${checks} assertions`);

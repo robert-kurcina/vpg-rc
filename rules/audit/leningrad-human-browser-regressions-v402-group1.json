@@ -1,0 +1,93 @@
+{
+  "checkpoint": 168,
+  "version": "v402",
+  "group": 1,
+  "completed": 12,
+  "passed": 12,
+  "results": [
+    {
+      "index": 1,
+      "command": "node scripts/verify-campaign-maps.js",
+      "passed": true,
+      "seconds": 0.28,
+      "outputTail": "4cbb65fdbd5db7eedf7\",\n      \"pngSHA256\": \"e072d32beb8c34faf258e636dffbb42161ddb291524fc740292c0ddec5bc0108\",\n      \"warnings\": 0\n    },\n    {\n      \"id\": \"leningrad\",\n      \"hexes\": 197,\n      \"svgSHA256\": \"e45856f7d56b5acfecf7083b405b9465d1c21459d698ac65e9196f581f832925\",\n      \"pngSHA256\": \"a9f1886cd3c9d85bfe5238e82a79a613550b98170ff08967ff08f14e20690ed2\",\n      \"warnings\": 6\n    },\n    {\n      \"id\": \"kiev\",\n      \"hexes\": 165,\n      \"svgSHA256\": \"5f455d80d6d30eec822d898f41ec12c21fc03a7f4fd165ddd51fa2b7c28324a4\",\n      \"pngSHA256\": \"b355b35fc0cd620c55f8c63cc61e4a7a2e96e9044c972f9a4e65b7a239b3a9ff\",\n      \"warnings\": 0\n    },\n    {\n      \"id\": \"kiev-odessa\",\n      \"hexes\": 261,\n      \"svgSHA256\": \"7cb5fafbb18babd2b4b2a5129e6802607dd4b0df8b07e46491319c07ecb9c71c\",\n      \"pngSHA256\": \"f7a84021dda8a796b8b04cfe018d15b6ad043e8a39e08ff7f0d7eccab721f71a\",\n      \"warnings\": 3\n    }\n  ],\n  \"approvedLeningradHistorical\": \"v350\",\n  \"activeVisualBaseline\": \"v373-no-forest-shadow-user-accepted\"\n}\n"
+    },
+    {
+      "index": 2,
+      "command": "node tests/b4m-native-combat-v361.test.js",
+      "passed": true,
+      "seconds": 0.52,
+      "outputTail": "PASS v361 B4M native combat parity: 180 previews, 180 consequences, 57 explicit choices, 293 two-battle sequences, strict config gate\n"
+    },
+    {
+      "index": 3,
+      "command": "node tests/b4m-native-redeployment-campaign-v378.test.js",
+      "passed": true,
+      "seconds": 15.99,
+      "outputTail": "56,\"actions\":1052,\"declarations\":103,\"combat\":103,\"moves\":477,\"replacements\":145,\"reinforcements\":4,\"saveRestores\":33,\"undoReplays\":65,\"parityChecks\":1056,\"scoreReads\":56,\"scoreAmbiguities\":0,\"scoreNeverEnabled\":56},\"campaigns\":[{\"name\":\"no-change\",\"seed\":17,\"openingMoves\":0,\"sideTurns\":14,\"battles\":25,\"realMoves\":113,\"result\":\"soviet\",\"stateHash\":\"3beeaee2338d2054bc64276f6c7c86f6c992dddb2e2062198fbb3bda1e4ed42a\"},{\"name\":\"one-northern\",\"seed\":1941,\"openingMoves\":1,\"sideTurns\":14,\"battles\":27,\"realMoves\":125,\"result\":\"soviet\",\"stateHash\":\"c54255aa808a785db819883b9bca004d6f714b449911883a96da173c5148ff05\"},{\"name\":\"one-southern\",\"seed\":17,\"openingMoves\":1,\"sideTurns\":14,\"battles\":25,\"realMoves\":112,\"result\":\"soviet\",\"stateHash\":\"5bd1593739b51b445928dbaefac302cac6b15aaaa236a8f856509733efe66f4d\"},{\"name\":\"three-separated\",\"seed\":1,\"openingMoves\":3,\"sideTurns\":14,\"battles\":26,\"realMoves\":127,\"result\":\"soviet\",\"stateHash\":\"9ec63252d765afb7cc29aabe3e7a328254dfd542d84d3f9f26c6d447a66ec493\"}]}\n"
+    },
+    {
+      "index": 4,
+      "command": "node tests/b4m-native-tournament-reference-v375.test.js",
+      "passed": true,
+      "seconds": 0.1,
+      "outputTail": "{\"status\":\"PASS\",\"checkpoint\":141,\"version\":\"v375\",\"primaryCases\":[{\"id\":\"german-decisive\",\"points\":{\"german\":4,\"soviet\":0}},{\"id\":\"german-major\",\"points\":{\"german\":3,\"soviet\":0}},{\"id\":\"soviet-minor\",\"points\":{\"german\":1,\"soviet\":1}},{\"id\":\"soviet-decisive\",\"points\":{\"german\":1,\"soviet\":3}},{\"id\":\"overlapping-german-and-soviet-minor\",\"eligible\":[{\"id\":\"german-minor\",\"side\":\"german\",\"points\":1},{\"id\":\"soviet-minor\",\"side\":\"soviet\",\"points\":1}],\"bonusPoints\":{\"german\":1,\"soviet\":0}},{\"id\":\"soviet-major\",\"points\":{\"german\":1,\"soviet\":2}}],\"bonusThresholds\":[0,7,8,11,12,16],\"communication\":[\"Moscow isolated\",\"Tula isolated\",\"both isolated\"],\"mode\":\"disabled read-only reference\",\"production\":\"legacy-b4m-v1\"}\n"
+    },
+    {
+      "index": 5,
+      "command": "node tests/forest-no-shadow-v373.test.js",
+      "passed": true,
+      "seconds": 0.41,
+      "outputTail": "PASS v373: 5 shared maps, 199 Forest/Woods cells, no shadow, bitmap texture and layer priority retained\n"
+    },
+    {
+      "index": 6,
+      "command": "node tests/historical-air-sea-support-v385.test.js",
+      "passed": true,
+      "seconds": 0.13,
+      "outputTail": "PASS v385: 163 source-bound air-sea/ground support checks\n"
+    },
+    {
+      "index": 7,
+      "command": "node tests/historical-combat-consequences-v359.test.js",
+      "passed": true,
+      "seconds": 0.42,
+      "outputTail": "PASS v359 shared source-bound combat consequence transactions: 68 assertions\n"
+    },
+    {
+      "index": 8,
+      "command": "node tests/historical-combat-session-v386.test.js",
+      "passed": true,
+      "seconds": 0.89,
+      "outputTail": "PASS v386: 84 replay-validated historical combat session assertions\n"
+    },
+    {
+      "index": 9,
+      "command": "node tests/historical-fleet-forced-displacement-v384.test.js",
+      "passed": true,
+      "seconds": 0.2,
+      "outputTail": "PASS v384: 768 source-bound Fleet compulsory-displacement assertions\n"
+    },
+    {
+      "index": 10,
+      "command": "node tests/historical-fleet-opening-movement-v383.test.js",
+      "passed": true,
+      "seconds": 0.1,
+      "outputTail": "PASS v383: 716 opening, port-hazard, and Fleet special-movement checks\n"
+    },
+    {
+      "index": 11,
+      "command": "node tests/historical-forced-retreat-v380.test.js",
+      "passed": true,
+      "seconds": 0.32,
+      "outputTail": "PASS v380: 298 forced-retreat, post-combat, Undo and fail-closed assertions\n"
+    },
+    {
+      "index": 12,
+      "command": "node tests/historical-overstack-retreat-v381.test.js",
+      "passed": true,
+      "seconds": 0.15,
+      "outputTail": "PASS v381: 39 overstack-extension, rollback and source-boundary assertions\n"
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "schemaVersion": 1,
+  "checkpoint": 139,
+  "rendererVersion": "v373",
+  "sourceArchiveName": "hex_wargame_v372_CHECKPOINT_138_FOREST_SHADOW_FOREGROUND.zip",
+  "status": "IMPLEMENTED \u2014 user-requested removal, new visual candidate pending signoff",
+  "change": "Removed Forest/Woods shadow filter, SVG overlay, and knockout/footprint mask in shared renderer. Forest bitmap tile order and all other SVG artwork geometries unchanged.",
+  "sharedRenderer": "core/terrain_tiles.js:svgMap",
+  "previousApprovedLeningradBaseline": "rules/audit/leningrad-visual-baseline-v350.json",
+  "previousBaselineModified": false,
+  "sceneIds": [
+    "battle-for-moscow",
+    "arduous",
+    "leningrad",
+    "kiev",
+    "kiev-odessa"
+  ],
+  "results": [
+    {
+      "id": "battle-for-moscow",
+      "forestHexes": 32,
+      "previousSvgSHA256": "9a5d172d6192e3aa4ae3911a194391e114e36b23b97369eed111e0df17af2980",
+      "previousPngSHA256": "fc6fb2d24bf2021a0bdf90876d1eaad084a37e41097df35617682f5acc0e7bf1",
+      "candidateSvgSHA256": "487a050a42cf41554886b0fcef85baf68e40354f784428623926f1a9354f4de1",
+      "candidatePngSHA256": "6305899525da4a453a4f2f1d13607b32913c65e86a5f8657b004701bfe4e0332",
+      "changedPixels": 120435,
+      "percentChangedPixels": 5.798,
+      "shadowOnlySvgChange": true
+    },
+    {
+      "id": "arduous",
+      "forestHexes": 30,
+      "previousSvgSHA256": "e5840a86b4c21314852e2b4659ba4fb6df109f88304ebfdb2485794318580881",
+      "previousPngSHA256": "5fa56bdf632fe7af88ed00beba025db1661057f63f10f706ee65665e8f616a8a",
+      "candidateSvgSHA256": "0443d50a7f7bbe36c508cf9e32a18d20f765cad93588c4cbb65fdbd5db7eedf7",
+      "candidatePngSHA256": "e072d32beb8c34faf258e636dffbb42161ddb291524fc740292c0ddec5bc0108",
+      "changedPixels": 61786,
+      "percentChangedPixels": 10.242,
+      "shadowOnlySvgChange": true
+    },
+    {
+      "id": "leningrad",
+      "forestHexes": 44,
+      "previousSvgSHA256": "38834b01a0784dcc5104576c06d26e85c02e769ecddadd83cd6afa750cc7527f",
+      "previousPngSHA256": "b14b13f7a9243e3395e2ba8f752a1af40ee2d3146a4c62e6b2d770ee571a735e",
+      "candidateSvgSHA256": "e45856f7d56b5acfecf7083b405b9465d1c21459d698ac65e9196f581f832925",
+      "candidatePngSHA256": "a9f1886cd3c9d85bfe5238e82a79a613550b98170ff08967ff08f14e20690ed2",
+      "changedPixels": 102068,
+      "percentChangedPixels": 9.97,
+      "shadowOnlySvgChange": true
+    },
+    {
+      "id": "kiev",
+      "forestHexes": 41,
+      "previousSvgSHA256": "240738ff700d115e088a9c6f7b713a636f37ded83dc0d951346954184ca6a7fa",
+      "previousPngSHA256": "2d138d5d05acf35c95825df533e21cc1a061f9a93596d309fc6c30155fa545c7",
+      "candidateSvgSHA256": "5f455d80d6d30eec822d898f41ec12c21fc03a7f4fd165ddd51fa2b7c28324a4",
+      "candidatePngSHA256": "b355b35fc0cd620c55f8c63cc61e4a7a2e96e9044c972f9a4e65b7a239b3a9ff",
+      "changedPixels": 103469,
+      "percentChangedPixels": 9.695,
+      "shadowOnlySvgChange": true
+    },
+    {
+      "id": "kiev-odessa",
+      "forestHexes": 52,
+      "previousSvgSHA256": "e13fc04d93f2e2f0f01ba6d21a0130a417c6262124e7f8820afd9505eed70f70",
+      "previousPngSHA256": "7971fb5c86a72a7312e947bf7973684f1b332a157cfa9148531becd9912c1770",
+      "candidateSvgSHA256": "7cb5fafbb18babd2b4b2a5129e6802607dd4b0df8b07e46491319c07ecb9c71c",
+      "candidatePngSHA256": "f7a84021dda8a796b8b04cfe018d15b6ad043e8a39e08ff7f0d7eccab721f71a",
+      "changedPixels": 124301,
+      "percentChangedPixels": 6.77,
+      "shadowOnlySvgChange": true
+    }
+  ],
+  "notes": [
+    "Every new export SVG equals the previous v372 export after removal of exactly four shadow-specific SVG nodes, with no other changes.",
+    "Actual PNG exports rendered by Inkscape from the single shared game engine; not synthesized art.",
+    "The historical v350 approved Leningrad baseline remains unmodified; new whole-image hashes are separate unapproved candidates.",
+    "Legacy Battle for Moscow production routing and gameplay remain unchanged."
+  ]
+}

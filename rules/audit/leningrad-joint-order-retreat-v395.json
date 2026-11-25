@@ -1,0 +1,47 @@
+{
+  "checkpoint": 161,
+  "version": "v395",
+  "assertions": 30,
+  "scope": "controlled four-cell, three-edge topology selected from source-certified Leningrad board, synthetic traffic",
+  "sourceRule": "references/rules/leningrad-rules.pdf §10.6",
+  "sourceSHA256": "74d332e052e735e2378027a06f95e9715392773f249561bf1c00cae08a2bbfa7",
+  "results": {
+    "orders": [
+      [
+        "leningrad-front-r01c01",
+        "leningrad-front-r01c04"
+      ],
+      [
+        "leningrad-front-r01c04",
+        "leningrad-front-r01c01"
+      ]
+    ],
+    "combinations": 2,
+    "first": {
+      "leningrad-front-r01c01": {
+        "route": [
+          "0409",
+          "0508"
+        ],
+        "zocHexes": [],
+        "endInEZOC": false,
+        "extraHexes": 0
+      },
+      "leningrad-front-r01c04": {
+        "route": [
+          "0409",
+          "0508",
+          "0608"
+        ],
+        "zocHexes": [],
+        "endInEZOC": false,
+        "extraHexes": 1
+      }
+    }
+  },
+  "limitations": [
+    "Synthetic reduced topology and crowded unit placement are not a published historical board/deployment",
+    "Only when independent joint route search offers no certified pair",
+    "Longer and more complex multi-unit retreat equivalence remains unverified"
+  ]
+}

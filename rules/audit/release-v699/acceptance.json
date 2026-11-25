@@ -1,0 +1,24 @@
+{
+  "completed": [
+    {
+      "id": "arduous-standard",
+      "actions": 452,
+      "cities": 6,
+      "outcome": "soviet-victory",
+      "exactRestore": true,
+      "journalSha256": "6510c9edebe75e5f26c635615b8ca90a16e8acd25604fb1d159bcbccc2847fb2"
+    },
+    {
+      "id": "arduous-advanced",
+      "actions": 571,
+      "cities": 6,
+      "outcome": "soviet-victory",
+      "exactRestore": true,
+      "journalSha256": "46a7a0509ee2d1c7040a4f0ff2f7a7dfad8d20653b2183f30bcb4a31a31d53f1"
+    }
+  ],
+  "freshDefaultHistoricalCombinations": 4,
+  "requiredCombinations": 10,
+  "actualHostedAcceptance": false,
+  "notes": "Batch wrapper timed out; only complete reports with matching journal lengths retained. CRT and bundle regression passed."
+}

@@ -1,0 +1,52 @@
+{
+  "checkpoint": 294,
+  "version": "v528",
+  "status": "PASS-diagnostic-only",
+  "assertions": 130,
+  "source": "active 32-side Soviet / 16-hex candidate edge from v527",
+  "candidateEntryHexes": [
+    "1601",
+    "1701",
+    "1801",
+    "1802",
+    "1803",
+    "1804",
+    "1805",
+    "1806",
+    "1807",
+    "1808",
+    "1809",
+    "1810",
+    "1911",
+    "1912",
+    "1913",
+    "1914"
+  ],
+  "example": {
+    "nikolaevWithOldExitsBlocked": true,
+    "openOneCity": {
+      "hypotheticalOnly": true,
+      "outcome": "draw",
+      "reason": "last-soviet-city-connected",
+      "germanCities": 19,
+      "remainingSovietCities": [
+        "Nikolaev"
+      ]
+    },
+    "allExitHexesOccupied": {
+      "hypotheticalOnly": true,
+      "outcome": "german-victory",
+      "reason": "last-soviet-city-isolated",
+      "germanCities": 19,
+      "remainingSovietCities": [
+        "Nikolaev"
+      ]
+    }
+  },
+  "gates": {
+    "liveReinforcementPlacement": false,
+    "liveReplacementCommunication": false,
+    "liveVictoryIsolation": false,
+    "productionCampaign": false
+  }
+}

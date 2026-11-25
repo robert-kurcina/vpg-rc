@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "scenarioId": "arduous",
+  "source": [
+    "references/rules/arduous-rules.pdf §4.0 (seven game turns)",
+    "references/rules/arduous-rules.pdf §5.0 (all 12 German victory; 10 or fewer Soviet victory; exactly 11 draw)",
+    "references/rules/arduous-rules.pdf §6.0 (all cities initially Soviet-controlled)"
+  ],
+  "mode": "city-count-three-way-v1",
+  "cityCount": 12,
+  "axisOwner": "german",
+  "defenderOwner": "soviet",
+  "germanVictoryAtLeast": 12,
+  "sovietVictoryAtMost": 10,
+  "draw": {
+    "axisCityCount": 11
+  },
+  "sourceStatus": "source-scored; campaign start, map movement, and buildup not yet certified",
+  "initialDefaultOwner": "soviet",
+  "initialControlOverrides": {}
+}

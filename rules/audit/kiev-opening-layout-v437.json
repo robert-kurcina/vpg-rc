@@ -1,0 +1,28 @@
+{
+  "checkpoint": 203,
+  "version": "v437",
+  "status": "validated-sample-opening-NOT-gameplay-authorized",
+  "assertions": 180,
+  "sourceRule": "references/rules/kiev-rules.pdf §6.0, printed page 2",
+  "sourcePins": {
+    "rulebookSha256": "d55e8f0e567d1f8c7907c4fc8368954ec0e5fa8d6fe9e8e71c61acf9bb3c3756",
+    "definitiveSvgSha256": "2b15c3a92a282a7efc27d54bcd8994470f0fce8ee5417d5d734969fcd2c4ab7e"
+  },
+  "sourceFaces": {
+    "starting": 30,
+    "axis": 14,
+    "soviet": 16,
+    "mechanizedConcealed": 10,
+    "unplacedGroundFaces": 7
+  },
+  "startingGeometry": {
+    "sovietStars": 10,
+    "axisCrosses": 11,
+    "rearArmies": 2,
+    "rearMechanized": 4,
+    "polandDoubleStacks": 3,
+    "sourceRuleArmySeparation": "front-line+fixed-rear",
+    "firstTurnStart": "german-combat"
+  },
+  "blocker": "source-legal sample, not historical unit identities or an authorized Kiev campaign; map graph remains provisional"
+}

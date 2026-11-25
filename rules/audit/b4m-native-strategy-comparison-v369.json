@@ -1,0 +1,107 @@
+{
+  "checkpoint": 135,
+  "version": "v369",
+  "status": "PASS",
+  "scope": "Soviet response from identical B4M first-turn positions",
+  "statusBoundary": "Shared-rule legal-action parity and targeted fortress preference; NOT equality of legacy AI decisions or competitive strength",
+  "cases": 3,
+  "guardHeld": 3,
+  "saves": 3,
+  "baselineActions": 83,
+  "objectiveActions": 83,
+  "rows": [
+    {
+      "seed": 1,
+      "initialSideTurn": "soviet",
+      "firstBaseline": {
+        "type": "replacement",
+        "choice": {
+          "type": "restore",
+          "id": "s10"
+        }
+      },
+      "firstObjective": {
+        "type": "replacement",
+        "choice": {
+          "type": "enter",
+          "id": "s13",
+          "x": 10,
+          "y": 2
+        }
+      },
+      "legacyFortressFirstMoscowEntry": "s13",
+      "baselineGarrison": "s43",
+      "objectiveGarrison": "s13",
+      "legacyGarrison": "s13",
+      "baselineVsLegacyUnitDifferences": 16,
+      "objectiveVsLegacyUnitDifferences": 15,
+      "objectiveMoves": 15,
+      "objectiveBattles": 2,
+      "legacyPhaseSide": "german",
+      "baselineNativeActions": 28,
+      "objectiveNativeActions": 28
+    },
+    {
+      "seed": 17,
+      "initialSideTurn": "soviet",
+      "firstBaseline": {
+        "type": "replacement",
+        "choice": {
+          "type": "restore",
+          "id": "s10"
+        }
+      },
+      "firstObjective": {
+        "type": "replacement",
+        "choice": {
+          "type": "enter",
+          "id": "s13",
+          "x": 10,
+          "y": 2
+        }
+      },
+      "legacyFortressFirstMoscowEntry": "s13",
+      "baselineGarrison": "s43",
+      "objectiveGarrison": "s13",
+      "legacyGarrison": "s13",
+      "baselineVsLegacyUnitDifferences": 13,
+      "objectiveVsLegacyUnitDifferences": 12,
+      "objectiveMoves": 14,
+      "objectiveBattles": 2,
+      "legacyPhaseSide": "german",
+      "baselineNativeActions": 27,
+      "objectiveNativeActions": 27
+    },
+    {
+      "seed": 1941,
+      "initialSideTurn": "soviet",
+      "firstBaseline": {
+        "type": "replacement",
+        "choice": {
+          "type": "restore",
+          "id": "s10"
+        }
+      },
+      "firstObjective": {
+        "type": "replacement",
+        "choice": {
+          "type": "enter",
+          "id": "s13",
+          "x": 10,
+          "y": 2
+        }
+      },
+      "legacyFortressFirstMoscowEntry": "s13",
+      "baselineGarrison": "s43",
+      "objectiveGarrison": "s13",
+      "legacyGarrison": "s13",
+      "baselineVsLegacyUnitDifferences": 14,
+      "objectiveVsLegacyUnitDifferences": 13,
+      "objectiveMoves": 15,
+      "objectiveBattles": 2,
+      "legacyPhaseSide": "german",
+      "baselineNativeActions": 28,
+      "objectiveNativeActions": 28
+    }
+  ]
+}

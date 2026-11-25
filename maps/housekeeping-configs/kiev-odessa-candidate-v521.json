@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "scenarioId": "kiev-odessa",
+  "source": [
+    "references/rules/odessa-rules.pdf §5.0",
+    "maps/victory-configs/odessa-source-city-ledger-v497.json (20 source-reviewed cities)"
+  ],
+  "mode": "two-tier-city-isolation-v1",
+  "cityCount": 20,
+  "axisOwner": "german",
+  "defenderOwner": "soviet",
+  "germanVictoryAtLeast": 20,
+  "sovietVictoryAtMost": 17,
+  "draw": {
+    "axisCityCount": 19,
+    "twoRemainingAxisCityCount": 18,
+    "mustBeIsolatedFromDefenderEdge": true
+  },
+  "initialDefaultOwner": "soviet",
+  "initialControlOverrides": {
+    "Lublin": "german",
+    "Iasi": "german",
+    "Brăila": "german"
+  },
+  "sourceCityHexes": {
+    "Lublin": "0201",
+    "Lvov": "0404",
+    "Kovel": "0502",
+    "Stanislavov": "0507",
+    "Tarnopol": "0706",
+    "Chernovtsy": "0708",
+    "Rovno": "0803",
+    "Sarny": "0902",
+    "Shepetovka": "0905",
+    "Iasi": "1010",
+    "Brăila": "1016",
+    "Zhitomir": "1105",
+    "Vinnitsa": "1107",
+    "Chisinau": "1211",
+    "Kiev": "1404",
+    "Uman": "1408",
+    "Odessa": "1513",
+    "Chernigov": "1602",
+    "Kirovograd": "1708",
+    "Nikolaev": "1811"
+  },
+  "sourceStatus": "source-scored-candidate; historical isolation requires certified eastern-border communication graph; NOT live"
+}

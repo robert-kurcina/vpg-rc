@@ -1,0 +1,138 @@
+{
+  "checkpoint": 218,
+  "version": "v452",
+  "scenario": "arduous",
+  "source": "references/rules/arduous-rules.pdf \u00a7\u00a710,12",
+  "pdfSHA256": "1ac46f3e958cf1d08768f6b56964100ab0951ece7e310ac3a30e8c479a8b986c",
+  "sourceCounter": "arduous-front-r02c07",
+  "germanLoss": [
+    "Turn 1 German supported EX, 0305, die 4",
+    "Turn 1 Soviet EX, 0306, die 2"
+  ],
+  "browserActionsAfterLoss": 12,
+  "rebuildTurn": 4,
+  "rebuildHex": "0105",
+  "replacementEvent": {
+    "hex": "0105",
+    "kind": "replacement-rebuilt",
+    "stepsSpent": 1,
+    "unitId": "arduous-front-r02c07"
+  },
+  "checks": 168,
+  "pageErrors": [],
+  "phaseTrace": [
+    [
+      1,
+      "german-combat"
+    ],
+    [
+      1,
+      "german-special-movement"
+    ],
+    [
+      1,
+      "soviet-buildup"
+    ],
+    [
+      1,
+      "soviet-special-movement"
+    ],
+    [
+      1,
+      "soviet-combat"
+    ],
+    [
+      1,
+      "soviet-movement"
+    ],
+    [
+      1,
+      "housekeeping"
+    ],
+    [
+      2,
+      "german-buildup"
+    ],
+    [
+      2,
+      "german-movement"
+    ],
+    [
+      2,
+      "german-combat"
+    ],
+    [
+      2,
+      "german-special-movement"
+    ],
+    [
+      2,
+      "soviet-buildup"
+    ],
+    [
+      2,
+      "soviet-special-movement"
+    ],
+    [
+      2,
+      "soviet-combat"
+    ],
+    [
+      2,
+      "soviet-movement"
+    ],
+    [
+      2,
+      "housekeeping"
+    ],
+    [
+      3,
+      "german-buildup"
+    ],
+    [
+      3,
+      "german-movement"
+    ],
+    [
+      3,
+      "german-combat"
+    ],
+    [
+      3,
+      "german-special-movement"
+    ],
+    [
+      3,
+      "soviet-buildup"
+    ],
+    [
+      3,
+      "soviet-special-movement"
+    ],
+    [
+      3,
+      "soviet-combat"
+    ],
+    [
+      3,
+      "soviet-movement"
+    ],
+    [
+      3,
+      "housekeeping"
+    ],
+    [
+      4,
+      "german-buildup"
+    ]
+  ],
+  "saveRestore": "identical",
+  "undo": "identical",
+  "replay": "identical",
+  "visual": "rules/audit/visual/arduous-turn4-german-rebuild-v452.png",
+  "limitations": [
+    "One candidate source-valid opening, specific deterministic combat dice and player actions.",
+    "German captured-city rebuilding via genuine city capture and browser controls remains unverified.",
+    "The bounded EX choice catalog is not exhaustive."
+  ]
+}

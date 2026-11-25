@@ -1,0 +1,23 @@
+{
+  "version": "v523",
+  "checkpoint": 289,
+  "status": "PASS",
+  "assertions": 46,
+  "baseRomanianFace": "kiev-front-r02c08",
+  "germanSubsetSourceFaceCount": 3,
+  "supplementedRomanianDesignCount": 3,
+  "sourceRearMechanizedHex": "1309",
+  "unresolved": [
+    "frontline-stars:12-instead-of-11",
+    "rear-deployment-symbol-disagreement",
+    "unclassified-political-territory:211",
+    "unbound-base-romanian-unit",
+    "unbound-base-german-infantry"
+  ],
+  "notes": [
+    "Only source face IDs are bound; gameplay runtime IDs/territorial starting hexes are not assigned.",
+    "Combined SVG 0706 vs rulebook 1309 marker conflict remains visible; no map changes.",
+    "12-star vs 11-rule marker count remains unresolved; no star removed.",
+    "The submitted base Kiev candidate is synthetic, not a canonical Odessa opening."
+  ]
+}

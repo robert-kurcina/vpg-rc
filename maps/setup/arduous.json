@@ -1,0 +1,147 @@
+{
+  "schemaVersion": 1,
+  "scenarioId": "arduous",
+  "status": "source-backed-candidate-setup-not-gameplay-activated",
+  "ruleSource": "references/rules/arduous-rules.pdf \u00a76.0, printed page 2",
+  "mapSourceGame": "The Arduous Beginning",
+  "markerSlots": {
+    "cross": {
+      "count": 8,
+      "occupancy": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ]
+    },
+    "star": {
+      "count": 7,
+      "occupancy": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    "fixedInfantry": {
+      "count": 3,
+      "occupancy": [
+        1,
+        1,
+        1
+      ]
+    },
+    "fixedMechanized": {
+      "count": 3,
+      "occupancy": [
+        1,
+        1,
+        1
+      ],
+      "cityAnchors": [
+        {
+          "hex": "0907",
+          "cityLabel": "Minsk",
+          "ruleSource": "arduous-rules.pdf \u00a76.0 #2"
+        },
+        {
+          "hex": "0609",
+          "cityLabel": "Baranovichi",
+          "ruleSource": "arduous-rules.pdf \u00a76.0 #2"
+        },
+        {
+          "hex": "1510",
+          "cityLabel": "Gomel",
+          "ruleSource": "arduous-rules.pdf \u00a76.0 #2"
+        }
+      ]
+    }
+  },
+  "groups": {
+    "germanInitialPanzer": {
+      "marker": "cross",
+      "owner": "german",
+      "class": "panzer",
+      "size": "corps",
+      "pool": "germanPanzer",
+      "count": 5,
+      "printedAffiliation": "axis",
+      "printedKind": "tank"
+    },
+    "germanInitialInfantry": {
+      "marker": "cross",
+      "owner": "german",
+      "class": "infantry",
+      "size": "corps",
+      "pool": "germanInfantry",
+      "count": 11,
+      "printedAffiliation": "axis",
+      "printedKind": "infantry"
+    },
+    "sovietFrontArmies": {
+      "marker": "star",
+      "owner": "soviet",
+      "class": "infantry",
+      "size": "army",
+      "pool": "sovietArmies",
+      "count": 3,
+      "printedAffiliation": "soviet",
+      "printedKind": "infantry"
+    },
+    "sovietFrontMechanized": {
+      "marker": "star",
+      "owner": "soviet",
+      "class": "mechanized",
+      "size": "corps",
+      "pool": "sovietMechanized",
+      "count": 4,
+      "printedAffiliation": "soviet",
+      "printedKind": "mechanized"
+    },
+    "sovietFixedArmies": {
+      "marker": "fixedInfantry",
+      "owner": "soviet",
+      "class": "infantry",
+      "size": "army",
+      "pool": "sovietArmies",
+      "count": 3,
+      "printedAffiliation": "soviet",
+      "printedKind": "infantry"
+    },
+    "sovietFixedMechanized": {
+      "marker": "fixedMechanized",
+      "owner": "soviet",
+      "class": "mechanized",
+      "size": "corps",
+      "pool": "sovietMechanized",
+      "count": 3,
+      "printedAffiliation": "soviet",
+      "printedKind": "mechanized"
+    }
+  },
+  "expectedStartingUnits": 29,
+  "nonAdjacentGroups": [
+    "sovietFrontArmies"
+  ],
+  "notes": [
+    "Brest 3-4 Garrison is a separately source-bound reverse-only unit, not the incorrectly tagged Mechanized Corps glyph on the SVG.",
+    "Minsk/Baranovichi/Gomel fixed Mechanized positions come from the rulebook and city labels; two source SVG glyphs have mistaken German faction metadata and Baranovichi has no corresponding fixedMechanized tile marker.",
+    "Reinforcements are explicitly allocated to the inventory but have no initial map positions."
+  ],
+  "concealedSetup": {
+    "groups": [
+      "sovietFrontMechanized",
+      "sovietFixedMechanized",
+      "sovietReinforcementMechanized"
+    ],
+    "count": 10,
+    "requireMixBeforeCampaign": true
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "checkpoint": 368,
+  "version": "v602",
+  "scope": "Printed Kiev \u00a7\u00a711\u201312.4; current standalone graph; seven-turn no-elective-action campaign and synthetic casualty origins. No new browser run or strategic qualification.",
+  "passed": {
+    "kiev-source-arrivals-v602": 26,
+    "kiev-source-replacements-v602": 19,
+    "kiev-fourth-mechanized-replacement-v437": 24,
+    "historical-buildup-campaign-v388": 88,
+    "advanced-crt-v557": 301
+  },
+  "total": 458,
+  "bundleModules": 59,
+  "productionChanges": [],
+  "remaining": [
+    "Standalone Kiev contested campaign regression after transit configuration changes",
+    "Owner-selected end-phase overstack removal",
+    "Outstanding B4M and Leningrad policy adjudications",
+    "Strategic AI and browser qualification"
+  ]
+}

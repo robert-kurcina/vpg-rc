@@ -1,0 +1,34 @@
+'use strict';
+const assert=require('node:assert/strict');
+const Registry=require('../core/printed_coordinate_registry');
+const T=require('../core/terrain_tiles');
+const board=require('../maps/leningrad.json');
+const report=require('../tools/audit-leningrad-parity-v340.js').audit();
+const style=T.numberStyle(board,{});
+const reg=Registry.resolve(board,c=>T.formatHexNumber(c,style));
+assert.equal(report.cellCount,197);
+assert.equal(report.parity.physicalEvenColumnsHigher,true);
+assert.equal(report.parity.sourceFacingEvenColumnsHigher,false);
+assert.equal(report.parity.geometryParitySetting,'odd');
+assert.equal(report.invalidPrintedCoordinates.length,11);
+assert.equal(report.zeroColumnInternalCells.length,10);
+assert.equal(report.readyForHistoricalRekey,false);
+assert.equal(reg.complete,false);
+for(const [id,number] of [['1701','1601'],['0208','0107'],['0707','0607'],['0511','0411']]){
+ assert.equal(reg.internalToPrinted(id),number,`source label drift at ${id}`);
+ assert.equal(reg.printedToInternal(number),id,`inverse mapping drift at ${number}`);
+}
+const paired={cells:[{id:'0101',column:1,row:1},{id:'0201',column:2,row:1}]};
+const valid=Registry.resolve(paired,c=>c.id);
+assert(valid.complete);
+assert.equal(valid.printedToInternal('0201'),'0201');
+assert.equal(valid.internalToPrinted('0101'),'0101');
+assert.equal(Registry.resolve(paired,()=> '0101').duplicates.length,1);
+assert.equal(Registry.resolve(paired,()=> '0001').invalid.length,2);
+assert.equal(Registry.resolve(paired,()=> 'garbage').complete,false);
+assert.throws(()=>Registry.resolve(null,()=> '0101'),/Board/);
+console.log('PASS v340: parity contradiction and fail-closed generic printed-coordinate registry');
+assert.equal(report.alternatives.current.complete,false);
+assert.equal(report.alternatives.current.leningradLabel,'1601');
+assert.equal(report.alternatives.removePrintedOffsets.complete,true);
+assert.equal(report.alternatives.removePrintedOffsets.leningradLabel,'1701');

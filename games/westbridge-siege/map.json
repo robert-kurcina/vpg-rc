@@ -1,0 +1,190 @@
+{
+  "topology": "even-q-flat",
+  "width": 5,
+  "height": 6,
+  "cells": [
+    {
+      "x": 0,
+      "y": 0,
+      "terrain": "open",
+      "city": "none"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "terrain": "open",
+      "city": "none"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "terrain": "open",
+      "city": "none"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "terrain": "open",
+      "city": "none"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "terrain": "open",
+      "city": "none"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "terrain": "open",
+      "city": "none"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "terrain": "open",
+      "city": "none"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "terrain": "forest",
+      "city": "none"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "terrain": "forest",
+      "city": "none"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "terrain": "open",
+      "city": "none"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "terrain": "open",
+      "city": "town",
+      "owner": "amber"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "terrain": "open",
+      "city": "none"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "terrain": "open",
+      "city": "none"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "terrain": "open",
+      "city": "none"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "terrain": "open",
+      "city": "citadel",
+      "owner": null
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "terrain": "open",
+      "city": "none"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "terrain": "open",
+      "city": "none"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "terrain": "open",
+      "city": "none"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "terrain": "open",
+      "city": "none"
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "terrain": "open",
+      "city": "town",
+      "owner": "violet"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "terrain": "open",
+      "city": "none"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "terrain": "forest",
+      "city": "none"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "terrain": "forest",
+      "city": "none"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "terrain": "open",
+      "city": "none"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "terrain": "open",
+      "city": "none"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "terrain": "open",
+      "city": "none"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "terrain": "open",
+      "city": "none"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "terrain": "open",
+      "city": "none"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "terrain": "open",
+      "city": "none"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "terrain": "open",
+      "city": "none"
+    }
+  ]
+}

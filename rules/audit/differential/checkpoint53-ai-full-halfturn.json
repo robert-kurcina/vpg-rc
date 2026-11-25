@@ -1,0 +1,26 @@
+{
+  "checkpoint": 53,
+  "scope": "Bundled Oberlabs-compatible AI versus opt-in shared WargameSession; not independent upstream Oberlabs execution",
+  "test": "tests/shared-solo-ai-half-turn-v317.test.js",
+  "reference": "legacy/engine.js::playSide",
+  "implementation": "core/solo_ai.js::executeLegacyHalfTurn",
+  "cases": 24,
+  "testedSides": ["german", "soviet"],
+  "testedTurns": [2, 3, 4, 5],
+  "testedPolicies": ["balanced", "conserve", "fortress"],
+  "actionsExecuted": 553,
+  "combatEvents": 57,
+  "turnFourSovietShockCases": 3,
+  "comparison": "Complete state including unit positions, strengths, city control, seed, ordered log and end-turn metadata; German turn-4 post-half-turn human reinforcement phase explicitly normalized to the legacy macro replacement phase",
+  "undo": "Entire half-turn rewound to identical initial state and used-unit tracking for each case",
+  "persistence": "One test case verifies session-v2 serialize/restore and exact replay",
+  "status": "DONE - bounded pilot",
+  "unverified": [
+    "sweep/adaptive/envelop/interdict/north-route compound strategic policies",
+    "turn-one auto-setup and opening combat",
+    "full consecutive seven-turn shared AI campaign",
+    "human/AI mixed browser cutover and known phase-Undo used-unit difference",
+    "independent upstream Oberlabs executable comparison"
+  ],
+  "intentionalDifference": "After German turn four, the UI-facing shared action system exposes mandatory Soviet reinforcement; playSide's AI macro returns replacement phase. The transition is not removed."
+}

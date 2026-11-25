@@ -1,0 +1,249 @@
+{
+  "schemaVersion": 1,
+  "scenarioId": "leningrad",
+  "source": [
+    "references/rules/leningrad-rules.pdf \u00a7\u00a75.0, 6.0, 11.0, 12.0",
+    "references/rules/leningrad-aid.webp Game Turn Record Track"
+  ],
+  "sourceIdentityStatus": "candidate-allocation-not-production-certified",
+  "replacementSteps": {
+    "german": [
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "soviet": [
+      0,
+      1,
+      1,
+      2,
+      2,
+      2,
+      1,
+      1
+    ]
+  },
+  "entryEdge": {
+    "german": [
+      "0211",
+      "0311",
+      "0411",
+      "0511"
+    ],
+    "soviet": [
+      "2101",
+      "2102",
+      "2103",
+      "2104",
+      "2105",
+      "2106",
+      "2107"
+    ]
+  },
+  "initialCityControl": {
+    "Liepaja": "soviet",
+    "Insterburg": "german",
+    "Siauliai": "soviet",
+    "Riga": "soviet",
+    "Kaunas": "soviet",
+    "Parnu": "soviet",
+    "Tallinn": "soviet",
+    "Daugavpils": "soviet",
+    "Tartu": "soviet",
+    "Narva": "soviet",
+    "Pskov": "soviet",
+    "Luga": "soviet",
+    "Leningrad": "soviet",
+    "Novgorod": "soviet"
+  },
+  "initialGroups": {
+    "sovietRearInfantryCorps": {
+      "class": "infantry",
+      "size": "corps"
+    },
+    "sovietRearMechanizedCorps": {
+      "class": "mechanized",
+      "size": "corps"
+    },
+    "sovietFrontInfantryCorps": {
+      "class": "infantry",
+      "size": "corps"
+    },
+    "sovietFrontMechanizedCorps": {
+      "class": "mechanized",
+      "size": "corps"
+    },
+    "sovietFrontArmies": {
+      "class": "infantry",
+      "size": "army"
+    },
+    "germanInitialInfantry": {
+      "class": "infantry",
+      "size": "corps"
+    },
+    "germanInitialPanzer": {
+      "class": "panzer",
+      "size": "corps"
+    }
+  },
+  "specialMilitiaGroup": "sovietTurn3WorkersMilitia",
+  "specialMilitiaCity": "Leningrad",
+  "reinforcements": [
+    {
+      "slotId": "t3-soviet-workers-militia-1",
+      "turn": 3,
+      "owner": "soviet",
+      "kind": "ground",
+      "group": "sovietTurn3WorkersMilitia",
+      "index": 0,
+      "strength": "full",
+      "printedKind": "infantry",
+      "printedAffiliation": "soviet",
+      "printedValues": "2\u00b75\u00b73",
+      "placement": "named-city",
+      "city": "Leningrad",
+      "class": "infantry",
+      "size": "corps"
+    },
+    {
+      "slotId": "t4-german-infantry-corps-1",
+      "turn": 4,
+      "owner": "german",
+      "kind": "ground",
+      "group": "germanTurn4Infantry",
+      "index": 0,
+      "strength": "full",
+      "printedKind": "infantry",
+      "printedAffiliation": "axis",
+      "printedValues": "6-4",
+      "placement": "edge",
+      "class": "infantry",
+      "size": "corps"
+    },
+    {
+      "slotId": "t4-german-infantry-corps-2",
+      "turn": 4,
+      "owner": "german",
+      "kind": "ground",
+      "group": "germanTurn4Infantry",
+      "index": 1,
+      "strength": "full",
+      "printedKind": "infantry",
+      "printedAffiliation": "axis",
+      "printedValues": "6-4",
+      "placement": "edge",
+      "class": "infantry",
+      "size": "corps"
+    },
+    {
+      "slotId": "t4-soviet-infantry-army-1",
+      "turn": 4,
+      "owner": "soviet",
+      "kind": "ground",
+      "group": "sovietTurn4Army",
+      "index": 0,
+      "strength": "reduced",
+      "printedKind": "infantry",
+      "printedAffiliation": "soviet",
+      "printedValues": "8-4",
+      "placement": "edge",
+      "class": "infantry",
+      "size": "army"
+    },
+    {
+      "slotId": "t5-soviet-infantry-army-1",
+      "turn": 5,
+      "owner": "soviet",
+      "kind": "ground",
+      "group": "sovietTurn5Army",
+      "index": 0,
+      "strength": "reduced",
+      "printedKind": "infantry",
+      "printedAffiliation": "soviet",
+      "printedValues": "8-4",
+      "placement": "edge",
+      "class": "infantry",
+      "size": "army"
+    },
+    {
+      "slotId": "t6-soviet-infantry-army-1",
+      "turn": 6,
+      "owner": "soviet",
+      "kind": "ground",
+      "group": "sovietTurn6Army",
+      "index": 0,
+      "strength": "reduced",
+      "printedKind": "infantry",
+      "printedAffiliation": "soviet",
+      "printedValues": "8-4",
+      "placement": "edge",
+      "class": "infantry",
+      "size": "army"
+    },
+    {
+      "slotId": "t7-soviet-infantry-army-1",
+      "turn": 7,
+      "owner": "soviet",
+      "kind": "ground",
+      "group": "sovietTurn7Armies",
+      "index": 0,
+      "strength": "full",
+      "printedKind": "infantry",
+      "printedAffiliation": "soviet",
+      "printedValues": "8-4",
+      "placement": "edge",
+      "class": "infantry",
+      "size": "army"
+    },
+    {
+      "slotId": "t7-soviet-infantry-army-2",
+      "turn": 7,
+      "owner": "soviet",
+      "kind": "ground",
+      "group": "sovietTurn7Armies",
+      "index": 1,
+      "strength": "full",
+      "printedKind": "infantry",
+      "printedAffiliation": "soviet",
+      "printedValues": "8-4",
+      "placement": "edge",
+      "class": "infantry",
+      "size": "army"
+    },
+    {
+      "slotId": "t8-soviet-infantry-army-1",
+      "turn": 8,
+      "owner": "soviet",
+      "kind": "ground",
+      "group": "sovietTurn8Army",
+      "index": 0,
+      "strength": "full",
+      "printedKind": "infantry",
+      "printedAffiliation": "soviet",
+      "printedValues": "8-4",
+      "placement": "edge",
+      "class": "infantry",
+      "size": "army"
+    }
+  ],
+  "sourceGame": "Target: Leningrad",
+  "printedAffiliationToOwner": {
+    "axis": "german",
+    "soviet": "soviet"
+  },
+  "supportArrivals": [
+    {
+      "slotId": "t6-german-air-corps-fk-viii-1",
+      "turn": 6,
+      "owner": "german",
+      "faceId": "leningrad-front-r04c04",
+      "printedIdentifier": "FK VIII",
+      "shiftRating": 2
+    }
+  ]
+}

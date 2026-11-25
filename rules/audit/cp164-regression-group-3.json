@@ -1,0 +1,37 @@
+[
+  {
+    "index": 29,
+    "command": "node tests/historical-mixed-combat-eight-turn-v390.test.js",
+    "passed": true,
+    "seconds": 6.55,
+    "outputTail": "PASS v390 63 real mixed-combat, reinforcement and eight-turn persistence assertions; 110 actions; replacement=true\n"
+  },
+  {
+    "index": 30,
+    "command": "node tests/historical-campaign-action-catalog-v390.test.js",
+    "passed": true,
+    "seconds": 2.47,
+    "outputTail": "PASS v390 109 source-validated action discovery assertions\n"
+  },
+  {
+    "index": 31,
+    "command": "node tests/historical-campaign-path-plans-v391.test.js",
+    "passed": true,
+    "seconds": 4.77,
+    "outputTail": "PASS v391 2703 actions, 128 joint plans, 270 reachable destinations, 229 multi-hex choices\n"
+  },
+  {
+    "index": 32,
+    "command": "node tests/historical-campaign-combat-decisions-v392.test.js",
+    "passed": true,
+    "seconds": 3.88,
+    "outputTail": "PASS v392 281 assertions; 10 multi-attacker choices, 128 bounded two-battle plans, 21 die-1 options\n"
+  },
+  {
+    "index": 33,
+    "command": "node tests/historical-postcasualty-retreat-v393.test.js",
+    "passed": true,
+    "seconds": 3.77,
+    "outputTail": "PASS v393 155 assertions; EX 52 DRL 24 new-after-loss 12\n"
+  }
+]

@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 1,
+  "scenarioId": "arduous",
+  "source": "references/rules/arduous-rules.pdf \u00a7\u00a77\u201310; references/rules/arduous-aid.webp Terrain Effects Chart",
+  "crtId": "oberlabs-battle-for-moscow-crt-v1",
+  "printedAffiliationToOwner": {
+    "axis": "german",
+    "soviet": "soviet"
+  },
+  "counterKindToClass": {
+    "tank": "panzer",
+    "infantry": "infantry",
+    "mechanized": "mechanized"
+  },
+  "allowedOutcomes": [
+    "NE",
+    "DR",
+    "DRL",
+    "EX",
+    "AL",
+    "DE"
+  ],
+  "modifiers": {
+    "terrainColumnShifts": {
+      "forest": -1,
+      "swamp": -1,
+      "fortification": -1
+    },
+    "allAttackersAcrossRiverShift": -1,
+    "swampTankStrengthMultiplier": 0.5,
+    "swampAffectedClasses": [
+      "panzer",
+      "mechanized"
+    ],
+    "maximumOdds": 6,
+    "zeroAttackClasses": [
+      "mechanized"
+    ]
+  },
+  "retreatHexes": 2,
+  "armyStackingByOwner": {
+    "soviet": 1
+  },
+  "safeRetreatOnly": true,
+  "retreatMode": "source-forced-ezoc-v1",
+  "supportMode": "not-yet-integrated",
+  "advanceMaxUnits": 1,
+  "cityMarkerMode": "source-typed-v1",
+  "fortificationMode": "soviet-defender-only-v1",
+  "airSupport": {
+    "mode": "photographed-shift-markers-v1",
+    "navalAttackMode": "none",
+    "owner": "german",
+    "source": "references/rules/arduous-rules.pdf \u00a710.5; official front counter sheet",
+    "markers": [
+      {
+        "faceId": "arduous-front-r03c01",
+        "shiftRating": 2,
+        "firstTurn": 1
+      },
+      {
+        "faceId": "arduous-front-r03c02",
+        "shiftRating": 1,
+        "firstTurn": 1
+      }
+    ]
+  },
+  "notes": [
+    "Source-backed river and fortification shifts; B4M CRT adopted universally by project decision.",
+    "One air marker per battle, usable once per game turn; both German air markers available at opening.",
+    "Printed rule 10.1.2 (p.4): revealed zero-attack Soviet Mechanized Corps can participate normally, contributing zero strength and remaining eligible for loss or advance."
+  ],
+  "reverseOnlyPieces": [
+    {
+      "unitId": "arduous:brest-garrison",
+      "sourceFaceId": "arduous-front-r04c03",
+      "reverseFaceId": "arduous-back-r04c06",
+      "owner": "soviet",
+      "class": "infantry",
+      "frontKind": "location-marker",
+      "backKind": "garrison",
+      "backAffiliation": "axis",
+      "printedValues": "3-4"
+    }
+  ]
+}

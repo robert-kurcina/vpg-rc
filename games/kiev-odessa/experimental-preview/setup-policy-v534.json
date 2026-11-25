@@ -1,0 +1,377 @@
+{
+  "schemaVersion": 1,
+  "scenarioId": "kiev-odessa",
+  "status": "source-constrained-experimental-deployment-not-historically-certified",
+  "openingSHA256": "cc6ae2ddb719b6f384b69de9c52a7807f910fb0d85775c2f886c7c9235d8db36",
+  "ruleSources": [
+    "references/rules/kiev-rules.pdf §6.0",
+    "references/rules/odessa-rules.pdf §6.0"
+  ],
+  "limits": [
+    "Soviet frontline may choose any 11 of 12 marked stars, including 1111",
+    "Romanian country authority limited to four source-approved initial setup crosses",
+    "Original SVG retains 0706/1309 fixed-marker discrepancy",
+    "Original ten Soviet Mechanized Corps may be mixed as a validated concealed source-face permutation; legacy unmixed sample remains experimental",
+    "German Turn 3 reinforcement selection may exchange only a printed 6-4 German initial infantry face with the original 6-4 reserve; 8-4 corps remain in the opening"
+  ],
+  "groups": {
+    "germanInitialPanzer": {
+      "ids": [
+        "kiev-front-r01c01",
+        "kiev-front-r01c02",
+        "kiev-front-r01c03"
+      ],
+      "allowed": [
+        "0105",
+        "0203",
+        "0204",
+        "0301",
+        "0302",
+        "0303",
+        "0402"
+      ]
+    },
+    "germanPolandInfantry": {
+      "ids": [
+        "kiev-front-r01c04",
+        "kiev-front-r01c05",
+        "kiev-front-r01c06",
+        "kiev-front-r01c08",
+        "kiev-front-r02c01",
+        "kiev-front-r02c02",
+        "kiev-front-r02c03"
+      ],
+      "allowed": [
+        "0105",
+        "0203",
+        "0204",
+        "0301",
+        "0302",
+        "0303",
+        "0402"
+      ],
+      "required": [
+        "0105",
+        "0203",
+        "0204",
+        "0301",
+        "0302",
+        "0303",
+        "0402"
+      ]
+    },
+    "germanRomaniaInfantry": {
+      "ids": [
+        "kiev-front-r02c04",
+        "kiev-front-r02c05",
+        "kiev-front-r02c06"
+      ],
+      "allowed": [
+        "0709",
+        "0809",
+        "0910",
+        "1010"
+      ]
+    },
+    "romanianInitialArmy": {
+      "ids": [
+        "kiev-front-r02c08"
+      ],
+      "allowed": [
+        "0709",
+        "0809",
+        "0910",
+        "1010"
+      ]
+    },
+    "sovietFrontArmies": {
+      "ids": [
+        "kiev-front-r03c04",
+        "kiev-front-r03c05",
+        "kiev-front-r03c06",
+        "kiev-front-r03c07"
+      ],
+      "allowed": [
+        "0205",
+        "0304",
+        "0305",
+        "0401",
+        "0403",
+        "0502",
+        "0503",
+        "0708",
+        "0808",
+        "1110",
+        "1111",
+        "1113"
+      ]
+    },
+    "sovietFrontMechanized": {
+      "ids": [
+        "kiev-front-r04c02",
+        "kiev-front-r04c03",
+        "kiev-front-r05c01",
+        "kiev-front-r05c02",
+        "kiev-front-r05c03",
+        "kiev-front-r05c04"
+      ],
+      "allowed": [
+        "0205",
+        "0304",
+        "0305",
+        "0401",
+        "0403",
+        "0502",
+        "0503",
+        "0708",
+        "0808",
+        "1110",
+        "1111",
+        "1113"
+      ]
+    },
+    "sovietFrontCavalry": {
+      "ids": [
+        "kiev-odessa/soviet-cavalry-corps-b"
+      ],
+      "allowed": [
+        "0205",
+        "0304",
+        "0305",
+        "0401",
+        "0403",
+        "0502",
+        "0503",
+        "0708",
+        "0808",
+        "1110",
+        "1111",
+        "1113"
+      ]
+    },
+    "sovietFixedArmies": {
+      "ids": [
+        "kiev-front-r03c08",
+        "kiev-front-r04c04"
+      ],
+      "allowed": [
+        "0406",
+        "1007"
+      ],
+      "required": [
+        "0406",
+        "1007"
+      ]
+    },
+    "sovietFixedMechanized": {
+      "ids": [
+        "kiev-front-r05c05",
+        "kiev-front-r05c06",
+        "kiev-front-r05c07",
+        "kiev-front-r05c08"
+      ],
+      "allowed": [
+        "0705",
+        "0803",
+        "1106",
+        "1309"
+      ],
+      "required": [
+        "0705",
+        "0803",
+        "1106",
+        "1309"
+      ]
+    },
+    "sovietFixedCavalry": {
+      "ids": [
+        "kiev-odessa/soviet-cavalry-corps-a"
+      ],
+      "allowed": [
+        "1215"
+      ],
+      "required": [
+        "1215"
+      ]
+    },
+    "sovietCoastalArmy": {
+      "ids": [
+        "kiev-odessa/soviet-coastal-army"
+      ],
+      "allowed": [
+        "1513"
+      ],
+      "required": [
+        "1513"
+      ]
+    },
+    "romanianHomeArmy": {
+      "ids": [
+        "kiev-odessa/romanian-home-army"
+      ],
+      "allowed": [
+        "0709",
+        "0809",
+        "0910",
+        "1010"
+      ]
+    },
+    "romanianFourthArmy": {
+      "ids": [
+        "kiev-odessa/romanian-4th-army"
+      ],
+      "allowed": [
+        "0709",
+        "0809",
+        "0910",
+        "1010"
+      ]
+    },
+    "romanianCavalry": {
+      "ids": [
+        "kiev-odessa/romanian-cavalry-corps"
+      ],
+      "allowed": [
+        "0709",
+        "0809",
+        "0910",
+        "1010"
+      ]
+    }
+  },
+  "groundUnitCount": 36,
+  "distinctGroups": [
+    {
+      "name": "11-of-12-front-stars",
+      "groups": [
+        "sovietFrontArmies",
+        "sovietFrontMechanized",
+        "sovietFrontCavalry"
+      ],
+      "count": 11,
+      "uniquePositions": 11
+    },
+    {
+      "name": "polish-infantry-crosses",
+      "groups": [
+        "germanPolandInfantry"
+      ],
+      "count": 7,
+      "uniquePositions": 7
+    },
+    {
+      "name": "polish-panzer-crosses",
+      "groups": [
+        "germanInitialPanzer"
+      ],
+      "count": 3,
+      "uniquePositions": 3
+    },
+    {
+      "name": "four-romanian-setup-crosses",
+      "groups": [
+        "germanRomaniaInfantry",
+        "romanianInitialArmy",
+        "romanianHomeArmy",
+        "romanianFourthArmy",
+        "romanianCavalry"
+      ],
+      "count": 7,
+      "uniquePositions": 4
+    }
+  ],
+  "exclusiveRegions": [
+    {
+      "name": "soviet-frontline-stars",
+      "hexes": [
+        "0205",
+        "0304",
+        "0305",
+        "0401",
+        "0403",
+        "0502",
+        "0503",
+        "0708",
+        "0808",
+        "1110",
+        "1111",
+        "1113"
+      ],
+      "groups": [
+        "sovietFrontArmies",
+        "sovietFrontMechanized",
+        "sovietFrontCavalry"
+      ],
+      "maxUnits": 1
+    }
+  ],
+  "noAdjacent": [
+    {
+      "name": "soviet-armies",
+      "owner": "soviet",
+      "size": "army"
+    }
+  ],
+  "fixedSupportMarkers": [
+    {
+      "key": "blackSeaFleet",
+      "hex": "1513",
+      "sourceFaceId": "odessa-front-r01c01"
+    }
+  ],
+  "unselectedRegion": {
+    "name": "soviet-frontline-stars",
+    "hexes": [
+      "0205",
+      "0304",
+      "0305",
+      "0401",
+      "0403",
+      "0502",
+      "0503",
+      "0708",
+      "0808",
+      "1110",
+      "1111",
+      "1113"
+    ],
+    "groups": [
+      "sovietFrontArmies",
+      "sovietFrontMechanized",
+      "sovietFrontCavalry"
+    ]
+  },
+  "concealedMix": {
+    "name": "Soviet Mechanized Corps",
+    "owner": "soviet",
+    "class": "mechanized",
+    "size": "corps",
+    "groups": [
+      "sovietFrontMechanized",
+      "sovietFixedMechanized"
+    ],
+    "count": 10
+  },
+  "infantryFaceSelection": {
+    "reserveGroup": "germanReinforcementInfantry",
+    "deployedGroups": [
+      "germanPolandInfantry",
+      "germanRomaniaInfantry"
+    ],
+    "reservePrintedStrength": "6-4",
+    "reserveOwner": "german",
+    "allowedPrintedKinds": [
+      "infantry",
+      "mountain-infantry"
+    ],
+    "source": "Objective: Kiev §6.0 steps 6–8; Objective: Odessa §6.0 steps 6–7",
+    "deployedCount": 10,
+    "allowedDeployedPrintedValues": [
+      "6-4",
+      "8-4"
+    ],
+    "printedAffiliation": "axis",
+    "gameClass": "infantry",
+    "gameSize": "corps"
+  }
+}

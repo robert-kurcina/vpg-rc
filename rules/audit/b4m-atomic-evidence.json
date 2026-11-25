@@ -1,0 +1,686 @@
+{
+  "schemaVersion": 1,
+  "source": "rules/audit/b4m-pdf-atomic-conditions.json",
+  "scope": "Source-informed bounded assertions, not full rule certification; original Oberlabs runtime not independently executed",
+  "entries": [
+    {
+      "id": "pdf.5.0.german-win",
+      "test": "rules/tests/b4m-source-assertions.js",
+      "assertionAnchor": "assert.equal(E.gameResult(c,v),'german')",
+      "claim": "Moscow-controlled German victory at turn seven",
+      "scope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.5.0.soviet-win",
+      "test": "rules/tests/b4m-source-assertions.js",
+      "assertionAnchor": "assert.equal(E.gameResult(c,v),'soviet')",
+      "claim": "Soviet Moscow plus another city victory",
+      "scope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.5.0.draw",
+      "test": "rules/tests/b4m-source-assertions.js",
+      "assertionAnchor": "assert.equal(E.gameResult(c,v),'draw')",
+      "claim": "Final draw under selected city-control configuration",
+      "scope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.6.0.shock-track",
+      "test": "rules/tests/b4m-reinforcement-retreat.js",
+      "assertionAnchor": "assert.ok(!shock.position,'1st Shock Army starts off-map')",
+      "claim": "Shock initially off-map; track graphic position not tested",
+      "scope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.9.3.dr-two",
+      "test": "rules/tests/b4m-reinforcement-retreat.js",
+      "assertionAnchor": "assert.ok(r.path.length>=2)",
+      "claim": "Enumerated legal retreat paths have at least two steps",
+      "scope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.9.3.dr-no-route",
+      "test": "rules/tests/b4m-retreat-adjudication.js",
+      "assertionAnchor": "assert.equal(d.strength,'dead');assert.equal(d.position,null);",
+      "claim": "Blocked retreat eliminates defender in controlled case",
+      "scope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.9.3.dr-ezoc-step",
+      "test": "rules/tests/b4m-retreat-adjudication.js",
+      "assertionAnchor": "assert.equal(result.retreatZocCost,1)",
+      "claim": "A one-ZOC retreat transit costs one defender step",
+      "scope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.9.3.drl-loss-first",
+      "test": "rules/tests/b4m-retreat-adjudication.js",
+      "assertionAnchor": "assert.equal(result.outcome,'DRL');assert.equal(d.strength,'reduced')",
+      "claim": "DRL causes strength reduction in one legal retreat fixture; ordering not instrumented",
+      "scope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.9.3.ex-defender",
+      "test": "rules/tests/b4m-ex-order-policy.js",
+      "assertionAnchor": "assert.deepEqual(d.position,{x:route.x,y:route.y});assert.equal(d.strength,'reduced')",
+      "claim": "One EX reduces a full defender to reduced",
+      "scope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.10.0.enter-reduced",
+      "test": "rules/tests/b4m-known-replacement-gap.js",
+      "assertionAnchor": "assert.equal(u.strength,'reduced')",
+      "claim": "Thirty eligible returning units entered reduced",
+      "scope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.10.0.restore",
+      "test": "rules/tests/b4m-known-replacement-gap.js",
+      "assertionAnchor": "assert.equal(u.strength,'full')",
+      "claim": "Later-turn restoration succeeds when eligible",
+      "scope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.10.1.one-step-per-turn",
+      "test": "rules/tests/b4m-known-replacement-gap.js",
+      "assertionAnchor": "assert.equal(E.applyReplacement(c,s,{type:'restore',id:u.id}),false)",
+      "claim": "Explicit user ruling: same-turn restore rejected after entry",
+      "scope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.11.0.shock-only",
+      "test": "rules/tests/b4m-reinforcement-retreat.js",
+      "assertionAnchor": "assert.deepEqual(E.shockReinforcementOptions(c,state(4,'german')),[]",
+      "claim": "German side has no Shock reinforcement options",
+      "scope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.11.0.shock-full",
+      "test": "rules/tests/b4m-reinforcement-retreat.js",
+      "assertionAnchor": "assert.equal(placed.strength,'full')",
+      "claim": "Shock placement yields full strength",
+      "scope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.11.0.shock-placement",
+      "test": "rules/tests/b4m-reinforcement-retreat.js",
+      "assertionAnchor": "assert.ok(h.sovietReplacement,'\u00a711 entry must be red-border hex')",
+      "claim": "All enumerated Shock options use red-border hexes; occupancy checked separately",
+      "scope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.12.0.mud-turns",
+      "test": "rules/tests/b4m-source-assertions.js",
+      "assertionAnchor": "assert.equal(E.isMud(c,state(3)),true)",
+      "claim": "Turns 3 and 4 mud; turns 2 and 5 clear",
+      "scope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.12.1.one-hex",
+      "test": "rules/tests/b4m-source-assertions.js",
+      "assertionAnchor": "assert.equal(dest.path.length,1",
+      "claim": "German available movement on turns 3\u20134 limited to one hex; non-German not tested",
+      "scope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.4.0.seven-turns",
+      "test": "tests/b4m-source-phase-setup-v584.test.js",
+      "assertionAnchor": "assert.equal(s.turn,8);",
+      "claim": "Seven turns terminate at the next turn cursor; terminal state tested separately",
+      "scope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.4.0.german-replace",
+      "test": "tests/b4m-source-phase-setup-v584.test.js",
+      "assertionAnchor": "assert.deepEqual(seen,expected);",
+      "claim": "German replacement phase occurs on turns 2\u20137",
+      "scope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.4.0.panzer-move",
+      "test": "tests/b4m-source-phase-setup-v584.test.js",
+      "assertionAnchor": "assert.deepEqual(seen,expected);",
+      "claim": "German panzer phase occurs in sequence on turns 2\u20137",
+      "scope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.4.0.german-combat",
+      "test": "tests/b4m-source-phase-setup-v584.test.js",
+      "assertionAnchor": "assert.deepEqual(seen,expected);",
+      "claim": "German combat phase occurs in sequence each turn",
+      "scope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.4.0.german-move",
+      "test": "tests/b4m-source-phase-setup-v584.test.js",
+      "assertionAnchor": "assert.deepEqual(seen,expected);",
+      "claim": "German normal movement phase occurs in sequence each turn",
+      "scope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.4.0.soviet-replace",
+      "test": "tests/b4m-source-phase-setup-v584.test.js",
+      "assertionAnchor": "assert.deepEqual(seen,expected);",
+      "claim": "Soviet replacement phase occurs in sequence each turn",
+      "scope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.4.0.rail-move",
+      "test": "tests/b4m-source-phase-setup-v584.test.js",
+      "assertionAnchor": "assert.deepEqual(seen,expected);",
+      "claim": "Soviet rail phase occurs in sequence each turn",
+      "scope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.4.0.soviet-combat",
+      "test": "tests/b4m-source-phase-setup-v584.test.js",
+      "assertionAnchor": "assert.deepEqual(seen,expected);",
+      "claim": "Soviet combat phase occurs in sequence each turn",
+      "scope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.4.0.soviet-move",
+      "test": "tests/b4m-source-phase-setup-v584.test.js",
+      "assertionAnchor": "assert.deepEqual(seen,expected);",
+      "claim": "Soviet normal movement phase occurs in sequence each turn",
+      "scope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.4.0.housekeeping",
+      "test": "tests/b4m-source-phase-setup-v584.test.js",
+      "assertionAnchor": "assert.deepEqual(seen,expected);",
+      "claim": "Ordered phase trace includes automatic turn boundaries; housekeeping is not a separate interactive phase",
+      "scope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.6.0.soviet-start",
+      "test": "tests/b4m-source-phase-setup-v584.test.js",
+      "assertionAnchor": "assert.equal(sov.filter(u=>u.position).length,14);",
+      "claim": "14 deployed of 16 ordinary Soviet armies; all reduced by separate assertion; exact red-star artwork not tested",
+      "scope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.6.0.soviet-reserve",
+      "test": "tests/b4m-source-phase-setup-v584.test.js",
+      "assertionAnchor": "assert.equal(sov.filter(u=>!u.position).length,2);",
+      "claim": "Two ordinary Soviet armies off-map initially",
+      "scope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.6.0.german-start",
+      "test": "tests/b4m-source-phase-setup-v584.test.js",
+      "assertionAnchor": "assert.ok(ger.every(u=>u.position&&u.strength==='full'&&g.cells.get(`${u.position.x},${u.position.y}`).germanStart));",
+      "claim": "German full-strength deployment uses registered starting hexes; 22 units checked separately",
+      "scope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.6.0.opening-exception",
+      "test": "tests/b4m-source-phase-setup-v584.test.js",
+      "assertionAnchor": "assert.equal(E.currentPhase(g,s).id,'combat');",
+      "claim": "Opening starts in German combat, no replacement or panzer phase in Turn 1 trace",
+      "scope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.10.0.per-side-budget",
+      "test": "tests/b4m-source-phase-setup-v584.test.js",
+      "assertionAnchor": "assert.equal(E.replacementBudget(g,{...s,turn:t,side:'soviet'}),[3,4].includes(t)?4:5);",
+      "claim": "Both faction budgets checked for all seven turns against adopted Oberlabs profile",
+      "scope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.7.0.zoc-six",
+      "test": "tests/b4m-source-movement-v585.test.js",
+      "assertionAnchor": "assert.ok(E.neighbors(6,5).every(p=>E.enemyZoc(g,s,p.x,p.y,s.side)))",
+      "claim": "Six adjacent hexes receive ZOC in interior fixture",
+      "scope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.7.1.entry-stop",
+      "test": "tests/b4m-source-movement-v585.test.js",
+      "assertionAnchor": "assert.ok(moves().every(p=>p.path.slice(0,-1).every(h=>!E.enemyZoc(g,s,h.x,h.y,s.side))))",
+      "claim": "No intermediate path hex in EZOC in fixture",
+      "scope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.7.1.leave-ezoc",
+      "test": "tests/b4m-source-movement-v585.test.js",
+      "assertionAnchor": "assert.equal(at(4,5).cost,1)",
+      "claim": "Departure from EZOC into non-EZOC costs normal open/fortification movement",
+      "scope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.7.1.ezoc-to-ezoc",
+      "test": "tests/b4m-source-movement-v585.test.js",
+      "assertionAnchor": "assert.equal(at(6,4).cost,1)",
+      "claim": "Direct EZOC to EZOC entry allowed",
+      "scope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.8.0.eligible-phase",
+      "test": "tests/b4m-source-movement-v585.test.js",
+      "assertionAnchor": "assert.deepEqual(moves(),[])",
+      "claim": "Combat phase and infantry Panzer phase reject movement",
+      "scope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.8.0.unit-at-time",
+      "test": "tests/b4m-source-movement-v585.test.js",
+      "assertionAnchor": "assert.equal(E.distance(prev.x,prev.y,h.x,h.y),1)",
+      "claim": "Every returned route step adjacent in fixture",
+      "scope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.8.0.movement-allowance",
+      "test": "tests/b4m-source-movement-v585.test.js",
+      "assertionAnchor": "assert.ok(moves().every(p=>p.cost<=u.movement))",
+      "claim": "Clear weather allowance respected; forest entry costs two",
+      "scope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.8.1.rail-start",
+      "test": "tests/b4m-source-movement-v585.test.js",
+      "assertionAnchor": "assert.deepEqual(moves(),[]);u.position=pos(5,3);assert.ok(moves().length)",
+      "claim": "Rail phase rejects off-rail origin and admits rail origin",
+      "scope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.8.1.rail-connected",
+      "test": "tests/b4m-source-movement-v585.test.js",
+      "assertionAnchor": "assert.ok(g.cells.get(`${prev.x},${prev.y}`).rail.includes(edge.dir))",
+      "claim": "Returned rail routes follow registered rail directions",
+      "scope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.8.1.rail-cost",
+      "test": "tests/b4m-source-movement-v585.test.js",
+      "assertionAnchor": "assert.equal(p.cost,p.path.length)",
+      "claim": "Rail cost equals route length, including forest",
+      "scope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.8.2.1.enemy-occupied",
+      "test": "tests/b4m-source-movement-v585.test.js",
+      "assertionAnchor": "assert.equal(at(6,5),undefined)",
+      "claim": "Enemy occupied destination rejected",
+      "scope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.8.2.2.friendly-transit",
+      "test": "tests/b4m-source-movement-v585.test.js",
+      "assertionAnchor": "assert.ok(moves().some(p=>p.path.slice(0,-1).some(h=>h.x===5&&h.y===6)))",
+      "claim": "Friendly occupied hex appears as intermediate route hex",
+      "scope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.8.2.2.phase-end-stacking",
+      "test": "tests/b4m-source-movement-v585.test.js",
+      "assertionAnchor": "assert.equal(E.move(g,s,u.id,5,6),false)",
+      "claim": "Ending movement on friendly occupied hex rejected in one-unit fixture",
+      "scope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.8.3.ezoc-stop",
+      "test": "tests/b4m-source-movement-v585.test.js",
+      "assertionAnchor": "assert.ok(moves().every(p=>p.path.slice(0,-1).every(h=>!E.enemyZoc(g,s,h.x,h.y,s.side))))",
+      "claim": "No intermediate path hex in EZOC",
+      "scope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.8.3.ezoc-leave",
+      "test": "tests/b4m-source-movement-v585.test.js",
+      "assertionAnchor": "assert.equal(at(4,5).cost,1)",
+      "claim": "Normal cost when leaving EZOC",
+      "scope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.12.1.rail-exception",
+      "test": "tests/b4m-source-movement-v585.test.js",
+      "assertionAnchor": "assert.ok(moves().some(p=>p.cost>1))",
+      "claim": "Soviet rail movement exceeds one hex in mud",
+      "scope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.9.0.voluntary",
+      "test": "tests/b4m-source-combat-v586.test.js",
+      "assertionAnchor": "assert.equal(E.endPhase(g,s),true); // attacks voluntary",
+      "claim": "Empty combat phase can be completed with adjacent opponents",
+      "scope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.9.0.adjacency",
+      "test": "tests/b4m-source-combat-v586.test.js",
+      "assertionAnchor": "assert.equal(odds(ids),null);",
+      "claim": "Nonadjacent attacker invalidates odds",
+      "scope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.9.0.declare-all",
+      "test": "tests/b4m-source-combat-v586.test.js",
+      "assertionAnchor": "assert.equal(E.previewNextDeclaration(g,s,1),null);",
+      "claim": "Preview blocked before declaration lock",
+      "scope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.9.0.single-attack",
+      "test": "tests/b4m-source-combat-v586.test.js",
+      "assertionAnchor": "assert.equal(E.declareCombat(g,s,[a.id],second.id),false);",
+      "claim": "Previously committed attacker rejected despite otherwise legal second target",
+      "scope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.9.0.single-defense",
+      "test": "tests/b4m-source-combat-v586.test.js",
+      "assertionAnchor": "assert.equal(E.declareCombat(g,s,[b.id],d.id),false);",
+      "claim": "Second attacker cannot declare separate attack on already declared target",
+      "scope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.9.0.commit",
+      "test": "tests/b4m-source-combat-v586.test.js",
+      "assertionAnchor": "assert.equal(E.clearDeclarations(g,s),false);",
+      "claim": "Locked declaration list cannot be cleared",
+      "scope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.9.0.combat-strength",
+      "test": "tests/b4m-source-combat-v586.test.js",
+      "assertionAnchor": "assert.equal(odds().attackerStrength,16);",
+      "claim": "Two original eight-strength attackers sum to sixteen",
+      "scope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.9.0.odds-floor",
+      "test": "tests/b4m-source-combat-v586.test.js",
+      "assertionAnchor": "assert.equal(odds().raw,3);",
+      "claim": "Sixteen against five floors to 3:1",
+      "scope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.9.0.terrain-before-die",
+      "test": "tests/b4m-source-combat-v586.test.js",
+      "assertionAnchor": "assert.equal(odds().odds,1);",
+      "claim": "Moscow and river shifts reduce raw 3:1 to 1:1 before roll",
+      "scope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.9.0.apply-now",
+      "test": "tests/b4m-source-combat-v586.test.js",
+      "assertionAnchor": "assert.equal(second.strength,'dead');",
+      "claim": "Second declared battle applies defender elimination before phase completion",
+      "scope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.9.1.odds-cap",
+      "test": "tests/b4m-source-combat-v586.test.js",
+      "assertionAnchor": "assert.equal(odds([a.id,b.id,extra.id]).raw,6);",
+      "claim": "Thirty-six against four caps raw odds at six",
+      "scope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.9.2.forest-shift",
+      "test": "tests/b4m-source-combat-v586.test.js",
+      "assertionAnchor": "assert.deepEqual(odds().shifts,[{type:'terrain',value:1}]);",
+      "claim": "Forest defender on shipped map imposes one shift",
+      "scope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.9.2.major-city-shift",
+      "test": "tests/b4m-source-combat-v586.test.js",
+      "assertionAnchor": "assert.deepEqual(odds().shifts,[{type:'city',value:1}]);",
+      "claim": "Moscow defender imposes one city shift when not all attackers cross river",
+      "scope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.9.2.soviet-fort-shift",
+      "test": "tests/b4m-source-combat-v586.test.js",
+      "assertionAnchor": "assert.deepEqual(odds().shifts,[{type:'terrain',value:1},{type:'city',value:1}]);",
+      "claim": "Soviet Tula defender incurs fortification and city shifts; German fortification fixture has none",
+      "scope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.9.2.all-cross-river",
+      "test": "tests/b4m-source-combat-v586.test.js",
+      "assertionAnchor": "assert.deepEqual(odds().shifts,[{type:'city',value:1},{type:'river',value:1}]);",
+      "claim": "All river crossings impose one shift; mixed crossings fixture does not",
+      "scope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.9.2.cumulative",
+      "test": "tests/b4m-source-combat-v586.test.js",
+      "assertionAnchor": "assert.equal(odds().odds,2);",
+      "claim": "Tula city and fortification cumulatively reduce 4:1 to 2:1",
+      "scope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.9.3.ne",
+      "test": "tests/b4m-source-combat-v586.test.js",
+      "assertionAnchor": "assert.equal(JSON.stringify(s.units),before);",
+      "claim": "NE leaves all unit positions and strengths unchanged",
+      "scope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.9.3.reduced-eliminate",
+      "test": "tests/b4m-source-combat-v586.test.js",
+      "assertionAnchor": "assert.equal(second.strength,'dead');",
+      "claim": "Reduced defender eliminated by DRL",
+      "scope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.12.2.attacker-tanks-halved",
+      "test": "tests/b4m-source-combat-v586.test.js",
+      "assertionAnchor": "assert.equal(odds().attackerFactors[a.id],4.5);",
+      "claim": "Mud halves original nine-strength tank attack",
+      "scope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.12.2.defense-not-halved",
+      "test": "tests/b4m-source-combat-v586.test.js",
+      "assertionAnchor": "assert.equal(odds().defenderStrength,9);",
+      "claim": "Mud does not halve German tank defense",
+      "scope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.12.2.infantry-unaffected",
+      "test": "tests/b4m-source-combat-v586.test.js",
+      "assertionAnchor": "assert.equal(odds().attackerFactors[b.id],8);",
+      "claim": "Mud leaves eight-strength infantry attack unchanged",
+      "scope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.12.2.retain-fraction",
+      "test": "tests/b4m-source-combat-v586.test.js",
+      "assertionAnchor": "assert.equal(odds().attackerStrength,12.5);",
+      "claim": "Mud mixed attack retains half-point",
+      "scope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.9.0.advance",
+      "test": "tests/b4m-source-consequences-v587.test.js",
+      "assertionAnchor": "assert.equal(r.advanceId,a.id);",
+      "claim": "Chosen surviving attacker occupies vacated original defender hex",
+      "scope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.9.3.dr-avoid-ezoc",
+      "test": "tests/b4m-source-consequences-v587.test.js",
+      "assertionAnchor": "assert.equal(paths[0].cost,0);",
+      "claim": "Safe route preferred in tested open-map fixture",
+      "scope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.9.3.dr-occupancy",
+      "test": "tests/b4m-source-consequences-v587.test.js",
+      "assertionAnchor": "assert.ok(E.retreatOptions(g,s,d).every(p=>p.x!==friendly.position.x||p.y!==friendly.position.y));",
+      "claim": "Friendly occupied endpoint and enemy occupied transit excluded in fixture",
+      "scope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.9.3.full-to-reduced",
+      "test": "tests/b4m-source-consequences-v587.test.js",
+      "assertionAnchor": "assert.equal(d.strength,'reduced');assert.equal(a.strength,'reduced');",
+      "claim": "EX flips full defender and chosen full attacker to reduced",
+      "scope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.9.3.ex-attacker",
+      "test": "tests/b4m-source-consequences-v587.test.js",
+      "assertionAnchor": "assert.equal((a.full??a.combatFull)-(a.reduced??a.combatReduced),(d.full??d.combatFull)-(d.reduced??d.combatReduced));",
+      "claim": "One selected attacker matches printed defender step loss in fixture",
+      "scope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.9.3.ex-extra-no-match",
+      "test": "tests/b4m-source-consequences-v587.test.js",
+      "assertionAnchor": "assert.equal(d.strength,'dead');assert.equal(a.strength,'reduced');assert.equal(b.strength,'full');",
+      "claim": "Blocked retreat extra loss does not increase exchange liability in fixture",
+      "scope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.9.3.al",
+      "test": "tests/b4m-source-consequences-v587.test.js",
+      "assertionAnchor": "assert.equal(a.strength,'reduced');assert.equal(d.strength,'full');assert.deepEqual(d.position,old);",
+      "claim": "AL reduces selected attacker with defender unmoved",
+      "scope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.12.2.exchange-printed",
+      "test": "tests/b4m-source-consequences-v587.test.js",
+      "assertionAnchor": "assert.equal((a.full??a.combatFull)-(a.reduced??a.combatReduced),5);",
+      "claim": "Mud tank exchange uses full printed five-point step loss; second attacker remains full",
+      "scope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.7.3.communication",
+      "test": "tests/b4m-source-communication-v588.test.js",
+      "assertionAnchor": "assert.equal(E.communication(g,s,u),false)",
+      "claim": "Surrounded origin cannot trace through enemy occupation or ZOC",
+      "scope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.10.0.soviet-communication",
+      "test": "tests/b4m-source-communication-v588.test.js",
+      "assertionAnchor": "assert.equal(E.communication(g,s,u),true)",
+      "claim": "Open interior Soviet origin reaches configured red edge",
+      "scope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.10.0.communication-no-ezoc",
+      "test": "tests/b4m-source-communication-v588.test.js",
+      "assertionAnchor": "assert.equal(E.communication(g,s,u),false)",
+      "claim": "Blocked surrounding exits prevent trace; origin edge in EZOC separately succeeds",
+      "scope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.10.0.friendly-no-negate",
+      "test": "tests/b4m-source-communication-v588.test.js",
+      "assertionAnchor": "assert.equal(E.enemyZoc(g,s,exit.x,exit.y,'soviet'),true)",
+      "claim": "Friendly-occupied exit remains in enemy ZOC and trace fails",
+      "scope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.10.2.soviet-edge",
+      "test": "tests/b4m-source-communication-v588.test.js",
+      "assertionAnchor": "assert.equal(entry(13,4),false)",
+      "claim": "Empty red edge admits reserve until enemy ZOC is introduced; black edge rejected",
+      "scope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.10.2.soviet-city",
+      "test": "tests/b4m-source-communication-v588.test.js",
+      "assertionAnchor": "assert.equal(entry(7,3),true)",
+      "claim": "Empty friendly communicating city admits reserve; hostile and isolated city rejected",
+      "scope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.10.2.city-limit",
+      "test": "tests/b4m-source-communication-v588.test.js",
+      "assertionAnchor": "assert.equal(entry(10,2),false)",
+      "claim": "Occupied Moscow rejects reserve even with capital exception",
+      "scope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.10.2.soviet-restore-communication",
+      "test": "tests/b4m-source-communication-v588.test.js",
+      "assertionAnchor": "assert.equal(restore(),false)",
+      "claim": "Isolated noncapital reduced unit cannot restore; open trace permits restore",
+      "scope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.10.2.moscow-exception",
+      "test": "tests/b4m-source-communication-v588.test.js",
+      "assertionAnchor": "assert.equal(entry(10,2),true)",
+      "claim": "Isolated Soviet Moscow permits restoration and empty-city entry",
+      "scope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.10.3.german-west",
+      "test": "tests/b4m-source-communication-v588.test.js",
+      "assertionAnchor": "assert.equal(entry(0,4),true)",
+      "claim": "German west entry accepted and red entry rejected",
+      "scope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.10.3.no-german-moscow-exception",
+      "test": "tests/b4m-source-communication-v588.test.js",
+      "assertionAnchor": "assert.equal(E.communication(g,s,u),false)",
+      "claim": "Isolated German Moscow rejects restore and reserve entry",
+      "scope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.10.4.unused-expire",
+      "test": "tests/b4m-source-communication-v588.test.js",
+      "assertionAnchor": "assert.equal(s.replacementUsed,0)",
+      "claim": "Unused Soviet budget does not carry forward; next mud turn budget four",
+      "scope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.4.0.nine-phases",
+      "test": "tests/b4m-source-phase-setup-v584.test.js",
+      "assertionAnchor": "assert.deepEqual(seen,expected)",
+      "claim": "Four phase entries per side plus automatic housekeeping; ordered seven-turn trace including exceptions",
+      "scope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.4.0.phase-commit",
+      "test": "tests/b4m-source-combat-v586.test.js",
+      "assertionAnchor": "assert.equal(E.endPhase(g,s),false)",
+      "claim": "Cannot end combat with pending declared battles",
+      "scope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.7.2.retreat-end",
+      "test": "tests/b4m-source-consequences-v587.test.js",
+      "assertionAnchor": "assert.ok(E.retreatOptions(g,s,d).every(p=>!E.enemyZoc(g,s,p.x,p.y,'soviet')))",
+      "claim": "Enemy ZOC excluded from retreat endpoints; blocked retreat elimination tested separately",
+      "scope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.9.0.battle-order",
+      "test": "tests/b4m-source-combat-v586.test.js",
+      "assertionAnchor": "assert.equal(s.declarations[0].defender,second.id)",
+      "claim": "Attacker declaration order retained through individual resolution",
+      "scope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.9.0.one-die",
+      "test": "tests/b4m-source-combat-v586.test.js",
+      "assertionAnchor": "assert.equal(E.previewNextDeclaration(g,s,6),null)",
+      "claim": "Committed die cannot be substituted; next battle receives separate roll",
+      "scope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.9.3.dr-ezoc-end",
+      "test": "tests/b4m-source-consequences-v587.test.js",
+      "assertionAnchor": "assert.ok(E.retreatOptions(g,s,d).every(p=>!E.enemyZoc(g,s,p.x,p.y,'soviet')))",
+      "claim": "Enemy ZOC endpoints excluded; no legal retreat eliminates defender in blocked fixture",
+      "scope": "bounded-fixture-not-exhaustive"
+    },
+    {
+      "id": "pdf.9.3.de",
+      "test": "tests/b4m-source-final-v589.test.js",
+      "assertionAnchor": "assert.equal(d.strength,'dead')",
+      "claim": "DE eliminates both full and reduced defenders in direct native fixtures",
+      "scope": "bounded-fixture-not-exhaustive"
+    }
+  ]
+}

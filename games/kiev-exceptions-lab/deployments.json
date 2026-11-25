@@ -1,0 +1,9 @@
+{
+  "mode": "fixed",
+  "presets": [],
+  "placementTags": {},
+  "requiredCounts": {
+    "amber": 4,
+    "violet": 5
+  }
+}

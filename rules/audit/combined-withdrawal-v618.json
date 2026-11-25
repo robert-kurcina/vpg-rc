@@ -1,0 +1,14 @@
+{
+  "checkpoint": 384,
+  "version": "v618",
+  "verified": {
+    "combinedContinuationIncludingPrior": 193,
+    "integratedForecastSurvival": 71,
+    "conditionalSurvival": 84,
+    "utility": 62,
+    "sharedCRT": 301,
+    "bundleModules": 61
+  },
+  "scope": "synthetic actual-map Kiev, no advance, bounded conditional witnesses; no browser or campaign run",
+  "defaultAIChanged": false
+}

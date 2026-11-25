@@ -1,0 +1,36 @@
+{
+  "campaigns": {
+    "arduous61": {
+      "actions": 494,
+      "journalSha256": "61ad6e457a994f6eec27a368c21e5be22a28da30a6993142a0cbbcf40f3bd913",
+      "exactRestore": true,
+      "winner": "soviet-victory"
+    },
+    "moscow-standard": {
+      "actions": 277,
+      "journalSha256": "a440ea9817087c0441bcddf5c4e4b337147912e38e82dfe1375c8b82699673f1",
+      "exactRestore": true,
+      "winner": "soviet"
+    },
+    "moscow-advanced": {
+      "actions": 261,
+      "journalSha256": "3b35b6c0b7808098a45d167973bcf8d03e5f2916a87963437aad019c51e16dfc",
+      "exactRestore": true,
+      "winner": "soviet"
+    }
+  },
+  "freshDefaultHistoricalCombinations": 2,
+  "requiredCombinations": 10,
+  "staticChecks": {
+    "htmlReferences": 511,
+    "configReferences": 42,
+    "chartSpecimens": 13,
+    "registryReferences": 14,
+    "selfContainedMapExports": 5
+  },
+  "httpFiles": 313,
+  "browserNavigation": "ERR_BLOCKED_BY_ADMINISTRATOR",
+  "actualHostedAcceptance": false,
+  "publicRedistributionApproved": false,
+  "runtimeChanges": false
+}

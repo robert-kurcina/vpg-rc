@@ -1,0 +1,56 @@
+{
+  "mapping": {
+    "battle-for-moscow": [
+      1,
+      3,
+      8
+    ],
+    "arduous": [
+      1,
+      3,
+      4
+    ],
+    "leningrad": [
+      1,
+      3,
+      7
+    ],
+    "kiev": [
+      1,
+      3,
+      7
+    ],
+    "kiev-odessa": [
+      1,
+      3,
+      7
+    ]
+  },
+  "default": 0,
+  "samples": [
+    200,
+    41,
+    25,
+    3,
+    2
+  ],
+  "testConfiguration": "Advanced CRT, historical victory, German varied against default Soviet",
+  "calibration": "provisional; Kiev and Kiev\u2013Odessa Expert extrapolated; Soviet grades uncalibrated",
+  "verification": {
+    "namedRoutes": 27,
+    "difficulty": 1181,
+    "playerSave": 220,
+    "nativeBrowser": 28,
+    "historicalBrowserRoutes": [
+      "arduous",
+      "leningrad",
+      "kiev",
+      "kiev-odessa"
+    ],
+    "brest": 86,
+    "bundle": "pass",
+    "stackedHuman": "pass",
+    "rulebookNavigation": "pass"
+  },
+  "rawEvidence": "ai-grade-evidence-v695"
+}

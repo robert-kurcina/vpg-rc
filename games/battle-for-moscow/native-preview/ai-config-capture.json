@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "mode": "objective-advance-v1",
+  "maxPhases": 12,
+  "maxActions": 180,
+  "maxMovesPerPhase": 8,
+  "maxBattlesPerPhase": 2,
+  "maxReplacementsPerPhase": 8,
+  "minAttackOdds": 1
+}

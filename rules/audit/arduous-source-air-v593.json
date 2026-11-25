@@ -1,0 +1,17 @@
+{
+  "checkpoint": 359,
+  "version": "v593",
+  "source": "references/rules/arduous-rules.pdf \u00a7\u00a710.4\u201310.5",
+  "sourceSha256": "1ac46f3e958cf1d08768f6b56964100ab0951ece7e310ac3a30e8c479a8b986c",
+  "assertions": 30,
+  "scope": "synthetic actual-map campaign battles and component swamp odds; no Chromium",
+  "phaseSmoke": {
+    "phaseEntries": 61,
+    "transactions": 82,
+    "reinforcements": 7
+  },
+  "limitations": [
+    "No full contested campaign replay",
+    "End-phase overstack penalty unresolved"
+  ]
+}

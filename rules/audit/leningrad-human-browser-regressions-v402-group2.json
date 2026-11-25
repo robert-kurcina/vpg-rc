@@ -1,0 +1,79 @@
+{
+  "checkpoint": 168,
+  "version": "v402",
+  "group": 2,
+  "completed": 10,
+  "passed": 10,
+  "results": [
+    {
+      "index": 13,
+      "command": "node tests/historical-port-fleet-retreat-v382.test.js",
+      "passed": true,
+      "seconds": 0.25,
+      "outputTail": "PASS v382: 54 source-bound Fleet/port retreat tests\n"
+    },
+    {
+      "index": 14,
+      "command": "node tests/historical-safe-retreat-options-v379.test.js",
+      "passed": true,
+      "seconds": 0.25,
+      "outputTail": "PASS v379: 516 safe-retreat assertions, 151 certified map-cell enumerations, 7 opening safe routes, 45 dual-counter joint choices\n"
+    },
+    {
+      "index": 15,
+      "command": "node tests/leningrad-combat-commitment-v318.test.js",
+      "passed": true,
+      "seconds": 0.1,
+      "outputTail": "PASS Leningrad immutable combat commitment 21 assertions\n"
+    },
+    {
+      "index": 16,
+      "command": "node tests/leningrad-combat-geography-v318.test.js",
+      "passed": true,
+      "seconds": 0.1,
+      "outputTail": "PASS Leningrad certified combat geography and deployment reconciliation 22 assertions\n"
+    },
+    {
+      "index": 17,
+      "command": "node tests/leningrad-full-inventory-v355.test.js",
+      "passed": true,
+      "seconds": 0.03,
+      "outputTail": "PASS v355 source-bound Leningrad inventory / allocation: 68 assertions\n"
+    },
+    {
+      "index": 18,
+      "command": "node tests/leningrad-phase-movement-pilot-v318.test.js",
+      "passed": true,
+      "seconds": 0.06,
+      "outputTail": "PASS Leningrad phase/movement pilot 18 checks (no historical scenario activation)\n"
+    },
+    {
+      "index": 19,
+      "command": "node tests/leningrad-reinforcement-ledger-v323.test.js",
+      "passed": true,
+      "seconds": 0.03,
+      "outputTail": "Leningrad provisional reinforcement transactional ledger: passed\n"
+    },
+    {
+      "index": 20,
+      "command": "node tests/scenario-opening-bridge-v358.test.js",
+      "passed": true,
+      "seconds": 0.14,
+      "outputTail": "PASS v358 generic opening bridge: 44 assertions; 19 configured source faces -> actual German combat declaration and map-backed odds; no unauthorized combat resolution/phase advance\n"
+    },
+    {
+      "index": 21,
+      "command": "node tests/shared-render-profiles-v356.test.js",
+      "passed": true,
+      "seconds": 0.15,
+      "outputTail": "PASS v356: 5 registry profiles, same SVG engine, no per-game branches in rendering consumers, ID-independent output\n"
+    },
+    {
+      "index": 22,
+      "command": "node tests/smoke-current.js",
+      "passed": true,
+      "seconds": 0.02,
+      "outputTail": "PASS current package smoke: five maps + shared CRT + sources\n"
+    }
+  ]
+}

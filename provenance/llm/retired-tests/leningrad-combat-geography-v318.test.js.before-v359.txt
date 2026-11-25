@@ -1,0 +1,33 @@
+'use strict';
+const A=require('node:assert/strict');
+const H=require('../core/historical_combat_phase.js');
+const G=require('../core/historical_combat_geography.js');
+const R=require('../core/leningrad_deployment_reconciliation.js');
+const M=require('../maps/leningrad.json'),P=require('../maps/movement-configs/leningrad.json'),F=require('../maps/phase-configs/leningrad.json');
+const B=require('../core/movement_binding.js').build(M,P).board;
+let n=0;function eq(a,b){A.deepEqual(a,b);n++}function bad(f,re){A.throws(f,re);n++}
+const d=R.inspect(M);eq(d.ready,false);eq(d.audit.length,4);eq(d.tileMarkers.length,5);eq(d.auditOnly.map(x=>x.hex),['0109']);eq(d.markerOnly.map(x=>x.hex),['0311','0511']);eq(d.registrationCorrected,true);eq(d.sourceIdConflicts.length,0);
+const edges=B.edges.filter(e=>e.verified&&!e.impassable&&!e.allSea&&!e.lake&&['open','forest','swamp'].includes(M.cells.find(c=>c.id===e.b)?.terrain)&&!M.cells.find(c=>c.id===e.b).tileMarkers?.some(m=>m.kind==='city'));
+A.ok(edges.length>0);n++;
+const e=edges[0];
+const battle={defenderHex:e.b,attackers:['g'],defenders:['s']};
+const units={g:{id:'g',owner:'german',hex:e.a},s:{id:'s',owner:'soviet',hex:e.b}};
+const geo=G.create(M,P).evaluate(battle,units);
+eq(geo.defenderTerrain,M.cells.find(c=>c.id===e.b).terrain);eq(geo.allAttackersAcrossRiver,e.river);eq(geo.evidence.crossings[0].source,e.source);eq(geo.status,'certified-geography-only');
+bad(()=>G.create(M,P).evaluate(battle,{...units,g:{...units.g,hex:'9999'}}),/source-certified/);
+const ctx={map:M,profile:P,config:F,cursor:{scenarioId:'leningrad',turn:1,index:2,complete:false},actor:'german',state:{scenarioId:'leningrad',units}};
+const phase=H.create(ctx).commit([{defenderHex:e.b,attackers:['g']}]).select(e.b);
+const inputs={strengths:{g:{kind:'infantry',value:6},s:{kind:'infantry',value:2}}};
+const result=phase.evaluateSelectedFromMap(inputs);
+eq(result.terrainShift,(geo.defenderTerrain==='open'?0:-1)-(geo.allAttackersAcrossRiver?1:0));eq(result.geography.hex,e.b);eq(result.status,'certified-geography-calculation-only');
+eq(phase.snapshot().status,'battle-selected');
+bad(()=>phase.evaluateSelectedFromMap({strengths:{g:inputs.strengths.g}}),/exactly match/);
+bad(()=>phase.recordResolution(),/not yet source-bound/);
+// City status is not equivalent to printed major-city status; conservative refusal.
+const city=M.cells.find(c=>c.tileMarkers?.some(m=>m.kind==='city')&&['open','forest','swamp'].includes(c.terrain));
+A.ok(city);n++;
+bad(()=>G.create(M,P).evaluate({defenderHex:city.id,attackers:['g']},{g:units.g}),/major-city/);
+// Provenance discrepancies are not quietly fixed by accepting the second list.
+const tampered=structuredClone(M);tampered.authoredSvgImportAudit.details.deployment.push({kind:'cross',cellId:'0511',sourceId:'fake'});
+eq(R.inspect(tampered).ready,false);
+console.log('PASS Leningrad certified combat geography and deployment reconciliation '+n+' assertions');

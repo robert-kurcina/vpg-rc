@@ -1,0 +1,40 @@
+{
+  "completed": [
+    {
+      "id": "kiev-standard",
+      "actions": 549,
+      "cities": 8,
+      "outcome": "soviet-victory",
+      "exactRestore": true,
+      "journalSha256": "59f034d0e688824f69c15c7c302297a29b42467147c4f98e54940fa8e9e34369"
+    },
+    {
+      "id": "kiev-advanced",
+      "actions": 617,
+      "cities": 5,
+      "outcome": "soviet-victory",
+      "exactRestore": true,
+      "journalSha256": "6b5d4f9d4c7b7581d9e532c51bc53d5398d8499efda769122c21cec749ebe889"
+    },
+    {
+      "id": "kiev-odessa-standard",
+      "actions": 628,
+      "cities": 6,
+      "outcome": "soviet-victory",
+      "exactRestore": true,
+      "journalSha256": "19b5ada90e7942212dab18067608f981989268e2c2ab5246dab33a2825e4947e"
+    },
+    {
+      "id": "kiev-odessa-advanced",
+      "actions": 664,
+      "cities": 11,
+      "outcome": "soviet-victory",
+      "exactRestore": true,
+      "journalSha256": "ed52d46fa567336355cbd357833915304fd33cf9199e46367e4ec44a194b61be"
+    }
+  ],
+  "freshDefaultHistoricalCombinations": 10,
+  "requiredCombinations": 10,
+  "actualHostedAcceptance": false,
+  "notes": "All four campaigns resumed after execution timeout; exact terminal restore. 12-action Kiev resume journal and report match uninterrupted run (elapsed time excluded). No runtime changes."
+}

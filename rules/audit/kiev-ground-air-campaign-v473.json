@@ -1,0 +1,29 @@
+{
+  "checkpoint": 239,
+  "version": "v473",
+  "assertions": 52,
+  "scope": "source-ground-only Kiev air support on TEST-ONLY certified Leningrad geometry",
+  "source": {
+    "kievRulebookSha256": "d55e8f0e567d1f8c7907c4fc8368954ec0e5fa8d6fe9e8e71c61acf9bb3c3756",
+    "kievCounterFaceSha256": "9db4bc6382f174017cb23f9c907369a25e173143a29e292b656b8f48ddfc4724",
+    "kievAidSha256": "a7d239a80745463fdd3d5effc8faf6a028ab4f048713a506cb75823c448c9751"
+  },
+  "proof": {
+    "airFaces": [
+      "kiev-front-r03c01",
+      "kiev-front-r03c02"
+    ],
+    "multiBattleOutcomes": [
+      "DE",
+      "DE"
+    ],
+    "twoAirMarkersCommitted": true,
+    "saveRestoreUndo": true,
+    "noFleetPrelude": true
+  },
+  "limits": {
+    "kievGraphPlayable": false,
+    "kievRomanianTerritoryCertified": false,
+    "historicalKievCampaignTested": false
+  }
+}

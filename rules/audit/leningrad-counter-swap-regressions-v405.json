@@ -1,0 +1,65 @@
+{
+  "checkpoint": 171,
+  "version": "v405",
+  "status": "PASS",
+  "completedPasses": 11,
+  "scope": "Selected completed regressions and new source-validated Chromium test, not full historical suite",
+  "results": [
+    {
+      "command": "node tests/forest-no-shadow-v373.test.js",
+      "status": "PASS",
+      "evidence": "completed targeted subprocess execution"
+    },
+    {
+      "command": "node tests/shared-render-profiles-v356.test.js",
+      "status": "PASS",
+      "evidence": "completed targeted subprocess execution"
+    },
+    {
+      "command": "node tests/leningrad-counter-face-parity-v403.test.js",
+      "status": "PASS",
+      "evidence": "completed targeted subprocess execution"
+    },
+    {
+      "command": "node tests/universal-scenario-contract-v317.test.js",
+      "status": "PASS",
+      "evidence": "completed targeted subprocess execution"
+    },
+    {
+      "command": "node tests/historical-counter-source-config-v317.test.js",
+      "status": "PASS",
+      "evidence": "completed targeted subprocess execution"
+    },
+    {
+      "command": "node tests/b4m-native-multibattle-campaign-v365.test.js",
+      "status": "PASS",
+      "evidence": "completed targeted subprocess execution"
+    },
+    {
+      "command": "node tests/historical-player-deployment-v404.test.js",
+      "status": "PASS",
+      "evidence": "completed targeted subprocess execution"
+    },
+    {
+      "command": "python scripts/verify-historical-counter-browser-v403.py",
+      "status": "PASS",
+      "evidence": "completed genuine isolated Chromium execution"
+    },
+    {
+      "command": "python tests/leningrad-deployment-browser-v404.py",
+      "status": "PASS",
+      "evidence": "completed genuine isolated Chromium execution"
+    },
+    {
+      "command": "python tests/leningrad-counter-swap-browser-v405.py",
+      "status": "PASS",
+      "evidence": "completed genuine isolated Chromium execution"
+    },
+    {
+      "command": "node tests/historical-deployment-campaign-v404.test.js",
+      "status": "PASS",
+      "evidence": "completed earlier in this checkpoint work session; 178 actions, 8 turns"
+    }
+  ],
+  "qualification": "A repeat eight-turn campaign invocation exceeded a separately imposed 22-second subprocess budget; its prior complete PASS is recorded above, and no failure of game assertions was observed. Historical suite-wide certification is not claimed."
+}

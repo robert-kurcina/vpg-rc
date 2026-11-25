@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "id": "westbridge-siege",
+  "title": "Westbridge Siege (capital game)",
+  "engine": "generic-hex-v1",
+  "boardFile": "map.json",
+  "unitsFile": "units.json",
+  "deploymentsFile": "deployments.json",
+  "rulesFile": "rules.json",
+  "objectivesFile": "objectives.json",
+  "factions": [
+    {
+      "id": "amber",
+      "name": "Amber Duchy",
+      "color": "#ac712d"
+    },
+    {
+      "id": "violet",
+      "name": "Violet League",
+      "color": "#6a50a2"
+    }
+  ]
+}

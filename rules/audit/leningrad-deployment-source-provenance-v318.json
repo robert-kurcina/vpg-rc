@@ -1,0 +1,99 @@
+{
+  "schemaVersion": 1,
+  "scenario": "leningrad",
+  "sourceRegistries": {
+    "authoredSvgImportAudit": {
+      "file": "maps/source/user-svg/leningrad-map-temp(3).svg",
+      "sha256": "1d1fa6dc41c4133cae661d5aa129ab08389f935084cabd604d530b4bf5b57ec0",
+      "instances": [
+        {
+          "hex": "0109",
+          "sourceId": "use1-09",
+          "symbolId": "symbol122",
+          "transform": "translate(-69.206346,158.06236)",
+          "sourceSha256": "1d1fa6dc41c4133cae661d5aa129ab08389f935084cabd604d530b4bf5b57ec0"
+        },
+        {
+          "hex": "0210",
+          "sourceId": "use230",
+          "symbolId": "symbol122",
+          "transform": "translate(-54.802512,166.33919)",
+          "sourceSha256": "1d1fa6dc41c4133cae661d5aa129ab08389f935084cabd604d530b4bf5b57ec0"
+        },
+        {
+          "hex": "0310",
+          "sourceId": "use231",
+          "symbolId": "symbol122",
+          "transform": "translate(-38.893799,175.58344)",
+          "sourceSha256": "1d1fa6dc41c4133cae661d5aa129ab08389f935084cabd604d530b4bf5b57ec0"
+        },
+        {
+          "hex": "0411",
+          "sourceId": "use232",
+          "symbolId": "symbol122",
+          "transform": "translate(-24.059999,183.5378)",
+          "sourceSha256": "1d1fa6dc41c4133cae661d5aa129ab08389f935084cabd604d530b4bf5b57ec0"
+        }
+      ]
+    },
+    "tileMarkers": {
+      "file": "maps/source/user-svg/leningrad-main.svg",
+      "sha256": "ea1c83d00eea0212c530b98fd794125959175ad9d1cfa067aef78d6d73502447",
+      "instances": [
+        {
+          "hex": "0210",
+          "sourceId": "use1-1",
+          "symbolId": "g10",
+          "transform": "translate(-34.776637,105.34046)",
+          "sourceSha256": "ea1c83d00eea0212c530b98fd794125959175ad9d1cfa067aef78d6d73502447"
+        },
+        {
+          "hex": "0310",
+          "sourceId": "use495",
+          "symbolId": "g10",
+          "transform": "translate(-19.872365,114.11884)",
+          "sourceSha256": "ea1c83d00eea0212c530b98fd794125959175ad9d1cfa067aef78d6d73502447"
+        },
+        {
+          "hex": "0311",
+          "sourceId": "use497",
+          "symbolId": "g10",
+          "transform": "translate(-19.872364,131.94693)",
+          "sourceSha256": "ea1c83d00eea0212c530b98fd794125959175ad9d1cfa067aef78d6d73502447"
+        },
+        {
+          "hex": "0411",
+          "sourceId": "use496",
+          "symbolId": "g10",
+          "transform": "translate(-4.9680868,123.16856)",
+          "sourceSha256": "ea1c83d00eea0212c530b98fd794125959175ad9d1cfa067aef78d6d73502447"
+        },
+        {
+          "hex": "0511",
+          "sourceId": "use498",
+          "symbolId": "g10",
+          "transform": "translate(9.9361902,131.94694)",
+          "sourceSha256": "ea1c83d00eea0212c530b98fd794125959175ad9d1cfa067aef78d6d73502447"
+        }
+      ]
+    }
+  },
+  "rulesExpectedGermanCrossCount": 5,
+  "auditedCrossCount": 4,
+  "tileCrossCount": 5,
+  "commonHexes": [
+    "0210",
+    "0310",
+    "0411"
+  ],
+  "auditOnlyHexes": [
+    "0109"
+  ],
+  "tileOnlyHexes": [
+    "0311",
+    "0511"
+  ],
+  "diagnosis": "independent-svg-family-disagreement",
+  "readyForHistoricalDeployment": false,
+  "sourcePolicy": "diagnostic-only-no-source-selection-or-gameplay-promotion"
+}

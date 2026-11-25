@@ -1,0 +1,167 @@
+{
+  "checkpoint": 185,
+  "version": "v419",
+  "selectedNodeSuites": [
+    {
+      "test": "arduous-combat-river-fortification-v419.test.js",
+      "status": "pass",
+      "batch": "completed-before-long-suite-timeout"
+    },
+    {
+      "test": "arduous-executable-graph-v419.test.js",
+      "status": "pass",
+      "batch": "completed-before-long-suite-timeout"
+    },
+    {
+      "test": "arduous-seven-turn-smoke-v419.test.js",
+      "status": "pass",
+      "batch": "completed-before-long-suite-timeout"
+    },
+    {
+      "test": "arduous-full-source-opening-v413.test.js",
+      "status": "pass",
+      "batch": "completed-before-long-suite-timeout"
+    },
+    {
+      "test": "arduous-roster-and-victory-v410.test.js",
+      "status": "pass",
+      "batch": "completed-before-long-suite-timeout"
+    },
+    {
+      "test": "arduous-topology-probe-v418.test.js",
+      "status": "pass",
+      "batch": "completed-before-long-suite-timeout"
+    },
+    {
+      "test": "arduous-river-candidates-v418.test.js",
+      "status": "pass",
+      "batch": "completed-before-long-suite-timeout"
+    },
+    {
+      "test": "arduous-brest-garrison-v411.test.js",
+      "status": "pass",
+      "batch": "completed-before-long-suite-timeout"
+    },
+    {
+      "test": "arduous-brest-combat-v411.test.js",
+      "status": "pass",
+      "batch": "completed-before-long-suite-timeout"
+    },
+    {
+      "test": "arduous-rail-reconciliation-v411.test.js",
+      "status": "pass",
+      "batch": "completed-before-long-suite-timeout"
+    },
+    {
+      "test": "map-movement-graph-source-policy-v318.test.js",
+      "status": "pass",
+      "batch": "completed-before-long-suite-timeout"
+    },
+    {
+      "test": "map-movement-graph-v318.test.js",
+      "status": "pass",
+      "batch": "completed-before-long-suite-timeout"
+    },
+    {
+      "test": "movement-binding-v318.test.js",
+      "status": "pass",
+      "batch": "completed-before-long-suite-timeout"
+    },
+    {
+      "test": "pathfinding-v318.test.js",
+      "status": "pass",
+      "batch": "completed-before-long-suite-timeout"
+    },
+    {
+      "test": "terrain-evidence-v318.test.js",
+      "status": "pass",
+      "batch": "completed-before-long-suite-timeout"
+    },
+    {
+      "test": "source-edge-trace-v318.test.js",
+      "status": "pass",
+      "batch": "completed-before-long-suite-timeout"
+    },
+    {
+      "test": "map-certification-readiness-v318.test.js",
+      "status": "pass",
+      "batch": "completed-before-long-suite-timeout"
+    },
+    {
+      "test": "hexside-feature-ledger-v318.test.js",
+      "status": "pass",
+      "batch": "completed-before-long-suite-timeout"
+    },
+    {
+      "test": "kiev-roster-and-victory-v410.test.js",
+      "status": "pass",
+      "batch": "completed-before-long-suite-timeout"
+    },
+    {
+      "test": "kiev-odessa-composite-seam-v318.test.js",
+      "status": "pass",
+      "batch": "completed-before-long-suite-timeout"
+    },
+    {
+      "test": "historical-housekeeping-eight-turn-v389.test.js",
+      "status": "pass",
+      "batch": "completed-before-long-suite-timeout"
+    },
+    {
+      "test": "historical-player-deployment-v404.test.js",
+      "status": "pass",
+      "batch": "completed-before-long-suite-timeout"
+    },
+    {
+      "test": "leningrad-combat-commitment-v318",
+      "status": "pass",
+      "note": "PASS Leningrad immutable combat commitment 21 assertions\n"
+    },
+    {
+      "test": "leningrad-combat-odds-v318",
+      "status": "pass",
+      "note": "PASS Leningrad calculation-only combat odds and committed-battle binding 27 assertions\n"
+    },
+    {
+      "test": "leningrad-combat-geography-v318",
+      "status": "pass",
+      "note": "PASS Leningrad certified combat geography and deployment reconciliation 22 assertions\n"
+    },
+    {
+      "test": "leningrad-movement-lifecycle-v318",
+      "status": "pass",
+      "note": "PASS Leningrad bounded movement lifecycle 32 assertions\n"
+    },
+    {
+      "test": "leningrad-counter-face-parity-v403",
+      "status": "pass",
+      "note": "Counter source-face projection v403: 552 assertions PASS; 28 ground front/back pairs checked; four concealed/revealed Corps; sheet SHA256 verified\n"
+    },
+    {
+      "test": "b4m-native-combat-v361",
+      "status": "pass",
+      "note": "PASS v361 B4M native combat parity: 180 previews, 180 consequences, 57 explicit choices, 293 two-battle sequences, strict config gate\n"
+    },
+    {
+      "test": "b4m-native-objective-advance-v408",
+      "status": "pass",
+      "note": "true,\"dieCommitIsolation\":true,\"moscowDRHold\":true,\"defaultPoliciesPreserved\":true,\"undoAndSave\":true,\"limitations\":[\"Synthetic Moscow tactical board positions\",\"No new legacy strategic AI parity claim\",\"No active B4M production cutover\"]}\n"
+    },
+    {
+      "test": "b4m-native-preview-v360",
+      "status": "pass",
+      "note": "PASS B4M native preview v360: exact multi-mode movement, initial state, replacement, odds, first phase; production remains legacy\n"
+    },
+    {
+      "test": "b4m-native-session-v362",
+      "status": "pass",
+      "note": "s\":\"PASS\",\"checkpoint\":128,\"version\":\"v362\",\"singleParity\":30,\"paired\":293,\"choiceChecks\":4,\"branches\":{\"AL\":true,\"EX\":true,\"retreat\":true,\"advance\":true},\"negative\":26,\"undoChecks\":60,\"assertions\":2447,\"productionEngine\":\"generic-hex-v1\"}\n"
+    }
+  ],
+  "summary": {
+    "passed": 31,
+    "failed": 0,
+    "incomplete": 1,
+    "incompleteSuite": "historical-deployment-campaign-v404.test.js (runner timeout; no pass claimed)"
+  }
+}

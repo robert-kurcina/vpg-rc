@@ -1,0 +1,20 @@
+{
+  "version": "v498",
+  "checkpoint": 264,
+  "status": "source-reviewed-diagnostic-not-live",
+  "rule": "odessa-rules.pdf §9.4.3",
+  "mapHexes": 261,
+  "seaCoastBarriers": 100,
+  "cavalryCountries": [
+    "soviet",
+    "romanian"
+  ],
+  "candidateOnly": true,
+  "unresolved": [
+    "§9.4.4 Romanian Home Army territorial and annexation rules",
+    "§9.4.5 Hungarian restriction",
+    "§15 Fleet and port rules",
+    "Odessa setup and victory integration"
+  ],
+  "checks": 169
+}

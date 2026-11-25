@@ -1,0 +1,13 @@
+{
+  "checkpoint": 266,
+  "version": "v500",
+  "scope": "source-incomplete-diagnostic",
+  "sourcePDF": "c7def97fe2de9ae66dc89da5f7d3417e3283846485903b90b88f153ba9791bab",
+  "realCountryMaskCertified": false,
+  "territoryContextPassedThroughMovementBinding": true,
+  "combatAndMovementCommitIntegration": true,
+  "forcedAndSafeRetreatFailClosed": true,
+  "candidateAnnexationReplayDeterministic": true,
+  "actualOdessaUndoSaveRestoreCertified": false,
+  "checks": 45
+}

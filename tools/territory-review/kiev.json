@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "scenarioId": "kiev",
+  "mapId": "kiev-native-draft-v231",
+  "sourceGame": "Objective: Kiev",
+  "sourceRuleSha256": "d55e8f0e567d1f8c7907c4fc8368954ec0e5fa8d6fe9e8e71c61acf9bb3c3756",
+  "rulebookSection": "Objective: Kiev \u00a7\u00a76.0(7\u20138), 10.8",
+  "positiveSetupGroups": [
+    "germanRomaniaInfantry",
+    "romanianInitialArmy"
+  ],
+  "negativeSetupGroups": [
+    "germanInitialPanzer",
+    "germanPolandInfantry"
+  ],
+  "expectedPositiveCount": 4,
+  "expectedNegativeCount": 7,
+  "map": "../../maps/kiev.json",
+  "setup": "../../maps/setup/kiev.json",
+  "approvedMapExport": "../../exports/kiev.svg",
+  "sourceMapScan": "../../maps/source/kiev-map-scan.jpg",
+  "candidateOnly": true,
+  "notes": "A manually completed draft is not a certified national border or an authorization to start Kiev gameplay."
+}

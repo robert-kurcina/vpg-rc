@@ -1,0 +1,206 @@
+{
+  "checkpoint": 190,
+  "version": "v424",
+  "checks": [
+    {
+      "game": "arduous",
+      "device": "ipad-portrait",
+      "before": {
+        "win": 820,
+        "mode": "mobile",
+        "open": "false",
+        "mapHeight": 1132,
+        "boardHeight": 1132,
+        "headerHeight": 48,
+        "captionVisible": false,
+        "sideInert": true,
+        "toolbarWidth": 48,
+        "toolbarHeight": 138,
+        "sidePos": "fixed",
+        "mobileButton": "block"
+      },
+      "errors": [],
+      "responsiveModeToggle": true
+    },
+    {
+      "game": "leningrad",
+      "device": "ipad-portrait",
+      "before": {
+        "win": 820,
+        "mode": "mobile",
+        "open": "false",
+        "mapHeight": 1132,
+        "boardHeight": 1132,
+        "headerHeight": 48,
+        "captionVisible": false,
+        "sideInert": true,
+        "toolbarWidth": 48,
+        "toolbarHeight": 138,
+        "sidePos": "fixed",
+        "mobileButton": "block"
+      },
+      "errors": [],
+      "responsiveModeToggle": true
+    },
+    {
+      "game": "battle-for-moscow",
+      "device": "ipad-portrait",
+      "before": {
+        "win": 820,
+        "mode": "mobile",
+        "open": "false",
+        "mapHeight": 1132,
+        "boardHeight": 1132,
+        "headerHeight": 48,
+        "captionVisible": false,
+        "sideInert": true,
+        "toolbarWidth": 48,
+        "toolbarHeight": 138,
+        "sidePos": "fixed",
+        "mobileButton": "block"
+      },
+      "errors": [],
+      "responsiveModeToggle": true
+    },
+    {
+      "game": "arduous",
+      "device": "ipad-landscape",
+      "before": {
+        "win": 1180,
+        "mode": "mobile",
+        "open": "false",
+        "mapHeight": 772,
+        "boardHeight": 772,
+        "headerHeight": 48,
+        "captionVisible": false,
+        "sideInert": true,
+        "toolbarWidth": 48,
+        "toolbarHeight": 138,
+        "sidePos": "fixed",
+        "mobileButton": "block"
+      },
+      "errors": [],
+      "responsiveModeToggle": true
+    },
+    {
+      "game": "leningrad",
+      "device": "ipad-landscape",
+      "before": {
+        "win": 1180,
+        "mode": "mobile",
+        "open": "false",
+        "mapHeight": 772,
+        "boardHeight": 772,
+        "headerHeight": 48,
+        "captionVisible": false,
+        "sideInert": true,
+        "toolbarWidth": 48,
+        "toolbarHeight": 138,
+        "sidePos": "fixed",
+        "mobileButton": "block"
+      },
+      "errors": [],
+      "responsiveModeToggle": true
+    },
+    {
+      "game": "battle-for-moscow",
+      "device": "ipad-landscape",
+      "before": {
+        "win": 1180,
+        "mode": "mobile",
+        "open": "false",
+        "mapHeight": 772,
+        "boardHeight": 772,
+        "headerHeight": 48,
+        "captionVisible": false,
+        "sideInert": true,
+        "toolbarWidth": 48,
+        "toolbarHeight": 138,
+        "sidePos": "fixed",
+        "mobileButton": "block"
+      },
+      "errors": [],
+      "responsiveModeToggle": true
+    },
+    {
+      "game": "arduous",
+      "device": "desktop",
+      "before": {
+        "win": 1600,
+        "mode": "desktop",
+        "open": "false",
+        "mapHeight": 783,
+        "boardHeight": 987,
+        "headerHeight": 78,
+        "captionVisible": true,
+        "sideInert": false,
+        "toolbarWidth": 1186,
+        "toolbarHeight": 64,
+        "sidePos": "static",
+        "mobileButton": "none"
+      },
+      "errors": [],
+      "responsiveModeToggle": true
+    },
+    {
+      "game": "leningrad",
+      "device": "desktop",
+      "before": {
+        "win": 1600,
+        "mode": "desktop",
+        "open": "false",
+        "mapHeight": 778,
+        "boardHeight": 982,
+        "headerHeight": 78,
+        "captionVisible": true,
+        "sideInert": false,
+        "toolbarWidth": 1186,
+        "toolbarHeight": 64,
+        "sidePos": "static",
+        "mobileButton": "none"
+      },
+      "errors": [],
+      "responsiveModeToggle": true
+    },
+    {
+      "game": "battle-for-moscow",
+      "device": "desktop",
+      "before": {
+        "win": 1600,
+        "mode": "desktop",
+        "open": "false",
+        "mapHeight": 891,
+        "boardHeight": 1037,
+        "headerHeight": 78,
+        "captionVisible": true,
+        "sideInert": false,
+        "toolbarWidth": 1224,
+        "toolbarHeight": 58,
+        "sidePos": "static",
+        "mobileButton": "none"
+      },
+      "errors": [],
+      "responsiveModeToggle": true
+    },
+    {
+      "game": "arduous",
+      "device": "phone",
+      "before": {
+        "win": 390,
+        "mode": "mobile",
+        "open": "false",
+        "mapHeight": 796,
+        "boardHeight": 796,
+        "headerHeight": 48,
+        "captionVisible": false,
+        "sideInert": true,
+        "toolbarWidth": 48,
+        "toolbarHeight": 138,
+        "sidePos": "fixed",
+        "mobileButton": "block"
+      },
+      "errors": [],
+      "responsiveModeToggle": true
+    }
+  ]
+}

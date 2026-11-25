@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "scenario": "leningrad",
+  "ready": false,
+  "ruleExpectedGermanCrosses": 5,
+  "audit": [
+    {
+      "hex": "0109",
+      "svgId": "use1-09"
+    },
+    {
+      "hex": "0210",
+      "svgId": "use230"
+    },
+    {
+      "hex": "0310",
+      "svgId": "use231"
+    },
+    {
+      "hex": "0411",
+      "svgId": "use232"
+    }
+  ],
+  "tileMarkers": [
+    {
+      "hex": "0210",
+      "svgId": "use1-1"
+    },
+    {
+      "hex": "0310",
+      "svgId": "use495"
+    },
+    {
+      "hex": "0311",
+      "svgId": "use497"
+    },
+    {
+      "hex": "0411",
+      "svgId": "use496"
+    },
+    {
+      "hex": "0511",
+      "svgId": "use498"
+    }
+  ],
+  "auditOnly": [
+    {
+      "hex": "0109",
+      "svgId": "use1-09"
+    }
+  ],
+  "markerOnly": [
+    {
+      "hex": "0311",
+      "svgId": "use497"
+    },
+    {
+      "hex": "0511",
+      "svgId": "use498"
+    }
+  ],
+  "sourceIdConflicts": [],
+  "status": "different-source-families-hex-discrepancy-no-auto-promotion"
+}

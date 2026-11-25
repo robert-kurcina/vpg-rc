@@ -1,0 +1,22 @@
+{
+  "checkpoint": 357,
+  "version": "v591",
+  "source": "references/rules/arduous-rules.pdf \u00a7\u00a78,9.3\u20139.5",
+  "scope": "actual shipped map, controlled positions, movement binding",
+  "assertions": 24,
+  "surpriseRoute": [
+    "1003",
+    "1102",
+    "1202"
+  ],
+  "enemy": "1103",
+  "railRoute": [
+    "1007",
+    "0907",
+    "0807"
+  ],
+  "limitations": [
+    "No campaign controller or new browser run",
+    "End-phase overstack removal and city transit not covered"
+  ]
+}

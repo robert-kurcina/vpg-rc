@@ -1,0 +1,29 @@
+{
+  "checkpoint": 283,
+  "version": "v517",
+  "status": "PASS",
+  "assertions": 310,
+  "scope": "Diagnostic Black Sea Fleet §§6, 15.1–15.2 two-port source-bound Fleet mechanics",
+  "ports": {
+    "Odessa": "1513",
+    "Nikolaev": "1811"
+  },
+  "sourceEvidence": {
+    "rulesPdfSha256": "c7def97fe2de9ae66dc89da5f7d3417e3283846485903b90b88f153ba9791bab",
+    "counterFrontSha256": "297e28ceefadb982bc7050b1e9a5039956997d34ce3368cda219b1da85badd25",
+    "counterReverseSha256": "74de9f736f15abd39be33c351df09a977c9cca697ceac281230a7207f78de969",
+    "fleetSourceRoster": "maps/roster-overlays/kiev-odessa.json",
+    "fleetSourceFace": "odessa-front-r01c01",
+    "fleetDamagedFace": "odessa-back-r01c08",
+    "authoritativeCells": {
+      "Odessa": "1513",
+      "Nikolaev": "1811"
+    }
+  },
+  "limitations": [
+    "Source port and Fleet movement/conditional combat shifts only; no live Kiev–Odessa campaign activation",
+    "Fleet air strikes, convoy evacuation, replacement exceptions, and complete player-facing action catalogue remain unfinished",
+    "All other territorial and unit setup restrictions remain source-gated",
+    "Until a source-authoritative cityControl ledger is available, port movement and forced retreat fail closed"
+  ]
+}

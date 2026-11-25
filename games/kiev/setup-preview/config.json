@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "scenarioId": "kiev",
+  "status": "source-reviewed-experimental-human-campaign-not-historically-certified",
+  "sourceGame": "Objective: Kiev",
+  "map": "../../../maps/kiev.json",
+  "counterConfig": "../../../maps/counter-configs/kiev.json",
+  "setup": "../../../maps/setup/kiev.json",
+  "profile": "../../../maps/movement-configs/kiev.json",
+  "phaseConfig": "../../../maps/phase-configs/kiev.json",
+  "inventoryPolicy": "../../../maps/setup/kiev-inventory.json",
+  "mapExport": "../../../exports/kiev.svg",
+  "mapViewBox": [
+    -35,
+    -35,
+    1269,
+    841
+  ],
+  "combatPolicy": "../../../maps/combat-configs/kiev.json",
+  "buildupPolicy": "../../../maps/buildup-configs/kiev.json",
+  "housekeepingPolicy": "../../../maps/housekeeping-configs/kiev.json",
+  "candidateFixture": "kiev-source-opening-v437"
+}

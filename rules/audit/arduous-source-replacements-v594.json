@@ -1,0 +1,17 @@
+{
+  "checkpoint": 360,
+  "version": "v594",
+  "source": "references/rules/arduous-rules.pdf \u00a7\u00a712.0\u201312.4",
+  "sourceSha256": "1ac46f3e958cf1d08768f6b56964100ab0951ece7e310ac3a30e8c479a8b986c",
+  "verified": {
+    "sovietController": 15,
+    "germanCommunication": 1644,
+    "sixthMechanized": 23,
+    "crt": 301,
+    "bundleModules": 59
+  },
+  "limitations": [
+    "Synthetic casualty positions, no new browser run",
+    "\u00a78.2 owner-selected excess removal remains open"
+  ]
+}

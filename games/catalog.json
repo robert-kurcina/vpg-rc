@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "games": [
+    {
+      "directory": "battle-for-moscow",
+      "label": "Battle for Moscow",
+      "subtitle": "Historical · 14×11 · shared-engine browser",
+      "type": "historical",
+      "entryPath": "games/battle-for-moscow/index.html"
+    },
+    {
+      "directory": "eastern-corridor",
+      "label": "Eastern Corridor",
+      "subtitle": "VP game · 7×7 · 5 turns",
+      "type": "generic"
+    },
+    {
+      "directory": "westbridge-siege",
+      "label": "Westbridge Siege",
+      "subtitle": "Capital conditions · 5×6 · 4 turns · custom factions",
+      "type": "generic"
+    },
+    {
+      "directory": "frontier-relief",
+      "label": "Frontier Relief",
+      "subtitle": "5×6 · Asymmetric phases · replacements · radial retreat · combat declarations",
+      "type": "generic"
+    },
+    {
+      "directory": "frontier-stacks-lab",
+      "label": "Frontier Stacks (Mechanics Lab)",
+      "subtitle": "Experimental · two-unit stacks · nationality rules · support markers · hidden counter faces",
+      "type": "generic"
+    },
+    {
+      "directory": "frontier-stacked-combat",
+      "label": "Frontier Stacked Combat",
+      "subtitle": "Fictional joint-defense, losses, and retreats laboratory",
+      "type": "generic"
+    },
+    {
+      "directory": "kiev-exceptions-lab",
+      "label": "Kiev Exceptions (Mechanics Lab)",
+      "subtitle": "Per-unit major rivers · swamp armor · turn bonuses · Romanian-border rules · air support",
+      "type": "generic"
+    }
+  ]
+}

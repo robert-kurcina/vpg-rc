@@ -1,0 +1,205 @@
+{
+  "units": [
+    {
+      "id": "a1",
+      "faction": "amber",
+      "type": "panzer",
+      "full": 12,
+      "reduced": 6,
+      "movement": 3,
+      "strength": "full",
+      "position": {
+        "x": 3,
+        "y": 1
+      },
+      "size": "army",
+      "nationality": "german"
+    },
+    {
+      "id": "a2",
+      "faction": "amber",
+      "type": "infantry",
+      "full": 10,
+      "reduced": 5,
+      "movement": 2,
+      "strength": "full",
+      "position": {
+        "x": 4,
+        "y": 0
+      },
+      "size": "corps",
+      "nationality": "german"
+    },
+    {
+      "id": "a3",
+      "faction": "amber",
+      "type": "infantry",
+      "full": 3,
+      "reduced": 1,
+      "movement": 3,
+      "strength": "full",
+      "position": {
+        "x": 0,
+        "y": 3
+      },
+      "size": "corps",
+      "nationality": "hungarian"
+    },
+    {
+      "id": "a4",
+      "faction": "amber",
+      "type": "infantry",
+      "full": 3,
+      "reduced": 1,
+      "movement": 2,
+      "strength": "full",
+      "position": {
+        "x": 0,
+        "y": 4
+      },
+      "size": "corps",
+      "nationality": "romanian"
+    },
+    {
+      "id": "v1",
+      "faction": "violet",
+      "type": "cavalry",
+      "full": 5,
+      "reduced": 2,
+      "movement": 3,
+      "strength": "full",
+      "position": {
+        "x": 4,
+        "y": 1
+      },
+      "size": "army",
+      "nationality": "soviet"
+    },
+    {
+      "id": "v2",
+      "faction": "violet",
+      "type": "mechanized",
+      "full": 4,
+      "reduced": 2,
+      "movement": 2,
+      "strength": "full",
+      "position": {
+        "x": 4,
+        "y": 1
+      },
+      "size": "corps",
+      "nationality": "soviet"
+    },
+    {
+      "id": "v3",
+      "faction": "violet",
+      "type": "infantry",
+      "full": 3,
+      "reduced": 1,
+      "movement": 3,
+      "strength": "full",
+      "position": {
+        "x": 4,
+        "y": 3
+      },
+      "size": "corps",
+      "nationality": "soviet"
+    },
+    {
+      "id": "v4",
+      "faction": "violet",
+      "type": "infantry",
+      "full": 3,
+      "reduced": 1,
+      "movement": 2,
+      "strength": "full",
+      "position": {
+        "x": 4,
+        "y": 4
+      },
+      "size": "corps",
+      "nationality": "soviet"
+    },
+    {
+      "id": "a5",
+      "faction": "amber",
+      "type": "infantry",
+      "full": 3,
+      "reduced": 2,
+      "movement": 2,
+      "strength": "dead",
+      "position": null
+    },
+    {
+      "id": "air1",
+      "faction": "amber",
+      "counterClass": "support",
+      "type": "air",
+      "nationality": "german",
+      "strength": "full",
+      "position": {
+        "x": 0,
+        "y": 1
+      },
+      "counterState": "ready",
+      "states": {
+        "ready": {
+          "label": "Ready"
+        },
+        "spent": {
+          "label": "Committed"
+        }
+      },
+      "airShift": 2
+    },
+    {
+      "id": "v-untried",
+      "faction": "violet",
+      "type": "mechanized",
+      "size": "corps",
+      "nationality": "soviet",
+      "full": 3,
+      "reduced": 1,
+      "strength": "full",
+      "movement": 2,
+      "position": {
+        "x": 4,
+        "y": 5
+      },
+      "counterState": "untried",
+      "states": {
+        "untried": {
+          "concealed": true,
+          "displayStrength": "?"
+        },
+        "revealed": {
+          "attack": 0,
+          "defense": 3
+        }
+      },
+      "label": "?M"
+    },
+    {
+      "id": "air2",
+      "faction": "amber",
+      "counterClass": "support",
+      "type": "air",
+      "nationality": "german",
+      "strength": "full",
+      "position": {
+        "x": 0,
+        "y": 2
+      },
+      "counterState": "ready",
+      "states": {
+        "ready": {
+          "label": "Ready"
+        },
+        "spent": {
+          "label": "Committed"
+        }
+      },
+      "airShift": 1
+    }
+  ]
+}

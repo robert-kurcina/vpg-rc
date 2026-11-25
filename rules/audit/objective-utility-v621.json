@@ -1,0 +1,20 @@
+{
+  "checkpoint": 387,
+  "tests": {
+    "continuationIncludingPrior": 346,
+    "newObjectiveAssertions": 54,
+    "utilityArithmetic": 62,
+    "sharedCRT": 301,
+    "bundleModules": 61
+  },
+  "limitations": [
+    "Diagnostic only; default AI unchanged",
+    "No browser or full campaign run",
+    "No calibrated elimination probability",
+    "No advance or predicted enemy city capture",
+    "Static projected victory not a terminal forecast; weights provisional",
+    "General communication utility pending; only source-configured victory isolation used",
+    "Withdrawal witness maximizes escape count, not objective utility"
+  ],
+  "decisionPolicyChanged": false
+}

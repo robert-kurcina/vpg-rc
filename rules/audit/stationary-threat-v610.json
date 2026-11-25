@@ -1,0 +1,18 @@
+{
+  "checkpoint": 376,
+  "version": "v610",
+  "scope": "stationary adjacent unsupported conditional DE; no calibrated forecast",
+  "verified": {
+    "stationaryThreat": 38,
+    "utilityArithmetic": 62,
+    "pilot": 50,
+    "controller": 16,
+    "CRT": 301,
+    "bundleModules": 61
+  },
+  "totalAssertions": 467,
+  "actualEliminationRisk": null,
+  "selectionChanged": false,
+  "fullCampaign": false,
+  "chromium": false
+}

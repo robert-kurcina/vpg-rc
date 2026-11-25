@@ -1,0 +1,51 @@
+[
+  {
+    "index": 22,
+    "command": "python3 tests/leningrad-approved-visual-regression-v352.test.py",
+    "passed": true,
+    "seconds": 19.4,
+    "outputTail": ".\n----------------------------------------------------------------------\nRan 1 test in 18.538s\n\nOK\n"
+  },
+  {
+    "index": 23,
+    "command": "node tests/historical-campaign-continuation-v387.test.js",
+    "passed": true,
+    "seconds": 1.55,
+    "outputTail": "PASS v387 110 consecutive-phase historical campaign continuation assertions\n"
+  },
+  {
+    "index": 24,
+    "command": "node tests/historical-buildup-campaign-v388.test.js",
+    "passed": true,
+    "seconds": 1.11,
+    "outputTail": "PASS v388 88 historical buildup and replacement integration assertions\n"
+  },
+  {
+    "index": 25,
+    "command": "node tests/historical-housekeeping-eight-turn-v389.test.js",
+    "passed": true,
+    "seconds": 7.88,
+    "outputTail": "PASS v389 226 historical housekeeping, victory and eight-turn journal assertions; 94 source-legal actions\n"
+  },
+  {
+    "index": 26,
+    "command": "node tests/shared-historical-crt-v316.test.js",
+    "passed": true,
+    "seconds": 0.03,
+    "outputTail": "PASS v316 shared Oberlabs CRT: 36 cells x 5 historical mappings\n"
+  },
+  {
+    "index": 27,
+    "command": "node tests/universal-scenario-contract-v317.test.js",
+    "passed": true,
+    "seconds": 0.03,
+    "outputTail": "PASS universal scenario contract: 5 games, 14 domains, missing-data fail-closed and overlay validation\n"
+  },
+  {
+    "index": 28,
+    "command": "node tests/universal-deployment-placement-v329.test.js",
+    "passed": true,
+    "seconds": 0.26,
+    "outputTail": "PASS v329: five-game universal bottom-center deployment renderer for 137 icons\n"
+  }
+]

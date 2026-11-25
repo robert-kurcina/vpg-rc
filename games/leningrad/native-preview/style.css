@@ -1,0 +1,118 @@
+:root{font-family:system-ui,-apple-system,sans-serif;color-scheme:light;background:#f2f1ed;color:#222d34}*{box-sizing:border-box}body{margin:0}header{background:#1c303d;color:#fff;padding:13px 24px;display:flex;justify-content:space-between;gap:20px;align-items:center}h1{font-size:22px;margin:0}header p{margin:4px 0 0;font-size:13px;color:#cbd5d8}nav a{color:#cde7f6;margin-left:14px}h2{font-size:16px;margin:0 0 8px}h3{font-size:14px;margin:10px 0}.warning{font-size:12px;background:#ffefcf;border-bottom:1px solid #e3c995;padding:8px 22px;margin:0;line-height:1.5}main{display:grid;grid-template-columns:minmax(310px,350px) minmax(500px,1fr);gap:14px;padding:14px;max-width:1750px;margin:auto;align-items:start}aside{max-height:calc(100vh - 112px);overflow:auto;border:1px solid #c4c9c7;background:white;border-radius:5px}aside section{padding:13px;border-bottom:1px solid #dcdedb}p.small,.small{font-size:12px;color:#606b70;line-height:1.5}button,.file-button{cursor:pointer;background:#e5edf1;border:1px solid #a6b4bc;border-radius:4px;padding:7px 10px;margin:3px 0;font:inherit;font-size:12px;display:inline-block;color:#152e3b;text-align:center}button:hover,.file-button:hover{background:#c6e0ee}button:disabled{opacity:.55;cursor:not-allowed}.actions{display:flex;gap:6px;flex-wrap:wrap;margin:5px 0}input[type=search],select{font:inherit;width:100%;padding:7px;border:1px solid #b0bfc7;border-radius:4px}label{display:block;font-size:12px;font-weight:600;margin:6px 0}.phase{font-size:17px;font-weight:700}.summary{font-size:12px;line-height:1.5;margin-top:5px}.board-space{background:white;border:1px solid #ccd0cd;padding:10px;border-radius:5px;min-width:0}.map-viewport{position:relative;width:100%;aspect-ratio:1250/819;overflow:hidden;background:#add9d8}.map-viewport img,.map-viewport svg{position:absolute;left:0;top:0;width:100%;height:100%}.map-viewport img{pointer-events:none}.map-viewport svg{overflow:visible}.map-viewport .counter-hit-area{cursor:pointer}.map-viewport .hex-hit{cursor:crosshair}.map-viewport .hex-hit:hover{stroke:#d18f25;stroke-width:2}.legend{display:flex;gap:10px;flex-wrap:wrap;font-size:11px;color:#505d5e}#actions{max-height:235px;overflow-y:auto;border:1px solid #e4e8e5;margin-top:5px}#actions button{display:block;width:100%;margin:0;padding:6px 8px;text-align:left;border:none;border-bottom:1px solid #e1e7e8;background:#fff;border-radius:0}#actions button:hover{background:#e4f3f5}#battle-proposals{max-height:180px;overflow:auto}#battle-proposals label{font-size:12px;font-weight:400}#battle-choices{margin-top:12px}#message{color:#9a3326;font-size:12px;min-height:16px;margin:0 12px;background:#fff;padding:0 7px}#journal{white-space:pre-wrap;overflow-wrap:anywhere;font-size:11px;max-height:400px;overflow:auto}#roll-panel{border:1px solid #dfb46f;padding:9px;background:#fff7e8;margin-top:8px}#decision{font-size:12px;line-height:1.4}#decision .highlight{font-weight:700}.counter-vector{pointer-events:all}@media(max-width:980px){main{grid-template-columns:1fr}aside{max-height:none}.board-space{order:-1}}
+
+#setup-choices{max-height:430px;overflow-y:auto}
+#setup-choices h3{background:#edf1f0;padding:7px;margin:10px 0 4px}
+#setup-choices .setup-pool-heading{font-size:12px;margin:8px 0 4px;color:#334c55}
+.setup-counter-pool{display:grid;grid-template-columns:repeat(auto-fill,minmax(73px,1fr));gap:6px;margin-bottom:10px}
+#setup-choices .setup-pool-counter{display:flex;flex-direction:column;align-items:center;gap:3px;padding:5px 3px 4px;
+ background:#f9fafa;min-width:0;margin:0;border:2px solid #ccd7d5;touch-action:none;user-select:none}
+#setup-choices .setup-pool-counter:hover{background:#e4f1f1;border-color:#7b969f}
+#setup-choices .setup-pool-counter.is-selected{border-color:#c7820b;background:#fff4d5}
+.setup-pool-art{width:50px;height:50px;display:block;pointer-events:none}
+.setup-pool-counter span{font-size:10px;line-height:1.25;overflow-wrap:anywhere;text-align:center}
+#setup-selection{min-height:38px;background:#f4f7f7;padding:7px;border-left:3px solid #c2cfd1}
+#counter-overlay .counter-selection-frame{vector-effect:non-scaling-stroke}
+#counter-overlay [data-unit-id]{touch-action:none}
+body.setup-is-dragging #counter-overlay,body.setup-is-dragging #setup-choices{cursor:grabbing}
+#setup-panel[hidden],#decision-section[hidden],#orders-section[hidden],#ai-section[hidden]{display:none!important}
+/* Attribute visibility overrides button/label display rules, including
+   the mutually exclusive normal-die and automatic-NE controls. */
+[hidden]{display:none!important}
+
+/* Universal game-panel tabs and Settings controls. */
+.game-tab-strip{display:flex;gap:4px;padding:9px 12px;border-bottom:1px solid #dce4e4;background:#eef2f2}
+.game-tab-strip button{flex:1;margin:0;font-weight:600}
+.game-tab-strip [aria-selected="true"]{background:#25445d;color:#fff;border-color:#25445d}
+aside[data-active-tab="settings"]>section:not(#settings-section){display:none!important}
+aside[data-active-tab="settings"]>#message{display:none!important}
+#settings-section[hidden]{display:none!important}
+#settings-section h3{font-size:13px;margin:12px 0 5px}
+.setting-switch{display:flex;align-items:center;gap:7px;padding:6px 0;cursor:pointer;font-weight:500}
+.setting-switch input{width:auto!important;margin:0!important;flex:none}
+.setting-disabled{opacity:.50;cursor:not-allowed}
+.setting-caption{font-size:11px;line-height:1.4;color:#5e7077;margin:5px 0 12px}
+
+#map-art-inline{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+#map-art-inline>svg{display:block;width:100%;height:100%;pointer-events:none}
+
+/* Tablet touch layout: retain a correctly proportioned, scrollable map. */
+.map-viewport{flex:none;overflow:hidden;width:100%;}
+.map-scroll .map-viewport img,.map-scroll .map-viewport svg{width:100%;height:100%}
+#setup-choices .setup-pool-counter{touch-action:pan-y} #counter-overlay [data-unit-id]{touch-action:none}
+@media(max-width:1199px){main{grid-template-columns:1fr;gap:10px;padding:10px}.board-space{order:-1}aside{max-height:none}.setup-counter-pool{grid-template-columns:repeat(auto-fill,minmax(84px,1fr))}.setup-pool-counter{min-height:85px}}
+@media(max-width:600px){header{padding:10px;flex-wrap:wrap}header h1{font-size:19px}header p{font-size:11px}nav a{margin:0 10px 0 0}.warning{padding:8px 12px}main{padding:6px;gap:8px}.board-space{padding:6px}}
+
+/* Shared, source-authorized buildup map affordances. Hex fill is deliberately
+   below the counter layer and does not alter official source map artwork. */
+#buildup-map-controls{margin:8px 0;padding:10px;background:#eff4f3;border-left:3px solid #3a7187}
+#buildup-map-controls label{display:block;margin:6px 0 3px}
+#buildup-map-controls select{width:100%;max-width:390px;padding:6px}
+#buildup-map-controls p{margin:7px 0 2px}
+/* Shared placement highlight hex for deployment, reinforcements, resupply,
+   rebuild, and Support targeting. The thick dark-yellow perimeter remains
+   constant; a second thinner border pulses from the same footprint and fades as
+   it expands to 3 px over one second. */
+#counter-overlay .hex-highlight-pulse{fill:none;stroke:#9e7900;stroke-width:1.35;stroke-opacity:.92;stroke-dasharray:none;stroke-linejoin:round;vector-effect:non-scaling-stroke;pointer-events:none;animation:historical-legal-hex-pulse 1s ease-out infinite}
+#counter-overlay .hex-highlight-pulse.highlight-selected{stroke:#806100}
+#counter-overlay .hex-highlight-pulse.retreat-highlight{stroke:#0a58ca}
+#counter-overlay .hex-highlight-pulse.retreat-highlight.highlight-selected{stroke:#0a58ca}
+#counter-overlay .hex-hit.setup-eligible-hex,
+#counter-overlay .hex-hit[class*="buildup-"],
+#counter-overlay .hex-hit.support-target-hex{fill:rgba(175,135,0,.10);stroke:#9e7900;stroke-width:5;stroke-dasharray:none;stroke-linejoin:round;vector-effect:non-scaling-stroke;pointer-events:all;cursor:pointer}
+#counter-overlay .hex-hit.setup-eligible-hex:hover,
+#counter-overlay .hex-hit.setup-eligible-hex:focus-visible,
+#counter-overlay .hex-hit[class*="buildup-"]:hover,
+#counter-overlay .hex-hit[class*="buildup-"]:focus-visible,
+#counter-overlay .hex-hit.support-target-hex:hover,
+#counter-overlay .hex-hit.support-target-hex:focus-visible{fill:rgba(175,135,0,.18);stroke:#9e7900;stroke-width:5}
+#counter-overlay .hex-hit.support-target-hex.support-target-selected,
+#counter-overlay .hex-hit.support-target-hex.support-target-selected:hover,
+#counter-overlay .hex-hit.support-target-hex.support-target-selected:focus-visible{fill:rgba(175,135,0,.23);stroke:#806100;stroke-width:6}
+#counter-overlay .counter-vector.buildup-stack-top .counter-selection-frame{stroke:#e6af33;stroke-width:1.5}
+@keyframes historical-legal-hex-pulse{0%{stroke-width:1.35;stroke-opacity:.92}72%{stroke-width:2.35;stroke-opacity:.54}100%{stroke-width:3;stroke-opacity:0}}
+
+/* During buildup/support, hover on a NON-ACTION hex must not imply an eligible
+   destination. All colored hex outlines remain catalogue-driven. */
+body.buildup-map-active #counter-overlay .hex-hit:not([data-buildup-action]):hover,
+body.support-map-active #counter-overlay .hex-hit:not([data-support-target]):hover{stroke:transparent;stroke-width:0}
+
+/* Shared human retreat selection: only authoritative post-roll routes appear.
+ * Arrow overlay is drawn by the same map/counter renderer, behind the counters.
+ * First tap previews; only a complete catalogue consequence button commits. */
+#retreat-route-controls{border:1px solid #68b8ff;background:#eef8ff;border-radius:5px;padding:8px;margin:7px 0 8px;font-size:12px}
+#retreat-route-controls[hidden]{display:none!important}
+.retreat-route-heading{font-weight:700;color:#0a58ca;line-height:1.5}
+.retreat-route-buttons{display:flex;gap:4px;flex-wrap:wrap;max-height:140px;overflow:auto}
+.retreat-route-buttons button{font-size:11px;margin:3px 0;padding:5px 7px;background:white;border:1px solid #7fc6ff;text-align:left}
+.retreat-route-buttons button.is-selected{border:2px solid #0a58ca;background:#dff1ff;font-weight:700;padding:4px 6px}
+.retreat-confirm-instruction{font-size:11px;margin:6px 0;color:#22577a}
+#retreat-route-controls [data-retreat-clear]{font-size:11px;margin:3px 0}
+/* Retreat route: a single crisp filled polygon, not rounded SVG strokes.
+   Target hexes are cobalt blue to separate destinations from light-blue arrows. */
+#counter-overlay .hex-hit.retreat-target-hex{fill:rgba(10,88,202,.10);stroke:#0a58ca;stroke-width:5;stroke-dasharray:none;stroke-linejoin:miter;vector-effect:non-scaling-stroke;cursor:pointer;pointer-events:all}
+#counter-overlay .hex-hit.retreat-target-selected{fill:rgba(10,88,202,.23);stroke:#0a58ca;stroke-width:6}
+#counter-overlay .retreat-target-inner{fill:none;stroke:#72c9ff;stroke-width:1.5;stroke-linejoin:miter;vector-effect:non-scaling-stroke;pointer-events:none}
+#counter-overlay .retreat-arrow-block{fill:#72c9ff;stroke:none;pointer-events:none}
+#counter-overlay .retreat-arrow-hit{fill:none;stroke:transparent;stroke-width:26;stroke-linecap:butt;vector-effect:non-scaling-stroke;cursor:pointer;pointer-events:stroke}
+#counter-overlay .retreat-route.is-muted{opacity:1}
+body.retreat-map-active #counter-overlay .hex-hit:not(.retreat-target-hex):hover{stroke:transparent;stroke-width:0}
+@media(pointer:coarse){.retreat-route-buttons button{min-height:44px}.retreat-arrow-hit{touch-action:manipulation}}
+
+/* Source-verified German reinforcement-face exchange; shared setup layout. */
+.setup-infantry-face-selector{border:1px solid #b5c5d1;background:#f5f8fa;border-radius:5px;padding:8px;margin:8px 0}
+.setup-infantry-face-selector label{display:block;font-weight:700;font-size:12px;margin-bottom:4px}
+.setup-infantry-face-selector select{width:100%;max-width:520px;min-height:36px}
+.setup-infantry-face-selector .small{margin:4px 0 0}
+
+/* Player-choice CRT variant controls (shared historical browser shell). */
+#historical-crt-settings{border-top:1px solid #d8e1e6;margin-top:12px;padding-top:8px}
+#historical-crt-settings label{display:flex;align-items:center;gap:6px}
+.crt-reference-details{margin:8px 0;font-size:12px}
+.crt-reference-scroll{overflow-x:auto;max-width:100%}
+.crt-reference-table{border-collapse:collapse;white-space:nowrap;font:11px ui-monospace,monospace}
+.crt-reference-table th,.crt-reference-table td{border:1px solid #afbfc8;padding:4px 6px;text-align:center}
+.crt-reference-table th{background:#e6eef3}
+
+
+
+#counter-overlay .hex-hit.movement-target-hex,#counter-overlay .hex-hit.battle-target-hex{fill:rgba(175,135,0,.10);stroke:#9e7900;stroke-width:5;stroke-linejoin:round;vector-effect:non-scaling-stroke;pointer-events:all;cursor:pointer}

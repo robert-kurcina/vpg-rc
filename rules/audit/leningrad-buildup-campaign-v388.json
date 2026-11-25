@@ -1,0 +1,20 @@
+{
+  "checkpoint": 154,
+  "version": "v388",
+  "assertions": 88,
+  "scope": "opt-in, source-face-bound Leningrad buildup and replacements within shared campaign action journal",
+  "verified": [
+    "Turn 1 Soviet buildup completes with zero allowance",
+    "Source-backed per-turn replacement allowances and explicit reinforcement face binding",
+    "Turn 3 Workers Militia city exception; German Turn 4 and Soviet Turn 4 on-board arrivals",
+    "Replacement restoration and eliminated-unit rebuilding, no same-phase double repair, one Soviet Mechanized Corps per turn",
+    "Source-colored entry edge, EZOC, stacking, expiration, city ownership and communication checks",
+    "Undo, checkpoint restore, malformed source/action rejection"
+  ],
+  "limitations": [
+    "Candidate face allocation not historical identity certification",
+    "No real eight-turn campaign or complete housekeeping/victory controller",
+    "Turn 6 FK VIII availability remains handled by the existing air marker turn threshold",
+    "Printed-coordinate mapping discrepancies still unresolved"
+  ]
+}

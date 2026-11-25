@@ -1,0 +1,84 @@
+{
+  "checkpoint": 225,
+  "version": "v459",
+  "scenario": "arduous",
+  "scope": "seven-turn, 184-action contested source-transaction acceptance after single-battle search optimization",
+  "policy": {
+    "seed": 7,
+    "selectionMode": "seeded",
+    "maxActions": 700,
+    "maxCombatsPerPhase": 1,
+    "maxCombatPhases": 16,
+    "maxGroundMovesPerPhase": 1,
+    "maxReinforcementsPerPhase": 4,
+    "maxFleetMoves": 0,
+    "maxFleetAttacks": 0
+  },
+  "actionCount": 184,
+  "statistics": {
+    "turns": 7,
+    "moves": 27,
+    "battles": 14,
+    "reinforcements": 7,
+    "combatDeclarations": 14,
+    "airChoices": 7,
+    "postCombatAdvances": 4,
+    "postCombatRetreats": 4,
+    "replacements": 6,
+    "combatTurns": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "dieRolls": [
+      4,
+      1,
+      1,
+      6,
+      1,
+      4,
+      5,
+      2
+    ]
+  },
+  "final": {
+    "outcome": "soviet-victory",
+    "axisControlledCities": 1,
+    "stateSHA256": "233be8e1ca85f2a96d211e05150eee26d2f01c569071f6456a3812518de3d2ad",
+    "journalSHA256": "ca9a6cdffc952816437ef0f612ee8ece4a64b3a1e942bd6141d3fb650e2ae76a"
+  },
+  "saves": {
+    "turn3": "restored exactly",
+    "terminal": "restored exactly"
+  },
+  "limitations": [
+    "Test uses one candidate opening allocation; source marker overrides do not change gameplay",
+    "Deterministic legal-action controller is not strategic AI or interactive human play",
+    "One seeded run does not certify all possible retreats, replacements, or source rule variants",
+    "Only actions and consequences observed in this run count as tested"
+  ],
+  "optimization": "Skip combined two-/three-target plan discovery only when maxCombatsPerPhase <= 1; full plan discovery is preserved when policy allows multiple attacks per phase",
+  "controllerSHA256": "80930f78fda5e68d3b0214b94d6e11507bee0be9a3f4b5b1a7fb1a4bb8ec2b93",
+  "legacyAuditComparison": {
+    "checkpoint": 188,
+    "priorStateSHA256": "136d55201af77fcd27b9241f451e044b80574cb1ff26a22da54177f5d8bf8322",
+    "priorJournalSHA256": "32a205cb44350565a9e77d3abbeb2bc4251c2dd6c9090c34f9c0cf0fbc7902a0",
+    "identicalState": false,
+    "identicalJournal": false,
+    "warning": "v422 and v459 use different intervening project versions; mismatches are not evidence that the v459 optimization changed rules"
+  },
+  "verification": [
+    "Replay is deterministic on save/restore",
+    "Individual opening proposals match the eager catalog",
+    "Combined plans are still available under multi-battle policy"
+  ],
+  "remaining": [
+    "184-action complete Chromium browser trace not certified",
+    "Post-roll consequences still bounded at 128 validated choices",
+    "One deterministic test opening and controller policy are not exhaustive"
+  ]
+}

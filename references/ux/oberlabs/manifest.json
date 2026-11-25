@@ -1,0 +1,190 @@
+{
+  "schemaVersion": 1,
+  "purpose": "Oberlabs UX screenshots as visual baseline; presentation contracts, not executable rules",
+  "authority": "user-provided screenshots of original Oberlabs Battle for Moscow",
+  "sourceArchive": "oberlabs-ux-set.zip",
+  "screenshots": [
+    {
+      "index": 1,
+      "originalFilename": "Screenshot 2026-11-18 at 8.38.20\u0393\u00c7\u00bbPM.png",
+      "sourceSha256": "e3c2ab44d68c283cc6fef8305eaf91aa381d7c14f66a899e402a09eb154cabc1",
+      "sourcePixels": [
+        4336,
+        2624
+      ],
+      "reviewCopy": "oberlabs-ux-01.jpg",
+      "reviewCopySha256": "8769533d154c04236966ba44562e6eeb18d9ed54e691b9a3c658f34d0a9c442c",
+      "view": "title-overlay"
+    },
+    {
+      "index": 2,
+      "originalFilename": "Screenshot 2026-11-18 at 8.38.32\u0393\u00c7\u00bbPM.png",
+      "sourceSha256": "256e5ab73f3cae7081b498d4e6606e83878dec8335968d62a99ae9c4e93fa165",
+      "sourcePixels": [
+        4336,
+        2624
+      ],
+      "reviewCopy": "oberlabs-ux-02.jpg",
+      "reviewCopySha256": "c04de0f151fe580602fe9ffa41a52d313a4cf04204044b7b3886942a83754441",
+      "view": "tournament-rules"
+    },
+    {
+      "index": 3,
+      "originalFilename": "Screenshot 2026-11-18 at 8.38.42\u0393\u00c7\u00bbPM.png",
+      "sourceSha256": "c64f8947842d7b27c62e776373001716a78b210327d60120ed90ac8a02eea33d",
+      "sourcePixels": [
+        4336,
+        2624
+      ],
+      "reviewCopy": "oberlabs-ux-03.jpg",
+      "reviewCopySha256": "580eef48b8226be2bd1463ee909e23361a611ee830113e662208a648a80dd4d3",
+      "view": "sequence-of-play"
+    },
+    {
+      "index": 4,
+      "originalFilename": "Screenshot 2026-11-18 at 8.38.47\u0393\u00c7\u00bbPM.png",
+      "sourceSha256": "a02fe5c561da713db0e570dba34dacc6e6682877421b651690303a38673daec3",
+      "sourcePixels": [
+        4336,
+        2624
+      ],
+      "reviewCopy": "oberlabs-ux-04.jpg",
+      "reviewCopySha256": "d258b6b9ed62b4620fe349563e439fd5b99745392e818bcb3f95e6ca3ec65d75",
+      "view": "how-to-gameplay"
+    },
+    {
+      "index": 5,
+      "originalFilename": "Screenshot 2026-11-18 at 8.38.49\u0393\u00c7\u00bbPM.png",
+      "sourceSha256": "ab4df156acc5c8aa657f9fadb711d4fc3ce91b59e9520d5cebfa19f6de9c4755",
+      "sourcePixels": [
+        4336,
+        2624
+      ],
+      "reviewCopy": "oberlabs-ux-05.jpg",
+      "reviewCopySha256": "44232b54969ad0722bab9ea8f5d0209c09d877d80e94fd8e822516aa9c5ba246",
+      "view": "terrain-effects-top"
+    },
+    {
+      "index": 6,
+      "originalFilename": "Screenshot 2026-11-18 at 8.39.03\u0393\u00c7\u00bbPM.png",
+      "sourceSha256": "48b73c7bed10a5160314b58e0772abd18a5f822c15294095afa2279e1a25a842",
+      "sourcePixels": [
+        4336,
+        2624
+      ],
+      "reviewCopy": "oberlabs-ux-06.jpg",
+      "reviewCopySha256": "44232b54969ad0722bab9ea8f5d0209c09d877d80e94fd8e822516aa9c5ba246",
+      "view": "terrain-effects-and-crt"
+    },
+    {
+      "index": 7,
+      "originalFilename": "Screenshot 2026-11-18 at 8.39.05\u0393\u00c7\u00bbPM.png",
+      "sourceSha256": "2501dd8b8d4bf831114d8b98a521ed71493e643944b951264e4e39432b5bbfb3",
+      "sourcePixels": [
+        4336,
+        2624
+      ],
+      "reviewCopy": "oberlabs-ux-07.jpg",
+      "reviewCopySha256": "b0bef69749e466953edfd90d2a30339461a8eb37d1046f8b3d7b66d59410fb07",
+      "view": "combat-results-table"
+    }
+  ],
+  "observedComponents": [
+    {
+      "id": "game-title",
+      "scope": "game-content",
+      "evidence": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "map-stage",
+      "scope": "shared-shell-game-map",
+      "evidence": [
+        1,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "id": "status-turn-header",
+      "scope": "shared-shell-game-content",
+      "evidence": [
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "id": "phase-context-panel",
+      "scope": "shared-shell-game-ux",
+      "evidence": [
+        3,
+        4
+      ]
+    },
+    {
+      "id": "rules-reference-window",
+      "scope": "shared-component",
+      "evidence": [
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "id": "sequence-of-play-tab",
+      "scope": "game-content",
+      "evidence": [
+        3
+      ]
+    },
+    {
+      "id": "how-to-tab",
+      "scope": "game-content",
+      "evidence": [
+        4
+      ]
+    },
+    {
+      "id": "terrain-effects-tab",
+      "scope": "generated-from-terrain-rules",
+      "evidence": [
+        5,
+        6
+      ]
+    },
+    {
+      "id": "combat-results-tab",
+      "scope": "shared-crt-plus-game-modifiers",
+      "evidence": [
+        7
+      ]
+    },
+    {
+      "id": "close-reference-window",
+      "scope": "shared-behavior",
+      "evidence": [
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    }
+  ],
+  "limitations": [
+    "Screenshots establish appearance and visible controls, not click semantics or responsive layouts",
+    "Different game scenarios require their own sequence, rule text, terrain chart rows and special notes",
+    "Shared historical CRT is common, but modifiers and contextual explanations remain game-specific",
+    "Do not substitute screenshot pixels for engine render, counter SVGs, or map assets"
+  ]
+}

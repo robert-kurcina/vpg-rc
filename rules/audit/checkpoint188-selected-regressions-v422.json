@@ -1,0 +1,130 @@
+{
+  "checkpoint": 188,
+  "version": "v422",
+  "scope": "selected independent Node regressions",
+  "results": [
+    {
+      "test": "arduous-combat-river-fortification-v419",
+      "result": "pass",
+      "exitCode": 0,
+      "seconds": 0.11,
+      "stdoutTail": "PASS Arduous shared CRT, fortification and approved river combat 17 checks",
+      "stderrTail": ""
+    },
+    {
+      "test": "arduous-executable-graph-v419",
+      "result": "pass",
+      "exitCode": 0,
+      "seconds": 0.1,
+      "stdoutTail": "PASS Arduous executable graph 21 checks (155 hexes, 85 rails, 45 river sides)",
+      "stderrTail": ""
+    },
+    {
+      "test": "arduous-full-source-opening-v413",
+      "result": "pass",
+      "exitCode": 0,
+      "seconds": 0.1,
+      "stdoutTail": "PASS Arduous source-backed full opening 49 checks {\"sourceFaceStartingUnits\":29,\"fixedSourcePieces\":1,\"totalStartingGroundUnits\":30,\"german\":16,\"soviet\":14,\"unresolvedPrintedRearAnchors\":[],\"fixedSourceAudit\":[{\"id\":\"arduous:brest-garrison\",\"hex\":\"0211\",\"owner\":\"soviet\",\"sourceFaceId\":\"arduous-front-r04c03\",\"activeFaceId\":\"arduous-back-r04c06\",\"sourceMapMarkerSvgId\":\"use337\",\"printedValues\":\"3-4\",\"printedAffiliation\":\"axis\",\"ruleSource\":\"references/rules/arduous-rules.pdf \u00a76.0, printed page 2\"}],\"sourceNamedCityAnchors\":{\"fixedMechanized\":[{\"hex\":\"0907\",\"sourceSvgId\":\"use334\",\"kind\":\"fixedMechanized\",\"terrain\":\"open\",\"anchorSource\":\"rule-and-authored-city\",\"ruleSource\":\"arduous-rules.pdf \u00a76.0 #2\"},{\"hex\":\"0609\",\"sourceSvgId\":\"use336\",\"kind\":\"fixedMechanized\",\"terrain\":\"open\",\"anchorSource\":\"rule-and-authored-city\",\"ruleSource\":\"arduous-rules.pdf \u00a76.0 #2\"},{\"hex\":\"1510\",\"sourceSvgId\":\"use338\",\"kind\":\"fixedMechanized\",\"terrain\":\"open\",\"anchorSource\":\"rule-and-authored-city\",\"ruleSource\":\"arduous-rules.pdf \u00a76.0 #2\"}]}}",
+      "stderrTail": ""
+    },
+    {
+      "test": "arduous-roster-and-victory-v410",
+      "result": "pass",
+      "exitCode": 0,
+      "seconds": 0.11,
+      "stdoutTail": "PASS v410 Arduous photographed counters + \u00a75 victory: 237 assertions",
+      "stderrTail": ""
+    },
+    {
+      "test": "arduous-seven-turn-smoke-v419",
+      "result": "pass",
+      "exitCode": 0,
+      "seconds": 2.66,
+      "stdoutTail": "PASS Arduous seven-turn source transaction smoke {\"checkpoint\":185,\"version\":\"v419\",\"scope\":\"seven-turn no-optional-combat-or-movement source-transaction smoke\",\"actions\":89,\"housekeeping\":7,\"reinforcements\":[{\"slot\":\"t1-sovietreinforcementarmies-1\",\"hex\":\"1801\"},{\"slot\":\"t1-sovietreinforcementarmies-2\",\"hex\":\"1802\"},{\"slot\":\"t1-sovietreinforcementmechanized-1\",\"hex\":\"1801\"},{\"slot\":\"t1-sovietreinforcementmechanized-2\",\"hex\":\"1802\"},{\"slot\":\"t2-sovietreinforcementarmies-1\",\"hex\":\"1803\"},{\"slot\":\"t2-sovietreinforcementmechanized-1\",\"hex\":\"1803\"},{\"slot\":\"t3-sovietreinforcementarmies-1\",\"hex\":\"1804\"}],\"terminal\":\"soviet-victory\",\"limitations\":[\"No optional attacks or movement exercised\",\"This is not a full human-play or AI-play acceptance\",\"The source opening uses a deterministic candidate assignment\"]}",
+      "stderrTail": ""
+    },
+    {
+      "test": "arduous-presentation-overrides-v415",
+      "result": "pass",
+      "exitCode": 0,
+      "seconds": 0.11,
+      "stdoutTail": "PASS Arduous presentation-only German Infantry corrections 27 checks",
+      "stderrTail": ""
+    },
+    {
+      "test": "arduous-topology-probe-v418",
+      "result": "pass",
+      "exitCode": 0,
+      "seconds": 0.08,
+      "stdoutTail": "PASS Arduous source topology probe 33 checks; movement probe was TEST-ONLY",
+      "stderrTail": ""
+    },
+    {
+      "test": "shared-historical-crt-v316",
+      "result": "pass",
+      "exitCode": 0,
+      "seconds": 0.04,
+      "stdoutTail": "PASS v316 shared Oberlabs CRT: 36 cells x 5 historical mappings",
+      "stderrTail": ""
+    },
+    {
+      "test": "shared-display-policy-v421",
+      "result": "pass",
+      "exitCode": 0,
+      "seconds": 0.08,
+      "stdoutTail": "PASS shared Settings defaults, Coast detection and 125% geometry",
+      "stderrTail": ""
+    },
+    {
+      "test": "universal-counter-geometry-v420",
+      "result": "pass",
+      "exitCode": 0,
+      "seconds": 0.1,
+      "stdoutTail": "PASS universal counter geometry {\"battle-for-moscow\":{\"hexHeight\":101.9,\"counterSize\":46,\"ratio\":0.45142},\"arduous\":{\"hexHeight\":50.16,\"counterSize\":22.643,\"ratio\":0.45142},\"leningrad\":{\"hexHeight\":66.36,\"counterSize\":29.956,\"ratio\":0.45142},\"kiev\":{\"hexHeight\":66.52,\"counterSize\":30.029,\"ratio\":0.45143},\"kiev-odessa\":{\"hexHeight\":66.52,\"counterSize\":30.029,\"ratio\":0.45143}}",
+      "stderrTail": ""
+    },
+    {
+      "test": "historical-campaign-action-catalog-v390",
+      "result": "pass",
+      "exitCode": 0,
+      "seconds": 2.72,
+      "stdoutTail": "PASS v390 109 source-validated action discovery assertions",
+      "stderrTail": ""
+    },
+    {
+      "test": "historical-deployment-campaign-v404",
+      "result": "pass",
+      "exitCode": 0,
+      "seconds": 34.83,
+      "stdoutTail": "{\"checkpoint\":170,\"version\":\"v404\",\"status\":\"PASS\",\"actions\":178,\"stats\":{\"moves\":31,\"combats\":2,\"reinforcements\":8,\"navalRolls\":2,\"turns\":8},\"setup\":\"user-changed German initial cross + randomly permuted in-browser-equivalent concealed identities\",\"qualifier\":\"deterministic test permutation, not independently certified hidden information\"}",
+      "stderrTail": ""
+    },
+    {
+      "test": "historical-combat-consequences-v359",
+      "result": "pass",
+      "exitCode": 0,
+      "seconds": 0.4,
+      "stdoutTail": "PASS v359 shared source-bound combat consequence transactions: 68 assertions",
+      "stderrTail": ""
+    },
+    {
+      "test": "historical-housekeeping-eight-turn-v389",
+      "result": "pass",
+      "exitCode": 0,
+      "seconds": 8.47,
+      "stdoutTail": "PASS v389 226 historical housekeeping, victory and eight-turn journal assertions; 94 source-legal actions",
+      "stderrTail": ""
+    },
+    {
+      "test": "b4m-native-objective-advance-v408",
+      "result": "pass",
+      "exitCode": 0,
+      "seconds": 0.12,
+      "stdoutTail": "{\"status\":\"PASS\",\"checkpoint\":174,\"version\":\"v408\",\"scope\":\"synthetic source-rules differential at Moscow; not historical setup certification\",\"checks\":42,\"sourceCRT\":\"unchanged\",\"engine\":\"unchanged\",\"productionSelector\":\"legacy-b4m-v1\",\"advancedDE\":true,\"legacyActionParity\":true,\"dieCommitIsolation\":true,\"moscowDRHold\":true,\"defaultPoliciesPreserved\":true,\"undoAndSave\":true,\"limitations\":[\"Synthetic Moscow tactical board positions\",\"No new legacy strategic AI parity claim\",\"No active B4M production cutover\"]}",
+      "stderrTail": ""
+    }
+  ],
+  "pass": 15,
+  "fail": 0,
+  "timeout": 0
+}

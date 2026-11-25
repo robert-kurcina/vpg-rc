@@ -1,0 +1,35 @@
+{
+  "checkpoint": 237,
+  "version": "v471",
+  "assertions": 55,
+  "source": "references/rules/kiev-rules.pdf printed page 3, §8.1",
+  "rulebookSHA256": "d55e8f0e567d1f8c7907c4fc8368954ec0e5fa8d6fe9e8e71c61acf9bb3c3756",
+  "verifiedRule": "Romanian and Hungarian units may never stack together; no restriction on Italian/Romanian or same-nationality pairs",
+  "proof": {
+    "sharedNationalityPredicate": true,
+    "movement": true,
+    "buildup": true,
+    "safeRetreatPreview": true,
+    "forcedRetreatEnumeration": true,
+    "forcedRetreatCommit": true,
+    "combatSourceFaces": true,
+    "combatCertifiedHexsides": true,
+    "combatSafeOnlyAndForcedModes": true,
+    "undoAndFailedTransactionAtomicity": true
+  },
+  "testFixture": "Real Leningrad source-faced counters and certified hexsides, synthetic Romanian/Hungarian nationalities and combat positions; NOT historical Leningrad rules or a Kiev game authorization",
+  "kievLivePlayable": false,
+  "kievRomaniaMaskCertified": false,
+  "exclusionsPreservedByProfile": true,
+  "unchanged": [
+    "Five approved game-map exports",
+    "Common B4M CRT",
+    "All original photographed counter art",
+    "Existing Kiev territory and graph certification gates"
+  ],
+  "limitations": [
+    "No Kiev Romanian territory border certified or Kiev live campaign",
+    "No claim of exhaustive national-stack situation enumeration",
+    "Source-face nationalities in the test combat are synthetic by design"
+  ]
+}

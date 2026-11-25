@@ -1,0 +1,1552 @@
+{
+  "format": "historical-custom-campaign",
+  "version": 1,
+  "deployment": {
+    "format": "historical-source-setup-candidate-v1",
+    "version": 3,
+    "scenarioId": "kiev-odessa",
+    "openingSHA256": "cc6ae2ddb719b6f384b69de9c52a7807f910fb0d85775c2f886c7c9235d8db36",
+    "placements": {
+      "kiev-front-r01c01": "0105",
+      "kiev-front-r01c02": "0203",
+      "kiev-front-r01c03": "0204",
+      "kiev-front-r01c04": "0105",
+      "kiev-front-r01c05": "0203",
+      "kiev-front-r01c06": "0204",
+      "kiev-front-r01c08": "0301",
+      "kiev-front-r02c01": "0302",
+      "kiev-front-r02c02": "0303",
+      "kiev-front-r02c03": "0402",
+      "kiev-front-r02c04": "0709",
+      "kiev-front-r02c05": "0809",
+      "kiev-front-r02c06": "0910",
+      "kiev-front-r02c08": "1010",
+      "kiev-front-r03c04": "0205",
+      "kiev-front-r03c05": "0401",
+      "kiev-front-r03c06": "0708",
+      "kiev-front-r03c07": "1110",
+      "kiev-front-r04c02": "0304",
+      "kiev-front-r04c03": "0305",
+      "kiev-front-r05c01": "0403",
+      "kiev-front-r05c02": "0502",
+      "kiev-front-r05c03": "0503",
+      "kiev-front-r05c04": "0808",
+      "kiev-front-r03c08": "0406",
+      "kiev-front-r04c04": "1007",
+      "kiev-front-r05c05": "0705",
+      "kiev-front-r05c06": "0803",
+      "kiev-front-r05c07": "1106",
+      "kiev-front-r05c08": "1309",
+      "kiev-odessa/soviet-cavalry-corps-a": "1215",
+      "kiev-odessa/soviet-cavalry-corps-b": "1111",
+      "kiev-odessa/soviet-coastal-army": "1513",
+      "kiev-odessa/romanian-home-army": "0709",
+      "kiev-odessa/romanian-4th-army": "0809",
+      "kiev-odessa/romanian-cavalry-corps": "1010"
+    },
+    "identityAssignments": {
+      "kiev-front-r04c02": "kiev-front-r05c08",
+      "kiev-front-r04c03": "kiev-front-r05c04",
+      "kiev-front-r05c01": "kiev-front-r05c02",
+      "kiev-front-r05c02": "kiev-front-r05c05",
+      "kiev-front-r05c03": "kiev-front-r05c01",
+      "kiev-front-r05c04": "kiev-front-r05c06",
+      "kiev-front-r05c05": "kiev-front-r04c02",
+      "kiev-front-r05c06": "kiev-front-r05c03",
+      "kiev-front-r05c07": "kiev-front-r05c07",
+      "kiev-front-r05c08": "kiev-front-r04c03"
+    },
+    "concealedMixed": true,
+    "infantryReserveSlot": "kiev-front-r02c06",
+    "integrity": {
+      "algorithm": "SHA-256",
+      "digest": "7d6625b2b0ed44a5441b5a6291ee8f59e58d602188af23978e56910a18e0577c"
+    }
+  },
+  "human": {
+    "format": "historical-human-decision-session",
+    "version": 1,
+    "campaign": {
+      "format": "wargame-historical-campaign-continuation",
+      "version": 1,
+      "scenarioId": "kiev-odessa",
+      "bindings": {
+        "originHash": "afd8faa6bd8ef5cfd6954df4e92732728b4239cd29495f127a1c5607b3283843",
+        "scopeHash": "2b45d9d27b092d7fd1be7dd3267c10b522fb9e8a6f521d0068c87b0ea16c4490"
+      },
+      "origin": {
+        "actor": "german",
+        "cursor": {
+          "complete": false,
+          "index": 2,
+          "scenarioId": "kiev-odessa",
+          "turn": 1
+        },
+        "state": {
+          "cityControl": {
+            "Br\u0103ila": "german",
+            "Chernigov": "soviet",
+            "Chernovtsy": "soviet",
+            "Chisinau": "soviet",
+            "Iasi": "german",
+            "Kiev": "soviet",
+            "Kirovograd": "soviet",
+            "Kovel": "soviet",
+            "Lublin": "german",
+            "Lvov": "soviet",
+            "Nikolaev": "soviet",
+            "Odessa": "soviet",
+            "Rovno": "soviet",
+            "Sarny": "soviet",
+            "Shepetovka": "soviet",
+            "Stanislavov": "soviet",
+            "Tarnopol": "soviet",
+            "Uman": "soviet",
+            "Vinnitsa": "soviet",
+            "Zhitomir": "soviet"
+          },
+          "scenarioId": "kiev-odessa",
+          "supportMarkers": {
+            "blackSeaFleet": {
+              "condition": "undamaged",
+              "hex": "1513",
+              "owner": "soviet",
+              "reverseFaceId": "odessa-back-r01c08",
+              "sourceFaceId": "odessa-front-r01c01"
+            }
+          },
+          "units": {
+            "kiev-front-r01c01": {
+              "class": "panzer",
+              "hex": "0105",
+              "historicalUnitId": null,
+              "id": "kiev-front-r01c01",
+              "marker": false,
+              "mp": 6,
+              "nationality": "german",
+              "openingHex": "0105",
+              "owner": "german",
+              "printedCombatStrength": 12,
+              "reverseFaceId": "kiev-back-r01c08",
+              "size": "corps",
+              "sourceFaceId": "kiev-front-r01c01",
+              "strengthStatus": "printed-full"
+            },
+            "kiev-front-r01c02": {
+              "class": "panzer",
+              "hex": "0203",
+              "historicalUnitId": null,
+              "id": "kiev-front-r01c02",
+              "marker": false,
+              "mp": 6,
+              "nationality": "german",
+              "openingHex": "0203",
+              "owner": "german",
+              "printedCombatStrength": 12,
+              "reverseFaceId": "kiev-back-r01c07",
+              "size": "corps",
+              "sourceFaceId": "kiev-front-r01c02",
+              "strengthStatus": "printed-full"
+            },
+            "kiev-front-r01c03": {
+              "class": "panzer",
+              "hex": "0204",
+              "historicalUnitId": null,
+              "id": "kiev-front-r01c03",
+              "marker": false,
+              "mp": 6,
+              "nationality": "german",
+              "openingHex": "0204",
+              "owner": "german",
+              "printedCombatStrength": 10,
+              "reverseFaceId": "kiev-back-r01c06",
+              "size": "corps",
+              "sourceFaceId": "kiev-front-r01c03",
+              "strengthStatus": "printed-full"
+            },
+            "kiev-front-r01c04": {
+              "class": "infantry",
+              "hex": "0105",
+              "historicalUnitId": null,
+              "id": "kiev-front-r01c04",
+              "marker": false,
+              "mp": 4,
+              "nationality": "german",
+              "openingHex": "0105",
+              "owner": "german",
+              "printedCombatStrength": 8,
+              "reverseFaceId": "kiev-back-r01c05",
+              "size": "corps",
+              "sourceFaceId": "kiev-front-r01c04",
+              "strengthStatus": "printed-full"
+            },
+            "kiev-front-r01c05": {
+              "class": "infantry",
+              "hex": "0203",
+              "historicalUnitId": null,
+              "id": "kiev-front-r01c05",
+              "marker": false,
+              "mp": 4,
+              "nationality": "german",
+              "openingHex": "0203",
+              "owner": "german",
+              "printedCombatStrength": 8,
+              "reverseFaceId": "kiev-back-r01c04",
+              "size": "corps",
+              "sourceFaceId": "kiev-front-r01c05",
+              "strengthStatus": "printed-full"
+            },
+            "kiev-front-r01c06": {
+              "class": "infantry",
+              "hex": "0204",
+              "historicalUnitId": null,
+              "id": "kiev-front-r01c06",
+              "marker": false,
+              "mp": 4,
+              "nationality": "german",
+              "openingHex": "0204",
+              "owner": "german",
+              "printedCombatStrength": 8,
+              "reverseFaceId": "kiev-back-r01c03",
+              "size": "corps",
+              "sourceFaceId": "kiev-front-r01c06",
+              "strengthStatus": "printed-full"
+            },
+            "kiev-front-r01c07": {
+              "class": "infantry",
+              "hex": "0910",
+              "historicalUnitId": null,
+              "id": "kiev-front-r01c07",
+              "marker": false,
+              "mp": 4,
+              "nationality": "german",
+              "openingHex": "0910",
+              "owner": "german",
+              "printedCombatStrength": 6,
+              "reverseFaceId": "kiev-back-r01c02",
+              "size": "corps",
+              "sourceFaceId": "kiev-front-r01c07",
+              "strengthStatus": "printed-full"
+            },
+            "kiev-front-r01c08": {
+              "class": "infantry",
+              "hex": "0301",
+              "historicalUnitId": null,
+              "id": "kiev-front-r01c08",
+              "marker": false,
+              "mp": 4,
+              "nationality": "german",
+              "openingHex": "0301",
+              "owner": "german",
+              "printedCombatStrength": 6,
+              "reverseFaceId": "kiev-back-r01c01",
+              "size": "corps",
+              "sourceFaceId": "kiev-front-r01c08",
+              "strengthStatus": "printed-full"
+            },
+            "kiev-front-r02c01": {
+              "class": "infantry",
+              "hex": "0302",
+              "historicalUnitId": null,
+              "id": "kiev-front-r02c01",
+              "marker": false,
+              "mp": 4,
+              "nationality": "german",
+              "openingHex": "0302",
+              "owner": "german",
+              "printedCombatStrength": 6,
+              "reverseFaceId": "kiev-back-r02c08",
+              "size": "corps",
+              "sourceFaceId": "kiev-front-r02c01",
+              "strengthStatus": "printed-full"
+            },
+            "kiev-front-r02c02": {
+              "class": "infantry",
+              "hex": "0303",
+              "historicalUnitId": null,
+              "id": "kiev-front-r02c02",
+              "marker": false,
+              "mp": 4,
+              "nationality": "german",
+              "openingHex": "0303",
+              "owner": "german",
+              "printedCombatStrength": 6,
+              "reverseFaceId": "kiev-back-r02c07",
+              "size": "corps",
+              "sourceFaceId": "kiev-front-r02c02",
+              "strengthStatus": "printed-full"
+            },
+            "kiev-front-r02c03": {
+              "class": "infantry",
+              "hex": "0402",
+              "historicalUnitId": null,
+              "id": "kiev-front-r02c03",
+              "marker": false,
+              "mp": 4,
+              "nationality": "german",
+              "openingHex": "0402",
+              "owner": "german",
+              "printedCombatStrength": 6,
+              "reverseFaceId": "kiev-back-r02c06",
+              "size": "corps",
+              "sourceFaceId": "kiev-front-r02c03",
+              "strengthStatus": "printed-full"
+            },
+            "kiev-front-r02c04": {
+              "class": "infantry",
+              "hex": "0709",
+              "historicalUnitId": null,
+              "id": "kiev-front-r02c04",
+              "marker": false,
+              "mp": 4,
+              "nationality": "german",
+              "openingHex": "0709",
+              "owner": "german",
+              "printedCombatStrength": 6,
+              "reverseFaceId": "kiev-back-r02c05",
+              "size": "corps",
+              "sourceFaceId": "kiev-front-r02c04",
+              "strengthStatus": "printed-full"
+            },
+            "kiev-front-r02c05": {
+              "class": "infantry",
+              "hex": "0809",
+              "historicalUnitId": null,
+              "id": "kiev-front-r02c05",
+              "marker": false,
+              "mp": 4,
+              "nationality": "german",
+              "openingHex": "0809",
+              "owner": "german",
+              "printedCombatStrength": 6,
+              "reverseFaceId": "kiev-back-r02c04",
+              "size": "corps",
+              "sourceFaceId": "kiev-front-r02c05",
+              "strengthStatus": "printed-full"
+            },
+            "kiev-front-r02c08": {
+              "class": "infantry",
+              "hex": "1010",
+              "historicalUnitId": null,
+              "id": "kiev-front-r02c08",
+              "marker": false,
+              "mp": 4,
+              "nationality": "romanian",
+              "openingHex": "1010",
+              "owner": "german",
+              "printedCombatStrength": 6,
+              "reverseFaceId": "kiev-back-r02c01",
+              "size": "army",
+              "sourceFaceId": "kiev-front-r02c08",
+              "strengthStatus": "printed-full"
+            },
+            "kiev-front-r03c04": {
+              "class": "infantry",
+              "hex": "0205",
+              "historicalUnitId": null,
+              "id": "kiev-front-r03c04",
+              "marker": false,
+              "mp": 4,
+              "nationality": "soviet",
+              "openingHex": "0205",
+              "owner": "soviet",
+              "printedCombatStrength": 8,
+              "reverseFaceId": "kiev-back-r03c05",
+              "size": "army",
+              "sourceFaceId": "kiev-front-r03c04",
+              "strengthStatus": "printed-full"
+            },
+            "kiev-front-r03c05": {
+              "class": "infantry",
+              "hex": "0401",
+              "historicalUnitId": null,
+              "id": "kiev-front-r03c05",
+              "marker": false,
+              "mp": 4,
+              "nationality": "soviet",
+              "openingHex": "0401",
+              "owner": "soviet",
+              "printedCombatStrength": 8,
+              "reverseFaceId": "kiev-back-r03c04",
+              "size": "army",
+              "sourceFaceId": "kiev-front-r03c05",
+              "strengthStatus": "printed-full"
+            },
+            "kiev-front-r03c06": {
+              "class": "infantry",
+              "hex": "0708",
+              "historicalUnitId": null,
+              "id": "kiev-front-r03c06",
+              "marker": false,
+              "mp": 4,
+              "nationality": "soviet",
+              "openingHex": "0708",
+              "owner": "soviet",
+              "printedCombatStrength": 8,
+              "reverseFaceId": "kiev-back-r03c03",
+              "size": "army",
+              "sourceFaceId": "kiev-front-r03c06",
+              "strengthStatus": "printed-full"
+            },
+            "kiev-front-r03c07": {
+              "class": "infantry",
+              "hex": "1110",
+              "historicalUnitId": null,
+              "id": "kiev-front-r03c07",
+              "marker": false,
+              "mp": 4,
+              "nationality": "soviet",
+              "openingHex": "1110",
+              "owner": "soviet",
+              "printedCombatStrength": 8,
+              "reverseFaceId": "kiev-back-r03c02",
+              "size": "army",
+              "sourceFaceId": "kiev-front-r03c07",
+              "strengthStatus": "printed-full"
+            },
+            "kiev-front-r03c08": {
+              "class": "infantry",
+              "hex": "0406",
+              "historicalUnitId": null,
+              "id": "kiev-front-r03c08",
+              "marker": false,
+              "mp": 4,
+              "nationality": "soviet",
+              "openingHex": "0406",
+              "owner": "soviet",
+              "printedCombatStrength": 8,
+              "reverseFaceId": "kiev-back-r03c01",
+              "size": "army",
+              "sourceFaceId": "kiev-front-r03c08",
+              "strengthStatus": "printed-full"
+            },
+            "kiev-front-r04c02": {
+              "class": "mechanized",
+              "hex": "0705",
+              "historicalUnitId": null,
+              "id": "kiev-front-r04c02",
+              "marker": false,
+              "mp": 6,
+              "nationality": "soviet",
+              "openingHex": "0705",
+              "owner": "soviet",
+              "printedCombatStrength": null,
+              "reverseFaceId": "kiev-back-r04c07",
+              "size": "corps",
+              "sourceFaceId": "kiev-front-r04c02",
+              "strengthStatus": "untried"
+            },
+            "kiev-front-r04c03": {
+              "class": "mechanized",
+              "hex": "1309",
+              "historicalUnitId": null,
+              "id": "kiev-front-r04c03",
+              "marker": false,
+              "mp": 6,
+              "nationality": "soviet",
+              "openingHex": "1309",
+              "owner": "soviet",
+              "printedCombatStrength": null,
+              "reverseFaceId": "kiev-back-r04c06",
+              "size": "corps",
+              "sourceFaceId": "kiev-front-r04c03",
+              "strengthStatus": "untried"
+            },
+            "kiev-front-r04c04": {
+              "class": "infantry",
+              "hex": "1007",
+              "historicalUnitId": null,
+              "id": "kiev-front-r04c04",
+              "marker": false,
+              "mp": 4,
+              "nationality": "soviet",
+              "openingHex": "1007",
+              "owner": "soviet",
+              "printedCombatStrength": 8,
+              "reverseFaceId": "kiev-back-r04c05",
+              "size": "army",
+              "sourceFaceId": "kiev-front-r04c04",
+              "strengthStatus": "printed-full"
+            },
+            "kiev-front-r05c01": {
+              "class": "mechanized",
+              "hex": "0503",
+              "historicalUnitId": null,
+              "id": "kiev-front-r05c01",
+              "marker": false,
+              "mp": 6,
+              "nationality": "soviet",
+              "openingHex": "0503",
+              "owner": "soviet",
+              "printedCombatStrength": null,
+              "reverseFaceId": "kiev-back-r05c08",
+              "size": "corps",
+              "sourceFaceId": "kiev-front-r05c01",
+              "strengthStatus": "untried"
+            },
+            "kiev-front-r05c02": {
+              "class": "mechanized",
+              "hex": "0403",
+              "historicalUnitId": null,
+              "id": "kiev-front-r05c02",
+              "marker": false,
+              "mp": 6,
+              "nationality": "soviet",
+              "openingHex": "0403",
+              "owner": "soviet",
+              "printedCombatStrength": null,
+              "reverseFaceId": "kiev-back-r05c07",
+              "size": "corps",
+              "sourceFaceId": "kiev-front-r05c02",
+              "strengthStatus": "untried"
+            },
+            "kiev-front-r05c03": {
+              "class": "mechanized",
+              "hex": "0803",
+              "historicalUnitId": null,
+              "id": "kiev-front-r05c03",
+              "marker": false,
+              "mp": 6,
+              "nationality": "soviet",
+              "openingHex": "0803",
+              "owner": "soviet",
+              "printedCombatStrength": null,
+              "reverseFaceId": "kiev-back-r05c06",
+              "size": "corps",
+              "sourceFaceId": "kiev-front-r05c03",
+              "strengthStatus": "untried"
+            },
+            "kiev-front-r05c04": {
+              "class": "mechanized",
+              "hex": "0305",
+              "historicalUnitId": null,
+              "id": "kiev-front-r05c04",
+              "marker": false,
+              "mp": 6,
+              "nationality": "soviet",
+              "openingHex": "0305",
+              "owner": "soviet",
+              "printedCombatStrength": null,
+              "reverseFaceId": "kiev-back-r05c05",
+              "size": "corps",
+              "sourceFaceId": "kiev-front-r05c04",
+              "strengthStatus": "untried"
+            },
+            "kiev-front-r05c05": {
+              "class": "mechanized",
+              "hex": "0502",
+              "historicalUnitId": null,
+              "id": "kiev-front-r05c05",
+              "marker": false,
+              "mp": 6,
+              "nationality": "soviet",
+              "openingHex": "0502",
+              "owner": "soviet",
+              "printedCombatStrength": null,
+              "reverseFaceId": "kiev-back-r05c04",
+              "size": "corps",
+              "sourceFaceId": "kiev-front-r05c05",
+              "strengthStatus": "untried"
+            },
+            "kiev-front-r05c06": {
+              "class": "mechanized",
+              "hex": "0808",
+              "historicalUnitId": null,
+              "id": "kiev-front-r05c06",
+              "marker": false,
+              "mp": 6,
+              "nationality": "soviet",
+              "openingHex": "0808",
+              "owner": "soviet",
+              "printedCombatStrength": null,
+              "reverseFaceId": "kiev-back-r05c03",
+              "size": "corps",
+              "sourceFaceId": "kiev-front-r05c06",
+              "strengthStatus": "untried"
+            },
+            "kiev-front-r05c07": {
+              "class": "mechanized",
+              "hex": "1106",
+              "historicalUnitId": null,
+              "id": "kiev-front-r05c07",
+              "marker": false,
+              "mp": 6,
+              "nationality": "soviet",
+              "openingHex": "1106",
+              "owner": "soviet",
+              "printedCombatStrength": null,
+              "reverseFaceId": "kiev-back-r05c02",
+              "size": "corps",
+              "sourceFaceId": "kiev-front-r05c07",
+              "strengthStatus": "untried"
+            },
+            "kiev-front-r05c08": {
+              "class": "mechanized",
+              "hex": "0304",
+              "historicalUnitId": null,
+              "id": "kiev-front-r05c08",
+              "marker": false,
+              "mp": 6,
+              "nationality": "soviet",
+              "openingHex": "0304",
+              "owner": "soviet",
+              "printedCombatStrength": null,
+              "reverseFaceId": "kiev-back-r05c01",
+              "size": "corps",
+              "sourceFaceId": "kiev-front-r05c08",
+              "strengthStatus": "untried"
+            },
+            "kiev-odessa/romanian-4th-army": {
+              "class": "infantry",
+              "hex": "0809",
+              "historicalUnitId": null,
+              "id": "kiev-odessa/romanian-4th-army",
+              "marker": false,
+              "mp": 4,
+              "nationality": "romanian",
+              "openingHex": "0809",
+              "owner": "german",
+              "printedCombatStrength": 6,
+              "reverseFaceId": "odessa-back-r01c03",
+              "size": "army",
+              "sourceFaceId": "odessa-front-r01c06",
+              "strengthStatus": "printed-full"
+            },
+            "kiev-odessa/romanian-cavalry-corps": {
+              "activeFaceId": "odessa-back-r01c01",
+              "class": "cavalry",
+              "hex": "1010",
+              "historicalUnitId": null,
+              "id": "kiev-odessa/romanian-cavalry-corps",
+              "marker": false,
+              "mp": 4,
+              "nationality": "romanian",
+              "openingHex": "1010",
+              "owner": "german",
+              "printedCombatStrength": 3,
+              "reverseFaceId": "odessa-back-r01c01",
+              "size": "corps",
+              "sourceFaceId": "odessa-front-r01c08",
+              "strengthStatus": "printed-reduced"
+            },
+            "kiev-odessa/romanian-home-army": {
+              "class": "infantry",
+              "hex": "0709",
+              "historicalUnitId": null,
+              "id": "kiev-odessa/romanian-home-army",
+              "marker": false,
+              "mp": 3,
+              "nationality": "romanian",
+              "openingHex": "0709",
+              "owner": "german",
+              "printedCombatStrength": 3,
+              "reverseFaceId": "odessa-back-r01c04",
+              "size": "army",
+              "sourceFaceId": "odessa-front-r01c05",
+              "sourceIdentityKey": "romanian-home-army",
+              "strengthStatus": "printed-full"
+            },
+            "kiev-odessa/soviet-cavalry-corps-a": {
+              "activeFaceId": "odessa-back-r01c06",
+              "class": "cavalry",
+              "hex": "1215",
+              "historicalUnitId": null,
+              "id": "kiev-odessa/soviet-cavalry-corps-a",
+              "marker": false,
+              "mp": 4,
+              "nationality": "soviet",
+              "openingHex": "1215",
+              "owner": "soviet",
+              "printedCombatStrength": 2,
+              "reverseFaceId": "odessa-back-r01c06",
+              "size": "corps",
+              "sourceFaceId": "odessa-front-r01c03",
+              "strengthStatus": "printed-reduced"
+            },
+            "kiev-odessa/soviet-cavalry-corps-b": {
+              "activeFaceId": "odessa-back-r01c05",
+              "class": "cavalry",
+              "hex": "1111",
+              "historicalUnitId": null,
+              "id": "kiev-odessa/soviet-cavalry-corps-b",
+              "marker": false,
+              "mp": 4,
+              "nationality": "soviet",
+              "openingHex": "1111",
+              "owner": "soviet",
+              "printedCombatStrength": 2,
+              "reverseFaceId": "odessa-back-r01c05",
+              "size": "corps",
+              "sourceFaceId": "odessa-front-r01c04",
+              "strengthStatus": "printed-reduced"
+            },
+            "kiev-odessa/soviet-coastal-army": {
+              "class": "infantry",
+              "hex": "1513",
+              "historicalUnitId": null,
+              "id": "kiev-odessa/soviet-coastal-army",
+              "marker": false,
+              "mp": 4,
+              "nationality": "soviet",
+              "openingHex": "1513",
+              "owner": "soviet",
+              "printedCombatStrength": 4,
+              "reverseFaceId": "odessa-back-r01c07",
+              "size": "army",
+              "sourceFaceId": "odessa-front-r01c02",
+              "strengthStatus": "printed-full"
+            }
+          }
+        }
+      },
+      "journal": [
+        {
+          "action": {
+            "action": {
+              "type": "finish-air-sea"
+            },
+            "type": "combat"
+          },
+          "stateHash": "65db3281cbc715d2c340ae599cb95caf0dd25d705a608df071785ce8b47fae09"
+        },
+        {
+          "action": {
+            "action": {
+              "battles": [
+                {
+                  "attackers": [
+                    "kiev-front-r01c01",
+                    "kiev-front-r01c03"
+                  ],
+                  "defenderHex": "0205"
+                }
+              ],
+              "type": "commit-battles"
+            },
+            "type": "combat"
+          },
+          "stateHash": "76d440e5858c7730ce34c0f0322f8a3ca32901bef2f241f10a659e9d9e675b84"
+        },
+        {
+          "action": {
+            "action": {
+              "defenderHex": "0205",
+              "type": "select-battle"
+            },
+            "type": "combat"
+          },
+          "stateHash": "e2ed00bd5640854ed96c6a33dcb5a29792db324d5d6f7bb4eddbf47555fba20a"
+        },
+        {
+          "action": {
+            "action": {
+              "faceId": "kiev-front-r03c01",
+              "type": "commit-ground-air"
+            },
+            "type": "combat"
+          },
+          "stateHash": "b3ceeea6e1342810c8e69151007d4f63e3f38a6745c4219d6f6fae51c840cfca"
+        },
+        {
+          "action": {
+            "action": {
+              "choices": {
+                "attackerLossIds": [
+                  "kiev-front-r01c01"
+                ],
+                "retreatPaths": {
+                  "kiev-front-r03c04": [
+                    "0306",
+                    "0405"
+                  ]
+                }
+              },
+              "die": 3,
+              "type": "resolve-battle"
+            },
+            "type": "combat"
+          },
+          "stateHash": "f515bc2cd4bf1a66abb6161fcf73d851f69ea4ef02a57665bb6eff7fd1aa881d"
+        },
+        {
+          "action": {
+            "action": {
+              "type": "finish-combat"
+            },
+            "type": "combat"
+          },
+          "stateHash": "ec02f0883333ad36a08e0f71a5dcae7b2f889ab05bd148ce0e33f81cc180eda1"
+        },
+        {
+          "action": {
+            "request": {
+              "path": [
+                "1010",
+                "1011"
+              ],
+              "unitId": "kiev-odessa/romanian-cavalry-corps"
+            },
+            "type": "declare-ground-move"
+          },
+          "stateHash": "d2daeb77522f158a3b9ac03a9fc795af6a72639b16bdb77860c7edd074798bc6"
+        },
+        {
+          "action": {
+            "type": "resolve-ground-move"
+          },
+          "stateHash": "459dc4d73e81abf3e1306c34217b4ded69076c4b00914b4b2f41aec0b453444b"
+        },
+        {
+          "action": {
+            "type": "finish-phase"
+          },
+          "stateHash": "d927e87b9e0ee8234d1e474d5e36b16430d01d40c948be3d6965f989d3c1714b"
+        },
+        {
+          "action": {
+            "type": "finish-buildup"
+          },
+          "stateHash": "80fc87d2b24ff9bbee1f3d47a00bff9c6fa9993114d7321a5677922d005fb918"
+        },
+        {
+          "action": {
+            "type": "finish-phase"
+          },
+          "stateHash": "7f4c9376ba3f253f2ec9f50ef2debf4b7a4c7bb4be0cfc5a7ee24ea893cef052"
+        },
+        {
+          "action": {
+            "destination": {
+              "kind": "off-map"
+            },
+            "type": "declare-naval-ground-transport",
+            "unitId": "kiev-odessa/soviet-coastal-army"
+          },
+          "stateHash": "6dbd693e4113fa773862f1f07170799e3fda3f4425e9be004666b341d69a7b4f"
+        },
+        {
+          "action": {
+            "die": 1,
+            "type": "roll-naval-ground-transport"
+          },
+          "stateHash": "94cec47b8f9f7d204e611423515ac0bfdec48fd5d0d01591c6a8754f2bf65597"
+        },
+        {
+          "action": {
+            "type": "finish-phase"
+          },
+          "stateHash": "1b528bf956a01fb2d471ad2e232a5dd36761f67a0519bfb360b413ced59d62d1"
+        },
+        {
+          "action": {
+            "action": {
+              "battles": [],
+              "type": "commit-battles"
+            },
+            "type": "combat"
+          },
+          "stateHash": "c27008374fefa008f5338d5f7689e2a36eb861c706a4e619bbe8a309de2c51fa"
+        },
+        {
+          "action": {
+            "action": {
+              "type": "finish-combat"
+            },
+            "type": "combat"
+          },
+          "stateHash": "60c2521b50e07791ec1ec7bbc70fc530994bce879a2091d07ccd619db525aeaf"
+        },
+        {
+          "action": {
+            "type": "finish-phase"
+          },
+          "stateHash": "e7a61acf8d329fd88a3deb011e1243e7884c0aa94f013f250fa4374609111ef2"
+        },
+        {
+          "action": {
+            "type": "finish-housekeeping"
+          },
+          "stateHash": "291ac3bc9f7981cd02fe4cdeb6859ca0a00582cf8fe9935a803ad67a5ce1f395"
+        },
+        {
+          "action": {
+            "hex": "0101",
+            "slotId": "t2-slovak",
+            "type": "place-reinforcement"
+          },
+          "stateHash": "47e276c0fdec2d5f893934ae7eb32ac3995d520695a6dfc48b2ead25cacab573"
+        },
+        {
+          "action": {
+            "hex": "0201",
+            "slotId": "t2-hungarian",
+            "type": "place-reinforcement"
+          },
+          "stateHash": "e9bcbd54edaa3fb3f34833e0eeb8c275bf0d3b23850b1dd327611098eee56cee"
+        },
+        {
+          "action": {
+            "type": "finish-buildup"
+          },
+          "stateHash": "3c5af45d4126fe20e6f75572ebdb85c7c55ae4524d90d7625faaa905e1f65b23"
+        },
+        {
+          "action": {
+            "request": {
+              "path": [
+                "1011",
+                "1112"
+              ],
+              "unitId": "kiev-odessa/romanian-cavalry-corps"
+            },
+            "type": "declare-ground-move"
+          },
+          "stateHash": "78a8fcf4789a1a6d2ddf126b1becd5bd1520bbebf35072e5512b5b2c3e885cc1"
+        },
+        {
+          "action": {
+            "type": "resolve-ground-move"
+          },
+          "stateHash": "a284e86f6167dbd4d4afd5cea3012137f6483730dafc5e75e3bde920a1c755c2"
+        },
+        {
+          "action": {
+            "type": "finish-phase"
+          },
+          "stateHash": "55dcdff8d30f35092361fe6a71bdddb2192b7ae76febe2386a3c5aef13b6e2eb"
+        },
+        {
+          "action": {
+            "action": {
+              "type": "finish-air-sea"
+            },
+            "type": "combat"
+          },
+          "stateHash": "43482c57d48e175d7e8f2d1b72400cdc9112d7e9ce8c34fd26be9d56da50e9a1"
+        },
+        {
+          "action": {
+            "action": {
+              "battles": [],
+              "type": "commit-battles"
+            },
+            "type": "combat"
+          },
+          "stateHash": "eaa4ee73b954c698bec008b83080410911b04abe5b1a9a98b0031b9cdf8c1f40"
+        },
+        {
+          "action": {
+            "action": {
+              "type": "finish-combat"
+            },
+            "type": "combat"
+          },
+          "stateHash": "34caa7a2d5fe58e32e2d7a6bd11d9e80af245e0ef7f3bcb2581d2dc6d900497d"
+        },
+        {
+          "action": {
+            "type": "finish-phase"
+          },
+          "stateHash": "c405439ecf774548b49b05b4127a7ddef61072cb807188c0f608534bc28519ec"
+        },
+        {
+          "action": {
+            "hex": "1801",
+            "type": "place-evacuated-reinforcement",
+            "unitId": "kiev-odessa/soviet-coastal-army"
+          },
+          "stateHash": "d9e24e3f14b458a7a04ad6495afce61e1d2d3bd7bc9828af138ebdfdd32ff6b0"
+        },
+        {
+          "action": {
+            "type": "finish-buildup"
+          },
+          "stateHash": "7eb891363338a23171143df9b9319c30a7e53e4cf5fc23b82758d42b6017e3ce"
+        },
+        {
+          "action": {
+            "type": "finish-phase"
+          },
+          "stateHash": "5529af10ff6a2beb4f3fe376bd3403c5abb5ef5cb744acddba1061fb41b59b6d"
+        },
+        {
+          "action": {
+            "type": "finish-phase"
+          },
+          "stateHash": "3bce43a9014d92415c98a6f6133e568ffe2eb842efde3368a0af190f8242e6c2"
+        },
+        {
+          "action": {
+            "action": {
+              "battles": [],
+              "type": "commit-battles"
+            },
+            "type": "combat"
+          },
+          "stateHash": "45a5602f3bbb35ef34266e46378df87409199ccf8fd214ced8509ea0edf1193b"
+        },
+        {
+          "action": {
+            "action": {
+              "type": "finish-combat"
+            },
+            "type": "combat"
+          },
+          "stateHash": "3b7117f0728f939fc1b99d195ec5a6e4942431c78f02b951e778eb5d07cdcc00"
+        },
+        {
+          "action": {
+            "type": "finish-phase"
+          },
+          "stateHash": "c3ced738c6b9cfc4222a0f05598f27f7b5cbdf99a4cd7172fb1a3d712bfb10f3"
+        },
+        {
+          "action": {
+            "type": "finish-housekeeping"
+          },
+          "stateHash": "9f9d6a28a14862632f4cf6a22ca42f629d4d34b8ad915b266aed9862dcb7f472"
+        },
+        {
+          "action": {
+            "hex": "0102",
+            "slotId": "t3-german-infantry",
+            "type": "place-reinforcement"
+          },
+          "stateHash": "b2e957e46b25f5a22c4bcd1028d932bd2ca538be647e0e88c9f71d32a1558ba7"
+        },
+        {
+          "action": {
+            "hex": "0102",
+            "slotId": "t3-italian-motorized",
+            "type": "place-reinforcement"
+          },
+          "stateHash": "c64e92ad700058ab02032cb005186740459c1c2f84720c164b2d9735fbc33352"
+        },
+        {
+          "action": {
+            "type": "finish-buildup"
+          },
+          "stateHash": "d408921f96873f392ecf261294a919ca89412b167935450d192dc84a091d470c"
+        },
+        {
+          "action": {
+            "request": {
+              "path": [
+                "1112",
+                "1211"
+              ],
+              "unitId": "kiev-odessa/romanian-cavalry-corps"
+            },
+            "type": "declare-ground-move"
+          },
+          "stateHash": "4d50ad5a7b77452f2d1a4f367fc86c85ed4297d9bb5a3c8db3a49c58f21eef4e"
+        },
+        {
+          "action": {
+            "type": "resolve-ground-move"
+          },
+          "stateHash": "42119e6694f726b09305fba73dce5baf7fbb7b7a0a1b4e9a4e27a2a876912858"
+        },
+        {
+          "action": {
+            "type": "finish-phase"
+          },
+          "stateHash": "f665bf0bad75c259a075c605ebeb26c483faf0b066ddc3771e19c2b68eedc4f1"
+        },
+        {
+          "action": {
+            "action": {
+              "type": "finish-air-sea"
+            },
+            "type": "combat"
+          },
+          "stateHash": "1b6976476329390c74fe1a051947f90f617812d502de4631fde20c6c4ab2b467"
+        },
+        {
+          "action": {
+            "action": {
+              "battles": [],
+              "type": "commit-battles"
+            },
+            "type": "combat"
+          },
+          "stateHash": "f6a9f0dcc743f87c7dedae59fb6f5936e5feb8cdaa3e2f28421a190ac69d2b8b"
+        },
+        {
+          "action": {
+            "action": {
+              "type": "finish-combat"
+            },
+            "type": "combat"
+          },
+          "stateHash": "d3c13eeb829e16c34c372b0f4617dce159ef84ecfedb17ff923cd6e7f3a1164b"
+        },
+        {
+          "action": {
+            "type": "finish-phase"
+          },
+          "stateHash": "404d0892479d5a943c71e2224539bd1f5e4afd8ee71a6d9169c95e0e58010bec"
+        },
+        {
+          "action": {
+            "type": "finish-buildup"
+          },
+          "stateHash": "7f39f7f0f5e046ff5e567623b33a36e9132a607f1a9c29ad2c4deec8089545d4"
+        },
+        {
+          "action": {
+            "type": "finish-phase"
+          },
+          "stateHash": "d13c4fe53b81419b04d9b7b3057e087afc834e0c797a5734c3e182cad4990ab4"
+        },
+        {
+          "action": {
+            "type": "finish-phase"
+          },
+          "stateHash": "ac1136654c23289eee2ec4e3b8897038dee7e9943e1e95fec7512a936e14f798"
+        },
+        {
+          "action": {
+            "action": {
+              "battles": [],
+              "type": "commit-battles"
+            },
+            "type": "combat"
+          },
+          "stateHash": "eb903d6fd3ad759537b2a6c072c7c52cbe2c3093114aab2c9d67256dad3eb594"
+        },
+        {
+          "action": {
+            "action": {
+              "type": "finish-combat"
+            },
+            "type": "combat"
+          },
+          "stateHash": "2fd8f03e0c018b283da5eac2381b9fdb1fc9d591e8dbbaa1d7ed0229fe1a4890"
+        },
+        {
+          "action": {
+            "type": "finish-phase"
+          },
+          "stateHash": "ac29f6bf62eb6ad092567ece61b223b1a9d2d0fb3bdfb49d65d53e55975bf3a4"
+        },
+        {
+          "action": {
+            "type": "finish-housekeeping"
+          },
+          "stateHash": "3b1eb2957324cf3a85511ace442df84b25cc74ab6a5074a1ccfc8533651a4e84"
+        },
+        {
+          "action": {
+            "type": "finish-buildup"
+          },
+          "stateHash": "7472cc7074018e01475047a6ca39894dc04ce96346abe9721c98dfd979ac9953"
+        },
+        {
+          "action": {
+            "type": "finish-phase"
+          },
+          "stateHash": "b1651bb434fa16ed5526bb27404fe73bd635bbb0fed0aef5f8f48f4eb7b41bec"
+        },
+        {
+          "action": {
+            "action": {
+              "type": "finish-air-sea"
+            },
+            "type": "combat"
+          },
+          "stateHash": "cab51635bc34a837714c5aae6847aed068eb8666f9b1f15bcfbc3d7605e71158"
+        },
+        {
+          "action": {
+            "action": {
+              "battles": [],
+              "type": "commit-battles"
+            },
+            "type": "combat"
+          },
+          "stateHash": "f21ecc699f29c0e70f425631934adb05575e2b6b7308cb56cf2d0cee03bf8615"
+        },
+        {
+          "action": {
+            "action": {
+              "type": "finish-combat"
+            },
+            "type": "combat"
+          },
+          "stateHash": "24ad60de42430d07e4970f1c10cbf541d9d2184e9b522fc74476c8166ecf0667"
+        },
+        {
+          "action": {
+            "type": "finish-phase"
+          },
+          "stateHash": "58c6012d0112bde9060fc8a0cb43ea26026fa4d63e98bbcda357327bce56fa08"
+        },
+        {
+          "action": {
+            "type": "finish-buildup"
+          },
+          "stateHash": "2c5b6615c1c089879770bb39967479529a6b7816d459e44e0f7878e04d5907e2"
+        },
+        {
+          "action": {
+            "type": "finish-phase"
+          },
+          "stateHash": "bb4dcd32ed924ed1cdb69fc7dd755cc86ccbed98895e5d1598b679643e6224db"
+        },
+        {
+          "action": {
+            "type": "finish-phase"
+          },
+          "stateHash": "79c4df8cefde9e784abb864107f95d9de6987a29515a95a9b2fe2b69678d1b72"
+        },
+        {
+          "action": {
+            "action": {
+              "battles": [],
+              "type": "commit-battles"
+            },
+            "type": "combat"
+          },
+          "stateHash": "0c7975d13ac5738ca4f6295d396c8fd23d3ebe6d9d6a50f0ae17a6b18fb522c5"
+        },
+        {
+          "action": {
+            "action": {
+              "type": "finish-combat"
+            },
+            "type": "combat"
+          },
+          "stateHash": "2c7f50523b33913e37c267a5adb3f7833de16101d91fa32297247af1fdd3c821"
+        },
+        {
+          "action": {
+            "type": "finish-phase"
+          },
+          "stateHash": "f13b60c4d721b679c9c95adf34f5041a18610004802749b6476d1937dad7ac70"
+        },
+        {
+          "action": {
+            "type": "finish-housekeeping"
+          },
+          "stateHash": "7a44d81e21016c81273ac6f876bbe7c25494c91c2e2d3fb8cb648715fe0d2f76"
+        },
+        {
+          "action": {
+            "type": "finish-buildup"
+          },
+          "stateHash": "864465880da24942b733f34fdc8bf873d1e7393ff759a30d4415fec3987e97be"
+        },
+        {
+          "action": {
+            "type": "finish-phase"
+          },
+          "stateHash": "4e2bf2586421b2a26740fd704003bea23012c7541708a139e431801c0bfcf571"
+        },
+        {
+          "action": {
+            "action": {
+              "type": "finish-air-sea"
+            },
+            "type": "combat"
+          },
+          "stateHash": "7b2ee42738534e2cc8640d59a0c39d6b3b27a174ced4b116cdea00567840ef68"
+        },
+        {
+          "action": {
+            "action": {
+              "battles": [],
+              "type": "commit-battles"
+            },
+            "type": "combat"
+          },
+          "stateHash": "d8bdfb0139acb882140b74803675d3aa1bc8b39bcd0b37ebe871033981a38f4d"
+        },
+        {
+          "action": {
+            "action": {
+              "type": "finish-combat"
+            },
+            "type": "combat"
+          },
+          "stateHash": "948bcd22acb0862911ffbdbb3e017846601ec4b55b48b303739d277ea0fa6dc1"
+        },
+        {
+          "action": {
+            "type": "finish-phase"
+          },
+          "stateHash": "3aa8d9e13e07b6153fbf38d56b5fedbdb74dae43734c13b6022714fe465585cd"
+        },
+        {
+          "action": {
+            "hex": "1601",
+            "slotId": "t5-soviet-army",
+            "type": "place-reinforcement"
+          },
+          "stateHash": "7c319eaa64eedc4a36bd2685d3a825e958be641655355b4b5aa339138fc66a0c"
+        },
+        {
+          "action": {
+            "type": "finish-buildup"
+          },
+          "stateHash": "81c90216e39ae9f1045071d1b90991aac05a7df774fafbe8b9c1b0923baffac5"
+        },
+        {
+          "action": {
+            "type": "finish-phase"
+          },
+          "stateHash": "e20750cf705c20aeda1b857877bbdd321228684d8150c5d0ae840b8270116505"
+        },
+        {
+          "action": {
+            "type": "finish-phase"
+          },
+          "stateHash": "963024e82d4aef0bdcd20c5467a3674ad086c926383d9ca4f265c502aae62e6b"
+        },
+        {
+          "action": {
+            "action": {
+              "battles": [],
+              "type": "commit-battles"
+            },
+            "type": "combat"
+          },
+          "stateHash": "847f281ef6168fa743480e0ce8200a1bf30290f5cfabadb8ddd8ef491a419569"
+        },
+        {
+          "action": {
+            "action": {
+              "type": "finish-combat"
+            },
+            "type": "combat"
+          },
+          "stateHash": "34c49808f6faff9d79b9842e32526d0bbabd0026647712d9489e93f9754972f8"
+        },
+        {
+          "action": {
+            "type": "finish-phase"
+          },
+          "stateHash": "f04c7516f3453e33892f787731472e399adeb3e35f1d1393908b6cdad934a5cc"
+        },
+        {
+          "action": {
+            "type": "finish-housekeeping"
+          },
+          "stateHash": "66799f91c24889babb78a250e82009eff53319e680db4e0a090fa402c9b571aa"
+        },
+        {
+          "action": {
+            "type": "finish-buildup"
+          },
+          "stateHash": "1ce294fd3a3a05114c076057f4fefc265054ec1b8eff07e552ac2ba8c1008c0b"
+        },
+        {
+          "action": {
+            "type": "finish-phase"
+          },
+          "stateHash": "984bb0c27ec68286e021bb0fb03bc98d5891f0d53e7482ddd3f4c68aea16b30f"
+        },
+        {
+          "action": {
+            "action": {
+              "type": "finish-air-sea"
+            },
+            "type": "combat"
+          },
+          "stateHash": "9015a88c44bac87ac53179c467b2ac326a4f1cf8aee895077eee39954f1c6e87"
+        },
+        {
+          "action": {
+            "action": {
+              "battles": [],
+              "type": "commit-battles"
+            },
+            "type": "combat"
+          },
+          "stateHash": "40594b32360a2ea5c10c15b2f48aec3fff4fb4960492c4b6a60ceadea24b8369"
+        },
+        {
+          "action": {
+            "action": {
+              "type": "finish-combat"
+            },
+            "type": "combat"
+          },
+          "stateHash": "e241b6b43d33f4ddba61d38a9f949ff6c061280c399b0a756e099503ecee9d87"
+        },
+        {
+          "action": {
+            "type": "finish-phase"
+          },
+          "stateHash": "445cf53d58cbb551b5feabb8c493667bdd9f7827c58d11894968c86085eb4e15"
+        },
+        {
+          "action": {
+            "hex": "1701",
+            "slotId": "t6-soviet-army",
+            "type": "place-reinforcement"
+          },
+          "stateHash": "b6cec76c4ea814e753c43a500613a29b975567153c06a2538541ff34b116de59"
+        },
+        {
+          "action": {
+            "type": "finish-buildup"
+          },
+          "stateHash": "44a26ea51b36f5abfd5e76edd7a6e53bca9453c82e8dc6dabbf041d6478461fb"
+        },
+        {
+          "action": {
+            "type": "finish-phase"
+          },
+          "stateHash": "4e5b1d7f30380bc41399f8515f3d88be170a40b5ff7362691770c7c4e5d4d52f"
+        },
+        {
+          "action": {
+            "type": "finish-phase"
+          },
+          "stateHash": "1ca58231d3180823c569524a7663fd3f4224eee4caf4639ee44a375b14d99954"
+        },
+        {
+          "action": {
+            "action": {
+              "battles": [],
+              "type": "commit-battles"
+            },
+            "type": "combat"
+          },
+          "stateHash": "724087fc931eac8c21f6d3888001b8ef357faa6ad92b30950a91f1578bf1810a"
+        },
+        {
+          "action": {
+            "action": {
+              "type": "finish-combat"
+            },
+            "type": "combat"
+          },
+          "stateHash": "28e2c7f08c6d8b3e6d608abe48b83e13fddeb4730e0664a8663f747545b479a0"
+        },
+        {
+          "action": {
+            "type": "finish-phase"
+          },
+          "stateHash": "c27c75cf3920f3c6811e980a5bf0b3e846e214a81413e587d7ddb438ee237c65"
+        },
+        {
+          "action": {
+            "type": "finish-housekeeping"
+          },
+          "stateHash": "93227007a94673ed0b499814c5f9cba7c7a3d1c9483e60d7b6271c11c237f6e7"
+        },
+        {
+          "action": {
+            "type": "finish-buildup"
+          },
+          "stateHash": "93b3fc70120830ee50521a99c0e9e8afe102b696a0876137c6451d76bb4a722a"
+        },
+        {
+          "action": {
+            "type": "finish-phase"
+          },
+          "stateHash": "36dda8301280353113fe973d002c7573669c30a8ce2a5734b5cb6b075c787875"
+        },
+        {
+          "action": {
+            "action": {
+              "type": "finish-air-sea"
+            },
+            "type": "combat"
+          },
+          "stateHash": "5fdeacdba04a2a4ba78bdada55a3303993c048249fcc082aec203fa9a058ffa6"
+        },
+        {
+          "action": {
+            "action": {
+              "battles": [],
+              "type": "commit-battles"
+            },
+            "type": "combat"
+          },
+          "stateHash": "d80b2eb75e6a0185ccc5140aa598a99ab1905fe0539972a244f5b23d5f9765b8"
+        },
+        {
+          "action": {
+            "action": {
+              "type": "finish-combat"
+            },
+            "type": "combat"
+          },
+          "stateHash": "3595f4f147c88fcbfc838094a824b041e9947895bc8dd5e3548e3a9f51d3ef06"
+        },
+        {
+          "action": {
+            "type": "finish-phase"
+          },
+          "stateHash": "29ec63c3cacdfa6a027cf052822d065b5320f2ee11b5c7d8200e66a792b774ca"
+        },
+        {
+          "action": {
+            "type": "finish-buildup"
+          },
+          "stateHash": "c28e3aa04cb171d763b729b317ca673a0f7f7269ac2af1871b2753fb1948a940"
+        },
+        {
+          "action": {
+            "type": "finish-phase"
+          },
+          "stateHash": "d4466c93360ab974c12578af88c0d9bbca43aa1384619f328b7f9d0c94fa69a7"
+        },
+        {
+          "action": {
+            "type": "finish-phase"
+          },
+          "stateHash": "ad8d76d5ca9089f4a7d6d7b6de8e9547e6c77e5ad5bc2cc46bce3f69c3ea6b31"
+        },
+        {
+          "action": {
+            "action": {
+              "battles": [],
+              "type": "commit-battles"
+            },
+            "type": "combat"
+          },
+          "stateHash": "aa5f9094801d61eb71889f730ce8507d2f9d78168e67eb73584bc62ad3568318"
+        },
+        {
+          "action": {
+            "action": {
+              "type": "finish-combat"
+            },
+            "type": "combat"
+          },
+          "stateHash": "3296cddf8e7213971a9c204ed34de6a1b2da85063e22410db5bfc1e154a8ee94"
+        },
+        {
+          "action": {
+            "type": "finish-phase"
+          },
+          "stateHash": "7776bd783901be2a57bb061b9b7f4b296d6b1babbc72070afb68319c4a78de10"
+        },
+        {
+          "action": {
+            "type": "finish-housekeeping"
+          },
+          "stateHash": "e79707a7d491dfb8225657c666d82cdd294b3c59cf25b6c1490473d540030d79"
+        }
+      ],
+      "finalStateHash": "e79707a7d491dfb8225657c666d82cdd294b3c59cf25b6c1490473d540030d79",
+      "integrity": {
+        "algorithm": "SHA-256",
+        "digest": "49165c61ca951aac463c965a47d4a6309937df99131c9ddd51100ea66b9e17c6"
+      }
+    },
+    "pendingRoll": null,
+    "integrity": {
+      "algorithm": "SHA-256",
+      "digest": "495eee8e31317d6ab36de8a641bafa69adbb7ad97cbf9340799eab5674439fec"
+    }
+  },
+  "integrity": {
+    "algorithm": "SHA-256",
+    "digest": "74d8b9ebb6c5217b4c8509aa01b135b6494e85e13fd016112c7c086b4d898994"
+  }
+}

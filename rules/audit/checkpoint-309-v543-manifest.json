@@ -1,0 +1,40 @@
+{
+  "checkpoint": 309,
+  "version": "v543",
+  "baseline": "checkpoint308-v542",
+  "unchangedFileCount": 1713,
+  "changedFiles": [
+    "README.md",
+    "UPDATE.md",
+    "tests/odessa-source-setup-browser-v534.py",
+    "games/kiev-odessa/experimental-preview/index.html",
+    "games/kiev-odessa/experimental-preview/setup-policy-v534.json",
+    "core/historical_browser_app.js",
+    "core/historical_source_setup_editor.js",
+    "PLAN.md"
+  ],
+  "newFiles": [
+    "tests/odessa-concealed-source-mix-browser-v543.py",
+    "tests/odessa-concealed-source-mix-v543.test.js",
+    "rules/audit/visual/odessa-concealed-10-corps-mix-browser-v543.png",
+    "docs/engine/ODESSA_CONCEALED_SOURCE_MIX_V543.md",
+    "rules/audit/checkpoint-309-v543-manifest.json"
+  ],
+  "missingBaselineFiles": [],
+  "sourcePreservation": true,
+  "nodeAssertions": {
+    "concealedMix": 155,
+    "deployment": 108,
+    "contestedSevenTurn": 166,
+    "retreatStyle": 12
+  },
+  "chromiumAssertions": {
+    "concealedMix": 45,
+    "deployment": 54
+  },
+  "unverified": [
+    "v541 full contested seam/city replay timed out",
+    "full seven-turn Chromium campaign not rerun",
+    "historical certification not claimed"
+  ]
+}

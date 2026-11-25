@@ -1,0 +1,384 @@
+{
+  "schemaVersion": 1,
+  "sourceScan": "rules/audit/visual/leningrad-east-prussia-scan-crop-v324.png",
+  "scanSha256": "f5cb9a5e4ea68156c6e1230e5bd36b58a6c8e7eb4fb4da837603330baaee7d73",
+  "sourceSVG": "maps/source/user-svg/leningrad-main.svg",
+  "sourceSvgSha256": "ea1c83d00eea0212c530b98fd794125959175ad9d1cfa067aef78d6d73502447",
+  "method": "least-squares affine fit of six physical hex-grid centers; marker coordinates excluded from calibration",
+  "gridAnchors": [
+    {
+      "hostCell": "0209",
+      "scanXY": [
+        345.0,
+        208.0
+      ],
+      "engineXY": [
+        114.045,
+        585.698
+      ]
+    },
+    {
+      "hostCell": "0309",
+      "scanXY": [
+        514.0,
+        310.0
+      ],
+      "engineXY": [
+        170.376,
+        618.876
+      ]
+    },
+    {
+      "hostCell": "0409",
+      "scanXY": [
+        684.0,
+        209.0
+      ],
+      "engineXY": [
+        226.707,
+        585.698
+      ]
+    },
+    {
+      "hostCell": "0210",
+      "scanXY": [
+        345.0,
+        410.0
+      ],
+      "engineXY": [
+        114.045,
+        652.054
+      ]
+    },
+    {
+      "hostCell": "0310",
+      "scanXY": [
+        515.0,
+        508.0
+      ],
+      "engineXY": [
+        170.376,
+        685.232
+      ]
+    },
+    {
+      "hostCell": "0410",
+      "scanXY": [
+        684.0,
+        410.0
+      ],
+      "engineXY": [
+        226.707,
+        652.054
+      ]
+    }
+  ],
+  "affineXY": [
+    [
+      0.3323358835088694,
+      -0.00044780880643695135,
+      -0.45743754910864837
+    ],
+    [
+      -0.00048571167339284127,
+      0.33145889785269445,
+      516.6605594747462
+    ]
+  ],
+  "gridResidualPx": [
+    0.268,
+    0.325,
+    0.112,
+    0.338,
+    0.45,
+    0.175
+  ],
+  "observations": [
+    {
+      "kind": "star",
+      "scanXY": [
+        175.0,
+        105.0
+      ],
+      "projectedEngineXY": [
+        57.654,
+        551.379
+      ],
+      "hostCell": "0108",
+      "distancePx": 1.143,
+      "runnerUpCell": "0208",
+      "runnerUpDistancePx": 64.856
+    },
+    {
+      "kind": "star",
+      "scanXY": [
+        345.0,
+        215.0
+      ],
+      "projectedEngineXY": [
+        114.102,
+        587.757
+      ],
+      "hostCell": "0209",
+      "distancePx": 2.059,
+      "runnerUpCell": "0210",
+      "runnerUpDistancePx": 64.297
+    },
+    {
+      "kind": "star",
+      "scanXY": [
+        515.0,
+        312.0
+      ],
+      "projectedEngineXY": [
+        170.556,
+        619.826
+      ],
+      "hostCell": "0309",
+      "distancePx": 0.966,
+      "runnerUpCell": "0410",
+      "runnerUpDistancePx": 64.743
+    },
+    {
+      "kind": "star",
+      "scanXY": [
+        680.0,
+        420.0
+      ],
+      "projectedEngineXY": [
+        225.343,
+        655.543
+      ],
+      "hostCell": "0410",
+      "distancePx": 3.746,
+      "runnerUpCell": "0310",
+      "runnerUpDistancePx": 62.472
+    },
+    {
+      "kind": "star",
+      "scanXY": [
+        858.0,
+        532.0
+      ],
+      "projectedEngineXY": [
+        284.449,
+        692.58
+      ],
+      "hostCell": "0510",
+      "distancePx": 7.482,
+      "runnerUpCell": "0511",
+      "runnerUpDistancePx": 60.051
+    },
+    {
+      "kind": "cross",
+      "scanXY": [
+        178.0,
+        311.0
+      ],
+      "projectedEngineXY": [
+        58.559,
+        619.658
+      ],
+      "hostCell": "0109",
+      "distancePx": 1.151,
+      "runnerUpCell": "0210",
+      "runnerUpDistancePx": 64.251
+    },
+    {
+      "kind": "cross",
+      "scanXY": [
+        352.0,
+        397.0
+      ],
+      "projectedEngineXY": [
+        116.347,
+        648.079
+      ],
+      "hostCell": "0210",
+      "distancePx": 4.594,
+      "runnerUpCell": "0309",
+      "runnerUpDistancePx": 61.416
+    },
+    {
+      "kind": "cross",
+      "scanXY": [
+        519.0,
+        500.0
+      ],
+      "projectedEngineXY": [
+        171.801,
+        682.138
+      ],
+      "hostCell": "0310",
+      "distancePx": 3.406,
+      "runnerUpCell": "0410",
+      "runnerUpDistancePx": 62.608
+    },
+    {
+      "kind": "cross",
+      "scanXY": [
+        320.0,
+        626.0
+      ],
+      "projectedEngineXY": [
+        105.61,
+        723.998
+      ],
+      "hostCell": "0211",
+      "distancePx": 9.59,
+      "runnerUpCell": "0110",
+      "runnerUpDistancePx": 61.618
+    },
+    {
+      "kind": "cross",
+      "scanXY": [
+        670.0,
+        578.0
+      ],
+      "projectedEngineXY": [
+        221.949,
+        707.918
+      ],
+      "hostCell": "0411",
+      "distancePx": 12.462,
+      "runnerUpCell": "0410",
+      "runnerUpDistancePx": 56.067
+    }
+  ],
+  "derivedHosts": {
+    "cross": [
+      "0109",
+      "0210",
+      "0211",
+      "0310",
+      "0411"
+    ],
+    "star": [
+      "0108",
+      "0209",
+      "0309",
+      "0410",
+      "0510"
+    ]
+  },
+  "actualHosts": {
+    "cross": [
+      "0109",
+      "0210",
+      "0211",
+      "0310",
+      "0411"
+    ],
+    "star": [
+      "0108",
+      "0209",
+      "0309",
+      "0410",
+      "0510"
+    ]
+  },
+  "authoredSVGInstanceHosts": [
+    {
+      "kind": "cross",
+      "sourceSvgId": "use1-1",
+      "svgCenter": [
+        114.045,
+        652.054
+      ],
+      "hostCell": "0210",
+      "centerError": 0.0
+    },
+    {
+      "kind": "cross",
+      "sourceSvgId": "use495",
+      "svgCenter": [
+        170.376,
+        685.232
+      ],
+      "hostCell": "0310",
+      "centerError": 0.0
+    },
+    {
+      "kind": "cross",
+      "sourceSvgId": "use496",
+      "svgCenter": [
+        226.707,
+        719.436
+      ],
+      "hostCell": "0411",
+      "centerError": 0.0
+    },
+    {
+      "kind": "cross",
+      "sourceSvgId": "use497",
+      "svgCenter": [
+        170.376,
+        752.614
+      ],
+      "hostCell": "0311",
+      "centerError": 0.0
+    },
+    {
+      "kind": "cross",
+      "sourceSvgId": "use498",
+      "svgCenter": [
+        283.038,
+        752.614
+      ],
+      "hostCell": "0511",
+      "centerError": 0.001
+    },
+    {
+      "kind": "star",
+      "sourceSvgId": "use1-6",
+      "svgCenter": [
+        114.045,
+        585.698
+      ],
+      "hostCell": "0209",
+      "centerError": 0.0
+    },
+    {
+      "kind": "star",
+      "sourceSvgId": "use499",
+      "svgCenter": [
+        170.376,
+        618.876
+      ],
+      "hostCell": "0309",
+      "centerError": 0.0
+    },
+    {
+      "kind": "star",
+      "sourceSvgId": "use500",
+      "svgCenter": [
+        226.707,
+        652.054
+      ],
+      "hostCell": "0410",
+      "centerError": 0.0
+    },
+    {
+      "kind": "star",
+      "sourceSvgId": "use501",
+      "svgCenter": [
+        283.038,
+        685.232
+      ],
+      "hostCell": "0510",
+      "centerError": 0.001
+    },
+    {
+      "kind": "star",
+      "sourceSvgId": "use502",
+      "svgCenter": [
+        339.369,
+        719.436
+      ],
+      "hostCell": "0611",
+      "centerError": 0.001
+    }
+  ],
+  "warning": "Authored main SVG cross positions differ from printed board scan. Scan governs candidate historical deployment; all source artifacts preserved.",
+  "historicalSetupAuthorized": false
+}

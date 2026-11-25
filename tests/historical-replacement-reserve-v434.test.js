@@ -1,0 +1,53 @@
+'use strict';
+/* Shared engine proof using an explicitly synthetic reserve reclassification on
+ * the already-certified Leningrad test board. NOT a Leningrad history claim. */
+const A=require('node:assert/strict');
+const Build=require('../core/historical_buildup_phase');
+const map=require('../maps/leningrad.json'),profile=require('../maps/movement-configs/leningrad.json');
+const phaseConfig=require('../maps/phase-configs/leningrad.json');
+const counterConfig=require('../maps/counter-configs/leningrad.json');
+const policy=require('../maps/buildup-configs/leningrad.json');
+const fixture=require('./fixtures/leningrad-source-setup-v357');
+const clone=x=>JSON.parse(JSON.stringify(x));
+let checks=0;
+const eq=(a,b)=>{A.deepEqual(a,b);checks++};
+const yes=x=>{A.ok(x);checks++};
+const fail=(fn,re)=>{A.throws(fn,re);checks++};
+const allocation=clone(fixture.selected),synthetic=clone(policy);
+const id=allocation.sovietFrontArmies.pop();
+allocation.sourceOnlyReserveFixture=[id];
+synthetic.replacementOnlyReserveGroup='sourceOnlyReserveFixture';
+synthetic.replacementOnlyEarliestTurn=2;
+synthetic.replacementReserveGroups={sourceOnlyReserveFixture:{class:'infantry',size:'army'}};
+// Increase only this synthetic test-phase allowance to exercise repeat-attempt protection.
+synthetic.replacementSteps.soviet[1]=2;
+const args={map,profile,config:phaseConfig,counterConfig,policy:synthetic,allocation};
+const engine=Build.create(args),at=(turn,units={})=>({state:engine.initialize({units}),cursor:{turn},actor:'soviet',phase:engine.openingPhase(),unitId:id,hex:policy.entryEdge.soviet[0]});
+const first=at(2);
+yes(!first.state.buildupDeployedIds.includes(id));
+fail(()=>engine.replace(at(1)),/No replacement steps remain/);
+const entered=engine.replace(first);
+eq(entered.event.kind,'replacement-rebuilt');
+eq(entered.state.units[id].sourceFaceId,id);
+eq(entered.state.units[id].size,'army');
+eq(entered.state.units[id].nationality,'soviet');
+eq(entered.state.units[id].strengthStatus,'printed-reduced');
+eq(entered.state.units[id].printedCombatStrength,4);
+yes(entered.state.buildupDeployedIds.includes(id));
+eq(entered.phase.spent,1);
+yes(entered.phase.rebuiltUnitIds.includes(id));
+const illegalRepeat=engine.replace.bind(engine,{...first,state:entered.state,phase:entered.phase});
+fail(illegalRepeat,/Cannot rebuild and restore the same unit|Only a reduced friendly/);
+const spoofed=at(2,{[id]:{...entered.state.units[id]}});
+spoofed.state.buildupDeployedIds=[]; // forged on-board reserve without an admission record
+fail(()=>engine.replace(spoofed),/Unadmitted source reserve cannot already be on the map/);
+const malformed=clone(synthetic);malformed.replacementReserveGroups={};
+fail(()=>Build.create({...args,policy:malformed}),/Invalid replacement-only/);
+const conflicting=clone(synthetic);conflicting.replacementOnlyReserveGroup='sovietTurn4Army';
+conflicting.replacementReserveGroups={sovietTurn4Army:{class:'infantry',size:'army'}};
+fail(()=>Build.create({...args,policy:conflicting}),/Invalid replacement-only/);
+const wrong=clone(synthetic);wrong.replacementOnlyEarliestTurn=9;
+fail(()=>Build.create({...args,policy:wrong}),/Invalid replacement-only/);
+const noReserve=Build.create({...args,policy:policy});
+fail(()=>noReserve.replace(at(2)),/not entered play or is not a due replacement reserve/);
+console.log('PASS v434 generic replacement-only reserve transaction:',checks,'assertions on certified test board; Kiev activation still forbidden');

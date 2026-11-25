@@ -1,0 +1,96 @@
+{
+  "battle-for-moscow": {
+    "cities": [
+      "1,4",
+      "2,6",
+      "4,8",
+      "5,1",
+      "5,3",
+      "7,3",
+      "7,5",
+      "7,9",
+      "10,2",
+      "10,6",
+      "13,5"
+    ],
+    "moscow": "10,2"
+  },
+  "arduous": {
+    "cities": [
+      "Brest-Litovsk",
+      "Vilnius",
+      "Baranovichi",
+      "Minsk",
+      "Polotsk",
+      "Velikie Luki",
+      "Vitebsk",
+      "Orsha",
+      "Mogilev",
+      "Gomel",
+      "Smolensk",
+      "Roslavl"
+    ]
+  },
+  "leningrad": {
+    "cities": [
+      "Liepaja",
+      "Insterburg",
+      "Siauliai",
+      "Riga",
+      "Kaunas",
+      "Parnu",
+      "Tallinn",
+      "Daugavpils",
+      "Tartu",
+      "Narva",
+      "Pskov",
+      "Luga",
+      "Leningrad",
+      "Novgorod"
+    ]
+  },
+  "kiev": {
+    "cities": [
+      "Lublin",
+      "Lvov",
+      "Kovel",
+      "Stanislavov",
+      "Tarnopol",
+      "Chernovtsy",
+      "Rovno",
+      "Sarny",
+      "Shepetovka",
+      "Iasi",
+      "Zhitomir",
+      "Vinnitsa",
+      "Kiev",
+      "Uman",
+      "Chernigov",
+      "Kirovograd"
+    ]
+  },
+  "kiev-odessa": {
+    "cities": [
+      "Lublin",
+      "Lvov",
+      "Kovel",
+      "Stanislavov",
+      "Tarnopol",
+      "Chernovtsy",
+      "Rovno",
+      "Sarny",
+      "Shepetovka",
+      "Iasi",
+      "Brăila",
+      "Zhitomir",
+      "Vinnitsa",
+      "Chisinau",
+      "Kiev",
+      "Uman",
+      "Odessa",
+      "Chernigov",
+      "Kirovograd",
+      "Nikolaev"
+    ]
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "version": 1,
+  "turns": 4,
+  "turnOrder": [
+    "violet",
+    "amber"
+  ],
+  "phases": [
+    {
+      "id": "maneuver",
+      "kind": "move"
+    },
+    {
+      "id": "battle",
+      "kind": "combat"
+    }
+  ],
+  "movement": {
+    "terrainCosts": {
+      "open": 1,
+      "forest": 2
+    },
+    "zocStops": true,
+    "friendlyTransit": true
+  },
+  "combat": {
+    "oddsCap": 4,
+    "terrainShifts": {
+      "forest": 1
+    },
+    "cityShifts": {
+      "citadel": 1
+    },
+    "table": {
+      "1": [
+        "NE",
+        "DR",
+        "DR",
+        "AL",
+        "EX",
+        "DE"
+      ],
+      "2": [
+        "DR",
+        "DR",
+        "EX",
+        "EX",
+        "DE",
+        "DE"
+      ],
+      "3": [
+        "DR",
+        "EX",
+        "DE",
+        "DE",
+        "DE",
+        "DE"
+      ],
+      "4": [
+        "EX",
+        "DE",
+        "DE",
+        "DE",
+        "DE",
+        "DE"
+      ]
+    }
+  },
+  "weather": [
+    {
+      "name": "rain",
+      "turns": [
+        2
+      ],
+      "normalMovementLimit": 1,
+      "mudIgnoresTerrainCosts": true
+    }
+  ],
+  "specialRules": [
+    {
+      "module": "defender-holds-on-retreat-v1",
+      "condition": {
+        "result": "DR",
+        "strength": "full",
+        "cityTypes": [
+          "citadel"
+        ]
+      }
+    },
+    {
+      "module": "reinforcement-event-v1",
+      "when": {
+        "turn": 2,
+        "side": "violet",
+        "phase": "start"
+      },
+      "unit": {
+        "id": "v5",
+        "faction": "violet",
+        "type": "infantry",
+        "full": 3,
+        "reduced": 1,
+        "movement": 2,
+        "strength": "full"
+      },
+      "entryCells": [
+        [
+          4,
+          5
+        ]
+      ],
+      "notInEnemyZoc": true
+    }
+  ]
+}

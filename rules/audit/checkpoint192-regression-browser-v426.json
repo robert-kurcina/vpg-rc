@@ -1,0 +1,38 @@
+{
+  "checkpoint": 192,
+  "version": "v426",
+  "scope": "targeted cross-game regressions plus new Chromium UI acceptance",
+  "results": [
+    {
+      "test": "arduous-human-special-combat-v426.py",
+      "kind": "python",
+      "status": "PASS",
+      "durationSeconds": 17.22,
+      "outputTail": "PASS Arduous source-backed browser regular d6/retreat/advance/Undo {\"actions\": 5, \"options\": 32, \"crt\": \"EX\"}"
+    },
+    {
+      "test": "arduous-human-battle-filter-v426.py",
+      "kind": "python",
+      "status": "PASS",
+      "durationSeconds": 5.74,
+      "outputTail": "PASS Arduous human battle proposal filtering: source proposals 82 selection retained, legal battle committed"
+    },
+    {
+      "test": "shared-settings-browser-v421.py",
+      "kind": "python",
+      "status": "PASS",
+      "durationSeconds": 8.74,
+      "outputTail": "m shared settings [{\"game\": \"battle-for-moscow\", \"defaultCounterSize\": 46, \"largeCounterSize\": 57.5, \"coastSupported\": false, \"settingsTab\": true, \"pageErrors\": []}, {\"game\": \"arduous\", \"defaultCounterSize\": 22.65, \"largeCounterSize\": 28.313, \"coastSupported\": false, \"settingsTab\": true, \"pageErrors\": []}, {\"game\": \"leningrad\", \"defaultCounterSize\": 29.95, \"largeCounterSize\": 37.438, \"coastSupported\": true, \"settingsTab\": true, \"pageErrors\": []}]"
+    }
+  ],
+  "summary": {
+    "PASS": 3,
+    "FAIL": 0,
+    "TIMEOUT": 0
+  },
+  "limitations": [
+    "Selected suites only, not an exhaustive full-program regression",
+    "Full 184-action Arduous controller campaign not rerun in this checkpoint",
+    "Physical iPad Safari not tested"
+  ]
+}

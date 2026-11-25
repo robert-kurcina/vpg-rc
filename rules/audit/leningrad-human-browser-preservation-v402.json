@@ -1,0 +1,38 @@
+{
+  "checkpoint": 168,
+  "version": "v402",
+  "baselineArchive": "hex_wargame_v401_CHECKPOINT_167_HUMAN_DECISION_GATEWAY.zip",
+  "preservedOriginalFiles": 900,
+  "changedOriginalFiles": [
+    "PACKAGE_MANIFEST.json",
+    "PLAN.md",
+    "README.md",
+    "UPDATE.md",
+    "index.html"
+  ],
+  "addedFiles": [
+    "core/historical_browser_app.js",
+    "core/historical_engine_browser_bundle.js",
+    "games/leningrad/native-preview/config.json",
+    "games/leningrad/native-preview/index.html",
+    "games/leningrad/native-preview/style.css",
+    "rules/audit/leningrad-human-browser-preservation-v402.json",
+    "rules/audit/leningrad-human-browser-regressions-v402-group1.json",
+    "rules/audit/leningrad-human-browser-regressions-v402-group2.json",
+    "rules/audit/leningrad-human-browser-regressions-v402-group3.json",
+    "rules/audit/leningrad-human-browser-regressions-v402-group4.json",
+    "rules/audit/leningrad-human-browser-regressions-v402-group5.json",
+    "rules/audit/leningrad-human-browser-regressions-v402-group6.json",
+    "rules/audit/leningrad-human-browser-regressions-v402-group7.json",
+    "rules/audit/leningrad-human-browser-regressions-v402.json",
+    "rules/audit/leningrad-human-browser-v402.json",
+    "rules/audit/visual/leningrad-human-browser-v402.png",
+    "scripts/build-historical-browser-bundle.py",
+    "scripts/package-checkpoint168.py",
+    "scripts/verify-checkpoint168-regressions.py",
+    "scripts/verify-historical-human-browser-v402.py"
+  ],
+  "removedFiles": [],
+  "protectedSourceMapRenderingCRTAndProduction": "all unchanged; only original index.html + three documents + manifest changed",
+  "verifiedSourcePreservation": true
+}

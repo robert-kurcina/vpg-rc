@@ -1,0 +1,44 @@
+{
+  "checkpoint": 119,
+  "version": "v353",
+  "scope": "Node-only in-memory preview, no canonical activation",
+  "files": [
+    "core/leningrad_preview_save.js",
+    "core/LENINGRAD_PREVIEW_SAVE.md",
+    "tests/leningrad-versioned-preview-save-v353.test.js"
+  ],
+  "format": {
+    "format": "wargame-leningrad-movement-preview",
+    "version": 1,
+    "checksum": "SHA-256 deterministic sorted JSON",
+    "boundInputs": [
+      "board",
+      "movementProfile",
+      "phaseConfig",
+      "projectionRecord"
+    ]
+  },
+  "verified": [
+    "real movement action and phase completion",
+    "namespace-marked snapshots with two Undo entries",
+    "canonical preview round trip",
+    "deterministic reserialization",
+    "tamper detection",
+    "board/movement/phase/projection mismatches",
+    "mixed history namespaces",
+    "invalid phase ownership/advance",
+    "unknown hex and unsupported nested fields",
+    "approved visual baseline unchanged",
+    "five unchanged game-engine SVG and PNG exports"
+  ],
+  "limitations": [
+    "SHA-256 is not an authenticity mechanism",
+    "no disk/browser persistence or rehydrated movement controller",
+    "no combat transaction/replay or historical coordinate certification",
+    "preview files may be invalidated by any legitimate source/config change"
+  ],
+  "sha256": {
+    "core/leningrad_preview_save.js": "25ac1aaf8a2f320c97fcdab6783ecfa49c3760de0dc45056a784753ec4665cbf",
+    "tests/leningrad-versioned-preview-save-v353.test.js": "ddec6787ea04d003f430f6592ac2854b5ef0eb4852c4ee6428acbf7b885c4e5e"
+  }
+}

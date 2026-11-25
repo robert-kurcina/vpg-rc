@@ -1,0 +1,81 @@
+{
+  "schemaVersion": 1,
+  "checkpoint": 126,
+  "version": "v360",
+  "status": "differential-only-not-live",
+  "productionEngine": "legacy-b4m-v1",
+  "sourceHashes": {
+    "game": "9d5ccd8e80b3fb2ea1018e26ccac9ebf26e3bf9081920c162347dcb94ef23f39",
+    "map": "dbdef938b8df85b9970df18b1999b94f98beb894dfdf0793f6e2f406be7be3a5",
+    "units": "90752f9e74671b977de453fe805412cbd0f6af47d4eca04ed42e744c35f35429",
+    "deployments": "b9fa194ed39e28a2bcbc5e984de046b559e6ea752aa14ce73f88a7fe22ecec1f",
+    "rules": "353ffbdbedc1b6d122fd43bb747b501053eaa6e82146f520b4c1314adf43750a",
+    "objectives": "391c471a5f4154298d59f94b3a6dda1a2b490686893553d7dca61af3a80e4ae7"
+  },
+  "profileHash": "a2a95c813ee784465e16bc0f03be02a199e8c6bb76e21b4659a091a893642754",
+  "initialState": {
+    "scenario": "battle-for-moscow",
+    "engine": "generic-hex-v1",
+    "productionEngine": "legacy-b4m-v1",
+    "unitCount": 39,
+    "startingUnitCount": 36,
+    "cityControls": 11,
+    "initialPhase": "combat",
+    "topologyDirectedEdges": 786,
+    "executedModules": [
+      "scheduled-reinforcement-v1",
+      "defender-holds-on-retreat-v1",
+      "replacement-budget-v1",
+      "communication-path-v1",
+      "retreat-radial-zoc-v1",
+      "rail-path-zoc-v1"
+    ]
+  },
+  "movement": {
+    "contexts": 406,
+    "options": 2560,
+    "normalOptions": 1992,
+    "railOptions": 217,
+    "panzerOptions": 351,
+    "exactPathsAndCosts": true,
+    "turns": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "note": "Repeated initial unit layout with turn/side/phase varied, not a seven-turn simulated campaign."
+  },
+  "replacements": {
+    "contexts": 14,
+    "options": 475,
+    "exactBudgetAndOptionSets": true,
+    "note": "Same fixed initial unit layout in each turn; does not certify full replacement transactions or prior-entry restrictions."
+  },
+  "combat": {
+    "virtualPairwiseOdds": 3144,
+    "initialGermanCandidateOdds": 30,
+    "exactRawAndFinalOdds": true,
+    "note": "Two-counter synthetic adjacency across actual source cells; not a combat-consequence parity claim."
+  },
+  "phase": {
+    "firstCombatToGermanMovementToSovietReplacement": true
+  },
+  "victory": {
+    "initialEvaluation": "soviet",
+    "parity": true
+  },
+  "uncertified": [
+    "Manual German opening setup and swap flow",
+    "Turn 4 interactive Shock Army reinforcement (native module currently auto-places)",
+    "Combat declaration/roll/consequence and result choices across the human workflow",
+    "Replacement transaction and move/phase action histories",
+    "Full-game victory control over seven turns",
+    "Legacy save/Undo and solo AI/controller parity",
+    "Browser UX migration; production remains legacy/index.html",
+    "City source typo nornal normalized by legacy but retained in source JSON"
+  ]
+}

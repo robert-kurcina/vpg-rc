@@ -1,0 +1,34 @@
+{
+  "checkpoint": 317,
+  "version": "v551",
+  "kind": "experimental-source-city-restoration-and-Kovel-capture-recapture",
+  "assertions": 181,
+  "cityMarkersRestored": 15,
+  "cityMarkersInherited": 16,
+  "sourceSHA256": "2b15c3a92a282a7efc27d54bcd8994470f0fce8ee5417d5d734969fcd2c4ab7e",
+  "mapId": "kiev-odessa-composite-v256",
+  "fullHistoricalCertification": false,
+  "firstAttack": {
+    "hex": "0502",
+    "attacker": "kiev-front-r02c03",
+    "defender": "kiev-front-r05c02",
+    "die": 2,
+    "outcome": "EX"
+  },
+  "counterAttack": {
+    "attacker": "kiev-front-r03c05",
+    "die": 1,
+    "outcome": "DR",
+    "retreat": [
+      "0601",
+      "0701"
+    ]
+  },
+  "sourceMapDigest": "0157b3643637ed9a807510a9762b4dac10c3625732dd6671548904fc60d7cbae",
+  "compatibility": "Older campaign saves are intentionally source-fingerprint incompatible; local deployment saves are separate",
+  "limitations": [
+    "Experimental Kiev–Odessa graph not historically certified",
+    "No complete Romania political territory mask",
+    "Odessa naval evacuation phase remains unauthorized"
+  ]
+}

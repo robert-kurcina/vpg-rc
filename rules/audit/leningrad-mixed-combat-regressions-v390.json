@@ -1,0 +1,233 @@
+{
+  "checkpoint": 156,
+  "version": "v390",
+  "totalPlanned": 31,
+  "passed": 31,
+  "status": "pass",
+  "method": "Separated batches: first 22 commands sequentially, the expensive fresh-render test independently, six existing gameplay commands separately, then both new focused tests individually on the final source worktree.",
+  "note": "The all-in-one process did not complete within the execution window. No unfinished combined run is represented as a pass; each of the 31 individual commands subsequently returned exit 0.",
+  "sourceLimitations": [
+    "Candidate source counter allocation remains independently uncertified",
+    "No automatic combined attack optimizer, complete multi-hex pathfinder or full human/AI action policy",
+    "Oberlabs UX parity remains deferred by user decision"
+  ],
+  "results": [
+    {
+      "index": 1,
+      "command": "node scripts/verify-campaign-maps.js",
+      "passed": true,
+      "verificationMethod": "sequential 22-command batch",
+      "evidence": "01/31 PASS 0.34s node scripts/verify-campaign-maps.js"
+    },
+    {
+      "index": 2,
+      "command": "node tests/b4m-native-combat-v361.test.js",
+      "passed": true,
+      "verificationMethod": "sequential 22-command batch",
+      "evidence": "02/31 PASS 0.52s node tests/b4m-native-combat-v361.test.js"
+    },
+    {
+      "index": 3,
+      "command": "node tests/b4m-native-redeployment-campaign-v378.test.js",
+      "passed": true,
+      "verificationMethod": "sequential 22-command batch",
+      "evidence": "03/31 PASS 15.91s node tests/b4m-native-redeployment-campaign-v378.test.js"
+    },
+    {
+      "index": 4,
+      "command": "node tests/b4m-native-tournament-reference-v375.test.js",
+      "passed": true,
+      "verificationMethod": "sequential 22-command batch",
+      "evidence": "04/31 PASS 0.07s node tests/b4m-native-tournament-reference-v375.test.js"
+    },
+    {
+      "index": 5,
+      "command": "node tests/forest-no-shadow-v373.test.js",
+      "passed": true,
+      "verificationMethod": "sequential 22-command batch",
+      "evidence": "05/31 PASS 0.37s node tests/forest-no-shadow-v373.test.js"
+    },
+    {
+      "index": 6,
+      "command": "node tests/historical-air-sea-support-v385.test.js",
+      "passed": true,
+      "verificationMethod": "sequential 22-command batch",
+      "evidence": "06/31 PASS 0.14s node tests/historical-air-sea-support-v385.test.js"
+    },
+    {
+      "index": 7,
+      "command": "node tests/historical-combat-consequences-v359.test.js",
+      "passed": true,
+      "verificationMethod": "sequential 22-command batch",
+      "evidence": "07/31 PASS 0.39s node tests/historical-combat-consequences-v359.test.js"
+    },
+    {
+      "index": 8,
+      "command": "node tests/historical-combat-session-v386.test.js",
+      "passed": true,
+      "verificationMethod": "sequential 22-command batch",
+      "evidence": "08/31 PASS 0.92s node tests/historical-combat-session-v386.test.js"
+    },
+    {
+      "index": 9,
+      "command": "node tests/historical-fleet-forced-displacement-v384.test.js",
+      "passed": true,
+      "verificationMethod": "sequential 22-command batch",
+      "evidence": "09/31 PASS 0.19s node tests/historical-fleet-forced-displacement-v384.test.js"
+    },
+    {
+      "index": 10,
+      "command": "node tests/historical-fleet-opening-movement-v383.test.js",
+      "passed": true,
+      "verificationMethod": "sequential 22-command batch",
+      "evidence": "10/31 PASS 0.11s node tests/historical-fleet-opening-movement-v383.test.js"
+    },
+    {
+      "index": 11,
+      "command": "node tests/historical-forced-retreat-v380.test.js",
+      "passed": true,
+      "verificationMethod": "sequential 22-command batch",
+      "evidence": "11/31 PASS 0.34s node tests/historical-forced-retreat-v380.test.js"
+    },
+    {
+      "index": 12,
+      "command": "node tests/historical-overstack-retreat-v381.test.js",
+      "passed": true,
+      "verificationMethod": "sequential 22-command batch",
+      "evidence": "12/31 PASS 0.16s node tests/historical-overstack-retreat-v381.test.js"
+    },
+    {
+      "index": 13,
+      "command": "node tests/historical-port-fleet-retreat-v382.test.js",
+      "passed": true,
+      "verificationMethod": "sequential 22-command batch",
+      "evidence": "13/31 PASS 0.29s node tests/historical-port-fleet-retreat-v382.test.js"
+    },
+    {
+      "index": 14,
+      "command": "node tests/historical-safe-retreat-options-v379.test.js",
+      "passed": true,
+      "verificationMethod": "sequential 22-command batch",
+      "evidence": "14/31 PASS 0.24s node tests/historical-safe-retreat-options-v379.test.js"
+    },
+    {
+      "index": 15,
+      "command": "node tests/leningrad-combat-commitment-v318.test.js",
+      "passed": true,
+      "verificationMethod": "sequential 22-command batch",
+      "evidence": "15/31 PASS 0.1s node tests/leningrad-combat-commitment-v318.test.js"
+    },
+    {
+      "index": 16,
+      "command": "node tests/leningrad-combat-geography-v318.test.js",
+      "passed": true,
+      "verificationMethod": "sequential 22-command batch",
+      "evidence": "16/31 PASS 0.1s node tests/leningrad-combat-geography-v318.test.js"
+    },
+    {
+      "index": 17,
+      "command": "node tests/leningrad-full-inventory-v355.test.js",
+      "passed": true,
+      "verificationMethod": "sequential 22-command batch",
+      "evidence": "17/31 PASS 0.03s node tests/leningrad-full-inventory-v355.test.js"
+    },
+    {
+      "index": 18,
+      "command": "node tests/leningrad-phase-movement-pilot-v318.test.js",
+      "passed": true,
+      "verificationMethod": "sequential 22-command batch",
+      "evidence": "18/31 PASS 0.08s node tests/leningrad-phase-movement-pilot-v318.test.js"
+    },
+    {
+      "index": 19,
+      "command": "node tests/leningrad-reinforcement-ledger-v323.test.js",
+      "passed": true,
+      "verificationMethod": "sequential 22-command batch",
+      "evidence": "19/31 PASS 0.04s node tests/leningrad-reinforcement-ledger-v323.test.js"
+    },
+    {
+      "index": 20,
+      "command": "node tests/scenario-opening-bridge-v358.test.js",
+      "passed": true,
+      "verificationMethod": "sequential 22-command batch",
+      "evidence": "20/31 PASS 0.14s node tests/scenario-opening-bridge-v358.test.js"
+    },
+    {
+      "index": 21,
+      "command": "node tests/shared-render-profiles-v356.test.js",
+      "passed": true,
+      "verificationMethod": "sequential 22-command batch",
+      "evidence": "21/31 PASS 0.16s node tests/shared-render-profiles-v356.test.js"
+    },
+    {
+      "index": 22,
+      "command": "node tests/smoke-current.js",
+      "passed": true,
+      "verificationMethod": "sequential 22-command batch",
+      "evidence": "22/31 PASS 0.03s node tests/smoke-current.js"
+    },
+    {
+      "index": 23,
+      "command": "python3 tests/leningrad-approved-visual-regression-v352.test.py",
+      "passed": true,
+      "verificationMethod": "standalone fresh-export visual verification",
+      "evidence": "Ran 1 test in 19.333s; OK; exit 0 (standalone rerun)"
+    },
+    {
+      "index": 24,
+      "command": "node tests/historical-campaign-continuation-v387.test.js",
+      "passed": true,
+      "verificationMethod": "six-command follow-up batch",
+      "evidence": "PASS command 24 /31; exit 0 (follow-up batch)"
+    },
+    {
+      "index": 25,
+      "command": "node tests/historical-buildup-campaign-v388.test.js --write-audit",
+      "passed": true,
+      "verificationMethod": "six-command follow-up batch",
+      "evidence": "PASS command 25 /31; exit 0 (follow-up batch)"
+    },
+    {
+      "index": 26,
+      "command": "node tests/historical-housekeeping-eight-turn-v389.test.js --write-audit",
+      "passed": true,
+      "verificationMethod": "six-command follow-up batch",
+      "evidence": "PASS command 26 /31; exit 0 (follow-up batch)"
+    },
+    {
+      "index": 27,
+      "command": "node tests/shared-historical-crt-v316.test.js",
+      "passed": true,
+      "verificationMethod": "six-command follow-up batch",
+      "evidence": "PASS command 27 /31; exit 0 (follow-up batch)"
+    },
+    {
+      "index": 28,
+      "command": "node tests/universal-scenario-contract-v317.test.js",
+      "passed": true,
+      "verificationMethod": "six-command follow-up batch",
+      "evidence": "PASS command 28 /31; exit 0 (follow-up batch)"
+    },
+    {
+      "index": 29,
+      "command": "node tests/universal-deployment-placement-v329.test.js",
+      "passed": true,
+      "verificationMethod": "six-command follow-up batch",
+      "evidence": "PASS command 29 /31; exit 0 (follow-up batch)"
+    },
+    {
+      "index": 30,
+      "command": "node tests/historical-mixed-combat-eight-turn-v390.test.js --write-audit",
+      "passed": true,
+      "verificationMethod": "individually rerun on final worktree",
+      "evidence": "PASS v390 63 real mixed-combat, reinforcement and eight-turn persistence assertions; 110 actions; replacement=true"
+    },
+    {
+      "index": 31,
+      "command": "node tests/historical-campaign-action-catalog-v390.test.js --write-audit",
+      "passed": true,
+      "verificationMethod": "individually rerun on final worktree",
+      "evidence": "PASS v390 95 source-validated action discovery assertions"
+    }
+  ]
+}

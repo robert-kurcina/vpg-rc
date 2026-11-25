@@ -1,0 +1,15 @@
+#game-reference-dialog{box-sizing:border-box;width:min(720px,calc(100vw - 24px));max-height:calc(100dvh - 24px);overflow:auto;padding:16px;border:1px solid #89989a;border-radius:8px;background:#fafbf9;color:#263639}
+#game-reference-dialog::backdrop{background:rgba(0,0,0,.5)}
+.reference-dialog-heading{display:flex;align-items:center;justify-content:space-between;gap:12px}.reference-dialog-heading h2{margin:0;font-size:1.2rem}
+.reference-dialog-tabs{display:flex;flex-wrap:wrap;gap:6px;margin:12px 0}.reference-dialog-tabs button,.reference-dialog-heading button{min-height:44px}.reference-dialog-tabs [aria-selected=true]{font-weight:bold;outline:2px solid currentColor;outline-offset:-3px}
+#game-reference-panel{line-height:1.45;overflow-wrap:anywhere}#game-reference-panel .crt-reference-scroll{overflow-x:auto;max-width:100%}
+#game-reference-open{min-height:44px}#game-reference-panel .crt-reference-table{width:100%;border-collapse:collapse;min-width:360px}#game-reference-panel .crt-reference-table th,#game-reference-panel .crt-reference-table td{padding:6px;text-align:center;border:1px solid #fff}
+
+/* One responsive table for both native and historical reference paths. */
+.reference-terrain-table{width:100%;border-collapse:collapse;table-layout:fixed;font-size:.92rem;line-height:1.4}
+.reference-terrain-table th,.reference-terrain-table td{padding:8px;text-align:left;vertical-align:middle;border-bottom:1px solid #c9d2ce;overflow-wrap:anywhere}
+.reference-terrain-table thead th{background:#e2e9e4}.reference-terrain-table th:first-child{width:32%}
+.reference-terrain-table tbody th{font-weight:600}.reference-terrain-specimen{display:block;width:60px;height:54px;object-fit:contain;margin-bottom:4px}
+.reference-source-aid{display:block;width:100%;height:auto;margin:8px 0}.reference-terrain-table+ p a,#game-reference-panel a{overflow-wrap:anywhere}
+#game-reference-panel details summary{cursor:pointer;padding:10px 0}
+@media(max-width:480px){#game-reference-dialog{padding:10px}.reference-terrain-table{font-size:.83rem}.reference-terrain-table th,.reference-terrain-table td{padding:5px}.reference-terrain-specimen{width:48px;height:44px}}

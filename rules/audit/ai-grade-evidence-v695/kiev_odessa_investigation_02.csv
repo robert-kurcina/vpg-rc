@@ -1,0 +1,6 @@
+scenario,seed,grade,outcome,cities,total,moves,battles,turns,exact_restore,journal_sha256
+kiev,2001,1,soviet-victory,6,16,123,17,7,True,3519f18850479b88f3300534580196676a14686e8f5081b16d2fe08438da7dfd
+kiev,2001,3,soviet-victory,3,16,184,23,7,True,b97fc9d5e60f368e47725a5e03ba67e22b07cc6db4f7c2f6f48c4e5aea27cdf9
+kiev,2001,4,soviet-victory,8,16,189,24,7,True,149b6016d6049da9ec2bb71b4a7740ba6b8665798d100c2f709bf732a7c3cc3f
+kiev-odessa,2001,1,soviet-victory,9,20,137,15,7,True,d21620a18e24398c16ec22178e8b5f3619d93ab1eb69217a655684355e4fbf23
+kiev-odessa,2001,3,soviet-victory,5,20,178,21,7,True,eb71a083ce12417acadbb8f9801172e1a2190058e9dfe6abedb582f871b52fc8

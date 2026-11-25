@@ -1,0 +1,144 @@
+{
+  "checkpoint": 241,
+  "version": "v475",
+  "assertions": 159,
+  "classification": "ISOLATED-DIAGNOSTIC-NOT-AUTHORIZED-KIEV-GAMEPLAY",
+  "graph": {
+    "hexes": 165,
+    "edges": 442,
+    "rails": 93,
+    "rivers": 72,
+    "majorRivers": 10,
+    "originalPolicyStatus": "provisional",
+    "productionGraphAuthorized": false
+  },
+  "source": {
+    "rulebookSha256": "d55e8f0e567d1f8c7907c4fc8368954ec0e5fa8d6fe9e8e71c61acf9bb3c3756",
+    "svgSha256": "2b15c3a92a282a7efc27d54bcd8994470f0fce8ee5417d5d734969fcd2c4ab7e",
+    "sourceMapSha256": "dcf72e17ed9f1ee22f65bcd11e41916d9c3bfc3feb25f2a39731f7025e067d3f",
+    "productionGraphPolicySha256": "f63cc74fac795875fb89e38167a1f2fb70b78712480df7ce4fe20060c78f1c36"
+  },
+  "scope": {
+    "testProcessPolicyInjection": true,
+    "testProcessTerritoryMaskBypass": true,
+    "sourceLegalButNonhistoricalOpening": true,
+    "genuineKievHexsides": true,
+    "certifiedRomanianTerritory": false,
+    "airMarkers": [
+      "kiev-front-r03c01",
+      "kiev-front-r03c02"
+    ],
+    "realSharedEngineAndCRT": true,
+    "fullCampaignAcceptance": false
+  },
+  "result": {
+    "actions": 146,
+    "sevenTurnHousekeeping": 7,
+    "moves": 27,
+    "battles": 3,
+    "groundCounterattacks": 1,
+    "reinforcements": 6,
+    "replacements": 3,
+    "combatEvents": [
+      {
+        "side": "german",
+        "turn": 1,
+        "defenderHex": "0205",
+        "outcome": "EX",
+        "airFace": "kiev-front-r03c01",
+        "losses": [
+          {
+            "unitId": "kiev-front-r03c04",
+            "removed": false
+          },
+          {
+            "unitId": "kiev-front-r01c01",
+            "removed": false
+          }
+        ]
+      },
+      {
+        "side": "german",
+        "turn": 1,
+        "defenderHex": "0401",
+        "outcome": "NE",
+        "airFace": "kiev-front-r03c02",
+        "automaticNoDie": true
+      },
+      {
+        "side": "soviet",
+        "turn": 1,
+        "defenderHex": "0204",
+        "outcome": "AL",
+        "losses": [
+          {
+            "unitId": "kiev-front-r04c03",
+            "removed": true
+          }
+        ]
+      }
+    ],
+    "replacementEvents": [
+      {
+        "turn": 2,
+        "owner": "soviet",
+        "kind": "replacement-restored",
+        "unitId": "kiev-front-r03c04"
+      },
+      {
+        "turn": 2,
+        "owner": "soviet",
+        "kind": "replacement-rebuilt",
+        "unitId": "kiev-front-r04c03",
+        "hex": "1601"
+      },
+      {
+        "turn": 4,
+        "owner": "german",
+        "kind": "replacement-restored",
+        "unitId": "kiev-front-r01c01"
+      }
+    ],
+    "perTurnCityControl": [
+      {
+        "turn": 1,
+        "axisCities": 2
+      },
+      {
+        "turn": 2,
+        "axisCities": 2
+      },
+      {
+        "turn": 3,
+        "axisCities": 2
+      },
+      {
+        "turn": 4,
+        "axisCities": 2
+      },
+      {
+        "turn": 5,
+        "axisCities": 2
+      },
+      {
+        "turn": 6,
+        "axisCities": 2
+      },
+      {
+        "turn": 7,
+        "axisCities": 2
+      }
+    ],
+    "terminalOutcome": "soviet-victory",
+    "endingSourceFaces": 36,
+    "restore": true,
+    "undo": true,
+    "phases": 146
+  },
+  "limitations": [
+    "No country boundary: one source restriction bypassed in TEST ONLY",
+    "Source-legal 30-unit allocation is not a certified historical opening",
+    "Three deliberately bounded battles and short moves; no strategic opponent",
+    "Source movement authorization remains deliberately withheld in production"
+  ]
+}

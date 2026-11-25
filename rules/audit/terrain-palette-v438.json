@@ -1,0 +1,77 @@
+{
+  "checkpoint": 204,
+  "version": "v438",
+  "kind": "terrain-palette-experiment",
+  "palette": {
+    "open": "#dcd4c9ff",
+    "forest": "#727f61ff",
+    "swamp": "#616f6fff"
+  },
+  "normalizedInput": {
+    "openRequested": "dcd4c9f",
+    "openApplied": "#dcd4c9ff"
+  },
+  "scope": [
+    "core/terrain_tiles.js",
+    "core/historical_engine_browser_bundle.js"
+  ],
+  "exports": {
+    "battle-for-moscow": {
+      "svgSHA256": "487a050a42cf41554886b0fcef85baf68e40354f784428623926f1a9354f4de1",
+      "pngSHA256": "3924de17003ebb5238b36bb3557d903ae8c3c349929f2b2c547186a7742351c1",
+      "errors": [],
+      "warnings": [
+        "0102 NW: rail at unverified/off-board boundary",
+        "0105 NW: rail at unverified/off-board boundary",
+        "0110 SW: rail at unverified/off-board boundary",
+        "0511 S: rail at unverified/off-board boundary",
+        "0901 NW: rail at unverified/off-board boundary",
+        "1301 NE: rail at unverified/off-board boundary",
+        "1402 SE: rail at unverified/off-board boundary",
+        "1403 SE: rail at unverified/off-board boundary",
+        "1404 SE: rail at unverified/off-board boundary",
+        "1407 SE: rail at unverified/off-board boundary"
+      ]
+    },
+    "arduous": {
+      "svgSHA256": "e499063eb7be9757b1beb58f1c54e1bef5232c5cd94d8e0a8196c426e556661b",
+      "pngSHA256": "be8d0092be5f137ee85eafa00dcfdf9395ad364c32fca78beeaebab9ff477b67",
+      "errors": [],
+      "warnings": []
+    },
+    "leningrad": {
+      "svgSHA256": "e45856f7d56b5acfecf7083b405b9465d1c21459d698ac65e9196f581f832925",
+      "pngSHA256": "c5df278336fb4754ee4f15fad499d92311d855ae5fa0f557f622804e1ba52bb4",
+      "errors": [],
+      "warnings": [
+        "0411 S: river at unverified/off-board boundary",
+        "0711 SW: river at unverified/off-board boundary",
+        "0811 S: river at unverified/off-board boundary",
+        "1109 S: river at unverified/off-board boundary",
+        "1309 S: river at unverified/off-board boundary",
+        "1901 NE: river at unverified/off-board boundary"
+      ]
+    },
+    "kiev": {
+      "svgSHA256": "443b2692dfab6d3c0a5d786b2dbb01606f071b720223c5776aa3cb13ae146676",
+      "pngSHA256": "3b14db68fec9a10d70c8060832454fd4bd6d14c68be7566bc61195902d35f31d",
+      "errors": [],
+      "warnings": []
+    },
+    "kiev-odessa": {
+      "svgSHA256": "7d3eb29c959bf0260f00963fb95eee33498ed52a80e4445e3fd6926aab3f5461",
+      "pngSHA256": "bb50400e9d0d048b5630df373a8ee51027652fb1dabda6a8fdf5ad6d53033b48",
+      "errors": [],
+      "warnings": [
+        "0918 SE: majorRiver at unverified/off-board boundary",
+        "0918 S: majorRiver at unverified/off-board boundary",
+        "1017 S: majorRiver at unverified/off-board boundary"
+      ]
+    }
+  },
+  "notes": [
+    "All five rendered map exports intentionally changed appearance.",
+    "Legacy verify-campaign-maps PNG-hash baseline is expected to fail for this reviewed visual checkpoint.",
+    "No gameplay/state/map-data changes."
+  ]
+}

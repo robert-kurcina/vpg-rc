@@ -1,0 +1,163 @@
+{
+  "checkpoint": 180,
+  "version": "v414",
+  "suites": 21,
+  "passed": 21,
+  "rows": [
+    {
+      "test": "arduous-topology-probe-v414.test.js",
+      "result": "PASS",
+      "seconds": 0.25,
+      "detail": "PASS Arduous source topology probe 34 checks; movement probe was TEST-ONLY\n"
+    },
+    {
+      "test": "arduous-full-source-opening-v413.test.js",
+      "result": "PASS",
+      "seconds": 0.27,
+      "detail": "arrison\",\"hex\":\"0211\",\"owner\":\"soviet\",\"sourceFaceId\":\"arduous-front-r04c03\",\"activeFaceId\":\"arduous-back-r04c06\",\"sourceMapMarkerSvgId\":\"use337\",\"printedValues\":\"3-4\",\"printedAffiliation\":\"axis\",\"ruleSource\":\"references/rules/arduous-rules.pdf \u00a76.0, printed page 2\"}],\"sourceNamedCityAnchors\":{\"fixedMechanized\":[{\"hex\":\"0907\",\"sourceSvgId\":\"use334\",\"kind\":\"fixedMechanized\",\"terrain\":\"open\",\"anchorSource\":\"rule-and-authored-city\",\"ruleSource\":\"arduous-rules.pdf \u00a76.0 #2\"},{\"hex\":\"0609\",\"sourceSvgId\":\"use336\",\"kind\":\"fixedMechanized\",\"terrain\":\"open\",\"anchorSource\":\"rule-and-authored-city\",\"ruleSource\":\"arduous-rules.pdf \u00a76.0 #2\"},{\"hex\":\"1510\",\"sourceSvgId\":\"use338\",\"kind\":\"fixedMechanized\",\"terrain\":\"open\",\"anchorSource\":\"rule-and-authored-city\",\"ruleSource\":\"arduous-rules.pdf \u00a76.0 #2\"}]}}\n"
+    },
+    {
+      "test": "arduous-rail-reconciliation-v411.test.js",
+      "result": "PASS",
+      "seconds": 0.17,
+      "detail": "PASS Arduous source-rail reconciliation: 11 assertions\n"
+    },
+    {
+      "test": "arduous-roster-and-victory-v410.test.js",
+      "result": "PASS",
+      "seconds": 0.2,
+      "detail": "PASS v410 Arduous photographed counters + \u00a75 victory: 237 assertions\n"
+    },
+    {
+      "test": "arduous-brest-garrison-v411.test.js",
+      "result": "PASS",
+      "seconds": 0.2,
+      "detail": "PASS Arduous source-bound one-step Brest garrison: 30 assertions\n"
+    },
+    {
+      "test": "arduous-brest-combat-v411.test.js",
+      "result": "PASS",
+      "seconds": 0.33,
+      "detail": "PASS reverse-only one-step Brest combat pipeline: 11 assertions\n"
+    },
+    {
+      "test": "map-movement-graph-v318.test.js",
+      "result": "PASS",
+      "seconds": 0.11,
+      "detail": "PASS movement graph 1080 assertions; hexes 197 edges 533 rails 80\n"
+    },
+    {
+      "test": "map-movement-graph-source-policy-v318.test.js",
+      "result": "PASS",
+      "seconds": 0.17,
+      "detail": "PASS source-policy registry 15 assertions\n"
+    },
+    {
+      "test": "map-certification-readiness-v318.test.js",
+      "result": "PASS",
+      "seconds": 0.48,
+      "detail": "PASS map certification readiness 3229 assertions\n"
+    },
+    {
+      "test": "cross-game-movement-v318.test.js",
+      "result": "PASS",
+      "seconds": 0.04,
+      "detail": "Cross-game movement: 28 assertions passed\n"
+    },
+    {
+      "test": "cross-game-movement-registry-v318.test.js",
+      "result": "PASS",
+      "seconds": 0.04,
+      "detail": "Movement registry: four historical configurations verified\n"
+    },
+    {
+      "test": "movement-binding-v318.test.js",
+      "result": "PASS",
+      "seconds": 0.25,
+      "detail": "PASS movement binding 18 checks; verified Leningrad board; provisional maps blocked\n"
+    },
+    {
+      "test": "leningrad-combat-geography-v318.test.js",
+      "result": "PASS",
+      "seconds": 0.25,
+      "detail": "PASS Leningrad certified combat geography and deployment reconciliation 22 assertions\n"
+    },
+    {
+      "test": "leningrad-setup-validator-v319.test.js",
+      "result": "PASS",
+      "seconds": 0.13,
+      "detail": "PASS Leningrad proposed setup validator 12+ checks\n"
+    },
+    {
+      "test": "leningrad-counter-face-parity-v403.test.js",
+      "result": "PASS",
+      "seconds": 0.14,
+      "detail": "Counter source-face projection v403: 552 assertions PASS; 28 ground front/back pairs checked; four concealed/revealed Corps; sheet SHA256 verified\n"
+    },
+    {
+      "test": "leningrad-phase-movement-pilot-v318.test.js",
+      "result": "PASS",
+      "seconds": 0.13,
+      "detail": "PASS Leningrad phase/movement pilot 18 checks (no historical scenario activation)\n"
+    },
+    {
+      "test": "b4m-native-preview-v360.test.js",
+      "result": "PASS",
+      "seconds": 0.57,
+      "detail": "PASS B4M native preview v360: exact multi-mode movement, initial state, replacement, odds, first phase; production remains legacy\n"
+    },
+    {
+      "test": "b4m-native-combat-v361.test.js",
+      "result": "PASS",
+      "seconds": 0.95,
+      "detail": "PASS v361 B4M native combat parity: 180 previews, 180 consequences, 57 explicit choices, 293 two-battle sequences, strict config gate\n"
+    },
+    {
+      "test": "b4m-native-objective-advance-v408.test.js",
+      "result": "PASS",
+      "seconds": 0.18,
+      "detail": "{\"status\":\"PASS\",\"checkpoint\":174,\"version\":\"v408\",\"scope\":\"synthetic source-rules differential at Moscow; not historical setup certification\",\"checks\":42,\"sourceCRT\":\"unchanged\",\"engine\":\"unchanged\",\"productionSelector\":\"legacy-b4m-v1\",\"advancedDE\":true,\"legacyActionParity\":true,\"dieCommitIsolation\":true,\"moscowDRHold\":true,\"defaultPoliciesPreserved\":true,\"undoAndSave\":true,\"limitations\":[\"Synthetic Moscow tactical board positions\",\"No new legacy strategic AI parity claim\",\"No active B4M production cutover\"]}\n"
+    },
+    {
+      "test": "b4m-native-strategic-comparison-v369.test.js",
+      "result": "PASS",
+      "seconds": 2.2,
+      "detail": "s13\",\"baselineGarrison\":\"s43\",\"objectiveGarrison\":\"s13\",\"legacyGarrison\":\"s13\",\"baselineVsLegacyUnitDifferences\":13,\"objectiveVsLegacyUnitDifferences\":12,\"objectiveMoves\":14,\"objectiveBattles\":2,\"legacyPhaseSide\":\"german\",\"baselineNativeActions\":27,\"objectiveNativeActions\":27},{\"seed\":1941,\"initialSideTurn\":\"soviet\",\"firstBaseline\":{\"type\":\"replacement\",\"choice\":{\"type\":\"restore\",\"id\":\"s10\"}},\"firstObjective\":{\"type\":\"replacement\",\"choice\":{\"type\":\"enter\",\"id\":\"s13\",\"x\":10,\"y\":2}},\"legacyFortressFirstMoscowEntry\":\"s13\",\"baselineGarrison\":\"s43\",\"objectiveGarrison\":\"s13\",\"legacyGarrison\":\"s13\",\"baselineVsLegacyUnitDifferences\":14,\"objectiveVsLegacyUnitDifferences\":13,\"objectiveMoves\":15,\"objectiveBattles\":2,\"legacyPhaseSide\":\"german\",\"baselineNativeActions\":28,\"objectiveNativeActions\":28}]}\n"
+    },
+    {
+      "test": "historical-player-deployment-v404.test.js",
+      "result": "PASS",
+      "seconds": 0.16,
+      "detail": "{\"checkpoint\":170,\"version\":\"v404\",\"assertions\":29,\"status\":\"PASS\",\"scope\":\"Candidate historical deployment validated against \u00a76 source markers; four hidden mechanized identities mixed, versioned save and turn-1 handoff\",\"limitations\":[\"Source coordinate disagreement remains open\",\"Local browser cannot prevent developer-tools inspection of concealed identities\"]}\n"
+    }
+  ],
+  "supplemental": [
+    {
+      "test": "tests/arduous-svg-side-occupancy-v318.test.js",
+      "result": "PASS"
+    },
+    {
+      "test": "tests/arduous-river-hexsides-v412.test.py",
+      "result": "PASS",
+      "testcases": 2
+    },
+    {
+      "test": "tests/arduous-whole-hex-terrain-v412.test.py",
+      "result": "PASS",
+      "testcases": 6
+    },
+    {
+      "test": "tests/arduous-svg-side-occupancy-v318.test.py",
+      "result": "PASS",
+      "testcases": 8
+    }
+  ],
+  "totalSelectedSuitesPassing": 25,
+  "sharedRendererExport": {
+    "arduous": "byte-identical-to-checkpoint-179",
+    "battle-for-moscow": "byte-identical-to-checkpoint-179",
+    "kiev": "byte-identical-to-checkpoint-179",
+    "kiev-odessa": "byte-identical-to-checkpoint-179",
+    "leningrad": "byte-identical-to-checkpoint-179"
+  }
+}

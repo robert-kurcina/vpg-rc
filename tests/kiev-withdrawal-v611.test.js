@@ -1,0 +1,38 @@
+'use strict';
+const A=require('node:assert/strict'),Auto=require('../core/historical_campaign_autoplay'),Campaign=require('../core/historical_campaign_session'),Catalog=require('../core/historical_campaign_action_catalog');
+const F=require('./fixtures/kiev-source-opening-v437');
+const map=F.map,counterConfig=F.counterConfig,profile=require('../maps/movement-configs/kiev.json'),config=require('../maps/phase-configs/kiev.json');
+const combatPolicy=require('../maps/combat-configs/kiev.json');
+const committed=require('../core/historical_deployment_session').create({map,setupSpec:F.setupSpec,counterConfig,inventory:F.inventory,phaseConfig:config,movementProfile:profile,phaseFactories:{combat:()=>({})},allocation:F.allocation,placements:F.placements}).commit();
+const ctx={...committed.opening,map,profile,config,counterConfig,combatPolicy,enableAirSupport:true,buildupPolicy:require('../maps/buildup-configs/kiev.json'),buildupAllocation:committed.allocation,housekeepingPolicy:require('../maps/housekeeping-configs/kiev.json')};
+const units=Object.values(ctx.state.units), attacker=units.find(u=>u.owner==='soviet'&&u.printedCombatStrength===8), defender=units.find(u=>u.owner==='german'&&u.printedCombatStrength===12), concealed=units.find(u=>u.owner==='soviet'&&u.strengthStatus==='untried');
+A.ok(attacker&&defender&&concealed);
+const board=require('../core/movement_binding').build(map,profile).board;
+const edge=board.edges.find(e=>!e.river&&!e.majorRiver&&!e.impassable&&board.cells[e.b].terrain==='open'&&board.cells[e.a].terrain==='open'&&!(map.cells.find(c=>c.id===e.a).tileMarkers||[]).length&&!map.cells.find(c=>c.id===e.b).city&&!combatPolicy.firstTurnTerritorialRestriction.targetHexes.includes(e.b));
+const cursor={...ctx.cursor,turn:3,index:config.phases.findIndex(p=>p.id==='soviet-combat')};
+const Threat=require('../core/historical_threat_assessment');
+let n=0;const eq=(a,b,m)=>{A.deepEqual(a,b,m);n++};
+const Binding=require('../core/movement_binding'), M=require('../core/movement_rules');
+const c={...ctx,actor:'soviet',cursor,state:{...structuredClone(Campaign.create(ctx).snapshot().state),units:{[attacker.id]:{...attacker,hex:edge.a},[defender.id]:{...defender,hex:edge.b}}}};
+const session=Campaign.create(c),snap=session.snapshot(),before=session.save(), t=Threat.create(c);
+const args={state:snap.state,cursor:snap.cursor,owner:'soviet',hex:edge.a};
+const w=t.withdrawal(args);eq(w.opportunity.phase,'soviet-movement');eq(w.opportunity.cursor.turn,3);eq(w.units.length,1);eq(w.jointEscape,null);eq(w.survivalRisk,null);
+const binding=Binding.build(map,profile),phase={kind:'movement',owner:'soviet'};
+const mc=Binding.context(binding,phase,snap.state.units,3,snap.state.territory);
+const expected=Binding.legalRoutes(binding,phase,snap.state.units,3,attacker.id,{territory:snap.state.territory}).reachable();
+eq(w.units[0].routes.map(r=>r.destination),expected.map(r=>r.id));
+A.ok(expected.length>0);n++;
+for(const r of w.units[0].routes){eq(Binding.move(binding,phase,snap.state.units,3,{unitId:attacker.id,path:r.path},snap.state.territory).ok,true);eq(r.outsideCurrentEnemyZOC,!M.enemyZOC(mc,r.destination,'soviet'));}
+eq(w.units[0].hasOutsideCurrentEnemyZOC,w.units[0].routes.some(r=>r.outsideCurrentEnemyZOC));
+const end=t.withdrawal({...args,cursor:{...snap.cursor,turn:7,index:config.phases.findIndex(p=>p.id==='soviet-movement')}});eq(end.opportunity,null);eq(end.units,[]);
+const after=t.withdrawal({...args,cursor:{...snap.cursor,index:config.phases.findIndex(p=>p.id==='soviet-movement')}});eq(after.opportunity,null);
+const capped=t.withdrawal({...args,maxStates:1});eq(capped.units[0].truncated,true);eq(capped.units[0].hasOutsideCurrentEnemyZOC,null);
+// A stationary encirclement: every traversable neighbor is enemy occupied.
+const neighbors=board.edges.filter(e=>(e.a===edge.a||e.b===edge.a)&&e.verified&&!e.impassable&&!e.lake&&!e.allSea).map(e=>e.a===edge.a?e.b:e.a);
+const enemies=units.filter(u=>u.owner==='german').slice(0,neighbors.length);
+const blocked={...snap.state,units:Object.fromEntries([{...attacker,hex:edge.a},...enemies.map((u,i)=>({...u,hex:neighbors[i]}))].map(u=>[u.id,u]))};
+const b=t.withdrawal({...args,state:blocked});eq(b.units[0].routes,[]);eq(b.units[0].hasOutsideCurrentEnemyZOC,false);eq(b.units[0].truncated,false);eq(b.survivalRisk,null);
+const special=t.withdrawal({...args,cursor:{...snap.cursor,index:config.phases.findIndex(p=>p.id==='soviet-buildup')}});eq(special.opportunity.kind,'special-movement');eq(special.units[0].routes,[]);eq(special.units[0].hasOutsideCurrentEnemyZOC,false);
+const opts=Catalog.discover({session,context:c,enumerateCombinedPlans:false});
+const diag=Auto.screenBattles({snapshot:snap,context:c,proposals:opts.proposals,utilityPilot:true,withdrawalDiagnostics:true});eq(diag.threats[0].withdrawal,w);eq(session.save(),before);
+console.log('PASS withdrawal diagnostics',n,'assertions');

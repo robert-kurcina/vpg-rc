@@ -1,0 +1,102 @@
+{
+  "checkpoint": 189,
+  "version": "v423",
+  "checks": [
+    {
+      "game": "arduous",
+      "device": "ipad-portrait",
+      "mapViewport": {
+        "client": 820,
+        "scroll": 1230,
+        "overflow": "auto",
+        "height": 1132,
+        "contentHeight": 1132
+      },
+      "zoomFitWidth": 820,
+      "zoomInWidth": 1435,
+      "pageErrors": [],
+      "settingsTouch": true,
+      "mouseDragUnaffected": true
+    },
+    {
+      "game": "leningrad",
+      "device": "ipad-portrait",
+      "mapViewport": {
+        "client": 820,
+        "scroll": 1230,
+        "overflow": "auto",
+        "height": 1132,
+        "contentHeight": 1132
+      },
+      "zoomFitWidth": 820,
+      "zoomInWidth": 1435,
+      "pageErrors": [],
+      "settingsTouch": true,
+      "mouseDragUnaffected": true
+    },
+    {
+      "game": "battle-for-moscow",
+      "device": "ipad-portrait",
+      "mapViewport": {
+        "client": 820,
+        "scroll": 1230,
+        "overflow": "auto",
+        "height": 1132,
+        "contentHeight": 1132
+      },
+      "zoomFitWidth": 820,
+      "zoomInWidth": 1435,
+      "pageErrors": [],
+      "settingsTouch": true,
+      "mouseDragUnaffected": true
+    },
+    {
+      "game": "arduous",
+      "device": "ipad-landscape",
+      "mapViewport": {
+        "client": 1180,
+        "scroll": 1770,
+        "overflow": "auto",
+        "height": 772,
+        "contentHeight": 1168
+      },
+      "zoomFitWidth": 1180,
+      "zoomInWidth": 2065,
+      "pageErrors": [],
+      "settingsTouch": true,
+      "mouseDragUnaffected": true
+    },
+    {
+      "game": "leningrad",
+      "device": "ipad-landscape",
+      "mapViewport": {
+        "client": 1180,
+        "scroll": 1770,
+        "overflow": "auto",
+        "height": 772,
+        "contentHeight": 1160
+      },
+      "zoomFitWidth": 1180,
+      "zoomInWidth": 2065,
+      "pageErrors": [],
+      "settingsTouch": true,
+      "mouseDragUnaffected": true
+    },
+    {
+      "game": "battle-for-moscow",
+      "device": "ipad-landscape",
+      "mapViewport": {
+        "client": 1180,
+        "scroll": 1770,
+        "overflow": "auto",
+        "height": 772,
+        "contentHeight": 1287
+      },
+      "zoomFitWidth": 1180,
+      "zoomInWidth": 2065,
+      "pageErrors": [],
+      "settingsTouch": true,
+      "mouseDragUnaffected": true
+    }
+  ]
+}

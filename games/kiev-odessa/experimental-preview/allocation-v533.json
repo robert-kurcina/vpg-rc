@@ -1,0 +1,81 @@
+{
+  "germanReinforcementInfantry": [
+    "kiev-front-r01c07"
+  ],
+  "germanInitialPanzer": [
+    "kiev-front-r01c01",
+    "kiev-front-r01c02",
+    "kiev-front-r01c03"
+  ],
+  "germanPolandInfantry": [
+    "kiev-front-r01c04",
+    "kiev-front-r01c05",
+    "kiev-front-r01c06",
+    "kiev-front-r01c08",
+    "kiev-front-r02c01",
+    "kiev-front-r02c02",
+    "kiev-front-r02c03"
+  ],
+  "germanRomaniaInfantry": [
+    "kiev-front-r02c04",
+    "kiev-front-r02c05",
+    "kiev-front-r02c06"
+  ],
+  "romanianInitialArmy": [
+    "kiev-front-r02c08"
+  ],
+  "hungarianReinforcementInfantry": [
+    "kiev-front-r04c08"
+  ],
+  "slovakReinforcementInfantry": [
+    "kiev-front-r02c07"
+  ],
+  "italianReinforcementMotorized": [
+    "kiev-front-r04c01"
+  ],
+  "sovietFrontArmies": [
+    "kiev-front-r03c04",
+    "kiev-front-r03c05",
+    "kiev-front-r03c06",
+    "kiev-front-r03c07"
+  ],
+  "sovietFrontMechanized": [
+    "kiev-front-r04c02",
+    "kiev-front-r04c03",
+    "kiev-front-r05c01",
+    "kiev-front-r05c02",
+    "kiev-front-r05c03",
+    "kiev-front-r05c04"
+  ],
+  "sovietFixedArmies": [
+    "kiev-front-r03c08",
+    "kiev-front-r04c04"
+  ],
+  "sovietFixedMechanized": [
+    "kiev-front-r05c05",
+    "kiev-front-r05c06",
+    "kiev-front-r05c07",
+    "kiev-front-r05c08"
+  ],
+  "sovietReinforcementArmies": [
+    "kiev-front-r04c05",
+    "kiev-front-r04c06"
+  ],
+  "sovietReplacementOnlyArmy": [
+    "kiev-front-r04c07"
+  ],
+  "odessaCoastalArmy": [
+    "odessa-front-r01c02"
+  ],
+  "odessaSovietCavalry": [
+    "odessa-front-r01c03",
+    "odessa-front-r01c04"
+  ],
+  "odessaRomanianArmies": [
+    "odessa-front-r01c05",
+    "odessa-front-r01c06"
+  ],
+  "odessaRomanianCavalry": [
+    "odessa-front-r01c08"
+  ]
+}

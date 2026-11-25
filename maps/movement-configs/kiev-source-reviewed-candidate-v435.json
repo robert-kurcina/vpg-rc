@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "mapId": "kiev-native-draft-v231",
+  "authorizationStatus": "diagnostic-only-not-gameplay",
+  "sourceEvidenceMode": "definitive-city-layer-v1",
+  "edgeMode": "source-reviewed-v1",
+  "edgeLedgerSHA256": "e8a1e30d69d56ffa17dc322c7e278b1701b4518919e48f35945cce18039513b9",
+  "terrainStatuses": [
+    "definitive-user-svg-terrain-v428",
+    "source-typed-city-terrain-v429",
+    "user-adjudicated-terrain-v435"
+  ],
+  "railStatus": "definitive-svg-finite-hexside-v427",
+  "edgeSource": "kiev-odessa-main-svg-city-river-rail-v433",
+  "coverage": "165 SVG terrain hexes (149 base symbols (one user-reclassified) plus 16 city overlays), 442 physical edges, 93 rail, 72 river, 10 major river; diagnostic only; setup/campaign unavailable"
+}

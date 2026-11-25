@@ -1,0 +1,35 @@
+{
+  "checkpoint": 236,
+  "version": "v470",
+  "assertions": 57,
+  "initial": {
+    "romanian": 4,
+    "outside": 7,
+    "unreviewed": 154,
+    "sourcePositive": 4,
+    "sourceNegative": 7,
+    "manual": 0,
+    "total": 165,
+    "coverage": "incomplete-draft",
+    "gameplayAuthorized": false
+  },
+  "sourcePinnedRomania": [
+    "0709",
+    "0809",
+    "0910",
+    "1010"
+  ],
+  "sourcePinnedPoland": [
+    "0105",
+    "0203",
+    "0204",
+    "0301",
+    "0302",
+    "0303",
+    "0402"
+  ],
+  "unreviewed": 154,
+  "fullManualDraftStillGameplayAuthorized": false,
+  "productionStatus": "closed",
+  "scope": "read-only browser territory review; manually classified full-map drafts stay unapproved"
+}

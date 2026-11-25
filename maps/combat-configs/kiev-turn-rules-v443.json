@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "scenarioId": "kiev",
+  "status": "source-reviewed-original-deployment-eligibility-candidate-not-live",
+  "source": "references/rules/kiev-rules.pdf printed pages 5\u20136, \u00a7\u00a710.8\u201310.9",
+  "firstTurnCombatRestriction": {
+    "owner": "german",
+    "turn": 1,
+    "setupHexes": [
+      "0709",
+      "0809",
+      "0910",
+      "1010"
+    ],
+    "why": "Axis units setting up in Romania cannot attack in the opening Axis Combat phase. That phase precedes all Axis movement."
+  },
+  "attackerTurnMultipliers": [
+    {
+      "owner": "soviet",
+      "kind": "mechanized",
+      "turn": 1,
+      "multiplier": 2
+    },
+    {
+      "owner": "soviet",
+      "kind": "mechanized",
+      "turn": 2,
+      "multiplier": 1.5
+    }
+  ],
+  "notYetIntegrated": {
+    "sovietRomanianBorderAttacks": "Opening position lineage and generic territory restriction handler exist; Romania target hexes are not yet source-certified. Do not activate from the four initial Axis setup crosses.",
+    "fullCombatRuntime": "Kiev geographical candidate remains unpromoted. This rule fragment does not open the campaign gate."
+  },
+  "sourceSha256": "d55e8f0e567d1f8c7907c4fc8368954ec0e5fa8d6fe9e8e71c61acf9bb3c3756",
+  "firstTurnTerritorialOriginCandidate": {
+    "owner": "soviet",
+    "turn": 1,
+    "allowedOpeningHexes": [
+      "0708",
+      "0808",
+      "1110"
+    ],
+    "targetHexesStatus": "pending independent certification of full Romanian territory set",
+    "source": "references/rules/kiev-rules.pdf printed page 5 \u00a710.8",
+    "status": "not-enforced-in-Kiev-until-targets-certified"
+  }
+}

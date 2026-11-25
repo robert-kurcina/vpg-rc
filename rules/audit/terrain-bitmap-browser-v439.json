@@ -1,0 +1,15 @@
+{
+  "version": "v439",
+  "method": "real Chromium in-memory shared-engine render (localhost blocked by sandbox policy)",
+  "scene": "Objective: Kiev original source board",
+  "pageErrors": [],
+  "spriteCount": 0,
+  "imageCount": 7,
+  "appliedTerrainFills": [
+    "#dcd4c9ff",
+    "#727f61ff",
+    "#616f6fff"
+  ],
+  "variantPNGsDecoded": true,
+  "fullHTTPGameSmoke": "not-run-sandbox-localhost-blocked"
+}

@@ -1,0 +1,16 @@
+{
+  "checkpoint": 389,
+  "version": "v623",
+  "pilotAssertions": 74,
+  "continuationAssertions": 410,
+  "utilityArithmetic": 62,
+  "sharedCRT": 301,
+  "controllerAssertions": 16,
+  "total": 863,
+  "bundleModules": 61,
+  "limitations": [
+    "Synthetic actual-map combat transactions only, no full campaign or browser",
+    "Single attacker, known odds above 1:1, eight candidate cap",
+    "Stationary pressure only; no desperation authorization or strategic withdrawal execution"
+  ]
+}

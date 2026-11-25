@@ -1,0 +1,26 @@
+'use strict';
+const assert=require('node:assert/strict'),fs=require('fs'),path=require('path');
+const root=path.resolve(__dirname,'..'),T=require('../core/terrain_tiles'),P=require('../core/presentation'),C=require('../maps/composer');
+const board=C.compose(JSON.parse(fs.readFileSync(path.join(root,'maps/kiev.json'))),JSON.parse(fs.readFileSync(path.join(root,'maps/odessa-extension.json'))));
+const svg=T.svgMap(board,P.options('kiev-odessa',{id:'v296-shadow-test'}));
+const index=(s)=>{const n=svg.indexOf(s);assert(n>=0,s+' missing');return n;};
+assert(index('data-layer="open-terrain"')<index('data-layer="swamp-terrain"'));
+assert(index('data-layer="swamp-terrain"')<index('data-layer="city-hex-highlights"'));
+assert(index('data-layer="city-hex-highlights"')<index('data-layer="forest-shadow"'));
+assert(index('data-layer="forest-terrain"')<index('data-layer="forest-shadow"'));
+for(const layer of ['fortifications','rivers','water-bodies','cities'])assert(index('data-layer="'+layer+'"')<index('data-layer="forest-shadow"'));
+const clip=svg.match(/<clipPath id="hex-clip-v296-shadow-test-shadow-board-footprint"[\s\S]*?<\/clipPath>/);
+assert(clip,'missing board-footprint clip for forest shadow');
+assert.equal((clip[0].match(/<polygon /g)||[]).length,board.cells.length,'shadow clip must cover all actual hex cells');
+assert.match(svg,/class="forest-shadow-layer"[^>]*opacity="\.25"[^>]*clip-path="url\(#hex-clip-v296-shadow-test-shadow-board-footprint\)"/);
+assert.match(svg,/class="forest-shadow"[^>]*stroke-width="10"/);
+const f=board.cells.find(c=>c.terrain==='forest'||c.terrain==='woods');assert(f);
+const [x,y]=T.coord(f,board.geometry);
+// The shadow polygons must follow the exact 10px positive X/Y displacement.
+const shadow=svg.match(new RegExp('class="forest-shadow" data-shadow-hex="'+f.id+'" points="([^"]+)"'));
+assert(shadow); const shadowPoint=shadow[1].split(' ')[0].split(',').map(Number);
+const poly=svg.match(new RegExp('data-hex-id="'+f.id+'"[\\s\\S]*?class="terrain-fill"[^>]*points="([^"]+)"'));
+assert(poly); const basePoint=poly[1].split(' ')[0].split(',').map(Number);
+assert(Math.abs(shadowPoint[0]-(x+basePoint[0]+10))<.02);assert(Math.abs(shadowPoint[1]-(y+basePoint[1]+10))<.02);
+assert(svg.includes('fill="#20719f"'),'shared river fill missing');
+console.log('v296 forest shadow offset/clip/order and river palette pass');

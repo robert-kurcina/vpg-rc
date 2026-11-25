@@ -1,0 +1,15 @@
+const fs=require('fs'),assert=require('assert');
+const b=JSON.parse(fs.readFileSync('maps/leningrad.json','utf8'));
+const svg=fs.readFileSync('exports-v309/leningrad.svg','utf8');
+const count=re=>(svg.match(re)||[]).length;
+assert.strictEqual(b.sourceCoastRenderingMode,'registered-hexside-wavelets');
+assert.strictEqual(b.sourceLakeRenderingMode,'exact-source-paths');
+assert.strictEqual(b.waterRenderingMode,'hexside-wavelets');
+assert.strictEqual(b.authoredShoreHexsides.filter(x=>x.kind==='coast').length,47);
+assert.strictEqual(count(/class="water-shore-fringe registered-shore-fringe"[^>]*data-water-kind="coast"/g),47);
+assert.strictEqual(count(/class="source-authored-lake"/g),4);
+assert.strictEqual(count(/class="source-authored-coast"/g),0);
+for(const dir of ['N','SW','NW'])assert(svg.includes(`data-shore-cell="0208" data-shore-dir="${dir}" data-water-kind="coast"`));
+assert(!svg.includes('data-water-cell="2001"'));
+assert(svg.includes('0107'));
+console.log('PASS v309: 47 coast wavelets, four exact lakes, Liepāja faces 1/5/6, number 0107');

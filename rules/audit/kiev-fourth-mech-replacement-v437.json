@@ -1,0 +1,13 @@
+{
+  "checkpoint": 203,
+  "version": "v437",
+  "assertions": 24,
+  "feature": "source-excluded replacement: Soviet 4th Mechanized Corps",
+  "sourceRule": "references/rules/kiev-rules.pdf §12.0",
+  "ruleSha256": "d55e8f0e567d1f8c7907c4fc8368954ec0e5fa8d6fe9e8e71c61acf9bb3c3756",
+  "sourceCounterFace": "kiev-front-r04c02",
+  "concealedFront": "*",
+  "revealedIdentifier": "4",
+  "sourceStatus": "configured-for-Kiev-but-only-exercised-on-certified-board-synthetic-test",
+  "KievCampaignAuthorized": false
+}

@@ -1,0 +1,60 @@
+/* A gameplay-first page following the Oberlabs stage sequence.
+   NOT a pixel-perfect reproduction of third-party proprietary CSS. */
+body.ol-play-mode{background:#e5e2d9;color:#22272a;font-family:Arial,Helvetica,sans-serif}
+.ol-play-mode>header{display:none}
+#ol-top{height:56px;background:#303a43;color:#fff;display:flex;justify-content:space-between;align-items:center;padding:0 20px;gap:16px;border-bottom:3px solid #9a5e45}
+#ol-top .ol-brand{font-size:20px;font-weight:700;white-space:nowrap}
+#ol-top .ol-brand span{font-weight:400;font-size:12px;color:#d4d7d7;margin-left:12px}
+#ol-top .ol-topright{display:flex;align-items:center;gap:10px;min-width:0}
+#ol-status{font-size:12px;color:#e9e9e9;max-width:350px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.ol-play-mode button{font-family:Arial,Helvetica,sans-serif}
+#ol-top button,#ol-panel button{background:#f4f1e9;color:#252525;border:1px solid #a9a6a0;border-radius:3px;padding:7px 11px;font-size:12px;font-weight:600;cursor:pointer}
+#ol-top button:hover,#ol-panel button:hover:not(:disabled){background:#e0e7e5}
+.ol-play-mode main{height:calc(100vh - 56px);display:grid;grid-template-columns:minmax(0,1fr) 285px;background:#ddd8ce}
+.ol-play-mode .workspace{grid-column:1;grid-row:1;min-width:0;height:100%;border-right:1px solid #aaa;overflow:hidden}
+.ol-play-mode .workspace .toolbar{height:32px;min-height:32px;padding:3px 12px;background:#eef0ed;color:#2c3337;border-bottom:1px solid #a0a4a5;font-size:11px;gap:6px}
+.ol-play-mode .workspace .toolbar #scorebar{flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.ol-play-mode .workspace .toolbar .vector-mode{display:none}
+.ol-play-mode .workspace .toolbar button{background:white;color:#202020;border-color:#a8abad}
+.ol-play-mode .mapScroll{background:#eeeae1;flex:1;min-height:0}
+.ol-play-mode .bottom{display:none}
+#ol-research-drawer{display:none;position:fixed;top:56px;bottom:0;left:0;z-index:50;width:350px;max-width:90vw;box-shadow:5px 0 18px #0004;background:#192634;color:#fff;overflow-y:auto}
+.ol-research-open #ol-research-drawer{display:block}
+#ol-panel{grid-column:2;grid-row:1;background:#f9f7f1;color:#262b2e;overflow:auto;border-left:1px solid #b8b9b6;padding:0}
+.ol-panel-section{padding:15px 15px 13px;border-bottom:1px solid #c5c5c2}
+#ol-panel h2{font-size:15px;font-weight:700;margin:0 0 10px}
+.ol-eyebrow{font-size:10px;letter-spacing:.10em;color:#7d6560;font-weight:700}
+.ol-turn{font-size:20px;font-weight:700;margin-top:6px}
+.ol-phase{font-size:14px;font-weight:700;color:#8b3b2d;margin-top:4px}
+.ol-guidance{font-size:12px;line-height:1.45;color:#4a5053;margin:8px 0 2px}
+#ol-panel .options{max-height:33vh;overflow:auto;gap:5px;display:flex;flex-direction:column}
+#ol-panel .options .hint{color:#555}
+#ol-panel .options button{font-size:11px;text-align:left;white-space:normal;line-height:1.2}
+#ol-phase-buttons{display:grid;grid-template-columns:1fr 1fr;gap:7px;margin-top:9px}
+#ol-panel #phase{grid-column:1 / 3;background:#a1b7aa;border-color:#7d9989;font-weight:700}
+#ol-panel #auto{grid-column:1 / 3}
+#ol-panel button:disabled{opacity:.48;cursor:not-allowed}
+#ol-panel .ol-rules ol{padding-left:21px;font-size:12px;line-height:1.5;margin:0}
+#ol-panel .ol-rules p{font-size:11px;line-height:1.4;color:#60646b;margin:8px 0 0}
+#ol-panel #ol-stack-toggle{width:100%;text-align:left;background:#ecede9}
+#ol-stack-slot .stack-examples{display:none;background:#f9f7f1;color:#222;padding:9px 0;min-height:0;grid-template-columns:1fr;border:0}
+.ol-stacking-open #ol-stack-slot .stack-examples{display:grid}
+#ol-stack-slot .stack-example-row{grid-template-columns:1fr}
+#ol-stack-slot .stack-examples-intro strong{color:#333}
+#ol-stack-slot .stack-examples-intro span{color:#555}
+#ol-stack-slot .stack-example-card{background:#f1f1eb;border-color:#999;min-height:110px}
+#ol-stack-slot .stack-example-info{color:#222}
+#ol-stack-slot .stack-example-meta{color:#555}
+#ol-panel .ol-event .log{height:auto;max-height:130px;color:#555;font-size:11px}
+#ol-panel .ol-event .log div{border-color:#ddd}
+#ol-game-dialog,#ol-rules-dialog{background:#faf8f1;color:#252525;border:1px solid #898989;border-radius:5px;min-width:min(430px,90vw);max-width:560px;padding:24px;box-shadow:0 16px 45px #0006}
+#ol-game-dialog::backdrop,#ol-rules-dialog::backdrop{background:#0006}
+#ol-game-dialog h2,#ol-rules-dialog h2{font-size:21px}
+#ol-game-dialog p,#ol-rules-dialog p{font-size:13px;line-height:1.5}
+#ol-game-dialog .ol-mode-button{display:block;width:100%;margin:7px 0;background:#eff3f0;color:#252525;text-align:left;border:1px solid #999;border-radius:3px;padding:12px}
+#ol-game-dialog .ol-dialog-controls{text-align:right;margin-top:15px}
+#ol-game-dialog .ol-dialog-controls button,#ol-rules-dialog button{background:#e6e6e6;color:#222}
+#ol-rules-dialog .ol-dialog-header{display:flex;justify-content:space-between;gap:10px;align-items:center}
+#ol-rules-dialog a{color:#154878}
+@media(max-width:900px){.ol-play-mode main{grid-template-columns:minmax(0,1fr) 260px}#ol-top .ol-brand span{display:none}}
+@media(max-width:680px){.ol-play-mode main{display:flex;flex-direction:column;height:auto}.ol-play-mode .workspace{height:65vh}.ol-play-mode #ol-panel{max-height:65vh}.ol-play-mode #ol-top{padding:4px 8px}#ol-top .ol-brand{font-size:15px}#ol-status{display:none}}

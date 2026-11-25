@@ -1,0 +1,61 @@
+{
+  "points": [
+    {
+      "type": "control",
+      "cell": [
+        2,
+        2
+      ],
+      "points": 7
+    },
+    {
+      "type": "control",
+      "cell": [
+        1,
+        4
+      ],
+      "points": 2
+    },
+    {
+      "type": "control",
+      "cell": [
+        3,
+        1
+      ],
+      "points": 2
+    },
+    {
+      "type": "enemy-steps-lost",
+      "pointsPerStep": 1
+    }
+  ],
+  "victory": {
+    "mode": "priority-predicates",
+    "evaluation": "after-final-side",
+    "decisions": [
+      {
+        "if": {
+          "type": "controls",
+          "faction": "violet",
+          "cell": [
+            2,
+            2
+          ]
+        },
+        "winner": "violet"
+      },
+      {
+        "if": {
+          "type": "controls",
+          "faction": "amber",
+          "cell": [
+            2,
+            2
+          ]
+        },
+        "winner": "amber"
+      }
+    ],
+    "otherwise": "draw"
+  }
+}

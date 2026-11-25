@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "checkpoint": 121,
+  "source": {
+    "rulesPDF": "references/rules/leningrad-rules.pdf",
+    "rulesPDFSHA256": "74d332e052e735e2378027a06f95e9715392773f249561bf1c00cae08a2bbfa7",
+    "printedPages": [
+      2,
+      5
+    ],
+    "images": {
+      "front": {
+        "path": "assets/official-counters/source-sheets/counters-leningrad-front.jpg",
+        "sha256": "9de02c03808c7e983b9402edafc116e05146b9b6fb07b793a2e3229cc695c603"
+      },
+      "back": {
+        "path": "assets/official-counters/source-sheets/counters-leningrad-back.jpg",
+        "sha256": "f66739d885334f6bcedc307311b68a883175761a5929e990e264e0e3152e813e"
+      }
+    }
+  },
+  "readMethod": "PyMuPDF embedded-text extraction; original photograph sources for counter faces; no OCR, scan geometry inference, or canonical projection",
+  "verifiedRuleClauses": {
+    "page2": [
+      "untriedFour",
+      "frontlineArmies",
+      "frontlineStars",
+      "armyAdjacency",
+      "sixRemainingArmies",
+      "germanTurn4",
+      "germanInitial",
+      "germanFiveCrosses"
+    ],
+    "page5": [
+      "t3WMM",
+      "t4TwoGerman",
+      "t5Army",
+      "t6Air",
+      "t7Armies"
+    ]
+  },
+  "independentlyNumberedReserveHexes": [
+    "0107",
+    "0607",
+    "1305",
+    "1606",
+    "1701"
+  ],
+  "reserveHexAuthority": "rules PDF §6.0 step 3 (printed board identifiers only)",
+  "boardPixelAndRuntimeCellRegistrationStatus": "not certified; no conversion or gameplay activation",
+  "sourceBackedStartingInventory": {
+    "german_initial": {
+      "infantry": 7,
+      "panzer": 2
+    },
+    "german_turn4": {
+      "infantry_6_4": 2
+    },
+    "soviet_rear": {
+      "infantry_corps": 3,
+      "mechanized_corps_untried": 2
+    },
+    "soviet_frontline": {
+      "infantry_armies": 2,
+      "infantry_corps": 1,
+      "mechanized_corps_untried": 2
+    },
+    "soviet_turns_4_to_8": {
+      "infantry_armies": 6
+    },
+    "starting_total_ground": 19,
+    "later_ground_reinforcements": 9,
+    "total_ground_counters_including_workers_militia": 28
+  },
+  "counterFaceIdentityStatus": "source-sheet face labels only; assignment to setup hexes and reinforcement slots remains unverified",
+  "svgSourceTextLabelCount": 0,
+  "status": "source rules and inventory certified; runtime hex correspondence and final setup not certified"
+}

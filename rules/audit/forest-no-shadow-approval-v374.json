@@ -1,0 +1,35 @@
+{
+  "checkpoint": 140,
+  "version": "v374",
+  "userDecision": "Explicit acceptance of Checkpoint 139 / v373 shadow-free Forest rendering before this continued development turn",
+  "activeVisualBaseline": "v373 no-shadow",
+  "historicalApprovedLeningradBaseline": "v350 retained unchanged (not overwritten)",
+  "assetHashesSHA256": {
+    "battle-for-moscow": {
+      "png": "6305899525da4a453a4f2f1d13607b32913c65e86a5f8657b004701bfe4e0332",
+      "svg": "487a050a42cf41554886b0fcef85baf68e40354f784428623926f1a9354f4de1"
+    },
+    "arduous": {
+      "png": "e072d32beb8c34faf258e636dffbb42161ddb291524fc740292c0ddec5bc0108",
+      "svg": "0443d50a7f7bbe36c508cf9e32a18d20f765cad93588c4cbb65fdbd5db7eedf7"
+    },
+    "leningrad": {
+      "png": "a9f1886cd3c9d85bfe5238e82a79a613550b98170ff08967ff08f14e20690ed2",
+      "svg": "e45856f7d56b5acfecf7083b405b9465d1c21459d698ac65e9196f581f832925"
+    },
+    "kiev": {
+      "png": "b355b35fc0cd620c55f8c63cc61e4a7a2e96e9044c972f9a4e65b7a239b3a9ff",
+      "svg": "5f455d80d6d30eec822d898f41ec12c21fc03a7f4fd165ddd51fa2b7c28324a4"
+    },
+    "kiev-odessa": {
+      "png": "f7a84021dda8a796b8b04cfe018d15b6ad043e8a39e08ff7f0d7eccab721f71a",
+      "svg": "7cb5fafbb18babd2b4b2a5129e6802607dd4b0df8b07e46491319c07ecb9c71c"
+    }
+  },
+  "comparisonToV373Archive": {
+    "filesChecked": 29,
+    "unchanged": 29
+  },
+  "sharedRenderer": "core/terrain_tiles.js / HexTerrainTiles.svgMap",
+  "forestDropShadow": "absent in accepted baseline"
+}

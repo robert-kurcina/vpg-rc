@@ -1,0 +1,83 @@
+{
+  "status": "PASS",
+  "policy": {
+    "schemaVersion": 1,
+    "mode": "objective-guard-v1",
+    "maxPhases": 12,
+    "maxActions": 180,
+    "maxMovesPerPhase": 8,
+    "maxBattlesPerPhase": 2,
+    "maxReplacementsPerPhase": 8,
+    "minAttackOdds": 1
+  },
+  "reports": [
+    {
+      "variant": "standard",
+      "seed": 7,
+      "sideTurns": 14,
+      "actions": 260,
+      "counts": {
+        "declare-battle": 23,
+        "finish-phase": 55,
+        "resolve-pending": 23,
+        "move": 122,
+        "replacement": 36,
+        "place-reinforcement": 1
+      },
+      "odds": {
+        "1": 5,
+        "2": 7,
+        "3": 7,
+        "4": 2,
+        "6": 2
+      },
+      "outcomes": {
+        "DRL": 5,
+        "EX": 7,
+        "AL": 2,
+        "DR": 5,
+        "NE": 3,
+        "DE": 1
+      },
+      "restores": 14,
+      "winner": "soviet",
+      "stateHash": "623729ccfcd9a1941590321d263a9139531d40a986a377f622beb0a420066ad4",
+      "elapsedMs": 3730
+    },
+    {
+      "variant": "advanced",
+      "seed": 7,
+      "sideTurns": 14,
+      "actions": 281,
+      "counts": {
+        "declare-battle": 28,
+        "finish-phase": 55,
+        "resolve-pending": 28,
+        "move": 131,
+        "replacement": 38,
+        "place-reinforcement": 1
+      },
+      "odds": {
+        "1": 4,
+        "2": 11,
+        "3": 4,
+        "4": 4,
+        "6": 1,
+        "1.5": 4
+      },
+      "outcomes": {
+        "DE": 1,
+        "EX": 11,
+        "DR": 6,
+        "NE": 5,
+        "AL": 1,
+        "DRL": 4
+      },
+      "restores": 14,
+      "winner": "soviet",
+      "stateHash": "8f752415a1a64bea8bc770dc20f5e6a93421016b5451d2cdf53b6d47d874765a",
+      "elapsedMs": 3578
+    }
+  ],
+  "repeatRuns": 2
+}

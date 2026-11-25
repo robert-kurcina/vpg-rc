@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "checkpoint": 175,
+  "version": "v409",
+  "newDefault": "games/battle-for-moscow/index.html",
+  "redirectsTo": "native-preview/index.html",
+  "productionMetadataEngine": "generic-hex-v1",
+  "legacyLaunchLinks": 0,
+  "catalogUsesAnchor": true,
+  "mechanicsLabNoLongerAutostarts": true,
+  "nativeBrowserRendered": true,
+  "sharedSvgRendered": true,
+  "officialCounterNodes": 36,
+  "initialSide": "german",
+  "sessionHashBefore": "254bb489326e3963a7bee20becf11538fc54f668ecafead61fd4fc5f07bc32bc",
+  "phaseAdvances": true,
+  "undoRestores": true,
+  "chromiumErrors": [],
+  "screenshot": "rules/audit/visual/b4m-default-shared-native-v409.png",
+  "limitation": "Navigation URL cannot be followed in this environment (localhost HTTP blocked); exact link and redirect wiring verified statically, shared-native gameplay DOM executed in Chromium with actual project assets."
+}

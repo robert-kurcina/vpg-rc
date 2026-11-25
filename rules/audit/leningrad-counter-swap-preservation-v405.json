@@ -1,0 +1,48 @@
+{
+  "checkpoint": 171,
+  "version": "v405",
+  "baselineArchive": "hex_wargame_v404_CHECKPOINT_170_LENINGRAD_PLAYER_DEPLOYMENT(1).zip",
+  "totalOriginalFiles": 941,
+  "preservedOriginalFiles": 933,
+  "changedOriginalFiles": [
+    "PACKAGE_MANIFEST.json",
+    "PLAN.md",
+    "README.md",
+    "UPDATE.md",
+    "core/historical_browser_app.js",
+    "games/leningrad/native-preview/index.html",
+    "games/leningrad/native-preview/style.css",
+    "tests/leningrad-deployment-browser-v404.py"
+  ],
+  "removedOriginalFiles": [],
+  "protectedSourceBytesUnchanged": true,
+  "protectedSourceFilesCompared": 187,
+  "selectedProtectedSha256": {
+    "exports/battle-for-moscow.svg": "487a050a42cf41554886b0fcef85baf68e40354f784428623926f1a9354f4de1",
+    "exports/arduous.svg": "0443d50a7f7bbe36c508cf9e32a18d20f765cad93588c4cbb65fdbd5db7eedf7",
+    "exports/leningrad.svg": "e45856f7d56b5acfecf7083b405b9465d1c21459d698ac65e9196f581f832925",
+    "exports/kiev.svg": "5f455d80d6d30eec822d898f41ec12c21fc03a7f4fd165ddd51fa2b7c28324a4",
+    "exports/kiev-odessa.svg": "7cb5fafbb18babd2b4b2a5129e6802607dd4b0df8b07e46491319c07ecb9c71c",
+    "core/historical_crt.js": "6a43c47ae52c6c110728403fd680406ba99d8e67bd14f234cb82f38c703b22e6",
+    "core/historical_deployment_session.js": "10bcb9916da2583b45120a31da466fd2e3cb936ab2d3512668e6a4c02ad0144d",
+    "core/historical_engine_browser_bundle.js": "699cfda5bdbb60511e07ebaecc62a057ae07047d1990823456eda936b458331e"
+  },
+  "noScenarioSpecificRulesOrMapChanges": true,
+  "presentationChangesOnly": [
+    "core/historical_browser_app.js",
+    "games/leningrad/native-preview/index.html",
+    "games/leningrad/native-preview/style.css"
+  ],
+  "existingRegressionAdjusted": "tests/leningrad-deployment-browser-v404.py now tests zero dropdowns, and counts only map counters",
+  "sourceCodeRendererMapsCounterTemplatesCRTAndCampaignEngine": "byte-identical to v404",
+  "qualification": "All five release certifications and Oberlabs UX parity remain open. Local concealment is presentation only.",
+  "addedFiles": [
+    "core/HISTORICAL_DEPLOYMENT_UI.md",
+    "rules/audit/leningrad-counter-swap-browser-v405.json",
+    "rules/audit/leningrad-counter-swap-preservation-v405.json",
+    "rules/audit/leningrad-counter-swap-regressions-v405.json",
+    "rules/audit/visual/leningrad-counter-swap-v405.png",
+    "scripts/package-checkpoint171.py",
+    "tests/leningrad-counter-swap-browser-v405.py"
+  ]
+}

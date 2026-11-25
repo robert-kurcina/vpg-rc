@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "scenarioId": "kiev-odessa",
+  "status": "source-face-identity-binding-candidate-not-gameplay-authorized",
+  "authority": {
+    "odessaRule": "Odessa \u00a76.0(3),(4),(7)",
+    "kievInventory": "maps/setup/kiev-inventory.json",
+    "kievCounterConfig": "maps/counter-configs/kiev.json",
+    "odessaOverlay": "maps/roster-overlays/kiev-odessa.json",
+    "odessaCounterConfig": "maps/counter-configs/odessa-extension.json"
+  },
+  "inheritedRomanian": {
+    "group": "romanianInitialArmy",
+    "expectedFrontFaceId": "kiev-front-r02c08",
+    "expectedBackFaceId": "kiev-back-r02c01",
+    "printedIdentifier": "Rom 3",
+    "printedValues": "6-4"
+  },
+  "inheritedGermanRomania": {
+    "group": "germanRomaniaInfantry",
+    "expectedCount": 3,
+    "faceSelection": "player-selected-from-original-kiev-infantry-pool-not-fixed-by-odessa-rulebook"
+  },
+  "newRomanianGroundDesignKeys": [
+    "romanian-home-army",
+    "romanian-4th-army",
+    "romanian-cavalry-corps"
+  ],
+  "sourceDefinedRearMechanized": {
+    "hex": "1309",
+    "expectedMarker": "fixedMechanized",
+    "authority": "Odessa \u00a76.0(3) and original Kiev map marker",
+    "combinedSvgConflict": "Combined SVG displays fixedMechanized in 0706 and no fixedMechanized in 1309; do not alter artwork as a side effect of setup classification"
+  },
+  "artworkPolicy": "audit-only-no-map-edit",
+  "historicalSetupAuthorized": false,
+  "newRomanianGroundSourceFaces": {
+    "romanian-home-army": "odessa-front-r01c05",
+    "romanian-4th-army": "odessa-front-r01c06",
+    "romanian-cavalry-corps": "odessa-back-r01c01"
+  }
+}

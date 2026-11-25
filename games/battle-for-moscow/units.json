@@ -1,0 +1,1347 @@
+{
+  "units": [
+    {
+      "id": "s1sh",
+      "pos": 0,
+      "army": "soviet",
+      "type": "shock",
+      "size": "XXXX",
+      "combatFull": 10,
+      "combatReduced": 5,
+      "movement": 4,
+      "strength": "full",
+      "counter": {
+        "template": "army-2",
+        "nato": "shock",
+        "name": "1Sh",
+        "size": "XXXX",
+        "colors": {
+          "primary": "#e74552",
+          "secondary": "#f8a198"
+        },
+        "faces": {
+          "full": {
+            "color": "#e74552"
+          },
+          "damaged": {
+            "color": "#f8a198"
+          }
+        },
+        "sourceFaces": {
+          "front": "b4m-front-r03c08",
+          "back": "b4m-back-r03c01"
+        }
+      }
+    },
+    {
+      "id": "s3",
+      "pos": 1,
+      "army": "soviet",
+      "type": "infantry",
+      "size": "XXXX",
+      "combatFull": 8,
+      "combatReduced": 4,
+      "movement": 4,
+      "strength": "reduced",
+      "position": {
+        "x": 2,
+        "y": 0
+      },
+      "counter": {
+        "template": "army-2",
+        "nato": "infantry",
+        "name": "3",
+        "size": "XXXX",
+        "colors": {
+          "primary": "#e74552",
+          "secondary": "#f8a198"
+        },
+        "faces": {
+          "full": {
+            "color": "#e74552"
+          },
+          "damaged": {
+            "color": "#f8a198"
+          }
+        },
+        "sourceFaces": {
+          "front": "b4m-front-r04c01",
+          "back": "b4m-back-r04c08"
+        }
+      }
+    },
+    {
+      "id": "s5",
+      "pos": 2,
+      "army": "soviet",
+      "type": "infantry",
+      "size": "XXXX",
+      "combatFull": 8,
+      "combatReduced": 4,
+      "movement": 4,
+      "strength": "reduced",
+      "position": {
+        "x": 2,
+        "y": 1
+      },
+      "counter": {
+        "template": "army-2",
+        "nato": "infantry",
+        "name": "5",
+        "size": "XXXX",
+        "colors": {
+          "primary": "#e74552",
+          "secondary": "#f8a198"
+        },
+        "faces": {
+          "full": {
+            "color": "#e74552"
+          },
+          "damaged": {
+            "color": "#f8a198"
+          }
+        },
+        "sourceFaces": {
+          "front": "b4m-front-r04c02",
+          "back": "b4m-back-r04c07"
+        }
+      }
+    },
+    {
+      "id": "s10",
+      "pos": 3,
+      "army": "soviet",
+      "type": "infantry",
+      "size": "XXXX",
+      "combatFull": 8,
+      "combatReduced": 4,
+      "movement": 4,
+      "strength": "reduced",
+      "position": {
+        "x": 2,
+        "y": 2
+      },
+      "counter": {
+        "template": "army-2",
+        "nato": "infantry",
+        "name": "10",
+        "size": "XXXX",
+        "colors": {
+          "primary": "#e74552",
+          "secondary": "#f8a198"
+        },
+        "faces": {
+          "full": {
+            "color": "#e74552"
+          },
+          "damaged": {
+            "color": "#f8a198"
+          }
+        },
+        "sourceFaces": {
+          "front": "b4m-front-r04c03",
+          "back": "b4m-back-r04c06"
+        }
+      }
+    },
+    {
+      "id": "s13",
+      "pos": 4,
+      "army": "soviet",
+      "type": "infantry",
+      "size": "XXXX",
+      "combatFull": 8,
+      "combatReduced": 4,
+      "movement": 4,
+      "strength": "reduced",
+      "position": {
+        "x": 2,
+        "y": 3
+      },
+      "counter": {
+        "template": "army-2",
+        "nato": "infantry",
+        "name": "13",
+        "size": "XXXX",
+        "colors": {
+          "primary": "#e74552",
+          "secondary": "#f8a198"
+        },
+        "faces": {
+          "full": {
+            "color": "#e74552"
+          },
+          "damaged": {
+            "color": "#f8a198"
+          }
+        },
+        "sourceFaces": {
+          "front": "b4m-front-r04c04",
+          "back": "b4m-back-r04c05"
+        }
+      }
+    },
+    {
+      "id": "s16",
+      "pos": 5,
+      "army": "soviet",
+      "type": "infantry",
+      "size": "XXXX",
+      "combatFull": 8,
+      "combatReduced": 4,
+      "movement": 4,
+      "strength": "reduced",
+      "position": {
+        "x": 4,
+        "y": 2
+      },
+      "counter": {
+        "template": "army-2",
+        "nato": "infantry",
+        "name": "16",
+        "size": "XXXX",
+        "colors": {
+          "primary": "#e74552",
+          "secondary": "#f8a198"
+        },
+        "faces": {
+          "full": {
+            "color": "#e74552"
+          },
+          "damaged": {
+            "color": "#f8a198"
+          }
+        },
+        "sourceFaces": {
+          "front": "b4m-front-r04c05",
+          "back": "b4m-back-r04c04"
+        }
+      }
+    },
+    {
+      "id": "s19",
+      "pos": 6,
+      "army": "soviet",
+      "type": "infantry",
+      "size": "XXXX",
+      "combatFull": 8,
+      "combatReduced": 4,
+      "movement": 4,
+      "strength": "reduced",
+      "position": {
+        "x": 3,
+        "y": 5
+      },
+      "counter": {
+        "template": "army-2",
+        "nato": "infantry",
+        "name": "19",
+        "size": "XXXX",
+        "colors": {
+          "primary": "#e74552",
+          "secondary": "#f8a198"
+        },
+        "faces": {
+          "full": {
+            "color": "#e74552"
+          },
+          "damaged": {
+            "color": "#f8a198"
+          }
+        },
+        "sourceFaces": {
+          "front": "b4m-front-r04c06",
+          "back": "b4m-back-r04c03"
+        }
+      }
+    },
+    {
+      "id": "s20",
+      "pos": 7,
+      "army": "soviet",
+      "type": "infantry",
+      "size": "XXXX",
+      "combatFull": 8,
+      "combatReduced": 4,
+      "movement": 4,
+      "strength": "reduced",
+      "position": {
+        "x": 4,
+        "y": 5
+      },
+      "counter": {
+        "template": "army-2",
+        "nato": "infantry",
+        "name": "20",
+        "size": "XXXX",
+        "colors": {
+          "primary": "#e74552",
+          "secondary": "#f8a198"
+        },
+        "faces": {
+          "full": {
+            "color": "#e74552"
+          },
+          "damaged": {
+            "color": "#f8a198"
+          }
+        },
+        "sourceFaces": {
+          "front": "b4m-front-r04c07",
+          "back": "b4m-back-r04c02"
+        }
+      }
+    },
+    {
+      "id": "s24",
+      "pos": 8,
+      "army": "soviet",
+      "type": "infantry",
+      "size": "XXXX",
+      "combatFull": 8,
+      "combatReduced": 4,
+      "movement": 4,
+      "strength": "reduced",
+      "position": {
+        "x": 4,
+        "y": 6
+      },
+      "counter": {
+        "template": "army-2",
+        "nato": "infantry",
+        "name": "24",
+        "size": "XXXX",
+        "colors": {
+          "primary": "#e74552",
+          "secondary": "#f8a198"
+        },
+        "faces": {
+          "full": {
+            "color": "#e74552"
+          },
+          "damaged": {
+            "color": "#f8a198"
+          }
+        },
+        "sourceFaces": {
+          "front": "b4m-front-r04c08",
+          "back": "b4m-back-r04c01"
+        }
+      }
+    },
+    {
+      "id": "s29",
+      "pos": 9,
+      "army": "soviet",
+      "type": "infantry",
+      "size": "XXXX",
+      "combatFull": 8,
+      "combatReduced": 4,
+      "movement": 4,
+      "strength": "reduced",
+      "position": {
+        "x": 4,
+        "y": 7
+      },
+      "counter": {
+        "template": "army-2",
+        "nato": "infantry",
+        "name": "29",
+        "size": "XXXX",
+        "colors": {
+          "primary": "#e74552",
+          "secondary": "#f8a198"
+        },
+        "faces": {
+          "full": {
+            "color": "#e74552"
+          },
+          "damaged": {
+            "color": "#f8a198"
+          }
+        },
+        "sourceFaces": {
+          "front": "b4m-front-r05c01",
+          "back": "b4m-back-r05c08"
+        }
+      }
+    },
+    {
+      "id": "s30",
+      "pos": 10,
+      "army": "soviet",
+      "type": "infantry",
+      "size": "XXXX",
+      "combatFull": 8,
+      "combatReduced": 4,
+      "movement": 4,
+      "strength": "reduced",
+      "position": {
+        "x": 5,
+        "y": 8
+      },
+      "counter": {
+        "template": "army-2",
+        "nato": "infantry",
+        "name": "30",
+        "size": "XXXX",
+        "colors": {
+          "primary": "#e74552",
+          "secondary": "#f8a198"
+        },
+        "faces": {
+          "full": {
+            "color": "#e74552"
+          },
+          "damaged": {
+            "color": "#f8a198"
+          }
+        },
+        "sourceFaces": {
+          "front": "b4m-front-r05c02",
+          "back": "b4m-back-r05c07"
+        }
+      }
+    },
+    {
+      "id": "s32",
+      "pos": 11,
+      "army": "soviet",
+      "type": "infantry",
+      "size": "XXXX",
+      "combatFull": 8,
+      "combatReduced": 4,
+      "movement": 4,
+      "strength": "reduced",
+      "position": {
+        "x": 4,
+        "y": 8
+      },
+      "counter": {
+        "template": "army-2",
+        "nato": "infantry",
+        "name": "32",
+        "size": "XXXX",
+        "colors": {
+          "primary": "#e74552",
+          "secondary": "#f8a198"
+        },
+        "faces": {
+          "full": {
+            "color": "#e74552"
+          },
+          "damaged": {
+            "color": "#f8a198"
+          }
+        },
+        "sourceFaces": {
+          "front": "b4m-front-r05c03",
+          "back": "b4m-back-r05c06"
+        }
+      }
+    },
+    {
+      "id": "s33",
+      "pos": 12,
+      "army": "soviet",
+      "type": "infantry",
+      "size": "XXXX",
+      "combatFull": 8,
+      "combatReduced": 4,
+      "movement": 4,
+      "strength": "reduced",
+      "position": {
+        "x": 4,
+        "y": 9
+      },
+      "counter": {
+        "template": "army-2",
+        "nato": "infantry",
+        "name": "33",
+        "size": "XXXX",
+        "colors": {
+          "primary": "#e74552",
+          "secondary": "#f8a198"
+        },
+        "faces": {
+          "full": {
+            "color": "#e74552"
+          },
+          "damaged": {
+            "color": "#f8a198"
+          }
+        },
+        "sourceFaces": {
+          "front": "b4m-front-r05c04",
+          "back": "b4m-back-r05c05"
+        }
+      }
+    },
+    {
+      "id": "s40",
+      "pos": 13,
+      "army": "soviet",
+      "type": "infantry",
+      "size": "XXXX",
+      "combatFull": 8,
+      "combatReduced": 4,
+      "movement": 4,
+      "strength": "reduced",
+      "position": {
+        "x": 4,
+        "y": 10
+      },
+      "counter": {
+        "template": "army-2",
+        "nato": "infantry",
+        "name": "40",
+        "size": "XXXX",
+        "colors": {
+          "primary": "#e74552",
+          "secondary": "#f8a198"
+        },
+        "faces": {
+          "full": {
+            "color": "#e74552"
+          },
+          "damaged": {
+            "color": "#f8a198"
+          }
+        },
+        "sourceFaces": {
+          "front": "b4m-front-r05c05",
+          "back": "b4m-back-r05c04"
+        }
+      }
+    },
+    {
+      "id": "s43",
+      "pos": 14,
+      "army": "soviet",
+      "type": "infantry",
+      "size": "XXXX",
+      "combatFull": 8,
+      "combatReduced": 4,
+      "movement": 4,
+      "strength": "reduced",
+      "position": {
+        "x": 7,
+        "y": 3
+      },
+      "counter": {
+        "template": "army-2",
+        "nato": "infantry",
+        "name": "43",
+        "size": "XXXX",
+        "colors": {
+          "primary": "#e74552",
+          "secondary": "#f8a198"
+        },
+        "faces": {
+          "full": {
+            "color": "#e74552"
+          },
+          "damaged": {
+            "color": "#f8a198"
+          }
+        },
+        "sourceFaces": {
+          "front": "b4m-front-r05c06",
+          "back": "b4m-back-r05c03"
+        }
+      }
+    },
+    {
+      "id": "s49",
+      "pos": 15,
+      "army": "soviet",
+      "type": "infantry",
+      "size": "XXXX",
+      "combatFull": 8,
+      "combatReduced": 4,
+      "movement": 4,
+      "strength": "reduced",
+      "counter": {
+        "template": "army-2",
+        "nato": "infantry",
+        "name": "49",
+        "size": "XXXX",
+        "colors": {
+          "primary": "#e74552",
+          "secondary": "#f8a198"
+        },
+        "faces": {
+          "full": {
+            "color": "#e74552"
+          },
+          "damaged": {
+            "color": "#f8a198"
+          }
+        },
+        "sourceFaces": {
+          "front": "b4m-front-r05c07",
+          "back": "b4m-back-r05c02"
+        }
+      }
+    },
+    {
+      "id": "s50",
+      "pos": 16,
+      "army": "soviet",
+      "type": "infantry",
+      "size": "XXXX",
+      "combatFull": 8,
+      "combatReduced": 4,
+      "movement": 4,
+      "strength": "reduced",
+      "counter": {
+        "template": "army-2",
+        "nato": "infantry",
+        "name": "50",
+        "size": "XXXX",
+        "colors": {
+          "primary": "#e74552",
+          "secondary": "#f8a198"
+        },
+        "faces": {
+          "full": {
+            "color": "#e74552"
+          },
+          "damaged": {
+            "color": "#f8a198"
+          }
+        },
+        "sourceFaces": {
+          "front": "b4m-front-r05c08",
+          "back": "b4m-back-r05c01"
+        }
+      }
+    },
+    {
+      "id": "g24",
+      "pos": 0,
+      "army": "german",
+      "type": "tank",
+      "size": "XXX",
+      "combatFull": 12,
+      "combatReduced": 6,
+      "movement": 6,
+      "strength": "full",
+      "counter": {
+        "template": "army-2",
+        "nato": "armor",
+        "name": "24",
+        "size": "XXX",
+        "colors": {
+          "primary": "#8ba195",
+          "secondary": "#ccdcd2"
+        },
+        "faces": {
+          "full": {
+            "color": "#8ba195"
+          },
+          "damaged": {
+            "color": "#ccdcd2"
+          }
+        },
+        "sourceFaces": {
+          "front": "b4m-front-r01c01",
+          "back": "b4m-back-r01c08"
+        }
+      }
+    },
+    {
+      "id": "g41",
+      "pos": 1,
+      "army": "german",
+      "type": "tank",
+      "size": "XXX",
+      "combatFull": 12,
+      "combatReduced": 6,
+      "movement": 6,
+      "strength": "full",
+      "counter": {
+        "template": "army-2",
+        "nato": "armor",
+        "name": "41",
+        "size": "XXX",
+        "colors": {
+          "primary": "#8ba195",
+          "secondary": "#ccdcd2"
+        },
+        "faces": {
+          "full": {
+            "color": "#8ba195"
+          },
+          "damaged": {
+            "color": "#ccdcd2"
+          }
+        },
+        "sourceFaces": {
+          "front": "b4m-front-r01c02",
+          "back": "b4m-back-r01c07"
+        }
+      }
+    },
+    {
+      "id": "g57",
+      "pos": 2,
+      "army": "german",
+      "type": "tank",
+      "size": "XXX",
+      "combatFull": 12,
+      "combatReduced": 6,
+      "movement": 6,
+      "strength": "full",
+      "counter": {
+        "template": "army-2",
+        "nato": "armor",
+        "name": "57",
+        "size": "XXX",
+        "colors": {
+          "primary": "#8ba195",
+          "secondary": "#ccdcd2"
+        },
+        "faces": {
+          "full": {
+            "color": "#8ba195"
+          },
+          "damaged": {
+            "color": "#ccdcd2"
+          }
+        },
+        "sourceFaces": {
+          "front": "b4m-front-r01c03",
+          "back": "b4m-back-r01c06"
+        }
+      }
+    },
+    {
+      "id": "g46",
+      "pos": 3,
+      "army": "german",
+      "type": "tank",
+      "size": "XXX",
+      "combatFull": 10,
+      "combatReduced": 5,
+      "movement": 6,
+      "strength": "full",
+      "counter": {
+        "template": "army-2",
+        "nato": "armor",
+        "name": "46",
+        "size": "XXX",
+        "colors": {
+          "primary": "#8ba195",
+          "secondary": "#ccdcd2"
+        },
+        "faces": {
+          "full": {
+            "color": "#8ba195"
+          },
+          "damaged": {
+            "color": "#ccdcd2"
+          }
+        },
+        "sourceFaces": {
+          "front": "b4m-front-r01c04",
+          "back": "b4m-back-r01c05"
+        }
+      }
+    },
+    {
+      "id": "g47",
+      "pos": 4,
+      "army": "german",
+      "type": "tank",
+      "size": "XXX",
+      "combatFull": 9,
+      "combatReduced": 4,
+      "movement": 6,
+      "strength": "full",
+      "counter": {
+        "template": "army-2",
+        "nato": "armor",
+        "name": "47",
+        "size": "XXX",
+        "colors": {
+          "primary": "#8ba195",
+          "secondary": "#ccdcd2"
+        },
+        "faces": {
+          "full": {
+            "color": "#8ba195"
+          },
+          "damaged": {
+            "color": "#ccdcd2"
+          }
+        },
+        "sourceFaces": {
+          "front": "b4m-front-r01c05",
+          "back": "b4m-back-r01c04"
+        }
+      }
+    },
+    {
+      "id": "g56",
+      "pos": 5,
+      "army": "german",
+      "type": "tank",
+      "size": "XXX",
+      "combatFull": 9,
+      "combatReduced": 4,
+      "movement": 6,
+      "strength": "full",
+      "counter": {
+        "template": "army-2",
+        "nato": "armor",
+        "name": "56",
+        "size": "XXX",
+        "colors": {
+          "primary": "#8ba195",
+          "secondary": "#ccdcd2"
+        },
+        "faces": {
+          "full": {
+            "color": "#8ba195"
+          },
+          "damaged": {
+            "color": "#ccdcd2"
+          }
+        },
+        "sourceFaces": {
+          "front": "b4m-front-r01c06",
+          "back": "b4m-back-r01c03"
+        }
+      }
+    },
+    {
+      "id": "g40",
+      "pos": 6,
+      "army": "german",
+      "type": "tank",
+      "size": "XXX",
+      "combatFull": 8,
+      "combatReduced": 4,
+      "movement": 6,
+      "strength": "full",
+      "counter": {
+        "template": "army-2",
+        "nato": "armor",
+        "name": "40",
+        "size": "XXX",
+        "colors": {
+          "primary": "#8ba195",
+          "secondary": "#ccdcd2"
+        },
+        "faces": {
+          "full": {
+            "color": "#8ba195"
+          },
+          "damaged": {
+            "color": "#ccdcd2"
+          }
+        },
+        "sourceFaces": {
+          "front": "b4m-front-r01c07",
+          "back": "b4m-back-r01c02"
+        }
+      }
+    },
+    {
+      "id": "g48",
+      "pos": 7,
+      "army": "german",
+      "type": "tank",
+      "size": "XXX",
+      "combatFull": 8,
+      "combatReduced": 4,
+      "movement": 6,
+      "strength": "full",
+      "counter": {
+        "template": "army-2",
+        "nato": "armor",
+        "name": "48",
+        "size": "XXX",
+        "colors": {
+          "primary": "#8ba195",
+          "secondary": "#ccdcd2"
+        },
+        "faces": {
+          "full": {
+            "color": "#8ba195"
+          },
+          "damaged": {
+            "color": "#ccdcd2"
+          }
+        },
+        "sourceFaces": {
+          "front": "b4m-front-r01c08",
+          "back": "b4m-back-r01c01"
+        }
+      }
+    },
+    {
+      "id": "g23",
+      "pos": 8,
+      "army": "german",
+      "type": "infantry",
+      "size": "XXX",
+      "combatFull": 8,
+      "combatReduced": 4,
+      "movement": 4,
+      "strength": "full",
+      "counter": {
+        "template": "army-2",
+        "nato": "infantry",
+        "name": "23",
+        "size": "XXX",
+        "colors": {
+          "primary": "#8ba195",
+          "secondary": "#ccdcd2"
+        },
+        "faces": {
+          "full": {
+            "color": "#8ba195"
+          },
+          "damaged": {
+            "color": "#ccdcd2"
+          }
+        },
+        "sourceFaces": {
+          "front": "b4m-front-r02c01",
+          "back": "b4m-back-r02c08"
+        }
+      }
+    },
+    {
+      "id": "g35",
+      "pos": 9,
+      "army": "german",
+      "type": "infantry",
+      "size": "XXX",
+      "combatFull": 8,
+      "combatReduced": 4,
+      "movement": 4,
+      "strength": "full",
+      "counter": {
+        "template": "army-2",
+        "nato": "infantry",
+        "name": "35",
+        "size": "XXX",
+        "colors": {
+          "primary": "#8ba195",
+          "secondary": "#ccdcd2"
+        },
+        "faces": {
+          "full": {
+            "color": "#8ba195"
+          },
+          "damaged": {
+            "color": "#ccdcd2"
+          }
+        },
+        "sourceFaces": {
+          "front": "b4m-front-r02c02",
+          "back": "b4m-back-r02c07"
+        }
+      }
+    },
+    {
+      "id": "g7",
+      "pos": 10,
+      "army": "german",
+      "type": "infantry",
+      "size": "XXX",
+      "combatFull": 7,
+      "combatReduced": 3,
+      "movement": 4,
+      "strength": "full",
+      "counter": {
+        "template": "army-2",
+        "nato": "infantry",
+        "name": "7",
+        "size": "XXX",
+        "colors": {
+          "primary": "#8ba195",
+          "secondary": "#ccdcd2"
+        },
+        "faces": {
+          "full": {
+            "color": "#8ba195"
+          },
+          "damaged": {
+            "color": "#ccdcd2"
+          }
+        },
+        "sourceFaces": {
+          "front": "b4m-front-r02c03",
+          "back": "b4m-back-r02c06"
+        }
+      }
+    },
+    {
+      "id": "g8",
+      "pos": 11,
+      "army": "german",
+      "type": "infantry",
+      "size": "XXX",
+      "combatFull": 7,
+      "combatReduced": 3,
+      "movement": 4,
+      "strength": "full",
+      "counter": {
+        "template": "army-2",
+        "nato": "infantry",
+        "name": "8",
+        "size": "XXX",
+        "colors": {
+          "primary": "#8ba195",
+          "secondary": "#ccdcd2"
+        },
+        "faces": {
+          "full": {
+            "color": "#8ba195"
+          },
+          "damaged": {
+            "color": "#ccdcd2"
+          }
+        },
+        "sourceFaces": {
+          "front": "b4m-front-r02c04",
+          "back": "b4m-back-r02c05"
+        }
+      }
+    },
+    {
+      "id": "g9",
+      "pos": 12,
+      "army": "german",
+      "type": "infantry",
+      "size": "XXX",
+      "combatFull": 7,
+      "combatReduced": 3,
+      "movement": 4,
+      "strength": "full",
+      "counter": {
+        "template": "army-2",
+        "nato": "infantry",
+        "name": "9",
+        "size": "XXX",
+        "colors": {
+          "primary": "#8ba195",
+          "secondary": "#ccdcd2"
+        },
+        "faces": {
+          "full": {
+            "color": "#8ba195"
+          },
+          "damaged": {
+            "color": "#ccdcd2"
+          }
+        },
+        "sourceFaces": {
+          "front": "b4m-front-r02c05",
+          "back": "b4m-back-r02c04"
+        }
+      }
+    },
+    {
+      "id": "g5",
+      "pos": 13,
+      "army": "german",
+      "type": "infantry",
+      "size": "XXX",
+      "combatFull": 6,
+      "combatReduced": 3,
+      "movement": 4,
+      "strength": "full",
+      "counter": {
+        "template": "army-2",
+        "nato": "infantry",
+        "name": "5",
+        "size": "XXX",
+        "colors": {
+          "primary": "#8ba195",
+          "secondary": "#ccdcd2"
+        },
+        "faces": {
+          "full": {
+            "color": "#8ba195"
+          },
+          "damaged": {
+            "color": "#ccdcd2"
+          }
+        },
+        "sourceFaces": {
+          "front": "b4m-front-r02c06",
+          "back": "b4m-back-r02c03"
+        }
+      }
+    },
+    {
+      "id": "g13",
+      "pos": 14,
+      "army": "german",
+      "type": "infantry",
+      "size": "XXX",
+      "combatFull": 6,
+      "combatReduced": 3,
+      "movement": 4,
+      "strength": "full",
+      "counter": {
+        "template": "army-2",
+        "nato": "infantry",
+        "name": "13",
+        "size": "XXX",
+        "colors": {
+          "primary": "#8ba195",
+          "secondary": "#ccdcd2"
+        },
+        "faces": {
+          "full": {
+            "color": "#8ba195"
+          },
+          "damaged": {
+            "color": "#ccdcd2"
+          }
+        },
+        "sourceFaces": {
+          "front": "b4m-front-r02c07",
+          "back": "b4m-back-r02c02"
+        }
+      }
+    },
+    {
+      "id": "g20",
+      "pos": 15,
+      "army": "german",
+      "type": "infantry",
+      "size": "XXX",
+      "combatFull": 6,
+      "combatReduced": 3,
+      "movement": 4,
+      "strength": "full",
+      "counter": {
+        "template": "army-2",
+        "nato": "infantry",
+        "name": "20",
+        "size": "XXX",
+        "colors": {
+          "primary": "#8ba195",
+          "secondary": "#ccdcd2"
+        },
+        "faces": {
+          "full": {
+            "color": "#8ba195"
+          },
+          "damaged": {
+            "color": "#ccdcd2"
+          }
+        },
+        "sourceFaces": {
+          "front": "b4m-front-r02c08",
+          "back": "b4m-back-r02c01"
+        }
+      }
+    },
+    {
+      "id": "g27",
+      "pos": 16,
+      "army": "german",
+      "type": "infantry",
+      "size": "XXX",
+      "combatFull": 6,
+      "combatReduced": 3,
+      "movement": 4,
+      "strength": "full",
+      "counter": {
+        "template": "army-2",
+        "nato": "infantry",
+        "name": "27",
+        "size": "XXX",
+        "colors": {
+          "primary": "#8ba195",
+          "secondary": "#ccdcd2"
+        },
+        "faces": {
+          "full": {
+            "color": "#8ba195"
+          },
+          "damaged": {
+            "color": "#ccdcd2"
+          }
+        },
+        "sourceFaces": {
+          "front": "b4m-front-r03c01",
+          "back": "b4m-back-r03c08"
+        }
+      }
+    },
+    {
+      "id": "g53",
+      "pos": 17,
+      "army": "german",
+      "type": "infantry",
+      "size": "XXX",
+      "combatFull": 6,
+      "combatReduced": 3,
+      "movement": 4,
+      "strength": "full",
+      "counter": {
+        "template": "army-2",
+        "nato": "infantry",
+        "name": "53",
+        "size": "XXX",
+        "colors": {
+          "primary": "#8ba195",
+          "secondary": "#ccdcd2"
+        },
+        "faces": {
+          "full": {
+            "color": "#8ba195"
+          },
+          "damaged": {
+            "color": "#ccdcd2"
+          }
+        },
+        "sourceFaces": {
+          "front": "b4m-front-r03c02",
+          "back": "b4m-back-r03c07"
+        }
+      }
+    },
+    {
+      "id": "g6",
+      "pos": 18,
+      "army": "german",
+      "type": "infantry",
+      "size": "XXX",
+      "combatFull": 5,
+      "combatReduced": 2,
+      "movement": 4,
+      "strength": "full",
+      "counter": {
+        "template": "army-2",
+        "nato": "infantry",
+        "name": "6",
+        "size": "XXX",
+        "colors": {
+          "primary": "#8ba195",
+          "secondary": "#ccdcd2"
+        },
+        "faces": {
+          "full": {
+            "color": "#8ba195"
+          },
+          "damaged": {
+            "color": "#ccdcd2"
+          }
+        },
+        "sourceFaces": {
+          "front": "b4m-front-r03c03",
+          "back": "b4m-back-r03c06"
+        }
+      }
+    },
+    {
+      "id": "g12",
+      "pos": 19,
+      "army": "german",
+      "type": "infantry",
+      "size": "XXX",
+      "combatFull": 5,
+      "combatReduced": 2,
+      "movement": 4,
+      "strength": "full",
+      "counter": {
+        "template": "army-2",
+        "nato": "infantry",
+        "name": "12",
+        "size": "XXX",
+        "colors": {
+          "primary": "#8ba195",
+          "secondary": "#ccdcd2"
+        },
+        "faces": {
+          "full": {
+            "color": "#8ba195"
+          },
+          "damaged": {
+            "color": "#ccdcd2"
+          }
+        },
+        "sourceFaces": {
+          "front": "b4m-front-r03c04",
+          "back": "b4m-back-r03c05"
+        }
+      }
+    },
+    {
+      "id": "g34",
+      "pos": 20,
+      "army": "german",
+      "type": "infantry",
+      "size": "XXX",
+      "combatFull": 4,
+      "combatReduced": 2,
+      "movement": 4,
+      "strength": "full",
+      "counter": {
+        "template": "army-2",
+        "nato": "infantry",
+        "name": "34",
+        "size": "XXX",
+        "colors": {
+          "primary": "#8ba195",
+          "secondary": "#ccdcd2"
+        },
+        "faces": {
+          "full": {
+            "color": "#8ba195"
+          },
+          "damaged": {
+            "color": "#ccdcd2"
+          }
+        },
+        "sourceFaces": {
+          "front": "b4m-front-r03c05",
+          "back": "b4m-back-r03c04"
+        }
+      }
+    },
+    {
+      "id": "g42",
+      "pos": 21,
+      "army": "german",
+      "type": "infantry",
+      "size": "XXX",
+      "combatFull": 4,
+      "combatReduced": 2,
+      "movement": 4,
+      "strength": "full",
+      "counter": {
+        "template": "army-2",
+        "nato": "infantry",
+        "name": "42",
+        "size": "XXX",
+        "colors": {
+          "primary": "#8ba195",
+          "secondary": "#ccdcd2"
+        },
+        "faces": {
+          "full": {
+            "color": "#8ba195"
+          },
+          "damaged": {
+            "color": "#ccdcd2"
+          }
+        },
+        "sourceFaces": {
+          "front": "b4m-front-r03c06",
+          "back": "b4m-back-r03c03"
+        }
+      }
+    }
+  ]
+}

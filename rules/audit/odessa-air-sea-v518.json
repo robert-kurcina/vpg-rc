@@ -1,0 +1,10 @@
+{
+  "checkpoint": 284,
+  "version": "v518",
+  "status": "PASS",
+  "assertions": 270,
+  "source": "odessa-rules.pdf §§10.5,11,15.5",
+  "scope": "exact three Air Corps, Fleet 1513, two-port policy, six die faces, air-sea versus ground exclusivity, Romanian REFIT, source roster, save clone",
+  "nonLive": true,
+  "limits": "No promotion of Kiev–Odessa movement graph or full campaign and no source-authorized campaign end-to-end claim"
+}

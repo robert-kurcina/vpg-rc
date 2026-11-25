@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" data-mission-id="battle-for-moscow"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Battle for Moscow — Shared Engine</title>
+<link rel="stylesheet" href="../../../core/native_browser_view.css"><link rel="stylesheet" href="../../../core/map_touch_navigation.css"><link rel="stylesheet" href="../../../core/responsive_game_shell.css">
+<link rel="stylesheet" href="../../../core/game_reference_dialog.css"><script src="../../../core/mission_storage.js"></script></head><body data-native-scenario="../" data-native-map="../../../maps/battle-for-moscow.json" data-native-registry="../../../maps/registry.json" data-native-profile="config.json" data-native-ai-profile="ai-config.json" data-native-ai-objective-profile="ai-config-objective.json" data-native-ai-capture-profile="ai-config-capture.json" data-native-project-root="../../../" data-native-ui-profile="ui-config.json">
+<header><div><h1>Battle for Moscow <span>Shared-engine gameplay</span></h1><p>Default Battle for Moscow game. Historical setup and Oberlabs UX certification gaps remain open; gameplay uses the common rules engine.</p></div><a class="back" href="../../../index.html">All games</a></header>
+<main><aside id="game-sidebar" aria-label="Gameplay controls"><div class="touch-map-links"><a href="#map-scroll">Return to map</a></div><div class="game-tab-strip" role="tablist" aria-label="Game panels"><button type="button" role="tab" data-game-tab="play" aria-selected="true">Play</button><button type="button" role="tab" data-game-tab="settings" aria-selected="false">Settings</button></div>
+ <section><h2>Game</h2>
+ <div class="actions"><button id="new-game">New game</button><button id="undo">Undo</button></div>
+ 
+ <label for="native-ai-assignment">Faction control</label> <select id="native-ai-assignment"><option value="manual">Human vs Human / manual AI</option><option value="german">AI Axis vs Human Soviet</option><option value="soviet">Human Axis vs AI Soviet</option><option value="both">AI vs AI</option></select>
+ <button id="native-ai-resume" disabled>Resume automatic play</button><p class="caption" id="native-ai-status">Manual handoff</p>
+ <div class="actions"><button id="ai-play-side" type="button">Play current side (selected AI)</button></div>
+ <p class="caption">All AI policies use shared legal actions. Objective-guard favors entering and holding controlled victory hexes; objective-advance also permits post-combat occupation of vacant objective hexes. These are experimental policies, not the Oberlabs strategic search. Each action is Undo-able.</p>
+ <div class="actions"><button id="save-game">Save JSON</button><label class="file-button">Load JSON<input type="file" id="load-game" accept="application/json" hidden></label></div>
+ <div id="game-status" role="status">Loading source package…</div><div id="phase-status" class="phase-status">—</div><p id="phase-guidance" class="phase-guidance" aria-live="polite"></p><div id="redeployment-evidence" class="redeployment-evidence" aria-live="polite" hidden></div>
+ <p id="city-summary-inline" class="city-summary" aria-live="polite"></p><details id="city-details" class="native-city-details"><summary>City ownership by hex (11 cities)</summary><div id="city-status"></div><p class="city-caption">Ownership follows the last entering ground counter, not current occupancy. * marks a currently configured victory predicate.</p></details>
+ </section>
+ <section id="settings-section" role="tabpanel" hidden><h2>Settings</h2>
+ <h3>New game configuration</h3>
+ <label for="seed">Seed <input type="number" id="seed" placeholder="Automatic" min="1" max="4294967295"></label>
+ <label class="check"><input type="checkbox" id="manual-setup"> Manual German setup</label>
+ <label class="check"><input type="checkbox" id="candidate-redeployment"> Candidate Soviet reserve redeployment (not tournament mode)</label>
+ <p class="caption">Changes to the setup options apply to the next new game.</p>
+ <h3>Stacking rules</h3>
+ <label>Stacking <select id="stacking-mode"><option value="historical">Historical — one combat unit per hex</option><option value="double">Experimental — two friendly combat units per hex</option></select></label>
+ <p class="caption">Applies only when starting a new game. The active campaign and its saves retain their rules.</p>
+ <h3>Victory conditions</h3>
+ <label>Victory <select id="victory-mode"><option value="historical">Historical</option><option value="graduated">Experimental — graduated territorial VP</option></select></label>
+ <p id="victory-criteria" class="caption"></p>
+ <h3>Combat Results Table</h3>
+ <label class="check"><input type="checkbox" id="advanced-crt"> Advanced CRT (1:2 and 3:2 odds)</label>
+ <p class="caption" id="crt-mode-note">Standard CRT is the default. This optional alternative uses the supplied eight-column chart, including its different results. Changes apply when starting a new game. Saves retain the selected ruleset.</p>
+ <h3>Computer opponent</h3>
+ <label>Axis strategy <select id="ai-strategy"><option value="baseline">Deterministic baseline</option><option value="objective">Defend held objectives (experimental)</option><option value="capture">Capture and hold objectives (experimental)</option></select></label>
+ <label>Soviet strategy <select id="ai-strategy-soviet"><option value="baseline">Deterministic baseline</option><option value="objective">Defend held objectives (experimental)</option><option value="capture">Capture and hold objectives (experimental)</option></select></label>
+  <label for="ai-difficulty">Axis difficulty</label> <select id="ai-difficulty"><option value="0">Strategy defaults (unchanged)</option><option value="1">Novice</option><option value="3">Standard</option><option value="8">Expert</option></select> <label for="ai-difficulty-soviet">Soviet difficulty</label> <select id="ai-difficulty-soviet"><option value="0">Strategy defaults (unchanged)</option><option value="1">Novice</option><option value="3">Standard</option><option value="8">Expert</option></select><p class="caption">Grades increase optional action budgets; competitive strength is not yet calibrated.</p>
+ <div id="settings-display"></div>
+ </section>
+ <section><h2>Orders</h2><p id="message" aria-live="polite">Select a counter or a legal action.</p>
+ <div id="unit-selection" class="unit-selection"></div>
+ <div id="options-panel"></div><div id="combat-target-controls" class="combat-target-controls"></div>
+ <div class="actions"><button id="finish-phase">Finish phase / lock battles</button><button id="remove-battle">Remove last declaration</button></div>
+ </section>
+ <section><h2>Combat resolution</h2><div id="battle-panel"></div><button id="resolve-battle">Resolve committed battle</button></section>
+ <section id="reference-section"><h2>Rules reference</h2><p class="caption">Active scenario configuration values; consult the original rulebook for complete explanations.</p><div class="reference-tabs" role="tablist" aria-label="Rule reference"><button type="button" role="tab" data-reference="sequence">Sequence of Play</button><button type="button" role="tab" data-reference="howto">How To</button><button type="button" role="tab" data-reference="terrain">Terrain Effects</button><button type="button" role="tab" data-reference="crt">Combat Results</button></div><div id="reference-content" role="tabpanel" aria-live="polite"></div></section><section><h2>History</h2><pre id="history"></pre></section>
+</aside>
+<section class="board-space" aria-label="Battle map"><div class="map-navigation" id="map-navigation" role="toolbar" aria-label="Map zoom controls"><button type="button" data-map-zoom="out" aria-label="Zoom map out">−</button><button type="button" data-map-zoom="fit">Fit</button><button type="button" data-map-zoom="in" aria-label="Zoom map in">+</button><output data-map-zoom-label aria-live="polite">100%</output></div><div class="map-scroll" id="map-scroll" role="region" tabindex="0" aria-label="Scrollable campaign map" aria-describedby="map-navigation-help"><div id="map" aria-label="Shared engine SVG map"></div></div><p class="map-navigation-help" id="map-navigation-help">Use two fingers to move the map. Tap a counter with one finger, then tap a destination. Use + and − to zoom; Fit shows the whole width. <a href="#game-sidebar">Go to controls</a>.</p><p class="caption">All terrain and unit art is rendered by the shared game engine and counter renderer. During combat, click a defender and choose the attackers; during movement, click a friendly counter and a legal destination.</p></section>
+</main>
+<script src="../../../core/modules.js"></script>
+<script src="../../../core/roster.js"></script>
+<script src="../../../core/historical_crt.js"></script>
+<script src="../../../core/graduated_mode.js"></script>
+<script src="../../../core/engine.js"></script>
+<script src="../../../core/native_preview_config.js"></script>
+<script src="../../../core/native_session_actions.js"></script>
+<script src="../../../core/sync_sha256.js"></script>
+<script src="../../../core/native_session_save.js"></script>
+<script src="../../../core/session.js"></script>
+<script src="../../../core/ai_difficulty.js"></script><script src="../../../core/native_session_ai.js"></script>
+<script src="../../../core/factions.js"></script>
+<script src="../../../core/presentation.js"></script>
+<script src="../../../core/terrain_tiles.js"></script>
+<script src="../../../core/official_counter_templates.js"></script>
+<script src="../../../core/counter_visuals.js"></script>
+<script src="../../../core/native_combat_ui.js"></script>
+<script src="../../../core/native_tournament_scoring.js"></script>
+<script src="../../../core/native_city_status.js"></script>
+<script src="../../../core/game_display_settings.js"></script>
+<script src="../../../core/map_touch_navigation.js"></script><script src="../../../core/responsive_game_shell.js"></script><script src="../../../core/terrain_tooltips.js"></script><script src="../../../core/counter_phase_activation.js"></script><script src="../../../core/player_save_config.js"></script><script src="../../../core/game_reference_dialog.js"></script><script src="../../../core/native_browser_view.js"></script>
+</body></html>

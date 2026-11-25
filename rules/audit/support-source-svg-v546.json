@@ -1,0 +1,36 @@
+{
+  "checkpoint": 312,
+  "version": "v546",
+  "baseline": "v545 Checkpoint 311",
+  "protectedFilesByteIdentical": 98,
+  "changedProtectedFiles": [],
+  "newRuntimeModule": "core/support_counter_vectors.js",
+  "sourceSVGTemplate": "assets/official-counters/source-counters.svg",
+  "oldPhotoImageFilesPreserved": 22,
+  "activeSupportBitmapImages": 0,
+  "changedExistingFiles": [
+    "PLAN.md",
+    "UPDATE.md",
+    "README.md",
+    "core/historical_browser_app.js",
+    "core/support_window.js",
+    "core/support_window.css",
+    "games/kiev/setup-preview/index.html",
+    "games/arduous/native-preview/index.html",
+    "games/leningrad/native-preview/index.html",
+    "games/kiev-odessa/experimental-preview/index.html",
+    "maps/counter-configs/odessa-extension.json",
+    "maps/counter-configs/kiev-odessa-experimental-v531.json",
+    "maps/counter-configs/leningrad.json"
+  ],
+  "addedFiles": [
+    "core/support_counter_vectors.js",
+    "tests/support-counter-vector-v546.test.js",
+    "tests/support-counter-vector-browser-v546.py",
+    "docs/engine/SHARED_SOURCE_VECTOR_SUPPORT_V546.md",
+    "rules/audit/visual/odessa-support-original-svg-browser-v546.png",
+    "rules/audit/visual/leningrad-support-original-svg-browser-v546.png",
+    "rules/audit/visual/odessa-support-original-svg-tablet-v546.png",
+    "rules/audit/visual/odessa-source-svg-support-browser-v546.png"
+  ]
+}

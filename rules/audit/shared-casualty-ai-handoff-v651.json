@@ -1,0 +1,59 @@
+{
+  "checkpoint": 418,
+  "version": "v651",
+  "baseline": "v650",
+  "exchange": {
+    "assertions": 24,
+    "sourceFaces": [
+      "leningrad-front-r04c07",
+      "Leningrad Soviet Army and reduced German Panzer selected from original inventory"
+    ],
+    "constructedPosition": true,
+    "distinctExtraLossChoices": 2,
+    "undoRestore": "exact",
+    "authority": "existing post-casualty prepare and committed campaign transaction",
+    "catalogueTrialLimit": 4096,
+    "limitations": "Distinct final extra-elimination sets, not every permutation or proof of completeness."
+  },
+  "handoff": {
+    "scenario": "leningrad",
+    "actions": 24,
+    "oldMs": 4180.779799,
+    "directMs": 1042.2393790000006,
+    "matchedPairs": 1,
+    "exactDecisionTrace": true,
+    "exactSaveAndJournal": true,
+    "undoRestoreContinuation": true,
+    "scope": "Node headless old browser handoff vs new direct gateway, excludes DOM rendering"
+  },
+  "tests": {
+    "kiev-exchange-exhaustion-v604": "pass",
+    "historical-postcasualty-retreat-v393": 155,
+    "historical-campaign-action-catalog-v390": 112,
+    "historical-human-decision-gateway-v401": 40,
+    "historical-autoplay-contract-v399": 16,
+    "mission-random-v629": 42,
+    "historical-postroll-cursor-v464": 24,
+    "arduous-large-ex-fairness-v467": 536,
+    "bundleModules": 62
+  },
+  "browser": {
+    "transport": "isolated Chromium with shipped HTML, scripts, SVG and source JSON fixture",
+    "hostedNavigation": "blocked by administrator",
+    "passed": [
+      "leningrad",
+      "arduous",
+      "kiev"
+    ],
+    "leningradSideHandoff": "pass",
+    "leningradCommittedHumanDieGuard": "pass",
+    "kiev-odessa": "combined test timed out before completion",
+    "physicalDevices": "not tested"
+  },
+  "limitations": [
+    "No complete optimized campaign benchmark or strategy strength assessment.",
+    "Other historical rule gaps remain, including Arduous owner-selected overstack removal.",
+    "No automatic side assignments or ten difficulty grades delivered.",
+    "Browser test did not complete fourth scenario."
+  ]
+}

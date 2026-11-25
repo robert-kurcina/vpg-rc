@@ -1,0 +1,58 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Kiev–Odessa Source Topology Review</title>
+<style>
+:root{font-family:system-ui,-apple-system,Segoe UI,sans-serif;color:#203139;background:#f5f6f4}*{box-sizing:border-box}body{margin:0}header{padding:16px max(16px,calc((100% - 1150px)/2));background:#e5ece7;border-bottom:1px solid #a4b7ac}h1{font-size:1.35rem;margin:0 0 7px}header p{margin:0;font-size:.91rem;line-height:1.5}a{color:#185480}main{max-width:1150px;margin:0 auto;padding:14px;display:grid;grid-template-columns:minmax(0,2fr) minmax(240px,1fr);gap:15px}.map-container{overflow:auto;background:white;border:1px solid #c9d3d2;border-radius:6px;max-height:85vh}.map-stage{position:relative;width:100%;min-width:520px;aspect-ratio:1360/1350}.map-stage img,.map-stage svg{position:absolute;inset:0;width:100%;height:100%;object-fit:fill}.map-stage svg{overflow:visible}.map-stage svg circle{cursor:pointer;stroke:#fff;stroke-width:2.5;vector-effect:non-scaling-stroke}.map-stage svg circle[data-kind="seam"]{fill:#2e71bd}.map-stage svg circle[data-kind="shore-land-land"]{fill:#e48430}.map-stage svg circle[data-kind="rail-source"]{fill:#347e65}.map-stage svg circle[data-kind="rail-unmatched"]{fill:#a345a1}.map-stage svg circle[data-kind="rail-added"]{fill:#2c8571}.map-stage svg circle.selected{stroke:#191919;stroke-width:3.5}aside{background:#fff;border:1px solid #c9d3d2;border-radius:6px;padding:13px;height:max-content}h2{font-size:1rem;margin:2px 0 9px}.stats{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.metric{border:1px solid #dce3e0;padding:8px;border-radius:4px}.metric strong{display:block;font-size:1.4rem}.metric span{font-size:.76rem;color:#5c6664}.controls{display:flex;gap:10px;flex-wrap:wrap;margin:12px 0}label{font-size:.85rem;cursor:pointer}.results{max-height:300px;overflow:auto;border:1px solid #dce3e0;border-radius:4px}button{background:#fff;border:0;border-bottom:1px solid #dce3e0;display:block;width:100%;text-align:left;padding:8px 9px;cursor:pointer;font-size:.82rem;color:#173949}button:hover,button:focus{background:#eaf1f7}button.active{background:#d8e5ef;font-weight:700}.explain{font-size:.82rem;line-height:1.55;color:#465b5b}#detail{font-size:.85rem;font-weight:600;min-height:3em;margin:10px 0}footer{max-width:1150px;margin:0 auto;padding:8px 15px 22px;font-size:.78rem;color:#556}.small{font-size:.78rem}nav{margin-top:8px}@media(max-width:790px){main{display:flex;flex-direction:column}.map-container{max-height:55vh}.map-stage{min-width:390px}aside{order:-1}.results{max-height:160px}}</style></head>
+<body><header><h1>Kiev–Odessa movement topology review</h1><p>Source-derived geometry on the original shared-engine map. Review-only: no movement rules or gameplay certification are changed.</p><nav><a href="../../index.html">Project home</a> · <a href="../../maps/index.html">Map viewer</a> · <a href="../../games/kiev/setup-preview/index.html">Kiev game</a></nav></header>
+<main><section class="map-container" aria-label="Original engine-rendered Kiev–Odessa map with diagnostic points"><div class="map-stage"><img id="map-art" src="../../exports/kiev-odessa.png" alt="Actual Kiev–Odessa shared-engine map export"/><svg id="overlay" viewBox="-35 -35 1360 1350" role="img" aria-label="Diagnostic seam and shoreline points"></svg></div></section>
+<aside><h2>Source review</h2><div class="stats" id="stats"></div><div class="controls"><label><input type="radio" name="filter" value="seam" checked/> Kiev–Odessa seam</label><label><input type="radio" name="filter" value="shore-land-land"/> Coast barriers between land centers</label><label><input type="radio" name="filter" value="rail-source"/> Source-traced railway links (117)</label><label><input type="radio" name="filter" value="rail-added"/> 77 traced missing rail annotations</label><label><input type="radio" name="filter" value="rail-unmatched"/> Direct non-rail shortcuts (2)</label></div><p class="explain">Blue points identify candidate land connections across the two maps. Orange points identify seven source-drawn shoreline segments between two land hexes. These are <strong>impassable Coast hexsides</strong> under the established Sea/Coast rule, despite both adjacent hex centers being classified as land. The railway review separately traces the actual source SVG paths; green links are source-traced, including 77 links absent from the earlier cell annotations. The two purple annotations at 1106 identify direct ordinary-ground shortcuts, not railway links; the source rail instead detours via 1206.</p><div id="detail" aria-live="polite">Select a listed hex pair or a dot on the map.</div><div class="results" id="results" aria-label="Source feature review choices"></div><p class="explain">Sea-adjacent connections are separately inventoried and also impassable. Source-traced rail links are evidence for later qualification, not an executable graph. Two formerly disputed connections are now explicitly classified as direct ground shortcuts, not railway links; the corrected 117-link set remains a diagnostic rather than an executable graph. The common CRT and all production movement policies remain unchanged.</p><div class="small" id="source-summary"></div></aside></main>
+<footer>Evidence: <code>rules/audit/odessa-composite-movement-candidate-v493.json</code>, <code>rules/audit/odessa-source-railway-trace-v495.json</code> and <code>maps/movement-configs/odessa-source-route-rail-ledger-v496.json</code>. Generated from the archived source data and the same map composer. Game status: <strong>not authorized</strong>.</footer>
+<script>
+(async()=>{'use strict';
+ const r=await fetch('../../rules/audit/odessa-composite-movement-candidate-v493.json');if(!r.ok)throw Error('Audit not available');
+ const audit=await r.json();if(audit.schemaVersion!==1||audit.status!=='read-only-not-authorized-for-gameplay'||audit.metadata.gameplayCertified!==false)throw Error('Unexpected audit policy');
+ const $=s=>document.querySelector(s),svgNs='http://www.w3.org/2000/svg';
+ const metrics=[['totalHexes','Map hexes'],['physicalEdges','Physical links'],['seamEdges','Seam links'],['seaRelatedEdges','Sea-related links'],['sourceRailSides','Source rail sides'],['landLandShoreEdges','Land–land Coast barriers']];
+ for(const [key,label] of metrics){const d=document.createElement('div');d.className='metric';const v=document.createElement('strong');v.textContent=audit.metadata[key];const t=document.createElement('span');t.textContent=label;d.append(v,t);$('#stats').append(d)}
+ $('#source-summary').textContent=`${audit.metadata.authoredShoreEntries} shoreline records: ${audit.metadata.shoreKinds.landToSea} land–Sea, ${audit.metadata.shoreKinds.landToLand} land–land, ${audit.metadata.shoreKinds.exterior} outside board.`;
+ let filter='seam',chosen=-1,rail=null,ledger=null,points=audit.markers;
+ function choose(i){chosen=i;const p=points[i];
+  const detail=(p?.kind==='rail-source'||p?.kind==='rail-added')?`${p.a} ↔ ${p.b}: source railway ${p.sourceSvgIds.join(', ')}; ${p.annotated?'also annotated':'not in existing cell-side annotations'}; review-only, not authorized for rail movement`:
+   p?.kind==='rail-unmatched'?`${p.a} ↔ ${p.b}: direct ordinary-ground shortcut (1 MP in open terrain), NOT a direct railway. The authored rail route goes via 1206 (2 rail steps); do not authorize this shortcut as rail`:
+   p?`${p.a} ↔ ${p.b}: ${p.kind==='seam'?'Kiev–Odessa seam, source-topology candidate':'source-authored Coast barrier; ground crossing is prohibited'}`:'Select a hexside';
+  $('#detail').textContent=detail;
+  document.querySelectorAll('#overlay circle').forEach(c=>c.classList.toggle('selected',Number(c.dataset.index)===i));
+  document.querySelectorAll('#results button').forEach(b=>b.classList.toggle('active',Number(b.dataset.index)===i));
+ }
+ function update(){const overlay=$('#overlay'),list=$('#results');overlay.replaceChildren();list.replaceChildren();chosen=-1;
+  $('#detail').textContent='Select a listed hex pair or a dot on the map.';
+  points.forEach((p,i)=>{if(p.kind!==filter)return;
+   const c=document.createElementNS(svgNs,'circle');c.setAttribute('cx',p.x);c.setAttribute('cy',p.y);c.setAttribute('r',(p.kind==='rail-source'||p.kind==='rail-added')?'6':'9');
+   c.dataset.kind=p.kind;c.dataset.index=i;c.setAttribute('tabindex','0');c.setAttribute('aria-label',`${p.a} to ${p.b}`);
+   const title=document.createElementNS(svgNs,'title');title.textContent=`${p.a} ↔ ${p.b}`;c.appendChild(title);
+   c.addEventListener('click',()=>choose(i));c.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();choose(i)}});overlay.append(c);
+   const b=document.createElement('button');b.type='button';b.textContent=`${p.a} ↔ ${p.b}${(p.kind==='rail-source'||p.kind==='rail-added')?' · '+p.sourceSvgIds.join(', '):''}`;
+   b.dataset.index=i;b.addEventListener('click',()=>choose(i));list.append(b);
+  });
+ }
+ async function setFilter(value){filter=value;
+  if(value.startsWith('rail-')){
+   if(!rail){const r=await fetch('../../rules/audit/odessa-source-railway-trace-v495.json');if(!r.ok)throw Error('Source railway audit not available');
+    rail=await r.json();if(rail.schemaVersion!==1||rail.status!=='read-only-not-authorized-for-gameplay'||rail.metadata.gameplayCertified!==false||rail.metadata.tracedRailLinks!==117||rail.metadata.annotatedWithoutTracedRoute!==2)
+     throw Error('Unqualified source railway evidence');
+    $('#source-summary').textContent=`${rail.metadata.sourcePaths} source railway paths → ${rail.metadata.tracedRailLinks} traced links; ${rail.metadata.tracedButNotAnnotated} missing cell annotations; ${rail.metadata.annotatedWithoutTracedRoute} unsupported annotations. Not authorized for gameplay.`;
+   }
+   if(!ledger){const response=await fetch('../../maps/movement-configs/odessa-source-route-rail-ledger-v496.json');if(!response.ok)throw Error('Reconciled rail ledger not available');
+    ledger=await response.json();
+    if(ledger.status!=='diagnostic-not-gameplay-authorized'||ledger.railCount!==117||ledger.links.length!==117||
+     JSON.stringify(ledger.excludedAnnotations)!=='["1106:1107","1106:1205"]')throw Error('Unexpected railway reconciliation');
+   }
+   points=value==='rail-source'?rail.tracedLinks.map(p=>({...p,kind:'rail-source'})):
+    value==='rail-added'?rail.tracedLinks.filter(p=>!p.annotated).map(p=>({...p,kind:'rail-added'})):
+    rail.annotationsWithoutTrace.map(p=>({...p,kind:'rail-unmatched'}));
+  }else points=audit.markers;
+  update();
+ }
+ document.querySelectorAll('input[name=filter]').forEach(input=>input.addEventListener('change',()=>{if(input.checked)setFilter(input.value).catch(e=>{$('#detail').textContent='Source review failed: '+e.message})}));
+ update();
+})().catch(e=>{document.querySelector('#detail').textContent='Could not load source review: '+e.message});
+</script></body></html>

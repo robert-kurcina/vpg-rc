@@ -1,0 +1,337 @@
+{
+  "schemaVersion": 1,
+  "checkpoint": 123,
+  "projectVersion": "v357",
+  "stage": "candidate-physical-setup-and-source-discrepancy-audit",
+  "sourceFiles": [
+    {
+      "path": "references/rules/leningrad-rules.pdf",
+      "sha256": "74d332e052e735e2378027a06f95e9715392773f249561bf1c00cae08a2bbfa7"
+    },
+    {
+      "path": "maps/source/user-svg/leningrad-main.svg",
+      "sha256": "ea1c83d00eea0212c530b98fd794125959175ad9d1cfa067aef78d6d73502447"
+    },
+    {
+      "path": "maps/counter-configs/leningrad.json",
+      "sha256": "2bda18e255e5f9f65cc6b974408e7e7ddc4cd179c9e41eadfa0596e1f0e40440"
+    },
+    {
+      "path": "maps/leningrad.json",
+      "sha256": "3ec95353555af6703d2fd006b11b55e2b98685e296f36e528da85547d6933b17"
+    },
+    {
+      "path": "maps/setup/leningrad.json",
+      "sha256": "6337c00a360dd66128edb64cab07878083c1eca053d26e9fbae18cbb519dafef"
+    }
+  ],
+  "rulesSource": "Target: Leningrad §6.0 steps 2–8; five rear printed IDs verified by text extraction; SVG contains five fixed source unit symbols",
+  "printedRearOrderFromRules": [
+    "0107",
+    "0607",
+    "1305",
+    "1606",
+    "1701"
+  ],
+  "physicalSlotCounts": {
+    "cross": 5,
+    "star": 5,
+    "fixedInfantry": 3,
+    "fixedMechanized": 2
+  },
+  "sourcePrintedPositionCorrespondence": [
+    {
+      "rulebookPrintedHex": "0107",
+      "sourceSvgId": "use503",
+      "marker": "fixedInfantry",
+      "physicalCellId": "0208",
+      "renderedNumber": "0107",
+      "renderedNumberMatchesRulebook": true,
+      "numberRegistryCellId": "0208",
+      "numberRegistryMatchesSource": true
+    },
+    {
+      "rulebookPrintedHex": "0607",
+      "sourceSvgId": "use1-19",
+      "marker": "fixedInfantry",
+      "physicalCellId": "0707",
+      "renderedNumber": "0607",
+      "renderedNumberMatchesRulebook": true,
+      "numberRegistryCellId": "0707",
+      "numberRegistryMatchesSource": true
+    },
+    {
+      "rulebookPrintedHex": "1305",
+      "sourceSvgId": "use1-50",
+      "marker": "fixedMechanized",
+      "physicalCellId": "1406",
+      "renderedNumber": "1306",
+      "renderedNumberMatchesRulebook": false,
+      "numberRegistryCellId": "1405",
+      "numberRegistryMatchesSource": false
+    },
+    {
+      "rulebookPrintedHex": "1606",
+      "sourceSvgId": "use1-79",
+      "marker": "fixedInfantry",
+      "physicalCellId": "1706",
+      "renderedNumber": "1606",
+      "renderedNumberMatchesRulebook": true,
+      "numberRegistryCellId": "1706",
+      "numberRegistryMatchesSource": true
+    },
+    {
+      "rulebookPrintedHex": "1701",
+      "sourceSvgId": "use504",
+      "marker": "fixedMechanized",
+      "physicalCellId": "1802",
+      "renderedNumber": "1702",
+      "renderedNumberMatchesRulebook": false,
+      "numberRegistryCellId": null,
+      "numberRegistryMatchesSource": false
+    }
+  ],
+  "unresolvedPrintedNumberConflicts": [
+    {
+      "rulebookPrintedHex": "1305",
+      "sourceSvgId": "use1-50",
+      "marker": "fixedMechanized",
+      "physicalCellId": "1406",
+      "renderedNumber": "1306",
+      "renderedNumberMatchesRulebook": false,
+      "numberRegistryCellId": "1405",
+      "numberRegistryMatchesSource": false
+    },
+    {
+      "rulebookPrintedHex": "1701",
+      "sourceSvgId": "use504",
+      "marker": "fixedMechanized",
+      "physicalCellId": "1802",
+      "renderedNumber": "1702",
+      "renderedNumberMatchesRulebook": false,
+      "numberRegistryCellId": null,
+      "numberRegistryMatchesSource": false
+    }
+  ],
+  "preliminaryStartingUnits": 19,
+  "provisionalCounterSelections": {
+    "germanInitialInfantry": [
+      "leningrad-front-r03c03",
+      "leningrad-front-r03c04",
+      "leningrad-front-r03c05",
+      "leningrad-front-r03c08",
+      "leningrad-front-r04c01",
+      "leningrad-front-r04c02",
+      "leningrad-front-r04c03"
+    ],
+    "germanInitialPanzer": [
+      "leningrad-front-r03c01",
+      "leningrad-front-r03c02"
+    ],
+    "germanTurn4Infantry": [
+      "leningrad-front-r03c06",
+      "leningrad-front-r03c07"
+    ],
+    "sovietTurn3WorkersMilitia": [
+      "leningrad-front-r04c07"
+    ],
+    "sovietRearInfantryCorps": [
+      "leningrad-front-r01c01",
+      "leningrad-front-r01c02",
+      "leningrad-front-r01c03"
+    ],
+    "sovietRearMechanizedCorps": [
+      "leningrad-front-r01c05",
+      "leningrad-front-r01c06"
+    ],
+    "sovietFrontInfantryCorps": [
+      "leningrad-front-r01c04"
+    ],
+    "sovietFrontMechanizedCorps": [
+      "leningrad-front-r01c07",
+      "leningrad-front-r01c08"
+    ],
+    "sovietFrontArmies": [
+      "leningrad-front-r02c01",
+      "leningrad-front-r02c02"
+    ],
+    "sovietTurn4Army": [
+      "leningrad-front-r02c03"
+    ],
+    "sovietTurn5Army": [
+      "leningrad-front-r02c04"
+    ],
+    "sovietTurn6Army": [
+      "leningrad-front-r02c05"
+    ],
+    "sovietTurn7Armies": [
+      "leningrad-front-r02c06",
+      "leningrad-front-r02c07"
+    ],
+    "sovietTurn8Army": [
+      "leningrad-front-r02c08"
+    ]
+  },
+  "positionDistribution": {
+    "leningrad-front-r03c03": {
+      "physicalHex": "0210",
+      "owner": "german",
+      "class": "infantry",
+      "size": "corps",
+      "mp": 4,
+      "strengthStatus": "printed-full"
+    },
+    "leningrad-front-r03c04": {
+      "physicalHex": "0210",
+      "owner": "german",
+      "class": "infantry",
+      "size": "corps",
+      "mp": 4,
+      "strengthStatus": "printed-full"
+    },
+    "leningrad-front-r03c05": {
+      "physicalHex": "0310",
+      "owner": "german",
+      "class": "infantry",
+      "size": "corps",
+      "mp": 4,
+      "strengthStatus": "printed-full"
+    },
+    "leningrad-front-r03c08": {
+      "physicalHex": "0310",
+      "owner": "german",
+      "class": "infantry",
+      "size": "corps",
+      "mp": 4,
+      "strengthStatus": "printed-full"
+    },
+    "leningrad-front-r04c01": {
+      "physicalHex": "0311",
+      "owner": "german",
+      "class": "infantry",
+      "size": "corps",
+      "mp": 4,
+      "strengthStatus": "printed-full"
+    },
+    "leningrad-front-r04c02": {
+      "physicalHex": "0311",
+      "owner": "german",
+      "class": "infantry",
+      "size": "corps",
+      "mp": 4,
+      "strengthStatus": "printed-full"
+    },
+    "leningrad-front-r04c03": {
+      "physicalHex": "0411",
+      "owner": "german",
+      "class": "infantry",
+      "size": "corps",
+      "mp": 4,
+      "strengthStatus": "printed-full"
+    },
+    "leningrad-front-r03c01": {
+      "physicalHex": "0411",
+      "owner": "german",
+      "class": "panzer",
+      "size": "corps",
+      "mp": 6,
+      "strengthStatus": "printed-full"
+    },
+    "leningrad-front-r03c02": {
+      "physicalHex": "0511",
+      "owner": "german",
+      "class": "panzer",
+      "size": "corps",
+      "mp": 6,
+      "strengthStatus": "printed-full"
+    },
+    "leningrad-front-r01c01": {
+      "physicalHex": "0208",
+      "owner": "soviet",
+      "class": "infantry",
+      "size": "corps",
+      "mp": 4,
+      "strengthStatus": "printed-full"
+    },
+    "leningrad-front-r01c02": {
+      "physicalHex": "0707",
+      "owner": "soviet",
+      "class": "infantry",
+      "size": "corps",
+      "mp": 4,
+      "strengthStatus": "printed-full"
+    },
+    "leningrad-front-r01c03": {
+      "physicalHex": "1706",
+      "owner": "soviet",
+      "class": "infantry",
+      "size": "corps",
+      "mp": 4,
+      "strengthStatus": "printed-full"
+    },
+    "leningrad-front-r01c05": {
+      "physicalHex": "1406",
+      "owner": "soviet",
+      "class": "mechanized",
+      "size": "corps",
+      "mp": 6,
+      "strengthStatus": "untried"
+    },
+    "leningrad-front-r01c06": {
+      "physicalHex": "1802",
+      "owner": "soviet",
+      "class": "mechanized",
+      "size": "corps",
+      "mp": 6,
+      "strengthStatus": "untried"
+    },
+    "leningrad-front-r02c01": {
+      "physicalHex": "0209",
+      "owner": "soviet",
+      "class": "infantry",
+      "size": "army",
+      "mp": 4,
+      "strengthStatus": "printed-full"
+    },
+    "leningrad-front-r02c02": {
+      "physicalHex": "0611",
+      "owner": "soviet",
+      "class": "infantry",
+      "size": "army",
+      "mp": 4,
+      "strengthStatus": "printed-full"
+    },
+    "leningrad-front-r01c04": {
+      "physicalHex": "0309",
+      "owner": "soviet",
+      "class": "infantry",
+      "size": "corps",
+      "mp": 4,
+      "strengthStatus": "printed-full"
+    },
+    "leningrad-front-r01c07": {
+      "physicalHex": "0410",
+      "owner": "soviet",
+      "class": "mechanized",
+      "size": "corps",
+      "mp": 6,
+      "strengthStatus": "untried"
+    },
+    "leningrad-front-r01c08": {
+      "physicalHex": "0510",
+      "owner": "soviet",
+      "class": "mechanized",
+      "size": "corps",
+      "mp": 6,
+      "strengthStatus": "untried"
+    }
+  },
+  "validatorStatus": {
+    "valid": true,
+    "physicalSetupValid": true,
+    "printedAnchorAgreement": false,
+    "historicalSetupAuthorized": false,
+    "productionGameActivated": false
+  },
+  "scope": "An explicitly selected test opening. Source-symbol-to-rulebook-label assignment is a candidate association by counter class and geographic order, not independently labeled by the SVG. Two resulting numbered-hex mismatches are retained for source review. No source art, render, topology, or production gameplay modified."
+}

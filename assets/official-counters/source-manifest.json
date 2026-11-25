@@ -1,0 +1,133 @@
+{
+  "source_sha256": "a45fd59ebc50fac41686289e41d387d83474f81b0b7da25fe37107ce132ad51b",
+  "source_file": "source-counters.svg",
+  "source_reference_layer": "counter-sheets",
+  "typography": {
+    "profile": "counter-portable-sans-v1",
+    "font_stack": "Arial,Helvetica,Arimo,\"Liberation Sans\",sans-serif",
+    "heavy_font_stack": "\"Arial Black\",Arial,Helvetica,Arimo,\"Liberation Sans\",sans-serif",
+    "regular_weight": "400",
+    "heavy_weight": "900",
+    "narrow_scale_x": 0.78
+  },
+  "templates": {
+    "army-2": {
+      "source_group": "g365",
+      "roles": [
+        "dash",
+        "defense",
+        "offense",
+        "primary",
+        "secondary",
+        "size",
+        "status_reduced",
+        "unit_id"
+      ],
+      "nato_alternatives": 8,
+      "bytes": 14153,
+      "body_offset": [
+        -3.101816,
+        -86.2978519
+      ],
+      "text_roles": [
+        "narrow",
+        "heavy",
+        "heavy",
+        "heavy",
+        "narrow"
+      ]
+    },
+    "army-3": {
+      "source_group": "g430",
+      "roles": [
+        "dash_left",
+        "dash_right",
+        "defense",
+        "movement",
+        "offense",
+        "primary",
+        "secondary",
+        "size",
+        "status_reduced",
+        "unit_id"
+      ],
+      "nato_alternatives": 8,
+      "bytes": 16202,
+      "body_offset": [
+        -82.153376,
+        -85.2972019
+      ],
+      "text_roles": [
+        "narrow",
+        "heavy",
+        "heavy",
+        "heavy",
+        "heavy",
+        "heavy",
+        "narrow"
+      ]
+    },
+    "stuka": {
+      "source_group": "g329",
+      "roles": [
+        "defense",
+        "primary",
+        "status_reduced",
+        "unit_id"
+      ],
+      "nato_alternatives": 0,
+      "bytes": 194434,
+      "body_offset": [
+        -28.908836,
+        -6.1806319
+      ],
+      "text_roles": [
+        "narrow",
+        "heavy"
+      ]
+    },
+    "air": {
+      "source_group": "g399",
+      "roles": [
+        "defense",
+        "primary",
+        "status_reduced",
+        "unit_id"
+      ],
+      "nato_alternatives": 0,
+      "bytes": 9274,
+      "body_offset": [
+        -85.155336,
+        1.7595881
+      ],
+      "text_roles": [
+        "narrow",
+        "heavy"
+      ]
+    },
+    "fleet": {
+      "source_group": "g385",
+      "roles": [
+        "damage_text",
+        "defense",
+        "primary",
+        "status_damaged",
+        "status_reduced",
+        "status_undamaged",
+        "unit_id"
+      ],
+      "nato_alternatives": 0,
+      "bytes": 24936,
+      "body_offset": [
+        -29.909496,
+        -159.2804919
+      ],
+      "text_roles": [
+        "narrow",
+        "heavy",
+        "heavy"
+      ]
+    }
+  },
+  "note": "Five authored vector counter groups only. Raster reference-sheet layer retained, not emitted in runtime sprites."
+}

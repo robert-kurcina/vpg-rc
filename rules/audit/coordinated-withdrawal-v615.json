@@ -1,0 +1,20 @@
+{
+  "scope": "direct single-phase static board, synthetic Kiev fixtures",
+  "verified": {
+    "coordinatedWithdrawal": 24,
+    "independentWithdrawal": 30,
+    "integratedForecastSurvival": 71,
+    "conditionalSurvival": 84,
+    "utility": 62,
+    "pilot": 50,
+    "controller": 16,
+    "sharedCRT": "passed",
+    "bundleModules": 61
+  },
+  "limitations": [
+    "no pursuit or actual survival probability",
+    "no clearing moves or later phases",
+    "no default selection change",
+    "no Chromium or full campaign run"
+  ]
+}

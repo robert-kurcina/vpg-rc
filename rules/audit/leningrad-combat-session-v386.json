@@ -1,0 +1,23 @@
+{
+  "checkpoint": 152,
+  "version": "v386",
+  "assertions": 84,
+  "scope": "opt-in source-bound combat-phase persistence",
+  "paths": [
+    "Fleet precommit and die",
+    "air-use ledger",
+    "battle declaration and selection",
+    "ground air no-choice precommit",
+    "source-configured CRT consequence",
+    "phase finish",
+    "phase-level Undo",
+    "tamper and source-binding validation"
+  ],
+  "excluded": [
+    "Full eight-turn campaign orchestration",
+    "movement and forced entry in same session",
+    "save from arbitrary source claims",
+    "full historical setup certification",
+    "human UX alignment"
+  ]
+}

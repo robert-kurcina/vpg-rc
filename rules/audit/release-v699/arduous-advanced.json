@@ -1,0 +1,162 @@
+{
+  "scenario": "arduous",
+  "variant": "advanced",
+  "seed": 476,
+  "policy": {
+    "seed": 476,
+    "missionSeed": "000000000000000000000000000001dc",
+    "selectionMode": "seeded",
+    "phaseScope": "operational",
+    "maxActions": 5000,
+    "maxFleetMoves": 2,
+    "maxFleetAttacks": 3,
+    "fleetBudgetScope": "campaign",
+    "objectivePolicy": "baseline",
+    "movementLookahead": false
+  },
+  "matchup": "same",
+  "factionPolicies": {
+    "german": {
+      "seed": 476,
+      "maxActions": 5000,
+      "maxCombatsPerPhase": 9007199254740991,
+      "maxCombatPhases": 9007199254740991,
+      "maxGroundMovesPerPhase": 9007199254740991,
+      "maxReinforcementsPerPhase": 9007199254740991,
+      "maxFleetMoves": 2,
+      "maxFleetAttacks": 3,
+      "fleetBudgetScope": "campaign",
+      "objectivePolicy": "baseline",
+      "movementLookahead": false,
+      "selectionMode": "seeded",
+      "attackSelection": "continuation-pilot",
+      "phaseScope": "operational",
+      "coordinatedAttacks": false,
+      "missionSeed": "000000000000000000000000000001dc"
+    },
+    "soviet": {
+      "seed": 476,
+      "maxActions": 5000,
+      "maxCombatsPerPhase": 9007199254740991,
+      "maxCombatPhases": 9007199254740991,
+      "maxGroundMovesPerPhase": 9007199254740991,
+      "maxReinforcementsPerPhase": 9007199254740991,
+      "maxFleetMoves": 2,
+      "maxFleetAttacks": 3,
+      "fleetBudgetScope": "campaign",
+      "objectivePolicy": "baseline",
+      "movementLookahead": false,
+      "selectionMode": "seeded",
+      "attackSelection": "continuation-pilot",
+      "phaseScope": "operational",
+      "coordinatedAttacks": false,
+      "missionSeed": "000000000000000000000000000001dc"
+    }
+  },
+  "elapsedMs": 28857,
+  "status": "complete",
+  "reason": null,
+  "detail": null,
+  "decision": {
+    "status": "complete",
+    "terminal": {
+      "axisControlledCount": 6,
+      "cityControl": {
+        "Baranovichi": "german",
+        "Brest-Litovsk": "german",
+        "Gomel": "german",
+        "Minsk": "german",
+        "Mogilev": "soviet",
+        "Orsha": "soviet",
+        "Polotsk": "german",
+        "Roslavl": "soviet",
+        "Smolensk": "soviet",
+        "Velikie Luki": "soviet",
+        "Vilnius": "german",
+        "Vitebsk": "soviet"
+      },
+      "onlyRemainingCity": null,
+      "onlyRemainingCityIsolated": null,
+      "outcome": "soviet-victory",
+      "reason": "axis-controls-at-most-threshold",
+      "totalCities": 12
+    }
+  },
+  "stats": {
+    "moves": 213,
+    "combats": 18,
+    "reinforcements": 7,
+    "navalRolls": 0,
+    "turns": 7
+  },
+  "actions": 571,
+  "fleetByTurn": {},
+  "odds": {
+    "2": 1,
+    "4": 3,
+    "5": 7,
+    "6": 4,
+    "1.5": 3
+  },
+  "outcomes": {
+    "DE": 3,
+    "DRL": 9,
+    "DR": 3,
+    "NE": 2,
+    "EX": 1
+  },
+  "reasons": {
+    "continuation-pilot-positive-utility": 8,
+    "select-committed-battle": 18,
+    "precommit-air-support": 17,
+    "post-roll-material-city-utility": 18,
+    "finish-combat": 14,
+    "objective-directed-ground-movement": 213,
+    "finish-pending-movement": 213,
+    "finish-movement-phase": 27,
+    "source-legal-reinforcement": 7,
+    "finish-buildup": 13,
+    "no-optional-attack": 6,
+    "finish-turn": 7,
+    "source-legal-replacement": 10
+  },
+  "cityControl": {
+    "Baranovichi": "german",
+    "Brest-Litovsk": "german",
+    "Gomel": "german",
+    "Minsk": "german",
+    "Mogilev": "soviet",
+    "Orsha": "soviet",
+    "Polotsk": "german",
+    "Roslavl": "soviet",
+    "Smolensk": "soviet",
+    "Velikie Luki": "soviet",
+    "Vilnius": "german",
+    "Vitebsk": "soviet"
+  },
+  "terminal": {
+    "axisControlledCount": 6,
+    "cityControl": {
+      "Baranovichi": "german",
+      "Brest-Litovsk": "german",
+      "Gomel": "german",
+      "Minsk": "german",
+      "Mogilev": "soviet",
+      "Orsha": "soviet",
+      "Polotsk": "german",
+      "Roslavl": "soviet",
+      "Smolensk": "soviet",
+      "Velikie Luki": "soviet",
+      "Vilnius": "german",
+      "Vitebsk": "soviet"
+    },
+    "onlyRemainingCity": null,
+    "onlyRemainingCityIsolated": null,
+    "outcome": "soviet-victory",
+    "reason": "axis-controls-at-most-threshold",
+    "totalCities": 12
+  },
+  "phase": null,
+  "exactRestore": true,
+  "communicationChecks": 146
+}

@@ -1,0 +1,65 @@
+{
+  "description": "Unmodified user-supplied game rules, Player Aids and Combat Results Tables",
+  "items": [
+    {
+      "file": "arduous-aid.webp",
+      "bytes": 64078,
+      "sha256": "c88f512358b2333884789c248a983d7fb15f6569a0839afbbaa1ef9a518a2806"
+    },
+    {
+      "file": "arduous-rules.pdf",
+      "bytes": 373130,
+      "sha256": "1ac46f3e958cf1d08768f6b56964100ab0951ece7e310ac3a30e8c479a8b986c"
+    },
+    {
+      "file": "b4m-aid.webp",
+      "bytes": 66522,
+      "sha256": "b5e5130f5b5becc1fd70b52c7f94d14c8e1fcb7d9ba5985cb8010ae8cc873894"
+    },
+    {
+      "file": "b4m-rules.pdf",
+      "bytes": 303022,
+      "sha256": "ee148b48a0af52457afd380053397f02283128d808ad8697e8dd7d1114c3fc65"
+    },
+    {
+      "file": "crt-arduous.png",
+      "bytes": 421275,
+      "sha256": "2c8c041cf509ef208f233afc95ba8cb20f60db884175061f9bc537a71af42eab"
+    },
+    {
+      "file": "crt-kiev.png",
+      "bytes": 912923,
+      "sha256": "753c8e422cdb808d6eab7c50f797bd5007dbb52c90712b4f2c477d40ba0b3399"
+    },
+    {
+      "file": "crt-leningrad.png",
+      "bytes": 284976,
+      "sha256": "25bda01998810dc9cb414dbf60f5d673f547cf068d9b24cd6c62a311651a76bf"
+    },
+    {
+      "file": "kiev-player-aid.webp",
+      "bytes": 65566,
+      "sha256": "a7d239a80745463fdd3d5effc8faf6a028ab4f048713a506cb75823c448c9751"
+    },
+    {
+      "file": "kiev-rules.pdf",
+      "bytes": 341233,
+      "sha256": "d55e8f0e567d1f8c7907c4fc8368954ec0e5fa8d6fe9e8e71c61acf9bb3c3756"
+    },
+    {
+      "file": "leningrad-aid.webp",
+      "bytes": 67578,
+      "sha256": "241d97d9766eca4e712be4a01178165ceadfbfb435a4fe387d6f720ad08b7579"
+    },
+    {
+      "file": "leningrad-rules.pdf",
+      "bytes": 345596,
+      "sha256": "74d332e052e735e2378027a06f95e9715392773f249561bf1c00cae08a2bbfa7"
+    },
+    {
+      "file": "odessa-rules.pdf",
+      "bytes": 304132,
+      "sha256": "c7def97fe2de9ae66dc89da5f7d3417e3283846485903b90b88f153ba9791bab"
+    }
+  ]
+}

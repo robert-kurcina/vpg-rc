@@ -1,0 +1,28 @@
+{
+  "checkpoint": 205,
+  "version": "v439",
+  "comparisonBaseline": "v438",
+  "sourceRecordsUnchanged": 163,
+  "originalTerrainBitmapsUnchanged": [
+    "supplied_assets/flat/terrain-open.png",
+    "supplied_assets/flat/terrain-forest.png",
+    "supplied_assets/flat/terrain-swamp.png"
+  ],
+  "registryChangedOnlyThreePaletteValuesPerGame": true,
+  "coreFilesChanged": [
+    "core/native_browser_view.js",
+    "core/presentation.js"
+  ],
+  "gameplayFilesUnchanged": true,
+  "originalReferenceFilesUnchanged": true,
+  "mapExportsRegenerated": 5,
+  "originalSourceSHPreserved": {
+    "supplied_assets/flat/terrain-open.png": "6bd4e479dbf8dbbaaf24dc204b7aa2d17a62f229ad8e55a83a102256b4a0a100",
+    "supplied_assets/flat/terrain-forest.png": "278528a568c49ef998804495f6c66409e066bb8beca2bedff7ee80eb0d5bed1d",
+    "supplied_assets/flat/terrain-swamp.png": "998c3769c48c28ae40edbc9a7669e58d5ed9eefc4679e7065711e94bb76af279"
+  },
+  "notes": [
+    "Legacy v373 export PNG fingerprints are obsolete for intentional color experiments.",
+    "Chromium standalone engine render verified; localhost full-game smoke blocked by environment policy."
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "checkpoint": 199,
+  "version": "v433",
+  "scope": "Objective: Kiev geography candidate; no gameplay activation",
+  "sourceSvg": "maps/source/user-svg/kiev-odessa-main.svg",
+  "sourceSvgSha256": "2b15c3a92a282a7efc27d54bcd8994470f0fce8ee5417d5d734969fcd2c4ab7e",
+  "rulesAid": "references/rules/kiev-player-aid.webp",
+  "rulesAidSha256": "a7d239a80745463fdd3d5effc8faf6a028ab4f048713a506cb75823c448c9751",
+  "counts": {
+    "hexes": 165,
+    "baseTerrain": 149,
+    "cityOverlay": 16,
+    "majorCity": 1,
+    "physicalEdges": 442,
+    "boundarySides": 106,
+    "railwayEdges": 93,
+    "riverEdges": 72,
+    "majorRiverEdges": 10
+  },
+  "sourceReviewedFingerprint": "31a90874daf2129949674871513046b12da867aa4048fe1707bdf9e9c1105fb3",
+  "sourceOverlayFingerprint": "1b4f8894099e63b6d54cb4dee0af82e3d4d0151f8fad37208a0826913edc7a26",
+  "edgeLedgerSHA256": "b9b7141105d6fbb6065ee4cd7e4303afe8728148e94336051feb8f45db070ada",
+  "liveGameAuthorization": false,
+  "limitations": [
+    "Underlying base terrain is not authored beneath 16 city icons; source-defined City/Major City is the gameplay terrain, not an assertion about underlay",
+    "82 river edges are those individually classified by the source geometry audit; short incidental contacts are not promoted",
+    "The source-reviewed candidate does not establish the printed historical initial deployment, strategic legality, or a playable seven-turn campaign",
+    "Kiev-Odessa map seam is outside this 165-cell candidate",
+    "The live graph policy remains provisional until further full-game validation"
+  ]
+}

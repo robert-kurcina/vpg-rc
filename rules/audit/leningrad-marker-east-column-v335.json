@@ -1,0 +1,90 @@
+{
+  "checkpoint": "102",
+  "build": "v335",
+  "change": "east-column marker-host assignment",
+  "source": "User direction after v334 printed coordinates correction",
+  "markerMoves": [
+    {
+      "kind": "star",
+      "faction": "soviet",
+      "from": "0108",
+      "to": "0208"
+    },
+    {
+      "kind": "cross",
+      "faction": "german",
+      "from": "0109",
+      "to": "0209"
+    },
+    {
+      "kind": "star",
+      "faction": "soviet",
+      "from": "0209",
+      "to": "0309"
+    },
+    {
+      "kind": "cross",
+      "faction": "german",
+      "from": "0210",
+      "to": "0310"
+    },
+    {
+      "kind": "cross",
+      "faction": "german",
+      "from": "0211",
+      "to": "0311"
+    },
+    {
+      "kind": "star",
+      "faction": "soviet",
+      "from": "0309",
+      "to": "0409"
+    },
+    {
+      "kind": "cross",
+      "faction": "german",
+      "from": "0310",
+      "to": "0410"
+    },
+    {
+      "kind": "star",
+      "faction": "soviet",
+      "from": "0410",
+      "to": "0510"
+    },
+    {
+      "kind": "cross",
+      "faction": "german",
+      "from": "0411",
+      "to": "0511"
+    },
+    {
+      "kind": "star",
+      "faction": "soviet",
+      "from": "0510",
+      "to": "0610"
+    }
+  ],
+  "nonCrossStarCoLocations": [
+    {
+      "hex": "0208",
+      "deployment": "star",
+      "city": "Liepaja",
+      "otherTileMarkers": [
+        "city",
+        "fixedInfantry"
+      ]
+    }
+  ],
+  "notes": [
+    "No claim of independent historical/source-SVG certification for shifted hosts",
+    "Original source import and v333 affine audit remain preserved as superseded for active marker ownership",
+    "Current printed numbers deliberately unchanged; internal cell IDs are not printed labels"
+  ],
+  "verified": {
+    "crossCount": 5,
+    "starCount": 5,
+    "distinctDestinations": 10,
+    "sourceOrTargetOffboard": false
+  }
+}

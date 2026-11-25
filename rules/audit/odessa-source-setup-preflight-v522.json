@@ -1,0 +1,72 @@
+{
+  "checkpoint": 288,
+  "version": "v522",
+  "rule": "Odessa \u00a76",
+  "source": "references/rules/odessa-rules.pdf",
+  "status": "diagnostic-not-gameplay-authorized",
+  "rearHexes": [
+    "0406",
+    "0705",
+    "0803",
+    "1007",
+    "1106",
+    "1215",
+    "1309"
+  ],
+  "actualFrontlineStarHexes": [
+    "0205",
+    "0304",
+    "0305",
+    "0401",
+    "0403",
+    "0502",
+    "0503",
+    "0708",
+    "0808",
+    "1110",
+    "1111",
+    "1113"
+  ],
+  "expectedFrontlineStarCount": 11,
+  "mismatchedRear": [
+    {
+      "hex": "1309",
+      "expected": "fixedMechanized",
+      "observed": []
+    }
+  ],
+  "otherFixedMarkers": [
+    {
+      "hex": "0706",
+      "kinds": [
+        "fixedMechanized"
+      ]
+    },
+    {
+      "hex": "1513",
+      "kinds": [
+        "fixedInfantry"
+      ]
+    }
+  ],
+  "unclassifiedLandCells": 211,
+  "sourcePortHex": "1513",
+  "romanianAirTurn": 2,
+  "blockers": [
+    "frontline-stars:12-instead-of-11",
+    "rear-deployment-symbol-disagreement",
+    "unclassified-political-territory:211",
+    "unbound-base-romanian-unit",
+    "unbound-base-german-infantry"
+  ],
+  "gameplayCertified": false,
+  "tests": "tests/odessa-source-setup-preflight-v522.test.js",
+  "verifiedAssertions": 49,
+  "scopeLimits": [
+    "Diagnostic only; no game activation",
+    "Star source 11 vs actual map 12 unresolved",
+    "1309/0706 marker contradiction unresolved",
+    "No political territory inference",
+    "Normal stacking not certified by the Romanian-group check"
+  ]
+}

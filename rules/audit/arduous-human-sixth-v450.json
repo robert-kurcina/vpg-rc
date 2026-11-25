@@ -1,0 +1,124 @@
+{
+  "checkpoint": 216,
+  "version": "v450",
+  "scenario": "arduous",
+  "ruleSource": "references/rules/arduous-rules.pdf \u00a712.0, printed p.6",
+  "rulePdfSHA256": "1ac46f3e958cf1d08768f6b56964100ab0951ece7e310ac3a30e8c479a8b986c",
+  "method": "Real Chromium browser controls, source-valid setup and battle actions, original shared JS and SVG; no injected elimination",
+  "sourceBannedCounter": "arduous-front-r04c01",
+  "bannedRevealedIdentity": "6",
+  "openingBattles": [
+    {
+      "hex": "0209",
+      "die": 3,
+      "outcome": "DE"
+    },
+    {
+      "hex": "0305",
+      "die": 4,
+      "outcome": "EX"
+    }
+  ],
+  "turnTrace": [
+    [
+      1,
+      "german-combat"
+    ],
+    [
+      1,
+      "german-special-movement"
+    ],
+    [
+      1,
+      "soviet-buildup"
+    ],
+    [
+      1,
+      "soviet-special-movement"
+    ],
+    [
+      1,
+      "soviet-combat"
+    ],
+    [
+      1,
+      "soviet-movement"
+    ],
+    [
+      1,
+      "housekeeping"
+    ],
+    [
+      2,
+      "german-buildup"
+    ],
+    [
+      2,
+      "german-movement"
+    ],
+    [
+      2,
+      "german-combat"
+    ],
+    [
+      2,
+      "german-special-movement"
+    ],
+    [
+      2,
+      "soviet-buildup"
+    ],
+    [
+      2,
+      "soviet-special-movement"
+    ],
+    [
+      2,
+      "soviet-combat"
+    ],
+    [
+      2,
+      "soviet-movement"
+    ],
+    [
+      2,
+      "housekeeping"
+    ],
+    [
+      3,
+      "german-buildup"
+    ],
+    [
+      3,
+      "german-movement"
+    ],
+    [
+      3,
+      "german-combat"
+    ],
+    [
+      3,
+      "german-special-movement"
+    ],
+    [
+      3,
+      "soviet-buildup"
+    ]
+  ],
+  "prohibitedOffMapRebuildOffered": false,
+  "otherOffMapRebuildActions": 0,
+  "sourceOnMapReplacement": "arduous-front-r03c06",
+  "sourceOnMapStrengthAfter": 8,
+  "actionCount": 35,
+  "checks": 151,
+  "pageErrors": [],
+  "saveRestore": "identical",
+  "undo": "identical",
+  "replay": "identical",
+  "visual": "rules/audit/visual/arduous-sixth-eliminated-replacement-v450.png",
+  "limitations": [
+    "The special 6th exclusion is demonstrated from real elimination through the browser.",
+    "The rebuild of a permitted OFF-MAP counter is proven by the shared transaction engine with synthetic elimination, not yet by a browser casualty path.",
+    "The Arduous unique printed initial-counter assignment remains candidate; full contested seven-turn browser acceptance is still incomplete."
+  ]
+}

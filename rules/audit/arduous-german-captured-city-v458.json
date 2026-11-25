@@ -1,0 +1,159 @@
+{
+  "checkpoint": 224,
+  "version": "v458",
+  "scenario": "arduous",
+  "source": "references/rules/arduous-rules.pdf \u00a7\u00a75 and 12",
+  "rulePdfSha256": "1ac46f3e958cf1d08768f6b56964100ab0951ece7e310ac3a30e8c479a8b986c",
+  "sourceCounter": "arduous-front-r02c07",
+  "capturedCity": "Brest-Litovsk",
+  "cityHex": "0211",
+  "germanOpening": [
+    {
+      "defenderHex": "0210",
+      "air": "arduous-front-r03c02",
+      "die": 6,
+      "crtOutcome": "DRL"
+    },
+    {
+      "defenderHex": "0211",
+      "air": "arduous-front-r03c01",
+      "die": 6,
+      "crtOutcome": "DE"
+    },
+    {
+      "defenderHex": "0305",
+      "air": null,
+      "die": 2,
+      "crtOutcome": "EX"
+    }
+  ],
+  "sovietElimination": "Turn 1 EX die 2 against 0306",
+  "rebuildTurn": 4,
+  "rebuild": {
+    "hex": "0211",
+    "kind": "replacement-rebuilt",
+    "stepsSpent": 1,
+    "unitId": "arduous-front-r02c07"
+  },
+  "checks": 224,
+  "pageErrors": [],
+  "phaseTrace": [
+    [
+      1,
+      "german-combat"
+    ],
+    [
+      1,
+      "german-special-movement"
+    ],
+    [
+      1,
+      "soviet-buildup"
+    ],
+    [
+      1,
+      "soviet-special-movement"
+    ],
+    [
+      1,
+      "soviet-combat"
+    ],
+    [
+      1,
+      "soviet-combat"
+    ],
+    [
+      1,
+      "soviet-movement"
+    ],
+    [
+      1,
+      "housekeeping"
+    ],
+    [
+      2,
+      "german-buildup"
+    ],
+    [
+      2,
+      "german-movement"
+    ],
+    [
+      2,
+      "german-combat"
+    ],
+    [
+      2,
+      "german-special-movement"
+    ],
+    [
+      2,
+      "soviet-buildup"
+    ],
+    [
+      2,
+      "soviet-special-movement"
+    ],
+    [
+      2,
+      "soviet-combat"
+    ],
+    [
+      2,
+      "soviet-movement"
+    ],
+    [
+      2,
+      "housekeeping"
+    ],
+    [
+      3,
+      "german-buildup"
+    ],
+    [
+      3,
+      "german-movement"
+    ],
+    [
+      3,
+      "german-combat"
+    ],
+    [
+      3,
+      "german-special-movement"
+    ],
+    [
+      3,
+      "soviet-buildup"
+    ],
+    [
+      3,
+      "soviet-special-movement"
+    ],
+    [
+      3,
+      "soviet-combat"
+    ],
+    [
+      3,
+      "soviet-movement"
+    ],
+    [
+      3,
+      "housekeeping"
+    ],
+    [
+      4,
+      "german-buildup"
+    ]
+  ],
+  "saveRestore": "identical",
+  "undo": "identical",
+  "replay": "identical",
+  "visual": "rules/audit/visual/arduous-turn4-german-city-rebuild-v458.png",
+  "limitations": [
+    "One candidate source-valid opening and declared combat sequence; not all deployments or city captures.",
+    "Player-issued die outcomes; no AI strategy tested.",
+    "Does not complete seven-turn contested campaign or full post-roll consequence enumeration."
+  ]
+}

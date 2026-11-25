@@ -1,0 +1,7987 @@
+{
+  "schemaVersion": 1,
+  "mapId": "arduous-native-draft-v231",
+  "semantics": "visual-only-not-gameplay-certified",
+  "sourceSvgSha256": "423af8983fd90a5be17041922a612efba42bbff306683ead9fd6910413402ede",
+  "sourceMapSha256": "0cf849eaf683cd86443d244f20e5d03f8dc18ba354f88861d039307da162742d",
+  "geometryStatus": "uses-existing-map-registration; not independently recertified",
+  "sideProximityThresholdPx": 3.0,
+  "counts": {
+    "hexes": 155,
+    "railSourcePaths": 34,
+    "riverSourcePaths": 5,
+    "reinforcementSourcePaths": 2,
+    "railDerivedPairs": 88,
+    "railRegisteredPairs": 85,
+    "riverSideObservations": 200,
+    "reinforcementSideObservations": 62,
+    "ambiguousRailCrossings": 0
+  },
+  "railDerivedNotRegistered": [
+    [
+      "1801",
+      "1802"
+    ],
+    [
+      "1804",
+      "1805"
+    ],
+    [
+      "1807",
+      "1808"
+    ]
+  ],
+  "railRegisteredNotDerived": [],
+  "railCrossings": [
+    {
+      "sourceSvgId": "path346",
+      "hexPair": [
+        "1102",
+        "1203"
+      ],
+      "intersection": [
+        581.144,
+        128.724
+      ],
+      "pathDistance": 65.851
+    },
+    {
+      "sourceSvgId": "path347",
+      "hexPair": [
+        "1303",
+        "1404"
+      ],
+      "intersection": [
+        664.777,
+        180.995
+      ],
+      "pathDistance": 27.414
+    },
+    {
+      "sourceSvgId": "path347",
+      "hexPair": [
+        "1203",
+        "1303"
+      ],
+      "intersection": [
+        626.789,
+        148.38
+      ],
+      "pathDistance": 79.817
+    },
+    {
+      "sourceSvgId": "path349",
+      "hexPair": [
+        "1402",
+        "1403"
+      ],
+      "intersection": [
+        687.358,
+        111.74
+      ],
+      "pathDistance": 19.947
+    },
+    {
+      "sourceSvgId": "path349",
+      "hexPair": [
+        "1403",
+        "1404"
+      ],
+      "intersection": [
+        690.957,
+        161.9
+      ],
+      "pathDistance": 70.615
+    },
+    {
+      "sourceSvgId": "path350",
+      "hexPair": [
+        "1404",
+        "1405"
+      ],
+      "intersection": [
+        689.929,
+        212.06
+      ],
+      "pathDistance": 21.891
+    },
+    {
+      "sourceSvgId": "path351",
+      "hexPair": [
+        "1405",
+        "1505"
+      ],
+      "intersection": [
+        707.556,
+        255.661
+      ],
+      "pathDistance": 28.987
+    },
+    {
+      "sourceSvgId": "path352",
+      "hexPair": [
+        "0907",
+        "1007"
+      ],
+      "intersection": [
+        499.873,
+        351.664
+      ],
+      "pathDistance": 31.395
+    },
+    {
+      "sourceSvgId": "path352",
+      "hexPair": [
+        "1007",
+        "1106"
+      ],
+      "intersection": [
+        539.514,
+        321.846
+      ],
+      "pathDistance": 85.351
+    },
+    {
+      "sourceSvgId": "path352",
+      "hexPair": [
+        "1106",
+        "1206"
+      ],
+      "intersection": [
+        583.436,
+        299.274
+      ],
+      "pathDistance": 136.165
+    },
+    {
+      "sourceSvgId": "path352",
+      "hexPair": [
+        "1206",
+        "1305"
+      ],
+      "intersection": [
+        625.285,
+        273.194
+      ],
+      "pathDistance": 187.581
+    },
+    {
+      "sourceSvgId": "path352",
+      "hexPair": [
+        "1305",
+        "1405"
+      ],
+      "intersection": [
+        667.89,
+        248.394
+      ],
+      "pathDistance": 238.494
+    },
+    {
+      "sourceSvgId": "path353",
+      "hexPair": [
+        "1505",
+        "1605"
+      ],
+      "intersection": [
+        754.539,
+        251.388
+      ],
+      "pathDistance": 31.363
+    },
+    {
+      "sourceSvgId": "path353",
+      "hexPair": [
+        "1605",
+        "1704"
+      ],
+      "intersection": [
+        793.587,
+        220.567
+      ],
+      "pathDistance": 81.636
+    },
+    {
+      "sourceSvgId": "path354",
+      "hexPair": [
+        "1504",
+        "1605"
+      ],
+      "intersection": [
+        752.397,
+        226.518
+      ],
+      "pathDistance": 27.843
+    },
+    {
+      "sourceSvgId": "path354",
+      "hexPair": [
+        "1404",
+        "1504"
+      ],
+      "intersection": [
+        711.026,
+        199.628
+      ],
+      "pathDistance": 81.319
+    },
+    {
+      "sourceSvgId": "path355",
+      "hexPair": [
+        "1402",
+        "1501"
+      ],
+      "intersection": [
+        712.206,
+        76.008
+      ],
+      "pathDistance": 32.258
+    },
+    {
+      "sourceSvgId": "path355",
+      "hexPair": [
+        "1501",
+        "1602"
+      ],
+      "intersection": [
+        751.944,
+        76.804
+      ],
+      "pathDistance": 74.699
+    },
+    {
+      "sourceSvgId": "path355",
+      "hexPair": [
+        "1602",
+        "1701"
+      ],
+      "intersection": [
+        796.309,
+        74.693
+      ],
+      "pathDistance": 119.962
+    },
+    {
+      "sourceSvgId": "path355",
+      "hexPair": [
+        "1701",
+        "1802"
+      ],
+      "intersection": [
+        836.882,
+        76.705
+      ],
+      "pathDistance": 163.793
+    },
+    {
+      "sourceSvgId": "path355",
+      "hexPair": [
+        "1801",
+        "1802"
+      ],
+      "intersection": [
+        915.085,
+        61.58
+      ],
+      "pathDistance": 246.236
+    },
+    {
+      "sourceSvgId": "path356",
+      "hexPair": [
+        "1704",
+        "1805"
+      ],
+      "intersection": [
+        838.689,
+        224.128
+      ],
+      "pathDistance": 28.094
+    },
+    {
+      "sourceSvgId": "path356",
+      "hexPair": [
+        "1804",
+        "1805"
+      ],
+      "intersection": [
+        899.09,
+        212.06
+      ],
+      "pathDistance": 94.577
+    },
+    {
+      "sourceSvgId": "path357",
+      "hexPair": [
+        "1704",
+        "1705"
+      ],
+      "intersection": [
+        815.905,
+        237.14
+      ],
+      "pathDistance": 18.001
+    },
+    {
+      "sourceSvgId": "path357",
+      "hexPair": [
+        "1705",
+        "1806"
+      ],
+      "intersection": [
+        837.243,
+        276.735
+      ],
+      "pathDistance": 67.181
+    },
+    {
+      "sourceSvgId": "path357",
+      "hexPair": [
+        "1806",
+        "1807"
+      ],
+      "intersection": [
+        856.583,
+        312.38
+      ],
+      "pathDistance": 117.93
+    },
+    {
+      "sourceSvgId": "path358",
+      "hexPair": [
+        "1807",
+        "1808"
+      ],
+      "intersection": [
+        891.375,
+        362.54
+      ],
+      "pathDistance": 23.559
+    },
+    {
+      "sourceSvgId": "path359",
+      "hexPair": [
+        "1505",
+        "1506"
+      ],
+      "intersection": [
+        732.607,
+        287.3
+      ],
+      "pathDistance": 32.315
+    },
+    {
+      "sourceSvgId": "path359",
+      "hexPair": [
+        "1506",
+        "1507"
+      ],
+      "intersection": [
+        731.578,
+        337.46
+      ],
+      "pathDistance": 82.588
+    },
+    {
+      "sourceSvgId": "path360",
+      "hexPair": [
+        "1409",
+        "1410"
+      ],
+      "intersection": [
+        689.73,
+        462.86
+      ],
+      "pathDistance": 24.374
+    },
+    {
+      "sourceSvgId": "path360",
+      "hexPair": [
+        "1408",
+        "1409"
+      ],
+      "intersection": [
+        690.235,
+        412.7
+      ],
+      "pathDistance": 74.895
+    },
+    {
+      "sourceSvgId": "path360",
+      "hexPair": [
+        "1408",
+        "1507"
+      ],
+      "intersection": [
+        710.569,
+        374.198
+      ],
+      "pathDistance": 123.11
+    },
+    {
+      "sourceSvgId": "path361",
+      "hexPair": [
+        "1410",
+        "1510"
+      ],
+      "intersection": [
+        711.465,
+        499.845
+      ],
+      "pathDistance": 29.618
+    },
+    {
+      "sourceSvgId": "path362",
+      "hexPair": [
+        "1709",
+        "1810"
+      ],
+      "intersection": [
+        837.983,
+        476.123
+      ],
+      "pathDistance": 66.033
+    },
+    {
+      "sourceSvgId": "path362",
+      "hexPair": [
+        "1610",
+        "1709"
+      ],
+      "intersection": [
+        792.993,
+        470.362
+      ],
+      "pathDistance": 113.556
+    },
+    {
+      "sourceSvgId": "path362",
+      "hexPair": [
+        "1510",
+        "1610"
+      ],
+      "intersection": [
+        754.608,
+        502.304
+      ],
+      "pathDistance": 164.459
+    },
+    {
+      "sourceSvgId": "path363",
+      "hexPair": [
+        "0907",
+        "1008"
+      ],
+      "intersection": [
+        501.283,
+        371.031
+      ],
+      "pathDistance": 32.388
+    },
+    {
+      "sourceSvgId": "path363",
+      "hexPair": [
+        "1008",
+        "1108"
+      ],
+      "intersection": [
+        544.576,
+        394.667
+      ],
+      "pathDistance": 81.795
+    },
+    {
+      "sourceSvgId": "path363",
+      "hexPair": [
+        "1108",
+        "1209"
+      ],
+      "intersection": [
+        585.04,
+        423.091
+      ],
+      "pathDistance": 131.672
+    },
+    {
+      "sourceSvgId": "path363",
+      "hexPair": [
+        "1209",
+        "1309"
+      ],
+      "intersection": [
+        622.714,
+        456.235
+      ],
+      "pathDistance": 182.3
+    },
+    {
+      "sourceSvgId": "path363",
+      "hexPair": [
+        "1309",
+        "1410"
+      ],
+      "intersection": [
+        665.375,
+        480.943
+      ],
+      "pathDistance": 233.231
+    },
+    {
+      "sourceSvgId": "path364",
+      "hexPair": [
+        "0606",
+        "0706"
+      ],
+      "intersection": [
+        372.052,
+        299.025
+      ],
+      "pathDistance": 30.761
+    },
+    {
+      "sourceSvgId": "path364",
+      "hexPair": [
+        "0706",
+        "0807"
+      ],
+      "intersection": [
+        411.475,
+        329.21
+      ],
+      "pathDistance": 81.607
+    },
+    {
+      "sourceSvgId": "path364",
+      "hexPair": [
+        "0807",
+        "0907"
+      ],
+      "intersection": [
+        455.247,
+        352.036
+      ],
+      "pathDistance": 131.319
+    },
+    {
+      "sourceSvgId": "path365",
+      "hexPair": [
+        "0609",
+        "0708"
+      ],
+      "intersection": [
+        374.573,
+        430.322
+      ],
+      "pathDistance": 28.064
+    },
+    {
+      "sourceSvgId": "path365",
+      "hexPair": [
+        "0708",
+        "0808"
+      ],
+      "intersection": [
+        413.205,
+        398.797
+      ],
+      "pathDistance": 78.254
+    },
+    {
+      "sourceSvgId": "path365",
+      "hexPair": [
+        "0808",
+        "0907"
+      ],
+      "intersection": [
+        456.612,
+        375.354
+      ],
+      "pathDistance": 128.523
+    },
+    {
+      "sourceSvgId": "path366",
+      "hexPair": [
+        "0610",
+        "0611"
+      ],
+      "intersection": [
+        350.051,
+        513.02
+      ],
+      "pathDistance": 8.053
+    },
+    {
+      "sourceSvgId": "path366",
+      "hexPair": [
+        "0609",
+        "0610"
+      ],
+      "intersection": [
+        347.198,
+        462.86
+      ],
+      "pathDistance": 58.772
+    },
+    {
+      "sourceSvgId": "path367",
+      "hexPair": [
+        "0506",
+        "0606"
+      ],
+      "intersection": [
+        327.562,
+        297.187
+      ],
+      "pathDistance": 31.548
+    },
+    {
+      "sourceSvgId": "path367",
+      "hexPair": [
+        "0407",
+        "0506"
+      ],
+      "intersection": [
+        283.632,
+        319.745
+      ],
+      "pathDistance": 82.647
+    },
+    {
+      "sourceSvgId": "path367",
+      "hexPair": [
+        "0407",
+        "0408"
+      ],
+      "intersection": [
+        268.853,
+        362.54
+      ],
+      "pathDistance": 130.595
+    },
+    {
+      "sourceSvgId": "path367",
+      "hexPair": [
+        "0308",
+        "0408"
+      ],
+      "intersection": [
+        243.743,
+        399.302
+      ],
+      "pathDistance": 177.726
+    },
+    {
+      "sourceSvgId": "path368",
+      "hexPair": [
+        "0508",
+        "0609"
+      ],
+      "intersection": [
+        327.244,
+        428.431
+      ],
+      "pathDistance": 23.38
+    },
+    {
+      "sourceSvgId": "path368",
+      "hexPair": [
+        "0409",
+        "0508"
+      ],
+      "intersection": [
+        286.426,
+        424.793
+      ],
+      "pathDistance": 65.591
+    },
+    {
+      "sourceSvgId": "path368",
+      "hexPair": [
+        "0308",
+        "0409"
+      ],
+      "intersection": [
+        244.837,
+        424.247
+      ],
+      "pathDistance": 107.503
+    },
+    {
+      "sourceSvgId": "path369",
+      "hexPair": [
+        "0308",
+        "0309"
+      ],
+      "intersection": [
+        220.813,
+        437.78
+      ],
+      "pathDistance": 26.187
+    },
+    {
+      "sourceSvgId": "path369",
+      "hexPair": [
+        "0210",
+        "0309"
+      ],
+      "intersection": [
+        202.966,
+        477.357
+      ],
+      "pathDistance": 73.533
+    },
+    {
+      "sourceSvgId": "path369",
+      "hexPair": [
+        "0210",
+        "0211"
+      ],
+      "intersection": [
+        184.113,
+        513.02
+      ],
+      "pathDistance": 118.288
+    },
+    {
+      "sourceSvgId": "path370",
+      "hexPair": [
+        "0110",
+        "0211"
+      ],
+      "intersection": [
+        157.925,
+        528.005
+      ],
+      "pathDistance": 70.666
+    },
+    {
+      "sourceSvgId": "path372",
+      "hexPair": [
+        "0109",
+        "0209"
+      ],
+      "intersection": [
+        159.593,
+        450.697
+      ],
+      "pathDistance": 65.653
+    },
+    {
+      "sourceSvgId": "path372",
+      "hexPair": [
+        "0209",
+        "0308"
+      ],
+      "intersection": [
+        200.123,
+        422.385
+      ],
+      "pathDistance": 120.28
+    },
+    {
+      "sourceSvgId": "path373",
+      "hexPair": [
+        "0106",
+        "0207"
+      ],
+      "intersection": [
+        159.362,
+        324.933
+      ],
+      "pathDistance": 71.183
+    },
+    {
+      "sourceSvgId": "path373",
+      "hexPair": [
+        "0207",
+        "0208"
+      ],
+      "intersection": [
+        182.728,
+        362.54
+      ],
+      "pathDistance": 118.056
+    },
+    {
+      "sourceSvgId": "path373",
+      "hexPair": [
+        "0208",
+        "0308"
+      ],
+      "intersection": [
+        204.608,
+        395.426
+      ],
+      "pathDistance": 160.151
+    },
+    {
+      "sourceSvgId": "path374",
+      "hexPair": [
+        "0205",
+        "0305"
+      ],
+      "intersection": [
+        204.061,
+        245.871
+      ],
+      "pathDistance": 76.641
+    },
+    {
+      "sourceSvgId": "path374",
+      "hexPair": [
+        "0305",
+        "0405"
+      ],
+      "intersection": [
+        243.066,
+        247.677
+      ],
+      "pathDistance": 122.673
+    },
+    {
+      "sourceSvgId": "path375",
+      "hexPair": [
+        "0505",
+        "0606"
+      ],
+      "intersection": [
+        329.034,
+        274.922
+      ],
+      "pathDistance": 25.349
+    },
+    {
+      "sourceSvgId": "path375",
+      "hexPair": [
+        "0405",
+        "0505"
+      ],
+      "intersection": [
+        287.501,
+        248.308
+      ],
+      "pathDistance": 76.376
+    },
+    {
+      "sourceSvgId": "path376",
+      "hexPair": [
+        "0803",
+        "0804"
+      ],
+      "intersection": [
+        433.864,
+        161.9
+      ],
+      "pathDistance": 59.837
+    },
+    {
+      "sourceSvgId": "path376",
+      "hexPair": [
+        "0804",
+        "0805"
+      ],
+      "intersection": [
+        430.808,
+        212.06
+      ],
+      "pathDistance": 110.642
+    },
+    {
+      "sourceSvgId": "path376",
+      "hexPair": [
+        "0705",
+        "0805"
+      ],
+      "intersection": [
+        411.325,
+        245.137
+      ],
+      "pathDistance": 149.678
+    },
+    {
+      "sourceSvgId": "path376",
+      "hexPair": [
+        "0606",
+        "0705"
+      ],
+      "intersection": [
+        370.238,
+        272.506
+      ],
+      "pathDistance": 200.342
+    },
+    {
+      "sourceSvgId": "path377",
+      "hexPair": [
+        "0211",
+        "0310"
+      ],
+      "intersection": [
+        199.68,
+        521.955
+      ],
+      "pathDistance": 37.902
+    },
+    {
+      "sourceSvgId": "path377",
+      "hexPair": [
+        "0310",
+        "0410"
+      ],
+      "intersection": [
+        242.274,
+        497.136
+      ],
+      "pathDistance": 89.61
+    },
+    {
+      "sourceSvgId": "path377",
+      "hexPair": [
+        "0410",
+        "0509"
+      ],
+      "intersection": [
+        285.416,
+        473.245
+      ],
+      "pathDistance": 140.69
+    },
+    {
+      "sourceSvgId": "path377",
+      "hexPair": [
+        "0509",
+        "0609"
+      ],
+      "intersection": [
+        329.392,
+        450.764
+      ],
+      "pathDistance": 191.512
+    },
+    {
+      "sourceSvgId": "path378",
+      "hexPair": [
+        "0410",
+        "0510"
+      ],
+      "intersection": [
+        283.727,
+        505.493
+      ],
+      "pathDistance": 34.255
+    },
+    {
+      "sourceSvgId": "path378",
+      "hexPair": [
+        "0510",
+        "0611"
+      ],
+      "intersection": [
+        329.213,
+        525.419
+      ],
+      "pathDistance": 85.707
+    },
+    {
+      "sourceSvgId": "path379",
+      "hexPair": [
+        "1411",
+        "1510"
+      ],
+      "intersection": [
+        709.97,
+        523.664
+      ],
+      "pathDistance": 26.652
+    },
+    {
+      "sourceSvgId": "path379",
+      "hexPair": [
+        "1310",
+        "1411"
+      ],
+      "intersection": [
+        668.421,
+        525.947
+      ],
+      "pathDistance": 71.318
+    },
+    {
+      "sourceSvgId": "path379",
+      "hexPair": [
+        "1211",
+        "1310"
+      ],
+      "intersection": [
+        622.883,
+        519.93
+      ],
+      "pathDistance": 120.894
+    },
+    {
+      "sourceSvgId": "path379",
+      "hexPair": [
+        "1110",
+        "1211"
+      ],
+      "intersection": [
+        586.493,
+        520.952
+      ],
+      "pathDistance": 160.102
+    },
+    {
+      "sourceSvgId": "path379",
+      "hexPair": [
+        "1010",
+        "1110"
+      ],
+      "intersection": [
+        538.859,
+        504.662
+      ],
+      "pathDistance": 212.501
+    },
+    {
+      "sourceSvgId": "path379",
+      "hexPair": [
+        "0910",
+        "1010"
+      ],
+      "intersection": [
+        502.72,
+        506.96
+      ],
+      "pathDistance": 249.864
+    },
+    {
+      "sourceSvgId": "path379",
+      "hexPair": [
+        "0811",
+        "0910"
+      ],
+      "intersection": [
+        456.4,
+        525.476
+      ],
+      "pathDistance": 300.987
+    },
+    {
+      "sourceSvgId": "path379",
+      "hexPair": [
+        "0710",
+        "0811"
+      ],
+      "intersection": [
+        413.673,
+        526.13
+      ],
+      "pathDistance": 346.652
+    },
+    {
+      "sourceSvgId": "path379",
+      "hexPair": [
+        "0611",
+        "0710"
+      ],
+      "intersection": [
+        369.842,
+        522.637
+      ],
+      "pathDistance": 391.314
+    }
+  ],
+  "railAmbiguities": [],
+  "hexes": {
+    "0105": {
+      "hexId": "0105",
+      "railStubs": {},
+      "riverSides": {},
+      "reinforcementSides": {
+        "S": [
+          {
+            "sourceSvgId": "path315",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "SW": [
+          {
+            "sourceSvgId": "path315",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "NW": [
+          {
+            "sourceSvgId": "path315",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ]
+      }
+    },
+    "0106": {
+      "hexId": "0106",
+      "railStubs": {
+        "SE": {
+          "to": "0207",
+          "sourceSvgIds": [
+            "path373"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        }
+      },
+      "riverSides": {},
+      "reinforcementSides": {
+        "N": [
+          {
+            "sourceSvgId": "path315",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "S": [
+          {
+            "sourceSvgId": "path315",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "SW": [
+          {
+            "sourceSvgId": "path315",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "NW": [
+          {
+            "sourceSvgId": "path315",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ]
+      }
+    },
+    "0107": {
+      "hexId": "0107",
+      "railStubs": {},
+      "riverSides": {},
+      "reinforcementSides": {
+        "N": [
+          {
+            "sourceSvgId": "path315",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "S": [
+          {
+            "sourceSvgId": "path315",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "SW": [
+          {
+            "sourceSvgId": "path315",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "NW": [
+          {
+            "sourceSvgId": "path315",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ]
+      }
+    },
+    "0108": {
+      "hexId": "0108",
+      "railStubs": {},
+      "riverSides": {},
+      "reinforcementSides": {
+        "N": [
+          {
+            "sourceSvgId": "path315",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "SW": [
+          {
+            "sourceSvgId": "path315",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "NW": [
+          {
+            "sourceSvgId": "path315",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ]
+      }
+    },
+    "0109": {
+      "hexId": "0109",
+      "railStubs": {
+        "NE": {
+          "to": "0209",
+          "sourceSvgIds": [
+            "path372"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        }
+      },
+      "riverSides": {},
+      "reinforcementSides": {
+        "S": [
+          {
+            "sourceSvgId": "path315",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "SW": [
+          {
+            "sourceSvgId": "path315",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "NW": [
+          {
+            "sourceSvgId": "path315",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ]
+      }
+    },
+    "0110": {
+      "hexId": "0110",
+      "railStubs": {
+        "SE": {
+          "to": "0211",
+          "sourceSvgIds": [
+            "path370"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        }
+      },
+      "riverSides": {},
+      "reinforcementSides": {
+        "N": [
+          {
+            "sourceSvgId": "path315",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "SW": [
+          {
+            "sourceSvgId": "path315",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "NW": [
+          {
+            "sourceSvgId": "path315",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ]
+      }
+    },
+    "0205": {
+      "hexId": "0205",
+      "railStubs": {
+        "SE": {
+          "to": "0305",
+          "sourceSvgIds": [
+            "path374"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        }
+      },
+      "riverSides": {},
+      "reinforcementSides": {}
+    },
+    "0206": {
+      "hexId": "0206",
+      "railStubs": {},
+      "riverSides": {},
+      "reinforcementSides": {}
+    },
+    "0207": {
+      "hexId": "0207",
+      "railStubs": {
+        "S": {
+          "to": "0208",
+          "sourceSvgIds": [
+            "path373"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        },
+        "NW": {
+          "to": "0106",
+          "sourceSvgIds": [
+            "path373"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        }
+      },
+      "riverSides": {},
+      "reinforcementSides": {}
+    },
+    "0208": {
+      "hexId": "0208",
+      "railStubs": {
+        "N": {
+          "to": "0207",
+          "sourceSvgIds": [
+            "path373"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        },
+        "SE": {
+          "to": "0308",
+          "sourceSvgIds": [
+            "path373"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        }
+      },
+      "riverSides": {},
+      "reinforcementSides": {}
+    },
+    "0209": {
+      "hexId": "0209",
+      "railStubs": {
+        "NE": {
+          "to": "0308",
+          "sourceSvgIds": [
+            "path372"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        },
+        "SW": {
+          "to": "0109",
+          "sourceSvgIds": [
+            "path372"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        }
+      },
+      "riverSides": {},
+      "reinforcementSides": {}
+    },
+    "0210": {
+      "hexId": "0210",
+      "railStubs": {
+        "NE": {
+          "to": "0309",
+          "sourceSvgIds": [
+            "path369"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        },
+        "S": {
+          "to": "0211",
+          "sourceSvgIds": [
+            "path369"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        }
+      },
+      "riverSides": {},
+      "reinforcementSides": {}
+    },
+    "0211": {
+      "hexId": "0211",
+      "railStubs": {
+        "N": {
+          "to": "0210",
+          "sourceSvgIds": [
+            "path369"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        },
+        "NE": {
+          "to": "0310",
+          "sourceSvgIds": [
+            "path377"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        },
+        "NW": {
+          "to": "0110",
+          "sourceSvgIds": [
+            "path370"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        }
+      },
+      "riverSides": {},
+      "reinforcementSides": {}
+    },
+    "0305": {
+      "hexId": "0305",
+      "railStubs": {
+        "NE": {
+          "to": "0405",
+          "sourceSvgIds": [
+            "path374"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        },
+        "NW": {
+          "to": "0205",
+          "sourceSvgIds": [
+            "path374"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        }
+      },
+      "riverSides": {
+        "N": [
+          {
+            "sourceSvgId": "path384",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "NE": [
+          {
+            "sourceSvgId": "path384",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "SE": [
+          {
+            "sourceSvgId": "path384",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "S": [
+          {
+            "sourceSvgId": "path384",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ]
+      },
+      "reinforcementSides": {}
+    },
+    "0306": {
+      "hexId": "0306",
+      "railStubs": {},
+      "riverSides": {
+        "N": [
+          {
+            "sourceSvgId": "path384",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "NE": [
+          {
+            "sourceSvgId": "path384",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "SE": [
+          {
+            "sourceSvgId": "path384",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ]
+      },
+      "reinforcementSides": {}
+    },
+    "0307": {
+      "hexId": "0307",
+      "railStubs": {},
+      "riverSides": {},
+      "reinforcementSides": {}
+    },
+    "0308": {
+      "hexId": "0308",
+      "railStubs": {
+        "NE": {
+          "to": "0408",
+          "sourceSvgIds": [
+            "path367"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        },
+        "SE": {
+          "to": "0409",
+          "sourceSvgIds": [
+            "path368"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        },
+        "S": {
+          "to": "0309",
+          "sourceSvgIds": [
+            "path369"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        },
+        "SW": {
+          "to": "0209",
+          "sourceSvgIds": [
+            "path372"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        },
+        "NW": {
+          "to": "0208",
+          "sourceSvgIds": [
+            "path373"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        }
+      },
+      "riverSides": {},
+      "reinforcementSides": {}
+    },
+    "0309": {
+      "hexId": "0309",
+      "railStubs": {
+        "N": {
+          "to": "0308",
+          "sourceSvgIds": [
+            "path369"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        },
+        "SW": {
+          "to": "0210",
+          "sourceSvgIds": [
+            "path369"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        }
+      },
+      "riverSides": {},
+      "reinforcementSides": {}
+    },
+    "0310": {
+      "hexId": "0310",
+      "railStubs": {
+        "NE": {
+          "to": "0410",
+          "sourceSvgIds": [
+            "path377"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        },
+        "SW": {
+          "to": "0211",
+          "sourceSvgIds": [
+            "path377"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        }
+      },
+      "riverSides": {},
+      "reinforcementSides": {}
+    },
+    "0405": {
+      "hexId": "0405",
+      "railStubs": {
+        "SE": {
+          "to": "0505",
+          "sourceSvgIds": [
+            "path375"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        },
+        "SW": {
+          "to": "0305",
+          "sourceSvgIds": [
+            "path374"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        }
+      },
+      "riverSides": {
+        "N": [
+          {
+            "sourceSvgId": "path383",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "NE": [
+          {
+            "sourceSvgId": "path383",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "SE": [
+          {
+            "sourceSvgId": "path383",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "S": [
+          {
+            "sourceSvgId": "path384",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "SW": [
+          {
+            "sourceSvgId": "path384",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ]
+      },
+      "reinforcementSides": {}
+    },
+    "0406": {
+      "hexId": "0406",
+      "railStubs": {},
+      "riverSides": {
+        "N": [
+          {
+            "sourceSvgId": "path384",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "SE": [
+          {
+            "sourceSvgId": "path384",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "S": [
+          {
+            "sourceSvgId": "path384",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "SW": [
+          {
+            "sourceSvgId": "path384",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "NW": [
+          {
+            "sourceSvgId": "path384",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ]
+      },
+      "reinforcementSides": {}
+    },
+    "0407": {
+      "hexId": "0407",
+      "railStubs": {
+        "NE": {
+          "to": "0506",
+          "sourceSvgIds": [
+            "path367"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        },
+        "S": {
+          "to": "0408",
+          "sourceSvgIds": [
+            "path367"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        }
+      },
+      "riverSides": {
+        "N": [
+          {
+            "sourceSvgId": "path384",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "NE": [
+          {
+            "sourceSvgId": "path384",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "SE": [
+          {
+            "sourceSvgId": "path384",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "NW": [
+          {
+            "sourceSvgId": "path384",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ]
+      },
+      "reinforcementSides": {}
+    },
+    "0408": {
+      "hexId": "0408",
+      "railStubs": {
+        "N": {
+          "to": "0407",
+          "sourceSvgIds": [
+            "path367"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        },
+        "SW": {
+          "to": "0308",
+          "sourceSvgIds": [
+            "path367"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        }
+      },
+      "riverSides": {},
+      "reinforcementSides": {}
+    },
+    "0409": {
+      "hexId": "0409",
+      "railStubs": {
+        "NE": {
+          "to": "0508",
+          "sourceSvgIds": [
+            "path368"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        },
+        "NW": {
+          "to": "0308",
+          "sourceSvgIds": [
+            "path368"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        }
+      },
+      "riverSides": {},
+      "reinforcementSides": {}
+    },
+    "0410": {
+      "hexId": "0410",
+      "railStubs": {
+        "NE": {
+          "to": "0509",
+          "sourceSvgIds": [
+            "path377"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        },
+        "SE": {
+          "to": "0510",
+          "sourceSvgIds": [
+            "path378"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        },
+        "SW": {
+          "to": "0310",
+          "sourceSvgIds": [
+            "path377"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        }
+      },
+      "riverSides": {},
+      "reinforcementSides": {}
+    },
+    "0411": {
+      "hexId": "0411",
+      "railStubs": {},
+      "riverSides": {},
+      "reinforcementSides": {}
+    },
+    "0504": {
+      "hexId": "0504",
+      "railStubs": {},
+      "riverSides": {
+        "SE": [
+          {
+            "sourceSvgId": "path383",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "S": [
+          {
+            "sourceSvgId": "path383",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "SW": [
+          {
+            "sourceSvgId": "path383",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ]
+      },
+      "reinforcementSides": {}
+    },
+    "0505": {
+      "hexId": "0505",
+      "railStubs": {
+        "SE": {
+          "to": "0606",
+          "sourceSvgIds": [
+            "path375"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        },
+        "NW": {
+          "to": "0405",
+          "sourceSvgIds": [
+            "path375"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        }
+      },
+      "riverSides": {
+        "N": [
+          {
+            "sourceSvgId": "path383",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "NE": [
+          {
+            "sourceSvgId": "path383",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "NW": [
+          {
+            "sourceSvgId": "path383",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ]
+      },
+      "reinforcementSides": {}
+    },
+    "0506": {
+      "hexId": "0506",
+      "railStubs": {
+        "NE": {
+          "to": "0606",
+          "sourceSvgIds": [
+            "path367"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        },
+        "SW": {
+          "to": "0407",
+          "sourceSvgIds": [
+            "path367"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        }
+      },
+      "riverSides": {
+        "SE": [
+          {
+            "sourceSvgId": "path384",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "S": [
+          {
+            "sourceSvgId": "path384",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "SW": [
+          {
+            "sourceSvgId": "path384",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "NW": [
+          {
+            "sourceSvgId": "path384",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ]
+      },
+      "reinforcementSides": {}
+    },
+    "0507": {
+      "hexId": "0507",
+      "railStubs": {},
+      "riverSides": {
+        "N": [
+          {
+            "sourceSvgId": "path384",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "NE": [
+          {
+            "sourceSvgId": "path384",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "NW": [
+          {
+            "sourceSvgId": "path384",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ]
+      },
+      "reinforcementSides": {}
+    },
+    "0508": {
+      "hexId": "0508",
+      "railStubs": {
+        "SE": {
+          "to": "0609",
+          "sourceSvgIds": [
+            "path368"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        },
+        "SW": {
+          "to": "0409",
+          "sourceSvgIds": [
+            "path368"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        }
+      },
+      "riverSides": {},
+      "reinforcementSides": {}
+    },
+    "0509": {
+      "hexId": "0509",
+      "railStubs": {
+        "NE": {
+          "to": "0609",
+          "sourceSvgIds": [
+            "path377"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        },
+        "SW": {
+          "to": "0410",
+          "sourceSvgIds": [
+            "path377"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        }
+      },
+      "riverSides": {},
+      "reinforcementSides": {}
+    },
+    "0510": {
+      "hexId": "0510",
+      "railStubs": {
+        "SE": {
+          "to": "0611",
+          "sourceSvgIds": [
+            "path378"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        },
+        "NW": {
+          "to": "0410",
+          "sourceSvgIds": [
+            "path378"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        }
+      },
+      "riverSides": {},
+      "reinforcementSides": {}
+    },
+    "0604": {
+      "hexId": "0604",
+      "railStubs": {},
+      "riverSides": {},
+      "reinforcementSides": {}
+    },
+    "0605": {
+      "hexId": "0605",
+      "railStubs": {},
+      "riverSides": {
+        "SW": [
+          {
+            "sourceSvgId": "path383",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "NW": [
+          {
+            "sourceSvgId": "path383",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ]
+      },
+      "reinforcementSides": {}
+    },
+    "0606": {
+      "hexId": "0606",
+      "railStubs": {
+        "NE": {
+          "to": "0705",
+          "sourceSvgIds": [
+            "path376"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        },
+        "SE": {
+          "to": "0706",
+          "sourceSvgIds": [
+            "path364"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        },
+        "SW": {
+          "to": "0506",
+          "sourceSvgIds": [
+            "path367"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        },
+        "NW": {
+          "to": "0505",
+          "sourceSvgIds": [
+            "path375"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        }
+      },
+      "riverSides": {},
+      "reinforcementSides": {}
+    },
+    "0607": {
+      "hexId": "0607",
+      "railStubs": {},
+      "riverSides": {
+        "SW": [
+          {
+            "sourceSvgId": "path384",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "NW": [
+          {
+            "sourceSvgId": "path384",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ]
+      },
+      "reinforcementSides": {}
+    },
+    "0608": {
+      "hexId": "0608",
+      "railStubs": {},
+      "riverSides": {},
+      "reinforcementSides": {}
+    },
+    "0609": {
+      "hexId": "0609",
+      "railStubs": {
+        "NE": {
+          "to": "0708",
+          "sourceSvgIds": [
+            "path365"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        },
+        "S": {
+          "to": "0610",
+          "sourceSvgIds": [
+            "path366"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        },
+        "SW": {
+          "to": "0509",
+          "sourceSvgIds": [
+            "path377"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        },
+        "NW": {
+          "to": "0508",
+          "sourceSvgIds": [
+            "path368"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        }
+      },
+      "riverSides": {},
+      "reinforcementSides": {}
+    },
+    "0610": {
+      "hexId": "0610",
+      "railStubs": {
+        "N": {
+          "to": "0609",
+          "sourceSvgIds": [
+            "path366"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        },
+        "S": {
+          "to": "0611",
+          "sourceSvgIds": [
+            "path366"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        }
+      },
+      "riverSides": {},
+      "reinforcementSides": {}
+    },
+    "0611": {
+      "hexId": "0611",
+      "railStubs": {
+        "N": {
+          "to": "0610",
+          "sourceSvgIds": [
+            "path366"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        },
+        "NE": {
+          "to": "0710",
+          "sourceSvgIds": [
+            "path379"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        },
+        "NW": {
+          "to": "0510",
+          "sourceSvgIds": [
+            "path378"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        }
+      },
+      "riverSides": {},
+      "reinforcementSides": {}
+    },
+    "0703": {
+      "hexId": "0703",
+      "railStubs": {},
+      "riverSides": {},
+      "reinforcementSides": {}
+    },
+    "0704": {
+      "hexId": "0704",
+      "railStubs": {},
+      "riverSides": {},
+      "reinforcementSides": {}
+    },
+    "0705": {
+      "hexId": "0705",
+      "railStubs": {
+        "NE": {
+          "to": "0805",
+          "sourceSvgIds": [
+            "path376"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        },
+        "SW": {
+          "to": "0606",
+          "sourceSvgIds": [
+            "path376"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        }
+      },
+      "riverSides": {},
+      "reinforcementSides": {}
+    },
+    "0706": {
+      "hexId": "0706",
+      "railStubs": {
+        "SE": {
+          "to": "0807",
+          "sourceSvgIds": [
+            "path364"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        },
+        "NW": {
+          "to": "0606",
+          "sourceSvgIds": [
+            "path364"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        }
+      },
+      "riverSides": {},
+      "reinforcementSides": {}
+    },
+    "0707": {
+      "hexId": "0707",
+      "railStubs": {},
+      "riverSides": {},
+      "reinforcementSides": {}
+    },
+    "0708": {
+      "hexId": "0708",
+      "railStubs": {
+        "NE": {
+          "to": "0808",
+          "sourceSvgIds": [
+            "path365"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        },
+        "SW": {
+          "to": "0609",
+          "sourceSvgIds": [
+            "path365"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        }
+      },
+      "riverSides": {},
+      "reinforcementSides": {}
+    },
+    "0709": {
+      "hexId": "0709",
+      "railStubs": {},
+      "riverSides": {},
+      "reinforcementSides": {}
+    },
+    "0710": {
+      "hexId": "0710",
+      "railStubs": {
+        "SE": {
+          "to": "0811",
+          "sourceSvgIds": [
+            "path379"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        },
+        "SW": {
+          "to": "0611",
+          "sourceSvgIds": [
+            "path379"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        }
+      },
+      "riverSides": {},
+      "reinforcementSides": {}
+    },
+    "0803": {
+      "hexId": "0803",
+      "railStubs": {
+        "S": {
+          "to": "0804",
+          "sourceSvgIds": [
+            "path376"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        }
+      },
+      "riverSides": {},
+      "reinforcementSides": {}
+    },
+    "0804": {
+      "hexId": "0804",
+      "railStubs": {
+        "N": {
+          "to": "0803",
+          "sourceSvgIds": [
+            "path376"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        },
+        "S": {
+          "to": "0805",
+          "sourceSvgIds": [
+            "path376"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        }
+      },
+      "riverSides": {},
+      "reinforcementSides": {}
+    },
+    "0805": {
+      "hexId": "0805",
+      "railStubs": {
+        "N": {
+          "to": "0804",
+          "sourceSvgIds": [
+            "path376"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        },
+        "SW": {
+          "to": "0705",
+          "sourceSvgIds": [
+            "path376"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        }
+      },
+      "riverSides": {},
+      "reinforcementSides": {}
+    },
+    "0806": {
+      "hexId": "0806",
+      "railStubs": {},
+      "riverSides": {},
+      "reinforcementSides": {}
+    },
+    "0807": {
+      "hexId": "0807",
+      "railStubs": {
+        "SE": {
+          "to": "0907",
+          "sourceSvgIds": [
+            "path364"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        },
+        "NW": {
+          "to": "0706",
+          "sourceSvgIds": [
+            "path364"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        }
+      },
+      "riverSides": {},
+      "reinforcementSides": {}
+    },
+    "0808": {
+      "hexId": "0808",
+      "railStubs": {
+        "NE": {
+          "to": "0907",
+          "sourceSvgIds": [
+            "path365"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        },
+        "SW": {
+          "to": "0708",
+          "sourceSvgIds": [
+            "path365"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        }
+      },
+      "riverSides": {},
+      "reinforcementSides": {}
+    },
+    "0809": {
+      "hexId": "0809",
+      "railStubs": {},
+      "riverSides": {},
+      "reinforcementSides": {}
+    },
+    "0810": {
+      "hexId": "0810",
+      "railStubs": {},
+      "riverSides": {},
+      "reinforcementSides": {}
+    },
+    "0811": {
+      "hexId": "0811",
+      "railStubs": {
+        "NE": {
+          "to": "0910",
+          "sourceSvgIds": [
+            "path379"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        },
+        "NW": {
+          "to": "0710",
+          "sourceSvgIds": [
+            "path379"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        }
+      },
+      "riverSides": {},
+      "reinforcementSides": {}
+    },
+    "0903": {
+      "hexId": "0903",
+      "railStubs": {},
+      "riverSides": {},
+      "reinforcementSides": {}
+    },
+    "0904": {
+      "hexId": "0904",
+      "railStubs": {},
+      "riverSides": {},
+      "reinforcementSides": {}
+    },
+    "0905": {
+      "hexId": "0905",
+      "railStubs": {},
+      "riverSides": {},
+      "reinforcementSides": {}
+    },
+    "0906": {
+      "hexId": "0906",
+      "railStubs": {},
+      "riverSides": {},
+      "reinforcementSides": {}
+    },
+    "0907": {
+      "hexId": "0907",
+      "railStubs": {
+        "NE": {
+          "to": "1007",
+          "sourceSvgIds": [
+            "path352"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        },
+        "SE": {
+          "to": "1008",
+          "sourceSvgIds": [
+            "path363"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        },
+        "SW": {
+          "to": "0808",
+          "sourceSvgIds": [
+            "path365"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        },
+        "NW": {
+          "to": "0807",
+          "sourceSvgIds": [
+            "path364"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        }
+      },
+      "riverSides": {},
+      "reinforcementSides": {}
+    },
+    "0908": {
+      "hexId": "0908",
+      "railStubs": {},
+      "riverSides": {},
+      "reinforcementSides": {}
+    },
+    "0909": {
+      "hexId": "0909",
+      "railStubs": {},
+      "riverSides": {},
+      "reinforcementSides": {}
+    },
+    "0910": {
+      "hexId": "0910",
+      "railStubs": {
+        "NE": {
+          "to": "1010",
+          "sourceSvgIds": [
+            "path379"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        },
+        "SW": {
+          "to": "0811",
+          "sourceSvgIds": [
+            "path379"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        }
+      },
+      "riverSides": {},
+      "reinforcementSides": {}
+    },
+    "1003": {
+      "hexId": "1003",
+      "railStubs": {},
+      "riverSides": {
+        "N": [
+          {
+            "sourceSvgId": "path380",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "NE": [
+          {
+            "sourceSvgId": "path380",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "SE": [
+          {
+            "sourceSvgId": "path380",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ]
+      },
+      "reinforcementSides": {}
+    },
+    "1004": {
+      "hexId": "1004",
+      "railStubs": {},
+      "riverSides": {},
+      "reinforcementSides": {}
+    },
+    "1005": {
+      "hexId": "1005",
+      "railStubs": {},
+      "riverSides": {},
+      "reinforcementSides": {}
+    },
+    "1006": {
+      "hexId": "1006",
+      "railStubs": {},
+      "riverSides": {},
+      "reinforcementSides": {}
+    },
+    "1007": {
+      "hexId": "1007",
+      "railStubs": {
+        "NE": {
+          "to": "1106",
+          "sourceSvgIds": [
+            "path352"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        },
+        "SW": {
+          "to": "0907",
+          "sourceSvgIds": [
+            "path352"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        }
+      },
+      "riverSides": {},
+      "reinforcementSides": {}
+    },
+    "1008": {
+      "hexId": "1008",
+      "railStubs": {
+        "SE": {
+          "to": "1108",
+          "sourceSvgIds": [
+            "path363"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        },
+        "NW": {
+          "to": "0907",
+          "sourceSvgIds": [
+            "path363"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        }
+      },
+      "riverSides": {},
+      "reinforcementSides": {}
+    },
+    "1009": {
+      "hexId": "1009",
+      "railStubs": {},
+      "riverSides": {},
+      "reinforcementSides": {}
+    },
+    "1010": {
+      "hexId": "1010",
+      "railStubs": {
+        "SE": {
+          "to": "1110",
+          "sourceSvgIds": [
+            "path379"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        },
+        "SW": {
+          "to": "0910",
+          "sourceSvgIds": [
+            "path379"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        }
+      },
+      "riverSides": {},
+      "reinforcementSides": {}
+    },
+    "1011": {
+      "hexId": "1011",
+      "railStubs": {},
+      "riverSides": {},
+      "reinforcementSides": {}
+    },
+    "1102": {
+      "hexId": "1102",
+      "railStubs": {
+        "SE": {
+          "to": "1203",
+          "sourceSvgIds": [
+            "path346"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        }
+      },
+      "riverSides": {
+        "SE": [
+          {
+            "sourceSvgId": "path380",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "S": [
+          {
+            "sourceSvgId": "path380",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "SW": [
+          {
+            "sourceSvgId": "path380",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ]
+      },
+      "reinforcementSides": {}
+    },
+    "1103": {
+      "hexId": "1103",
+      "railStubs": {},
+      "riverSides": {
+        "N": [
+          {
+            "sourceSvgId": "path380",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "NE": [
+          {
+            "sourceSvgId": "path380",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "SE": [
+          {
+            "sourceSvgId": "path380",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "NW": [
+          {
+            "sourceSvgId": "path380",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ]
+      },
+      "reinforcementSides": {}
+    },
+    "1104": {
+      "hexId": "1104",
+      "railStubs": {},
+      "riverSides": {},
+      "reinforcementSides": {}
+    },
+    "1105": {
+      "hexId": "1105",
+      "railStubs": {},
+      "riverSides": {
+        "NE": [
+          {
+            "sourceSvgId": "path381",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "SE": [
+          {
+            "sourceSvgId": "path381",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "S": [
+          {
+            "sourceSvgId": "path381",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ]
+      },
+      "reinforcementSides": {}
+    },
+    "1106": {
+      "hexId": "1106",
+      "railStubs": {
+        "NE": {
+          "to": "1206",
+          "sourceSvgIds": [
+            "path352"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        },
+        "SW": {
+          "to": "1007",
+          "sourceSvgIds": [
+            "path352"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        }
+      },
+      "riverSides": {
+        "N": [
+          {
+            "sourceSvgId": "path381",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "NE": [
+          {
+            "sourceSvgId": "path381",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "SE": [
+          {
+            "sourceSvgId": "path381",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "S": [
+          {
+            "sourceSvgId": "path381",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ]
+      },
+      "reinforcementSides": {}
+    },
+    "1107": {
+      "hexId": "1107",
+      "railStubs": {},
+      "riverSides": {
+        "N": [
+          {
+            "sourceSvgId": "path381",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "NE": [
+          {
+            "sourceSvgId": "path381",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "SE": [
+          {
+            "sourceSvgId": "path381",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "S": [
+          {
+            "sourceSvgId": "path381",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ]
+      },
+      "reinforcementSides": {}
+    },
+    "1108": {
+      "hexId": "1108",
+      "railStubs": {
+        "SE": {
+          "to": "1209",
+          "sourceSvgIds": [
+            "path363"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        },
+        "NW": {
+          "to": "1008",
+          "sourceSvgIds": [
+            "path363"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        }
+      },
+      "riverSides": {
+        "N": [
+          {
+            "sourceSvgId": "path381",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "NE": [
+          {
+            "sourceSvgId": "path381",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "SE": [
+          {
+            "sourceSvgId": "path381",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "S": [
+          {
+            "sourceSvgId": "path381",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ]
+      },
+      "reinforcementSides": {}
+    },
+    "1109": {
+      "hexId": "1109",
+      "railStubs": {},
+      "riverSides": {
+        "N": [
+          {
+            "sourceSvgId": "path381",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "NE": [
+          {
+            "sourceSvgId": "path381",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "SE": [
+          {
+            "sourceSvgId": "path381",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ]
+      },
+      "reinforcementSides": {}
+    },
+    "1110": {
+      "hexId": "1110",
+      "railStubs": {
+        "SE": {
+          "to": "1211",
+          "sourceSvgIds": [
+            "path379"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        },
+        "NW": {
+          "to": "1010",
+          "sourceSvgIds": [
+            "path379"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        }
+      },
+      "riverSides": {},
+      "reinforcementSides": {}
+    },
+    "1202": {
+      "hexId": "1202",
+      "railStubs": {},
+      "riverSides": {},
+      "reinforcementSides": {}
+    },
+    "1203": {
+      "hexId": "1203",
+      "railStubs": {
+        "SE": {
+          "to": "1303",
+          "sourceSvgIds": [
+            "path347"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        },
+        "NW": {
+          "to": "1102",
+          "sourceSvgIds": [
+            "path346"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        }
+      },
+      "riverSides": {
+        "SE": [
+          {
+            "sourceSvgId": "path380",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "S": [
+          {
+            "sourceSvgId": "path380",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "SW": [
+          {
+            "sourceSvgId": "path380",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "NW": [
+          {
+            "sourceSvgId": "path380",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ]
+      },
+      "reinforcementSides": {}
+    },
+    "1204": {
+      "hexId": "1204",
+      "railStubs": {},
+      "riverSides": {
+        "N": [
+          {
+            "sourceSvgId": "path380",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "NE": [
+          {
+            "sourceSvgId": "path380",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "SE": [
+          {
+            "sourceSvgId": "path380",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "NW": [
+          {
+            "sourceSvgId": "path380",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ]
+      },
+      "reinforcementSides": {}
+    },
+    "1205": {
+      "hexId": "1205",
+      "railStubs": {},
+      "riverSides": {
+        "S": [
+          {
+            "sourceSvgId": "path381",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "SW": [
+          {
+            "sourceSvgId": "path381",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ]
+      },
+      "reinforcementSides": {}
+    },
+    "1206": {
+      "hexId": "1206",
+      "railStubs": {
+        "NE": {
+          "to": "1305",
+          "sourceSvgIds": [
+            "path352"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        },
+        "SW": {
+          "to": "1106",
+          "sourceSvgIds": [
+            "path352"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        }
+      },
+      "riverSides": {
+        "N": [
+          {
+            "sourceSvgId": "path381",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "S": [
+          {
+            "sourceSvgId": "path381",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "SW": [
+          {
+            "sourceSvgId": "path381",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "NW": [
+          {
+            "sourceSvgId": "path381",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ]
+      },
+      "reinforcementSides": {}
+    },
+    "1207": {
+      "hexId": "1207",
+      "railStubs": {},
+      "riverSides": {
+        "N": [
+          {
+            "sourceSvgId": "path381",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "S": [
+          {
+            "sourceSvgId": "path381",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "SW": [
+          {
+            "sourceSvgId": "path381",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "NW": [
+          {
+            "sourceSvgId": "path381",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ]
+      },
+      "reinforcementSides": {}
+    },
+    "1208": {
+      "hexId": "1208",
+      "railStubs": {},
+      "riverSides": {
+        "N": [
+          {
+            "sourceSvgId": "path381",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "S": [
+          {
+            "sourceSvgId": "path381",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "SW": [
+          {
+            "sourceSvgId": "path381",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "NW": [
+          {
+            "sourceSvgId": "path381",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ]
+      },
+      "reinforcementSides": {}
+    },
+    "1209": {
+      "hexId": "1209",
+      "railStubs": {
+        "SE": {
+          "to": "1309",
+          "sourceSvgIds": [
+            "path363"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        },
+        "NW": {
+          "to": "1108",
+          "sourceSvgIds": [
+            "path363"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        }
+      },
+      "riverSides": {
+        "N": [
+          {
+            "sourceSvgId": "path381",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "SE": [
+          {
+            "sourceSvgId": "path381",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "S": [
+          {
+            "sourceSvgId": "path381",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "SW": [
+          {
+            "sourceSvgId": "path381",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "NW": [
+          {
+            "sourceSvgId": "path381",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ]
+      },
+      "reinforcementSides": {}
+    },
+    "1210": {
+      "hexId": "1210",
+      "railStubs": {},
+      "riverSides": {
+        "N": [
+          {
+            "sourceSvgId": "path381",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "NE": [
+          {
+            "sourceSvgId": "path381",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "SE": [
+          {
+            "sourceSvgId": "path381",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "NW": [
+          {
+            "sourceSvgId": "path381",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ]
+      },
+      "reinforcementSides": {}
+    },
+    "1211": {
+      "hexId": "1211",
+      "railStubs": {
+        "NE": {
+          "to": "1310",
+          "sourceSvgIds": [
+            "path379"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        },
+        "NW": {
+          "to": "1110",
+          "sourceSvgIds": [
+            "path379"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        }
+      },
+      "riverSides": {},
+      "reinforcementSides": {}
+    },
+    "1302": {
+      "hexId": "1302",
+      "railStubs": {},
+      "riverSides": {},
+      "reinforcementSides": {}
+    },
+    "1303": {
+      "hexId": "1303",
+      "railStubs": {
+        "SE": {
+          "to": "1404",
+          "sourceSvgIds": [
+            "path347"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        },
+        "NW": {
+          "to": "1203",
+          "sourceSvgIds": [
+            "path347"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        }
+      },
+      "riverSides": {
+        "NE": [
+          {
+            "sourceSvgId": "path380",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "SE": [
+          {
+            "sourceSvgId": "path380",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "S": [
+          {
+            "sourceSvgId": "path380",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "SW": [
+          {
+            "sourceSvgId": "path380",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "NW": [
+          {
+            "sourceSvgId": "path380",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ]
+      },
+      "reinforcementSides": {}
+    },
+    "1304": {
+      "hexId": "1304",
+      "railStubs": {},
+      "riverSides": {
+        "N": [
+          {
+            "sourceSvgId": "path380",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "NE": [
+          {
+            "sourceSvgId": "path380",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "NW": [
+          {
+            "sourceSvgId": "path380",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ]
+      },
+      "reinforcementSides": {}
+    },
+    "1305": {
+      "hexId": "1305",
+      "railStubs": {
+        "NE": {
+          "to": "1405",
+          "sourceSvgIds": [
+            "path352"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        },
+        "SW": {
+          "to": "1206",
+          "sourceSvgIds": [
+            "path352"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        }
+      },
+      "riverSides": {},
+      "reinforcementSides": {}
+    },
+    "1306": {
+      "hexId": "1306",
+      "railStubs": {},
+      "riverSides": {},
+      "reinforcementSides": {}
+    },
+    "1307": {
+      "hexId": "1307",
+      "railStubs": {},
+      "riverSides": {},
+      "reinforcementSides": {}
+    },
+    "1308": {
+      "hexId": "1308",
+      "railStubs": {},
+      "riverSides": {},
+      "reinforcementSides": {}
+    },
+    "1309": {
+      "hexId": "1309",
+      "railStubs": {
+        "SE": {
+          "to": "1410",
+          "sourceSvgIds": [
+            "path363"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        },
+        "NW": {
+          "to": "1209",
+          "sourceSvgIds": [
+            "path363"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        }
+      },
+      "riverSides": {
+        "NE": [
+          {
+            "sourceSvgId": "path382",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "SE": [
+          {
+            "sourceSvgId": "path381",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          },
+          {
+            "sourceSvgId": "path382",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "S": [
+          {
+            "sourceSvgId": "path381",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          },
+          {
+            "sourceSvgId": "path382",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "SW": [
+          {
+            "sourceSvgId": "path381",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "NW": [
+          {
+            "sourceSvgId": "path381",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ]
+      },
+      "reinforcementSides": {}
+    },
+    "1310": {
+      "hexId": "1310",
+      "railStubs": {
+        "SE": {
+          "to": "1411",
+          "sourceSvgIds": [
+            "path379"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        },
+        "SW": {
+          "to": "1211",
+          "sourceSvgIds": [
+            "path379"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        }
+      },
+      "riverSides": {
+        "N": [
+          {
+            "sourceSvgId": "path381",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          },
+          {
+            "sourceSvgId": "path382",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "NE": [
+          {
+            "sourceSvgId": "path381",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          },
+          {
+            "sourceSvgId": "path382",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "NW": [
+          {
+            "sourceSvgId": "path381",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ]
+      },
+      "reinforcementSides": {}
+    },
+    "1402": {
+      "hexId": "1402",
+      "railStubs": {
+        "NE": {
+          "to": "1501",
+          "sourceSvgIds": [
+            "path355"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        },
+        "S": {
+          "to": "1403",
+          "sourceSvgIds": [
+            "path349"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        }
+      },
+      "riverSides": {},
+      "reinforcementSides": {}
+    },
+    "1403": {
+      "hexId": "1403",
+      "railStubs": {
+        "N": {
+          "to": "1402",
+          "sourceSvgIds": [
+            "path349"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        },
+        "S": {
+          "to": "1404",
+          "sourceSvgIds": [
+            "path349"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        }
+      },
+      "riverSides": {
+        "SE": [
+          {
+            "sourceSvgId": "path380",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "S": [
+          {
+            "sourceSvgId": "path380",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "SW": [
+          {
+            "sourceSvgId": "path380",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ]
+      },
+      "reinforcementSides": {}
+    },
+    "1404": {
+      "hexId": "1404",
+      "railStubs": {
+        "N": {
+          "to": "1403",
+          "sourceSvgIds": [
+            "path349"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        },
+        "SE": {
+          "to": "1504",
+          "sourceSvgIds": [
+            "path354"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        },
+        "S": {
+          "to": "1405",
+          "sourceSvgIds": [
+            "path350"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        },
+        "NW": {
+          "to": "1303",
+          "sourceSvgIds": [
+            "path347"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        }
+      },
+      "riverSides": {
+        "N": [
+          {
+            "sourceSvgId": "path380",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "NE": [
+          {
+            "sourceSvgId": "path380",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "SW": [
+          {
+            "sourceSvgId": "path380",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "NW": [
+          {
+            "sourceSvgId": "path380",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ]
+      },
+      "reinforcementSides": {}
+    },
+    "1405": {
+      "hexId": "1405",
+      "railStubs": {
+        "N": {
+          "to": "1404",
+          "sourceSvgIds": [
+            "path350"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        },
+        "SE": {
+          "to": "1505",
+          "sourceSvgIds": [
+            "path351"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        },
+        "SW": {
+          "to": "1305",
+          "sourceSvgIds": [
+            "path352"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        }
+      },
+      "riverSides": {},
+      "reinforcementSides": {}
+    },
+    "1406": {
+      "hexId": "1406",
+      "railStubs": {},
+      "riverSides": {},
+      "reinforcementSides": {}
+    },
+    "1407": {
+      "hexId": "1407",
+      "railStubs": {},
+      "riverSides": {},
+      "reinforcementSides": {}
+    },
+    "1408": {
+      "hexId": "1408",
+      "railStubs": {
+        "NE": {
+          "to": "1507",
+          "sourceSvgIds": [
+            "path360"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        },
+        "S": {
+          "to": "1409",
+          "sourceSvgIds": [
+            "path360"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        }
+      },
+      "riverSides": {
+        "NE": [
+          {
+            "sourceSvgId": "path382",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "SE": [
+          {
+            "sourceSvgId": "path382",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "S": [
+          {
+            "sourceSvgId": "path382",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ]
+      },
+      "reinforcementSides": {}
+    },
+    "1409": {
+      "hexId": "1409",
+      "railStubs": {
+        "N": {
+          "to": "1408",
+          "sourceSvgIds": [
+            "path360"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        },
+        "S": {
+          "to": "1410",
+          "sourceSvgIds": [
+            "path360"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        }
+      },
+      "riverSides": {
+        "N": [
+          {
+            "sourceSvgId": "path382",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "NE": [
+          {
+            "sourceSvgId": "path382",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "SE": [
+          {
+            "sourceSvgId": "path382",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "S": [
+          {
+            "sourceSvgId": "path382",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "SW": [
+          {
+            "sourceSvgId": "path382",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ]
+      },
+      "reinforcementSides": {}
+    },
+    "1410": {
+      "hexId": "1410",
+      "railStubs": {
+        "N": {
+          "to": "1409",
+          "sourceSvgIds": [
+            "path360"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        },
+        "SE": {
+          "to": "1510",
+          "sourceSvgIds": [
+            "path361"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        },
+        "NW": {
+          "to": "1309",
+          "sourceSvgIds": [
+            "path363"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        }
+      },
+      "riverSides": {
+        "N": [
+          {
+            "sourceSvgId": "path382",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "NE": [
+          {
+            "sourceSvgId": "path382",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "SE": [
+          {
+            "sourceSvgId": "path381",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "S": [
+          {
+            "sourceSvgId": "path381",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "SW": [
+          {
+            "sourceSvgId": "path381",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          },
+          {
+            "sourceSvgId": "path382",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "NW": [
+          {
+            "sourceSvgId": "path381",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          },
+          {
+            "sourceSvgId": "path382",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ]
+      },
+      "reinforcementSides": {}
+    },
+    "1411": {
+      "hexId": "1411",
+      "railStubs": {
+        "NE": {
+          "to": "1510",
+          "sourceSvgIds": [
+            "path379"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        },
+        "NW": {
+          "to": "1310",
+          "sourceSvgIds": [
+            "path379"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        }
+      },
+      "riverSides": {
+        "N": [
+          {
+            "sourceSvgId": "path381",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "NE": [
+          {
+            "sourceSvgId": "path381",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ]
+      },
+      "reinforcementSides": {}
+    },
+    "1501": {
+      "hexId": "1501",
+      "railStubs": {
+        "SE": {
+          "to": "1602",
+          "sourceSvgIds": [
+            "path355"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        },
+        "SW": {
+          "to": "1402",
+          "sourceSvgIds": [
+            "path355"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        }
+      },
+      "riverSides": {},
+      "reinforcementSides": {}
+    },
+    "1502": {
+      "hexId": "1502",
+      "railStubs": {},
+      "riverSides": {},
+      "reinforcementSides": {}
+    },
+    "1503": {
+      "hexId": "1503",
+      "railStubs": {},
+      "riverSides": {
+        "SW": [
+          {
+            "sourceSvgId": "path380",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "NW": [
+          {
+            "sourceSvgId": "path380",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ]
+      },
+      "reinforcementSides": {}
+    },
+    "1504": {
+      "hexId": "1504",
+      "railStubs": {
+        "SE": {
+          "to": "1605",
+          "sourceSvgIds": [
+            "path354"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        },
+        "NW": {
+          "to": "1404",
+          "sourceSvgIds": [
+            "path354"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        }
+      },
+      "riverSides": {},
+      "reinforcementSides": {}
+    },
+    "1505": {
+      "hexId": "1505",
+      "railStubs": {
+        "NE": {
+          "to": "1605",
+          "sourceSvgIds": [
+            "path353"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        },
+        "S": {
+          "to": "1506",
+          "sourceSvgIds": [
+            "path359"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        },
+        "NW": {
+          "to": "1405",
+          "sourceSvgIds": [
+            "path351"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        }
+      },
+      "riverSides": {
+        "NE": [
+          {
+            "sourceSvgId": "path382",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "SE": [
+          {
+            "sourceSvgId": "path382",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "S": [
+          {
+            "sourceSvgId": "path382",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ]
+      },
+      "reinforcementSides": {}
+    },
+    "1506": {
+      "hexId": "1506",
+      "railStubs": {
+        "N": {
+          "to": "1505",
+          "sourceSvgIds": [
+            "path359"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        },
+        "S": {
+          "to": "1507",
+          "sourceSvgIds": [
+            "path359"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        }
+      },
+      "riverSides": {
+        "N": [
+          {
+            "sourceSvgId": "path382",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "NE": [
+          {
+            "sourceSvgId": "path382",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "SE": [
+          {
+            "sourceSvgId": "path382",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "S": [
+          {
+            "sourceSvgId": "path382",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ]
+      },
+      "reinforcementSides": {}
+    },
+    "1507": {
+      "hexId": "1507",
+      "railStubs": {
+        "N": {
+          "to": "1506",
+          "sourceSvgIds": [
+            "path359"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        },
+        "SW": {
+          "to": "1408",
+          "sourceSvgIds": [
+            "path360"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        }
+      },
+      "riverSides": {
+        "N": [
+          {
+            "sourceSvgId": "path382",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "NE": [
+          {
+            "sourceSvgId": "path382",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "SE": [
+          {
+            "sourceSvgId": "path382",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "S": [
+          {
+            "sourceSvgId": "path382",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "SW": [
+          {
+            "sourceSvgId": "path382",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ]
+      },
+      "reinforcementSides": {}
+    },
+    "1508": {
+      "hexId": "1508",
+      "railStubs": {},
+      "riverSides": {
+        "N": [
+          {
+            "sourceSvgId": "path382",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "NE": [
+          {
+            "sourceSvgId": "path382",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "S": [
+          {
+            "sourceSvgId": "path382",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "SW": [
+          {
+            "sourceSvgId": "path382",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "NW": [
+          {
+            "sourceSvgId": "path382",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ]
+      },
+      "reinforcementSides": {}
+    },
+    "1509": {
+      "hexId": "1509",
+      "railStubs": {},
+      "riverSides": {
+        "N": [
+          {
+            "sourceSvgId": "path382",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "SW": [
+          {
+            "sourceSvgId": "path382",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "NW": [
+          {
+            "sourceSvgId": "path382",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ]
+      },
+      "reinforcementSides": {}
+    },
+    "1510": {
+      "hexId": "1510",
+      "railStubs": {
+        "NE": {
+          "to": "1610",
+          "sourceSvgIds": [
+            "path362"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        },
+        "SW": {
+          "to": "1411",
+          "sourceSvgIds": [
+            "path379"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        },
+        "NW": {
+          "to": "1410",
+          "sourceSvgIds": [
+            "path361"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        }
+      },
+      "riverSides": {
+        "SE": [
+          {
+            "sourceSvgId": "path381",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "S": [
+          {
+            "sourceSvgId": "path381",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "SW": [
+          {
+            "sourceSvgId": "path381",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "NW": [
+          {
+            "sourceSvgId": "path381",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ]
+      },
+      "reinforcementSides": {}
+    },
+    "1601": {
+      "hexId": "1601",
+      "railStubs": {},
+      "riverSides": {},
+      "reinforcementSides": {}
+    },
+    "1602": {
+      "hexId": "1602",
+      "railStubs": {
+        "NE": {
+          "to": "1701",
+          "sourceSvgIds": [
+            "path355"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        },
+        "NW": {
+          "to": "1501",
+          "sourceSvgIds": [
+            "path355"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        }
+      },
+      "riverSides": {},
+      "reinforcementSides": {}
+    },
+    "1603": {
+      "hexId": "1603",
+      "railStubs": {},
+      "riverSides": {},
+      "reinforcementSides": {}
+    },
+    "1604": {
+      "hexId": "1604",
+      "railStubs": {},
+      "riverSides": {},
+      "reinforcementSides": {}
+    },
+    "1605": {
+      "hexId": "1605",
+      "railStubs": {
+        "NE": {
+          "to": "1704",
+          "sourceSvgIds": [
+            "path353"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        },
+        "SW": {
+          "to": "1505",
+          "sourceSvgIds": [
+            "path353"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        },
+        "NW": {
+          "to": "1504",
+          "sourceSvgIds": [
+            "path354"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        }
+      },
+      "riverSides": {
+        "NE": [
+          {
+            "sourceSvgId": "path382",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "SE": [
+          {
+            "sourceSvgId": "path382",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "S": [
+          {
+            "sourceSvgId": "path382",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "SW": [
+          {
+            "sourceSvgId": "path382",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ]
+      },
+      "reinforcementSides": {}
+    },
+    "1606": {
+      "hexId": "1606",
+      "railStubs": {},
+      "riverSides": {
+        "N": [
+          {
+            "sourceSvgId": "path382",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "NE": [
+          {
+            "sourceSvgId": "path382",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "S": [
+          {
+            "sourceSvgId": "path382",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "SW": [
+          {
+            "sourceSvgId": "path382",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "NW": [
+          {
+            "sourceSvgId": "path382",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ]
+      },
+      "reinforcementSides": {}
+    },
+    "1607": {
+      "hexId": "1607",
+      "railStubs": {},
+      "riverSides": {
+        "N": [
+          {
+            "sourceSvgId": "path382",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "SW": [
+          {
+            "sourceSvgId": "path382",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "NW": [
+          {
+            "sourceSvgId": "path382",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ]
+      },
+      "reinforcementSides": {}
+    },
+    "1608": {
+      "hexId": "1608",
+      "railStubs": {},
+      "riverSides": {
+        "SW": [
+          {
+            "sourceSvgId": "path382",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "NW": [
+          {
+            "sourceSvgId": "path382",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ]
+      },
+      "reinforcementSides": {}
+    },
+    "1609": {
+      "hexId": "1609",
+      "railStubs": {},
+      "riverSides": {},
+      "reinforcementSides": {}
+    },
+    "1610": {
+      "hexId": "1610",
+      "railStubs": {
+        "NE": {
+          "to": "1709",
+          "sourceSvgIds": [
+            "path362"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        },
+        "SW": {
+          "to": "1510",
+          "sourceSvgIds": [
+            "path362"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        }
+      },
+      "riverSides": {},
+      "reinforcementSides": {}
+    },
+    "1611": {
+      "hexId": "1611",
+      "railStubs": {},
+      "riverSides": {
+        "S": [
+          {
+            "sourceSvgId": "path381",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "SW": [
+          {
+            "sourceSvgId": "path381",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "NW": [
+          {
+            "sourceSvgId": "path381",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ]
+      },
+      "reinforcementSides": {}
+    },
+    "1701": {
+      "hexId": "1701",
+      "railStubs": {
+        "SE": {
+          "to": "1802",
+          "sourceSvgIds": [
+            "path355"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        },
+        "SW": {
+          "to": "1602",
+          "sourceSvgIds": [
+            "path355"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        }
+      },
+      "riverSides": {},
+      "reinforcementSides": {}
+    },
+    "1702": {
+      "hexId": "1702",
+      "railStubs": {},
+      "riverSides": {},
+      "reinforcementSides": {}
+    },
+    "1703": {
+      "hexId": "1703",
+      "railStubs": {},
+      "riverSides": {},
+      "reinforcementSides": {}
+    },
+    "1704": {
+      "hexId": "1704",
+      "railStubs": {
+        "SE": {
+          "to": "1805",
+          "sourceSvgIds": [
+            "path356"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        },
+        "S": {
+          "to": "1705",
+          "sourceSvgIds": [
+            "path357"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        },
+        "SW": {
+          "to": "1605",
+          "sourceSvgIds": [
+            "path353"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        }
+      },
+      "riverSides": {
+        "SE": [
+          {
+            "sourceSvgId": "path382",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "S": [
+          {
+            "sourceSvgId": "path382",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "SW": [
+          {
+            "sourceSvgId": "path382",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ]
+      },
+      "reinforcementSides": {}
+    },
+    "1705": {
+      "hexId": "1705",
+      "railStubs": {
+        "N": {
+          "to": "1704",
+          "sourceSvgIds": [
+            "path357"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        },
+        "SE": {
+          "to": "1806",
+          "sourceSvgIds": [
+            "path357"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        }
+      },
+      "riverSides": {
+        "N": [
+          {
+            "sourceSvgId": "path382",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "NE": [
+          {
+            "sourceSvgId": "path382",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "SE": [
+          {
+            "sourceSvgId": "path382",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "SW": [
+          {
+            "sourceSvgId": "path382",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "NW": [
+          {
+            "sourceSvgId": "path382",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ]
+      },
+      "reinforcementSides": {}
+    },
+    "1706": {
+      "hexId": "1706",
+      "railStubs": {},
+      "riverSides": {},
+      "reinforcementSides": {}
+    },
+    "1707": {
+      "hexId": "1707",
+      "railStubs": {},
+      "riverSides": {},
+      "reinforcementSides": {}
+    },
+    "1708": {
+      "hexId": "1708",
+      "railStubs": {},
+      "riverSides": {},
+      "reinforcementSides": {}
+    },
+    "1709": {
+      "hexId": "1709",
+      "railStubs": {
+        "SE": {
+          "to": "1810",
+          "sourceSvgIds": [
+            "path362"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        },
+        "SW": {
+          "to": "1610",
+          "sourceSvgIds": [
+            "path362"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        }
+      },
+      "riverSides": {},
+      "reinforcementSides": {}
+    },
+    "1710": {
+      "hexId": "1710",
+      "railStubs": {},
+      "riverSides": {},
+      "reinforcementSides": {}
+    },
+    "1801": {
+      "hexId": "1801",
+      "railStubs": {
+        "S": {
+          "to": "1802",
+          "sourceSvgIds": [
+            "path355"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        }
+      },
+      "riverSides": {},
+      "reinforcementSides": {
+        "N": [
+          {
+            "sourceSvgId": "path314",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "NE": [
+          {
+            "sourceSvgId": "path314",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "SE": [
+          {
+            "sourceSvgId": "path314",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "S": [
+          {
+            "sourceSvgId": "path314",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ]
+      }
+    },
+    "1802": {
+      "hexId": "1802",
+      "railStubs": {
+        "N": {
+          "to": "1801",
+          "sourceSvgIds": [
+            "path355"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        },
+        "NW": {
+          "to": "1701",
+          "sourceSvgIds": [
+            "path355"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        }
+      },
+      "riverSides": {},
+      "reinforcementSides": {
+        "N": [
+          {
+            "sourceSvgId": "path314",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "NE": [
+          {
+            "sourceSvgId": "path314",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "SE": [
+          {
+            "sourceSvgId": "path314",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "S": [
+          {
+            "sourceSvgId": "path314",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ]
+      }
+    },
+    "1803": {
+      "hexId": "1803",
+      "railStubs": {},
+      "riverSides": {},
+      "reinforcementSides": {
+        "N": [
+          {
+            "sourceSvgId": "path314",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "NE": [
+          {
+            "sourceSvgId": "path314",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "SE": [
+          {
+            "sourceSvgId": "path314",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ]
+      }
+    },
+    "1804": {
+      "hexId": "1804",
+      "railStubs": {
+        "S": {
+          "to": "1805",
+          "sourceSvgIds": [
+            "path356"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        }
+      },
+      "riverSides": {},
+      "reinforcementSides": {
+        "NE": [
+          {
+            "sourceSvgId": "path314",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "SE": [
+          {
+            "sourceSvgId": "path314",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "S": [
+          {
+            "sourceSvgId": "path314",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ]
+      }
+    },
+    "1805": {
+      "hexId": "1805",
+      "railStubs": {
+        "N": {
+          "to": "1804",
+          "sourceSvgIds": [
+            "path356"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        },
+        "NW": {
+          "to": "1704",
+          "sourceSvgIds": [
+            "path356"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        }
+      },
+      "riverSides": {
+        "SE": [
+          {
+            "sourceSvgId": "path382",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "S": [
+          {
+            "sourceSvgId": "path382",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "SW": [
+          {
+            "sourceSvgId": "path382",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "NW": [
+          {
+            "sourceSvgId": "path382",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ]
+      },
+      "reinforcementSides": {
+        "N": [
+          {
+            "sourceSvgId": "path314",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "NE": [
+          {
+            "sourceSvgId": "path314",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "SE": [
+          {
+            "sourceSvgId": "path314",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "S": [
+          {
+            "sourceSvgId": "path314",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ]
+      }
+    },
+    "1806": {
+      "hexId": "1806",
+      "railStubs": {
+        "S": {
+          "to": "1807",
+          "sourceSvgIds": [
+            "path357"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        },
+        "NW": {
+          "to": "1705",
+          "sourceSvgIds": [
+            "path357"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        }
+      },
+      "riverSides": {
+        "N": [
+          {
+            "sourceSvgId": "path382",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "NE": [
+          {
+            "sourceSvgId": "path382",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "NW": [
+          {
+            "sourceSvgId": "path382",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ]
+      },
+      "reinforcementSides": {
+        "N": [
+          {
+            "sourceSvgId": "path314",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "NE": [
+          {
+            "sourceSvgId": "path314",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "SE": [
+          {
+            "sourceSvgId": "path314",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "S": [
+          {
+            "sourceSvgId": "path314",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ]
+      }
+    },
+    "1807": {
+      "hexId": "1807",
+      "railStubs": {
+        "N": {
+          "to": "1806",
+          "sourceSvgIds": [
+            "path357"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        },
+        "S": {
+          "to": "1808",
+          "sourceSvgIds": [
+            "path358"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        }
+      },
+      "riverSides": {},
+      "reinforcementSides": {
+        "N": [
+          {
+            "sourceSvgId": "path314",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "NE": [
+          {
+            "sourceSvgId": "path314",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "SE": [
+          {
+            "sourceSvgId": "path314",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "S": [
+          {
+            "sourceSvgId": "path314",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ]
+      }
+    },
+    "1808": {
+      "hexId": "1808",
+      "railStubs": {
+        "N": {
+          "to": "1807",
+          "sourceSvgIds": [
+            "path358"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        }
+      },
+      "riverSides": {},
+      "reinforcementSides": {
+        "N": [
+          {
+            "sourceSvgId": "path314",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "NE": [
+          {
+            "sourceSvgId": "path314",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "SE": [
+          {
+            "sourceSvgId": "path314",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "S": [
+          {
+            "sourceSvgId": "path314",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ]
+      }
+    },
+    "1809": {
+      "hexId": "1809",
+      "railStubs": {},
+      "riverSides": {},
+      "reinforcementSides": {
+        "N": [
+          {
+            "sourceSvgId": "path314",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "NE": [
+          {
+            "sourceSvgId": "path314",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "SE": [
+          {
+            "sourceSvgId": "path314",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "S": [
+          {
+            "sourceSvgId": "path314",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ]
+      }
+    },
+    "1810": {
+      "hexId": "1810",
+      "railStubs": {
+        "NW": {
+          "to": "1709",
+          "sourceSvgIds": [
+            "path362"
+          ],
+          "status": "svg-derived-visual-crossing",
+          "visualOnly": true
+        }
+      },
+      "riverSides": {},
+      "reinforcementSides": {
+        "N": [
+          {
+            "sourceSvgId": "path314",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "NE": [
+          {
+            "sourceSvgId": "path314",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "SE": [
+          {
+            "sourceSvgId": "path314",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "S": [
+          {
+            "sourceSvgId": "path314",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ]
+      }
+    },
+    "1811": {
+      "hexId": "1811",
+      "railStubs": {},
+      "riverSides": {},
+      "reinforcementSides": {
+        "N": [
+          {
+            "sourceSvgId": "path314",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "NE": [
+          {
+            "sourceSvgId": "path314",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "SE": [
+          {
+            "sourceSvgId": "path314",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ],
+        "S": [
+          {
+            "sourceSvgId": "path314",
+            "status": "svg-near-side-needs-topological-review",
+            "visualOnly": true
+          }
+        ]
+      }
+    }
+  },
+  "canonicalSideObservations": {
+    "0105~0106": {
+      "edgeKey": "0105~0106",
+      "observations": [
+        {
+          "kind": "reinforcement",
+          "sourceSvgId": "path315",
+          "fromHex": "0105",
+          "dir": "S",
+          "minimumDistancePx": 2.718
+        },
+        {
+          "kind": "reinforcement",
+          "sourceSvgId": "path315",
+          "fromHex": "0106",
+          "dir": "N",
+          "minimumDistancePx": 2.718
+        }
+      ]
+    },
+    "0105:SW": {
+      "edgeKey": "0105:SW",
+      "observations": [
+        {
+          "kind": "reinforcement",
+          "sourceSvgId": "path315",
+          "fromHex": "0105",
+          "dir": "SW",
+          "minimumDistancePx": 2.169
+        }
+      ]
+    },
+    "0105:NW": {
+      "edgeKey": "0105:NW",
+      "observations": [
+        {
+          "kind": "reinforcement",
+          "sourceSvgId": "path315",
+          "fromHex": "0105",
+          "dir": "NW",
+          "minimumDistancePx": 2.169
+        }
+      ]
+    },
+    "0106~0107": {
+      "edgeKey": "0106~0107",
+      "observations": [
+        {
+          "kind": "reinforcement",
+          "sourceSvgId": "path315",
+          "fromHex": "0106",
+          "dir": "S",
+          "minimumDistancePx": 2.223
+        },
+        {
+          "kind": "reinforcement",
+          "sourceSvgId": "path315",
+          "fromHex": "0107",
+          "dir": "N",
+          "minimumDistancePx": 2.223
+        }
+      ]
+    },
+    "0106:SW": {
+      "edgeKey": "0106:SW",
+      "observations": [
+        {
+          "kind": "reinforcement",
+          "sourceSvgId": "path315",
+          "fromHex": "0106",
+          "dir": "SW",
+          "minimumDistancePx": 0.443
+        }
+      ]
+    },
+    "0106:NW": {
+      "edgeKey": "0106:NW",
+      "observations": [
+        {
+          "kind": "reinforcement",
+          "sourceSvgId": "path315",
+          "fromHex": "0106",
+          "dir": "NW",
+          "minimumDistancePx": 0.889
+        }
+      ]
+    },
+    "0107~0108": {
+      "edgeKey": "0107~0108",
+      "observations": [
+        {
+          "kind": "reinforcement",
+          "sourceSvgId": "path315",
+          "fromHex": "0107",
+          "dir": "S",
+          "minimumDistancePx": 2.875
+        },
+        {
+          "kind": "reinforcement",
+          "sourceSvgId": "path315",
+          "fromHex": "0108",
+          "dir": "N",
+          "minimumDistancePx": 2.875
+        }
+      ]
+    },
+    "0107:SW": {
+      "edgeKey": "0107:SW",
+      "observations": [
+        {
+          "kind": "reinforcement",
+          "sourceSvgId": "path315",
+          "fromHex": "0107",
+          "dir": "SW",
+          "minimumDistancePx": 0.569
+        }
+      ]
+    },
+    "0107:NW": {
+      "edgeKey": "0107:NW",
+      "observations": [
+        {
+          "kind": "reinforcement",
+          "sourceSvgId": "path315",
+          "fromHex": "0107",
+          "dir": "NW",
+          "minimumDistancePx": 0.569
+        }
+      ]
+    },
+    "0108:SW": {
+      "edgeKey": "0108:SW",
+      "observations": [
+        {
+          "kind": "reinforcement",
+          "sourceSvgId": "path315",
+          "fromHex": "0108",
+          "dir": "SW",
+          "minimumDistancePx": 0.0
+        }
+      ]
+    },
+    "0108:NW": {
+      "edgeKey": "0108:NW",
+      "observations": [
+        {
+          "kind": "reinforcement",
+          "sourceSvgId": "path315",
+          "fromHex": "0108",
+          "dir": "NW",
+          "minimumDistancePx": 0.46
+        }
+      ]
+    },
+    "0109~0110": {
+      "edgeKey": "0109~0110",
+      "observations": [
+        {
+          "kind": "reinforcement",
+          "sourceSvgId": "path315",
+          "fromHex": "0109",
+          "dir": "S",
+          "minimumDistancePx": 0.816
+        },
+        {
+          "kind": "reinforcement",
+          "sourceSvgId": "path315",
+          "fromHex": "0110",
+          "dir": "N",
+          "minimumDistancePx": 0.816
+        }
+      ]
+    },
+    "0109:SW": {
+      "edgeKey": "0109:SW",
+      "observations": [
+        {
+          "kind": "reinforcement",
+          "sourceSvgId": "path315",
+          "fromHex": "0109",
+          "dir": "SW",
+          "minimumDistancePx": 0.502
+        }
+      ]
+    },
+    "0109:NW": {
+      "edgeKey": "0109:NW",
+      "observations": [
+        {
+          "kind": "reinforcement",
+          "sourceSvgId": "path315",
+          "fromHex": "0109",
+          "dir": "NW",
+          "minimumDistancePx": 0.502
+        }
+      ]
+    },
+    "0110:SW": {
+      "edgeKey": "0110:SW",
+      "observations": [
+        {
+          "kind": "reinforcement",
+          "sourceSvgId": "path315",
+          "fromHex": "0110",
+          "dir": "SW",
+          "minimumDistancePx": 0.334
+        }
+      ]
+    },
+    "0110:NW": {
+      "edgeKey": "0110:NW",
+      "observations": [
+        {
+          "kind": "reinforcement",
+          "sourceSvgId": "path315",
+          "fromHex": "0110",
+          "dir": "NW",
+          "minimumDistancePx": 0.0
+        }
+      ]
+    },
+    "0305:N": {
+      "edgeKey": "0305:N",
+      "observations": [
+        {
+          "kind": "river",
+          "sourceSvgId": "path384",
+          "fromHex": "0305",
+          "dir": "N",
+          "minimumDistancePx": 0.0
+        }
+      ]
+    },
+    "0305~0405": {
+      "edgeKey": "0305~0405",
+      "observations": [
+        {
+          "kind": "river",
+          "sourceSvgId": "path384",
+          "fromHex": "0305",
+          "dir": "NE",
+          "minimumDistancePx": 0.031
+        },
+        {
+          "kind": "river",
+          "sourceSvgId": "path384",
+          "fromHex": "0405",
+          "dir": "SW",
+          "minimumDistancePx": 0.031
+        }
+      ]
+    },
+    "0305~0406": {
+      "edgeKey": "0305~0406",
+      "observations": [
+        {
+          "kind": "river",
+          "sourceSvgId": "path384",
+          "fromHex": "0305",
+          "dir": "SE",
+          "minimumDistancePx": 0.0
+        },
+        {
+          "kind": "river",
+          "sourceSvgId": "path384",
+          "fromHex": "0406",
+          "dir": "NW",
+          "minimumDistancePx": 0.0
+        }
+      ]
+    },
+    "0305~0306": {
+      "edgeKey": "0305~0306",
+      "observations": [
+        {
+          "kind": "river",
+          "sourceSvgId": "path384",
+          "fromHex": "0305",
+          "dir": "S",
+          "minimumDistancePx": 1.302
+        },
+        {
+          "kind": "river",
+          "sourceSvgId": "path384",
+          "fromHex": "0306",
+          "dir": "N",
+          "minimumDistancePx": 1.302
+        }
+      ]
+    },
+    "0306~0406": {
+      "edgeKey": "0306~0406",
+      "observations": [
+        {
+          "kind": "river",
+          "sourceSvgId": "path384",
+          "fromHex": "0306",
+          "dir": "NE",
+          "minimumDistancePx": 0.0
+        },
+        {
+          "kind": "river",
+          "sourceSvgId": "path384",
+          "fromHex": "0406",
+          "dir": "SW",
+          "minimumDistancePx": 0.0
+        }
+      ]
+    },
+    "0306~0407": {
+      "edgeKey": "0306~0407",
+      "observations": [
+        {
+          "kind": "river",
+          "sourceSvgId": "path384",
+          "fromHex": "0306",
+          "dir": "SE",
+          "minimumDistancePx": 0.812
+        },
+        {
+          "kind": "river",
+          "sourceSvgId": "path384",
+          "fromHex": "0407",
+          "dir": "NW",
+          "minimumDistancePx": 0.812
+        }
+      ]
+    },
+    "0405:N": {
+      "edgeKey": "0405:N",
+      "observations": [
+        {
+          "kind": "river",
+          "sourceSvgId": "path383",
+          "fromHex": "0405",
+          "dir": "N",
+          "minimumDistancePx": 0.0
+        }
+      ]
+    },
+    "0405~0504": {
+      "edgeKey": "0405~0504",
+      "observations": [
+        {
+          "kind": "river",
+          "sourceSvgId": "path383",
+          "fromHex": "0405",
+          "dir": "NE",
+          "minimumDistancePx": 0.0
+        },
+        {
+          "kind": "river",
+          "sourceSvgId": "path383",
+          "fromHex": "0504",
+          "dir": "SW",
+          "minimumDistancePx": 0.0
+        }
+      ]
+    },
+    "0405~0505": {
+      "edgeKey": "0405~0505",
+      "observations": [
+        {
+          "kind": "river",
+          "sourceSvgId": "path383",
+          "fromHex": "0405",
+          "dir": "SE",
+          "minimumDistancePx": 1.458
+        },
+        {
+          "kind": "river",
+          "sourceSvgId": "path383",
+          "fromHex": "0505",
+          "dir": "NW",
+          "minimumDistancePx": 1.458
+        }
+      ]
+    },
+    "0405~0406": {
+      "edgeKey": "0405~0406",
+      "observations": [
+        {
+          "kind": "river",
+          "sourceSvgId": "path384",
+          "fromHex": "0405",
+          "dir": "S",
+          "minimumDistancePx": 0.031
+        },
+        {
+          "kind": "river",
+          "sourceSvgId": "path384",
+          "fromHex": "0406",
+          "dir": "N",
+          "minimumDistancePx": 0.031
+        }
+      ]
+    },
+    "0406~0506": {
+      "edgeKey": "0406~0506",
+      "observations": [
+        {
+          "kind": "river",
+          "sourceSvgId": "path384",
+          "fromHex": "0406",
+          "dir": "SE",
+          "minimumDistancePx": 1.324
+        },
+        {
+          "kind": "river",
+          "sourceSvgId": "path384",
+          "fromHex": "0506",
+          "dir": "NW",
+          "minimumDistancePx": 1.324
+        }
+      ]
+    },
+    "0406~0407": {
+      "edgeKey": "0406~0407",
+      "observations": [
+        {
+          "kind": "river",
+          "sourceSvgId": "path384",
+          "fromHex": "0406",
+          "dir": "S",
+          "minimumDistancePx": 0.0
+        },
+        {
+          "kind": "river",
+          "sourceSvgId": "path384",
+          "fromHex": "0407",
+          "dir": "N",
+          "minimumDistancePx": 0.0
+        }
+      ]
+    },
+    "0407~0506": {
+      "edgeKey": "0407~0506",
+      "observations": [
+        {
+          "kind": "river",
+          "sourceSvgId": "path384",
+          "fromHex": "0407",
+          "dir": "NE",
+          "minimumDistancePx": 0.0
+        },
+        {
+          "kind": "river",
+          "sourceSvgId": "path384",
+          "fromHex": "0506",
+          "dir": "SW",
+          "minimumDistancePx": 0.0
+        }
+      ]
+    },
+    "0407~0507": {
+      "edgeKey": "0407~0507",
+      "observations": [
+        {
+          "kind": "river",
+          "sourceSvgId": "path384",
+          "fromHex": "0407",
+          "dir": "SE",
+          "minimumDistancePx": 2.654
+        },
+        {
+          "kind": "river",
+          "sourceSvgId": "path384",
+          "fromHex": "0507",
+          "dir": "NW",
+          "minimumDistancePx": 2.654
+        }
+      ]
+    },
+    "0504~0605": {
+      "edgeKey": "0504~0605",
+      "observations": [
+        {
+          "kind": "river",
+          "sourceSvgId": "path383",
+          "fromHex": "0504",
+          "dir": "SE",
+          "minimumDistancePx": 0.515
+        },
+        {
+          "kind": "river",
+          "sourceSvgId": "path383",
+          "fromHex": "0605",
+          "dir": "NW",
+          "minimumDistancePx": 0.515
+        }
+      ]
+    },
+    "0504~0505": {
+      "edgeKey": "0504~0505",
+      "observations": [
+        {
+          "kind": "river",
+          "sourceSvgId": "path383",
+          "fromHex": "0504",
+          "dir": "S",
+          "minimumDistancePx": 0.542
+        },
+        {
+          "kind": "river",
+          "sourceSvgId": "path383",
+          "fromHex": "0505",
+          "dir": "N",
+          "minimumDistancePx": 0.542
+        }
+      ]
+    },
+    "0505~0605": {
+      "edgeKey": "0505~0605",
+      "observations": [
+        {
+          "kind": "river",
+          "sourceSvgId": "path383",
+          "fromHex": "0505",
+          "dir": "NE",
+          "minimumDistancePx": 0.613
+        },
+        {
+          "kind": "river",
+          "sourceSvgId": "path383",
+          "fromHex": "0605",
+          "dir": "SW",
+          "minimumDistancePx": 0.613
+        }
+      ]
+    },
+    "0506~0607": {
+      "edgeKey": "0506~0607",
+      "observations": [
+        {
+          "kind": "river",
+          "sourceSvgId": "path384",
+          "fromHex": "0506",
+          "dir": "SE",
+          "minimumDistancePx": 0.608
+        },
+        {
+          "kind": "river",
+          "sourceSvgId": "path384",
+          "fromHex": "0607",
+          "dir": "NW",
+          "minimumDistancePx": 0.608
+        }
+      ]
+    },
+    "0506~0507": {
+      "edgeKey": "0506~0507",
+      "observations": [
+        {
+          "kind": "river",
+          "sourceSvgId": "path384",
+          "fromHex": "0506",
+          "dir": "S",
+          "minimumDistancePx": 0.731
+        },
+        {
+          "kind": "river",
+          "sourceSvgId": "path384",
+          "fromHex": "0507",
+          "dir": "N",
+          "minimumDistancePx": 0.731
+        }
+      ]
+    },
+    "0507~0607": {
+      "edgeKey": "0507~0607",
+      "observations": [
+        {
+          "kind": "river",
+          "sourceSvgId": "path384",
+          "fromHex": "0507",
+          "dir": "NE",
+          "minimumDistancePx": 0.785
+        },
+        {
+          "kind": "river",
+          "sourceSvgId": "path384",
+          "fromHex": "0607",
+          "dir": "SW",
+          "minimumDistancePx": 0.785
+        }
+      ]
+    },
+    "1003:N": {
+      "edgeKey": "1003:N",
+      "observations": [
+        {
+          "kind": "river",
+          "sourceSvgId": "path380",
+          "fromHex": "1003",
+          "dir": "N",
+          "minimumDistancePx": 0.0
+        }
+      ]
+    },
+    "1003~1102": {
+      "edgeKey": "1003~1102",
+      "observations": [
+        {
+          "kind": "river",
+          "sourceSvgId": "path380",
+          "fromHex": "1003",
+          "dir": "NE",
+          "minimumDistancePx": 1.567
+        },
+        {
+          "kind": "river",
+          "sourceSvgId": "path380",
+          "fromHex": "1102",
+          "dir": "SW",
+          "minimumDistancePx": 1.567
+        }
+      ]
+    },
+    "1003~1103": {
+      "edgeKey": "1003~1103",
+      "observations": [
+        {
+          "kind": "river",
+          "sourceSvgId": "path380",
+          "fromHex": "1003",
+          "dir": "SE",
+          "minimumDistancePx": 0.0
+        },
+        {
+          "kind": "river",
+          "sourceSvgId": "path380",
+          "fromHex": "1103",
+          "dir": "NW",
+          "minimumDistancePx": 0.0
+        }
+      ]
+    },
+    "1102~1203": {
+      "edgeKey": "1102~1203",
+      "observations": [
+        {
+          "kind": "river",
+          "sourceSvgId": "path380",
+          "fromHex": "1102",
+          "dir": "SE",
+          "minimumDistancePx": 1.576
+        },
+        {
+          "kind": "river",
+          "sourceSvgId": "path380",
+          "fromHex": "1203",
+          "dir": "NW",
+          "minimumDistancePx": 1.576
+        }
+      ]
+    },
+    "1102~1103": {
+      "edgeKey": "1102~1103",
+      "observations": [
+        {
+          "kind": "river",
+          "sourceSvgId": "path380",
+          "fromHex": "1102",
+          "dir": "S",
+          "minimumDistancePx": 0.674
+        },
+        {
+          "kind": "river",
+          "sourceSvgId": "path380",
+          "fromHex": "1103",
+          "dir": "N",
+          "minimumDistancePx": 0.674
+        }
+      ]
+    },
+    "1103~1203": {
+      "edgeKey": "1103~1203",
+      "observations": [
+        {
+          "kind": "river",
+          "sourceSvgId": "path380",
+          "fromHex": "1103",
+          "dir": "NE",
+          "minimumDistancePx": 0.102
+        },
+        {
+          "kind": "river",
+          "sourceSvgId": "path380",
+          "fromHex": "1203",
+          "dir": "SW",
+          "minimumDistancePx": 0.102
+        }
+      ]
+    },
+    "1103~1204": {
+      "edgeKey": "1103~1204",
+      "observations": [
+        {
+          "kind": "river",
+          "sourceSvgId": "path380",
+          "fromHex": "1103",
+          "dir": "SE",
+          "minimumDistancePx": 0.0
+        },
+        {
+          "kind": "river",
+          "sourceSvgId": "path380",
+          "fromHex": "1204",
+          "dir": "NW",
+          "minimumDistancePx": 0.0
+        }
+      ]
+    },
+    "1105~1205": {
+      "edgeKey": "1105~1205",
+      "observations": [
+        {
+          "kind": "river",
+          "sourceSvgId": "path381",
+          "fromHex": "1105",
+          "dir": "NE",
+          "minimumDistancePx": 0.0
+        },
+        {
+          "kind": "river",
+          "sourceSvgId": "path381",
+          "fromHex": "1205",
+          "dir": "SW",
+          "minimumDistancePx": 0.0
+        }
+      ]
+    },
+    "1105~1206": {
+      "edgeKey": "1105~1206",
+      "observations": [
+        {
+          "kind": "river",
+          "sourceSvgId": "path381",
+          "fromHex": "1105",
+          "dir": "SE",
+          "minimumDistancePx": 0.49
+        },
+        {
+          "kind": "river",
+          "sourceSvgId": "path381",
+          "fromHex": "1206",
+          "dir": "NW",
+          "minimumDistancePx": 0.49
+        }
+      ]
+    },
+    "1105~1106": {
+      "edgeKey": "1105~1106",
+      "observations": [
+        {
+          "kind": "river",
+          "sourceSvgId": "path381",
+          "fromHex": "1105",
+          "dir": "S",
+          "minimumDistancePx": 0.0
+        },
+        {
+          "kind": "river",
+          "sourceSvgId": "path381",
+          "fromHex": "1106",
+          "dir": "N",
+          "minimumDistancePx": 0.0
+        }
+      ]
+    },
+    "1106~1206": {
+      "edgeKey": "1106~1206",
+      "observations": [
+        {
+          "kind": "river",
+          "sourceSvgId": "path381",
+          "fromHex": "1106",
+          "dir": "NE",
+          "minimumDistancePx": 0.0
+        },
+        {
+          "kind": "river",
+          "sourceSvgId": "path381",
+          "fromHex": "1206",
+          "dir": "SW",
+          "minimumDistancePx": 0.0
+        }
+      ]
+    },
+    "1106~1207": {
+      "edgeKey": "1106~1207",
+      "observations": [
+        {
+          "kind": "river",
+          "sourceSvgId": "path381",
+          "fromHex": "1106",
+          "dir": "SE",
+          "minimumDistancePx": 0.0
+        },
+        {
+          "kind": "river",
+          "sourceSvgId": "path381",
+          "fromHex": "1207",
+          "dir": "NW",
+          "minimumDistancePx": 0.0
+        }
+      ]
+    },
+    "1106~1107": {
+      "edgeKey": "1106~1107",
+      "observations": [
+        {
+          "kind": "river",
+          "sourceSvgId": "path381",
+          "fromHex": "1106",
+          "dir": "S",
+          "minimumDistancePx": 0.662
+        },
+        {
+          "kind": "river",
+          "sourceSvgId": "path381",
+          "fromHex": "1107",
+          "dir": "N",
+          "minimumDistancePx": 0.662
+        }
+      ]
+    },
+    "1107~1207": {
+      "edgeKey": "1107~1207",
+      "observations": [
+        {
+          "kind": "river",
+          "sourceSvgId": "path381",
+          "fromHex": "1107",
+          "dir": "NE",
+          "minimumDistancePx": 0.0
+        },
+        {
+          "kind": "river",
+          "sourceSvgId": "path381",
+          "fromHex": "1207",
+          "dir": "SW",
+          "minimumDistancePx": 0.0
+        }
+      ]
+    },
+    "1107~1208": {
+      "edgeKey": "1107~1208",
+      "observations": [
+        {
+          "kind": "river",
+          "sourceSvgId": "path381",
+          "fromHex": "1107",
+          "dir": "SE",
+          "minimumDistancePx": 0.023
+        },
+        {
+          "kind": "river",
+          "sourceSvgId": "path381",
+          "fromHex": "1208",
+          "dir": "NW",
+          "minimumDistancePx": 0.023
+        }
+      ]
+    },
+    "1107~1108": {
+      "edgeKey": "1107~1108",
+      "observations": [
+        {
+          "kind": "river",
+          "sourceSvgId": "path381",
+          "fromHex": "1107",
+          "dir": "S",
+          "minimumDistancePx": 0.0
+        },
+        {
+          "kind": "river",
+          "sourceSvgId": "path381",
+          "fromHex": "1108",
+          "dir": "N",
+          "minimumDistancePx": 0.0
+        }
+      ]
+    },
+    "1108~1208": {
+      "edgeKey": "1108~1208",
+      "observations": [
+        {
+          "kind": "river",
+          "sourceSvgId": "path381",
+          "fromHex": "1108",
+          "dir": "NE",
+          "minimumDistancePx": 0.731
+        },
+        {
+          "kind": "river",
+          "sourceSvgId": "path381",
+          "fromHex": "1208",
+          "dir": "SW",
+          "minimumDistancePx": 0.731
+        }
+      ]
+    },
+    "1108~1209": {
+      "edgeKey": "1108~1209",
+      "observations": [
+        {
+          "kind": "river",
+          "sourceSvgId": "path381",
+          "fromHex": "1108",
+          "dir": "SE",
+          "minimumDistancePx": 0.0
+        },
+        {
+          "kind": "river",
+          "sourceSvgId": "path381",
+          "fromHex": "1209",
+          "dir": "NW",
+          "minimumDistancePx": 0.0
+        }
+      ]
+    },
+    "1108~1109": {
+      "edgeKey": "1108~1109",
+      "observations": [
+        {
+          "kind": "river",
+          "sourceSvgId": "path381",
+          "fromHex": "1108",
+          "dir": "S",
+          "minimumDistancePx": 1.426
+        },
+        {
+          "kind": "river",
+          "sourceSvgId": "path381",
+          "fromHex": "1109",
+          "dir": "N",
+          "minimumDistancePx": 1.426
+        }
+      ]
+    },
+    "1109~1209": {
+      "edgeKey": "1109~1209",
+      "observations": [
+        {
+          "kind": "river",
+          "sourceSvgId": "path381",
+          "fromHex": "1109",
+          "dir": "NE",
+          "minimumDistancePx": 0.0
+        },
+        {
+          "kind": "river",
+          "sourceSvgId": "path381",
+          "fromHex": "1209",
+          "dir": "SW",
+          "minimumDistancePx": 0.0
+        }
+      ]
+    },
+    "1109~1210": {
+      "edgeKey": "1109~1210",
+      "observations": [
+        {
+          "kind": "river",
+          "sourceSvgId": "path381",
+          "fromHex": "1109",
+          "dir": "SE",
+          "minimumDistancePx": 0.0
+        },
+        {
+          "kind": "river",
+          "sourceSvgId": "path381",
+          "fromHex": "1210",
+          "dir": "NW",
+          "minimumDistancePx": 0.0
+        }
+      ]
+    },
+    "1203~1303": {
+      "edgeKey": "1203~1303",
+      "observations": [
+        {
+          "kind": "river",
+          "sourceSvgId": "path380",
+          "fromHex": "1203",
+          "dir": "SE",
+          "minimumDistancePx": 1.36
+        },
+        {
+          "kind": "river",
+          "sourceSvgId": "path380",
+          "fromHex": "1303",
+          "dir": "NW",
+          "minimumDistancePx": 1.36
+        }
+      ]
+    },
+    "1203~1204": {
+      "edgeKey": "1203~1204",
+      "observations": [
+        {
+          "kind": "river",
+          "sourceSvgId": "path380",
+          "fromHex": "1203",
+          "dir": "S",
+          "minimumDistancePx": 0.0
+        },
+        {
+          "kind": "river",
+          "sourceSvgId": "path380",
+          "fromHex": "1204",
+          "dir": "N",
+          "minimumDistancePx": 0.0
+        }
+      ]
+    },
+    "1204~1303": {
+      "edgeKey": "1204~1303",
+      "observations": [
+        {
+          "kind": "river",
+          "sourceSvgId": "path380",
+          "fromHex": "1204",
+          "dir": "NE",
+          "minimumDistancePx": 0.0
+        },
+        {
+          "kind": "river",
+          "sourceSvgId": "path380",
+          "fromHex": "1303",
+          "dir": "SW",
+          "minimumDistancePx": 0.0
+        }
+      ]
+    },
+    "1204~1304": {
+      "edgeKey": "1204~1304",
+      "observations": [
+        {
+          "kind": "river",
+          "sourceSvgId": "path380",
+          "fromHex": "1204",
+          "dir": "SE",
+          "minimumDistancePx": 1.623
+        },
+        {
+          "kind": "river",
+          "sourceSvgId": "path380",
+          "fromHex": "1304",
+          "dir": "NW",
+          "minimumDistancePx": 1.623
+        }
+      ]
+    },
+    "1205~1206": {
+      "edgeKey": "1205~1206",
+      "observations": [
+        {
+          "kind": "river",
+          "sourceSvgId": "path381",
+          "fromHex": "1205",
+          "dir": "S",
+          "minimumDistancePx": 1.824
+        },
+        {
+          "kind": "river",
+          "sourceSvgId": "path381",
+          "fromHex": "1206",
+          "dir": "N",
+          "minimumDistancePx": 1.824
+        }
+      ]
+    },
+    "1206~1207": {
+      "edgeKey": "1206~1207",
+      "observations": [
+        {
+          "kind": "river",
+          "sourceSvgId": "path381",
+          "fromHex": "1206",
+          "dir": "S",
+          "minimumDistancePx": 2.244
+        },
+        {
+          "kind": "river",
+          "sourceSvgId": "path381",
+          "fromHex": "1207",
+          "dir": "N",
+          "minimumDistancePx": 2.244
+        }
+      ]
+    },
+    "1207~1208": {
+      "edgeKey": "1207~1208",
+      "observations": [
+        {
+          "kind": "river",
+          "sourceSvgId": "path381",
+          "fromHex": "1207",
+          "dir": "S",
+          "minimumDistancePx": 0.023
+        },
+        {
+          "kind": "river",
+          "sourceSvgId": "path381",
+          "fromHex": "1208",
+          "dir": "N",
+          "minimumDistancePx": 0.023
+        }
+      ]
+    },
+    "1208~1209": {
+      "edgeKey": "1208~1209",
+      "observations": [
+        {
+          "kind": "river",
+          "sourceSvgId": "path381",
+          "fromHex": "1208",
+          "dir": "S",
+          "minimumDistancePx": 2.902
+        },
+        {
+          "kind": "river",
+          "sourceSvgId": "path381",
+          "fromHex": "1209",
+          "dir": "N",
+          "minimumDistancePx": 2.902
+        }
+      ]
+    },
+    "1209~1309": {
+      "edgeKey": "1209~1309",
+      "observations": [
+        {
+          "kind": "river",
+          "sourceSvgId": "path381",
+          "fromHex": "1209",
+          "dir": "SE",
+          "minimumDistancePx": 2.121
+        },
+        {
+          "kind": "river",
+          "sourceSvgId": "path381",
+          "fromHex": "1309",
+          "dir": "NW",
+          "minimumDistancePx": 2.121
+        }
+      ]
+    },
+    "1209~1210": {
+      "edgeKey": "1209~1210",
+      "observations": [
+        {
+          "kind": "river",
+          "sourceSvgId": "path381",
+          "fromHex": "1209",
+          "dir": "S",
+          "minimumDistancePx": 0.0
+        },
+        {
+          "kind": "river",
+          "sourceSvgId": "path381",
+          "fromHex": "1210",
+          "dir": "N",
+          "minimumDistancePx": 0.0
+        }
+      ]
+    },
+    "1210~1309": {
+      "edgeKey": "1210~1309",
+      "observations": [
+        {
+          "kind": "river",
+          "sourceSvgId": "path381",
+          "fromHex": "1210",
+          "dir": "NE",
+          "minimumDistancePx": 0.0
+        },
+        {
+          "kind": "river",
+          "sourceSvgId": "path381",
+          "fromHex": "1309",
+          "dir": "SW",
+          "minimumDistancePx": 0.0
+        }
+      ]
+    },
+    "1210~1310": {
+      "edgeKey": "1210~1310",
+      "observations": [
+        {
+          "kind": "river",
+          "sourceSvgId": "path381",
+          "fromHex": "1210",
+          "dir": "SE",
+          "minimumDistancePx": 1.346
+        },
+        {
+          "kind": "river",
+          "sourceSvgId": "path381",
+          "fromHex": "1310",
+          "dir": "NW",
+          "minimumDistancePx": 1.346
+        }
+      ]
+    },
+    "1303~1403": {
+      "edgeKey": "1303~1403",
+      "observations": [
+        {
+          "kind": "river",
+          "sourceSvgId": "path380",
+          "fromHex": "1303",
+          "dir": "NE",
+          "minimumDistancePx": 1.127
+        },
+        {
+          "kind": "river",
+          "sourceSvgId": "path380",
+          "fromHex": "1403",
+          "dir": "SW",
+          "minimumDistancePx": 1.127
+        }
+      ]
+    },
+    "1303~1404": {
+      "edgeKey": "1303~1404",
+      "observations": [
+        {
+          "kind": "river",
+          "sourceSvgId": "path380",
+          "fromHex": "1303",
+          "dir": "SE",
+          "minimumDistancePx": 0.0
+        },
+        {
+          "kind": "river",
+          "sourceSvgId": "path380",
+          "fromHex": "1404",
+          "dir": "NW",
+          "minimumDistancePx": 0.0
+        }
+      ]
+    },
+    "1303~1304": {
+      "edgeKey": "1303~1304",
+      "observations": [
+        {
+          "kind": "river",
+          "sourceSvgId": "path380",
+          "fromHex": "1303",
+          "dir": "S",
+          "minimumDistancePx": 0.191
+        },
+        {
+          "kind": "river",
+          "sourceSvgId": "path380",
+          "fromHex": "1304",
+          "dir": "N",
+          "minimumDistancePx": 0.191
+        }
+      ]
+    },
+    "1304~1404": {
+      "edgeKey": "1304~1404",
+      "observations": [
+        {
+          "kind": "river",
+          "sourceSvgId": "path380",
+          "fromHex": "1304",
+          "dir": "NE",
+          "minimumDistancePx": 1.323
+        },
+        {
+          "kind": "river",
+          "sourceSvgId": "path380",
+          "fromHex": "1404",
+          "dir": "SW",
+          "minimumDistancePx": 1.323
+        }
+      ]
+    },
+    "1309~1409": {
+      "edgeKey": "1309~1409",
+      "observations": [
+        {
+          "kind": "river",
+          "sourceSvgId": "path382",
+          "fromHex": "1309",
+          "dir": "NE",
+          "minimumDistancePx": 0.213
+        },
+        {
+          "kind": "river",
+          "sourceSvgId": "path382",
+          "fromHex": "1409",
+          "dir": "SW",
+          "minimumDistancePx": 0.213
+        }
+      ]
+    },
+    "1309~1410": {
+      "edgeKey": "1309~1410",
+      "observations": [
+        {
+          "kind": "river",
+          "sourceSvgId": "path381",
+          "fromHex": "1309",
+          "dir": "SE",
+          "minimumDistancePx": 1.558
+        },
+        {
+          "kind": "river",
+          "sourceSvgId": "path382",
+          "fromHex": "1309",
+          "dir": "SE",
+          "minimumDistancePx": 0.0
+        },
+        {
+          "kind": "river",
+          "sourceSvgId": "path381",
+          "fromHex": "1410",
+          "dir": "NW",
+          "minimumDistancePx": 1.558
+        },
+        {
+          "kind": "river",
+          "sourceSvgId": "path382",
+          "fromHex": "1410",
+          "dir": "NW",
+          "minimumDistancePx": 0.0
+        }
+      ]
+    },
+    "1309~1310": {
+      "edgeKey": "1309~1310",
+      "observations": [
+        {
+          "kind": "river",
+          "sourceSvgId": "path381",
+          "fromHex": "1309",
+          "dir": "S",
+          "minimumDistancePx": 0.0
+        },
+        {
+          "kind": "river",
+          "sourceSvgId": "path382",
+          "fromHex": "1309",
+          "dir": "S",
+          "minimumDistancePx": 0.487
+        },
+        {
+          "kind": "river",
+          "sourceSvgId": "path381",
+          "fromHex": "1310",
+          "dir": "N",
+          "minimumDistancePx": 0.0
+        },
+        {
+          "kind": "river",
+          "sourceSvgId": "path382",
+          "fromHex": "1310",
+          "dir": "N",
+          "minimumDistancePx": 0.487
+        }
+      ]
+    },
+    "1310~1410": {
+      "edgeKey": "1310~1410",
+      "observations": [
+        {
+          "kind": "river",
+          "sourceSvgId": "path381",
+          "fromHex": "1310",
+          "dir": "NE",
+          "minimumDistancePx": 0.0
+        },
+        {
+          "kind": "river",
+          "sourceSvgId": "path382",
+          "fromHex": "1310",
+          "dir": "NE",
+          "minimumDistancePx": 0.0
+        },
+        {
+          "kind": "river",
+          "sourceSvgId": "path381",
+          "fromHex": "1410",
+          "dir": "SW",
+          "minimumDistancePx": 0.0
+        },
+        {
+          "kind": "river",
+          "sourceSvgId": "path382",
+          "fromHex": "1410",
+          "dir": "SW",
+          "minimumDistancePx": 0.0
+        }
+      ]
+    },
+    "1403~1503": {
+      "edgeKey": "1403~1503",
+      "observations": [
+        {
+          "kind": "river",
+          "sourceSvgId": "path380",
+          "fromHex": "1403",
+          "dir": "SE",
+          "minimumDistancePx": 0.246
+        },
+        {
+          "kind": "river",
+          "sourceSvgId": "path380",
+          "fromHex": "1503",
+          "dir": "NW",
+          "minimumDistancePx": 0.246
+        }
+      ]
+    },
+    "1403~1404": {
+      "edgeKey": "1403~1404",
+      "observations": [
+        {
+          "kind": "river",
+          "sourceSvgId": "path380",
+          "fromHex": "1403",
+          "dir": "S",
+          "minimumDistancePx": 0.0
+        },
+        {
+          "kind": "river",
+          "sourceSvgId": "path380",
+          "fromHex": "1404",
+          "dir": "N",
+          "minimumDistancePx": 0.0
+        }
+      ]
+    },
+    "1404~1503": {
+      "edgeKey": "1404~1503",
+      "observations": [
+        {
+          "kind": "river",
+          "sourceSvgId": "path380",
+          "fromHex": "1404",
+          "dir": "NE",
+          "minimumDistancePx": 0.246
+        },
+        {
+          "kind": "river",
+          "sourceSvgId": "path380",
+          "fromHex": "1503",
+          "dir": "SW",
+          "minimumDistancePx": 0.246
+        }
+      ]
+    },
+    "1408~1507": {
+      "edgeKey": "1408~1507",
+      "observations": [
+        {
+          "kind": "river",
+          "sourceSvgId": "path382",
+          "fromHex": "1408",
+          "dir": "NE",
+          "minimumDistancePx": 0.0
+        },
+        {
+          "kind": "river",
+          "sourceSvgId": "path382",
+          "fromHex": "1507",
+          "dir": "SW",
+          "minimumDistancePx": 0.0
+        }
+      ]
+    },
+    "1408~1508": {
+      "edgeKey": "1408~1508",
+      "observations": [
+        {
+          "kind": "river",
+          "sourceSvgId": "path382",
+          "fromHex": "1408",
+          "dir": "SE",
+          "minimumDistancePx": 0.0
+        },
+        {
+          "kind": "river",
+          "sourceSvgId": "path382",
+          "fromHex": "1508",
+          "dir": "NW",
+          "minimumDistancePx": 0.0
+        }
+      ]
+    },
+    "1408~1409": {
+      "edgeKey": "1408~1409",
+      "observations": [
+        {
+          "kind": "river",
+          "sourceSvgId": "path382",
+          "fromHex": "1408",
+          "dir": "S",
+          "minimumDistancePx": 1.506
+        },
+        {
+          "kind": "river",
+          "sourceSvgId": "path382",
+          "fromHex": "1409",
+          "dir": "N",
+          "minimumDistancePx": 1.506
+        }
+      ]
+    },
+    "1409~1508": {
+      "edgeKey": "1409~1508",
+      "observations": [
+        {
+          "kind": "river",
+          "sourceSvgId": "path382",
+          "fromHex": "1409",
+          "dir": "NE",
+          "minimumDistancePx": 0.0
+        },
+        {
+          "kind": "river",
+          "sourceSvgId": "path382",
+          "fromHex": "1508",
+          "dir": "SW",
+          "minimumDistancePx": 0.0
+        }
+      ]
+    },
+    "1409~1509": {
+      "edgeKey": "1409~1509",
+      "observations": [
+        {
+          "kind": "river",
+          "sourceSvgId": "path382",
+          "fromHex": "1409",
+          "dir": "SE",
+          "minimumDistancePx": 0.0
+        },
+        {
+          "kind": "river",
+          "sourceSvgId": "path382",
+          "fromHex": "1509",
+          "dir": "NW",
+          "minimumDistancePx": 0.0
+        }
+      ]
+    },
+    "1409~1410": {
+      "edgeKey": "1409~1410",
+      "observations": [
+        {
+          "kind": "river",
+          "sourceSvgId": "path382",
+          "fromHex": "1409",
+          "dir": "S",
+          "minimumDistancePx": 0.213
+        },
+        {
+          "kind": "river",
+          "sourceSvgId": "path382",
+          "fromHex": "1410",
+          "dir": "N",
+          "minimumDistancePx": 0.213
+        }
+      ]
+    },
+    "1410~1509": {
+      "edgeKey": "1410~1509",
+      "observations": [
+        {
+          "kind": "river",
+          "sourceSvgId": "path382",
+          "fromHex": "1410",
+          "dir": "NE",
+          "minimumDistancePx": 0.0
+        },
+        {
+          "kind": "river",
+          "sourceSvgId": "path382",
+          "fromHex": "1509",
+          "dir": "SW",
+          "minimumDistancePx": 0.0
+        }
+      ]
+    },
+    "1410~1510": {
+      "edgeKey": "1410~1510",
+      "observations": [
+        {
+          "kind": "river",
+          "sourceSvgId": "path381",
+          "fromHex": "1410",
+          "dir": "SE",
+          "minimumDistancePx": 0.11
+        },
+        {
+          "kind": "river",
+          "sourceSvgId": "path381",
+          "fromHex": "1510",
+          "dir": "NW",
+          "minimumDistancePx": 0.11
+        }
+      ]
+    },
+    "1410~1411": {
+      "edgeKey": "1410~1411",
+      "observations": [
+        {
+          "kind": "river",
+          "sourceSvgId": "path381",
+          "fromHex": "1410",
+          "dir": "S",
+          "minimumDistancePx": 0.0
+        },
+        {
+          "kind": "river",
+          "sourceSvgId": "path381",
+          "fromHex": "1411",
+          "dir": "N",
+          "minimumDistancePx": 0.0
+        }
+      ]
+    },
+    "1411~1510": {
+      "edgeKey": "1411~1510",
+      "observations": [
+        {
+          "kind": "river",
+          "sourceSvgId": "path381",
+          "fromHex": "1411",
+          "dir": "NE",
+          "minimumDistancePx": 0.0
+        },
+        {
+          "kind": "river",
+          "sourceSvgId": "path381",
+          "fromHex": "1510",
+          "dir": "SW",
+          "minimumDistancePx": 0.0
+        }
+      ]
+    },
+    "1505~1605": {
+      "edgeKey": "1505~1605",
+      "observations": [
+        {
+          "kind": "river",
+          "sourceSvgId": "path382",
+          "fromHex": "1505",
+          "dir": "NE",
+          "minimumDistancePx": 1.593
+        },
+        {
+          "kind": "river",
+          "sourceSvgId": "path382",
+          "fromHex": "1605",
+          "dir": "SW",
+          "minimumDistancePx": 1.593
+        }
+      ]
+    },
+    "1505~1606": {
+      "edgeKey": "1505~1606",
+      "observations": [
+        {
+          "kind": "river",
+          "sourceSvgId": "path382",
+          "fromHex": "1505",
+          "dir": "SE",
+          "minimumDistancePx": 0.0
+        },
+        {
+          "kind": "river",
+          "sourceSvgId": "path382",
+          "fromHex": "1606",
+          "dir": "NW",
+          "minimumDistancePx": 0.0
+        }
+      ]
+    },
+    "1505~1506": {
+      "edgeKey": "1505~1506",
+      "observations": [
+        {
+          "kind": "river",
+          "sourceSvgId": "path382",
+          "fromHex": "1505",
+          "dir": "S",
+          "minimumDistancePx": 0.0
+        },
+        {
+          "kind": "river",
+          "sourceSvgId": "path382",
+          "fromHex": "1506",
+          "dir": "N",
+          "minimumDistancePx": 0.0
+        }
+      ]
+    },
+    "1506~1606": {
+      "edgeKey": "1506~1606",
+      "observations": [
+        {
+          "kind": "river",
+          "sourceSvgId": "path382",
+          "fromHex": "1506",
+          "dir": "NE",
+          "minimumDistancePx": 0.502
+        },
+        {
+          "kind": "river",
+          "sourceSvgId": "path382",
+          "fromHex": "1606",
+          "dir": "SW",
+          "minimumDistancePx": 0.502
+        }
+      ]
+    },
+    "1506~1607": {
+      "edgeKey": "1506~1607",
+      "observations": [
+        {
+          "kind": "river",
+          "sourceSvgId": "path382",
+          "fromHex": "1506",
+          "dir": "SE",
+          "minimumDistancePx": 0.248
+        },
+        {
+          "kind": "river",
+          "sourceSvgId": "path382",
+          "fromHex": "1607",
+          "dir": "NW",
+          "minimumDistancePx": 0.248
+        }
+      ]
+    },
+    "1506~1507": {
+      "edgeKey": "1506~1507",
+      "observations": [
+        {
+          "kind": "river",
+          "sourceSvgId": "path382",
+          "fromHex": "1506",
+          "dir": "S",
+          "minimumDistancePx": 0.0
+        },
+        {
+          "kind": "river",
+          "sourceSvgId": "path382",
+          "fromHex": "1507",
+          "dir": "N",
+          "minimumDistancePx": 0.0
+        }
+      ]
+    },
+    "1507~1607": {
+      "edgeKey": "1507~1607",
+      "observations": [
+        {
+          "kind": "river",
+          "sourceSvgId": "path382",
+          "fromHex": "1507",
+          "dir": "NE",
+          "minimumDistancePx": 0.248
+        },
+        {
+          "kind": "river",
+          "sourceSvgId": "path382",
+          "fromHex": "1607",
+          "dir": "SW",
+          "minimumDistancePx": 0.248
+        }
+      ]
+    },
+    "1507~1608": {
+      "edgeKey": "1507~1608",
+      "observations": [
+        {
+          "kind": "river",
+          "sourceSvgId": "path382",
+          "fromHex": "1507",
+          "dir": "SE",
+          "minimumDistancePx": 0.0
+        },
+        {
+          "kind": "river",
+          "sourceSvgId": "path382",
+          "fromHex": "1608",
+          "dir": "NW",
+          "minimumDistancePx": 0.0
+        }
+      ]
+    },
+    "1507~1508": {
+      "edgeKey": "1507~1508",
+      "observations": [
+        {
+          "kind": "river",
+          "sourceSvgId": "path382",
+          "fromHex": "1507",
+          "dir": "S",
+          "minimumDistancePx": 0.055
+        },
+        {
+          "kind": "river",
+          "sourceSvgId": "path382",
+          "fromHex": "1508",
+          "dir": "N",
+          "minimumDistancePx": 0.055
+        }
+      ]
+    },
+    "1508~1608": {
+      "edgeKey": "1508~1608",
+      "observations": [
+        {
+          "kind": "river",
+          "sourceSvgId": "path382",
+          "fromHex": "1508",
+          "dir": "NE",
+          "minimumDistancePx": 0.055
+        },
+        {
+          "kind": "river",
+          "sourceSvgId": "path382",
+          "fromHex": "1608",
+          "dir": "SW",
+          "minimumDistancePx": 0.055
+        }
+      ]
+    },
+    "1508~1509": {
+      "edgeKey": "1508~1509",
+      "observations": [
+        {
+          "kind": "river",
+          "sourceSvgId": "path382",
+          "fromHex": "1508",
+          "dir": "S",
+          "minimumDistancePx": 0.509
+        },
+        {
+          "kind": "river",
+          "sourceSvgId": "path382",
+          "fromHex": "1509",
+          "dir": "N",
+          "minimumDistancePx": 0.509
+        }
+      ]
+    },
+    "1510~1611": {
+      "edgeKey": "1510~1611",
+      "observations": [
+        {
+          "kind": "river",
+          "sourceSvgId": "path381",
+          "fromHex": "1510",
+          "dir": "SE",
+          "minimumDistancePx": 0.0
+        },
+        {
+          "kind": "river",
+          "sourceSvgId": "path381",
+          "fromHex": "1611",
+          "dir": "NW",
+          "minimumDistancePx": 0.0
+        }
+      ]
+    },
+    "1510:S": {
+      "edgeKey": "1510:S",
+      "observations": [
+        {
+          "kind": "river",
+          "sourceSvgId": "path381",
+          "fromHex": "1510",
+          "dir": "S",
+          "minimumDistancePx": 1.263
+        }
+      ]
+    },
+    "1605~1704": {
+      "edgeKey": "1605~1704",
+      "observations": [
+        {
+          "kind": "river",
+          "sourceSvgId": "path382",
+          "fromHex": "1605",
+          "dir": "NE",
+          "minimumDistancePx": 0.0
+        },
+        {
+          "kind": "river",
+          "sourceSvgId": "path382",
+          "fromHex": "1704",
+          "dir": "SW",
+          "minimumDistancePx": 0.0
+        }
+      ]
+    },
+    "1605~1705": {
+      "edgeKey": "1605~1705",
+      "observations": [
+        {
+          "kind": "river",
+          "sourceSvgId": "path382",
+          "fromHex": "1605",
+          "dir": "SE",
+          "minimumDistancePx": 0.0
+        },
+        {
+          "kind": "river",
+          "sourceSvgId": "path382",
+          "fromHex": "1705",
+          "dir": "NW",
+          "minimumDistancePx": 0.0
+        }
+      ]
+    },
+    "1605~1606": {
+      "edgeKey": "1605~1606",
+      "observations": [
+        {
+          "kind": "river",
+          "sourceSvgId": "path382",
+          "fromHex": "1605",
+          "dir": "S",
+          "minimumDistancePx": 1.593
+        },
+        {
+          "kind": "river",
+          "sourceSvgId": "path382",
+          "fromHex": "1606",
+          "dir": "N",
+          "minimumDistancePx": 1.593
+        }
+      ]
+    },
+    "1606~1705": {
+      "edgeKey": "1606~1705",
+      "observations": [
+        {
+          "kind": "river",
+          "sourceSvgId": "path382",
+          "fromHex": "1606",
+          "dir": "NE",
+          "minimumDistancePx": 0.0
+        },
+        {
+          "kind": "river",
+          "sourceSvgId": "path382",
+          "fromHex": "1705",
+          "dir": "SW",
+          "minimumDistancePx": 0.0
+        }
+      ]
+    },
+    "1606~1607": {
+      "edgeKey": "1606~1607",
+      "observations": [
+        {
+          "kind": "river",
+          "sourceSvgId": "path382",
+          "fromHex": "1606",
+          "dir": "S",
+          "minimumDistancePx": 0.802
+        },
+        {
+          "kind": "river",
+          "sourceSvgId": "path382",
+          "fromHex": "1607",
+          "dir": "N",
+          "minimumDistancePx": 0.802
+        }
+      ]
+    },
+    "1611:S": {
+      "edgeKey": "1611:S",
+      "observations": [
+        {
+          "kind": "river",
+          "sourceSvgId": "path381",
+          "fromHex": "1611",
+          "dir": "S",
+          "minimumDistancePx": 0.0
+        }
+      ]
+    },
+    "1611:SW": {
+      "edgeKey": "1611:SW",
+      "observations": [
+        {
+          "kind": "river",
+          "sourceSvgId": "path381",
+          "fromHex": "1611",
+          "dir": "SW",
+          "minimumDistancePx": 1.263
+        }
+      ]
+    },
+    "1704~1805": {
+      "edgeKey": "1704~1805",
+      "observations": [
+        {
+          "kind": "river",
+          "sourceSvgId": "path382",
+          "fromHex": "1704",
+          "dir": "SE",
+          "minimumDistancePx": 2.431
+        },
+        {
+          "kind": "river",
+          "sourceSvgId": "path382",
+          "fromHex": "1805",
+          "dir": "NW",
+          "minimumDistancePx": 2.431
+        }
+      ]
+    },
+    "1704~1705": {
+      "edgeKey": "1704~1705",
+      "observations": [
+        {
+          "kind": "river",
+          "sourceSvgId": "path382",
+          "fromHex": "1704",
+          "dir": "S",
+          "minimumDistancePx": 0.0
+        },
+        {
+          "kind": "river",
+          "sourceSvgId": "path382",
+          "fromHex": "1705",
+          "dir": "N",
+          "minimumDistancePx": 0.0
+        }
+      ]
+    },
+    "1705~1805": {
+      "edgeKey": "1705~1805",
+      "observations": [
+        {
+          "kind": "river",
+          "sourceSvgId": "path382",
+          "fromHex": "1705",
+          "dir": "NE",
+          "minimumDistancePx": 0.357
+        },
+        {
+          "kind": "river",
+          "sourceSvgId": "path382",
+          "fromHex": "1805",
+          "dir": "SW",
+          "minimumDistancePx": 0.357
+        }
+      ]
+    },
+    "1705~1806": {
+      "edgeKey": "1705~1806",
+      "observations": [
+        {
+          "kind": "river",
+          "sourceSvgId": "path382",
+          "fromHex": "1705",
+          "dir": "SE",
+          "minimumDistancePx": 0.0
+        },
+        {
+          "kind": "river",
+          "sourceSvgId": "path382",
+          "fromHex": "1806",
+          "dir": "NW",
+          "minimumDistancePx": 0.0
+        }
+      ]
+    },
+    "1801:N": {
+      "edgeKey": "1801:N",
+      "observations": [
+        {
+          "kind": "reinforcement",
+          "sourceSvgId": "path314",
+          "fromHex": "1801",
+          "dir": "N",
+          "minimumDistancePx": 2.069
+        }
+      ]
+    },
+    "1801:NE": {
+      "edgeKey": "1801:NE",
+      "observations": [
+        {
+          "kind": "reinforcement",
+          "sourceSvgId": "path314",
+          "fromHex": "1801",
+          "dir": "NE",
+          "minimumDistancePx": 0.0
+        }
+      ]
+    },
+    "1801:SE": {
+      "edgeKey": "1801:SE",
+      "observations": [
+        {
+          "kind": "reinforcement",
+          "sourceSvgId": "path314",
+          "fromHex": "1801",
+          "dir": "SE",
+          "minimumDistancePx": 0.0
+        }
+      ]
+    },
+    "1801~1802": {
+      "edgeKey": "1801~1802",
+      "observations": [
+        {
+          "kind": "reinforcement",
+          "sourceSvgId": "path314",
+          "fromHex": "1801",
+          "dir": "S",
+          "minimumDistancePx": 0.0
+        },
+        {
+          "kind": "reinforcement",
+          "sourceSvgId": "path314",
+          "fromHex": "1802",
+          "dir": "N",
+          "minimumDistancePx": 0.0
+        }
+      ]
+    },
+    "1802:NE": {
+      "edgeKey": "1802:NE",
+      "observations": [
+        {
+          "kind": "reinforcement",
+          "sourceSvgId": "path314",
+          "fromHex": "1802",
+          "dir": "NE",
+          "minimumDistancePx": 0.712
+        }
+      ]
+    },
+    "1802:SE": {
+      "edgeKey": "1802:SE",
+      "observations": [
+        {
+          "kind": "reinforcement",
+          "sourceSvgId": "path314",
+          "fromHex": "1802",
+          "dir": "SE",
+          "minimumDistancePx": 0.0
+        }
+      ]
+    },
+    "1802~1803": {
+      "edgeKey": "1802~1803",
+      "observations": [
+        {
+          "kind": "reinforcement",
+          "sourceSvgId": "path314",
+          "fromHex": "1802",
+          "dir": "S",
+          "minimumDistancePx": 0.357
+        },
+        {
+          "kind": "reinforcement",
+          "sourceSvgId": "path314",
+          "fromHex": "1803",
+          "dir": "N",
+          "minimumDistancePx": 0.357
+        }
+      ]
+    },
+    "1803:NE": {
+      "edgeKey": "1803:NE",
+      "observations": [
+        {
+          "kind": "reinforcement",
+          "sourceSvgId": "path314",
+          "fromHex": "1803",
+          "dir": "NE",
+          "minimumDistancePx": 0.0
+        }
+      ]
+    },
+    "1803:SE": {
+      "edgeKey": "1803:SE",
+      "observations": [
+        {
+          "kind": "reinforcement",
+          "sourceSvgId": "path314",
+          "fromHex": "1803",
+          "dir": "SE",
+          "minimumDistancePx": 0.0
+        }
+      ]
+    },
+    "1804:NE": {
+      "edgeKey": "1804:NE",
+      "observations": [
+        {
+          "kind": "reinforcement",
+          "sourceSvgId": "path314",
+          "fromHex": "1804",
+          "dir": "NE",
+          "minimumDistancePx": 1.899
+        }
+      ]
+    },
+    "1804:SE": {
+      "edgeKey": "1804:SE",
+      "observations": [
+        {
+          "kind": "reinforcement",
+          "sourceSvgId": "path314",
+          "fromHex": "1804",
+          "dir": "SE",
+          "minimumDistancePx": 1.036
+        }
+      ]
+    },
+    "1804~1805": {
+      "edgeKey": "1804~1805",
+      "observations": [
+        {
+          "kind": "reinforcement",
+          "sourceSvgId": "path314",
+          "fromHex": "1804",
+          "dir": "S",
+          "minimumDistancePx": 1.036
+        },
+        {
+          "kind": "reinforcement",
+          "sourceSvgId": "path314",
+          "fromHex": "1805",
+          "dir": "N",
+          "minimumDistancePx": 1.036
+        }
+      ]
+    },
+    "1805:NE": {
+      "edgeKey": "1805:NE",
+      "observations": [
+        {
+          "kind": "reinforcement",
+          "sourceSvgId": "path314",
+          "fromHex": "1805",
+          "dir": "NE",
+          "minimumDistancePx": 0.0
+        }
+      ]
+    },
+    "1805:SE": {
+      "edgeKey": "1805:SE",
+      "observations": [
+        {
+          "kind": "river",
+          "sourceSvgId": "path382",
+          "fromHex": "1805",
+          "dir": "SE",
+          "minimumDistancePx": 0.744
+        },
+        {
+          "kind": "reinforcement",
+          "sourceSvgId": "path314",
+          "fromHex": "1805",
+          "dir": "SE",
+          "minimumDistancePx": 0.186
+        }
+      ]
+    },
+    "1805~1806": {
+      "edgeKey": "1805~1806",
+      "observations": [
+        {
+          "kind": "river",
+          "sourceSvgId": "path382",
+          "fromHex": "1805",
+          "dir": "S",
+          "minimumDistancePx": 0.558
+        },
+        {
+          "kind": "reinforcement",
+          "sourceSvgId": "path314",
+          "fromHex": "1805",
+          "dir": "S",
+          "minimumDistancePx": 0.66
+        },
+        {
+          "kind": "river",
+          "sourceSvgId": "path382",
+          "fromHex": "1806",
+          "dir": "N",
+          "minimumDistancePx": 0.558
+        },
+        {
+          "kind": "reinforcement",
+          "sourceSvgId": "path314",
+          "fromHex": "1806",
+          "dir": "N",
+          "minimumDistancePx": 0.66
+        }
+      ]
+    },
+    "1806:NE": {
+      "edgeKey": "1806:NE",
+      "observations": [
+        {
+          "kind": "river",
+          "sourceSvgId": "path382",
+          "fromHex": "1806",
+          "dir": "NE",
+          "minimumDistancePx": 0.0
+        },
+        {
+          "kind": "reinforcement",
+          "sourceSvgId": "path314",
+          "fromHex": "1806",
+          "dir": "NE",
+          "minimumDistancePx": 0.0
+        }
+      ]
+    },
+    "1806:SE": {
+      "edgeKey": "1806:SE",
+      "observations": [
+        {
+          "kind": "reinforcement",
+          "sourceSvgId": "path314",
+          "fromHex": "1806",
+          "dir": "SE",
+          "minimumDistancePx": 0.977
+        }
+      ]
+    },
+    "1806~1807": {
+      "edgeKey": "1806~1807",
+      "observations": [
+        {
+          "kind": "reinforcement",
+          "sourceSvgId": "path314",
+          "fromHex": "1806",
+          "dir": "S",
+          "minimumDistancePx": 0.977
+        },
+        {
+          "kind": "reinforcement",
+          "sourceSvgId": "path314",
+          "fromHex": "1807",
+          "dir": "N",
+          "minimumDistancePx": 0.977
+        }
+      ]
+    },
+    "1807:NE": {
+      "edgeKey": "1807:NE",
+      "observations": [
+        {
+          "kind": "reinforcement",
+          "sourceSvgId": "path314",
+          "fromHex": "1807",
+          "dir": "NE",
+          "minimumDistancePx": 0.0
+        }
+      ]
+    },
+    "1807:SE": {
+      "edgeKey": "1807:SE",
+      "observations": [
+        {
+          "kind": "reinforcement",
+          "sourceSvgId": "path314",
+          "fromHex": "1807",
+          "dir": "SE",
+          "minimumDistancePx": 0.0
+        }
+      ]
+    },
+    "1807~1808": {
+      "edgeKey": "1807~1808",
+      "observations": [
+        {
+          "kind": "reinforcement",
+          "sourceSvgId": "path314",
+          "fromHex": "1807",
+          "dir": "S",
+          "minimumDistancePx": 0.0
+        },
+        {
+          "kind": "reinforcement",
+          "sourceSvgId": "path314",
+          "fromHex": "1808",
+          "dir": "N",
+          "minimumDistancePx": 0.0
+        }
+      ]
+    },
+    "1808:NE": {
+      "edgeKey": "1808:NE",
+      "observations": [
+        {
+          "kind": "reinforcement",
+          "sourceSvgId": "path314",
+          "fromHex": "1808",
+          "dir": "NE",
+          "minimumDistancePx": 0.0
+        }
+      ]
+    },
+    "1808:SE": {
+      "edgeKey": "1808:SE",
+      "observations": [
+        {
+          "kind": "reinforcement",
+          "sourceSvgId": "path314",
+          "fromHex": "1808",
+          "dir": "SE",
+          "minimumDistancePx": 0.901
+        }
+      ]
+    },
+    "1808~1809": {
+      "edgeKey": "1808~1809",
+      "observations": [
+        {
+          "kind": "reinforcement",
+          "sourceSvgId": "path314",
+          "fromHex": "1808",
+          "dir": "S",
+          "minimumDistancePx": 2.186
+        },
+        {
+          "kind": "reinforcement",
+          "sourceSvgId": "path314",
+          "fromHex": "1809",
+          "dir": "N",
+          "minimumDistancePx": 2.186
+        }
+      ]
+    },
+    "1809:NE": {
+      "edgeKey": "1809:NE",
+      "observations": [
+        {
+          "kind": "reinforcement",
+          "sourceSvgId": "path314",
+          "fromHex": "1809",
+          "dir": "NE",
+          "minimumDistancePx": 0.495
+        }
+      ]
+    },
+    "1809:SE": {
+      "edgeKey": "1809:SE",
+      "observations": [
+        {
+          "kind": "reinforcement",
+          "sourceSvgId": "path314",
+          "fromHex": "1809",
+          "dir": "SE",
+          "minimumDistancePx": 1.225
+        }
+      ]
+    },
+    "1809~1810": {
+      "edgeKey": "1809~1810",
+      "observations": [
+        {
+          "kind": "reinforcement",
+          "sourceSvgId": "path314",
+          "fromHex": "1809",
+          "dir": "S",
+          "minimumDistancePx": 2.227
+        },
+        {
+          "kind": "reinforcement",
+          "sourceSvgId": "path314",
+          "fromHex": "1810",
+          "dir": "N",
+          "minimumDistancePx": 2.227
+        }
+      ]
+    },
+    "1810:NE": {
+      "edgeKey": "1810:NE",
+      "observations": [
+        {
+          "kind": "reinforcement",
+          "sourceSvgId": "path314",
+          "fromHex": "1810",
+          "dir": "NE",
+          "minimumDistancePx": 0.0
+        }
+      ]
+    },
+    "1810:SE": {
+      "edgeKey": "1810:SE",
+      "observations": [
+        {
+          "kind": "reinforcement",
+          "sourceSvgId": "path314",
+          "fromHex": "1810",
+          "dir": "SE",
+          "minimumDistancePx": 0.0
+        }
+      ]
+    },
+    "1810~1811": {
+      "edgeKey": "1810~1811",
+      "observations": [
+        {
+          "kind": "reinforcement",
+          "sourceSvgId": "path314",
+          "fromHex": "1810",
+          "dir": "S",
+          "minimumDistancePx": 2.68
+        },
+        {
+          "kind": "reinforcement",
+          "sourceSvgId": "path314",
+          "fromHex": "1811",
+          "dir": "N",
+          "minimumDistancePx": 2.68
+        }
+      ]
+    },
+    "1811:NE": {
+      "edgeKey": "1811:NE",
+      "observations": [
+        {
+          "kind": "reinforcement",
+          "sourceSvgId": "path314",
+          "fromHex": "1811",
+          "dir": "NE",
+          "minimumDistancePx": 1.258
+        }
+      ]
+    },
+    "1811:SE": {
+      "edgeKey": "1811:SE",
+      "observations": [
+        {
+          "kind": "reinforcement",
+          "sourceSvgId": "path314",
+          "fromHex": "1811",
+          "dir": "SE",
+          "minimumDistancePx": 1.258
+        }
+      ]
+    },
+    "1811:S": {
+      "edgeKey": "1811:S",
+      "observations": [
+        {
+          "kind": "reinforcement",
+          "sourceSvgId": "path314",
+          "fromHex": "1811",
+          "dir": "S",
+          "minimumDistancePx": 2.44
+        }
+      ]
+    }
+  },
+  "limitations": [
+    "River and reinforcement proximity is not a side-occupancy assertion.",
+    "A rail crossing is not a legal move.",
+    "Original SVG path curves remain the rendering authority.",
+    "No source vectors were redrawn or simplified in the game renderer."
+  ],
+  "authorizedForMovement": false
+}

@@ -1,0 +1,131 @@
+{
+  "source": "v259 Odessa extension prior to user SVG corrections",
+  "entryEdges": [
+    {
+      "cellId": "0712",
+      "dir": "NW",
+      "side": "german",
+      "source": "odessa-west-perimeter"
+    },
+    {
+      "cellId": "0712",
+      "dir": "SW",
+      "side": "german",
+      "source": "odessa-west-perimeter"
+    },
+    {
+      "cellId": "0713",
+      "dir": "NW",
+      "side": "german",
+      "source": "odessa-west-perimeter"
+    },
+    {
+      "cellId": "0713",
+      "dir": "SW",
+      "side": "german",
+      "source": "odessa-west-perimeter"
+    },
+    {
+      "cellId": "0714",
+      "dir": "NW",
+      "side": "german",
+      "source": "odessa-west-perimeter"
+    },
+    {
+      "cellId": "0714",
+      "dir": "SW",
+      "side": "german",
+      "source": "odessa-west-perimeter"
+    },
+    {
+      "cellId": "0715",
+      "dir": "NW",
+      "side": "german",
+      "source": "odessa-west-perimeter"
+    },
+    {
+      "cellId": "0715",
+      "dir": "SW",
+      "side": "german",
+      "source": "odessa-west-perimeter"
+    },
+    {
+      "cellId": "0716",
+      "dir": "NW",
+      "side": "german",
+      "source": "odessa-west-perimeter"
+    },
+    {
+      "cellId": "0716",
+      "dir": "SW",
+      "side": "german",
+      "source": "odessa-west-perimeter"
+    },
+    {
+      "cellId": "0717",
+      "dir": "NW",
+      "side": "german",
+      "source": "odessa-west-perimeter"
+    },
+    {
+      "cellId": "0717",
+      "dir": "SW",
+      "side": "german",
+      "source": "odessa-west-perimeter"
+    },
+    {
+      "cellId": "0718",
+      "dir": "NW",
+      "side": "german",
+      "source": "odessa-west-perimeter"
+    },
+    {
+      "cellId": "0718",
+      "dir": "SW",
+      "side": "german",
+      "source": "odessa-west-perimeter"
+    },
+    {
+      "cellId": "1911",
+      "dir": "N",
+      "side": "soviet",
+      "source": "odessa-east-perimeter"
+    },
+    {
+      "cellId": "1911",
+      "dir": "NE",
+      "side": "soviet",
+      "source": "odessa-east-perimeter"
+    },
+    {
+      "cellId": "1911",
+      "dir": "SE",
+      "side": "soviet",
+      "source": "odessa-east-perimeter"
+    },
+    {
+      "cellId": "1912",
+      "dir": "NE",
+      "side": "soviet",
+      "source": "odessa-east-perimeter"
+    },
+    {
+      "cellId": "1912",
+      "dir": "SE",
+      "side": "soviet",
+      "source": "odessa-east-perimeter"
+    },
+    {
+      "cellId": "1913",
+      "dir": "NE",
+      "side": "soviet",
+      "source": "odessa-east-perimeter"
+    },
+    {
+      "cellId": "1913",
+      "dir": "SE",
+      "side": "soviet",
+      "source": "odessa-east-perimeter"
+    }
+  ]
+}

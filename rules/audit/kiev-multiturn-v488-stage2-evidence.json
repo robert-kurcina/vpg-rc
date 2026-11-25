@@ -1,0 +1,252 @@
+{
+  "stage": 2,
+  "range": [
+    3,
+    4
+  ],
+  "checks": 84,
+  "inputHash": "be842f786c32a1581524ee5634675419e517d863d8ab6cfefc7bdfc2fefd021e",
+  "outputHash": "34f25d50e9e4da557bea6c7b0b7712be3de6686f9251ef9b5c704991ae2094b3",
+  "beforeActionCount": 27,
+  "afterActionCount": 57,
+  "complete": false,
+  "terminal": null,
+  "turns": [
+    {
+      "turn": 3,
+      "actions": [
+        {
+          "phase": "german-buildup",
+          "kind": "buildup",
+          "type": "place-reinforcement",
+          "nested": null
+        },
+        {
+          "phase": "german-buildup",
+          "kind": "buildup",
+          "type": "place-reinforcement",
+          "nested": null
+        },
+        {
+          "phase": "german-buildup",
+          "kind": "buildup",
+          "type": "finish-buildup",
+          "nested": null
+        },
+        {
+          "phase": "german-movement",
+          "kind": "movement",
+          "type": "declare-ground-move",
+          "nested": null
+        },
+        {
+          "phase": "german-movement",
+          "kind": "movement",
+          "type": "resolve-ground-move",
+          "nested": null
+        },
+        {
+          "phase": "german-movement",
+          "kind": "movement",
+          "type": "finish-phase",
+          "nested": null
+        },
+        {
+          "phase": "german-combat",
+          "kind": "combat",
+          "type": "combat",
+          "nested": "commit-battles"
+        },
+        {
+          "phase": "german-combat",
+          "kind": "combat",
+          "type": "combat",
+          "nested": "select-battle"
+        },
+        {
+          "phase": "german-combat",
+          "kind": "combat",
+          "type": "combat",
+          "nested": "commit-ground-air"
+        },
+        {
+          "phase": "german-combat",
+          "kind": "combat",
+          "type": "roll",
+          "die": 1
+        },
+        {
+          "phase": "german-combat",
+          "kind": "combat",
+          "type": "combat",
+          "nested": "resolve-battle"
+        },
+        {
+          "phase": "german-combat",
+          "kind": "combat",
+          "type": "combat",
+          "nested": "finish-combat"
+        },
+        {
+          "phase": "german-special-movement",
+          "kind": "special-movement",
+          "type": "finish-phase",
+          "nested": null
+        },
+        {
+          "phase": "soviet-buildup",
+          "kind": "buildup",
+          "type": "finish-buildup",
+          "nested": null
+        },
+        {
+          "phase": "soviet-special-movement",
+          "kind": "special-movement",
+          "type": "finish-phase",
+          "nested": null
+        },
+        {
+          "phase": "soviet-combat",
+          "kind": "combat",
+          "type": "combat",
+          "nested": "commit-battles"
+        },
+        {
+          "phase": "soviet-combat",
+          "kind": "combat",
+          "type": "combat",
+          "nested": "finish-combat"
+        },
+        {
+          "phase": "soviet-movement",
+          "kind": "movement",
+          "type": "finish-phase",
+          "nested": null
+        },
+        {
+          "phase": "housekeeping",
+          "kind": "housekeeping",
+          "type": "finish-housekeeping",
+          "nested": null
+        }
+      ],
+      "endTurn": 4,
+      "complete": false,
+      "actionCount": 45
+    },
+    {
+      "turn": 4,
+      "actions": [
+        {
+          "phase": "german-buildup",
+          "kind": "buildup",
+          "type": "apply-replacement",
+          "nested": null
+        },
+        {
+          "phase": "german-buildup",
+          "kind": "buildup",
+          "type": "finish-buildup",
+          "nested": null
+        },
+        {
+          "phase": "german-movement",
+          "kind": "movement",
+          "type": "finish-phase",
+          "nested": null
+        },
+        {
+          "phase": "german-combat",
+          "kind": "combat",
+          "type": "combat",
+          "nested": "commit-battles"
+        },
+        {
+          "phase": "german-combat",
+          "kind": "combat",
+          "type": "combat",
+          "nested": "finish-combat"
+        },
+        {
+          "phase": "german-special-movement",
+          "kind": "special-movement",
+          "type": "finish-phase",
+          "nested": null
+        },
+        {
+          "phase": "soviet-buildup",
+          "kind": "buildup",
+          "type": "finish-buildup",
+          "nested": null
+        },
+        {
+          "phase": "soviet-special-movement",
+          "kind": "special-movement",
+          "type": "finish-phase",
+          "nested": null
+        },
+        {
+          "phase": "soviet-combat",
+          "kind": "combat",
+          "type": "combat",
+          "nested": "commit-battles"
+        },
+        {
+          "phase": "soviet-combat",
+          "kind": "combat",
+          "type": "combat",
+          "nested": "finish-combat"
+        },
+        {
+          "phase": "soviet-movement",
+          "kind": "movement",
+          "type": "finish-phase",
+          "nested": null
+        },
+        {
+          "phase": "housekeeping",
+          "kind": "housekeeping",
+          "type": "finish-housekeeping",
+          "nested": null
+        }
+      ],
+      "endTurn": 5,
+      "complete": false,
+      "actionCount": 57
+    }
+  ],
+  "combats": [
+    {
+      "turn": 3,
+      "actor": "german",
+      "defenderHex": "0304",
+      "outcome": "DR",
+      "die": 1,
+      "airId": null,
+      "choices": {
+        "type": "combat",
+        "action": {
+          "type": "resolve-battle",
+          "die": 1,
+          "choices": {
+            "retreatPaths": {
+              "kiev-front-r04c02": [
+                "0404",
+                "0405"
+              ]
+            },
+            "advanceUnitId": "kiev-front-r01c02"
+          }
+        }
+      }
+    }
+  ],
+  "replacements": [
+    {
+      "turn": 4,
+      "unitId": "kiev-front-r01c01",
+      "hex": null
+    }
+  ],
+  "errors": []
+}

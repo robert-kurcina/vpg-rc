@@ -1,0 +1,27 @@
+{
+  "checkpoint": 163,
+  "version": "v397",
+  "assertions": 35,
+  "source": "references/rules/leningrad-rules.pdf §10.6",
+  "sourceSHA256": "74d332e052e735e2378027a06f95e9715392773f249561bf1c00cae08a2bbfa7",
+  "scenario": "Controlled source-verified eight-cell seven-edge graph with synthetic congestion and two source-face Soviet Armies",
+  "result": {
+    "independentFatalTwoHexAssignments": 2,
+    "improvedSurvivingOrderedChoices": 2,
+    "orders": [
+      [
+        "leningrad-front-r02c01",
+        "leningrad-front-r02c02"
+      ],
+      [
+        "leningrad-front-r02c02",
+        "leningrad-front-r02c01"
+      ]
+    ]
+  },
+  "limitations": [
+    "Synthetic traffic and reduced edge subset are not an independently certified original-game position",
+    "Improved when existing independent candidates cause elimination; exhaustive general joint retreat rule not certified",
+    "Historical counter assignment and coordinate issues remain unresolved"
+  ]
+}

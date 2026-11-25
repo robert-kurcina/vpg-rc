@@ -1,0 +1,246 @@
+{
+  "schemaVersion": 2,
+  "checkpoint": 184,
+  "version": "v418",
+  "status": "source-diagnostic-only",
+  "movementAuthorized": false,
+  "combatAuthorized": false,
+  "source": {
+    "mapSHA256": "0cf849eaf683cd86443d244f20e5d03f8dc18ba354f88861d039307da162742d",
+    "svgSHA256": "423af8983fd90a5be17041922a612efba42bbff306683ead9fd6910413402ede",
+    "sourceImageSHA256": "9e41cf83ff001a616c5b6651784b8ac8206fc2eb04048dc41b1a3a0b3c3fa8f4",
+    "topologyFingerprint": "811a7bb9681e29f46adf32f47bfdb7d4a533683c1e526682e628b75cf36e53be",
+    "railAudit": "rules/audit/arduous-rail-reconciliation-v411.json",
+    "riverAudit": "rules/audit/arduous-river-candidates-v418.json",
+    "referenceMap": "maps/arduous.json"
+  },
+  "geometry": {
+    "mapId": "arduous-native-draft-v231",
+    "hexCount": 155,
+    "edgeCount": 413,
+    "boundarySides": 104,
+    "components": 1,
+    "railCandidates": 85,
+    "excludedRailCrossings": 3,
+    "riverSideFollowCandidates": 45,
+    "riverExteriorObservations": 2,
+    "riverUnobservedEdges": 368,
+    "maximumReciprocalGapPx": 2.5421149729252077e-13,
+    "sourceFingerprint": "811a7bb9681e29f46adf32f47bfdb7d4a533683c1e526682e628b75cf36e53be",
+    "registrationStatus": "image-grid-contrast-fit-visual-candidate"
+  },
+  "sourceRailExclusions": [
+    "1801:1802",
+    "1804:1805",
+    "1807:1808"
+  ],
+  "riverCandidatePairs": [
+    [
+      "0305",
+      "0405"
+    ],
+    [
+      "0305",
+      "0406"
+    ],
+    [
+      "0306",
+      "0406"
+    ],
+    [
+      "0406",
+      "0407"
+    ],
+    [
+      "0407",
+      "0506"
+    ],
+    [
+      "0504",
+      "0505"
+    ],
+    [
+      "0506",
+      "0507"
+    ],
+    [
+      "1102",
+      "1103"
+    ],
+    [
+      "1103",
+      "1203"
+    ],
+    [
+      "1105",
+      "1206"
+    ],
+    [
+      "1106",
+      "1206"
+    ],
+    [
+      "1106",
+      "1207"
+    ],
+    [
+      "1107",
+      "1207"
+    ],
+    [
+      "1107",
+      "1208"
+    ],
+    [
+      "1108",
+      "1208"
+    ],
+    [
+      "1108",
+      "1209"
+    ],
+    [
+      "1109",
+      "1209"
+    ],
+    [
+      "1203",
+      "1204"
+    ],
+    [
+      "1204",
+      "1303"
+    ],
+    [
+      "1209",
+      "1210"
+    ],
+    [
+      "1210",
+      "1309"
+    ],
+    [
+      "1303",
+      "1304"
+    ],
+    [
+      "1303",
+      "1404"
+    ],
+    [
+      "1309",
+      "1310"
+    ],
+    [
+      "1309",
+      "1410"
+    ],
+    [
+      "1310",
+      "1410"
+    ],
+    [
+      "1403",
+      "1404"
+    ],
+    [
+      "1404",
+      "1503"
+    ],
+    [
+      "1408",
+      "1508"
+    ],
+    [
+      "1409",
+      "1410"
+    ],
+    [
+      "1409",
+      "1508"
+    ],
+    [
+      "1409",
+      "1509"
+    ],
+    [
+      "1410",
+      "1411"
+    ],
+    [
+      "1411",
+      "1510"
+    ],
+    [
+      "1505",
+      "1606"
+    ],
+    [
+      "1506",
+      "1606"
+    ],
+    [
+      "1506",
+      "1607"
+    ],
+    [
+      "1507",
+      "1508"
+    ],
+    [
+      "1507",
+      "1607"
+    ],
+    [
+      "1507",
+      "1608"
+    ],
+    [
+      "1605",
+      "1606"
+    ],
+    [
+      "1605",
+      "1705"
+    ],
+    [
+      "1704",
+      "1705"
+    ],
+    [
+      "1705",
+      "1805"
+    ],
+    [
+      "1805",
+      "1806"
+    ]
+  ],
+  "riverExteriorObservations": [
+    {
+      "edgeKey": "1510:S",
+      "classification": "side-follow-review",
+      "sources": [
+        "path381"
+      ]
+    },
+    {
+      "edgeKey": "1611:SW",
+      "classification": "side-follow-review",
+      "sources": [
+        "path381"
+      ]
+    }
+  ],
+  "assertedNotToBeLegality": [
+    "Observed vector-follow does not alone establish combat river modifier",
+    "Incidental vector contacts are not river hexsides",
+    "No provisional edge is promoted to verified=true",
+    "MapMovementGraph.build(arduous) must continue to reject unverified geography"
+  ],
+  "nextActions": [
+    "Review 45 side-follow river candidates and exterior endpoints",
+    "Verify source-specific river combat attribution before enabling full campaign",
+    "Use reconciled adjacency and 85 rail links in shared MapMovementGraph once policy is source-certified"
+  ]
+}

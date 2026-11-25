@@ -1,0 +1,39 @@
+{
+  "checkpoint": 406,
+  "version": "v640",
+  "assertions": {
+    "operational_phase": 49,
+    "operational_air": 25,
+    "operational_advance": 129,
+    "operational_threat": 28,
+    "preroll_city": 89,
+    "postroll_city": 57,
+    "continuation_pilot": 74,
+    "positional": 76,
+    "communication": 45,
+    "concentration": 19,
+    "defensive": 40,
+    "objective": 18,
+    "known_fallback": 49,
+    "continuation_comparison": 105,
+    "controller": 16,
+    "crt": 301
+  },
+  "total": 1120,
+  "movementPhase": {
+    "scenario": "kiev",
+    "moves": 6,
+    "actions": 13,
+    "restoreExact": true
+  },
+  "knownThreatComparisonsInOpeningFixture": 1,
+  "bundleModules": 62,
+  "fullCampaign": false,
+  "chromium": false,
+  "limitations": [
+    "Stationary odds proxy, not unconditional elimination probability; hidden threats unresolved.",
+    "Ground air assignment only for known committed battles; no fleet competition, future cooldown value or supported declaration evaluation.",
+    "Non-city advance and post-roll ranking bounded; post-roll fallback on unknown pressure or >32 options; no joint defender/attacker choice ownership redesign.",
+    "No low-odds authorization; no full operational campaign. Existing campaign journal hard cap 1024 vs operational policy safety cap 5000 requires qualification."
+  ]
+}

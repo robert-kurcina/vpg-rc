@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "scenarioId": "kiev-odessa",
+  "scope": "source-verified-first-turn-empty-buildup-only",
+  "source": [
+    "references/rules/kiev-rules.pdf §4.0, first-turn phase order",
+    "references/rules/kiev-rules.pdf §12.0, no replacement steps on game turn 1",
+    "references/rules/kiev-rules.pdf §11.0, no ground reinforcement scheduled on game turn 1",
+    "references/rules/odessa-rules.pdf §11.0, Romanian Air Support arrives game turn 2"
+  ],
+  "phaseId": "soviet-buildup",
+  "turn": 1,
+  "owner": "soviet",
+  "replacementSteps": 0,
+  "groundReinforcements": 0,
+  "supportArrivals": 0,
+  "status": "experimental-journal-action-only-not-later-turn-buildup-or-full-campaign",
+  "limitations": [
+    "This authority allows finishing only the zero-action Soviet Game Turn 1 Buildup; it does not authorize later buildup phases.",
+    "The original Kiev 37-counter allocation and six Odessa supplementary ground units remain in their unchanged initial state.",
+    "No normal replacement or reinforcement opportunity is implied in this phase."
+  ],
+  "initialGroundUnitCount": 36,
+  "initialSupportMarkerCount": 1,
+  "initialCityCount": 20
+}

@@ -1,0 +1,29 @@
+{
+  "checkpoint": 169,
+  "version": "v403",
+  "status": "PASS",
+  "browser": "real isolated Chromium with source-byte JSON fetch",
+  "networkNavigation": "blocked by administrator; not independently certified",
+  "scenario": "leningrad",
+  "setup": "candidate, not certified",
+  "moduleCount": 38,
+  "counterCount": 19,
+  "mapSvgSHA256": "e45856f7d56b5acfecf7083b405b9465d1c21459d698ac65e9196f581f832925",
+  "sameByteStateAsNode": true,
+  "battleViaGUI": true,
+  "dieCommitBeforeConsequences": true,
+  "pendingDieFileRestore": true,
+  "saveDownload": true,
+  "counterClickFilter": true,
+  "invalidSaveFailClosed": true,
+  "undo": true,
+  "baselineAiStep": true,
+  "baselineAiSide": true,
+  "visualScreenshot": "rules/audit/visual/leningrad-human-browser-v403.png",
+  "limitations": [
+    "Source-certified individual counter assignment and printed coordinates pending",
+    "Full eight-turn user-operated browser acceptance not yet demonstrated",
+    "Hosted Chromium navigation blocked by administrator",
+    "Oberlabs UX parity deferred by user"
+  ]
+}

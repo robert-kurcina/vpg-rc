@@ -1,0 +1,42 @@
+{
+  "checkpoint": 192,
+  "version": "v426",
+  "scenario": "arduous",
+  "scope": "actual Chromium UI, official source map and bundled shared historical engine",
+  "battle": {
+    "defenderHex": "0305",
+    "attackers": [
+      "arduous-front-r02c02",
+      "arduous-front-r02c03",
+      "arduous-front-r02c08"
+    ],
+    "airFaceId": "arduous-front-r03c01",
+    "die": 4,
+    "crtOutcome": "EX",
+    "legalPostRollOptions": 32,
+    "retreatPaths": {
+      "arduous-front-r03c06": [
+        "0405",
+        "0504"
+      ]
+    },
+    "advanceUnitId": "arduous-front-r02c02"
+  },
+  "verified": [
+    "three-attacker browser checkbox declaration",
+    "source-legal German air-support commitment",
+    "ordinary d6 commitment before consequences",
+    "committed die remains immutable during consequence choice",
+    "pending-die save/restore reproduces source-legal choices",
+    "visible result applies simultaneous losses/retreat/advance",
+    "post-result restore",
+    "Undo and deterministic replay reproduce identical game state and save"
+  ],
+  "committedEngineActions": 5,
+  "browserErrors": [],
+  "limitations": [
+    "Controlled opening combat branch only; not an exhaustive human replay of the 184-action campaign",
+    "Candidate setup; printed source deployment identities not independently certified",
+    "In-memory Chromium fixture uses exact bundled JS, source JSON and original SVG; physical Safari unverified"
+  ]
+}

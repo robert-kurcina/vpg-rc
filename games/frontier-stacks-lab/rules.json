@@ -1,0 +1,236 @@
+{
+  "version": 1,
+  "turns": 4,
+  "turnOrder": [
+    "violet",
+    "amber"
+  ],
+  "phases": [
+    {
+      "id": "maneuver",
+      "kind": "move"
+    },
+    {
+      "id": "battle",
+      "kind": "combat"
+    }
+  ],
+  "movement": {
+    "terrainCosts": {
+      "open": 1,
+      "forest": 2
+    },
+    "zocStops": true,
+    "friendlyTransit": true,
+    "railAllowance": 3
+  },
+  "combat": {
+    "oddsCap": 4,
+    "terrainShifts": {
+      "forest": 1
+    },
+    "cityShifts": {
+      "citadel": 1
+    },
+    "table": {
+      "1": [
+        "NE",
+        "DR",
+        "DR",
+        "AL",
+        "EX",
+        "DE"
+      ],
+      "2": [
+        "DR",
+        "DR",
+        "EX",
+        "EX",
+        "DE",
+        "DE"
+      ],
+      "3": [
+        "DR",
+        "EX",
+        "DE",
+        "DE",
+        "DE",
+        "DE"
+      ],
+      "4": [
+        "EX",
+        "DE",
+        "DE",
+        "DE",
+        "DE",
+        "DE"
+      ]
+    },
+    "retreatModule": "retreat-radial-zoc-v1",
+    "exchangeMode": "match-defender-step-loss"
+  },
+  "weather": [
+    {
+      "name": "rain",
+      "turns": [
+        2
+      ],
+      "normalMovementLimit": 1,
+      "mudIgnoresTerrainCosts": true
+    }
+  ],
+  "specialRules": [
+    {
+      "module": "defender-holds-on-retreat-v1",
+      "condition": {
+        "result": "DR",
+        "strength": "full",
+        "cityTypes": [
+          "citadel"
+        ]
+      }
+    },
+    {
+      "module": "reinforcement-event-v1",
+      "when": {
+        "turn": 2,
+        "side": "violet",
+        "phase": "start"
+      },
+      "unit": {
+        "id": "v5",
+        "faction": "violet",
+        "type": "infantry",
+        "full": 3,
+        "reduced": 1,
+        "movement": 2,
+        "strength": "full"
+      },
+      "entryCells": [
+        [
+          4,
+          5
+        ]
+      ],
+      "notInEnemyZoc": true
+    },
+    {
+      "module": "replacement-budget-v1",
+      "budgets": {
+        "amber": {
+          "otherwise": 1
+        },
+        "violet": {
+          "otherwise": 2,
+          "rain": 1
+        }
+      }
+    },
+    {
+      "module": "communication-path-v1",
+      "entryTags": {
+        "amber": "amberEntry",
+        "violet": "violetEntry"
+      },
+      "capitalException": {
+        "side": "violet",
+        "city": "citadel"
+      }
+    },
+    {
+      "module": "retreat-radial-zoc-v1",
+      "distance": 2,
+      "zocTransitBudget": 1
+    },
+    {
+      "module": "rail-path-zoc-v1",
+      "stopOnEnemyZoc": true
+    },
+    {
+      "module": "stacking-capacity-v1",
+      "maxCombatUnits": 2,
+      "maxArmies": 1,
+      "armySize": "army",
+      "incompatibleNationalities": [
+        [
+          "romanian",
+          "hungarian"
+        ]
+      ],
+      "freeCounterClasses": [
+        "support"
+      ]
+    },
+    {
+      "module": "counter-state-v1",
+      "transitions": {
+        "untried": {
+          "battle-reveal": [
+            "revealed"
+          ]
+        },
+        "ready": {
+          "use": [
+            "spent"
+          ]
+        },
+        "spent": {
+          "refit": [
+            "ready"
+          ]
+        }
+      }
+    },
+    {
+      "module": "attacker-hexside-cap-v1",
+      "perHexside": 1
+    }
+  ],
+  "phasesBySide": {
+    "violet": [
+      {
+        "id": "reconstitute",
+        "kind": "replacement"
+      },
+      {
+        "id": "rail-move",
+        "kind": "move",
+        "movementMode": "rail",
+        "maxDistance": 3
+      },
+      {
+        "id": "maneuver",
+        "kind": "move",
+        "movementMode": "normal"
+      },
+      {
+        "id": "battle",
+        "kind": "combat",
+        "declarationMode": "simultaneous"
+      }
+    ],
+    "amber": [
+      {
+        "id": "reconstitute",
+        "kind": "replacement"
+      },
+      {
+        "id": "maneuver",
+        "kind": "move",
+        "movementMode": "normal"
+      },
+      {
+        "id": "battle",
+        "kind": "combat",
+        "declarationMode": "simultaneous"
+      }
+    ]
+  },
+  "replacements": {
+    "entryTags": {
+      "amber": "amberEntry",
+      "violet": "violetEntry"
+    },
+    "entryStrength": "reduced"
+  }
+}

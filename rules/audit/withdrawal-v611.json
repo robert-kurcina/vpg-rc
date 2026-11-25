@@ -1,0 +1,21 @@
+{
+  "scope": "actual-map synthetic Kiev position; independent unit routes; static board",
+  "verified": {
+    "withdrawal": 30,
+    "stationaryThreat": 38,
+    "utilityArithmetic": 62,
+    "pilot": 50,
+    "controller": 16,
+    "CRT": 301,
+    "pathfinding": 69,
+    "bundleModules": 61
+  },
+  "limitations": [
+    "no joint stack escape",
+    "no forecast of enemy movement",
+    "no naval withdrawal",
+    "no survival probability",
+    "no browser or full campaign run",
+    "no selection policy changes"
+  ]
+}

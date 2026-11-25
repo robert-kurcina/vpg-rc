@@ -1,0 +1,140 @@
+{
+  "schemaVersion": 1,
+  "id": "kiev-terrain-effects-with-odessa-v509",
+  "title": "Objective: Kiev — Terrain Effects Chart (Odessa supplement)",
+  "source": [
+    "references/rules/kiev-player-aid.webp (printed Terrain Effects Chart)",
+    "references/rules/kiev-rules.pdf §§6.0(7), 10.8 (Romanian setup hexes)",
+    "maps/registry.json / core/terrain_tiles.js (approved shared map renderer)",
+    "references/rules/odessa-rules.pdf §§0.0, 9.4.4–9.4.5 (Odessa extension only)",
+    "maps/registry.json (user-adjudicated 19-hex Bessarabia overlay in the shared renderer)"
+  ],
+  "status": "Printed Kiev terrain effects and §10.8 four-hex setup convention; Odessa §§9.4.4–9.4.5 use the user-approved seven-hex Romania gameplay mask and 19-hex Bessarabia mask.",
+  "rows": [
+    {
+      "id": "open",
+      "name": "Open",
+      "sampleHex": "0603",
+      "sampleKind": "terrain",
+      "movement": "No terrain effect.",
+      "combat": "No terrain effect.",
+      "notes": "Normal land terrain."
+    },
+    {
+      "id": "forest",
+      "name": "Forest",
+      "sampleHex": "0306",
+      "sampleKind": "terrain",
+      "movement": "Counts as 2 hexes; 1 when moving along a connected railway.",
+      "combat": "Attacker odds shift one column left (−1).",
+      "notes": "The forest image is the current v439 flat terrain artwork."
+    },
+    {
+      "id": "swamp",
+      "name": "Swamp",
+      "sampleHex": "0701",
+      "sampleKind": "terrain",
+      "movement": "Counts as 2 hexes; 1 when moving along a connected railway.",
+      "combat": "Attacker odds shift one column left (−1); tank-type attacking strength halved.",
+      "notes": "The swamp image is the approved user-supplied v441 terrain artwork."
+    },
+    {
+      "id": "city",
+      "name": "City",
+      "sampleHex": "1602",
+      "sampleKind": "city",
+      "movement": "No additional terrain effect.",
+      "combat": "No city odds shift.",
+      "notes": "Standalone city hex exemplar from the current engine export; city control affects victory and replacement locations.",
+      "sampleScale": 0.68
+    },
+    {
+      "id": "major-city",
+      "name": "Major City",
+      "sampleHex": "1404",
+      "sampleKind": "majorCity",
+      "movement": "No additional terrain effect.",
+      "combat": "Attacker odds shift one column left (−1).",
+      "notes": "Victory and replacement location; the grey city hex remains engine artwork.",
+      "sampleScale": 0.68
+    },
+    {
+      "id": "river",
+      "name": "River",
+      "sampleHex": "0504",
+      "sampleKind": "river",
+      "movement": "No additional terrain effect.",
+      "combat": "Attacker odds shift one column left (−1) if every attacker crosses a river.",
+      "notes": "Shown across three consecutive hexsides for clarity. Applies to crossing a river hexside, not merely occupying a river-adjacent hex."
+    },
+    {
+      "id": "major-river",
+      "name": "Major River",
+      "sampleHex": "1505",
+      "sampleKind": "majorRiver",
+      "movement": "Counts as 1 additional hex to cross, except at railroad hexsides.",
+      "combat": "Each unit attacking across a Major River has its strength halved, rounded down separately.",
+      "notes": "Shown across three consecutive hexsides for clarity. Check the crossed hexside, not merely the occupied hex."
+    },
+    {
+      "id": "lake",
+      "name": "Lake",
+      "sampleHex": "0710",
+      "sampleKind": "lake",
+      "sampleMap": "leningrad",
+      "movement": "No separate lake movement cost is created by the symbol itself; it is a water-boundary map feature shown on the affected hexsides.",
+      "combat": "No lake combat odds modifier.",
+      "notes": "Two consecutive lake hexsides are shown to demonstrate the inland-water boundary treatment used by the shared renderer."
+    },
+    {
+      "id": "sea",
+      "name": "Sea / Coast",
+      "sampleHex": "1516",
+      "sampleKind": "sea",
+      "sampleMap": "kiev-odessa",
+      "movement": "Sea is impassable to ordinary ground movement. Coast represents the land–Sea boundary, not a separate terrain cost; underlying land terrain and any scenario-specific restrictions continue to apply.",
+      "combat": "No inherent odds modifier from Sea or Coast. Ordinary land combat cannot take place within Sea hexes.",
+      "notes": "Sea and Coast share this TEC entry: the Sea hex is the visual specimen, and Coast is implicit where Sea adjoins land. Shoreline details remain part of the shared map renderer, not a separate terrain type."
+    },
+    {
+      "id": "railroad",
+      "name": "Railway / Railroad",
+      "sampleHex": "1104",
+      "sampleKind": "rail",
+      "movement": "Negates higher terrain costs when moving along a connected railroad; Soviet Rail Movement remains a separate rule.",
+      "combat": "No railroad combat modifier.",
+      "notes": "Railway artwork is above the dashed Romanian setup outlines."
+    },
+    {
+      "id": "deployment",
+      "name": "Star / Cross",
+      "sampleHex": "0304",
+      "sampleKind": "star",
+      "movement": "No effect.",
+      "combat": "No effect.",
+      "notes": "Starting deployment markers: Soviet star and Axis cross, plus the fixed Infantry, Cavalry, and Mechanized setup entries.",
+      "sampleScale": 0.82
+    },
+    {
+      "id": "romanian",
+      "name": "Romania / Romanian setup",
+      "sampleHex": "0910",
+      "sampleKind": "romanian",
+      "movement": "Kiev: the orange setup outline has no movement cost. Kiev–Odessa: Romanian Home Army operates only in Romania before annexation; afterward it may also operate in Bessarabia. Hungarian units may never enter Romania. Underlying terrain and hexside costs still apply.",
+      "combat": "Kiev §10.8, Turn 1: Axis units originally set up at 0709, 0809, 0910 or 1010 may not attack. Only Soviet units originally set up at 0708, 0808 or 1110 may attack Axis units in those four Romanian hexes. Odessa §9.4.4: the Romanian Home Army may attack across the Russo-Romanian border but may not Advance After Combat across it.",
+      "notes": "Orange dashed outlines mark the four Kiev §10.8 setup hexes. For Odessa territorial movement/replacement rules, Romania is the approved seven-hex mask: 0709, 0809, 0910, 1010, 1012, 1014, 1016. No terrain odds modifier.",
+      "sampleScale": 0.74
+    },
+    {
+      "id": "bessarabia",
+      "name": "Bessarabia (mauve)",
+      "sampleHex": "1212",
+      "sampleKind": "bessarabia",
+      "sampleMap": "kiev-odessa",
+      "movement": "Kiev–Odessa only (§§9.4.4–9.4.5): Romanian Home Army cannot enter before annexation. When no Soviet units remain in Bessarabia, Romania annexes it; from then on the Home Army may operate in the area, even if Soviet units later return. Hungarian units may never enter Bessarabia. Ordinary terrain and hexside costs still apply.",
+      "combat": "The mauve boundary provides no combat odds modifier. Odessa §9.4.4 still prohibits the Romanian Home Army from Advancing After Combat across the Russo-Romanian border; it may attack across that border.",
+      "notes": "19 user-designated hostCells, outlined individually in mauve (#9475A9) on the Kiev–Odessa combined map. The outline is a political/movement marker, not terrain. All other country labels remain unverified; full Kiev–Odessa play remains disabled.",
+      "sampleScale": 1.0
+    }
+  ]
+}

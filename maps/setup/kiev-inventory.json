@@ -1,0 +1,186 @@
+{
+  "schemaVersion": 1,
+  "scenarioId": "kiev",
+  "status": "source-backed-inventory-not-gameplay-activated",
+  "source": "references/rules/kiev-rules.pdf §§3.3, 6.0, 11.0; references/rules/kiev-player-aid.webp; assets/official-counters/source-sheets/counters-kiev-front.jpg",
+  "pools": {
+    "germanPanzer": {
+      "count": 3,
+      "affiliation": "axis",
+      "kind": "tank",
+      "printedValuesPattern": "^(12|10)-6$",
+      "reverseKind": "tank",
+      "reverseAffiliation": "axis"
+    },
+    "germanInfantry": {
+      "count": 11,
+      "affiliation": "axis",
+      "kinds": [
+        "infantry",
+        "mountain-infantry"
+      ],
+      "printedValuesPattern": "^(8|6)-4$",
+      "reverseAffiliation": "axis",
+      "reverseMatchesFrontKind": true
+    },
+    "romanianArmy": {
+      "count": 1,
+      "affiliation": "romanian",
+      "kind": "infantry",
+      "printedValuesPattern": "^6-4$",
+      "reverseKind": "infantry",
+      "reverseAffiliation": "romanian"
+    },
+    "hungarianInfantry": {
+      "count": 1,
+      "affiliation": "hungarian",
+      "kind": "infantry",
+      "printedValuesPattern": "^4-4$",
+      "reverseKind": "infantry",
+      "reverseAffiliation": "hungarian"
+    },
+    "slovakInfantry": {
+      "count": 1,
+      "affiliation": "slovak",
+      "kind": "infantry",
+      "printedValuesPattern": "^3-4$",
+      "reverseKind": "infantry",
+      "reverseAffiliation": "slovak"
+    },
+    "italianMotorized": {
+      "count": 1,
+      "affiliation": "italian",
+      "kind": "infantry",
+      "printedValuesPattern": "^4-4$",
+      "reverseKind": "infantry",
+      "reverseAffiliation": "italian"
+    },
+    "sovietArmies": {
+      "count": 9,
+      "affiliation": "soviet",
+      "kind": "infantry",
+      "printedValuesPattern": "^8-4$",
+      "reverseKind": "infantry",
+      "reverseAffiliation": "soviet"
+    },
+    "sovietMechanized": {
+      "count": 10,
+      "affiliation": "soviet",
+      "kind": "mechanized",
+      "printedValuesPattern": "^\\?-6$",
+      "reverseKind": "mechanized",
+      "reverseAffiliation": "soviet"
+    },
+    "airSupport": {
+      "count": 2,
+      "affiliation": "axis",
+      "kind": "air-support",
+      "printedValuesPattern": "^1 / arrow$",
+      "reverseKind": "air-support",
+      "reverseAffiliation": "axis"
+    },
+    "gameTurn": {
+      "count": 1,
+      "affiliation": "neutral",
+      "kind": "game-turn",
+      "printedValuesPattern": "^$",
+      "reverseKind": "game-turn",
+      "reverseAffiliation": "neutral"
+    }
+  },
+  "groundPools": [
+    "germanPanzer",
+    "germanInfantry",
+    "romanianArmy",
+    "hungarianInfantry",
+    "slovakInfantry",
+    "italianMotorized",
+    "sovietArmies",
+    "sovietMechanized"
+  ],
+  "groups": {
+    "germanInitialPanzer": {
+      "pool": "germanPanzer",
+      "count": 3
+    },
+    "germanPolandInfantry": {
+      "pool": "germanInfantry",
+      "count": 7
+    },
+    "germanRomaniaInfantry": {
+      "pool": "germanInfantry",
+      "count": 3
+    },
+    "germanReinforcementInfantry": {
+      "pool": "germanInfantry",
+      "count": 1,
+      "printedValuesPattern": "^6-4$"
+    },
+    "romanianInitialArmy": {
+      "pool": "romanianArmy",
+      "count": 1
+    },
+    "hungarianReinforcementInfantry": {
+      "pool": "hungarianInfantry",
+      "count": 1
+    },
+    "slovakReinforcementInfantry": {
+      "pool": "slovakInfantry",
+      "count": 1
+    },
+    "italianReinforcementMotorized": {
+      "pool": "italianMotorized",
+      "count": 1
+    },
+    "sovietFrontArmies": {
+      "pool": "sovietArmies",
+      "count": 4
+    },
+    "sovietFrontMechanized": {
+      "pool": "sovietMechanized",
+      "count": 6
+    },
+    "sovietFixedArmies": {
+      "pool": "sovietArmies",
+      "count": 2
+    },
+    "sovietFixedMechanized": {
+      "pool": "sovietMechanized",
+      "count": 4
+    },
+    "sovietReinforcementArmies": {
+      "pool": "sovietArmies",
+      "count": 2
+    },
+    "sovietReplacementOnlyArmy": {
+      "pool": "sovietArmies",
+      "count": 1
+    }
+  },
+  "reinforcementSchedule": [
+    {
+      "turn": 2,
+      "slovakReinforcementInfantry": 1,
+      "hungarianReinforcementInfantry": 1
+    },
+    {
+      "turn": 3,
+      "germanReinforcementInfantry": 1,
+      "italianReinforcementMotorized": 1
+    },
+    {
+      "turn": 5,
+      "sovietReinforcementArmies": 1
+    },
+    {
+      "turn": 6,
+      "sovietReinforcementArmies": 1
+    }
+  ],
+  "notes": [
+    "The 11 German infantry pool includes a photographed 49 Mtn face, without assigning it to a starting country or reinforcement slot.",
+    "The Italian CSIR face is visually transcribed as infantry but rule §§6.0(6), 9.4.1, 11.0 call it motorized. Printed artwork remains unchanged; gameplay class requires the rule override.",
+    "One of the nine Soviet armies is reserved exclusively for rebuild by replacement steps beginning on Turn 2, not a scheduled reinforcement.",
+    "Ten Soviet Mechanized Corps remain concealed until combat revelation. Ground units are not auto-assigned to photographed faces or starting locations."
+  ]
+}

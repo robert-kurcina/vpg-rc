@@ -1,0 +1,37 @@
+{
+  "checkpoint": 230,
+  "version": "v464",
+  "baselineArchive": "hex_wargame_v463_CHECKPOINT_229_WIDER_CITY_DOTS.zip",
+  "protectedIdenticalCount": 251,
+  "protectedPrefixes": [
+    "maps/",
+    "exports/",
+    "assets/",
+    "supplied_assets/",
+    "references/",
+    "rules_profiles/",
+    "legacy/",
+    "provenance/",
+    "games/battle-for-moscow/"
+  ],
+  "protectedMismatches": [],
+  "changedExistingFiles": [
+    "core/historical_engine_browser_bundle.js",
+    "core/historical_campaign_human.js",
+    "core/historical_campaign_action_catalog.js",
+    "core/historical_browser_app.js",
+    "games/leningrad/native-preview/index.html",
+    "games/arduous/native-preview/index.html",
+    "README.md",
+    "UPDATE.md",
+    "PLAN.md"
+  ],
+  "newFilesAtAudit": [
+    "docs/engine/ARDUOUS_INCREMENTAL_POSTROLL_V464.md",
+    "rules/audit/arduous-paged-consequences-v464.json",
+    "rules/audit/visual/arduous-postroll-page-three-v464.png",
+    "tests/arduous-cancellable-postroll-browser-v464.py",
+    "tests/historical-postroll-cursor-v464.test.js"
+  ],
+  "scope": "Audits approved maps, source art, counters, historical rules, original B4M game, and provenance against v463 exact archive; other shared engine changes independently tested."
+}

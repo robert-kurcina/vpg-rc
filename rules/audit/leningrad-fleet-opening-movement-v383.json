@@ -1,0 +1,41 @@
+{
+  "checkpoint": 149,
+  "version": "v383",
+  "source": "references/rules/leningrad-rules.pdf §§6.0 and 13.1",
+  "sourcePdfSha256": "74d332e052e735e2378027a06f95e9715392773f249561bf1c00cae08a2bbfa7",
+  "assertions": 716,
+  "registeredPorts": {
+    "Liepaja": "0208",
+    "Riga": "0707",
+    "Parnu": "0804",
+    "Tallinn": "0901",
+    "Narva": "1402",
+    "Leningrad": "1701"
+  },
+  "initialPort": "Leningrad",
+  "damageOnDeparture": {
+    "Liepaja": 3,
+    "Riga": 3,
+    "Parnu": 3,
+    "Tallinn": 2,
+    "Narva": 2,
+    "Leningrad": 2
+  },
+  "verified": [
+    "optional opening placement keeps all 19 ground units intact",
+    "6-port by 6-die by 2-condition matrix",
+    "departure threshold not destination",
+    "no-op and enemy-occupied ports rejected",
+    "destination committed before die",
+    "support move restricted to Soviet special phase",
+    "one move per phase, skip and finish",
+    "damage flip and second hit elimination",
+    "Undo, restore from replayable action history, tamper rejection"
+  ],
+  "limitations": [
+    "Special-phase pilot is not chained through 8-turn game; saved snapshot is not production authentication",
+    "German-forced port displacement and air-sea attacks not implemented",
+    "Mixed-origin Fleet support and full combat-UI integration not implemented",
+    "Two rear printed/source hex labels unresolved; campaign play still uncertified"
+  ]
+}

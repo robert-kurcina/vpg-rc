@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "id": "eastern-corridor",
+  "title": "Eastern Corridor (small VP game)",
+  "engine": "generic-hex-v1",
+  "boardFile": "map.json",
+  "unitsFile": "units.json",
+  "deploymentsFile": "deployments.json",
+  "rulesFile": "rules.json",
+  "objectivesFile": "objectives.json",
+  "factions": [
+    {
+      "id": "blue",
+      "name": "Blue"
+    },
+    {
+      "id": "red",
+      "name": "Red"
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "schemaVersion": 1,
+  "id": "oberlabs-battle-for-moscow-crt-v1",
+  "source": "games/battle-for-moscow/rules.json:combat.table",
+  "authority": "Oberlabs-compatible gameplay profile (not the alternate Chadwick PDF when conflicting)",
+  "rolls": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "oddsColumns": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6"
+  ],
+  "results": {
+    "1": [
+      "DR",
+      "EX",
+      "EX",
+      "NE",
+      "NE",
+      "AL"
+    ],
+    "2": [
+      "DR",
+      "DR",
+      "EX",
+      "EX",
+      "NE",
+      "NE"
+    ],
+    "3": [
+      "DR",
+      "DR",
+      "DR",
+      "EX",
+      "EX",
+      "DRL"
+    ],
+    "4": [
+      "DR",
+      "DR",
+      "EX",
+      "DRL",
+      "DRL",
+      "DE"
+    ],
+    "5": [
+      "DR",
+      "DRL",
+      "DRL",
+      "DRL",
+      "DE",
+      "DE"
+    ],
+    "6": [
+      "DRL",
+      "DRL",
+      "DE",
+      "DE",
+      "DE",
+      "DE"
+    ]
+  },
+  "historicalMapProfiles": {
+    "battle-for-moscow": "oberlabs-battle-for-moscow-crt-v1",
+    "arduous": "oberlabs-battle-for-moscow-crt-v1",
+    "leningrad": "oberlabs-battle-for-moscow-crt-v1",
+    "kiev": "oberlabs-battle-for-moscow-crt-v1",
+    "kiev-odessa": "oberlabs-battle-for-moscow-crt-v1"
+  },
+  "scope": "CRT outcome lookup only. Terrain shifts, movement, special rules, and victory conditions are game-specific.",
+  "status": "Battle for Moscow playable; other four maps not yet playable historical scenarios"
+}

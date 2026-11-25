@@ -1,0 +1,16 @@
+{
+  "checkpoint": 168,
+  "version": "v402",
+  "group": 3,
+  "completed": 1,
+  "passed": 1,
+  "results": [
+    {
+      "index": 23,
+      "command": "python3 tests/leningrad-approved-visual-regression-v352.test.py",
+      "passed": true,
+      "seconds": 19.69,
+      "outputTail": ".\n----------------------------------------------------------------------\nRan 1 test in 18.975s\n\nOK\n"
+    }
+  ]
+}

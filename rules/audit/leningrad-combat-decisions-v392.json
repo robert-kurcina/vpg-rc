@@ -1,0 +1,18 @@
+{
+  "checkpoint": 158,
+  "version": "v392",
+  "assertions": 281,
+  "multiAttackerProposals": 10,
+  "allLegalIndividualBattleProposals": 22,
+  "boundedTwoBattlePlans": 128,
+  "plansExhaustive": false,
+  "postRollCandidates": 21,
+  "exchangeCandidates": 2,
+  "verified": "Current configured source counter opening, all proposals and listed outcomes pass immutable authoritative transactions",
+  "exclusions": [
+    "Candidate historical unit identities and two printed host coordinates remain unresolved",
+    "Multiple-target plans capped at two battles and 128 entries",
+    "Post-roll choices not complete for post-casualty retreat recomputation or Fleet displacement",
+    "No AI policy, no UX cutover, no change to the common B4M CRT or approved map rendering"
+  ]
+}

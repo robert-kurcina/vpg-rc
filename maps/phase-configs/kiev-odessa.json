@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 1,
+  "scenarioId": "kiev-odessa",
+  "mode": "phase-simulation-only",
+  "source": "references/rules/kiev-rules.pdf \u00a7\u00a74.0, 6.0; references/rules/odessa-rules.pdf \u00a7\u00a70.0, 6.0, 9.4, 10.5, 11.0, 15.0",
+  "turns": 7,
+  "players": [
+    "german",
+    "soviet"
+  ],
+  "firstTurnStart": "german-combat",
+  "phases": [
+    {
+      "id": "german-buildup",
+      "owner": "german",
+      "kind": "buildup",
+      "permissions": [
+        "replace",
+        "reinforce"
+      ]
+    },
+    {
+      "id": "german-movement",
+      "owner": "german",
+      "kind": "movement",
+      "permissions": [
+        "move"
+      ]
+    },
+    {
+      "id": "german-combat",
+      "owner": "german",
+      "kind": "combat",
+      "permissions": [
+        "declare-attack",
+        "resolve-combat"
+      ]
+    },
+    {
+      "id": "german-special-movement",
+      "owner": "german",
+      "kind": "special-movement",
+      "permissions": [
+        "move"
+      ]
+    },
+    {
+      "id": "soviet-buildup",
+      "owner": "soviet",
+      "kind": "buildup",
+      "permissions": [
+        "replace",
+        "reinforce"
+      ]
+    },
+    {
+      "id": "soviet-special-movement",
+      "owner": "soviet",
+      "kind": "special-movement",
+      "permissions": [
+        "move"
+      ]
+    },
+    {
+      "id": "soviet-naval-operations",
+      "owner": "soviet",
+      "kind": "naval-operations",
+      "permissions": [
+        "move-support",
+        "naval-ground-transport"
+      ]
+    },
+    {
+      "id": "soviet-combat",
+      "owner": "soviet",
+      "kind": "combat",
+      "permissions": [
+        "declare-attack",
+        "resolve-combat"
+      ]
+    },
+    {
+      "id": "soviet-movement",
+      "owner": "soviet",
+      "kind": "movement",
+      "permissions": [
+        "move"
+      ]
+    },
+    {
+      "id": "housekeeping",
+      "owner": "system",
+      "kind": "housekeeping",
+      "permissions": [
+        "end-turn"
+      ]
+    }
+  ],
+  "notes": [
+    "Axis is represented internally by german player identifier; includes German-allied contingents.",
+    "The first game turn begins at Axis Combat, omitting Axis Build-Up and Axis Movement (Kiev \u00a76.0(9)).",
+    "Permissions are descriptive and cannot authorize gameplay without source-backed legality handlers.",
+    "User-approved adaptation v564: voluntary Fleet movement and \u00a715.3 ground transport/evacuation occur in a dedicated phase immediately after Soviet Special Movement, before Combat. Not the printed phase sequence. Forced displacement remains immediate. One voluntary Fleet relocation and one transport per ground unit per naval phase."
+  ],
+  "extends": "kiev"
+}

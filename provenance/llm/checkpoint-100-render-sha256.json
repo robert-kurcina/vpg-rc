@@ -1,0 +1,52 @@
+[
+  {
+    "file": "exports/battle-for-moscow.svg",
+    "sha256": "b66d78267540babc6ce816746482370d6e50ed3d21609864396336dabf15c771",
+    "bytes": 4318395
+  },
+  {
+    "file": "exports/battle-for-moscow.png",
+    "sha256": "85910a8ca0fc543818e10f1c54727c52e317fc55d65832901a1a1c76204e9647",
+    "bytes": 3050369
+  },
+  {
+    "file": "exports/arduous.svg",
+    "sha256": "d18bf4a55e79c96ea8ba8bbe12116372a3017b100ec0ff731c4c7998a9a52b70",
+    "bytes": 4106163
+  },
+  {
+    "file": "exports/arduous.png",
+    "sha256": "edbb1bee29e6ac27d8d69bce2c068940371d1e2d61352ff4815c2005fb94fa37",
+    "bytes": 878842
+  },
+  {
+    "file": "exports/leningrad.svg",
+    "sha256": "baac89b852e390688f1bf08d1000789d9cc11288c93382d3744822f7d0936f18",
+    "bytes": 4126260
+  },
+  {
+    "file": "exports/leningrad.png",
+    "sha256": "b6b90a7d80e3e08170917c3001f9a70f2b5bd9d87b532573cbf4630b1e708af3",
+    "bytes": 1398946
+  },
+  {
+    "file": "exports/kiev.svg",
+    "sha256": "8cc604f58992be5cba558498f7171306d79834576696fd7d5c6cb2924b5b821c",
+    "bytes": 4262061
+  },
+  {
+    "file": "exports/kiev.png",
+    "sha256": "e6f56e1512fd0c973e8d3044999764d149b5846caac21663cb8661eaeea75060",
+    "bytes": 1594495
+  },
+  {
+    "file": "exports/kiev-odessa.svg",
+    "sha256": "1c175ad7220c13b6ac2e75d0a9dfd9f463521b0461c47714f242d9885e71a909",
+    "bytes": 4468432
+  },
+  {
+    "file": "exports/kiev-odessa.png",
+    "sha256": "b2dcf0b1d41a3dc2bafcb5395d27fc7510c9743563312759a33a4452509f885e",
+    "bytes": 2195942
+  }
+]

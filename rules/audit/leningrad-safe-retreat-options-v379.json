@@ -1,0 +1,39 @@
+{
+  "checkpoint": 145,
+  "version": "v379",
+  "scope": "read-only source-board safe-retreat choices only",
+  "verifiedTests": 516,
+  "certifiedCellsEnumerated": 151,
+  "openingSafePaths": 7,
+  "twoDefenderIndependentCounts": {
+    "leningrad-front-r01c04": 7,
+    "leningrad-front-r02c02": 7
+  },
+  "twoDefenderJointOptions": 45,
+  "examples": [
+    {
+      "hex": "0309",
+      "count": 7
+    }
+  ],
+  "sourcePdf": {
+    "path": "references/rules/leningrad-rules.pdf",
+    "sha256": "74d332e052e735e2378027a06f95e9715392773f249561bf1c00cae08a2bbfa7",
+    "sections": [
+      "10.6",
+      "10.7"
+    ]
+  },
+  "controlledSources": [
+    "core/historical_retreat_options.js",
+    "core/historical_combat_phase.js"
+  ],
+  "limitations": [
+    "No forced EZOC losses, overstack extension, fleet-port exceptions or automatic elimination",
+    "Pre-consequence only: for DRL/EX a defender or attacker step loss may change the actual board",
+    "The approved candidate opening is not historically certified because two rear printed/host markers conflict",
+    "No live Leningrad browser game or complete eight-turn sequence is claimed"
+  ],
+  "sourceStateUnchanged": true,
+  "acceptedMapRenderUnchanged": true
+}

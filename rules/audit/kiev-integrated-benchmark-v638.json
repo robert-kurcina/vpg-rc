@@ -1,0 +1,273 @@
+{
+  "baseline": {
+    "counts": {},
+    "phases": [],
+    "seed": 7,
+    "variant": "standard",
+    "status": "complete",
+    "reason": null,
+    "detail": null,
+    "decision": {
+      "status": "complete",
+      "terminal": {
+        "axisControlledCount": 3,
+        "cityControl": {
+          "Chernigov": "soviet",
+          "Chernovtsy": "soviet",
+          "Iasi": "german",
+          "Kiev": "soviet",
+          "Kirovograd": "soviet",
+          "Kovel": "soviet",
+          "Lublin": "german",
+          "Lvov": "soviet",
+          "Rovno": "soviet",
+          "Sarny": "soviet",
+          "Shepetovka": "soviet",
+          "Stanislavov": "soviet",
+          "Tarnopol": "german",
+          "Uman": "soviet",
+          "Vinnitsa": "soviet",
+          "Zhitomir": "soviet"
+        },
+        "onlyRemainingCity": null,
+        "onlyRemainingCityIsolated": null,
+        "outcome": "soviet-victory",
+        "reason": "axis-controls-at-most-threshold",
+        "totalCities": 16
+      }
+    },
+    "stats": {
+      "moves": 27,
+      "combats": 12,
+      "reinforcements": 6,
+      "navalRolls": 0,
+      "turns": 7
+    },
+    "actions": 176,
+    "outcomes": {
+      "EX": 5,
+      "DR": 1,
+      "DRL": 1,
+      "NE": 3,
+      "DE": 2
+    },
+    "oddsDistribution": {
+      "1": 2,
+      "2": 4,
+      "3": 1,
+      "4": 1,
+      "5": 1,
+      "6": 1,
+      "below-minimum": 2
+    },
+    "attackSelection": "screen-known-futile",
+    "terminal": "soviet-victory",
+    "phase": null
+  },
+  "pilot": {
+    "counts": {
+      "below-minimum": 151,
+      "low-odds-policy": 23,
+      "concealed-positive-proxy": 40,
+      "concealed-low-odds-risk": 98,
+      "positive-utility": 5
+    },
+    "phases": [
+      {
+        "turn": 1,
+        "phase": "german-combat",
+        "counts": {
+          "below-minimum": 11,
+          "low-odds-policy": 4,
+          "concealed-positive-proxy": 17,
+          "concealed-low-odds-risk": 7
+        }
+      },
+      {
+        "turn": 1,
+        "phase": "soviet-combat",
+        "counts": {
+          "low-odds-policy": 1,
+          "below-minimum": 6,
+          "concealed-low-odds-risk": 15,
+          "concealed-positive-proxy": 5
+        }
+      },
+      {
+        "turn": 2,
+        "phase": "german-combat",
+        "counts": {
+          "below-minimum": 14,
+          "low-odds-policy": 2,
+          "concealed-low-odds-risk": 6,
+          "concealed-positive-proxy": 1,
+          "positive-utility": 2
+        }
+      },
+      {
+        "turn": 2,
+        "phase": "soviet-combat",
+        "counts": {
+          "low-odds-policy": 2,
+          "concealed-low-odds-risk": 10,
+          "below-minimum": 7
+        }
+      },
+      {
+        "turn": 3,
+        "phase": "german-combat",
+        "counts": {
+          "below-minimum": 9,
+          "concealed-low-odds-risk": 7,
+          "concealed-positive-proxy": 3,
+          "low-odds-policy": 3,
+          "positive-utility": 1
+        }
+      },
+      {
+        "turn": 3,
+        "phase": "soviet-combat",
+        "counts": {
+          "low-odds-policy": 1,
+          "concealed-low-odds-risk": 12,
+          "below-minimum": 7
+        }
+      },
+      {
+        "turn": 4,
+        "phase": "german-combat",
+        "counts": {
+          "below-minimum": 8,
+          "concealed-positive-proxy": 8,
+          "concealed-low-odds-risk": 7
+        }
+      },
+      {
+        "turn": 4,
+        "phase": "soviet-combat",
+        "counts": {
+          "low-odds-policy": 1,
+          "below-minimum": 7,
+          "concealed-low-odds-risk": 7
+        }
+      },
+      {
+        "turn": 5,
+        "phase": "german-combat",
+        "counts": {
+          "below-minimum": 14,
+          "low-odds-policy": 2,
+          "concealed-positive-proxy": 2,
+          "concealed-low-odds-risk": 5
+        }
+      },
+      {
+        "turn": 5,
+        "phase": "soviet-combat",
+        "counts": {
+          "below-minimum": 13,
+          "concealed-low-odds-risk": 7,
+          "low-odds-policy": 1
+        }
+      },
+      {
+        "turn": 6,
+        "phase": "german-combat",
+        "counts": {
+          "below-minimum": 14,
+          "concealed-positive-proxy": 2,
+          "low-odds-policy": 2,
+          "concealed-low-odds-risk": 5,
+          "positive-utility": 1
+        }
+      },
+      {
+        "turn": 6,
+        "phase": "soviet-combat",
+        "counts": {
+          "below-minimum": 13,
+          "concealed-low-odds-risk": 4,
+          "low-odds-policy": 1
+        }
+      },
+      {
+        "turn": 7,
+        "phase": "german-combat",
+        "counts": {
+          "below-minimum": 14,
+          "concealed-positive-proxy": 2,
+          "low-odds-policy": 2,
+          "concealed-low-odds-risk": 2,
+          "positive-utility": 1
+        }
+      },
+      {
+        "turn": 7,
+        "phase": "soviet-combat",
+        "counts": {
+          "below-minimum": 14,
+          "concealed-low-odds-risk": 4,
+          "low-odds-policy": 1
+        }
+      }
+    ],
+    "seed": 7,
+    "variant": "standard",
+    "status": "complete",
+    "reason": null,
+    "detail": null,
+    "decision": {
+      "status": "complete",
+      "terminal": {
+        "axisControlledCount": 4,
+        "cityControl": {
+          "Chernigov": "soviet",
+          "Chernovtsy": "soviet",
+          "Iasi": "german",
+          "Kiev": "soviet",
+          "Kirovograd": "soviet",
+          "Kovel": "soviet",
+          "Lublin": "german",
+          "Lvov": "soviet",
+          "Rovno": "soviet",
+          "Sarny": "german",
+          "Shepetovka": "soviet",
+          "Stanislavov": "german",
+          "Tarnopol": "soviet",
+          "Uman": "soviet",
+          "Vinnitsa": "soviet",
+          "Zhitomir": "soviet"
+        },
+        "onlyRemainingCity": null,
+        "onlyRemainingCityIsolated": null,
+        "outcome": "soviet-victory",
+        "reason": "axis-controls-at-most-threshold",
+        "totalCities": 16
+      }
+    },
+    "stats": {
+      "moves": 27,
+      "combats": 8,
+      "reinforcements": 6,
+      "navalRolls": 0,
+      "turns": 7
+    },
+    "actions": 165,
+    "outcomes": {
+      "DRL": 4,
+      "DR": 2,
+      "DE": 1,
+      "NE": 1
+    },
+    "oddsDistribution": {
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 4,
+      "6": 1
+    },
+    "attackSelection": "continuation-pilot",
+    "terminal": "soviet-victory",
+    "phase": null
+  }
+}
