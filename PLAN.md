@@ -162,3 +162,8 @@ These are ordered investigation ideas, not new release deliverables or guarantee
 ### Hosted UX follow-up — illustrated TEC and Moscow reading edition
 
 Restore existing engine-rendered terrain specimens in the shared reference modal for all five scenarios, with active scenario values unchanged. Missing standalone fortification/weather specimens remain explicit. Moscow printed pages 1–2: correct interleaved section 3 text and reflow verified prose, structure the nine phases and setup as ordered lists. Shared typography improved. Exact source PDFs and facsimiles unchanged. Remaining rulebook reading order, tables and illustrations (including Moscow pages 3–4), map interaction diagnosis and actual hosted verification remain P2/P6 work. No new release gates.
+
+
+### Hosted UX — approved two-menu toolbar
+
+Restore the approved eight-row mission menu and separate Settings gear, with independent side-by-side Undo/Redo. Hide duplicate sidebar Play/Settings tabs and rule-reference launcher after successful unified menu initialization. Settings gear toggles the settings panel; mobile Controls remains a direct gameplay drawer launcher, not another menu. Retain portable JSON, new-game, delete-save and source links under Settings maintenance. No save semantics or game rules changed. Hosted/browser regression remains open.

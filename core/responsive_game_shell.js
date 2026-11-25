@@ -79,7 +79,10 @@
   backdrop.addEventListener('click',close);document.body.append(backdrop);
   launcher=document.createElement('button');launcher.type='button';launcher.className='mobile-controls-launcher';
   launcher.textContent='Controls';launcher.setAttribute('aria-controls','game-sidebar');
-  launcher.setAttribute('aria-label','Open game controls');launcher.addEventListener('click',open);board.append(launcher);
+  launcher.setAttribute('aria-label','Open game controls');launcher.addEventListener('click',()=>{
+   if(document.body.dataset.missionMenuReady==='true')aside.querySelector('[data-game-tab="play"]')?.click();
+   open();
+  });board.append(launcher);
   const heading=document.createElement('div');heading.className='mobile-controls-heading';
   const name=document.createElement('strong');name.textContent='Game controls';
   closeButton=document.createElement('button');closeButton.type='button';closeButton.className='mobile-drawer-close';
