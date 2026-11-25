@@ -47,3 +47,24 @@ body[data-layout-mode="mobile"] #game-sidebar{max-height:min(82dvh,840px,calc(10
 .mission-menu-icon{width:24px;flex:0 0 24px;text-align:center;font-size:18px}
 header .mission-menu .mission-local-status{display:block!important;color:#304d5b;font-size:12px;margin:6px 8px;line-height:1.3}
 body>header:has(.mission-menu-wrapper){position:relative;z-index:31}
+
+/* Desktop: the document is a fixed-height game shell, not the map scroller.
+   Let flex layout measure the real header and warning rather than subtracting
+   a guessed pixel height. Only the sidebar and map viewport own scroll. */
+@media(min-width:701px){
+ body[data-layout-mode="desktop"]{display:flex;flex-direction:column;height:100vh;height:100dvh;min-height:0;overflow:hidden}
+ body[data-layout-mode="desktop"]>header{flex:0 0 auto}
+ body[data-layout-mode="desktop"]>.warning{flex:0 0 auto;max-height:18vh;max-height:18dvh;overflow:auto}
+ body[data-layout-mode="desktop"]>main{flex:1 1 0;display:grid;grid-template-columns:minmax(220px,clamp(220px,27vw,350px)) minmax(0,1fr);grid-template-rows:minmax(0,1fr);align-items:stretch;min-height:0;height:auto;width:100%;overflow:hidden}
+ body[data-layout-mode="desktop"] #game-sidebar{min-width:0;min-height:0;max-height:none;overflow:auto;overscroll-behavior:contain;margin-bottom:0}
+ body[data-layout-mode="desktop"] .board-space{order:0;display:flex;flex-direction:column;min-width:0;min-height:0;overflow:hidden;margin-bottom:0}
+ body[data-layout-mode="desktop"] .board-space>.map-navigation{flex:0 0 auto}
+ body[data-layout-mode="desktop"] .board-space>.map-scroll{flex:1 1 0;min-height:0;max-height:none;height:auto;overflow:auto;overscroll-behavior:contain}
+ body[data-layout-mode="desktop"] .board-space>.map-navigation-help,body[data-layout-mode="desktop"] .board-space>.caption,body[data-layout-mode="desktop"] .board-space>.small,body[data-layout-mode="desktop"] .board-space>.legend,body[data-layout-mode="desktop"] .board-space>details{flex:0 0 auto}
+ body[data-layout-mode="desktop"] .board-space>details{max-height:20vh;max-height:20dvh;overflow:auto}
+}
+/* Preserve working map space on short desktop windows. Instructions and source
+   details remain available via the rules/menu and the larger viewport. */
+@media(min-width:701px) and (max-height:650px){
+ body[data-layout-mode="desktop"] .board-space>.caption,body[data-layout-mode="desktop"] .board-space>.small,body[data-layout-mode="desktop"] .board-space>.legend{display:none}
+}
