@@ -82,8 +82,16 @@
   const make=(id,label,icon,fn)=>{const b=document.createElement('button');b.type='button';b.id=id;b.title=label;b.setAttribute('aria-label',label);b.textContent=icon;b.addEventListener('click',fn);return b;};
   undo.title='Undo';undo.setAttribute('aria-label','Undo');undo.textContent='↶';
   const redoButton=make('redo','Redo','↷',redo);redoButton.disabled=true;
-  const settingsButton=make('mission-settings','Settings','⚙',settings);
-  bar.append(undo,redoButton,settingsButton);header.append(bar);root.dispatchEvent(new Event('resize'));
+  const settingsButton=make('mission-settings','Settings','⚙',()=>{
+   const shell=root.WargameResponsiveShell,sidebar=document.querySelector('#game-sidebar');
+   if(document.body.dataset.missionMenuReady==='true'&&sidebar?.dataset.activeTab==='settings'&&(shell?.getMode()!=='mobile'||shell.isOpen())){
+    sidebar.querySelector('[data-game-tab="play"]')?.click();
+    return;
+   }
+   settings();
+  });
+  settingsButton.setAttribute('aria-controls','settings-section');settingsButton.setAttribute('aria-pressed','false');
+  bar.append(settingsButton,undo,redoButton);header.append(bar);root.dispatchEvent(new Event('resize'));
   return redoButton;
  }
  async function mount({id,anchor,save,restore,busy,pause,reference,notice}){
@@ -119,9 +127,26 @@
    }}
    const exit=document.createElement('button');exit.type='button';exit.textContent='Exit Game';
    const abandon=document.createElement('button');abandon.type='button';abandon.textContent='Abandon Mission';
-   row(abandon,'×');row(exit,'→');row(deleteButton,'−');
-   for(const link of otherLinks)row(link,'↗');if(oldNav&&!oldNav.children.length)oldNav.remove();
+   row(abandon,'×');row(exit,'→');
+   // Preserve the approved eight-row menu and relocate maintenance tools.
+   const settingsPanel=document.getElementById('settings-section');
+   if(settingsPanel&&reference){
+    const maintenance=document.createElement('details');
+    maintenance.className='mission-maintenance';
+    const summary=document.createElement('summary');summary.textContent='Mission maintenance and source references';maintenance.append(summary);
+    const newGame=document.getElementById('new-game');
+    const portableSave=document.getElementById(id==='battle-for-moscow'?'save-game':'save');
+    for(const node of [newGame,portableSave?.parentElement,deleteButton,...otherLinks]){
+     if(node)maintenance.append(node);
+    }
+    settingsPanel.append(maintenance);
+    document.body.dataset.missionMenuReady='true';
+   }else{
+    row(deleteButton,'−');for(const link of otherLinks)row(link,'↗');
+   }
+   if(oldNav&&!oldNav.children.length)oldNav.remove();
    menu.append(status);
+   document.getElementById('mission-settings')?.addEventListener('click',()=>closeMenu());
    const dialog=document.createElement('dialog');dialog.className='mission-leave-dialog';dialog.setAttribute('aria-label','Leave mission');
    const prompt=document.createElement('p');prompt.textContent='Save this mission before returning to the mission selector?';dialog.append(prompt);
    const error=document.createElement('p');error.setAttribute('role','status');dialog.append(error);

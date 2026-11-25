@@ -28,6 +28,8 @@ function setupTabs(aside){
   aside.dataset.activeTab=name;
   for(const b of buttons){const active=b.dataset.gameTab===name;b.setAttribute('aria-selected',String(active));b.tabIndex=active?0:-1;}
   const settings=aside.querySelector('#settings-section');if(settings)settings.hidden=name!=='settings';
+  const gear=document.getElementById('mission-settings');
+  if(gear)gear.setAttribute('aria-pressed',String(name==='settings'));
  };
  for(const b of buttons)b.addEventListener('click',()=>select(b.dataset.gameTab));
  aside.addEventListener('keydown',ev=>{
