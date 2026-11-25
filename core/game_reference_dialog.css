@@ -13,3 +13,8 @@
 .reference-source-aid{display:block;width:100%;height:auto;margin:8px 0}.reference-terrain-table+ p a,#game-reference-panel a{overflow-wrap:anywhere}
 #game-reference-panel details summary{cursor:pointer;padding:10px 0}
 @media(max-width:480px){#game-reference-dialog{padding:10px}.reference-terrain-table{font-size:.83rem}.reference-terrain-table th,.reference-terrain-table td{padding:5px}.reference-terrain-specimen{width:48px;height:44px}}
+
+/* Illustrated reference: keep specimens readable without changing rule values. */
+.reference-terrain-table tbody th{vertical-align:middle}
+.reference-terrain-specimen{width:82px;height:74px;max-width:100%;margin:0 0 5px}
+@media(max-width:480px){.reference-terrain-specimen{width:62px;height:56px}}

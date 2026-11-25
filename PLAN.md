@@ -157,3 +157,8 @@ The full v701 project was imported into robert-kurcina/vpg-rc and the author rep
 5. Evaluate WebGL only if measured SVG pan/zoom/rendering latency warrants it. Preserve approved map/counter geometry, layering, hit targets, accessibility and touch behavior; retain SVG unless a prototype demonstrates a meaningful benefit. One shared renderer, not scenario forks.
 
 These are ordered investigation ideas, not new release deliverables or guaranteed speedups. Complete the current six priorities first. Unified grand campaign remains absolute last, after all other approved work.
+
+
+### Hosted UX follow-up — illustrated TEC and Moscow reading edition
+
+Restore existing engine-rendered terrain specimens in the shared reference modal for all five scenarios, with active scenario values unchanged. Missing standalone fortification/weather specimens remain explicit. Moscow printed pages 1–2: correct interleaved section 3 text and reflow verified prose, structure the nine phases and setup as ordered lists. Shared typography improved. Exact source PDFs and facsimiles unchanged. Remaining rulebook reading order, tables and illustrations (including Moscow pages 3–4), map interaction diagnosis and actual hosted verification remain P2/P6 work. No new release gates.
