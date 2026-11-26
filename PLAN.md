@@ -1,6 +1,6 @@
 # Russian Campaign — Release completion plan
 
-Revision 522 | Production baseline: v701 / checkpoint 479 plus merged hosted UX PRs #1–7
+Revision 523 | Production baseline: v701 / checkpoint 479 plus merged hosted UX PRs #1–7
 
 ## Objective
 
@@ -51,6 +51,8 @@ Revision 520: PR31 run 45757179014 all four live campaigns passed on committed s
 Revision 521: run 45757710153 all four live campaigns and focused rules/static/source jobs passed; hosted job pending at inspection. Extend existing Node runner with exact browser defaults and authenticated opening/final save export; extend hosted runner with controlled Standard grade 3 operational parity, seed 7, same opening and rules, exact full campaign receipts and terminal comparison. CI runs representative Kiev on same runner, opt-in dispatch thereafter; report compute and observed browser times. No rule/AI change or simulation sweep. P0.1/P0.6 remain open until actual parity evidence; larger matrix only if justified. Loading visual review and final interactions still outstanding.
 
 Revision 522: run 45757710153 all eight jobs passed on committed split assets including delayed startup, reduced motion, error/retry, all five real-origin mission/reference/optional-mode workflows, Moscow mobile EX/DRL and terminal restore, eight historical terminal restores, mission-scoped abandonment and four live campaigns. Operational parity run 45758205484 pending. Extend existing hosted acceptance with Arduous source-legal overstack cleanup and Leningrad Fleet strike from hidden tablet sidebar via persistent phase control; exercise actual required orders and exact Undo/Redo, then restore original save. No engine changes or new test framework. New interactions pending CI. Remaining Moscow occupied destination, support visual inspection, reference editorial review and staged-site browser acceptance still open.
+
+Revision 523: run 45758205484 passed all nine jobs; controlled Kiev Operational grade 3/3 seed 7 Standard CRT historical victory, 433 exact committed receipts, identical authenticated final campaign, Soviet victory, six Axis cities, browser 28.94s vs Node 22.038s (1.31x), exact IndexedDB restoration. Representative P0 engineering targets met; no additional optimization warranted; remaining cross-scenario measurements optional unless concrete performance defect. Run 45758428843 passed hidden-panel Arduous cleanup and exact Undo/Redo; Leningrad failed due to obsolete direct strike selector (production uses air selection -> highlighted map target -> confirmation). Correct test to follow current workflow including keyboard target and hide Support before required die. Move existing integrated mission-browser job to private staged site under /russian-campaign/ rather than source-root HTTP; verify distribution manifest before test. No new framework or gameplay changes. CI pending; Moscow occupied destination and AI interruption still outstanding. No assertion of complete cross-scenario operational parity.
 
 ## Batch A — Complete approved historical gameplay corrections (P1)
 
