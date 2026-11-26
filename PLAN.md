@@ -1,6 +1,6 @@
 # Russian Campaign — Stable release and computational improvement
 
-Revision 530 | Five independent browser games; shared engine, renderer and CRT.
+Revision 531 | Five independent browser games; shared engine, renderer and CRT.
 
 ## Accepted baseline
 
@@ -31,12 +31,15 @@ Battle for Moscow, The Arduous Beginning, Target: Leningrad, Objective: Kiev and
 - [x] Regenerate browser bundles, pass integrated browser and rules acceptance, reprofile optimized engine, verify exact same-run pre/post authenticated campaign and controlled Chromium/Node parity.
 - [x] Meet original acceleration objective: 1.878x Node on same runner, observed 2.463x Chromium across separate controlled runs. No new runtime dependency.
 
-## Remaining non-UX work — prioritized and bounded
+## Final non-UX closure
 
-1. [ ] **State copying and source comparisons.** Investigate redundant private snapshot/draft copying and immutable source serialization in campaign and combat sessions. Remove demonstrably unnecessary work only; preserve canonical hashes, committed transaction validation, public snapshot isolation, save formats, source authorization and journal ordering. Prefer small changes to existing modules; no serialization rewrite. Combine closely related changes where justified.
-2. [ ] **ZOC evaluation.** Optimize repeated edge scans using certified immutable topology and per-position unit indexes. Preserve scenario-specific barrier rules, unit markers, eliminated units, occupancies and all current legal movement outcomes. Never cache dynamic legality across changed positions.
-3. [ ] **One final controlled comparison and release consolidation.** Use the optimized PR40 engine as the new baseline. Reuse existing focused tests, exact journal/save comparisons and staged browser acceptance. Retain changes only with material reproducible improvement (provisional engineering threshold: roughly 10% end-to-end, or demonstrable latency reduction, without regression). If no worthwhile change remains, close optimization; no repeated profiling or simulation quotas. Document remaining limitations and remove confirmed obsolete temporary build machinery.
-4. [ ] **Conditional Web Worker evaluation.** Only if expensive AI decisions demonstrably block the browser main thread for an unacceptable duration, investigate worker isolation. Not a release gate, not a promised speedup. Keep authoritative validation, stop/resume and deterministic receipts; reject if complexity or transfer overhead outweighs benefit.
+- [x] Campaign snapshot optimization: reuse canonical receipt bytes and preserve detached public snapshots. Combat snapshot ordering and other canonical validation retained; further source-comparison optimization not required.
+- [x] ZOC optimization: immutable incident-edge index with dynamic roster checks and mutable-board fallback.
+- [x] Controlled Node comparison against PR40 baseline: 12.967s to 11.643s (1.1137x, 10.21% time reduction); exact authenticated save and 433 receipts. Meets provisional retention threshold.
+- [ ] Final post-generation integrated browser acceptance and controlled operational parity (PR41/42 evidence predates PR43 engine changes). Temporary installer removed; no more mandatory profiling.
+- DEFERRED: Web Workers only if a concrete main-thread latency defect is demonstrated in actual play. No present implementation requirement or release gate.
+
+After final acceptance passes, close the active implementation plan. Future work is defect-driven or explicitly authorized expansion; no further speculative optimization or technology conversion.
 
 Deferred: cosmetic UX, responsive redesign, HTML rulebook editorial improvements, WebGL unless a measured rendering bottleneck exists. Unified grand campaign remains the absolute last priority; no implementation authorization implied.
 
@@ -57,3 +60,5 @@ Revision 528: PR40 run 45763742040 passed all ten jobs, including integrated mis
 Revision 529: repository cleanup audit identified retained source/provenance, linked map exports and historical developer checks as intentional. Synchronize README, UPDATE, package manifest and static release metadata with PR40 acceptance; ignore local profiling/browser outputs and Python caches. No deletion of source evidence, referenced assets or runtime modules without dependency proof. No production gameplay changes. Staged distribution remains separate from source; further cleanup should be limited to demonstrably obsolete artifacts.
 
 Revision 530: implemented bounded campaign snapshot canonical-byte reuse (fresh detached parse for each public snapshot, identical receipt hashing), and immutable incident-edge indexing for ZOC with dynamic roster checks unchanged. Added public snapshot mutation isolation and all-hex indexed-versus-scan comparisons for four historical maps, both barrier policies and changed roster. Combat public snapshot ordering left unchanged. Exact journal and same-run full save comparison plus browser bundle regeneration pending CI. Retain only if materially beneficial; remove temporary installer after generation. No UX or WASM changes.
+
+Revision 531: PR43 installer run 45764794647 passed binding assertions, exact journal fingerprint and full authenticated save equality, same-run baseline 12.967s versus candidate 11.643s. Generated assets committed and merged. PR42 run 45764488407 passed eight active jobs. PR43 pre-generation acceptance failed on stale assets; final generated-browser acceptance remains pending. Remove one-time installer and obsolete branch-specific baseline benchmark gates, retain manual profiling and parity workflows. No new engine changes. Close general optimization after final acceptance; conditional worker investigation deferred absent concrete latency evidence.
