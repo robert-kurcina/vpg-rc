@@ -1,6 +1,6 @@
 # Russian Campaign — Release completion plan
 
-Revision 487 | Production baseline: v701 / checkpoint 479 (resumable historical acceptance)
+Revision 488 | Production baseline: v701 / checkpoint 479 (resumable historical acceptance)
 
 ## Objective and scope
 
@@ -187,3 +187,8 @@ Restore the approved eight-row mission menu and separate Settings gear, with ind
 ### Author-approved toolbar alignment and collapsible information panel
 
 Header order: triple-line hamburger left, scenario title next, Undo/Redo geometrically centered, Settings gear right. On very narrow screens the title and two menu icons remain in the first row; history actions center in a second row to avoid overlap. Existing gameplay information sidebar is visible by default on desktop and collapsible with a direct Show/Hide panel control in map navigation; map expands into freed space. Desktop preference is local to the browser; tablet retains a collapsible drawer. Settings opens even when the gameplay panel is collapsed and restores the prior visibility on close. No additional menu. Existing rules, renderer and action semantics unchanged. Verify actual browser layout, focus, resize, scrolling and mandatory decision reachability under P2/P6.
+
+
+### Persistent phase controls and interaction feedback
+
+Shared header phase bar displays the active turn/faction/phase, or deployment/terminal result. Existing validated phase actions are reused; pending combat choices and other non-unique decisions open existing panels. AI stop/pause remains available without the sidebar. Both controller paths mirror feedback into the persistent bar and explain blocked map actions. No change to rules, RNG, saves, approved toolbar alignment or artwork. Source-level changes only: verify live rendering, action parity, touch, and actual reported hit-detection failure before closing P2/P6.

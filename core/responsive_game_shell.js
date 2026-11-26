@@ -37,6 +37,35 @@
   sidebarToggle.setAttribute('aria-controls','game-sidebar');sidebarToggle.addEventListener('click',toggleSidebar);
   nav.prepend(sidebarToggle);syncDrawer();
  }
+ // Persistent phase display is a presentation adapter: callbacks invoke the
+ // existing controller actions, never calculate legality or commit independently.
+ let phaseBar=null,phaseText=null,phaseAction=null,phaseMessage=null,phaseCallback=null,lastFeedback='',lastError=false;
+ function ensurePhaseBar(){
+  if(phaseBar)return true;
+  const header=document.querySelector('body>header');
+  if(!header||!document.documentElement.dataset.missionId)return false;
+  phaseBar=document.createElement('div');phaseBar.id='mission-phase-bar';
+  phaseText=document.createElement('div');phaseText.id='mission-phase-label';
+  phaseAction=document.createElement('button');phaseAction.type='button';phaseAction.id='mission-phase-action';
+  phaseAction.addEventListener('click',()=>phaseCallback?.());
+  phaseMessage=document.createElement('div');phaseMessage.id='mission-phase-feedback';phaseMessage.setAttribute('role','status');
+  phaseMessage.textContent=lastFeedback;phaseMessage.hidden=!lastFeedback;phaseMessage.dataset.error=String(lastError);
+  phaseBar.append(phaseText,phaseAction,phaseMessage);header.append(phaseBar);return true;
+ }
+ function setPhase({label,action=null}){
+  if(!hasDOM()||!ensurePhaseBar())return;
+  if(phaseText.textContent!==label)phaseText.textContent=label;
+  phaseCallback=action?.run||null;phaseAction.hidden=!action;
+  phaseAction.disabled=!phaseCallback||!!action?.disabled;
+  phaseAction.textContent=action?.label||'';
+  syncHeight();
+ }
+ function feedback(text,error=false){
+  lastFeedback=String(text||'');lastError=!!error;
+  if(!phaseMessage)return;
+  if(phaseMessage.textContent!==lastFeedback)phaseMessage.textContent=lastFeedback;
+  phaseMessage.hidden=!lastFeedback;phaseMessage.dataset.error=String(lastError);syncHeight();
+ }
  function effective(){return preference==='auto'?detect():preference;}
  function syncHeight(){if(!hasDOM())return;const h=document.querySelector('body>header')?.getBoundingClientRect().height||56;document.body.style.setProperty('--mobile-header-height',h+'px');}
  function close(){if(isSettings()){settingsRestore=null;playTab();}isOpen=false;syncDrawer();}
@@ -133,5 +162,5 @@
   if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',mount,{once:true});
   else mount();
  }
- return Object.freeze({STORAGE_KEY,detect,load,mount,setPreference,attachSettings,getMode:()=>mode,getPreference:()=>preference,isOpen:visible,open,openAt,close,openSettings,closeSettings,enableSidebarToggle});
+ return Object.freeze({STORAGE_KEY,detect,load,mount,setPreference,attachSettings,getMode:()=>mode,getPreference:()=>preference,isOpen:visible,open,openAt,close,openSettings,closeSettings,enableSidebarToggle,setPhase,feedback});
 });

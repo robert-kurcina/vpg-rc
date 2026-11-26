@@ -43,8 +43,38 @@ function syncAutomatic(){
  $('ai-step').disabled=aiRunning||complete;
  $('ai-side').disabled=aiRunning||complete;
  $('ai-resume').textContent=aiPaused?'Resume automatic play':'Pause automatic play';
+ syncPhaseBar();
  $('ai-ownership-status').textContent=complete?'Campaign complete':aiAssignment==='manual'?'Manual handoff':aiPaused?'Automatic play paused — manual control available':human?.hasPendingRoll()?'Waiting for committed human die resolution':setupActive?'Waiting for deployment':human?.snapshot().cursor.complete?'Campaign complete':computerOwns(human?.snapshot().actor)?'Computer controls current side':'Human controls current side';
  if(autoEligible()&&aiTimer===null)aiTimer=setTimeout(()=>{aiTimer=null;if(autoEligible())$('ai-side').onclick();},0);
+}
+function syncPhaseBar(){
+ const shell=root.WargameResponsiveShell;if(!shell)return;
+ if(setupActive){
+  const ready=$('setup-ready');
+  shell.setPhase({label:'Pre-game deployment',action:ready&&!ready.disabled?{label:ready.textContent,run:()=>ready.click()}:{label:'Deployment controls',run:()=>shell.openAt('setup-panel')}});
+  return;
+ }
+ if(!human||!view)return;
+ const s=human.snapshot(),c=s.cursor||{};
+ const label=c.complete?($('campaign-result')?.querySelector('strong')?.textContent||'Campaign complete'):
+  'Turn '+(c.turn||'—')+' / '+phaseConfig.turns+' · '+String(s.actor||'').toUpperCase()+' · '+String(s.phaseId||'').replaceAll('-',' ');
+ let action=null;
+ if(!c.complete){
+  if(aiRunning)action={label:'Stop AI',run:()=>$('ai-stop').click()};
+  else if(humanActionBlocked())action={label:'Pause AI',run:()=>$('ai-resume').click()};
+  else if(view.kind==='post-roll-choice')action={label:'Resolve consequences',run:()=>shell.openAt('orders-section')};
+  else if(!$('roll-panel').hidden)action={label:'Combat decision',run:()=>shell.openAt('roll-panel')};
+  else if(selectedBattles.size&&!$('commit-battles').disabled)action={label:'Commit battles',run:()=>$('commit-battles').click()};
+  else {
+   // Mirror only a unique, already enumerated completion action. Decisions
+   // with other mandatory choices stay in their contextual panels.
+   const choices=actionList.filter(a=>['finish-phase','finish-combat','finish-air-sea','finish-housekeeping','finish-buildup'].includes(a.action?.type||a.type)||(a.action?.type==='commit-battles'&&!a.action.battles.length));
+   if(choices.length===1&&!selectedBattles.size&&!view.stackingCleanup&&!view.stackPenalty&&!moveSelection&&!supportSelection&&!retreatSelection){
+    const a=choices[0];action={label:formatAction(a),run:()=>{if(actionList.includes(a)&&!humanActionBlocked()&&!selectedBattles.size&&!moveSelection&&!supportSelection&&!retreatSelection)choose(a);else shell.openAt('orders-section');}};
+   }else action={label:'Required orders',run:()=>shell.openAt('orders-section')};
+  }
+ }
+ shell.setPhase({label,action});
 }
 function humanActionBlocked(){return aiRunning||(!aiPaused&&human&&!human.hasPendingRoll()&&computerOwns(human.snapshot().actor));}
 
@@ -153,7 +183,7 @@ function refreshDisplay(){
  updateMapDisplay().catch(e=>message(e.message));
 }
 async function loadJson(path){const response=await fetch(path);if(!response.ok)throw Error('Missing source file '+path+' ('+response.status+')');return response.json()}
-function message(s){$('message').textContent=s||''}
+function message(s){$('message').textContent=s||'';root.WargameResponsiveShell?.feedback(s||'');}
 function formatAction(action,effects=null){
  const type=action.action?.type||action.type;
  if(type==='commit-battles')return action.action.battles.length?'Commit '+action.action.battles.length+' battle(s)':'Declare no battles';
@@ -427,7 +457,7 @@ function renderActions(){
 function renderBattleProposals(){
  const details=$('battle-choices');const container=$('battle-proposals');container.replaceChildren();
  const available=view?.kind==='action-choice'&&view.proposals?.length&&view.phaseKind==='combat';
- details.hidden=!available;if(!available){selectedBattles.clear();return;}details.open=true;
+ details.hidden=!available;if(!available){selectedBattles.clear();syncPhaseBar();return;}details.open=true;
  const proposals=view.proposals;const validKeys=new Set(proposals.map(p=>JSON.stringify(p)));
  for(const k of selectedBattles)if(!validKeys.has(k))selectedBattles.delete(k);
  // The source catalog can expose >100 independently validated battles.
@@ -441,7 +471,7 @@ function renderBattleProposals(){
  container.appendChild(note);
  const clear=document.createElement('button');clear.type='button';clear.textContent='Clear battle selection';clear.id='clear-battle-selection';clear.disabled=!selectedBattles.size||humanActionBlocked();
  clear.onclick=()=>{selectedBattles.clear();renderBattleProposals();};container.appendChild(clear);
- const commit=$('commit-battles');commit.disabled=!selectedBattles.size||humanActionBlocked();
+ const commit=$('commit-battles');commit.disabled=!selectedBattles.size||humanActionBlocked();syncPhaseBar();
  const conflicts=p=>[...selectedBattles].some(k=>{const b=JSON.parse(k);return k!==JSON.stringify(p)&&(b.defenderHex===p.defenderHex||b.attackers.some(id=>p.attackers.includes(id)));});
  for(const p of matched.slice(0,100)){
   const key=JSON.stringify(p);const label=document.createElement('label');
@@ -449,7 +479,7 @@ function renderBattleProposals(){
   check.onchange=()=>{
    if(check.checked&&conflicts(p)){check.checked=false;return;}
    check.checked?selectedBattles.add(key):selectedBattles.delete(key);
-   clear.disabled=!selectedBattles.size;commit.disabled=!selectedBattles.size;
+   clear.disabled=!selectedBattles.size;commit.disabled=!selectedBattles.size;syncPhaseBar();
    for(const c of container.querySelectorAll('input[data-battle-key]'))c.disabled=humanActionBlocked()||(!c.checked&&conflicts(JSON.parse(c.dataset.battleKey)));
    note.textContent=`${matched.length} matching battle proposals · ${selectedBattles.size} selected`+
     (matched.length>100?' · showing first 100; filter by defender hex or counter ID':'');
@@ -611,7 +641,7 @@ function renderSetup(){
   }
   $('setup-mix').hidden=false;$('setup-mix').textContent=(s.concealedMixed?'Remix':'Mix')+' 10 concealed Corps';
   $('setup-ready').disabled=false;
-  showBoard();return;
+  showBoard();syncPhaseBar();return;
  }
  const snapshot=deployment.snapshot();
  $('status').innerHTML='<div class="phase">Pre-game deployment</div><div class="summary">'+
@@ -647,7 +677,7 @@ function renderSetup(){
  $('setup-ready').disabled=!snapshot.concealedMixed;
  const concealed=sourceData.setupSpec.concealedSetup;
  $('setup-mix').textContent=(snapshot.concealedMixed?'Remix ':'Mix ')+concealed.count+' concealed '+concealed.displayName;
- showBoard();
+ showBoard();syncPhaseBar();
 }
 /* Two-click selection and drag/drop converge on these same atomic methods. */
 function setupPick(item){
@@ -847,7 +877,7 @@ function refresh(){if(moveSelection){query='';$('filter').value='';}clearMoveSel
  $('post-roll-next').disabled=postRollLoading||!view.hasNextPage;
  $('post-roll-cancel').hidden=!postRollLoading;
  $('post-roll-page-label').textContent=paged?'Page '+(postRollPage+1)+' · '+actionList.length+' validated choices':'';
- renderActions();renderBattleProposals();renderBuildupControls();refreshSupportWindow();showBoard();
+ renderActions();renderBattleProposals();renderBuildupControls();refreshSupportWindow();showBoard();syncPhaseBar();
  $('journal').textContent=JSON.stringify({phase:s.phaseId,actor:s.actor,units:Object.values(s.state.units||{}).length,
   pendingGround:s.pendingGround,combat:s.combat?.status,terminal:s.terminal,
   journalTail:human.save().campaign.journal.slice(-8)},null,2);
@@ -1059,6 +1089,9 @@ async function start(){
   };
   function onLiveMapHit(node,shift=false){
    if(setupActive)return false;
+   if(!human)return false;
+   if(human.snapshot().cursor.complete){message('Campaign complete. Start a new mission to play again.');return true;}
+   if(humanActionBlocked()){message('Computer controls this side. Pause automatic play to issue orders.');return true;}
    const routeHit=node.closest('[data-retreat-route]'),unit=node.closest('[data-unit-id]'),hexHit=node.closest('[data-hex]');
    if(routeHit){const staged=stageRetreat(routeHit.dataset.retreatRoute);if(staged)root.WargameResponsiveShell?.openAt('orders-section');return staged;}
    const current=human.snapshot();const hex=unit?current.state.units[unit.dataset.unitId]?.hex:hexHit?.dataset.hex;
@@ -1090,11 +1123,12 @@ async function start(){
    const term=hex&&view?.phaseKind==='combat'&&view.proposals?.some(p=>p.defenderHex===hex)?hex:unit?.getAttribute('data-unit-id')||hex;
    if(term){
     const next=!humanActionBlocked()&&unit&&movesFor(term).length?term:null;
-    if(next&&moveSelection===next){clearMoveSelection();query='';$('filter').value='';}
-    else{clearMoveSelection();moveSelection=next;query=term;$('filter').value=term;}
+    if(next&&moveSelection===next){clearMoveSelection();query='';$('filter').value='';message('Selection cleared.');}
+    else{clearMoveSelection();moveSelection=next;query=term;$('filter').value=term;message(next?'Counter selected. Choose a highlighted destination.':view?.phaseKind==='combat'?'Filtered combat choices for '+term+'.':'Selected '+term+' for inspection; no movement action selected.');}
     renderActions();renderBattleProposals();showBoard();
     if(root.WargameResponsiveShell?.getMode()==='mobile'&&hex&&view?.phaseKind==='combat'&&view.proposals?.some(p=>p.defenderHex===hex)){const details=$('battle-choices');details.open=true;root.WargameResponsiveShell?.openAt('battle-choices');}
    }
+   if(!term)message('Select a counter or highlighted legal hex.');
    return Boolean(term);
   }
   $('counter-overlay').addEventListener('click',e=>{
