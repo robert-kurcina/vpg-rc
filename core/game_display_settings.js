@@ -73,7 +73,52 @@ function mount(rootElement,board,{onChange=()=>{}}={}){
  }
  sync();globalThis.WargameResponsiveShell?.attachSettings(rootElement);return {get:()=>({...value}),set:next=>{value=normalize({...value,...next});store(value);sync();onChange({...value})},supported};
 }
-/* Coast geometry is owned exclusively by the universal terrain renderer.
+/* Reparent mounted inputs, retaining their identities, values and event listeners. */
+function organizeSettings(panel){
+ if(!panel||panel.dataset.groupedSettings==='true')return;
+ const doc=panel.ownerDocument,original=[...panel.children];
+ const title=original.find(el=>el.tagName==='H2');
+ const display=panel.querySelector('#settings-display');
+ const historical=panel.querySelector('#historical-crt-settings');
+ const maintenance=panel.querySelector('.mission-maintenance');
+ if(!display)return;
+ const layout=display.querySelector('.layout-mode-settings');
+ function group(name,note,open=true){
+  const field=doc.createElement('details');field.className='settings-category';field.open=open;
+  const summary=doc.createElement('summary');summary.textContent=name;
+  const body=doc.createElement('div');body.className='settings-category-body';
+  field.append(summary,body);
+  if(note){const p=doc.createElement('p');p.className='setting-caption';p.textContent=note;body.append(p);}
+  return {field,body};
+ }
+ const players=group('Players and AI','Player control and computer strategy for the current mission.');
+ const rules=group('Mission configuration','Rules changes apply to a new mission. Saved campaigns retain their configured rules. Deployment editing is available only before play when permitted.');
+ const map=group('Map display','Display preferences take effect immediately.');
+ const ui=group('Interface layout','Presentation only.');
+ const support=group('Maintenance','Portable saves, restart and source references.',false);
+ const ids=['native-ai-assignment','ai-assignment','ai-policy','ai-policy-soviet','ai-strategy','ai-strategy-soviet','ai-difficulty','ai-difficulty-soviet'];
+ for(const id of ids){
+  const input=doc.getElementById(id);if(!input)continue;
+  const label=input.closest('label')||doc.querySelector('label[for="'+id+'"]');
+  if(label&&label.contains(input))players.body.append(label);
+  else{if(label)players.body.append(label);players.body.append(input);}
+ }
+ const policyNote=doc.getElementById('ai-policy-note');if(policyNote)players.body.append(policyNote);
+ // Only move original children still in the panel: AI labels have already moved.
+ for(const el of original){
+  if(el.parentElement!==panel||el===title||el===display||el===maintenance||el===historical)continue;
+  if(el.tagName==='H3'&&el.textContent.trim()==='Computer opponent')continue;
+  if(el.tagName==='P'&&el.textContent.startsWith('Grades increase optional action budgets'))players.body.append(el);
+  else rules.body.append(el);
+ }
+ if(historical)rules.body.append(historical);
+ if(layout){ui.body.append(layout);layout.querySelector('h3')?.remove();}
+ display.querySelector('h3')?.remove();map.body.append(display);
+ if(maintenance){maintenance.querySelector('summary')?.remove();support.body.append(...maintenance.childNodes);maintenance.remove();}
+ panel.replaceChildren(...(title?[title]:[]),players.field,rules.field,map.field,ui.field,support.field);
+ panel.dataset.groupedSettings='true';
+}
+ /* Coast geometry is owned exclusively by the universal terrain renderer.
  * This control module does not draw or interpret map hexsides. */
 function applyCoast(svg,board,settings){
  if(!T?.applyCoastPresentation)throw Error('Shared terrain renderer not loaded');
@@ -110,5 +155,5 @@ function renderCRT(columns,variant){
  }
  return table;
 }
-return Object.freeze({DEFAULT,ENLARGEMENT,STORAGE_KEY,normalize,counterScale,coastSupported,setupTabs,mount,applyCoast,renderCRT});
+return Object.freeze({DEFAULT,ENLARGEMENT,STORAGE_KEY,normalize,counterScale,coastSupported,setupTabs,mount,organizeSettings,applyCoast,renderCRT});
 });

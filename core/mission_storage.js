@@ -142,11 +142,13 @@
     maintenance.className='mission-maintenance';
     const summary=document.createElement('summary');summary.textContent='Mission maintenance and source references';maintenance.append(summary);
     const newGame=document.getElementById('new-game');
+    if(newGame)newGame.textContent='Start new mission';
     const portableSave=document.getElementById(id==='battle-for-moscow'?'save-game':'save');
     for(const node of [newGame,portableSave?.parentElement,deleteButton,...otherLinks]){
      if(node)maintenance.append(node);
     }
     settingsPanel.append(maintenance);
+    root.WargameDisplaySettings?.organizeSettings(settingsPanel);
     document.body.dataset.missionMenuReady='true';
     const title=header.querySelector('h1')?.parentElement;
     title?.classList.add('mission-header-title');

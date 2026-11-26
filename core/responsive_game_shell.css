@@ -126,3 +126,15 @@ body[data-layout-mode="mobile"]>header:has(#mission-phase-bar){max-height:none!i
 
 /* Visible keyboard focus on actual interactive SVG targets. */
 .native-counter-layer:focus-visible,.native-board-hit:focus-visible,#counter-overlay [role="button"]:focus-visible{outline:2px solid #25669a;outline-offset:2px}
+
+/* Shared settings categories; the underlying controls retain their original IDs. */
+.settings-category{border:1px solid #cbd6db;border-radius:5px;margin:0 0 10px;background:#fff;color:#203640}
+.settings-category>summary{cursor:pointer;font-size:14px;font-weight:650;padding:10px 12px;background:#edf2f4;border-radius:5px;min-height:40px}
+.settings-category-body{padding:10px 12px;min-width:0}
+.settings-category-body select{display:block;width:100%;margin:3px 0 10px;min-width:0}
+.settings-category-body>label{margin-top:6px}
+.settings-category-body>.setting-caption:first-child{margin-top:0}
+.settings-category-body>a{display:block;margin:8px 0;overflow-wrap:anywhere}
+.settings-category-body>button{margin:4px 0}
+.settings-category-body .layout-mode-settings{margin:0;padding:0;border:0}
+.settings-category>summary:focus-visible{outline:2px solid #25669a;outline-offset:2px}
