@@ -574,7 +574,7 @@ function begin({rootDir,profilePath,mapPath,registryPath,projectRoot,aiProfilePa
  $('new-game').addEventListener('click',start);
  $('undo').addEventListener('click',()=>{if(aiRunning)return show('Wait for the current AI side to finish.',true);pauseAutomatic();const out=S.undo(session);if(!out.ok)return show('Nothing to Undo.',true);redoHistory?.recordUndo(session,out.session);session=out.session;cleanSelection();show('Previous committed action restored.');render();});
  function redo(){if(aiRunning)return;const next=redoHistory?.take(session);if(!next)return;pauseAutomatic();session=next;cleanSelection();show('Next committed action restored.');render();}
- if(document.documentElement.dataset.missionId)globalThis.WargameMissionStorage?.mountToolbar({undo:$('undo'),redo,settings:()=>{selectPanel?.('settings');globalThis.WargameResponsiveShell?.open();}});
+ if(document.documentElement.dataset.missionId)globalThis.WargameMissionStorage?.mountToolbar({undo:$('undo'),redo,settings:()=>selectPanel?.('settings')});
  $('finish-phase').addEventListener('click',()=>change({type:phase()?.kind==='setup'?'finish-setup':phase()?.kind==='redeployment'?'finish-redeployment':'finish-phase'}));
  $('remove-battle').addEventListener('click',()=>change({type:'remove-last-battle'}));
  $('resolve-battle').addEventListener('click',()=>change({type:'resolve-pending',options:getChoices()}));
