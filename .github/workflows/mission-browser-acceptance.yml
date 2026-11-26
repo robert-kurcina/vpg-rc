@@ -87,20 +87,8 @@ jobs:
           python-version: '3.12'
       - name: Generate and exercise split historical engine
         run: |
-          python scripts/build-historical-browser-bundle.py --split
-          python scripts/build-historical-browser-bundle.py --split --check
-          python - <<'PY'
-          import json
-          from pathlib import Path
-          scripts=json.loads(Path('core/historical_engine_scripts.json').read_text())
-          old='<script src="../../../core/historical_engine_browser_bundle.js"></script>'
-          new=''.join('<script src="../../../core/'+s+'"></script>' for s in scripts)
-          for route in ('arduous/native-preview','leningrad/native-preview','kiev/setup-preview','kiev-odessa/experimental-preview'):
-              p=Path('games')/route/'index.html'
-              s=p.read_text()
-              assert s.count(old)==1,route
-              p.write_text(s.replace(old,new))
-          PY
+          python scripts/build-historical-browser-bundle.py --split --install
+          python scripts/build-historical-browser-bundle.py --split --install --check
       - name: Stage and verify private repository-relative release
         run: |
           python scripts/build-static-release.py "${RUNNER_TEMP}/campaign-release"
@@ -123,20 +111,8 @@ jobs:
           python -m playwright install --with-deps chromium
       - name: Generate and exercise split historical engine
         run: |
-          python scripts/build-historical-browser-bundle.py --split
-          python scripts/build-historical-browser-bundle.py --split --check
-          python - <<'PY'
-          import json
-          from pathlib import Path
-          scripts=json.loads(Path('core/historical_engine_scripts.json').read_text())
-          old='<script src="../../../core/historical_engine_browser_bundle.js"></script>'
-          new=''.join('<script src="../../../core/'+s+'"></script>' for s in scripts)
-          for route in ('arduous/native-preview','leningrad/native-preview','kiev/setup-preview','kiev-odessa/experimental-preview'):
-              p=Path('games')/route/'index.html'
-              s=p.read_text()
-              assert s.count(old)==1,route
-              p.write_text(s.replace(old,new))
-          PY
+          python scripts/build-historical-browser-bundle.py --split --install
+          python scripts/build-historical-browser-bundle.py --split --install --check
       - name: Play fresh campaign through automatic browser controller
         run: |
           python serve.py > "${RUNNER_TEMP}/live-server.log" 2>&1 &
@@ -173,20 +149,8 @@ jobs:
         run: SAVE_PATH="${RUNNER_TEMP}/moscow-terminal.json" node scripts/run-native-campaign.js standard 7 5000 3 3
       - name: Generate and exercise split historical engine
         run: |
-          python scripts/build-historical-browser-bundle.py --split
-          python scripts/build-historical-browser-bundle.py --split --check
-          python - <<'PY'
-          import json
-          from pathlib import Path
-          scripts=json.loads(Path('core/historical_engine_scripts.json').read_text())
-          old='<script src="../../../core/historical_engine_browser_bundle.js"></script>'
-          new=''.join('<script src="../../../core/'+s+'"></script>' for s in scripts)
-          for route in ('arduous/native-preview','leningrad/native-preview','kiev/setup-preview','kiev-odessa/experimental-preview'):
-              p=Path('games')/route/'index.html'
-              s=p.read_text()
-              assert s.count(old)==1,route
-              p.write_text(s.replace(old,new))
-          PY
+          python scripts/build-historical-browser-bundle.py --split --install
+          python scripts/build-historical-browser-bundle.py --split --install --check
       - name: Launch real static HTTP origin
         run: |
           python serve.py > "${RUNNER_TEMP}/mission-server.log" 2>&1 &
