@@ -1218,9 +1218,14 @@ async function start(){
      // Yield to the browser; do not create an unresponsive synchronous turn loop.
      if(count%3===0){refresh();await new Promise(resolve=>setTimeout(resolve,0))}
     }
-    if(aiStopRequested||count===128)pauseAutomatic();
+    const sameActor=!human.snapshot().cursor.complete&&human.snapshot().actor===actor;
+    const chunkEnded=count===128&&sameActor;
+    // Keep the bounded browser chunk, but only pause a manual side request.
+    // Automatic continuation is scheduled by syncAutomatic after refresh,
+    // which rechecks ownership, committed human rolls and stop requests.
+    if(aiStopRequested||(chunkEnded&&(aiPaused||!computerOwns(actor))))pauseAutomatic();
     message(aiStopRequested?'AI play stopped after '+count+' actions.':
-     count===128?'AI action budget reached (128); resume explicitly.':'AI finished '+actor+' side ('+count+' actions).');
+     chunkEnded?(aiPaused?'AI action budget reached (128); resume explicitly.':'AI continuing '+actor+' side after '+count+' actions.'): 'AI finished '+actor+' side ('+count+' actions).');
    }catch(err){pauseAutomatic();message('AI stopped: '+err.message)}
    finally{aiRunning=false;$('ai-stop').hidden=true;$('ai-side').disabled=false;$('ai-step').disabled=false;for(const id of ['ai-policy','ai-policy-soviet','ai-difficulty','ai-difficulty-soviet'])if($(id))$(id).disabled=false;refresh()}
   };
