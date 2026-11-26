@@ -46,3 +46,38 @@ assert.equal(second.strength,'dead');assert.equal(s.declarations.length,0);
 assert.equal(E.endPhase(g,s),true);
 fixture(5,5,['S','SE']);assert.equal(E.endPhase(g,s),true); // attacks voluntary
 console.log('PASS B4M source combat commitments and resolution');
+
+// Find an eligible major-city DR using the existing roster and CRT, without a fabricated combat table.
+let holdFixture=null;
+for(const cell of g.cells.values()){
+ if(!['major','moscow'].includes(cell.city))continue;
+ const dirs=E.neighbors(cell.x,cell.y).filter(n=>g.playable(n.x,n.y)).map(n=>n.dir);
+ if(dirs.length<2)continue;
+ fixture(cell.x,cell.y,dirs.slice(0,2),2,'german',['g24','g41'],'s3');
+ d.strength='full';
+ const ids=[a.id,b.id];
+ for(let die=1;die<=6;die++){
+  const p=E.combatPreview(g,s,ids,d.id,die);
+  if(p?.cityHoldOptions?.includes(d.id)&&p.retreat.length){holdFixture={state:JSON.parse(JSON.stringify(s)),ids,def:d.id,die,route:p.retreat[0]};break;}
+ }
+ if(holdFixture)break;
+}
+assert.ok(holdFixture,'eligible city defense must allow both choices');
+const hf=holdFixture;
+function resolveHoldChoice(options){
+ const state=JSON.parse(JSON.stringify(hf.state));
+ assert.ok(E.declareCombat(g,state,hf.ids,hf.def));assert.ok(E.lockDeclarations(g,state));
+ assert.equal(E.previewNextDeclaration(g,state,hf.die).outcome,'DR');
+ const before=JSON.stringify(state);
+ const result=E.resolveDeclared(g,state,hf.die,options);
+ return {state,result,before,defender:state.units.find(u=>u.id===hf.def)};
+}
+const held=resolveHoldChoice({standFastId:hf.def,advanceId:'none'});
+assert.ok(held.result?.cityHold);assert.equal(held.defender.strength,'reduced');
+assert.deepEqual(held.defender.position,hf.state.units.find(u=>u.id===hf.def).position);
+const withdrew=resolveHoldChoice({standFastId:'none',retreatTo:{x:hf.route.x,y:hf.route.y},advanceId:'none'});
+assert.ok(withdrew.result);assert.equal(withdrew.result.cityHold,false);
+assert.deepEqual(withdrew.defender.position,{x:hf.route.x,y:hf.route.y});
+const invalid=resolveHoldChoice({standFastId:hf.def,retreatTo:{x:hf.route.x,y:hf.route.y}});
+assert.equal(invalid.result,null);assert.equal(JSON.stringify(invalid.state),invalid.before);
+console.log('PASS optional single-defender Stand Fast');

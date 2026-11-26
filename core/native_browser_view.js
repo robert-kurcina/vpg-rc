@@ -340,7 +340,7 @@ function begin({rootDir,profilePath,mapPath,registryPath,projectRoot,aiProfilePa
    const input=document.createElement('input');input.id='choice-exchange';input.type='text';input.placeholder=decl.attackers.join(',');label.append(input);el.append(label);
   }
   if(preview.defenderLossOptions?.length)el.append(menuSelect('choice-defender-loss','Defender to lose a step',[['','Default'],...preview.defenderLossOptions.map(id=>[id,id])]));
-  if(preview.cityHoldOptions?.length)el.append(menuSelect('choice-stand-fast','Stacked Stand Fast',[['none','Retreat'],...preview.cityHoldOptions.map(id=>[id,`Hold: ${id} loses a step`])]));
+  if(preview.cityHoldOptions?.length)el.append(menuSelect('choice-stand-fast','Defender Stand Fast',[['none','Retreat'],...preview.cityHoldOptions.map(id=>[id,`Hold: ${id} loses a step`])]));
   if(['DR','DRL','EX'].includes(preview.outcome))for(const [id,routes] of Object.entries(preview.retreatByDefender||{}))if(routes.length){const control=menuSelect('choice-retreat-'+id,`Retreat ${id}`,[['','Default'],...routes.map(q=>[`${q.x},${q.y}`,`${labelLoc(q)} · ZOC cost ${q.cost??0}`])]);control.querySelector('select').dataset.stackRetreat=id;el.append(control);}
   if(preview.retreat?.length)el.append(menuSelect('choice-retreat','Defender retreat',[['','Default'],...preview.retreat.map(q=>[`${q.x},${q.y}`,`${labelLoc(q)} · ZOC cost ${q.cost??0}`])]));
   if(preview.potentialAdvance)el.append(menuSelect('choice-advance','Advance after combat',[['','Default'],['none','No advance'],...attackers]));
@@ -353,7 +353,7 @@ function begin({rootDir,profilePath,mapPath,registryPath,projectRoot,aiProfilePa
   const out={};const byId=id=>$(id)?.value;
   if(byId('choice-attacker'))out.attackerLossId=byId('choice-attacker');
   if(byId('choice-exchange'))out.exchangeOrder=byId('choice-exchange').split(',').map(v=>v.trim()).filter(Boolean);
-  if(byId('choice-retreat')){const [x,y]=byId('choice-retreat').split(',').map(Number);out.retreatTo={x,y};}
+  if(byId('choice-retreat')&&!$('choice-retreat').disabled){const [x,y]=byId('choice-retreat').split(',').map(Number);out.retreatTo={x,y};}
   if(byId('choice-defender-loss'))out.defenderLossId=byId('choice-defender-loss');
   if(byId('choice-stand-fast'))out.standFastId=byId('choice-stand-fast');
   if(out.standFastId&&out.standFastId!=='none'){out.advanceId='none';return out;}
@@ -594,6 +594,8 @@ function begin({rootDir,profilePath,mapPath,registryPath,projectRoot,aiProfilePa
    alternatives[1].rules.combat.table=CRT.tableFor(basePackage.game.id,'advanced');
    if(baseProfile?.stackingVariant)for(const candidate of alternatives.slice())alternatives.push(Project.withStacking(candidate,baseProfile,'double'));
    if(Graduated)for(const candidate of alternatives.slice())alternatives.push(Graduated.withNative(candidate,'graduated'));
+   // Previously saved campaigns retain their original forced-hold and destination-only policy.
+   if(basePackage.rules.adjudications)for(const candidate of alternatives.slice()){const legacy=JSON.parse(JSON.stringify(candidate));delete legacy.rules.adjudications;alternatives.push(legacy);}
    let restored=null,chosen=null;
    for(const candidate of alternatives){
     const engine=E.build(candidate);

@@ -1,6 +1,6 @@
 # Russian Campaign — Release completion plan
 
-Revision 491 | Production baseline: v701 / checkpoint 479 plus merged hosted UX PRs #1–7
+Revision 492 | Production baseline: v701 / checkpoint 479 plus merged hosted UX PRs #1–7
 
 ## Objective
 
@@ -21,12 +21,12 @@ Completed implementation is not equivalent to browser acceptance. Do not reopen 
 
 ## Batch A — Complete approved historical gameplay corrections (P1)
 
-- [ ] B4M §9.3: defender chooses a legal step-loss-and-hold Stand Fast result or normal retreat.
-- [ ] B4M §§5,10: update city control for each city actually entered along a committed legal movement path, not merely the destination.
+- [x] B4M §9.3: defender chooses a legal step-loss-and-hold Stand Fast result or normal retreat.
+- [x] B4M §§5,10: update city control for each city actually entered along a committed legal movement path, not merely the destination.
 - [ ] Leningrad §5: Soviet victory for otherwise unclassified 13-city outcomes; retain isolated-Leningrad draw and 14-city German victory. Explicitly identify this as author-approved house adjudication rather than printed wording.
 - [ ] Targeted rule regression, including historical/optional stacking and CRT interactions where affected; preserve versioned save/replay compatibility, or reject incompatible versions explicitly rather than silently reinterpret history.
 
-Exit: three changes implemented and focused regression passes. No unrelated engine refactoring.
+Revision 492: Moscow corrections implemented with a trusted version-bound policy; old native browser saves retain their original package fingerprint and behavior. New regression assertions added. Execution and Leningrad correction pending. Exit: three changes implemented and focused regression passes. No unrelated engine refactoring.
 
 ## Batch B — Finish gameplay UX (P2, P6)
 
@@ -67,6 +67,8 @@ Start with Batch A. In each development turn complete a meaningful group of chan
 No generated visuals, backend/BFF, anti-cheat engineering, scenario-specific renderer forks, separate CRT, unapproved terrain or coordinate migration. All five historical configurations use the shared B4M CRT. Preserve source-bound Leningrad deployment limitations and Odessa experimental authorization provenance. No reopening accepted artwork or historical topology absent concrete defect.
 
 ## Deferred post-release work (in order)
+
+Author-confirmed: complete reliable gameplay, solid desktop/tablet UX and integrated release acceptance before WASM conversion. Optimize the stable JavaScript baseline first; use WASM selectively for measured computational kernels. JavaScript remains authoritative for rules, state, validation, RNG and saves.
 
 1. Profile real workloads.
 2. Web Workers for expensive AI/simulation with authoritative main-thread validation and exact replay.

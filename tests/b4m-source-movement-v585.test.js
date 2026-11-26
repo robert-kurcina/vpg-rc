@@ -29,3 +29,21 @@ for(const p of moves()){assert.equal(p.cost,p.path.length);assert.ok(p.cost<=4);
 assert.equal(at(6,3).cost,1);
 fixture("soviet",1,3);u.position=pos(5,3);assert.ok(moves().some(p=>p.cost>1));
 console.log('PASS B4M native source movement and ZOC');
+
+// The committed canonical route, not merely its endpoint, determines city control.
+fixture();
+const cities=new Set([...g.cells.values()].filter(h=>h.city&&h.city!=='none').map(h=>h.x+','+h.y));
+let route=null;
+for(const cell of g.cells.values()){
+ if(!g.playable(cell.x,cell.y))continue;
+ u.position={x:cell.x,y:cell.y};s.moved=[];
+ route=moves().find(m=>m.path.slice(0,-1).some(h=>cities.has(h.x+','+h.y)));
+ if(route)break;
+}
+assert.ok(route,'fixture must find a route through an intermediate city');
+const visited=route.path.filter(h=>cities.has(h.x+','+h.y));
+for(const h of visited)s.control[h.x+','+h.y]='soviet';
+assert.ok(E.move(g,s,u.id,route.x,route.y));
+for(const h of visited)assert.equal(s.control[h.x+','+h.y],'german');
+assert.deepEqual(s.log.at(-1).path,route.path);
+console.log('PASS committed path city ownership');

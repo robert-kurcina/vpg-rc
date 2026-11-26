@@ -40,6 +40,8 @@ function project(source,profile){
  if(!profile||profile.schemaVersion!==1||!['shared-native','differential-only'].includes(profile.status)||profile.scenarioId!==source.game.id)fail('unknown preview profile');
  if(!profile.overrides||typeof profile.overrides!=='object'||Array.isArray(profile.overrides))fail('missing overrides');
  const result=copy(source);
+ if(profile.adjudications!==undefined&&profile.adjudications!=='historical-20261125-v1')fail('unknown historical adjudications');
+ if(profile.adjudications==='historical-20261125-v1')result.rules.adjudications=profile.adjudications;
  for(const [section,entries] of Object.entries(profile.overrides)){
   if(!sections[section]||!entries||typeof entries!=='object'||Array.isArray(entries))fail('unsupported section '+section);
   for(const [field,value] of Object.entries(entries)){
