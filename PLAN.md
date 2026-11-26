@@ -1,6 +1,6 @@
 # Russian Campaign — Release completion plan
 
-Revision 504 | Production baseline: v701 / checkpoint 479 plus merged hosted UX PRs #1–7
+Revision 505 | Production baseline: v701 / checkpoint 479 plus merged hosted UX PRs #1–7
 
 ## Objective
 
@@ -10,7 +10,7 @@ Release five independent browser games: Battle for Moscow, The Arduous Beginning
 
 | Priority | Deliverable | Status | Remaining |
 |---|---|---|---|
-| P1 | Historical rules and gameplay | Nearly complete | Three adjudications verified; optional stacking/CRT and save compatibility checks remain |
+| P1 | Historical rules and gameplay | Nearly complete | Three adjudications and optional stacking/CRT verified; legacy compatibility review remains |
 | P2 | Gameplay UX and unified mission interface | Substantially implemented; runtime verification open | Reproduce and fix interaction defects, finish reference materials |
 | P3 | AI opponents and difficulty | Implemented; provisional strength ordering | Demonstrated defects only; integrated verification |
 | P4 | Optional graduated victory | Implemented, author accepted | Integrated verification |
@@ -66,13 +66,15 @@ Revision 496: active TEC renders the fortification specimen inline through the s
 
 Exit: accurate, readable references in the existing menu. No requirement to reproduce every decorative element.
 
-Revision 504: extend existing focused job with approved stacking, graduated mode, AI difficulty, player-save and Advanced CRT checks; exercise all five actual optional-mode Settings and IndexedDB restoration, including Moscow double stacking. No new simulation sweeps. Results pending; faction selection is not AI gameplay evidence.
+Revision 504: extend existing focused job with approved stacking, graduated mode, AI difficulty, player-save and Advanced CRT checks; exercise all five actual optional-mode Settings and IndexedDB restoration, including Moscow double stacking. No new simulation sweeps. Run 45751242407 passed all three jobs, including 542 graduated assertions, 1181 difficulty checks, 220 player configuration checks, 301 Advanced CRT assertions, stacking foundation and all five optional-mode browser save/resume paths. Faction selection is not AI gameplay evidence.
+
+Revision 505: reuse eight existing historical/graduated terminal saves for real-origin browser restoration, Undo/Redo and IndexedDB; generate one complete native Moscow campaign with existing runner (standard CRT, seed 7, grades 3/3) and restore it over HTTP. Existing private static distribution builder now runs manifest and non-root HTTP checks in independent CI job; no publication. Pending execution. Terminal restoration is not fresh full browser campaign play.
 
 ## Batch D — Integrated release (P3–P6)
 
 - [ ] Reuse prior valid 10/10 headless campaign coverage from v701; run affected scenario/CRT regressions after Batch A. Do not repeat large simulation sweeps solely for calibration.
 - [ ] Verify human/human, human/AI either side and AI/AI using existing shared legality boundary. Preserve ten internal effort profiles, strategy-default sentinel and exact legacy values. Approved grades Novice 1, Standard 3, Expert Moscow 8, Arduous 4, other three 7. Strength ordering provisional; no new calibration quota.
-- [ ] Verify optional graduated victory: four grades per side plus draw, accepted territorial thresholds, German decisive Moscow held at end of Turn 7, historical default.
+- [x] Verify optional graduated victory: four grades per side plus draw, accepted territorial thresholds, German decisive Moscow held at end of Turn 7, historical default.
 - [ ] Verify optional Moscow two-unit stacking: historical one-unit default, both factions same cap, no temporary overstacking, combined defender battle, legal losses/retreats/advance/Stand Fast, exact persistence. No new balance study unless author requests.
 - [ ] Consolidate final browser acceptance: five hosted routes, full browser campaign evidence for four larger games and Moscow terminal restoration or full campaign, representative pending decisions, Undo/Redo, actual IndexedDB save/resume, Exit/Abandon scope, optional modes. Reuse existing tests/mission-hosted-v693.py and applicable existing fixtures. Redo session-only, not serialized. If execution blocked, report exactly what is unverified; no unsupported pass.
 - [ ] Clean static distribution; keep required runtime, README, PLAN, tests and source provenance appropriately separated. Confirm third-party redistribution rights before declaring public release. GitHub Pages already deployed; deployment success alone does not establish browser acceptance. Document remaining limitations and release decision.

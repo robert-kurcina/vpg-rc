@@ -6,6 +6,9 @@ on:
   pull_request:
     paths:
       - 'tests/mission-hosted-v693.py'
+      - 'tests/fixtures/terminal-v694/**'
+      - 'scripts/run-native-campaign.js'
+      - 'scripts/build-static-release.py'
       - 'tests/b4m-source-combat-v586.test.js'
       - 'tests/b4m-source-movement-v585.test.js'
       - 'tests/historical-housekeeping-eight-turn-v389.test.js'
@@ -57,6 +60,18 @@ jobs:
           python tests/rulebook-navigation-v693.py
           python tests/rulebook-cases-v696.py
           git diff --exit-code -- references/rules
+  static-distribution:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - name: Stage and verify private repository-relative release
+        run: |
+          python scripts/build-static-release.py "${RUNNER_TEMP}/campaign-release"
+          python scripts/build-static-release.py "${RUNNER_TEMP}/campaign-release" --verify --http
   mission-browser:
     runs-on: ubuntu-latest
     timeout-minutes: 30
@@ -69,6 +84,11 @@ jobs:
         run: |
           python -m pip install 'playwright>=1.55,<2'
           python -m playwright install --with-deps chromium
+      - uses: actions/setup-node@v5
+        with:
+          node-version: '22'
+      - name: Complete one Moscow campaign using the existing native runner
+        run: SAVE_PATH="${RUNNER_TEMP}/moscow-terminal.json" node scripts/run-native-campaign.js standard 7 5000 3 3
       - name: Launch real static HTTP origin
         run: |
           python serve.py > "${RUNNER_TEMP}/mission-server.log" 2>&1 &
@@ -82,7 +102,7 @@ jobs:
       - name: Exercise five routes and real IndexedDB save / resume
         run: |
           mkdir -p browser-evidence
-          python tests/mission-hosted-v693.py --url http://127.0.0.1:8765/index.html --evidence-dir browser-evidence
+          python tests/mission-hosted-v693.py --url http://127.0.0.1:8765/index.html --evidence-dir browser-evidence --terminal-save "${RUNNER_TEMP}/moscow-terminal.json"
       - name: Preserve actual browser evidence and server diagnostics
         if: always()
         uses: actions/upload-artifact@v6
