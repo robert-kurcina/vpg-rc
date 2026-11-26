@@ -532,7 +532,7 @@ function makeSession(context,machine,s,records,binding){
  return Object.freeze({snapshot,execute,canExecute,canExecuteGroundBatch:inputs=>probeGroundBatch(s,records.length,inputs),projectGroundMove:input=>projectGround(s,records.length,input),undo,save,journal});
 }
 function create(context){
- const binding=validateContext(context),source=clone(context),machine=createMachine(source);
+ const binding=validateContext(context),source=MovementBinding.prepareContext(clone(context)),machine=createMachine(source);
  return makeSession(source,machine,machine.initial(),[],binding);
 }
 function restore(saved,context){
@@ -556,7 +556,7 @@ function restore(saved,context){
  }
  if(saved.bindings.originHash!==binding.originHash||hash(saved.origin)!==binding.originHash)
   throw Error('Campaign opening state mismatch');
- const source=clone(context),machine=createMachine(source),result=replay(source,saved.journal,machine);
+ const source=MovementBinding.prepareContext(clone(context)),machine=createMachine(source),result=replay(source,saved.journal,machine);
  if(!/^[a-f0-9]{64}$/.test(saved.finalStateHash)||
     snapshotHash(machine,result.s,result.receipts.length)!==saved.finalStateHash)
   throw Error('Campaign final replay mismatch');
