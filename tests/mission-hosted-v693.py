@@ -167,7 +167,7 @@ with sync_playwright() as pw:
    target=page.locator('[data-support-target="'+fleet_hex+'"]')
    expect(target).to_be_visible()
    target.focus();page.keyboard.press('Enter')
-   confirm=page.locator('[data-support-confirm]').filter(has_text='Fleet')
+   confirm=page.locator('[data-support-confirm]').filter(has_text='Naval air strike')
    expect(confirm).to_have_count(1)
    confirm.click()
    page.get_by_role('button',name='Hide Support window').click()
