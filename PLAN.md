@@ -1,6 +1,6 @@
 # Russian Campaign — Release completion plan
 
-Revision 485 | Production baseline: v701 / checkpoint 479 (resumable historical acceptance)
+Revision 486 | Production baseline: v701 / checkpoint 479 (resumable historical acceptance)
 
 ## Objective and scope
 
@@ -22,6 +22,21 @@ Author approved implementation of these adjudications after checkpoint 479; impl
 ## 2. Gameplay UX and unified mission interface
 
 Retain implemented selector, toolbar/menu, city ownership, map movement/combat, shared references, Settings, local mission saves, exact Undo/Redo and mobile handoff. Desktop map and gameplay controls must scroll independently inside a viewport-bounded shell; retain map zoom, keyboard scrolling, two-finger touch navigation and mobile controls drawer. Verify all five routes, including short desktop windows and tablet layout. Close consequential Oberlabs workflow gaps only. Complete HTML rulebooks preserving original numbering, tables, relevant illustrations and explicit source/adaptation distinctions; original PDF remains available. Check approved menu actions, actual cross-page save/resume and confirmed Exit/Abandon, appropriate desktop/tablet touch and viewport behavior, relevant pending decisions and terminal restoration. Verify tournament-control requirement mentioned in v370; do not assume implemented or add undefined functionality without author clarification. No exact cosmetic parity or exhaustive illustrated TEC replication. Existing Redo branch is session-only, not serialized; disclose rather than extend unless requested. Testing consolidated under deliverable 6; targeted checks during implementation.
+
+### P2 execution order — hosted UX review, revision 486
+
+Use the deployed five-game implementation, not development mockups. GitHub Pages deployment of merge fe1e0fa succeeded (run 45725227538). Direct live fetch failed in the review environment and Chromium navigation to the local intercepted fixture returned ERR_BLOCKED_BY_ADMINISTRATOR; no rendered-browser acceptance claimed. Review evidence is repository source and author screenshots. Reuse tests/mission-hosted-v693.py for real-origin persistence; consider a narrowly scoped GitHub Actions browser check if local navigation remains unavailable. Capture actual engine screenshots, console errors, failed requests, and pointer hit targets, never generated substitute maps.
+
+| Order | Work within P2/P6 | Acceptance |
+|---|---|---|
+| 1 | Restore reliable map interaction and phase feedback. Reproduce reported Moscow counter issue first; inspect active phase, modal/drawer state, SVG hit targets, zoom and AI ownership. | Human can select a legal counter/target, commit a legal action and Undo/Redo; invalid actions explain why, without changing state or consuming RNG. |
+| 2 | Map-first shared shell. Keep turn/faction/phase, next instruction and primary phase completion or mandatory decision within reach. Bound desktop map and controls independently; retain tablet drawer, zoom and touch pan. | Test desktop 1440x900 and short 1280x720, tablet portrait/landscape and narrow phone fallback. At zoom, both axes reachable; scrolling never changes game state; no clipped required controls. |
+| 3 | Enforce two menu icons: Settings gear and eight-row mission menu. Undo/Redo remain direct actions; avoid duplicate navigation. Group existing settings and distinguish next-mission options from immediate display options; preserve portable saves. | Menu and settings open/close predictably, focus restored, all actions accessible; save/resume/exit/cancel/abandon retain exact state and scope. |
+| 4 | Contextual play presentation. Keep legal action highlights, selected unit and combat choices legible. Explain G/S city ownership; evaluate smaller badges and an optional visibility setting. Hide diagnostics behind existing maintenance/reference paths, not source limitations or legal decisions. | Existing map art unchanged; labels and decorations do not intercept clicks. Mandatory combat, retreat, reinforcement and Support actions remain accessible. |
+| 5 | Complete illustrated TEC and semantic rulebooks. Reuse approved renderer specimens, with actual active rule values. Verify remaining extraction order, paragraphs, lists, tables and illustrations against original pages. | No incorrect rule text or silently substituted scenario values; direct references and original PDFs retained. |
+| 6 | Consolidate existing shared presentation styles where drift causes concrete defects, then execute P6 hosted acceptance. | All five mission routes, keyboard/touch workflows, real IndexedDB, terminal restoration and optional modes meet existing gates; use WCAG 2.2 keyboard, visible focus, target size and non-color-only status guidance as practical checks, not an unrequested formal certification. |
+
+Do not change gameplay rules through UX fixes, redraw approved assets, introduce additional menu systems, or make separate scenario renderers. Implement in small coherent PRs with actual acceptance evidence; merge fixes when verification supports them. Separate author-approved historical changes in P1 from presentation changes. The above refines existing priorities, not a seventh deliverable. No performance rewrite before release.
 
 ## 3. AI opponents and difficulty
 
