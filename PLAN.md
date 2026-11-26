@@ -1,6 +1,6 @@
 # Russian Campaign — Release completion plan
 
-Revision 508 | Production baseline: v701 / checkpoint 479 plus merged hosted UX PRs #1–7
+Revision 509 | Production baseline: v701 / checkpoint 479 plus merged hosted UX PRs #1–7
 
 ## Objective
 
@@ -75,6 +75,8 @@ Revision 506: run 45751534550 passed focused rules, source references and privat
 Revision 507: historical automatic AI no longer pauses solely at the 128-action browser chunk boundary while the current faction is AI-owned. Manual side requests remain bounded; stop, pending human rolls, ownership handoff, errors and terminal completion remain respected. Actual full-browser campaign evidence remains open. Run 45751856096: focused rules, source references, static distribution passed; terminal browser result pending at this revision.
 
 Revision 508: runs 45751856096 and 45752003512 passed all four jobs, eight historical/graduated terminal saves and native Moscow terminal restoration on the real HTTP origin. Legacy Leningrad rejection and reconstructed fixture restoration passed. Clear stale human selections when AI takes control; disable native automatic control on completion. Existing hosted script gains one live campaign mode per larger scenario, exercising human ownership, natural AI handoff, continuous AI/AI play, terminal display and exact IndexedDB restoration. New runtime checks pending, not a balance sweep.
+
+Revision 509: corrected obsolete standalone Kiev–Odessa non-playable footer; targeted shared-renderer specimen export accepts a row ID. Existing reference job exports fortification through Inkscape, and actual hosted browser checks the terrain dialog, fortification asset load and Moscow conditional weather table without changing game state. Capture actual reference screenshots; visual inspection remains pending. Run 45752780773 passed four established acceptance jobs; four live campaigns still in progress. No new engine rules.
 
 ## Batch D — Integrated release (P3–P6)
 

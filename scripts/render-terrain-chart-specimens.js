@@ -87,8 +87,11 @@ function renderOptions(row,profile){
 }
 function outDirFor(row){return path.join(root,'assets','terrain-chart',sourceMapId(row));}
 const supplemental=[{id:'fortification',name:'Fortification',sampleHex:'0501',sampleMap:'battle-for-moscow'}];
+const selected=process.argv.slice(2);
+const allRows=[...chart.rows,...supplemental];
+if(selected.some(id=>!allRows.some(row=>row.id===id)))throw Error('Unknown terrain specimen: '+selected.join(', '));
 let count=0;
-for(const row of [...chart.rows,...supplemental]){
+for(const row of allRows.filter(row=>!selected.length||selected.includes(row.id))){
  const {source,board}=specimenBoard(row);
  const opts=renderOptions(row,source.profile);
  const svg=T.svgMap(board,opts);

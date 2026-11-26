@@ -56,6 +56,24 @@ with sync_playwright() as pw:
   page.evaluate("WargameResponsiveShell.setPreference('auto')")
   expect(page.locator('#map-navigation > #mission-sidebar-toggle')).to_be_visible()
   print('PASS shared mission menu and mobile panel/settings lifecycle:',id,flush=True)
+ def verify_reference(id):
+  before=snapshot(id)
+  menu();page.get_by_role('button',name='See TEC',exact=True).click()
+  dialog=page.locator('#game-reference-dialog')
+  expect(dialog).to_be_visible()
+  expect(dialog.locator('[data-terrain=forest]')).to_contain_text('-1 attacker column')
+  if id in ('battle-for-moscow','arduous'):
+   specimen=dialog.locator('[data-terrain=fortification] .fortification-asset')
+   expect(specimen).to_have_count(1)
+   assert page.evaluate("""async()=>{const image=document.querySelector('#game-reference-dialog .fortification-asset');const url=image.getAttribute('href');const probe=new Image();probe.src=url;await probe.decode();return probe.naturalWidth>0}""")
+  if id=='battle-for-moscow':
+   expect(dialog.locator('[aria-label="Conditional weather effects"]')).to_be_visible()
+   expect(dialog.locator('[data-terrain=weather-mud]')).to_have_count(1)
+  if args.evidence_dir:dialog.screenshot(path=str(args.evidence_dir/f'{id}-terrain-reference.png'))
+  dialog.get_by_role('button',name='Close rules and charts').click()
+  expect(page.locator('#mission-menu-toggle')).to_be_focused()
+  assert snapshot(id)==before
+  print('PASS actual shared terrain reference and source assets:',id,flush=True)
  def verify_moscow_orders():
   # Start from the restored historical opening. Use real controls to reach movement.
   for _ in range(5):
@@ -235,6 +253,7 @@ with sync_playwright() as pw:
   if args.evidence_dir:
    page.screenshot(path=str(args.evidence_dir/f'{id}-desktop.png'),full_page=True)
   verify_shell(id);assert snapshot(id)==before
+  verify_reference(id)
   leave('Save and return');expect(card(id).locator('[data-resume]')).to_be_visible()
   # An actual successful new save should not be stored in the legacy quota-limited key.
   assert page.evaluate('(id)=>localStorage.getItem(WargameMissionStorage.key(id))===null',id)
