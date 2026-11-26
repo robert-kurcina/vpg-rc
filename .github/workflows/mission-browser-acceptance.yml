@@ -148,6 +148,9 @@ jobs:
       - name: Generate and exercise split historical engine
         run: |
           python scripts/build-historical-browser-bundle.py --install --check
+      - name: Verify no live HTML references retired monolith
+        run: |
+          if git grep -n historical_engine_browser_bundle.js -- '*.html'; then exit 1; fi
       - name: Launch real static HTTP origin
         run: |
           python serve.py > "${RUNNER_TEMP}/mission-server.log" 2>&1 &
