@@ -148,6 +148,28 @@ with sync_playwright() as pw:
   expect(page.locator('#advanced-crt')).to_be_checked()
   if native:expect(page.locator('#stacking-mode')).to_have_value('double')
   print('PASS actual optional-mode save/resume and faction settings:',id,flush=True)
+ def verify_historical_terminal(id):
+  fixtures=Path(__file__).resolve().parent/'fixtures/terminal-v694'
+  for suffix in ('','-graduated'):
+   path=fixtures/(id+suffix+'.json')
+   expected=json.loads(path.read_text())
+   page.locator('#load').set_input_files(str(path))
+   expect(page.locator('#load')).to_have_value('')
+   assert snapshot(id)==expected,(id,suffix,page.locator('#message').inner_text())
+   terminal=page.evaluate('HistoricalBrowserPreview.snapshot()')
+   assert terminal['cursor']['complete']
+   expect(page.locator('#campaign-result strong')).to_be_visible()
+   expect(page.locator('#ai-step')).to_be_disabled()
+   page.locator('#undo').click()
+   assert not page.evaluate('HistoricalBrowserPreview.snapshot().cursor.complete')
+   page.locator('#redo').click()
+   assert snapshot(id)==expected
+   leave('Save and return')
+   card(id).locator('[data-resume]').click();ready(id)
+   assert snapshot(id)==expected
+   assert page.evaluate('HistoricalBrowserPreview.snapshot().cursor.complete')
+   expect(page.locator('#redo')).to_be_disabled()
+   print('PASS real-origin terminal restoration, history and IndexedDB:',id,suffix or 'historical',flush=True)
  def leave(label):
   menu();page.get_by_role('button',name='Exit Game',exact=True).click();page.get_by_role('dialog',name='Leave mission').get_by_role('button',name=label,exact=True).click();selector()
  selector()
@@ -167,6 +189,7 @@ with sync_playwright() as pw:
   leave('Discard unsaved progress');expect(card(id).locator('[data-resume]')).to_be_visible()
   card(id).locator('[data-resume]').click();ready(id)
   verify_optional_modes(id)
+  if id!='battle-for-moscow':verify_historical_terminal(id)
   leave('Discard unsaved progress')
   print('PASS real-origin save, selector, resume and preservation:',id,flush=True)
  if args.terminal_save:
