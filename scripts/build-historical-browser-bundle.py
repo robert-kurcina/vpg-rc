@@ -112,14 +112,77 @@ root.HistoricalCampaignBrowserEngine=Object.freeze({
 });
 })(typeof globalThis!=='undefined'?globalThis:this);
 '''
-output=bootstrap+(',\n'.join(moddefs))+footer
-path=ROOT/'core/historical_engine_browser_bundle.js'
+# Split on complete module boundaries, not byte offsets within JavaScript.
+# JSON modules may be individually large: split their serialized data into
+# strings and reconstruct the original JSON only when that module is required.
+# The same registry/cache and crypto adapter serve every chunk.
+MAX_CHUNK=180_000
+def js_string(value):return json.dumps(value,ensure_ascii=True)
+def group(key):
+ if key.endswith('.json') or key.startswith('tests/fixtures/'):return 'scenario'
+ if any(x in key for x in ('autoplay','threat_assessment','attack_utility','ai_difficulty')):return 'ai'
+ if any(x in key for x in ('campaign','deployment','buildup','housekeeping','inventory','opening','roster')):return 'campaign'
+ return 'rules'
+
+def split_package():
+ # Register module definitions before calling the original entry point.
+ # The bootstrap/entry code remains the exact original, with the registry
+ # passed in rather than embedded. A mixed-version set fails at startup.
+ import hashlib
+ revision=hashlib.sha256(('\n'.join(moddefs)+bootstrap+footer).encode()).hexdigest()
+ prefix='historical_engine_chunk_'
+ result={}
+ registration=[]
+ for key,source in sorted(modules.items()):
+  if key.endswith('.json'):
+   value=json.dumps(json.loads(source),ensure_ascii=True,separators=(',',':'))
+   # Piece strings are capped after escaping, including wrapper overhead.
+   pieces=[value[i:i+48000] for i in range(0,len(value),48000)]
+   for i,piece in enumerate(pieces):
+    registration.append(('scenario',f'parts[{js_string(key)}]??=[];parts[{js_string(key)}][{i}]={js_string(piece)};\n'))
+   body='module.exports=JSON.parse(parts['+js_string(key)+'].join(""));'
+  else:body=source
+  registration.append((group(key),'defs['+js_string(key)+']=function(module,exports,require){\n'+body+'\n};\n'))
+ header='/* GENERATED. Do not edit. */\n(function(root){"use strict";const r=root.__historicalBundle;if(!r||r.revision!=='+js_string(revision)+')throw Error("Historical bundle version mismatch");const defs=r.definitions,parts=r.parts;\n'
+ end='})(globalThis);\n'
+ for name in ('rules','campaign','ai','scenario'):
+  payload='';index=1
+  for kind,statement in registration:
+   if kind!=name:continue
+   if len((header+statement+end).encode())>MAX_CHUNK:raise ValueError('Oversized engine module in '+name)
+   if payload and len((header+payload+statement+end).encode())>MAX_CHUNK:
+    result[prefix+name+f'_{index:02}.js']=header+payload+end;index+=1;payload=''
+   payload+=statement
+  if payload:result[prefix+name+f'_{index:02}.js']=header+payload+end
+ runtime='/* GENERATED. Do not edit. */\n(function(root){"use strict";root.__historicalBundle={revision:'+js_string(revision)+',definitions:Object.create(null),parts:Object.create(null)};})(globalThis);\n'
+ entry=bootstrap.replace('const definitions={\n','const registry=root.__historicalBundle;if(!registry||registry.revision!=='+js_string(revision)+')throw Error("Historical bundle version mismatch");\nconst definitions=registry.definitions;\nif(Object.keys(definitions).length!=='+str(len(modules))+')throw Error("Incomplete historical engine package");\n')
+ entry+=footer.replace('\n};\nconst cache=', '\nconst cache=',1)
+ entry=entry.replace('root.HistoricalCampaignBrowserEngine=','delete root.__historicalBundle;\nroot.HistoricalCampaignBrowserEngine=',1)
+ return {'historical_engine_runtime.js':runtime,**result,'historical_engine_entry.js':entry}
+
 parser=argparse.ArgumentParser(description=__doc__)
-parser.add_argument('--check',action='store_true',help='Fail if the committed browser bundle is missing or stale; do not write files.')
+parser.add_argument('--check',action='store_true',help='Check committed generated files without writing.')
+parser.add_argument('--split',action='store_true',help='Generate deterministic split package and script-order manifest.')
 args=parser.parse_args()
-if args.check:
- if not path.is_file() or path.read_bytes()!=output.encode('utf-8'):
-  parser.exit(1,'Stale historical browser bundle: run scripts/build-historical-browser-bundle.py\n')
+directory=ROOT/'core'
+if args.split:
+ outputs=split_package()
+ outputs['historical_engine_scripts.json']=json.dumps(list(outputs),indent=2)+'\n'
+ for name,value in outputs.items():
+  path=directory/name
+  if args.check:
+   if not path.is_file() or path.read_bytes()!=value.encode('utf-8'):parser.exit(1,'Stale split engine: '+name+'\n')
+  else:path.write_text(value)
+ stale=set(directory.glob('historical_engine_chunk_*.js'))-{directory/n for n in outputs}
+ if stale:
+  if args.check:parser.exit(1,'Stale engine chunks: '+str(stale)+'\n')
+  for path in stale:path.unlink()
+ print('Split browser bundle:',len(modules),'modules;',len(outputs)-1,'scripts;',sum(len(v.encode()) for v in outputs.values()),'bytes')
+ for name,value in outputs.items():print(name,len(value.encode()))
 else:
- path.write_text(output)
-print('Browser bundle:',len(modules),'source modules,',len(output),'bytes')
+ output=bootstrap+(',\n'.join(moddefs))+footer
+ path=directory/'historical_engine_browser_bundle.js'
+ if args.check:
+  if not path.is_file() or path.read_bytes()!=output.encode('utf-8'):parser.exit(1,'Stale historical browser bundle\n')
+ else:path.write_text(output)
+ print('Browser bundle:',len(modules),'source modules,',len(output),'bytes')
