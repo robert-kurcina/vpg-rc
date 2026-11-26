@@ -38,6 +38,11 @@ jobs:
           node tests/b4m-source-movement-v585.test.js
           node tests/historical-housekeeping-eight-turn-v389.test.js
           node tests/shared-terrain-reference-v676.test.js
+          node tests/b4m-double-stack-foundation-v684.test.js
+          node tests/graduated-mode-v689.test.js
+          node tests/ai-difficulty-v668.test.js
+          node tests/player-save-config-v654.test.js
+          node tests/advanced-crt-v557.test.js
   source-references:
     runs-on: ubuntu-latest
     timeout-minutes: 10
