@@ -1,6 +1,6 @@
 # Russian Campaign — Release completion plan
 
-Revision 509 | Production baseline: v701 / checkpoint 479 plus merged hosted UX PRs #1–7
+Revision 510 | Production baseline: v701 / checkpoint 479 plus merged hosted UX PRs #1–7
 
 ## Objective
 
@@ -77,6 +77,8 @@ Revision 507: historical automatic AI no longer pauses solely at the 128-action 
 Revision 508: runs 45751856096 and 45752003512 passed all four jobs, eight historical/graduated terminal saves and native Moscow terminal restoration on the real HTTP origin. Legacy Leningrad rejection and reconstructed fixture restoration passed. Clear stale human selections when AI takes control; disable native automatic control on completion. Existing hosted script gains one live campaign mode per larger scenario, exercising human ownership, natural AI handoff, continuous AI/AI play, terminal display and exact IndexedDB restoration. New runtime checks pending, not a balance sweep.
 
 Revision 509: corrected obsolete standalone Kiev–Odessa non-playable footer; targeted shared-renderer specimen export accepts a row ID. Existing reference job exports fortification through Inkscape, and actual hosted browser checks the terrain dialog, fortification asset load and Moscow conditional weather table without changing game state. Capture actual reference screenshots; visual inspection remains pending. Run 45752780773 passed four established acceptance jobs; four live campaigns still in progress. No new engine rules.
+
+Revision 510: run 45753062593 passed standalone fortification export, source integrity, focused rules and static distribution. Moscow terrain dialog passed, but Arduous lacked the fortification specimen because historical pages omitted the shared presentation module and its factions dependency. Load both on all four historical routes before terrain_tiles.js; preserve common renderer and existing map artwork. Browser verification pending. Live campaigns from earlier runs remain in progress; no duplicate calibration work introduced.
 
 ## Batch D — Integrated release (P3–P6)
 
