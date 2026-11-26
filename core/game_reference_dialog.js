@@ -62,14 +62,29 @@
   // Reuse certified shared-engine specimens; never invent scenario-specific artwork.
   const specimens=Object.freeze({open:'kiev/open',forest:'kiev/forest',swamp:'kiev/swamp',city:'kiev/city','city-city':'kiev/city','major-city':'kiev/major-city','city-major':'kiev/major-city','city-major-city':'kiev/major-city','city-moscow':'kiev/major-city',river:'kiev/river','major-river':'kiev/major-river',railroad:'kiev/railroad',railway:'kiev/railroad',lake:'leningrad/lake',coast:'kiev-odessa/coast',sea:'kiev-odessa/sea'});
   const specimenFor=id=>Object.hasOwn(specimens,id)?specimens[id]:null;
-  for(const row of terrainRows({movement,combat,weather})){
+  const rows=terrainRows({movement,combat,weather});
+  for(const row of rows.filter(r=>!r.id.startsWith('weather-'))){
    const tr=body.insertRow();tr.dataset.terrain=row.id;const th=add('th','',tr);th.scope='row';
    const specimen=specimenFor(row.id);
-   if(specimen){const img=add('img','',th);img.src=base+'assets/terrain-chart/'+specimen+'.png';img.alt='';img.className='reference-terrain-specimen';img.loading='lazy';}
-   // Fortifications and weather have no certified standalone specimen yet.
+   if(row.id==='fortification'&&root.HexTerrainTiles&&root.WargamePresentation){
+    const T=root.HexTerrainTiles,P=root.WargamePresentation;
+    const cell={id:'0501',column:1,row:1,pixelCenter:[70,65],terrain:'open',tileMarkers:[{kind:'fortification',status:'source-scenario'}],tileEdges:{}};
+    const sample=add('div','',th);sample.className='reference-terrain-specimen';sample.setAttribute('aria-hidden','true');
+    sample.innerHTML=T.svgMap({id:'tec-specimen-fortification',geometry:{columnParityDown:'even'},cells:[cell]},P.options('battle-for-moscow',{textures:P.textures(base+'supplied_assets/flat/'),fortificationArtwork:base+'supplied_assets/flat/fortification-overlay.svg',showGrid:true,showNumbers:false,showWaterBodies:false,showEntryEdges:false,width:140,height:130,padding:10,rx:37.8,ry:37.8,hexRegionOutlines:[]}));
+    const svg=sample.querySelector('svg');if(svg){svg.setAttribute('width','100%');svg.setAttribute('height','100%');}
+   }else if(specimen){const img=add('img','',th);img.src=base+'assets/terrain-chart/'+specimen+'.png';img.alt='';img.className='reference-terrain-specimen';img.loading='lazy';}
    add('span',row.name,th);add('td',row.move,tr);add('td',row.effect,tr);
   }
-  add('p','Illustrations are existing shared-engine terrain examples from Kiev, Leningrad or Kiev–Odessa, not necessarily hexes from this mission. Text values are from the active scenario. Unillustrated features have no approved standalone specimen.');
+  add('p','Illustrations are shared-engine terrain examples, not necessarily hexes from this mission. Text values are from the active scenario.');
+  const conditional=rows.filter(r=>r.id.startsWith('weather-'));
+  if(conditional.length){
+   add('h3','Conditional weather effects');
+   add('p','These effects apply only during the specified turns and do not replace the terrain artwork.');
+   const weatherTable=add('table','');weatherTable.className='reference-terrain-table';weatherTable.setAttribute('aria-label','Conditional weather effects');
+   const head=weatherTable.createTHead().insertRow();for(const label of ['Condition','Movement','Combat']){const th=add('th',label,head);th.scope='col';}
+   const weatherBody=weatherTable.createTBody();
+   for(const row of conditional){const tr=weatherBody.insertRow();tr.dataset.terrain=row.id;const th=add('th',row.name,tr);th.scope='row';add('td',row.move,tr);add('td',row.effect,tr);}
+  }
   if(kiev){const p=add('p','');link('Illustrated Kiev–Odessa terrain and territorial reference (existing combined chart)',base+'tools/terrain-effects-chart/index.html',p);}
   if(aid){
    add('h3','Original printed terrain reference');

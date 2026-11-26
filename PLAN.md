@@ -1,6 +1,6 @@
 # Russian Campaign — Release completion plan
 
-Revision 495 | Production baseline: v701 / checkpoint 479 plus merged hosted UX PRs #1–7
+Revision 496 | Production baseline: v701 / checkpoint 479 plus merged hosted UX PRs #1–7
 
 ## Objective
 
@@ -43,9 +43,11 @@ Exit: functional essential workflows on all five routes, representative desktop/
 ## Batch C — Complete reference materials (P2)
 
 - [ ] Extend existing shared-renderer terrain specimen generator for fortification; use actual engine renders, not hand-drawn/cropped maps. Weather is a distinct conditional-effects section, not a fabricated permanent terrain tile. Active values from scenario rules.
-- [ ] Correct obsolete chart text (including Kiev–Odessa play status), retain original player aids and scope-specific distinctions.
+- [x] Correct obsolete chart text (including Kiev–Odessa play status), retain original player aids and scope-specific distinctions.
 - [ ] Correct reading order and paragraph reconstruction in all five HTML rulebooks, including remaining Moscow pages 3–4. Preserve numbered sections/cases, lists, tables, relevant illustrations and original wording. Retain unmodified PDFs and 24 facsimiles. Review extraction against printed sources; do not guess missing text.
 - [ ] Verify source links, anchors, reproducible build and unchanged source checksums. Original rules are distinct from engine adaptations.
+
+Revision 496: active TEC renders the fortification specimen inline through the shared renderer using the source-confirmed Moscow 0501 marker and approved artwork; weather has a separate conditional table. Generator extended; standalone export and browser visual inspection pending. Corrected obsolete Kiev–Odessa play status.
 
 Exit: accurate, readable references in the existing menu. No requirement to reproduce every decorative element.
 
