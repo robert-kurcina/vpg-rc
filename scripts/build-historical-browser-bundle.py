@@ -166,7 +166,7 @@ parser.add_argument('--split',action='store_true',help='Generate deterministic s
 parser.add_argument('--install',action='store_true',help='Install the split scripts in all historical HTML consumers; requires --split.')
 args=parser.parse_args()
 directory=ROOT/'core'
-if args.install and not args.split:parser.error('--install requires --split')
+args.split=True  # Split is the sole production packaging format.
 if args.split:
  outputs=split_package()
  outputs['historical_engine_scripts.json']=json.dumps(list(outputs),indent=2)+'\n'
@@ -198,10 +198,4 @@ if args.split:
   print('Installed historical scripts:',changed)
  print('Split browser bundle:',len(modules),'modules;',len(outputs)-1,'scripts;',sum(len(v.encode()) for v in outputs.values()),'bytes')
  for name,value in outputs.items():print(name,len(value.encode()))
-else:
- output=bootstrap+(',\n'.join(moddefs))+footer
- path=directory/'historical_engine_browser_bundle.js'
- if args.check:
-  if not path.is_file() or path.read_bytes()!=output.encode('utf-8'):parser.exit(1,'Stale historical browser bundle\n')
- else:path.write_text(output)
- print('Browser bundle:',len(modules),'source modules,',len(output),'bytes')
+
