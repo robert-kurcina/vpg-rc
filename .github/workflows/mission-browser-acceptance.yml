@@ -157,7 +157,7 @@ jobs:
   operational-parity:
     # Run the representative controlled comparison once for this change,
     # or explicitly via dispatch; avoid repeated expensive qualification.
-    if: github.event_name == 'workflow_dispatch' || github.head_ref == 'cleanup/final-acceptance-531'
+    if: github.event_name == 'workflow_dispatch'
     runs-on: ubuntu-latest
     timeout-minutes: 25
     steps:
