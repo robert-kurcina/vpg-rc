@@ -341,9 +341,9 @@ function showBoard(){
  citySummary.hidden=setupActive||!cityRows.length;
  citySummary.textContent='City control · German '+cityRows.filter(r=>r.owner==='german').length+' · Soviet '+cityRows.filter(r=>r.owner==='soviet').length;
  let svg='<g id="historical-city-control-layer" pointer-events="none">';
- for(const {cell,owner} of cityRows){if(!cell.pixelCenter)continue;const [x,y]=cell.pixelCenter;
+ for(const {cell,owner} of (displayControl?.get().cityOwnership===false?[]:cityRows)){if(!cell.pixelCenter)continue;const [x,y]=cell.pixelCenter;
   const color=owner==='german'?'#284b74':'#963d3d',label=owner==='german'?'G':'S';
-  svg+='<g data-city-control="'+enc(cell.id)+'" data-city-owner="'+owner+'" aria-label="'+enc(cell.city.name+' — '+owner+' control')+'"><circle cx="'+(x-23*radius)+'" cy="'+(y-15*radius)+'" r="'+(7*radius)+'" fill="'+color+'" stroke="white" stroke-width="'+radius+'"/><text x="'+(x-23*radius)+'" y="'+(y-15*radius)+'" dy=".34em" text-anchor="middle" font-size="'+(10*radius)+'" font-weight="bold" fill="white">'+label+'</text></g>';
+  svg+='<g data-city-control="'+enc(cell.id)+'" data-city-owner="'+owner+'" aria-label="'+enc(cell.city.name+' — '+owner+' control')+'"><circle cx="'+(x-23*radius)+'" cy="'+(y-15*radius)+'" r="'+(5.5*radius)+'" fill="'+color+'" stroke="white" stroke-width="'+radius+'"/><text x="'+(x-23*radius)+'" y="'+(y-15*radius)+'" dy=".34em" text-anchor="middle" font-size="'+(8*radius)+'" font-weight="bold" fill="white">'+label+'</text></g>';
  }
  svg+='</g><g id="playable-hex-hits">';
  const battleHexes=new Set(setupActive||humanActionBlocked()?[]:actionList.filter(a=>a.action?.type==='select-battle').map(a=>a.action.defenderHex));
@@ -1120,13 +1120,14 @@ async function start(){
     const battle=actionList.find(a=>a.action?.type==='select-battle'&&a.action.defenderHex===hex);
     if(battle){query='';$('filter').value='';if(choose(battle))root.WargameResponsiveShell?.openAt('decision-section');return true;}
    }
+   if(moveSelection&&hex&&!unit){message('This hex is not a legal destination for the selected counter. Choose a highlighted hex, or press Escape to cancel.');return true;}
    const term=hex&&view?.phaseKind==='combat'&&view.proposals?.some(p=>p.defenderHex===hex)?hex:unit?.getAttribute('data-unit-id')||hex;
    if(term){
     const next=!humanActionBlocked()&&unit&&movesFor(term).length?term:null;
     if(next&&moveSelection===next){clearMoveSelection();query='';$('filter').value='';message('Selection cleared.');}
     else{clearMoveSelection();moveSelection=next;query=term;$('filter').value=term;message(next?'Counter selected. Choose a highlighted destination.':view?.phaseKind==='combat'?'Filtered combat choices for '+term+'.':'Selected '+term+' for inspection; no movement action selected.');}
     renderActions();renderBattleProposals();showBoard();
-    if(root.WargameResponsiveShell?.getMode()==='mobile'&&hex&&view?.phaseKind==='combat'&&view.proposals?.some(p=>p.defenderHex===hex)){const details=$('battle-choices');details.open=true;root.WargameResponsiveShell?.openAt('battle-choices');}
+    if(hex&&view?.phaseKind==='combat'&&view.proposals?.some(p=>p.defenderHex===hex)){const details=$('battle-choices');details.open=true;root.WargameResponsiveShell?.openAt('battle-choices');}
    }
    if(!term)message('Select a counter or highlighted legal hex.');
    return Boolean(term);

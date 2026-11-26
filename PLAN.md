@@ -1,6 +1,6 @@
 # Russian Campaign — Release completion plan
 
-Revision 488 | Production baseline: v701 / checkpoint 479 (resumable historical acceptance)
+Revision 489 | Production baseline: v701 / checkpoint 479 (resumable historical acceptance)
 
 ## Objective and scope
 
@@ -192,3 +192,8 @@ Header order: triple-line hamburger left, scenario title next, Undo/Redo geometr
 ### Persistent phase controls and interaction feedback
 
 Shared header phase bar displays the active turn/faction/phase, or deployment/terminal result. Existing validated phase actions are reused; pending combat choices and other non-unique decisions open existing panels. AI stop/pause remains available without the sidebar. Both controller paths mirror feedback into the persistent bar and explain blocked map actions. No change to rules, RNG, saves, approved toolbar alignment or artwork. Source-level changes only: verify live rendering, action parity, touch, and actual reported hit-detection failure before closing P2/P6.
+
+
+### Contextual selection and optional city ownership markers
+
+Existing city ledger remains authoritative. Add shared persistent display-only G/S visibility preference (default on, legacy preferences normalized), reduce marker size, explain legend in Map display settings. Moscow counter selection feedback distinguishes attacker groups from movement destinations, opens existing combat Orders when selecting a defender, and supports Enter/Space on counters and highlighted destinations. Historical combat target selection opens existing proposals on desktop and tablet; invalid empty destinations retain active movement selection. Updated Settings normalization regression assertions. No change to engine or saved campaigns. Browser verification and full Settings reorganization remain open.

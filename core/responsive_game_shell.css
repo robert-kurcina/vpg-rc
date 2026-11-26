@@ -123,3 +123,6 @@ body[data-mission-menu-ready="true"]>header>#mission-phase-bar{grid-column:1/-1;
 #mission-phase-action[hidden],#mission-phase-feedback[hidden]{display:none!important}
 body[data-layout-mode="mobile"]>header:has(#mission-phase-bar){max-height:none!important}
 @media(max-width:540px){body[data-mission-menu-ready="true"]>header>#mission-phase-bar{grid-row:3}#mission-phase-label{font-size:12px}#mission-phase-action{min-height:44px;max-width:145px}}
+
+/* Visible keyboard focus on actual interactive SVG targets. */
+.native-counter-layer:focus-visible,.native-board-hit:focus-visible,#counter-overlay [role="button"]:focus-visible{outline:2px solid #25669a;outline-offset:2px}

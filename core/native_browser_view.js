@@ -113,6 +113,8 @@ function begin({rootDir,profilePath,mapPath,registryPath,projectRoot,aiProfilePa
  };
  const mkSvg=(tag,attrs={})=>{const el=document.createElementNS(ns,tag);for(const [k,v] of Object.entries(attrs))el.setAttribute(k,String(v));return el;};
  function unitSelect(id,shift=false){
+  if(!session||current().over)return show('No active game orders.',true);
+  if(humanBlocked())return show('Computer controls this side. Pause automatic play to issue orders.',true);
   const unit=findUnit(id);if(!unit||!selectable(unit))return show(`Cannot select ${id} in this phase.`,true);
   if(phase()?.kind==='combat'){
    if(E.unitSide(unit)!==current().side)return show('This counter is a defender; select its hex as a target.',true);
@@ -126,7 +128,8 @@ function begin({rootDir,profilePath,mapPath,registryPath,projectRoot,aiProfilePa
   }else selection=[id];
   const type=phase()?.kind;
   legalCells=(type==='setup'?S.legal(session,{type:'setup-place',unitId:id}):type==='redeployment'?S.legal(session,{type:'redeploy-reserve',unitId:id}):type==='move'?S.legal(session,{type:'move',unitId:id}):[]);
-  show(`${unit.id} selected · ${legalCells.length} legal destinations${type==='combat'?(defenderFirst()?' · choose an attacker group below':' · click an enemy to declare battle'):''}`);
+  if(type==='combat')show(defenderFirst()?`${selection.length} attacker(s) selected against ${combatTarget}. ${selection.length&&CombatUI.legal(session,combatTarget,selection)?'Legal group — declare battle in Orders.':'Choose a legal group in Orders.'}`:`${selection.length} attacker(s) selected. Choose an enemy defender.`);
+  else show(`${unit.id} selected · ${legalCells.length} legal destinations`);
   render();
  }
  function cellClick(x,y,clickedId=null,shift=false){
@@ -154,7 +157,7 @@ function begin({rootDir,profilePath,mapPath,registryPath,projectRoot,aiProfilePa
     if(defenderFirst()){
      // The target is an inspection state only: selection never consumes a die.
      if(!CombatUI.adjacent(session,occupant.id).length)return show('No uncommitted adjacent attackers for this defender.',true);
-     combatTarget=occupant.id;selection=[];show(`Defender ${occupant.id} selected. Choose a legal attacker combination.`);render();return;
+     combatTarget=occupant.id;selection=[];show(`Defender ${occupant.id} selected. Choose a legal attacker combination.`);render();globalThis.WargameResponsiveShell?.openAt('combat-target-controls');return;
     }
     if(!selection.length)return show('Choose one or more attacking units first.',true);
     change({type:'declare-battle',attackers:[...selection],defender:occupant.id});return;
@@ -181,11 +184,11 @@ function begin({rootDir,profilePath,mapPath,registryPath,projectRoot,aiProfilePa
   const layer=mkSvg('g',{'data-native-interactive':'true','class':'native-preview-overlays'});
   const byHex=new Map(board.cells.map(c=>[`${c.sourceRef.x},${c.sourceRef.y}`,c]));
   const pos=(x,y)=>byHex.get(`${x},${y}`)?.pixelCenter;
-  for(const city of (cityData||CityStatus.read(session,board)).cities){
+  for(const city of (displayControl?.get().cityOwnership===false?[]:(cityData||CityStatus.read(session,board)).cities)){
    if(!city.owner)continue;
    const [x,y]=city.id.split(',').map(Number),center=pos(x,y);if(!center)continue;
    const badge=mkSvg('g',{'data-city-control':city.hex,'data-city-owner':city.owner,'pointer-events':'none','aria-label':city.name+' — '+city.owner+' control'});
-   const bx=center[0]-mapBase.rx*.62,by=center[1]-mapBase.ry*.45,r=mapBase.ry*.21;
+   const bx=center[0]-mapBase.rx*.62,by=center[1]-mapBase.ry*.45,r=mapBase.ry*.16;
    badge.append(mkSvg('circle',{cx:bx,cy:by,r,fill:city.owner==='german'?'#284b74':'#963d3d',stroke:'white','stroke-width':1}));
    const label=mkSvg('text',{x:bx,y:by,dy:'.34em','text-anchor':'middle','font-size':r*1.4,'font-weight':'bold',fill:'white'});label.textContent=city.owner==='german'?'G':'S';badge.append(label);layer.append(badge);
   }
@@ -219,9 +222,10 @@ function begin({rootDir,profilePath,mapPath,registryPath,projectRoot,aiProfilePa
    const c=pos(u.position.x,u.position.y);if(!c)continue;
    const peers=current().units.filter(v=>v.position?.x===u.position.x&&v.position?.y===u.position.y&&v.strength!=='dead');
    const offset=peers.length>1?(peers.indexOf(u)-(peers.length-1)/2)*counterSize*0.30:0;
-   const hit=mkSvg('g',{'data-native-unit':u.id,'class':'native-counter-layer'});
+   const hit=mkSvg('g',{'data-native-unit':u.id,'class':'native-counter-layer',role:'button',tabindex:0,'aria-label':`Counter ${u.id}`,'aria-pressed':selection.includes(u.id)});
    hit.innerHTML=Counters.piece(u,c[0]-counterSize/2+offset,c[1]-counterSize/2+offset,displayColor(E.unitSide(u)),{width:counterSize,height:counterSize,selected:selection.includes(u.id),activated:activated.has(u.id)});
    hit.addEventListener('click',ev=>{ev.stopPropagation();cellClick(u.position.x,u.position.y,u.id,ev.shiftKey);});
+   hit.addEventListener('keydown',ev=>{if(!['Enter',' '].includes(ev.key))return;ev.preventDefault();ev.stopPropagation();cellClick(u.position.x,u.position.y,u.id,ev.shiftKey);});
    layer.append(hit);
   }
   // Invisible interactive hex areas are constructed from the same source
@@ -229,8 +233,9 @@ function begin({rootDir,profilePath,mapPath,registryPath,projectRoot,aiProfilePa
   for(const h of board.cells){
    const c=h.pixelCenter;
    const hit=mkSvg('path',{d:T.hexPoints(mapBase.rx,mapBase.ry).map((p,i)=>(i?'L':'M')+[p[0]+c[0],p[1]+c[1]].join(',')).join(' ')+' Z',class:'native-board-hit',
-    'data-board-cell':h.id,'aria-label':h.id});
+    'data-board-cell':h.id,'aria-label':h.id,...(legalCells.some(q=>q.x===h.sourceRef.x&&q.y===h.sourceRef.y)?{role:'button',tabindex:0}:{})});
    hit.addEventListener('click',ev=>cellClick(h.sourceRef.x,h.sourceRef.y,null,ev.shiftKey));
+   hit.addEventListener('keydown',ev=>{if(!['Enter',' '].includes(ev.key))return;ev.preventDefault();ev.stopPropagation();cellClick(h.sourceRef.x,h.sourceRef.y,null,ev.shiftKey);});
    // Overlay after counters would intercept them: place board click targets
    // before the counter sprites, and behind the official labels.
    layer.insertBefore(hit,layer.firstChild);

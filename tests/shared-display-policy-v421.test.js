@@ -4,9 +4,11 @@ const D=require('../core/game_display_settings.js');
 const T=require('../core/counter_visuals.js');
 const fs=require('node:fs');
 const path=require('node:path');
-assert.deepEqual(D.normalize(),{largerCounters:false,showCoast:true,coastWavelets:true,terrainTooltips:true});
+assert.deepEqual(D.normalize(),{largerCounters:false,showCoast:true,coastWavelets:true,terrainTooltips:true,cityOwnership:true});
 assert.deepEqual(D.normalize({largerCounters:1,showCoast:'false',coastWavelets:false}),
- {largerCounters:false,showCoast:true,coastWavelets:false,terrainTooltips:true});
+ {largerCounters:false,showCoast:true,coastWavelets:false,terrainTooltips:true,cityOwnership:true});
+assert.equal(D.normalize({cityOwnership:false}).cityOwnership,false);
+assert.equal(D.normalize({cityOwnership:'false'}).cityOwnership,true);
 assert.equal(D.counterScale({largerCounters:false}),1);
 assert.equal(D.counterScale({largerCounters:true}),1.25);
 const root=path.resolve(__dirname,'..');
