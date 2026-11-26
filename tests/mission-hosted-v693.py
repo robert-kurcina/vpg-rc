@@ -155,10 +155,22 @@ with sync_playwright() as pw:
    close_panel()
    expect(page.locator('#mission-phase-action')).to_have_text('Support orders')
    page.locator('#mission-phase-action').click()
-   strike=page.locator('[data-support-naval-strike]').first
-   expect(strike).to_be_visible()
-   face=strike.get_attribute('data-support-naval-strike')
-   strike.click()
+   # Production support window uses map targeting, not the older direct
+   # strike button. Select the eligible air counter, then its highlighted
+   # Fleet hex and the exact engine-authorized confirmation.
+   action=next(a for a in view()['commands'] if a.get('action',{}).get('type')=='declare-fleet-attack')
+   face=action['action']['faceId']
+   air=page.locator('[data-support-face="'+face+'"]')
+   expect(air).to_be_visible()
+   air.click()
+   fleet_hex=snap()['state']['supportMarkers']['balticFleet']['hex']
+   target=page.locator('[data-support-target="'+fleet_hex+'"]')
+   expect(target).to_be_visible()
+   target.focus();page.keyboard.press('Enter')
+   confirm=page.locator('[data-support-confirm]').filter(has_text='Fleet')
+   expect(confirm).to_have_count(1)
+   confirm.click()
+   page.get_by_role('button',name='Hide Support window').click()
    assert snap()['combat']['pendingSeaFaceId']==face
    close_panel()
    page.locator('#mission-phase-action').click()
