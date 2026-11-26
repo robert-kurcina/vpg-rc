@@ -166,6 +166,9 @@ function begin({rootDir,profilePath,mapPath,registryPath,projectRoot,aiProfilePa
    return show(defenderFirst()?'Select an enemy defender to declare a battle.':'Select friendly attackers, then an enemy defender.',true);
   }
   if(['setup','move','redeployment'].includes(p.kind)){
+   // A direct counter click selects that counter, even when its occupied hex
+   // is also a legal stacking destination. Click the exposed hex to move there.
+   if(clickedId&&occupant&&selectable(occupant)){unitSelect(occupant.id,shift);return;}
    if(selection.length&&legalCells.some(q=>q.x===x&&q.y===y)){
     const unitId=selection[0];change({type:p.kind==='setup'?'setup-place':p.kind==='redeployment'?'redeploy-reserve':'move',unitId,x,y});return;
    }
