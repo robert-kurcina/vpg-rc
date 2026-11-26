@@ -1,5 +1,5 @@
 /* GENERATED. Do not edit. */
-(function(root){"use strict";const r=root.__historicalBundle;if(!r||r.revision!=="e16d5bf822f84ea8e90fa04797e78bac0793544b402d1343ab68c617519b011a")throw Error("Historical bundle version mismatch");const defs=r.definitions,parts=r.parts;
+(function(root){"use strict";const r=root.__historicalBundle;if(!r||r.revision!=="30b222356d7174806555f575e1a9cbf6d9aa1159aace23db7fcbcfeaf4f2062e")throw Error("Historical bundle version mismatch");const defs=r.definitions,parts=r.parts;
 defs["core/historical_buildup_phase.js"]=function(module,exports,require,Buffer){
 /* Source-configured historical buildup transactions, checkpoint 154.
  * The policy and an EXPLICIT counter-face allocation supply all historical
@@ -1033,6 +1033,7 @@ defs["core/historical_campaign_human.js"]=function(module,exports,require,Buffer
 const crypto=require('node:crypto');
 const Random=require('./mission_random');
 const Campaign=require('./historical_campaign_session');
+const MovementBinding=require('./movement_binding');
 const Catalog=require('./historical_campaign_action_catalog');
 const AutoPlay=require('./historical_campaign_autoplay');
 const clone=v=>JSON.parse(JSON.stringify(v));
@@ -1182,7 +1183,7 @@ function make(session,context,pending=null,existingPager=null,missionSeed=null,d
  }
  return Object.freeze({snapshot:()=>session.snapshot(),journal:()=>session.journal(),view,preparePage,choose,roll,rollRandom,autoplayStep,hasPendingRoll:()=>pending!==null,undo,save,missionSeed:()=>missionSeed,deploymentDraws:()=>deploymentDraws});
 }
-function create({session,context,missionSeed=null,deploymentDraws=0}={}){return make(session,context,null,null,missionSeed,deploymentDraws);}
+function create({session,context,missionSeed=null,deploymentDraws=0}={}){return make(session,MovementBinding.prepareContext(context),null,null,missionSeed,deploymentDraws);}
 function restore(saved,context){
  if(!obj(saved)||!obj(saved.integrity)||Object.keys(saved).sort().join(',')!==
   ['campaign','format','integrity','pendingRoll','version',...(Object.prototype.hasOwnProperty.call(saved,'missionSeed')?['missionSeed']:[]),...(Object.prototype.hasOwnProperty.call(saved,'deploymentDraws')?['deploymentDraws']:[])].sort().join(',')||
@@ -1193,7 +1194,7 @@ function restore(saved,context){
   !crypto.timingSafeEqual(Buffer.from(integrity.digest,'hex'),Buffer.from(hash(payload),'hex')))
   throw Error('Human-session save checksum mismatch');
  const session=Campaign.restore(saved.campaign,context);
- return make(session,context,saved.pendingRoll,null,saved.missionSeed===undefined?null:Random.validate(saved.missionSeed),saved.deploymentDraws??0);
+ return make(session,MovementBinding.prepareContext(context),saved.pendingRoll,null,saved.missionSeed===undefined?null:Random.validate(saved.missionSeed),saved.deploymentDraws??0);
 }
 module.exports=Object.freeze({FORMAT,VERSION,create,restore});
 
@@ -1733,7 +1734,7 @@ function makeSession(context,machine,s,records,binding){
  return Object.freeze({snapshot,execute,canExecute,canExecuteGroundBatch:inputs=>probeGroundBatch(s,records.length,inputs),projectGroundMove:input=>projectGround(s,records.length,input),undo,save,journal});
 }
 function create(context){
- const binding=validateContext(context),source=clone(context),machine=createMachine(source);
+ const binding=validateContext(context),source=MovementBinding.prepareContext(clone(context)),machine=createMachine(source);
  return makeSession(source,machine,machine.initial(),[],binding);
 }
 function restore(saved,context){
@@ -1757,7 +1758,7 @@ function restore(saved,context){
  }
  if(saved.bindings.originHash!==binding.originHash||hash(saved.origin)!==binding.originHash)
   throw Error('Campaign opening state mismatch');
- const source=clone(context),machine=createMachine(source),result=replay(source,saved.journal,machine);
+ const source=MovementBinding.prepareContext(clone(context)),machine=createMachine(source),result=replay(source,saved.journal,machine);
  if(!/^[a-f0-9]{64}$/.test(saved.finalStateHash)||
     snapshotHash(machine,result.s,result.receipts.length)!==saved.finalStateHash)
   throw Error('Campaign final replay mismatch');
