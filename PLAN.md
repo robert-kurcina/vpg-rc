@@ -1,6 +1,6 @@
 # Russian Campaign — Release completion plan
 
-Revision 500 | Production baseline: v701 / checkpoint 479 plus merged hosted UX PRs #1–7
+Revision 501 | Production baseline: v701 / checkpoint 479 plus merged hosted UX PRs #1–7
 
 ## Objective
 
@@ -37,7 +37,7 @@ Revision 492: Moscow corrections implemented with a trusted version-bound policy
 - [ ] Verify and correct persistent turn/faction/phase and feedback; primary action invokes existing legal handler only. Mandatory combat, retreat, support, reinforcement, deployment and stack cleanup decisions remain reachable when panel hidden. Check AI pause/stop, settings restoration, keyboard focus and selection.
 - [ ] Verify grouped Settings (Players and AI, Mission configuration, Map display, Interface layout, Maintenance). Keep next-mission rules separate from immediate preferences. G/S markers optional and smaller. Remove duplicate controls and unnecessary diagnostic presentation only; retain meaningful source limitations. Confirm actual Oberlabs workflow gaps; no undefined tournament functionality without author clarification.
 
-Revision 500: run 45748855998 passed all four focused rule/reference scripts (Leningrad 228 assertions, terrain reference 54 checks). Node 20 action-runtime annotation absent. Expanded browser test found the mobile drawer/backdrop intercepting the direct Hide panel control. Shared shell now relocates the same toggle into the persistent header on mobile and restores it to the map toolbar on desktop. Existing test exercises tablet and phone widths and captures true mobile layout; runtime confirmation pending. No rule changes.
+Revision 500: run 45748855998 passed all four focused rule/reference scripts (Leningrad 228 assertions, terrain reference 54 checks). Node 20 action-runtime annotation absent. Expanded browser test found the mobile drawer/backdrop intercepting the direct Hide panel control. Shared shell now relocates the same toggle into the persistent header on mobile and restores it to the map toolbar on desktop. Existing test exercises tablet and phone widths and captures true mobile layout; runtime confirmation passed on all five routes in run 45749472329. No rule changes.
 
 Revision 499: merged PR #12 verified five-route real-origin persistence and mission-scoped abandonment. Existing four focused Node tests now run in an independent job in the same workflow; results passed in run 45748855998. Existing browser test additionally exercises the eight-entry menu, persistent phase text, sidebar visibility and Settings open/close/Escape restoration on all five routes in explicit mobile layout; asserts unchanged serialized game state. First execution exposed the drawer hit-target issue corrected in revision 500. No additional simulation quotas.
 
@@ -46,6 +46,8 @@ Revision 498: first hosted run 45747414550 passed Moscow save/resume/preservatio
 Revision 494: corrected shared Settings opening order, restore of prior mobile drawer visibility, Escape behavior, and Settings continuity when switching to mobile layout; both controllers use the same shell lifecycle. Revision 495 adds shared stable-identity keyboard focus restoration after native and historical SVG overlay redraws, plus header-height synchronization when mission navigation mounts. Browser regression pending.
 
 Exit: functional essential workflows on all five routes, representative desktop/tablet sizes, no known reproducible interaction blockers. Use source inspection only as preliminary evidence, not a substitute for browser operation.
+
+Revision 501: merged PR #14 verified mobile menu/panel/Settings and real-origin persistence on all five routes (run 45749472329). Moscow inspection found ambiguous direct counter selection vs legal occupied movement destination in double-stack mode and an incorrect persistent faction label during Soviet reserve redeployment. Corrected movement-only hit dispatch and phase label; added real pointer/keyboard/zoom/movement/Undo/Redo coverage to the existing hosted test. New browser coverage pending; original reported counter issue not yet definitively reproduced.
 
 ## Batch C — Complete reference materials (P2)
 

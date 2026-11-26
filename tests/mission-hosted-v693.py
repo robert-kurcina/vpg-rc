@@ -56,6 +56,40 @@ with sync_playwright() as pw:
   page.evaluate("WargameResponsiveShell.setPreference('auto')")
   expect(page.locator('#map-navigation > #mission-sidebar-toggle')).to_be_visible()
   print('PASS shared mission menu and mobile panel/settings lifecycle:',id,flush=True)
+ def verify_moscow_orders():
+  # Start from the restored historical opening. Use real controls to reach movement.
+  for _ in range(5):
+   kind=page.evaluate("WargameCore.currentPhase(__nativePreview.configuration(),__nativePreview.getSession().state).kind")
+   if kind=='move':break
+   assert kind in ('redeployment','combat'),kind
+   page.locator('#mission-phase-action').click()
+  else:raise AssertionError('Moscow movement phase not reached')
+  order=page.evaluate("""()=>{const s=__nativePreview.getSession();for(const u of s.state.units){
+    if(!u.position||WargameCore.unitSide(u)!==s.state.side)continue;
+    const moves=WargameSession.legal(s,{type:'move',unitId:u.id});
+    const dest=moves.find(m=>!s.state.units.some(v=>v.position?.x===m.x&&v.position?.y===m.y));
+    if(dest)return {id:u.id,x:dest.x,y:dest.y};
+   }return null;}""")
+  assert order,'No legal opening movement fixture'
+  before=snapshot('battle-for-moscow')
+  counter=page.locator('[data-native-unit="'+order['id']+'"]')
+  counter.locator('.counter-hit-area').click()
+  expect(counter).to_have_attribute('aria-pressed','true')
+  assert snapshot('battle-for-moscow')==before
+  counter.focus();page.keyboard.press('Enter')
+  expect(counter).to_have_attribute('aria-pressed','true')
+  expect(counter).to_be_focused()
+  assert snapshot('battle-for-moscow')==before
+  page.locator('[data-map-zoom="in"]').click()
+  counter.locator('.counter-hit-area').click()
+  expect(counter).to_have_attribute('aria-pressed','true')
+  destination=page.locator('.native-board-hit[tabindex="0"]').first
+  destination.click()
+  after=snapshot('battle-for-moscow')
+  assert after!=before
+  page.locator('#undo').click();assert snapshot('battle-for-moscow')['state']==before['state']
+  page.locator('#redo').click();assert snapshot('battle-for-moscow')['state']==after['state']
+  print('PASS Moscow real counter selection, keyboard, zoom, movement, Undo and Redo',flush=True)
  def leave(label):
   menu();page.get_by_role('button',name='Exit Game',exact=True).click();page.get_by_role('dialog',name='Leave mission').get_by_role('button',name=label,exact=True).click();selector()
  selector()
@@ -69,6 +103,7 @@ with sync_playwright() as pw:
   # An actual successful new save should not be stored in the legacy quota-limited key.
   assert page.evaluate('(id)=>localStorage.getItem(WargameMissionStorage.key(id))===null',id)
   card(id).locator('[data-resume]').click();ready(id);assert snapshot(id)==before
+  if id=='battle-for-moscow':verify_moscow_orders()
   leave('Discard unsaved progress');expect(card(id).locator('[data-resume]')).to_be_visible()
   print('PASS real-origin save, selector, resume and preservation:',id,flush=True)
  if args.terminal_save:
