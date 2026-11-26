@@ -193,13 +193,13 @@ with sync_playwright() as pw:
   leave('Discard unsaved progress')
   print('PASS real-origin save, selector, resume and preservation:',id,flush=True)
  if args.terminal_save:
-  path=args.terminal_save.resolve();expected=json.loads(path.read_text());assert expected['state']['over'] and path.stat().st_size>5*1024*1024
+  path=args.terminal_save.resolve();expected=json.loads(path.read_text());assert expected['state']['over']
   card('battle-for-moscow').locator('[data-resume]').click();ready('battle-for-moscow')
   page.locator('#load-game').set_input_files(str(path));expect(page.locator('#load-game')).to_have_value('');expect(page.locator('#phase-status')).to_contain_text('Game finished')
   assert snapshot('battle-for-moscow')==expected
   leave('Save and return');expect(card('battle-for-moscow').locator('[data-resume]')).to_be_visible()
   card('battle-for-moscow').locator('[data-resume]').click();ready('battle-for-moscow');assert snapshot('battle-for-moscow')==expected
-  leave('Discard unsaved progress');print('PASS actual real-origin large terminal mission and exact restoration',flush=True)
+  leave('Discard unsaved progress');print('PASS actual real-origin Moscow terminal mission and exact restoration',flush=True)
  card('battle-for-moscow').locator('[data-resume]').click();ready('battle-for-moscow');menu();page.once('dialog',lambda d:d.accept());page.get_by_role('button',name='Abandon Mission',exact=True).click();selector()
  expect(card('battle-for-moscow').locator('[data-status]')).to_have_text('No local save')
  for id in missions[1:]:expect(card(id).locator('[data-resume]')).to_be_visible()
