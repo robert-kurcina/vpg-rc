@@ -60,6 +60,18 @@ jobs:
           python tests/rulebook-navigation-v693.py
           python tests/rulebook-cases-v696.py
           git diff --exit-code -- references/rules
+  static-distribution:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - name: Stage and verify private repository-relative release
+        run: |
+          python scripts/build-static-release.py "${RUNNER_TEMP}/campaign-release"
+          python scripts/build-static-release.py "${RUNNER_TEMP}/campaign-release" --verify --http
   mission-browser:
     runs-on: ubuntu-latest
     timeout-minutes: 30
