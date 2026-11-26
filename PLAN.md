@@ -1,6 +1,6 @@
 # Russian Campaign — Release completion plan
 
-Revision 505 | Production baseline: v701 / checkpoint 479 plus merged hosted UX PRs #1–7
+Revision 506 | Production baseline: v701 / checkpoint 479 plus merged hosted UX PRs #1–7
 
 ## Objective
 
@@ -69,6 +69,8 @@ Exit: accurate, readable references in the existing menu. No requirement to repr
 Revision 504: extend existing focused job with approved stacking, graduated mode, AI difficulty, player-save and Advanced CRT checks; exercise all five actual optional-mode Settings and IndexedDB restoration, including Moscow double stacking. No new simulation sweeps. Run 45751242407 passed all three jobs, including 542 graduated assertions, 1181 difficulty checks, 220 player configuration checks, 301 Advanced CRT assertions, stacking foundation and all five optional-mode browser save/resume paths. Faction selection is not AI gameplay evidence.
 
 Revision 505: reuse eight existing historical/graduated terminal saves for real-origin browser restoration, Undo/Redo and IndexedDB; generate one complete native Moscow campaign with existing runner (standard CRT, seed 7, grades 3/3) and restore it over HTTP. Existing private static distribution builder now runs manifest and non-root HTTP checks in independent CI job; no publication. Pending execution. Terminal restoration is not fresh full browser campaign play.
+
+Revision 506: run 45751534550 passed focused rules, source references and private static distribution (313 files, 511 HTML references, 42 config references, five self-contained exports, 314 HTTP files including manifest). Native Moscow seeded runner completed 7 turns, 233 actions, Soviet victory, exact engine restore. Browser restored both Arduous terminal modes but rejected legacy Leningrad scope as expected after author adjudication. Keep live save binding strict; improve diagnostic. Reuse existing replay script to authenticate the original fixture against reconstructed pre-adjudication policy and replay actions against current policy, allowing only the terminal receipt to differ. Browser verifies legacy rejection without state mutation and restores the rebuilt fixture. Pending CI; no new simulation quota or migration of user saves.
 
 ## Batch D — Integrated release (P3–P6)
 

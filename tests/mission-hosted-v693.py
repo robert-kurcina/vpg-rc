@@ -5,7 +5,7 @@ Uses a new isolated browser context; never modifies an ordinary user's saves.
 No intercepted network, localStorage mock, or IndexedDB fixture.
 Optional --terminal-save supplies a completed native Moscow JSON from the runner.
 """
-import argparse,json,subprocess
+import argparse,json,subprocess,os,tempfile
 from pathlib import Path
 from playwright.sync_api import sync_playwright,expect
 parser=argparse.ArgumentParser();parser.add_argument('--url',default='http://localhost:8765/index.html');parser.add_argument('--chromium',default=None);parser.add_argument('--terminal-save',type=Path);parser.add_argument('--evidence-dir',type=Path,help='Capture actual engine screenshots at desktop and tablet widths');args=parser.parse_args()
@@ -152,8 +152,21 @@ with sync_playwright() as pw:
   fixtures=Path(__file__).resolve().parent/'fixtures/terminal-v694'
   for suffix in ('','-graduated'):
    path=fixtures/(id+suffix+'.json')
-   expected=json.loads(path.read_text())
-   page.locator('#load').set_input_files(str(path))
+   if id=='leningrad':
+    # Original pre-adjudication saves must be explicitly rejected, not rebound.
+    before=snapshot(id)
+    page.locator('#load').set_input_files(str(path))
+    expect(page.locator('#load')).to_have_value('')
+    expect(page.locator('#message')).to_contain_text('source configuration or rules version')
+    assert snapshot(id)==before
+    with tempfile.TemporaryDirectory() as tmp:
+     updated=Path(tmp)/path.name
+     subprocess.run(['node',str(Path(__file__).resolve().parent/'replay-terminal-journal-v694.js'),id,'standard',str(path),str(updated)],check=True,env={**os.environ,'LENINGRAD_TERMINAL_POLICY_REPLAY':'1','VICTORY_MODE':'graduated' if suffix else 'historical'})
+     expected=json.loads(updated.read_text())
+     page.locator('#load').set_input_files({'name':path.name,'mimeType':'application/json','buffer':json.dumps(expected).encode()})
+   else:
+    expected=json.loads(path.read_text())
+    page.locator('#load').set_input_files(str(path))
    expect(page.locator('#load')).to_have_value('')
    assert snapshot(id)==expected,(id,suffix,page.locator('#message').inner_text())
    terminal=page.evaluate('HistoricalBrowserPreview.snapshot()')

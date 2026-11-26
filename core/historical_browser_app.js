@@ -108,7 +108,7 @@ function restoreHumanWithCRT(save,base){
   try{return {human:E.Human.restore(save,candidate),context:candidate,variant,victory};}
   catch(e){if(!/Campaign source\/configuration mismatch/.test(e.message))throw e;}
  }
- throw Error('Saved CRT variant or source package does not match either available ruleset');
+ throw Error('Save rejected: its source configuration or rules version does not match this game. Use the original game version to resume it; starting a new mission does not modify the saved file.');
 }
 function syncCRTControls(){
  if(crtCheckbox)crtCheckbox.checked=crtPreference==='advanced';

@@ -15,8 +15,30 @@ function contextFor(name){
 
 const context=R('core/graduated_mode').withHistorical(contextFor(scenario),process.env.VICTORY_MODE||'historical');
 context.combatPolicy={...context.combatPolicy};if(variant==='advanced')context.combatPolicy.crtVariant='advanced';else delete context.combatPolicy.crtVariant;
-let session=C.create(context);const journal=JSON.parse(fs.readFileSync(input,'utf8'));
-for(const record of journal){session=session.execute(record.action).session;A.deepEqual(session.journal().at(-1),record);}
+const source=JSON.parse(fs.readFileSync(input,'utf8'));
+const migrate=process.env.LENINGRAD_TERMINAL_POLICY_REPLAY==='1';
+const Human=R('core/historical_campaign_human');
+let journal=source;
+if(migrate){
+ A.equal(scenario,'leningrad');A.equal(source.pendingRoll,null);
+ // Development fixture replay only: authenticate the original completed save
+ // against the exact pre-adjudication source policy, never relax live restore.
+ const legacy=structuredClone(context);
+ A.equal(legacy.housekeepingPolicy.unclassifiedOutcome,'soviet-victory');
+ A.match(legacy.housekeepingPolicy.source.at(-1),/^Author-approved adjudication:/);
+ legacy.housekeepingPolicy.source.pop();
+ legacy.housekeepingPolicy.unclassifiedOutcome='unresolved-source-rule';
+ const previous=Human.restore(source,legacy);A.equal(previous.snapshot().cursor.complete,true);
+ journal=source.campaign.journal;
+ A.equal(journal.at(-1).action.type,'finish-housekeeping');
+}
+let session=C.create(context);
+for(const [index,record] of journal.entries()){
+ session=session.execute(record.action).session;
+ const actual=session.journal().at(-1);
+ if(migrate&&index===journal.length-1)A.deepEqual(actual.action,record.action);
+ else A.deepEqual(actual,record);
+}
 A.equal(session.snapshot().cursor.complete,true);
 const saved=R('core/historical_campaign_human').create({session,context}).save();
 fs.writeFileSync(output,JSON.stringify(saved)+'\n');console.log(JSON.stringify({scenario,actions:journal.length,terminal:session.snapshot().terminal}));
