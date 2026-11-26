@@ -1,6 +1,6 @@
 # Russian Campaign — Release completion plan
 
-Revision 489 | Production baseline: v701 / checkpoint 479 (resumable historical acceptance)
+Revision 490 | Production baseline: v701 / checkpoint 479 (resumable historical acceptance)
 
 ## Objective and scope
 
@@ -162,6 +162,12 @@ All four remaining default-policy historical seed 476 campaigns completed throug
 ## GitHub migration and hosted UX correction (revision 485)
 
 The full v701 project was imported into robert-kurcina/vpg-rc and the author reports GitHub Pages is running. Full file-by-file import parity and hosted browser acceptance remain unverified. The author approved the three historical adjudications in P1 and existing optional graduated scoring and Moscow double stacking. Implementation of the P1 changes remains pending. User reported desktop map scrolling deficiency on hosted Moscow. Shared desktop shell correction bounds map and sidebar independently; verify actual hosted interaction on all five routes before closing P2/P6. No gameplay or map artwork changes.
+
+
+
+### Shared settings organization
+
+Group existing controls into Players and AI, Mission configuration, Map display, Interface layout and Maintenance. Preserve input identities, event listeners, values, existing live AI controls and save semantics. Maintenance collapsed by default. Keep immediate preferences distinct from next-mission rule options. Source review completed; browser regression pending.
 
 ## Deferred post-release performance work (author requested; not release gates)
 
