@@ -1030,6 +1030,7 @@ function reset(){cancelPostRollSearch();retreatSelection=null;supportSelection=n
 async function start(){
  try{
   if(!E||!Art||!Face||!Display||!BuildupMap)throw Error('Required shared historical modules unavailable');
+  root.WargameMissionLoading?.stage('Loading mission configuration…');
   config=await loadJson(document.body.dataset.historicalConfig);
   setupOnly=config.mode==='deployment-preview-only';candidateMode=config.mode==='experimental-candidate-campaign';
   if(config.mode&&!setupOnly&&!candidateMode)throw Error('Unrecognized historical browser mode');
@@ -1038,6 +1039,7 @@ async function start(){
    ...(config.buildupPolicy?['buildupPolicy','buildupAllocation','housekeepingPolicy']:[])]:
    setupOnly?['map','counterConfig','setup','profile','phaseConfig']:
    ['map','counterConfig','setup','profile','phaseConfig','combatPolicy','buildupPolicy','housekeepingPolicy'];
+  root.WargameMissionLoading?.stage('Loading map, counters and scenario rules…');
   const all=await Promise.all(names.map(k=>loadJson(config[k])));
   const data=Object.fromEntries(names.map((k,i)=>[k,all[i]]));
   const {map,counterConfig,setup,setupPolicy,profile,phaseConfig,combatPolicy,buildupPolicy,housekeepingPolicy,rosterOverlay,opening,firstTurnEmptyBuildupPolicy,buildupAllocation}=data;
@@ -1081,7 +1083,9 @@ async function start(){
      enableAirSupport:true,buildupPolicy,housekeepingPolicy}};
   }
   for(const c of map.cells)centerById.set(c.id,c);
+  root.WargameMissionLoading?.stage('Loading approved map artwork…');
   const mapAsset=$('map-art');mapAsset.src=config.mapExport;
+  await mapAsset.decode();
   const bounds=config.mapViewBox;
   if(!Array.isArray(bounds)||bounds.length!==4||bounds.some(x=>!Number.isFinite(x))||bounds[2]<=0||bounds[3]<=0)throw Error('Missing validated map viewport geometry');
   $('counter-overlay').setAttribute('viewBox',bounds.join(' '));
@@ -1100,6 +1104,7 @@ async function start(){
   // The approved map and counters still render using the shared visual modules.
   if(!setupOnly)terrainTooltip=root.WargameTerrainTooltips.mount({surface:$('map-scroll'),board:map,settings:displayControl,
    gameRules:{movement:profile,combat:combatPolicy},edgeBoard:E.MovementReference.build(map,profile).board,unitsAtHex:el=>{const id=el?.closest?.('[data-unit-id]')?.dataset.unitId;return (setupActive?(candidateMode?candidateEditor:deployment)?.snapshot().units:human?.snapshot().state.units)?.[id]?.hex||null}});
+  root.WargameMissionLoading?.stage('Preparing campaign and legal orders…');
   reset();
   $('new-game').onclick=reset;
   $('configure-setup').onclick=()=>{try{enterSetup();selectPanel('play')}catch(e){message(e.message)}};
@@ -1283,6 +1288,7 @@ async function start(){
    $('ai-resume').onclick=()=>{if(aiRunning||aiAssignment==='manual')return;if(aiPaused)aiPaused=false;else pauseAutomatic();refresh()};
    aiReady=true;syncAutomatic();
   }
+  root.WargameMissionLoading?.stage('Preparing mission controls and saved games…');
   if(document.documentElement.dataset.missionId)await root.WargameMissionStorage?.mount({id:document.documentElement.dataset.missionId,anchor:$('save').parentElement,save:saveCurrent,restore,busy:()=>aiRunning,pause:()=>{pauseAutomatic();syncAutomatic()},reference:referenceDialog?.open,notice:message});
   // Test/API interface uses the exact human gateway for all state changes.
   root.HistoricalBrowserPreview=Object.freeze({view:()=>setupOnly?{kind:'deployment-preview',gameplayAuthorized:false}:setupActive&&candidateMode?{kind:'source-constrained-deployment',gameplayAuthorized:false}:clone(setupActive?human.view():view),
@@ -1295,7 +1301,8 @@ async function start(){
    retreatMap:()=>clone(currentRetreatMap()),retreatSelection:()=>retreatSelection,stageRetreat,clearRetreat,
    stackTop:hex=>stackAt(hex,Object.values(human.snapshot().state.units).filter(u=>u.hex===hex)).at(-1)?.id||null,
    displaySettings:()=>displayControl.get(),setDisplaySettings:next=>displayControl.set(next),selectTab:name=>selectPanel(name)});
- }catch(e){$('status').textContent='Source/engine initialization failed';message(e.stack||e.message)}
+  root.WargameMissionLoading?.ready();
+ }catch(e){$('status').textContent='Source/engine initialization failed';message(e.stack||e.message);root.WargameMissionLoading?.fail(e)}
 }
 start();
 })(typeof globalThis!=='undefined'?globalThis:this);

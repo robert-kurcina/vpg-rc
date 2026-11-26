@@ -480,6 +480,7 @@ function begin({rootDir,profilePath,mapPath,registryPath,projectRoot,aiProfilePa
  }
  async function load(){
   try{
+   globalThis.WargameMissionLoading?.stage('Loading map, counters and scenario rules…');
    const [registry,source,profile,visual,uiSource]=await Promise.all([
     fetchJson(registryPath),Promise.all(keys.map(k=>fetchJson(rootDir+k+'.json'))).then(parts=>Object.fromEntries(keys.map((k,i)=>[k,parts[i]]))),
     profilePath?fetchJson(profilePath):Promise.resolve(null),fetchJson(mapPath),
@@ -498,6 +499,7 @@ function begin({rootDir,profilePath,mapPath,registryPath,projectRoot,aiProfilePa
    // the Node exporter. The terrain, city, river, fort and hex-grid renderer
    // is the *same* HexTerrainTiles.svgMap function in both environments.
    if(typeof projectRoot!=='string'||!projectRoot)throw Error('Native map asset root missing');
+   globalThis.WargameMissionLoading?.stage('Loading terrain artwork…');
    const imageInputs=await embeddedRenderAssets(projectRoot,entry);
    const profileOptions=P.options(g.game.id,{
     id:'native-browser-map',width:entry.width,height:entry.height,...imageInputs
@@ -511,8 +513,9 @@ function begin({rootDir,profilePath,mapPath,registryPath,projectRoot,aiProfilePa
      const id=el?.closest?.('[data-native-unit]')?.getAttribute('data-native-unit');
      const u=id?current()?.units.find(x=>x.id===id):null;return u?.position?labelLoc(u.position):null;}});
    globalThis.WargameTouchMap.mount({scroll:$('map-scroll'),stage:$('map'),toolbar:$('map-navigation'),minimumWidth:0});
+   globalThis.WargameMissionLoading?.stage('Preparing campaign and legal orders…');
    start();
-  }catch(err){$('game-status').textContent='Game unavailable: '+err.message;show(err.message,true);console.error(err);}
+  }catch(err){globalThis.WargameMissionLoading?.fail(err);$('game-status').textContent='Game unavailable: '+err.message;show(err.message,true);console.error(err);}
  }
  function start(){
   if(aiRunning)return show("Wait for the current AI side to finish.",true);pauseAutomatic();
@@ -619,7 +622,7 @@ function begin({rootDir,profilePath,mapPath,registryPath,projectRoot,aiProfilePa
   try{restorePortable(JSON.parse(await file.text()));}
   catch(err){show('Restore rejected: '+err.message,true);}finally{ev.target.value='';}
  });
- const ready=load().then(async()=>{if(session&&document.documentElement.dataset.missionId)await globalThis.WargameMissionStorage?.mount({id:document.documentElement.dataset.missionId,anchor:$('save-game').parentElement,save:portableSave,restore:restorePortable,busy:()=>aiRunning,pause:()=>{pauseAutomatic();syncAutomatic()},reference:referenceDialog?.open,notice:text=>show(text,true)});});
+ const ready=load().then(async()=>{if(!session){globalThis.WargameMissionLoading?.fail('Mission session could not initialize.');return;}globalThis.WargameMissionLoading?.stage('Preparing mission controls and saved games…');if(session&&document.documentElement.dataset.missionId)await globalThis.WargameMissionStorage?.mount({id:document.documentElement.dataset.missionId,anchor:$('save-game').parentElement,save:portableSave,restore:restorePortable,busy:()=>aiRunning,pause:()=>{pauseAutomatic();syncAutomatic()},reference:referenceDialog?.open,notice:text=>show(text,true)});globalThis.WargameMissionLoading?.ready();}).catch(err=>{globalThis.WargameMissionLoading?.fail(err);throw err;});
  return {ready,getSession:()=>session,configuration:()=>g,start,render,perform:change,select:unitSelect,playAISide,uxConfig:()=>({...ui}),displaySettings:()=>displayControl?.get(),
   setDisplaySettings:next=>displayControl.set(next),selectTab:name=>selectPanel(name)};
  }

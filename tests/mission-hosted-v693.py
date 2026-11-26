@@ -25,6 +25,9 @@ with sync_playwright() as pw:
    page.wait_for_function("!!window.HistoricalBrowserPreview || document.getElementById('status')?.textContent.includes('Source/engine initialization failed')")
    if not page.evaluate('!!window.HistoricalBrowserPreview'):
     raise AssertionError(f'{id} initialization failed: {page.locator("#message").inner_text()}')
+  expect(page.locator('#mission-loading')).to_have_attribute('data-state','ready')
+  expect(page.locator('#mission-loading')).to_be_hidden()
+  assert page.evaluate("!document.querySelector('main').inert")
   expect(page.locator('#mission-menu-toggle')).to_be_visible()
  def snapshot(id):return page.evaluate('WargameSession.serialize(__nativePreview.getSession())' if id=='battle-for-moscow' else 'HistoricalBrowserPreview.save()')
  def menu():
