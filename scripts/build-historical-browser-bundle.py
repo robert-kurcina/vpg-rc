@@ -129,7 +129,7 @@ def split_package():
  # The bootstrap/entry code remains the exact original, with the registry
  # passed in rather than embedded. A mixed-version set fails at startup.
  import hashlib
- revision=hashlib.sha256(('\n'.join(moddefs)+bootstrap+footer).encode()).hexdigest()
+ revision=hashlib.sha256(('split-v2-buffer-adapter\n'+'\n'.join(moddefs)+bootstrap+footer).encode()).hexdigest()
  prefix='historical_engine_chunk_'
  result={}
  registration=[]
