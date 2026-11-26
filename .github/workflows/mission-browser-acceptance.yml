@@ -42,6 +42,7 @@ jobs:
           node-version: '22'
       - name: Verify existing approved rules and terrain references
         run: |
+          node tests/single-pass-movement-binding-v664.test.js
           node tests/b4m-source-combat-v586.test.js
           node tests/b4m-source-movement-v585.test.js
           node tests/historical-housekeeping-eight-turn-v389.test.js
@@ -131,7 +132,7 @@ jobs:
           if-no-files-found: warn
           retention-days: 14
   campaign-cpu-profile:
-    if: github.event_name == 'workflow_dispatch' || github.head_ref == 'perf/profile-release-525'
+    if: github.event_name == 'workflow_dispatch' || github.head_ref == 'perf/profile-release-525' || github.head_ref == 'perf/reprofile-527'
     runs-on: ubuntu-latest
     timeout-minutes: 25
     steps:
@@ -156,7 +157,7 @@ jobs:
   operational-parity:
     # Run the representative controlled comparison once for this change,
     # or explicitly via dispatch; avoid repeated expensive qualification.
-    if: github.event_name == 'workflow_dispatch' || github.head_ref == 'test/operational-parity-521'
+    if: github.event_name == 'workflow_dispatch' || github.head_ref == 'test/operational-parity-521' || github.head_ref == 'perf/reprofile-527'
     runs-on: ubuntu-latest
     timeout-minutes: 25
     steps:
