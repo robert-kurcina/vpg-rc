@@ -14,7 +14,7 @@ The mission selector (`index.html`) opens Battle for Moscow, The Arduous Beginni
 |---|---|
 | `index.html`, `serve.py` | Mission selector and local static server |
 | `games/` | Five production routes and existing experimental/lab routes |
-| `core/` | Shared rules, renderer, AI, UI, and generated browser bundle |
+| `core/` | Shared rules, renderer, AI, UI, and generated historical engine bundles |
 | `maps/` | Scenario configurations, rosters, source geometry and map viewer |
 | `assets/`, `supplied_assets/` | Approved counter, terrain and support artwork |
 | `exports/` | Current five map SVG/PNG exports and gallery (retained because the UI links to them) |
@@ -35,7 +35,7 @@ The companion `hex_wargame_v681_HISTORICAL_EVIDENCE.zip` contains historical gen
 Requires Node.js and Python 3. From the project directory:
 
 ```sh
-python3 scripts/build-historical-browser-bundle.py --check
+python3 scripts/build-historical-browser-bundle.py --install --check
 node tests/mission-storage-v680.test.js
 node tests/mission-indexeddb-v693.test.js
 python3 tests/rulebook-navigation-v693.py
@@ -54,7 +54,7 @@ For controlled experimental mode comparisons, use `node scripts/analyze-graduate
 
 ### Real-origin release check
 
-With `python3 serve.py` running, execute `python3 tests/mission-hosted-v693.py --url http://localhost:8765/index.html` in an environment with Playwright Chromium and permitted HTTP navigation. This uses a fresh browser context, tests all five mission routes and real IndexedDB save/return/resume/abandon. For a full terminal-save check, first run `SAVE_PATH=/tmp/moscow-terminal.json node scripts/run-native-campaign.js standard 71 5000 0 0`, then add `--terminal-save /tmp/moscow-terminal.json`. Use the corresponding repository-prefixed URL to check a GitHub Pages deployment. Hosted Chromium run [45747675673](https://github.com/robert-kurcina/vpg-rc/actions/runs/45747675673) passed all five real-origin save/resume checks and mission-scoped abandonment. Desktop/tablet screenshots were captured. Full campaign and interaction acceptance remain open; isolated transaction-fixture tests are not real-origin acceptance.
+With `python3 serve.py` running, execute `python3 tests/mission-hosted-v693.py --url http://localhost:8765/index.html` in an environment with Playwright Chromium and permitted HTTP navigation. This uses a fresh browser context, tests all five mission routes and real IndexedDB save/return/resume/abandon. For a full terminal-save check, first run `SAVE_PATH=/tmp/moscow-terminal.json node scripts/run-native-campaign.js standard 71 5000 0 0`, then add `--terminal-save /tmp/moscow-terminal.json`. Use the corresponding repository-prefixed URL to check a GitHub Pages deployment. Hosted Chromium run [45747675673](https://github.com/robert-kurcina/vpg-rc/actions/runs/45747675673) passed all five real-origin save/resume checks and mission-scoped abandonment. Desktop/tablet screenshots were captured. Run 45756263724 passed all four historical live campaigns and five-route hosted acceptance using the split engine; diagnostic AI completed in approximately 5–10 seconds observed. Production split files were committed in PR #30. Controlled operational AI/headless comparison remains open.
 
 Terminal browser regression (four larger missions, historical and graduated retained journals): `python3 tests/historical-terminal-browser-v694.py --scenario arduous` (repeat for `leningrad`, `kiev`, `kiev-odessa`). Uses bundled exact terminal save fixtures and isolated Chromium storage transport; not real-origin acceptance.
 
