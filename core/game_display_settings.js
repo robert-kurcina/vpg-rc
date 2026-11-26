@@ -8,7 +8,7 @@
 })(typeof globalThis!=='undefined'?globalThis:this,function(T){
 'use strict';
 const STORAGE_KEY='russian-campaign.display-settings.v1';
-const DEFAULT=Object.freeze({largerCounters:false,showCoast:true,coastWavelets:true,terrainTooltips:true});
+const DEFAULT=Object.freeze({largerCounters:false,showCoast:true,coastWavelets:true,terrainTooltips:true,cityOwnership:true});
 const ENLARGEMENT=1.25;
 function normalize(value){return Object.fromEntries(Object.entries(DEFAULT).map(([k,v])=>[k,typeof value?.[k]==='boolean'?value[k]:v]));}
 function load(){try{return normalize(JSON.parse(localStorage.getItem(STORAGE_KEY)))}catch(_){return normalize();}}
@@ -45,7 +45,8 @@ function mount(rootElement,board,{onChange=()=>{}}={}){
   ['largerCounters','Larger counters (125%)'],
   ['showCoast','Show Coast'],
   ['coastWavelets','Render Coast wavelets'],
-  ['terrainTooltips','Terrain and effects on desktop hover']
+  ['terrainTooltips','Terrain and effects on desktop hover'],
+  ['cityOwnership','Show city ownership markers']
  ];
  rootElement.replaceChildren();
  const heading=document.createElement('h3');heading.textContent='Map display';rootElement.append(heading);
@@ -61,6 +62,7 @@ function mount(rootElement,board,{onChange=()=>{}}={}){
  const help=document.createElement('p');help.className='setting-caption';
  help.textContent=supported?'Coast settings affect map appearance only; movement and combat geography are unchanged.':'This map has no authored Coast feature. Coast controls are unavailable.';
  rootElement.append(help);
+ const legend=document.createElement('p');legend.className='setting-caption';legend.textContent='City ownership: G = German, S = Soviet. Markers are informational; hiding them never changes ownership or victory.';rootElement.append(legend);
  const tipHelp=document.createElement('p');tipHelp.className='setting-caption';
  tipHelp.textContent='Pause over a hex to inspect its base movement and combat effects. The reference disappears during map actions; touch devices do not display it.';rootElement.append(tipHelp);
  function sync(){for(const [k] of controls)inputs[k].checked=value[k];
