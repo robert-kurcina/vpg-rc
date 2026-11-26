@@ -6,6 +6,11 @@ on:
   pull_request:
     paths:
       - 'tests/mission-hosted-v693.py'
+      - 'tests/b4m-source-combat-v586.test.js'
+      - 'tests/b4m-source-movement-v585.test.js'
+      - 'tests/historical-housekeeping-eight-turn-v389.test.js'
+      - 'tests/shared-terrain-reference-v676.test.js'
+      - 'maps/**'
       - '.github/workflows/mission-browser-acceptance.yml'
       - 'core/**'
       - 'games/**'
@@ -15,6 +20,20 @@ permissions:
   contents: read
 
 jobs:
+  focused-rules:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify existing approved rules and terrain references
+        run: |
+          node tests/b4m-source-combat-v586.test.js
+          node tests/b4m-source-movement-v585.test.js
+          node tests/historical-housekeeping-eight-turn-v389.test.js
+          node tests/shared-terrain-reference-v676.test.js
   mission-browser:
     runs-on: ubuntu-latest
     timeout-minutes: 30
