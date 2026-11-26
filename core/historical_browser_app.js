@@ -318,11 +318,14 @@ function renderBuildupControls(){
   (m.mode==='entry'&&m.slotId?' for '+m.slotId:'');
 }
 
+// Compatibility with the committed monolith until split production migration.
+// Only buildup activation needs the journal; movement and combat use snapshot data.
+function displayJournal(){return typeof human.journal==='function'?measured('journalCopy',()=>human.journal()):measured('boardSave',()=>human.save().campaign.journal);}
 function showBoard(){
  if(!setupActive&&!human)return;
  const snapshot=setupActive?null:human.snapshot();
  const state=setupActive?{units:(candidateMode?candidateEditor:deployment).snapshot().units}:snapshot.state;
- const journal=setupActive?[]:measured('boardSave',()=>human.save().campaign.journal);
+ const journal=setupActive||snapshot.phaseKind!=='buildup'?[]:displayJournal();
  const allocation=context?.buildupAllocation||{};
  const slots=sourceData?.contextSettings?.buildupPolicy?.reinforcements||[];
  const slotFaces=Object.fromEntries(slots.map(slot=>[slot.slotId,allocation[slot.group]?.[slot.index]]));
@@ -915,7 +918,7 @@ function refresh(){
  measured('humanControls',()=>{renderActions();renderBattleProposals();renderBuildupControls();refreshSupportWindow();});measured('humanBoard',()=>showBoard());syncPhaseBar();
  $('journal').textContent=JSON.stringify({phase:s.phaseId,actor:s.actor,units:Object.values(s.state.units||{}).length,
   pendingGround:s.pendingGround,combat:s.combat?.status,terminal:s.terminal,
-  journalTail:human.save().campaign.journal.slice(-8)},null,2);
+  journalTail:displayJournal().slice(-8)},null,2);
 }
 // Report only actual source-ledger changes after a committed shared-engine action.
 // No inference from the target hex, terrain art or presumed country boundaries.
