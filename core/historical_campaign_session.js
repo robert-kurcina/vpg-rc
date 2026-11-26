@@ -462,12 +462,13 @@ function replay(context,journal,machine){
  }
  return {s,receipts};
 }
-function makeSession(context,machine,s,records,binding){
+function makeSession(context,machine,s,records,binding,initialSnapshotText){
  // Cache only the canonical string of this private immutable session; every
  // public snapshot still parses a fresh detached object. Hashes use exactly
  // the same bytes and are never cached across a transaction.
- let snapshotText;
- function snapshot(){return JSON.parse(snapshotText??=canonical(snapshotValue(machine,s,records.length)));}
+ let snapshotText=initialSnapshotText;
+ const canonicalSnapshot=()=>snapshotText??=canonical(snapshotValue(machine,s,records.length));
+ function snapshot(){return JSON.parse(canonicalSnapshot());}
  // One authoritative transaction path for committed actions and disposable
  // read-only legality probes. The probe never creates a campaign journal entry,
  // computes a save hash, or returns mutable draft state to its caller.
@@ -495,8 +496,9 @@ function makeSession(context,machine,s,records,binding){
  }
  function execute(input){
   const {action,next}=adjudicate(input);
-  const record={action,stateHash:snapshotHash(machine,next,records.length+1)};
-  return Object.freeze({session:makeSession(context,machine,next,[...records,record],binding),
+  const nextText=canonical(snapshotValue(machine,next,records.length+1));
+  const record={action,stateHash:crypto.createHash('sha256').update(nextText).digest('hex')};
+  return Object.freeze({session:makeSession(context,machine,next,[...records,record],binding,nextText),
    event:clone(next.lastEvent)});
  }
  function canExecute(input){
@@ -528,7 +530,7 @@ function makeSession(context,machine,s,records,binding){
  function save(){
   const payload={format:FORMAT,version:VERSION,scenarioId:context.config.scenarioId,
    bindings:clone(binding),origin:clone({cursor:context.cursor,actor:context.actor,state:context.state}),
-   journal:clone(records),finalStateHash:crypto.createHash('sha256').update(snapshotText??=canonical(snapshotValue(machine,s,records.length))).digest('hex')};
+   journal:clone(records),finalStateHash:crypto.createHash('sha256').update(canonicalSnapshot()).digest('hex')};
   return {...payload,integrity:{algorithm:'SHA-256',digest:hash(payload)}};
  }
  // Copy the small action ledger without rehashing the whole opening and save.
