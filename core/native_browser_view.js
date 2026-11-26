@@ -65,9 +65,9 @@ function begin({rootDir,profilePath,mapPath,registryPath,projectRoot,aiProfilePa
  function autoEligible(){return !!session&&!aiPaused&&!aiRunning&&!current().over&&current().pendingRoll===null&&phase()?.kind!=='setup'&&phase()?.kind!=='redeployment'&&computerOwns(current().side);}
  function syncHistory(){redoHistory?.observe(session);if($('undo'))$('undo').disabled=aiRunning||!S.canUndo(session);if($('redo'))$('redo').disabled=aiRunning||!redoHistory?.available(session);}
  function syncAutomatic(){syncHistory();syncPhaseBar();if(!$('native-ai-assignment'))return;
-  $('native-ai-assignment').disabled=aiRunning;$('native-ai-resume').disabled=!aiRunning&&aiAssignment==='manual';
+  $('native-ai-assignment').disabled=aiRunning;$('native-ai-resume').disabled=!aiRunning&&(aiAssignment==='manual'||!!current()?.over);
   $('native-ai-resume').textContent=aiRunning?'Stop AI':aiPaused?'Resume automatic play':'Pause automatic play';
-  $('native-ai-status').textContent=aiAssignment==='manual'?'Manual handoff':aiPaused?'Automatic play paused':current()?.over?'Campaign complete':current()?.pendingRoll!==null?'Waiting for committed die resolution':computerOwns(current()?.side)?'Computer controls current side (manual setup remains human)':'Human controls current side';
+  $('native-ai-status').textContent=current()?.over?'Campaign complete':aiAssignment==='manual'?'Manual handoff':aiPaused?'Automatic play paused':current()?.pendingRoll!==null?'Waiting for committed die resolution':computerOwns(current()?.side)?'Computer controls current side (manual setup remains human)':'Human controls current side';
   if(autoEligible()&&aiTimer===null)aiTimer=setTimeout(()=>{aiTimer=null;if(autoEligible())playAISide();},0);
  }
  function syncPhaseBar(){
