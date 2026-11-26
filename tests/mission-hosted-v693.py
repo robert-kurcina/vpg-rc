@@ -8,7 +8,8 @@ Optional --terminal-save supplies a completed native Moscow JSON from the runner
 import argparse,json,subprocess,os,tempfile,time
 from pathlib import Path
 from playwright.sync_api import sync_playwright,expect
-parser=argparse.ArgumentParser();parser.add_argument('--url',default='http://localhost:8765/index.html');parser.add_argument('--chromium',default=None);parser.add_argument('--terminal-save',type=Path);parser.add_argument('--evidence-dir',type=Path,help='Capture actual engine screenshots at desktop and tablet widths');parser.add_argument('--live-scenario',choices=['arduous','leningrad','kiev','kiev-odessa'],help='Play one fresh historical campaign through the actual automatic browser controller');args=parser.parse_args()
+parser=argparse.ArgumentParser();parser.add_argument('--url',default='http://localhost:8765/index.html');parser.add_argument('--chromium',default=None);parser.add_argument('--terminal-save',type=Path);parser.add_argument('--evidence-dir',type=Path,help='Capture actual engine screenshots at desktop and tablet widths');parser.add_argument('--live-scenario',choices=['arduous','leningrad','kiev','kiev-odessa'],help='Play one fresh historical campaign through the actual automatic browser controller');parser.add_argument('--operational-parity',action='store_true',help='Run live scenario from the exact authenticated headless opening and compare terminal campaign receipts');args=parser.parse_args()
+if args.operational_parity and not args.live_scenario:parser.error('--operational-parity requires --live-scenario')
 if args.evidence_dir: args.evidence_dir.mkdir(parents=True,exist_ok=True)
 missions=['battle-for-moscow','arduous','leningrad','kiev','kiev-odessa']
 with sync_playwright() as pw:
@@ -210,21 +211,37 @@ with sync_playwright() as pw:
   expect(page.locator('#victory-mode')).to_have_value('historical')
   expect(page.locator('#advanced-crt')).not_to_be_checked()
   assignment=page.locator('#ai-assignment')
-  actor=page.evaluate('HistoricalBrowserPreview.snapshot().actor')
-  opponent='soviet' if actor=='german' else 'german'
-  assignment.select_option(opponent);gear.click()
-  # A human-owned opening must not be consumed by the automatic controller.
-  before=page.evaluate('HistoricalBrowserPreview.snapshot().actionCount')
-  page.locator('#ai-resume').click()
-  expect(page.locator('#ai-ownership-status')).to_have_text('Human controls current side')
-  assert page.evaluate('HistoricalBrowserPreview.snapshot().actionCount')==before
-  page.locator('#ai-resume').click()
-  gear.click();assignment.select_option(actor);gear.click()
-  page.locator('#ai-resume').click()
-  page.wait_for_function("HistoricalBrowserPreview.snapshot().actor!=="+json.dumps(actor)+" && document.getElementById('ai-stop').hidden",timeout=180000)
-  expect(page.locator('#ai-ownership-status')).to_have_text('Human controls current side')
-  assert page.evaluate('HistoricalBrowserPreview.snapshot().actionCount')>before
-  gear.click();assignment.select_option('both');gear.click()
+  parity_expected=None;headless_report=None
+  if args.operational_parity:
+   # Run the existing Node controller on the same runner, using identical
+   # browser policy defaults (including naval budgets and selection mode).
+   # The authenticated opening is transferred through the ordinary restore API.
+   with tempfile.TemporaryDirectory() as tmp:
+    opening=Path(tmp)/'opening.json';final_path=Path(tmp)/'final.json';report=Path(tmp)/'report.json'
+    cmd=['node',str(Path(__file__).resolve().parent/'historical-operational-qualification-v644.test.js'),id,'standard','7','5000','campaign','baseline','greedy','same','3','3']
+    subprocess.run(cmd,check=True,timeout=600,env={**os.environ,'BROWSER_PARITY':'1','VICTORY_MODE':'historical','OPENING_SAVE_PATH':str(opening),'FINAL_SAVE_PATH':str(final_path),'AUDIT_PATH':str(report)})
+    opening_save=json.loads(opening.read_text());parity_expected=json.loads(final_path.read_text());headless_report=json.loads(report.read_text())
+   assert page.evaluate('(save)=>HistoricalBrowserPreview.restore(save)',opening_save),page.locator('#message').inner_text()
+   assert snapshot(id)==opening_save,'Authenticated opening was not restored exactly'
+   for key in ('ai-policy','ai-policy-soviet'):page.locator('#'+key).select_option('operational')
+   for key in ('ai-difficulty','ai-difficulty-soviet'):page.locator('#'+key).select_option('3')
+   assignment.select_option('both');gear.click()
+  else:
+   actor=page.evaluate('HistoricalBrowserPreview.snapshot().actor')
+   opponent='soviet' if actor=='german' else 'german'
+   assignment.select_option(opponent);gear.click()
+   # A human-owned opening must not be consumed by the automatic controller.
+   before=page.evaluate('HistoricalBrowserPreview.snapshot().actionCount')
+   page.locator('#ai-resume').click()
+   expect(page.locator('#ai-ownership-status')).to_have_text('Human controls current side')
+   assert page.evaluate('HistoricalBrowserPreview.snapshot().actionCount')==before
+   page.locator('#ai-resume').click()
+   gear.click();assignment.select_option(actor);gear.click()
+   page.locator('#ai-resume').click()
+   page.wait_for_function("HistoricalBrowserPreview.snapshot().actor!=="+json.dumps(actor)+" && document.getElementById('ai-stop').hidden",timeout=180000)
+   expect(page.locator('#ai-ownership-status')).to_have_text('Human controls current side')
+   assert page.evaluate('HistoricalBrowserPreview.snapshot().actionCount')>before
+   gear.click();assignment.select_option('both');gear.click()
   baseline=page.evaluate('HistoricalBrowserPreview.performanceStats()')
   started=time.monotonic()
   page.locator('#ai-resume').click()
@@ -236,7 +253,7 @@ with sync_playwright() as pw:
     if info['complete'] or (not info['running'] and info['message'].startswith('AI stopped:')):break
     assert info['timing'].get('humanView',{}).get('count',0)==baseline.get('humanView',{}).get('count',0), 'Human catalogue rebuilt during AI/AI'
     if time.monotonic()-started>=600:raise AssertionError('Campaign timed out: '+json.dumps(info))
-    page.wait_for_timeout(5000)
+    page.wait_for_timeout(1000 if args.operational_parity else 5000)
   finally:
    if args.evidence_dir:
     (args.evidence_dir/f'{id}-performance.json').write_text(json.dumps(page.evaluate('HistoricalBrowserPreview.performanceStats()'),indent=2))
@@ -246,6 +263,22 @@ with sync_playwright() as pw:
   expect(page.locator('#ai-resume')).to_be_disabled()
   expect(page.locator('#campaign-result strong')).to_be_visible()
   final=snapshot(id)
+  if args.operational_parity:
+   # Portable player metadata differs from Node; compare the authenticated
+   # campaign envelope including every receipt, opening and final state hash.
+   actual=final['campaign']
+   elapsed=time.monotonic()-started
+   result={'scenario':id,'seed':7,'difficulty':3,'browserSeconds':elapsed,'headlessSeconds':headless_report['computeElapsedMs']/1000,'actions':terminal['actionCount'],'exactCampaign':actual==parity_expected,'terminal':terminal['terminal']}
+   if args.evidence_dir:
+    (args.evidence_dir/f'{id}-operational-parity.json').write_text(json.dumps(result,indent=2))
+   print('OPERATIONAL PARITY',json.dumps(result),flush=True)
+   assert actual['bindings']==parity_expected['bindings'],'Opening/configuration binding differs'
+   if actual['journal']!=parity_expected['journal']:
+    first=next((i for i,(x,y) in enumerate(zip(actual['journal'],parity_expected['journal'])) if x!=y),min(len(actual['journal']),len(parity_expected['journal'])))
+    raise AssertionError(f'First differing receipt: {first}; journal lengths: {len(actual["journal"])} / {len(parity_expected["journal"])}')
+   assert actual==parity_expected,'Campaign envelope differs'
+   assert terminal['terminal']==headless_report['terminal']
+   assert info['timing'].get('boardSave',{}).get('count',0)==0
   if args.evidence_dir:page.screenshot(path=str(args.evidence_dir/f'{id}-live-terminal.png'),full_page=True)
   leave('Save and return');card(id).locator('[data-resume]').click();ready(id)
   assert snapshot(id)==final
