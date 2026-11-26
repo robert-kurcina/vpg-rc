@@ -88,8 +88,8 @@
     shell.closeSettings();
     return;
    }
-   settings();
-   shell?.openSettings();
+   if(shell)shell.openSettings(settings);
+   else settings();
   });
   settingsButton.setAttribute('aria-controls','settings-section');settingsButton.setAttribute('aria-pressed','false');
   bar.append(undo,redoButton);header.append(bar,settingsButton);root.dispatchEvent(new Event('resize'));

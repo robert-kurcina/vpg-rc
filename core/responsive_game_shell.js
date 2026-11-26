@@ -27,7 +27,7 @@
  function visible(){return mode==='mobile'?isOpen:desktopVisible||isSettings();}
  function setDesktopVisible(next){desktopVisible=Boolean(next);try{root.localStorage?.setItem(SIDEBAR_KEY,String(desktopVisible));}catch(_){}syncDrawer();}
  function playTab(){aside?.querySelector('[data-game-tab="play"]')?.click();}
- function openSettings(){if(!aside)return;if(settingsRestore===null)settingsRestore=mode==='mobile'?isOpen:desktopVisible;if(mode==='mobile')open();else syncDrawer();}
+ function openSettings(selectSettings){if(!aside){selectSettings?.();return;}if(settingsRestore===null)settingsRestore=mode==='mobile'?isOpen:desktopVisible;selectSettings?.();if(mode==='mobile'){isOpen=true;syncDrawer();}else syncDrawer();const first=aside.querySelector('#settings-section summary, #settings-section input, #settings-section button');first?.focus({preventScroll:true});syncHeight();}
  function closeSettings(){const previous=settingsRestore;settingsRestore=null;playTab();if(mode==='mobile'){isOpen=previous===true;syncDrawer();}else syncDrawer();document.getElementById('mission-settings')?.focus({preventScroll:true});}
  function toggleSidebar(){if(isSettings()){closeSettings();return;}if(mode==='mobile'){if(isOpen)close();else open();}else setDesktopVisible(!desktopVisible);}
  function enableSidebarToggle(){
@@ -35,7 +35,7 @@
   const nav=document.getElementById('map-navigation');if(!nav)return;
   sidebarToggle=document.createElement('button');sidebarToggle.type='button';sidebarToggle.id='mission-sidebar-toggle';
   sidebarToggle.setAttribute('aria-controls','game-sidebar');sidebarToggle.addEventListener('click',toggleSidebar);
-  nav.prepend(sidebarToggle);syncDrawer();
+  nav.prepend(sidebarToggle);syncDrawer();syncHeight();
  }
  // Persistent phase display is a presentation adapter: callbacks invoke the
  // existing controller actions, never calculate legality or commit independently.
@@ -65,6 +65,23 @@
   if(!phaseMessage)return;
   if(phaseMessage.textContent!==lastFeedback)phaseMessage.textContent=lastFeedback;
   phaseMessage.hidden=!lastFeedback;phaseMessage.dataset.error=String(lastError);syncHeight();
+ }
+ // SVG overlays are rebuilt after every legal action. Preserve keyboard focus
+ // by stable gameplay identity, never by DOM index or visual coordinates.
+ function captureMapFocus(container){
+  const node=document.activeElement;
+  if(!container?.contains(node))return null;
+  for(const attr of ['data-native-unit','data-unit-id','data-board-cell','data-hex','data-retreat-route']){
+   if(node.hasAttribute(attr))return {attr,value:node.getAttribute(attr)};
+  }
+  return null;
+ }
+ function restoreMapFocus(container,key){
+  if(!key||!container)return;
+  const candidates=[...container.querySelectorAll('[tabindex="0"]')];
+  const match=candidates.find(node=>node.getAttribute(key.attr)===key.value);
+  const fallback=candidates.find(node=>node.hasAttribute('data-board-cell')||node.hasAttribute('data-hex'))||candidates[0];
+  (match||fallback||document.getElementById('mission-phase-action')||sidebarToggle)?.focus({preventScroll:true});
  }
  function effective(){return preference==='auto'?detect():preference;}
  function syncHeight(){if(!hasDOM())return;const h=document.querySelector('body>header')?.getBoundingClientRect().height||56;document.body.style.setProperty('--mobile-header-height',h+'px');}
@@ -113,6 +130,7 @@
   if(!hasDOM()||!aside)return;
   mode=effective();document.body.dataset.layoutMode=mode;
   if(mode!=='mobile')isOpen=false;
+  else if(isSettings())isOpen=true;
   syncHeight();syncDrawer();syncSettings();
  }
  function setPreference(next){if(!valid.has(next))throw Error('Unknown layout mode');preference=next;store(next);apply();}
@@ -154,7 +172,7 @@
    const p=document.createElement('p');p.textContent=sourceWarning.textContent;
    note.append(summary,p);aside.insertBefore(note,heading.nextSibling);
   }
-  document.addEventListener('keydown',e=>{if(e.defaultPrevented)return;if(e.key==='Escape'&&isOpen){e.preventDefault();close();(sidebarToggle||launcher)?.focus({preventScroll:true});}});
+  document.addEventListener('keydown',e=>{if(e.defaultPrevented)return;if(e.key==='Escape'&&isSettings()){e.preventDefault();closeSettings();}else if(e.key==='Escape'&&isOpen){e.preventDefault();close();(sidebarToggle||launcher)?.focus({preventScroll:true});}});
   root.addEventListener?.('resize',()=>{if(preference==='auto')apply();else syncHeight();});
   apply();
  }
@@ -162,5 +180,5 @@
   if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',mount,{once:true});
   else mount();
  }
- return Object.freeze({STORAGE_KEY,detect,load,mount,setPreference,attachSettings,getMode:()=>mode,getPreference:()=>preference,isOpen:visible,open,openAt,close,openSettings,closeSettings,enableSidebarToggle,setPhase,feedback});
+ return Object.freeze({STORAGE_KEY,detect,load,mount,setPreference,attachSettings,getMode:()=>mode,getPreference:()=>preference,isOpen:visible,open,openAt,close,openSettings,closeSettings,enableSidebarToggle,setPhase,feedback,captureMapFocus,restoreMapFocus});
 });

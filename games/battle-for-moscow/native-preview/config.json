@@ -1,5 +1,6 @@
 {
   "schemaVersion": 1,
+  "adjudications": "historical-20261125-v1",
   "scenarioId": "battle-for-moscow",
   "status": "shared-native",
   "notes": "Shared-engine Battle for Moscow gameplay policy. Historical source data and shared CRT are preserved; setup-coordinate and full Oberlabs UX certification remain open.",

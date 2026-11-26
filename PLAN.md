@@ -1,6 +1,6 @@
 # Russian Campaign — Release completion plan
 
-Revision 491 | Production baseline: v701 / checkpoint 479 plus merged hosted UX PRs #1–7
+Revision 495 | Production baseline: v701 / checkpoint 479 plus merged hosted UX PRs #1–7
 
 ## Objective
 
@@ -21,12 +21,12 @@ Completed implementation is not equivalent to browser acceptance. Do not reopen 
 
 ## Batch A — Complete approved historical gameplay corrections (P1)
 
-- [ ] B4M §9.3: defender chooses a legal step-loss-and-hold Stand Fast result or normal retreat.
-- [ ] B4M §§5,10: update city control for each city actually entered along a committed legal movement path, not merely the destination.
-- [ ] Leningrad §5: Soviet victory for otherwise unclassified 13-city outcomes; retain isolated-Leningrad draw and 14-city German victory. Explicitly identify this as author-approved house adjudication rather than printed wording.
+- [x] B4M §9.3: defender chooses a legal step-loss-and-hold Stand Fast result or normal retreat.
+- [x] B4M §§5,10: update city control for each city actually entered along a committed legal movement path, not merely the destination.
+- [x] Leningrad §5: Soviet victory for otherwise unclassified 13-city outcomes; retain isolated-Leningrad draw and 14-city German victory. Explicitly identify this as author-approved house adjudication rather than printed wording.
 - [ ] Targeted rule regression, including historical/optional stacking and CRT interactions where affected; preserve versioned save/replay compatibility, or reject incompatible versions explicitly rather than silently reinterpret history.
 
-Exit: three changes implemented and focused regression passes. No unrelated engine refactoring.
+Revision 492: Moscow corrections implemented with a trusted version-bound policy; old native browser saves retain their original package fingerprint and behavior. New regression assertions added. Leningrad adjudication implemented in the trusted scenario policy and matching shared browser bundle; old Leningrad policy-bound saves reject explicitly rather than silently change the adjudication. Exact branch runtime regression remains pending. Exit: three changes implemented and focused regression passes. No unrelated engine refactoring.
 
 ## Batch B — Finish gameplay UX (P2, P6)
 
@@ -35,6 +35,8 @@ Exit: three changes implemented and focused regression passes. No unrelated engi
 - [ ] Verify and correct approved toolbar: triple-line hamburger left, title, centered Undo/Redo, gear right. Exactly eight mission-menu entries. Keep direct Show/Hide information panel control, desktop independent scrolling and tablet drawer.
 - [ ] Verify and correct persistent turn/faction/phase and feedback; primary action invokes existing legal handler only. Mandatory combat, retreat, support, reinforcement, deployment and stack cleanup decisions remain reachable when panel hidden. Check AI pause/stop, settings restoration, keyboard focus and selection.
 - [ ] Verify grouped Settings (Players and AI, Mission configuration, Map display, Interface layout, Maintenance). Keep next-mission rules separate from immediate preferences. G/S markers optional and smaller. Remove duplicate controls and unnecessary diagnostic presentation only; retain meaningful source limitations. Confirm actual Oberlabs workflow gaps; no undefined tournament functionality without author clarification.
+
+Revision 494: corrected shared Settings opening order, restore of prior mobile drawer visibility, Escape behavior, and Settings continuity when switching to mobile layout; both controllers use the same shell lifecycle. Revision 495 adds shared stable-identity keyboard focus restoration after native and historical SVG overlay redraws, plus header-height synchronization when mission navigation mounts. Browser regression pending.
 
 Exit: functional essential workflows on all five routes, representative desktop/tablet sizes, no known reproducible interaction blockers. Use source inspection only as preliminary evidence, not a substitute for browser operation.
 
@@ -67,6 +69,8 @@ Start with Batch A. In each development turn complete a meaningful group of chan
 No generated visuals, backend/BFF, anti-cheat engineering, scenario-specific renderer forks, separate CRT, unapproved terrain or coordinate migration. All five historical configurations use the shared B4M CRT. Preserve source-bound Leningrad deployment limitations and Odessa experimental authorization provenance. No reopening accepted artwork or historical topology absent concrete defect.
 
 ## Deferred post-release work (in order)
+
+Author-confirmed: complete reliable gameplay, solid desktop/tablet UX and integrated release acceptance before WASM conversion. Optimize the stable JavaScript baseline first; use WASM selectively for measured computational kernels. JavaScript remains authoritative for rules, state, validation, RNG and saves.
 
 1. Profile real workloads.
 2. Web Workers for expensive AI/simulation with authoritative main-thread validation and exact replay.

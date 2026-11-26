@@ -156,8 +156,8 @@ function combatUtility(g,s,attackers,defender,objective){
  for(let die=1;die<=6;die++){
   const p=E.combatPreview(g,s,attackers,defender.id,die);
   if(!p)return null;
-  const loss=['DRL','EX'].includes(p.outcome)||p.outcome==='DR'&&p.cityHold?1:0;
-  const retreat=['DR','DRL','EX'].includes(p.outcome)&&!p.cityHold;
+  const loss=['DRL','EX'].includes(p.outcome)||p.outcome==='DR'&&(p.cityHold||p.cityHoldOptions?.length)?1:0;
+  const retreat=['DR','DRL','EX'].includes(p.outcome)&&!p.cityHold&&!p.cityHoldOptions?.length;
   // EX can change retreat conditions after attacker losses: do not assume elimination.
   const eliminated=p.outcome==='DE'||loss>=steps||retreat&&p.outcome!=='EX'&&!p.retreat.length&&!Object.values(p.retreatByDefender||{}).some(routes=>routes.length);
   const cleared=eliminated||retreat;
@@ -175,7 +175,7 @@ function chooseCombat(session,config){
   if(s.pendingRoll===0)return {type:'resolve-pending',options:{}};
   // Preserve the defensive purpose of city hold in the opt-in stacked policy.
   const declared=s.declarations[0];
-  if(declared&&g.rules.specialRules.some(x=>x.module==='stacked-battle-v1'&&x.cityHoldPolicy==='one-step-choice')){
+  if(declared&&(g.rules.adjudications==='historical-20261125-v1'||g.rules.specialRules.some(x=>x.module==='stacked-battle-v1'&&x.cityHoldPolicy==='one-step-choice'))){
    const preview=E.combatPreview(g,s,declared.attackers,declared.defender,s.pendingRoll,declared.airSupportId||null);
    if(preview?.cityHoldOptions?.length)return {type:'resolve-pending',options:{standFastId:preview.cityHoldOptions[0],advanceId:'none'}};
   }

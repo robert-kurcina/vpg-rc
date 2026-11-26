@@ -454,7 +454,15 @@ function legalMoves(g,s,id){
  }
  return out.sort((a,b)=>a.cost-b.cost||a.x-b.x||a.y-b.y);
 }
-function move(g,s,id,x,y){if(s.over)return false;const legal=legalMoves(g,s,id);if(!legal.some(v=>v.x===x&&v.y===y))return false;const u=s.units.find(v=>v.id===id),from=copy(u.position);u.position={x,y};claim(g,s,u);s.moved.push(id);s.log.push({turn:s.turn,side:s.side,type:'move',unit:id,from,to:{x,y}});return true;}
+function move(g,s,id,x,y){
+ if(s.over)return false;
+ const route=legalMoves(g,s,id).find(v=>v.x===x&&v.y===y);if(!route)return false;
+ const u=s.units.find(v=>v.id===id),from=copy(u.position);
+ const adjudicated=g.rules.adjudications==='historical-20261125-v1';
+ if(adjudicated)for(const at of route.path){u.position={...at};claim(g,s,u);}
+ else {u.position={x,y};claim(g,s,u);}
+ s.moved.push(id);s.log.push({turn:s.turn,side:s.side,type:'move',unit:id,from,to:{x,y},...(adjudicated?{path:copy(route.path)}:{})});return true;
+}
 function stackedPolicy(g){return (g.rules.specialRules||[]).find(v=>v.module==='stacked-battle-v1');}
 function stackedBattle(g){return !!stackedPolicy(g);}
 function stackedHoldOptions(g,s,outcome,defenders,attackers){
@@ -571,7 +579,10 @@ function combatPreview(g,s,attackerIds,defenderId,die,airSupportId=null){
  }
  const cityHold=(g.rules.specialRules||[]).some(e=>modules[e.module]?.onCombatResult?.({g,s,outcome,defender:d,cell:g.cells.get(xy(d.position.x,d.position.y)),attackers:aa},e)===true);
  const defenderDies=outcome==='DE'||(['DRL','EX'].includes(outcome)&&(d.strength==='reduced'||d.stepLoss==='remove'));
- return {...o,outcome,cityHold,defenders:[d.id],defenderLossOptions:[],retreat:!cityHold&&!defenderDies&&['DR','DRL','EX'].includes(outcome)?retreatOptions(g,s,d,aa):[],potentialAdvance:['DR','DRL','EX','DE'].includes(outcome)&&!cityHold};
+ const optional=g.rules.adjudications==='historical-20261125-v1';
+ const holdEligible=optional&&cityHold&&d.stepLoss!=='remove';
+ const forcedHold=cityHold&&!optional;
+ return {...o,outcome,cityHold:forcedHold,...(optional?{cityHoldOptions:holdEligible?[d.id]:[]}:{}),defenders:[d.id],defenderLossOptions:[],retreat:!forcedHold&&!defenderDies&&['DR','DRL','EX'].includes(outcome)?retreatOptions(g,s,d,aa):[],potentialAdvance:['DR','DRL','EX','DE'].includes(outcome)&&!forcedHold};
 }
 // Atomic two-defender combat. Invalid choices never mutate the caller's game state or RNG.
 function resolveStackedAttack(g,s,attackerIds,defenderId,die=null,choices={},frozenOdds=null,airSupportId=null){
@@ -662,7 +673,7 @@ function resolveStackedAttack(g,s,attackerIds,defenderId,die=null,choices={},fro
 }
 function resolveAttack(g,s,attackerIds,defenderId,die=null,choices={},frozenOdds=null,airSupportId=null){
  const target=s.units.find(u=>u.id===defenderId);if(target?.position&&battleDefenders(s,target).length>1)return stackedBattle(g)?resolveStackedAttack(g,s,attackerIds,defenderId,die,choices,frozenOdds,airSupportId):null;
- if(choices.standFastId!==undefined||s.over||currentPhase(g,s)?.kind!=='combat'||new Set(attackerIds).size!==attackerIds.length||attackerIds.some(id=>s.committed.includes(id))||s.committed.includes('def:'+defenderId))return null;
+ if((choices.standFastId!==undefined&&g.rules.adjudications!=='historical-20261125-v1')||s.over||currentPhase(g,s)?.kind!=='combat'||new Set(attackerIds).size!==attackerIds.length||attackerIds.some(id=>s.committed.includes(id))||s.committed.includes('def:'+defenderId))return null;
  const o=frozenOdds||combatOdds(g,s,attackerIds,defenderId,airSupportId);if(!o||o.odds<minimumCombatOdds(g))return null;
  if(die!==null&&(!Number.isInteger(die)||die<1||die>6))return null;
  // Explicit choices must be checked BEFORE consuming a random die or changing any state.
@@ -673,18 +684,20 @@ function resolveAttack(g,s,attackerIds,defenderId,die=null,choices={},frozenOdds
  if(choices.advanceId!==undefined&&choices.advanceId!==null&&choices.advanceId!=='none'&&!attackerIds.includes(choices.advanceId))return null;
  const seedBefore=s.seed;const roll=die??(Math.floor(rng(s)*6)+1),result=g.rules.combat.table[String(o.odds)]?.[roll-1];if(!result)throw Error('CRT result missing');
  const hex={...d.position},p=combatPreview(g,s,attackerIds,defenderId,roll,airSupportId);
- if(!p)return null;
+ if(!p){s.seed=seedBefore;return null;}
+ const chosenHold=choices.standFastId!==undefined&&choices.standFastId!=='none';
+ if(chosenHold&&(!p.cityHoldOptions?.includes(choices.standFastId)||choices.retreatTo!==undefined||choices.advanceId&&choices.advanceId!=='none')){s.seed=seedBefore;return null;}
  if(choices.attackerLossId!==undefined&&result!=='AL'){if(die===null)s.seed=seedBefore;return null;}
  if(choices.exchangeOrder!==undefined&&result!=='EX'){if(die===null)s.seed=seedBefore;return null;}
  let retreatRoute=null;
- if(choices.retreatTo!==undefined){if(!choices.retreatTo||!Number.isInteger(choices.retreatTo.x)||!Number.isInteger(choices.retreatTo.y))return null;
+ if(choices.retreatTo!==undefined){if(!choices.retreatTo||!Number.isInteger(choices.retreatTo.x)||!Number.isInteger(choices.retreatTo.y)){s.seed=seedBefore;return null;}
   retreatRoute=p.retreat.find(v=>v.x===choices.retreatTo.x&&v.y===choices.retreatTo.y);if(!retreatRoute){if(die===null)s.seed=seedBefore;return null;}}
  let attackerLoss=null,exchangeLosses=[],cityHold=false,retreatTo=null,retreatZocCost=0,advanceId=null;
  const beforeDef=power(d),fullDef=d.strength==='full';
  if(result==='AL'){const a=aa.find(u=>u.id===choices.attackerLossId)||(g.rules.combat.defaultLossPriority==='weakest'?aa.slice().sort((x,y)=>power(x)-power(y))[0]:aa[0]);attackerLoss=a.id;loseStep(g,s,a);}
  if(['DRL','EX'].includes(result))loseStep(g,s,d);
  if(result==='DE')eliminate(g,s,d);
- if(result==='DR'&&p.cityHold){loseStep(g,s,d);cityHold=true;}
+ if(result==='DR'&&(p.cityHold||chosenHold)){loseStep(g,s,d);cityHold=true;}
  else if(['DR','DRL','EX'].includes(result)&&d.position){
   const route=retreatRoute||p.retreat[0];
   if(!route||route.cost&&d.strength==='reduced'){eliminate(g,s,d);}

@@ -180,6 +180,7 @@ function begin({rootDir,profilePath,mapPath,registryPath,projectRoot,aiProfilePa
   if(!holder.dataset.ready){holder.innerHTML=T.svgMap(board,mapBase);holder.dataset.ready='true';}
   const svg=holder.querySelector('svg');
   if(displayControl)Display.applyCoast(svg,board,displayControl.get());
+  const shell=globalThis.WargameResponsiveShell,focused=shell?.captureMapFocus(svg);
   const previous=svg.querySelector('[data-native-interactive="true"]');if(previous)previous.remove();
   const layer=mkSvg('g',{'data-native-interactive':'true','class':'native-preview-overlays'});
   const byHex=new Map(board.cells.map(c=>[`${c.sourceRef.x},${c.sourceRef.y}`,c]));
@@ -242,6 +243,7 @@ function begin({rootDir,profilePath,mapPath,registryPath,projectRoot,aiProfilePa
   }
   const cityLabel=svg.querySelector('[data-layer="city-labels"]');
   svg.insertBefore(layer,cityLabel||null);
+  shell?.restoreMapFocus(svg,focused);
  }
  function menuSelect(id,label,options){const wrap=document.createElement('label');wrap.textContent=label;
   const el=document.createElement('select');el.id=id;
@@ -340,7 +342,7 @@ function begin({rootDir,profilePath,mapPath,registryPath,projectRoot,aiProfilePa
    const input=document.createElement('input');input.id='choice-exchange';input.type='text';input.placeholder=decl.attackers.join(',');label.append(input);el.append(label);
   }
   if(preview.defenderLossOptions?.length)el.append(menuSelect('choice-defender-loss','Defender to lose a step',[['','Default'],...preview.defenderLossOptions.map(id=>[id,id])]));
-  if(preview.cityHoldOptions?.length)el.append(menuSelect('choice-stand-fast','Stacked Stand Fast',[['none','Retreat'],...preview.cityHoldOptions.map(id=>[id,`Hold: ${id} loses a step`])]));
+  if(preview.cityHoldOptions?.length)el.append(menuSelect('choice-stand-fast','Defender Stand Fast',[['none','Retreat'],...preview.cityHoldOptions.map(id=>[id,`Hold: ${id} loses a step`])]));
   if(['DR','DRL','EX'].includes(preview.outcome))for(const [id,routes] of Object.entries(preview.retreatByDefender||{}))if(routes.length){const control=menuSelect('choice-retreat-'+id,`Retreat ${id}`,[['','Default'],...routes.map(q=>[`${q.x},${q.y}`,`${labelLoc(q)} · ZOC cost ${q.cost??0}`])]);control.querySelector('select').dataset.stackRetreat=id;el.append(control);}
   if(preview.retreat?.length)el.append(menuSelect('choice-retreat','Defender retreat',[['','Default'],...preview.retreat.map(q=>[`${q.x},${q.y}`,`${labelLoc(q)} · ZOC cost ${q.cost??0}`])]));
   if(preview.potentialAdvance)el.append(menuSelect('choice-advance','Advance after combat',[['','Default'],['none','No advance'],...attackers]));
@@ -353,7 +355,7 @@ function begin({rootDir,profilePath,mapPath,registryPath,projectRoot,aiProfilePa
   const out={};const byId=id=>$(id)?.value;
   if(byId('choice-attacker'))out.attackerLossId=byId('choice-attacker');
   if(byId('choice-exchange'))out.exchangeOrder=byId('choice-exchange').split(',').map(v=>v.trim()).filter(Boolean);
-  if(byId('choice-retreat')){const [x,y]=byId('choice-retreat').split(',').map(Number);out.retreatTo={x,y};}
+  if(byId('choice-retreat')&&!$('choice-retreat').disabled){const [x,y]=byId('choice-retreat').split(',').map(Number);out.retreatTo={x,y};}
   if(byId('choice-defender-loss'))out.defenderLossId=byId('choice-defender-loss');
   if(byId('choice-stand-fast'))out.standFastId=byId('choice-stand-fast');
   if(out.standFastId&&out.standFastId!=='none'){out.advanceId='none';return out;}
@@ -574,7 +576,7 @@ function begin({rootDir,profilePath,mapPath,registryPath,projectRoot,aiProfilePa
  $('new-game').addEventListener('click',start);
  $('undo').addEventListener('click',()=>{if(aiRunning)return show('Wait for the current AI side to finish.',true);pauseAutomatic();const out=S.undo(session);if(!out.ok)return show('Nothing to Undo.',true);redoHistory?.recordUndo(session,out.session);session=out.session;cleanSelection();show('Previous committed action restored.');render();});
  function redo(){if(aiRunning)return;const next=redoHistory?.take(session);if(!next)return;pauseAutomatic();session=next;cleanSelection();show('Next committed action restored.');render();}
- if(document.documentElement.dataset.missionId)globalThis.WargameMissionStorage?.mountToolbar({undo:$('undo'),redo,settings:()=>{selectPanel?.('settings');globalThis.WargameResponsiveShell?.open();}});
+ if(document.documentElement.dataset.missionId)globalThis.WargameMissionStorage?.mountToolbar({undo:$('undo'),redo,settings:()=>selectPanel?.('settings')});
  $('finish-phase').addEventListener('click',()=>change({type:phase()?.kind==='setup'?'finish-setup':phase()?.kind==='redeployment'?'finish-redeployment':'finish-phase'}));
  $('remove-battle').addEventListener('click',()=>change({type:'remove-last-battle'}));
  $('resolve-battle').addEventListener('click',()=>change({type:'resolve-pending',options:getChoices()}));
@@ -594,6 +596,8 @@ function begin({rootDir,profilePath,mapPath,registryPath,projectRoot,aiProfilePa
    alternatives[1].rules.combat.table=CRT.tableFor(basePackage.game.id,'advanced');
    if(baseProfile?.stackingVariant)for(const candidate of alternatives.slice())alternatives.push(Project.withStacking(candidate,baseProfile,'double'));
    if(Graduated)for(const candidate of alternatives.slice())alternatives.push(Graduated.withNative(candidate,'graduated'));
+   // Previously saved campaigns retain their original forced-hold and destination-only policy.
+   if(basePackage.rules.adjudications)for(const candidate of alternatives.slice()){const legacy=JSON.parse(JSON.stringify(candidate));delete legacy.rules.adjudications;alternatives.push(legacy);}
    let restored=null,chosen=null;
    for(const candidate of alternatives){
     const engine=E.build(candidate);

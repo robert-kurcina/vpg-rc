@@ -412,7 +412,9 @@ function showBoard(){
    multiEligibleRepair&&u.id===repairTarget,units.length>1?'Click this counter to swap the top of the stack. '+hint:hint));
  }
  svg+='</g>';
- $('counter-overlay').innerHTML=svg;
+ const overlay=$('counter-overlay'),shell=root.WargameResponsiveShell,focused=shell?.captureMapFocus(overlay);
+ overlay.innerHTML=svg;
+ shell?.restoreMapFocus(overlay,focused);
 }
 function renderActions(){
  if(!view)return;
@@ -1077,7 +1079,7 @@ async function start(){
   document.addEventListener('pointerup',setupPointerUp);
   document.addEventListener('pointercancel',()=>{setupPointer=null;document.body.classList.remove('setup-is-dragging')});
   $('undo').onclick=undo;
-  if(document.documentElement.dataset.missionId)root.WargameMissionStorage?.mountToolbar({undo:$('undo'),redo,settings:()=>{selectPanel('settings');root.WargameResponsiveShell?.open();}});
+  if(document.documentElement.dataset.missionId)root.WargameMissionStorage?.mountToolbar({undo:$('undo'),redo,settings:()=>selectPanel('settings')});
   syncHistory();
   $('filter').oninput=()=>{clearMoveSelection();query=$('filter').value;renderActions();renderBattleProposals();showBoard()};
   document.addEventListener('keydown',e=>{if(e.key==='Escape'&&moveSelection){clearMoveSelection();query='';$('filter').value='';renderActions();showBoard();}});
