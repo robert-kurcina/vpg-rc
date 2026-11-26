@@ -1,0 +1,19 @@
+/* Shared mission suspense shell. No simulated game map or counter artwork. */
+#mission-loading[hidden]{display:none!important}
+#mission-loading{position:fixed;inset:0;z-index:10000;display:grid;grid-template-rows:auto 1fr;gap:12px;padding:16px;background:#eeece6;color:#252a30;box-sizing:border-box;overflow:auto;font:inherit}
+.mission-loading-toolbar{display:flex;align-items:center;gap:14px;height:48px;border-bottom:1px solid #bdbbb4}
+.mission-loading-toolbar span,.mission-loading-line{display:block;border-radius:4px;background:#d6d4cd;height:12px}
+.mission-loading-toolbar span:first-child{width:28px;height:24px}.mission-loading-toolbar span:nth-child(2){width:min(40vw,230px)}.mission-loading-toolbar span:last-child{width:72px;margin-left:auto}
+.mission-loading-grid{display:grid;grid-template-columns:minmax(180px,290px) minmax(0,1fr);gap:16px;min-height:0}
+.mission-loading-sidebar,.mission-loading-board{border:1px solid #c5c3bb;background:#e4e2dc;border-radius:6px;padding:18px;box-sizing:border-box}
+.mission-loading-sidebar{display:flex;flex-direction:column;gap:15px}.mission-loading-sidebar .mission-loading-line:nth-child(3n){width:65%}
+.mission-loading-board{min-height:250px;display:grid;place-items:center;position:relative;background-color:#e4e2dc}
+.mission-loading-card{max-width:420px;text-align:center;padding:24px;background:#f8f7f3;border:1px solid #c3c1ba;border-radius:8px;box-shadow:0 3px 16px #00000012}
+.mission-loading-spinner{width:56px;height:56px;margin:0 auto 12px;display:block;animation:mission-loading-spin 1.1s linear infinite;color:#395775}
+.mission-loading-card h2{font-size:1.15rem;margin:0 0 8px}.mission-loading-card p{margin:8px 0;overflow-wrap:anywhere}
+.mission-loading-card a,.mission-loading-card button{display:inline-block;margin:8px 4px 0;padding:8px 12px;border:1px solid #68727d;border-radius:4px;background:#fff;color:#263b51;font:inherit;text-decoration:none;cursor:pointer}
+#mission-loading[data-state="error"] .mission-loading-spinner{display:none}
+@keyframes mission-loading-spin{to{transform:rotate(360deg)}}
+@media(max-width:800px){#mission-loading{padding:10px}.mission-loading-grid{grid-template-columns:1fr}.mission-loading-sidebar{display:none}.mission-loading-board{min-height:60vh}.mission-loading-card{padding:18px}}
+@media(prefers-reduced-motion:reduce){.mission-loading-spinner{animation:none}}
+@media(prefers-color-scheme:dark){#mission-loading{background:#242627;color:#e6e6e1}.mission-loading-toolbar{border-color:#4b4c4c}.mission-loading-toolbar span,.mission-loading-line{background:#494c4d}.mission-loading-sidebar,.mission-loading-board{background:#303334;border-color:#515456}.mission-loading-card{background:#393c3e;border-color:#626566}.mission-loading-spinner{color:#a5c4df}}
