@@ -21,7 +21,10 @@ with sync_playwright() as pw:
  def ready(id):
   if id=='battle-for-moscow':
    page.wait_for_function('!!window.__nativePreviewReady');page.evaluate('window.__nativePreviewReady')
-  else:page.wait_for_function('!!window.HistoricalBrowserPreview')
+  else:
+   page.wait_for_function("!!window.HistoricalBrowserPreview || document.getElementById('status')?.textContent.includes('Source/engine initialization failed')")
+   if not page.evaluate('!!window.HistoricalBrowserPreview'):
+    raise AssertionError(f'{id} initialization failed: {page.locator("#message").inner_text()}')
   expect(page.locator('#mission-menu-toggle')).to_be_visible()
  def snapshot(id):return page.evaluate('WargameSession.serialize(__nativePreview.getSession())' if id=='battle-for-moscow' else 'HistoricalBrowserPreview.save()')
  def menu():
