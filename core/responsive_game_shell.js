@@ -106,6 +106,9 @@
   if(isSettings()){settingsRestore=null;playTab();}
   const target=aside.querySelector('#'+id);
   if(!target||target.closest('[hidden]'))return;
+  // Contextual orders can live inside a closed disclosure. Reveal its ancestors
+  // before measuring or scrolling, without changing the legal action itself.
+  for(let el=target;el&&el!==aside;el=el.parentElement)if(el.tagName==='DETAILS')el.open=true;
   if(mode==='mobile')open();
   else if(!desktopVisible)setDesktopVisible(true);
   const heading=aside.querySelector('.mobile-controls-heading');
