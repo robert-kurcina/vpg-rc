@@ -1,9 +1,9 @@
 {
   "version": "v701",
   "checkpoint": 479,
-  "packageRevision": "clean-3",
+  "packageRevision": "clean-4",
   "baseline": "hex_wargame_v700_CHECKPOINT_478_LENINGRAD_ACCEPTANCE.zip",
-  "description": "10/10 fresh historical headless acceptance; resumable qualification runner",
+  "description": "v701 archive baseline plus accepted shared browser engine through PR40; original archive counts are historical, not current repository inventory",
   "originalFileCount": 2094,
   "originalFileCategories": {
     "retained": 1883,
@@ -14,5 +14,13 @@
   "companionArchive": "hex_wargame_v681_HISTORICAL_EVIDENCE.zip",
   "relocationManifest": "provenance/archive/v681/RELOCATION_MANIFEST.json",
   "archivedOriginalManifest": "provenance/archive/v681/PACKAGE_MANIFEST.json",
-  "limitations": "Full semantic reading order and tables, outstanding historical adjudications, broader variant acceptance, hosted/full browser acceptance remain open. Difficulty rankings provisional."
+  "limitations": "Third-party redistribution rights unresolved; semantic reading-order review deferred; AI strength ordering provisional; representative controlled equivalence is not exhaustive.",
+  "acceptance": {
+    "run": 45763742040,
+    "activeJobsPassed": 10,
+    "operationalKievActions": 433,
+    "sameRunnerNodeBeforeMs": 14319,
+    "sameRunnerNodeAfterMs": 7623,
+    "chromiumSeconds": 11.750452664
+  }
 }

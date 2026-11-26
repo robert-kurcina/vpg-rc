@@ -1,3 +1,11 @@
+# Current repository status — revision 529
+
+The five-game accepted scope and original performance objective are complete. PR40 CI run 45763742040 passed all ten jobs. Kiev controlled campaign retained 433 exact receipts; same-run Node acceleration 1.878x. Oberlabs UX parity and WASM are rejected. See PLAN.md for the bounded remaining work. Third-party redistribution rights remain unresolved.
+
+The checkpoint entries below are preserved historical records; their open items describe the status at the time, not current requirements.
+
+---
+
 # Checkpoint 479 / v701 — resumable historical acceptance
 
 All ten fresh historical scenario/CRT combinations now complete. Runner-only checkpoint/resume added; see PLAN.md and rules/audit/release-v701/. Hosted and full interactive acceptance remain open.
