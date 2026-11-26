@@ -64,13 +64,15 @@ function syncPhaseBar(){
   else if(humanActionBlocked())action={label:'Pause AI',run:()=>$('ai-resume').click()};
   else if(view.kind==='post-roll-choice')action={label:'Resolve consequences',run:()=>shell.openAt('orders-section')};
   else if(!$('roll-panel').hidden)action={label:'Combat decision',run:()=>shell.openAt('roll-panel')};
+  else if(supportWindow&&actionList.some(a=>['commit-ground-air','declare-fleet-attack'].includes(a.action?.type)||['declare-fleet-move','commit-forced-port'].includes(a.type)))action={label:'Support orders',run:()=>supportWindow.show()};
+  else if(view.stackingCleanup||view.stackPenalty)action={label:'Stacking orders',run:()=>shell.openAt('orders-section')};
   else if(selectedBattles.size&&!$('commit-battles').disabled)action={label:'Commit battles',run:()=>$('commit-battles').click()};
   else {
    // Mirror only a unique, already enumerated completion action. Decisions
    // with other mandatory choices stay in their contextual panels.
    const choices=actionList.filter(a=>['finish-phase','finish-combat','finish-air-sea','finish-housekeeping','finish-buildup'].includes(a.action?.type||a.type)||(a.action?.type==='commit-battles'&&!a.action.battles.length));
    if(choices.length===1&&!selectedBattles.size&&!view.stackingCleanup&&!view.stackPenalty&&!moveSelection&&!supportSelection&&!retreatSelection){
-    const a=choices[0];action={label:formatAction(a),run:()=>{if(actionList.includes(a)&&!humanActionBlocked()&&!selectedBattles.size&&!moveSelection&&!supportSelection&&!retreatSelection)choose(a);else shell.openAt('orders-section');}};
+    const a=choices[0];action={label:formatAction(a),run:()=>{if(actionList.includes(a)&&!humanActionBlocked()&&!selectedBattles.size&&!moveSelection&&!supportSelection&&!retreatSelection&&!view.stackingCleanup&&!view.stackPenalty)choose(a);else shell.openAt('orders-section');}};
    }else action={label:'Required orders',run:()=>shell.openAt('orders-section')};
   }
  }
