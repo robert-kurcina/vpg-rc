@@ -790,6 +790,7 @@ function decide({session,context,policy={}}){
 function run({session,context,policy={},policyForActor,onStep}={}){
  const p=policyOf(policy);
  if(!session||!context)throw Error('Source-bound historical campaign session and context required');
+ context=require('./movement_binding').prepareContext(context);
  let current=session;const trace=[],stats={moves:0,combats:0,reinforcements:0,navalRolls:0,turns:0};
  for(let i=0;i<p.maxActions;i++){
   const activePolicy=policyForActor?policyOf({...policyForActor(current.snapshot().actor),maxActions:p.maxActions}):p;
