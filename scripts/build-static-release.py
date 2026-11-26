@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Stage a private, repository-relative static release candidate (not publication).
-Source redistribution permission and real-origin browser acceptance remain required.
+Source redistribution permission remains required; rerun browser acceptance for changed releases.
 """
 import argparse, hashlib, json, shutil, re
 from html.parser import HTMLParser
@@ -127,7 +127,7 @@ if __name__=='__main__':
         if a.http:report['httpFiles']=http_check(a.out)
         print(json.dumps(report));raise SystemExit
     counts=build(a.out)
-    manifest={'sourceVersion':json.loads((ROOT/'PACKAGE_MANIFEST.json').read_text())['version'],'routes':ROUTES,'checks':counts,'publicationStatus':'private candidate; rights and hosted acceptance outstanding','files':hashes(a.out)}
+    manifest={'sourceVersion':json.loads((ROOT/'PACKAGE_MANIFEST.json').read_text())['version'],'routes':ROUTES,'checks':counts,'publicationStatus':'private candidate; redistribution rights and publication authorization outstanding','files':hashes(a.out)}
     (a.out/'STATIC_MANIFEST.json').write_text(json.dumps(manifest,indent=2)+'\n');report={'files':len(manifest['files']),**counts}
     if a.http:report['httpFiles']=http_check(a.out)
     print(json.dumps(report))
