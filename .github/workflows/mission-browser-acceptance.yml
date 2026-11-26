@@ -7,6 +7,7 @@ on:
     paths:
       - 'tests/mission-hosted-v693.py'
       - 'tests/historical-operational-qualification-v644.test.js'
+      - 'scripts/summarize-campaign-profile.js'
       - 'tests/fixtures/terminal-v694/**'
       - 'scripts/run-native-campaign.js'
       - 'scripts/build-static-release.py'
@@ -127,6 +128,29 @@ jobs:
           path: |
             browser-evidence/
             ${{ runner.temp }}/live-server.log
+          if-no-files-found: warn
+          retention-days: 14
+  campaign-cpu-profile:
+    if: github.event_name == 'workflow_dispatch' || github.head_ref == 'perf/profile-release-525'
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: '22'
+      - name: Compare unprofiled and sampled operational campaigns
+        run: |
+          mkdir -p performance-evidence
+          export BROWSER_PARITY=1 VICTORY_MODE=historical
+          AUDIT_PATH=performance-evidence/baseline.json FINAL_SAVE_PATH=performance-evidence/baseline-save.json node tests/historical-operational-qualification-v644.test.js kiev standard 7 5000 campaign baseline greedy same 3 3
+          CPU_PROFILE_PATH=performance-evidence/campaign.cpuprofile AUDIT_PATH=performance-evidence/profiled.json FINAL_SAVE_PATH=performance-evidence/profiled-save.json node tests/historical-operational-qualification-v644.test.js kiev standard 7 5000 campaign baseline greedy same 3 3
+          node scripts/summarize-campaign-profile.js performance-evidence/campaign.cpuprofile performance-evidence/baseline.json performance-evidence/profiled.json performance-evidence/baseline-save.json performance-evidence/profiled-save.json | tee performance-evidence/summary.json
+      - uses: actions/upload-artifact@v6
+        if: always()
+        with:
+          name: campaign-cpu-profile
+          path: performance-evidence/
           if-no-files-found: warn
           retention-days: 14
   operational-parity:
