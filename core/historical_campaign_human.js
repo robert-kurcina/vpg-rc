@@ -156,7 +156,7 @@ function make(session,context,pending=null,existingPager=null,missionSeed=null,d
   if(missionSeed!==null){payload.missionSeed=missionSeed;payload.deploymentDraws=deploymentDraws;}
   return {...payload,integrity:{algorithm:'SHA-256',digest:hash(payload)}};
  }
- return Object.freeze({snapshot:()=>session.snapshot(),view,preparePage,choose,roll,rollRandom,autoplayStep,hasPendingRoll:()=>pending!==null,undo,save,missionSeed:()=>missionSeed,deploymentDraws:()=>deploymentDraws});
+ return Object.freeze({snapshot:()=>session.snapshot(),journal:()=>session.journal(),view,preparePage,choose,roll,rollRandom,autoplayStep,hasPendingRoll:()=>pending!==null,undo,save,missionSeed:()=>missionSeed,deploymentDraws:()=>deploymentDraws});
 }
 function create({session,context,missionSeed=null,deploymentDraws=0}={}){return make(session,context,null,null,missionSeed,deploymentDraws);}
 function restore(saved,context){
