@@ -1205,6 +1205,7 @@ async function start(){
    if(aiRunning||setupActive||!human||human.snapshot().cursor.complete)return;
    if(human.hasPendingRoll()){message('Resolve the committed human die before passing control to the AI.');return}
    if(!aiPaused&&aiAssignment!=='manual'&&!computerOwns(human.snapshot().actor)){message('This side is assigned to the human. Pause automatic play to override.');return}
+   cancelPostRollSearch();postRollPage=0;retreatSelection=null;clearMoveSelection();selectedBattles.clear();query='';$('filter').value='';
    supportSelection=null;supportTargetHex=null;aiRunning=true;aiStopRequested=false;$('ai-stop').hidden=false;$('ai-side').disabled=true;
    const actor=human.snapshot().actor;let count=0;
    for(const id of ['ai-policy','ai-policy-soviet','ai-difficulty','ai-difficulty-soviet'])if($(id))$(id).disabled=true;
@@ -1237,6 +1238,7 @@ async function start(){
    try{
     const next=human.autoplayStep(selectedAIPolicy());
     if(!next.session)throw Error('AI controller blocked: '+(next.decision.reason||next.decision.status));
+    cancelPostRollSearch();postRollPage=0;retreatSelection=null;supportSelection=null;supportTargetHex=null;selectedBattles.clear();query='';$('filter').value='';
     human=next.session;message('');refresh();
    }catch(err){message(err.message)}
   };
