@@ -112,6 +112,71 @@ with sync_playwright() as pw:
   page.locator('#undo').click();assert snapshot('battle-for-moscow')['state']==before['state']
   page.locator('#redo').click();assert snapshot('battle-for-moscow')['state']==after['state']
   print('PASS Moscow real counter selection, keyboard, zoom, movement, Undo and Redo',flush=True)
+ def verify_moscow_stacking_and_interrupt():
+  id='battle-for-moscow'
+  original=snapshot(id)
+  # Start a fresh double-stack mission with a fixed seed through the existing UI.
+  gear=page.locator('#mission-settings');gear.click()
+  page.locator('#seed').fill('7')
+  page.locator('#stacking-mode').select_option('double')
+  page.locator('#settings-section details.settings-category').filter(has=page.locator('#new-game')).locator('summary').click()
+  page.locator('#new-game').click()
+  if gear.get_attribute('aria-pressed')=='true':gear.click()
+  opening=snapshot(id)
+  for _ in range(5):
+   kind=page.evaluate("WargameCore.currentPhase(__nativePreview.configuration(),__nativePreview.getSession().state).kind")
+   if kind=='move':break
+   assert kind in ('redeployment','combat'),kind
+   page.locator('#mission-phase-action').click()
+  else:raise AssertionError('Moscow double-stack movement phase not reached')
+  order=page.evaluate("""()=>{const s=__nativePreview.getSession();for(const u of s.state.units){
+    if(!u.position||u.strength==='dead'||WargameCore.unitSide(u)!==s.state.side)continue;
+    for(const m of WargameSession.legal(s,{type:'move',unitId:u.id})){
+     const occupants=s.state.units.filter(v=>v.position?.x===m.x&&v.position?.y===m.y&&v.strength!=='dead');
+     if(occupants.length===1&&occupants[0].id!==u.id&&WargameCore.unitSide(occupants[0])===s.state.side)return {id:u.id,other:occupants[0].id,x:m.x,y:m.y};
+    }
+   }return null;}""")
+  assert order,'No legal occupied-hex move in source opening'
+  before=snapshot(id)
+  counter=lambda unit:page.locator('[data-native-unit="'+unit+'"]')
+  counter(order['id']).locator('.counter-hit-area').click()
+  counter(order['other']).locator('.counter-hit-area').click()
+  expect(counter(order['other'])).to_have_attribute('aria-pressed','true')
+  assert snapshot(id)==before,'Selecting occupied destination counter committed movement'
+  counter(order['id']).locator('.counter-hit-area').click()
+  # The highlighted hex is a separate keyboard-accessible destination.
+  cell=page.evaluate("""o=>{const u=document.querySelector('[data-native-unit="'+o.other+'"]');const svg=u.closest('svg');const rect=u.querySelector('.counter-hit-area');const b=rect.getBBox();const x=b.x+b.width/2,y=b.y+b.height/2;return Array.from(svg.querySelectorAll('.native-board-hit[tabindex="0"]')).find(p=>{const pt=new DOMPoint(x,y);return p.isPointInFill(pt)})?.dataset.boardCell}""",order)
+  assert cell,'Occupied legal hex missing interactive destination'
+  page.locator('[data-board-cell="'+cell+'"]').focus();page.keyboard.press('Enter')
+  after=snapshot(id)
+  occupants=[u for u in after['state']['units'] if u.get('position')=={'x':order['x'],'y':order['y']} and u['strength']!='dead']
+  assert {u['id'] for u in occupants}=={order['id'],order['other']}
+  page.locator('#undo').click();assert snapshot(id)['state']==before['state']
+  page.locator('#redo').click();assert snapshot(id)['state']==after['state']
+  print('PASS Moscow occupied-hex double-stack selection, movement and Undo/Redo',flush=True)
+  def restore(payload):
+   page.locator('#load-game').set_input_files({'name':'restore.json','mimeType':'application/json','buffer':json.dumps(payload).encode()})
+   expect(page.locator('#load-game')).to_have_value('')
+   assert snapshot(id)==payload
+  restore(opening)
+  gear.click()
+  page.locator('#native-ai-assignment').select_option('german')
+  page.locator('#ai-strategy').select_option('objective')
+  gear.click()
+  profile=json.loads((Path(__file__).resolve().parents[1]/'games/battle-for-moscow/native-preview/ai-config-objective.json').read_text())
+  expected=page.evaluate("p=>WargameSession.serialize(WargameNativeSessionAI.playSide(__nativePreview.getSession(),p).session)",profile)
+  page.evaluate("""()=>{const initial=__nativePreview.getSession().history.length;const timer=setInterval(()=>{if(__nativePreview.getSession().history.length>initial&&document.getElementById('mission-phase-action').textContent==='Stop AI'){clearInterval(timer);document.getElementById('mission-phase-action').click();}},0);}""")
+  page.locator('#native-ai-resume').click()
+  page.wait_for_function('document.getElementById("message").textContent.includes("AI paused at a legal action boundary")',timeout=30000)
+  paused=snapshot(id)
+  assert paused['state']!=opening['state'] and paused['state']['side']=='german'
+  assert paused['state']['pendingRoll'] is None
+  page.wait_for_timeout(200);assert snapshot(id)==paused
+  page.locator('#native-ai-resume').click()
+  page.wait_for_function('__nativePreview.getSession().state.side==="soviet"',timeout=30000)
+  assert snapshot(id)==expected
+  restore(original)
+  print('PASS Moscow persistent Stop AI and exact resumed side journal',flush=True)
  def verify_moscow_pending():
   # Reuse source-legal double-stack fixtures on the actual HTTP origin.
   fixtures=json.loads(subprocess.check_output(['node',str(Path(__file__).resolve().parent/'b4m-double-stack-browser-fixture-v697.js')],text=True))
@@ -427,6 +492,7 @@ with sync_playwright() as pw:
   card(id).locator('[data-resume]').click();ready(id);assert snapshot(id)==before
   if id=='battle-for-moscow':
    verify_moscow_orders()
+   verify_moscow_stacking_and_interrupt()
    verify_moscow_pending()
   else:verify_historical_mandatory_orders(id)
   leave('Discard unsaved progress');expect(card(id).locator('[data-resume]')).to_be_visible()
