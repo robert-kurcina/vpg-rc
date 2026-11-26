@@ -1,6 +1,6 @@
 # Russian Campaign — Release completion plan
 
-Revision 516 | Production baseline: v701 / checkpoint 479 plus merged hosted UX PRs #1–7
+Revision 517 | Production baseline: v701 / checkpoint 479 plus merged hosted UX PRs #1–7
 
 ## Objective
 
@@ -39,6 +39,8 @@ Revision 514: author-directed split bundle migration. Existing 1,788,847-byte bu
 Revision 515: run 45754983954 establishes the shared controller stall at Turn 1 housekeeping (actor system, not owned by either faction), not a ten-minute computation. Arduous 21 actions/598ms AI, Leningrad 24/426ms, Kiev 19/510ms, Kiev–Odessa 29/1079ms. Allow deterministic system housekeeping when automatic play is enabled; manual handoff preserved. Split package generated 64 modules/16 scripts, largest 179140 bytes, total 1911562 bytes; hosted initialization failed because private Buffer lexical scope was lost. Pass adapter explicitly to split module factories and version ABI. Live and hosted tests now exercise split package; pending CI. Original monolithic production packaging retained until split migration verified. P0 timing targets remain provisional; do not pursue deeper optimization without measured need.
 
 Revision 516: split-package live browser acceptance confirmed Leningrad 180 actions/8 turns/5.12s observed and Kiev 144 actions/7 turns/10.20s observed, including terminal save/resume. AI transaction aggregate 2.43s and 4.41s respectively; 5s polling overstates exact completion time. Other scenarios still running at inspection. Expose existing campaign journal accessor through human wrapper and use it for display; do not request any journal during board redraw outside buildup. Legacy committed monolith lacks accessor, so retain guarded fallback for buildup/journal tail pending production split migration; split CI generates updated modules from source. No save-format change. P0.3 partial until production assets committed and measured. Do not interpret stall correction as computational speedup.
+
+Revision 517: run 45756263724 all eight jobs passed with generated split package and journal accessor; four full live campaigns reached terminal and restored exactly (Arduous 139 actions/5.10s; Leningrad 177/5.12s; Kiev 142/5.20s; Kiev–Odessa 166/10.25s; 624 actions; journal copy aggregate 3.5ms; no boardSave timing). Diagnostic policies and nondeterministic opening seeds; not controlled headless comparison. Implement --split --install with ordered manifest, idempotent HTML migration/check, and narrowly scoped migration job that commits generated files and changed HTML only to this same-repository PR branch after static validation. Production migration pending successful job and review of generated commit. Keep monolith for legacy non-HTML consumers until audited; no write to main, no new persistent automation required. Remove temporary installer workflow after migration. Existing acceptance jobs use shared installer.
 
 ## Batch A — Complete approved historical gameplay corrections (P1)
 

@@ -163,8 +163,10 @@ def split_package():
 parser=argparse.ArgumentParser(description=__doc__)
 parser.add_argument('--check',action='store_true',help='Check committed generated files without writing.')
 parser.add_argument('--split',action='store_true',help='Generate deterministic split package and script-order manifest.')
+parser.add_argument('--install',action='store_true',help='Install the split scripts in all historical HTML consumers; requires --split.')
 args=parser.parse_args()
 directory=ROOT/'core'
+if args.install and not args.split:parser.error('--install requires --split')
 if args.split:
  outputs=split_package()
  outputs['historical_engine_scripts.json']=json.dumps(list(outputs),indent=2)+'\n'
@@ -177,6 +179,23 @@ if args.split:
  if stale:
   if args.check:parser.exit(1,'Stale engine chunks: '+str(stale)+'\n')
   for path in stale:path.unlink()
+ if args.install:
+  # Migrate actual HTML consumers, preserving relative path and script ordering.
+  # Idempotent: also update previously installed blocks after chunk count changes.
+  old=re.compile(r'<script\s+src="([^"]*/)?historical_engine_browser_bundle\.js"\s*></script>')
+  installed=re.compile(r'<script src="([^"]*/)?historical_engine_runtime\.js"></script>.*?<script src="[^"]*historical_engine_entry\.js"></script>',re.S)
+  changed=[]
+  for path in sorted(ROOT.rglob('*.html')):
+   if '.git' in path.parts:continue
+   source=path.read_text(encoding='utf-8')
+   def replace(match):
+    prefix=match.group(1) or ''
+    return ''.join('<script src="'+prefix+name+'"></script>' for name in outputs if name.endswith('.js'))
+   revised=installed.sub(replace,old.sub(replace,source))
+   if revised!=source:
+    if args.check:parser.exit(1,'Stale installed engine scripts: '+str(path.relative_to(ROOT))+'\n')
+    path.write_text(revised,encoding='utf-8');changed.append(str(path.relative_to(ROOT)))
+  print('Installed historical scripts:',changed)
  print('Split browser bundle:',len(modules),'modules;',len(outputs)-1,'scripts;',sum(len(v.encode()) for v in outputs.values()),'bytes')
  for name,value in outputs.items():print(name,len(value.encode()))
 else:
