@@ -49,7 +49,18 @@ if(checkpointPath&&fs.existsSync(checkpointPath)){
  A.equal(priorTrace.length,current.journal().length);
  A.deepEqual(priorTrace.map(t=>t.action),current.journal().map(t=>t.action));
 }
-let turn=current.snapshot().cursor.turn;const reasons={},started=Date.now();
+// Opt-in CPU sampling around the actual campaign only. Setup, validation,
+// final restore and file output are deliberately outside the profile window.
+const profilePath=process.env.CPU_PROFILE_PATH;
+async function qualify(){
+ let inspector;
+ const send=(method,params={})=>new Promise((resolve,reject)=>inspector.post(method,params,(err,result)=>err?reject(err):resolve(result)));
+ if(profilePath){
+  if(checkpointPath)throw Error('CPU profiling requires a fresh campaign');
+  inspector=new (require('node:inspector').Session)();inspector.connect();
+  await send('Profiler.enable');await send('Profiler.setSamplingInterval',{interval:1000});await send('Profiler.start');
+ }
+ let turn=current.snapshot().cursor.turn;const reasons={},started=Date.now();
 const trace=[...priorTrace];
 const combined=stats=>Object.fromEntries(Object.keys(zero).map(k=>[k,priorStats[k]+stats[k]]));
 const run=Auto.run({session:current,context,policy,policyForActor:policyFor,onStep:({session,decision,event,stats})=>{
@@ -61,6 +72,7 @@ const run=Auto.run({session:current,context,policy,policyForActor:policyFor,onSt
 if(run.reason==='controller-action-budget'){delete run.decision;delete run.detail;}
 run.trace=trace;run.stats=combined(run.stats);for(const t of trace)reasons[t.reason]=(reasons[t.reason]||0)+1;
 const computeElapsedMs=Date.now()-started;
+if(inspector){const {profile}=await send('Profiler.stop');inspector.disconnect();fs.writeFileSync(profilePath,JSON.stringify(profile)+'\n');}
 if(browserParity&&process.env.FINAL_SAVE_PATH)fs.writeFileSync(process.env.FINAL_SAVE_PATH,JSON.stringify(run.session.save())+'\n');
 const final=run.session.snapshot(), odds={},outcomes={},fleetByTurn={};for(const t of run.trace){const type=t.action.action?.type||t.action.type;if(["declare-fleet-move","declare-fleet-attack","roll-fleet-attack","roll-fleet-move"].includes(type)){const bucket=fleetByTurn[t.turn]||={};bucket[type]=(bucket[type]||0)+1;}}for(const t of run.trace.filter(t=>t.action.action?.type==='resolve-battle')){const o=t.event?.die===null?'automatic NE':t.event?.outcome||'unknown';outcomes[o]=(outcomes[o]||0)+1;const k=t.event?.die===null?'below-minimum':String(t.event?.odds??'unknown');odds[k]=(odds[k]||0)+1;}
 A.deepEqual(C.restore(run.session.save(),context).snapshot(),final);
@@ -69,3 +81,6 @@ if(limit===5000){A.equal(run.status,'complete');A.equal(final.cursor.complete,tr
 
 console.log(JSON.stringify(report));if(process.env.JOURNAL_PATH)fs.writeFileSync(process.env.JOURNAL_PATH,JSON.stringify(run.session.journal())+'\n');
 if(process.env.AUDIT_PATH)fs.writeFileSync(process.env.AUDIT_PATH,JSON.stringify(report,null,2)+'\n');
+
+}
+qualify().catch(error=>{console.error(error);process.exitCode=1;});
