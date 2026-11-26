@@ -13,15 +13,22 @@ function contextFor(name){
  const f=require('./fixtures/kiev-source-opening-v437'),d=R('core/historical_deployment_session').create({...dep,inventory:f.inventory,allocation:f.allocation,placements:f.placements}).commit();return {...d.opening,...base,buildupAllocation:d.allocation};
 }
 const context=R('core/graduated_mode').withHistorical(contextFor(scenario),process.env.VICTORY_MODE||'historical');context.combatPolicy={...context.combatPolicy,crtVariant:variant};
-const policy={seed,missionSeed:seed.toString(16).padStart(32,'0'),selectionMode:'seeded',phaseScope:'operational',maxActions:limit,maxFleetMoves:2,maxFleetAttacks:3,fleetBudgetScope:process.argv[6]||"campaign",objectivePolicy:process.argv[7]||"baseline",movementLookahead:process.argv[8]==="lookahead"};
+const browserParity=process.env.BROWSER_PARITY==='1';
+if(browserParity&&variant==='standard')delete context.combatPolicy.crtVariant;
+const policy=browserParity?{missionSeed:seed.toString(16).padStart(32,'0'),selectionMode:'first',phaseScope:'operational',objectivePolicy:'baseline',maxActions:limit}:{seed,missionSeed:seed.toString(16).padStart(32,'0'),selectionMode:'seeded',phaseScope:'operational',maxActions:limit,maxFleetMoves:2,maxFleetAttacks:3,fleetBudgetScope:process.argv[6]||"campaign",objectivePolicy:process.argv[7]||"baseline",movementLookahead:process.argv[8]==="lookahead"};
 if(process.argv[8]!==undefined)A.ok(["greedy","lookahead"].includes(process.argv[8]));
 const matchup=process.argv[9]||'same';
 A.ok(['same','experimental-axis','experimental-soviet','relief-axis','joint-axis'].includes(matchup));
 const strategyFor=actor=>matchup==='same'?policy:matchup==='relief-axis'||matchup==='joint-axis'?{...policy,objectivePolicy:actor==='german'&&matchup==='relief-axis'?'reserve-relief':'baseline',coordinatedAttacks:actor==='german'&&matchup==='joint-axis',movementLookahead:false}:{...policy,objectivePolicy:(actor==='german')===(matchup==='experimental-axis')?'reserve-relief':'baseline',movementLookahead:false};
 const Difficulty=R('core/ai_difficulty');
 const grades={german:Difficulty.validate(Number(process.argv[10]??0)),soviet:Difficulty.validate(Number(process.argv[11]??0))};
-const policyFor=actor=>({...strategyFor(actor),...(grades[actor]?{difficulty:grades[actor]}:{})});
-const start=C.create(context), original=start.save();console.error("opening",scenario,variant,start.snapshot().phaseId);
+const policyFor=actor=>({...strategyFor(actor),...((browserParity&&actor==='system'?grades.german:grades[actor])?{difficulty:browserParity&&actor==='system'?grades.german:grades[actor]}:{})});
+const start=C.create(context), original=start.save();
+if(browserParity&&process.env.OPENING_SAVE_PATH){
+ const Human=R('core/historical_campaign_human');
+ const opening=Human.create({session:start,context,missionSeed:policy.missionSeed}).save();
+ fs.writeFileSync(process.env.OPENING_SAVE_PATH,JSON.stringify(opening)+'\n');
+}console.error("opening",scenario,variant,start.snapshot().phaseId);
 const buildup=R('core/historical_buildup_phase').create({map:context.map,profile:context.profile,config:context.config,counterConfig:context.counterConfig,policy:context.buildupPolicy,allocation:context.buildupAllocation,fixedPolicy:context.fixedPolicy||null,combatPolicy:context.combatPolicy});
 function checkCommunication(snapshot){let checks=0;const units=snapshot.state.units;
  for(const owner of context.config.players){const index=buildup.communicationIndex(owner,units);const cells=[...new Set([...Object.values(units).map(u=>u.hex),...context.buildupPolicy.entryEdge[owner],...context.map.cells.filter(c=>c.city?.name).map(c=>c.id)])];
@@ -53,9 +60,11 @@ const run=Auto.run({session:current,context,policy,policyForActor:policyFor,onSt
 }});
 if(run.reason==='controller-action-budget'){delete run.decision;delete run.detail;}
 run.trace=trace;run.stats=combined(run.stats);for(const t of trace)reasons[t.reason]=(reasons[t.reason]||0)+1;
+const computeElapsedMs=Date.now()-started;
+if(browserParity&&process.env.FINAL_SAVE_PATH)fs.writeFileSync(process.env.FINAL_SAVE_PATH,JSON.stringify(run.session.save())+'\n');
 const final=run.session.snapshot(), odds={},outcomes={},fleetByTurn={};for(const t of run.trace){const type=t.action.action?.type||t.action.type;if(["declare-fleet-move","declare-fleet-attack","roll-fleet-attack","roll-fleet-move"].includes(type)){const bucket=fleetByTurn[t.turn]||={};bucket[type]=(bucket[type]||0)+1;}}for(const t of run.trace.filter(t=>t.action.action?.type==='resolve-battle')){const o=t.event?.die===null?'automatic NE':t.event?.outcome||'unknown';outcomes[o]=(outcomes[o]||0)+1;const k=t.event?.die===null?'below-minimum':String(t.event?.odds??'unknown');odds[k]=(odds[k]||0)+1;}
 A.deepEqual(C.restore(run.session.save(),context).snapshot(),final);
-const report={scenario,variant,...(process.env.VICTORY_MODE==='graduated'?{victoryMode:'graduated'}:{}),seed,policy,matchup,factionPolicies:Object.fromEntries(context.config.players.map(actor=>[actor,Auto.policyOf(policyFor(actor))])),elapsedMs:priorElapsed+Date.now()-started,status:run.status,reason:run.reason,detail:run.detail,decision:run.decision,stats:run.stats,actions:run.trace.length,fleetByTurn,odds,outcomes,reasons,cityControl:final.state.cityControl,terminal:final.terminal,phase:final.phaseId,exactRestore:true,communicationChecks:communicationChecks+checkCommunication(final)};
+const report={scenario,variant,computeElapsedMs,...(process.env.VICTORY_MODE==='graduated'?{victoryMode:'graduated'}:{}),seed,policy,matchup,factionPolicies:Object.fromEntries(context.config.players.map(actor=>[actor,Auto.policyOf(policyFor(actor))])),elapsedMs:priorElapsed+Date.now()-started,status:run.status,reason:run.reason,detail:run.detail,decision:run.decision,stats:run.stats,actions:run.trace.length,fleetByTurn,odds,outcomes,reasons,cityControl:final.state.cityControl,terminal:final.terminal,phase:final.phaseId,exactRestore:true,communicationChecks:communicationChecks+checkCommunication(final)};
 if(limit===5000){A.equal(run.status,'complete');A.equal(final.cursor.complete,true);}else {A.ok(run.status==='complete'||run.reason==='controller-action-budget');if(run.status!=='complete')A.equal(run.trace.length,limit);}
 
 console.log(JSON.stringify(report));if(process.env.JOURNAL_PATH)fs.writeFileSync(process.env.JOURNAL_PATH,JSON.stringify(run.session.journal())+'\n');
