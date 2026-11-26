@@ -9,6 +9,8 @@ on:
       - 'tests/fixtures/terminal-v694/**'
       - 'scripts/run-native-campaign.js'
       - 'scripts/build-static-release.py'
+      - 'scripts/render-terrain-chart-specimens.js'
+      - 'tools/terrain-effects-chart/**'
       - 'tests/b4m-source-combat-v586.test.js'
       - 'tests/b4m-source-movement-v585.test.js'
       - 'tests/historical-housekeeping-eight-turn-v389.test.js'
@@ -60,6 +62,20 @@ jobs:
           python tests/rulebook-navigation-v693.py
           python tests/rulebook-cases-v696.py
           git diff --exit-code -- references/rules
+      - uses: actions/setup-node@v5
+        with:
+          node-version: '22'
+      - name: Render fortification from the shared engine
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y inkscape
+          node scripts/render-terrain-chart-specimens.js fortification
+          test -s assets/terrain-chart/battle-for-moscow/fortification.png
+      - uses: actions/upload-artifact@v6
+        with:
+          name: fortification-engine-specimen
+          path: assets/terrain-chart/battle-for-moscow/fortification.png
+          if-no-files-found: error
   static-distribution:
     runs-on: ubuntu-latest
     timeout-minutes: 10
