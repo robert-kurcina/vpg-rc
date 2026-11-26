@@ -132,7 +132,7 @@ jobs:
           if-no-files-found: warn
           retention-days: 14
   campaign-cpu-profile:
-    if: github.event_name == 'workflow_dispatch' || github.head_ref == 'perf/profile-release-525' || github.head_ref == 'perf/reprofile-527'
+    if: github.event_name == 'workflow_dispatch'
     runs-on: ubuntu-latest
     timeout-minutes: 25
     steps:
@@ -140,18 +140,6 @@ jobs:
       - uses: actions/setup-node@v5
         with:
           node-version: '22'
-      - name: Check out pinned pre-optimization baseline
-        if: github.head_ref == 'perf/reprofile-527'
-        uses: actions/checkout@v5
-        with:
-          ref: ae9da3de63100b3a1b91140e90593740e73610b1
-          path: pre-optimization
-      - name: Compare pre-optimization campaign on this runner
-        if: github.head_ref == 'perf/reprofile-527'
-        run: |
-          mkdir -p performance-evidence
-          cd pre-optimization
-          BROWSER_PARITY=1 VICTORY_MODE=historical AUDIT_PATH=../performance-evidence/pre-optimization.json FINAL_SAVE_PATH=../performance-evidence/pre-optimization-save.json node tests/historical-operational-qualification-v644.test.js kiev standard 7 5000 campaign baseline greedy same 3 3
       - name: Compare unprofiled and sampled operational campaigns
         run: |
           mkdir -p performance-evidence
@@ -159,10 +147,6 @@ jobs:
           AUDIT_PATH=performance-evidence/baseline.json FINAL_SAVE_PATH=performance-evidence/baseline-save.json node tests/historical-operational-qualification-v644.test.js kiev standard 7 5000 campaign baseline greedy same 3 3
           CPU_PROFILE_PATH=performance-evidence/campaign.cpuprofile AUDIT_PATH=performance-evidence/profiled.json FINAL_SAVE_PATH=performance-evidence/profiled-save.json node tests/historical-operational-qualification-v644.test.js kiev standard 7 5000 campaign baseline greedy same 3 3
           node scripts/summarize-campaign-profile.js performance-evidence/campaign.cpuprofile performance-evidence/baseline.json performance-evidence/profiled.json performance-evidence/baseline-save.json performance-evidence/profiled-save.json | tee performance-evidence/summary.json
-      - name: Verify exact before/after and report same-run speedup
-        if: github.head_ref == 'perf/reprofile-527'
-        run: |
-          node -e 'const fs=require("fs"),a=require("node:assert/strict");const read=n=>JSON.parse(fs.readFileSync("performance-evidence/"+n+".json"));a.deepEqual(read("pre-optimization-save"),read("baseline-save"));const before=read("pre-optimization").computeElapsedMs,after=read("baseline").computeElapsedMs;const report={beforeMs:before,afterMs:after,speedup:before/after,exactCampaign:true};console.log(JSON.stringify(report));fs.writeFileSync("performance-evidence/comparison.json",JSON.stringify(report,null,2))'
       - uses: actions/upload-artifact@v6
         if: always()
         with:
@@ -173,7 +157,7 @@ jobs:
   operational-parity:
     # Run the representative controlled comparison once for this change,
     # or explicitly via dispatch; avoid repeated expensive qualification.
-    if: github.event_name == 'workflow_dispatch' || github.head_ref == 'test/operational-parity-521' || github.head_ref == 'perf/reprofile-527'
+    if: github.event_name == 'workflow_dispatch' || github.head_ref == 'cleanup/final-acceptance-531'
     runs-on: ubuntu-latest
     timeout-minutes: 25
     steps:
