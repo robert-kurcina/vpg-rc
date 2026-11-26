@@ -1,6 +1,6 @@
 # Russian Campaign — Release completion plan
 
-Revision 503 | Production baseline: v701 / checkpoint 479 plus merged hosted UX PRs #1–7
+Revision 504 | Production baseline: v701 / checkpoint 479 plus merged hosted UX PRs #1–7
 
 ## Objective
 
@@ -49,7 +49,7 @@ Exit: functional essential workflows on all five routes, representative desktop/
 
 Revision 501: merged PR #14 verified mobile menu/panel/Settings and real-origin persistence on all five routes (run 45749472329). Moscow inspection found ambiguous direct counter selection vs legal occupied movement destination in double-stack mode and an incorrect persistent faction label during Soviet reserve redeployment. Corrected movement-only hit dispatch and phase label; added real pointer/keyboard/zoom/movement/Undo/Redo coverage to the existing hosted test. Run 45749832862 passed actual historical Moscow pointer/keyboard selection, focus, zoom, movement and Undo/Redo, as well as all five shared menu/persistence checks. Original reported issue not definitively reproduced; optional occupied-destination interaction remains to be exercised.
 
-Revision 503: completed CI run 45750506633 passed all three jobs. Historical persistent phase controls now directly reveal available support and stacking orders; Moscow reveals pending combat consequences after a committed action and points required setup orders to counter selection. Shared contextual navigation expands closed details before scrolling. Existing hosted test reuses the EX/DRL double-stack fixture on a real HTTP origin at tablet width, checks hidden-panel recovery, explicit consequences and exact Undo/Redo. Runtime verification of these new changes pending; do not claim completed campaign acceptance.
+Revision 503: completed CI run 45750506633 passed all three jobs. Historical persistent phase controls now directly reveal available support and stacking orders; Moscow reveals pending combat consequences after a committed action and points required setup orders to counter selection. Shared contextual navigation expands closed details before scrolling. Existing hosted test reuses the EX/DRL double-stack fixture on a real HTTP origin at tablet width, checks hidden-panel recovery, explicit consequences and exact Undo/Redo. Run 45751030227 passed actual tablet EX/DRL choices, hidden-panel recovery and exact Undo/Redo; all three jobs passed. Historical support/stack cleanup paths still require direct exercise.
 
 ## Batch C — Complete reference materials (P2)
 
@@ -65,6 +65,8 @@ Revision 497: hosted browser test now accepts `--evidence-dir`, recording five d
 Revision 496: active TEC renders the fortification specimen inline through the shared renderer using the source-confirmed Moscow 0501 marker and approved artwork; weather has a separate conditional table. Generator extended; standalone export and browser visual inspection pending. Corrected obsolete Kiev–Odessa play status.
 
 Exit: accurate, readable references in the existing menu. No requirement to reproduce every decorative element.
+
+Revision 504: extend existing focused job with approved stacking, graduated mode, AI difficulty, player-save and Advanced CRT checks; exercise all five actual optional-mode Settings and IndexedDB restoration, including Moscow double stacking. No new simulation sweeps. Results pending; faction selection is not AI gameplay evidence.
 
 ## Batch D — Integrated release (P3–P6)
 
