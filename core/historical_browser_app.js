@@ -318,9 +318,8 @@ function renderBuildupControls(){
   (m.mode==='entry'&&m.slotId?' for '+m.slotId:'');
 }
 
-// Compatibility with the committed monolith until split production migration.
 // Only buildup activation needs the journal; movement and combat use snapshot data.
-function displayJournal(){return typeof human.journal==='function'?measured('journalCopy',()=>human.journal()):measured('boardSave',()=>human.save().campaign.journal);}
+function displayJournal(){return measured('journalCopy',()=>human.journal());}
 function showBoard(){
  if(!setupActive&&!human)return;
  const snapshot=setupActive?null:human.snapshot();
