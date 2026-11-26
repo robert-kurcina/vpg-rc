@@ -1,6 +1,6 @@
 # Russian Campaign — Release completion plan
 
-Revision 497 | Production baseline: v701 / checkpoint 479 plus merged hosted UX PRs #1–7
+Revision 498 | Production baseline: v701 / checkpoint 479 plus merged hosted UX PRs #1–7
 
 ## Objective
 
@@ -10,7 +10,7 @@ Release five independent browser games: Battle for Moscow, The Arduous Beginning
 
 | Priority | Deliverable | Status | Remaining |
 |---|---|---|---|
-| P1 | Historical rules and gameplay | Nearly complete | Three approved adjudications, focused regression |
+| P1 | Historical rules and gameplay | Nearly complete | Existing focused checks for three implemented adjudications |
 | P2 | Gameplay UX and unified mission interface | Substantially implemented; runtime verification open | Reproduce and fix interaction defects, finish reference materials |
 | P3 | AI opponents and difficulty | Implemented; provisional strength ordering | Demonstrated defects only; integrated verification |
 | P4 | Optional graduated victory | Implemented, author accepted | Integrated verification |
@@ -30,12 +30,14 @@ Revision 492: Moscow corrections implemented with a trusted version-bound policy
 
 ## Batch B — Finish gameplay UX (P2, P6)
 
-- [x] Add narrowly scoped hosted Chromium acceptance workflow reusing existing five-route Playwright test, real HTTP origin and IndexedDB; capture actual engine-rendered desktop/tablet screenshots and server logs as CI artifacts. Implementation in branch `test/hosted-browser-acceptance-497`; workflow execution and passing browser evidence still unverified.
+- [x] Add narrowly scoped hosted Chromium acceptance workflow reusing existing five-route Playwright test, real HTTP origin and IndexedDB; capture actual engine-rendered desktop/tablet screenshots and server logs as CI artifacts. Implementation in branch `test/hosted-browser-acceptance-497`; merged in PR #11. First run completed with Moscow passing, Arduous initialization timeout, other routes not reached.
 - [ ] Run hosted workflow on PR and inspect logs/screenshots; resolve reproduced defects before claiming acceptance.
 - [ ] Reproduce reported Moscow counter interaction issue; diagnose phase, AI ownership, SVG hit target, overlay, zoom and keyboard/touch behavior. Fix observed defects.
 - [ ] Verify and correct approved toolbar: triple-line hamburger left, title, centered Undo/Redo, gear right. Exactly eight mission-menu entries. Keep direct Show/Hide information panel control, desktop independent scrolling and tablet drawer.
 - [ ] Verify and correct persistent turn/faction/phase and feedback; primary action invokes existing legal handler only. Mandatory combat, retreat, support, reinforcement, deployment and stack cleanup decisions remain reachable when panel hidden. Check AI pause/stop, settings restoration, keyboard focus and selection.
 - [ ] Verify grouped Settings (Players and AI, Mission configuration, Map display, Interface layout, Maintenance). Keep next-mission rules separate from immediate preferences. G/S markers optional and smaller. Remove duplicate controls and unnecessary diagnostic presentation only; retain meaningful source limitations. Confirm actual Oberlabs workflow gaps; no undefined tournament functionality without author clarification.
+
+Revision 498: first hosted run 45747414550 passed Moscow save/resume/preservation, then failed waiting for Arduous initialization. Source review found an out-of-scope phaseConfig reference in the shared historical phase bar; use initialized sourceData.contextSettings.config.turns instead. Existing browser test now surfaces caught initialization exceptions immediately. Corrected branch runtime result pending. No additional rule test framework or simulation quota.
 
 Revision 494: corrected shared Settings opening order, restore of prior mobile drawer visibility, Escape behavior, and Settings continuity when switching to mobile layout; both controllers use the same shell lifecycle. Revision 495 adds shared stable-identity keyboard focus restoration after native and historical SVG overlay redraws, plus header-height synchronization when mission navigation mounts. Browser regression pending.
 
