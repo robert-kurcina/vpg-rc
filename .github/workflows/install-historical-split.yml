@@ -33,6 +33,7 @@ jobs:
           node -e 'const fs=require("fs"),crypto=require("crypto"),assert=require("assert/strict");const j=JSON.parse(fs.readFileSync(process.argv[1]));const h=crypto.createHash("sha256").update(JSON.stringify(j)).digest("hex");console.log("Journal fingerprint:",h);assert.equal(h,"b9bc12dd55ded1c5a41347b1ab2f704aeac27acecb1b681b5a17ccb05877bd30")' "${RUNNER_TEMP}/journal.json"
       - name: Compare pinned optimized baseline on same runner
         run: |
+          git fetch --depth=1 origin dc609074d8d4288cc503bdcd0665f609f585c71b
           git worktree add --detach "${RUNNER_TEMP}/baseline"  dc609074d8d4288cc503bdcd0665f609f585c71b
           cd "${RUNNER_TEMP}/baseline"
           BROWSER_PARITY=1 VICTORY_MODE=historical AUDIT_PATH="${RUNNER_TEMP}/baseline.json" FINAL_SAVE_PATH="${RUNNER_TEMP}/baseline-save.json" node tests/historical-operational-qualification-v644.test.js kiev standard 7 5000 campaign baseline greedy same 3 3
