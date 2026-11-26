@@ -8,7 +8,8 @@ Optional --terminal-save supplies a completed native Moscow JSON from the runner
 import argparse,json
 from pathlib import Path
 from playwright.sync_api import sync_playwright,expect
-parser=argparse.ArgumentParser();parser.add_argument('--url',default='http://localhost:8765/index.html');parser.add_argument('--chromium',default=None);parser.add_argument('--terminal-save',type=Path);args=parser.parse_args()
+parser=argparse.ArgumentParser();parser.add_argument('--url',default='http://localhost:8765/index.html');parser.add_argument('--chromium',default=None);parser.add_argument('--terminal-save',type=Path);parser.add_argument('--evidence-dir',type=Path,help='Capture actual engine screenshots at desktop and tablet widths');args=parser.parse_args()
+if args.evidence_dir: args.evidence_dir.mkdir(parents=True,exist_ok=True)
 missions=['battle-for-moscow','arduous','leningrad','kiev','kiev-odessa']
 with sync_playwright() as pw:
  browser=pw.chromium.launch(headless=True,executable_path=args.chromium,args=['--no-sandbox','--disable-dev-shm-usage']);context=browser.new_context(viewport={'width':1180,'height':820});page=context.new_page();page.set_default_timeout(60000)
@@ -31,6 +32,12 @@ with sync_playwright() as pw:
  for id in missions:
   expect(card(id).locator('[data-status]')).to_have_text('No local save')
   card(id).get_by_role('link',name='New Mission',exact=True).click();ready(id);before=snapshot(id)
+  if args.evidence_dir:
+   page.screenshot(path=str(args.evidence_dir/f'{id}-desktop.png'),full_page=True)
+   page.set_viewport_size({'width':820,'height':1180})
+   expect(page.locator('#mission-menu-toggle')).to_be_visible()
+   page.screenshot(path=str(args.evidence_dir/f'{id}-tablet.png'),full_page=True)
+   page.set_viewport_size({'width':1180,'height':820})
   leave('Save and return');expect(card(id).locator('[data-resume]')).to_be_visible()
   # An actual successful new save should not be stored in the legacy quota-limited key.
   assert page.evaluate('(id)=>localStorage.getItem(WargameMissionStorage.key(id))===null',id)
