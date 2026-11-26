@@ -26,6 +26,9 @@ let query='',selectedBattles=new Set(),aiRunning=false,aiStopRequested=false,pos
 let postRollSearchToken=0,postRollLoading=false;
 // Player configuration is portable; execution state is transient.
 let aiAssignment='manual',aiPaused=true,aiTimer=null,aiReady=false;
+const perfStats=Object.create(null);
+function measured(name,fn){const start=performance.now();try{return fn();}finally{const elapsed=performance.now()-start;const entry=perfStats[name]||(perfStats[name]={count:0,ms:0,maxMs:0});entry.count++;entry.ms+=elapsed;entry.maxMs=Math.max(entry.maxMs,elapsed);}}
+let aiProgressActive=false,lastAIFrame=-Infinity;
 function computerOwns(actor){return ['german','soviet'].includes(actor)&&(aiAssignment==='both'||aiAssignment===actor);}
 function autoEligible(){return aiReady&&!aiPaused&&!aiRunning&&!setupActive&&human&&!human.snapshot().cursor.complete&&!human.hasPendingRoll()&&computerOwns(human.snapshot().actor);}
 function pauseAutomatic(){aiPaused=true;if(aiTimer!==null){clearTimeout(aiTimer);aiTimer=null;}}
@@ -318,7 +321,7 @@ function showBoard(){
  if(!setupActive&&!human)return;
  const snapshot=setupActive?null:human.snapshot();
  const state=setupActive?{units:(candidateMode?candidateEditor:deployment).snapshot().units}:snapshot.state;
- const journal=setupActive?[]:human.save().campaign.journal;
+ const journal=setupActive?[]:measured('boardSave',()=>human.save().campaign.journal);
  const allocation=context?.buildupAllocation||{};
  const slots=sourceData?.contextSettings?.buildupPolicy?.reinforcements||[];
  const slotFaces=Object.fromEntries(slots.map(slot=>[slot.slotId,allocation[slot.group]?.[slot.index]]));
@@ -841,10 +844,37 @@ function refreshSupportWindow(){
   (currentRetreatMap().active&&matchMedia('(max-width:800px), (pointer:coarse)').matches&&!supportWindow.getState().collapsed))
   supportWindow.focusMap();
 }
-function refresh(){if(moveSelection){query='';$('filter').value='';}clearMoveSelection();syncCRTControls();syncAutomatic();
+// AI owns the transaction stream; human action discovery is unnecessary until
+// control returns. Keep the same board renderer and authoritative session.
+function refreshAIProgress(force=false){
+ const now=performance.now();const entering=!aiProgressActive;
+ if(!force&&!entering&&now-lastAIFrame<250)return;
+ aiProgressActive=true;lastAIFrame=now;
+ const s=human.snapshot();
+ view={kind:'ai-progress',phaseId:s.phaseId,phaseKind:s.phaseKind,actor:s.actor,commands:[],proposals:[],prompts:[]};
+ actionList=[];
+ $('status').innerHTML='<div class="phase">Turn '+enc(s.cursor.turn)+' · '+enc(s.actor||'complete')+'</div><div class="summary">Phase: '+enc(s.phaseId)+' · Actions: '+enc(s.actionCount)+' · Computer playing</div>';
+ if(entering){
+  $('decision').textContent='Computer playing. Stop AI to resume manual orders.';
+  $('roll-panel').hidden=true;$('post-roll-pages').hidden=true;
+  $('orders-section').hidden=true;
+  $('actions').replaceChildren();$('battle-proposals').replaceChildren();
+  $('battle-choices').hidden=true;
+  if($('retreat-route-controls'))$('retreat-route-controls').hidden=true;
+  $('filter-note').textContent='';
+  buildupMode=null;buildupSlot=null;buildupReserve=null;
+  renderBuildupControls();refreshSupportWindow();
+ }
+ measured('aiBoard',()=>showBoard());
+ syncAutomatic();
+}
+function refresh(){
+ if(!setupActive&&human&&(aiRunning||autoEligible())){refreshAIProgress(true);return;}
+ aiProgressActive=false;
+ if(moveSelection){query='';$('filter').value='';}clearMoveSelection();syncCRTControls();syncAutomatic();
  if(setupActive){refreshSupportWindow();renderSetup();return}
  if(!human)return;
- renderSetup();view=human.view(postRollPage);const s=human.snapshot();
+ renderSetup();view=measured('humanView',()=>human.view(postRollPage));const s=human.snapshot();
  const c=s.cursor||{};
  $('status').innerHTML='<div class="phase">Turn '+enc(c.turn||'—')+' · '+enc(s.actor||'complete')+'</div>'+
   '<div class="summary">Phase: '+enc(s.phaseId||'Complete')+' · '+enc(s.phaseKind||'terminal')+'<br>Actions: '+enc(s.actionCount)+' · '+(c.complete?'Final result available':'In progress')+'</div>';
@@ -881,7 +911,7 @@ function refresh(){if(moveSelection){query='';$('filter').value='';}clearMoveSel
  $('post-roll-next').disabled=postRollLoading||!view.hasNextPage;
  $('post-roll-cancel').hidden=!postRollLoading;
  $('post-roll-page-label').textContent=paged?'Page '+(postRollPage+1)+' · '+actionList.length+' validated choices':'';
- renderActions();renderBattleProposals();renderBuildupControls();refreshSupportWindow();showBoard();syncPhaseBar();
+ measured('humanControls',()=>{renderActions();renderBattleProposals();renderBuildupControls();refreshSupportWindow();});measured('humanBoard',()=>showBoard());syncPhaseBar();
  $('journal').textContent=JSON.stringify({phase:s.phaseId,actor:s.actor,units:Object.values(s.state.units||{}).length,
   pendingGround:s.pendingGround,combat:s.combat?.status,terminal:s.terminal,
   journalTail:human.save().campaign.journal.slice(-8)},null,2);
@@ -1211,13 +1241,16 @@ async function start(){
    for(const id of ['ai-policy','ai-policy-soviet','ai-difficulty','ai-difficulty-soviet'])if($(id))$(id).disabled=true;
    $('ai-step').disabled=true;syncAutomatic();
    try{
+    refreshAIProgress();
     const policy=selectedAIPolicy();
     while(count<128&&!aiStopRequested&&human.snapshot().actor===actor&&!human.snapshot().cursor.complete){
-     const next=human.autoplayStep(policy);
+     const next=measured('aiTransaction',()=>human.autoplayStep(policy));
      if(!next.session)throw Error('AI policy blocked: '+(next.decision.reason||next.decision.status));
      human=next.session;redoHistory?.observe(human);count++;
-     // Yield to the browser; do not create an unresponsive synchronous turn loop.
-     if(count%3===0){refresh();await new Promise(resolve=>setTimeout(resolve,0))}
+     refreshAIProgress();
+     // Yield independently of painting; Stop remains available at legal boundaries.
+     const yieldStart=performance.now();await new Promise(resolve=>setTimeout(resolve,0));
+     const elapsed=performance.now()-yieldStart;const timing=perfStats.aiYield||(perfStats.aiYield={count:0,ms:0,maxMs:0});timing.count++;timing.ms+=elapsed;timing.maxMs=Math.max(timing.maxMs,elapsed);
     }
     const sameActor=!human.snapshot().cursor.complete&&human.snapshot().actor===actor;
     const chunkEnded=count===128&&sameActor;
@@ -1244,14 +1277,14 @@ async function start(){
   };
   if($('ai-assignment')){
    $('ai-assignment').onchange=()=>{pauseAutomatic();aiAssignment=$('ai-assignment').value;syncAutomatic()};
-   $('ai-resume').onclick=()=>{if(aiRunning||aiAssignment==='manual')return;if(aiPaused)aiPaused=false;else pauseAutomatic();syncAutomatic()};
+   $('ai-resume').onclick=()=>{if(aiRunning||aiAssignment==='manual')return;if(aiPaused)aiPaused=false;else pauseAutomatic();refresh()};
    aiReady=true;syncAutomatic();
   }
   if(document.documentElement.dataset.missionId)await root.WargameMissionStorage?.mount({id:document.documentElement.dataset.missionId,anchor:$('save').parentElement,save:saveCurrent,restore,busy:()=>aiRunning,pause:()=>{pauseAutomatic();syncAutomatic()},reference:referenceDialog?.open,notice:message});
   // Test/API interface uses the exact human gateway for all state changes.
   root.HistoricalBrowserPreview=Object.freeze({view:()=>setupOnly?{kind:'deployment-preview',gameplayAuthorized:false}:setupActive&&candidateMode?{kind:'source-constrained-deployment',gameplayAuthorized:false}:clone(setupActive?human.view():view),
    snapshot:()=>setupOnly?clone(deployment.snapshot()):setupActive&&candidateMode?clone(candidateEditor.snapshot()):clone(human.snapshot()),
-   save:()=>saveCurrent(),choose,roll,undo,redo,restore,reset,
+   save:()=>saveCurrent(),performanceStats:()=>clone(perfStats),choose,roll,undo,redo,restore,reset,
    enterSetup,setupView:()=>candidateMode?candidateEditor?.snapshot():deployment?.snapshot(),setupMove,setupSwapPosition,setupSwap,setupShuffle,setupSelectInfantryReserve,beginFromSetup,
    setupSelection:()=>clone(setupSelection),setupPick:(kind,id)=>setupPick({kind,id}),
    buildupMap:()=>setupActive?null:clone(currentBuildupMap(human.snapshot().state)),
