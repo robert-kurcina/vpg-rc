@@ -1,6 +1,6 @@
 # Russian Campaign — Release completion plan
 
-Revision 496 | Production baseline: v701 / checkpoint 479 plus merged hosted UX PRs #1–7
+Revision 497 | Production baseline: v701 / checkpoint 479 plus merged hosted UX PRs #1–7
 
 ## Objective
 
@@ -30,7 +30,8 @@ Revision 492: Moscow corrections implemented with a trusted version-bound policy
 
 ## Batch B — Finish gameplay UX (P2, P6)
 
-- [ ] Obtain actual execution evidence: try hosted Chromium through a narrowly scoped GitHub Actions workflow if existing environment remains blocked. Reuse existing browser tests; one acceptance workflow, not a new testing framework. Capture actual game-engine screenshots and logs.
+- [x] Add narrowly scoped hosted Chromium acceptance workflow reusing existing five-route Playwright test, real HTTP origin and IndexedDB; capture actual engine-rendered desktop/tablet screenshots and server logs as CI artifacts. Implementation in branch `test/hosted-browser-acceptance-497`; workflow execution and passing browser evidence still unverified.
+- [ ] Run hosted workflow on PR and inspect logs/screenshots; resolve reproduced defects before claiming acceptance.
 - [ ] Reproduce reported Moscow counter interaction issue; diagnose phase, AI ownership, SVG hit target, overlay, zoom and keyboard/touch behavior. Fix observed defects.
 - [ ] Verify and correct approved toolbar: triple-line hamburger left, title, centered Undo/Redo, gear right. Exactly eight mission-menu entries. Keep direct Show/Hide information panel control, desktop independent scrolling and tablet drawer.
 - [ ] Verify and correct persistent turn/faction/phase and feedback; primary action invokes existing legal handler only. Mandatory combat, retreat, support, reinforcement, deployment and stack cleanup decisions remain reachable when panel hidden. Check AI pause/stop, settings restoration, keyboard focus and selection.
@@ -46,6 +47,8 @@ Exit: functional essential workflows on all five routes, representative desktop/
 - [x] Correct obsolete chart text (including Kiev–Odessa play status), retain original player aids and scope-specific distinctions.
 - [ ] Correct reading order and paragraph reconstruction in all five HTML rulebooks, including remaining Moscow pages 3–4. Preserve numbered sections/cases, lists, tables, relevant illustrations and original wording. Retain unmodified PDFs and 24 facsimiles. Review extraction against printed sources; do not guess missing text.
 - [ ] Verify source links, anchors, reproducible build and unchanged source checksums. Original rules are distinct from engine adaptations.
+
+Revision 497: hosted browser test now accepts `--evidence-dir`, recording five desktop and five tablet screenshots after each actual scenario load. A single Actions workflow installs Playwright Chromium, serves the static site, runs save/resume/abandonment checks and preserves evidence. CI outcome remains pending; no browser pass asserted.
 
 Revision 496: active TEC renders the fortification specimen inline through the shared renderer using the source-confirmed Moscow 0501 marker and approved artwork; weather has a separate conditional table. Generator extended; standalone export and browser visual inspection pending. Corrected obsolete Kiev–Odessa play status.
 
