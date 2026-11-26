@@ -30,12 +30,23 @@
  function openSettings(selectSettings){if(!aside){selectSettings?.();return;}if(settingsRestore===null)settingsRestore=mode==='mobile'?isOpen:desktopVisible;selectSettings?.();if(mode==='mobile'){isOpen=true;syncDrawer();}else syncDrawer();const first=aside.querySelector('#settings-section summary, #settings-section input, #settings-section button');first?.focus({preventScroll:true});syncHeight();}
  function closeSettings(){const previous=settingsRestore;settingsRestore=null;playTab();if(mode==='mobile'){isOpen=previous===true;syncDrawer();}else syncDrawer();document.getElementById('mission-settings')?.focus({preventScroll:true});}
  function toggleSidebar(){if(isSettings()){closeSettings();return;}if(mode==='mobile'){if(isOpen)close();else open();}else setDesktopVisible(!desktopVisible);}
+ function placeSidebarToggle(){
+  if(!sidebarToggle)return;
+  // The map toolbar is behind the modal drawer/backdrop. Keep the same
+  // direct toggle in the persistent header on mobile, not above the map.
+  const host=mode==='mobile'&&ensurePhaseBar()?phaseBar:document.getElementById('map-navigation');
+  if(host&&sidebarToggle.parentElement!==host){
+   const focused=document.activeElement===sidebarToggle;
+   if(host===phaseBar)host.insertBefore(sidebarToggle,phaseMessage);else host.prepend(sidebarToggle);
+   if(focused)sidebarToggle.focus({preventScroll:true});
+  }
+ }
  function enableSidebarToggle(){
   if(sidebarToggle||!aside)return;
   const nav=document.getElementById('map-navigation');if(!nav)return;
   sidebarToggle=document.createElement('button');sidebarToggle.type='button';sidebarToggle.id='mission-sidebar-toggle';
   sidebarToggle.setAttribute('aria-controls','game-sidebar');sidebarToggle.addEventListener('click',toggleSidebar);
-  nav.prepend(sidebarToggle);syncDrawer();syncHeight();
+  nav.prepend(sidebarToggle);placeSidebarToggle();syncDrawer();syncHeight();
  }
  // Persistent phase display is a presentation adapter: callbacks invoke the
  // existing controller actions, never calculate legality or commit independently.
@@ -131,7 +142,7 @@
   mode=effective();document.body.dataset.layoutMode=mode;
   if(mode!=='mobile')isOpen=false;
   else if(isSettings())isOpen=true;
-  syncHeight();syncDrawer();syncSettings();
+  placeSidebarToggle();syncHeight();syncDrawer();syncSettings();
  }
  function setPreference(next){if(!valid.has(next))throw Error('Unknown layout mode');preference=next;store(next);apply();}
  function attachSettings(host){

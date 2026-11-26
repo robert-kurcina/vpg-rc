@@ -37,7 +37,9 @@ with sync_playwright() as pw:
   page.locator('#mission-menu-toggle').click()
   toggle=page.locator('#mission-sidebar-toggle');gear=page.locator('#mission-settings')
   expect(toggle).to_be_visible();expect(gear).to_be_visible()
+  page.set_viewport_size({'width':820,'height':1180})
   page.evaluate("WargameResponsiveShell.setPreference('mobile')")
+  expect(page.locator('#mission-phase-bar > #mission-sidebar-toggle')).to_be_visible()
   expect(page.locator('body')).to_have_attribute('data-layout-mode','mobile')
   expect(toggle).to_have_attribute('aria-expanded','false')
   gear.click();expect(page.locator('#settings-section')).to_be_visible();expect(gear).to_have_attribute('aria-pressed','true')
@@ -46,7 +48,13 @@ with sync_playwright() as pw:
   gear.click();expect(page.locator('#settings-section')).to_be_visible()
   gear.click();expect(toggle).to_have_attribute('aria-expanded','true')
   toggle.click();expect(toggle).to_have_attribute('aria-expanded','false')
+  if args.evidence_dir:page.screenshot(path=str(args.evidence_dir/f'{id}-tablet.png'),full_page=True)
+  page.set_viewport_size({'width':390,'height':844})
+  toggle.click();expect(toggle).to_have_attribute('aria-expanded','true')
+  toggle.click();expect(toggle).to_have_attribute('aria-expanded','false')
+  page.set_viewport_size({'width':1180,'height':820})
   page.evaluate("WargameResponsiveShell.setPreference('auto')")
+  expect(page.locator('#map-navigation > #mission-sidebar-toggle')).to_be_visible()
   print('PASS shared mission menu and mobile panel/settings lifecycle:',id,flush=True)
  def leave(label):
   menu();page.get_by_role('button',name='Exit Game',exact=True).click();page.get_by_role('dialog',name='Leave mission').get_by_role('button',name=label,exact=True).click();selector()
@@ -56,10 +64,6 @@ with sync_playwright() as pw:
   card(id).get_by_role('link',name='New Mission',exact=True).click();ready(id);before=snapshot(id)
   if args.evidence_dir:
    page.screenshot(path=str(args.evidence_dir/f'{id}-desktop.png'),full_page=True)
-   page.set_viewport_size({'width':820,'height':1180})
-   expect(page.locator('#mission-menu-toggle')).to_be_visible()
-   page.screenshot(path=str(args.evidence_dir/f'{id}-tablet.png'),full_page=True)
-   page.set_viewport_size({'width':1180,'height':820})
   verify_shell(id);assert snapshot(id)==before
   leave('Save and return');expect(card(id).locator('[data-resume]')).to_be_visible()
   # An actual successful new save should not be stored in the legacy quota-limited key.
