@@ -74,7 +74,7 @@ function begin({rootDir,profilePath,mapPath,registryPath,projectRoot,aiProfilePa
   if(!session)return;
   const state=current(),p=phase(),finish=$('finish-phase');
   const label=state.over?$('phase-status').textContent:
-   'Turn '+state.turn+' / '+g.rules.turns+' · '+state.side.toUpperCase()+' · '+String(p?.id||'').replaceAll('-',' ');
+   'Turn '+state.turn+' / '+g.rules.turns+' · '+(p?.kind==='redeployment'?'SOVIET RESERVES':state.side.toUpperCase())+' · '+String(p?.id||'').replaceAll('-',' ');
   let action=null;
   if(!state.over){
    if(aiRunning)action={label:'Stop AI',run:()=>$('native-ai-resume').click()};
