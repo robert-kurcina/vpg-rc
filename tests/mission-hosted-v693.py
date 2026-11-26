@@ -118,6 +118,34 @@ with sync_playwright() as pw:
   if toggle.get_attribute('aria-expanded')=='true':toggle.click()
   page.set_viewport_size({'width':1180,'height':820})
   page.evaluate("WargameResponsiveShell.setPreference('auto')")
+ def verify_optional_modes(id):
+  native=id=='battle-for-moscow'
+  before=snapshot(id)
+  gear=page.locator('#mission-settings');gear.click()
+  expect(page.locator('#victory-mode')).to_have_value('historical')
+  page.locator('#victory-mode').select_option('graduated')
+  page.locator('#advanced-crt').check()
+  if native:page.locator('#stacking-mode').select_option('double')
+  assert snapshot(id)==before,'Next-mission settings altered active game'
+  # Faction assignments are immediate preferences; selecting them pauses automation.
+  assignment=page.locator('#native-ai-assignment' if native else '#ai-assignment')
+  for value in ('german','soviet','both','manual'):
+   assignment.select_option(value)
+   expect(assignment).to_have_value(value)
+  gear.click()
+  # Existing new-game control is retained in Settings maintenance.
+  gear.click();page.locator('#new-game').click()
+  expect(page.locator('#graduated-score')).to_have_count(1)
+  graded=snapshot(id);assert graded!=before
+  if gear.get_attribute('aria-pressed')=='true':gear.click()
+  leave('Save and return')
+  card(id).locator('[data-resume]').click();ready(id)
+  assert snapshot(id)==graded
+  expect(page.locator('#graduated-score')).to_have_count(1)
+  expect(page.locator('#victory-mode')).to_have_value('graduated')
+  expect(page.locator('#advanced-crt')).to_be_checked()
+  if native:expect(page.locator('#stacking-mode')).to_have_value('double')
+  print('PASS actual optional-mode save/resume and faction settings:',id,flush=True)
  def leave(label):
   menu();page.get_by_role('button',name='Exit Game',exact=True).click();page.get_by_role('dialog',name='Leave mission').get_by_role('button',name=label,exact=True).click();selector()
  selector()
@@ -135,6 +163,9 @@ with sync_playwright() as pw:
    verify_moscow_orders()
    verify_moscow_pending()
   leave('Discard unsaved progress');expect(card(id).locator('[data-resume]')).to_be_visible()
+  card(id).locator('[data-resume]').click();ready(id)
+  verify_optional_modes(id)
+  leave('Discard unsaved progress')
   print('PASS real-origin save, selector, resume and preservation:',id,flush=True)
  if args.terminal_save:
   path=args.terminal_save.resolve();expected=json.loads(path.read_text());assert expected['state']['over'] and path.stat().st_size>5*1024*1024
