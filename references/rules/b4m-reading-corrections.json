@@ -118,5 +118,65 @@
   {
     "before": "<p>Procedure</p><p>1. Place the Game Turn marker on the 1 box of the Game Turn Track and the Russian 1st Shock Army on the 4 box (when it arrives as a Reinforcement, see 11.0).</p><p>2. Take the remaining sixteen Russian armies and flip them to their reduced- strength side. Place one of these reduced-strength Russian units on each hex marked with a red star (). Since all Russian units are the same strength, it doesn’t matter which unit goes where. There should be two Russian units left.</p><p>3. The German Player then sets up one full- strength German unit on each hex containing a black cross (!). The exact setup is very important as it determines what the Germans are capable of doing on Game Turn 1.</p><p>4. The German Player commences the first</p><p>Game Turn starting with his Combat</p><p>Phase*. The game then follows the Sequence of Play (as per Section 4.0) until the last Game Turn is completed.</p>",
     "after": "<h4>Procedure</h4><ol><li>Place the Game Turn marker on the 1 box of the Game Turn Track and the Russian 1st Shock Army on the 4 box (when it arrives as a Reinforcement, see 11.0).</li><li>Take the remaining sixteen Russian armies and flip them to their reduced- strength side. Place one of these reduced-strength Russian units on each hex marked with a red star (). Since all Russian units are the same strength, it doesn’t matter which unit goes where. There should be two Russian units left.</li><li>The German Player then sets up one full- strength German unit on each hex containing a black cross (!). The exact setup is very important as it determines what the Germans are capable of doing on Game Turn 1.</li><li>The German Player commences the first Game Turn starting with his Combat Phase*. The game then follows the Sequence of Play (as per Section 4.0) until the last Game Turn is completed.</li></ol>"
+  },
+  {
+    "before": "Move- ment Allowance",
+    "after": "Movement Allowance"
+  },
+  {
+    "before": "river hexsides only affect combat,</p><p>not movement.",
+    "after": "river hexsides only affect combat, not movement."
+  },
+  {
+    "before": "<p>eliminated instead.</p><p>Stand Fast: When defending in a Major City</p><p>hex (only), the Defender may convert a DR</p><p>result to a single step loss and no retreat.</p>",
+    "after": "<p>eliminated instead.</p><p>Stand Fast: When defending in a Major City hex (only), the Defender may convert a DR result to a single step loss and no retreat.</p>"
+  },
+  {
+    "before": "as de- scribed in the DRL result",
+    "after": "as described in the DRL result"
+  },
+  {
+    "before": "These odds are still</p><p>reduced one level",
+    "after": "These odds are still reduced one level"
+  },
+  {
+    "before": "<p>Note that, unlike in some other wargames,</p><p>friendly units do not negate the effects of</p><p>enemy Zones of Control for any reason.</p>",
+    "after": "<p>Note that, unlike in some other wargames, friendly units do not negate the effects of enemy Zones of Control for any reason.</p>"
+  },
+  {
+    "before": "<p>Creating a new full-strength unit from one</p><p>off the map would take two turns of</p><p>replacements (and two total replacement</p><p>steps; one received on each of those turns).</p>",
+    "after": "<p>Creating a new full-strength unit from one off the map would take two turns of replacements (and two total replacement steps; one received on each of those turns).</p>"
+  },
+  {
+    "before": "east, northeast, or</p><p>southeast edges",
+    "after": "east, northeast, or southeast edges"
+  },
+  {
+    "before": "communica- tion",
+    "after": "communication"
+  },
+  {
+    "before": "<p>For Example: In the previous Figure 2, if it were</p><p>a mud turn, the three German units would be</p><p>reduced to a total Combat Strength of 12.5 (i.e.,</p><p>losing 4.5 from the Panzer). That would make</p><p>the odds 3:1 before adjusting for terrain effects.</p>",
+    "after": "<p>For Example: In the previous Figure 2, if it were a mud turn, the three German units would be reduced to a total Combat Strength of 12.5 (i.e., losing 4.5 from the Panzer). That would make the odds 3:1 before adjusting for terrain effects.</p>"
+  },
+  {
+    "before": "<p>1. Total the Combat Strengths of all the</p><p>attacking units in that Battle.</p>",
+    "after": "<p>1. Total the Combat Strengths of all the attacking units in that Battle.</p>"
+  },
+  {
+    "before": "<p>3. Determine if the combat effects of</p><p>terrain have lowered the odds column.</p>",
+    "after": "<p>3. Determine if the combat effects of terrain have lowered the odds column.</p>"
+  },
+  {
+    "before": "<p>4. Roll the die and consult the Combat</p><p>Results Table; cross-index the row of the</p><p>•</p><p>number rolled with the odds column to</p><p>determine the result.</p>",
+    "after": "<p>4. Roll the die and consult the Combat Results Table; cross-index the row of the number rolled with the odds column to determine the result.</p><p>•</p>"
+  },
+  {
+    "before": "during Step 4 of a Bat- tle",
+    "after": "during Step 4 of a Battle"
+  },
+  {
+    "before": "<p>5. Apply the combat result immediately.</p><p>6. Advance after combat: If the defending</p><p>unit is no longer in its hex (i.e., it has</p><p>been eliminated or forced to retreat), one</p><p>attacking unit may immediately move</p><p>• end</p><p>into the defender’s just-vacated hex.</p>",
+    "after": "<p>5. Apply the combat result immediately.</p><p>6. Advance after combat: If the defending unit is no longer in its hex (i.e., it has been eliminated or forced to retreat), one attacking unit may immediately move into the defender’s just-vacated hex.</p><p>• end</p>"
   }
 ]

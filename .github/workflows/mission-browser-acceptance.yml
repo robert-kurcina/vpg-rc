@@ -11,6 +11,10 @@ on:
       - 'tests/historical-housekeeping-eight-turn-v389.test.js'
       - 'tests/shared-terrain-reference-v676.test.js'
       - 'maps/**'
+      - 'references/rules/**'
+      - 'scripts/build-rulebook-html.py'
+      - 'tests/rulebook-cases-v696.py'
+      - 'tests/rulebook-navigation-v693.py'
       - '.github/workflows/mission-browser-acceptance.yml'
       - 'core/**'
       - 'games/**'
@@ -34,6 +38,20 @@ jobs:
           node tests/b4m-source-movement-v585.test.js
           node tests/historical-housekeeping-eight-turn-v389.test.js
           node tests/shared-terrain-reference-v676.test.js
+  source-references:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - name: Verify existing rulebook anchors and reproducible reading editions
+        run: |
+          python -m pip install 'PyMuPDF>=1.26,<1.27'
+          python tests/rulebook-navigation-v693.py
+          python tests/rulebook-cases-v696.py
+          git diff --exit-code -- references/rules
   mission-browser:
     runs-on: ubuntu-latest
     timeout-minutes: 30
