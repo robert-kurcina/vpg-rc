@@ -112,3 +112,14 @@ body[data-mission-menu-ready="true"][data-layout-mode="mobile"] .map-navigation 
  body[data-mission-menu-ready="true"]>header>.mission-header-title{grid-column:2;grid-row:1;margin:0}
  body[data-mission-menu-ready="true"]>header>.mission-history-toolbar{grid-column:2;grid-row:2}
 }
+
+/* Persistent, compact phase/feedback bar shares the measured header height. */
+#mission-phase-bar{flex:1 0 100%;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:3px 12px;align-items:center;min-width:0;padding:6px 0 0;border-top:1px solid #9bafb56b;color:inherit}
+body[data-mission-menu-ready="true"]>header>#mission-phase-bar{grid-column:1/-1;grid-row:2}
+#mission-phase-label{font-size:14px;font-weight:650;line-height:1.3;overflow-wrap:anywhere}
+#mission-phase-action{min-height:40px;padding:6px 12px;margin:0;font-size:13px;max-width:190px;white-space:normal}
+#mission-phase-feedback{grid-column:1/-1;font-size:12px;line-height:1.35;overflow-wrap:anywhere;max-height:3.9em;overflow:auto}
+#mission-phase-feedback[data-error="true"]{font-weight:650}
+#mission-phase-action[hidden],#mission-phase-feedback[hidden]{display:none!important}
+body[data-layout-mode="mobile"]>header:has(#mission-phase-bar){max-height:none!important}
+@media(max-width:540px){body[data-mission-menu-ready="true"]>header>#mission-phase-bar{grid-row:3}#mission-phase-label{font-size:12px}#mission-phase-action{min-height:44px;max-width:145px}}

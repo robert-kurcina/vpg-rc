@@ -64,11 +64,26 @@ function begin({rootDir,profilePath,mapPath,registryPath,projectRoot,aiProfilePa
  function computerOwns(side){return aiAssignment==='both'||aiAssignment===side;}
  function autoEligible(){return !!session&&!aiPaused&&!aiRunning&&!current().over&&current().pendingRoll===null&&phase()?.kind!=='setup'&&phase()?.kind!=='redeployment'&&computerOwns(current().side);}
  function syncHistory(){redoHistory?.observe(session);if($('undo'))$('undo').disabled=aiRunning||!S.canUndo(session);if($('redo'))$('redo').disabled=aiRunning||!redoHistory?.available(session);}
- function syncAutomatic(){syncHistory();if(!$('native-ai-assignment'))return;
+ function syncAutomatic(){syncHistory();syncPhaseBar();if(!$('native-ai-assignment'))return;
   $('native-ai-assignment').disabled=aiRunning;$('native-ai-resume').disabled=!aiRunning&&aiAssignment==='manual';
   $('native-ai-resume').textContent=aiRunning?'Stop AI':aiPaused?'Resume automatic play':'Pause automatic play';
   $('native-ai-status').textContent=aiAssignment==='manual'?'Manual handoff':aiPaused?'Automatic play paused':current()?.over?'Campaign complete':current()?.pendingRoll!==null?'Waiting for committed die resolution':computerOwns(current()?.side)?'Computer controls current side (manual setup remains human)':'Human controls current side';
   if(autoEligible()&&aiTimer===null)aiTimer=setTimeout(()=>{aiTimer=null;if(autoEligible())playAISide();},0);
+ }
+ function syncPhaseBar(){
+  if(!session)return;
+  const state=current(),p=phase(),finish=$('finish-phase');
+  const label=state.over?$('phase-status').textContent:
+   'Turn '+state.turn+' / '+g.rules.turns+' · '+state.side.toUpperCase()+' · '+String(p?.id||'').replaceAll('-',' ');
+  let action=null;
+  if(!state.over){
+   if(aiRunning)action={label:'Stop AI',run:()=>$('native-ai-resume').click()};
+   else if(humanBlocked())action={label:'Pause AI',run:()=>$('native-ai-resume').click()};
+   else if(p?.kind==='combat'&&state.declarationLocked)action={label:'Combat decision',run:()=>globalThis.WargameResponsiveShell?.openAt('battle-panel')};
+   else if(finish&&!finish.disabled)action={label:finish.textContent,run:()=>finish.click()};
+   else action={label:'Required orders',run:()=>globalThis.WargameResponsiveShell?.openAt('options-panel')};
+  }
+  globalThis.WargameResponsiveShell?.setPhase({label,action});
  }
  function applyPlayers(players){pauseAutomatic();aiAssignment=players.assignment;for(const [id,value] of [['native-ai-assignment',players.assignment],['ai-strategy',players.german],['ai-strategy-soviet',players.soviet],['ai-difficulty',players.germanDifficulty??0],['ai-difficulty-soviet',players.sovietDifficulty??0]])if($(id)){if(id.startsWith('ai-difficulty'))globalThis.WargameAIDifficulty.restoreSelect($(id),value);else $(id).value=value;}}
  function portableSave(){const raw=S.serialize(session);return globalThis.WargamePlayerSaveConfig?globalThis.WargamePlayerSaveConfig.pack(raw,playerConfig(),playerStrategies):raw;}
@@ -84,7 +99,7 @@ function begin({rootDir,profilePath,mapPath,registryPath,projectRoot,aiProfilePa
  }
  function defenderFirst(){return ui.combatSelectionMode==='defender-first';}
  function cleanSelection(){selection=[];legalCells=[];combatTarget=null;}
- const show=(message,isError=false)=>{const el=$('message');el.textContent=message;el.classList.toggle('error',isError);};
+ const show=(message,isError=false)=>{const el=$('message');el.textContent=message;el.classList.toggle('error',isError);globalThis.WargameResponsiveShell?.feedback(message,isError);};
  const current=()=>session?.state;
  const phase=()=>session?E.currentPhase(g,current()):null;
  const findUnit=id=>current()?.units.find(u=>u.id===id);
@@ -115,8 +130,10 @@ function begin({rootDir,profilePath,mapPath,registryPath,projectRoot,aiProfilePa
   render();
  }
  function cellClick(x,y,clickedId=null,shift=false){
-  if(!session||current().over)return;
-  const p=phase();if(!p)return;
+  if(!session)return show('Game is not ready.',true);
+  if(current().over)return show('Campaign complete. Start a new mission to play again.');
+  if(humanBlocked())return show('Computer controls this side. Pause automatic play to issue orders.',true);
+  const p=phase();if(!p)return show('No active phase.',true);
   const occupant=(clickedId?findUnit(clickedId):null)||current().units.find(u=>u.position?.x===x&&u.position?.y===y&&u.strength!=='dead');
   if(p.kind==='reinforcement'){
    const opts=S.legal(session,{type:'place-reinforcement'}),entry=opts.find(o=>o.x===x&&o.y===y);
@@ -143,14 +160,16 @@ function begin({rootDir,profilePath,mapPath,registryPath,projectRoot,aiProfilePa
     change({type:'declare-battle',attackers:[...selection],defender:occupant.id});return;
    }
    if(occupant&&E.unitSide(occupant)===current().side){unitSelect(occupant.id,shift);return;}
+   return show(defenderFirst()?'Select an enemy defender to declare a battle.':'Select friendly attackers, then an enemy defender.',true);
   }
   if(['setup','move','redeployment'].includes(p.kind)){
    if(selection.length&&legalCells.some(q=>q.x===x&&q.y===y)){
     const unitId=selection[0];change({type:p.kind==='setup'?'setup-place':p.kind==='redeployment'?'redeploy-reserve':'move',unitId,x,y});return;
    }
    if(occupant&&selectable(occupant)){unitSelect(occupant.id,shift);return;}
-   show('Choose a unit and an outlined legal destination.');
+   return show('Choose a friendly unit and an outlined legal destination.',true);
   }
+  show('No map action is available in this phase. Use the phase controls.');
  }
  const displayColor=side=>g.game.factions.find(f=>f.id===side)?.color||'#8c9b97';
  function mapDraw(cityData=null){
