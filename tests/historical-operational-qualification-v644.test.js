@@ -13,15 +13,20 @@ function contextFor(name){
  const f=require('./fixtures/kiev-source-opening-v437'),d=R('core/historical_deployment_session').create({...dep,inventory:f.inventory,allocation:f.allocation,placements:f.placements}).commit();return {...d.opening,...base,buildupAllocation:d.allocation};
 }
 const context=R('core/graduated_mode').withHistorical(contextFor(scenario),process.env.VICTORY_MODE||'historical');context.combatPolicy={...context.combatPolicy,crtVariant:variant};
-const policy={seed,missionSeed:seed.toString(16).padStart(32,'0'),selectionMode:'seeded',phaseScope:'operational',maxActions:limit,maxFleetMoves:2,maxFleetAttacks:3,fleetBudgetScope:process.argv[6]||"campaign",objectivePolicy:process.argv[7]||"baseline",movementLookahead:process.argv[8]==="lookahead"};
+// Exact browser profile: default standard CRT omits the explicit variant key.
+// Reuse browser policy defaults, including fleet budgets and first selection.
+const browserParity=process.env.BROWSER_PARITY==='1';
+if(browserParity&&variant==='standard')delete context.combatPolicy.crtVariant;
+const policy=browserParity?{missionSeed:seed.toString(16).padStart(32,'0'),selectionMode:'first',phaseScope:'operational',objectivePolicy:'baseline',maxActions:limit}:{seed,missionSeed:seed.toString(16).padStart(32,'0'),selectionMode:'seeded',phaseScope:'operational',maxActions:limit,maxFleetMoves:2,maxFleetAttacks:3,fleetBudgetScope:process.argv[6]||"campaign",objectivePolicy:process.argv[7]||"baseline",movementLookahead:process.argv[8]==="lookahead"};
 if(process.argv[8]!==undefined)A.ok(["greedy","lookahead"].includes(process.argv[8]));
 const matchup=process.argv[9]||'same';
 A.ok(['same','experimental-axis','experimental-soviet','relief-axis','joint-axis'].includes(matchup));
 const strategyFor=actor=>matchup==='same'?policy:matchup==='relief-axis'||matchup==='joint-axis'?{...policy,objectivePolicy:actor==='german'&&matchup==='relief-axis'?'reserve-relief':'baseline',coordinatedAttacks:actor==='german'&&matchup==='joint-axis',movementLookahead:false}:{...policy,objectivePolicy:(actor==='german')===(matchup==='experimental-axis')?'reserve-relief':'baseline',movementLookahead:false};
 const Difficulty=R('core/ai_difficulty');
 const grades={german:Difficulty.validate(Number(process.argv[10]??0)),soviet:Difficulty.validate(Number(process.argv[11]??0))};
-const policyFor=actor=>({...strategyFor(actor),...(grades[actor]?{difficulty:grades[actor]}:{})});
-const start=C.create(context), original=start.save();console.error("opening",scenario,variant,start.snapshot().phaseId);
+const policyFor=actor=>({...strategyFor(actor),...((browserParity&&actor==='system'?grades.german:grades[actor])?{difficulty:browserParity&&actor==='system'?grades.german:grades[actor]}:{})});
+const start=C.create(context), original=start.save();
+if(browserParity&&process.env.OPENING_SAVE_PATH)fs.writeFileSync(process.env.OPENING_SAVE_PATH,JSON.stringify(original)+'\n');console.error("opening",scenario,variant,start.snapshot().phaseId);
 const buildup=R('core/historical_buildup_phase').create({map:context.map,profile:context.profile,config:context.config,counterConfig:context.counterConfig,policy:context.buildupPolicy,allocation:context.buildupAllocation,fixedPolicy:context.fixedPolicy||null,combatPolicy:context.combatPolicy});
 function checkCommunication(snapshot){let checks=0;const units=snapshot.state.units;
  for(const owner of context.config.players){const index=buildup.communicationIndex(owner,units);const cells=[...new Set([...Object.values(units).map(u=>u.hex),...context.buildupPolicy.entryEdge[owner],...context.map.cells.filter(c=>c.city?.name).map(c=>c.id)])];
