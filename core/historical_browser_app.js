@@ -57,7 +57,7 @@ function syncPhaseBar(){
  if(!human||!view)return;
  const s=human.snapshot(),c=s.cursor||{};
  const label=c.complete?($('campaign-result')?.querySelector('strong')?.textContent||'Campaign complete'):
-  'Turn '+(c.turn||'—')+' / '+phaseConfig.turns+' · '+String(s.actor||'').toUpperCase()+' · '+String(s.phaseId||'').replaceAll('-',' ');
+  'Turn '+(c.turn||'—')+' / '+sourceData.contextSettings.config.turns+' · '+String(s.actor||'').toUpperCase()+' · '+String(s.phaseId||'').replaceAll('-',' ');
  let action=null;
  if(!c.complete){
   if(aiRunning)action={label:'Stop AI',run:()=>$('ai-stop').click()};
