@@ -1,6 +1,6 @@
 # Russian Campaign — Release completion plan
 
-Revision 502 | Production baseline: v701 / checkpoint 479 plus merged hosted UX PRs #1–7
+Revision 503 | Production baseline: v701 / checkpoint 479 plus merged hosted UX PRs #1–7
 
 ## Objective
 
@@ -49,14 +49,16 @@ Exit: functional essential workflows on all five routes, representative desktop/
 
 Revision 501: merged PR #14 verified mobile menu/panel/Settings and real-origin persistence on all five routes (run 45749472329). Moscow inspection found ambiguous direct counter selection vs legal occupied movement destination in double-stack mode and an incorrect persistent faction label during Soviet reserve redeployment. Corrected movement-only hit dispatch and phase label; added real pointer/keyboard/zoom/movement/Undo/Redo coverage to the existing hosted test. Run 45749832862 passed actual historical Moscow pointer/keyboard selection, focus, zoom, movement and Undo/Redo, as well as all five shared menu/persistence checks. Original reported issue not definitively reproduced; optional occupied-destination interaction remains to be exercised.
 
+Revision 503: completed CI run 45750506633 passed all three jobs. Historical persistent phase controls now directly reveal available support and stacking orders; Moscow reveals pending combat consequences after a committed action and points required setup orders to counter selection. Shared contextual navigation expands closed details before scrolling. Existing hosted test reuses the EX/DRL double-stack fixture on a real HTTP origin at tablet width, checks hidden-panel recovery, explicit consequences and exact Undo/Redo. Runtime verification of these new changes pending; do not claim completed campaign acceptance.
+
 ## Batch C — Complete reference materials (P2)
 
 - [ ] Extend existing shared-renderer terrain specimen generator for fortification; use actual engine renders, not hand-drawn/cropped maps. Weather is a distinct conditional-effects section, not a fabricated permanent terrain tile. Active values from scenario rules.
 - [x] Correct obsolete chart text (including Kiev–Odessa play status), retain original player aids and scope-specific distinctions.
 - [ ] Correct reading order and paragraph reconstruction in all five HTML rulebooks, including remaining Moscow pages 3–4. Preserve numbered sections/cases, lists, tables, relevant illustrations and original wording. Retain unmodified PDFs and 24 facsimiles. Review extraction against printed sources; do not guess missing text.
-- [ ] Verify source links, anchors, reproducible build and unchanged source checksums. Original rules are distinct from engine adaptations.
+- [x] Verify source links, anchors, reproducible build and unchanged source checksums (run 45750506633: 70 section anchors, 133 cases, 24 facsimiles, 29 unchanged assets). Original rules are distinct from engine adaptations.
 
-Revision 502: repaired unambiguous paragraph breaks, line-wrap hyphenation and recoverable combat sequence lines on Moscow pages 3–4 in both committed HTML and guarded correction manifest. No source PDFs or facsimiles changed. Existing navigation and numbered-case/reproducibility tests now run in the same CI workflow. Remaining interleaved page 3 fragments require direct facsimile review; no guessed wording. New reference checks pending.
+Revision 502: repaired unambiguous paragraph breaks, line-wrap hyphenation and recoverable combat sequence lines on Moscow pages 3–4 in both committed HTML and guarded correction manifest. No source PDFs or facsimiles changed. Existing navigation and numbered-case/reproducibility tests now run in the same CI workflow. Remaining interleaved page 3 fragments require direct facsimile review; no guessed wording. Reference checks passed in run 45750506633; editorial review remains open.
 
 Revision 497: hosted browser test now accepts `--evidence-dir`, recording five desktop and five tablet screenshots after each actual scenario load. A single Actions workflow installs Playwright Chromium, serves the static site, runs save/resume/abandonment checks and preserves evidence. Run 45747675673 passed all five mission persistence checks; screenshots captured, not visually reviewed.
 
