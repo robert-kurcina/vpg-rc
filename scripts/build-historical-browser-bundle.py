@@ -142,7 +142,7 @@ def split_package():
     registration.append(('scenario',f'parts[{js_string(key)}]??=[];parts[{js_string(key)}][{i}]={js_string(piece)};\n'))
    body='module.exports=JSON.parse(parts['+js_string(key)+'].join(""));'
   else:body=source
-  registration.append((group(key),'defs['+js_string(key)+']=function(module,exports,require){\n'+body+'\n};\n'))
+  registration.append((group(key),'defs['+js_string(key)+']=function(module,exports,require,Buffer){\n'+body+'\n};\n'))
  header='/* GENERATED. Do not edit. */\n(function(root){"use strict";const r=root.__historicalBundle;if(!r||r.revision!=='+js_string(revision)+')throw Error("Historical bundle version mismatch");const defs=r.definitions,parts=r.parts;\n'
  end='})(globalThis);\n'
  for name in ('rules','campaign','ai','scenario'):
@@ -156,7 +156,7 @@ def split_package():
   if payload:result[prefix+name+f'_{index:02}.js']=header+payload+end
  runtime='/* GENERATED. Do not edit. */\n(function(root){"use strict";root.__historicalBundle={revision:'+js_string(revision)+',definitions:Object.create(null),parts:Object.create(null)};})(globalThis);\n'
  entry=bootstrap.replace('const definitions={\n','const registry=root.__historicalBundle;if(!registry||registry.revision!=='+js_string(revision)+')throw Error("Historical bundle version mismatch");\nconst definitions=registry.definitions;\nif(Object.keys(definitions).length!=='+str(len(modules))+')throw Error("Incomplete historical engine package");\n')
- entry+=footer.replace('\n};\nconst cache=', '\nconst cache=',1)
+ entry+=footer.replace('\n};\nconst cache=', '\nconst cache=',1).replace('definitions[key](module,module.exports,name=>load(normalize(name,key)));','definitions[key](module,module.exports,name=>load(normalize(name,key)),Buffer);',1)
  entry=entry.replace('root.HistoricalCampaignBrowserEngine=','delete root.__historicalBundle;\nroot.HistoricalCampaignBrowserEngine=',1)
  return {'historical_engine_runtime.js':runtime,**result,'historical_engine_entry.js':entry}
 
