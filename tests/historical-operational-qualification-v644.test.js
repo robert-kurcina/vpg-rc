@@ -24,6 +24,10 @@ const Difficulty=R('core/ai_difficulty');
 const grades={german:Difficulty.validate(Number(process.argv[10]??0)),soviet:Difficulty.validate(Number(process.argv[11]??0))};
 const policyFor=actor=>({...strategyFor(actor),...((browserParity&&actor==='system'?grades.german:grades[actor])?{difficulty:browserParity&&actor==='system'?grades.german:grades[actor]}:{})});
 const start=C.create(context), original=start.save();
+// Public snapshots must stay detached even when canonical bytes are reused.
+const isolated=start.snapshot(),expectedSnapshot=start.snapshot();
+isolated.state.units={};isolated.cursor.turn=-1;
+A.deepEqual(start.snapshot(),expectedSnapshot);A.deepEqual(start.save(),original);
 if(browserParity&&process.env.OPENING_SAVE_PATH){
  const Human=R('core/historical_campaign_human');
  const opening=Human.create({session:start,context,missionSeed:policy.missionSeed}).save();
