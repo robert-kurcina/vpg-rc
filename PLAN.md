@@ -1,6 +1,6 @@
 # Russian Campaign — Release completion plan
 
-Revision 510 | Production baseline: v701 / checkpoint 479 plus merged hosted UX PRs #1–7
+Revision 511 | Production baseline: v701 / checkpoint 479 plus merged hosted UX PRs #1–7
 
 ## Objective
 
@@ -18,6 +18,19 @@ Release five independent browser games: Battle for Moscow, The Arduous Beginning
 | P6 | Integrated acceptance and release | Partial | Hosted browser evidence, affected regressions, distribution cleanup and rights |
 
 Completed implementation is not equivalent to browser acceptance. Do not reopen accepted features without a concrete defect. Original scope remains six deliverables; the four batches below are execution groupings, not additional gates.
+
+## P0 — Performance remediation (active priority)
+
+Author direction: correct fundamental performance issues before further release qualification or WASM. Keep the existing six release deliverables; P0 is a temporary execution priority, not another product feature. Run 45752780773: one fresh browser campaign per historical scenario exceeded the 600-second terminal wait after faction handoff; no progress telemetry was captured, so stall versus slow execution is unresolved. Run 45753587110 passed focused rules, references, static distribution and hosted five-route acceptance including terrain references. Prior headless results are not a controlled same-seed comparison.
+
+- [ ] P0.1 Baseline and diagnosis. Reuse existing headless runners and hosted browser script. Fix opening, mission seed, faction policies, difficulty, CRT and victory mode for each comparison. Record progress by action count, turn, phase and faction; report blocked reason and last committed action on timeout. Measure AI decision, catalogue, engine execute, snapshot/copy/hash, map/DOM rendering and scheduling costs with nonpersistent aggregate timings; no per-action console flood. Capture one comparable run per game, prioritizing a representative larger historical game for initial iteration.
+- [ ] P0.2 Eliminate redundant human work during AI. In the shared historical controller split lightweight status/board progress from full interactive rendering. Do not call human.view() or enumerate human movement/combat choices while AI owns the position. Disable stale human interaction targets, clear transient selections, and restore full legal choices exactly once at human handoff, explicit stop, failure or terminal completion. Render at elapsed-time cadence rather than every three actions; yield independently of rendering. Keep manual step and human/human behavior intact. Review native Moscow for the same issues; avoid unnecessary controller rewrites.
+- [ ] P0.3 Remove redundant serialization. Use the existing immutable session and a read-only journal accessor or minimal tail/activation data for display instead of generating a full authenticated save repeatedly. Audit history observation, snapshot copies and repeated derivation. Retain full hashing and source verification at actual save/restore boundaries and existing authoritative action receipt hashes. Preserve exact portable save format and journal semantics. If an accessor requires browser bundle regeneration, use existing build path and verify parity.
+- [ ] P0.4 Reduce measured rendering costs. Preserve static terrain/map artwork; update dynamic counters, city ownership, phase status and recent actions at bounded cadence. Reuse unchanged nodes/data only where profiling justifies it. Keep Stop AI reachable, process stop requests at legal transaction boundaries, honor human ownership, committed dice and terminal state. Do not hide long single-action latency or change AI effort to improve benchmark results.
+- [ ] P0.5 Optimize remaining measured engine/AI hotspots only if necessary. Prefer reuse of immutable source geometry, validated movement bindings and safe per-position derived data; explicit invalidation on state/rule changes. Do not cache legality across changed positions, skip validation, change RNG or reduce search depth. No WASM, Web Workers, WebGL or new backend in P0.
+- [ ] P0.6 Acceptance. Compare action journals and terminal results against identical headless input, and verify exact save/restore, Undo/Redo, human/AI both sides, Stop/resume and human handoff, using existing focused tests. Run one fresh continuous campaign per game on the same CI runner class; publish before/after timing breakdown and action counts. Proposed engineering targets (not author-approved hard requirements): zero human-only catalogue builds during AI-owned intervals; no full save serialization solely for progress rendering; browser AI/AI wall time within roughly 2x equivalent headless where practical; responsive controls between transactions and complete campaigns within existing 600s terminal wait for the representative configurations. If target missed, identify measured residual cost and seek author decision rather than relax correctness or silently increase timeout.
+
+Execution: first implementation PR combines minimal instrumentation with removal of obvious redundant UI work; second addresses measured serialization/rendering costs; third addresses remaining measured engine bottlenecks if any and closes acceptance. Do not repeat full campaign matrices on unrelated editorial changes; use workflow dispatch or relevant path filters for performance qualification. Preserve existing verified evidence. Once P0 passes, resume remaining release UX, source review and rights work. Do not start deferred grand campaign or WASM.
 
 ## Batch A — Complete approved historical gameplay corrections (P1)
 
@@ -93,7 +106,7 @@ Exit: one integrated acceptance decision, not repeated acceptance programs. Hist
 
 ## Execution discipline
 
-Start with Batch A. In each development turn complete a meaningful group of changes, not just inspection. Where one task is blocked, continue independent work. Use coherent PRs and verify changed behavior before merge where possible; disclose any unexecuted tests. Keep this checklist authoritative; do not add requirements without author approval. Maintain a concise implementation record and preserve existing checkpoint evidence in the archived revision 490 plan. No repeated simulation quotas or cosmetic parity projects.
+Start with P0 performance remediation; resume remaining release batches after P0 acceptance. In each development turn complete a meaningful group of changes, not just inspection. Where one task is blocked, continue independent work. Use coherent PRs and verify changed behavior before merge where possible; disclose any unexecuted tests. Keep this checklist authoritative; do not add requirements without author approval. Maintain a concise implementation record and preserve existing checkpoint evidence in the archived revision 490 plan. No repeated simulation quotas or cosmetic parity projects.
 
 ## Protected decisions
 
@@ -103,9 +116,9 @@ No generated visuals, backend/BFF, anti-cheat engineering, scenario-specific ren
 
 Author-confirmed: complete reliable gameplay, solid desktop/tablet UX and integrated release acceptance before WASM conversion. Optimize the stable JavaScript baseline first; use WASM selectively for measured computational kernels. JavaScript remains authoritative for rules, state, validation, RNG and saves.
 
-1. Profile real workloads.
-2. Web Workers for expensive AI/simulation with authoritative main-thread validation and exact replay.
-3. Optimize measured JavaScript hot paths.
+1. Review P0 measurements on the stable release baseline.
+2. Optimize remaining measured JavaScript hot paths if justified.
+3. Web Workers for expensive AI/simulation only where measured latency warrants them, with authoritative main-thread validation and exact replay.
 4. Selective WASM kernels only after measured benefit; compact inputs, fallback and deterministic equivalence.
 5. WebGL only if measured SVG rendering bottlenecks justify it.
 6. Unified grand campaign — absolute last.
