@@ -1,6 +1,6 @@
-# Current repository status — revision 529
+# Current repository status — revision 532
 
-The five-game accepted scope and original performance objective are complete. PR40 CI run 45763742040 passed all ten jobs. Kiev controlled campaign retained 433 exact receipts; same-run Node acceleration 1.878x. Oberlabs UX parity and WASM are rejected. See PLAN.md for the bounded remaining work. Third-party redistribution rights remain unresolved.
+The five-game accepted scope and original performance objective are complete. PR40 CI run 45763742040 passed all ten jobs. Kiev controlled campaign retained 433 exact receipts; same-run Node acceleration 1.878x. Oberlabs UX parity and WASM are rejected. PR44 final acceptance run 45765064661 passed all nine active jobs. The final controlled campaign retains 433 exact actions; Chromium 10.589s and Node 8.076s. Active implementation is closed; UX feedback will come from author playtesting. See PLAN.md for maintenance policy. Third-party redistribution rights remain unresolved.
 
 The checkpoint entries below are preserved historical records; their open items describe the status at the time, not current requirements.
 
