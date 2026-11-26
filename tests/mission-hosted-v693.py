@@ -134,7 +134,9 @@ with sync_playwright() as pw:
    expect(assignment).to_have_value(value)
   gear.click()
   # Existing new-game control is retained in Settings maintenance.
-  gear.click();page.locator('#new-game').click()
+  gear.click()
+  page.locator('#settings-section details.settings-category').filter(has=page.locator('#new-game')).locator('summary').click()
+  page.locator('#new-game').click()
   expect(page.locator('#graduated-score')).to_have_count(1)
   graded=snapshot(id);assert graded!=before
   if gear.get_attribute('aria-pressed')=='true':gear.click()
