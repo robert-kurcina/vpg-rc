@@ -1,6 +1,6 @@
 # Russian Campaign — Release completion plan
 
-Revision 486 | Production baseline: v701 / checkpoint 479 (resumable historical acceptance)
+Revision 487 | Production baseline: v701 / checkpoint 479 (resumable historical acceptance)
 
 ## Objective and scope
 
@@ -182,3 +182,8 @@ Restore existing engine-rendered terrain specimens in the shared reference modal
 ### Hosted UX — approved two-menu toolbar
 
 Restore the approved eight-row mission menu and separate Settings gear, with independent side-by-side Undo/Redo. Hide duplicate sidebar Play/Settings tabs and rule-reference launcher after successful unified menu initialization. Settings gear toggles the settings panel; mobile Controls remains a direct gameplay drawer launcher, not another menu. Retain portable JSON, new-game, delete-save and source links under Settings maintenance. No save semantics or game rules changed. Hosted/browser regression remains open.
+
+
+### Author-approved toolbar alignment and collapsible information panel
+
+Header order: triple-line hamburger left, scenario title next, Undo/Redo geometrically centered, Settings gear right. On very narrow screens the title and two menu icons remain in the first row; history actions center in a second row to avoid overlap. Existing gameplay information sidebar is visible by default on desktop and collapsible with a direct Show/Hide panel control in map navigation; map expands into freed space. Desktop preference is local to the browser; tablet retains a collapsible drawer. Settings opens even when the gameplay panel is collapsed and restores the prior visibility on close. No additional menu. Existing rules, renderer and action semantics unchanged. Verify actual browser layout, focus, resize, scrolling and mandatory decision reachability under P2/P6.

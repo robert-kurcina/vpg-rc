@@ -81,3 +81,34 @@ body[data-mission-menu-ready="true"] .mission-menu-row>span:last-child{min-width
 .mission-maintenance{margin:12px 0;border-top:1px solid #cbd3d2;padding-top:8px}
 .mission-maintenance summary{cursor:pointer;font-weight:600;margin-bottom:8px}
 .mission-maintenance>a{display:block;margin:8px 0;color:#235978;overflow-wrap:anywhere}
+
+/* Author-approved alignment: left hamburger/title, centered history, right gear.
+   Center column is geometrically centered, not centered in leftover space. */
+body[data-mission-menu-ready="true"]>header{
+ display:grid!important;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);
+ grid-template-rows:auto;align-items:center;position:relative;gap:8px;
+ padding:8px 12px;max-height:none!important;min-height:60px;
+}
+body[data-mission-menu-ready="true"]>header>.mission-menu-wrapper{grid-column:1;grid-row:1;justify-self:start;z-index:2}
+body[data-mission-menu-ready="true"]>header>.mission-header-title{grid-column:1;grid-row:1;margin-left:52px;min-width:0;overflow:hidden}
+body[data-mission-menu-ready="true"]>header>.mission-header-title h1{font-size:clamp(15px,1.7vw,21px);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+body[data-mission-menu-ready="true"]>header>.mission-header-title h1 span,body[data-mission-menu-ready="true"]>header>.mission-header-title p{display:none}
+body[data-mission-menu-ready="true"]>header>.mission-history-toolbar{grid-column:2;grid-row:1;justify-self:center;margin:0}
+body[data-mission-menu-ready="true"]>header>#mission-settings{grid-column:3;grid-row:1;justify-self:end}
+body[data-mission-menu-ready="true"]>header #mission-menu-toggle,body[data-mission-menu-ready="true"]>header #mission-settings{width:44px;height:44px;min-width:44px;margin:0;padding:0;font-size:23px;display:grid;place-items:center}
+.mission-hamburger-glyph{display:flex;flex-direction:column;gap:5px;width:22px}
+.mission-hamburger-glyph>span{display:block;height:2px;border-radius:1px;background:currentColor}
+body[data-mission-menu-ready="true"] .mission-menu{left:12px;right:auto;top:calc(100% + 4px)}
+body[data-mission-menu-ready="true"] .mission-menu .mission-menu-row{display:flex;align-items:center;gap:9px;width:100%;min-height:44px;margin:0;padding:7px 10px;border:0;background:transparent;color:#203640;text-align:left;text-decoration:none;font-size:14px;line-height:1.25}
+body[data-mission-menu-ready="true"] .mission-menu .mission-menu-row:hover,body[data-mission-menu-ready="true"] .mission-menu .mission-menu-row:focus-visible{background:#dce9ef}
+body[data-mission-menu-ready="true"][data-layout-mode="desktop"][data-desktop-sidebar-visible="false"]>main{grid-template-columns:minmax(0,1fr)}
+body[data-mission-menu-ready="true"][data-layout-mode="desktop"][data-desktop-sidebar-visible="false"] #game-sidebar{display:none!important}
+#mission-sidebar-toggle{font-size:13px;min-height:44px;white-space:nowrap}
+body[data-mission-menu-ready="true"][data-layout-mode="mobile"] .mobile-controls-launcher{display:none!important}
+body[data-mission-menu-ready="true"][data-layout-mode="mobile"] .map-navigation{width:auto}
+body[data-mission-menu-ready="true"][data-layout-mode="mobile"] .map-navigation #mission-sidebar-toggle{width:auto;min-width:44px;min-height:44px;padding:0 8px!important;font-size:12px}
+@media(max-width:540px){
+ body[data-mission-menu-ready="true"]>header{grid-template-columns:44px minmax(0,1fr) 44px;grid-template-rows:auto auto;gap:3px 8px;min-height:0}
+ body[data-mission-menu-ready="true"]>header>.mission-header-title{grid-column:2;grid-row:1;margin:0}
+ body[data-mission-menu-ready="true"]>header>.mission-history-toolbar{grid-column:2;grid-row:2}
+}

@@ -19,19 +19,38 @@
  }
  function load(){try{const v=root.localStorage?.getItem(STORAGE_KEY);return valid.has(v)?v:'auto';}catch(_){return 'auto';}}
  function store(v){try{root.localStorage?.setItem(STORAGE_KEY,v)}catch(_){}}
- let preference=load(),mode='desktop',isOpen=false,aside=null,launcher=null,closeButton=null,backdrop=null,autoButton=null,desktopInput=null,modeText=null;
+ const SIDEBAR_KEY='russian-campaign.sidebar-visible.v1';
+ let desktopVisible=true;
+ try{desktopVisible=root.localStorage?.getItem(SIDEBAR_KEY)!=='false';}catch(_){}
+ let preference=load(),mode='desktop',isOpen=false,aside=null,launcher=null,closeButton=null,backdrop=null,autoButton=null,desktopInput=null,modeText=null,sidebarToggle=null,settingsRestore=null;
+ function isSettings(){return aside?.dataset.activeTab==='settings';}
+ function visible(){return mode==='mobile'?isOpen:desktopVisible||isSettings();}
+ function setDesktopVisible(next){desktopVisible=Boolean(next);try{root.localStorage?.setItem(SIDEBAR_KEY,String(desktopVisible));}catch(_){}syncDrawer();}
+ function playTab(){aside?.querySelector('[data-game-tab="play"]')?.click();}
+ function openSettings(){if(!aside)return;if(settingsRestore===null)settingsRestore=mode==='mobile'?isOpen:desktopVisible;if(mode==='mobile')open();else syncDrawer();}
+ function closeSettings(){const previous=settingsRestore;settingsRestore=null;playTab();if(mode==='mobile'){isOpen=previous===true;syncDrawer();}else syncDrawer();document.getElementById('mission-settings')?.focus({preventScroll:true});}
+ function toggleSidebar(){if(isSettings()){closeSettings();return;}if(mode==='mobile'){if(isOpen)close();else open();}else setDesktopVisible(!desktopVisible);}
+ function enableSidebarToggle(){
+  if(sidebarToggle||!aside)return;
+  const nav=document.getElementById('map-navigation');if(!nav)return;
+  sidebarToggle=document.createElement('button');sidebarToggle.type='button';sidebarToggle.id='mission-sidebar-toggle';
+  sidebarToggle.setAttribute('aria-controls','game-sidebar');sidebarToggle.addEventListener('click',toggleSidebar);
+  nav.prepend(sidebarToggle);syncDrawer();
+ }
  function effective(){return preference==='auto'?detect():preference;}
  function syncHeight(){if(!hasDOM())return;const h=document.querySelector('body>header')?.getBoundingClientRect().height||56;document.body.style.setProperty('--mobile-header-height',h+'px');}
- function close(){isOpen=false;syncDrawer();}
+ function close(){if(isSettings()){settingsRestore=null;playTab();}isOpen=false;syncDrawer();}
  function open(){if(mode!=='mobile')return;isOpen=true;syncDrawer();closeButton?.focus({preventScroll:true});}
  // Map actions may require an explicit follow-up. Reveal that existing control,
  // not an alternate command path. Desktop keeps its established interaction.
  function openAt(id){
-  if(mode!=='mobile'||!aside)return;
-  aside.querySelector('[data-game-tab=play]')?.click();
+  if(!aside)return;
+  if(mode==='desktop'&&document.body.dataset.missionMenuReady!=='true')return;
+  if(isSettings()){settingsRestore=null;playTab();}
   const target=aside.querySelector('#'+id);
   if(!target||target.closest('[hidden]'))return;
-  open();
+  if(mode==='mobile')open();
+  else if(!desktopVisible)setDesktopVisible(true);
   const heading=aside.querySelector('.mobile-controls-heading');
   const tabs=aside.querySelector('.game-tab-strip');
   const inset=(heading?.offsetHeight||0)+(tabs?.offsetHeight||0)+8;
@@ -41,9 +60,19 @@
   if(!aside)return;
   const opened=mode==='mobile'&&isOpen;
   document.body.dataset.mobileControlsOpen=String(opened);
-  aside.inert=mode==='mobile'&&!opened;
-  aside.setAttribute('aria-hidden',String(mode==='mobile'&&!opened));
+  const shown=visible(),enhanced=document.body.dataset.missionMenuReady==='true';
+  document.body.dataset.desktopSidebarVisible=String(shown);
+  aside.inert=mode==='mobile'?!opened:enhanced&&!shown;
+  aside.setAttribute('aria-hidden',String(aside.inert));
   launcher?.setAttribute('aria-expanded',String(opened));
+  if(sidebarToggle){
+   sidebarToggle.setAttribute('aria-expanded',String(shown));
+   sidebarToggle.textContent=shown?'Hide panel':'Show panel';
+   sidebarToggle.title=shown?'Hide information panel':'Show information panel';
+   sidebarToggle.setAttribute('aria-label',sidebarToggle.title);
+  }
+  const gear=document.getElementById('mission-settings');
+  if(gear)gear.setAttribute('aria-pressed',String(shown&&isSettings()));
   if(backdrop)backdrop.hidden=!opened;
  }
  function syncSettings(){
@@ -87,7 +116,7 @@
   const name=document.createElement('strong');name.textContent='Game controls';
   closeButton=document.createElement('button');closeButton.type='button';closeButton.className='mobile-drawer-close';
   closeButton.textContent='Close';closeButton.setAttribute('aria-label','Close game controls');
-  closeButton.addEventListener('click',()=>{close();launcher?.focus();});
+  closeButton.addEventListener('click',()=>{close();(sidebarToggle||launcher)?.focus({preventScroll:true});});
   heading.append(name,closeButton);aside.prepend(heading);
   const sourceWarning=document.querySelector('body>.warning');
   if(sourceWarning){
@@ -96,7 +125,7 @@
    const p=document.createElement('p');p.textContent=sourceWarning.textContent;
    note.append(summary,p);aside.insertBefore(note,heading.nextSibling);
   }
-  document.addEventListener('keydown',e=>{if(e.key==='Escape'&&isOpen){e.preventDefault();close();launcher?.focus();}});
+  document.addEventListener('keydown',e=>{if(e.defaultPrevented)return;if(e.key==='Escape'&&isOpen){e.preventDefault();close();(sidebarToggle||launcher)?.focus({preventScroll:true});}});
   root.addEventListener?.('resize',()=>{if(preference==='auto')apply();else syncHeight();});
   apply();
  }
@@ -104,5 +133,5 @@
   if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',mount,{once:true});
   else mount();
  }
- return Object.freeze({STORAGE_KEY,detect,load,mount,setPreference,attachSettings,getMode:()=>mode,getPreference:()=>preference,isOpen:()=>isOpen,open,openAt,close});
+ return Object.freeze({STORAGE_KEY,detect,load,mount,setPreference,attachSettings,getMode:()=>mode,getPreference:()=>preference,isOpen:visible,open,openAt,close,openSettings,closeSettings,enableSidebarToggle});
 });
