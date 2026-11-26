@@ -5,7 +5,7 @@ Uses a new isolated browser context; never modifies an ordinary user's saves.
 No intercepted network, localStorage mock, or IndexedDB fixture.
 Optional --terminal-save supplies a completed native Moscow JSON from the runner.
 """
-import argparse,json,subprocess,os,tempfile
+import argparse,json,subprocess,os,tempfile,time
 from pathlib import Path
 from playwright.sync_api import sync_playwright,expect
 parser=argparse.ArgumentParser();parser.add_argument('--url',default='http://localhost:8765/index.html');parser.add_argument('--chromium',default=None);parser.add_argument('--terminal-save',type=Path);parser.add_argument('--evidence-dir',type=Path,help='Capture actual engine screenshots at desktop and tablet widths');parser.add_argument('--live-scenario',choices=['arduous','leningrad','kiev','kiev-odessa'],help='Play one fresh historical campaign through the actual automatic browser controller');args=parser.parse_args()
@@ -222,12 +222,22 @@ with sync_playwright() as pw:
   expect(page.locator('#ai-ownership-status')).to_have_text('Human controls current side')
   assert page.evaluate('HistoricalBrowserPreview.snapshot().actionCount')>before
   gear.click();assignment.select_option('both');gear.click()
+  baseline=page.evaluate('HistoricalBrowserPreview.performanceStats()')
+  started=time.monotonic()
   page.locator('#ai-resume').click()
-  # Wait for a real terminal state or a controller failure, not a fixed sleep.
-  page.wait_for_function("""()=>HistoricalBrowserPreview.snapshot().cursor.complete ||
-    (document.getElementById('ai-stop').hidden &&
-     document.getElementById('ai-resume').textContent==='Resume automatic play' &&
-     document.getElementById('message').textContent.startsWith('AI stopped:'))""",timeout=600000)
+  # Sample actual committed progress, not speculative actions or fixed sleeps.
+  try:
+   while True:
+    info=page.evaluate("""()=>{const s=HistoricalBrowserPreview.snapshot();return {turn:s.cursor.turn,phase:s.phaseId,actor:s.actor,actions:s.actionCount,complete:s.cursor.complete,ownership:document.getElementById('ai-ownership-status').textContent,message:document.getElementById('message').textContent,running:!document.getElementById('ai-stop').hidden,timing:HistoricalBrowserPreview.performanceStats()}}""")
+    print('LIVE',id,round(time.monotonic()-started,2),json.dumps(info),flush=True)
+    if info['complete'] or (not info['running'] and info['message'].startswith('AI stopped:')):break
+    assert info['timing'].get('humanView',{}).get('count',0)==baseline.get('humanView',{}).get('count',0), 'Human catalogue rebuilt during AI/AI'
+    if time.monotonic()-started>=600:raise AssertionError('Campaign timed out: '+json.dumps(info))
+    page.wait_for_timeout(5000)
+  finally:
+   if args.evidence_dir:
+    (args.evidence_dir/f'{id}-performance.json').write_text(json.dumps(page.evaluate('HistoricalBrowserPreview.performanceStats()'),indent=2))
+  print('LIVE elapsed seconds',id,round(time.monotonic()-started,2),flush=True)
   terminal=page.evaluate('HistoricalBrowserPreview.snapshot()')
   assert terminal['cursor']['complete'],page.locator('#message').inner_text()
   expect(page.locator('#ai-resume')).to_be_disabled()
