@@ -29,7 +29,8 @@ let aiAssignment='manual',aiPaused=true,aiTimer=null,aiReady=false;
 const perfStats=Object.create(null);
 function measured(name,fn){const start=performance.now();try{return fn();}finally{const elapsed=performance.now()-start;const entry=perfStats[name]||(perfStats[name]={count:0,ms:0,maxMs:0});entry.count++;entry.ms+=elapsed;entry.maxMs=Math.max(entry.maxMs,elapsed);}}
 let aiProgressActive=false,lastAIFrame=-Infinity;
-function computerOwns(actor){return ['german','soviet'].includes(actor)&&(aiAssignment==='both'||aiAssignment===actor);}
+// Housekeeping is a deterministic system phase, not a third human faction.
+function computerOwns(actor){return actor==='system'?aiAssignment!=='manual':['german','soviet'].includes(actor)&&(aiAssignment==='both'||aiAssignment===actor);}
 function autoEligible(){return aiReady&&!aiPaused&&!aiRunning&&!setupActive&&human&&!human.snapshot().cursor.complete&&!human.hasPendingRoll()&&computerOwns(human.snapshot().actor);}
 function pauseAutomatic(){aiPaused=true;if(aiTimer!==null){clearTimeout(aiTimer);aiTimer=null;}}
 function syncHistory(){
@@ -47,7 +48,7 @@ function syncAutomatic(){
  $('ai-side').disabled=aiRunning||complete;
  $('ai-resume').textContent=aiPaused?'Resume automatic play':'Pause automatic play';
  syncPhaseBar();
- $('ai-ownership-status').textContent=complete?'Campaign complete':aiAssignment==='manual'?'Manual handoff':aiPaused?'Automatic play paused — manual control available':human?.hasPendingRoll()?'Waiting for committed human die resolution':setupActive?'Waiting for deployment':human?.snapshot().cursor.complete?'Campaign complete':computerOwns(human?.snapshot().actor)?'Computer controls current side':'Human controls current side';
+ $('ai-ownership-status').textContent=complete?'Campaign complete':aiAssignment==='manual'?'Manual handoff':aiPaused?'Automatic play paused — manual control available':human?.hasPendingRoll()?'Waiting for committed human die resolution':setupActive?'Waiting for deployment':human?.snapshot().cursor.complete?'Campaign complete':computerOwns(human?.snapshot().actor)?(human?.snapshot().actor==='system'?'Automatic housekeeping':'Computer controls current side'):'Human controls current side';
  if(autoEligible()&&aiTimer===null)aiTimer=setTimeout(()=>{aiTimer=null;if(autoEligible())$('ai-side').onclick();},0);
 }
 function syncPhaseBar(){
