@@ -1,6 +1,6 @@
 # Russian Campaign — Release completion plan
 
-Revision 523 | Production baseline: v701 / checkpoint 479 plus merged hosted UX PRs #1–7
+Revision 524 | Production baseline: v701 / checkpoint 479 plus merged hosted UX PRs #1–7
 
 ## Objective
 
@@ -53,6 +53,8 @@ Revision 521: run 45757710153 all four live campaigns and focused rules/static/s
 Revision 522: run 45757710153 all eight jobs passed on committed split assets including delayed startup, reduced motion, error/retry, all five real-origin mission/reference/optional-mode workflows, Moscow mobile EX/DRL and terminal restore, eight historical terminal restores, mission-scoped abandonment and four live campaigns. Operational parity run 45758205484 pending. Extend existing hosted acceptance with Arduous source-legal overstack cleanup and Leningrad Fleet strike from hidden tablet sidebar via persistent phase control; exercise actual required orders and exact Undo/Redo, then restore original save. No engine changes or new test framework. New interactions pending CI. Remaining Moscow occupied destination, support visual inspection, reference editorial review and staged-site browser acceptance still open.
 
 Revision 523: run 45758205484 passed all nine jobs; controlled Kiev Operational grade 3/3 seed 7 Standard CRT historical victory, 433 exact committed receipts, identical authenticated final campaign, Soviet victory, six Axis cities, browser 28.94s vs Node 22.038s (1.31x), exact IndexedDB restoration. Representative P0 engineering targets met; no additional optimization warranted; remaining cross-scenario measurements optional unless concrete performance defect. Run 45758428843 passed hidden-panel Arduous cleanup and exact Undo/Redo; Leningrad failed due to obsolete direct strike selector (production uses air selection -> highlighted map target -> confirmation). Correct test to follow current workflow including keyboard target and hide Support before required die. Move existing integrated mission-browser job to private staged site under /russian-campaign/ rather than source-root HTTP; verify distribution manifest before test. No new framework or gameplay changes. CI pending; Moscow occupied destination and AI interruption still outstanding. No assertion of complete cross-scenario operational parity.
+
+Revision 524: run 45758738607 passed all eight active jobs (operational parity intentionally skipped); actual staged repository-relative distribution passed five-route browser acceptance, corrected Leningrad map-targeted Fleet and die, Arduous stacking cleanup, optional modes, eight historical terminal restorations and Moscow terminal restore, scoped abandonment, startup failure/retry. Add fixed-seed Moscow double-stack occupied-destination interaction (direct counter select versus keyboard legal hex), exact Undo/Redo, persistent Stop AI at legal boundary and resumed side comparison to uninterrupted controller. New checks pending CI; no engine changes. Consolidate accepted integrated staged release evidence; remaining source editorial/visual review, cross-scenario operational measurements only if justified, rights. No WASM.
 
 ## Batch A — Complete approved historical gameplay corrections (P1)
 
