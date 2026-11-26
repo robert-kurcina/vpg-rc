@@ -168,7 +168,7 @@ function begin({rootDir,profilePath,mapPath,registryPath,projectRoot,aiProfilePa
   if(['setup','move','redeployment'].includes(p.kind)){
    // A direct counter click selects that counter, even when its occupied hex
    // is also a legal stacking destination. Click the exposed hex to move there.
-   if(clickedId&&occupant&&selectable(occupant)){unitSelect(occupant.id,shift);return;}
+   if(p.kind==='move'&&clickedId&&occupant&&selectable(occupant)){unitSelect(occupant.id,shift);return;}
    if(selection.length&&legalCells.some(q=>q.x===x&&q.y===y)){
     const unitId=selection[0];change({type:p.kind==='setup'?'setup-place':p.kind==='redeployment'?'redeploy-reserve':'move',unitId,x,y});return;
    }
