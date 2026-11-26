@@ -4,7 +4,8 @@
   "source": [
     "references/rules/leningrad-rules.pdf §4.0 (Housekeeping and turn count)",
     "references/rules/leningrad-rules.pdf §5.0 (How to Win)",
-    "references/rules/leningrad-rules.pdf §12.0 (In Communication)"
+    "references/rules/leningrad-rules.pdf §12.0 (In Communication)",
+    "Author-approved adjudication: otherwise unclassified 13-city outcomes are Soviet victories; not printed rule text"
   ],
   "mode": "source-literal-unclassified-cases",
   "cityCount": 14,
@@ -17,5 +18,5 @@
     "onlyRemainingCity": "Leningrad",
     "mustBeIsolatedFromDefenderEdge": true
   },
-  "unclassifiedOutcome": "unresolved-source-rule"
+  "unclassifiedOutcome": "soviet-victory"
 }

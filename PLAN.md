@@ -1,6 +1,6 @@
 # Russian Campaign — Release completion plan
 
-Revision 492 | Production baseline: v701 / checkpoint 479 plus merged hosted UX PRs #1–7
+Revision 493 | Production baseline: v701 / checkpoint 479 plus merged hosted UX PRs #1–7
 
 ## Objective
 
@@ -23,10 +23,10 @@ Completed implementation is not equivalent to browser acceptance. Do not reopen 
 
 - [x] B4M §9.3: defender chooses a legal step-loss-and-hold Stand Fast result or normal retreat.
 - [x] B4M §§5,10: update city control for each city actually entered along a committed legal movement path, not merely the destination.
-- [ ] Leningrad §5: Soviet victory for otherwise unclassified 13-city outcomes; retain isolated-Leningrad draw and 14-city German victory. Explicitly identify this as author-approved house adjudication rather than printed wording.
+- [x] Leningrad §5: Soviet victory for otherwise unclassified 13-city outcomes; retain isolated-Leningrad draw and 14-city German victory. Explicitly identify this as author-approved house adjudication rather than printed wording.
 - [ ] Targeted rule regression, including historical/optional stacking and CRT interactions where affected; preserve versioned save/replay compatibility, or reject incompatible versions explicitly rather than silently reinterpret history.
 
-Revision 492: Moscow corrections implemented with a trusted version-bound policy; old native browser saves retain their original package fingerprint and behavior. New regression assertions added. Execution and Leningrad correction pending. Exit: three changes implemented and focused regression passes. No unrelated engine refactoring.
+Revision 492: Moscow corrections implemented with a trusted version-bound policy; old native browser saves retain their original package fingerprint and behavior. New regression assertions added. Leningrad adjudication implemented in the trusted scenario policy and matching shared browser bundle; old Leningrad policy-bound saves reject explicitly rather than silently change the adjudication. Exact branch runtime regression remains pending. Exit: three changes implemented and focused regression passes. No unrelated engine refactoring.
 
 ## Batch B — Finish gameplay UX (P2, P6)
 

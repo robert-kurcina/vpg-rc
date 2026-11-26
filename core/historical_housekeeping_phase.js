@@ -20,7 +20,7 @@ function create({map,config,policy,initialCityControl,communicated=null}){
     !Number.isInteger(policy.germanVictoryAtLeast)||!Number.isInteger(policy.sovietVictoryAtMost)||
     !obj(policy.draw)||!Number.isInteger(policy.draw.axisCityCount)||
     (conditionalDraw&&(typeof policy.draw.onlyRemainingCity!=='string'||
-      policy.draw.mustBeIsolatedFromDefenderEdge!==true||policy.unclassifiedOutcome!=='unresolved-source-rule'))||
+      policy.draw.mustBeIsolatedFromDefenderEdge!==true||!['unresolved-source-rule',policy.defenderOwner+'-victory'].includes(policy.unclassifiedOutcome)))||
     (countDraw&&(Object.keys(policy.draw).length!==1||Object.hasOwn(policy,'unclassifiedOutcome')||
       policy.initialDefaultOwner!==policy.defenderOwner||!obj(policy.initialControlOverrides)))||
     (twoTierIsolation&&(Object.keys(policy.draw).length!==3||
@@ -89,7 +89,7 @@ function create({map,config,policy,initialCityControl,communicated=null}){
     if(isolated){outcome='draw';reason='only-target-city-remains-and-isolated';}
    }
   }
-  if(!outcome){outcome=policy.unclassifiedOutcome;reason='published-rule-has-no-explicit-result';}
+  if(!outcome){outcome=policy.unclassifiedOutcome;reason=outcome===policy.defenderOwner+'-victory'?'author-approved-unclassified-outcome':'published-rule-has-no-explicit-result';}
   const graded=policy.graduatedVictory?Graduated.evaluate(policy.graduatedVictory,state.cityControl):null;
   const historical=graded?{outcome,reason}:null;
   if(graded){outcome=graded.winner==='draw'?'draw':graded.winner+'-victory';reason='experimental-graduated-victory';}
