@@ -1,6 +1,6 @@
 # Russian Campaign — Release completion plan
 
-Revision 511 | Production baseline: v701 / checkpoint 479 plus merged hosted UX PRs #1–7
+Revision 512 | Production baseline: v701 / checkpoint 479 plus merged hosted UX PRs #1–7
 
 ## Objective
 
@@ -31,6 +31,8 @@ Author direction: correct fundamental performance issues before further release 
 - [ ] P0.6 Acceptance. Compare action journals and terminal results against identical headless input, and verify exact save/restore, Undo/Redo, human/AI both sides, Stop/resume and human handoff, using existing focused tests. Run one fresh continuous campaign per game on the same CI runner class; publish before/after timing breakdown and action counts. Proposed engineering targets (not author-approved hard requirements): zero human-only catalogue builds during AI-owned intervals; no full save serialization solely for progress rendering; browser AI/AI wall time within roughly 2x equivalent headless where practical; responsive controls between transactions and complete campaigns within existing 600s terminal wait for the representative configurations. If target missed, identify measured residual cost and seek author decision rather than relax correctness or silently increase timeout.
 
 Execution: first implementation PR combines minimal instrumentation with removal of obvious redundant UI work; second addresses measured serialization/rendering costs; third addresses remaining measured engine bottlenecks if any and closes acceptance. Do not repeat full campaign matrices on unrelated editorial changes; use workflow dispatch or relevant path filters for performance qualification. Preserve existing verified evidence. Once P0 passes, resume remaining release UX, source review and rights work. Do not start deferred grand campaign or WASM.
+
+Revision 512: shared historical controller now bypasses human.view() and clears order controls during AI ownership, throttles progress redraws to 250 ms and yields after each committed action. Automatic handoffs use the lightweight path, with full refresh on pause/human handoff/completion. Aggregate timings cover AI transaction, human view, controls, board, board save and scheduling. Existing live campaign runner logs progress every five seconds and asserts no human-view builds during continuous AI/AI. P0.1/P0.2 implementation partial; CI pending; controlled headless comparison and serialization removal remain open. Run 45753587110 passed established browser checks including terrain references. No policy/engine changes.
 
 ## Batch A — Complete approved historical gameplay corrections (P1)
 
