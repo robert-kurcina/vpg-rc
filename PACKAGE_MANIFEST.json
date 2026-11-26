@@ -1,9 +1,9 @@
 {
   "version": "v701",
   "checkpoint": 479,
-  "packageRevision": "clean-4",
+  "packageRevision": "clean-5",
   "baseline": "hex_wargame_v700_CHECKPOINT_478_LENINGRAD_ACCEPTANCE.zip",
-  "description": "v701 archive baseline plus accepted shared browser engine through PR40; original archive counts are historical, not current repository inventory",
+  "description": "v701 archive baseline plus accepted shared browser engine through PR44; active implementation closed, author-led playtesting; original archive counts are historical",
   "originalFileCount": 2094,
   "originalFileCategories": {
     "retained": 1883,
@@ -22,5 +22,18 @@
     "sameRunnerNodeBeforeMs": 14319,
     "sameRunnerNodeAfterMs": 7623,
     "chromiumSeconds": 11.750452664
+  },
+  "finalAcceptance": {
+    "run": 45765064661,
+    "activeJobsPassed": 9,
+    "operationalKievActions": 433,
+    "exactCampaign": true,
+    "chromiumSeconds": 10.588566146,
+    "nodeSeconds": 8.076
+  },
+  "additionalOptimization": {
+    "run": 45764794647,
+    "sameRunnerNodeBeforeMs": 12967,
+    "sameRunnerNodeAfterMs": 11643
   }
 }
