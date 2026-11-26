@@ -255,6 +255,44 @@ with sync_playwright() as pw:
  def leave(label):
   menu();page.get_by_role('button',name='Exit Game',exact=True).click();page.get_by_role('dialog',name='Leave mission').get_by_role('button',name=label,exact=True).click();selector()
  selector()
+ if not args.live_scenario:
+  # Isolated fault injection; normal real-origin acceptance below is unchanged.
+  from urllib.parse import urljoin
+  target=card('arduous').get_by_role('link',name='New Mission',exact=True)
+  mission_url=urljoin(page.url,target.get_attribute('href'))
+  probe=context.new_page()
+  probe.emulate_media(reduced_motion='reduce')
+  held=[]
+  def delay_config(route):
+   held.append(route)
+  pattern='**/games/arduous/native-preview/config.json'
+  probe.route(pattern,delay_config)
+  probe.goto(mission_url,wait_until='domcontentloaded')
+  expect(probe.locator('#mission-loading')).to_be_visible()
+  expect(probe.locator('#mission-loading')).to_have_attribute('data-state','loading')
+  expect(probe.locator('[data-loading-status]')).to_contain_text('configuration')
+  assert probe.evaluate("document.querySelector('main').inert")
+  assert probe.locator('.mission-loading-spinner').evaluate("(el)=>getComputedStyle(el).animationName")=='none'
+  until=time.monotonic()+10
+  while not held and time.monotonic()<until:probe.wait_for_timeout(50)
+  assert len(held)==1
+  if args.evidence_dir:
+   probe.screenshot(path=str(args.evidence_dir/'arduous-loading-desktop.png'))
+   probe.set_viewport_size({'width':820,'height':1180})
+   probe.screenshot(path=str(args.evidence_dir/'arduous-loading-tablet.png'))
+  held[0].abort('failed')
+  expect(probe.locator('#mission-loading')).to_have_attribute('data-state','error')
+  expect(probe.get_by_role('button',name='Retry loading')).to_be_visible()
+  expect(probe.get_by_role('link',name='Choose mission',exact=True)).to_be_visible()
+  assert probe.evaluate("document.querySelector('main').inert")
+  if args.evidence_dir:probe.screenshot(path=str(args.evidence_dir/'arduous-loading-error.png'))
+  probe.unroute(pattern,delay_config)
+  probe.get_by_role('button',name='Retry loading').click()
+  expect(probe.locator('#mission-loading')).to_have_attribute('data-state','ready',timeout=60000)
+  expect(probe.locator('#mission-loading')).to_be_hidden()
+  assert probe.evaluate("!document.querySelector('main').inert")
+  probe.close()
+  print('PASS delayed startup, reduced motion, resource failure and retry',flush=True)
  if args.live_scenario:
   verify_live_campaign(args.live_scenario)
   assert not errors,errors
