@@ -1,6 +1,6 @@
 # Russian Campaign — Release completion plan
 
-Revision 520 | Production baseline: v701 / checkpoint 479 plus merged hosted UX PRs #1–7
+Revision 521 | Production baseline: v701 / checkpoint 479 plus merged hosted UX PRs #1–7
 
 ## Objective
 
@@ -47,6 +47,8 @@ Revision 518: PR30 merged generated 16 scripts and manifest; installer workflow 
 Revision 519: author-approved startup UX: shared CSS/SVG hex spinner and responsive suspense placeholders for toolbar, controls and map; independent loading boundary blocks unready interaction, announces actual initialization stages, supports reduced motion and error/retry/mission selector. Five mission pages wired; historical map decode awaited, storage mount/resume before ready; native controller reports equivalent stages. Existing hosted test checks ready/hidden/inert release. CI and delayed/failure injection verification pending. Controlled operational benchmark branch remains separate and unmerged. No engine or generated bundle changes.
 
 Revision 520: PR31 run 45757179014 all four live campaigns passed on committed split package without monolith; focused rules, static distribution and source reference jobs passed. PR32 run 45757521561 focused rules/static/reference and three live jobs passed, remaining jobs pending at inspection. Consolidate verified P0.2–P0.4 and fortification export into completed checks. Add isolated Arduous delayed configuration request, reduced motion, blocked interactions, error and retry exercise to existing hosted acceptance, with desktop/tablet/error screenshot evidence; normal unmodified HTTP acceptance remains separate. Startup watchdog 90 seconds allows recovery from indefinite resource stalls; no AI timeout change. Controlled seeded operational parity still outstanding (separate branch), no new sweep. Visual inspection and actual CI execution pending.
+
+Revision 521: run 45757710153 all four live campaigns and focused rules/static/source jobs passed; hosted job pending at inspection. Extend existing Node runner with exact browser defaults and authenticated opening/final save export; extend hosted runner with controlled Standard grade 3 operational parity, seed 7, same opening and rules, exact full campaign receipts and terminal comparison. CI runs representative Kiev on same runner, opt-in dispatch thereafter; report compute and observed browser times. No rule/AI change or simulation sweep. P0.1/P0.6 remain open until actual parity evidence; larger matrix only if justified. Loading visual review and final interactions still outstanding.
 
 ## Batch A — Complete approved historical gameplay corrections (P1)
 
