@@ -6,16 +6,19 @@ if(!panel)return;
 const status=panel.querySelector('[data-loading-status]'),actions=panel.querySelector('[data-loading-actions]');
 const content=[...document.querySelectorAll('body > header,body > main')];
 let state='loading';
+// A stalled request must not leave an indefinite spinner. This is a UI-only
+// deadline, not a change to campaign AI timing or resource validation.
+const startupDeadline=root.setTimeout(()=>fail('Mission initialization timed out. Check the connection and retry.'),90000);
 function block(busy){for(const el of content){el.inert=busy;el.setAttribute('aria-busy',String(busy));}}
 function stage(label){if(state==='loading')status.textContent=label;}
 function fail(error){
- if(state!=='loading')return;state='error';panel.dataset.state='error';panel.setAttribute('aria-busy','false');
+ if(state!=='loading')return;root.clearTimeout(startupDeadline);state='error';panel.dataset.state='error';panel.setAttribute('aria-busy','false');
  panel.querySelector('h2').textContent='Mission could not load';status.setAttribute('role','alert');
  status.textContent=String(error?.message||error||'A required mission resource failed.');
  actions.hidden=false;actions.querySelector('button').focus();
 }
 function ready(){
- if(state!=='loading')return;state='ready';panel.dataset.state='ready';panel.setAttribute('aria-busy','false');block(false);panel.hidden=true;
+ if(state!=='loading')return;root.clearTimeout(startupDeadline);state='ready';panel.dataset.state='ready';panel.setAttribute('aria-busy','false');block(false);panel.hidden=true;
 }
 block(true);
 actions.querySelector('button').addEventListener('click',()=>root.location.reload());
