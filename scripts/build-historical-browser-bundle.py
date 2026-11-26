@@ -182,8 +182,8 @@ if args.split:
  if args.install:
   # Migrate actual HTML consumers, preserving relative path and script ordering.
   # Idempotent: also update previously installed blocks after chunk count changes.
-  old=re.compile(r'<script\\s+src="([^"]*/)?historical_engine_browser_bundle\\.js"\\s*></script>')
-  installed=re.compile(r'<script src="([^"]*/)?historical_engine_runtime\\.js"></script>.*?<script src="[^"]*historical_engine_entry\\.js"></script>',re.S)
+  old=re.compile(r'<script\s+src="([^"]*/)?historical_engine_browser_bundle\.js"\s*></script>')
+  installed=re.compile(r'<script src="([^"]*/)?historical_engine_runtime\.js"></script>.*?<script src="[^"]*historical_engine_entry\.js"></script>',re.S)
   changed=[]
   for path in sorted(ROOT.rglob('*.html')):
    if '.git' in path.parts:continue
@@ -193,7 +193,7 @@ if args.split:
     return ''.join('<script src="'+prefix+name+'"></script>' for name in outputs if name.endswith('.js'))
    revised=installed.sub(replace,old.sub(replace,source))
    if revised!=source:
-    if args.check:parser.exit(1,'Stale installed engine scripts: '+str(path.relative_to(ROOT))+'\\n')
+    if args.check:parser.exit(1,'Stale installed engine scripts: '+str(path.relative_to(ROOT))+'\n')
     path.write_text(revised,encoding='utf-8');changed.append(str(path.relative_to(ROOT)))
   print('Installed historical scripts:',changed)
  print('Split browser bundle:',len(modules),'modules;',len(outputs)-1,'scripts;',sum(len(v.encode()) for v in outputs.values()),'bytes')
