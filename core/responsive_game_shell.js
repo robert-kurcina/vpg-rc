@@ -35,7 +35,7 @@
   const nav=document.getElementById('map-navigation');if(!nav)return;
   sidebarToggle=document.createElement('button');sidebarToggle.type='button';sidebarToggle.id='mission-sidebar-toggle';
   sidebarToggle.setAttribute('aria-controls','game-sidebar');sidebarToggle.addEventListener('click',toggleSidebar);
-  nav.prepend(sidebarToggle);syncDrawer();
+  nav.prepend(sidebarToggle);syncDrawer();syncHeight();
  }
  // Persistent phase display is a presentation adapter: callbacks invoke the
  // existing controller actions, never calculate legality or commit independently.
@@ -65,6 +65,23 @@
   if(!phaseMessage)return;
   if(phaseMessage.textContent!==lastFeedback)phaseMessage.textContent=lastFeedback;
   phaseMessage.hidden=!lastFeedback;phaseMessage.dataset.error=String(lastError);syncHeight();
+ }
+ // SVG overlays are rebuilt after every legal action. Preserve keyboard focus
+ // by stable gameplay identity, never by DOM index or visual coordinates.
+ function captureMapFocus(container){
+  const node=document.activeElement;
+  if(!container?.contains(node))return null;
+  for(const attr of ['data-native-unit','data-unit-id','data-board-cell','data-hex','data-retreat-route']){
+   if(node.hasAttribute(attr))return {attr,value:node.getAttribute(attr)};
+  }
+  return null;
+ }
+ function restoreMapFocus(container,key){
+  if(!key||!container)return;
+  const candidates=[...container.querySelectorAll('[tabindex="0"]')];
+  const match=candidates.find(node=>node.getAttribute(key.attr)===key.value);
+  const fallback=candidates.find(node=>node.hasAttribute('data-board-cell')||node.hasAttribute('data-hex'))||candidates[0];
+  (match||fallback||document.getElementById('mission-phase-action')||sidebarToggle)?.focus({preventScroll:true});
  }
  function effective(){return preference==='auto'?detect():preference;}
  function syncHeight(){if(!hasDOM())return;const h=document.querySelector('body>header')?.getBoundingClientRect().height||56;document.body.style.setProperty('--mobile-header-height',h+'px');}
@@ -163,5 +180,5 @@
   if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',mount,{once:true});
   else mount();
  }
- return Object.freeze({STORAGE_KEY,detect,load,mount,setPreference,attachSettings,getMode:()=>mode,getPreference:()=>preference,isOpen:visible,open,openAt,close,openSettings,closeSettings,enableSidebarToggle,setPhase,feedback});
+ return Object.freeze({STORAGE_KEY,detect,load,mount,setPreference,attachSettings,getMode:()=>mode,getPreference:()=>preference,isOpen:visible,open,openAt,close,openSettings,closeSettings,enableSidebarToggle,setPhase,feedback,captureMapFocus,restoreMapFocus});
 });

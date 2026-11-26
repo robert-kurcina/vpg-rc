@@ -412,7 +412,9 @@ function showBoard(){
    multiEligibleRepair&&u.id===repairTarget,units.length>1?'Click this counter to swap the top of the stack. '+hint:hint));
  }
  svg+='</g>';
- $('counter-overlay').innerHTML=svg;
+ const overlay=$('counter-overlay'),shell=root.WargameResponsiveShell,focused=shell?.captureMapFocus(overlay);
+ overlay.innerHTML=svg;
+ shell?.restoreMapFocus(overlay,focused);
 }
 function renderActions(){
  if(!view)return;

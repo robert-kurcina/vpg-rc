@@ -180,6 +180,7 @@ function begin({rootDir,profilePath,mapPath,registryPath,projectRoot,aiProfilePa
   if(!holder.dataset.ready){holder.innerHTML=T.svgMap(board,mapBase);holder.dataset.ready='true';}
   const svg=holder.querySelector('svg');
   if(displayControl)Display.applyCoast(svg,board,displayControl.get());
+  const shell=globalThis.WargameResponsiveShell,focused=shell?.captureMapFocus(svg);
   const previous=svg.querySelector('[data-native-interactive="true"]');if(previous)previous.remove();
   const layer=mkSvg('g',{'data-native-interactive':'true','class':'native-preview-overlays'});
   const byHex=new Map(board.cells.map(c=>[`${c.sourceRef.x},${c.sourceRef.y}`,c]));
@@ -242,6 +243,7 @@ function begin({rootDir,profilePath,mapPath,registryPath,projectRoot,aiProfilePa
   }
   const cityLabel=svg.querySelector('[data-layer="city-labels"]');
   svg.insertBefore(layer,cityLabel||null);
+  shell?.restoreMapFocus(svg,focused);
  }
  function menuSelect(id,label,options){const wrap=document.createElement('label');wrap.textContent=label;
   const el=document.createElement('select');el.id=id;
