@@ -191,10 +191,12 @@ jobs:
           if git grep -n historical_engine_browser_bundle.js -- '*.html'; then exit 1; fi
       - name: Launch real static HTTP origin
         run: |
-          python serve.py > "${RUNNER_TEMP}/mission-server.log" 2>&1 &
+          python scripts/build-static-release.py "${RUNNER_TEMP}/staged-site/russian-campaign"
+          python scripts/build-static-release.py "${RUNNER_TEMP}/staged-site/russian-campaign" --verify
+          python -m http.server 8765 --bind 127.0.0.1 --directory "${RUNNER_TEMP}/staged-site" > "${RUNNER_TEMP}/mission-server.log" 2>&1 &
           echo $! > "${RUNNER_TEMP}/mission-server.pid"
           for attempt in $(seq 1 30); do
-            if curl --fail --silent --output /dev/null http://127.0.0.1:8765/index.html; then exit 0; fi
+            if curl --fail --silent --output /dev/null http://127.0.0.1:8765/russian-campaign/index.html; then exit 0; fi
             sleep 1
           done
           cat "${RUNNER_TEMP}/mission-server.log"
@@ -202,7 +204,7 @@ jobs:
       - name: Exercise five routes and real IndexedDB save / resume
         run: |
           mkdir -p browser-evidence
-          python tests/mission-hosted-v693.py --url http://127.0.0.1:8765/index.html --evidence-dir browser-evidence --terminal-save "${RUNNER_TEMP}/moscow-terminal.json"
+          python tests/mission-hosted-v693.py --url http://127.0.0.1:8765/russian-campaign/index.html --evidence-dir browser-evidence --terminal-save "${RUNNER_TEMP}/moscow-terminal.json"
       - name: Preserve generated split package
         if: always()
         uses: actions/upload-artifact@v6
