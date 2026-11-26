@@ -84,14 +84,15 @@
   const redoButton=make('redo','Redo','↷',redo);redoButton.disabled=true;
   const settingsButton=make('mission-settings','Settings','⚙',()=>{
    const shell=root.WargameResponsiveShell,sidebar=document.querySelector('#game-sidebar');
-   if(document.body.dataset.missionMenuReady==='true'&&sidebar?.dataset.activeTab==='settings'&&(shell?.getMode()!=='mobile'||shell.isOpen())){
-    sidebar.querySelector('[data-game-tab="play"]')?.click();
+   if(document.body.dataset.missionMenuReady==='true'&&sidebar?.dataset.activeTab==='settings'&&shell?.isOpen()){
+    shell.closeSettings();
     return;
    }
    settings();
+   shell?.openSettings();
   });
   settingsButton.setAttribute('aria-controls','settings-section');settingsButton.setAttribute('aria-pressed','false');
-  bar.append(settingsButton,undo,redoButton);header.append(bar);root.dispatchEvent(new Event('resize'));
+  bar.append(undo,redoButton);header.append(bar,settingsButton);root.dispatchEvent(new Event('resize'));
   return redoButton;
  }
  async function mount({id,anchor,save,restore,busy,pause,reference,notice}){
@@ -115,7 +116,13 @@
    const wrapper=document.createElement('div');wrapper.className='mission-menu-wrapper';
    toggle=document.createElement('button');toggle.type='button';toggle.id='mission-menu-toggle';toggle.textContent='☰';toggle.title='Mission menu';toggle.setAttribute('aria-label','Mission menu');toggle.setAttribute('aria-expanded','false');toggle.setAttribute('aria-controls','mission-menu');
    menu=document.createElement('div');menu.id='mission-menu';menu.className='mission-menu';menu.hidden=true;
-   wrapper.append(toggle,menu);toolbar.prepend(wrapper);
+   // Use three explicit strokes instead of a font-dependent hamburger glyph.
+   toggle.textContent='';
+   const glyph=document.createElement('span');glyph.className='mission-hamburger-glyph';glyph.setAttribute('aria-hidden','true');
+   for(let i=0;i<3;i++)glyph.append(document.createElement('span'));
+   toggle.append(glyph);
+   wrapper.append(toggle,menu);
+   const header=toolbar.closest('header');header.prepend(wrapper);
    toggle.addEventListener('click',()=>{if(menu.hidden){menu.hidden=false;toggle.setAttribute('aria-expanded','true');sync();}else closeMenu();});
    document.addEventListener('pointerdown',e=>{if(!wrapper.contains(e.target))closeMenu();});
    wrapper.addEventListener('keydown',e=>{if(e.key==='Escape'&&!menu.hidden){e.preventDefault();e.stopPropagation();closeMenu(true);}});
@@ -141,6 +148,10 @@
     }
     settingsPanel.append(maintenance);
     document.body.dataset.missionMenuReady='true';
+    const title=header.querySelector('h1')?.parentElement;
+    title?.classList.add('mission-header-title');
+    // The sidebar toggle is a direct viewport action, not a third menu.
+    root.WargameResponsiveShell?.enableSidebarToggle();
    }else{
     row(deleteButton,'−');for(const link of otherLinks)row(link,'↗');
    }
