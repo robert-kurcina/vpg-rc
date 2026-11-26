@@ -26,6 +26,11 @@ function specimenBoard(row){
  const board={id:'tec-specimen-'+row.id,sourceGame:'TEC specimen '+row.name,geometry:{columnParityDown:'even'},cells:[cell]};
  switch(row.id){
   case 'open': case 'forest': case 'swamp': cell.terrain=row.id; break;
+  case 'fortification': {
+   const fort=source.cell.tileMarkers?.find(m=>m.kind==='fortification');
+   if(!fort)throw Error('Fortification specimen must come from an actual source marker');
+   cell.tileMarkers=[clone(fort)];break;
+  }
   case 'city': cell.terrain='open'; cell.tileMarkers=[marker('city')]; break;
   case 'major-city': cell.terrain='open'; cell.tileMarkers=[marker('majorCity')]; break;
   case 'river': cell.terrain='open'; cell.tileEdges={N:[{kind:'river',status:'tec-engine-specimen'}],NE:[{kind:'river',status:'tec-engine-specimen'}],SE:[{kind:'river',status:'tec-engine-specimen'}]}; break;
@@ -81,8 +86,9 @@ function renderOptions(row,profile){
  return opts;
 }
 function outDirFor(row){return path.join(root,'assets','terrain-chart',sourceMapId(row));}
+const supplemental=[{id:'fortification',name:'Fortification',sampleHex:'0501',sampleMap:'battle-for-moscow'}];
 let count=0;
-for(const row of chart.rows){
+for(const row of [...chart.rows,...supplemental]){
  const {source,board}=specimenBoard(row);
  const opts=renderOptions(row,source.profile);
  const svg=T.svgMap(board,opts);

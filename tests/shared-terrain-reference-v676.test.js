@@ -21,3 +21,9 @@ const rules=read('games/battle-for-moscow/rules.json'),over=read('games/battle-f
 const rows=R.terrainRows({movement:over.movement,combat:{...rules.combat,...over.combat},weather:over.weather}),find=id=>rows.find(x=>x.id===id);
 ok(find('forest').effect==='-1 attacker column','native shift sign');ok(find('fortification').effect.includes('Soviet defender only'),'native fortification');ok(find('city-moscow').effect==='-1 attacker column','Moscow shift');ok(find('weather-mud').effect.includes('tank ×0.5'),'mud strength');ok(find('weather-mud').move.includes('rail unaffected'),'mud rail');
 console.log(JSON.stringify({checks}));
+
+const T=require('../core/terrain_tiles'),P=require('../core/presentation');
+const source=read('maps/battle-for-moscow.json').cells.find(c=>c.id==='0501');
+assert.equal(source.terrain,'open');assert.ok(source.tileMarkers.some(m=>m.kind==='fortification'));
+const specimen=T.svgMap({id:'tec-specimen-fortification',geometry:{columnParityDown:'even'},cells:[{id:'0501',column:1,row:1,pixelCenter:[70,65],terrain:source.terrain,tileMarkers:source.tileMarkers.filter(m=>m.kind==='fortification'),tileEdges:{}}]},P.options('battle-for-moscow',{textures:{},fortificationArtwork:'../../../supplied_assets/flat/fortification-overlay.svg',showGrid:true,showNumbers:false,showWaterBodies:false,showEntryEdges:false,width:140,height:130,rx:37.8,ry:37.8}));
+assert.ok(specimen.includes('data-fortification-cell="0501"')&&specimen.includes('class="fortification-asset"'));

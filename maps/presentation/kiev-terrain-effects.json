@@ -133,7 +133,7 @@
       "sampleMap": "kiev-odessa",
       "movement": "Kiev–Odessa only (§§9.4.4–9.4.5): Romanian Home Army cannot enter before annexation. When no Soviet units remain in Bessarabia, Romania annexes it; from then on the Home Army may operate in the area, even if Soviet units later return. Hungarian units may never enter Bessarabia. Ordinary terrain and hexside costs still apply.",
       "combat": "The mauve boundary provides no combat odds modifier. Odessa §9.4.4 still prohibits the Romanian Home Army from Advancing After Combat across the Russo-Romanian border; it may attack across that border.",
-      "notes": "19 user-designated hostCells, outlined individually in mauve (#9475A9) on the Kiev–Odessa combined map. The outline is a political/movement marker, not terrain. All other country labels remain unverified; full Kiev–Odessa play remains disabled.",
+      "notes": "19 user-designated hostCells, outlined individually in mauve (#9475A9) on the Kiev–Odessa combined map. The outline is a political/movement marker, not terrain. Kiev–Odessa is playable in the shared browser engine under the approved experimental scenario policy; integrated release verification remains pending. Other country labels remain unverified.",
       "sampleScale": 1.0
     }
   ]
