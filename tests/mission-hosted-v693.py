@@ -5,7 +5,7 @@ Uses a new isolated browser context; never modifies an ordinary user's saves.
 No intercepted network, localStorage mock, or IndexedDB fixture.
 Optional --terminal-save supplies a completed native Moscow JSON from the runner.
 """
-import argparse,json
+import argparse,json,subprocess
 from pathlib import Path
 from playwright.sync_api import sync_playwright,expect
 parser=argparse.ArgumentParser();parser.add_argument('--url',default='http://localhost:8765/index.html');parser.add_argument('--chromium',default=None);parser.add_argument('--terminal-save',type=Path);parser.add_argument('--evidence-dir',type=Path,help='Capture actual engine screenshots at desktop and tablet widths');args=parser.parse_args()
@@ -90,6 +90,34 @@ with sync_playwright() as pw:
   page.locator('#undo').click();assert snapshot('battle-for-moscow')['state']==before['state']
   page.locator('#redo').click();assert snapshot('battle-for-moscow')['state']==after['state']
   print('PASS Moscow real counter selection, keyboard, zoom, movement, Undo and Redo',flush=True)
+ def verify_moscow_pending():
+  # Reuse source-legal double-stack fixtures on the actual HTTP origin.
+  fixtures=json.loads(subprocess.check_output(['node',str(Path(__file__).resolve().parent/'b4m-double-stack-browser-fixture-v697.js')],text=True))
+  page.set_viewport_size({'width':820,'height':1180})
+  page.evaluate("WargameResponsiveShell.setPreference('mobile')")
+  toggle=page.locator('#mission-sidebar-toggle')
+  for outcome,fixture in fixtures.items():
+   page.locator('#load-game').set_input_files({'name':'pending.json','mimeType':'application/json','buffer':json.dumps(fixture['pending']).encode()})
+   expect(page.locator('#load-game')).to_have_value('')
+   assert snapshot('battle-for-moscow')==fixture['pending']
+   if toggle.get_attribute('aria-expanded')=='true':toggle.click()
+   page.locator('#mission-phase-action').click()
+   expect(toggle).to_have_attribute('aria-expanded','true')
+   expect(page.locator('#choice-defender-loss')).to_be_visible()
+   choices=fixture['choices']
+   page.locator('#choice-defender-loss').select_option(choices['defenderLossId'])
+   if outcome=='EX':page.locator('#choice-exchange').fill(','.join(choices['exchangeOrder']))
+   for id,point in choices['retreats'].items():page.locator(f'[data-stack-retreat="{id}"]').select_option(f"{point['x']},{point['y']}")
+   page.locator('#choice-advance').select_option('none')
+   assert snapshot('battle-for-moscow')==fixture['pending']
+   page.locator('#resolve-battle').click()
+   assert snapshot('battle-for-moscow')==fixture['resolved']
+   page.locator('#undo').click();assert snapshot('battle-for-moscow')==fixture['pending']
+   page.locator('#redo').click();assert snapshot('battle-for-moscow')==fixture['resolved']
+   print('PASS actual mobile double-stack consequence and exact Undo/Redo:',outcome,flush=True)
+  if toggle.get_attribute('aria-expanded')=='true':toggle.click()
+  page.set_viewport_size({'width':1180,'height':820})
+  page.evaluate("WargameResponsiveShell.setPreference('auto')")
  def leave(label):
   menu();page.get_by_role('button',name='Exit Game',exact=True).click();page.get_by_role('dialog',name='Leave mission').get_by_role('button',name=label,exact=True).click();selector()
  selector()
@@ -103,7 +131,9 @@ with sync_playwright() as pw:
   # An actual successful new save should not be stored in the legacy quota-limited key.
   assert page.evaluate('(id)=>localStorage.getItem(WargameMissionStorage.key(id))===null',id)
   card(id).locator('[data-resume]').click();ready(id);assert snapshot(id)==before
-  if id=='battle-for-moscow':verify_moscow_orders()
+  if id=='battle-for-moscow':
+   verify_moscow_orders()
+   verify_moscow_pending()
   leave('Discard unsaved progress');expect(card(id).locator('[data-resume]')).to_be_visible()
   print('PASS real-origin save, selector, resume and preservation:',id,flush=True)
  if args.terminal_save:
