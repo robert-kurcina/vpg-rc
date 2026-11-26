@@ -81,7 +81,7 @@ function begin({rootDir,profilePath,mapPath,registryPath,projectRoot,aiProfilePa
    else if(humanBlocked())action={label:'Pause AI',run:()=>$('native-ai-resume').click()};
    else if(p?.kind==='combat'&&state.declarationLocked)action={label:'Combat decision',run:()=>globalThis.WargameResponsiveShell?.openAt('battle-panel')};
    else if(finish&&!finish.disabled)action={label:finish.textContent,run:()=>finish.click()};
-   else action={label:'Required orders',run:()=>globalThis.WargameResponsiveShell?.openAt('options-panel')};
+   else action={label:'Required orders',run:()=>globalThis.WargameResponsiveShell?.openAt(['setup','redeployment'].includes(p?.kind)?'unit-selection':'options-panel')};
   }
   globalThis.WargameResponsiveShell?.setPhase({label,action});
  }
@@ -108,7 +108,9 @@ function begin({rootDir,profilePath,mapPath,registryPath,projectRoot,aiProfilePa
   if(humanBlocked()){show("Pause automatic play before submitting a human action.",true);return false;}
   try{const output=S.execute(session,action);if(!output.ok){show('Not legal: '+output.reason,true);return false;}
    session=output.session;cleanSelection();
-   show(`${action.type} accepted${action.unitId?' · '+action.unitId:''}.`);render();return true;
+   show(`${action.type} accepted${action.unitId?' · '+action.unitId:''}.`);render();
+   if(current().declarationLocked&&current().pendingRoll!==null)globalThis.WargameResponsiveShell?.openAt('battle-panel');
+   return true;
   }catch(e){show('Action rejected: '+e.message,true);return false;}
  };
  const mkSvg=(tag,attrs={})=>{const el=document.createElementNS(ns,tag);for(const [k,v] of Object.entries(attrs))el.setAttribute(k,String(v));return el;};
