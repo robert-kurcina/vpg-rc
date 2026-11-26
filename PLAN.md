@@ -1,6 +1,6 @@
 # Russian Campaign — Stable release and computational improvement
 
-Revision 526 | Five independent browser games; shared engine, renderer and CRT.
+Revision 527 | Five independent browser games; shared engine, renderer and CRT.
 
 ## Accepted baseline
 
@@ -26,7 +26,7 @@ Battle for Moscow, The Arduous Beginning, Target: Leningrad, Objective: Kiev and
 
 1. [x] Consolidate accepted release plan and preserve historical evidence. Retain private staged release builder; remove obsolete runtime files only after identifying actual unused dependencies.
 2. [x] Profile current Node Operational AI campaign with existing runner, seed 7 grade 3/3, Kiev, Standard CRT, historical victory. Separate setup, actual campaign execution and post-run verification using explicit profile window. Report sampled inclusive/self costs and exact journal fingerprint. Preserve raw CPU profile artifact. Compare unprofiled baseline and profiled result on same runner. No production instrumentation or new dependency.
-3. [ ] Implemented immutable topology reuse; pending controlled acceptance. Address highest measured JavaScript hotspot with a narrow change; preserve legality, search order, RNG, all committed receipts and save integrity. Reuse focused tests and controlled comparison; revert if benefit absent.
+3. [ ] Immutable topology reuse implemented; controlled Node qualification passed, full browser acceptance and same-run measurement pending. Address highest measured JavaScript hotspot with a narrow change; preserve legality, search order, RNG, all committed receipts and save integrity. Reuse focused tests and controlled comparison; revert if benefit absent.
 4. [ ] Evaluate Web Worker isolation for expensive AI only if main-thread latency warrants it; do not confuse responsiveness with compute speed. Keep main-thread authoritative validation and deterministic transaction boundary.
 5. [ ] Prototype one suitable WASM kernel only after measurement and optimized JS baseline. Include marshalling and allocation in comparison. Reject prototype if end-to-end gain does not justify maintenance.
 6. [ ] Integrate only successful kernels, with JS fallback and exact deterministic equivalence. Keep browser-only runtime. No wholesale rewrite.
@@ -40,3 +40,5 @@ Full prior plan preserved at plans/archive/PLAN-revision-524.md; earlier provena
 ## Revision 526 evidence
 
 Run 45760410222 passed nine active jobs. Kiev 433 exact receipts, baseline 20.295s, profiled 20.726s, 19,250 samples. Movement binding 45.21% inclusive, hexside inspection 41.66%, graph build 29.97%, source graph hash 14.36%, GC 6.67% (overlapping inclusive samples). Reuse privately detached frozen map/profile pairs and frozen validated bindings, mutable inputs still build afresh. Campaign/combat/human/autoplay integration; four-map regression checks and deterministic journal fingerprint gate; production regeneration pending CI. No UX changes. No measured speedup yet.
+
+Revision 527: installer run 45763491204 passed 71 binding assertions and exact 433-receipt Kiev journal fingerprint b9bc12dd55ded1c5a41347b1ab2f704aeac27acecb1b681b5a17ccb05877bd30; 7.725s campaign execution vs earlier 20.295s (2.63x observed across separate runners), exact restore. PR39 merged including generated assets. Pre-generation browser checks failed on stale generated assets; post-generation acceptance not established (bot-triggered workflow entries have no jobs). Remove temporary installer, run normal integrated acceptance with current generated assets, same-run pinned pre-optimization comparison and fresh optimized CPU profile plus controlled Chromium/Node parity. Do not claim browser improvement until measured. Further changes depend on new hotspots; no UX or WASM changes.
