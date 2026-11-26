@@ -1,6 +1,6 @@
 # Russian Campaign — Release completion plan
 
-Revision 501 | Production baseline: v701 / checkpoint 479 plus merged hosted UX PRs #1–7
+Revision 502 | Production baseline: v701 / checkpoint 479 plus merged hosted UX PRs #1–7
 
 ## Objective
 
@@ -47,7 +47,7 @@ Revision 494: corrected shared Settings opening order, restore of prior mobile d
 
 Exit: functional essential workflows on all five routes, representative desktop/tablet sizes, no known reproducible interaction blockers. Use source inspection only as preliminary evidence, not a substitute for browser operation.
 
-Revision 501: merged PR #14 verified mobile menu/panel/Settings and real-origin persistence on all five routes (run 45749472329). Moscow inspection found ambiguous direct counter selection vs legal occupied movement destination in double-stack mode and an incorrect persistent faction label during Soviet reserve redeployment. Corrected movement-only hit dispatch and phase label; added real pointer/keyboard/zoom/movement/Undo/Redo coverage to the existing hosted test. New browser coverage pending; original reported counter issue not yet definitively reproduced.
+Revision 501: merged PR #14 verified mobile menu/panel/Settings and real-origin persistence on all five routes (run 45749472329). Moscow inspection found ambiguous direct counter selection vs legal occupied movement destination in double-stack mode and an incorrect persistent faction label during Soviet reserve redeployment. Corrected movement-only hit dispatch and phase label; added real pointer/keyboard/zoom/movement/Undo/Redo coverage to the existing hosted test. Run 45749832862 passed actual historical Moscow pointer/keyboard selection, focus, zoom, movement and Undo/Redo, as well as all five shared menu/persistence checks. Original reported issue not definitively reproduced; optional occupied-destination interaction remains to be exercised.
 
 ## Batch C — Complete reference materials (P2)
 
@@ -55,6 +55,8 @@ Revision 501: merged PR #14 verified mobile menu/panel/Settings and real-origin 
 - [x] Correct obsolete chart text (including Kiev–Odessa play status), retain original player aids and scope-specific distinctions.
 - [ ] Correct reading order and paragraph reconstruction in all five HTML rulebooks, including remaining Moscow pages 3–4. Preserve numbered sections/cases, lists, tables, relevant illustrations and original wording. Retain unmodified PDFs and 24 facsimiles. Review extraction against printed sources; do not guess missing text.
 - [ ] Verify source links, anchors, reproducible build and unchanged source checksums. Original rules are distinct from engine adaptations.
+
+Revision 502: repaired unambiguous paragraph breaks, line-wrap hyphenation and recoverable combat sequence lines on Moscow pages 3–4 in both committed HTML and guarded correction manifest. No source PDFs or facsimiles changed. Existing navigation and numbered-case/reproducibility tests now run in the same CI workflow. Remaining interleaved page 3 fragments require direct facsimile review; no guessed wording. New reference checks pending.
 
 Revision 497: hosted browser test now accepts `--evidence-dir`, recording five desktop and five tablet screenshots after each actual scenario load. A single Actions workflow installs Playwright Chromium, serves the static site, runs save/resume/abandonment checks and preserves evidence. Run 45747675673 passed all five mission persistence checks; screenshots captured, not visually reviewed.
 
