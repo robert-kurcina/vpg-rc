@@ -158,5 +158,25 @@
   {
     "before": "<p>For Example: In the previous Figure 2, if it were</p><p>a mud turn, the three German units would be</p><p>reduced to a total Combat Strength of 12.5 (i.e.,</p><p>losing 4.5 from the Panzer). That would make</p><p>the odds 3:1 before adjusting for terrain effects.</p>",
     "after": "<p>For Example: In the previous Figure 2, if it were a mud turn, the three German units would be reduced to a total Combat Strength of 12.5 (i.e., losing 4.5 from the Panzer). That would make the odds 3:1 before adjusting for terrain effects.</p>"
+  },
+  {
+    "before": "<p>1. Total the Combat Strengths of all the</p><p>attacking units in that Battle.</p>",
+    "after": "<p>1. Total the Combat Strengths of all the attacking units in that Battle.</p>"
+  },
+  {
+    "before": "<p>3. Determine if the combat effects of</p><p>terrain have lowered the odds column.</p>",
+    "after": "<p>3. Determine if the combat effects of terrain have lowered the odds column.</p>"
+  },
+  {
+    "before": "<p>4. Roll the die and consult the Combat</p><p>Results Table; cross-index the row of the</p><p>•</p><p>number rolled with the odds column to</p><p>determine the result.</p>",
+    "after": "<p>4. Roll the die and consult the Combat Results Table; cross-index the row of the number rolled with the odds column to determine the result.</p><p>•</p>"
+  },
+  {
+    "before": "during Step 4 of a Bat- tle",
+    "after": "during Step 4 of a Battle"
+  },
+  {
+    "before": "<p>5. Apply the combat result immediately.</p><p>6. Advance after combat: If the defending</p><p>unit is no longer in its hex (i.e., it has</p><p>been eliminated or forced to retreat), one</p><p>attacking unit may immediately move</p><p>• end</p><p>into the defender’s just-vacated hex.</p>",
+    "after": "<p>5. Apply the combat result immediately.</p><p>6. Advance after combat: If the defending unit is no longer in its hex (i.e., it has been eliminated or forced to retreat), one attacking unit may immediately move into the defender’s just-vacated hex.</p><p>• end</p>"
   }
 ]
