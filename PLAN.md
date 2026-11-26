@@ -1,6 +1,6 @@
 # Russian Campaign — Stable release and computational improvement
 
-Revision 527 | Five independent browser games; shared engine, renderer and CRT.
+Revision 528 | Five independent browser games; shared engine, renderer and CRT.
 
 ## Accepted baseline
 
@@ -17,21 +17,30 @@ Battle for Moscow, The Arduous Beginning, Target: Leningrad, Objective: Kiev and
 ## Explicit dispositions
 
 - REJECTED: Oberlabs UX parity as a design goal or acceptance criterion (author decision). Historical rules/CRT provenance retained.
+- REJECTED: WASM conversion, prototypes, integration and associated fallback/equivalence infrastructure (author decision). Keep the shared JavaScript engine; original acceleration objective achieved. Historical WASM discussions below are evidence only, not active requirements.
 - DEFERRED: cosmetic UX, responsive redesign, and HTML rulebook editorial improvements. Correct concrete functional defects only. No new visual mockups.
 - DEFERRED: WebGL unless measured rendering bottleneck; unified grand campaign absolute last.
 - EXTERNAL: third-party redistribution permissions unresolved; do not declare unrestricted public release.
 - LIMITATIONS: representative operational parity is not exhaustive across scenarios/difficulties; AI grade strength ordering remains provisional; source-bound Leningrad deployment and Odessa candidate provenance retained. No new calibration quota.
 
-## Active non-UX work
+## Completed non-UX work
 
-1. [x] Consolidate accepted release plan and preserve historical evidence. Retain private staged release builder; remove obsolete runtime files only after identifying actual unused dependencies.
-2. [x] Profile current Node Operational AI campaign with existing runner, seed 7 grade 3/3, Kiev, Standard CRT, historical victory. Separate setup, actual campaign execution and post-run verification using explicit profile window. Report sampled inclusive/self costs and exact journal fingerprint. Preserve raw CPU profile artifact. Compare unprofiled baseline and profiled result on same runner. No production instrumentation or new dependency.
-3. [ ] Immutable topology reuse implemented; controlled Node qualification passed, full browser acceptance and same-run measurement pending. Address highest measured JavaScript hotspot with a narrow change; preserve legality, search order, RNG, all committed receipts and save integrity. Reuse focused tests and controlled comparison; revert if benefit absent.
-4. [ ] Evaluate Web Worker isolation for expensive AI only if main-thread latency warrants it; do not confuse responsiveness with compute speed. Keep main-thread authoritative validation and deterministic transaction boundary.
-5. [ ] Prototype one suitable WASM kernel only after measurement and optimized JS baseline. Include marshalling and allocation in comparison. Reject prototype if end-to-end gain does not justify maintenance.
-6. [ ] Integrate only successful kernels, with JS fallback and exact deterministic equivalence. Keep browser-only runtime. No wholesale rewrite.
+- [x] Consolidate accepted release plan and preserve historical evidence.
+- [x] Profile original Operational AI campaign and identify measured bottlenecks.
+- [x] Reuse immutable validated movement topology across historical engine; preserve mutable-source validation and all dynamic legality.
+- [x] Regenerate browser bundles, pass integrated browser and rules acceptance, reprofile optimized engine, verify exact same-run pre/post authenticated campaign and controlled Chromium/Node parity.
+- [x] Meet original acceleration objective: 1.878x Node on same runner, observed 2.463x Chromium across separate controlled runs. No new runtime dependency.
 
-Provisional performance targets: 1.2–1.5x end-to-end improvement, 1.8x stretch; not a commitment or measured result. Do not change AI effort or policy to achieve them. No new test framework or large simulation sweeps. Prefer one substantive measured improvement per PR.
+## Remaining non-UX work — prioritized and bounded
+
+1. [ ] **State copying and source comparisons.** Investigate redundant private snapshot/draft copying and immutable source serialization in campaign and combat sessions. Remove demonstrably unnecessary work only; preserve canonical hashes, committed transaction validation, public snapshot isolation, save formats, source authorization and journal ordering. Prefer small changes to existing modules; no serialization rewrite. Combine closely related changes where justified.
+2. [ ] **ZOC evaluation.** Optimize repeated edge scans using certified immutable topology and per-position unit indexes. Preserve scenario-specific barrier rules, unit markers, eliminated units, occupancies and all current legal movement outcomes. Never cache dynamic legality across changed positions.
+3. [ ] **One final controlled comparison and release consolidation.** Use the optimized PR40 engine as the new baseline. Reuse existing focused tests, exact journal/save comparisons and staged browser acceptance. Retain changes only with material reproducible improvement (provisional engineering threshold: roughly 10% end-to-end, or demonstrable latency reduction, without regression). If no worthwhile change remains, close optimization; no repeated profiling or simulation quotas. Document remaining limitations and remove confirmed obsolete temporary build machinery.
+4. [ ] **Conditional Web Worker evaluation.** Only if expensive AI decisions demonstrably block the browser main thread for an unacceptable duration, investigate worker isolation. Not a release gate, not a promised speedup. Keep authoritative validation, stop/resume and deterministic receipts; reject if complexity or transfer overhead outweighs benefit.
+
+Deferred: cosmetic UX, responsive redesign, HTML rulebook editorial improvements, WebGL unless a measured rendering bottleneck exists. Unified grand campaign remains the absolute last priority; no implementation authorization implied.
+
+Release policy: functionally complete five-game scope. Do not expand the checklist or reopen accepted rules, assets, features or UX absent a concrete defect. Remaining optimizations are bounded, not mandatory technology milestones. No WASM, backend, new dependency or new testing framework. Third-party redistribution permission remains external.
 
 ## Evidence
 
@@ -42,3 +51,5 @@ Full prior plan preserved at plans/archive/PLAN-revision-524.md; earlier provena
 Run 45760410222 passed nine active jobs. Kiev 433 exact receipts, baseline 20.295s, profiled 20.726s, 19,250 samples. Movement binding 45.21% inclusive, hexside inspection 41.66%, graph build 29.97%, source graph hash 14.36%, GC 6.67% (overlapping inclusive samples). Reuse privately detached frozen map/profile pairs and frozen validated bindings, mutable inputs still build afresh. Campaign/combat/human/autoplay integration; four-map regression checks and deterministic journal fingerprint gate; production regeneration pending CI. No UX changes. No measured speedup yet.
 
 Revision 527: installer run 45763491204 passed 71 binding assertions and exact 433-receipt Kiev journal fingerprint b9bc12dd55ded1c5a41347b1ab2f704aeac27acecb1b681b5a17ccb05877bd30; 7.725s campaign execution vs earlier 20.295s (2.63x observed across separate runners), exact restore. PR39 merged including generated assets. Pre-generation browser checks failed on stale generated assets; post-generation acceptance not established (bot-triggered workflow entries have no jobs). Remove temporary installer, run normal integrated acceptance with current generated assets, same-run pinned pre-optimization comparison and fresh optimized CPU profile plus controlled Chromium/Node parity. Do not claim browser improvement until measured. Further changes depend on new hotspots; no UX or WASM changes.
+
+Revision 528: PR40 run 45763742040 passed all ten jobs, including integrated mission-browser, static distribution, four live campaigns, focused rules, references, CPU profile and controlled operational parity. Same-run Node before 14.319s, after 7.623s (1.8784x), exact full authenticated save equality. Chromium 11.75045s vs previous 28.9405s (2.463x observed across runs); current paired Node 9.369s; 433 exact actions, Soviet victory, exact persistence. New profile: enemyZOC 8.41% self, campaign walk 7.19%, canonical 5.36%, clone 5.35%, combat walk 5.28%, canonical 5.19%, communicationIndex 4.02%, GC 3.99%, immutable-source comparison 3.73%. Costs overlap for inclusive measures. Earlier 2.63x Node observation across separate runs superseded for controlled claims by 1.8784x same-run comparison. Author rejects WASM; remove from active and deferred work. Prioritize bounded JS improvements and stop once marginal benefit no longer justifies complexity.
