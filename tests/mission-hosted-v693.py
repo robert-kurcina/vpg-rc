@@ -8,7 +8,7 @@ Optional --terminal-save supplies a completed native Moscow JSON from the runner
 import argparse,json,subprocess,os,tempfile
 from pathlib import Path
 from playwright.sync_api import sync_playwright,expect
-parser=argparse.ArgumentParser();parser.add_argument('--url',default='http://localhost:8765/index.html');parser.add_argument('--chromium',default=None);parser.add_argument('--terminal-save',type=Path);parser.add_argument('--evidence-dir',type=Path,help='Capture actual engine screenshots at desktop and tablet widths');args=parser.parse_args()
+parser=argparse.ArgumentParser();parser.add_argument('--url',default='http://localhost:8765/index.html');parser.add_argument('--chromium',default=None);parser.add_argument('--terminal-save',type=Path);parser.add_argument('--evidence-dir',type=Path,help='Capture actual engine screenshots at desktop and tablet widths');parser.add_argument('--live-scenario',choices=['arduous','leningrad','kiev','kiev-odessa'],help='Play one fresh historical campaign through the actual automatic browser controller');args=parser.parse_args()
 if args.evidence_dir: args.evidence_dir.mkdir(parents=True,exist_ok=True)
 missions=['battle-for-moscow','arduous','leningrad','kiev','kiev-odessa']
 with sync_playwright() as pw:
@@ -183,9 +183,52 @@ with sync_playwright() as pw:
    assert page.evaluate('HistoricalBrowserPreview.snapshot().cursor.complete')
    expect(page.locator('#redo')).to_be_disabled()
    print('PASS real-origin terminal restoration, history and IndexedDB:',id,suffix or 'historical',flush=True)
+ def verify_live_campaign(id):
+  card(id).get_by_role('link',name='New Mission',exact=True).click();ready(id)
+  gear=page.locator('#mission-settings');gear.click()
+  expect(page.locator('#victory-mode')).to_have_value('historical')
+  expect(page.locator('#advanced-crt')).not_to_be_checked()
+  assignment=page.locator('#ai-assignment')
+  actor=page.evaluate('HistoricalBrowserPreview.snapshot().actor')
+  opponent='soviet' if actor=='german' else 'german'
+  assignment.select_option(opponent);gear.click()
+  # A human-owned opening must not be consumed by the automatic controller.
+  before=page.evaluate('HistoricalBrowserPreview.snapshot().actionCount')
+  page.locator('#ai-resume').click()
+  expect(page.locator('#ai-ownership-status')).to_have_text('Human controls current side')
+  assert page.evaluate('HistoricalBrowserPreview.snapshot().actionCount')==before
+  page.locator('#ai-resume').click()
+  gear.click();assignment.select_option(actor);gear.click()
+  page.locator('#ai-resume').click()
+  page.wait_for_function("HistoricalBrowserPreview.snapshot().actor!=="+json.dumps(actor)+" && document.getElementById('ai-stop').hidden",timeout=180000)
+  expect(page.locator('#ai-ownership-status')).to_have_text('Human controls current side')
+  assert page.evaluate('HistoricalBrowserPreview.snapshot().actionCount')>before
+  gear.click();assignment.select_option('both');gear.click()
+  page.locator('#ai-resume').click()
+  # Wait for a real terminal state or a controller failure, not a fixed sleep.
+  page.wait_for_function("""()=>HistoricalBrowserPreview.snapshot().cursor.complete ||
+    (document.getElementById('ai-stop').hidden &&
+     document.getElementById('ai-resume').textContent==='Resume automatic play' &&
+     document.getElementById('message').textContent.startsWith('AI stopped:'))""",timeout=600000)
+  terminal=page.evaluate('HistoricalBrowserPreview.snapshot()')
+  assert terminal['cursor']['complete'],page.locator('#message').inner_text()
+  expect(page.locator('#ai-resume')).to_be_disabled()
+  expect(page.locator('#campaign-result strong')).to_be_visible()
+  final=snapshot(id)
+  if args.evidence_dir:page.screenshot(path=str(args.evidence_dir/f'{id}-live-terminal.png'),full_page=True)
+  leave('Save and return');card(id).locator('[data-resume]').click();ready(id)
+  assert snapshot(id)==final
+  assert page.evaluate('HistoricalBrowserPreview.snapshot().cursor.complete')
+  print('PASS full live browser campaign:',id,terminal['actionCount'],terminal['terminal'],flush=True)
+  leave('Discard unsaved progress')
  def leave(label):
   menu();page.get_by_role('button',name='Exit Game',exact=True).click();page.get_by_role('dialog',name='Leave mission').get_by_role('button',name=label,exact=True).click();selector()
  selector()
+ if args.live_scenario:
+  verify_live_campaign(args.live_scenario)
+  assert not errors,errors
+  browser.close()
+  raise SystemExit(0)
  for id in missions:
   expect(card(id).locator('[data-status]')).to_have_text('No local save')
   card(id).get_by_role('link',name='New Mission',exact=True).click();ready(id);before=snapshot(id)
