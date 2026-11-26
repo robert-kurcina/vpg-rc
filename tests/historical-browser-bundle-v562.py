@@ -7,7 +7,8 @@ import json, subprocess, tempfile, shutil
 from playwright.sync_api import sync_playwright
 root=Path(__file__).resolve().parents[1]
 builder=root/'scripts/build-historical-browser-bundle.py'
-bundle=root/'core/historical_engine_browser_bundle.js'
+scripts=json.loads((root/'core/historical_engine_scripts.json').read_text())
+bundle=root/'core'/scripts[-1]
 subprocess.run(['python',str(builder),'--check'],check=True)
 with tempfile.TemporaryDirectory() as d:
     tmp=Path(d)
@@ -21,7 +22,7 @@ with tempfile.TemporaryDirectory() as d:
     stale=tmp/'core'/bundle.name
     stale.write_text('stale')
     result=subprocess.run(['python',str(tmp/'scripts'/builder.name),'--check'],capture_output=True)
-    assert result.returncode==1 and b'Stale historical browser bundle' in result.stderr
+    assert result.returncode==1 and b'Stale split engine' in result.stderr
     assert stale.read_text()=='stale'
     stale.unlink()
     assert subprocess.run(['python',str(tmp/'scripts'/builder.name),'--check'],capture_output=True).returncode==1
@@ -34,6 +35,7 @@ with sync_playwright() as pw:
     browser=pw.chromium.launch(executable_path='/usr/bin/chromium',headless=True,args=['--no-sandbox','--disable-dev-shm-usage'])
     page=browser.new_page()
     page.add_script_tag(content=(root/'core/sync_sha256.js').read_text())
+    for name in scripts[:-1]:page.add_script_tag(path=str(root/'core'/name))
     page.add_script_tag(content=source.replace(needle,'root.__testNaval=load("core/historical_naval_logistics.js");\n'+needle))
     n=page.evaluate('''f=>{const naval=__testNaval.create(f);let n=0;const ok=(v)=>{if(!v)throw Error('assertion '+n);n++};const bad=(fn,pattern)=>{let e;try{fn()}catch(x){e=x}ok(e&&pattern.test(e.message))};for(let die=1;die<=6;die++){const a={state:f.state,actor:'soviet',unitId:f.id,destination:{kind:'port',hex:'1811'},turn:3,die};const before=JSON.stringify(f.state);bad(()=>naval.transport(a),/stacking qualification/);bad(()=>naval.transport({...a,canOccupyPort:()=>false}),/stacking qualification/);const hostile=structuredClone(f.state);hostile.units.enemy={id:'enemy',owner:'german',hex:'1811'};bad(()=>naval.transport({...a,state:hostile,canOccupyPort:()=>true}),/Enemy occupies destination/);const r=naval.transport({...a,canOccupyPort:({state,unit})=>{ok(unit.strengthStatus==='printed-reduced');state.units[f.id].hex='bad';unit.hex='bad';return true}});ok(JSON.stringify(f.state)===before);ok(r.state.units[f.id]?.hex===(die===1?undefined:'1811'));}return n}''',fixture)
     browser.close()
