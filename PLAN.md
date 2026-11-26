@@ -1,6 +1,6 @@
 # Russian Campaign — Release completion plan
 
-Revision 514 | Production baseline: v701 / checkpoint 479 plus merged hosted UX PRs #1–7
+Revision 515 | Production baseline: v701 / checkpoint 479 plus merged hosted UX PRs #1–7
 
 ## Objective
 
@@ -35,6 +35,8 @@ Execution: first implementation PR combines minimal instrumentation with removal
 Revision 512: shared historical controller now bypasses human.view() and clears order controls during AI ownership, throttles progress redraws to 250 ms and yields after each committed action. Automatic handoffs use the lightweight path, with full refresh on pause/human handoff/completion. Aggregate timings cover AI transaction, human view, controls, board, board save and scheduling. Existing live campaign runner logs progress every five seconds and asserts no human-view builds during continuous AI/AI. P0.1/P0.2 implementation partial; CI pending; controlled headless comparison and serialization removal remain open. Run 45753587110 passed established browser checks including terrain references. No policy/engine changes.
 
 Revision 514: author-directed split bundle migration. Existing 1,788,847-byte bundle retained as production fallback while generator emits deterministic version-bound runtime, rules/campaign/AI/scenario chunks capped at 180,000 bytes, and entry point. Large JSON modules split into escaped pieces and reconstruct on require. Existing hosted and static CI jobs generate and use split scripts on checkout, preserve generated package artifact. Production route migration and removal of old bundle pending actual generated files and passing CI; no runtime speed claim from packaging alone. P0 serialization accessor remains pending bundle synchronization.
+
+Revision 515: run 45754983954 establishes the shared controller stall at Turn 1 housekeeping (actor system, not owned by either faction), not a ten-minute computation. Arduous 21 actions/598ms AI, Leningrad 24/426ms, Kiev 19/510ms, Kiev–Odessa 29/1079ms. Allow deterministic system housekeeping when automatic play is enabled; manual handoff preserved. Split package generated 64 modules/16 scripts, largest 179140 bytes, total 1911562 bytes; hosted initialization failed because private Buffer lexical scope was lost. Pass adapter explicitly to split module factories and version ABI. Live and hosted tests now exercise split package; pending CI. Original monolithic production packaging retained until split migration verified. P0 timing targets remain provisional; do not pursue deeper optimization without measured need.
 
 ## Batch A — Complete approved historical gameplay corrections (P1)
 
