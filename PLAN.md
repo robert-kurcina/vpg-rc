@@ -1,6 +1,6 @@
 # Russian Campaign — Release completion plan
 
-Revision 499 | Production baseline: v701 / checkpoint 479 plus merged hosted UX PRs #1–7
+Revision 500 | Production baseline: v701 / checkpoint 479 plus merged hosted UX PRs #1–7
 
 ## Objective
 
@@ -10,7 +10,7 @@ Release five independent browser games: Battle for Moscow, The Arduous Beginning
 
 | Priority | Deliverable | Status | Remaining |
 |---|---|---|---|
-| P1 | Historical rules and gameplay | Nearly complete | Existing focused checks for three implemented adjudications |
+| P1 | Historical rules and gameplay | Nearly complete | Three adjudications verified; optional stacking/CRT and save compatibility checks remain |
 | P2 | Gameplay UX and unified mission interface | Substantially implemented; runtime verification open | Reproduce and fix interaction defects, finish reference materials |
 | P3 | AI opponents and difficulty | Implemented; provisional strength ordering | Demonstrated defects only; integrated verification |
 | P4 | Optional graduated victory | Implemented, author accepted | Integrated verification |
@@ -26,7 +26,7 @@ Completed implementation is not equivalent to browser acceptance. Do not reopen 
 - [x] Leningrad §5: Soviet victory for otherwise unclassified 13-city outcomes; retain isolated-Leningrad draw and 14-city German victory. Explicitly identify this as author-approved house adjudication rather than printed wording.
 - [ ] Targeted rule regression, including historical/optional stacking and CRT interactions where affected; preserve versioned save/replay compatibility, or reject incompatible versions explicitly rather than silently reinterpret history.
 
-Revision 492: Moscow corrections implemented with a trusted version-bound policy; old native browser saves retain their original package fingerprint and behavior. New regression assertions added. Leningrad adjudication implemented in the trusted scenario policy and matching shared browser bundle; old Leningrad policy-bound saves reject explicitly rather than silently change the adjudication. Exact branch runtime regression remains pending. Exit: three changes implemented and focused regression passes. No unrelated engine refactoring.
+Revision 492: Moscow corrections implemented with a trusted version-bound policy; old native browser saves retain their original package fingerprint and behavior. New regression assertions added. Leningrad adjudication implemented in the trusted scenario policy and matching shared browser bundle; old Leningrad policy-bound saves reject explicitly rather than silently change the adjudication. Run 45748855998 passed the four existing focused rule/reference scripts, including all three adjudications. Optional stacking and save-version compatibility still require integrated verification. Exit: three changes implemented and focused regression passes. No unrelated engine refactoring.
 
 ## Batch B — Finish gameplay UX (P2, P6)
 
@@ -37,7 +37,9 @@ Revision 492: Moscow corrections implemented with a trusted version-bound policy
 - [ ] Verify and correct persistent turn/faction/phase and feedback; primary action invokes existing legal handler only. Mandatory combat, retreat, support, reinforcement, deployment and stack cleanup decisions remain reachable when panel hidden. Check AI pause/stop, settings restoration, keyboard focus and selection.
 - [ ] Verify grouped Settings (Players and AI, Mission configuration, Map display, Interface layout, Maintenance). Keep next-mission rules separate from immediate preferences. G/S markers optional and smaller. Remove duplicate controls and unnecessary diagnostic presentation only; retain meaningful source limitations. Confirm actual Oberlabs workflow gaps; no undefined tournament functionality without author clarification.
 
-Revision 499: merged PR #12 verified five-route real-origin persistence and mission-scoped abandonment. Existing four focused Node tests now run in an independent job in the same workflow; results pending. Existing browser test additionally exercises the eight-entry menu, persistent phase text, sidebar visibility and Settings open/close/Escape restoration on all five routes in explicit mobile layout; asserts unchanged serialized game state. New checks pending execution. No additional simulation quotas.
+Revision 500: run 45748855998 passed all four focused rule/reference scripts (Leningrad 228 assertions, terrain reference 54 checks). Node 20 action-runtime annotation absent. Expanded browser test found the mobile drawer/backdrop intercepting the direct Hide panel control. Shared shell now relocates the same toggle into the persistent header on mobile and restores it to the map toolbar on desktop. Existing test exercises tablet and phone widths and captures true mobile layout; runtime confirmation pending. No rule changes.
+
+Revision 499: merged PR #12 verified five-route real-origin persistence and mission-scoped abandonment. Existing four focused Node tests now run in an independent job in the same workflow; results passed in run 45748855998. Existing browser test additionally exercises the eight-entry menu, persistent phase text, sidebar visibility and Settings open/close/Escape restoration on all five routes in explicit mobile layout; asserts unchanged serialized game state. First execution exposed the drawer hit-target issue corrected in revision 500. No additional simulation quotas.
 
 Revision 498: first hosted run 45747414550 passed Moscow save/resume/preservation, then failed waiting for Arduous initialization. Source review found an out-of-scope phaseConfig reference in the shared historical phase bar; use initialized sourceData.contextSettings.config.turns instead. Existing browser test now surfaces caught initialization exceptions immediately. Corrected branch runtime passed all five initial mission and persistence checks in run 45747675673. No additional rule test framework or simulation quota.
 
