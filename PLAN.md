@@ -1,6 +1,6 @@
 # Russian Campaign — Release completion plan
 
-Revision 512 | Production baseline: v701 / checkpoint 479 plus merged hosted UX PRs #1–7
+Revision 514 | Production baseline: v701 / checkpoint 479 plus merged hosted UX PRs #1–7
 
 ## Objective
 
@@ -33,6 +33,8 @@ Author direction: correct fundamental performance issues before further release 
 Execution: first implementation PR combines minimal instrumentation with removal of obvious redundant UI work; second addresses measured serialization/rendering costs; third addresses remaining measured engine bottlenecks if any and closes acceptance. Do not repeat full campaign matrices on unrelated editorial changes; use workflow dispatch or relevant path filters for performance qualification. Preserve existing verified evidence. Once P0 passes, resume remaining release UX, source review and rights work. Do not start deferred grand campaign or WASM.
 
 Revision 512: shared historical controller now bypasses human.view() and clears order controls during AI ownership, throttles progress redraws to 250 ms and yields after each committed action. Automatic handoffs use the lightweight path, with full refresh on pause/human handoff/completion. Aggregate timings cover AI transaction, human view, controls, board, board save and scheduling. Existing live campaign runner logs progress every five seconds and asserts no human-view builds during continuous AI/AI. P0.1/P0.2 implementation partial; CI pending; controlled headless comparison and serialization removal remain open. Run 45753587110 passed established browser checks including terrain references. No policy/engine changes.
+
+Revision 514: author-directed split bundle migration. Existing 1,788,847-byte bundle retained as production fallback while generator emits deterministic version-bound runtime, rules/campaign/AI/scenario chunks capped at 180,000 bytes, and entry point. Large JSON modules split into escaped pieces and reconstruct on require. Existing hosted and static CI jobs generate and use split scripts on checkout, preserve generated package artifact. Production route migration and removal of old bundle pending actual generated files and passing CI; no runtime speed claim from packaging alone. P0 serialization accessor remains pending bundle synchronization.
 
 ## Batch A — Complete approved historical gameplay corrections (P1)
 

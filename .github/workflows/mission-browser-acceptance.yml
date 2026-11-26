@@ -9,6 +9,7 @@ on:
       - 'tests/fixtures/terminal-v694/**'
       - 'scripts/run-native-campaign.js'
       - 'scripts/build-static-release.py'
+      - 'scripts/build-historical-browser-bundle.py'
       - 'scripts/render-terrain-chart-specimens.js'
       - 'tools/terrain-effects-chart/**'
       - 'tests/b4m-source-combat-v586.test.js'
@@ -84,6 +85,22 @@ jobs:
       - uses: actions/setup-python@v6
         with:
           python-version: '3.12'
+      - name: Generate and exercise split historical engine
+        run: |
+          python scripts/build-historical-browser-bundle.py --split
+          python scripts/build-historical-browser-bundle.py --split --check
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          scripts=json.loads(Path('core/historical_engine_scripts.json').read_text())
+          old='<script src="../../../core/historical_engine_browser_bundle.js"></script>'
+          new=''.join('<script src="../../../core/'+s+'"></script>' for s in scripts)
+          for route in ('arduous/native-preview','leningrad/native-preview','kiev/setup-preview','kiev-odessa/experimental-preview'):
+              p=Path('games')/route/'index.html'
+              s=p.read_text()
+              assert s.count(old)==1,route
+              p.write_text(s.replace(old,new))
+          PY
       - name: Stage and verify private repository-relative release
         run: |
           python scripts/build-static-release.py "${RUNNER_TEMP}/campaign-release"
@@ -138,6 +155,22 @@ jobs:
           node-version: '22'
       - name: Complete one Moscow campaign using the existing native runner
         run: SAVE_PATH="${RUNNER_TEMP}/moscow-terminal.json" node scripts/run-native-campaign.js standard 7 5000 3 3
+      - name: Generate and exercise split historical engine
+        run: |
+          python scripts/build-historical-browser-bundle.py --split
+          python scripts/build-historical-browser-bundle.py --split --check
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          scripts=json.loads(Path('core/historical_engine_scripts.json').read_text())
+          old='<script src="../../../core/historical_engine_browser_bundle.js"></script>'
+          new=''.join('<script src="../../../core/'+s+'"></script>' for s in scripts)
+          for route in ('arduous/native-preview','leningrad/native-preview','kiev/setup-preview','kiev-odessa/experimental-preview'):
+              p=Path('games')/route/'index.html'
+              s=p.read_text()
+              assert s.count(old)==1,route
+              p.write_text(s.replace(old,new))
+          PY
       - name: Launch real static HTTP origin
         run: |
           python serve.py > "${RUNNER_TEMP}/mission-server.log" 2>&1 &
@@ -152,6 +185,17 @@ jobs:
         run: |
           mkdir -p browser-evidence
           python tests/mission-hosted-v693.py --url http://127.0.0.1:8765/index.html --evidence-dir browser-evidence --terminal-save "${RUNNER_TEMP}/moscow-terminal.json"
+      - name: Preserve generated split package
+        if: always()
+        uses: actions/upload-artifact@v6
+        with:
+          name: split-historical-engine
+          path: |
+            core/historical_engine_runtime.js
+            core/historical_engine_entry.js
+            core/historical_engine_chunk_*.js
+            core/historical_engine_scripts.json
+          if-no-files-found: error
       - name: Preserve actual browser evidence and server diagnostics
         if: always()
         uses: actions/upload-artifact@v6
