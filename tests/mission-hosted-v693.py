@@ -145,7 +145,7 @@ with sync_playwright() as pw:
   assert snapshot(id)==before,'Selecting occupied destination counter committed movement'
   counter(order['id']).locator('.counter-hit-area').click()
   # The highlighted hex is a separate keyboard-accessible destination.
-  cell=page.evaluate("""o=>{const u=document.querySelector('[data-native-unit="'+o.other+'"]');const svg=u.closest('svg');const rect=u.querySelector('.counter-hit-area');const b=rect.getBBox();const x=b.x+b.width/2,y=b.y+b.height/2;return Array.from(svg.querySelectorAll('.native-board-hit[tabindex="0"]')).find(p=>{const pt=new DOMPoint(x,y);return p.isPointInFill(pt)})?.dataset.boardCell}""",order)
+  cell=page.evaluate("""o=>{const u=document.querySelector('[data-native-unit="'+o.other+'"]');const svg=u.closest('svg');const b=u.getBBox();const pt=new DOMPoint(b.x+b.width/2,b.y+b.height/2);return Array.from(svg.querySelectorAll('.native-board-hit[tabindex="0"]')).find(p=>p.isPointInFill(pt))?.dataset.boardCell}""",order)
   assert cell,'Occupied legal hex missing interactive destination'
   page.locator('[data-board-cell="'+cell+'"]').focus();page.keyboard.press('Enter')
   after=snapshot(id)
@@ -174,7 +174,9 @@ with sync_playwright() as pw:
   page.wait_for_timeout(200);assert snapshot(id)==paused
   page.locator('#native-ai-resume').click()
   page.wait_for_function('__nativePreview.getSession().state.side==="soviet"',timeout=30000)
-  assert snapshot(id)==expected
+  # Player configuration is portable metadata, not an engine receipt.
+  actual=snapshot(id);actual.pop('playerSession',None)
+  assert actual==expected
   restore(original)
   print('PASS Moscow persistent Stop AI and exact resumed side journal',flush=True)
  def verify_moscow_pending():
