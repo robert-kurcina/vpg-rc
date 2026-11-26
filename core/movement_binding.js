@@ -13,7 +13,43 @@
 })(typeof globalThis!=='undefined'?globalThis:this,function(H,M,P,LP){'use strict';
  const fail=message=>{throw Error('movement-binding: '+message);};
  const pair=(a,b)=>[a,b].sort().join(':');
+ // Only private, deeply frozen copies can be cached. Object.freeze on a
+ // caller's root is not evidence that its nested cells or policy are immutable.
+ const owned=new WeakSet(),cache=new WeakMap();
+ function freezeTree(value,visiting=new WeakSet(),done=new WeakSet()){
+  if(value&&typeof value==='object'){
+   if(done.has(value))return value;
+   if(visiting.has(value)||(!Array.isArray(value)&&Object.getPrototypeOf(value)!==Object.prototype&&Object.getPrototypeOf(value)!==null))
+    throw Error('Movement source must be an acyclic plain data tree');
+   visiting.add(value);
+   for(const child of Object.values(value))freezeTree(child,visiting,done);
+   visiting.delete(value);Object.freeze(value);done.add(value);
+  }
+  return value;
+ }
+ function ownSource(value){
+  if(owned.has(value))return value;
+  const copy=freezeTree(structuredClone(value));owned.add(copy);return copy;
+ }
+ function prepareContext(context){
+  return {...context,map:ownSource(context.map),profile:ownSource(context.profile)};
+ }
+ // Combat sessions already make a canonical detached copy. Reuse the
+ // parent's private source only when both copies have the same serialized
+ // values and order; otherwise preserve the canonical copy's semantics.
+ function reusePreparedSource(detached,original){
+  const same=(a,b)=>owned.has(b)&&JSON.stringify(a)===JSON.stringify(b);
+  return {...detached,map:same(detached.map,original.map)?original.map:ownSource(detached.map),
+   profile:same(detached.profile,original.profile)?original.profile:ownSource(detached.profile)};
+ }
  function build(map,profile){
+  if(!owned.has(map)||!owned.has(profile))return buildUncached(map,profile);
+  let byProfile=cache.get(map);
+  if(!byProfile){byProfile=new WeakMap();cache.set(map,byProfile);}
+  if(!byProfile.has(profile))byProfile.set(profile,freezeTree(buildUncached(map,profile)));
+  return byProfile.get(profile);
+ }
+ function buildUncached(map,profile){
   const p=M.validatedProfile(profile);
   // The ledger builds its own source-authorized graph once; do not construct
   // a second graph just to compare it with the independent hexside checks.
@@ -57,5 +93,5 @@
  function legalRoutesBatch(binding,phase,units,turn,queries,territory){
   return LP.searchBatch(context(binding,phase,units,turn,territory),queries);
  }
- return Object.freeze({build,context,move,routes,legalRoutes,legalRoutesBatch});
+ return Object.freeze({build,prepareContext,reusePreparedSource,context,move,routes,legalRoutes,legalRoutesBatch});
 });

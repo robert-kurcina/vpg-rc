@@ -1,5 +1,5 @@
 /* GENERATED. Do not edit. */
-(function(root){"use strict";const r=root.__historicalBundle;if(!r||r.revision!=="e16d5bf822f84ea8e90fa04797e78bac0793544b402d1343ab68c617519b011a")throw Error("Historical bundle version mismatch");const defs=r.definitions,parts=r.parts;
+(function(root){"use strict";const r=root.__historicalBundle;if(!r||r.revision!=="30b222356d7174806555f575e1a9cbf6d9aa1159aace23db7fcbcfeaf4f2062e")throw Error("Historical bundle version mismatch");const defs=r.definitions,parts=r.parts;
 defs["core/composite_entry_border_reconciliation.js"]=function(module,exports,require,Buffer){
 /* Source-pinned, read-only entry boundary topology audit.
  * A geometric exterior side is a candidate source mark, NOT a certified legal
@@ -1393,6 +1393,7 @@ defs["core/historical_combat_session.js"]=function(module,exports,require,Buffer
 'use strict';
 const crypto=require('node:crypto');
 const Combat=require('./historical_combat_phase');
+const MovementBinding=require('./movement_binding');
 const FORMAT='wargame-historical-combat-phase';
 const VERSION=1,MAX_BYTES=16*1024*1024,MAX_ACTIONS=256;
 const isObject=x=>x!==null&&typeof x==='object'&&!Array.isArray(x)&&
@@ -1537,7 +1538,7 @@ function session(context,controller,journal,binding){
  return Object.freeze({snapshot,execute,undo,save});
 }
 function create(context){
- const binding=contextBinding(context),source=copy(context);
+ const binding=contextBinding(context),source=MovementBinding.reusePreparedSource(copy(context),context);
  const controller=Combat.create(source);
  return session(source,controller,[],binding);
 }
@@ -1559,7 +1560,7 @@ function restore(envelope,context){
  if(envelope.bindings.openingHash!==binding.openingHash||digest(envelope.origin)!==binding.openingHash)
   throw Error('Combat opening state mismatch');
  if(!/^[0-9a-f]{64}$/.test(envelope.finalStateHash))throw Error('Invalid final combat state hash');
- const source=copy(context);
+ const source=MovementBinding.reusePreparedSource(copy(context),context);
  const {controller,journal}=replay(source,envelope.journal);
  if(digest(controller.snapshot())!==envelope.finalStateHash)throw Error('Combat final replay mismatch');
  return session(source,controller,journal,binding);
@@ -2861,70 +2862,6 @@ function actionStream(input){const a=input?.type==='combat'?input.action:input;i
 function count(journal,stream){return journal.reduce((n,r)=>n+(actionStream(r.action)===stream?1:0),0);}
 function die(seed,journal,stream){return 1+integer(seed,stream,count(journal,stream),6);}
 module.exports=Object.freeze({validate,generate,integer,actionStream,count,die,STREAMS});
-
-};
-defs["core/movement_binding.js"]=function(module,exports,require,Buffer){
-/* Verified source map -> single movement adjudication board.
- * Never infer movement permission from visible SVG vectors, adjacent geometry,
- * or a caller-supplied ledger. River != major river without explicit provenance.
- */
-(function(root,factory){
- const H=typeof module==='object'&&module.exports?require('./hexside_features'):root.WargameHexsideFeatures;
- const M=typeof module==='object'&&module.exports?require('./movement_rules'):root.WargameMovementRules;
- const P=typeof module==='object'&&module.exports?require('./pathfinding'):root.WargamePathfinding;
- const LP=typeof module==='object'&&module.exports?require('./legal_pathfinding'):root.WargameLegalPathfinding;
- const api=factory(H,M,P,LP);
- if(typeof module==='object'&&module.exports)module.exports=api;
- root.WargameMovementBinding=api;
-})(typeof globalThis!=='undefined'?globalThis:this,function(H,M,P,LP){'use strict';
- const fail=message=>{throw Error('movement-binding: '+message);};
- const pair=(a,b)=>[a,b].sort().join(':');
- function build(map,profile){
-  const p=M.validatedProfile(profile);
-  // The ledger builds its own source-authorized graph once; do not construct
-  // a second graph just to compare it with the independent hexside checks.
-  const experimentalScope=p.experimentalGraphScope||null;
-  const {board,ledger}=H.inspectWithGraph(map,{experimentalScope});
-  if(!ledger.metadata.certified||ledger.metadata.mapId!==map.id||ledger.edges.length!==board.edges.length)
-   fail('uncertified-or-incomplete-ledger');
-  const index=new Map(ledger.edges.map(e=>[pair(e.a,e.b),e]));
-  if(index.size!==board.edges.length)fail('duplicate-ledger-edge');
-  for(const e of board.edges){
-   const h=index.get(pair(e.a,e.b));
-   if(!h||h.evidence!==(board.metadata.scope==='experimental'?'source-pinned-experimental-movement':'certified-movement')||
-      h.rail!==e.rail||h.river!==e.river||
-      h.impassable!==e.impassable||h.movementAuthorized===e.impassable)
-     fail('ledger-board-disagreement:'+pair(e.a,e.b));
-  }
-  return Object.freeze({profile:p,board,metadata:Object.freeze({sourceMapId:map.id,
-   sourceGame:map.sourceGame,scope:board.metadata.scope||'historical-source-binding',
-   hexCount:ledger.metadata.hexCount,edgeCount:ledger.metadata.edgeCount,
-   railEdges:ledger.metadata.certifiedRailEdges,riverEdges:ledger.metadata.certifiedRiverEdges})});
- }
- function context(binding,phase,units,turn,territory=undefined){
-  if(!binding||!binding.board||!binding.profile||!phase||!units||!Number.isSafeInteger(turn))fail('invalid-context');
-  return {profile:binding.profile,board:binding.board,phase,units,turn,territory};
- }
- function move(binding,phase,units,turn,request,territory=undefined){return M.move(context(binding,phase,units,turn,territory),request);}
- // Advisory path planning, not movement legality. The caller MUST submit each
- // candidate path to move(), which applies ZOC, occupancy, class and phase rules.
- function routes(binding,origin,{target=null,maxCost=Infinity,blocked=null}={}){
-  if(!binding||!binding.board||!binding.profile)fail('invalid-binding');
-  return P.search(P.compile(binding.board),{origin,target,maxCost,blocked,
-   edgeCost:step=>P.terrainCost(binding.profile,step)});
- }
- // Rule-aware planning: every reported route is checked through the existing movement adjudicator.
- function legalRoutes(binding,phase,units,turn,unitId,options={}){
-  // Territory belongs to the committed historical state, not a path-search
-  // heuristic. Supply it to the same shared rules for all explored prefixes.
-  const {territory,...query}=options;
-  return LP.search(context(binding,phase,units,turn,territory),{unitId,...query});
- }
- function legalRoutesBatch(binding,phase,units,turn,queries,territory){
-  return LP.searchBatch(context(binding,phase,units,turn,territory),queries);
- }
- return Object.freeze({build,context,move,routes,legalRoutes,legalRoutesBatch});
-});
 
 };
 })(globalThis);

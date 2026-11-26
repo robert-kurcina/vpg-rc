@@ -19,6 +19,23 @@ try{
   actual.board.edges[0].rail=!actual.board.edges[0].rail;
   combined.board.edges[0].impassable=!combined.board.edges[0].impassable;
   eq(B.build(map,profile).board,expected);eq(H.inspect(map,options),expectedLedger);
+  // Only the prepared detached source is eligible for identity reuse.
+  const prepared=B.prepareContext({map,profile});
+  calls=0;const cached=B.build(prepared.map,prepared.profile);
+  eq(calls,1);eq(cached.board,expected);
+  A.strictEqual(B.build(prepared.map,prepared.profile),cached);eq(calls,1);
+  A.ok(Object.isFrozen(cached.board)&&Object.isFrozen(cached.board.edges)&&Object.isFrozen(cached.board.edges[0]));
+  throws(()=>{cached.board.edges[0].rail=!cached.board.edges[0].rail;},TypeError);
+  throws(()=>{prepared.map.cells[0].terrain='tampered';},TypeError);
+  const detached=structuredClone(prepared);
+  const reused=B.reusePreparedSource(detached,prepared);
+  A.strictEqual(reused.map,prepared.map);A.strictEqual(reused.profile,prepared.profile);
+  const changed=structuredClone(prepared);changed.map.sourceImageSHA256='tampered';
+  const changedSource=B.reusePreparedSource(changed,prepared);
+  A.notStrictEqual(changedSource.map,prepared.map);
+  throws(()=>B.build(changedSource.map,changedSource.profile),/not-gameplay-certified/);
+  const bad=structuredClone(map);Object.freeze(bad);
+  calls=0;B.build(bad,profile);B.build(bad,profile);eq(calls,2);
   const wrong=structuredClone(map);wrong.sourceImageSHA256='tampered';
   throws(()=>B.build(wrong,profile),/not-gameplay-certified/);
   if(name.startsWith('kiev-odessa')){

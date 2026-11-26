@@ -6,6 +6,7 @@
 'use strict';
 const crypto=require('node:crypto');
 const Combat=require('./historical_combat_phase');
+const MovementBinding=require('./movement_binding');
 const FORMAT='wargame-historical-combat-phase';
 const VERSION=1,MAX_BYTES=16*1024*1024,MAX_ACTIONS=256;
 const isObject=x=>x!==null&&typeof x==='object'&&!Array.isArray(x)&&
@@ -150,7 +151,7 @@ function session(context,controller,journal,binding){
  return Object.freeze({snapshot,execute,undo,save});
 }
 function create(context){
- const binding=contextBinding(context),source=copy(context);
+ const binding=contextBinding(context),source=MovementBinding.reusePreparedSource(copy(context),context);
  const controller=Combat.create(source);
  return session(source,controller,[],binding);
 }
@@ -172,7 +173,7 @@ function restore(envelope,context){
  if(envelope.bindings.openingHash!==binding.openingHash||digest(envelope.origin)!==binding.openingHash)
   throw Error('Combat opening state mismatch');
  if(!/^[0-9a-f]{64}$/.test(envelope.finalStateHash))throw Error('Invalid final combat state hash');
- const source=copy(context);
+ const source=MovementBinding.reusePreparedSource(copy(context),context);
  const {controller,journal}=replay(source,envelope.journal);
  if(digest(controller.snapshot())!==envelope.finalStateHash)throw Error('Combat final replay mismatch');
  return session(source,controller,journal,binding);
