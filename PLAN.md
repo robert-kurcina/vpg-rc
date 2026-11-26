@@ -1,6 +1,6 @@
 # Russian Campaign — Release completion plan
 
-Revision 521 | Production baseline: v701 / checkpoint 479 plus merged hosted UX PRs #1–7
+Revision 522 | Production baseline: v701 / checkpoint 479 plus merged hosted UX PRs #1–7
 
 ## Objective
 
@@ -49,6 +49,8 @@ Revision 519: author-approved startup UX: shared CSS/SVG hex spinner and respons
 Revision 520: PR31 run 45757179014 all four live campaigns passed on committed split package without monolith; focused rules, static distribution and source reference jobs passed. PR32 run 45757521561 focused rules/static/reference and three live jobs passed, remaining jobs pending at inspection. Consolidate verified P0.2–P0.4 and fortification export into completed checks. Add isolated Arduous delayed configuration request, reduced motion, blocked interactions, error and retry exercise to existing hosted acceptance, with desktop/tablet/error screenshot evidence; normal unmodified HTTP acceptance remains separate. Startup watchdog 90 seconds allows recovery from indefinite resource stalls; no AI timeout change. Controlled seeded operational parity still outstanding (separate branch), no new sweep. Visual inspection and actual CI execution pending.
 
 Revision 521: run 45757710153 all four live campaigns and focused rules/static/source jobs passed; hosted job pending at inspection. Extend existing Node runner with exact browser defaults and authenticated opening/final save export; extend hosted runner with controlled Standard grade 3 operational parity, seed 7, same opening and rules, exact full campaign receipts and terminal comparison. CI runs representative Kiev on same runner, opt-in dispatch thereafter; report compute and observed browser times. No rule/AI change or simulation sweep. P0.1/P0.6 remain open until actual parity evidence; larger matrix only if justified. Loading visual review and final interactions still outstanding.
+
+Revision 522: run 45757710153 all eight jobs passed on committed split assets including delayed startup, reduced motion, error/retry, all five real-origin mission/reference/optional-mode workflows, Moscow mobile EX/DRL and terminal restore, eight historical terminal restores, mission-scoped abandonment and four live campaigns. Operational parity run 45758205484 pending. Extend existing hosted acceptance with Arduous source-legal overstack cleanup and Leningrad Fleet strike from hidden tablet sidebar via persistent phase control; exercise actual required orders and exact Undo/Redo, then restore original save. No engine changes or new test framework. New interactions pending CI. Remaining Moscow occupied destination, support visual inspection, reference editorial review and staged-site browser acceptance still open.
 
 ## Batch A — Complete approved historical gameplay corrections (P1)
 

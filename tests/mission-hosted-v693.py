@@ -140,6 +140,77 @@ with sync_playwright() as pw:
   if toggle.get_attribute('aria-expanded')=='true':toggle.click()
   page.set_viewport_size({'width':1180,'height':820})
   page.evaluate("WargameResponsiveShell.setPreference('auto')")
+ def verify_historical_mandatory_orders(id):
+  if id not in ('arduous','leningrad'):return
+  original=snapshot(id)
+  page.set_viewport_size({'width':820,'height':1180})
+  page.evaluate("WargameResponsiveShell.setPreference('mobile')")
+  toggle=page.locator('#mission-sidebar-toggle')
+  snap=lambda:page.evaluate('HistoricalBrowserPreview.snapshot()')
+  view=lambda:page.evaluate('HistoricalBrowserPreview.view()')
+  choose=lambda a:page.evaluate('(a)=>HistoricalBrowserPreview.choose(a)',a)
+  def close_panel():
+   if toggle.get_attribute('aria-expanded')=='true':toggle.click()
+  if id=='leningrad':
+   close_panel()
+   expect(page.locator('#mission-phase-action')).to_have_text('Support orders')
+   page.locator('#mission-phase-action').click()
+   strike=page.locator('[data-support-naval-strike]').first
+   expect(strike).to_be_visible()
+   face=strike.get_attribute('data-support-naval-strike')
+   strike.click()
+   assert snap()['combat']['pendingSeaFaceId']==face
+   close_panel()
+   page.locator('#mission-phase-action').click()
+   expect(page.locator('#roll-panel')).to_be_visible()
+   pending=snapshot(id)
+   page.locator('#die').select_option('6')
+   page.locator('#submit-die').click()
+   assert snap()['state']['airUse']['1'][face]=='fleet'
+   resolved=snapshot(id)
+   page.locator('#undo').click();assert snapshot(id)==pending
+   page.locator('#redo').click();assert snapshot(id)==resolved
+   print('PASS hidden-panel Fleet commitment, die and exact Undo/Redo',flush=True)
+  else:
+   for _ in range(4):
+    if snap()['phaseKind']=='special-movement':break
+    a=next(x for x in view()['commands'] if x.get('action',{}).get('type') in ('finish-air-sea','commit-battles','finish-combat') and not x.get('action',{}).get('battles'))
+    assert choose(a)
+   assert snap()['phaseId']=='german-special-movement'
+   for _ in range(5):
+    counts={}
+    for u in snap()['state']['units'].values():
+     if u['owner']=='german' and not u.get('marker'):counts[u['hex']]=counts.get(u['hex'],0)+1
+    moves=[a for a in view()['commands'] if a['type']=='declare-ground-move']
+    a=next((a for a in moves if counts.get(a['request']['path'][-1],0)>=2),None)
+    if a is None:a=next((a for a in moves if counts.get(a['request']['path'][-1],0)==1),None)
+    assert a and choose(a) and choose({'type':'resolve-ground-move'})
+    if view().get('stackPenalty'):break
+   assert view().get('stackPenalty')==1
+   close_panel()
+   expect(page.locator('#mission-phase-action')).to_have_text('Stacking orders')
+   page.locator('#mission-phase-action').click()
+   expect(toggle).to_have_attribute('aria-expanded','true')
+   page.get_by_role('button',name='End movement — remove 1 excess unit(s)',exact=True).click()
+   assert snap()['stackingCleanup']
+   close_panel()
+   page.locator('#mission-phase-action').click()
+   expect(toggle).to_have_attribute('aria-expanded','true')
+   locked=snapshot(id);before_count=len(snap()['state']['units'])
+   expect(page.locator('#actions button')).to_have_count(3)
+   page.locator('#actions button').first.click()
+   assert len(snap()['state']['units'])==before_count-1
+   resolved=snapshot(id)
+   page.locator('#undo').click();assert snapshot(id)==locked
+   page.locator('#redo').click();assert snapshot(id)==resolved
+   page.get_by_role('button',name='Complete phase after overstack removal',exact=True).click()
+   assert snap()['phaseId']=='soviet-buildup'
+   print('PASS hidden-panel stacking cleanup and exact Undo/Redo',flush=True)
+  assert page.evaluate('(s)=>HistoricalBrowserPreview.restore(s)',original)
+  assert snapshot(id)==original
+  close_panel()
+  page.set_viewport_size({'width':1180,'height':820})
+  page.evaluate("WargameResponsiveShell.setPreference('auto')")
  def verify_optional_modes(id):
   native=id=='battle-for-moscow'
   before=snapshot(id)
@@ -345,6 +416,7 @@ with sync_playwright() as pw:
   if id=='battle-for-moscow':
    verify_moscow_orders()
    verify_moscow_pending()
+  else:verify_historical_mandatory_orders(id)
   leave('Discard unsaved progress');expect(card(id).locator('[data-resume]')).to_be_visible()
   card(id).locator('[data-resume]').click();ready(id)
   verify_optional_modes(id)
