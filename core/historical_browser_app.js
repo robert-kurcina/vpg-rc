@@ -869,7 +869,7 @@ function refreshAIProgress(force=false){
  syncAutomatic();
 }
 function refresh(){
- if(!setupActive&&human&&(aiRunning||autoEligible())){refreshAIProgress(true);return;}
+ if(!setupActive&&human&&(aiRunning||autoEligible())){refreshAIProgress();syncAutomatic();return;}
  aiProgressActive=false;
  if(moveSelection){query='';$('filter').value='';}clearMoveSelection();syncCRTControls();syncAutomatic();
  if(setupActive){refreshSupportWindow();renderSetup();return}
@@ -1276,7 +1276,7 @@ async function start(){
    }catch(err){message(err.message)}
   };
   if($('ai-assignment')){
-   $('ai-assignment').onchange=()=>{pauseAutomatic();aiAssignment=$('ai-assignment').value;syncAutomatic()};
+   $('ai-assignment').onchange=()=>{pauseAutomatic();aiAssignment=$('ai-assignment').value;refresh()};
    $('ai-resume').onclick=()=>{if(aiRunning||aiAssignment==='manual')return;if(aiPaused)aiPaused=false;else pauseAutomatic();refresh()};
    aiReady=true;syncAutomatic();
   }
