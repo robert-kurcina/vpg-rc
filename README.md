@@ -1,6 +1,6 @@
 # Russian Campaign — five historical games
 
-**Production baseline:** v701 / checkpoint 479 (resumable historical acceptance). **Packaging:** clean distribution, source reading editions added. **Active plan:** revision 483 (`PLAN.md`).
+**Production baseline:** v701 / checkpoint 479 (resumable historical acceptance). **Packaging:** clean distribution, source reading editions added. **Active plan:** `PLAN.md` (authoritative release checklist).
 
 ## Run
 
@@ -54,7 +54,7 @@ For controlled experimental mode comparisons, use `node scripts/analyze-graduate
 
 ### Real-origin release check
 
-With `python3 serve.py` running, execute `python3 tests/mission-hosted-v693.py --url http://localhost:8765/index.html` in an environment with Playwright Chromium and permitted HTTP navigation. This uses a fresh browser context, tests all five mission routes and real IndexedDB save/return/resume/abandon. For a full terminal-save check, first run `SAVE_PATH=/tmp/moscow-terminal.json node scripts/run-native-campaign.js standard 71 5000 0 0`, then add `--terminal-save /tmp/moscow-terminal.json`. Use the corresponding repository-prefixed URL to check a GitHub Pages deployment. This gate was blocked by administrator navigation policy during checkpoint 471; isolated transaction-fixture tests are not real-origin acceptance.
+With `python3 serve.py` running, execute `python3 tests/mission-hosted-v693.py --url http://localhost:8765/index.html` in an environment with Playwright Chromium and permitted HTTP navigation. This uses a fresh browser context, tests all five mission routes and real IndexedDB save/return/resume/abandon. For a full terminal-save check, first run `SAVE_PATH=/tmp/moscow-terminal.json node scripts/run-native-campaign.js standard 71 5000 0 0`, then add `--terminal-save /tmp/moscow-terminal.json`. Use the corresponding repository-prefixed URL to check a GitHub Pages deployment. Hosted Chromium run [45747675673](https://github.com/robert-kurcina/vpg-rc/actions/runs/45747675673) passed all five real-origin save/resume checks and mission-scoped abandonment. Desktop/tablet screenshots were captured. Full campaign and interaction acceptance remain open; isolated transaction-fixture tests are not real-origin acceptance.
 
 Terminal browser regression (four larger missions, historical and graduated retained journals): `python3 tests/historical-terminal-browser-v694.py --scenario arduous` (repeat for `leningrad`, `kiev`, `kiev-odessa`). Uses bundled exact terminal save fixtures and isolated Chromium storage transport; not real-origin acceptance.
 

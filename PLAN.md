@@ -1,6 +1,6 @@
 # Russian Campaign — Release completion plan
 
-Revision 498 | Production baseline: v701 / checkpoint 479 plus merged hosted UX PRs #1–7
+Revision 499 | Production baseline: v701 / checkpoint 479 plus merged hosted UX PRs #1–7
 
 ## Objective
 
@@ -30,14 +30,16 @@ Revision 492: Moscow corrections implemented with a trusted version-bound policy
 
 ## Batch B — Finish gameplay UX (P2, P6)
 
-- [x] Add narrowly scoped hosted Chromium acceptance workflow reusing existing five-route Playwright test, real HTTP origin and IndexedDB; capture actual engine-rendered desktop/tablet screenshots and server logs as CI artifacts. Implementation in branch `test/hosted-browser-acceptance-497`; merged in PR #11. First run completed with Moscow passing, Arduous initialization timeout, other routes not reached.
-- [ ] Run hosted workflow on PR and inspect logs/screenshots; resolve reproduced defects before claiming acceptance.
+- [x] Add narrowly scoped hosted Chromium acceptance workflow reusing existing five-route Playwright test, real HTTP origin and IndexedDB; capture actual engine-rendered desktop/tablet screenshots and server logs as CI artifacts. Implementation in branch `test/hosted-browser-acceptance-497`; merged in PR #11. First run exposed shared initialization bug; PR #12 corrected it.
+- [x] Hosted five-route initialization and persistence test passed in PR #12, run 45747675673: all five exact save/resume checks and mission-scoped abandonment passed; ten screenshots captured (artifact 15084530790). Visual review and interactive campaign acceptance remain open.
 - [ ] Reproduce reported Moscow counter interaction issue; diagnose phase, AI ownership, SVG hit target, overlay, zoom and keyboard/touch behavior. Fix observed defects.
 - [ ] Verify and correct approved toolbar: triple-line hamburger left, title, centered Undo/Redo, gear right. Exactly eight mission-menu entries. Keep direct Show/Hide information panel control, desktop independent scrolling and tablet drawer.
 - [ ] Verify and correct persistent turn/faction/phase and feedback; primary action invokes existing legal handler only. Mandatory combat, retreat, support, reinforcement, deployment and stack cleanup decisions remain reachable when panel hidden. Check AI pause/stop, settings restoration, keyboard focus and selection.
 - [ ] Verify grouped Settings (Players and AI, Mission configuration, Map display, Interface layout, Maintenance). Keep next-mission rules separate from immediate preferences. G/S markers optional and smaller. Remove duplicate controls and unnecessary diagnostic presentation only; retain meaningful source limitations. Confirm actual Oberlabs workflow gaps; no undefined tournament functionality without author clarification.
 
-Revision 498: first hosted run 45747414550 passed Moscow save/resume/preservation, then failed waiting for Arduous initialization. Source review found an out-of-scope phaseConfig reference in the shared historical phase bar; use initialized sourceData.contextSettings.config.turns instead. Existing browser test now surfaces caught initialization exceptions immediately. Corrected branch runtime result pending. No additional rule test framework or simulation quota.
+Revision 499: merged PR #12 verified five-route real-origin persistence and mission-scoped abandonment. Existing four focused Node tests now run in an independent job in the same workflow; results pending. Existing browser test additionally exercises the eight-entry menu, persistent phase text, sidebar visibility and Settings open/close/Escape restoration on all five routes in explicit mobile layout; asserts unchanged serialized game state. New checks pending execution. No additional simulation quotas.
+
+Revision 498: first hosted run 45747414550 passed Moscow save/resume/preservation, then failed waiting for Arduous initialization. Source review found an out-of-scope phaseConfig reference in the shared historical phase bar; use initialized sourceData.contextSettings.config.turns instead. Existing browser test now surfaces caught initialization exceptions immediately. Corrected branch runtime passed all five initial mission and persistence checks in run 45747675673. No additional rule test framework or simulation quota.
 
 Revision 494: corrected shared Settings opening order, restore of prior mobile drawer visibility, Escape behavior, and Settings continuity when switching to mobile layout; both controllers use the same shell lifecycle. Revision 495 adds shared stable-identity keyboard focus restoration after native and historical SVG overlay redraws, plus header-height synchronization when mission navigation mounts. Browser regression pending.
 
@@ -50,7 +52,7 @@ Exit: functional essential workflows on all five routes, representative desktop/
 - [ ] Correct reading order and paragraph reconstruction in all five HTML rulebooks, including remaining Moscow pages 3–4. Preserve numbered sections/cases, lists, tables, relevant illustrations and original wording. Retain unmodified PDFs and 24 facsimiles. Review extraction against printed sources; do not guess missing text.
 - [ ] Verify source links, anchors, reproducible build and unchanged source checksums. Original rules are distinct from engine adaptations.
 
-Revision 497: hosted browser test now accepts `--evidence-dir`, recording five desktop and five tablet screenshots after each actual scenario load. A single Actions workflow installs Playwright Chromium, serves the static site, runs save/resume/abandonment checks and preserves evidence. CI outcome remains pending; no browser pass asserted.
+Revision 497: hosted browser test now accepts `--evidence-dir`, recording five desktop and five tablet screenshots after each actual scenario load. A single Actions workflow installs Playwright Chromium, serves the static site, runs save/resume/abandonment checks and preserves evidence. Run 45747675673 passed all five mission persistence checks; screenshots captured, not visually reviewed.
 
 Revision 496: active TEC renders the fortification specimen inline through the shared renderer using the source-confirmed Moscow 0501 marker and approved artwork; weather has a separate conditional table. Generator extended; standalone export and browser visual inspection pending. Corrected obsolete Kiev–Odessa play status.
 

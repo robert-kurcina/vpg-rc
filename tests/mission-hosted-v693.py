@@ -29,6 +29,25 @@ with sync_playwright() as pw:
  def snapshot(id):return page.evaluate('WargameSession.serialize(__nativePreview.getSession())' if id=='battle-for-moscow' else 'HistoricalBrowserPreview.save()')
  def menu():
   if not page.locator('#mission-menu').is_visible():page.locator('#mission-menu-toggle').click()
+ def verify_shell(id):
+  # Exercise the approved shared controls without changing mission state.
+  expect(page.locator('#mission-phase-label')).not_to_have_text('')
+  expect(page.locator('#mission-menu-toggle .mission-hamburger-glyph > span')).to_have_count(3)
+  menu();expect(page.locator('#mission-menu .mission-menu-row')).to_have_count(8)
+  page.locator('#mission-menu-toggle').click()
+  toggle=page.locator('#mission-sidebar-toggle');gear=page.locator('#mission-settings')
+  expect(toggle).to_be_visible();expect(gear).to_be_visible()
+  page.evaluate("WargameResponsiveShell.setPreference('mobile')")
+  expect(page.locator('body')).to_have_attribute('data-layout-mode','mobile')
+  expect(toggle).to_have_attribute('aria-expanded','false')
+  gear.click();expect(page.locator('#settings-section')).to_be_visible();expect(gear).to_have_attribute('aria-pressed','true')
+  page.keyboard.press('Escape');expect(gear).to_have_attribute('aria-pressed','false');expect(toggle).to_have_attribute('aria-expanded','false')
+  toggle.click();expect(toggle).to_have_attribute('aria-expanded','true')
+  gear.click();expect(page.locator('#settings-section')).to_be_visible()
+  gear.click();expect(toggle).to_have_attribute('aria-expanded','true')
+  toggle.click();expect(toggle).to_have_attribute('aria-expanded','false')
+  page.evaluate("WargameResponsiveShell.setPreference('auto')")
+  print('PASS shared mission menu and mobile panel/settings lifecycle:',id,flush=True)
  def leave(label):
   menu();page.get_by_role('button',name='Exit Game',exact=True).click();page.get_by_role('dialog',name='Leave mission').get_by_role('button',name=label,exact=True).click();selector()
  selector()
@@ -41,6 +60,7 @@ with sync_playwright() as pw:
    expect(page.locator('#mission-menu-toggle')).to_be_visible()
    page.screenshot(path=str(args.evidence_dir/f'{id}-tablet.png'),full_page=True)
    page.set_viewport_size({'width':1180,'height':820})
+  verify_shell(id);assert snapshot(id)==before
   leave('Save and return');expect(card(id).locator('[data-resume]')).to_be_visible()
   # An actual successful new save should not be stored in the legacy quota-limited key.
   assert page.evaluate('(id)=>localStorage.getItem(WargameMissionStorage.key(id))===null',id)
