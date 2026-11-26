@@ -1,6 +1,6 @@
 # Russian Campaign — Stable release and computational improvement
 
-Revision 529 | Five independent browser games; shared engine, renderer and CRT.
+Revision 530 | Five independent browser games; shared engine, renderer and CRT.
 
 ## Accepted baseline
 
@@ -55,3 +55,5 @@ Revision 527: installer run 45763491204 passed 71 binding assertions and exact 4
 Revision 528: PR40 run 45763742040 passed all ten jobs, including integrated mission-browser, static distribution, four live campaigns, focused rules, references, CPU profile and controlled operational parity. Same-run Node before 14.319s, after 7.623s (1.8784x), exact full authenticated save equality. Chromium 11.75045s vs previous 28.9405s (2.463x observed across runs); current paired Node 9.369s; 433 exact actions, Soviet victory, exact persistence. New profile: enemyZOC 8.41% self, campaign walk 7.19%, canonical 5.36%, clone 5.35%, combat walk 5.28%, canonical 5.19%, communicationIndex 4.02%, GC 3.99%, immutable-source comparison 3.73%. Costs overlap for inclusive measures. Earlier 2.63x Node observation across separate runs superseded for controlled claims by 1.8784x same-run comparison. Author rejects WASM; remove from active and deferred work. Prioritize bounded JS improvements and stop once marginal benefit no longer justifies complexity.
 
 Revision 529: repository cleanup audit identified retained source/provenance, linked map exports and historical developer checks as intentional. Synchronize README, UPDATE, package manifest and static release metadata with PR40 acceptance; ignore local profiling/browser outputs and Python caches. No deletion of source evidence, referenced assets or runtime modules without dependency proof. No production gameplay changes. Staged distribution remains separate from source; further cleanup should be limited to demonstrably obsolete artifacts.
+
+Revision 530: implemented bounded campaign snapshot canonical-byte reuse (fresh detached parse for each public snapshot, identical receipt hashing), and immutable incident-edge indexing for ZOC with dynamic roster checks unchanged. Added public snapshot mutation isolation and all-hex indexed-versus-scan comparisons for four historical maps, both barrier policies and changed roster. Combat public snapshot ordering left unchanged. Exact journal and same-run full save comparison plus browser bundle regeneration pending CI. Retain only if materially beneficial; remove temporary installer after generation. No UX or WASM changes.

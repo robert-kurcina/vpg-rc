@@ -36,6 +36,18 @@ try{
   throws(()=>B.build(changedSource.map,changedSource.profile),/not-gameplay-certified/);
   const bad=structuredClone(map);Object.freeze(bad);
   calls=0;B.build(bad,profile);B.build(bad,profile);eq(calls,2);
+  // Static incident-edge index must agree with the mutable scan for every
+  // hex, both owners, both barrier policies, and after a roster change.
+  const Rules=require('../core/movement_rules');
+  const roster={a:{owner:'german',hex:map.cells[0].id},b:{owner:'soviet',hex:map.cells[1].id},marker:{owner:'soviet',hex:map.cells[2].id,marker:true},lost:{owner:'german',hex:map.cells[3].id,strengthStatus:'eliminated'}};
+  for(const through of [false,true]){
+   const p={...profile,zocAcrossImpassableHexsides:through};
+   for(const units of [roster,{...roster,a:{...roster.a,hex:map.cells.at(-1).id}}]){
+    const fast={board:cached.board,profile:p,units},slow={board:expected,profile:p,units};
+    for(const h of Object.keys(expected.cells))for(const owner of ['german','soviet'])
+     A.equal(Rules.enemyZOC(fast,h,owner),Rules.enemyZOC(slow,h,owner),name+' '+h+' '+owner);
+   }
+  }
   const wrong=structuredClone(map);wrong.sourceImageSHA256='tampered';
   throws(()=>B.build(wrong,profile),/not-gameplay-certified/);
   if(name.startsWith('kiev-odessa')){

@@ -1,5 +1,5 @@
 /* GENERATED. Do not edit. */
-(function(root){"use strict";const r=root.__historicalBundle;if(!r||r.revision!=="30b222356d7174806555f575e1a9cbf6d9aa1159aace23db7fcbcfeaf4f2062e")throw Error("Historical bundle version mismatch");const defs=r.definitions,parts=r.parts;
+(function(root){"use strict";const r=root.__historicalBundle;if(!r||r.revision!=="fcfd7245b982b1885b09c453b77b14591706150edb5439605d6cf0a338c7a93e")throw Error("Historical bundle version mismatch");const defs=r.definitions,parts=r.parts;
 defs["core/historical_buildup_phase.js"]=function(module,exports,require,Buffer){
 /* Source-configured historical buildup transactions, checkpoint 154.
  * The policy and an EXPLICIT counter-face allocation supply all historical
@@ -1664,8 +1664,13 @@ function replay(context,journal,machine){
  }
  return {s,receipts};
 }
-function makeSession(context,machine,s,records,binding){
- function snapshot(){return snapshotOf(machine,s,records.length);}
+function makeSession(context,machine,s,records,binding,initialSnapshotText){
+ // Cache only the canonical string of this private immutable session; every
+ // public snapshot still parses a fresh detached object. Hashes use exactly
+ // the same bytes and are never cached across a transaction.
+ let snapshotText=initialSnapshotText;
+ const canonicalSnapshot=()=>snapshotText??=canonical(snapshotValue(machine,s,records.length));
+ function snapshot(){return JSON.parse(canonicalSnapshot());}
  // One authoritative transaction path for committed actions and disposable
  // read-only legality probes. The probe never creates a campaign journal entry,
  // computes a save hash, or returns mutable draft state to its caller.
@@ -1693,8 +1698,9 @@ function makeSession(context,machine,s,records,binding){
  }
  function execute(input){
   const {action,next}=adjudicate(input);
-  const record={action,stateHash:snapshotHash(machine,next,records.length+1)};
-  return Object.freeze({session:makeSession(context,machine,next,[...records,record],binding),
+  const nextText=canonical(snapshotValue(machine,next,records.length+1));
+  const record={action,stateHash:crypto.createHash('sha256').update(nextText).digest('hex')};
+  return Object.freeze({session:makeSession(context,machine,next,[...records,record],binding,nextText),
    event:clone(next.lastEvent)});
  }
  function canExecute(input){
@@ -1726,7 +1732,7 @@ function makeSession(context,machine,s,records,binding){
  function save(){
   const payload={format:FORMAT,version:VERSION,scenarioId:context.config.scenarioId,
    bindings:clone(binding),origin:clone({cursor:context.cursor,actor:context.actor,state:context.state}),
-   journal:clone(records),finalStateHash:snapshotHash(machine,s,records.length)};
+   journal:clone(records),finalStateHash:crypto.createHash('sha256').update(canonicalSnapshot()).digest('hex')};
   return {...payload,integrity:{algorithm:'SHA-256',digest:hash(payload)}};
  }
  // Copy the small action ledger without rehashing the whole opening and save.

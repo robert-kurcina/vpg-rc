@@ -1,0 +1,57 @@
+name: Regenerate bounded optimization browser package
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+    branches: [main]
+    paths:
+      - 'core/movement_rules.js'
+      - 'core/historical_campaign_session.js'
+      - '.github/workflows/install-historical-split.yml'
+permissions:
+  contents: read
+jobs:
+  install:
+    if: github.event.pull_request.head.repo.full_name == github.repository && github.event.pull_request.head.ref == 'perf/bounded-state-zoc-530'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+      - uses: actions/setup-node@v5
+        with:
+          node-version: '22'
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - name: Verify topology reuse and unchanged controlled campaign
+        run: |
+          node tests/single-pass-movement-binding-v664.test.js
+          BROWSER_PARITY=1 VICTORY_MODE=historical JOURNAL_PATH="${RUNNER_TEMP}/journal.json" AUDIT_PATH="${RUNNER_TEMP}/report.json" node tests/historical-operational-qualification-v644.test.js kiev standard 7 5000 campaign baseline greedy same 3 3
+          node -e 'const fs=require("fs"),crypto=require("crypto"),assert=require("assert/strict");const j=JSON.parse(fs.readFileSync(process.argv[1]));const h=crypto.createHash("sha256").update(JSON.stringify(j)).digest("hex");console.log("Journal fingerprint:",h);assert.equal(h,"b9bc12dd55ded1c5a41347b1ab2f704aeac27acecb1b681b5a17ccb05877bd30")' "${RUNNER_TEMP}/journal.json"
+      - name: Compare pinned optimized baseline on same runner
+        run: |
+          git fetch --depth=1 origin dc609074d8d4288cc503bdcd0665f609f585c71b
+          git worktree add --detach "${RUNNER_TEMP}/baseline"  dc609074d8d4288cc503bdcd0665f609f585c71b
+          cd "${RUNNER_TEMP}/baseline"
+          BROWSER_PARITY=1 VICTORY_MODE=historical AUDIT_PATH="${RUNNER_TEMP}/baseline.json" FINAL_SAVE_PATH="${RUNNER_TEMP}/baseline-save.json" node tests/historical-operational-qualification-v644.test.js kiev standard 7 5000 campaign baseline greedy same 3 3
+          cd -
+          BROWSER_PARITY=1 VICTORY_MODE=historical AUDIT_PATH="${RUNNER_TEMP}/candidate.json" FINAL_SAVE_PATH="${RUNNER_TEMP}/candidate-save.json" node tests/historical-operational-qualification-v644.test.js kiev standard 7 5000 campaign baseline greedy same 3 3
+          node -e 'const fs=require("fs"),a=require("node:assert/strict");const read=n=>JSON.parse(fs.readFileSync(process.env.RUNNER_TEMP+"/"+n+".json"));a.deepEqual(read("baseline-save"),read("candidate-save"));const before=read("baseline").computeElapsedMs,after=read("candidate").computeElapsedMs;console.log(JSON.stringify({beforeMs:before,afterMs:after,speedup:before/after,exactCampaign:true}))'
+      - name: Generate and validate browser package
+        run: |
+          python scripts/build-historical-browser-bundle.py --install
+          python scripts/build-historical-browser-bundle.py --install --check
+          python scripts/build-static-release.py "${RUNNER_TEMP}/candidate"
+          python scripts/build-static-release.py "${RUNNER_TEMP}/candidate" --verify --http
+      - name: Commit generated files only to this dedicated branch
+        run: |
+          git add -A -- core/historical_engine_runtime.js core/historical_engine_entry.js 'core/historical_engine_chunk_*.js' core/historical_engine_scripts.json
+          git diff --name-only -z -- '*.html' | xargs -0 -r git add --
+          git diff --cached --quiet && exit 0
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "build: regenerate bounded state and ZOC historical engine"
+          git push origin HEAD:refs/heads/perf/bounded-state-zoc-530

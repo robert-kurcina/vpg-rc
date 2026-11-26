@@ -8,6 +8,21 @@ const fail=reason=>({ok:false,reason});
 // A synchronous read-only search owns its indexes. Never attach them to a
 // mutable board or a saved position; discard even when the search throws.
 const searchIndexes=new WeakMap();
+// Only a deeply immutable edge list is eligible for topology indexing.
+// No dynamic roster or ZOC result is retained in this cache.
+const staticEdges=new WeakMap();
+function indexedEdges(board){
+ const list=board?.edges;
+ if(!Array.isArray(list)||!Object.isFrozen(list))return null;
+ if(staticEdges.has(list))return staticEdges.get(list);
+ if(!list.every(e=>e&&Object.isFrozen(e)))return null;
+ const index=new Map();
+ for(const e of list)for(const h of [e.a,e.b]){
+  if(!index.has(h))index.set(h,[]);
+  index.get(h).push(e);
+ }
+ staticEdges.set(list,index);return index;
+}
 function withSearchIndexes(ctx,fn){
  if(searchIndexes.has(ctx))return fn();
  const byHex=new Map(),edges=new Map(),adj=new Map();
@@ -281,7 +296,8 @@ function enemyZOC(ctx,hex,owner){
      x.hex&&ctx.board.cells[x.hex]?.verified)enemies.add(x.hex);
  }
  if(!enemies.size)return false;
- for(const e of ctx.board.edges||[]){
+ const topology=indexedEdges(ctx.board);
+ for(const e of (topology?(topology.get(hex)||[]):ctx.board.edges||[])){
   if(e.a!==hex&&e.b!==hex)continue;
   if(e.verified&&!e.allSea&&(throughBarrier||(!e.lake&&!e.impassable))&&
      enemies.has(e.a===hex?e.b:e.a))return true;
