@@ -9,12 +9,9 @@ const crypto=require('node:crypto');
 const Setup=require('./scenario_starting_setup');
 const Bridge=require('./scenario_opening_bridge');
 const Fixed=require('./historical_fixed_source_pieces');
-const clone=x=>JSON.parse(JSON.stringify(x));
-const equal=(a,b)=>JSON.stringify(a)===JSON.stringify(b);
-const sha=x=>crypto.createHash('sha256').update(JSON.stringify(x)).digest('hex');
+const {clone,equal,checksum:sha,object}=require('./historical_campaign_json');
 const FORMAT='historical-source-deployment',VERSION=1;
 const own=(o,k)=>Object.prototype.hasOwnProperty.call(o,k);
-const object=x=>x!==null&&typeof x==='object'&&!Array.isArray(x);
 function make(source,allocation,placements,mixed=false){
  if(typeof mixed!=='boolean')throw Error('Invalid concealed-counter mixing status');
  const concealed=source.setupSpec?.concealedSetup;
