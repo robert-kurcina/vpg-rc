@@ -589,8 +589,7 @@ function begin({rootDir,profilePath,mapPath,registryPath,projectRoot,aiProfilePa
  $('remove-battle').addEventListener('click',()=>change({type:'remove-last-battle'}));
  $('resolve-battle').addEventListener('click',()=>change({type:'resolve-pending',options:getChoices()}));
  $('save-game').addEventListener('click',()=>{try{
-  const data=JSON.stringify(portableSave(),null,2);const url=URL.createObjectURL(new Blob([data],{type:'application/json'}));
-  const a=document.createElement('a');a.href=url;a.download='native-'+g.game.id+'-turn-'+current().turn+'.json';document.body.append(a);a.click();a.remove();URL.revokeObjectURL(url);
+  globalThis.WargamePlayerSaveConfig.download(portableSave(),'native-'+g.game.id+'-turn-'+current().turn+'.json');
   show('Versioned native session exported.');
  }catch(err){show('Save rejected: '+err.message,true);}});
  function restorePortable(input){
