@@ -1,5 +1,5 @@
 /* GENERATED. Do not edit. */
-(function(root){"use strict";const r=root.__historicalBundle;if(!r||r.revision!=="21e0d2fdfbe41a9acb80d6567362ec91edcdacd315e8e24316858acb4feb7c41")throw Error("Historical bundle version mismatch");const defs=r.definitions,parts=r.parts;
+(function(root){"use strict";const r=root.__historicalBundle;if(!r||r.revision!=="a77668b600ccdf1868686ba5659152d09476e911d825d447c3b76539ae9645d8")throw Error("Historical bundle version mismatch");const defs=r.definitions,parts=r.parts;
 defs["core/historical_buildup_phase.js"]=function(module,exports,require,Buffer){
 /* Source-configured historical buildup transactions, checkpoint 154.
  * The policy and an EXPLICIT counter-face allocation supply all historical
@@ -1045,10 +1045,12 @@ function make(session,context,pending=null,existingPager=null,missionSeed=null,d
  if(!session||typeof session.snapshot!=='function'||typeof session.execute!=='function'||typeof session.save!=='function')
   throw Error('Authoritative campaign session required');
  if(!obj(context)||!obj(context.config))throw Error('Source scenario context required');
+ const stateHash=()=>typeof session.stateHash==='function'?session.stateHash():session.save().finalStateHash;
+ const journal=()=>typeof session.journal==='function'?session.journal():session.save().journal;
  const postPages=new Map();
  let postPager=null;
  if(pending){
-  if(!obj(pending)||!dieOK(pending.die)||pending.at!==session.save().finalStateHash)
+  if(!obj(pending)||!dieOK(pending.die)||pending.at!==stateHash())
    throw Error('Pending combat die does not match authoritative campaign state');
   // This must still be a valid adjudication point. In particular, a restored
   // die cannot be attached to a different battle or an unlocked air decision.
@@ -1136,7 +1138,7 @@ function make(session,context,pending=null,existingPager=null,missionSeed=null,d
    const post=pager.page(0);
    if(!post.options.length&&!post.fleetCommitments.length)
     throw Error('No authorized post-roll choices at committed die');
-   return make(session,context,{die,at:session.save().finalStateHash},pager,missionSeed,deploymentDraws);
+   return make(session,context,{die,at:stateHash()},pager,missionSeed,deploymentDraws);
   }
   if(die===null)throw Error('Damage rolls require a real d6');
   if(dice.length!==1)throw Error('Ambiguous pending die prompt');
@@ -1155,7 +1157,7 @@ function make(session,context,pending=null,existingPager=null,missionSeed=null,d
   if(missionSeed===null)throw Error("No mission seed assigned");
   const prompt=source().prompts.find(x=>x.kind==='die-and-choice');
   if(!prompt)throw Error("No source-authorized die decision is pending");
-  return roll(prompt.automaticNoDie?null:Random.die(missionSeed,session.save().journal,prompt.type==='resolve-battle'?'combat':'naval'));
+  return roll(prompt.automaticNoDie?null:Random.die(missionSeed,journal(),prompt.type==='resolve-battle'?'combat':'naval'));
  }
  // Hand the AI the existing immutable campaign session instead of restoring
  // and replaying the complete journal on every browser action. This is the
@@ -1684,6 +1686,10 @@ function makeSession(context,machine,s,records,binding,initialSnapshotText){
  let snapshotText=initialSnapshotText;
  const canonicalSnapshot=()=>snapshotText??=canonical(snapshotValue(machine,s,records.length));
  function snapshot(){return JSON.parse(canonicalSnapshot());}
+ // Committed receipts already contain the canonical digest. The empty opening
+ // has no receipt; hash it once, lazily, without constructing a save envelope.
+ let stateDigest=records.at(-1)?.stateHash;
+ function stateHash(){return stateDigest??=crypto.createHash('sha256').update(canonicalSnapshot()).digest('hex');}
  // One authoritative transaction path for committed actions and disposable
  // read-only legality probes. The probe never creates a campaign journal entry,
  // computes a save hash, or returns mutable draft state to its caller.
@@ -1745,12 +1751,12 @@ function makeSession(context,machine,s,records,binding,initialSnapshotText){
  function save(){
   const payload={format:FORMAT,version:VERSION,scenarioId:context.config.scenarioId,
    bindings:clone(binding),origin:clone({cursor:context.cursor,actor:context.actor,state:context.state}),
-   journal:clone(records),finalStateHash:crypto.createHash('sha256').update(canonicalSnapshot()).digest('hex')};
+   journal:clone(records),finalStateHash:stateHash()};
   return {...payload,integrity:{algorithm:'SHA-256',digest:hash(payload)}};
  }
  // Copy the small action ledger without rehashing the whole opening and save.
  function journal(){return clone(records);}
- return Object.freeze({snapshot,execute,canExecute,canExecuteGroundBatch:inputs=>probeGroundBatch(s,records.length,inputs),projectGroundMove:input=>projectGround(s,records.length,input),undo,save,journal});
+ return Object.freeze({snapshot,execute,canExecute,canExecuteGroundBatch:inputs=>probeGroundBatch(s,records.length,inputs),projectGroundMove:input=>projectGround(s,records.length,input),undo,save,journal,stateHash});
 }
 function create(context){
  const binding=validateContext(context),source=MovementBinding.prepareContext(clone(context)),machine=createMachine(source);

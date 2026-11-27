@@ -472,6 +472,10 @@ function makeSession(context,machine,s,records,binding,initialSnapshotText){
  let snapshotText=initialSnapshotText;
  const canonicalSnapshot=()=>snapshotText??=canonical(snapshotValue(machine,s,records.length));
  function snapshot(){return JSON.parse(canonicalSnapshot());}
+ // Committed receipts already contain the canonical digest. The empty opening
+ // has no receipt; hash it once, lazily, without constructing a save envelope.
+ let stateDigest=records.at(-1)?.stateHash;
+ function stateHash(){return stateDigest??=crypto.createHash('sha256').update(canonicalSnapshot()).digest('hex');}
  // One authoritative transaction path for committed actions and disposable
  // read-only legality probes. The probe never creates a campaign journal entry,
  // computes a save hash, or returns mutable draft state to its caller.
@@ -533,12 +537,12 @@ function makeSession(context,machine,s,records,binding,initialSnapshotText){
  function save(){
   const payload={format:FORMAT,version:VERSION,scenarioId:context.config.scenarioId,
    bindings:clone(binding),origin:clone({cursor:context.cursor,actor:context.actor,state:context.state}),
-   journal:clone(records),finalStateHash:crypto.createHash('sha256').update(canonicalSnapshot()).digest('hex')};
+   journal:clone(records),finalStateHash:stateHash()};
   return {...payload,integrity:{algorithm:'SHA-256',digest:hash(payload)}};
  }
  // Copy the small action ledger without rehashing the whole opening and save.
  function journal(){return clone(records);}
- return Object.freeze({snapshot,execute,canExecute,canExecuteGroundBatch:inputs=>probeGroundBatch(s,records.length,inputs),projectGroundMove:input=>projectGround(s,records.length,input),undo,save,journal});
+ return Object.freeze({snapshot,execute,canExecute,canExecuteGroundBatch:inputs=>probeGroundBatch(s,records.length,inputs),projectGroundMove:input=>projectGround(s,records.length,input),undo,save,journal,stateHash});
 }
 function create(context){
  const binding=validateContext(context),source=MovementBinding.prepareContext(clone(context)),machine=createMachine(source);

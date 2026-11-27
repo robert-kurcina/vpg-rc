@@ -22,10 +22,12 @@ function make(session,context,pending=null,existingPager=null,missionSeed=null,d
  if(!session||typeof session.snapshot!=='function'||typeof session.execute!=='function'||typeof session.save!=='function')
   throw Error('Authoritative campaign session required');
  if(!obj(context)||!obj(context.config))throw Error('Source scenario context required');
+ const stateHash=()=>typeof session.stateHash==='function'?session.stateHash():session.save().finalStateHash;
+ const journal=()=>typeof session.journal==='function'?session.journal():session.save().journal;
  const postPages=new Map();
  let postPager=null;
  if(pending){
-  if(!obj(pending)||!dieOK(pending.die)||pending.at!==session.save().finalStateHash)
+  if(!obj(pending)||!dieOK(pending.die)||pending.at!==stateHash())
    throw Error('Pending combat die does not match authoritative campaign state');
   // This must still be a valid adjudication point. In particular, a restored
   // die cannot be attached to a different battle or an unlocked air decision.
@@ -113,7 +115,7 @@ function make(session,context,pending=null,existingPager=null,missionSeed=null,d
    const post=pager.page(0);
    if(!post.options.length&&!post.fleetCommitments.length)
     throw Error('No authorized post-roll choices at committed die');
-   return make(session,context,{die,at:session.save().finalStateHash},pager,missionSeed,deploymentDraws);
+   return make(session,context,{die,at:stateHash()},pager,missionSeed,deploymentDraws);
   }
   if(die===null)throw Error('Damage rolls require a real d6');
   if(dice.length!==1)throw Error('Ambiguous pending die prompt');
@@ -132,7 +134,7 @@ function make(session,context,pending=null,existingPager=null,missionSeed=null,d
   if(missionSeed===null)throw Error("No mission seed assigned");
   const prompt=source().prompts.find(x=>x.kind==='die-and-choice');
   if(!prompt)throw Error("No source-authorized die decision is pending");
-  return roll(prompt.automaticNoDie?null:Random.die(missionSeed,session.save().journal,prompt.type==='resolve-battle'?'combat':'naval'));
+  return roll(prompt.automaticNoDie?null:Random.die(missionSeed,journal(),prompt.type==='resolve-battle'?'combat':'naval'));
  }
  // Hand the AI the existing immutable campaign session instead of restoring
  // and replaying the complete journal on every browser action. This is the
