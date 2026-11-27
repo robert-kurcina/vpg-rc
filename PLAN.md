@@ -61,6 +61,8 @@ P3c: consolidate historical human/deployment/action-catalog/autoplay ordinary JS
 
 P3d/P4a: consolidate autoplay combat evaluator construction, category utility, defender lookup, post-roll comparator and communication links; movement explicitly reuses only its friendly field, combat rebuilds all fields. Extract campaign source-policy validation without changing validation order, controller construction, public API or canonical bytes. Main run 46054425844 passed. Generation run 46056202488 succeeded (artifact 15226812368); synchronized all 16 runtime scripts with artifact Git blob prefixes verified, and removed the temporary generation job. Focused rules passed; full browser acceptance and operational parity pending after synchronization. No performance gain claimed.
 
+P3d/P4a merged in PR56; acceptance run 46056623250 passed all nine executed jobs, operational parity and profiling skipped. P3e/P4b: historical browser controller consolidates repeated action filter, battle selection, support selection, post-roll selection, deployment RNG synchronization, setup refresh and custom save envelope validation. Keep scenario-specific reset boundaries, error messages, save format and state transition order. No generated engine inputs changed. Browser acceptance pending.
+
 ### Function contracts
 
 - Repeated initialization, synchronization, assignment and cleanup must have defined behavior; duplicate mounting/listeners and poisoned retry state are defects. Stateful game commands are not universally idempotent: a second action may be illegal. Do not silently deduplicate legitimate actions.
