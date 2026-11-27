@@ -35,27 +35,6 @@ permissions:
   contents: read
 
 jobs:
-  regenerate-ai-bundle:
-    if: github.head_ref == 'perf/lazy-ai-history'
-    runs-on: ubuntu-latest
-    timeout-minutes: 10
-    steps:
-      - uses: actions/checkout@v5
-      - uses: actions/setup-node@v5
-        with:
-          node-version: '22'
-      - name: Regenerate and verify browser bundle and AI contracts
-        run: |
-          python3 scripts/build-historical-browser-bundle.py --install
-          python3 scripts/build-historical-browser-bundle.py --install --check
-          node tests/historical-autoplay-contract-v399.test.js
-          node tests/historical-fleet-budget-scope-v643.test.js
-          git diff --binary > generated-bundle.patch
-      - uses: actions/upload-artifact@v6
-        with:
-          name: ai-generated-bundle
-          path: generated-bundle.patch
-          if-no-files-found: error
   focused-rules:
     runs-on: ubuntu-latest
     timeout-minutes: 10
