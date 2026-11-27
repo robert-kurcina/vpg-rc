@@ -25,5 +25,32 @@ const M=require('../core/mission_storage'), F=require('./fixtures/mission-indexe
  await a.write(id,{state:{turn:1}});assert.deepEqual(await c.read(id),{state:{turn:1}});
  const fallback=M.createStore({getStorage:()=>storage});await fallback.write('arduous',legacy);assert.deepEqual(await fallback.read('arduous'),legacy);await assert.rejects(fallback.write('arduous',big),{name:'QuotaExceededError'});assert.deepEqual(await fallback.read('arduous'),legacy);await fallback.remove('arduous');assert.equal(await fallback.exists('arduous'),false);
  await assert.rejects(a.write('invalid',{}),/Unknown mission/);
+ // Concurrent callers share a failing open; the next operation retries.
+ for(const failure of ['throw','error','blocked']){
+  const backing=F.fixture(),local=F.quotaStorage();
+  let opens=0,oldRequest,closed=0;
+  const transient=M.createStore({getStorage:()=>local,indexedDB:{open(...args){
+   if(++opens===1){
+    if(failure==='throw')throw Error('transient open failure');
+    const req={error:Error('transient open failure')};oldRequest=req;
+    queueMicrotask(()=>failure==='blocked'?req.onblocked():req.onerror());
+    return req;
+   }
+   return backing.indexedDB.open(...args);
+  }}});
+  const first=await Promise.allSettled([transient.read(id),transient.exists(id)]);
+  assert(first.every(x=>x.status==='rejected'),failure);
+  assert.equal(opens,1,'shared failed open');
+  await transient.write(id,legacy);
+  assert.equal(opens,2,'retry after failed open');
+  if(failure==='blocked'){
+   oldRequest.result={close(){closed++;}};
+   oldRequest.onsuccess();
+   assert.equal(closed,1,'late blocked connection closed');
+  }
+  assert.deepEqual(await transient.read(id),legacy);
+  assert.equal(opens,2,'new connection remains cached');
+  assert.equal(backing.commits,1);
+ }
  console.log('PASS large-save database commit, rollback, legacy compatibility, cross-store read, scoped deletion, tombstone and quota fallback (transaction fixture)');
 })().catch(e=>{console.error(e);process.exitCode=1;});

@@ -1,6 +1,6 @@
 # Russian Campaign — Playtesting and maintenance
 
-Revision 534 | Gameplay implementation CLOSED | Codebase rationalization planned | Author-led playtesting
+Revision 535 | Gameplay implementation CLOSED | Codebase rationalization planned | Author-led playtesting
 
 ## Accepted scope
 
@@ -37,14 +37,16 @@ Evidence: [final acceptance](https://github.com/robert-kurcina/vpg-rc/actions/ru
 
 ## Active backlog — codebase rationalization
 
-P0 initial measured baseline: [inventory](docs/codebase-inventory-p0.md). Complete tracked tree measured; targeted source metrics and production controller call sites verified. Run the read-only inventory script against the pinned commit and review remaining candidates before closing P0. No runtime changes.
+P0 initial measured baseline: [inventory](docs/codebase-inventory-p0.md). Complete tracked tree measured; targeted source metrics and production controller call sites verified. Run the read-only inventory script against the pinned commit and review remaining candidates before closing P0. Inventory PR introduced no runtime changes.
+
+P1a: proposed IndexedDB rejected-open recovery, with shared concurrent attempts and late blocked-request isolation; existing transaction fixture extended and wired into focused CI. Test execution pending CI. P0 remains open; this confirmed defect does not depend on broader reachability analysis. Next P1b: page-lifetime mount guards, subscription disposal and busy/cancel handling.
 
 Author-requested maintenance initiative; gameplay implementation remains closed. Work in priority order, with independent reviewable PRs and narrow changes. Subtraction before abstraction; no framework migration, speculative architecture, feature work or arbitrary reduction target.
 
 | Priority | Status | Work and exit criterion |
 |---|---|---|
 | P0 | IN PROGRESS | Establish a pinned baseline: tracked handwritten JS/Python and HTML/controller inventory, function counts, complexity hotspots, duplicate/near-duplicate candidates, dependency/reachability map including HTML entry points, dynamic/global registrations, fixtures, build and CI scripts. Separate generated runtime, assets, evidence and archived materials. Record baseline test commands and current results; do not invent coverage or removal estimates. |
-| P1 | OPEN | Fix confirmed lifecycle/recovery defects in core/mission_storage.js: retry after rejected IndexedDB open without invalidating a newer connection, explicit repeated mount contract, removable subscriptions, and consistent busy/cancel/failure handling. Test concurrent opens, failure/retry, mount twice, teardown/re-mount, storage commits, tombstones and notification behavior. Confirm actual call sites before choosing lifecycle contract. |
+| P1 | IN PROGRESS | Fix confirmed lifecycle/recovery defects in core/mission_storage.js: retry after rejected IndexedDB open without invalidating a newer connection, explicit repeated mount contract, removable subscriptions, and consistent busy/cancel/failure handling. Test concurrent opens, failure/retry, mount twice, teardown/re-mount, storage commits, tombstones and notification behavior. Confirm actual call sites before choosing lifecycle contract. |
 | P2 | OPEN | Remove only proven unreachable or superseded handwritten code, stale wrappers and duplicate implementations. Establish caller and external entry-point evidence first; distinguish archive from deletion. Keep production bundle inputs, source evidence and useful regression fixtures. |
 | P3 | OPEN | Consolidate genuinely equivalent reusable functions, starting with serialization/integrity helpers in historical campaign/human/deployment modules and communication evaluation in autoplay. Preserve separate canonical vs ordinary JSON byte contracts, validation limits, error behavior, cache ownership and deterministic ordering. No generic utility dumping ground or abstraction for superficial similarities. |
 | P4 | OPEN | Decompose high-complexity functions in historical_campaign_autoplay.js, historical_campaign_session.js and UI controllers. Extract pure calculations and validators before touching orchestration; preserve action order, tie-breaks, phase transitions and random draws. Use measured hotspots, not arbitrary line-length targets. |

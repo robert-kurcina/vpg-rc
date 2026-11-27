@@ -6,6 +6,8 @@ on:
   pull_request:
     paths:
       - 'tests/mission-hosted-v693.py'
+      - 'tests/mission-indexeddb-v693.test.js'
+      - 'tests/fixtures/mission-indexeddb-fixture-v693.js'
       - 'tests/historical-operational-qualification-v644.test.js'
       - 'scripts/summarize-campaign-profile.js'
       - 'tests/fixtures/terminal-v694/**'
@@ -42,6 +44,7 @@ jobs:
           node-version: '22'
       - name: Verify existing approved rules and terrain references
         run: |
+          node tests/mission-indexeddb-v693.test.js
           node tests/single-pass-movement-binding-v664.test.js
           node tests/b4m-source-combat-v586.test.js
           node tests/b4m-source-movement-v585.test.js
