@@ -1,7 +1,7 @@
 /* Portable browser gameplay configuration; authoritative engine saves remain intact. */
 (function(root){
 'use strict';
-const hash=typeof module==='object'&&module.exports?s=>require('node:crypto').createHash('sha256').update(s).digest('hex'):s=>root.WargameSyncSha256.sha256(s);
+const hash=typeof module==='object'&&module.exports?require('./sync_sha256.js').jsonChecksum:root.WargameSyncSha256.jsonChecksum;
 const Difficulty=typeof module==='object'&&module.exports?require('./ai_difficulty.js'):root.WargameAIDifficulty;
 const assignments=['manual','german','soviet','both'];
 function defaults(strategies){return {assignment:'manual',german:strategies[0],soviet:strategies[0]};}
@@ -18,7 +18,7 @@ function pack(save,config,strategies){
  const metadata={version:Object.hasOwn(players,'germanDifficulty')?2:1,players};
  // Unconfigured legacy sessions retain their exact previous format.
  if(JSON.stringify(players)===JSON.stringify(defaults(strategies)))return save;
- return {...save,playerSession:{...metadata,sha256:hash(JSON.stringify([save,metadata]))}};
+ return {...save,playerSession:{...metadata,sha256:hash([save,metadata])}};
 }
 function unpack(input,strategies){
  if(!input||typeof input!=='object'||Array.isArray(input))throw Error('Invalid saved session');
@@ -26,7 +26,7 @@ function unpack(input,strategies){
  const {playerSession:record,...save}=input;
  if(!record||![1,2].includes(record.version)||Object.keys(record).sort().join(',')!=='players,sha256,version')throw Error('Invalid player session metadata');
  const {sha256,...metadata}=record;
- if(sha256!==hash(JSON.stringify([save,metadata])))throw Error('Player session checksum mismatch');
+ if(sha256!==hash([save,metadata]))throw Error('Player session checksum mismatch');
  const players=validate(record.players,strategies);
  if((record.version===2)!==Object.hasOwn(players,'germanDifficulty')||
     (record.version===1&&Object.hasOwn(record.players,'germanDifficulty')))throw Error('Invalid player session grade version');
