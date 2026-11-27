@@ -20,15 +20,31 @@ const edge=board.edges.find(e=>!e.river&&!e.majorRiver&&!e.impassable&&board.cel
 const target=edge.b,neighbors=board.edges.filter(e=>(e.a===target||e.b===target)&&e.verified&&!e.impassable&&!e.river&&!e.majorRiver&&!e.lake&&!e.allSea).map(e=>e.a===target?e.b:e.a);
 for(const variant of ['standard','advanced']){
  const ctx={...context,actor:'german',cursor:{...context.cursor,turn:3,index:config.phases.findIndex(p=>p.id==='german-combat')},combatPolicy:{...combatPolicy,crtVariant:variant},state:{...structuredClone(C.create(context).snapshot().state),units:Object.fromEntries([...gs.map((u,i)=>({...u,hex:neighbors[i]})),{...targetUnit,hex:target,strengthStatus:'printed-reduced',printedCombatStrength:4,activeFaceId:targetUnit.reverseFaceId}].map(u=>[u.id,u]))}};
- let h=H.create({session:C.create(ctx),context:ctx,missionSeed:master});
+ const initial=C.create(ctx);
+ eq(initial.stateHash(),initial.save().finalStateHash);
+ eq(initial.stateHash(),initial.stateHash());
+ // Instrument the accepted gateway interface: pending dice and RNG must not
+ // construct full saves on the authoritative path.
+ let saveCalls=0,journalCalls=0,hashCalls=0;
+ const wrap=session=>({...session,save:()=>{saveCalls++;return session.save();},
+  journal:()=>{journalCalls++;return session.journal();},
+  stateHash:()=>{hashCalls++;return session.stateHash();},
+  execute:action=>{const out=session.execute(action);return {...out,session:wrap(out.session)};}});
+ let h=H.create({session:wrap(initial),context:ctx,missionSeed:master});
  const before=h.save();eq(h.missionSeed(),master);eq(H.restore(before,ctx).save(),before);
  const battle={defenderHex:target,attackers:gs.map(u=>u.id)};
  h=h.choose({type:'combat',action:{type:'commit-battles',battles:[battle]}});
  h=h.choose(h.view().commands.find(a=>a.action?.type==='select-battle'));
  const air=h.view().commands.find(a=>a.action?.type==='commit-ground-air'&&a.action.faceId===null);if(air)h=h.choose(air);
- const pre=h.save(),rolled=h.rollRandom();eq(rolled.view().die,1+combat[0]);eq(H.restore(rolled.save(),ctx).save(),rolled.save());eq(rolled.undo().session.save(),pre);eq(rolled.undo().session.rollRandom().save(),rolled.save());
+ const pre=h.save(),beforeCalls=saveCalls,rolled=h.rollRandom();eq(saveCalls,beforeCalls);ok(journalCalls>0);ok(hashCalls>=2);eq(rolled.view().die,1+combat[0]);eq(H.restore(rolled.save(),ctx).save(),rolled.save());eq(rolled.undo().session.save(),pre);eq(rolled.undo().session.rollRandom().save(),rolled.save());
  const next=Auto.decide({session:C.restore(pre.campaign,ctx),context:ctx,policy:{missionSeed:master}});eq(next.status,'action');eq(next.action.action.die,rolled.view().die);
  const selected=rolled.view().options[0]||rolled.view().fleetCommitments[0],done=rolled.choose(selected);eq(R.count(done.save().campaign.journal,'combat'),1);eq(done.missionSeed(),master);eq(H.restore(done.save(),ctx).save(),done.save());eq(done.undo().session.rollRandom().save(),rolled.save());
+ const committed=C.restore(done.save().campaign,ctx);
+ eq(committed.stateHash(),committed.save().finalStateHash);
+ eq(committed.stateHash(),committed.journal().at(-1).stateHash);
+ const detached=committed.journal();detached.at(-1).stateHash='0'.repeat(64);
+ eq(committed.stateHash(),committed.save().finalStateHash);
+ const prior=committed.undo().session;eq(prior.stateHash(),prior.save().finalStateHash);
  const corrupt=structuredClone(done.save());corrupt.missionSeed='f'.repeat(32);throws(()=>H.restore(corrupt,ctx));
 }
 console.log('PASS mission RNG',n,'assertions');

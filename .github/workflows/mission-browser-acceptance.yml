@@ -35,6 +35,27 @@ permissions:
   contents: read
 
 jobs:
+  regenerate-performance-bundle:
+    if: github.head_ref == 'perf/campaign-hash-access'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: '22'
+      - name: Generate bundle and check focused contracts
+        run: |
+          python3 scripts/build-historical-browser-bundle.py --install
+          python3 scripts/build-historical-browser-bundle.py --install --check
+          node tests/mission-random-v629.test.js
+          node tests/historical-human-decision-gateway-v401.test.js
+          git diff --binary > generated-bundle.patch
+      - uses: actions/upload-artifact@v6
+        with:
+          name: performance-generated-bundle
+          path: generated-bundle.patch
+          if-no-files-found: error
   focused-rules:
     runs-on: ubuntu-latest
     timeout-minutes: 10
@@ -56,6 +77,8 @@ jobs:
           node tests/ai-difficulty-v668.test.js
           node tests/player-save-config-v654.test.js
           node tests/advanced-crt-v557.test.js
+          node tests/mission-random-v629.test.js
+          node tests/historical-human-decision-gateway-v401.test.js
   source-inventory:
     runs-on: ubuntu-latest
     timeout-minutes: 10
@@ -179,7 +202,7 @@ jobs:
   operational-parity:
     # Run the representative controlled comparison for this performance batch,
     # or explicitly via dispatch; avoid repeated expensive qualification.
-    if: github.event_name == 'workflow_dispatch' || github.head_ref == 'perf/browser-state-indexes'
+    if: github.event_name == 'workflow_dispatch' || github.head_ref == 'perf/browser-state-indexes' || github.head_ref == 'perf/campaign-hash-access'
     runs-on: ubuntu-latest
     timeout-minutes: 25
     steps:
