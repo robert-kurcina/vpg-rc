@@ -1,5 +1,5 @@
 /* GENERATED. Do not edit. */
-(function(root){"use strict";const r=root.__historicalBundle;if(!r||r.revision!=="fcfd7245b982b1885b09c453b77b14591706150edb5439605d6cf0a338c7a93e")throw Error("Historical bundle version mismatch");const defs=r.definitions,parts=r.parts;
+(function(root){"use strict";const r=root.__historicalBundle;if(!r||r.revision!=="e0ca1ff64b70e10215a98ab99974041ad6f7b1e63484032c38704d0272616c48")throw Error("Historical bundle version mismatch");const defs=r.definitions,parts=r.parts;
 defs["core/historical_buildup_phase.js"]=function(module,exports,require,Buffer){
 /* Source-configured historical buildup transactions, checkpoint 154.
  * The policy and an EXPLICIT counter-face allocation supply all historical
@@ -493,8 +493,7 @@ const Consequences=require('./historical_combat_consequences');
 const Geography=require('./historical_combat_geography');
 const Ports=require('./historical_port_support');
 const Rules=require('./movement_rules');
-const clone=x=>JSON.parse(JSON.stringify(x));
-const obj=x=>x!==null&&typeof x==='object'&&!Array.isArray(x);
+const {clone,object:obj}=require('./historical_campaign_json');
 function discover({session,context,enumerateCombinedPlans=true}){
  if(typeof enumerateCombinedPlans!=='boolean')throw Error('Invalid combined-plan enumeration policy');
  if(!session||typeof session.snapshot!=='function'||typeof session.execute!=='function'||
@@ -1036,10 +1035,7 @@ const Campaign=require('./historical_campaign_session');
 const MovementBinding=require('./movement_binding');
 const Catalog=require('./historical_campaign_action_catalog');
 const AutoPlay=require('./historical_campaign_autoplay');
-const clone=v=>JSON.parse(JSON.stringify(v));
-const obj=v=>v!==null&&typeof v==='object'&&!Array.isArray(v);
-const hash=v=>crypto.createHash('sha256').update(JSON.stringify(v)).digest('hex');
-const same=(a,b)=>JSON.stringify(a)===JSON.stringify(b);
+const {clone,object:obj,checksum:hash,equal:same}=require('./historical_campaign_json');
 const dieOK=d=>d===null||(Number.isSafeInteger(d)&&d>=1&&d<=6);
 const FORMAT='historical-human-decision-session';
 const VERSION=1;
@@ -1197,6 +1193,20 @@ function restore(saved,context){
  return make(session,MovementBinding.prepareContext(context),saved.pendingRoll,null,saved.missionSeed===undefined?null:Random.validate(saved.missionSeed),saved.deploymentDraws??0);
 }
 module.exports=Object.freeze({FORMAT,VERSION,create,restore});
+
+};
+defs["core/historical_campaign_json.js"]=function(module,exports,require,Buffer){
+/* Ordinary JSON helpers for historical session envelopes and action views.
+ * Preserve JSON.stringify ordering, coercions and exceptions.
+ * Canonical campaign receipt serialization remains separate.
+ */
+'use strict';
+const crypto=require('node:crypto');
+const clone=value=>JSON.parse(JSON.stringify(value));
+const object=value=>value!==null&&typeof value==='object'&&!Array.isArray(value);
+const equal=(a,b)=>JSON.stringify(a)===JSON.stringify(b);
+const checksum=value=>crypto.createHash('sha256').update(JSON.stringify(value)).digest('hex');
+module.exports=Object.freeze({clone,object,equal,checksum});
 
 };
 defs["core/historical_campaign_session.js"]=function(module,exports,require,Buffer){
@@ -1785,12 +1795,9 @@ const crypto=require('node:crypto');
 const Setup=require('./scenario_starting_setup');
 const Bridge=require('./scenario_opening_bridge');
 const Fixed=require('./historical_fixed_source_pieces');
-const clone=x=>JSON.parse(JSON.stringify(x));
-const equal=(a,b)=>JSON.stringify(a)===JSON.stringify(b);
-const sha=x=>crypto.createHash('sha256').update(JSON.stringify(x)).digest('hex');
+const {clone,equal,checksum:sha,object}=require('./historical_campaign_json');
 const FORMAT='historical-source-deployment',VERSION=1;
 const own=(o,k)=>Object.prototype.hasOwnProperty.call(o,k);
-const object=x=>x!==null&&typeof x==='object'&&!Array.isArray(x);
 function make(source,allocation,placements,mixed=false){
  if(typeof mixed!=='boolean')throw Error('Invalid concealed-counter mixing status');
  const concealed=source.setupSpec?.concealedSetup;
