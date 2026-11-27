@@ -69,7 +69,25 @@
  let channel=null,browserStore=null;
  function defaultStore(){if(!browserStore){let idb;try{idb=root.indexedDB;}catch(_){}try{channel=typeof root.BroadcastChannel==='function'?new root.BroadcastChannel(databaseName):null;}catch(_){}
   browserStore=createStore({indexedDB:idb,getStorage:()=>root.localStorage,notify:id=>{try{channel?.postMessage(id);}catch(_){}}});}return browserStore;}
- function subscribe(fn){defaultStore();channel?.addEventListener('message',e=>{if(missions.includes(e.data))fn(e.data);});root.addEventListener('storage',e=>{if(e.key===null)fn(null);else for(const id of missions)if(e.key===key(id))fn(id);});}
+ // One logical subscription per callback; disposal is safe to repeat.
+ const subscriptions=new Map();
+ function subscribe(fn){
+  if(typeof fn!=='function')throw TypeError('Mission subscription requires a callback');
+  if(subscriptions.has(fn))return subscriptions.get(fn);
+  defaultStore();
+  const message=e=>{if(missions.includes(e.data))fn(e.data);};
+  const storage=e=>{if(e.key===null)fn(null);else for(const id of missions)if(e.key===key(id))fn(id);};
+  const dispose=()=>{
+   if(subscriptions.get(fn)!==dispose)return;
+   subscriptions.delete(fn);
+   channel?.removeEventListener('message',message);
+   root.removeEventListener('storage',storage);
+  };
+  channel?.addEventListener('message',message);
+  root.addEventListener('storage',storage);
+  subscriptions.set(fn,dispose);
+  return dispose;
+ }
  // The controllers own successor sessions; Redo restores the exact previously
  // committed successor, including dice, rather than executing an action again.
  // Any change of the current session outside Undo/Redo invalidates the branch.
@@ -81,8 +99,12 @@
    available(current){observe(current);return future.length>0;},
    take(current){observe(current);if(!future.length)return null;anchor=future.pop();return anchor;}});
  }
+ // Production controllers own a single mission for the lifetime of the page.
+ // Retain first callbacks; a different owner requires a fresh document.
+ let toolbarOwner=null,missionOwner=null;
  function mountToolbar({undo,redo,settings}){
   const header=document.querySelector('body > header');if(!header||!undo)return;
+  if(toolbarOwner){if(toolbarOwner.undo!==undo||toolbarOwner.header!==header)throw Error('Mission toolbar already mounted for another owner');return toolbarOwner.button;}
   const bar=document.createElement('div');bar.className='mission-history-toolbar';bar.setAttribute('role','group');bar.setAttribute('aria-label','Mission controls');
   const make=(id,label,icon,fn)=>{const b=document.createElement('button');b.type='button';b.id=id;b.title=label;b.setAttribute('aria-label',label);b.textContent=icon;b.addEventListener('click',fn);return b;};
   undo.title='Undo';undo.setAttribute('aria-label','Undo');undo.textContent='↶';
@@ -97,10 +119,22 @@
    else settings();
   });
   settingsButton.setAttribute('aria-controls','settings-section');settingsButton.setAttribute('aria-pressed','false');
-  bar.append(undo,redoButton);header.append(bar,settingsButton);root.dispatchEvent(new Event('resize'));
+  bar.append(undo,redoButton);header.append(bar,settingsButton);toolbarOwner={header,undo,button:redoButton};root.dispatchEvent(new Event('resize'));
   return redoButton;
  }
- async function mount({id,anchor,save,restore,busy,pause,reference,notice}){
+ function mount(options){
+  const {id,anchor}=options;key(id);
+  if(missionOwner){
+   if(missionOwner.id!==id||missionOwner.anchor!==anchor)return Promise.reject(Error('Mission controls already mounted for another owner'));
+   return missionOwner.ready;
+  }
+  // Defer DOM work until ownership is recorded, including concurrent callers.
+  // A partial initialization failure requires reload, not a second DOM mutation.
+  const ready=Promise.resolve().then(()=>mountOnce(options));
+  missionOwner={id,anchor,ready};
+  return ready;
+ }
+ async function mountOnce({id,anchor,save,restore,busy,pause,reference,notice}){
   const store=defaultStore(),controls=document.createElement('div');controls.className='actions mission-local-controls';
   const status=document.createElement('p');status.setAttribute('role','status');status.className='mission-local-status';
   let pending=false,present=false,canDelete=false,generation=0;
