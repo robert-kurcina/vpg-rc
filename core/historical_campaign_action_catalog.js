@@ -12,8 +12,7 @@ const Consequences=require('./historical_combat_consequences');
 const Geography=require('./historical_combat_geography');
 const Ports=require('./historical_port_support');
 const Rules=require('./movement_rules');
-const clone=x=>JSON.parse(JSON.stringify(x));
-const obj=x=>x!==null&&typeof x==='object'&&!Array.isArray(x);
+const {clone,object:obj}=require('./historical_campaign_json');
 function discover({session,context,enumerateCombinedPlans=true}){
  if(typeof enumerateCombinedPlans!=='boolean')throw Error('Invalid combined-plan enumeration policy');
  if(!session||typeof session.snapshot!=='function'||typeof session.execute!=='function'||
