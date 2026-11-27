@@ -64,4 +64,8 @@ Build from this source distribution with `python3 scripts/build-static-release.p
 
 ## Repository maintenance
 
-Keep the source repository distinct from the staged static website. Generated historical engine chunks and their script manifest are committed production assets; regenerate with `python3 scripts/build-historical-browser-bundle.py --install` after changing bundled sources. Do not delete supplied source art, linked map exports, audit fixtures or older tests solely because of their age. Historical checkpoint notes in `UPDATE.md`, `plans/archive/`, `docs/` and `provenance/` are evidence, not active requirements. Current maintenance policy is defined only by `PLAN.md`. No active implementation backlog; UX changes follow author playtesting feedback. WASM and Oberlabs UX parity are rejected.
+Keep the source repository distinct from the staged static website. Generated historical engine chunks and their script manifest are committed production assets; regenerate with `python3 scripts/build-historical-browser-bundle.py --install` after changing bundled sources. Do not delete supplied source art, linked map exports, audit fixtures or older tests solely because of their age. Historical checkpoint notes in `UPDATE.md`, `plans/archive/`, `docs/` and `provenance/` are evidence, not active requirements. Current maintenance policy is defined only by `PLAN.md`. The active maintenance and rationalization backlog is tracked in PLAN.md; UX changes follow author playtesting feedback. WASM and Oberlabs UX parity are rejected.
+
+### Current development qualification
+
+Run `python3 scripts/run-active-regressions.py` for the same focused suite as CI, or add `--list` to inspect the validated command manifest. See [Development layout and qualification](docs/development-layout.md) for active entry points and historical evidence policy.
