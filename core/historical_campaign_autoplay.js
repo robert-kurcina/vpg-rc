@@ -15,7 +15,7 @@ const AttackUtility=require('./historical_attack_utility');
 const Threat=require('./historical_threat_assessment');
 const Rules=require('./movement_rules');
 const Difficulty=require('./ai_difficulty');
-const copy=o=>JSON.parse(JSON.stringify(o));
+const {clone:copy}=require('./historical_campaign_json');
 function policyOf(input={}){
  if(input===null||typeof input!=='object'||Array.isArray(input))throw Error('Controller policy must be an object');
  const allowed=['missionSeed','seed','maxActions','maxCombatsPerPhase','maxCombatPhases',
