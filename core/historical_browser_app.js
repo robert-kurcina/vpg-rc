@@ -92,6 +92,13 @@ let buildupMode=null,buildupSlot=null,buildupReserve=null;
 let supportSelection=null,supportTargetHex=null,previousSupportTargetCount=0;
 let retreatSelection=null;
 let moveSelection=null,moveDestination=null;
+// Narrow, repeat-safe UI transitions; callers retain their own reset scope.
+function clearActionFilter(){query='';$('filter').value='';}
+function clearBattleSelection(){selectedBattles.clear();clearActionFilter();}
+function clearSupportSelection(){supportSelection=null;supportTargetHex=null;}
+function clearPostRollSelection(){postRollPage=0;retreatSelection=null;}
+function syncDeploymentRandom(){setupMaster=human.missionSeed();setupDraws=human.deploymentDraws();}
+function refreshSetupSelection(){setupSelection=null;message('');refresh();}
 function movesFor(id){return actionList.filter(a=>a.type==='declare-ground-move'&&a.request?.unitId===id);}
 function clearMoveSelection(){moveSelection=null;moveDestination=null;}
 function cityLedgerView(state,map){
@@ -159,7 +166,7 @@ function currentRetreatMap(){
 function stageRetreat(routeId){
  const m=currentRetreatMap(),route=RetreatMap?.routeById(m,routeId);
  if(!route){message('This retreat route is not in the current validated consequence page.');return false;}
- retreatSelection=routeId;query='';$('filter').value='';renderActions();showBoard();
+ retreatSelection=routeId;clearActionFilter();renderActions();showBoard();
  message('Retreat preview: '+route.label+'. Choose an exact combat result to confirm; no move has been committed.');return true;
 }
 function clearRetreat(){retreatSelection=null;renderActions();showBoard();message('Retreat preview cleared. No combat result was committed.');}
@@ -260,7 +267,7 @@ function currentSupportMap(){
  return SupportMap.model({selection:supportSelection,commands:aiRunning?[]:actionList,
   battleHex:state.combat?.selected||null,fleetHex});
 }
-function cancelSupportSelection(){supportSelection=null;supportTargetHex=null;previousSupportTargetCount=0;refreshSupportWindow();showBoard();}
+function cancelSupportSelection(){clearSupportSelection();previousSupportTargetCount=0;refreshSupportWindow();showBoard();}
 function pickSupport(selection){
  if(!SupportMap||setupActive||aiRunning)return;
  if(supportSelection?.id===selection.id&&supportSelection?.kind===selection.kind){cancelSupportSelection();return;}
@@ -531,17 +538,17 @@ function enterSetup(){
  if(!candidateMode&&!deployment)deployment=E.Deployment.create({...sourceData.deploymentSource,
   allocation:candidateAllocation,placements:candidatePlacements});
  if(!setupMaster)setupMaster=human?.missionSeed()||E.Random.generate();
- redoHistory?.clear();setupActive=true;setupSelection=null;supportSelection=null;supportTargetHex=null;if(selectPanel)selectPanel('play');message('');refresh();
+ redoHistory?.clear();setupActive=true;setupSelection=null;clearSupportSelection();if(selectPanel)selectPanel('play');message('');refresh();
 }
-function updateSetup(next){deployment=next;setupSelection=null;message('');refresh()}
-function setupMove(id,to){try{if(candidateMode){candidateEditor=candidateEditor.move(id,to);setupSelection=null;message('');refresh();return true}updateSetup(deployment.move(id,to));return true}catch(e){message(e.message);return false}}
-function setupSwapPosition(a,b){try{if(candidateMode){candidateEditor=candidateEditor.swapPositions(a,b);setupSelection=null;message('');refresh();return true}updateSetup(deployment.swapPositions(a,b));return true}catch(e){message(e.message);return false}}
+function updateSetup(next){deployment=next;refreshSetupSelection()}
+function setupMove(id,to){try{if(candidateMode){candidateEditor=candidateEditor.move(id,to);refreshSetupSelection();return true}updateSetup(deployment.move(id,to));return true}catch(e){message(e.message);return false}}
+function setupSwapPosition(a,b){try{if(candidateMode){candidateEditor=candidateEditor.swapPositions(a,b);refreshSetupSelection();return true}updateSetup(deployment.swapPositions(a,b));return true}catch(e){message(e.message);return false}}
 function setupSwap(a,b){try{if(candidateMode)throw Error('Use the German reserve selection control to exchange one source-eligible 6–4 infantry face with the Turn 3 reserve.');updateSetup(deployment.swapFaces(a,b));return true}catch(e){message(e.message);return false}}
 function setupSelectInfantryReserve(slot){
  try{
   if(!candidateMode||!setupActive)throw Error('German infantry selection is available only in source deployment');
   candidateEditor=candidateEditor.selectInfantryReserve(slot||null);
-  setupSelection=null;message('');refresh();return true;
+  refreshSetupSelection();return true;
  }catch(e){message(e.message);return false}
 }
 function setupShuffle(){
@@ -569,7 +576,7 @@ function beginFromSetup(){
    context=withCRT({...clone(sourceOpening),...sourceData.contextSettings,
     buildupAllocation:candidateEditor.selectedAllocation()});
    customGame=true;human=E.Human.create({session:E.Campaign.create(context),context,missionSeed:setupMaster||E.Random.generate(),deploymentDraws:setupDraws});
-   setupActive=false;selectedBattles.clear();query='';$('filter').value='';message('');refresh();return true;
+   setupActive=false;clearBattleSelection();message('');refresh();return true;
   }
   if(setupOnly){
    const ready=deployment.commit({requireMixed:true});
@@ -579,7 +586,7 @@ function beginFromSetup(){
   bindDeployment(deployment,true);
   customGame=true;
   human=E.Human.create({session:E.Campaign.create(context),context,missionSeed:setupMaster||E.Random.generate(),deploymentDraws:setupDraws});
-  setupActive=false;selectedBattles.clear();query='';$('filter').value='';message('');refresh();return true;
+  setupActive=false;clearBattleSelection();message('');refresh();return true;
  }catch(e){message(e.message);return false}
 }
 /* Deployment is an interaction layer, not an alternative setup validator.
@@ -874,7 +881,7 @@ function refreshAIProgress(force=false){
 function refresh(){
  if(!setupActive&&human&&(aiRunning||autoEligible())){refreshAIProgress();syncAutomatic();return;}
  aiProgressActive=false;
- if(moveSelection){query='';$('filter').value='';}clearMoveSelection();syncCRTControls();syncAutomatic();
+ if(moveSelection){clearActionFilter();}clearMoveSelection();syncCRTControls();syncAutomatic();
  if(setupActive){refreshSupportWindow();renderSetup();return}
  if(!human)return;
  renderSetup();view=measured('humanView',()=>human.view(postRollPage));const s=human.snapshot();
@@ -928,20 +935,29 @@ function cityControlNotice(before,after){
    old[name]!==newer[name]).map(name=>name+': '+old[name]+' → '+newer[name]);
  return changed.length?'City control changed — '+changed.join(' · '):'';
 }
-function choose(a){try{cancelPostRollSearch();if(setupActive)throw Error('Finish deployment before playing');if(humanActionBlocked())throw Error('Pause automatic play before submitting a human action');const old=human.snapshot();const next=human.choose(a);const nextState=next.snapshot();const cityNotice=cityControlNotice(old,nextState);human=next;postRollPage=0;retreatSelection=null;
- if(old.phaseId!==nextState.phaseId||old.actor!==nextState.actor||!old.stackingCleanup&&nextState.stackingCleanup){query='';$('filter').value='';selectedBattles.clear();}
+function choose(a){try{cancelPostRollSearch();if(setupActive)throw Error('Finish deployment before playing');if(humanActionBlocked())throw Error('Pause automatic play before submitting a human action');const old=human.snapshot();const next=human.choose(a);const nextState=next.snapshot();const cityNotice=cityControlNotice(old,nextState);human=next;clearPostRollSelection();
+ if(old.phaseId!==nextState.phaseId||old.actor!==nextState.actor||!old.stackingCleanup&&nextState.stackingCleanup){clearActionFilter();selectedBattles.clear();}
  const type=a?.action?.type||a?.type;
- if(type==='declare-ground-move'||type==='resolve-ground-move'){query='';$('filter').value='';}
+ if(type==='declare-ground-move'||type==='resolve-ground-move'){clearActionFilter();}
  if(['commit-ground-air','declare-fleet-attack','declare-fleet-move','commit-forced-port','finish-combat','finish-phase'].includes(type)){
-  supportSelection=null;supportTargetHex=null;
+  clearSupportSelection();
  }else supportTargetHex=null;
  message('');refresh();if(cityNotice)message(cityNotice);return true}catch(e){message(e.message);return false}}
-function roll(die){try{cancelPostRollSearch();if(setupActive)throw Error('Finish deployment before rolling');if(humanActionBlocked())throw Error('Pause automatic play before rolling');human=human.roll(die);postRollPage=0;retreatSelection=null;message('');refresh();return true}catch(e){message(e.message);return false}}
+function roll(die){try{cancelPostRollSearch();if(setupActive)throw Error('Finish deployment before rolling');if(humanActionBlocked())throw Error('Pause automatic play before rolling');human=human.roll(die);clearPostRollSelection();message('');refresh();return true}catch(e){message(e.message);return false}}
 function undo(){try{cancelPostRollSearch();if(setupActive)throw Error('Use the deployment controls before starting the game');if(aiRunning)throw Error('Stop the active AI side before Undo');const response=human.undo();if(!response.ok){message('There is no earlier action to undo.');return false}
- pauseAutomatic();selectedBattles.clear();redoHistory?.recordUndo(human,response.session);human=response.session;postRollPage=0;retreatSelection=null;supportSelection=null;supportTargetHex=null;message('');refresh();return true}catch(e){message(e.message);return false}}
+ pauseAutomatic();selectedBattles.clear();redoHistory?.recordUndo(human,response.session);human=response.session;clearPostRollSelection();clearSupportSelection();message('');refresh();return true}catch(e){message(e.message);return false}}
 function redo(){try{if(setupActive||aiRunning||!human)throw Error('Redo unavailable');const next=redoHistory?.take(human);if(!next)return false;
- pauseAutomatic();cancelPostRollSearch();human=next;postRollPage=0;retreatSelection=null;supportSelection=null;supportTargetHex=null;selectedBattles.clear();query='';$('filter').value='';message('Next committed action restored.');refresh();return true;
+ pauseAutomatic();cancelPostRollSearch();human=next;clearPostRollSelection();clearSupportSelection();clearBattleSelection();message('Next committed action restored.');refresh();return true;
  }catch(e){message(e.message);return false;}}
+function validateCustomCampaignEnvelope(saved,kind){
+ if(saved.version!==1||!saved.deployment||!saved.human||
+    saved.integrity?.algorithm!=='SHA-256'||
+    Object.keys(saved).sort().join(',')!==['format','version','deployment','human','integrity'].sort().join(','))
+  throw Error('Invalid '+kind+' campaign envelope');
+ const {integrity,...payload}=saved;
+ if(WargameSyncSha256.jsonChecksum(payload)!==integrity.digest)
+  throw Error(kind[0].toUpperCase()+kind.slice(1)+' campaign checksum mismatch');
+}
 function restore(saved){try{cancelPostRollSearch();retreatSelection=null;if(aiRunning)throw Error('Stop the active AI side before loading a save');pauseAutomatic();
  const decoded=root.WargamePlayerSaveConfig?root.WargamePlayerSaveConfig.unpack(saved,playerStrategies):{save:saved,players:{assignment:"manual",german:"diagnostic",soviet:"diagnostic"}};saved=decoded.save;
  let restoredSetupRandom=null;
@@ -961,10 +977,7 @@ function restore(saved){try{cancelPostRollSearch();retreatSelection=null;if(aiRu
    candidateEditor=editor;setupMaster=restoredSetupRandom?.seed||E.Random.generate();setupDraws=restoredSetupRandom?.draws||0;redoHistory?.clear();setupActive=true;setupSelection=null;supportSelection=null;if(selectPanel)selectPanel('play');applyPlayers(decoded.players);message('');refresh();return true;
   }
   if(saved?.format==='historical-custom-campaign'){
-   if(saved.version!==1||!saved.deployment||!saved.human||saved.integrity?.algorithm!=='SHA-256'||
-      Object.keys(saved).sort().join(',')!==['format','version','deployment','human','integrity'].sort().join(','))throw Error('Invalid candidate campaign envelope');
-   const {integrity,...payload}=saved;
-   if(WargameSyncSha256.jsonChecksum(payload)!==integrity.digest)throw Error('Candidate campaign checksum mismatch');
+   validateCustomCampaignEnvelope(saved,'candidate');
    const editor=SourceSetup.restore(saved.deployment,{opening:candidateOpening,map:sourceData.contextSettings.map,
     policy:sourceData.setupPolicy,counterConfig:sourceData.counterConfig,
     buildupAllocation:sourceData.contextSettings.buildupAllocation});
@@ -981,17 +994,12 @@ function restore(saved){try{cancelPostRollSearch();retreatSelection=null;if(aiRu
     buildupAllocation:sourceData.contextSettings.buildupAllocation});
    context=resolved.context;human=resolved.human;crtPreference=resolved.variant;victoryPreference=resolved.victory;setupActive=false;customGame=false;
   }
-  setupMaster=human.missionSeed();setupDraws=human.deploymentDraws();stackTopByHex.clear();postRollPage=0;supportSelection=null;supportTargetHex=null;selectedBattles.clear();query='';$('filter').value='';applyPlayers(decoded.players);message('');refresh();return true;
+  syncDeploymentRandom();stackTopByHex.clear();postRollPage=0;clearSupportSelection();clearBattleSelection();applyPlayers(decoded.players);message('');refresh();return true;
  }
  if(setupOnly&&saved?.format!==E.Deployment.FORMAT)throw Error('Only source-constrained deployment saves are accepted in this preview');
  if(saved?.format===E.Deployment.FORMAT){deployment=E.Deployment.restore(saved,sourceData.deploymentSource);redoHistory?.clear();setupMaster=restoredSetupRandom?.seed||E.Random.generate();setupDraws=restoredSetupRandom?.draws||0;setupActive=true;setupSelection=null;}
  else if(saved?.format==='historical-custom-campaign'){
-  if(saved.version!==1||!saved.deployment||!saved.human||
-    saved.integrity?.algorithm!=='SHA-256'||
-    Object.keys(saved).sort().join(',')!==['format','version','deployment','human','integrity'].sort().join(','))
-   throw Error('Invalid customized campaign envelope');
-  const {integrity,...payload}=saved;
-  if(integrity.digest!==WargameSyncSha256.jsonChecksum(payload))throw Error('Customized campaign checksum mismatch');
+  validateCustomCampaignEnvelope(saved,'customized');
   const restoredDeployment=E.Deployment.restore(saved.deployment,sourceData.deploymentSource);
   // Do not alter live session/context until BOTH restore validations pass.
   const committed=restoredDeployment.commit({requireMixed:true});
@@ -1008,25 +1016,25 @@ function restore(saved){try{cancelPostRollSearch();retreatSelection=null;if(aiRu
   const defaultContext={...clone(opening.opening),...sourceData.contextSettings,buildupAllocation:opening.allocation};
   const resolved=restoreHumanWithCRT(saved,defaultContext);
   deployment=defaultDeployment;context=resolved.context;human=resolved.human;crtPreference=resolved.variant;victoryPreference=resolved.victory;setupActive=false;customGame=false;
- }if(!setupActive){setupMaster=human.missionSeed();setupDraws=human.deploymentDraws();}stackTopByHex.clear();buildupMode=null;buildupSlot=null;buildupReserve=null;supportSelection=null;supportTargetHex=null;postRollPage=0;setupSelection=null;selectedBattles.clear();query='';$('filter').value='';applyPlayers(decoded.players);message('');refresh();return true}
+ }if(!setupActive){syncDeploymentRandom();}stackTopByHex.clear();buildupMode=null;buildupSlot=null;buildupReserve=null;clearSupportSelection();postRollPage=0;setupSelection=null;clearBattleSelection();applyPlayers(decoded.players);message('');refresh();return true}
  catch(e){message('Load rejected: '+e.message);return false}}
-function reset(){cancelPostRollSearch();retreatSelection=null;supportSelection=null;supportTargetHex=null;previousSupportTargetCount=0;stackTopByHex.clear();buildupMode=null;buildupSlot=null;buildupReserve=null;if(aiRunning){message('Stop the active AI side before restarting');return}pauseAutomatic();
+function reset(){cancelPostRollSearch();retreatSelection=null;clearSupportSelection();previousSupportTargetCount=0;stackTopByHex.clear();buildupMode=null;buildupSlot=null;buildupReserve=null;if(aiRunning){message('Stop the active AI side before restarting');return}pauseAutomatic();
  setupMaster=E.Random.generate();setupDraws=0;
  if(candidateMode){
   deployment=null;candidateEditor=SourceSetup.create({opening:candidateOpening,map:sourceData.contextSettings.map,
    policy:sourceData.setupPolicy,counterConfig:sourceData.counterConfig,
    buildupAllocation:sourceData.contextSettings.buildupAllocation});context=withCRT({...clone(candidateOpening),...sourceData.contextSettings});customGame=false;setupActive=false;setupSelection=null;
   human=E.Human.create({session:E.Campaign.create(context),context,missionSeed:setupMaster||E.Random.generate(),deploymentDraws:setupDraws});
-  postRollPage=0;selectedBattles.clear();query='';$('filter').value='';message('');refresh();return;
+  postRollPage=0;clearBattleSelection();message('');refresh();return;
  }
  deployment=E.Deployment.create({...sourceData.deploymentSource,allocation:candidateAllocation,placements:candidatePlacements});
  if(setupOnly){
   human=null;context=null;customGame=false;setupActive=true;setupSelection=null;
-  postRollPage=0;selectedBattles.clear();query='';$('filter').value='';message('');refresh();return;
+  postRollPage=0;clearBattleSelection();message('');refresh();return;
  }
  bindDeployment(deployment);customGame=false;setupSelection=null;
  human=E.Human.create({session:E.Campaign.create(context),context,missionSeed:setupMaster||E.Random.generate(),deploymentDraws:setupDraws});setupActive=false;
- postRollPage=0;selectedBattles.clear();query='';$('filter').value='';message('');refresh()}
+ postRollPage=0;clearBattleSelection();message('');refresh()}
 async function start(){
  try{
   if(!E||!Art||!Face||!Display||!BuildupMap)throw Error('Required shared historical modules unavailable');
@@ -1122,7 +1130,7 @@ async function start(){
   if(document.documentElement.dataset.missionId)root.WargameMissionStorage?.mountToolbar({undo:$('undo'),redo,settings:()=>selectPanel('settings')});
   syncHistory();
   $('filter').oninput=()=>{clearMoveSelection();query=$('filter').value;renderActions();renderBattleProposals();showBoard()};
-  document.addEventListener('keydown',e=>{if(e.key==='Escape'&&moveSelection){clearMoveSelection();query='';$('filter').value='';renderActions();showBoard();}});
+  document.addEventListener('keydown',e=>{if(e.key==='Escape'&&moveSelection){clearMoveSelection();clearActionFilter();renderActions();showBoard();}});
   $('buildup-operation').onchange=()=>{buildupMode=$('buildup-operation').value;buildupSlot=null;buildupReserve=null;renderBuildupControls();showBoard()};
   $('buildup-target').onchange=()=>{
    if(buildupMode==='entry')buildupSlot=$('buildup-target').value;
@@ -1156,17 +1164,17 @@ async function start(){
    if(!humanActionBlocked()&&moveSelection&&hex){
     const options=movesFor(moveSelection).filter(a=>a.request.path.at(-1)===hex);
     if(options.length===1){if(choose(options[0]))root.WargameResponsiveShell?.openAt('orders-section');return true;}
-    if(options.length>1){moveDestination=hex;query='';$('filter').value='';renderActions();showBoard();message('Choose the movement route or mode from Orders.');root.WargameResponsiveShell?.openAt('orders-section');return true;}
+    if(options.length>1){moveDestination=hex;clearActionFilter();renderActions();showBoard();message('Choose the movement route or mode from Orders.');root.WargameResponsiveShell?.openAt('orders-section');return true;}
    }
    if(!humanActionBlocked()&&hex){
     const battle=actionList.find(a=>a.action?.type==='select-battle'&&a.action.defenderHex===hex);
-    if(battle){query='';$('filter').value='';if(choose(battle))root.WargameResponsiveShell?.openAt('decision-section');return true;}
+    if(battle){clearActionFilter();if(choose(battle))root.WargameResponsiveShell?.openAt('decision-section');return true;}
    }
    if(moveSelection&&hex&&!unit){message('This hex is not a legal destination for the selected counter. Choose a highlighted hex, or press Escape to cancel.');return true;}
    const term=hex&&view?.phaseKind==='combat'&&view.proposals?.some(p=>p.defenderHex===hex)?hex:unit?.getAttribute('data-unit-id')||hex;
    if(term){
     const next=!humanActionBlocked()&&unit&&movesFor(term).length?term:null;
-    if(next&&moveSelection===next){clearMoveSelection();query='';$('filter').value='';message('Selection cleared.');}
+    if(next&&moveSelection===next){clearMoveSelection();clearActionFilter();message('Selection cleared.');}
     else{clearMoveSelection();moveSelection=next;query=term;$('filter').value=term;message(next?'Counter selected. Choose a highlighted destination.':view?.phaseKind==='combat'?'Filtered combat choices for '+term+'.':'Selected '+term+' for inspection; no movement action selected.');}
     renderActions();renderBattleProposals();showBoard();
     if(hex&&view?.phaseKind==='combat'&&view.proposals?.some(p=>p.defenderHex===hex)){const details=$('battle-choices');details.open=true;root.WargameResponsiveShell?.openAt('battle-choices');}
@@ -1219,7 +1227,7 @@ async function start(){
    }
   };
   $('submit-die').onclick=()=>roll(Number($('die').value));
-  $('random-die').onclick=()=>{if(human.missionSeed()){try{cancelPostRollSearch();if(setupActive||humanActionBlocked())throw Error('Random roll unavailable');human=human.rollRandom();postRollPage=0;retreatSelection=null;message('');refresh();}catch(e){message(e.message)}return;}const bytes=new Uint32Array(1);crypto.getRandomValues(bytes);
+  $('random-die').onclick=()=>{if(human.missionSeed()){try{cancelPostRollSearch();if(setupActive||humanActionBlocked())throw Error('Random roll unavailable');human=human.rollRandom();clearPostRollSelection();message('');refresh();}catch(e){message(e.message)}return;}const bytes=new Uint32Array(1);crypto.getRandomValues(bytes);
    const threshold=4294967296-(4294967296%6);let n=bytes[0];while(n>=threshold){crypto.getRandomValues(bytes);n=bytes[0]}
    roll(n%6+1)};
   $('automatic-ne').onclick=()=>roll(null);
@@ -1242,8 +1250,8 @@ async function start(){
    if(aiRunning||setupActive||!human||human.snapshot().cursor.complete)return;
    if(human.hasPendingRoll()){message('Resolve the committed human die before passing control to the AI.');return}
    if(!aiPaused&&aiAssignment!=='manual'&&!computerOwns(human.snapshot().actor)){message('This side is assigned to the human. Pause automatic play to override.');return}
-   cancelPostRollSearch();postRollPage=0;retreatSelection=null;clearMoveSelection();selectedBattles.clear();query='';$('filter').value='';
-   supportSelection=null;supportTargetHex=null;aiRunning=true;aiStopRequested=false;$('ai-stop').hidden=false;$('ai-side').disabled=true;
+   cancelPostRollSearch();clearPostRollSelection();clearMoveSelection();clearBattleSelection();
+   clearSupportSelection();aiRunning=true;aiStopRequested=false;$('ai-stop').hidden=false;$('ai-side').disabled=true;
    const actor=human.snapshot().actor;let count=0;
    for(const id of ['ai-policy','ai-policy-soviet','ai-difficulty','ai-difficulty-soviet'])if($(id))$(id).disabled=true;
    $('ai-step').disabled=true;syncAutomatic();
@@ -1278,7 +1286,7 @@ async function start(){
    try{
     const next=human.autoplayStep(selectedAIPolicy());
     if(!next.session)throw Error('AI controller blocked: '+(next.decision.reason||next.decision.status));
-    cancelPostRollSearch();postRollPage=0;retreatSelection=null;supportSelection=null;supportTargetHex=null;selectedBattles.clear();query='';$('filter').value='';
+    cancelPostRollSearch();clearPostRollSelection();clearSupportSelection();clearBattleSelection();
     human=next.session;message('');refresh();
    }catch(err){message(err.message)}
   };
