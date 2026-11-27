@@ -1224,9 +1224,8 @@ async function start(){
    roll(n%6+1)};
   $('automatic-ne').onclick=()=>roll(null);
   $('save').onclick=()=>{
-   const blob=new Blob([JSON.stringify(saveCurrent(),null,2)],{type:'application/json'});
-   const href=URL.createObjectURL(blob);const link=document.createElement('a');link.href=href;
-   link.download=setupActive?'historical-deployment-save.json':'historical-candidate-save.json';link.click();setTimeout(()=>URL.revokeObjectURL(href),1000);
+   try{root.WargamePlayerSaveConfig.download(saveCurrent(),setupActive?'historical-deployment-save.json':'historical-candidate-save.json');}
+   catch(err){message('Save rejected: '+err.message);}
   };
   $('load').onchange=async e=>{try{const file=e.target.files[0];if(file){const content=await file.text();restore(JSON.parse(content))}}
    catch(err){message('Load rejected: '+err.message)}finally{e.target.value=''}};

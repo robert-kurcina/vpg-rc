@@ -515,6 +515,13 @@ with sync_playwright() as pw:
   if args.evidence_dir:
    page.screenshot(path=str(args.evidence_dir/f'{id}-desktop.png'),full_page=True)
   verify_shell(id);assert snapshot(id)==before
+  # Exercise the shared transport in the actual browser, independent of menu placement.
+  with page.expect_download() as export:
+   page.evaluate("id=>document.getElementById(id==='battle-for-moscow'?'save-game':'save').click()",id)
+  exported=export.value
+  if id=='battle-for-moscow':assert exported.suggested_filename==f'native-{id}-turn-{before["state"]["turn"]}.json'
+  else:assert exported.suggested_filename in ('historical-deployment-save.json','historical-candidate-save.json')
+  assert json.loads(Path(exported.path()).read_text())==before
   verify_reference(id)
   # Cancellation must not mutate or navigate, and must release the controls.
   menu()

@@ -32,5 +32,15 @@ function unpack(input,strategies){
     (record.version===1&&Object.hasOwn(record.players,'germanDifficulty')))throw Error('Invalid player session grade version');
  return {save,players};
 }
-const api={defaults,validate,pack,unpack};if(typeof module==='object'&&module.exports)module.exports=api;root.WargamePlayerSaveConfig=api;
+// Export transport only; preserve the caller's save bytes and filename.
+function download(save,filename){
+ const link=root.document.createElement('a');
+ const href=root.URL.createObjectURL(new Blob([JSON.stringify(save,null,2)],{type:'application/json'}));
+ try{
+  link.href=href;link.download=filename;root.document.body.append(link);link.click();
+ }finally{
+  link.remove();root.setTimeout(()=>root.URL.revokeObjectURL(href),1000);
+ }
+}
+const api={defaults,validate,pack,unpack,download};if(typeof module==='object'&&module.exports)module.exports=api;root.WargamePlayerSaveConfig=api;
 })(globalThis);
