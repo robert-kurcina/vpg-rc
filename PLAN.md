@@ -63,6 +63,8 @@ P3d/P4a: consolidate autoplay combat evaluator construction, category utility, d
 
 P3d/P4a merged in PR56; acceptance run 46056623250 passed all nine executed jobs, operational parity and profiling skipped. P3e/P4b: historical browser controller consolidates repeated action filter, battle selection, support selection, post-roll selection, deployment RNG synchronization, setup refresh and custom save envelope validation. Keep scenario-specific reset boundaries, error messages, save format and state transition order. No generated engine inputs changed. Browser acceptance pending.
 
+P3e/P4b merged in PR57; run 46057659752 pending at branch creation. P3f/P4c: native browser restore candidate construction and validation extracted from live UI commit; shared advanced CRT application and AI control locking; policy initialization publishes only a validated policy, preventing failed objective/capture validation from poisoning the retry cache. Preserve source fingerprint, candidate ordering, errors, and cached-policy execution. No generated historical engine inputs changed. Browser regression and policy retry verification pending.
+
 ### Function contracts
 
 - Repeated initialization, synchronization, assignment and cleanup must have defined behavior; duplicate mounting/listeners and poisoned retry state are defects. Stateful game commands are not universally idempotent: a second action may be illegal. Do not silently deduplicate legitimate actions.
