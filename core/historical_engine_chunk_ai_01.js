@@ -1,5 +1,5 @@
 /* GENERATED. Do not edit. */
-(function(root){"use strict";const r=root.__historicalBundle;if(!r||r.revision!=="a77668b600ccdf1868686ba5659152d09476e911d825d447c3b76539ae9645d8")throw Error("Historical bundle version mismatch");const defs=r.definitions,parts=r.parts;
+(function(root){"use strict";const r=root.__historicalBundle;if(!r||r.revision!=="49f007d5b01724bb6f07a2cbc35da4d2278b62acdce0eafda9082ae54e63c68f")throw Error("Historical bundle version mismatch");const defs=r.definitions,parts=r.parts;
 defs["core/ai_difficulty.js"]=function(module,exports,require,Buffer){
 /* Optional graded AI effort presets. No changes to rules, unit values or RNG. */
 (function(root){
@@ -109,8 +109,13 @@ function policyOf(input={}){
 // which combat/movement phases are present in a scenario configuration.
 function fleetDeclarationCount(history,type,scope='campaign'){
  if(!['campaign','turn'].includes(scope))throw Error('Invalid Fleet budget scope');
- const start=scope==='turn'?history.map(a=>a.type).lastIndexOf('finish-housekeeping')+1:0;
- return history.slice(start).filter(a=>(a.type==='combat'?a.action?.type:a.type)===type).length;
+ let count=0;
+ for(let i=history.length-1;i>=0;i--){
+  const a=history[i];
+  if(scope==='turn'&&a.type==='finish-housekeeping')break;
+  if((a.type==='combat'?a.action?.type:a.type)===type)count++;
+ }
+ return count;
 }
 function dieFor(seed,snap,purpose){
  const payload=String(seed)+'|'+snap.cursor.turn+'|'+snap.phaseId+'|'+snap.actionCount+'|'+purpose;
@@ -700,14 +705,18 @@ function decide({session,context,policy={}}){
  const pick=(choices,purpose)=>{
   if(!choices.length)return undefined;
   if(p.selectionMode==='first')return choices[0];
+  if(p.missionSeed!==undefined)return choices[Random.integer(p.missionSeed,'ai',s.actionCount,choices.length)];
   const key=[p.seed,s.cursor.turn,s.phaseId,s.actionCount,purpose].join('|');
   const n=crypto.createHash('sha256').update(key).digest().readUInt32BE(0);
-  return choices[p.missionSeed===undefined?n%choices.length:Random.integer(p.missionSeed,'ai',s.actionCount,choices.length)];
+  return choices[n%choices.length];
  };
- const journal=typeof session.journal==='function'?session.journal():session.save().journal;
- const missionDie=purpose=>p.missionSeed===undefined?dieFor(p.seed,s,purpose):Random.die(p.missionSeed,journal,purpose==='ground'?'combat':'naval');
- const history=journal.map(x=>x.action);
- const historyCount=t=>history.filter(a=>(a.type==='combat'?a.action.type:a.type)===t).length;
+ // Only decisions that consume history need a detached journal. Keep the
+ // cache local to this decision; never carry it across committed actions.
+ let journalCache,historyCache;
+ const journal=()=>journalCache??=(typeof session.journal==='function'?session.journal():session.save().journal);
+ const history=()=>historyCache??=journal().map(x=>x.action);
+ const missionDie=purpose=>p.missionSeed===undefined?dieFor(p.seed,s,purpose):Random.die(p.missionSeed,journal(),purpose==='ground'?'combat':'naval');
+ const historyCount=t=>fleetDeclarationCount(history(),t);
  // The discoverer is intentionally run at a source-defined decision point,
  // not used to inspect alternative die outcomes before the die is fixed.
  let options;
@@ -718,17 +727,34 @@ function decide({session,context,policy={}}){
   enumerateCombinedPlans:p.maxCombatsPerPhase>1&&p.attackSelection!=='continuation-pilot'});}
  catch(e){return {status:'blocked',reason:'action-discovery-failed',detail:e.message,phase:s.phaseId};}
  if(options.blocked)return {status:'blocked',reason:options.blocked,phase:s.phaseId};
- const byType=t=>pick(options.commands.filter(a=>(a.type==='combat'?a.action.type:a.type)===t),t);
+ let commandsByType;
+ const byType=t=>{
+  if(!commandsByType){
+   commandsByType=new Map();
+   for(const a of options.commands){
+    const type=a.type==='combat'?a.action.type:a.type;
+    if(!commandsByType.has(type))commandsByType.set(type,[]);
+    commandsByType.get(type).push(a);
+   }
+  }
+  return pick(commandsByType.get(t)||[],t);
+ };
  if(s.phaseKind==='housekeeping')return action(byType('finish-housekeeping'),'finish-turn');
  if(s.phaseKind==='buildup'){
-  const phaseJournal=history.slice(history.map(a=>a.type).lastIndexOf('finish-buildup')+1);
-  const already=phaseJournal.filter(a=>['place-reinforcement','place-evacuated-reinforcement'].includes(a.type)).length;
+  const actions=history();
+  let already=0,replaced=false;
+  for(let i=actions.length-1;i>=0;i--){
+   const a=actions[i];
+   if(a.type==='finish-buildup')break;
+   if(a.type==='place-reinforcement'||a.type==='place-evacuated-reinforcement')already++;
+   if(a.type==='apply-replacement')replaced=true;
+  }
   if(already<p.maxReinforcementsPerPhase){
    const placement=byType('place-reinforcement')||byType('place-evacuated-reinforcement');if(placement)return action(placement,'source-legal-reinforcement');
   }
   const replacement=byType('apply-replacement');
   // Conservative: one replacement action per buildup phase.
-  if(replacement&&(p.phaseScope==='operational'||!phaseJournal.some(a=>a.type==='apply-replacement')))return action(replacement,'source-legal-replacement');
+  if(replacement&&(p.phaseScope==='operational'||!replaced))return action(replacement,'source-legal-replacement');
   return action(byType('finish-buildup'),'finish-buildup');
  }
  if(s.phaseKind==='combat'){
@@ -736,7 +762,7 @@ function decide({session,context,policy={}}){
   if(c.status==='air-sea-open'){
    if(c.pendingSeaFaceId!==null)return action({type:'combat',action:{type:'roll-fleet-attack',
     die:missionDie('naval')}},'committed-naval-die');
-   if(fleetDeclarationCount(history,'declare-fleet-attack',p.fleetBudgetScope)<p.maxFleetAttacks){
+   if(fleetDeclarationCount(history(),'declare-fleet-attack',p.fleetBudgetScope)<p.maxFleetAttacks){
     const attack=byType('declare-fleet-attack');if(attack)return action(attack,'source-legal-naval-commitment');
    }
    return action(byType('finish-air-sea'),'finish-naval-window');
@@ -870,7 +896,7 @@ function decide({session,context,policy={}}){
     if(best)return action(best.action,'objective-directed-ground-movement');
    }else{const move=pick(moveCommands.filter(a=>a.type==='declare-ground-move'),'declare-ground-move');if(move)return action(move,'source-legal-ground-movement');}
   }
-  if(fleetDeclarationCount(history,'declare-fleet-move',p.fleetBudgetScope)<p.maxFleetMoves&&!s.fleetUsed){
+  if(!s.fleetUsed&&p.maxFleetMoves>0&&fleetDeclarationCount(history(),'declare-fleet-move',p.fleetBudgetScope)<p.maxFleetMoves){
    const fleet=byType('declare-fleet-move');if(fleet)return action(fleet,'source-legal-fleet-movement');
   }
   return action(byType('finish-phase'),'finish-movement-phase');
