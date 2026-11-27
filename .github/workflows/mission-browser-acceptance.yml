@@ -35,23 +35,6 @@ permissions:
   contents: read
 
 jobs:
-  regenerate-refactor-bundle:
-    runs-on: ubuntu-latest
-    timeout-minutes: 10
-    steps:
-      - uses: actions/checkout@v5
-      - name: Regenerate browser bundle and verify syntax
-        run: |
-          python3 scripts/build-historical-browser-bundle.py --install
-          python3 scripts/build-historical-browser-bundle.py --install --check
-          node --check core/historical_campaign_autoplay.js
-          node --check core/historical_campaign_session.js
-          git diff --binary > generated-bundle.patch
-      - uses: actions/upload-artifact@v6
-        with:
-          name: refactor-generated-bundle
-          path: generated-bundle.patch
-          if-no-files-found: error
   focused-rules:
     runs-on: ubuntu-latest
     timeout-minutes: 10

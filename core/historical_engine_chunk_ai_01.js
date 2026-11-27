@@ -1,5 +1,5 @@
 /* GENERATED. Do not edit. */
-(function(root){"use strict";const r=root.__historicalBundle;if(!r||r.revision!=="e0ca1ff64b70e10215a98ab99974041ad6f7b1e63484032c38704d0272616c48")throw Error("Historical bundle version mismatch");const defs=r.definitions,parts=r.parts;
+(function(root){"use strict";const r=root.__historicalBundle;if(!r||r.revision!=="21e0d2fdfbe41a9acb80d6567362ec91edcdacd315e8e24316858acb4feb7c41")throw Error("Historical bundle version mismatch");const defs=r.definitions,parts=r.parts;
 defs["core/ai_difficulty.js"]=function(module,exports,require,Buffer){
 /* Optional graded AI effort presets. No changes to rules, unit values or RNG. */
 (function(root){
@@ -117,25 +117,49 @@ function dieFor(seed,snap,purpose){
  // Seeded, auditable *test* dice, never selected after observing a result.
  return crypto.createHash('sha256').update(payload).digest()[0]%6+1;
 }
+// Shared evaluation primitives. No command execution or random draws here.
+function createCombatEvaluator(context){
+ const geography=Geography.create(context.map,context.profile,{cityMarkerMode:context.combatPolicy?.cityMarkerMode,fortificationMode:context.combatPolicy?.fortificationMode});
+ return Consequences.create({...context,phaseConfig:context.config,geography});
+}
+function categoryUtility(context,odds){
+ return AttackUtility.evaluate({odds,variant:context.combatPolicy?.crtVariant||'standard',outcomeUtility:{NE:0,AL:-1,EX:0,DR:0.5,DRL:1.5,DE:2},inactionUtility:0});
+}
+function defenderIds(s,battle){
+ return Object.values(s.state.units).filter(u=>u.hex===battle.defenderHex&&u.owner!==s.actor).map(u=>u.id);
+}
+function comparePostRoll(a,b){
+ return b.score-a.score||b.cityDelta-a.cityDelta||Number(!!a.option.advanced)-Number(!!b.option.advanced)||a.index-b.index;
+}
+function createCommunicationEvaluator(context){
+ return require('./historical_buildup_phase').create({map:context.map,profile:context.profile,config:context.config,counterConfig:context.counterConfig,policy:context.buildupPolicy,allocation:context.buildupAllocation,fixedPolicy:context.fixedPolicy||null,combatPolicy:context.combatPolicy});
+}
+// Each call owns a fresh cache. Only an explicitly supplied, still-valid field
+// may be reused; post-combat projections must rebuild all owner fields.
+function communicationLinks(buildup,units,reusableFields=[]){
+ const cache=new Map(reusableFields);
+ return Object.fromEntries(Object.values(units).filter(u=>u.hex&&!u.marker).map(u=>{
+  if(!cache.has(u.owner))cache.set(u.owner,buildup.communicationIndex(u.owner,units));
+  return [u.id,cache.get(u.owner)(u.hex)];
+ }));
+}
 // A conservative baseline, not strategic AI: no hidden counter faces or dice.
 // Known attacks must reach the active CRT without speculative air allocation.
 // Concealed engagements remain possible, but rank behind known viable ones.
 function screenBattles({snapshot:s,context,proposals,utilityPilot=false,threatDiagnostics=false,withdrawalDiagnostics=false,coordinatedWithdrawalDiagnostics=false,forecastDiagnostics=false,survivalDiagnostics=false,forecastSurvivalDiagnostics=false}){
- const geography=Geography.create(context.map,context.profile,{cityMarkerMode:context.combatPolicy?.cityMarkerMode,fortificationMode:context.combatPolicy?.fortificationMode});
- const evaluator=Consequences.create({...context,phaseConfig:context.config,geography});
+ const evaluator=createCombatEvaluator(context);
  const known=[],uncertain=[],rejected=[],assessments=[];
  const threat=(threatDiagnostics||withdrawalDiagnostics||coordinatedWithdrawalDiagnostics||forecastDiagnostics||survivalDiagnostics||forecastSurvivalDiagnostics)?Threat.create(context):null, threatByHex=new Map();
  for(const b of proposals){
   if(threat)for(const id of b.attackers){const hex=s.state.units[id].hex;if(!threatByHex.has(hex)){const args={state:s.state,cursor:s.cursor,owner:s.actor,hex};const report=threat.assess(args);if(withdrawalDiagnostics)report.withdrawal=threat.withdrawal(args);if(coordinatedWithdrawalDiagnostics)report.coordinatedWithdrawal=threat.coordinatedWithdrawal(args);if(forecastDiagnostics)report.forecast=threat.forecast(args);if(survivalDiagnostics)report.survival=threat.survival(args);if(forecastSurvivalDiagnostics)report.forecastSurvival=threat.forecastSurvival(args);threatByHex.set(hex,report);}}
-  const defenders=Object.values(s.state.units).filter(u=>u.hex===b.defenderHex&&u.owner!==s.actor).map(u=>u.id);
+  const defenders=defenderIds(s,b);
   const odds=evaluator.previewKnownOdds({state:s.state,battle:{...b,defenders},actor:s.actor,cursor:s.cursor});
   if(utilityPilot){
    // First-stage conservative policy: known outcome-category proxy only.
    // No threat forecast exists yet; do not fabricate an elimination risk.
    // Uncertain engagements need a separate public-information estimator.
    if(odds===null){rejected.push(b);assessments.push({battle:b,reason:'concealed-strength-unestimated'});continue;}
-   const assessment=AttackUtility.evaluate({odds:odds.finalOdds,variant:context.combatPolicy?.crtVariant||'standard',
-    outcomeUtility:{NE:0,AL:-1,EX:0,DR:0.5,DRL:1.5,DE:2},inactionUtility:0});
+   const assessment=categoryUtility(context,odds.finalOdds);
    assessments.push({battle:b,odds:odds.finalOdds,...assessment});
    (assessment.eligible?known:rejected).push(b);
   }else (odds===null?uncertain:odds.noEffect?rejected:known).push(b);
@@ -150,8 +174,7 @@ function screenBattles({snapshot:s,context,proposals,utilityPilot=false,threatDi
 // as calibrated desperation probability. All participating origins are scored;
 // no speculative support or Fleet advance credit.
 function rankContinuations({snapshot:s,context,proposals,maxCandidates=8,maxTrials=64,maxNodes=32,includeFallback=false,nonCityAdvance=false,supportPlanning=false}){
- const geography=Geography.create(context.map,context.profile,{cityMarkerMode:context.combatPolicy?.cityMarkerMode,fortificationMode:context.combatPolicy?.fortificationMode});
- const evaluator=Consequences.create({...context,phaseConfig:context.config,geography});
+ const evaluator=createCombatEvaluator(context);
  const candidates=[],assessments=[],decisions=[],estimated=[],fallback=[],supportedCandidates=[],supported=[];
  // At most one support-dependent battle is committed; resolve it first with
  // the strongest available marker. Do not speculate on concealed faces.
@@ -163,12 +186,12 @@ function rankContinuations({snapshot:s,context,proposals,maxCandidates=8,maxTria
  // Never override a completed nonpositive continuation assessment.
  const considerFallback=(battle,odds,source)=>{
   if(odds<3)return false;
-  const delta=AttackUtility.evaluate({odds,variant:context.combatPolicy?.crtVariant||'standard',outcomeUtility:{NE:0,AL:-1,EX:0,DR:0.5,DRL:1.5,DE:2},inactionUtility:0}).delta;
+  const delta=categoryUtility(context,odds).delta;
   if(!Number.isFinite(delta)||delta<=0)return false;
   fallback.push({battle,odds,delta,eligible:true,method:'known-odds-proxy',source});return true;
  };
  for(const battle of proposals){
-  const defenders=Object.values(s.state.units).filter(u=>u.hex===battle.defenderHex&&u.owner!==s.actor).map(u=>u.id);
+  const defenders=defenderIds(s,battle);
   const odds=evaluator.previewKnownOdds({state:s.state,battle:{...battle,defenders},actor:s.actor,cursor:s.cursor});
   if(!odds){
    const estimate=evaluator.previewEstimatedOdds({state:s.state,battle:{...battle,defenders},actor:s.actor,cursor:s.cursor});
@@ -177,7 +200,7 @@ function rankContinuations({snapshot:s,context,proposals,maxCandidates=8,maxTria
    // Conservative interim policy: every possible assignment must be above 1:1.
    // Category utility is a fallback, not a substitute for positional simulation.
    if(columns.some(([o])=>o<=1)){record(battle,'concealed-low-odds-risk',{estimate});continue;}
-   const delta=columns.reduce((sum,[o,n])=>sum+n*AttackUtility.evaluate({odds:o,variant:context.combatPolicy?.crtVariant||'standard',outcomeUtility:{NE:0,AL:-1,EX:0,DR:0.5,DRL:1.5,DE:2},inactionUtility:0}).delta,0)/estimate.assignments;
+   const delta=columns.reduce((sum,[o,n])=>sum+n*categoryUtility(context,o).delta,0)/estimate.assignments;
    const eligible=delta>0;
    record(battle,eligible?'concealed-positive-proxy':'concealed-nonpositive-proxy',{estimate,delta});
    if(eligible)estimated.push({battle,delta,estimate,eligible,method:'public-roster-proxy'});
@@ -222,11 +245,10 @@ function rankContinuations({snapshot:s,context,proposals,maxCandidates=8,maxTria
 function chooseGroundAir({snapshot:s,context,commands}){
  const choices=commands.filter(a=>a.action?.type==='commit-ground-air');
  const hold=choices.find(a=>a.action.faceId===null);
- const geography=Geography.create(context.map,context.profile,{cityMarkerMode:context.combatPolicy?.cityMarkerMode,fortificationMode:context.combatPolicy?.fortificationMode});
- const evaluator=Consequences.create({...context,phaseConfig:context.config,geography});
+ const evaluator=createCombatEvaluator(context);
  const resolved=new Set(s.combat.resolved.map(e=>e.battle.defenderHex));
  const battles=s.combat.declaration.battles.filter(b=>!resolved.has(b.defenderHex));
- const value=odds=>AttackUtility.evaluate({odds,variant:context.combatPolicy?.crtVariant||'standard',outcomeUtility:{NE:0,AL:-1,EX:0,DR:0.5,DRL:1.5,DE:2},inactionUtility:0}).delta;
+ const value=odds=>categoryUtility(context,odds).delta;
  const gain=(b,id)=>{try{
   const args={state:s.combat.state,battle:b,actor:s.actor,cursor:s.cursor};
   const a=evaluator.previewKnownOdds(args),z=evaluator.previewKnownOdds({...args,airSupportId:id});
@@ -280,7 +302,7 @@ function rankPostRoll({snapshot:s,context,post}){
   const cityDelta=Object.keys(before).reduce((sum,city)=>sum+Number(control[city]===s.actor)-Number(before[city]===s.actor),0);
   const material=(option.losses||[]).reduce((sum,l)=>sum+(s.state.units[l.unitId]?.owner===s.actor?-1:1)*(l.removed?1:0.5),0);
   return {option,index,cityDelta,material,score:material+0.5*cityDelta};
- }).sort((a,b)=>b.score-a.score||b.cityDelta-a.cityDelta||Number(!!a.option.advanced)-Number(!!b.option.advanced)||a.index-b.index);
+ }).sort(comparePostRoll);
 }
 // Use the fixed-die validated transactions to compare post-roll positions.
 // If any candidate has unknown pressure, retain the material/city ordering
@@ -289,13 +311,12 @@ function rankOperationalPostRoll({session,snapshot:s,context,post}){
  const ranked=rankPostRoll({snapshot:s,context,post});
  if(ranked.length>32||ranked.length<2)return ranked;
  const t=Threat.create(context);
- const buildup=require('./historical_buildup_phase').create({map:context.map,profile:context.profile,config:context.config,counterConfig:context.counterConfig,policy:context.buildupPolicy,allocation:context.buildupAllocation,fixedPolicy:context.fixedPolicy||null,combatPolicy:context.combatPolicy});
+ const buildup=createCommunicationEvaluator(context);
  const battle=s.combat.declaration.battles.find(b=>b.defenderHex===post.defenderHex);
  const origins=new Set(battle.attackers.map(id=>s.state.units[id]?.hex));
  const focal=Object.values(s.state.units).filter(u=>u.owner===s.actor&&!u.marker&&origins.has(u.hex)).map(u=>u.id);
  const original=Object.values(s.state.units).filter(u=>u.hex&&!u.marker);
- const links=state=>{const cache=new Map();return Object.fromEntries(Object.values(state.units).filter(u=>u.hex&&!u.marker).map(u=>{if(!cache.has(u.owner))cache.set(u.owner,buildup.communicationIndex(u.owner,state.units));return [u.id,cache.get(u.owner)(u.hex)];}));};
- const before=links(s.state);
+ const before=communicationLinks(buildup,s.state.units);
  const scored=[];
  for(const x of ranked){
   const current=session.execute(x.option.action).session.snapshot().state;
@@ -305,11 +326,11 @@ function rankOperationalPostRoll({session,snapshot:s,context,post}){
    if(r.unknownPlans)return ranked;
    pressure+=surviving.filter(id=>current.units[id].hex===hex).length*Math.min(1,(r.strongest?.odds||0)/6);
   }
-  const after=links(current);let net=0;
+  const after=communicationLinks(buildup,current.units);let net=0;
   for(const u of original)if(Object.hasOwn(after,u.id)&&after[u.id]!==before[u.id])net+=(Number(after[u.id])-Number(before[u.id]))*(u.owner===s.actor?1:-1);
   scored.push({...x,pressure,communicationNet:net,score:x.score-pressure+0.25*net});
  }
- return scored.sort((a,b)=>b.score-a.score||b.cityDelta-a.cityDelta||Number(!!a.option.advanced)-Number(!!b.option.advanced)||a.index-b.index);
+ return scored.sort(comparePostRoll);
 }
 // Advisory distance over the authorized physical graph, not a legal route or
 // a threat prediction. Only already validated catalogue commands are ranked.
@@ -465,12 +486,12 @@ function rankObjectiveMoves({snapshot:s,context,commands,communication=false,ope
   return {action,index,captured,captureValue,progress,abandoned,reinforced,reinforceValue:reinforced*(weights.get(to)||1),protectionDelta,...(reliefEnabled?{reliefProgress}:{})};
  }).filter(x=>operational||!x.abandoned).sort((a,b)=>b.reinforceValue-a.reinforceValue||b.captureValue-a.captureValue||(0.1*b.progress+0.15*b.protectionDelta+0.35*(b.reliefProgress||0))-(0.1*a.progress+0.15*a.protectionDelta+0.35*(a.reliefProgress||0))||a.index-b.index);
  if(!communication)return candidates.filter(x=>!x.abandoned).filter(x=>x.reinforced>0||x.captured>0||x.progress>0||x.reliefProgress>0);
- const buildup=require('./historical_buildup_phase').create({map:context.map,profile:context.profile,config:context.config,counterConfig:context.counterConfig,policy:context.buildupPolicy,allocation:context.buildupAllocation,fixedPolicy:context.fixedPolicy||null,combatPolicy:context.combatPolicy});
+ const buildup=createCommunicationEvaluator(context);
  // communicationIndex depends only on opposing units and static entry edges.
  // Moving one friendly formation cannot change the friendly safe-cell field;
  // its new hex is queried against the same field. Enemy fields must be rebuilt.
  const friendlyIndex=buildup.communicationIndex(s.actor,s.state.units);
- const links=units=>{const cache=new Map([[s.actor,friendlyIndex]]);return Object.fromEntries(Object.values(units).filter(u=>u.hex&&!u.marker).map(u=>{if(!cache.has(u.owner))cache.set(u.owner,buildup.communicationIndex(u.owner,units));return [u.id,cache.get(u.owner)(u.hex)];}));};
+ const links=units=>communicationLinks(buildup,units,[[s.actor,friendlyIndex]]);
  const before=links(s.state.units);
  const threat=operational?Threat.create(context):null;
  const pressure=(state,hex)=>{if(!threat)return null;try{

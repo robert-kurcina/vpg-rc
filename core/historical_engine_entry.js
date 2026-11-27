@@ -30,7 +30,7 @@ const crypto={
   let diff=0;for(let i=0;i<a.length;i++)diff|=a[i]^b[i];return diff===0;
  }
 };
-const registry=root.__historicalBundle;if(!registry||registry.revision!=="e0ca1ff64b70e10215a98ab99974041ad6f7b1e63484032c38704d0272616c48")throw Error("Historical bundle version mismatch");
+const registry=root.__historicalBundle;if(!registry||registry.revision!=="21e0d2fdfbe41a9acb80d6567362ec91edcdacd315e8e24316858acb4feb7c41")throw Error("Historical bundle version mismatch");
 const definitions=registry.definitions;
 if(Object.keys(definitions).length!==65)throw Error("Incomplete historical engine package");
 

@@ -1,5 +1,5 @@
 /* GENERATED. Do not edit. */
-(function(root){"use strict";const r=root.__historicalBundle;if(!r||r.revision!=="e0ca1ff64b70e10215a98ab99974041ad6f7b1e63484032c38704d0272616c48")throw Error("Historical bundle version mismatch");const defs=r.definitions,parts=r.parts;
+(function(root){"use strict";const r=root.__historicalBundle;if(!r||r.revision!=="21e0d2fdfbe41a9acb80d6567362ec91edcdacd315e8e24316858acb4feb7c41")throw Error("Historical bundle version mismatch");const defs=r.definitions,parts=r.parts;
 defs["core/composite_entry_border_reconciliation.js"]=function(module,exports,require,Buffer){
 /* Source-pinned, read-only entry boundary topology audit.
  * A geometric exterior side is a candidate source mark, NOT a certified legal

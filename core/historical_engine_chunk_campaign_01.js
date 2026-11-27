@@ -1,5 +1,5 @@
 /* GENERATED. Do not edit. */
-(function(root){"use strict";const r=root.__historicalBundle;if(!r||r.revision!=="e0ca1ff64b70e10215a98ab99974041ad6f7b1e63484032c38704d0272616c48")throw Error("Historical bundle version mismatch");const defs=r.definitions,parts=r.parts;
+(function(root){"use strict";const r=root.__historicalBundle;if(!r||r.revision!=="21e0d2fdfbe41a9acb80d6567362ec91edcdacd315e8e24316858acb4feb7c41")throw Error("Historical bundle version mismatch");const defs=r.definitions,parts=r.parts;
 defs["core/historical_buildup_phase.js"]=function(module,exports,require,Buffer){
 /* Source-configured historical buildup transactions, checkpoint 154.
  * The policy and an EXPLICIT counter-face allocation supply all historical
@@ -1268,20 +1268,7 @@ function exact(value,keys,label){
  if(!obj(value)||Object.keys(value).length!==keys.length||keys.some(k=>!own(value,k)))
   throw Error('Invalid '+label+' fields');
 }
-function validateContext(context){
- if(!obj(context)||!obj(context.map)||!obj(context.profile)||!obj(context.config)||
-  !obj(context.counterConfig)||!obj(context.combatPolicy)||!obj(context.cursor)||
-  !obj(context.state)||typeof context.actor!=='string'||typeof context.enableAirSupport!=='boolean')
-  throw Error('Explicit historical campaign source context required');
- const {config,profile,combatPolicy,actor,cursor,state}=context;
- Phase.validate(config);
- if(config.scenarioId!==profile.id||config.scenarioId!==combatPolicy.scenarioId||
-    config.scenarioId!==state.scenarioId||config.scenarioId!==cursor.scenarioId)
-  throw Error('Campaign scenario configuration mismatch');
- const phase=Phase.current(config,cursor);
- if(!phase||phase.owner!==actor||actor==='system')throw Error('Campaign opening must be a player phase');
- if(!obj(state.units)||Object.entries(state.units).some(([id,u])=>!obj(u)||id!==u.id||typeof u.hex!=='string'||u.owner!==config.players[0]&&u.owner!==config.players[1]))
-  throw Error('Campaign ground-unit identity mismatch');
+function validateSourcePolicies(context,config,state){
  if(Boolean(context.buildupPolicy)!==Boolean(context.buildupAllocation))
   throw Error('Buildup source policy and allocation must be supplied together');
  if(context.housekeepingPolicy&&!context.buildupPolicy)
@@ -1310,6 +1297,22 @@ function validateContext(context){
  }
  if(context.firstTurnEmptyBuildupPolicy&&context.buildupPolicy)
   throw Error('Cannot run overlapping buildup controllers');
+}
+function validateContext(context){
+ if(!obj(context)||!obj(context.map)||!obj(context.profile)||!obj(context.config)||
+  !obj(context.counterConfig)||!obj(context.combatPolicy)||!obj(context.cursor)||
+  !obj(context.state)||typeof context.actor!=='string'||typeof context.enableAirSupport!=='boolean')
+  throw Error('Explicit historical campaign source context required');
+ const {config,profile,combatPolicy,actor,cursor,state}=context;
+ Phase.validate(config);
+ if(config.scenarioId!==profile.id||config.scenarioId!==combatPolicy.scenarioId||
+    config.scenarioId!==state.scenarioId||config.scenarioId!==cursor.scenarioId)
+  throw Error('Campaign scenario configuration mismatch');
+ const phase=Phase.current(config,cursor);
+ if(!phase||phase.owner!==actor||actor==='system')throw Error('Campaign opening must be a player phase');
+ if(!obj(state.units)||Object.entries(state.units).some(([id,u])=>!obj(u)||id!==u.id||typeof u.hex!=='string'||u.owner!==config.players[0]&&u.owner!==config.players[1]))
+  throw Error('Campaign ground-unit identity mismatch');
+ validateSourcePolicies(context,config,state);
  if(context.housekeepingPolicy)Housekeeping.create({map:context.map,config,policy:context.housekeepingPolicy,
   initialCityControl:context.buildupPolicy.initialCityControl});
  if(context.buildupPolicy)Buildup.create({map:context.map,profile,config,
