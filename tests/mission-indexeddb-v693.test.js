@@ -24,6 +24,20 @@ const M=require('../core/mission_storage'), F=require('./fixtures/mission-indexe
  await c.remove(id);assert.deepEqual(M.read(storage,id),legacy);assert.equal(await b.read(id),null);assert.equal(await b.exists(id),false);assert.deepEqual(await b.read(other),{turn:4});
  await a.write(id,{state:{turn:1}});assert.deepEqual(await c.read(id),{state:{turn:1}});
  const fallback=M.createStore({getStorage:()=>storage});await fallback.write('arduous',legacy);assert.deepEqual(await fallback.read('arduous'),legacy);await assert.rejects(fallback.write('arduous',big),{name:'QuotaExceededError'});assert.deepEqual(await fallback.read('arduous'),legacy);await fallback.remove('arduous');assert.equal(await fallback.exists('arduous'),false);
+ // Accessor and read failures share exactly the same fallback policy.
+ for(const getStorage of [
+  ()=>{throw new DOMException('blocked','SecurityError');},
+  ()=>({getItem(){throw new DOMException('blocked','SecurityError');}})
+ ]){
+  const primary=M.createStore({indexedDB:F.fixture().indexedDB,getStorage});
+  assert.equal(await primary.read(id),null);
+  assert.equal(await primary.exists(id),false);
+  const fallbackOnly=M.createStore({getStorage});
+  await assert.rejects(fallbackOnly.read(id),{name:'SecurityError'});
+  await assert.rejects(fallbackOnly.exists(id),{name:'SecurityError'});
+ }
+ const unexpected=M.createStore({indexedDB:F.fixture().indexedDB,getStorage:()=>{throw Error('unexpected legacy failure');}});
+ await assert.rejects(unexpected.read(id),/unexpected legacy failure/);
  await assert.rejects(a.write('invalid',{}),/Unknown mission/);
  // Concurrent callers share a failing open; the next operation retries.
  for(const failure of ['throw','error','blocked']){
