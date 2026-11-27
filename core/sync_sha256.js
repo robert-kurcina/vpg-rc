@@ -42,5 +42,12 @@ function sha256(value){
  }
  return Array.from(h,x=>x.toString(16).padStart(8,'0')).join('');
 }
-return {sha256};
+// Ordinary JSON byte contract: insertion order and JSON.stringify semantics.
+ // Not the stricter canonical serializer used for campaign receipts.
+function jsonChecksum(value){
+ const text=JSON.stringify(value);
+ if(typeof module==='object'&&module.exports)return require('node:crypto').createHash('sha256').update(text).digest('hex');
+ return sha256(text);
+}
+return {sha256,jsonChecksum};
 });

@@ -1,6 +1,6 @@
 # Russian Campaign — Playtesting and maintenance
 
-Revision 539 | Gameplay implementation CLOSED | Codebase rationalization planned | Author-led playtesting
+Revision 540 | Gameplay implementation CLOSED | Codebase rationalization planned | Author-led playtesting
 
 ## Accepted scope
 
@@ -54,6 +54,8 @@ Author-requested maintenance initiative; gameplay implementation remains closed.
 | P6 | OPEN | Rationalize development scripts, tests and fixtures with dependency evidence; merge equivalent harnesses but preserve distinct assertions, historical cases, reproducibility and CI coverage. Prefer existing tools; no elaborate new test framework. |
 | P7 | OPEN | Reconcile active documentation and archive superseded development material with provenance intact. Verify linked files and packaging; no bulk removal. |
 | P8 | OPEN | Compare measured baseline/final inventory, remaining hotspots and known risks; qualify five production games and supported variants, old saves, Undo/Redo, seeded replay/receipt equivalence, browser bundle parity, static packaging and representative performance. Close when remaining debt has no justified maintenance benefit; document deferred items. |
+
+P3b: consolidate ordinary JSON checksums in existing sync_sha256.js across native save adapter, player metadata, and historical browser save/restore (five checksum call sites). Keep Node native crypto and browser synchronous implementation, insertion-order bytes and existing validation; do not substitute canonical campaign serialization. Existing player-config regression extends Node/browser byte parity, Unicode, order, JSON edge cases and old metadata digest. Internal bundled historical engine helpers remain deferred until deterministic bundle regeneration is available; no generated files changed. CI pending.
 
 ### Function contracts
 

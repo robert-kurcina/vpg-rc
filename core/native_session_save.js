@@ -5,15 +5,14 @@
 (function(root,factory){
  const isNode=typeof module==='object'&&module.exports;
  const E=isNode?require('./engine.js'):root.WargameCore;
- const hashString=isNode?(text=>require('node:crypto').createHash('sha256').update(text).digest('hex')):root.WargameSyncSha256?.sha256;
- if(!E||!hashString)throw Error('Native save adapter requires shared engine and SHA-256');
- const api=factory(E,hashString);
+ const hash=isNode?require('./sync_sha256.js').jsonChecksum:root.WargameSyncSha256?.jsonChecksum;
+ if(!E||!hash)throw Error('Native save adapter requires shared engine and SHA-256');
+ const api=factory(E,hash);
  if(isNode)module.exports=api;
  root.WargameNativeSessionSave=api;
-})(typeof globalThis!=='undefined'?globalThis:this,function(E,hashString){
+})(typeof globalThis!=='undefined'?globalThis:this,function(E,hash){
 'use strict';
 const copy=x=>JSON.parse(JSON.stringify(x));
-const hash=x=>hashString(JSON.stringify(x));
 const PACKAGE_FIELDS=['game','map','units','rules','objectives','deployments'];
 function fingerprint(g){return hash(Object.fromEntries(PACKAGE_FIELDS.map(k=>[k,g[k]])));}
 const FORMAT='generic-hex-session-preview',VERSION=1;
