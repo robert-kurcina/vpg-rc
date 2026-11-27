@@ -30,6 +30,34 @@ with sync_playwright() as pw:
   expect(page.locator('#mission-loading')).to_be_hidden()
   assert page.evaluate("!document.querySelector('main').inert")
   expect(page.locator('#mission-menu-toggle')).to_be_visible()
+  # Both production controllers own the same page-lifetime mount contract.
+  assert page.evaluate("""async id=>{
+   const M=WargameMissionStorage,undo=document.getElementById('undo');
+   const fail=()=>{throw Error('duplicate mount replaced callbacks');};
+   const redo=M.mountToolbar({undo,redo:fail,settings:fail});
+   if(redo!==document.getElementById('redo'))return false;
+   // The original anchor was relocated into mission maintenance, not replaced.
+   const anchor=document.getElementById(id==='battle-for-moscow'?'save-game':'save').parentElement;
+   const args={id,anchor,save:fail,restore:fail,busy:fail};
+   const a=M.mount(args),b=M.mount(args);
+   if(a!==b)return false;
+   await a;
+   try{await M.mount({...args,anchor:document.body});return false;}catch(e){
+    if(!e.message.includes('another owner'))throw e;
+   }
+   const events=[],fn=value=>events.push(value);
+   const off=M.subscribe(fn);
+   if(M.subscribe(fn)!==off)return false;
+   const emit=()=>window.dispatchEvent(new StorageEvent('storage',{key:M.key(id)}));
+   emit();off();off();emit();
+   const again=M.subscribe(fn);off();emit();again();emit();
+   return events.length===2&&events.every(v=>v===id);
+  }""",id)
+  expect(page.locator('.mission-history-toolbar')).to_have_count(1)
+  expect(page.locator('#redo')).to_have_count(1)
+  expect(page.locator('#mission-settings')).to_have_count(1)
+  expect(page.locator('#mission-menu-toggle')).to_have_count(1)
+  expect(page.locator('.mission-leave-dialog')).to_have_count(1)
  def snapshot(id):return page.evaluate('WargameSession.serialize(__nativePreview.getSession())' if id=='battle-for-moscow' else 'HistoricalBrowserPreview.save()')
  def menu():
   if not page.locator('#mission-menu').is_visible():page.locator('#mission-menu-toggle').click()
