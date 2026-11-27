@@ -64,7 +64,7 @@ async function qualify(){
   inspector=new (require('node:inspector').Session)();inspector.connect();
   await send('Profiler.enable');await send('Profiler.setSamplingInterval',{interval:1000});await send('Profiler.start');
  }
- let turn=current.snapshot().cursor.turn;const reasons={},started=Date.now();
+ let turn=current.snapshot().cursor.turn;const reasons={},started=Date.now(),cpuStart=process.cpuUsage(),heapStart=process.memoryUsage().heapUsed;
 const trace=[...priorTrace];
 const combined=stats=>Object.fromEntries(Object.keys(zero).map(k=>[k,priorStats[k]+stats[k]]));
 const run=Auto.run({session:current,context,policy,policyForActor:policyFor,onStep:({session,decision,event,stats})=>{
@@ -76,11 +76,12 @@ const run=Auto.run({session:current,context,policy,policyForActor:policyFor,onSt
 if(run.reason==='controller-action-budget'){delete run.decision;delete run.detail;}
 run.trace=trace;run.stats=combined(run.stats);for(const t of trace)reasons[t.reason]=(reasons[t.reason]||0)+1;
 const computeElapsedMs=Date.now()-started;
+const computeCpu=process.cpuUsage(cpuStart),heapEnd=process.memoryUsage().heapUsed;
 if(inspector){const {profile}=await send('Profiler.stop');inspector.disconnect();fs.writeFileSync(profilePath,JSON.stringify(profile)+'\n');}
 if(browserParity&&process.env.FINAL_SAVE_PATH)fs.writeFileSync(process.env.FINAL_SAVE_PATH,JSON.stringify(run.session.save())+'\n');
 const final=run.session.snapshot(), odds={},outcomes={},fleetByTurn={};for(const t of run.trace){const type=t.action.action?.type||t.action.type;if(["declare-fleet-move","declare-fleet-attack","roll-fleet-attack","roll-fleet-move"].includes(type)){const bucket=fleetByTurn[t.turn]||={};bucket[type]=(bucket[type]||0)+1;}}for(const t of run.trace.filter(t=>t.action.action?.type==='resolve-battle')){const o=t.event?.die===null?'automatic NE':t.event?.outcome||'unknown';outcomes[o]=(outcomes[o]||0)+1;const k=t.event?.die===null?'below-minimum':String(t.event?.odds??'unknown');odds[k]=(odds[k]||0)+1;}
 A.deepEqual(C.restore(run.session.save(),context).snapshot(),final);
-const report={scenario,variant,computeElapsedMs,...(process.env.VICTORY_MODE==='graduated'?{victoryMode:'graduated'}:{}),seed,policy,matchup,factionPolicies:Object.fromEntries(context.config.players.map(actor=>[actor,Auto.policyOf(policyFor(actor))])),elapsedMs:priorElapsed+Date.now()-started,status:run.status,reason:run.reason,detail:run.detail,decision:run.decision,stats:run.stats,actions:run.trace.length,fleetByTurn,odds,outcomes,reasons,cityControl:final.state.cityControl,terminal:final.terminal,phase:final.phaseId,exactRestore:true,communicationChecks:communicationChecks+checkCommunication(final)};
+const report={scenario,variant,computeElapsedMs,computeCpuMs:(computeCpu.user+computeCpu.system)/1000,heapStartBytes:heapStart,heapEndBytes:heapEnd,...(process.env.VICTORY_MODE==='graduated'?{victoryMode:'graduated'}:{}),seed,policy,matchup,factionPolicies:Object.fromEntries(context.config.players.map(actor=>[actor,Auto.policyOf(policyFor(actor))])),elapsedMs:priorElapsed+Date.now()-started,status:run.status,reason:run.reason,detail:run.detail,decision:run.decision,stats:run.stats,actions:run.trace.length,fleetByTurn,odds,outcomes,reasons,cityControl:final.state.cityControl,terminal:final.terminal,phase:final.phaseId,exactRestore:true,communicationChecks:communicationChecks+checkCommunication(final)};
 if(limit===5000){A.equal(run.status,'complete');A.equal(final.cursor.complete,true);}else {A.ok(run.status==='complete'||run.reason==='controller-action-budget');if(run.status!=='complete')A.equal(run.trace.length,limit);}
 
 console.log(JSON.stringify(report));if(process.env.JOURNAL_PATH)fs.writeFileSync(process.env.JOURNAL_PATH,JSON.stringify(run.session.journal())+'\n');

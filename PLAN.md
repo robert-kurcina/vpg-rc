@@ -54,6 +54,8 @@ A1 paired browser benchmark: 12.0867 → 11.8037 s (2.34% shorter); unchanged No
 
 Generated runtime changes must be generated and checked before presenting a review-ready PR. Preserve strict bundle verification; do not weaken CI to avoid stale artifacts.
 
+R1 instrumentation: compare full pinned baseline and candidate worktrees on one runner, three alternating trials per revision with the same measurement-only test harness; require exact cross-revision campaign digest and existing Node/Chromium parity. Record Node process CPU time and heap endpoints (not peak heap or allocation counts); retain existing separate V8 sampled profile. Browser wall time only; hardware cache and disk metrics unavailable. PR branch triggers paired comparison and sampled profile, without changing production code. Results pending.
+
 ### Function contracts
 
 - Repeated initialization, synchronization, assignment and cleanup must have defined behavior; duplicate mounting/listeners and poisoned retry state are defects. Stateful game commands are not universally idempotent: a second action may be illegal. Do not silently deduplicate legitimate actions.
