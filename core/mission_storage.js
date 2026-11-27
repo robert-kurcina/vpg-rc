@@ -13,17 +13,22 @@
  function createStore({indexedDB,getStorage,notify=()=>{}}){
   let opening;
   function database(){
-   if(!opening)opening=new Promise((resolve,reject)=>{
+   if(opening)return opening;
+   const attempt=new Promise((resolve,reject)=>{
     if(!indexedDB){resolve(null);return;}
     let request;
     try{request=indexedDB.open(databaseName,1);}catch(e){if(e.name==='SecurityError'||e.name==='NotSupportedError'){resolve(null);return;}reject(e);return;}
     request.onupgradeneeded=()=>{if(!request.result.objectStoreNames.contains(table))request.result.createObjectStore(table);};
     let blocked=false;
-    request.onblocked=()=>{blocked=true;reject(Error('Mission database is blocked by another tab. Close other game tabs and reload.'));};
+    request.onblocked=()=>{blocked=true;reject(Error('Mission database is blocked by another tab. Close other game tabs and try again.'));};
     request.onerror=()=>{const e=request.error;if(e?.name==='SecurityError'||e?.name==='NotSupportedError')resolve(null);else reject(e||Error('Could not open mission database.'));};
-    request.onsuccess=()=>{const db=request.result;if(blocked){db.close();return;}db.onversionchange=()=>{db.close();opening=null;};resolve(db);};
+    request.onsuccess=()=>{const db=request.result;if(blocked){db.close();return;}db.onversionchange=()=>{db.close();if(opening===attempt)opening=null;};resolve(db);};
    });
-   return opening;
+   opening=attempt;
+   // Share concurrent opens, but allow a subsequent explicit operation to retry
+   // a failed open. An obsolete request must not invalidate a newer connection.
+   attempt.catch(()=>{if(opening===attempt)opening=null;});
+   return attempt;
   }
   // Resolve only after the whole transaction has committed, not request success.
   function transaction(db,mode,work){return new Promise((resolve,reject)=>{
