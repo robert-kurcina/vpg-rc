@@ -1,6 +1,6 @@
 # Russian Campaign — Playtesting and maintenance
 
-Revision 541 | Gameplay implementation CLOSED | Codebase rationalization planned | Author-led playtesting
+Revision 542 | Gameplay implementation CLOSED | Codebase rationalization planned | Author-led playtesting
 
 ## Accepted scope
 
@@ -57,7 +57,7 @@ Author-requested maintenance initiative; gameplay implementation remains closed.
 
 P3b: consolidate ordinary JSON checksums in existing sync_sha256.js across native save adapter, player metadata, and historical browser save/restore (five checksum call sites). Keep Node native crypto and browser synchronous implementation, insertion-order bytes and existing validation; do not substitute canonical campaign serialization. Existing player-config regression extends Node/browser byte parity, Unicode, order, JSON edge cases and old metadata digest. Internal bundled historical engine helpers remain deferred until deterministic bundle regeneration is available; no generated files changed. CI pending.
 
-P3c: consolidate historical human/deployment/action-catalog/autoplay ordinary JSON helpers (clone, object predicate, equality and digest). Preserve canonical campaign serialization, timing-safe digest comparisons, RNG and action ordering. Draft PR only: generated bundle update required before merge. Temporary read-only CI generation job produces deterministic patch artifact; remove temporary job after generated outputs are committed and qualified. PR53 checksum changes passed CI (46053141245). Direct clone remains unavailable in this session.
+P3c: consolidate historical human/deployment/action-catalog/autoplay ordinary JSON helpers (clone, object predicate, equality and digest). Preserve canonical campaign serialization, timing-safe digest comparisons, RNG and action ordering. PR54 merged before generated bundle update; CI correctly rejected stale bundle. Corrective PR synchronizes all 16 generated scripts against successful generation artifact 15224969312 (run 46053485303), with every resulting Git blob prefix matching the artifact patch; module count 64 → 65. Temporary generation job removed. Full acceptance and operational parity pending; no additional engine source edits. PR53 checksum changes passed CI (46053141245). Direct clone remains unavailable in this session.
 
 ### Function contracts
 
