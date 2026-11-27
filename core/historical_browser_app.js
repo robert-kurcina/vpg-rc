@@ -28,27 +28,37 @@ let postRollSearchToken=0,postRollLoading=false;
 let aiAssignment='manual',aiPaused=true,aiTimer=null,aiReady=false;
 const perfStats=Object.create(null);
 function measured(name,fn){const start=performance.now();try{return fn();}finally{const elapsed=performance.now()-start;const entry=perfStats[name]||(perfStats[name]={count:0,ms:0,maxMs:0});entry.count++;entry.ms+=elapsed;entry.maxMs=Math.max(entry.maxMs,elapsed);}}
+// The human gateway returns immutable successor identities. Keep only the
+// current detached presentation snapshot; never expose it through the public API.
+let snapshotOwner=null,presentationSnapshot;
+function uiSnapshot(){
+ if(snapshotOwner!==human){
+  const next=human?measured('uiSnapshotParse',()=>human.snapshot()):undefined;
+  snapshotOwner=human;presentationSnapshot=next;
+ }
+ return presentationSnapshot;
+}
 let aiProgressActive=false,lastAIFrame=-Infinity;
 // Housekeeping is a deterministic system phase, not a third human faction.
 function computerOwns(actor){return actor==='system'?aiAssignment!=='manual':['german','soviet'].includes(actor)&&(aiAssignment==='both'||aiAssignment===actor);}
-function autoEligible(){return aiReady&&!aiPaused&&!aiRunning&&!setupActive&&human&&!human.snapshot().cursor.complete&&!human.hasPendingRoll()&&computerOwns(human.snapshot().actor);}
+function autoEligible(){return aiReady&&!aiPaused&&!aiRunning&&!setupActive&&human&&!uiSnapshot().cursor.complete&&!human.hasPendingRoll()&&computerOwns(uiSnapshot().actor);}
 function pauseAutomatic(){aiPaused=true;if(aiTimer!==null){clearTimeout(aiTimer);aiTimer=null;}}
 function syncHistory(){
  redoHistory?.observe(human);const blocked=setupActive||aiRunning||!human;
- if($('undo'))$('undo').disabled=blocked||!(human.hasPendingRoll()||human.snapshot().actionCount>0);
+ if($('undo'))$('undo').disabled=blocked||!(human.hasPendingRoll()||uiSnapshot().actionCount>0);
  if($('redo'))$('redo').disabled=blocked||!redoHistory?.available(human);
 }
 function syncAutomatic(){
  syncHistory();
  if(!aiReady)return;
  $('ai-assignment').disabled=aiRunning;
- const complete=!setupActive&&!!human?.snapshot().cursor.complete;
+ const complete=!setupActive&&!!uiSnapshot().cursor.complete;
  $('ai-resume').disabled=aiRunning||complete||aiAssignment==='manual';
  $('ai-step').disabled=aiRunning||complete;
  $('ai-side').disabled=aiRunning||complete;
  $('ai-resume').textContent=aiPaused?'Resume automatic play':'Pause automatic play';
  syncPhaseBar();
- $('ai-ownership-status').textContent=complete?'Campaign complete':aiAssignment==='manual'?'Manual handoff':aiPaused?'Automatic play paused — manual control available':human?.hasPendingRoll()?'Waiting for committed human die resolution':setupActive?'Waiting for deployment':human?.snapshot().cursor.complete?'Campaign complete':computerOwns(human?.snapshot().actor)?(human?.snapshot().actor==='system'?'Automatic housekeeping':'Computer controls current side'):'Human controls current side';
+ $('ai-ownership-status').textContent=complete?'Campaign complete':aiAssignment==='manual'?'Manual handoff':aiPaused?'Automatic play paused — manual control available':human?.hasPendingRoll()?'Waiting for committed human die resolution':setupActive?'Waiting for deployment':uiSnapshot().cursor.complete?'Campaign complete':computerOwns(uiSnapshot().actor)?(uiSnapshot().actor==='system'?'Automatic housekeeping':'Computer controls current side'):'Human controls current side';
  if(autoEligible()&&aiTimer===null)aiTimer=setTimeout(()=>{aiTimer=null;if(autoEligible())$('ai-side').onclick();},0);
 }
 function syncPhaseBar(){
@@ -59,7 +69,7 @@ function syncPhaseBar(){
   return;
  }
  if(!human||!view)return;
- const s=human.snapshot(),c=s.cursor||{};
+ const s=uiSnapshot(),c=s.cursor||{};
  const label=c.complete?($('campaign-result')?.querySelector('strong')?.textContent||'Campaign complete'):
   'Turn '+(c.turn||'—')+' / '+sourceData.contextSettings.config.turns+' · '+String(s.actor||'').toUpperCase()+' · '+String(s.phaseId||'').replaceAll('-',' ');
  let action=null;
@@ -82,7 +92,7 @@ function syncPhaseBar(){
  }
  shell.setPhase({label,action});
 }
-function humanActionBlocked(){return aiRunning||(!aiPaused&&human&&!human.hasPendingRoll()&&computerOwns(human.snapshot().actor));}
+function humanActionBlocked(){return aiRunning||(!aiPaused&&human&&!human.hasPendingRoll()&&computerOwns(uiSnapshot().actor));}
 
 function cancelPostRollSearch(){postRollSearchToken++;postRollLoading=false;const button=$('post-roll-cancel');if(button)button.hidden=true;}
 let setupSelection=null,setupPointer=null,setupDragClickUntil=0,setupDragClickTarget=null;
@@ -161,7 +171,7 @@ function mountCRTSettings(){
 const stackTopByHex=new Map();
 function currentRetreatMap(){
  if(!RetreatMap||setupActive||!human||view?.kind!=='post-roll-choice')return {active:false,routes:[],byDestination:{}};
- return RetreatMap.model({options:view.options,units:human.snapshot().state.units,cells:sourceData.contextSettings.map.cells});
+ return RetreatMap.model({options:view.options,units:uiSnapshot().state.units,cells:sourceData.contextSettings.map.cells});
 }
 function stageRetreat(routeId){
  const m=currentRetreatMap(),route=RetreatMap?.routeById(m,routeId);
@@ -173,7 +183,7 @@ function clearRetreat(){retreatSelection=null;renderActions();showBoard();messag
 function readableUnit(id){
  const face=sourceData?.counterConfig?.faces?.front?.find(f=>f.faceId===id)||sourceData?.counterConfig?.faces?.back?.find(f=>f.faceId===id);
  const name=face?.visualTranscription?.printedIdentifier||id;
- const unit=human?.snapshot()?.state?.units?.[id];return name+(unit?.hex?' at '+unit.hex:'');
+ const unit=uiSnapshot()?.state?.units?.[id];return name+(unit?.hex?' at '+unit.hex:'');
 }
 async function updateMapDisplay(){
  if(!displayControl||!sourceData)return;
@@ -234,7 +244,7 @@ function summarizeCombat(x,effects=null){
  // Revealing a one-step counter changes its printed face, not its strength.
  // Do not disclose the hidden reverse strength in a pre-commit description.
  if(Array.isArray(effects?.revealed))for(const id of effects.revealed){
-  const u=human?.snapshot()?.state?.units?.[id];
+  const u=uiSnapshot()?.state?.units?.[id];
   const label=u?u.owner+' '+u.class+(u.hex?' at '+u.hex:''):id;
   parts.push('Revealed: '+label);
  }
@@ -261,7 +271,7 @@ function currentBuildupMap(state){return BuildupMap.model({phaseKind:setupActive
  commands:actionList,units:state.units,mode:buildupMode,slotId:buildupSlot,reserveId:buildupReserve});}
 function currentSupportMap(){
  if(!SupportMap||setupActive||!human)return SupportMap?.model()||{active:false,hexes:[],byHex:{}};
- const state=human.snapshot();
+ const state=uiSnapshot();
  const fleetPolicy=sourceData?.contextSettings?.combatPolicy?.portSupport;
  const fleetHex=fleetPolicy?state.state?.supportMarkers?.[fleetPolicy.markerKey]?.hex:null;
  return SupportMap.model({selection:supportSelection,commands:aiRunning?[]:actionList,
@@ -284,12 +294,12 @@ function supportMapHit(hex){
 
 function rotateStack(hex){
  if(setupActive||!human||aiRunning)return false;
- const stacks=Object.values(human.snapshot().state.units||{}).filter(u=>u.hex===hex&&
+ const stacks=Object.values(uiSnapshot().state.units||{}).filter(u=>u.hex===hex&&
   !['eliminated','dead'].includes(u.strengthStatus));
  const next=BuildupMap.nextTop(stacks,stackTopByHex.get(hex));
  if(!next)return false;
  stackTopByHex.set(hex,next);showBoard();
- const m=currentBuildupMap(human.snapshot().state);
+ const m=currentBuildupMap(uiSnapshot().state);
  const target=BuildupMap.actionAtHex({...m,mode:'repair'},hex,stackAt(hex,stacks));
  message('Stack at '+hex+' swapped. Top: '+next+'.'+
   (target?' Eligible repair target: '+target.unitId+'. Click the highlighted hex to restore it.':''));
@@ -297,7 +307,7 @@ function rotateStack(hex){
 }
 function renderBuildupControls(){
  const controls=$('buildup-map-controls');if(!controls)return;
- const state=!setupActive&&human?human.snapshot():null;
+ const state=!setupActive&&human?uiSnapshot():null;
  const m=state?currentBuildupMap(state.state):{active:false};
  controls.hidden=!m.active;
  // A generic pointer hover must never resemble a legal highlighted repair.
@@ -329,7 +339,7 @@ function renderBuildupControls(){
 function displayJournal(){return measured('journalCopy',()=>human.journal());}
 function showBoard(){
  if(!setupActive&&!human)return;
- const snapshot=setupActive?null:human.snapshot();
+ const snapshot=setupActive?null:uiSnapshot();
  const state=setupActive?{units:(candidateMode?candidateEditor:deployment).snapshot().units}:snapshot.state;
  const journal=setupActive||snapshot.phaseKind!=='buildup'?[]:displayJournal();
  const allocation=context?.buildupAllocation||{};
@@ -534,7 +544,7 @@ function enterSetup(){
  retreatSelection=null;
  if(candidateMode&&!candidateEditor)throw Error('Source-constrained candidate deployment not loaded');
  if(aiRunning)throw Error('Stop the AI before changing deployment');pauseAutomatic();
- if(human?.snapshot().actionCount>0)throw Error('A game already in progress cannot be redeployed; start a new candidate game first');
+ if(uiSnapshot().actionCount>0)throw Error('A game already in progress cannot be redeployed; start a new candidate game first');
  if(!candidateMode&&!deployment)deployment=E.Deployment.create({...sourceData.deploymentSource,
   allocation:candidateAllocation,placements:candidatePlacements});
  if(!setupMaster)setupMaster=human?.missionSeed()||E.Random.generate();
@@ -779,7 +789,7 @@ function refreshSupportWindow(){
  const policy=combatPolicy.airSupport;
  const portPolicy=combatPolicy.portSupport;
  if(!policy&&!portPolicy)return;
- const state=!setupActive&&human?human.snapshot():null;
+ const state=!setupActive&&human?uiSnapshot():null;
  const turn=state?.cursor?.turn||1;
  const airUse=state?.state?.airUse||{};
  const usedThisTurn=airUse[String(turn)]||{};
@@ -860,7 +870,7 @@ function refreshAIProgress(force=false){
  const now=performance.now();const entering=!aiProgressActive;
  if(!force&&!entering&&now-lastAIFrame<250)return;
  aiProgressActive=true;lastAIFrame=now;
- const s=human.snapshot();
+ const s=uiSnapshot();
  view={kind:'ai-progress',phaseId:s.phaseId,phaseKind:s.phaseKind,actor:s.actor,commands:[],proposals:[],prompts:[]};
  actionList=[];
  $('status').innerHTML='<div class="phase">Turn '+enc(s.cursor.turn)+' · '+enc(s.actor||'complete')+'</div><div class="summary">Phase: '+enc(s.phaseId)+' · Actions: '+enc(s.actionCount)+' · Computer playing</div>';
@@ -884,7 +894,7 @@ function refresh(){
  if(moveSelection){clearActionFilter();}clearMoveSelection();syncCRTControls();syncAutomatic();
  if(setupActive){refreshSupportWindow();renderSetup();return}
  if(!human)return;
- renderSetup();view=measured('humanView',()=>human.view(postRollPage));const s=human.snapshot();
+ renderSetup();view=measured('humanView',()=>human.view(postRollPage));const s=uiSnapshot();
  const c=s.cursor||{};
  $('status').innerHTML='<div class="phase">Turn '+enc(c.turn||'—')+' · '+enc(s.actor||'complete')+'</div>'+
   '<div class="summary">Phase: '+enc(s.phaseId||'Complete')+' · '+enc(s.phaseKind||'terminal')+'<br>Actions: '+enc(s.actionCount)+' · '+(c.complete?'Final result available':'In progress')+'</div>';
@@ -935,7 +945,7 @@ function cityControlNotice(before,after){
    old[name]!==newer[name]).map(name=>name+': '+old[name]+' → '+newer[name]);
  return changed.length?'City control changed — '+changed.join(' · '):'';
 }
-function choose(a){try{cancelPostRollSearch();if(setupActive)throw Error('Finish deployment before playing');if(humanActionBlocked())throw Error('Pause automatic play before submitting a human action');const old=human.snapshot();const next=human.choose(a);const nextState=next.snapshot();const cityNotice=cityControlNotice(old,nextState);human=next;clearPostRollSelection();
+function choose(a){try{cancelPostRollSearch();if(setupActive)throw Error('Finish deployment before playing');if(humanActionBlocked())throw Error('Pause automatic play before submitting a human action');const old=uiSnapshot();const next=human.choose(a);const nextState=next.snapshot();const cityNotice=cityControlNotice(old,nextState);human=next;snapshotOwner=next;presentationSnapshot=nextState;clearPostRollSelection();
  if(old.phaseId!==nextState.phaseId||old.actor!==nextState.actor||!old.stackingCleanup&&nextState.stackingCleanup){clearActionFilter();selectedBattles.clear();}
  const type=a?.action?.type||a?.type;
  if(type==='declare-ground-move'||type==='resolve-ground-move'){clearActionFilter();}
@@ -1111,7 +1121,7 @@ async function start(){
   // Non-playable setup previews must never require/claim a certified movement graph.
   // The approved map and counters still render using the shared visual modules.
   if(!setupOnly)terrainTooltip=root.WargameTerrainTooltips.mount({surface:$('map-scroll'),board:map,settings:displayControl,
-   gameRules:{movement:profile,combat:combatPolicy},edgeBoard:E.MovementReference.build(map,profile).board,unitsAtHex:el=>{const id=el?.closest?.('[data-unit-id]')?.dataset.unitId;return (setupActive?(candidateMode?candidateEditor:deployment)?.snapshot().units:human?.snapshot().state.units)?.[id]?.hex||null}});
+   gameRules:{movement:profile,combat:combatPolicy},edgeBoard:E.MovementReference.build(map,profile).board,unitsAtHex:el=>{const id=el?.closest?.('[data-unit-id]')?.dataset.unitId;return (setupActive?(candidateMode?candidateEditor:deployment)?.snapshot().units:uiSnapshot().state.units)?.[id]?.hex||null}});
   root.WargameMissionLoading?.stage('Preparing campaign and legal orders…');
   reset();
   $('new-game').onclick=reset;
@@ -1140,11 +1150,11 @@ async function start(){
   function onLiveMapHit(node,shift=false){
    if(setupActive)return false;
    if(!human)return false;
-   if(human.snapshot().cursor.complete){message('Campaign complete. Start a new mission to play again.');return true;}
+   if(uiSnapshot().cursor.complete){message('Campaign complete. Start a new mission to play again.');return true;}
    if(humanActionBlocked()){message('Computer controls this side. Pause automatic play to issue orders.');return true;}
    const routeHit=node.closest('[data-retreat-route]'),unit=node.closest('[data-unit-id]'),hexHit=node.closest('[data-hex]');
    if(routeHit){const staged=stageRetreat(routeHit.dataset.retreatRoute);if(staged)root.WargameResponsiveShell?.openAt('orders-section');return staged;}
-   const current=human.snapshot();const hex=unit?current.state.units[unit.dataset.unitId]?.hex:hexHit?.dataset.hex;
+   const current=uiSnapshot();const hex=unit?current.state.units[unit.dataset.unitId]?.hex:hexHit?.dataset.hex;
    const stack=hex?Object.values(current.state.units).filter(u=>u.hex===hex&&!['eliminated','dead'].includes(u.strengthStatus)):[];
    if(supportSelection){if(hex)return supportMapHit(hex);message('Select a highlighted legal hex, or cancel Support selection.');return true;}
    const retreatMap=currentRetreatMap();
@@ -1240,25 +1250,25 @@ async function start(){
   // Per-faction policy is persistent configuration, separate from authoritative rules state.
   // Capture once per side so a running side cannot silently change doctrine.
   function selectedAIPolicy(){
-   const mode=$(human.snapshot().actor==='soviet'?'ai-policy-soviet':'ai-policy')?.value||$('ai-policy')?.value||'diagnostic';
-   const difficulty=Number($(human.snapshot().actor==='soviet'?'ai-difficulty-soviet':'ai-difficulty')?.value||0);
+   const mode=$(uiSnapshot().actor==='soviet'?'ai-policy-soviet':'ai-policy')?.value||$('ai-policy')?.value||'diagnostic';
+   const difficulty=Number($(uiSnapshot().actor==='soviet'?'ai-difficulty-soviet':'ai-difficulty')?.value||0);
    if(mode==='diagnostic'&&!difficulty)return {selectionMode:'first'};
    if(['diagnostic','operational','reserve-relief'].includes(mode))return {selectionMode:'first',phaseScope:'operational',objectivePolicy:mode==='reserve-relief'?'reserve-relief':'baseline',...(difficulty?{difficulty}:{})};
    throw Error('Unknown computer strategy');
   }
   $('ai-side').onclick=async()=>{
-   if(aiRunning||setupActive||!human||human.snapshot().cursor.complete)return;
+   if(aiRunning||setupActive||!human||uiSnapshot().cursor.complete)return;
    if(human.hasPendingRoll()){message('Resolve the committed human die before passing control to the AI.');return}
-   if(!aiPaused&&aiAssignment!=='manual'&&!computerOwns(human.snapshot().actor)){message('This side is assigned to the human. Pause automatic play to override.');return}
+   if(!aiPaused&&aiAssignment!=='manual'&&!computerOwns(uiSnapshot().actor)){message('This side is assigned to the human. Pause automatic play to override.');return}
    cancelPostRollSearch();clearPostRollSelection();clearMoveSelection();clearBattleSelection();
    clearSupportSelection();aiRunning=true;aiStopRequested=false;$('ai-stop').hidden=false;$('ai-side').disabled=true;
-   const actor=human.snapshot().actor;let count=0;
+   const actor=uiSnapshot().actor;let count=0;
    for(const id of ['ai-policy','ai-policy-soviet','ai-difficulty','ai-difficulty-soviet'])if($(id))$(id).disabled=true;
    $('ai-step').disabled=true;syncAutomatic();
    try{
     refreshAIProgress();
     const policy=selectedAIPolicy();
-    while(count<128&&!aiStopRequested&&human.snapshot().actor===actor&&!human.snapshot().cursor.complete){
+    while(count<128&&!aiStopRequested&&uiSnapshot().actor===actor&&!uiSnapshot().cursor.complete){
      const next=measured('aiTransaction',()=>human.autoplayStep(policy));
      if(!next.session)throw Error('AI policy blocked: '+(next.decision.reason||next.decision.status));
      human=next.session;redoHistory?.observe(human);count++;
@@ -1267,7 +1277,7 @@ async function start(){
      const yieldStart=performance.now();await new Promise(resolve=>setTimeout(resolve,0));
      const elapsed=performance.now()-yieldStart;const timing=perfStats.aiYield||(perfStats.aiYield={count:0,ms:0,maxMs:0});timing.count++;timing.ms+=elapsed;timing.maxMs=Math.max(timing.maxMs,elapsed);
     }
-    const sameActor=!human.snapshot().cursor.complete&&human.snapshot().actor===actor;
+    const sameActor=!uiSnapshot().cursor.complete&&uiSnapshot().actor===actor;
     const chunkEnded=count===128&&sameActor;
     // Keep the bounded browser chunk, but only pause a manual side request.
     // Automatic continuation is scheduled by syncAutomatic after refresh,
@@ -1281,7 +1291,7 @@ async function start(){
   $('ai-stop').onclick=()=>{pauseAutomatic();aiStopRequested=true;syncAutomatic()};
   $('ai-step').onclick=()=>{
    if(aiRunning){message('Wait for or stop the current AI side.');return}
-   if(setupActive||!human||human.snapshot().cursor.complete)return;
+   if(setupActive||!human||uiSnapshot().cursor.complete)return;
    if(!aiPaused&&aiAssignment!=='manual'){message('Pause automatic play before using manual AI step.');return}
    try{
     const next=human.autoplayStep(selectedAIPolicy());

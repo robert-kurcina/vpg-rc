@@ -177,13 +177,15 @@ jobs:
           if-no-files-found: warn
           retention-days: 14
   operational-parity:
-    # Run the representative controlled comparison once for this change,
+    # Run the representative controlled comparison for this performance batch,
     # or explicitly via dispatch; avoid repeated expensive qualification.
-    if: github.event_name == 'workflow_dispatch'
+    if: github.event_name == 'workflow_dispatch' || github.head_ref == 'perf/browser-state-indexes'
     runs-on: ubuntu-latest
     timeout-minutes: 25
     steps:
       - uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
       - uses: actions/setup-python@v6
         with:
           python-version: '3.12'
@@ -203,6 +205,16 @@ jobs:
             if curl --fail --silent --output /dev/null http://127.0.0.1:8765/index.html; then break; fi
             sleep 1
           done
+          if [ "${{ github.head_ref }}" = "perf/browser-state-indexes" ]; then
+            # Compare the pinned pre-change controller using the identical engine,
+            # test runner, seed, browser and host. Fresh browser context per run.
+            git show 49afc8c9ee5bd1b7f13e5b700908e4393e517045:core/historical_browser_app.js > "${RUNNER_TEMP}/baseline-controller.js"
+            cp core/historical_browser_app.js "${RUNNER_TEMP}/candidate-controller.js"
+            trap 'cp "${RUNNER_TEMP}/candidate-controller.js" core/historical_browser_app.js' EXIT
+            cp "${RUNNER_TEMP}/baseline-controller.js" core/historical_browser_app.js
+            python tests/mission-hosted-v693.py --live-scenario kiev --operational-parity --evidence-dir browser-evidence/baseline
+            cp "${RUNNER_TEMP}/candidate-controller.js" core/historical_browser_app.js
+          fi
           python tests/mission-hosted-v693.py --live-scenario kiev --operational-parity --evidence-dir browser-evidence
       - uses: actions/upload-artifact@v6
         if: always()
