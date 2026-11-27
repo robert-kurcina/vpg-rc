@@ -517,6 +517,12 @@ function begin({rootDir,profilePath,mapPath,registryPath,projectRoot,aiProfilePa
    start();
   }catch(err){globalThis.WargameMissionLoading?.fail(err);$('game-status').textContent='Game unavailable: '+err.message;show(err.message,true);console.error(err);}
  }
+ // Apply the same source-authorized CRT configuration to new games and
+ // restore candidates. The caller owns its detached package.
+ function applyAdvancedCRT(packageForGame,CRT,scenarioId){
+  packageForGame.rules.combat.crtVariant='advanced';
+  packageForGame.rules.combat.table=CRT.tableFor(scenarioId,'advanced');
+ }
  function start(){
   if(aiRunning)return show("Wait for the current AI side to finish.",true);pauseAutomatic();
   const input=$('seed').value.trim();
@@ -529,31 +535,36 @@ function begin({rootDir,profilePath,mapPath,registryPath,projectRoot,aiProfilePa
   if(variant==='advanced'){
    const CRT=globalThis.WargameHistoricalCRT;
    if(!CRT)throw Error('Shared Advanced CRT unavailable');
-   packageForGame.rules.combat.crtVariant='advanced';
-   packageForGame.rules.combat.table=CRT.tableFor(g.game.id,'advanced');
+   applyAdvancedCRT(packageForGame,CRT,g.game.id);
   }
   g=E.build(packageForGame);
   session=S.create({scenarioId:g.game.id,engine:'generic-hex-v1',config:g,state:{...E.start(g,seed,$('manual-setup').checked?'manual':'auto-reference',{openingRedeployment:$('candidate-redeployment').checked}),missionSeed:seed}});
   cleanSelection();show('Native session started. Select a counter or finish the phase.');render();
+ }
+ // Publish only a validated policy. A rejected load must remain retryable.
+ async function loadAIPolicy(strategy){
+    const file=strategy==='objective'?aiObjectiveProfilePath:strategy==='capture'?aiCaptureProfilePath:aiProfilePath;
+    if(!file&&strategy!=='baseline')throw Error('No selected AI policy configured');
+    const policy=AI.policy(file?await fetchJson(file):{});
+    if(strategy==='objective'&&policy.mode!=='objective-guard-v1'||strategy==='capture'&&policy.mode!=='objective-advance-v1')throw Error('Incorrect objective AI policy');
+    aiProfiles[strategy]=policy;
+ }
+ function setAIControlsDisabled(disabled){
+  for(const id of ['ai-strategy','ai-strategy-soviet','ai-difficulty','ai-difficulty-soviet','ai-play-side'])if($(id))$(id).disabled=disabled;
  }
  async function playAISide(){
   if(!session)return show('Start a native game before running AI.',true);
   if(aiRunning)return null;
   if(current().pendingRoll!==null)return show('Resolve the committed human die before AI play.',true);
   if(!aiPaused&&!computerOwns(current().side))return show('Pause automatic play before overriding a human side.',true);
-  aiRunning=true;aiStop=false;for(const id of ['ai-strategy','ai-strategy-soviet','ai-difficulty','ai-difficulty-soviet','ai-play-side'])if($(id))$(id).disabled=true;syncAutomatic();
+  aiRunning=true;aiStop=false;setAIControlsDisabled(true);syncAutomatic();
   try{
    if(!AI)throw Error('Native shared-session AI is not loaded');
    // Every strategy uses the same legal-action contract and game state.
    // A policy selection is metadata, not executable scenario-specific code.
    const strategy=$(current().side==='soviet'?'ai-strategy-soviet':'ai-strategy')?.value||$('ai-strategy')?.value||'baseline';
    if(!['baseline','objective','capture'].includes(strategy))throw Error('Unknown AI strategy');
-   if(!aiProfiles[strategy]){
-    const file=strategy==='objective'?aiObjectiveProfilePath:strategy==='capture'?aiCaptureProfilePath:aiProfilePath;
-    if(!file&&strategy!=='baseline')throw Error('No selected AI policy configured');
-    aiProfiles[strategy]=AI.policy(file?await fetchJson(file):{});
-    if(strategy==='objective'&&aiProfiles[strategy].mode!=='objective-guard-v1'||strategy==='capture'&&aiProfiles[strategy].mode!=='objective-advance-v1')throw Error('Incorrect objective AI policy');
-   }
+   if(!aiProfiles[strategy])await loadAIPolicy(strategy);
    // Retain the iterator only for an unchanged paused position and strategy.
    // Yield between transactions, but finish already committed combat dice.
    const difficulty=Number($(current().side==='soviet'?'ai-difficulty-soviet':'ai-difficulty')?.value||0);
@@ -574,7 +585,7 @@ function begin({rootDir,profilePath,mapPath,registryPath,projectRoot,aiProfilePa
    show(`${name} ${out.summary.side} · ${out.actions.length} legal actions · ${out.summary.moves} moves · ${out.summary.battles} battles. Not legacy strategic-policy parity.`);
    return out.summary;
   }catch(err){pauseAutomatic();pausedRun=null;cleanSelection();render();show('AI action rejected: '+err.message,true);return null;}
-  finally{aiRunning=false;for(const id of ['ai-strategy','ai-strategy-soviet','ai-difficulty','ai-difficulty-soviet','ai-play-side'])if($(id))$(id).disabled=false;syncAutomatic();}
+  finally{aiRunning=false;setAIControlsDisabled(false);syncAutomatic();}
  }
  for(const button of document.querySelectorAll('[data-reference]'))button.addEventListener('click',()=>{referenceTab=button.dataset.reference;referenceContent();});
  $('ai-play-side')?.addEventListener('click',playAISide);
@@ -592,25 +603,32 @@ function begin({rootDir,profilePath,mapPath,registryPath,projectRoot,aiProfilePa
   globalThis.WargamePlayerSaveConfig.download(portableSave(),'native-'+g.game.id+'-turn-'+current().turn+'.json');
   show('Versioned native session exported.');
  }catch(err){show('Save rejected: '+err.message,true);}});
- function restorePortable(input){
-   if(aiRunning)throw Error('Wait for the current AI side to finish');pauseAutomatic();
-   const decoded=globalThis.WargamePlayerSaveConfig?globalThis.WargamePlayerSaveConfig.unpack(input,playerStrategies):{save:input,players:{assignment:'manual',german:'baseline',soviet:'baseline'}};const payload=decoded.save;
+ function restoreCandidates(){
    // Select the ruleset by its authenticated source fingerprint; never trust
    // unverified save content to supply new executable rules.
    const CRT=globalThis.WargameHistoricalCRT;
    const alternatives=[JSON.parse(JSON.stringify(basePackage)),JSON.parse(JSON.stringify(basePackage))];
-   alternatives[1].rules.combat.crtVariant='advanced';
-   alternatives[1].rules.combat.table=CRT.tableFor(basePackage.game.id,'advanced');
+   applyAdvancedCRT(alternatives[1],CRT,basePackage.game.id);
    if(baseProfile?.stackingVariant)for(const candidate of alternatives.slice())alternatives.push(Project.withStacking(candidate,baseProfile,'double'));
    if(Graduated)for(const candidate of alternatives.slice())alternatives.push(Graduated.withNative(candidate,'graduated'));
    // Previously saved campaigns retain their original forced-hold and destination-only policy.
    if(basePackage.rules.adjudications)for(const candidate of alternatives.slice()){const legacy=JSON.parse(JSON.stringify(candidate));delete legacy.rules.adjudications;alternatives.push(legacy);}
+   return alternatives;
+ }
+ function resolvePortableSession(payload){
+   const alternatives=restoreCandidates();
    let restored=null,chosen=null;
    for(const candidate of alternatives){
     const engine=E.build(candidate);
     try{restored=S.restore(payload,{scenarioId:engine.game.id,engine:'generic-hex-v1',config:engine});chosen=engine;break;}catch(e){if(e.message!=='Native save scenario-package mismatch')throw e;}
    }
    if(!restored)throw Error('Save does not match any supported CRT and stacking combination');
+   return {restored,chosen};
+ }
+ function restorePortable(input){
+   if(aiRunning)throw Error('Wait for the current AI side to finish');pauseAutomatic();
+   const decoded=globalThis.WargamePlayerSaveConfig?globalThis.WargamePlayerSaveConfig.unpack(input,playerStrategies):{save:input,players:{assignment:'manual',german:'baseline',soviet:'baseline'}};const payload=decoded.save;
+   const {restored,chosen}=resolvePortableSession(payload);
    if(aiRunning)throw Error('Wait for the current AI side to finish');
    g=chosen;session=restored;applyPlayers(decoded.players);if($('advanced-crt'))$('advanced-crt').checked=g.rules.combat.crtVariant==='advanced';
    if($('stacking-mode'))$('stacking-mode').value=g.rules.specialRules.some(x=>x.module==='stacked-battle-v1')?'double':'historical';
