@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "focused": [
+    "tests/mission-indexeddb-v693.test.js",
+    "tests/single-pass-movement-binding-v664.test.js",
+    "tests/b4m-source-combat-v586.test.js",
+    "tests/b4m-source-movement-v585.test.js",
+    "tests/historical-housekeeping-eight-turn-v389.test.js",
+    "tests/shared-terrain-reference-v676.test.js",
+    "tests/b4m-double-stack-foundation-v684.test.js",
+    "tests/graduated-mode-v689.test.js",
+    "tests/ai-difficulty-v668.test.js",
+    "tests/player-save-config-v654.test.js",
+    "tests/advanced-crt-v557.test.js",
+    "tests/mission-random-v629.test.js",
+    "tests/historical-human-decision-gateway-v401.test.js",
+    "tests/historical-autoplay-contract-v399.test.js",
+    "tests/historical-fleet-budget-scope-v643.test.js"
+  ]
+}

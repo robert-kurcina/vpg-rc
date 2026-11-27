@@ -5,27 +5,11 @@ on:
   workflow_dispatch:
   pull_request:
     paths:
-      - 'tests/mission-hosted-v693.py'
-      - 'tests/mission-indexeddb-v693.test.js'
-      - 'tests/fixtures/mission-indexeddb-fixture-v693.js'
-      - 'tests/historical-operational-qualification-v644.test.js'
-      - 'scripts/summarize-campaign-profile.js'
-      - 'scripts/audit-source-inventory.py'
-      - 'tests/fixtures/terminal-v694/**'
-      - 'scripts/run-native-campaign.js'
-      - 'scripts/build-static-release.py'
-      - 'scripts/build-historical-browser-bundle.py'
-      - 'scripts/render-terrain-chart-specimens.js'
+      - 'tests/**'
+      - 'scripts/**'
       - 'tools/terrain-effects-chart/**'
-      - 'tests/b4m-source-combat-v586.test.js'
-      - 'tests/b4m-source-movement-v585.test.js'
-      - 'tests/historical-housekeeping-eight-turn-v389.test.js'
-      - 'tests/shared-terrain-reference-v676.test.js'
       - 'maps/**'
       - 'references/rules/**'
-      - 'scripts/build-rulebook-html.py'
-      - 'tests/rulebook-cases-v696.py'
-      - 'tests/rulebook-navigation-v693.py'
       - '.github/workflows/mission-browser-acceptance.yml'
       - 'core/**'
       - 'games/**'
@@ -43,23 +27,11 @@ jobs:
       - uses: actions/setup-node@v5
         with:
           node-version: '22'
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
       - name: Verify existing approved rules and terrain references
-        run: |
-          node tests/mission-indexeddb-v693.test.js
-          node tests/single-pass-movement-binding-v664.test.js
-          node tests/b4m-source-combat-v586.test.js
-          node tests/b4m-source-movement-v585.test.js
-          node tests/historical-housekeeping-eight-turn-v389.test.js
-          node tests/shared-terrain-reference-v676.test.js
-          node tests/b4m-double-stack-foundation-v684.test.js
-          node tests/graduated-mode-v689.test.js
-          node tests/ai-difficulty-v668.test.js
-          node tests/player-save-config-v654.test.js
-          node tests/advanced-crt-v557.test.js
-          node tests/mission-random-v629.test.js
-          node tests/historical-human-decision-gateway-v401.test.js
-          node tests/historical-autoplay-contract-v399.test.js
-          node tests/historical-fleet-budget-scope-v643.test.js
+        run: python3 scripts/run-active-regressions.py
   source-inventory:
     runs-on: ubuntu-latest
     timeout-minutes: 10
