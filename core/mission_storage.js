@@ -37,9 +37,8 @@
    catch(e){try{tx?.abort();}catch(_){}reject(e);}
   });}
   const meta=id=>key(id)+':present',payload=id=>key(id)+':payload';
-  function legacyStorage(){return getStorage();}
-  function legacyRead(id,primaryAvailable){let storage;try{storage=legacyStorage();}catch(e){if(primaryAvailable&&e.name==='SecurityError')return null;throw e;}try{return read(storage,id);}catch(e){if(primaryAvailable&&e.name==='SecurityError')return null;throw e;}}
-  function cleanupLegacy(id){try{remove(legacyStorage(),id);}catch(_){/* The committed metadata prevents stale legacy resurrection. */}}
+  function legacyRead(id,primaryAvailable){try{return read(getStorage(),id);}catch(e){if(primaryAvailable&&e.name==='SecurityError')return null;throw e;}}
+  function cleanupLegacy(id){try{remove(getStorage(),id);}catch(_){/* The committed metadata prevents stale legacy resurrection. */}}
   return Object.freeze({
    async exists(id){key(id);const db=await database();if(!db)return legacyRead(id,false)!==null;
     const flag=await transaction(db,'readonly',store=>{const q=store.get(meta(id));return ()=>q.result;});
@@ -53,12 +52,12 @@
     return legacyRead(id,true);
    },
    async write(id,save){const entry=envelope(id,save),db=await database();
-    if(!db)write(legacyStorage(),id,save);
+    if(!db)write(getStorage(),id,save);
     else{await transaction(db,'readwrite',store=>{store.put(entry,payload(id));store.put(true,meta(id));});cleanupLegacy(id);}
     notify(id);
    },
    async remove(id){key(id);const db=await database();
-    if(!db)remove(legacyStorage(),id);
+    if(!db)remove(getStorage(),id);
     else{await transaction(db,'readwrite',store=>{store.delete(payload(id));store.put(false,meta(id));});cleanupLegacy(id);}
     notify(id);
    }

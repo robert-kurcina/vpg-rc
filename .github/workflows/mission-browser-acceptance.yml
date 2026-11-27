@@ -10,6 +10,7 @@ on:
       - 'tests/fixtures/mission-indexeddb-fixture-v693.js'
       - 'tests/historical-operational-qualification-v644.test.js'
       - 'scripts/summarize-campaign-profile.js'
+      - 'scripts/audit-source-inventory.py'
       - 'tests/fixtures/terminal-v694/**'
       - 'scripts/run-native-campaign.js'
       - 'scripts/build-static-release.py'
@@ -55,6 +56,24 @@ jobs:
           node tests/ai-difficulty-v668.test.js
           node tests/player-save-config-v654.test.js
           node tests/advanced-crt-v557.test.js
+  source-inventory:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+      - name: Measure pinned baseline and current commit
+        run: |
+          python3 scripts/audit-source-inventory.py ffb900cbdd8eaa4f6dd3a2ff62aa35d0dffe29ae > baseline-inventory.json
+          python3 scripts/audit-source-inventory.py HEAD > current-inventory.json
+      - uses: actions/upload-artifact@v6
+        with:
+          name: source-inventory
+          path: |
+            baseline-inventory.json
+            current-inventory.json
+          if-no-files-found: error
   source-references:
     runs-on: ubuntu-latest
     timeout-minutes: 10
