@@ -517,11 +517,11 @@ function saveEngine(){
  if(setupActive){
   const original=(candidateMode?candidateEditor:deployment).save();
   const rng={seed:setupMaster,draws:setupDraws};
-  return {...original,missionRandom:{...rng,digest:WargameSyncSha256.sha256(JSON.stringify([original,rng]))}};
+  return {...original,missionRandom:{...rng,digest:WargameSyncSha256.jsonChecksum([original,rng])}};
  }
  if(!customGame)return human.save();
  const payload={format:'historical-custom-campaign',version:1,deployment:(candidateMode?candidateEditor:deployment).save(),human:human.save()};
- return {...payload,integrity:{algorithm:'SHA-256',digest:WargameSyncSha256.sha256(JSON.stringify(payload))}};
+ return {...payload,integrity:{algorithm:'SHA-256',digest:WargameSyncSha256.jsonChecksum(payload)}};
 }
 function enterSetup(){
  retreatSelection=null;
@@ -950,7 +950,7 @@ function restore(saved){try{cancelPostRollSearch();retreatSelection=null;if(aiRu
   const {missionRandom,...original}=saved;
   const {digest,...rng}=missionRandom;
   if(Object.keys(rng).sort().join(',')!=='draws,seed'||!Number.isSafeInteger(rng.draws)||rng.draws<0||
-     E.Random.validate(rng.seed)!==rng.seed||digest!==WargameSyncSha256.sha256(JSON.stringify([original,rng])))throw Error('Invalid deployment randomness');
+     E.Random.validate(rng.seed)!==rng.seed||digest!==WargameSyncSha256.jsonChecksum([original,rng]))throw Error('Invalid deployment randomness');
   restoredSetupRandom=rng;saved=original;
  }
  if(candidateMode){
@@ -964,7 +964,7 @@ function restore(saved){try{cancelPostRollSearch();retreatSelection=null;if(aiRu
    if(saved.version!==1||!saved.deployment||!saved.human||saved.integrity?.algorithm!=='SHA-256'||
       Object.keys(saved).sort().join(',')!==['format','version','deployment','human','integrity'].sort().join(','))throw Error('Invalid candidate campaign envelope');
    const {integrity,...payload}=saved;
-   if(WargameSyncSha256.sha256(JSON.stringify(payload))!==integrity.digest)throw Error('Candidate campaign checksum mismatch');
+   if(WargameSyncSha256.jsonChecksum(payload)!==integrity.digest)throw Error('Candidate campaign checksum mismatch');
    const editor=SourceSetup.restore(saved.deployment,{opening:candidateOpening,map:sourceData.contextSettings.map,
     policy:sourceData.setupPolicy,counterConfig:sourceData.counterConfig,
     buildupAllocation:sourceData.contextSettings.buildupAllocation});
@@ -991,7 +991,7 @@ function restore(saved){try{cancelPostRollSearch();retreatSelection=null;if(aiRu
     Object.keys(saved).sort().join(',')!==['format','version','deployment','human','integrity'].sort().join(','))
    throw Error('Invalid customized campaign envelope');
   const {integrity,...payload}=saved;
-  if(integrity.digest!==WargameSyncSha256.sha256(JSON.stringify(payload)))throw Error('Customized campaign checksum mismatch');
+  if(integrity.digest!==WargameSyncSha256.jsonChecksum(payload))throw Error('Customized campaign checksum mismatch');
   const restoredDeployment=E.Deployment.restore(saved.deployment,sourceData.deploymentSource);
   // Do not alter live session/context until BOTH restore validations pass.
   const committed=restoredDeployment.commit({requireMixed:true});
