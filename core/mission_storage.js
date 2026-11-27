@@ -141,11 +141,27 @@
   function showError(e,target=status){target.textContent=(e?.name==='QuotaExceededError'?'Browser storage is full. Export a portable JSON save or free browser storage.':e?.message||String(e));if(target===status)notice?.(target.textContent);}
   function setDisabled(){saveButton.disabled=pending;resumeButton.disabled=pending||!present;deleteButton.disabled=pending||!canDelete;}
   async function sync(){const token=++generation;try{const exists=await store.exists(id);if(token!==generation)return;present=canDelete=exists;if(status.textContent.startsWith('Local save unavailable: '))status.textContent='';}catch(e){if(token!==generation)return;status.textContent='Local save unavailable: '+e.message;present=false;canDelete=true;}setDisabled();}
-  async function run(fn,target=status){if(pending)return false;try{if(busy())throw Error('Stop computer play first.');pending=true;setDisabled();await fn();return true;}catch(e){showError(e,target);return false;}finally{await sync();pending=false;setDisabled();}}
+  // Acquire before any callback; release even if refreshing controls fails.
+  // A declined confirmation is not a completed operation.
+  async function run(fn,target=status){
+   if(pending)return false;
+   pending=true;
+   let attempted=false;
+   try{
+    setDisabled();
+    if(busy())throw Error('Stop computer play first.');
+    attempted=true;
+    return await fn()!==false;
+   }catch(e){showError(e,target);return false;}
+   finally{
+    try{if(attempted)await sync();}
+    finally{pending=false;setDisabled();}
+   }
+  }
   const button=(label,fn)=>{const b=document.createElement('button');b.type='button';b.textContent=label;b.addEventListener('click',()=>{void run(fn);});controls.append(b);return b;};
   const saveButton=button('Save Mission',async()=>{status.textContent='Saving mission…';await store.write(id,save());status.textContent='Mission saved on this browser.';});
-  const resumeButton=button('Resume Mission',async()=>{const saved=await store.read(id);if(!saved)throw Error('No saved mission.');if(busy())throw Error('Stop computer play first.');if(!root.confirm('Replace the current position with the saved mission?'))return;if(restore(saved)===false)throw Error('Saved mission rejected by the engine.');status.textContent='Saved mission restored.';});
-  const deleteButton=button('Delete local save',async()=>{if(!root.confirm('Delete the local save for this mission? The current game will remain open.'))return;await store.remove(id);status.textContent='Local mission save deleted.';});
+  const resumeButton=button('Resume Mission',async()=>{const saved=await store.read(id);if(!saved)throw Error('No saved mission.');if(busy())throw Error('Stop computer play first.');if(!root.confirm('Replace the current position with the saved mission?'))return false;if(restore(saved)===false)throw Error('Saved mission rejected by the engine.');status.textContent='Saved mission restored.';});
+  const deleteButton=button('Delete local save',async()=>{if(!root.confirm('Delete the local save for this mission? The current game will remain open.'))return false;await store.remove(id);status.textContent='Local mission save deleted.';});
   setDisabled();
   const home=document.querySelector('header a[href="../../../index.html"]');
   const toolbar=document.querySelector('.mission-history-toolbar');
@@ -205,11 +221,13 @@
    const options=document.createElement('div');options.className='actions';dialog.append(options);
    const leave=()=>root.location.assign(home.href);
    const option=(label,fn)=>{const b=document.createElement('button');b.type='button';b.textContent=label;b.addEventListener('click',async()=>{if(pending)return;for(const x of options.children)x.disabled=true;try{await run(fn,error);}finally{for(const x of options.children)x.disabled=false;}});options.append(b);};
-   option('Save and return',async()=>{error.textContent='Saving mission…';await store.write(id,save());leave();});option('Discard unsaved progress',leave);option('Cancel',()=>dialog.close());options.lastElementChild.autofocus=true;
+   option('Save and return',async()=>{error.textContent='Saving mission…';await store.write(id,save());leave();});option('Discard unsaved progress',leave);
+   const cancel=document.createElement('button');cancel.type='button';cancel.textContent='Cancel';cancel.autofocus=true;
+   cancel.addEventListener('click',()=>{if(!pending)dialog.close();});options.append(cancel);
    document.body.append(dialog);dialog.addEventListener('close',()=>toggle.focus());dialog.addEventListener('cancel',e=>{if(pending)e.preventDefault();});
    function requestLeave(){if(pending||busy()){status.textContent=pending?'Wait for the local save operation to finish.':'Stop computer play before leaving.';notice?.(status.textContent);return;}pause?.();error.textContent='';closeMenu();dialog.showModal();}
    home.addEventListener('click',e=>{e.preventDefault();requestLeave();});exit.addEventListener('click',requestLeave);
-   abandon.addEventListener('click',()=>{void run(async()=>{pause?.();if(!root.confirm('Abandon this mission and permanently delete its local save? Other missions will not be affected.'))return;await store.remove(id);leave();});});
+   abandon.addEventListener('click',()=>{void run(async()=>{pause?.();if(!root.confirm('Abandon this mission and permanently delete its local save? Other missions will not be affected.'))return false;await store.remove(id);leave();});});
    root.dispatchEvent(new Event('resize'));
   }else{anchor.after(controls,status);}
   subscribe(changed=>{if(changed===null||changed===id)void sync();});root.addEventListener('pageshow',sync);

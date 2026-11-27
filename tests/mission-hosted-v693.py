@@ -516,10 +516,28 @@ with sync_playwright() as pw:
    page.screenshot(path=str(args.evidence_dir/f'{id}-desktop.png'),full_page=True)
   verify_shell(id);assert snapshot(id)==before
   verify_reference(id)
+  # Cancellation must not mutate or navigate, and must release the controls.
+  menu()
+  page.once('dialog',lambda d:d.dismiss())
+  page.get_by_role('button',name='Abandon Mission',exact=True).click()
+  expect(page.get_by_role('button',name='Save Mission',exact=True)).to_be_enabled()
+  assert snapshot(id)==before
+  assert not page.evaluate("(id)=>WargameMissionStorage.defaultStore().exists(id)",id)
+  menu();page.get_by_role('button',name='Exit Game',exact=True).click()
+  dialog=page.get_by_role('dialog',name='Leave mission')
+  dialog.get_by_role('button',name='Cancel',exact=True).click()
+  expect(dialog).to_be_hidden()
+  assert snapshot(id)==before
   leave('Save and return');expect(card(id).locator('[data-resume]')).to_be_visible()
   # An actual successful new save should not be stored in the legacy quota-limited key.
   assert page.evaluate('(id)=>localStorage.getItem(WargameMissionStorage.key(id))===null',id)
   card(id).locator('[data-resume]').click();ready(id);assert snapshot(id)==before
+  menu();page.once('dialog',lambda d:d.dismiss())
+  page.get_by_role('button',name='Resume Mission',exact=True).click()
+  expect(page.get_by_role('button',name='Resume Mission',exact=True)).to_be_enabled()
+  assert snapshot(id)==before
+  assert page.evaluate("(id)=>WargameMissionStorage.defaultStore().exists(id)",id)
+  page.locator('#mission-menu-toggle').click()
   if id=='battle-for-moscow':
    verify_moscow_orders()
    verify_moscow_stacking_and_interrupt()
