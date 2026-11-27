@@ -46,4 +46,20 @@ eq(Auto.policyOf({...operational,objectivePolicy:'reserve-relief'}).coordinatedA
 eq(Auto.policyOf({...operational,objectivePolicy:'reserve-relief',coordinatedAttacks:false}).coordinatedAttacks,false);
 eq(Auto.policyOf({...operational,coordinatedAttacks:true}).coordinatedAttacks,true);
 for(const bad of [{coordinatedAttacks:true},{...operational,coordinatedAttacks:'true'},{...operational,coordinatedAttacks:null}]){assert.throws(()=>Auto.policyOf(bad));checks++;}
+// Exercise lazy history across real committed decisions, not mocked rules.
+let cursor=session,skipped=0,read=0;
+for(let i=0;i<32;i++){
+ let reads=0,saves=0;
+ const instrumented={...cursor,journal:()=>{reads++;return cursor.journal();},
+  save:()=>{saves++;return cursor.save();}};
+ const decision=Auto.decide({session:instrumented,context,policy:{seed:137}});
+ eq(decision,Auto.decide({session:{...cursor,journal:undefined},context,policy:{seed:137}}),'Legacy save fallback agrees');
+ eq(saves,0,'Narrow journal path never constructs a save');
+ assert(reads<=1,'At most one detached journal per decision');checks++;
+ if(reads)read++;else skipped++;
+ if(decision.status!=='action')break;
+ cursor=cursor.execute(decision.action).session;
+}
+assert(skipped>0&&read>0,'Exercise both history-consuming and history-free decisions');checks++;
+console.log('PASS lazy history decisions', {skipped,read});
 console.log('PASS v399 '+checks+' deterministic action-controller and fail-closed budget assertions');
