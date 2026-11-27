@@ -1,5 +1,5 @@
 /* GENERATED. Do not edit. */
-(function(root){"use strict";const r=root.__historicalBundle;if(!r||r.revision!=="fcfd7245b982b1885b09c453b77b14591706150edb5439605d6cf0a338c7a93e")throw Error("Historical bundle version mismatch");const defs=r.definitions,parts=r.parts;
+(function(root){"use strict";const r=root.__historicalBundle;if(!r||r.revision!=="e0ca1ff64b70e10215a98ab99974041ad6f7b1e63484032c38704d0272616c48")throw Error("Historical bundle version mismatch");const defs=r.definitions,parts=r.parts;
 defs["core/ai_difficulty.js"]=function(module,exports,require,Buffer){
 /* Optional graded AI effort presets. No changes to rules, unit values or RNG. */
 (function(root){
@@ -84,7 +84,7 @@ const AttackUtility=require('./historical_attack_utility');
 const Threat=require('./historical_threat_assessment');
 const Rules=require('./movement_rules');
 const Difficulty=require('./ai_difficulty');
-const copy=o=>JSON.parse(JSON.stringify(o));
+const {clone:copy}=require('./historical_campaign_json');
 function policyOf(input={}){
  if(input===null||typeof input!=='object'||Array.isArray(input))throw Error('Controller policy must be an object');
  const allowed=['missionSeed','seed','maxActions','maxCombatsPerPhase','maxCombatPhases',
