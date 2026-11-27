@@ -102,24 +102,6 @@ jobs:
           name: fortification-engine-specimen
           path: assets/terrain-chart/battle-for-moscow/fortification.png
           if-no-files-found: error
-  # Temporary draft-PR generation job: read-only token, no push.
-  regenerate-maintenance-bundle:
-    if: github.head_ref == 'maintenance/p3-historical-json-helpers'
-    runs-on: ubuntu-latest
-    timeout-minutes: 10
-    steps:
-      - uses: actions/checkout@v5
-      - name: Regenerate and verify committed-source package
-        run: |
-          python3 scripts/build-historical-browser-bundle.py --install
-          python3 scripts/build-historical-browser-bundle.py --install --check
-          git diff --binary > "${RUNNER_TEMP}/generated-bundle.patch"
-          git status --short
-      - uses: actions/upload-artifact@v6
-        with:
-          name: generated-maintenance-bundle-patch
-          path: ${{ runner.temp }}/generated-bundle.patch
-          if-no-files-found: error
   static-distribution:
     runs-on: ubuntu-latest
     timeout-minutes: 10

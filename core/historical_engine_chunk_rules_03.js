@@ -1,5 +1,5 @@
 /* GENERATED. Do not edit. */
-(function(root){"use strict";const r=root.__historicalBundle;if(!r||r.revision!=="fcfd7245b982b1885b09c453b77b14591706150edb5439605d6cf0a338c7a93e")throw Error("Historical bundle version mismatch");const defs=r.definitions,parts=r.parts;
+(function(root){"use strict";const r=root.__historicalBundle;if(!r||r.revision!=="e0ca1ff64b70e10215a98ab99974041ad6f7b1e63484032c38704d0272616c48")throw Error("Historical bundle version mismatch");const defs=r.definitions,parts=r.parts;
 defs["core/terrain_tiles.js"]=function(module,exports,require,Buffer){
 /* Universal tile geometry + SVG presentation. No terrain inference and no rules adjudication.
  * DOM/browser and Node CommonJS. Logical features live separately from bitmap visuals.
