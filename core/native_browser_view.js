@@ -55,6 +55,8 @@ async function embeddedRenderAssets(projectRoot,entry){
 const labelLoc=p=>p?`${String(p.x+1).padStart(2,'0')}${String(p.y+1).padStart(2,'0')}`:'—';
 function begin({rootDir,profilePath,mapPath,registryPath,projectRoot,aiProfilePath,aiObjectiveProfilePath,aiCaptureProfilePath,uiProfilePath}){
  let g=null,basePackage=null,baseProfile=null,session=null,board=null,mapBase=null,selection=[],legalCells=[],aiProfiles={},combatTarget=null,referenceTab='sequence';
+ let boardByHex=null;
+ const hexKey=(x,y)=>`${x},${y}`;
  const redoHistory=globalThis.WargameMissionStorage?.redoHistory();
  let displayControl=null,selectPanel=null,terrainTooltip=null,referenceDialog=null;
  const playerStrategies=['baseline','objective','capture'];
@@ -188,8 +190,7 @@ function begin({rootDir,profilePath,mapPath,registryPath,projectRoot,aiProfilePa
   const shell=globalThis.WargameResponsiveShell,focused=shell?.captureMapFocus(svg);
   const previous=svg.querySelector('[data-native-interactive="true"]');if(previous)previous.remove();
   const layer=mkSvg('g',{'data-native-interactive':'true','class':'native-preview-overlays'});
-  const byHex=new Map(board.cells.map(c=>[`${c.sourceRef.x},${c.sourceRef.y}`,c]));
-  const pos=(x,y)=>byHex.get(`${x},${y}`)?.pixelCenter;
+  const pos=(x,y)=>boardByHex.get(hexKey(x,y))?.pixelCenter;
   for(const city of (displayControl?.get().cityOwnership===false?[]:(cityData||CityStatus.read(session,board)).cities)){
    if(!city.owner)continue;
    const [x,y]=city.id.split(',').map(Number),center=pos(x,y);if(!center)continue;
@@ -224,10 +225,18 @@ function begin({rootDir,profilePath,mapPath,registryPath,projectRoot,aiProfilePa
   }
   const activated=Activation?.native(current(),phase())||new Set();
   const counterSize=Counters.sizeForHexHeight(Math.sqrt(3)*mapBase.ry)*(displayControl?Display.counterScale(displayControl.get()):1);
-  for(const u of current().units.filter(u=>u.position&&u.strength!=='dead')){
+  // Preserve source unit order and stack offsets with one occupancy pass.
+  const visible=current().units.filter(u=>u.position&&u.strength!=='dead');
+  const stacks=new Map(),ordinal=new Map();
+  for(const u of visible){
+   const key=hexKey(u.position.x,u.position.y);
+   if(!stacks.has(key))stacks.set(key,[]);
+   const stack=stacks.get(key);ordinal.set(u,stack.length);stack.push(u);
+  }
+  for(const u of visible){
    const c=pos(u.position.x,u.position.y);if(!c)continue;
-   const peers=current().units.filter(v=>v.position?.x===u.position.x&&v.position?.y===u.position.y&&v.strength!=='dead');
-   const offset=peers.length>1?(peers.indexOf(u)-(peers.length-1)/2)*counterSize*0.30:0;
+   const peers=stacks.get(hexKey(u.position.x,u.position.y));
+   const offset=peers.length>1?(ordinal.get(u)-(peers.length-1)/2)*counterSize*0.30:0;
    const hit=mkSvg('g',{'data-native-unit':u.id,'class':'native-counter-layer',role:'button',tabindex:0,'aria-label':`Counter ${u.id}`,'aria-pressed':selection.includes(u.id)});
    hit.innerHTML=Counters.piece(u,c[0]-counterSize/2+offset,c[1]-counterSize/2+offset,displayColor(E.unitSide(u)),{width:counterSize,height:counterSize,selected:selection.includes(u.id),activated:activated.has(u.id)});
    hit.addEventListener('click',ev=>{ev.stopPropagation();cellClick(u.position.x,u.position.y,u.id,ev.shiftKey);});
@@ -236,10 +245,11 @@ function begin({rootDir,profilePath,mapPath,registryPath,projectRoot,aiProfilePa
   }
   // Invisible interactive hex areas are constructed from the same source
   // cell centers as the shared renderer; no alternate hex geometry is inferred.
+  const legalHexKeys=new Set(legalCells.map(q=>hexKey(q.x,q.y)));
   for(const h of board.cells){
    const c=h.pixelCenter;
    const hit=mkSvg('path',{d:T.hexPoints(mapBase.rx,mapBase.ry).map((p,i)=>(i?'L':'M')+[p[0]+c[0],p[1]+c[1]].join(',')).join(' ')+' Z',class:'native-board-hit',
-    'data-board-cell':h.id,'aria-label':h.id,...(legalCells.some(q=>q.x===h.sourceRef.x&&q.y===h.sourceRef.y)?{role:'button',tabindex:0}:{})});
+    'data-board-cell':h.id,'aria-label':h.id,...(legalHexKeys.has(hexKey(h.sourceRef.x,h.sourceRef.y))?{role:'button',tabindex:0}:{})});
    hit.addEventListener('click',ev=>cellClick(h.sourceRef.x,h.sourceRef.y,null,ev.shiftKey));
    hit.addEventListener('keydown',ev=>{if(!['Enter',' '].includes(ev.key))return;ev.preventDefault();ev.stopPropagation();cellClick(h.sourceRef.x,h.sourceRef.y,null,ev.shiftKey);});
    // Overlay after counters would intercept them: place board click targets
@@ -472,7 +482,6 @@ function begin({rootDir,profilePath,mapPath,registryPath,projectRoot,aiProfilePa
   $('game-status').textContent=`${s.units.filter(u=>u.position&&u.strength!=='dead').length} counters on board · ${session.history.length} Undo steps · ${s.log.length} events · ${g.rules.combat.crtVariant==='advanced'?'Advanced':'Standard'} CRT · ${g.rules.specialRules.some(x=>x.module==='stacked-battle-v1')?'Double-stack variant':'Historical stacking'}`;
   $('phase-guidance').textContent=ui.showGuidedPhases?phaseGuide(p,s):'';
   $('history').textContent=s.log.slice(-14).map(r=>`${r.turn} ${r.side} ${r.type} ${r.unit||r.defender||r.phase||''}`).join('\n');
-  syncHistory();
   $('finish-phase').disabled=!!s.over||p?.kind==='setup'&&!S.legal(session,{type:'finish-setup'}).length||p?.kind==='redeployment'&&!S.legal(session,{type:'finish-redeployment'}).length||p?.kind==='reinforcement'&&!S.legal(session,{type:'finish-phase'}).length||p?.kind==='combat'&&s.declarationLocked;
   $('finish-phase').textContent=p?.kind==='setup'?'Confirm setup':p?.kind==='redeployment'?'Confirm reserves':p?.kind==='combat'&&s.declarations.length?'Lock declarations and roll':'Finish phase';
   $('remove-battle').disabled=p?.kind!=='combat'||s.declarationLocked||!s.declarations.length;
@@ -493,6 +502,7 @@ function begin({rootDir,profilePath,mapPath,registryPath,projectRoot,aiProfilePa
    const nativePackage=profile?Project.project(source,profile):source;
    if(nativePackage.game.engine!=='generic-hex-v1')throw Error('Requires a native package or a validated scenario projection');
    basePackage=nativePackage;baseProfile=profile;g=E.build(nativePackage);board=visual;
+   boardByHex=new Map(board.cells.map(c=>[hexKey(c.sourceRef.x,c.sourceRef.y),c]));
    const entry=registry.maps.find(x=>x.id===g.game.id);
    if(!entry)throw Error('Missing shared map registry profile');
    // Registry-owned presentation config; only image resolution differs from

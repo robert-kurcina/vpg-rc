@@ -58,6 +58,12 @@ with sync_playwright() as pw:
   expect(page.locator('#mission-settings')).to_have_count(1)
   expect(page.locator('#mission-menu-toggle')).to_have_count(1)
   expect(page.locator('.mission-leave-dialog')).to_have_count(1)
+ def verify_snapshot_isolation():
+  assert page.evaluate("""()=>{const api=HistoricalBrowserPreview,a=api.snapshot(),b=api.snapshot();
+   const original=JSON.stringify(b);a.cursor.turn=-999;
+   const unit=Object.values(a.state?.units||{})[0];if(unit)unit.hex='invalid';
+   return JSON.stringify(api.snapshot())===original&&a!==b;
+  }""")
  def snapshot(id):return page.evaluate('WargameSession.serialize(__nativePreview.getSession())' if id=='battle-for-moscow' else 'HistoricalBrowserPreview.save()')
  def menu():
   if not page.locator('#mission-menu').is_visible():page.locator('#mission-menu-toggle').click()
@@ -420,6 +426,7 @@ with sync_playwright() as pw:
    expect(page.locator('#ai-ownership-status')).to_have_text('Human controls current side')
    assert page.evaluate('HistoricalBrowserPreview.snapshot().actionCount')>before
    gear.click();assignment.select_option('both');gear.click()
+  verify_snapshot_isolation()
   baseline=page.evaluate('HistoricalBrowserPreview.performanceStats()')
   started=time.monotonic()
   page.locator('#ai-resume').click()
@@ -436,6 +443,7 @@ with sync_playwright() as pw:
    if args.evidence_dir:
     (args.evidence_dir/f'{id}-performance.json').write_text(json.dumps(page.evaluate('HistoricalBrowserPreview.performanceStats()'),indent=2))
   print('LIVE elapsed seconds',id,round(time.monotonic()-started,2),flush=True)
+  verify_snapshot_isolation()
   terminal=page.evaluate('HistoricalBrowserPreview.snapshot()')
   assert terminal['cursor']['complete'],page.locator('#message').inner_text()
   expect(page.locator('#ai-resume')).to_be_disabled()
