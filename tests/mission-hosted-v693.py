@@ -5,7 +5,7 @@ Uses a new isolated browser context; never modifies an ordinary user's saves.
 No intercepted network, localStorage mock, or IndexedDB fixture.
 Optional --terminal-save supplies a completed native Moscow JSON from the runner.
 """
-import argparse,json,subprocess,os,tempfile,time
+import argparse,json,subprocess,os,tempfile,time,hashlib
 from pathlib import Path
 from playwright.sync_api import sync_playwright,expect
 parser=argparse.ArgumentParser();parser.add_argument('--url',default='http://localhost:8765/index.html');parser.add_argument('--chromium',default=None);parser.add_argument('--terminal-save',type=Path);parser.add_argument('--evidence-dir',type=Path,help='Capture actual engine screenshots at desktop and tablet widths');parser.add_argument('--live-scenario',choices=['arduous','leningrad','kiev','kiev-odessa'],help='Play one fresh historical campaign through the actual automatic browser controller');parser.add_argument('--operational-parity',action='store_true',help='Run live scenario from the exact authenticated headless opening and compare terminal campaign receipts');args=parser.parse_args()
@@ -454,7 +454,7 @@ with sync_playwright() as pw:
    # campaign envelope including every receipt, opening and final state hash.
    actual=final['campaign']
    elapsed=time.monotonic()-started
-   result={'scenario':id,'seed':7,'difficulty':3,'browserSeconds':elapsed,'headlessSeconds':headless_report['computeElapsedMs']/1000,'actions':terminal['actionCount'],'exactCampaign':actual==parity_expected,'terminal':terminal['terminal']}
+   result={'scenario':id,'seed':7,'difficulty':3,'browserSeconds':elapsed,'headlessSeconds':headless_report['computeElapsedMs']/1000,'actions':terminal['actionCount'],'exactCampaign':actual==parity_expected,'campaignDigest':hashlib.sha256(json.dumps(actual,sort_keys=True,separators=(',',':'),ensure_ascii=True).encode()).hexdigest(),'headlessCpuMs':headless_report.get('computeCpuMs'),'heapStartBytes':headless_report.get('heapStartBytes'),'heapEndBytes':headless_report.get('heapEndBytes'),'terminal':terminal['terminal']}
    if args.evidence_dir:
     (args.evidence_dir/f'{id}-operational-parity.json').write_text(json.dumps(result,indent=2))
    print('OPERATIONAL PARITY',json.dumps(result),flush=True)
