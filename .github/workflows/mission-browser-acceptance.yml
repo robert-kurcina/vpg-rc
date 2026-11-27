@@ -35,27 +35,6 @@ permissions:
   contents: read
 
 jobs:
-  regenerate-performance-bundle:
-    if: github.head_ref == 'perf/campaign-hash-access'
-    runs-on: ubuntu-latest
-    timeout-minutes: 10
-    steps:
-      - uses: actions/checkout@v5
-      - uses: actions/setup-node@v5
-        with:
-          node-version: '22'
-      - name: Generate bundle and check focused contracts
-        run: |
-          python3 scripts/build-historical-browser-bundle.py --install
-          python3 scripts/build-historical-browser-bundle.py --install --check
-          node tests/mission-random-v629.test.js
-          node tests/historical-human-decision-gateway-v401.test.js
-          git diff --binary > generated-bundle.patch
-      - uses: actions/upload-artifact@v6
-        with:
-          name: performance-generated-bundle
-          path: generated-bundle.patch
-          if-no-files-found: error
   focused-rules:
     runs-on: ubuntu-latest
     timeout-minutes: 10
